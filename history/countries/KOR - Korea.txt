@@ -1,0 +1,245 @@
+capital = 797
+
+#oob = #
+
+527 = {
+	start_resistance = no
+	set_compliance = 0
+	set_resistance = 0
+	set_garrison_strength = 0
+}
+
+#중추원 의석 설정
+set_variable = { var = senate_support value = 0 }
+set_variable = { var = senate_total value = 0 }
+set_variable = { var = commons_support value = 0 }
+set_variable = { var = commons_total value = 0 }
+
+#시작시_연구가능_칸
+set_research_slots = 4
+
+#시작시_안정도
+set_stability = 0.7
+
+#시작시_전쟁지지도
+set_war_support = 0.6
+
+#연료_비율
+set_fuel_ratio = 1.0
+
+#시작시_연구된_장비
+set_technology = {
+   infantry_weapons = 1
+   mass_assault = 1
+   infantry_weapons1 = 1
+   tech_mountaineers = 1
+   tech_support = 1
+   tech_recon = 1
+   gw_artillery = 1
+   interwar_antiair = 1
+   gwtank = 1
+   early_fighter = 1
+   early_bomber = 1
+   CAS1 = 1
+   trench_warfare = 1
+}
+
+#수송선
+set_convoys = 30
+
+#국민정신
+add_ideas = {
+KOR_a_well_informed_general
+KOR_want_big
+Where_are_they
+}
+
+#시작_정당
+set_politics = {
+    ruling_party = fascism
+    last_election = "1936.1.1"
+    election_frequency = 48
+    elections_allowed = yes
+}
+#시작시_정당들의_인기도
+set_popularities = {
+    democratic = 30
+    fascism = 45
+    communism = 15
+    neutrality = 10
+}
+
+#정당별_리더
+create_country_leader = {
+  name = "김구"
+  desc = "POLITICS_KIM_KOO_DESC"
+  picture = "kimku3.dds"
+  expire = "1949.6.26"
+  ideology = liberalism
+  traits = {
+    #
+  }
+}
+
+create_country_leader = {
+  name = "여운형"
+  desc = "POLITICS_LYUH_WOON_HYUNG_DESC"
+  picture = "yownbro.dds"
+  expire = "1947.7.19"
+  ideology = stalinism
+  traits = {
+    #
+  }
+}
+
+create_country_leader = {
+  name = "이범석"
+  desc = "POLITICS_LEE_BEOM_DESC"
+  picture = "bomrock.dds"
+  expire = "1972.5.11"
+  ideology = fascism_ideology
+  traits = {
+    #
+  }
+}
+
+create_country_leader = {
+  name = "고종"
+  desc = "POLITICS_GO_JONG_DESC"
+  picture = "highjong.dds"
+  expire = "1947.1.21"
+  ideology = despotism
+  traits = {
+    #
+  }
+}
+
+#육군_장군_및_육군_원수
+create_field_marshal = {
+  name = "홍범도"
+  picture = "bumknife2.dds"
+  traits = { 
+  #카리스마
+  inspirational_leader
+  #산악병        
+  trait_mountaineer
+  #매복가
+  ambusher
+  }
+  
+  skill = 5
+
+  attack_skill = 7
+  defense_skill = 5
+  planning_skill = 7
+  logistics_skill = 6
+}
+
+create_field_marshal = {
+  name = "김좌진"
+  picture = "left_jin2.dds"
+  traits = { }
+  skill = 6
+
+  attack_skill = 5
+  defense_skill = 8
+  planning_skill = 4
+  logistics_skill = 7
+}
+
+create_corps_commander = {
+  name = "이범석"
+  picture = "bomrock.dds"
+  traits = { }
+  skill = 4
+
+  attack_skill = 7
+  defense_skill = 6
+  planning_skill = 3
+  logistics_skill = 7
+}
+
+create_corps_commander = {
+  name = "박경철"
+  picture = "keongiron.dds"
+  traits = { }
+  skill = 3
+
+  attack_skill = 3
+  defense_skill = 5
+  planning_skill = 2
+  logistics_skill = 6
+}
+
+create_corps_commander = {
+  name = "김홍일"
+  picture = "hong1.dds"
+  traits = { }
+  skill = 5
+
+  attack_skill = 3
+  defense_skill = 7
+  planning_skill = 6
+  logistics_skill = 5
+}
+
+create_field_marshal = {
+  name = "지청천"
+  picture = "chong1000.dds"
+  traits = { }
+  skill = 6
+
+  attack_skill = 7
+  defense_skill = 4
+  planning_skill = 2
+  logistics_skill = 6
+}
+
+create_field_marshal = {
+  name = "김경천"
+  picture = "geong1000.dds"
+  traits = { 
+  #명석한 전략가
+  Brilliant_Strategist
+  #공격적인 돌격가
+  Aggressive_Assaulter
+  #언덕 싸움꾼
+  Hill_Fighter
+  }
+  skill = 7
+
+  attack_skill = 6
+  defense_skill = 5
+  planning_skill = 6
+  logistics_skill = 4
+}
+
+create_field_marshal = {
+  name = "김원봉"
+  picture = "1bong.dds"
+  traits = { 
+  #정계와의 연줄
+  Politically_Connected
+  #명석한 전략가
+  Brilliant_Strategist
+  #특공대
+  Commando
+  }
+  skill = 7
+
+  attack_skill = 9
+  defense_skill = 2
+  planning_skill = 8
+  logistics_skill = 3
+}
+create_corps_commander = {
+  name = "김학규"
+  picture = "hak_ku.dds"
+  traits = { }
+  skill = 6
+
+  attack_skill = 5
+  defense_skill = 7
+  planning_skill = 6
+  logistics_skill = 4
+}

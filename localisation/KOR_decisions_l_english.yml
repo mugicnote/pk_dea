@@ -1,0 +1,10 @@
+﻿l_english:
+ KOR_congress:0 "중추원"
+
+ KOR_congress_senate_support_header:0 "§H참의원 지지도§!"
+ KOR_congress_senate_support_amount:0 "§G[?KOR.senate_support]§! / §Y[?KOR.senate_total]§!"
+ KOR_congress_commons_support_header:0 "§H민의원 지지도§!"
+ KOR_congress_commons_support_amount:0 "§G[?KOR.commons_support]§! / §Y[?KOR.commons_total]§!"
+
+ KOR_small_securement_of_support:0 "소규모 지지도 확보"
+ KOR_medium_securement_of_support:0 "중규모 지지도 확보"

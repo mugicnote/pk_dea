@@ -1,0 +1,26 @@
+state=
+{
+	id=527
+	name="STATE_527"
+	manpower = 254589
+	
+	state_category = town
+	history=
+	{
+		owner = KOR
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+			dockyard = 1
+		}
+		victory_points = {
+			4056 1 
+		}
+
+		add_core_of = KOR
+
+	}
+	provinces={
+		4056 
+	}
+}

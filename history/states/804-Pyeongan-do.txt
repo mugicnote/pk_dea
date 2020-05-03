@@ -1,0 +1,23 @@
+state=
+{
+	id=804
+	name="STATE_804"
+	manpower = 2749443
+	
+	state_category = town
+	history=
+	{
+		owner = KOR
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+			dockyard = 1
+			}
+
+		add_core_of = KOR
+
+	}
+	provinces={
+		11835 912 9918 11896 9790 9795 3912 978 11770 11828 11775 6963 906
+	}
+}

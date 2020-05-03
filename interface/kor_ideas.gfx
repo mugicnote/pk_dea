@@ -1,0 +1,28 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_idea_Kim_Il_Sung"
+		texturefile = "gfx/interface/ideas/advisor_kim_ilsung.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_kim_ku"
+		texturefile = "gfx/interface/ideas/advisor_kim_koo.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_Park_Heon_young"
+		texturefile = "gfx/interface/ideas/advisor_pak_honyong.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_Yeo_Woon_Hyung"
+		texturefile = "gfx/interface/ideas/advisor_ryuh_woonhyung.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_Rhee_Syngman"
+		texturefile = "gfx/interface/ideas/advisor_syngman_rhee.dds"
+	}
+
+}

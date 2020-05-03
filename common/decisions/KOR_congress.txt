@@ -1,0 +1,42 @@
+KOR_congress = {
+
+	#소규모 지지도 확보
+	KOR_small_securement_of_support = {
+
+		icon = generic_political_discourse
+
+		available = {
+			always = no
+		}
+
+		modifier = {
+
+		}
+
+		days_remove = 30
+
+		remove_effect = {
+
+		}
+	}
+
+	#중규모 지지도 확보
+	KOR_medium_securement_of_support = {
+
+		icon = generic_political_discourse
+
+		available = {
+			always = no
+		}
+
+		modifier = {
+
+		}
+
+		days_remove = 30
+
+		remove_effect = {
+
+		}
+	}
+}

@@ -1,0 +1,55 @@
+spriteTypes = {	
+
+	SpriteType = {
+		name = "GFX_two_peo"
+		texturefile = "gfx/interface/goals/two_peo.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_kor_spr_the_anti_fascist_workers_revolution"
+		texturefile = "gfx/interface/goals/goal_kor_spr_the_anti_fascist_workers_revolution.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_kim_koo"
+		texturefile = "gfx/interface/goals/focus_kim_koo.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_ryuh_woonhyung"
+		texturefile = "gfx/interface/goals/focus_ryuh_woonhyung.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_syngman_rhee"
+		texturefile = "gfx/interface/goals/focus_syngman_rhee.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_Prison2"
+		texturefile = "gfx/interface/goals/Prison2.dds"
+	}
+	SpriteType = {
+		name = "GFX_Focus_kor_decolonization"
+		texturefile = "gfx/interface/goals/Focus_kor_decolonization.dds"
+	}
+	SpriteType = {
+		name = "GFX_Focus_kor_liberation"
+		texturefile = "gfx/interface/goals/Focus_kor_liberation.dds"
+	}
+	SpriteType = {
+		name = "GFX_Focus_kor_soldaderas"
+		texturefile = "gfx/interface/goals/Focus_kor_soldaderas.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_kim_ilsung"
+		texturefile = "gfx/interface/goals/focus_kim_ilsung.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_pak_honyong"
+		texturefile = "gfx/interface/goals/focus_pak_honyong.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_red_revolution"
+		texturefile = "gfx/interface/goals/focus_red_revolution.dds"
+	}
+}

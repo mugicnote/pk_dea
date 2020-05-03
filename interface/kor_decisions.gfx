@@ -1,0 +1,9 @@
+spriteTypes = {
+
+	### KOR ###
+
+	spriteType = {
+		name = "GFX_KOR_dae_sun1"
+		texturefile = "gfx/interface/decisions/KOR_dae_sun1.dds"
+	}
+}

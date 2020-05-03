@@ -1,0 +1,11 @@
+#의회
+KOR_congress = {
+	icon = usa_congress
+	allowed = {
+		original_tag = KOR
+	}
+
+	scripted_gui = kor_congress_decision_ui	
+
+	priority = 100
+}
