@@ -61,7 +61,7 @@ ideas = {
         KOR_disjointed_government = {
             
             allowed = {
-                original_tag = FRA
+                original_tag = KOR
                 always = no
             }
 
@@ -77,6 +77,27 @@ ideas = {
                 political_power_cost = 0.8
                 stability_factor = -0.10
                 surrender_limit = -0.2
+            }
+        }
+        bitterness_of_treaty = {
+
+            allowed = {
+                original_tag = KOR
+                always = no
+            }
+
+            allowed_civil_war = {
+                has_government = democratic
+            }
+
+            removal_cost = -1
+
+            picture = usa_great_depression_3
+            
+            modifier = {
+                production_speed_arms_factory_factor = 0.25
+                production_speed_dockyard_factor = 0.25
+                industrial_capacity_factory = -0.2
             }
         }
     }

@@ -53,6 +53,7 @@ KOR_a_well_informed_general
 KOR_want_big
 Where_are_they
 KOR_disjointed_government
+bitterness_of_treaty
 }
 
 #시작_정당
