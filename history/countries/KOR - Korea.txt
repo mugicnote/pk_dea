@@ -54,11 +54,12 @@ KOR_want_big
 Where_are_they
 KOR_disjointed_government
 bitterness_of_treaty
+KOR_great_depression
 }
 
 #시작_정당
 set_politics = {
-    ruling_party = liberalism
+    ruling_party = democratic
     last_election = "1936.1.1"
     election_frequency = 48
     elections_allowed = yes
@@ -84,9 +85,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-  name = "여운형"
+  name = "김일성"
   desc = "POLITICS_LYUH_WOON_HYUNG_DESC"
-  picture = "yownbro.dds"
+  picture = ".dds"
   expire = "1947.7.19"
   ideology = stalinism
   traits = {

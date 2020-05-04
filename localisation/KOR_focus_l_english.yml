@@ -45,7 +45,7 @@
   All_men_will_be_equal:0 "만인이 평등하리라"
   military_intervention:0 "군사적 개입 작전"
   ###여운형###
-  Korean_People's_Party:0 "조선인민당"
+  Korean_People's_Party:0 "사회노농당"
   Yeo_Un-hyung's_election:0 "여운형 당선"
   Yeo_Un-hyung's_election_desc:0 "민주적인 선거를 통하여 여운영이 당선되었습니다,여운형은 누구에게나 평등하며 누구에게나 기회를 줍니다.누구에게나 평등하다는 정책을 잘 이용할줄도 압니다."
   Let_all_the_people_be_appointed:0 "인민 누구든 등용하라"
@@ -74,7 +74,7 @@
   Request_Support_to_the_United_Kingdom:0 "영국에 지원요청"
   The_civil_war_is_ove:0 "내전은 끝났다."
   ###김구###
-  Korean_Independence_Party:0 "한국독립당"
+  Korean_Independence_Party:0 "한국국민당"
   Kim_Gu_Elected:0 "김구 당선"
   Kim_Gu_Elected_desc:0 "민주적인 선거를 통하여 김구선생께서 당선 되셨습니다,감구 선생께서는 국가의 법으로 시민들을 지키며 여러자유를 허락하며 시민들을 자신에 편으로 만듭니다."
   Democratic_Human_Rights_Bureau:0 "민주 인권국"
@@ -87,7 +87,7 @@
   Protected_by_law:0 "법안에서 보호받다"
   Strengthening_the_regime:0 "정권강화"
   ###이승만###
-  Korea_Association_for_the_Promotion_of_Independence:0 "대한독립촉성국민회"
+  Korea_Association_for_the_Promotion_of_Independence:0 "자유당"
   Lee_Seung-man_Elected:0 "이승만 당선"
   Lee_Seung-man_Elected_desc:0 "민주적인 선거로 이승만이 당선되었습니다,이승만은 여러가지 방법을 이용하여 자신을 지킬것이며 또한 시민들을 자신의 편으로 둘것입니다."
   Enforcement_of_laws_for_safety:0 "안전을 위한 법 제정"
@@ -123,8 +123,8 @@
   a_parliamentary_siege:0 "여당의 국회 공성전"
   ###시작 결정###
   military_arrest:0 "군부 체포"
-  A_military_revolution:0 "군부의 유지?"
-  military_success:0 "군부를 유지하다"
+  A_military_revolution:0 "군부의 혁명?"
+  military_success:0 "군부가 혁명에 성공하다"
   ###파시즘 중점###
   division_of_party:0 "집권당 분열"
   joeson_fascism_party:0 "조선민족청년단"

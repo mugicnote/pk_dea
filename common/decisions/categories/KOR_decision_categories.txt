@@ -9,3 +9,27 @@ KOR_congress = {
 
 	priority = 100
 }
+
+KOR_the_inevitable_civil_war = {
+	priority = 10
+	icon = spr_the_inevitable_civil_war
+
+	picture = GFX_decision_cat_picture_spr_the_inevitable_civil_war
+
+	allowed = {
+		original_tag = KOR
+		has_dlc = "La Resistance"
+	}
+
+	custom_icon = {
+		tag = KOR
+		value = spa_civil_war_divisions_counter_icon_value
+		desc = spa_civil_war_divisions_counter_full_breakdown
+
+		visible = {
+			always = yes
+		}
+	}
+
+	visible_when_empty = yes
+}

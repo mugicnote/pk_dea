@@ -40,3 +40,35 @@ KOR_congress = {
 		}
 	}
 }
+
+KOR_the_inevitable_civil_war = {
+
+	KOR_military_plot_nationalists = {
+
+		priority = 10
+
+		icon = generic_ignite_civil_war
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+		activation = {
+			has_completed_focus = threat_of_communism
+			}
+
+		days_mission_timeout = 10
+
+		fire_only_once = yes
+
+		visible = {
+			tag = KOR
+		}
+
+		cancel_if_not_visible = yes
+
+		is_good = yes
+
+		timeout_effect = {
+			country_event = KOR.3
+		}
+	}

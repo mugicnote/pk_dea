@@ -1,11 +1,11 @@
-add_namespace = KOR
+﻿add_namespace = KOR
 
 country_event = { #
 	id = KOR.1
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.1"}
 	title = KOR.1.t
 	desc = KOR.1.desc
-	#picture = 
+	picture = GFX_report_event_election_vote
 	
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -13,12 +13,60 @@ country_event = { #
 	option = { #
 		name = KOR.1.a
 		ai_chance = { factor = 1 }
-		
+		complete_national_focus = Korean_People's_Party
 	}
 	option = { #
 		name = KOR.1.b
 		ai_chance = { factor = 1 }
-		
+		complete_national_focus = Korean_Independence_Party
+	}
+	option = { #
+		name = KOR.1.c
+		ai_chance = { factor = 1 }
+		complete_national_focus = Korea_Association_for_the_Promotion_of_Independence
 	}
 }
 
+add_namespace = KOR
+
+country_event = { #
+	id = KOR.2
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.2"}
+	title = KOR.2.t
+	desc = KOR.2.desc
+	picture = GFX_report_event_spr_civil_war_faction_defeated
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = KOR.2.a
+		ai_chance = { factor = 1 }
+		complete_national_focus = threats_from_opposition_parties
+	}
+}
+
+add_namespace = KOR
+
+country_event = { #
+	id = KOR.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.3"}
+	title = KOR.3.t
+	desc = KOR.3.desc
+	picture = GFX_report_event_spr_civil_war_faction_defeated
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = KOR.3.a
+		ai_chance = { factor = 1 }
+			start_civil_war = {
+				ruling_party = democratic
+				ideology = communism
+				size = 0.5
+				capital = 41
+				states = { 803 804 805 }
+			}
+		}
+	

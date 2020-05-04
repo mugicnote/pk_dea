@@ -92,12 +92,53 @@ ideas = {
 
             removal_cost = -1
 
-            picture = usa_great_depression_3
+            picture = generic_local_self_management
             
             modifier = {
                 production_speed_arms_factory_factor = 0.25
                 production_speed_dockyard_factor = 0.25
                 industrial_capacity_factory = -0.2
+            }
+        }
+        usa_great_depression_3
+        bitterness_of_treaty = {
+
+            allowed = {
+                original_tag = KOR
+                always = no
+            }
+
+            allowed_civil_war = {
+                has_government = democratic
+            }
+
+            removal_cost = -1
+
+            picture = generic_local_self_management
+            
+            modifier = {
+                production_speed_arms_factory_factor = 0.25
+                production_speed_dockyard_factor = 0.25
+                industrial_capacity_factory = -0.2
+            }
+        }
+        KOR_great_depression = {
+            picture = usa_great_depression_3
+            
+            allowed = {
+                always = no
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+            
+            modifier = {
+                consumer_goods_factor = 0.3
+                conscription_factor = -0.1
+                join_faction_tension = 0.20
             }
         }
     }

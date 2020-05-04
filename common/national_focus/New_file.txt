@@ -15,9 +15,14 @@
 		prerequisite = {
 			focus = military_arrest
 		}
+		mutually_exclusive = {
+			focus = election_denial
+		}
 		x = 8
 		y = 2
-
+		completion_reward = {
+			country_event = { id = KOR.1 }
+		}
 	}
 	focus = {
 		id = The_Theory_of_Strengthening_External_Influence
@@ -45,7 +50,10 @@
 		}
 		x = 6
 		y = 3
-
+		completion_reward = {
+		set_party_name = { ideology = democratic long_name = Yeo_un_long name = Yeo_un }
+		country_event = { id = KOR.2 }
+		}
 	}
 	focus = {
 		id = Yeo_Un-hyung's_election
@@ -56,7 +64,18 @@
 		}
 		x = 3
 		y = 4
-
+		completion_reward = {
+			create_country_leader = {
+  				name = "여운형"
+  				desc = "POLITICS_LYUH_WOON_HYUNG_DESC"
+  				picture = "yownbro.dds"
+  				expire = "1947.7.19"
+  				ideology = liberalism
+  				traits = {
+    				#
+  				}
+			}
+		}
 	}
 	focus = {
 		id = Let_all_the_people_be_appointed
@@ -149,7 +168,10 @@
 		}
 		x = 8
 		y = 3
-
+		completion_reward = {
+		set_party_name = { ideology = democratic long_name = Kim_ku_long name = Kim_ku }
+		country_event = { id = KOR.2 }
+		}
 	}
 	focus = {
 		id = Korea_Association_for_the_Promotion_of_Independence
@@ -164,7 +186,10 @@
 		}
 		x = 10
 		y = 3
-
+		completion_reward = {
+		set_party_name = { ideology = democratic long_name = Lee_Dem_long name = Lee_Dem }
+		country_event = { id = KOR.2 }
+		}
 	}
 	focus = {
 		id = threats_from_opposition_parties
@@ -182,7 +207,7 @@
 	focus = {
 		id = threat_of_communism
 		icon = GFX_focus_generic_soviet_politics
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = threats_from_opposition_parties
 		}
@@ -193,7 +218,7 @@
 	focus = {
 		id = Anikist's_Threat
 		icon = GFX_focus_spr_regional_defense_council_of_aragon
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = threats_from_opposition_parties
 		}
@@ -301,7 +326,18 @@
 		}
 		x = 14
 		y = 4
-
+		completion_reward = {
+			create_country_leader = {
+  				name = "김구"
+  				desc = "POLITICS_KIM_KOO_DESC"
+  				picture = "kimku3.dds"
+  				expire = "1947.7.19"
+  				ideology = liberalism
+  				traits = {
+    				#
+  				}
+			}
+		}
 	}
 	focus = {
 		id = Democratic_Human_Rights_Bureau
@@ -367,7 +403,18 @@
 		}
 		x = 18
 		y = 4
-
+		completion_reward = {
+			create_country_leader = {
+  				name = "이승만"
+  				desc = "POLITICS_LEE_SYNG_DESC"
+  				picture = "Lee_Syng.dds"
+  				expire = "1947.7.19"
+  				ideology = liberalism
+  				traits = {
+    				#
+  				}
+			}
+		}
 	}
 	focus = {
 		id = Enforcement_of_laws_for_safety
@@ -872,6 +919,9 @@
 		cost = 10.00
 		prerequisite = {
 			focus = military_arrest
+		}
+		mutually_exclusive = {
+			focus = democratic_election
 		}
 		x = 31
 		y = 2
