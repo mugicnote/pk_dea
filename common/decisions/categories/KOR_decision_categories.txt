@@ -33,4 +33,3 @@ KOR_the_inevitable_civil_war = {
 		NOT = { has_global_flag = spanish_civil_war }
 	}
 }
-
