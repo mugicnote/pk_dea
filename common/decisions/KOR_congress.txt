@@ -40,7 +40,7 @@ KOR_congress = {
 		}
 	}
 }
-
+#내전 시작
 KOR_the_inevitable_civil_war = {
 
 	KOR_military_plot_nationalists = {
@@ -72,3 +72,575 @@ KOR_the_inevitable_civil_war = {
 			country_event = KOR.3
 		}
 	}
+	#민주파 장군의 연설
+	KOR_primo_de_rivera_speech = {
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			tag = KOR
+		}
+
+		cost = 30
+
+		fire_only_once = no
+
+		ai_will_do = {
+			base = 200
+		}
+
+		days_remove = 37
+
+		modifier = {
+			
+		}
+
+		visible = {
+			tag = KOR
+			has_completed_focus = threats_from_opposition_parties
+		}
+
+		complete_effect = {
+			set_country_flag = SPR_inevitable_civil_war_in_progress_flag
+		}
+
+		remove_effect = {
+			add_popularity = {
+			    ideology = democratic
+			    popularity = 0.05
+			}
+			add_days_mission_timeout = {
+				mission = KOR_military_plot_nationalists
+				days = -36
+			}
+			clr_country_flag = SPR_inevitable_civil_war_in_progress_flag
+			if = {
+				limit = {
+					NOT = { has_country_flag = SPR_primo_de_rivera_first_speech }
+				}
+				set_country_flag = SPR_primo_de_rivera_first_speech
+			}
+		}
+
+	}
+
+
+	#함경도
+	KOR_expand_influence_in_the_Hamgyeong_garrison = {
+
+		icon = {
+			key = spa_garrison_control_none
+			trigger = {
+				805 = { check_variable = { var = SPA_garrison_control value = 1 compare = equals } }
+			}
+		}
+		icon = {
+			key = spa_garrison_control_weak
+			trigger = {
+				805 = {
+					check_variable = { var = SPA_garrison_control value = 2 compare = equals }
+				}
+			}
+		}
+		icon = {
+			key = spa_garrison_control_weak2
+			trigger = {
+				805 = {
+					check_variable = { var = SPA_garrison_control value = 2 compare = equals }
+				}
+			}
+		}
+		icon = {
+			key = spa_garrison_control_strong
+			trigger = {
+				805 = {
+					check_variable = { var = SPA_garrison_control value = 3 compare = equals }
+					NOT = { has_state_flag = SPA_northern_garrisons_state_flag }
+				}
+			}
+		}
+		icon = {
+			key = spa_garrison_control_strong2
+			trigger = {
+				805 = {
+					check_variable = { var = SPA_garrison_control value = 3 compare = equals }
+				}
+			}
+		}
+		icon = {
+			key = spa_garrison_control_total
+			trigger = {
+				805 = { check_variable = { var = SPA_garrison_control value = 4 compare = greater_than_or_equals } }
+			}
+		}
+
+		available = {
+			has_full_control_of_state = 805
+			if = {
+				custom_trigger_tooltip = {
+					tooltip = SPA_expand_influence_nationalists_trigger_tt
+					805 = { check_variable = { var = SPA_garrison_control value = 4 compare = less_than } }
+				}
+			}
+			NOT = {
+				has_country_flag = SPA_already_expanding_influence_flag
+			}
+		}
+
+		highlight_state_targets = { state = 805 }
+
+		on_map_mode = map_only
+
+		cost = 805.SPA_garrison_control_cost?10
+
+		fire_only_once = no
+
+		days_remove = 14
+
+		visible = {
+			has_completed_focus = threats_from_opposition_parties
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			set_country_flag = SPA_already_expanding_influence_flag
+		}
+
+		remove_effect = {
+			if = {
+				805 = {
+					custom_effect_tooltip = SPA_expand_influence_nationalists_tt
+					hidden_effect = {
+						if = {
+							limit = { check_variable = { SPA_garrison_control < 4 } }
+							
+							add_to_variable = { var = SPA_garrison_control value = 1 }
+							SPR = { add_to_variable = { var = spa_civil_war_divisions_counter_var value = 1 } }
+							SPR = { subtract_from_variable = { var = spr_civil_war_divisions_counter_var value = 1 } }
+						}
+					}
+					SPA_garrison_control_tooltip = yes
+					SPA_garrison_control_cost_calculation = yes
+				}
+			}
+
+		ai_will_do = {
+			base = 110
+			modifier = {
+				805 = { has_state_flag = SPR_recently_expanded_influence_flag }
+				factor = 10
+			}
+			modifier = {
+				has_completed_focus = threats_from_opposition_parties
+				NOT = { has_completed_focus = SPA_secure_the_northern_garrisons }
+				factor = 0
+			}
+			modifier = {
+				has_completed_focus = threats_from_opposition_parties
+				805 = { check_variable = { var = SPA_garrison_control value = 2 compare = greater_than_or_equals } }
+				factor = 5
+			}
+			modifier = {
+				has_completed_focus = threats_from_opposition_parties
+				805 = { check_variable = { var = SPA_garrison_control value = 3 compare = greater_than_or_equals } }
+				factor = 5
+			}
+			modifier = {
+				has_completed_focus = threats_from_opposition_parties
+				is_historical_focus_on = yes
+				factor = 10
+			}
+		}
+	}
+}
+
+	#평안도
+	KOR_expand_influence_in_the_Pyeongan_garrison = {
+
+		icon = {
+			key = spa_garrison_control_none
+			trigger = {
+				804 = { check_variable = { var = SPA_garrison_control value = 1 compare = equals } }
+			}
+		}
+		icon = {
+			key = spa_garrison_control_weak
+			trigger = {
+				804 = {
+					check_variable = { var = SPA_garrison_control value = 2 compare = equals }
+				}
+			}
+		}
+		icon = {
+			key = spa_garrison_control_weak2
+			trigger = {
+				804 = {
+					check_variable = { var = SPA_garrison_control value = 2 compare = equals }
+				}
+			}
+		}
+		icon = {
+			key = spa_garrison_control_strong
+			trigger = {
+				804 = {
+					check_variable = { var = SPA_garrison_control value = 3 compare = equals }
+					NOT = { has_state_flag = SPA_northern_garrisons_state_flag }
+				}
+			}
+		}
+		icon = {
+			key = spa_garrison_control_strong2
+			trigger = {
+				804 = {
+					check_variable = { var = SPA_garrison_control value = 3 compare = equals }
+				}
+			}
+		}
+		icon = {
+			key = spa_garrison_control_total
+			trigger = {
+				804 = { check_variable = { var = SPA_garrison_control value = 4 compare = greater_than_or_equals } }
+			}
+		}
+
+		available = {
+			has_full_control_of_state = 804
+			if = {
+				custom_trigger_tooltip = {
+					tooltip = SPA_expand_influence_nationalists_trigger_tt
+					804 = { check_variable = { var = SPA_garrison_control value = 4 compare = less_than } }
+				}
+			}
+			NOT = {
+				has_country_flag = SPA_already_expanding_influence_flag
+			}
+		}
+
+		highlight_state_targets = { state = 804 }
+
+		on_map_mode = map_only
+
+		cost = 804.SPA_garrison_control_cost?10
+
+		fire_only_once = no
+
+		days_remove = 14
+
+		visible = {
+			has_completed_focus = threats_from_opposition_parties
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			set_country_flag = SPA_already_expanding_influence_flag
+		}
+
+		remove_effect = {
+			if = {
+				804 = {
+					custom_effect_tooltip = SPA_expand_influence_nationalists_tt
+					hidden_effect = {
+						if = {
+							limit = { check_variable = { SPA_garrison_control < 4 } }
+							
+							add_to_variable = { var = SPA_garrison_control value = 1 }
+							SPR = { add_to_variable = { var = spa_civil_war_divisions_counter_var value = 1 } }
+							SPR = { subtract_from_variable = { var = spr_civil_war_divisions_counter_var value = 1 } }
+						}
+					}
+					SPA_garrison_control_tooltip = yes
+					SPA_garrison_control_cost_calculation = yes
+				}
+			}
+
+		ai_will_do = {
+			base = 110
+			modifier = {
+				804 = { has_state_flag = SPR_recently_expanded_influence_flag }
+				factor = 10
+			}
+			modifier = {
+				has_completed_focus = threats_from_opposition_parties
+				NOT = { has_completed_focus = SPA_secure_the_northern_garrisons }
+				factor = 0
+			}
+			modifier = {
+				has_completed_focus = threats_from_opposition_parties
+				804 = { check_variable = { var = SPA_garrison_control value = 2 compare = greater_than_or_equals } }
+				factor = 5
+			}
+			modifier = {
+				has_completed_focus = threats_from_opposition_parties
+				804 = { check_variable = { var = SPA_garrison_control value = 3 compare = greater_than_or_equals } }
+				factor = 5
+			}
+			modifier = {
+				has_completed_focus = threats_from_opposition_parties
+				is_historical_focus_on = yes
+				factor = 10
+			}
+		}
+	}
+}
+
+#황해도
+KOR_expand_influence_in_the_Hwanghae_garrison = {
+
+		icon = {
+			key = spa_garrison_control_none
+			trigger = {
+				803 = { check_variable = { var = SPA_garrison_control value = 1 compare = equals } }
+			}
+		}
+		icon = {
+			key = spa_garrison_control_weak
+			trigger = {
+				803 = {
+					check_variable = { var = SPA_garrison_control value = 2 compare = equals }
+				}
+			}
+		}
+		icon = {
+			key = spa_garrison_control_weak2
+			trigger = {
+				803 = {
+					check_variable = { var = SPA_garrison_control value = 2 compare = equals }
+				}
+			}
+		}
+		icon = {
+			key = spa_garrison_control_strong
+			trigger = {
+				803 = {
+					check_variable = { var = SPA_garrison_control value = 3 compare = equals }
+					NOT = { has_state_flag = SPA_northern_garrisons_state_flag }
+				}
+			}
+		}
+		icon = {
+			key = spa_garrison_control_strong2
+			trigger = {
+				803 = {
+					check_variable = { var = SPA_garrison_control value = 3 compare = equals }
+				}
+			}
+		}
+		icon = {
+			key = spa_garrison_control_total
+			trigger = {
+				803 = { check_variable = { var = SPA_garrison_control value = 4 compare = greater_than_or_equals } }
+			}
+		}
+
+		available = {
+			has_full_control_of_state = 803
+			if = {
+				custom_trigger_tooltip = {
+					tooltip = SPA_expand_influence_nationalists_trigger_tt
+					803 = { check_variable = { var = SPA_garrison_control value = 4 compare = less_than } }
+				}
+			}
+			NOT = {
+				has_country_flag = SPA_already_expanding_influence_flag
+			}
+		}
+
+		highlight_state_targets = { state = 803 }
+
+		on_map_mode = map_only
+
+		cost = 803.SPA_garrison_control_cost?10
+
+		fire_only_once = no
+
+		days_remove = 14
+
+		visible = {
+			has_completed_focus = threats_from_opposition_parties
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			set_country_flag = SPA_already_expanding_influence_flag
+		}
+
+		remove_effect = {
+			if = {
+				803 = {
+					custom_effect_tooltip = SPA_expand_influence_nationalists_tt
+					hidden_effect = {
+						if = {
+							limit = { check_variable = { SPA_garrison_control < 4 } }
+							
+							add_to_variable = { var = SPA_garrison_control value = 1 }
+							SPR = { add_to_variable = { var = spa_civil_war_divisions_counter_var value = 1 } }
+							SPR = { subtract_from_variable = { var = spr_civil_war_divisions_counter_var value = 1 } }
+						}
+					}
+					SPA_garrison_control_tooltip = yes
+					SPA_garrison_control_cost_calculation = yes
+				}
+			}
+
+		ai_will_do = {
+			base = 110
+			modifier = {
+				803 = { has_state_flag = SPR_recently_expanded_influence_flag }
+				factor = 10
+			}
+			modifier = {
+				has_completed_focus = threats_from_opposition_parties
+				NOT = { has_completed_focus = SPA_secure_the_northern_garrisons }
+				factor = 0
+			}
+			modifier = {
+				has_completed_focus = threats_from_opposition_parties
+				803 = { check_variable = { var = SPA_garrison_control value = 2 compare = greater_than_or_equals } }
+				factor = 5
+			}
+			modifier = {
+				has_completed_focus = threats_from_opposition_parties
+				803 = { check_variable = { var = SPA_garrison_control value = 3 compare = greater_than_or_equals } }
+				factor = 5
+			}
+			modifier = {
+				has_completed_focus = threats_from_opposition_parties
+				is_historical_focus_on = yes
+				factor = 10
+			}
+		}
+	}
+}
+
+#강원도
+KOR_expand_influence_in_the_Gangwon_garrison = {
+
+		icon = {
+			key = spa_garrison_control_none
+			trigger = {
+				802 = { check_variable = { var = SPA_garrison_control value = 1 compare = equals } }
+			}
+		}
+		icon = {
+			key = spa_garrison_control_weak
+			trigger = {
+				802 = {
+					check_variable = { var = SPA_garrison_control value = 2 compare = equals }
+				}
+			}
+		}
+		icon = {
+			key = spa_garrison_control_weak2
+			trigger = {
+				802 = {
+					check_variable = { var = SPA_garrison_control value = 2 compare = equals }
+				}
+			}
+		}
+		icon = {
+			key = spa_garrison_control_strong
+			trigger = {
+				802 = {
+					check_variable = { var = SPA_garrison_control value = 3 compare = equals }
+					NOT = { has_state_flag = SPA_northern_garrisons_state_flag }
+				}
+			}
+		}
+		icon = {
+			key = spa_garrison_control_strong2
+			trigger = {
+				802 = {
+					check_variable = { var = SPA_garrison_control value = 3 compare = equals }
+				}
+			}
+		}
+		icon = {
+			key = spa_garrison_control_total
+			trigger = {
+				802 = { check_variable = { var = SPA_garrison_control value = 4 compare = greater_than_or_equals } }
+			}
+		}
+
+		available = {
+			has_full_control_of_state = 802
+			if = {
+				custom_trigger_tooltip = {
+					tooltip = SPA_expand_influence_nationalists_trigger_tt
+					802 = { check_variable = { var = SPA_garrison_control value = 4 compare = less_than } }
+				}
+			}
+			NOT = {
+				has_country_flag = SPA_already_expanding_influence_flag
+			}
+		}
+
+		highlight_state_targets = { state = 803 }
+
+		on_map_mode = map_only
+
+		cost = 803.SPA_garrison_control_cost?10
+
+		fire_only_once = no
+
+		days_remove = 14
+
+		visible = {
+			has_completed_focus = threats_from_opposition_parties
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			set_country_flag = SPA_already_expanding_influence_flag
+		}
+
+		remove_effect = {
+			if = {
+				802 = {
+					custom_effect_tooltip = SPA_expand_influence_nationalists_tt
+					hidden_effect = {
+						if = {
+							limit = { check_variable = { SPA_garrison_control < 4 } }
+							
+							add_to_variable = { var = SPA_garrison_control value = 1 }
+							SPR = { add_to_variable = { var = spa_civil_war_divisions_counter_var value = 1 } }
+							SPR = { subtract_from_variable = { var = spr_civil_war_divisions_counter_var value = 1 } }
+						}
+					}
+					SPA_garrison_control_tooltip = yes
+					SPA_garrison_control_cost_calculation = yes
+				}
+			}
+
+		ai_will_do = {
+			base = 110
+			modifier = {
+				802 = { has_state_flag = SPR_recently_expanded_influence_flag }
+				factor = 10
+			}
+			modifier = {
+				has_completed_focus = threats_from_opposition_parties
+				NOT = { has_completed_focus = SPA_secure_the_northern_garrisons }
+				factor = 0
+			}
+			modifier = {
+				has_completed_focus = threats_from_opposition_parties
+				802 = { check_variable = { var = SPA_garrison_control value = 2 compare = greater_than_or_equals } }
+				factor = 5
+			}
+			modifier = {
+				has_completed_focus = threats_from_opposition_parties
+				802 = { check_variable = { var = SPA_garrison_control value = 3 compare = greater_than_or_equals } }
+				factor = 5
+			}
+			modifier = {
+				has_completed_focus = threats_from_opposition_parties
+				is_historical_focus_on = yes
+				factor = 10
+			}
+		}
+	}
+}

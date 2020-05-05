@@ -202,7 +202,9 @@
 		}
 		x = 8
 		y = 4
-
+		completion_reward = {
+		activate_mission = KOR_expand_influence_in_the_galicia_garrison
+		}
 	}
 	focus = {
 		id = threat_of_communism
@@ -238,7 +240,7 @@
 		}
 		x = 8
 		y = 6
-
+		
 	}
 	focus = {
 		id = Fight_the_Civil_War
