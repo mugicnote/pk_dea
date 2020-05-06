@@ -23,6 +23,9 @@
 		completion_reward = {
 			country_event = { id = KOR.1 }
 		}
+		available = {
+
+		}
 	}
 	focus = {
 		id = The_Theory_of_Strengthening_External_Influence

@@ -10,26 +10,29 @@ KOR_congress = {
 	priority = 100
 }
 
-KOR_the_inevitable_civil_war = {
-	priority = 10
-	icon = spr_the_inevitable_civil_war
+KOR_organize_the_blackshirts = {
 
-	picture = GFX_decision_cat_picture_spr_the_inevitable_civil_war
+	icon = eng_organize_the_blackshirts
 
+	picture = GFX_decision_cat_picture_organize_the_blackshirts
+	
 	allowed = {
-		original_tag = KOR
-		has_dlc = "La Resistance"
+		tag = KOR
 	}
 
-	visible_when_empty = yes
-
 	on_map_area = {
-		state = 805
-		name = SPR_the_inevitable_civil_war_map_category_name
+		state = 797
+		name = ENG_organize_the_blackshirts_map_category_name
 		zoom = 250
 	}
 
-	visible = {
-		NOT = { has_global_flag = spanish_civil_war }
+	priority = {
+		base = 0
+		modifier = {
+			add = 10
+		}
 	}
-}
+
+	visible = {
+			NOT = { has_government = fascism }
+	}

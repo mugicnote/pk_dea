@@ -9,11 +9,21 @@
  KOR.2.t:0 "두 세력의 선거 무효 주장"
  KOR.2.desc:0 "오늘 정체를 알 수 없는 두 세력이 선거의 무효를 주장하며 들고 일어났습니다,두 세력은 선거를 무효라 하지 않으면 군사로 진압할 것이라고 하였습니다!"
  KOR.2.a:0 "내전의 주동자들인 범법자 놈들을 모두 잡아라!"
- ###공산주의의 내전시작###
- KOR.3.t:0 "공산주의의 반란!"
- KOR.3.desc:0 "공산주의 세력이 드디어 반란군을 다 모으고 반란을 시작했습니다!"
- KOR.3.a:0 "저 불한당 놈들이 어디서 겁을 줘!"
- ###내전 다시 만드는 중...###
- KOR.4.t:0 "긴급적인 공산주의 진영 진압"
- KOR.4.desc:0 "."
- KOR.4.a:0 "좋았어!"
+
+ KOR.6.t:1 "[ENG_blackshirt_march_state.GetName]의 비폭력적인 주도회 습격"
+ KOR.6.desc:0 "[ENG_blackshirt_march_state.GetName]의 주도회 습격이 성공적으로 마무리되었습니다."
+ KOR.6.a:0 "더욱 빨리 움직여야 할것이다."
+
+ KOR.7.t:0 "[ENG_blackshirt_march_state.GetName]의 긴급적인 주도회 습격"
+ KOR.7.desc:0 "[ENG_blackshirt_march_state.GetName]의 주도회 습격이 긴급적으로 그리고 성공적으로 마무리되었습니다."
+ KOR.7.a:0 "좋았어!"
+
+ KOR.8.t:0 "[ENG_blackshirt_march_state.GetName]의 폭력적인 주도회 습격"
+ KOR.8.desc:0 "[ENG_blackshirt_march_state.GetName]에서 주도회 습격이 폭력"
+ KOR.8.a:0 "이런..."
+
+ KOR.9.t:0 "내전이 일어나다!"
+ KOR.9.desc:0 "내전이 일어나다 태스트"
+ KOR.9.a:0 "태스트"
+
+ KOR_military_plot_nationalists:0 "군부의 쿠데타 음모"
