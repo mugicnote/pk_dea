@@ -69,6 +69,7 @@ KOR_organize_the_blackshirts = {
 
 		complete_effect = {
 			797 = { save_event_target_as = ENG_blackshirt_march_state }
+			797 = { set_state_flag = KOR_has_blackshirt_support }
 			random_list = {
 				25 = {
 					country_event = { id = KOR.7 days = 1 }
@@ -144,6 +145,7 @@ KOR_organize_the_blackshirts = {
 
 		complete_effect = {
 			798 = { save_event_target_as = ENG_blackshirt_march_state }
+			798 = { set_state_flag = KOR_has_blackshirt_support }
 			random_list = {
 				25 = {
 					country_event = { id = KOR.7 days = 1 }
@@ -218,6 +220,7 @@ KOR_organize_the_blackshirts = {
 
 		complete_effect = {
 			801 = { save_event_target_as = ENG_blackshirt_march_state }
+			801 = { set_state_flag = KOR_has_blackshirt_support }
 			random_list = {
 				25 = {
 					country_event = { id = KOR.7 days = 1 }
@@ -267,6 +270,230 @@ KOR_organize_the_blackshirts = {
 		}
 	}
 
+	KOR_blackshirt_march_in_aberdeenshire = {
+
+		icon = eng_blackshirt_march
+
+		available = {
+			NOT = { has_country_flag = ENG_march_timer_flag }
+			has_full_control_of_state = 799
+		}
+
+		highlight_state_targets = { state = 799 }
+
+		on_map_mode = map_only
+
+		cost = 120
+
+		fire_only_once = yes
+
+		visible = {
+			NOT = { has_government = fascism }
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			799 = { save_event_target_as = ENG_blackshirt_march_state }
+			799 = { set_state_flag = KOR_has_blackshirt_support }
+			random_list = {
+				25 = {
+					country_event = { id = KOR.7 days = 1 }
+					effect_tooltip = {
+						add_days_mission_timeout = {
+						mission = KOR_military_plot_nationalists
+							days = -10
+						}
+					}
+				}
+				50 = {
+					country_event = { id = KOR.6 days = 1 }
+					effect_tooltip = {
+						add_days_mission_timeout = {
+						mission = KOR_military_plot_nationalists
+							days = -15
+						}
+					}
+				}
+				25 = {
+					modifier = {
+						factor = 0.2
+						has_country_flag = ENG_restrained_march_flag
+					}
+					country_event = { id = KOR.8 days = 1 }
+					effect_tooltip = {
+						add_days_mission_timeout = {
+						mission = KOR_military_plot_nationalists
+							days = -20
+						}
+					}
+				}
+			}
+			custom_effect_tooltip = ENG_blackshirt_march_tt
+			set_country_flag = ENG_march_temp_aberdeenshire
+			set_country_flag = ENG_march_timer_flag
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+			}
+			modifier = {
+				factor = 0
+			}
+		}
+	}
+
+		KOR_blackshirt_march_in_lanark = {
+
+		icon = eng_blackshirt_march
+
+		available = {
+			NOT = { has_country_flag = ENG_march_timer_flag }
+			has_full_control_of_state = 800
+		}
+
+		highlight_state_targets = { state = 800 }
+
+		on_map_mode = map_only
+
+		cost = 100
+
+		fire_only_once = yes
+
+		visible = {
+			NOT = { has_government = fascism }
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			800 = { save_event_target_as = ENG_blackshirt_march_state }
+			800 = { set_state_flag = KOR_has_blackshirt_support }
+			random_list = {
+				25 = {
+					country_event = { id = KOR.7 days = 1 }
+					effect_tooltip = {
+						add_days_mission_timeout = {
+						mission = KOR_military_plot_nationalists
+							days = -7
+						}
+					}
+				}
+				50 = {
+					country_event = { id = KOR.6 days = 1 }
+					effect_tooltip = {
+						add_days_mission_timeout = {
+						mission = KOR_military_plot_nationalists
+							days = -14
+						}
+					}
+				}
+				25 = {
+					modifier = {
+						factor = 0.2
+						has_country_flag = ENG_restrained_march_flag
+					}
+					country_event = { id = KOR.8 days = 1 }
+					effect_tooltip = {
+						add_days_mission_timeout = {
+						mission = KOR_military_plot_nationalists
+							days = -21
+						}
+					}
+				}
+			}
+			custom_effect_tooltip = ENG_blackshirt_march_tt
+			set_country_flag = ENG_march_temp_aberdeenshire
+			set_country_flag = ENG_march_timer_flag
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+			}
+			modifier = {
+				factor = 0
+			}
+		}
+	}
+
+	KOR_blackshirt_march_in_lothian = {
+
+		icon = eng_blackshirt_march
+
+		available = {
+			NOT = { has_country_flag = ENG_march_timer_flag }
+			has_full_control_of_state = 802
+		}
+
+		highlight_state_targets = { state = 802 }
+
+		on_map_mode = map_only
+
+		cost = 100
+
+		fire_only_once = yes
+
+		visible = {
+			NOT = { has_government = fascism }
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			802 = { save_event_target_as = ENG_blackshirt_march_state }
+			802 = { set_state_flag = KOR_has_blackshirt_support }
+			random_list = {
+				25 = {
+					country_event = { id = KOR.7 days = 1 }
+					effect_tooltip = {
+						add_days_mission_timeout = {
+						mission = KOR_military_plot_nationalists
+							days = -7
+						}
+					}
+				}
+				50 = {
+					country_event = { id = KOR.6 days = 1 }
+					effect_tooltip = {
+						add_days_mission_timeout = {
+						mission = KOR_military_plot_nationalists
+							days = -14
+						}
+					}
+				}
+				25 = {
+					modifier = {
+						factor = 0.2
+						has_country_flag = ENG_restrained_march_flag
+					}
+					country_event = { id = KOR.8 days = 1 }
+					effect_tooltip = {
+						add_days_mission_timeout = {
+						mission = KOR_military_plot_nationalists
+							days = -21
+						}
+					}
+				}
+			}
+			custom_effect_tooltip = ENG_blackshirt_march_tt
+			set_country_flag = ENG_march_temp_aberdeenshire
+			set_country_flag = ENG_march_timer_flag
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+			}
+			modifier = {
+				factor = 0
+			}
+		}
+	}
 
 	#군부의 쿠데타 음모
 	KOR_military_plot_nationalists = {

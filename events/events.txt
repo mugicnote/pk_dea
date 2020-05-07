@@ -92,8 +92,44 @@ country_event = {
 			797 = { set_state_flag = KOR_has_blackshirt_support }
 			custom_effect_tooltip = ENG_blackshirt_march_tt
 		}
+		if = {
+			limit = {
+				has_country_flag = KOR_blackshirt_march_in_aberdeenshire
+			}
+			add_days_mission_timeout = {
+						mission = KOR_military_plot_nationalists
+							days = -10
+						}
+			799 = { set_state_flag = KOR_has_blackshirt_support }
+			custom_effect_tooltip = ENG_blackshirt_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = KOR_blackshirt_march_in_lanark
+			}
+			add_days_mission_timeout = {
+						mission = KOR_military_plot_nationalists
+							days = -7
+						}
+			800 = { set_state_flag = KOR_has_blackshirt_support }
+			custom_effect_tooltip = ENG_blackshirt_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = ENG_blackshirt_march_in_lothian
+			}
+			add_days_mission_timeout = {
+						mission = KOR_military_plot_nationalists
+							days = -7
+						}
+			802 = { set_state_flag = KOR_has_blackshirt_support }
+			custom_effect_tooltip = ENG_blackshirt_march_tt
+		}
 		clr_country_flag = KOR_march_temp_northern_ireland
 		clr_country_flag = KOR_march_temp_highlands
+		clr_country_flag = KOR_blackshirt_march_in_aberdeenshire
+		clr_country_flag = KOR_blackshirt_march_in_lanark
+		clr_country_flag = ENG_blackshirt_march_in_lothian
 		clr_country_flag = KOR_march_temp_london
 		clr_country_flag = ENG_march_timer_flag
 		clr_country_flag = ENG_restrained_march_flag
@@ -145,9 +181,44 @@ country_event = {
 			797 = { set_state_flag = KOR_has_blackshirt_support }
 			custom_effect_tooltip = ENG_blackshirt_march_tt
 		}
-
+		if = {
+			limit = {
+				has_country_flag = KOR_blackshirt_march_in_aberdeenshire
+			}
+			add_days_mission_timeout = {
+						mission = KOR_military_plot_nationalists
+							days = -15
+						}
+			799 = { set_state_flag = KOR_has_blackshirt_support }
+			custom_effect_tooltip = ENG_blackshirt_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = KOR_blackshirt_march_in_lanark
+			}
+			add_days_mission_timeout = {
+						mission = KOR_military_plot_nationalists
+							days = -14
+						}
+			800 = { set_state_flag = KOR_has_blackshirt_support }
+			custom_effect_tooltip = ENG_blackshirt_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = ENG_blackshirt_march_in_lothian
+			}
+			add_days_mission_timeout = {
+						mission = KOR_military_plot_nationalists
+							days = -14
+						}
+			802 = { set_state_flag = KOR_has_blackshirt_support }
+			custom_effect_tooltip = ENG_blackshirt_march_tt
+		}
 		clr_country_flag = ENG_march_temp_northern_ireland
 		clr_country_flag = ENG_march_temp_highlands
+		clr_country_flag = KOR_blackshirt_march_in_aberdeenshire
+		clr_country_flag = KOR_blackshirt_march_in_lanark
+		clr_country_flag = ENG_blackshirt_march_in_lothian
 		clr_country_flag = ENG_march_temp_london
 		clr_country_flag = ENG_march_timer_flag
 		clr_country_flag = ENG_restrained_march_flag
@@ -198,8 +269,44 @@ country_event = {
 			797 = { set_state_flag = KOR_has_blackshirt_support }
 			custom_effect_tooltip = ENG_blackshirt_march_tt
 		}
+		if = {
+			limit = {
+				has_country_flag = KOR_blackshirt_march_in_aberdeenshire
+			}
+			add_days_mission_timeout = {
+						mission = KOR_military_plot_nationalists
+							days = -20
+						}
+			799 = { set_state_flag = KOR_has_blackshirt_support }
+			custom_effect_tooltip = ENG_blackshirt_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = KOR_blackshirt_march_in_lanark
+			}
+			add_days_mission_timeout = {
+						mission = KOR_military_plot_nationalists
+							days = -21
+						}
+			800 = { set_state_flag = KOR_has_blackshirt_support }
+			custom_effect_tooltip = ENG_blackshirt_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = ENG_blackshirt_march_in_lothian
+			}
+			add_days_mission_timeout = {
+						mission = KOR_military_plot_nationalists
+							days = -21
+						}
+			802 = { set_state_flag = KOR_has_blackshirt_support }
+			custom_effect_tooltip = ENG_blackshirt_march_tt
+		}
 		clr_country_flag = KOR_march_temp_northern_ireland
 		clr_country_flag = KOR_march_temp_highlands
+		clr_country_flag = KOR_blackshirt_march_in_aberdeenshire
+		clr_country_flag = KOR_blackshirt_march_in_lanark
+		clr_country_flag = ENG_blackshirt_march_in_lothian
 		clr_country_flag = KOR_march_temp_london
 		clr_country_flag = ENG_march_timer_flag
 		clr_country_flag = ENG_restrained_march_flag
@@ -236,7 +343,7 @@ country_event = {
 			}
 			start_civil_war = {
 				ruling_party = democratic
-				ideology = fascism
+				ideology = communism
 				size = 0.5
 				states = all
 				states_filter = {
@@ -321,5 +428,29 @@ country_event = {
 			RAJ = { retire_country_leader = yes }
 		}
 		hidden_effect = { news_event = { id = mtg_news.41 days = 1 } }
+	}
+}
+
+add_namespace = KOR
+
+country_event = { #시작 선택(만들어야됨)
+	id = KOR.10
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.10"}
+	title = KOR.10.t
+	desc = KOR.10.desc
+	picture = GFX_report_event_spr_civil_war_faction_defeated
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = KOR.10.a
+		ai_chance = { factor = 1 }
+		complete_national_focus = threats_from_opposition_parties
+	}
+	option = { #
+		name = KOR.10.b
+		ai_chance = { factor = 1 }
+		complete_national_focus = threats_from_opposition_parties
 	}
 }

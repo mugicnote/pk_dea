@@ -23,9 +23,6 @@
 		completion_reward = {
 			country_event = { id = KOR.1 }
 		}
-		available = {
-
-		}
 	}
 	focus = {
 		id = The_Theory_of_Strengthening_External_Influence
@@ -2059,4 +2056,16 @@
 		x = 31
 		y = 9
 	}
+	focus = {
+		id = Korean_Empire_controversy
+		icon = 
+		cost = 10.00
+		prerequisite = {
+			focus = general_center
+			focus = yeom_dong_jin_center
+		}
+		x = 41
+		y = 8
+
+     }
 }
