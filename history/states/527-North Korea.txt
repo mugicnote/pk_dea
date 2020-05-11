@@ -1,4 +1,4 @@
-﻿state = {
+state = {
 	id = 527
 	name = "STATE_527" #강원도
 	manpower = 1600000
