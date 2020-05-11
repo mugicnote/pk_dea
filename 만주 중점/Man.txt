@@ -1,0 +1,450 @@
+focus_tree = {
+	id = Man
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = MAN
+		}
+	}
+	default = no
+	focus = {
+		id = man_governance_system_reform
+		icon = GFX_goal_support_democracy
+		cost = 10.00
+		prerequisite = {
+			
+		}
+		x = 10
+		y = 0
+	}
+	focus = {
+		id = army_modernization
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = man_governance_system_reform
+		}
+		x = 9
+		y = 1
+	}
+	focus = {
+		id = research_team_augmentation
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = man_governance_system_reform
+		}
+		x = 11
+		y = 1
+	}
+	focus = {
+		id = military_academy_construction
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = army_modernization
+		}
+		x = 9
+		y = 2
+	}
+	focus = {
+		id = law_school_extension
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = research_team_augmentation
+		}
+		x = 11
+		y = 2
+	}
+	focus = {
+		id = surrender_korea
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = law_school_extension
+			focus = military_academy_construction
+		}
+		mutually_exclusive = {
+			focus = conteact_with_japan
+		}
+		x = 8
+		y = 3
+	}
+	focus = {
+		id = conteact_with_japan
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = law_school_extension
+			focus = military_academy_construction
+		}
+		mutually_exclusive = {
+			focus = surrender_korea
+		}
+		x = 12
+		y = 3
+	}
+	focus = {
+		id = invite_korean_immigrants
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = surrender_korea
+			focus = 
+		}
+		mutually_exclusive = {
+			focus = 
+		}
+		x = 7
+		y = 4
+	}
+	focus = {
+		id = korea-man_treaty
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = surrender_korea
+			focus = 
+		}
+		mutually_exclusive = {
+			focus = 
+		}
+		x = 9
+		y = 4
+	}
+	focus = {
+		id = grant_citizenship_to_koreans
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = korea-man_treaty
+			focus = invite_korean_immigrants
+		}
+		mutually_exclusive = {
+			focus = 
+		}
+		x = 7
+		y = 5
+	}
+		focus = {
+		id = southern_manchuria_gift
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = korea-man_treaty
+			focus = invite_korean_immigrants
+		}
+		mutually_exclusive = {
+			focus = 
+		}
+		x = 9
+		y = 5
+	}
+	focus = {
+		id = japan_man_treaty
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = conteact_with_japan
+			focus = 
+		}
+		mutually_exclusive = {
+			focus = 
+		}
+		x = 11
+		y = 4
+	}
+	focus = {
+		id = invite_japan_officer
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = conteact_with_japan
+			focus = 
+		}
+		mutually_exclusive = {
+			focus = 
+		}
+		x = 13
+		y = 4
+	}
+	focus = {
+		id = strengthening_alliance_with_japan
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = japan_man_treaty
+			focus = invite_japan_officer
+		}
+		mutually_exclusive = {
+			focus = 
+		}
+		x = 11
+		y = 5
+	}
+	focus = {
+		id = dalian_gift
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = japan_man_treaty
+			focus = invite_japan_officer
+		}
+		mutually_exclusive = {
+			focus = 
+		}
+		x = 13
+		y = 5
+	}
+	focus = {
+		id = start_first_five_year_plan
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = dalian_gift
+			focus = strengthening_alliance_with_japan
+			focus = southern_manchuria_gift
+			focus = grant_citizenship_to_koreans
+		}
+		mutually_exclusive = {
+			focus = 
+		}
+		x = 10
+		y = 6
+	}
+	focus = {
+		id = develop_aluminum_output_site
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = start_first_five_year_plan
+		}
+		x = 10
+		y = 7
+	}
+	focus = {
+		id = manchurian_railway_construction
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = start_first_five_year_plan 
+		}
+		x = 8
+		y = 7
+	}
+	focus = {
+		id = mucdun_armory_construction
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = start_first_five_year_plan 
+		}
+		x = 12
+		y = 7
+	}
+	focus = {
+		id = intervention_or_neutrality
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = mucdun_armory_construction
+			focus = manchurian_railway_construction
+			focus = develop_aluminum_output_site
+		}
+		x = 10
+		y = 8
+	}
+	focus = {
+		id = intervention_of_korea-japan_war
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = intervention_or_neutrality
+		}
+		mutually_exclusive = {
+			focus = staying_neutrality
+        }	
+		x = 7
+		y = 9
+	}
+	focus = {
+		id = staying_neutrality
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = intervention_or_neutrality 
+		}
+		mutually_exclusive = {
+			focus = intervention_of_korea-japan_war
+        }			
+		x = 13
+		y = 9
+	}
+	focus = {
+		id = korean_side
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = intervention_of_korea-japan_war
+		}
+		mutually_exclusive = {
+			focus = japanese_side
+        }	
+		x = 5
+		y = 10
+	}
+	focus = {
+		id = japanese_side
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = intervention_of_korea-japan_war
+		}
+		mutually_exclusive = {
+			focus = korean_side
+        }	
+		x = 9
+		y = 10
+	}
+	focus = {
+		id = give_ship
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = korean_side
+        }	
+		x = 4
+		y = 11
+	}
+	focus = {
+		id = give_shipyard
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = korean_side
+        }	
+		x = 6
+		y = 11
+	}
+	focus = {
+		id = expansion_of_northern_front
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = japanese_side
+		}	
+		x = 8
+		y = 11
+	}
+	focus = {
+		id = give_military_factory
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = japanese_side
+		}	
+		x = 10
+		y = 11
+	}
+	focus = {
+		id = end_this_war
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = give_military_factory
+			focus = expansion_of_northern_front
+			focus = give_shipyard
+			focus = give_ship
+		}
+		x = 7
+		y = 12
+	}
+	focus = {
+		id = korean_puppet
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = end_this_war 
+		}
+		mutually_exclusive = {
+			focus = japanese_puppet
+        }	
+		x = 5
+		y = 13
+	}
+	focus = {
+		id = japanese_puppet
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = end_this_war 
+		}
+		mutually_exclusive = {
+			focus = korean_puppet
+        }	
+		x = 9
+		y = 13
+	}
+	focus = {
+		id = second_five_year_plan
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = staying_neutrality
+        }			
+		x = 13
+		y = 10
+	}
+	focus = {
+		id = start_industrial_revolution
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = second_five_year_plan
+        }			
+		x = 12
+		y = 11
+	}
+	focus = {
+		id = manchurian_highway_construction
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = second_five_year_plan
+        }			
+		x = 14
+		y = 11
+	}
+	focus = {
+		id = coal_liquefaction
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = start_industrial_revolution
+        }			
+		x = 12
+		y = 12
+	}
+	focus = {
+		id = focus_import
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = manchurian_highway_construction
+        }			
+		x = 14
+		y = 12
+	}
+	focus = {
+		id = development_of_an_industrial_nation
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = focus_import
+			focus = coal_liquefaction
+        }			
+		x = 13
+		y = 13
+	}
