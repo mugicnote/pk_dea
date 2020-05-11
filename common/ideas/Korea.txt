@@ -141,6 +141,25 @@ ideas = {
                 join_faction_tension = 0.20
             }
         }
+        KOR_police_corruption = {
+            picture = generic_secret_police
+            
+            allowed = {
+                always = no
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+            
+            modifier = {
+                army_attack_factor = -0.2
+                army_defence_factor = -0.2
+                mobilization_speed = -0.2
+            }
+        }
     }
         political_advisor = {
 
@@ -149,7 +168,7 @@ ideas = {
                 picture = kim_koo
 
                 allowed = {
-                    original_tag = "KOR"
+                    original_tag = KOR
                 }
 
                 traits = { popular_figurehead }
@@ -161,7 +180,7 @@ ideas = {
                 picture = ryuh_woonhyung
 
                 allowed = {
-                    original_tag = "KOR"
+                    original_tag = KOR
                 }
             
                 traits = { propaganda_expert }
@@ -172,7 +191,7 @@ ideas = {
                 picture = syngman_rhee
 
                 allowed = {
-                    original_tag = "KOR"
+                    original_tag = KOR
                 }
             
                 traits = { democratic_reformer }
@@ -183,7 +202,7 @@ ideas = {
                 picture = pak_honyong
 
                 allowed = {
-                    original_tag = "KOR"
+                    original_tag = KOR
                 }
             
                 traits = { communist_revolutionary }
@@ -194,7 +213,7 @@ ideas = {
                 picture = kim_ilsung
 
                 allowed = {
-                    original_tag = "KOR"
+                    original_tag = KOR
                 }
             
                 traits = { prince_of_terror }
@@ -205,7 +224,7 @@ ideas = {
                 picture = 
 
                 allowed = {
-                    original_tag = "KOR"
+                    original_tag = KOR
                 }
             
                 traits = { silent_workhorse }
@@ -216,7 +235,7 @@ ideas = {
                 picture = 
 
                 allowed = {
-                    original_tag = "KOR"
+                    original_tag = KOR
                 }
             
                 traits = { fascist_demagogue }
@@ -227,7 +246,7 @@ ideas = {
                 picture = 
 
                 allowed = {
-                    original_tag = "KOR"
+                    original_tag = KOR
                 }
             
                 traits = { captain_of_industry }
@@ -238,7 +257,7 @@ ideas = {
                 picture = 
 
                 allowed = {
-                    original_tag = "KOR"
+                    original_tag = KOR
                 }
             
                 traits = { compassionate_gentleman }
@@ -249,7 +268,7 @@ ideas = {
                 picture = 
 
                 allowed = {
-                    original_tag = "KOR"
+                    original_tag = KOR
                 }
             
                 traits = { backroom_backstabber }
@@ -260,7 +279,7 @@ ideas = {
                 picture = 
 
                 allowed = {
-                    original_tag = "KOR"
+                    original_tag = KOR
                 }
             
                 traits = { traditionalist_theorist }
@@ -271,7 +290,7 @@ ideas = {
                 picture = 
 
                 allowed = {
-                    original_tag = "KOR"
+                    original_tag = KOR
                 }
             
                 traits = { editor }

@@ -4,6 +4,10 @@ spriteTypes = {
 		name = "GFX_two_peo_pic"
 		texturefile = "gfx/event_pictures/two_peo_pic2.dds"
 	}
+	spriteType = {
+		name = "GFX_KOR_ku_dae2"
+		texturefile = "gfx/event_pictures/KOR_ku_dae2.dds"
+	}
 	
 }
 	

@@ -600,7 +600,7 @@
 	}
 	focus = {
 		id = Return_President
-		icon = GFX_goal_unknown
+		icon = GFX_focus_assembly_election
 		cost = 10.00
 		prerequisite = {
 			focus = Provoking_the_Issue_of_President's_Second_Term
@@ -808,6 +808,9 @@
 		x = 23
 		y = 0
 
+		completion_reward = {
+			country_event = { id = KOR.10 }
+		}
 	}
 	focus = {
 		id = Accepting_Bongcheon_Government's_Theory_of_Governance_in_Korea
@@ -2058,7 +2061,7 @@
 	}
 	focus = {
 		id = Korean_Empire_controversy
-		icon = 
+		icon = GFX_
 		cost = 10.00
 		prerequisite = {
 			focus = general_center
@@ -2066,6 +2069,144 @@
 		}
 		x = 41
 		y = 8
+
+     }
+     focus = {
+		id = economic_development
+		icon = GFX_goal_generic_production
+		cost = 10.00
+		prerequisite = {
+
+		}
+		x = 65
+		y = 0
+
+     }
+     focus = {
+		id = upgrade_road_line
+		icon = GFX_
+		cost = 10.00
+		prerequisite = {
+			focus = economic_development
+		}
+		x = 69
+		y = 1
+
+     }
+     focus = {
+		id = Gyeongbu_Expressway_1
+		icon = GFX_
+		cost = 10.00
+		prerequisite = {
+			focus = upgrade_road_line
+		}
+		x = 69
+		y = 2
+
+     }
+     focus = {
+		id = Gyeongbu_Expressway_2
+		icon = GFX_
+		cost = 10.00
+		prerequisite = {
+			focus = upgrade_road_line
+		}
+		x = 71
+		y = 2
+
+     }
+     focus = {
+		id = police_reshuffle
+		icon = GFX_
+		cost = 10.00
+		prerequisite = {
+			focus = economic_development
+		}
+		x = 66
+		y = 1
+
+     }
+     focus = {
+		id = defensive_police
+		icon = GFX_
+		cost = 10.00
+		prerequisite = {
+			focus = police_reshuffle
+		}
+		mutually_exclusive = {
+			focus = offensive_police
+		}
+		x = 67
+		y = 2
+
+     }
+     focus = {
+		id = offensive_police
+		icon = GFX_
+		cost = 10.00
+		prerequisite = {
+			focus = police_reshuffle
+		}
+		mutually_exclusive = {
+			focus = defensive_police
+		}
+		x = 65
+		y = 2
+
+     }
+     focus = {
+		id = Information_Reorganization
+		icon = GFX_
+		cost = 10.00
+		prerequisite = {
+			focus = economic_development
+		}
+		x = 64
+		y = 1
+
+     }
+     focus = {
+		id = facility_development
+		icon = GFX_goal_generic_construct_civilian
+		cost = 10.00
+		prerequisite = {
+			focus = economic_development
+		}
+		x = 62
+		y = 1
+
+     }
+     focus = {
+		id = Incheon_Shipyard_Restart
+		icon = GFX_
+		cost = 10.00
+		prerequisite = {
+			focus = facility_development
+		}
+		x = 59
+		y = 2
+
+     }
+     focus = {
+		id = Seoul_cotton_mill
+		icon = GFX_
+		cost = 10.00
+		prerequisite = {
+			focus = facility_development
+		}
+		x = 61
+		y = 2
+
+     }
+     focus = {
+		id = north_munitions_factory
+		icon = GFX_
+		cost = 10.00
+		prerequisite = {
+			focus = facility_development
+		}
+		x = 63
+		y = 2
 
      }
 }

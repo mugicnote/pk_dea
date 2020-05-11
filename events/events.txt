@@ -438,7 +438,7 @@ country_event = { #시작 선택(만들어야됨)
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.10"}
 	title = KOR.10.t
 	desc = KOR.10.desc
-	picture = GFX_report_event_spr_civil_war_faction_defeated
+	picture = GFX_report_event_spr_civil_war_faction_defeated  GFX_KOR_ku_dae
 	
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -446,11 +446,29 @@ country_event = { #시작 선택(만들어야됨)
 	option = { #
 		name = KOR.10.a
 		ai_chance = { factor = 1 }
-		complete_national_focus = threats_from_opposition_parties
+		complete_national_focus = military_arrest
 	}
 	option = { #
 		name = KOR.10.b
 		ai_chance = { factor = 1 }
-		complete_national_focus = threats_from_opposition_parties
+		complete_national_focus = military_success
+		country_event = { id = KOR.11 }
+	}
+}
+add_namespace = KOR
+
+country_event = { #쿠데타 성공
+	id = KOR.11
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.11"}
+	title = KOR.11.t
+	desc = KOR.11.desc
+	picture = GFX_report_event_generic_military_parade
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = KOR.11.a
+		ai_chance = { factor = 1 }
 	}
 }

@@ -179,3 +179,16 @@
   we_wont_lose:0 "다시는 패배하지 않으리!"
   
   Korean_Empire_controversy:0 "대한제국 법통 논란"
+  ###경제 및 산업###
+  economic_development:0 "경제 계발 계획"
+  upgrade_road_line:0 "도로 계선 추진"
+  Gyeongbu_Expressway_1:0 "반포-대전 경부선 개통"
+  Gyeongbu_Expressway_2:0 "전라도-강원도 노선 계통"
+  police_reshuffle:0 "경찰 개편"
+  defensive_police:0 "방어형 경찰"
+  offensive_police:0 "전시 공격형 경찰"
+  Information_Reorganization:0 "정보부 개편"
+  facility_development:0 "시설 개편"
+  Incheon_Shipyard_Restart:0 "인천 조선소 재가동"
+  Seoul_cotton_mill:0 "경성 방직 공장"
+  north_munitions_factory:0 "이북 군수공장 설립"

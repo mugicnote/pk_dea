@@ -1,0 +1,31 @@
+focus_tree = {
+	id = Man
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = MAN
+		}
+	}
+	default = no
+	focus = {
+		id = test
+		icon = GFX_goal_support_democracy
+		cost = 10.00
+		prerequisite = {
+			
+		}
+		x = 8
+		y = 2
+	}
+	focus = {
+		id = test2
+		icon = GFX_goal_support_democracy
+		cost = 10.00
+		prerequisite = {
+			focus = test
+		}
+		x = 8
+		y = 3
+	}
+}

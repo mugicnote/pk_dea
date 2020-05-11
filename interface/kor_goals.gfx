@@ -1,4 +1,4 @@
-spriteTypes = {	
+spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_two_peo"
@@ -52,4 +52,9 @@ spriteTypes = {
 		name = "GFX_focus_red_revolution"
 		texturefile = "gfx/interface/goals/focus_red_revolution.dds"
 	}
+	SpriteType = {
+		name = "GFX_focus_assembly_election"
+		texturefile = "gfx/interface/goals/focus_assembly_election.dds"
+	}
+
 }

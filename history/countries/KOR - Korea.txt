@@ -55,6 +55,7 @@ Where_are_they
 KOR_disjointed_government
 bitterness_of_treaty
 KOR_great_depression
+KOR_police_corruption
 }
 
 #시작_정당
