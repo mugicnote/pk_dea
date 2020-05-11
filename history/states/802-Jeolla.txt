@@ -1,0 +1,32 @@
+﻿state = {
+	id = 802
+	name = "STATE_802" #전라도
+	manpower = 4000000
+
+	state_category = large_town	
+	
+	history = {
+		owner = KOR
+		add_core_of = KOR
+		
+		buildings = {
+			industrial_complex = 2
+			arms_factory = 1
+			infrastructure = 4
+		}
+		victory_points = {
+			4126 10 #전주
+		}
+		victory_points = {
+			10110 20 #광주
+		}
+	}
+
+	resources = {
+		
+	}
+
+	provinces = {
+		4126 10110 11948 12085 13238 13239
+	}
+}

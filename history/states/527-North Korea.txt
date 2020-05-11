@@ -1,0 +1,35 @@
+﻿state = {
+	id = 527
+	name = "STATE_527" #강원도
+	manpower = 1600000
+
+	state_category = town
+	
+	history = {
+		owner = KOR
+		add_core_of = KOR
+		
+		buildings = {
+			industrial_complex = 1
+			arms_factory = 1
+			infrastructure = 3
+		}
+		
+		victory_points = {
+			13238 10 #춘천
+		}
+
+		victory_points = {
+			9936 10 #원주
+		}
+	}
+
+	resources = {
+		tungsten = 180
+		steel = 10
+	}
+
+	provinces = {
+		1148 4004 7021 9936 9981 11912 11958 12011 13237
+	}
+}

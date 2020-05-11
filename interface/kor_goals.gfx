@@ -56,5 +56,9 @@ spriteTypes = {
 		name = "GFX_focus_assembly_election"
 		texturefile = "gfx/interface/goals/focus_assembly_election.dds"
 	}
+	SpriteType = {
+		name = "GFX_focus_kcia"
+		texturefile = "gfx/interface/goals/focus_kcia.dds"
+	}
 
 }

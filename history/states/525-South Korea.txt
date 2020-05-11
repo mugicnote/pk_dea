@@ -1,0 +1,34 @@
+﻿state = {
+	id = 525
+	name = "STATE_525" #경기도
+	manpower = 2400000
+
+	state_category = large_city
+
+	history = {
+		owner = KOR
+		add_core_of = KOR
+
+		buildings = {
+			industrial_complex = 2
+			arms_factory = 1
+			dockyard = 1
+			infrastructure = 7
+			7221 = {
+				naval_base = 3
+			}
+		}
+
+		victory_points = {
+			7125 50 #서울
+		}
+
+		victory_points = {
+			7221 15 #인천
+		}
+	}
+
+	provinces = {
+		7125 7221 10036 12040 13236
+	}
+}

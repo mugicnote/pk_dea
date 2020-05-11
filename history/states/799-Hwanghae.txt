@@ -1,0 +1,30 @@
+﻿state = {
+	id = 799
+	name = "STATE_799" #황해도
+	manpower = 1700000
+
+	state_category = town
+	
+	history = {
+		owner = KOR
+		add_core_of = KOR
+		
+		buildings = {
+			industrial_complex = 2
+			arms_factory = 1
+			infrastructure = 3
+		}
+		victory_points = {
+			1003 10 #해주
+		}
+	}
+
+	resources = {
+		tungsten = 10
+		steel = 10
+	}
+
+	provinces = {
+		1003 4107 7070 7155 10065 11915 13235
+	}
+}
