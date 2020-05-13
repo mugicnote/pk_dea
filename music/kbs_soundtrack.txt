@@ -1,0 +1,50 @@
+music_station = "kbs"
+
+# Anthem
+
+music = {
+	song = "National_Anthem_of_the_Korean_Empire"
+}
+
+music = {
+	song = "National_Anthem_of_the_Korean_Empire"
+	chance = {
+		modifier = {
+			factor = 0.1
+		}
+	}
+}
+
+# War Song
+
+music = {
+	song = "The_Torch_of_Eradicating_Communism"
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = yes
+		}
+	}
+}
+
+# Peace Song
+
+music = {
+	song = "national_anthem"
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+
+music = {
+	song = "beautiful_country"
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}

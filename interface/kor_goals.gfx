@@ -60,5 +60,9 @@ spriteTypes = {
 		name = "GFX_focus_kcia"
 		texturefile = "gfx/interface/goals/focus_kcia.dds"
 	}
+	SpriteType = {
+		name = "GFX_focus_guardian_of_asia"
+		texturefile = "gfx/interface/goals/focus_guardian_of_asia.dds"
+	}
 
 }
