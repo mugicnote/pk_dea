@@ -1,0 +1,289 @@
+focus_tree = {
+	id = Japan
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = JAP
+		}
+	}
+	default = no
+	focus = {
+		id = fate_of_japan
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			
+		}
+		x = 20
+		y = 0
+	}
+	focus = {
+		id = stop_second_civil_war
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = fate_of_japan
+		}
+		x = 20
+		y = 1
+	}
+	focus = {
+		id = democratic_win
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = stop_second_civil_war
+		}
+		mutually_exclusive = {
+			focus = fascism_win
+		}
+		x = 19
+		y = 2
+	}
+    focus = {
+		id = fascism_win
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = stop_second_civil_war
+		}
+		mutually_exclusive = {
+			focus = democratic_win
+		}
+		x = 21
+		y = 2
+	}
+	focus = {
+		id = yes_korea
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = democratic_win
+			focus = fascism_win
+		}
+		mutually_exclusive = {
+			focus = no_korea
+		}
+		x = 17
+		y = 3
+	}
+	focus = {
+	    id = no_korea
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = democratic_win
+			focus = fascism_win
+		}
+		mutually_exclusive = {
+			focus = yes_korea
+		}
+		x = 23
+		y = 3
+	}
+	focus = {
+		id = envoys_to_korea
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = yes_korea
+		}
+		x = 13
+		y = 4
+	}
+	focus = {
+		id = request_aid_to_korea
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = yes_korea
+		}
+		x = 15
+		y = 4
+	}
+	focus = {
+		id = joint_training_with_the_korean_army
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = yes_korea
+		}
+		x = 17
+		y = 4
+	}
+	focus = {
+		id = give_daemado
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = envoys_to_korea
+		}
+		x = 13
+		y = 5
+	}
+	focus = {
+		id = start_iron_factory
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = request_aid_to_korea
+		}
+		x = 15
+		y = 5
+	}
+	focus = {
+		id = support_korean_civil_war
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = joint_training_with_the_korean_army
+		}
+		x = 17
+		y = 5
+	}
+	focus = {
+		id = alliance_with_korea
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = start_iron_factory
+			focus = give_daemado
+		}
+		x = 17
+		y = 6
+	}
+	focus = {
+		id = korean_puppet
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = alliance_with_korea
+		}
+		x = 17
+		y = 7
+	}
+	focus = {
+		id = start_rearm
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = democratic_win
+			focus = fascism_win
+		}
+		x = 20
+		y = 4
+	}
+	focus = {
+		id = modernization_of_old_doctrines
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = start_rearm
+		}
+		x = 20
+		y = 5
+	}
+	focus = {
+		id = experimental_tank
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = modernization_of_old_doctrines
+		}
+		x = 20
+		y = 6
+	}
+	focus = {
+		id = focus_navy
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = experimental_tank
+		}
+		x = 20
+		y = 7
+	}
+	focus = {
+	    id = military_advisors_to_china
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = no_korea
+		}
+		x = 23
+		y = 4
+	}
+	focus = {
+		id = request_aid_to_us
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = no_korea
+		}
+		x = 25
+		y = 4
+	}
+	focus = {
+		id = envoys_to_soviet
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = no_korea
+		}
+		x = 27
+		y = 4
+	}
+	focus = {
+	    id = alliance_with_china
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = military_advisors_to_china
+		}
+		x = 23
+		y = 5
+	}
+	focus = {
+		id = east_asian_alliance
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = envoys_to_soviet
+		}
+		x = 27
+		y = 5
+	}
+	focus = {
+		id = start_industrial_revolution
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = request_aid_to_us
+		}
+		x = 25
+		y = 5
+	}
+	focus = {
+	    id = op_korean_isolation
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = east_asian_alliance
+			focus = alliance_with_china
+			focus = start_industrial_revolution
+		}
+		x = 23
+		y = 6
+	}
+	focus = {
+	    id = rising_sun
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = op_korean_isolation
+		}
+		x = 23
+		y = 7
+	}
+}
