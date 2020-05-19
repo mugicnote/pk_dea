@@ -115,7 +115,7 @@ focus_tree = {
 		y = 4
 	}
 	focus = {
-		id = grant_citizenship_to_koreans
+		id = kor-man_history
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
@@ -129,7 +129,7 @@ focus_tree = {
 		y = 5
 	}
 		focus = {
-		id = southern_manchuria_gift
+		id = southern_manchuria_open
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
@@ -171,7 +171,7 @@ focus_tree = {
 		y = 4
 	}
 	focus = {
-		id = strengthening_alliance_with_japan
+		id = manchurian_history
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
@@ -185,7 +185,7 @@ focus_tree = {
 		y = 5
 	}
 	focus = {
-		id = dalian_gift
+		id = dalian_open_port
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
@@ -203,10 +203,10 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = dalian_gift
-			focus = strengthening_alliance_with_japan
-			focus = southern_manchuria_gift
-			focus = grant_citizenship_to_koreans
+			focus = dalian_open_port
+			focus = manchurian_history
+			focus = southern_manchuria_open
+			focus = kor-man_history
 		}
 		mutually_exclusive = {
 			focus = 
