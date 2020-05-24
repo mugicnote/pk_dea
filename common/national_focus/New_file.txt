@@ -18,6 +18,9 @@
 		mutually_exclusive = {
 			focus = election_denial
 		}
+		available = {
+            has_global_flag = surviving_prime
+        }
 		x = 8
 		y = 2
 		completion_reward = {
@@ -394,7 +397,6 @@
 		}
 		x = 14
 		y = 5
-
 	}
 	focus = {
 		id = Lee_Seung-man_Elected
@@ -773,20 +775,6 @@
 
 	}
 	focus = {
-		id = Bongcheon_government's_rejection_of_Manchurian_rule_of_Korea
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = Manju_Korean_Governance_Theory
-		}
-		mutually_exclusive = {
-			focus = Accepting_Bongcheon_Government's_Theory_of_Governance_in_Korea
-		}
-		x = 6
-		y = 12
-
-	}
-	focus = {
 		id = military_arrest
 		icon = GFX_focus_mex_arrest_general_cedillo
 		cost = 10.00
@@ -819,10 +807,8 @@
 		prerequisite = {
 			focus = Manju_Korean_Governance_Theory
 		}
-		mutually_exclusive = {
-			focus = Bongcheon_government's_rejection_of_Manchurian_rule_of_Korea
-		}
-		x = 4
+
+		x = 6
 		y = 12
 
 	}
@@ -832,7 +818,9 @@
 		cost = 10.00
 		prerequisite = {
 			focus = Accepting_Bongcheon_Government's_Theory_of_Governance_in_Korea
-			focus = Bongcheon_government's_rejection_of_Manchurian_rule_of_Korea
+		}
+		prerequisite = {
+			focus = Mongol_Chahar_Convention
 		}
 		x = 5
 		y = 13
@@ -2078,10 +2066,17 @@
 		prerequisite = {
 
 		}
-		x = 65
+		x = 74
 		y = 0
-
-     }
+		completion_reward = {
+		add_tech_bonus = {
+				name = GER_four_year_plan
+				bonus = 1.0
+				uses = 2
+				category = industry
+			}
+     	}
+	 }
      focus = {
 		id = upgrade_road_line
 		icon = GFX_goal_generic_construction2
@@ -2089,9 +2084,16 @@
 		prerequisite = {
 			focus = economic_development
 		}
-		x = 69
+		x = 78
 		y = 1
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = GER_coal_liquidization
+				bonus = 1.0
+				uses = 3
+				category = synth_resources
+			}
+		}
      }
      focus = {
 		id = Gyeongbu_Expressway_1
@@ -2100,9 +2102,40 @@
 		prerequisite = {
 			focus = upgrade_road_line
 		}
-		x = 69
+		x = 77
 		y = 2
-
+		completion_reward = {
+		801 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 5
+						instant_build = yes
+					}
+				}
+			}
+		800 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 5
+						instant_build = yes
+					}
+				}
+			}
+		525 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 5
+						instant_build = yes
+					}
+				}
+			}
+		}
      }
      focus = {
 		id = Gyeongbu_Expressway_2
@@ -2111,9 +2144,30 @@
 		prerequisite = {
 			focus = upgrade_road_line
 		}
-		x = 71
+		x = 79
 		y = 2
-
+		completion_reward = {
+		802 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 5
+						instant_build = yes
+					}
+				}
+			}
+		527 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 5
+						instant_build = yes
+					}
+				}
+			}
+		}
      }
      focus = {
 		id = police_reshuffle
@@ -2122,9 +2176,14 @@
 		prerequisite = {
 			focus = economic_development
 		}
-		x = 66
+		x = 74
 		y = 1
-
+		completion_reward = {
+		swap_ideas = {
+				remove_idea = KOR_police_corruption
+				add_idea = KOR_police_corruption_2
+			}
+		}
      }
      focus = {
 		id = defensive_police
@@ -2136,9 +2195,14 @@
 		mutually_exclusive = {
 			focus = offensive_police
 		}
-		x = 67
+		x = 75
 		y = 2
-
+		completion_reward = {
+		swap_ideas = {
+				remove_idea = KOR_police_corruption_2
+				add_idea = KOR_police_corruption_4
+			}
+		}
      }
      focus = {
 		id = offensive_police
@@ -2150,9 +2214,14 @@
 		mutually_exclusive = {
 			focus = defensive_police
 		}
-		x = 65
+		x = 73
 		y = 2
-
+		completion_reward = {
+		swap_ideas = {
+				remove_idea = KOR_police_corruption_2
+				add_idea = KOR_police_corruption_3
+			}
+		}
      }
      focus = {
 		id = Information_Reorganization
@@ -2161,7 +2230,7 @@
 		prerequisite = {
 			focus = economic_development
 		}
-		x = 64
+		x = 72
 		y = 1
 
      }
@@ -2172,9 +2241,17 @@
 		prerequisite = {
 			focus = economic_development
 		}
-		x = 62
+		x = 70
 		y = 1
-
+		completion_reward = {
+			add_tech_bonus = {
+				name = radar_focus
+				bonus = 1.0
+				uses = 3
+				category = radar_tech
+				category = electronics
+			}
+		}
      }
      focus = {
 		id = Incheon_Shipyard_Restart
@@ -2183,9 +2260,20 @@
 		prerequisite = {
 			focus = facility_development
 		}
-		x = 59
+		x = 67
 		y = 2
-
+		completion_reward = {
+			525 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
      }
      focus = {
 		id = Seoul_cotton_mill
@@ -2194,9 +2282,20 @@
 		prerequisite = {
 			focus = facility_development
 		}
-		x = 61
+		x = 69
 		y = 2
-
+		completion_reward = {
+			525 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
      }
      focus = {
 		id = north_munitions_factory
@@ -2205,34 +2304,30 @@
 		prerequisite = {
 			focus = facility_development
 		}
-		x = 63
+		x = 71
 		y = 2
-
-     }
-	 focus = {
-		id = people_in_south
-		icon = GFX_focus_generic_industry_2
-		cost = 10.00
-		prerequisite = {
-			focus = Seoul_cotton_mill
+		completion_reward = {
+			797 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			798 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
 		}
-		prerequisite = {
-			focus = Incheon_Shipyard_Restart
-		}
-		x = 61
-		y = 3
-
-     }
-	 focus = {
-		id = factory_in_north
-		icon = GFX_goal_generic_construct_mil_factory
-		cost = 10.00
-		prerequisite = {
-			focus = north_munitions_factory
-		}
-		x = 63
-		y = 3
-
      }
 	 focus = {
 		id = KOR_technical_research_1
@@ -2242,20 +2337,115 @@
 			focus = offensive_police
 			focus = defensive_police
 		}
-		x = 66
+		x = 74
 		y = 3
-
+		completion_reward = {
+			add_research_slot = 1
+		}
      }
 	 focus = {
 		id = land_filled_beauty
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10.00
+		prerequisite = {
+			focus = Seoul_cotton_mill
+		}
+		prerequisite = {
+			focus = north_munitions_factory
+		}
+		x = 70
+		y = 3
+		completion_reward = {
+			add_timed_idea = { idea = KOR_matignon_agreements days = 365 }
+     	}
+	}
+	focus = {
+		id = Gyeongbu_Expressway_1_man
+		icon = GFX_focus_generic_industry_3
+		cost = 10.00
+		prerequisite = {
+			focus = Gyeongbu_Expressway_1
+		}
+		prerequisite = {
+			focus = Gyeongbu_Expressway_2
+		}
+		x = 78
+		y = 3
+		completion_reward = {
+		716 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 5
+						instant_build = yes
+					}
+				}
+			}
+		715 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 5
+						instant_build = yes
+					}
+				}
+			}
+		328 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 5
+						instant_build = yes
+					}
+				}
+			}
+		}
+     }
+	focus = {
+		id = land_filled_beauty_2
 		icon = GFX_focus_guardian_of_asia
 		cost = 10.00
 		prerequisite = {
-			focus = factory_in_north
-			focus = people_in_south
+			focus = Gyeongbu_Expressway_1_man
+			focus = land_filled_beauty
 		}
-		x = 62
+		x = 74
 		y = 4
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KOR_matignon_agreements
+				add_idea = KOR_matignon_agreements_2
+     		}
+		}
+	}
+	focus = {
+		id = Mongol_Chahar_Convention
+		icon = GFX_
+		cost = 10.00
+		prerequisite = {
+			focus = Manju_Korean_Governance_Theory
+		}
+		x = 4
+		y = 12
 
      }
+	 
+	 focus = {
+		id = emperor_returns
+		icon = GFX_
+		cost = 10.00
+		prerequisite = {
+			focus = military_success
+		}
+		mutually_exclusive = {
+			focus = division_of_party
+		}
+		x = 63
+		y = 2
+
+     }
+
 }

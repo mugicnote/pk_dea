@@ -8,14 +8,9 @@ set_war_support = 0.8
 set_research_slots = 4
 set_fuel_ratio = 1.0
 add_ideas = {
-	state_shintoism
-	limited_exports
-	limited_conscription
-	partial_economic_mobilisation
-
-	JAP_zaibatsus
-	JAP_duplicate_research_efforts
-	JAP_militarism
+	JAP_danger_civil_war
+	JAP_great_war_loser
+	JAP_royal_formalization
 }
 
 609 = {
@@ -59,19 +54,6 @@ add_ideas = {
 	set_compliance = 20
 	set_resistance = 0
 	set_garrison_strength = 1.0
-}
-
-if = {
-	limit = { has_dlc = "Waking the Tiger" }
-	add_ideas = {
-		JAP_interservice_rivalry_balanced		
-	}
-}
-if = {
-	limit = {
-		has_dlc = "Man the Guns"
-	}
-	add_ideas = MTG_naval_treaty_adherent
 }
 
 set_technology = {

@@ -433,28 +433,29 @@ country_event = {
 
 add_namespace = KOR
 
-country_event = { #시작 선택(만들어야됨)
+country_event = { #시작 선택
 	id = KOR.10
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.10"}
 	title = KOR.10.t
 	desc = KOR.10.desc
-	picture = GFX_report_event_spr_civil_war_faction_defeated  GFX_KOR_ku_dae
+	picture = GFX_military_coup
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
-	option = { #
+	option = { #도주
 		name = KOR.10.a
 		ai_chance = { factor = 1 }
 		complete_national_focus = military_arrest
+		country_event = { id = KOR.12 }
 	}
-	option = { #
+	option = { #채포
 		name = KOR.10.b
 		ai_chance = { factor = 1 }
-		complete_national_focus = military_success
 		country_event = { id = KOR.11 }
 	}
 }
+
 add_namespace = KOR
 
 country_event = { #쿠데타 성공
@@ -467,8 +468,52 @@ country_event = { #쿠데타 성공
 	is_triggered_only = yes
 	fire_only_once = yes
 	
-	option = { #
+	option = { #이범석 만세
 		name = KOR.11.a
+		complete_national_focus = military_success
+		ai_chance = { factor = 1 }
+	}
+}
+
+add_namespace = KOR
+
+country_event = { #공산당 패거리
+	id = KOR.12
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.12"}
+	title = KOR.12.t
+	desc = KOR.12.desc
+	picture = GFX_assassination_prime_minister
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #도망
+		name = KOR.12.a
+		ai_chance = { factor = 1 }
+		country_event = { id = KOR.13 }
+	}
+	option = { #잡힘
+		name = KOR.12.b
+		ai_chance = { factor = 1 }
+		complete_national_focus = election_denial
+	}
+}
+
+add_namespace = KOR
+
+country_event = { #
+	id = KOR.13
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.13"}
+	title = KOR.13.t
+	desc = KOR.11.desc
+	picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #살아남은 총리
+		name = KOR.13.a
+		set_global_flag = surviving_prime
 		ai_chance = { factor = 1 }
 	}
 }

@@ -115,7 +115,7 @@ focus_tree = {
 		y = 4
 	}
 	focus = {
-		id = grant_citizenship_to_koreans
+		id = kor-man_history
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
@@ -129,7 +129,7 @@ focus_tree = {
 		y = 5
 	}
 		focus = {
-		id = southern_manchuria_gift
+		id = southern_manchuria_open
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
@@ -171,7 +171,7 @@ focus_tree = {
 		y = 4
 	}
 	focus = {
-		id = strengthening_alliance_with_japan
+		id = manchurian_history
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
@@ -185,7 +185,7 @@ focus_tree = {
 		y = 5
 	}
 	focus = {
-		id = dalian_gift
+		id = dalian_open_port
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
@@ -199,14 +199,14 @@ focus_tree = {
 		y = 5
 	}
 	focus = {
-		id = start_first_five_year_plan
+		id = first_five_year_plan
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = dalian_gift
-			focus = strengthening_alliance_with_japan
-			focus = southern_manchuria_gift
-			focus = grant_citizenship_to_koreans
+			focus = dalian_open_port
+			focus = manchurian_history
+			focus = southern_manchuria_open
+			focus = kor-man_history
 		}
 		mutually_exclusive = {
 			focus = 
@@ -219,7 +219,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = start_first_five_year_plan
+			focus = first_five_year_plan
 		}
 		x = 10
 		y = 7
@@ -229,7 +229,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = start_first_five_year_plan 
+			focus = first_five_year_plan 
 		}
 		x = 8
 		y = 7
@@ -239,7 +239,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = start_first_five_year_plan 
+			focus = first_five_year_plan 
 		}
 		x = 12
 		y = 7
@@ -398,23 +398,13 @@ focus_tree = {
 		y = 10
 	}
 	focus = {
-		id = start_industrial_revolution
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = second_five_year_plan
-        }			
-		x = 12
-		y = 11
-	}
-	focus = {
 		id = manchurian_highway_construction
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
 			focus = second_five_year_plan
         }			
-		x = 14
+		x = 13
 		y = 11
 	}
 	focus = {
@@ -422,7 +412,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = start_industrial_revolution
+			focus = manchurian_highway_construction
         }			
 		x = 12
 		y = 12

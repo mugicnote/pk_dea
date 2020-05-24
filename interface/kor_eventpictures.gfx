@@ -8,7 +8,15 @@ spriteTypes = {
 		name = "GFX_KOR_ku_dae2"
 		texturefile = "gfx/event_pictures/KOR_ku_dae2.dds"
 	}
-	
+	spriteType = {
+		name = "GFX_assassination_prime_minister"
+		texturefile = "gfx/event_pictures/assassination_prime_minister.dds"
+	}
+	spriteType = {
+		name = "GFX_military_coup"
+		texturefile = "gfx/event_pictures/military_coup.dds"
+	}
+
 }
 	
 	

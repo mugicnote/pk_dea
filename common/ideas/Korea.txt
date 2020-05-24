@@ -160,6 +160,103 @@ ideas = {
                 mobilization_speed = -0.2
             }
         }
+        KOR_police_corruption_2 = {
+            picture = generic_secret_police
+            
+            allowed = {
+                always = no
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+            
+            modifier = {
+                army_attack_factor = -0.1
+                army_defence_factor = -0.1
+                mobilization_speed = -0.1
+            }
+        }
+        KOR_police_corruption_3 = {
+            picture = generic_secret_police
+            
+            allowed = {
+                always = no
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+            
+            modifier = {
+                army_attack_factor = 0.3
+                army_defence_factor = 0.1
+                mobilization_speed = 0.1
+            }
+        }
+        KOR_police_corruption_4 = {
+            picture = generic_secret_police
+            
+            allowed = {
+                always = no
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+            
+            modifier = {
+                army_attack_factor = 0.1
+                army_defence_factor = 0.3
+                mobilization_speed = 0.1
+            }
+        }
+        KOR_matignon_agreements = {
+			picture = MEX_callistas
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+
+			modifier = {
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				stability_factor = 0.1
+				consumer_goods_factor = -0.1
+			}
+		}
+        KOR_matignon_agreements_2 = {
+			
+            picture = SPR_seize_the_gold_reserves
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+
+			modifier = {
+				industrial_capacity_factory = 0.3
+				industrial_capacity_dockyard = 0.3
+				stability_factor = 0.2
+				consumer_goods_factor = -0.2
+			}
+		}
     }
         political_advisor = {
 
@@ -356,7 +453,7 @@ ideas = {
                 factor = 1
             }
         }
-        KOR_electronics = {
+        KOR_ele = {
         
             picture = generic_electronics_concern_1
 

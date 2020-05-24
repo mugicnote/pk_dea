@@ -104,10 +104,11 @@
   Manju_Korean_Governance_Theory:0 "만주 한국 통치론"
   Bongcheon_government's_rejection_of_Manchurian_rule_of_Korea:0 "봉천정부의 한통론 거부"
   Accepting_Bongcheon_Government's_Theory_of_Governance_in_Korea:0 "봉천정부의 한통론 수락"
-  Claiming_Japan's_annexation_of_Korea:0 "한.일 합병국 주장제기"
-  Japan's_Collections_of_Mergers_Claims:0 "일본의 합병국 주장 수렴"
+  Claiming_Japan's_annexation_of_Korea:0 "한.일 연합 주장제기"
+  Japan's_Collections_of_Mergers_Claims:0 "일본의 연합 주장 수렴"
   China's_threat_to_return_Manchuria:0 "중국의 만주 반환 협박"
-  return_of_Manchuria:0 "만주를 중국에 반환"
+  return_of_Manchuria:0 "러허를 중국에 반환"
+  Mongol_Chahar_Convention:0 "몽골-차하르 협약"
   ###민주 연임문제###
   Provoking_the_Issue_of_President's_Second_Term:0 "대통령의 연임 문제제기"
   Former_Presidential_Law:0 "종신 대통령법"
@@ -182,7 +183,7 @@
   ###경제 및 산업###
   economic_development:0 "경제 계발 계획"
   upgrade_road_line:0 "도로 계선 추진"
-  Gyeongbu_Expressway_1:0 "반포-대전 경부선 개통"
+  Gyeongbu_Expressway_1:0 "반포-대전-부산 경부선 개통"
   Gyeongbu_Expressway_2:0 "전라도-강원도 노선 개통"
   police_reshuffle:0 "경찰 개편"
   defensive_police:0 "방어형 경찰"
@@ -195,4 +196,8 @@
   people_in_south:0 "남부에는 사람들이"
   factory_in_north:0 "북부에는 공장들이"
   KOR_technical_research_1:0 "경찰 기술 연구소"
-  land_filled_beauty:0 "국토에는 아름다움이"
+  land_filled_beauty:0 "신 국토 개발 계획"
+  Gyeongbu_Expressway_1_man:0 "만주 도심 고속도로 개통"
+  land_filled_beauty_2:0 "한강의 기적"
+  ###황제 루트###
+  emperor_returns:0 "황제가 돌아오다"

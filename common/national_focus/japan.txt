@@ -254,4 +254,36 @@ focus_tree = {
 		x = 27
 		y = 5
 	}
+	focus = {
+		id = start_industrial_revolution
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = request_aid_to_us
+		}
+		x = 25
+		y = 5
+	}
+	focus = {
+	    id = op_korean_isolation
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = east_asian_alliance
+			focus = alliance_with_china
+			focus = start_industrial_revolution
+		}
+		x = 23
+		y = 6
+	}
+	focus = {
+	    id = rising_sun
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = op_korean_isolation
+		}
+		x = 23
+		y = 7
+	}
 }
