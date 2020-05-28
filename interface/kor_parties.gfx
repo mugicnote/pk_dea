@@ -1,0 +1,8 @@
+spriteTypes = {
+
+	### KOR ###
+	spriteType = {
+		name = "GFX_ideology_KOR_democratic_group"
+		textureFile = "gfx/interface/ideologies/KOR/democratic_group.dds"
+	}
+}

@@ -24,45 +24,120 @@ spriteTypes = {
 		name = "GFX_focus_syngman_rhee"
 		texturefile = "gfx/interface/goals/focus_syngman_rhee.dds"
 	}
+	
 	SpriteType = {
 		name = "GFX_focus_Prison2"
 		texturefile = "gfx/interface/goals/Prison2.dds"
 	}
+	
 	SpriteType = {
 		name = "GFX_Focus_kor_decolonization"
 		texturefile = "gfx/interface/goals/Focus_kor_decolonization.dds"
 	}
+	
 	SpriteType = {
 		name = "GFX_Focus_kor_liberation"
 		texturefile = "gfx/interface/goals/Focus_kor_liberation.dds"
 	}
+	
 	SpriteType = {
 		name = "GFX_Focus_kor_soldaderas"
 		texturefile = "gfx/interface/goals/Focus_kor_soldaderas.dds"
 	}
+	
 	SpriteType = {
 		name = "GFX_focus_kim_ilsung"
 		texturefile = "gfx/interface/goals/focus_kim_ilsung.dds"
 	}
+	
 	SpriteType = {
 		name = "GFX_focus_pak_honyong"
 		texturefile = "gfx/interface/goals/focus_pak_honyong.dds"
 	}
+	
 	SpriteType = {
 		name = "GFX_focus_red_revolution"
 		texturefile = "gfx/interface/goals/focus_red_revolution.dds"
 	}
+	
 	SpriteType = {
 		name = "GFX_focus_assembly_election"
 		texturefile = "gfx/interface/goals/focus_assembly_election.dds"
 	}
+	
 	SpriteType = {
 		name = "GFX_focus_kcia"
 		texturefile = "gfx/interface/goals/focus_kcia.dds"
 	}
+	
 	SpriteType = {
 		name = "GFX_focus_guardian_of_asia"
 		texturefile = "gfx/interface/goals/focus_guardian_of_asia.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_accept_the_return_of_imperial_family"
+		texturefile = "gfx/interface/goals/focus_accept_the_return_of_imperial_family.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_chunggun_aeguk"
+		texturefile = "gfx/interface/goals/focus_chunggun_aeguk.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_conservatism"
+		texturefile = "gfx/interface/goals/focus_conservatism.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_declare_empire"
+		texturefile = "gfx/interface/goals/focus_declare_empire.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_detain_members_of_opposition_party"
+		texturefile = "gfx/interface/goals/focus_detain_members_of_opposition_party.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_first_republic"
+		texturefile = "gfx/interface/goals/focus_first_republic.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_imperial_club"
+		texturefile = "gfx/interface/goals/focus_imperial_club.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_eok_armed_forces"
+		texturefile = "gfx/interface/goals/focus_eok_armed_forces.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_interim_government"
+		texturefile = "gfx/interface/goals/focus_interim_government.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_military_coup"
+		texturefile = "gfx/interface/goals/focus_military_coup.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_knyc"
+		texturefile = "gfx/interface/goals/focus_knyc.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_national_security_law"
+		texturefile = "gfx/interface/goals/focus_national_security_law.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_nationalism"
+		texturefile = "gfx/interface/goals/focus_nationalism.dds"
 	}
 
 }

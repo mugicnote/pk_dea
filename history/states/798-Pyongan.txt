@@ -10,15 +10,21 @@ state = {
 		add_core_of = KOR
 		
 		buildings = {
-			industrial_complex = 3
+			industrial_complex = 2
 			arms_factory = 2
 			infrastructure = 4
+			4052 = {
+				naval_base = 2
+			}
 		}
 		victory_points = {
 			11835 10 #신의주
 		}
 		victory_points = {
-			4052 40 #평양
+			13234 40 #평양
+		}
+		victory_points = {
+			4052 10 #남포
 		}
 	}
 

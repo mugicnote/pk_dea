@@ -1,6 +1,6 @@
 capital = 525
 
-#oob = #
+oob = KOR_1936
 
 527 = {
 	start_resistance = no
@@ -44,6 +44,7 @@ set_technology = {
     antitank = 1
     gw_artillery = 1
     interwar_artillery = 1
+    tech_support = 1
 }
 
 #수송선
@@ -115,17 +116,6 @@ create_country_leader = {
   picture = ""
   expire = "1999.1.21"
   ideology = despotism
-  traits = {
-    #
-  }
-}
-
-create_country_leader = {
-  name = "이승만"
-  desc = ""
-  picture = ""
-  expire = "1999.1.21"
-  ideology = Liberalism_KOR
   traits = {
     #
   }

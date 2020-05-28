@@ -12,9 +12,9 @@ state = {
 		buildings = {
 			infrastructure = 1
 		}
-		# victory_points = {
-		# 	1177 10 #제주
-		# }
+		victory_points = {
+			13241 5 #울릉
+		}
 	}
 
 	resources = {
@@ -22,6 +22,6 @@ state = {
 	}
 
 	provinces = {
-		13240 
+		13241
 	}
 }

@@ -1,0 +1,53 @@
+﻿KOR_NOM_1 = 
+{
+	name = "대한민국 보병"
+	for_countries = { KOR }
+	can_use = { always = yes }
+	division_types = { "infantry" }
+	fallback_name = "대한민국 제%d 보병 사단"
+	ordered =
+	{
+		1 = { "제1 사단 '전진'" }
+		2 = { "제2 사단 '노도'" }
+		3 = { "제3 사단 '백골'" }
+		5 = { "제5 사단 '열쇠'" }
+		6 = { "제6 사단 '청성'" }
+		7 = { "제7 사단 '칠성'" }
+		9 = { "제9 사단 '백마'" }
+		12 = { "제12 사단 '을지'" }
+		15 = { "제15 사단 '승리'" }
+		17 = { "제17 사단 '번개'" }
+		21 = { "제21 사단 '백두산'" }
+		22 = { "제22 사단 '율곡'" }
+		23 = { "제23 사단 '철벽'" }
+		25 = { "제25 사단 '상승비룡'" }
+		27 = { "제27 사단 '이기자'" }
+		28 = { "제28 사단 '무적태풍'" }
+		29 = { "제29 사단 '익크'" }
+		52 = { "제30 사단 '화살'" }
+	}
+}
+KOR_NOM_2 = 
+{
+	name = "기계화 보병사단"
+	for_countries = { KOR }
+	can_use = { always = yes }
+	division_types = { "motorized" }
+	fallback_name = "대한민국 제%d 기계화 보병사단"
+	ordered =
+	{
+		8 = { "제8 기계화 보병사단 '오뚜기'부대" }
+	}
+}
+KOR_NOM_3 = 
+{
+	name = "독도수비대"
+	for_countries = { KOR }
+	can_use = { always = yes }
+	division_types = { "marine" }
+	fallback_name = "대한민국 제%d 독도수비대"
+	ordered =
+	{
+		20 = { "독도수비대" }
+	}
+}

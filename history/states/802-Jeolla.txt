@@ -13,12 +13,24 @@ state = {
 			industrial_complex = 2
 			arms_factory = 1
 			infrastructure = 4
+			4126 = { #군산항
+				naval_base = 2
+			}
+			10110 = { #목포항
+				naval_base = 2
+			}
 		}
 		victory_points = {
-			4126 10 #전주
+			13239 10 #전주
 		}
 		victory_points = {
-			10110 20 #광주
+			4126 10 #군산
+		}
+		victory_points = {
+			13240 20 #광주
+		}
+		victory_points = {
+			10110 10 #목포
 		}
 	}
 
@@ -27,6 +39,6 @@ state = {
 	}
 
 	provinces = {
-		4126 10110 11948 12085 13238 13239
+		4126 10110 11948 12085 13239 13240
 	}
 }

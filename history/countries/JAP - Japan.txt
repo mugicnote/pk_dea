@@ -299,35 +299,6 @@ if = {
 		autonomous_state = autonomy_integrated_puppet
 	}
 }
-if = {
-	limit = { 
-		not = {
-			has_dlc = "Waking the Tiger"
-			has_dlc = "Together for Victory"
-		}
-	}
-	set_autonomy = {
-		target = MEN
-		autonomous_state = autonomy_puppet
-	}
-	set_autonomy = {
-		target = MAN
-		autonomous_state = autonomy_puppet
-	}
-}
-if = {
-	limit = { 
-		has_dlc = "Waking the Tiger"
-	}
-	set_autonomy = {
-		target = MEN
-		autonomous_state = autonomy_wtt_imperial_protectorate
-	}
-	set_autonomy = {
-		target = MAN
-		autonomous_state = autonomy_wtt_imperial_protectorate
-	}
-}
 
 set_politics = {
 	ruling_party = fascism
@@ -336,7 +307,10 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	fascism = 100
+	democratic = 30
+    fascism = 40
+    communism = 20
+    neutrality = 10
 }
 
 create_country_leader = {

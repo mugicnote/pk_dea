@@ -17,6 +17,9 @@ state = {
 			4056 = {
 				naval_base = 3
 			}
+			7121 = {
+				naval_base = 2
+			}
 		}
 		victory_points = {
 			12089 40 #대구

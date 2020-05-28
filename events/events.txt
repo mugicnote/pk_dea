@@ -517,3 +517,46 @@ country_event = { #
 		ai_chance = { factor = 1 }
 	}
 }
+
+add_namespace = KOR
+
+country_event = { #시작1
+	id = KOR.14
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.14"}
+	title = KOR.14.t
+	desc = KOR.14.desc
+	picture = GFX_NAREISION
+	
+	is_triggered_only = yes
+	
+	option = { #
+		name = KOR.14.a
+		ai_chance = { factor = 1 }
+		country_event = { id = KOR.15 }
+	}
+	option = { #
+		name = KOR.14.b
+		ai_chance = { factor = 1 }
+	}
+}
+
+add_namespace = KOR
+
+country_event = { #시작2
+	id = KOR.15
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.15"}
+	title = KOR.15.t
+	desc = KOR.15.desc
+	picture = GFX_report_event_generic_naval_treaty
+	
+	is_triggered_only = yes
+	
+	option = { #
+		name = KOR.15.a
+		ai_chance = { factor = 1 }
+	}
+	option = { #
+		name = KOR.15.b
+		ai_chance = { factor = 1 }
+	}
+}

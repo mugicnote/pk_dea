@@ -1,0 +1,245 @@
+﻿division_template = {
+	name = "대한민국 보병"
+	division_names_group = KOR_NOM_1
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "기계화 보병사단"
+	division_names_group = KOR_NOM_2
+	
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+		motorized = { x = 3 y = 0 }
+		motorized = { x = 3 y = 1 }
+		motorized = { x = 3 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		mot_recon = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "독도수비대"				
+	division_names_group = KOR_NOM_3
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+		marine = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}	
+	priority = 2
+}
+
+##### OOB #####
+units = {
+
+	#만주전선
+	division = { # "제1 사단 '전진'"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11992
+		division_template = "대한민국 보병"
+		start_experience_factor = 0.3
+	}
+	division = { # "제2 사단 '노도'"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 7021
+		division_template = "대한민국 보병"
+		start_experience_factor = 0.3
+	}
+	division = { # "제3 사단 '백골'"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 9981
+		division_template = "대한민국 보병"
+		start_experience_factor = 0.3
+	}
+	division = { # "제5 사단 '열쇠"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 12040
+		division_template = "대한민국 보병"
+		start_experience_factor = 0.3
+	}
+	division = { # "제6 사단 '청성"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 13237
+		division_template = "대한민국 보병"
+		start_experience_factor = 0.3
+	}
+	division = { # "제7 사단 '칠성"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 11958
+		division_template = "대한민국 보병"
+		start_experience_factor = 0.3
+	}
+	division = { # "제9 사단 '백마"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 11992
+		division_template = "대한민국 보병"
+		start_experience_factor = 0.3
+	}
+	division = { # "제8 기계화 보병사단 '오뚜기'부대'"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 13234
+		division_template = "기계화 보병사단"
+		start_experience_factor = 0.3
+	}
+	division = { # "제12 사단 '을지'"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 12
+		}
+		location = 3981
+		division_template = "대한민국 보병"
+		start_experience_factor = 0.3
+	}
+
+	division = { # "제15 사단 '승리'"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 15
+		}
+		location = 12089
+		division_template = "대한민국 보병"
+		start_experience_factor = 0.3
+	}
+	division = { # "제17 사단 '번개'"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 17
+		}
+		location = 4056
+		division_template = "대한민국 보병"
+		start_experience_factor = 0.3
+	}
+	division = { # "제21 사단 '백두산'"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 21
+		}
+		location = 13240
+		division_template = "대한민국 보병"
+		start_experience_factor = 0.3
+	}
+	division = { # "제22 사단 '율곡'"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 22
+		}
+		location = 4126
+		division_template = "대한민국 보병"
+		start_experience_factor = 0.3
+	}
+	division = { # "독도수비대"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 20
+		}
+		location = 13241
+		division_template = "독도수비대"
+		start_experience_factor = 0.3
+	}
+	division = { # "제23 사단 '철벽'"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 23
+		}
+		location = 1177
+		division_template = "대한민국 보병"
+		start_experience_factor = 0.3
+	}
+	division = { # "제25 사단 '상승비룡'"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 25
+		}
+		location = 1100
+		division_template = "대한민국 보병"
+		start_experience_factor = 0.3
+	}
+	division = { # "제27 사단 '이기자'"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 27
+		}
+		location = 6963
+		division_template = "대한민국 보병"
+		start_experience_factor = 0.3
+	}
+	division = { # "제28 사단 '무적태풍'"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 28
+		}
+		location = 11835
+		division_template = "대한민국 보병"
+		start_experience_factor = 0.3
+	}
+	division = { # "제29 사단 '익크'"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 29
+		}
+		location = 3860
+		division_template = "대한민국 보병"
+		start_experience_factor = 0.3
+	}
+	division = { # "제52 사단 '화살'"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 30
+		}
+		location = 4107
+		division_template = "대한민국 보병"
+		start_experience_factor = 0.3
+	}
+}

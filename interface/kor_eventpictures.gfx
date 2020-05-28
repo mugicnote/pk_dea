@@ -16,6 +16,10 @@ spriteTypes = {
 		name = "GFX_military_coup"
 		texturefile = "gfx/event_pictures/military_coup.dds"
 	}
+	spriteType = {
+		name = "GFX_NAREISION"
+		texturefile = "gfx/event_pictures/NAREISION.dds"
+	}
 
 }
 	
