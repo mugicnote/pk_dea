@@ -125,11 +125,59 @@ country_event = {
 			802 = { set_state_flag = KOR_has_blackshirt_support }
 			custom_effect_tooltip = ENG_blackshirt_march_tt
 		}
+		if = {
+			limit = {
+				has_country_flag = ENG_blackshirt_march_in_lothian2
+			}
+			add_days_mission_timeout = {
+						mission = KOR_military_plot_nationalists
+							days = -7
+						}
+			525 = { set_state_flag = KOR_has_blackshirt_support }
+			custom_effect_tooltip = ENG_blackshirt_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = ENG_blackshirt_march_in_lothian3
+			}
+			add_days_mission_timeout = {
+						mission = KOR_military_plot_nationalists
+							days = -7
+						}
+			527 = { set_state_flag = KOR_has_blackshirt_support }
+			custom_effect_tooltip = ENG_blackshirt_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = ENG_blackshirt_march_in_lothian4
+			}
+			add_days_mission_timeout = {
+						mission = KOR_military_plot_nationalists
+							days = -7
+						}
+			803 = { set_state_flag = KOR_has_blackshirt_support }
+			custom_effect_tooltip = ENG_blackshirt_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = ENG_blackshirt_march_in_lothian5
+			}
+			add_days_mission_timeout = {
+						mission = KOR_military_plot_nationalists
+							days = -7
+						}
+			804 = { set_state_flag = KOR_has_blackshirt_support }
+			custom_effect_tooltip = ENG_blackshirt_march_tt
+		}
 		clr_country_flag = KOR_march_temp_northern_ireland
 		clr_country_flag = KOR_march_temp_highlands
 		clr_country_flag = KOR_blackshirt_march_in_aberdeenshire
 		clr_country_flag = KOR_blackshirt_march_in_lanark
 		clr_country_flag = ENG_blackshirt_march_in_lothian
+		clr_country_flag = ENG_blackshirt_march_in_lothian2
+		clr_country_flag = ENG_blackshirt_march_in_lothian3
+		clr_country_flag = ENG_blackshirt_march_in_lothian4
+		clr_country_flag = ENG_blackshirt_march_in_lothian5
 		clr_country_flag = KOR_march_temp_london
 		clr_country_flag = ENG_march_timer_flag
 		clr_country_flag = ENG_restrained_march_flag
@@ -214,11 +262,59 @@ country_event = {
 			802 = { set_state_flag = KOR_has_blackshirt_support }
 			custom_effect_tooltip = ENG_blackshirt_march_tt
 		}
+		if = {
+			limit = {
+				has_country_flag = ENG_blackshirt_march_in_lothian2
+			}
+			add_days_mission_timeout = {
+						mission = KOR_military_plot_nationalists
+							days = -14
+						}
+			525 = { set_state_flag = KOR_has_blackshirt_support }
+			custom_effect_tooltip = ENG_blackshirt_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = ENG_blackshirt_march_in_lothian3
+			}
+			add_days_mission_timeout = {
+						mission = KOR_military_plot_nationalists
+							days = -14
+						}
+			527 = { set_state_flag = KOR_has_blackshirt_support }
+			custom_effect_tooltip = ENG_blackshirt_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = ENG_blackshirt_march_in_lothian4
+			}
+			add_days_mission_timeout = {
+						mission = KOR_military_plot_nationalists
+							days = -14
+						}
+			803 = { set_state_flag = KOR_has_blackshirt_support }
+			custom_effect_tooltip = ENG_blackshirt_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = ENG_blackshirt_march_in_lothian5
+			}
+			add_days_mission_timeout = {
+						mission = KOR_military_plot_nationalists
+							days = -14
+						}
+			804 = { set_state_flag = KOR_has_blackshirt_support }
+			custom_effect_tooltip = ENG_blackshirt_march_tt
+		}
 		clr_country_flag = ENG_march_temp_northern_ireland
 		clr_country_flag = ENG_march_temp_highlands
 		clr_country_flag = KOR_blackshirt_march_in_aberdeenshire
 		clr_country_flag = KOR_blackshirt_march_in_lanark
 		clr_country_flag = ENG_blackshirt_march_in_lothian
+		clr_country_flag = ENG_blackshirt_march_in_lothian2
+		clr_country_flag = ENG_blackshirt_march_in_lothian3
+		clr_country_flag = ENG_blackshirt_march_in_lothian4
+		clr_country_flag = ENG_blackshirt_march_in_lothian5
 		clr_country_flag = ENG_march_temp_london
 		clr_country_flag = ENG_march_timer_flag
 		clr_country_flag = ENG_restrained_march_flag
@@ -302,11 +398,59 @@ country_event = {
 			802 = { set_state_flag = KOR_has_blackshirt_support }
 			custom_effect_tooltip = ENG_blackshirt_march_tt
 		}
+		if = {
+			limit = {
+				has_country_flag = ENG_blackshirt_march_in_lothian2
+			}
+			add_days_mission_timeout = {
+						mission = KOR_military_plot_nationalists
+							days = -21
+						}
+			525 = { set_state_flag = KOR_has_blackshirt_support }
+			custom_effect_tooltip = ENG_blackshirt_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = ENG_blackshirt_march_in_lothian3
+			}
+			add_days_mission_timeout = {
+						mission = KOR_military_plot_nationalists
+							days = -21
+						}
+			527 = { set_state_flag = KOR_has_blackshirt_support }
+			custom_effect_tooltip = ENG_blackshirt_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = ENG_blackshirt_march_in_lothian4
+			}
+			add_days_mission_timeout = {
+						mission = KOR_military_plot_nationalists
+							days = -21
+						}
+			803 = { set_state_flag = KOR_has_blackshirt_support }
+			custom_effect_tooltip = ENG_blackshirt_march_tt
+		}
+		if = {
+			limit = {
+				has_country_flag = ENG_blackshirt_march_in_lothian5
+			}
+			add_days_mission_timeout = {
+						mission = KOR_military_plot_nationalists
+							days = -21
+						}
+			804 = { set_state_flag = KOR_has_blackshirt_support }
+			custom_effect_tooltip = ENG_blackshirt_march_tt
+		}
 		clr_country_flag = KOR_march_temp_northern_ireland
 		clr_country_flag = KOR_march_temp_highlands
 		clr_country_flag = KOR_blackshirt_march_in_aberdeenshire
 		clr_country_flag = KOR_blackshirt_march_in_lanark
 		clr_country_flag = ENG_blackshirt_march_in_lothian
+		clr_country_flag = ENG_blackshirt_march_in_lothian2
+		clr_country_flag = ENG_blackshirt_march_in_lothian3
+		clr_country_flag = ENG_blackshirt_march_in_lothian4
+		clr_country_flag = ENG_blackshirt_march_in_lothian5
 		clr_country_flag = KOR_march_temp_london
 		clr_country_flag = ENG_march_timer_flag
 		clr_country_flag = ENG_restrained_march_flag
@@ -558,5 +702,376 @@ country_event = { #시작2
 	option = { #
 		name = KOR.15.b
 		ai_chance = { factor = 1 }
+	}
+}
+
+add_namespace = KOR
+
+news_event = { #대한제국1
+	id = KOR.16
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.16"}
+	title = KOR.16.t
+	desc = KOR.16.desc
+	picture = GFX_emperor1
+	
+	is_triggered_only = yes
+	
+	option = { #
+		name = KOR.16.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { #영국 이벤트(수정할것)왕실 결혼 문제 이벤트
+	id = KOR.17
+	title = KOR.17.t
+	desc = KOR.17.d
+	picture = GFX_report_event_generic_rally
+
+	trigger = {
+		tag = KOR
+		date > 1936.1.6
+	}
+	
+	fire_only_once = yes
+
+	mean_time_to_happen = { days = 1 }
+	
+	# Accept - Morganatic marriage
+	option = {
+		name = KOR.17.a
+
+		custom_effect_tooltip = KOR.17.a.tt
+		activate_mission = KOR_abdication_crisis
+		hidden_effect = { 
+			country_event = { id = KOR.18 days = 10 }
+			country_event = { id = KOR.20 days = 15 random_days = 10 }
+		}
+		set_country_flag = KOR_abdication_crisis_morganatic_marriage
+		set_country_flag = KOR_edward_viii_refused_to_abdicate_flag
+	}
+}
+
+country_event = { #여당 지지 여론
+	id = KOR.18
+	title = KOR.18.t
+	desc = KOR.18.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+	
+	# Ok
+	option = {
+		name = KOR.18.a
+		add_political_power = 100
+		KOR_congress_medium_support = yes
+		custom_effect_tooltip = KOR.18_tt
+	}
+}
+
+country_event = { #선거 끝
+	id = KOR.19
+	title = KOR.19.t
+	desc = KOR.19.d
+	picture = GFX_report_event_royal_parade
+
+	is_triggered_only = yes
+
+	trigger = { NOT = { has_country_flag = KOR_abdication_crisis_changed_mind } }
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = vote_2_is_end
+		}
+	}
+	
+	# Ok
+	option = {
+		name = KOR.19.a
+		add_political_power = 50
+	}
+}
+
+country_event = { #랜덤 이팩트
+	id = KOR.20
+	
+	is_triggered_only = yes
+
+	hidden = yes
+
+	immediate = {
+		random_list = {
+			20 = { # 결혼에 찬성하는 신문
+				modifier = {
+					factor = 1.5
+					has_country_flag = KOR_abdication_crisis_morganatic_marriage
+				}
+				modifier = {
+					factor = 0
+					has_country_flag = KOR_newspapers_in_favor
+				}
+				modifier = {
+					factor = 0
+					has_country_flag = KOR_newspapers_against
+				}
+				country_event = { id = KOR.21 }
+			}
+			20 = { # 결혼 반대 신문
+				country_event = { id = KOR.22 } 
+			}
+			20 = { # 연설을 못하게하는 야당
+				modifier = {
+					factor = 0
+					has_country_flag = KOR_abdication_crisis_government_fell
+				}
+				modifier = {
+					factor = 0
+					has_country_flag = KOR_newspapers_in_favor
+				}
+				modifier = {
+					factor = 0
+					has_country_flag = KOR_newspapers_against
+				}
+				modifier = {
+					factor = 0
+					has_country_flag = KOR_abdication_crisis_held_radio_speech
+				}
+				country_event = { id = KOR.23 } 
+			}
+			20 = { # 의회의 반대
+				modifier = {
+					factor = 0.8
+					has_idea = KOR_support_for_the_king_idea 
+				}
+				modifier = {
+					factor = 0
+					has_country_flag = KOR_abdication_crisis_government_fell
+				}
+				modifier = {
+					factor = 0
+					has_country_flag = KOR_parliament_opposition
+				}
+				country_event = { id = KOR.24 } 
+			}
+			20 = { # 결혼에 반대하는 상류층 계급
+				modifier = {
+					factor = 0
+					has_country_flag = KOR_upper_classes_oppose_marriage
+				}
+				country_event = { id = KOR.25 } 
+			}
+			20 = { # 결혼을 지지하는 노동자들
+				modifier = {
+					factor = 1.5
+					has_country_flag = KOR_abdication_crisis_morganatic_marriage
+				}
+				modifier = {
+					factor = 0
+					has_country_flag = KOR_upper_classes_support_marriage
+				}
+				country_event = { id = KOR.26 } 
+			}
+			200 = { # 정부 연설
+				modifier = {
+					factor = 0
+					has_country_flag = KOR_abdication_crisis_tight_leash 
+				}
+				modifier = {
+					factor = 0
+					has_country_flag = KOR_abdication_crisis_held_radio_speech
+				}
+				country_event = { id = KOR.27 }
+			}
+		}
+	}
+}
+
+# 지지 신문
+country_event = {
+	id = KOR.21
+	title = KOR.21.t
+	desc = KOR.21.d
+	picture = GFX_report_event_journalists_speech
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_country_flag = KOR_abdication_crisis_changed_mind }
+		NOT = { has_country_flag = vote_2_is_end }
+	}
+	
+	# Ok
+	option = {
+		name = KOR.21.a
+		KOR_congress_small_support = yes
+		hidden_effect = { country_event = { id = KOR.20 days = 20 random_days = 10 } }
+		clr_country_flag = KOR_newspapers_against
+		clr_country_flag = KOR_prime_minister_tight_leash
+		clr_country_flag = KOR_parliament_opposition
+		clr_country_flag = KOR_upper_classes_oppose_marriage
+		clr_country_flag = KOR_working_classes_support_marriage
+		set_country_flag = KOR_newspapers_in_favor
+	}
+}
+
+# 반대 신문
+country_event = {
+	id = KOR.22
+	title = KOR.22.t
+	desc = KOR.22.d
+	picture = GFX_report_event_journalists_speech
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_country_flag = KOR_abdication_crisis_changed_mind }
+		NOT = { has_country_flag = vote_2_is_end }
+	}
+	
+	# Ok
+	option = {
+		name = KOR.22.a
+		KOR_congress_small_opposition = yes
+		hidden_effect = { country_event = { id = KOR.20 days = 20 random_days = 10 } }
+		clr_country_flag = KOR_newspapers_in_favor
+		clr_country_flag = KOR_prime_minister_tight_leash
+		clr_country_flag = KOR_parliament_opposition
+		clr_country_flag = KOR_upper_classes_oppose_marriage
+		clr_country_flag = KOR_working_classes_support_marriage
+		set_country_flag = KOR_newspapers_against
+	}
+}
+
+# 연설을 막는 야당
+country_event = {
+	id = KOR.23
+	title = KOR.23.t
+	desc = KOR.23.d
+	picture = GFX_report_event_generic_sign_treaty1
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_country_flag = KOR_abdication_crisis_changed_mind }
+		NOT = { has_country_flag = KOR_abdication_crisis_government_fell }
+		NOT = { has_country_flag = vote_2_is_end }
+	}
+	
+	# Ok
+	option = {
+		name = KOR.23.a
+		KOR_congress_small_opposition = yes
+		set_country_flag = { flag = KOR_abdication_crisis_tight_leash value = 1 days = 31 }
+		hidden_effect = { country_event = { id = KOR.20 days = 20 random_days = 10 } }
+		clr_country_flag = KOR_newspapers_in_favor
+		clr_country_flag = KOR_newspapers_against
+		clr_country_flag = KOR_parliament_opposition
+		clr_country_flag = KOR_upper_classes_oppose_marriage
+		clr_country_flag = KOR_working_classes_support_marriage
+		set_country_flag = KOR_prime_minister_tight_leash
+	}
+}
+
+# 야당 지지 작가
+country_event = {
+	id = KOR.24
+	title = KOR.24.t
+	desc = KOR.24.d
+	picture = GFX_report_event_generic_parliament
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_country_flag = KOR_abdication_crisis_changed_mind }
+		NOT = { has_country_flag = vote_2_is_end }
+	}	
+	# Ok
+	option = {
+		name = KOR.24.a
+		KOR_congress_small_opposition = yes
+		hidden_effect = { country_event = { id = KOR.20 days = 20 random_days = 10 } }
+		clr_country_flag = KOR_newspapers_in_favor
+		clr_country_flag = KOR_newspapers_against
+		clr_country_flag = KOR_prime_minister_tight_leash
+		clr_country_flag = KOR_upper_classes_oppose_marriage
+		clr_country_flag = KOR_working_classes_support_marriage
+		set_country_flag = KOR_parliament_opposition
+	}
+}
+
+# 상인들의 반대?
+country_event = {
+	id = KOR.25
+	title = KOR.25.t
+	desc = KOR.25.d
+	picture = GFX_report_event_generic_rally_3
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_country_flag = KOR_abdication_crisis_changed_mind }
+		NOT = { has_country_flag = vote_2_is_end }
+	}	
+	# Ok
+	option = {
+		name = KOR.25.a
+		KOR_congress_small_opposition = yes
+		hidden_effect = { country_event = { id = KOR.20 days = 20 random_days = 10 } }
+		clr_country_flag = KOR_newspapers_in_favor
+		clr_country_flag = KOR_newspapers_against
+		clr_country_flag = KOR_prime_minister_tight_leash
+		clr_country_flag = KOR_parliament_opposition
+		clr_country_flag = KOR_working_classes_support_marriage
+		set_country_flag = KOR_upper_classes_oppose_marriage
+	}
+}
+
+# 노동자들의 지지
+country_event = {
+	id = KOR.26
+	title = KOR.26.t
+	desc = KOR.26.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_country_flag = KOR_abdication_crisis_changed_mind }
+		NOT = { has_country_flag = vote_2_is_end }
+	}	
+	# Ok
+	option = {
+		name = KOR.26.a
+		KOR_congress_small_support = yes
+		hidden_effect = { country_event = { id = KOR.20 days = 20 random_days = 10 } }
+		clr_country_flag = KOR_newspapers_in_favor
+		clr_country_flag = KOR_newspapers_against
+		clr_country_flag = KOR_prime_minister_tight_leash
+		clr_country_flag = KOR_parliament_opposition
+		clr_country_flag = KOR_upper_classes_oppose_marriage
+		set_country_flag = KOR_working_classes_support_marriage
+	}
+}
+
+# 정부 연설
+country_event = {
+	id = KOR.27
+	title = KOR.27.t
+	desc = KOR.27.d
+	picture = GFX_report_event_journalists_speech
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_country_flag = KOR_abdication_crisis_changed_mind }
+		NOT = { has_country_flag = vote_2_is_end }
+	}
+	
+	# Ok
+	option = {
+		name = KOR.27.a
+		KOR_congress_small_support = yes
+		set_country_flag = KOR_abdication_crisis_held_radio_speech
+		hidden_effect = { country_event = { id = KOR.20 days = 20 random_days = 10 } }
 	}
 }

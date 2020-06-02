@@ -1,6 +1,7 @@
 #의회
 KOR_congress = {
 	icon = usa_congress
+	picture = GFX_decision_cat_national_assembly
 	allowed = {
 		original_tag = KOR
 	}
@@ -36,3 +37,44 @@ KOR_organize_the_blackshirts = {
 	visible = {
 			NOT = { has_government = fascism }
 	}
+}
+
+KOR_spanish_intervention_category = {
+	allowed = {
+		original_tag = KOR
+	}
+	visible = {
+		has_completed_focus = intervention_spanish_civil_war
+		SPR_scw_in_progress = yes
+	}
+}
+
+KOR_banditry_category = {
+	
+	icon = GFX_decision_category_infiltration
+	
+	picture = GFX_KOR_jin_ap
+
+	allowed = {
+		tag = KOR
+	}
+
+}
+
+form_united_KOR_category = {
+
+	icon = generic_formable_nations
+
+	picture = GFX_KOR_MAN
+
+	allowed = {
+		OR = {
+			has_dlc = "Waking the Tiger"
+			AND = {
+				has_dlc = "Man the Guns"
+				tag = KOR
+			}
+		}
+	}
+}
+

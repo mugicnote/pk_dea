@@ -6,4 +6,16 @@ spriteTypes = {
 		name = "GFX_KOR_dae_sun1"
 		texturefile = "gfx/interface/decisions/KOR_dae_sun1.dds"
 	}
+	spriteType = {
+		name = "GFX_KOR_MAN"
+		texturefile = "gfx/interface/decisions/KOR-MAN.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_national_assembly"
+		texturefile = "gfx/interface/decisions/decision_cat_national_assembly.dds"
+	}
+	spriteType = {
+		name = "GFX_KOR_jin_ap"
+		texturefile = "gfx/interface/decisions/KOR_jin_ap.dds"
+	}
 }

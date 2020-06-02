@@ -2,21 +2,42 @@ KOR_congress = {
 
 	#소규모 지지도 확보
 	KOR_small_securement_of_support = {
-
 		icon = generic_political_discourse
-
 		available = {
-			always = no
+			OR = {
+				check_variable = { senate_support < senate_total }
+				check_variable = { commons_support < commons_total }
+			}
+			not = {
+				has_decision = KOR_medium_securement_of_support
+			}
+			OR = {
+				political_power_daily > 0.3
+				has_political_power > 10
+			}
 		}
-
+		cost = 0
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				congress_medium_support_trigger = yes
+				factor = 0.5
+			}
+			modifier = {
+				congress_low_support_trigger = yes
+				factor = 0.5
+			}
+			modifier = {
+				congress_high_support_trigger = yes
+				factor = 0
+			}
+		}
 		modifier = {
-
+			political_power_gain = -0.3
 		}
-
-		days_remove = 30
-
+		days_remove = 10
 		remove_effect = {
-
+			KOR_congress_small_support = yes
 		}
 	}
 
@@ -26,17 +47,140 @@ KOR_congress = {
 		icon = generic_political_discourse
 
 		available = {
-			always = no
+			OR = {
+				check_variable = { senate_support < senate_total }
+				check_variable = { commons_support < commons_total }
+			}
+			not = {
+				has_decision = USA_small_lobby_effort
+			}
+			OR = {
+				political_power_daily > 0.75
+				has_political_power > 35
+			}
 		}
-
+		cost = 0
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				congress_medium_support_trigger = yes
+				factor = 0.5
+			}
+			modifier = {
+				congress_low_support_trigger = yes
+				factor = 0.5
+			}
+			modifier = {
+				congress_high_support_trigger = yes
+				factor = 0
+			}
+		}
+		days_remove = 45
 		modifier = {
+			political_power_gain = -0.75
+		}
+		remove_effect = {
+			KOR_congress_medium_support = yes
+		}
+	}
+	#농지개혁법
+	KOR_agricultural_land_reform_act = {
+		
+		icon = eng_trade_unions_support
 
+		available = {
+			OR = {
+				check_variable = { senate_support < senate_total }
+				check_variable = { commons_support < commons_total }
+			}
+			OR = {
+				political_power_daily > 0.2
+				has_political_power > 10
+			}
+		}
+		visible = {
+			not = {
+			has_country_flag = KOR_agricultural_land_reform_act_yes
+			}
 		}
 
-		days_remove = 30
-
+		cost = 20
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				congress_medium_support_trigger = yes
+				factor = 0.5
+			}
+		}
+		days_remove = 90
+		modifier = { consumer_goods_factor = -0.05 }
 		remove_effect = {
+			KOR_congress_small_opposition = yes
+			set_country_flag = KOR_agricultural_land_reform_act_yes
+		}
+	}
+	#애국 연설
+	KOR_special_measures = {
+		icon = eng_propaganda_campaigns
+		available = {
+			OR = {
+				check_variable = { senate_support < senate_total }
+				check_variable = { commons_support < commons_total }
+			}
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				congress_low_support_trigger = yes
+				factor = 0
+			}
+		}
+		days_re_enable = 90
+		complete_effect = {
+			USA_congress_small_support = yes
+		}
+	}
+	KOR_abdication_crisis = { 
 
+		priority = 10
+
+		icon = generic_nationalism
+		
+		available = {
+			has_country_flag = KOR_abdication_crisis_changed_mind
+		}
+
+		days_mission_timeout = 200
+
+		fire_only_once = yes
+
+		activation = {
+			tag = KOR
+			OR = {
+				has_country_flag = KOR_abdication_crisis_normal_marriage
+				has_country_flag = KOR_abdication_crisis_morganatic_marriage
+			}
+		}
+
+		visible = {
+			tag = KOR
+			NOT = {
+				has_country_flag = KOR_edward_viii_abdicated
+				has_country_flag = vote_2_is_end
+			}
+		}
+
+		cancel_if_not_visible = yes
+
+		is_good = yes
+
+		complete_effect = {
+			
+		}
+
+		timeout_effect = {
+			country_event = { id = KOR.19 }
 		}
 	}
 }
@@ -51,6 +195,7 @@ KOR_organize_the_blackshirts = {
 		available = {
 			NOT = { has_country_flag = ENG_march_timer_flag }
 			has_full_control_of_state = 797
+			has_completed_focus = threat_of_communism
 		}
 
 		highlight_state_targets = { state = 797 }
@@ -127,6 +272,7 @@ KOR_organize_the_blackshirts = {
 		available = {
 			NOT = { has_country_flag = ENG_march_timer_flag }
 			has_full_control_of_state = 798
+			has_completed_focus = threat_of_communism
 		}
 
 		highlight_state_targets = { state = 798 }
@@ -202,6 +348,7 @@ KOR_organize_the_blackshirts = {
 		available = {
 			NOT = { has_country_flag = ENG_march_timer_flag }
 			has_full_control_of_state = 801
+			has_completed_focus = threat_of_communism
 		}
 
 		highlight_state_targets = { state = 801 }
@@ -277,6 +424,7 @@ KOR_organize_the_blackshirts = {
 		available = {
 			NOT = { has_country_flag = ENG_march_timer_flag }
 			has_full_control_of_state = 799
+			has_completed_focus = threat_of_communism
 		}
 
 		highlight_state_targets = { state = 799 }
@@ -352,6 +500,7 @@ KOR_organize_the_blackshirts = {
 		available = {
 			NOT = { has_country_flag = ENG_march_timer_flag }
 			has_full_control_of_state = 800
+			has_completed_focus = threat_of_communism
 		}
 
 		highlight_state_targets = { state = 800 }
@@ -427,6 +576,7 @@ KOR_organize_the_blackshirts = {
 		available = {
 			NOT = { has_country_flag = ENG_march_timer_flag }
 			has_full_control_of_state = 802
+			has_completed_focus = threat_of_communism
 		}
 
 		highlight_state_targets = { state = 802 }
@@ -495,6 +645,306 @@ KOR_organize_the_blackshirts = {
 		}
 	}
 
+		KOR_blackshirt_march_in_lothian2 = {
+
+		icon = eng_blackshirt_march
+
+		available = {
+			NOT = { has_country_flag = ENG_march_timer_flag }
+			has_full_control_of_state = 525
+			has_completed_focus = threat_of_communism
+		}
+
+		highlight_state_targets = { state = 525 }
+
+		on_map_mode = map_only
+
+		cost = 100
+
+		fire_only_once = yes
+
+		visible = {
+			NOT = { has_government = fascism }
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			525 = { save_event_target_as = ENG_blackshirt_march_state }
+			525 = { set_state_flag = KOR_has_blackshirt_support }
+			random_list = {
+				25 = {
+					country_event = { id = KOR.7 days = 1 }
+					effect_tooltip = {
+						add_days_mission_timeout = {
+						mission = KOR_military_plot_nationalists
+							days = -7
+						}
+					}
+				}
+				50 = {
+					country_event = { id = KOR.6 days = 1 }
+					effect_tooltip = {
+						add_days_mission_timeout = {
+						mission = KOR_military_plot_nationalists
+							days = -14
+						}
+					}
+				}
+				25 = {
+					modifier = {
+						factor = 0.2
+						has_country_flag = ENG_restrained_march_flag
+					}
+					country_event = { id = KOR.8 days = 1 }
+					effect_tooltip = {
+						add_days_mission_timeout = {
+						mission = KOR_military_plot_nationalists
+							days = -21
+						}
+					}
+				}
+			}
+			custom_effect_tooltip = ENG_blackshirt_march_tt
+			set_country_flag = ENG_march_temp_aberdeenshire
+			set_country_flag = ENG_march_timer_flag
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+			}
+			modifier = {
+				factor = 0
+			}
+		}
+	}
+	KOR_blackshirt_march_in_lothian3 = {
+
+		icon = eng_blackshirt_march
+
+		available = {
+			NOT = { has_country_flag = ENG_march_timer_flag }
+			has_full_control_of_state = 527
+			has_completed_focus = threat_of_communism
+		}
+
+		highlight_state_targets = { state = 527 }
+
+		on_map_mode = map_only
+
+		cost = 100
+
+		fire_only_once = yes
+
+		visible = {
+			NOT = { has_government = fascism }
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			527 = { save_event_target_as = ENG_blackshirt_march_state }
+			527 = { set_state_flag = KOR_has_blackshirt_support }
+			random_list = {
+				25 = {
+					country_event = { id = KOR.7 days = 1 }
+					effect_tooltip = {
+						add_days_mission_timeout = {
+						mission = KOR_military_plot_nationalists
+							days = -7
+						}
+					}
+				}
+				50 = {
+					country_event = { id = KOR.6 days = 1 }
+					effect_tooltip = {
+						add_days_mission_timeout = {
+						mission = KOR_military_plot_nationalists
+							days = -14
+						}
+					}
+				}
+				25 = {
+					modifier = {
+						factor = 0.2
+						has_country_flag = ENG_restrained_march_flag
+					}
+					country_event = { id = KOR.8 days = 1 }
+					effect_tooltip = {
+						add_days_mission_timeout = {
+						mission = KOR_military_plot_nationalists
+							days = -21
+						}
+					}
+				}
+			}
+			custom_effect_tooltip = ENG_blackshirt_march_tt
+			set_country_flag = ENG_march_temp_aberdeenshire
+			set_country_flag = ENG_march_timer_flag
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+			}
+			modifier = {
+				factor = 0
+			}
+		}
+	}
+	KOR_blackshirt_march_in_lothian4 = {
+
+		icon = eng_blackshirt_march
+
+		available = {
+			NOT = { has_country_flag = ENG_march_timer_flag }
+			has_full_control_of_state = 803
+			has_completed_focus = threat_of_communism
+		}
+
+		highlight_state_targets = { state = 803 }
+
+		on_map_mode = map_only
+
+		cost = 100
+
+		fire_only_once = yes
+
+		visible = {
+			NOT = { has_government = fascism }
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			803 = { save_event_target_as = ENG_blackshirt_march_state }
+			803 = { set_state_flag = KOR_has_blackshirt_support }
+			random_list = {
+				25 = {
+					country_event = { id = KOR.7 days = 1 }
+					effect_tooltip = {
+						add_days_mission_timeout = {
+						mission = KOR_military_plot_nationalists
+							days = -7
+						}
+					}
+				}
+				50 = {
+					country_event = { id = KOR.6 days = 1 }
+					effect_tooltip = {
+						add_days_mission_timeout = {
+						mission = KOR_military_plot_nationalists
+							days = -14
+						}
+					}
+				}
+				25 = {
+					modifier = {
+						factor = 0.2
+						has_country_flag = ENG_restrained_march_flag
+					}
+					country_event = { id = KOR.8 days = 1 }
+					effect_tooltip = {
+						add_days_mission_timeout = {
+						mission = KOR_military_plot_nationalists
+							days = -21
+						}
+					}
+				}
+			}
+			custom_effect_tooltip = ENG_blackshirt_march_tt
+			set_country_flag = ENG_march_temp_aberdeenshire
+			set_country_flag = ENG_march_timer_flag
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+			}
+			modifier = {
+				factor = 0
+			}
+		}
+	}
+		KOR_blackshirt_march_in_lothian5 = {
+
+		icon = eng_blackshirt_march
+
+		available = {
+			NOT = { has_country_flag = ENG_march_timer_flag }
+			has_full_control_of_state = 804
+			has_completed_focus = threat_of_communism
+		}
+
+		highlight_state_targets = { state = 804 }
+
+		on_map_mode = map_only
+
+		cost = 100
+
+		fire_only_once = yes
+
+		visible = {
+			NOT = { has_government = fascism }
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			804 = { save_event_target_as = ENG_blackshirt_march_state }
+			804 = { set_state_flag = KOR_has_blackshirt_support }
+			random_list = {
+				25 = {
+					country_event = { id = KOR.7 days = 1 }
+					effect_tooltip = {
+						add_days_mission_timeout = {
+						mission = KOR_military_plot_nationalists
+							days = -7
+						}
+					}
+				}
+				50 = {
+					country_event = { id = KOR.6 days = 1 }
+					effect_tooltip = {
+						add_days_mission_timeout = {
+						mission = KOR_military_plot_nationalists
+							days = -14
+						}
+					}
+				}
+				25 = {
+					modifier = {
+						factor = 0.2
+						has_country_flag = ENG_restrained_march_flag
+					}
+					country_event = { id = KOR.8 days = 1 }
+					effect_tooltip = {
+						add_days_mission_timeout = {
+						mission = KOR_military_plot_nationalists
+							days = -21
+						}
+					}
+				}
+			}
+			custom_effect_tooltip = ENG_blackshirt_march_tt
+			set_country_flag = ENG_march_temp_aberdeenshire
+			set_country_flag = ENG_march_timer_flag
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+			}
+			modifier = {
+				factor = 0
+			}
+		}
+	}
 	#군부의 쿠데타 음모
 	KOR_military_plot_nationalists = {
 
@@ -578,3 +1028,1037 @@ KOR_organize_the_blackshirts = {
 
 	}
 }
+
+KOR_spanish_intervention_category = {
+	KOR_invite_FROM_to_non_intervention = {
+		available = {
+			has_country_flag = KOR_non_intervention
+		}
+		target_array = global.majors
+
+		target_trigger = {
+			FROM = {
+				exists = yes
+				NOT = { 
+					has_country_flag = KOR_non_intervention_agreed 
+					has_country_flag = KOR_non_intervention_refused
+				}
+				capital_scope = {
+					is_on_continent = europe
+				}
+			}
+		}
+		visible = {
+			has_country_flag = KOR_non_intervention
+		}
+		target_root_trigger = {
+			has_country_flag = KOR_non_intervention	
+		}
+		cost = 25
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				not = { has_government = democratic }
+				factor = 0
+			}
+			modifier = {
+				has_stability < 0.3
+				factor = 5
+			}
+		}
+		complete_effect = {
+			FROM = {
+				country_event = lar_non_intervention.1
+			}
+		}
+	}
+
+	KOR_allow_non_military_aid = {
+		available = { has_completed_focus = support_national_front }
+
+		visible = { not = { has_country_flag = KOR_non_military_aid_allowed } }
+
+		cancel_trigger = {
+			OR = {
+				has_global_flag = scw_over
+				not = { has_country_flag = KOR_non_military_aid_allowed }
+			}
+		}
+
+		complete_effect = { 
+			set_country_flag = KOR_non_military_aid_allowed 
+			clr_country_flag = KOR_non_intervention
+			unlock_decision_tooltip = { decision = KOR_send_non_military_aid_to_FROM show_effect_tooltip = yes }
+			unlock_decision_tooltip = KOR_ban_non_military_aid
+		}
+
+		cost = 25
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_stability < 0.3
+				factor = 0
+			}
+		}
+		days_remove = -1
+		modifier = {
+			stability_factor = -0.05
+		}
+	}
+
+	KOR_ban_non_military_aid = {
+		available = {  }
+
+		visible = { has_country_flag = KOR_non_military_aid_allowed }
+
+		complete_effect = { 
+			clr_country_flag = KOR_non_military_aid_allowed 
+			set_country_flag = KOR_non_intervention
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				has_stability < 0.3
+				add = 5
+			}
+		}
+	}
+
+	KOR_send_non_military_aid_to_FROM = {
+		available = { 
+			has_equipment = {
+				support_equipment > 99
+			} 
+		}
+
+		visible = { has_country_flag = KOR_non_military_aid_allowed }
+		target_root_trigger = { has_country_flag = KOR_non_military_aid_allowed }
+
+		targets = { SPA SPR SPB SPC SPD }
+
+		target_trigger = {
+			FROM = {
+				exists = yes
+				has_war = yes
+				NOT = { has_war_with = ROOT }
+			}
+		}
+		days_re_enable = 30
+		complete_effect = { 
+			send_equipment = {
+				type = support_equipment
+				amount = 100
+				target = FROM
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				FROM = { has_government = ROOT }
+				factor = 5
+			}
+		}
+		cost = 0
+	}
+	KOR_allow_arms_purchases = {
+		available = { has_completed_focus = iberian_fascism }
+
+		visible = { not = { has_country_flag = KOR_arms_purchases_allowed } }
+
+		cancel_trigger = {
+			OR = {
+				has_global_flag = scw_over
+				not = { has_country_flag = KOR_arms_purchases_allowed }
+			}
+		}
+
+		complete_effect = { 
+			set_country_flag = KOR_arms_purchases_allowed 
+			clr_country_flag = KOR_non_intervention
+			custom_effect_tooltip = KOR_allow_arms_purchases_tt
+			unlock_decision_tooltip = KOR_ban_arms_purchases
+		}
+
+		cost = 25
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_stability < 0.4
+				factor = 0
+			}
+		}
+		days_remove = -1
+		modifier = {
+			stability_factor = -0.1
+			war_support_factor = 0.05
+		}
+
+	}
+
+	KOR_ban_arms_purchases = {
+		available = {  }
+
+		visible = { has_country_flag = KOR_arms_purchases_allowed }
+
+		complete_effect = { 
+			clr_country_flag = KOR_arms_purchases_allowed 
+			set_country_flag = KOR_non_intervention
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				has_stability < 0.4
+				add = 5
+			}
+		}
+	}
+
+	KOR_allow_sending_weapons = {
+		available = { has_completed_focus = iberian_fascism }
+
+		visible = { not = { has_country_flag = KOR_sending_weapons_allowed } }
+
+		cancel_trigger = {
+			OR = {
+				has_global_flag = scw_over
+				not = { has_country_flag = KOR_sending_weapons_allowed }
+			}
+		}
+
+		complete_effect = { 
+			set_country_flag = KOR_sending_weapons_allowed 
+			clr_country_flag = KOR_non_intervention
+			unlock_decision_tooltip = KOR_ban_sending_weapons
+		}
+
+		cost = 25
+		days_remove = -1
+		modifier = {
+			stability_factor = -0.15
+			war_support_factor = 0.075
+			lend_lease_tension = -1
+			request_lease_tension = -1
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_stability < 0.45
+				factor = 0
+			}
+		}
+	}
+
+	KOR_ban_sending_weapons = {
+		available = {  }
+
+		visible = { has_country_flag = KOR_sending_weapons_allowed }
+
+		complete_effect = { 
+			clr_country_flag = KOR_sending_weapons_allowed 
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				has_stability < 0.45
+				add = 5
+			}
+		}
+	}
+	KOR_allow_volunteer_work = {
+		available = { has_completed_focus = support_everything }
+
+		visible = { not = { has_country_flag = KOR_volunteer_work_allowed } }
+
+		cancel_trigger = {
+			OR = {
+				has_global_flag = scw_over
+				not = { has_country_flag = KOR_volunteer_work_allowed }
+			}
+		}
+
+		complete_effect = { 
+			set_country_flag = KOR_volunteer_work_allowed 
+			clr_country_flag = KOR_non_intervention
+			unlock_decision_tooltip = KOR_ban_volunteer_work
+			every_country = {
+				limit = {
+					OR = {
+						tag = SPA
+						tag = SPD
+						tag = SPB
+						tag = SPC
+					}
+					exists = yes
+					NOT = { has_country_flag = KOR_has_received_volunteers }
+				}
+				country_event = lar_france_volunteers.1
+			}
+			custom_effect_tooltip = KOR_allow_volunteer_work_tt
+		}
+
+		cost = 25
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_stability < 0.5
+				factor = 0
+			}
+		}
+		days_remove = -1
+		modifier = {
+			stability_factor = -0.2
+			war_support_factor = 0.1
+		}
+	}
+
+	KOR_ban_volunteer_work = {
+		available = {  }
+
+		visible = { has_country_flag = KOR_volunteer_work_allowed }
+
+		complete_effect = { 
+			clr_country_flag = KOR_volunteer_work_allowed 
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				has_stability < 0.5
+				add = 5
+			}
+		}
+		cost = 0
+	}
+	KOR_allow_covert_intervention = {
+		available = { has_completed_focus = win_civil_war }
+
+		visible = { not = { has_country_flag = KOR_covert_intervention_allowed } }
+
+		cancel_trigger = {
+			OR = {
+				has_global_flag = scw_over
+				not = { has_country_flag = KOR_covert_intervention_allowed }
+			}
+		}
+
+		complete_effect = { 
+			set_country_flag = KOR_covert_intervention_allowed 
+			clr_country_flag = KOR_non_intervention
+			set_rule = { can_send_volunteers = yes }
+		}
+
+		cost = 25
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_stability < 0.55
+				factor = 0
+			}
+			modifier = {
+				has_stability < 0.8
+				factor = 0.5
+			}
+		}
+		days_remove = -1
+		modifier = {
+			stability_factor = -0.25
+			war_support_factor = 0.125
+			send_volunteers_tension = -0.9
+		}
+	}
+
+	KOR_ban_covert_intervention = {
+		available = { 
+			NOT = {
+				any_other_country = {
+					has_volunteers_amount_from = {
+						tag = ROOT
+						count > 0
+					}
+				}
+			}
+		}
+
+		visible = { has_country_flag = KOR_covert_intervention_allowed }
+
+		complete_effect = { 
+			clr_country_flag = KOR_covert_intervention_allowed 
+			#recall_volunteers_from = SPR
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				has_stability < 0.55
+				add = 5
+			}
+		}
+	}
+
+	KOR_intervene_on_side_of_FROM = {
+		available = { has_war_support > 0.25 }
+
+		visible = { has_war = no }
+
+		targets = { SPD SPA SPB SPR }
+
+		target_trigger = { 
+			FROM = {
+				original_tag = SPR
+				has_government = ROOT
+			}
+		}
+
+		complete_effect = {
+			#This is not optimal, but it generates a beautiful tooltip
+			if = {
+				limit = { FROM = { tag = SPD } }
+				set_country_flag = supports_SPD_flag
+				if = {
+					limit = { country_exists = SPA }
+					add_to_war = { targeted_alliance = SPD enemy = SPA hostility_reason = asked_to_join }
+				}
+				if = {
+					limit = { country_exists = SPC }
+					add_to_war = { targeted_alliance = SPD enemy = SPC hostility_reason = asked_to_join }
+				}
+				if = {
+					limit = { country_exists = SPB }
+					add_to_war = { targeted_alliance = SPD enemy = SPB hostility_reason = asked_to_join }
+				}
+			}
+			else_if = {
+				limit = { FROM = { tag = SPA } }
+				set_country_flag = supports_SPA_flag
+				if = {
+					limit = { country_exists = SPD }
+					add_to_war = { targeted_alliance = SPA enemy = SPD hostility_reason = asked_to_join }
+				}
+				if = {
+					limit = { country_exists = SPC }
+					add_to_war = { targeted_alliance = SPA enemy = SPC hostility_reason = asked_to_join }
+				}
+				if = {
+					limit = { country_exists = SPB }
+					add_to_war = { targeted_alliance = SPA enemy = SPB hostility_reason = asked_to_join }
+				}
+			}
+			else_if = {
+				limit = { FROM = { tag = SPB } }
+				set_country_flag = supports_SPB_flag
+				if = {
+					limit = { country_exists = SPD }
+					add_to_war = { targeted_alliance = SPB enemy = SPD hostility_reason = asked_to_join }
+				}
+				if = {
+					limit = { country_exists = SPC }
+					add_to_war = { targeted_alliance = SPB enemy = SPC hostility_reason = asked_to_join }
+				}
+				if = {
+					limit = { country_exists = SPA }
+					add_to_war = { targeted_alliance = SPB enemy = SPA hostility_reason = asked_to_join }
+				}
+			}
+
+			effect_tooltip = {
+				give_military_access = FROM
+				FROM = { give_military_access = ROOT }
+			}
+			hidden_effect = {
+				diplomatic_relation = {
+					country = FROM
+					relation = military_access
+					active = yes
+				}
+				FROM = {
+					diplomatic_relation = {
+						country = ROOT
+						relation = military_access
+						active = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_faction_leader = yes
+				}
+				add_to_faction = FROM
+			}
+			clr_country_flag = KOR_non_intervention
+			if = {
+				limit = {
+					has_country_flag = KOR_covert_intervention_allowed
+				}
+				clr_country_flag = KOR_covert_intervention_allowed 
+			}
+			if = {
+				limit = {
+					has_country_flag = KOR_volunteer_work_allowed
+				}
+				clr_country_flag = KOR_volunteer_work_allowed 
+			}
+			if = {
+				limit = {
+					has_country_flag = KOR_sending_weapons_allowed
+				}
+				clr_country_flag = KOR_sending_weapons_allowed 
+			}
+			if = { 
+				limit = { has_country_flag = KOR_non_military_aid_allowed }
+				clr_country_flag = KOR_non_military_aid_allowed
+			}
+			if = { 
+				limit = { has_country_flag = KOR_arms_purchases_allowed }
+				clr_country_flag = KOR_arms_purchases_allowed
+			}
+			
+		}
+
+		cost = 25
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_war = yes
+				factor = 0
+			}
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
+		
+	}
+}
+
+form_united_KOR_category = {
+
+	form_united_KOR = {
+
+		icon = generic_form_nation
+
+		allowed = {
+				original_tag = KOR
+		}
+
+		available = {
+			is_subject = no
+			# KOR
+			custom_trigger_tooltip = {
+				tooltip = form_eu_KOR_required_states_tt
+				controls_state = 798
+				controls_state = 797
+				controls_state = 799
+				controls_state = 527
+				controls_state = 525
+				controls_state = 800
+				controls_state = 801
+				controls_state = 802
+				controls_state = 803
+				controls_state = 804
+			}
+			#MAN
+			custom_trigger_tooltip = {
+				tooltip = form_eu_MAN_required_states_tt
+				controls_state = 610
+				controls_state = 611
+				controls_state = 612
+				controls_state = 715
+				controls_state = 716
+				controls_state = 714
+				controls_state = 761
+				controls_state = 328
+				controls_state = 717
+			}
+		}
+
+		visible = {
+			OR = {
+				original_tag = KOR
+			}
+			NOT = { has_global_flag = form_united_KOR_flag }
+			NOT = { has_global_flag = HOL_benelux_formed }
+		}
+
+		complete_effect = {
+			# KOR
+			custom_effect_tooltip = form_eu_KOR_coring_states_tt
+			hidden_effect = {
+			798 = { add_core_of = ROOT }
+			797 = { add_core_of = ROOT }
+			799 = { add_core_of = ROOT }
+			527 = { add_core_of = ROOT }
+			525 = { add_core_of = ROOT }
+			800 = { add_core_of = ROOT }
+			801 = { add_core_of = ROOT }
+			802 = { add_core_of = ROOT }
+			803 = { add_core_of = ROOT }
+			804 = { add_core_of = ROOT }
+			}
+			# MAN
+			custom_effect_tooltip = form_eu_MAN_coring_states_tt
+			hidden_effect = {
+			610 = { add_core_of = ROOT }
+			611 = { add_core_of = ROOT }
+			612 = { add_core_of = ROOT }
+			714 = { add_core_of = ROOT }
+			715 = { add_core_of = ROOT }
+			716 = { add_core_of = ROOT }
+			761 = { add_core_of = ROOT }
+			717 = { add_core_of = ROOT }
+			328 = { add_core_of = ROOT }
+			}
+			hidden_effect = {
+				news_event = { id = wtt_news.58 hours = 6 }
+				set_global_flag = form_united_netherlands_flag
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+}
+@KOR_HUNT_BANDITS_EQUIPMENT_COST_TRIGGER = 499
+@KOR_HUNT_BANDITS_EQUIPMENT_COST_EFFECT = -500
+
+KOR_banditry_category = {
+
+	KOR_pacify_bandits_in_the_northern_countryside = {
+
+		icon = generic_oppression
+		
+		available = {
+			has_country_flag = KOR_northern_bandits
+			divisions_in_state = {
+				state = 525	
+				size > 5
+			}
+		}
+
+		highlight_state_targets = {
+			state = 525
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 200
+				divisions_in_state = {
+					state = 525	
+					size > 5
+				}
+			}
+		}
+
+		visible = {
+			NOT = { has_active_mission = KOR_maintain_northern_control }
+		}
+
+		is_good = yes
+
+		complete_effect = {
+			activate_mission = KOR_maintain_northern_control
+			custom_effect_tooltip = KOR_pacify_bandits_mission_explanation
+		}
+	}
+
+KOR_hunt_down_northern_bandits = {
+
+		icon = generic_oppression
+
+		available = {
+			has_equipment = { infantry_equipment > @KOR_HUNT_BANDITS_EQUIPMENT_COST_TRIGGER }
+			has_country_flag = KOR_northern_bandits
+		}
+
+		cost = 0
+
+		highlight_state_targets = {
+			state = 525
+		}
+		visible = {
+			has_country_flag = KOR_northern_bandits
+		}
+		is_good = yes
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 200
+				divisions_in_state = {
+					state = 525	
+					size < 6
+				}
+			}
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = KOR_hunt_down_northern_bandits_tt
+			add_manpower = -1000
+			
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = @KOR_HUNT_BANDITS_EQUIPMENT_COST_EFFECT
+			}
+
+			army_experience = 10
+
+			remove_mission = KOR_maintain_northern_control
+			clr_country_flag = KOR_northern_bandits
+			if = {
+				limit = {
+					NOT = { has_country_flag = KOR_eastern_bandits }
+					NOT = { has_country_flag = KOR_western_bandits }
+				}
+				remove_ideas = unstable_security
+			}
+		}
+	}
+
+	KOR_maintain_northern_control = {
+
+		icon = generic_civil_support
+
+		available = {
+			always = no
+		}
+
+		days_mission_timeout = KOR_main_control_timer?180
+
+		activation = {
+			always = no #Triggered from effect
+		}
+
+		cancel_trigger = {
+			divisions_in_state = {
+				state = 525	
+				size < 6
+			}
+		}
+
+		highlight_state_targets = {
+			state = 525
+		}
+
+		visible = {
+			
+		}
+
+		is_good = yes
+
+		timeout_effect = {
+			custom_effect_tooltip = KOR_hunt_down_northern_bandits_tt
+			army_experience = 10
+			clr_country_flag = KOR_northern_bandits
+			if = {
+				limit = {
+					NOT = { has_country_flag = KOR_eastern_bandits }
+					NOT = { has_country_flag = KOR_western_bandits }
+				}
+				remove_ideas = unstable_security
+			}
+		}
+	}
+
+	KOR_pacify_bandits_in_the_eastern_countryside = {
+
+		icon = generic_oppression
+		
+		available = {
+			has_country_flag = KOR_eastern_bandits
+			divisions_in_state = {
+				state = 798
+				size > 5
+			}
+		}
+
+		highlight_state_targets = {
+			state = 798
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 200
+				divisions_in_state = {
+					state = 798	
+					size > 5
+				}
+			}
+		}
+
+		visible = {
+			NOT = { has_active_mission = KOR_maintain_eastern_control }
+			has_country_flag = KOR_eastern_bandits
+		}
+
+		is_good = yes
+
+		complete_effect = {
+			activate_mission = KOR_maintain_eastern_control
+			custom_effect_tooltip = KOR_pacify_bandits_mission_explanation
+		}
+	}
+
+	KOR_hunt_down_eastern_bandits = {
+
+		icon = generic_oppression
+
+		available = {
+			has_equipment = { infantry_equipment > @KOR_HUNT_BANDITS_EQUIPMENT_COST_TRIGGER }
+			has_country_flag = KOR_eastern_bandits
+		}
+
+		visible = {
+			has_country_flag = KOR_eastern_bandits
+		}
+
+		cost = 0
+
+		highlight_state_targets = {
+			state = 798
+		}
+
+		is_good = yes
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 200
+				divisions_in_state = {
+					state = 798	
+					size < 6
+				}
+			}
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = KOR_hunt_down_eastern_bandits_tt
+			add_manpower = -1000
+			
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = @KOR_HUNT_BANDITS_EQUIPMENT_COST_EFFECT
+			}
+
+			army_experience = 10
+
+			remove_mission = KOR_maintain_eastern_control
+			clr_country_flag = KOR_eastern_bandits
+			if = {
+				limit = {
+					NOT = { has_country_flag = KOR_northern_bandits }
+					NOT = { has_country_flag = KOR_western_bandits }
+				}
+				remove_ideas = unstable_security
+			}
+		}
+	}
+
+	KOR_maintain_eastern_control = {
+
+		icon = generic_civil_support
+
+		available = {			
+			always = no
+		}
+
+		days_mission_timeout = KOR_main_control_timer?180
+
+		activation = {
+			always = no #Triggered from effect
+		}
+
+		cancel_trigger = {
+			divisions_in_state = {
+				state = 798	
+				size < 6
+			}
+		}
+
+		highlight_state_targets = {
+			state = 798
+		}
+
+		visible = {
+			
+		}
+
+		is_good = yes
+
+		timeout_effect = {
+			custom_effect_tooltip = KOR_hunt_down_eastern_bandits_tt
+			army_experience = 10
+			clr_country_flag = KOR_eastern_bandits
+			if = {
+				limit = {
+					NOT = { has_country_flag = KOR_northern_bandits }
+					NOT = { has_country_flag = KOR_western_bandits }
+				}
+				remove_ideas = unstable_security
+			}
+		}
+	}
+
+	KOR_pacify_bandits_in_the_western_countryside = {
+
+		icon = generic_oppression
+		
+		available = {
+			has_country_flag = KOR_western_bandits
+			divisions_in_state = {
+				state = 801	
+				size > 5
+			}
+		}
+
+		highlight_state_targets = {
+			state = 801
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 200
+				divisions_in_state = {
+					state = 801	
+					size > 5
+				}
+			}
+		}
+
+		visible = {
+			NOT = { has_active_mission = KOR_maintain_western_control }
+			has_country_flag = KOR_western_bandits
+		}
+
+		is_good = yes
+
+		complete_effect = {
+			activate_mission = KOR_maintain_western_control
+			custom_effect_tooltip = KOR_pacify_bandits_mission_explanation
+		}
+	}
+
+	KOR_hunt_down_western_bandits = {
+
+		icon = generic_oppression
+
+		available = {
+			has_equipment = { infantry_equipment > @KOR_HUNT_BANDITS_EQUIPMENT_COST_TRIGGER }
+			has_country_flag = KOR_western_bandits
+		}
+
+		cost = 0
+
+		highlight_state_targets = {
+			state = 801
+		}
+
+		visible = {
+			has_country_flag = KOR_western_bandits
+		}
+
+		is_good = yes
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 200
+				divisions_in_state = {
+					state = 801	
+					size < 6
+				}
+			}
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = KOR_hunt_down_western_bandits_tt
+			add_manpower = -1000
+			
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = @KOR_HUNT_BANDITS_EQUIPMENT_COST_EFFECT
+			}
+
+			army_experience = 10
+
+			remove_mission = KOR_maintain_western_control
+			clr_country_flag = KOR_western_bandits
+			if = {
+				limit = {
+					NOT = { has_country_flag = KOR_eastern_bandits }
+					NOT = { has_country_flag = KOR_northern_bandits }
+				}
+				remove_ideas = unstable_security
+			}
+		}
+	}
+
+	KOR_maintain_western_control = {
+
+		icon = generic_civil_support
+
+		available = {			
+			always = no
+		}
+
+		days_mission_timeout = KOR_main_control_timer?180
+
+		activation = {
+			always = no #Triggered from effect
+		}
+
+		cancel_trigger = {
+			divisions_in_state = {
+				state = 801	
+				size < 6
+			}
+		}
+
+		highlight_state_targets = {
+			state = 801
+		}
+
+		visible = {
+			
+		}
+
+		is_good = yes
+
+		timeout_effect = {
+			custom_effect_tooltip = KOR_hunt_down_western_bandits_tt
+			army_experience = 10
+			clr_country_flag = KOR_western_bandits
+			if = {
+				limit = {
+					NOT = { has_country_flag = KOR_eastern_bandits }
+					NOT = { has_country_flag = KOR_northern_bandits }
+				}
+				remove_ideas = unstable_security
+			}
+		}
+	}

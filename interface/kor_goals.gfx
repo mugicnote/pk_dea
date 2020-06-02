@@ -140,4 +140,114 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focus_nationalism.dds"
 	}
 
+	SpriteType = {
+		name = "GFX_HOL_blackgoals"
+		texturefile = "gfx/interface/goals/HOL_blackgoals.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_generic_investigation"
+		texturefile = "gfx/interface/goals/goal_generic_investigation.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_healthcare"
+		texturefile = "gfx/interface/goals/goal_healthcare.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_generic_lightbulb"
+		texturefile = "gfx/interface/goals/goal_generic_lightbulb.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_generic_expel_people"
+		texturefile = "gfx/interface/goals/goal_generic_expel_people.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_generic_imprison_people"
+		texturefile = "gfx/interface/goals/goal_generic_imprison_people.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_officers"
+		texturefile = "gfx/interface/goals/goal_officers.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_LEC_Passports2"
+		texturefile = "gfx/interface/goals/LEC_Passports2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_FIN_promote_the_red_cross"
+		texturefile = "gfx/interface/goals/goal_FIN_promote_the_red_cross.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_card_tricks"
+		texturefile = "gfx/interface/goals/goal_card_tricks.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_PAL_Irrigation_Program"
+		texturefile = "gfx/interface/goals/PAL_Irrigation_Program.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_PAL_Food_Import"
+		texturefile = "gfx/interface/goals/PAL_Food_Import.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_SZC_improvised_farming_machinery"
+		texturefile = "gfx/interface/goals/goal_SZC_improvised_farming_machinery.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_SZC_dujiangyan_irrigation_system"
+		texturefile = "gfx/interface/goals/goal_SZC_dujiangyan_irrigation_system.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_OTT_Restrict_Foreign_Exchange_Regime"
+		texturefile = "gfx/interface/goals/OTT_Restrict_Foreign_Exchange_Regime.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KTG_Bookstack"
+		texturefile = "gfx/interface/goals/KTG_Bookstack.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_generic_loans"
+		texturefile = "gfx/interface/goals/goal_generic_loans.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_generic_railroad"
+		texturefile = "gfx/interface/goals/goal_generic_railroad.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_generic_stable_government"
+		texturefile = "gfx/interface/goals/goal_generic_stable_government.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_DOM_The_Trial"
+		texturefile = "gfx/interface/goals/DOM_The_Trial.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SIA_maritmesilkroad"
+		texturefile = "gfx/interface/goals/SIA_maritmesilkroad.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_factory_complex"
+		texturefile = "gfx/interface/goals/goal_factory_complex.dds"
+	}
+
 }

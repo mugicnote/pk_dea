@@ -20,6 +20,10 @@ spriteTypes = {
 		name = "GFX_NAREISION"
 		texturefile = "gfx/event_pictures/NAREISION.dds"
 	}
+	spriteType = {
+		name = "GFX_emperor1"
+		texturefile = "gfx/event_pictures/emperor1.dds"
+	}
 
 }
 	

@@ -25,4 +25,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/advisor_syngman_rhee.dds"
 	}
 
+	spriteType = {
+		name = "GFX_idea_KTG_Industrial_Crisis_Town"
+		texturefile = "gfx/interface/ideas/KTG_Industrial_Crisis_Town.dds"
+	}
+
 }

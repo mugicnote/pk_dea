@@ -6,6 +6,9 @@ on_actions = {
           id = KOR.14
           days = 0
       			}
+		set_country_flag = KOR_northern_bandits
+		set_country_flag = KOR_eastern_bandits
+		set_country_flag = KOR_western_bandits
 			}
 		}
 	}

@@ -25,6 +25,16 @@
 		y = 2
 		completion_reward = {
 			country_event = { id = KOR.1 }
+			set_popularities = {
+				democratic = 50
+				neutrality = 10
+				fascism = 25
+				communism = 15
+			}
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+			}
 		}
 	}
 	focus = {
@@ -75,7 +85,8 @@
   				expire = "1947.7.19"
   				ideology = liberalism
   				traits = {
-    				#
+    				traits_Yeo_Un1
+					traits_Yeo_Un2
   				}
 			}
 		}
@@ -339,7 +350,7 @@
   				expire = "1947.7.19"
   				ideology = liberalism
   				traits = {
-    				#
+    				traits_kim_ku
   				}
 			}
 		}
@@ -350,6 +361,9 @@
 		cost = 10.00
 		prerequisite = {
 			focus = Kim_Gu_Elected
+		}
+		completion_reward = {
+			add_ideas = Democratic_Human_Rights_Bureau_idea
 		}
 		x = 12
 		y = 5
@@ -362,6 +376,12 @@
 		prerequisite = {
 			focus = Democratic_Human_Rights_Bureau
 		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = Democratic_Human_Rights_Bureau_idea
+				add_idea = Democratic_Human_Rights_Bureau_idea_2
+			}
+		}
 		x = 12
 		y = 6
 
@@ -372,6 +392,12 @@
 		cost = 10.00
 		prerequisite = {
 			focus = Acknowledge_freedom_of_speech
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = Democratic_Human_Rights_Bureau_idea_2
+				add_idea = Democratic_Human_Rights_Bureau_idea_3
+			}
 		}
 		x = 12
 		y = 7
@@ -415,7 +441,7 @@
   				expire = "1947.7.19"
   				ideology = liberalism
   				traits = {
-    				#
+    				anti_communist
   				}
 			}
 		}
@@ -800,27 +826,44 @@
 			country_event = { id = KOR.10 }
 		}
 	}
+
 	focus = {
-		id = Accepting_Bongcheon_Government's_Theory_of_Governance_in_Korea
+		id = Bongcheon_say_ok
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
 			focus = Manju_Korean_Governance_Theory
 		}
+		mutually_exclusive = {
+			focus = Bongcheon_say_no
+		}
+		x = 4
+		y = 12
 
+	}
+
+	focus = {
+		id = Bongcheon_say_no
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Manju_Korean_Governance_Theory
+		}
+		mutually_exclusive = {
+			focus = Bongcheon_say_ok
+		}
 		x = 6
 		y = 12
 
 	}
+
 	focus = {
 		id = China's_threat_to_return_Manchuria
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = Accepting_Bongcheon_Government's_Theory_of_Governance_in_Korea
-		}
-		prerequisite = {
-			focus = Mongol_Chahar_Convention
+			focus = Bongcheon_say_ok
+			focus = Bongcheon_say_no
 		}
 		x = 5
 		y = 13
@@ -835,6 +878,12 @@
 		}
 		mutually_exclusive = {
 			focus = military_arrest
+		}
+		completion_reward = {
+		set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
 		}
 		x = 50
 		y = 1
@@ -1238,6 +1287,18 @@
 		}
 		mutually_exclusive = {
 			focus = joeson_fascism_party
+		}
+		completion_reward = {
+			create_country_leader = {
+  				name = "염동진"
+  				desc = ""
+  				picture = ""
+  				expire = "1947.7.19"
+  				ideology = fascism_ideology
+  				traits = {
+    				fascist_militia_leader
+  				}
+			}
 		}
 		x = 54
 		y = 3
@@ -2062,386 +2123,10 @@
 		y = 8
 
      }
-     focus = {
-		id = economic_development
-		icon = GFX_goal_generic_production
-		cost = 10.00
-		prerequisite = {
 
-		}
-		x = 76
-		y = 0
-		completion_reward = {
-		add_tech_bonus = {
-				name = GER_four_year_plan
-				bonus = 1.0
-				uses = 2
-				category = industry
-			}
-     	}
-	 }
-     focus = {
-		id = upgrade_road_line
-		icon = GFX_goal_generic_construction2
-		cost = 10.00
-		prerequisite = {
-			focus = economic_development
-		}
-		x = 80
-		y = 1
-		completion_reward = {
-			add_tech_bonus = {
-				name = GER_coal_liquidization
-				bonus = 1.0
-				uses = 3
-				category = synth_resources
-			}
-		}
-     }
-     focus = {
-		id = Gyeongbu_Expressway_1
-		icon = GFX_goal_generic_construct_civilian
-		cost = 10.00
-		prerequisite = {
-			focus = upgrade_road_line
-		}
-		x = 79
-		y = 2
-		completion_reward = {
-		801 = {
-			if = {
-				limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = infrastructure
-						level = 5
-						instant_build = yes
-					}
-				}
-			}
-		800 = {
-			if = {
-				limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = infrastructure
-						level = 5
-						instant_build = yes
-					}
-				}
-			}
-		525 = {
-			if = {
-				limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = infrastructure
-						level = 5
-						instant_build = yes
-					}
-				}
-			}
-		}
-     }
-     focus = {
-		id = Gyeongbu_Expressway_2
-		icon = GFX_goal_generic_construct_infrastructure
-		cost = 10.00
-		prerequisite = {
-			focus = upgrade_road_line
-		}
-		x = 81
-		y = 2
-		completion_reward = {
-		802 = {
-			if = {
-				limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = infrastructure
-						level = 5
-						instant_build = yes
-					}
-				}
-			}
-		527 = {
-			if = {
-				limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = infrastructure
-						level = 5
-						instant_build = yes
-					}
-				}
-			}
-		}
-     }
-     focus = {
-		id = police_reshuffle
-		icon = GFX_goal_generic_small_arms
-		cost = 10.00
-		prerequisite = {
-			focus = economic_development
-		}
-		x = 76
-		y = 1
-		completion_reward = {
-		swap_ideas = {
-				remove_idea = KOR_police_corruption
-				add_idea = KOR_police_corruption_2
-			}
-		}
-     }
-     focus = {
-		id = defensive_police
-		icon = GFX_focus_conservatism
-		cost = 10.00
-		prerequisite = {
-			focus = police_reshuffle
-		}
-		mutually_exclusive = {
-			focus = offensive_police
-		}
-		x = 77
-		y = 2
-		completion_reward = {
-		swap_ideas = {
-				remove_idea = KOR_police_corruption_2
-				add_idea = KOR_police_corruption_4
-			}
-		}
-     }
-     focus = {
-		id = offensive_police
-		icon = GFX_focus_generic_little_entente
-		cost = 10.00
-		prerequisite = {
-			focus = police_reshuffle
-		}
-		mutually_exclusive = {
-			focus = defensive_police
-		}
-		x = 75
-		y = 2
-		completion_reward = {
-		swap_ideas = {
-				remove_idea = KOR_police_corruption_2
-				add_idea = KOR_police_corruption_3
-			}
-		}
-     }
-     focus = {
-		id = Information_Reorganization
-		icon = GFX_focus_kcia
-		cost = 10.00
-		prerequisite = {
-			focus = economic_development
-		}
-		x = 74
-		y = 1
-
-     }
-     focus = {
-		id = facility_development
-		icon = GFX_goal_generic_construct_civilian
-		cost = 10.00
-		prerequisite = {
-			focus = economic_development
-		}
-		x = 72
-		y = 1
-		completion_reward = {
-			add_tech_bonus = {
-				name = radar_focus
-				bonus = 1.0
-				uses = 3
-				category = radar_tech
-				category = electronics
-			}
-		}
-     }
-     focus = {
-		id = Incheon_Shipyard_Restart
-		icon = GFX_goal_generic_construct_naval_dockyard
-		cost = 10.00
-		prerequisite = {
-			focus = facility_development
-		}
-		x = 69
-		y = 2
-		completion_reward = {
-			525 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = dockyard
-						level = 2
-						instant_build = yes
-					}
-				}
-			}
-		}
-     }
-     focus = {
-		id = Seoul_cotton_mill
-		icon = GFX_goal_generic_construct_civ_factory
-		cost = 10.00
-		prerequisite = {
-			focus = facility_development
-		}
-		x = 71
-		y = 2
-		completion_reward = {
-			525 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = industrial_complex
-						level = 2
-						instant_build = yes
-					}
-				}
-			}
-		}
-     }
-     focus = {
-		id = north_munitions_factory
-		icon = GFX_focus_generic_steel
-		cost = 10.00
-		prerequisite = {
-			focus = facility_development
-		}
-		x = 73
-		y = 2
-		completion_reward = {
-			797 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = arms_factory
-						level = 2
-						instant_build = yes
-					}
-				}
-			}
-			798 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = arms_factory
-						level = 2
-						instant_build = yes
-					}
-				}
-			}
-		}
-     }
-	 focus = {
-		id = KOR_technical_research_1
-		icon = GFX_focus_research
-		cost = 10.00
-		prerequisite = {
-			focus = offensive_police
-			focus = defensive_police
-		}
-		x = 76
-		y = 3
-		completion_reward = {
-			add_research_slot = 1
-		}
-     }
-	 focus = {
-		id = land_filled_beauty
-		icon = GFX_goal_generic_construct_mil_factory
-		cost = 10.00
-		prerequisite = {
-			focus = Seoul_cotton_mill
-		}
-		prerequisite = {
-			focus = north_munitions_factory
-		}
-		x = 72
-		y = 3
-		completion_reward = {
-			add_timed_idea = { idea = KOR_matignon_agreements days = 365 }
-     	}
-	}
-	focus = {
-		id = Gyeongbu_Expressway_1_man
-		icon = GFX_focus_generic_industry_3
-		cost = 10.00
-		prerequisite = {
-			focus = Gyeongbu_Expressway_1
-		}
-		prerequisite = {
-			focus = Gyeongbu_Expressway_2
-		}
-		x = 80
-		y = 3
-		completion_reward = {
-		716 = {
-			if = {
-				limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = infrastructure
-						level = 5
-						instant_build = yes
-					}
-				}
-			}
-		715 = {
-			if = {
-				limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = infrastructure
-						level = 5
-						instant_build = yes
-					}
-				}
-			}
-		328 = {
-			if = {
-				limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = infrastructure
-						level = 5
-						instant_build = yes
-					}
-				}
-			}
-		}
-     }
-	focus = {
-		id = land_filled_beauty_2
-		icon = GFX_focus_guardian_of_asia
-		cost = 10.00
-		prerequisite = {
-			focus = Gyeongbu_Expressway_1_man
-			focus = land_filled_beauty
-		}
-		x = 76
-		y = 4
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = KOR_matignon_agreements
-				add_idea = KOR_matignon_agreements_2
-     		}
-		}
-	}
-	focus = {
-		id = Mongol_Chahar_Convention
-		icon = GFX_
-		cost = 10.00
-		prerequisite = {
-			focus = Manju_Korean_Governance_Theory
-		}
-		prerequisite = {
-			focus = Claiming_Japan's_annexation_of_Korea
-		}
-		x = 6
-		y = 12
-
-     }
-	 
 	focus = {
 		id = emperor_returns
-		icon = GFX_focus_declare_empire
+		icon = GFX_focus_chunggun_aeguk
 		cost = 10.00
 		prerequisite = {
 			focus = military_success
@@ -2449,6 +2134,20 @@
 		mutually_exclusive = {
 			focus = division_of_party
 		}
+		completion_reward = {
+			set_cosmetic_tag = KOR_empire
+			create_country_leader = {
+  				name = "대한제국 황실"
+  				desc = ""
+  				picture = "emperor1.dds"
+  				expire = "1947.7.19"
+  				ideology = fascism_ideology
+  				traits = {
+    				disgraced_monarch
+					KOR_stammer	
+  					}
+				}
+			}
 		x = 67
 		y = 2
 
@@ -2463,7 +2162,9 @@
 		}
 		x = 66
 		y = 3
-
+		completion_reward = {
+			#
+		}
      }
 	
 	focus = {
@@ -2479,11 +2180,17 @@
      }
 	focus = {
 		id = return_yi_kang
-		icon = GFX_focus_chunggun_aeguk
+		icon = GFX_focus_declare_empire
 		cost = 10.00
 		prerequisite = {
 			focus = change_law
+		}
+		prerequisite = {
 			focus = form_imperial_party
+		}
+		completion_reward = {
+			remove_ideas = KOR_disjointed_government
+			news_event = {id = KOR.16 }
 		}
 		x = 67
 		y = 4
@@ -2562,6 +2269,10 @@
 		prerequisite = {
 			focus = return_yi_kang
 		}
+		completion_reward = {
+			unlock_decision_category_tooltip = KOR_spanish_intervention_category
+			set_country_flag = KOR_non_intervention
+		}
 		x = 68
 		y = 5
 
@@ -2573,6 +2284,9 @@
 		prerequisite = {
 			focus = intervention_spanish_civil_war
 		}
+		completion_reward = {
+		custom_effect_tooltip = support_national_front_tt
+		}
 		x = 68
 		y = 6
 
@@ -2583,6 +2297,9 @@
 		cost = 10.00
 		prerequisite = {
 			focus = support_national_front
+		}
+		completion_reward = {
+		custom_effect_tooltip = iberian_fascism_tt
 		}
 		x = 68
 		y = 7
@@ -3194,5 +2911,434 @@
 		y = 18
 
      }
+
+	  focus = {
+		id = great_depression_aftermath
+		icon = GFX_HOL_blackgoals
+		cost = 10.00
+		prerequisite = {
+
+		}
+		x = 86
+		y = 0
+	 }
+
+	  focus = {
+		id = snip_back_deal
+		icon = GFX_goal_generic_investigation
+		cost = 10.00
+		prerequisite = {
+			focus = great_depression_aftermath
+		}
+		x = 84
+		y = 1
+	 }
+
+	 focus = {
+		id = organization_Korean_Red_Cross
+		icon = GFX_goal_healthcare
+		cost = 10.00
+		prerequisite = {
+			focus = poverty_problem
+		}
+		x = 88
+		y = 2
+	 }
+
+	 focus = {
+		id = war_against_crime_start
+		icon = GFX_goal_generic_imprison_people
+		cost = 10.00
+		prerequisite = {
+			focus = snip_back_deal
+		}
+		x = 84
+		y = 2
+	 }
+
+	 focus = {
+		id = night_curfew
+		icon = GFX_goal_generic_expel_people
+		cost = 10.00
+		prerequisite = {
+			focus = war_against_crime_start
+		}
+		x = 83
+		y = 3
+	 }
+
+	 focus = {
+		id = Urgent_Search_Launch
+		icon = GFX_goal_officers
+		cost = 10.00
+		prerequisite = {
+			focus = war_against_crime_start
+		}
+		x = 85
+		y = 3
+	 }
+
+	 focus = {
+		id = passport_check
+		icon = GFX_LEC_Passports2
+		cost = 10.00
+		prerequisite = {
+			focus = Urgent_Search_Launch
+		}
+		x = 85
+		y = 4
+	 }
+
+	 focus = {
+		id = health_insurance_expansion
+		icon = GFX_goal_FIN_promote_the_red_cross
+		cost = 10.00
+		prerequisite = {
+			focus = organization_Korean_Red_Cross
+		}
+		x = 88
+		y = 3
+	 }
+
+	 focus = {
+		id = poverty_problem
+		icon = GFX_PAL_Irrigation_Program
+		cost = 10.00
+		prerequisite = {
+			focus = great_depression_aftermath
+		}
+		x = 88
+		y = 1
+	 }
+
+	 focus = {
+		id = economic_development_approval
+		icon = GFX_goal_card_tricks
+		cost = 10.00
+		prerequisite = {
+			focus = great_depression_aftermath
+		}
+		x = 90
+		y = 1
+		completion_reward = {
+		add_tech_bonus = {
+				name = GER_four_year_plan
+				bonus = 1.0
+				uses = 2
+				category = industry
+			}
+     	}
+	 }
+
+	 focus = {
+		id = rural_development
+		icon = GFX_goal_SZC_improvised_farming_machinery
+		cost = 10.00
+		prerequisite = {
+			focus = poverty_problem
+		}
+		prerequisite = {
+			focus = economic_development_approval
+		}
+		x = 90
+		y = 2
+	 }
+
+	 focus = {
+		id = rural_development2
+		icon = GFX_goal_SZC_dujiangyan_irrigation_system
+		cost = 10.00
+		prerequisite = {
+			focus = rural_development
+		}
+		x = 90
+		y = 3
+	 }
+
+	 focus = {
+		id = foreign_trade
+		icon = GFX_OTT_Restrict_Foreign_Exchange_Regime
+		cost = 10.00
+		prerequisite = {
+			focus = great_depression_aftermath
+		}
+		x = 86
+		y = 1
+	 }
+
+	 focus = {
+		id = police_reshuffle
+		icon = GFX_focus_conservatism
+		cost = 10.00
+		prerequisite = {
+			focus = night_curfew
+		}
+		x = 81
+		y = 4
+     }
+
+	 focus = {
+		id = Information_Reorganization
+		icon = GFX_focus_kcia
+		cost = 10.00
+		prerequisite = {
+			focus = snip_back_deal
+			focus = poverty_problem
+			focus = foreign_trade
+		}
+		x = 86
+		y = 2
+
+     }
+
+	  focus = {
+		id = compulsory_primary_education
+		icon = GFX_KTG_Bookstack
+		cost = 10.00
+		prerequisite = {
+			focus = rural_development2
+			focus = health_insurance_expansion
+		}
+		x = 89
+		y = 4
+     }
+
+	 focus = {
+		id = forfeiture_back_money
+		icon = GFX_goal_generic_loans
+		cost = 10.00
+		prerequisite = {
+			focus = Urgent_Search_Launch
+		}
+		x = 87
+		y = 4
+     }
+
+	 focus = {
+		id = Gyeongbu_Expressway_1
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10.00
+		prerequisite = {
+			focus = economic_development_approval
+		}
+		x = 92
+		y = 2
+		completion_reward = {
+		801 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 5
+						instant_build = yes
+					}
+				}
+			}
+		800 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 5
+						instant_build = yes
+					}
+				}
+			}
+		525 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 5
+						instant_build = yes
+					}
+				}
+			}
+					802 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 5
+						instant_build = yes
+					}
+				}
+			}
+		527 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 5
+						instant_build = yes
+					}
+				}
+			}
+		}
+     }
+     focus = {
+		id = Gyeongbu_Expressway_2
+		icon = GFX_goal_generic_railroad
+		cost = 10.00
+		prerequisite = {
+			focus = Gyeongbu_Expressway_1
+		}
+		x = 92
+		y = 3
+     }
+
+	 focus = {
+		id = war_against_crime_end
+		icon = GFX_DOM_The_Trial
+		cost = 10.00
+		prerequisite = {
+			focus = summary_judgment
+			focus = passport_check
+			focus = forfeiture_back_money
+		}
+		x = 84
+		y = 5
+     }
+
+	 focus = {
+		id = summary_judgment
+		icon = GFX_goal_generic_stable_government
+		cost = 10.00
+		prerequisite = {
+			focus = night_curfew
+		}
+		x = 83
+		y = 4
+     }
+
+	 focus = {
+		id = facility_development
+		icon = GFX_goal_generic_lightbulb
+		cost = 10.00
+		prerequisite = {
+			focus = great_depression_aftermath
+		}
+		x = 81
+		y = 1
+		completion_reward = {
+			add_tech_bonus = {
+				name = radar_focus
+				bonus = 1.0
+				uses = 3
+				category = radar_tech
+				category = electronics
+			}
+		}
+     }
+     focus = {
+		id = Incheon_Shipyard_Restart
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 10.00
+		prerequisite = {
+			focus = Seoul_cotton_mill
+			focus = north_munitions_factory
+		}
+		x = 81
+		y = 3
+		completion_reward = {
+			525 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
+     }
+     focus = {
+		id = Seoul_cotton_mill
+		icon = GFX_goal_factory_complex
+		cost = 10.00
+		prerequisite = {
+			focus = facility_development
+		}
+		x = 80
+		y = 2
+		completion_reward = {
+			525 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
+     }
+     focus = {
+		id = north_munitions_factory
+		icon = GFX_focus_generic_steel
+		cost = 10.00
+		prerequisite = {
+			focus = facility_development
+		}
+		x = 82
+		y = 2
+		completion_reward = {
+			797 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			798 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
+     }
+	 focus = {
+		id = land_filled_beauty
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10.00
+		prerequisite = {
+			focus = rural_development2
+			focus = Gyeongbu_Expressway_2
+		}
+		x = 91
+		y = 4
+		completion_reward = {
+			add_timed_idea = { idea = KOR_matignon_agreements days = 365 }
+     	}
+	}
+	focus = {
+		id = land_filled_beauty_2
+		icon = GFX_SIA_maritmesilkroad
+		cost = 10.00
+		prerequisite = {
+			focus = land_filled_beauty
+		}
+		prerequisite = {
+			focus = compulsory_primary_education
+		}
+		x = 90
+		y = 5
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KOR_matignon_agreements
+				add_idea = KOR_matignon_agreements_2
+     		}
+		}
+	}
 
 }
