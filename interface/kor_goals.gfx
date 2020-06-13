@@ -250,4 +250,142 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/goal_factory_complex.dds"
 	}
 
+	SpriteType = {
+		name = "GFX_focus_kcpr"
+		texturefile = "gfx/interface/goals/focus_kcpr.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_scnr"
+		texturefile = "gfx/interface/goals/focus_scnr.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_kor_jap_allies"
+		texturefile = "gfx/interface/goals/focus_kor_jap_allies.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_rok_armed_forces"
+		texturefile = "gfx/interface/goals/focus_rok_armed_forces.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_RUS_Markov_plan"
+		texturefile = "gfx/interface/goals/RUS_Markov_plan.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_offensive_army"
+		texturefile = "gfx/interface/goals/goal_offensive_army.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_MAF_Napalm"
+		texturefile = "gfx/interface/goals/goal_MAF_Napalm.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_ITA_green_shirts"
+		texturefile = "gfx/interface/goals/goal_ITA_green_shirts.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_battleship"
+		texturefile = "gfx/interface/goals/goal_battleship.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_AST_scrap_reserves"
+		texturefile = "gfx/interface/goals/goal_AST_scrap_reserves.dds"
+	}
+	SpriteType = {
+		name = "GFX_SIAM_ARMY"
+		texturefile = "gfx/interface/goals/SIAM_ARMY.dds"
+	}
+	SpriteType = {
+		name = "GFX_KoreaAirForceFocus"
+		texturefile = "gfx/interface/goals/KoreaAirForceFocus.dds"
+	}
+	SpriteType = {
+		name = "GFX_KoreaArmyFocus"
+		texturefile = "gfx/interface/goals/KoreaArmyFocus.dds"
+	}
+	SpriteType = {
+		name = "GFX_KoreaMarines"
+		texturefile = "gfx/interface/goals/KoreaMarines.dds"
+	}
+	SpriteType = {
+		name = "GFX_KoreanArmedForcesFocus"
+		texturefile = "gfx/interface/goals/KoreanArmedForcesFocus.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_national_mermit"
+		texturefile = "gfx/interface/goals/focus_national_mermit.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_GEO_Artillery_Tactics"
+		texturefile = "gfx/interface/goals/goal_GEO_Artillery_Tactics.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_planning_bonus"
+		texturefile = "gfx/interface/goals/goal_planning_bonus.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_poc"
+		texturefile = "gfx/interface/goals/focus_poc.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_KTG_Belgian_Officers2"
+		texturefile = "gfx/interface/goals/goal_KTG_Belgian_Officers2.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_women_industry"
+		texturefile = "gfx/interface/goals/goal_women_industry.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_AST_freedom_of_the_press"
+		texturefile = "gfx/interface/goals/goal_AST_freedom_of_the_press.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_reform_socialist_army"
+		texturefile = "gfx/interface/goals/goal_reform_socialist_army.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_generic_army_tanks3"
+		texturefile = "gfx/interface/goals/goal_generic_army_tanks3.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_industry_air"
+		texturefile = "gfx/interface/goals/goal_industry_air.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_ilminism"
+		texturefile = "gfx/interface/goals/focus_ilminism.dds"
+	}
+	SpriteType = {
+		name = "GFX_OTT_constitution"
+		texturefile = "gfx/interface/goals/OTT_constitution.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_Liberal_party"
+		texturefile = "gfx/interface/goals/KOR_Liberal_party.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_npsc"
+		texturefile = "gfx/interface/goals/focus_npsc.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_generic_controlled_board"
+		texturefile = "gfx/interface/goals/goal_generic_controlled_board.dds"
+	}
+	SpriteType = {
+		name = "GFX_SIA_ratthaniyom"
+		texturefile = "gfx/interface/goals/SIA_ratthaniyom.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_skull_treaty"
+		texturefile = "gfx/interface/goals/goal_skull_treaty.dds"
+	}
+	SpriteType = {
+		name = "GFX_PAL_Closed_Immigration"
+		texturefile = "gfx/interface/goals/PAL_Closed_Immigration.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_monarchism_3"
+		texturefile = "gfx/interface/goals/goal_monarchism_3.dds"
+	}
+
 }

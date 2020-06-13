@@ -23,7 +23,7 @@ country_event = { #
 	option = { #
 		name = KOR.1.c
 		ai_chance = { factor = 1 }
-		complete_national_focus = Korea_Association_for_the_Promotion_of_Independence
+		complete_national_focus = KOR_focus_ilminism
 	}
 }
 
@@ -1073,5 +1073,108 @@ country_event = {
 		KOR_congress_small_support = yes
 		set_country_flag = KOR_abdication_crisis_held_radio_speech
 		hidden_effect = { country_event = { id = KOR.20 days = 20 random_days = 10 } }
+	}
+}
+
+country_event = { #군수 공장
+	id = KOR.28
+	title = KOR.28.t
+	desc = KOR.28.desc
+	picture = GFX_report_event_generic_ruins
+
+	is_triggered_only = yes
+	
+	option = {
+		name = KOR.28.a #okay
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				arms_factory > 0
+			}
+			damage_building = {
+				type = arms_factory
+				damage = 0.6
+			}
+		}
+	}
+}
+
+#Bandit sabotage - civilian factory sabotaged
+country_event = {
+	id = KOR.29
+	title = KOR.29.t
+	desc = KOR.29.desc
+	picture = GFX_report_event_generic_ruins
+
+	is_triggered_only = yes
+	
+	option = {
+		name = KOR.28.a #okay
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				industrial_complex > 0
+			}
+			damage_building = {
+				type = industrial_complex
+				damage = 0.6
+			}
+		}
+	}
+}
+
+#Bandit sabotage - bridge blown
+country_event = {
+	id = KOR.30
+	title = KOR.30.t
+	desc = KOR.30.desc
+	picture = GFX_report_event_generic_train
+
+	is_triggered_only = yes
+	
+	option = {
+		name = KOR.28.a #okay
+		random_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				infrastructure > 0
+			}
+			damage_building = {
+				type = infrastructure
+				damage = 1
+			}
+		}
+	}
+}
+
+country_event = { #범죄와의 전쟁 선포
+	id = KOR.31
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.31"}
+	title = KOR.31.t
+	desc = KOR.31.desc
+	picture = GFX_war1
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #ok
+		name = KOR.31.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = { #야간 통행 금지
+	id = KOR.32
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.32"}
+	title = KOR.32.t
+	desc = KOR.32.desc
+	picture = GFX_don't_go_night
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #ok
+		name = KOR.32.a
+		ai_chance = { factor = 1 }
 	}
 }

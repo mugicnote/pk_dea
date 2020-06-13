@@ -25,6 +25,15 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/emperor1.dds"
 	}
 
+	spriteType = {
+		name = "GFX_war1"
+		texturefile = "gfx/event_pictures/GFX_war1.dds"
+	}
+	spriteType = {
+		name = "GFX_don't_go_night"
+		texturefile = "gfx/event_pictures/don't_go_night.dds"
+	}
+
 }
 	
 	

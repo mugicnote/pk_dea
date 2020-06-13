@@ -104,7 +104,7 @@ create_country_leader = {
 create_country_leader = {
   name = "이범석"
   desc = "POLITICS_LEE_BEOM_DESC"
-  picture = "#"
+  picture = "bom_sock.dds"
   expire = "1972.5.11"
   ideology = fascism_ideology
   traits = {
@@ -126,7 +126,7 @@ create_country_leader = {
 #육군_장군_및_육군_원수
 create_field_marshal = {
   name = "홍범도"
-  picture = "bumknife2.dds"
+  picture = "bum_do.dds"
   traits = { 
   #카리스마
   inspirational_leader
@@ -136,77 +136,88 @@ create_field_marshal = {
   ambusher
   }
   
-  skill = 5
+  skill = 4
 
-  attack_skill = 7
-  defense_skill = 5
-  planning_skill = 7
-  logistics_skill = 6
+  attack_skill = 4
+  defense_skill = 3
+  planning_skill = 6
+  logistics_skill = 4
 }
 
 create_field_marshal = {
   name = "김좌진"
-  picture = "left_jin2.dds"
-  traits = { }
-  skill = 6
-
-  attack_skill = 5
-  defense_skill = 8
-  planning_skill = 4
-  logistics_skill = 7
-}
-
-create_corps_commander = {
-  name = "이범석"
-  picture = "bomrock.dds"
-  traits = { }
+  picture = "j_wa_jin.dds"
+  traits = { brilliant_strategist offensive_doctrine war_hero media_personality career_officer }
   skill = 4
 
-  attack_skill = 7
-  defense_skill = 6
-  planning_skill = 3
-  logistics_skill = 7
+  attack_skill = 3
+  defense_skill = 5
+  planning_skill = 4
+  logistics_skill = 4
+}
+
+create_field_marshal = {
+  name = "이범석"
+  picture = "bom_sock.dds"
+  traits = { armor_officer infantry_officer fast_planner brilliant_strategist logistics_wizard offensive_doctrine }
+  skill = 5
+
+  attack_skill = 5
+  defense_skill = 3
+  planning_skill = 4
+  logistics_skill = 5
 }
 
 create_corps_commander = {
   name = "박경철"
-  picture = "keongiron.dds"
+  picture = "keong_chor.dds"
   traits = { }
   skill = 3
 
-  attack_skill = 3
-  defense_skill = 5
+  attack_skill = 5
+  defense_skill = 6
   planning_skill = 2
-  logistics_skill = 6
+  logistics_skill = 4
 }
 
 create_corps_commander = {
   name = "김홍일"
-  picture = "hong1.dds"
-  traits = { }
-  skill = 5
+  picture = "hong_one.dds"
+  traits = { KOR_independent_army logistics_wizard inspirational_leader }
+  skill = 3
 
   attack_skill = 3
-  defense_skill = 7
-  planning_skill = 6
-  logistics_skill = 5
+  defense_skill = 6
+  planning_skill = 5
+  logistics_skill = 4
 }
 
-create_field_marshal = {
+create_corps_commander = {
   name = "지청천"
-  picture = "chong1000.dds"
-  traits = { }
-  skill = 6
+  picture = "chong_chen.dds"
+  traits = { inflexible_strategist infantry_officer logistics_wizard defensive_doctrine inspirational_leader }
+  skill = 5
 
-  attack_skill = 7
-  defense_skill = 4
+  attack_skill = 6
+  defense_skill = 3
   planning_skill = 2
   logistics_skill = 6
 }
 
 create_field_marshal = {
+	name = "이은"
+	portrait_path = "gfx/leaders/KOR/Portrait_KOR_Yi_Un.dds"
+	traits = { politically_connected old_guard defensive_doctrine media_personality }
+	skill = 2
+    attack_skill = 2
+    defense_skill = 4
+    planning_skill = 3
+    logistics_skill = 2
+}
+
+create_field_marshal = {
   name = "김경천"
-  picture = "geong1000.dds"
+  picture = "Kim_Kyung_Cheon.dds"
   traits = { 
   #명석한 전략가
   Brilliant_Strategist
@@ -215,7 +226,7 @@ create_field_marshal = {
   #언덕 싸움꾼
   Hill_Fighter
   }
-  skill = 7
+  skill = 4
 
   attack_skill = 6
   defense_skill = 5
@@ -225,7 +236,7 @@ create_field_marshal = {
 
 create_field_marshal = {
   name = "김원봉"
-  picture = "1bong.dds"
+  picture = "kim_won_bong.dds"
   traits = { 
   #정계와의 연줄
   Politically_Connected
@@ -234,21 +245,141 @@ create_field_marshal = {
   #특공대
   Commando
   }
-  skill = 7
+  skill = 3
 
-  attack_skill = 9
+  attack_skill = 5
   defense_skill = 2
-  planning_skill = 8
-  logistics_skill = 3
+  planning_skill = 5
+  logistics_skill = 4
 }
 create_corps_commander = {
   name = "김학규"
   picture = "hak_ku.dds"
   traits = { }
-  skill = 6
+  skill = 3
 
-  attack_skill = 5
-  defense_skill = 7
-  planning_skill = 6
+  attack_skill = 3
+  defense_skill = 5
+  planning_skill = 4
   logistics_skill = 4
+}
+create_corps_commander = {
+	name = "신팔균"
+	portrait_path = "gfx/leaders/KOR/Portrait_KOR_Shin_Pal_gyun.dds"
+	traits = { infantry_officer career_officer trait_engineer }
+	skill = 3
+    attack_skill = 3
+    defense_skill = 2
+    planning_skill = 3
+    logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "양세봉"
+	portrait_path = "gfx/leaders/KOR/Portrait_KOR_Yang_Se_bong.dds"
+	traits = { infantry_officer commando trickster }
+	skill = 3
+    attack_skill = 3
+    defense_skill = 3
+    planning_skill = 2
+    logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "유동열"
+	portrait_path = "gfx/leaders/KOR/Portrait_KOR_Yu_Dong_yeol.dds"
+	traits = { cavalry_officer armor_officer organizer career_officer }
+	skill = 3
+    attack_skill = 3
+    defense_skill = 2
+    planning_skill = 2
+    logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "김규천"
+	portrait_path = "gfx/leaders/KOR/Portrait_KOR_Kim_Kyung_cheon.dds"
+	traits = { cavalry_officer armor_officer panzer_leader career_officer }
+	skill = 3
+    attack_skill = 3
+    defense_skill = 3
+    planning_skill = 2
+    logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "김석원"
+	portrait_path = "gfx/leaders/KOR/Portrait_KOR_Kim_Suk_won.dds"
+	traits = { infantry_officer brilliant_strategist career_officer }
+	skill = 3
+    attack_skill = 3
+    defense_skill = 2
+    planning_skill = 2
+    logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "홍사익"
+	portrait_path = "gfx/leaders/KOR/Portrait_KOR_Hong_Sa_ik.dds"
+	traits = { organizer career_officer brilliant_strategist }
+	skill = 2
+    attack_skill = 2
+    defense_skill = 2
+    planning_skill = 2
+    logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "이우"
+	portrait_path = "gfx/leaders/KOR/Portrait_KOR_Yi_Wu_.dds"
+	traits = { politically_connected media_personality brilliant_strategist armor_officer trait_engineer }
+	skill = 4
+    attack_skill = 3
+    defense_skill = 3
+    planning_skill = 2
+    logistics_skill = 2
+}
+
+create_field_marshal = {
+	name = "송호성"
+	picture = "Portrait_general_song_hoseong.dds"
+	traits = { brilliant_strategist cavalry_officer offensive_doctrine trait_engineer aggressive_assaulter }
+	skill = 5
+	attack_skill = 6
+	defense_skill = 4
+	planning_skill = 5
+	logistics_skill = 5
+}
+
+create_navy_leader = {
+	name = "손원일"
+	picture = "Portrait_admiral_son_wonil.dds"
+	traits = { air_controller ironside superior_tactician }
+	skill = 5
+	attack_skill = 5
+	defense_skill = 3
+	maneuvering_skill = 4
+	coordination_skill = 4
+}
+
+create_navy_leader = {
+	name = "함명수"
+	picture = "Portrait_admiral_ham_myungsoo.dds"
+	traits = { air_controller ironside }
+	skill = 5
+	attack_skill = 2
+	defense_skill = 3
+	maneuvering_skill = 3
+	coordination_skill = 3
+}
+
+create_navy_leader = {
+	name = "정긍모"
+	picture = "Portrait_admiral_jung_keungmo.dds"
+	traits = { air_controller superior_tactician }
+	skill = 5
+	attack_skill = 4
+	defense_skill = 2
+	maneuvering_skill = 1
+	coordination_skill = 1
 }
