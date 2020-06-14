@@ -62,6 +62,8 @@
   threats_from_opposition_parties:0 "선거반대파의 위협"
   threat_of_communism:0 "공산주의의 위협"
   Anikist's_Threat:0 "아니키스트의 위협"
+  outbreak_of_the_Korean_War:0 "한국전쟁 발발"
+  
   End_the_Civil_War:0 "내전을 끝내라"
   Fight_the_Civil_War:0 "내전에 맞서라"
   Specify_vacuum_defense_line:0 "진공방어선 지정"
@@ -76,6 +78,12 @@
   ###김구###
   Kim_Gu_Elected:0 "김구 당선"
   Kim_Gu_Elected_desc:0 "민주적인 선거를 통하여 김구선생께서 당선 되셨습니다,감구 선생께서는 국가의 법으로 시민들을 지키며 여러자유를 허락하며 시민들을 자신에 편으로 만듭니다."
+  advocate_of_Korean_style_democracy:0 "한국식 민주주의 주창"
+  democratic_education:0 "민주주의 교육법"
+  Invitation_of_Professors_from_Overseas:0 "해외 전문가 초빙"
+  focus_on_fostering_talent:0 "인재양성에 초점을"
+  nationalism_for_unity:0 "단결을 위한 민족주의"
+  Security_Law_Designation:0 "보안법 재정"
   ###이승만###
   Korea_Association_for_the_Promotion_of_Independence:0 "자유당"
   Lee_Seung-man_Elected:0 "이승만 당선"

@@ -722,7 +722,7 @@ news_event = { #대한제국1
 	}
 }
 
-country_event = { #영국 이벤트(수정할것)왕실 결혼 문제 이벤트
+country_event = { #선거 유새 시작 이벤트
 	id = KOR.17
 	title = KOR.17.t
 	desc = KOR.17.d

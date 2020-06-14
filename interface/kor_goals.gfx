@@ -387,5 +387,13 @@ spriteTypes = {
 		name = "GFX_goal_monarchism_3"
 		texturefile = "gfx/interface/goals/goal_monarchism_3.dds"
 	}
+	SpriteType = {
+		name = "GFX_focus_korean_war"
+		texturefile = "gfx/interface/goals/focus_korean_war.dds"
+	}
+	SpriteType = {
+		name = "GFX_rhee"
+		texturefile = "gfx/interface/goals/rhee.dds"
+	}
 
 }

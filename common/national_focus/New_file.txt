@@ -95,41 +95,32 @@
 			}
 		}
 	}
-	focus = {
-		id = Let_all_the_people_be_appointed
-		icon = GFX_focus_generic_concessions
-		cost = 10.00
-		prerequisite = {
-			focus = Yeo_Un-hyung's_election
-		}
-		x = 1
-		y = 5
-
-	}
-	focus = {
-		id = Anyone_should_be_protected
-		icon = GFX_goal_generic_military_sphere
-		cost = 10.00
+	focus = { #좌-우의 의견 수용
+		id = accepting_left-right_opinions
+		icon = GFX_goal_generic_national_unity
+		cost = 5.00
 		prerequisite = {
 			focus = Yeo_Un-hyung's_election
 		}
 		x = 3
 		y = 5
-
+		completion_reward = {
+		}
 	}
-	focus = {
-		id = Wrap_up_the_opposition
-		icon = GFX_focus_usa_union_representation_act
-		cost = 10.00
+	focus = { #좌-우 대립 중재
+		id = left-right_conflict_arbitration
+		icon = GFX_goal_generic_major_alliance
+		cost = 5.00
 		prerequisite = {
-			focus = Anyone_should_be_protected
+			focus = accepting_left-right_opinions
 		}
 		x = 3
 		y = 6
-
+		completion_reward = {
+		}
 	}
-	focus = {
-		id = Law_for_the_People
+	focus = { #모든 인민은 평등하다
+		id = all_people_are_equal
 		icon = GFX_focus_hol_abandon_the_gold_standard
 		cost = 10.00
 		prerequisite = {
@@ -137,29 +128,84 @@
 		}
 		x = 5
 		y = 5
-
+		completion_reward = {
+		}
 	}
-	focus = {
-		id = Exterminate_crime
-		icon = GFX_focus_eng_concessions_to_the_trade_unions
+	focus = { #모든 인민은 보호받아야한다
+		id = all_people_should_be_protected
+		icon = GFX_goal_generic_military_sphere
 		cost = 10.00
 		prerequisite = {
-			focus = Law_for_the_People
+			focus = all_people_are_equal
 		}
 		x = 5
 		y = 6
-
+		completion_reward = {
+		}
 	}
-	focus = {
-		id = Don't_fight_inside
-		icon = GFX_goal_generic_military_deal
+	focus = { #인민 복지
+		id = people's_welfare
+		icon = GFX_focus_generic_concessions
 		cost = 10.00
 		prerequisite = {
-			focus = Wrap_up_the_opposition
-			focus = Exterminate_crime
+			focus = Yeo_Un-hyung's_election
 		}
-		x = 4
+		x = 1
+		y = 5
+		completion_reward = {
+		}
+	}
+	focus = { #치안 강화
+		id = safety_reinforce
+		icon = GFX_focus_generic_coastal_fort
+		cost = 10.00
+		prerequisite = {
+			focus = people's_welfare
+		}
+		x = 1
+		y = 6
+		completion_reward = {
+		}
+	}
+	focus = { #범죄와 싸워라
+		id = fight_crime
+		icon = GFX_goal_generic_imprison_people
+		cost = 10.00
+		prerequisite = {
+			focus = safety_reinforce
+		}
+		x = 1
 		y = 7
+		completion_reward = {
+		}
+	}
+	focus = { #부정부패 근절
+		id = eradication_of_corruption
+		icon = GFX_goal_generic_political_pressure
+		cost = 10.00
+		prerequisite = {
+			focus = safety_reinforce
+		}
+		x = 3
+		y = 7
+		completion_reward = {
+		}
+	}
+	focus = { #평등한 인민 사회
+		id = The_Equal_People's_Society
+		icon = GFX_goal_generic_neutrality_focus
+		cost = 10.00
+		prerequisite = {
+			focus = fight_crime
+		}
+		prerequisite = {
+			focus = eradication_of_corruption
+		}
+		prerequisite = {
+			focus = all_people_should_be_protected
+		}
+		x = 3
+		y = 8
 
 	}
 	focus = {
@@ -174,52 +220,9 @@
 
 	}
 	focus = {
-		id = threats_from_opposition_parties
-		icon = GFX_focus_generic_strike_at_democracy2
-		cost = 10.00
-		prerequisite = {
-			focus = Korean_People's_Party
-			focus = Korean_Independence_Party
-			focus = Korea_Association_for_the_Promotion_of_Independence
-		}
-		x = 8
-		y = 4
-		completion_reward = {
-		activate_mission = KOR_expand_influence_in_the_galicia_garrison
-		}
-	}
-	focus = {
-		id = threat_of_communism
-		icon = GFX_focus_generic_soviet_politics
-		cost = 5.00
-		prerequisite = {
-			focus = threats_from_opposition_parties
-		}
-		x = 7
-		y = 5
-
-	}
-	focus = {
-		id = Anikist's_Threat
-		icon = GFX_focus_spr_regional_defense_council_of_aragon
-		cost = 5.00
-		prerequisite = {
-			focus = threats_from_opposition_parties
-		}
-		x = 9
-		y = 5
-
-	}
-	focus = {
 		id = End_the_Civil_War
 		icon = GFX_focus_focus_fra_liberte_egalite_solidarite
 		cost = 10.00
-		prerequisite = {
-			focus = Anikist's_Threat
-		}
-		prerequisite = {
-			focus = threat_of_communism
-		}
 		x = 8
 		y = 6
 		
@@ -358,28 +361,6 @@
 		}
 	}
 	focus = {
-		id = Communism_and_illuminating
-		icon = GFX_focus_generic_soviet_politics
-		cost = 10.00
-		prerequisite = {
-			focus = Let_all_the_people_be_appointed
-		}
-		x = 1
-		y = 6
-
-	}
-	focus = {
-		id = Even_a_fascist
-		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
-		cost = 10.00
-		prerequisite = {
-			focus = Communism_and_illuminating
-		}
-		x = 1
-		y = 7
-
-	}
-	focus = {
 		id = Specify_vacuum_defense_line
 		icon = GFX_focus_generic_provoke_border_clashes
 		cost = 10.00
@@ -423,18 +404,6 @@
 		}
 		x = 4
 		y = 9
-
-	}
-	focus = {
-		id = The_Equal_People's_Society
-		icon = GFX_goal_generic_neutrality_focus
-		cost = 10.00
-		prerequisite = {
-			focus = Even_a_fascist
-			focus = Don't_fight_inside
-		}
-		x = 3
-		y = 8
 
 	}
 	focus = {
@@ -1559,7 +1528,7 @@
 	}
 	focus = {
 		id = Pater_Patriae_Lee
-		icon = GFX_goal_monarchism_3
+		icon = GFX_rhee
 		cost = 10.00
 		prerequisite = {
 			focus = Lee_Seung-man_Elected
@@ -1654,6 +1623,121 @@
 		}
 		x = 29
 		y = 8
+
+	}
+	focus = {
+		id = advocate_of_Korean_style_democracy
+		icon = gfx
+		cost = 10.00
+		prerequisite = {
+			focus = Kim_Gu_Elected
+		}
+		x = 19
+		y = 4
+
+	}
+	focus = {
+		id = democratic_education
+		icon = gfx
+		cost = 10.00
+		prerequisite = {
+			focus = advocate_of_Korean_style_democracy
+		}
+		prerequisite = {
+			focus = new_education_law
+		}
+		x = 21
+		y = 5
+
+	}
+	focus = {
+		id = Invitation_of_Professors_from_Overseas
+		icon = gfx
+		cost = 10.00
+		prerequisite = {
+			focus = Strengthening_compulsory_education
+		}
+		x = 23
+		y = 6
+
+	}
+	focus = {
+		id = focus_on_fostering_talent
+		icon = gfx
+		cost = 10.00
+		prerequisite = {
+			focus = democratic_education
+		}
+		x = 21
+		y = 6
+
+	}
+	focus = {
+		id = nationalism_for_unity
+		icon = gfx
+		cost = 10.00
+		prerequisite = {
+			focus = Kim_Gu_Elected
+		}
+		x = 15
+		y = 4
+
+	}
+	focus = {
+		id = Security_Law_Designation
+		icon = gfx
+		cost = 10.00
+		prerequisite = {
+			focus = nationalism_for_unity
+		}
+		x = 14
+		y = 5
+
+	}
+	focus = {
+		id = threats_from_opposition_parties
+		icon = GFX_focus_generic_strike_at_democracy2
+		cost = 10.00
+		x = 14
+		y = 17
+		completion_reward = {
+		activate_mission = KOR_expand_influence_in_the_galicia_garrison
+		}
+	}
+	focus = {
+		id = threat_of_communism
+		icon = GFX_focus_generic_soviet_politics
+		cost = 5.00
+		prerequisite = {
+			focus = threats_from_opposition_parties
+		}
+		x = 13
+		y = 18
+
+	}
+	focus = {
+		id = Anikist's_Threat
+		icon = GFX_focus_spr_regional_defense_council_of_aragon
+		cost = 5.00
+		prerequisite = {
+			focus = threats_from_opposition_parties
+		}
+		x = 15
+		y = 18
+
+	}
+	focus = {
+		id = outbreak_of_the_Korean_War
+		icon = GFX_focus_korean_war
+		cost = 10.00
+		prerequisite = {
+			focus = threat_of_communism
+		}
+		prerequisite = {
+			focus = Anikist's_Threat
+		}
+		x = 14
+		y = 19
 
 	}
 	focus = {
