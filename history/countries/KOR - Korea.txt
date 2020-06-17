@@ -71,10 +71,16 @@ set_politics = {
 }
 #시작시_정당들의_인기도
 set_popularities = {
-    democratic = 30
-    fascism = 45
-    communism = 15
-    neutrality = 10
+  communism = 10
+  radical_socialism = 9
+  social_democracy = 9
+  social_liberalism = 6
+  market_liberalism = 3
+  liberal_conservatism = 7
+  democratic = 27
+  neutrality = 2
+  autocracy = 5
+  fascism = 22
 }
 
 #정당별_리더
@@ -83,21 +89,110 @@ create_country_leader = {
   desc = "POLITICS_JAE_PIL_DESC"
   picture = "jae_pil.dds"
   expire = "1949.6.26"
-  ideology = liberalism
+  ideology = conservatism
   traits = {
     figurehead_president
   }
 }
 
+#create_country_leader = {
+#  name = "김일성"
+#  desc = ""
+#  picture = "Kim_portrait.dds"
+#  expire = "1947.7.19"
+#  ideology = leninism
+#  traits = {
+#    traits_Kim_Il1
+#    traits_Kim_Il2
+#  }
+#}
+
 create_country_leader = {
-  name = "김일성"
-  desc = ""
+  name = "박헌영"
+  desc = "POLITICS_PARK_HEON_YOUNG_DESC"
+  picture = "Portrait_Park_Heon_young.dds"
+  expire = "1947.7.19"
+  ideology = leninism
+  traits = {
+    #
+  }
+}
+
+create_country_leader = {
+  name = "김원봉"
+  desc = "POLITICS_KIM_WON_BONG_DESC"
+  picture = "one_bong.dds"
+  expire = "1947.7.19"
+  ideology = rev_socialism
+  traits = {
+    #
+  }
+}
+
+create_country_leader = {
+  name = "여운형"
+  desc = "POLITICS_LYUH_WOON_HYUNG_DESC"
+  picture = "Portrait_Lyuh_Woonhyung.dds"
+  expire = "1947.7.19"
+  ideology = socialism
+  traits = {
+    traits_Yeo_Un1
+		traits_Yeo_Un2
+  }
+}
+
+create_country_leader = {
+  name = "안재홍"
+  desc = "POLITICS_AHN_JAE_HONG_DESC"
   picture = "#"
   expire = "1947.7.19"
-  ideology = stalinism
+  ideology = liberalism
   traits = {
-    traits_Kim_Il1
-    traits_Kim_Il2
+    #
+  }
+}
+
+create_country_leader = {
+  name = "조만식"
+  desc = "POLITICS_CHO_MAN_SIK_DESC"
+  picture = "Portrait_Cho_Man_sik.dds"
+  expire = "1947.7.19"
+  ideology = market_liberal
+  traits = {
+    #
+  }
+}
+
+create_country_leader = {
+  name = "김성수"
+  desc = "POLITICS_KIM_SUNG_SOO_DESC"
+  picture = "#"
+  expire = "1947.7.19"
+  ideology = lib_conservatism
+  traits = {
+    #
+  }
+}
+
+create_country_leader = {
+  name = "이범석"
+  desc = "POLITICS_LEE_BEOM_DESC"
+  picture = "bom_sock.dds"
+  expire = "1947.7.19"
+  ideology = oligarchism
+  traits = {
+    #
+  }
+}
+
+create_country_leader = {
+  name = "황제즉위파 당원회"
+  desc = "POLITICS_KING_WANT_DESC"
+  picture = "#"
+  expire = "1947.7.19"
+  ideology = despotism
+  traits = {
+    #
   }
 }
 
@@ -109,17 +204,6 @@ create_country_leader = {
   ideology = fascism_ideology
   traits = {
     great_war_hero
-  }
-}
-
-create_country_leader = {
-  name = "한반도 지역 방위회"
-  desc = "POLITICS_GO_JONG_DESC"
-  picture = "#"
-  expire = "1999.1.21"
-  ideology = despotism
-  traits = {
-    #
   }
 }
 
@@ -349,6 +433,17 @@ create_field_marshal = {
 	defense_skill = 4
 	planning_skill = 5
 	logistics_skill = 5
+}
+
+create_corps_commander = {
+	name = "김책"
+	picture = "#"
+	traits = { trait_KOR_communism }
+	skill = 4
+    attack_skill = 3
+    defense_skill = 3
+    planning_skill = 2
+    logistics_skill = 2
 }
 
 create_navy_leader = {

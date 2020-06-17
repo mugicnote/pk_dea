@@ -1,0 +1,25 @@
+state = {
+	id =  809
+	name = "STATE_809"
+
+	resources = {
+		steel = 10.000
+		chromium = 8.000
+	}
+
+	history = {
+		owner = MAN
+		add_core_of = MAN
+		add_core_of = CHI
+		
+		buildings = {
+			infrastructure =  3
+		}
+	}
+	provinces = {
+		1502 1558 1638 3877 7812 11836 12337 
+	}
+	manpower = 3243373
+	buildings_max_level_factor = 1.000
+	state_category = rural
+}

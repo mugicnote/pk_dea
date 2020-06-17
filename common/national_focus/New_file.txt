@@ -82,16 +82,9 @@
 		x = 3
 		y = 4
 		completion_reward = {
-			create_country_leader = {
-  				name = "여운형"
-  				desc = "POLITICS_LYUH_WOON_HYUNG_DESC"
-  				picture = "yownbro.dds"
-  				expire = "1947.7.19"
-  				ideology = liberalism
-  				traits = {
-    				traits_Yeo_Un1
-					traits_Yeo_Un2
-  				}
+			set_politics = {
+				ruling_party = social_democracy
+				elections_allowed = yes
 			}
 		}
 	}
@@ -315,26 +308,26 @@
 			focus = Lee_Seung-man_Elected
 			focus = Yeo_Un-hyung's_election
 		}
-		x = 17
+		x = 16
 		y = 3
 		completion_reward = {
 			create_country_leader = {
   				name = "김구"
   				desc = "POLITICS_KIM_KOO_DESC"
-  				picture = "kimku3.dds"
+  				picture = "Portrait_Kim_Koo.dds"
   				expire = "1947.7.19"
-  				ideology = liberalism
+  				ideology = conservatism
   				traits = {
     				traits_kim_ku
   				}
 			}
-		set_party_name = { ideology = democratic long_name = Kim_ku_long name = Kim_ku }
+		set_party_name = { ideology = neutrality long_name = Kim_ku_long name = Kim_ku }
 		country_event = { id = KOR.2 }
 		}
 	}
 	focus = {
 		id = Lee_Seung-man_Elected
-		icon = GFX_focus_syngman_rhee
+		icon = GFX_focus_syngman_rhee_2
 		cost = 10.00
 		prerequisite = {
 			focus = democratic_election
@@ -349,9 +342,9 @@
 			create_country_leader = {
   				name = "이승만"
   				desc = "POLITICS_LEE_SYNG_DESC"
-  				picture = "Lee_Syng.dds"
+  				picture = "Portrait_Syngman_Rhee.dds"
   				expire = "1947.7.19"
-  				ideology = liberalism
+  				ideology = conservatism
   				traits = {
     				anti_communist
   				}
@@ -1528,7 +1521,7 @@
 	}
 	focus = {
 		id = Pater_Patriae_Lee
-		icon = GFX_rhee
+		icon = GFX_focus_syngman_rhee
 		cost = 10.00
 		prerequisite = {
 			focus = Lee_Seung-man_Elected
@@ -1662,6 +1655,21 @@
 
 	}
 	focus = {
+		id = establishment_new_university
+		icon = gfx
+		cost = 10.00
+		prerequisite = {
+			focus = Invitation_of_Professors_from_Overseas
+		}
+		prerequisite = {
+			focus = focus_on_fostering_talent
+			focus = school_protection_group
+		}
+		x = 23
+		y = 7
+
+	}
+	focus = {
 		id = focus_on_fostering_talent
 		icon = gfx
 		cost = 10.00
@@ -1679,7 +1687,7 @@
 		prerequisite = {
 			focus = Kim_Gu_Elected
 		}
-		x = 15
+		x = 14
 		y = 4
 
 	}
@@ -1690,8 +1698,156 @@
 		prerequisite = {
 			focus = nationalism_for_unity
 		}
-		x = 14
+		x = 13
 		y = 5
+
+	}
+	focus = {
+		id = communist_assassination
+		icon = gfx
+		cost = 10.00
+		prerequisite = {
+			focus = nationalism_for_unity
+		}
+		x = 15
+		y = 5
+
+	}
+	focus = {
+		id = coup_detat_referee
+		icon = gfx
+		cost = 10.00
+		prerequisite = {
+			focus = communist_assassination
+		}
+		prerequisite = {
+			focus = Security_Law_Designation
+		}
+		mutually_exclusive = {
+			focus = Protect_Lee_Bum-seok
+		}
+		x = 15
+		y = 6
+
+	}
+	focus = {
+		id = Protect_Lee_Bum-seok
+		icon = gfx
+		cost = 10.00
+		prerequisite = {
+			focus = democratic_egotiations_with_China
+			focus = Exchanges_with_Constitutional_Jung_Woo_hoi
+		}
+		mutually_exclusive = {
+			focus = coup_detat_referee
+		}
+		x = 17
+		y = 6
+
+	}
+	focus = {
+		id = democratic_egotiations_with_China
+		icon = gfx
+		cost = 10.00
+		prerequisite = {
+			focus = book_written_by_Baekbeom
+		}
+		x = 17
+		y = 5
+
+	}
+	focus = {
+		id = Exchanges_with_Constitutional_Jung_Woo_hoi
+		icon = gfx
+		cost = 10.00
+		prerequisite = {
+			focus = advocate_of_Korean_style_democracy
+		}
+		x = 19
+		y = 5
+
+	}
+	focus = {
+		id = book_written_by_Baekbeom
+		icon = gfx
+		cost = 10.00
+		prerequisite = {
+			focus = Kim_Gu_Elected
+		}
+		x = 17
+		y = 4
+
+	}
+	focus = {
+		id = parliamentary_control
+		icon = gfx
+		cost = 10.00
+		prerequisite = {
+			focus = coup_detat_referee
+			focus = Protect_Lee_Bum-seok
+		}
+		prerequisite = {
+			focus = Security_Law_Designation
+		}
+		x = 13
+		y = 7
+
+	}
+	focus = {
+		id = commando_draft
+		icon = gfx
+		cost = 10.00
+		prerequisite = {
+			focus = coup_detat_referee
+			focus = Protect_Lee_Bum-seok
+		}
+		x = 16
+		y = 7
+
+	}
+	focus = {
+		id = Contact_with_the_UK_USA_FRA
+		icon = gfx
+		cost = 10.00
+		prerequisite = {
+			focus = Exchanges_with_Constitutional_Jung_Woo_hoi
+		}
+		prerequisite = {
+			focus = coup_detat_referee
+			focus = Protect_Lee_Bum-seok
+		}
+		x = 19
+		y = 7
+
+	}
+	focus = {
+		id = participation_in_the_Allies
+		icon = gfx
+		cost = 10.00
+		prerequisite = {
+			focus = Contact_with_the_UK_USA_FRA
+			focus = parliamentary_control
+		}
+		mutually_exclusive = {
+			focus = Choose_your_own_route
+		}
+		x = 17
+		y = 8
+
+	}
+	focus = {
+		id = Choose_your_own_route
+		icon = gfx
+		cost = 10.00
+		prerequisite = {
+			focus = Contact_with_the_UK_USA_FRA
+			focus = parliamentary_control
+		}
+		mutually_exclusive = {
+			focus = participation_in_the_Allies
+		}
+		x = 15
+		y = 8
 
 	}
 	focus = {
@@ -1711,18 +1867,7 @@
 		prerequisite = {
 			focus = threats_from_opposition_parties
 		}
-		x = 13
-		y = 18
-
-	}
-	focus = {
-		id = Anikist's_Threat
-		icon = GFX_focus_spr_regional_defense_council_of_aragon
-		cost = 5.00
-		prerequisite = {
-			focus = threats_from_opposition_parties
-		}
-		x = 15
+		x = 14
 		y = 18
 
 	}

@@ -1,0 +1,26 @@
+state = {
+	id = 714
+	name = "STATE_714"
+
+	provinces = {
+		1693 3913 7848 10675 10698 12548 
+	}
+
+	manpower = 824174
+	buildings_max_level_factor = 1
+	state_category = town
+	history = {
+		owner = MAN
+		add_core_of = MAN
+		add_core_of = CHI
+		
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 1
+		}
+
+	}
+	
+	buildings_max_level_factor = 1.000
+}

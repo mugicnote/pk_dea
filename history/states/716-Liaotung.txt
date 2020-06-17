@@ -1,0 +1,31 @@
+state = {
+	id = 716
+	name = "STATE_716"
+	manpower = 7264620
+
+	state_category = city
+
+	history = {
+		owner = MAN
+		add_core_of = MAN
+		add_core_of = CHI
+		
+		buildings = {
+			infrastructure = 4
+			arms_factory = 2
+			air_base = 5
+		}
+
+		victory_points = {
+			11771 3 
+		}
+	}
+
+	resources = {
+		steel = 36
+	}
+
+	provinces = {
+		846 887 892 916 930 964 987 3783 3849 3888 3895 4642 6804 6868 6905 6951 9781 9831 9866 9885 11764 11771 11781 11808 
+	}
+}

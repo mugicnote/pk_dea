@@ -395,5 +395,9 @@ spriteTypes = {
 		name = "GFX_rhee"
 		texturefile = "gfx/interface/goals/rhee.dds"
 	}
+	SpriteType = {
+		name = "GFX_focus_syngman_rhee_2"
+		texturefile = "gfx/interface/goals/focus_syngman_rhee_2.dds"
+	}
 
 }
