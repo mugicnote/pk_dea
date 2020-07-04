@@ -10,12 +10,6 @@ set_technology = {
 
 if = {
 	limit = { has_dlc = "Waking the Tiger" }
-	set_country_flag = MAN_northern_bandits
-	set_country_flag = MAN_eastern_bandits
-	set_country_flag = MAN_western_bandits
-	add_ideas = MAN_banditry
-	add_ideas = MAN_kwantung_veto
-	add_ideas = MAN_low_legitimacy_5
 }
 
 set_convoys = 5
@@ -107,24 +101,24 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Aisin Gioro Puyi"
+	name = "Zhang Zuolin"
 	
-	picture = "gfx/leaders/MAN/Portrait_Manchuria_Henry_Pu_Yi.dds"
+	picture = "gfx/leaders/MAN/Portrait_FNG_Zhang_Zuolin.dds"
 	expire = "1960.1.1"
-	ideology = rexism
+	ideology = fascism_ideology
 	traits = {
-		warrior_code
+		#
 	}
 }
 
 create_country_leader = {
-	name = "Aisin Gioro Puyi"
+	name = "Zhang Zuolin"
 	
-	picture = "gfx/leaders/MAN/Portrait_Manchuria_Henry_Pu_Yi.dds"
+	picture = "gfx/leaders/MAN/Portrait_FNG_Zhang_Zuolin.dds"
 	expire = "1960.1.1"
-	ideology = despotism
+	ideology = warloadism
 	traits = {
-		warrior_code
+		#
 	}
 }
 

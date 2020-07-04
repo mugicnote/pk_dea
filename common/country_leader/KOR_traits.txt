@@ -78,4 +78,77 @@ leader_traits = {
 			factor = 1
 		}
 	}
+	radical_socialism_revolutionary = {
+		random = no
+		# Boosts Communism
+		sprite = 13
+		radical_socialism_drift = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	social_democracy_revolutionary = {
+		random = no
+		sprite = 13
+		social_democracy_drift = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	social_liberalism_revolutionary = {
+		random = no
+		sprite = 13
+		social_liberalism_drift = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	market_liberalism_revolutionary = {
+		random = no
+		sprite = 13
+		market_liberalism_drift = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	liberal_conservatism_revolutionary = {
+		random = no
+		sprite = 13
+		liberal_conservatism_drift = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	democratic_2_revolutionary = {
+		random = no
+		sprite = 13
+		democratic_drift = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	neutrality_2_revolutionary = {
+		random = no
+		sprite = 13
+		neutrality_drift = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	autocracy_revolutionary = {
+		random = no
+		sprite = 13
+		autocracy_drift = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }

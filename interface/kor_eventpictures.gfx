@@ -33,6 +33,10 @@ spriteTypes = {
 		name = "GFX_don't_go_night"
 		texturefile = "gfx/event_pictures/don't_go_night.dds"
 	}
+	spriteType = {
+		name = "GFX_Korean_Red_Cross"
+		texturefile = "gfx/event_pictures/Korean_Red_Cross.dds"
+	}
 
 }
 	

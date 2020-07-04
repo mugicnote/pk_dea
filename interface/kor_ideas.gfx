@@ -29,5 +29,9 @@ spriteTypes = {
 		name = "GFX_idea_KTG_Industrial_Crisis_Town"
 		texturefile = "gfx/interface/ideas/KTG_Industrial_Crisis_Town.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_Kim_Won_Bong"
+		texturefile = "gfx/interface/ideas/advisor_Kim_won_bong.dds"
+	}
 
 }

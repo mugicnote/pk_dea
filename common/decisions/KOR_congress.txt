@@ -2117,3 +2117,100 @@ KOR_hunt_down_northern_bandits = {
 			}
 		}
 	}
+}
+
+Kor_Red_Cross_decision = {
+	KOR_allow_Korean_Red_Cross_aid = {
+		available = { has_completed_focus = organization_Korean_Red_Cross }
+
+		visible = { not = { has_country_flag = organization_Korean_Red_Cross_on } }
+
+		cancel_trigger = {
+				not = { has_country_flag = organization_Korean_Red_Cross_on }
+			}
+
+		complete_effect = { 
+			set_country_flag = organization_Korean_Red_Cross_on 
+			clr_country_flag = KOR_ban_Korean_Red_Cross_flag
+			unlock_decision_tooltip = { decision = KOR_send_Korean_Red_Cross_aid_to_FROM show_effect_tooltip = yes }
+			unlock_decision_tooltip = KOR_ban_Korean_Red_Cross_aid
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 1
+		}
+		days_remove = -1
+	}
+
+	KOR_ban_Korean_Red_Cross_aid = {
+		available = { has_country_flag = organization_Korean_Red_Cross_on }
+
+		visible = { has_country_flag = organization_Korean_Red_Cross_on }
+
+		complete_effect = { 
+			clr_country_flag = organization_Korean_Red_Cross_on 
+			set_country_flag = KOR_ban_Korean_Red_Cross_flag
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	KOR_send_Korean_Red_Cross_aid_to_FROM = { #적십자사 조직
+		
+		priority = 10
+
+		icon = generic_nationalism
+		
+		available = {
+			has_country_flag = organization_Korean_Red_Cross_on
+		}
+
+
+		visible = {
+			tag = KOR
+				has_country_flag = organization_Korean_Red_Cross_on
+		}
+
+
+		complete_effect = {
+			
+		}
+		
+		cost = 10
+
+		complete_effect = {
+			country_event = { id = KOR.33 }
+		}
+	}
+	
+	KOR_send_Korean_Red_Cross_aid_to_FROM2 = { #
+		
+		priority = 10
+
+		icon = generic_nationalism
+		
+		available = {
+			has_country_flag = organization_Korean_Red_Cross_on
+		}
+
+
+		visible = {
+			tag = KOR
+				has_country_flag = organization_Korean_Red_Cross_on
+		}
+
+
+		complete_effect = {
+			
+		}
+		
+		cost = 10
+
+		complete_effect = {
+			country_event = { id = KOR.33 }
+		}
+	}
+}

@@ -299,7 +299,7 @@
 	}
 	focus = {
 		id = Kim_Gu_Elected
-		icon = GFX_focus_kim_koo
+		icon = GFX_focus_kim_koo_2
 		cost = 10.00
 		prerequisite = {
 			focus = democratic_election
@@ -709,6 +709,14 @@
 		prerequisite = {
 			focus = poverty_problem
 		}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+    			type = support_equipment
+    			amount = 1000
+    			producer = KOR
+			}
+			add_ideas = { Korean_Red_Cross }
+		}
 		x = 88
 		y = 2
 	 }
@@ -814,6 +822,14 @@
 		prerequisite = {
 			focus = economic_development_approval
 		}
+		completion_reward = {
+		800 = {
+		add_extra_state_shared_building_slots = 2
+			}
+		802 = {
+		add_extra_state_shared_building_slots = 2
+			}
+		}
 		x = 90
 		y = 2
 	 }
@@ -824,6 +840,14 @@
 		cost = 10.00
 		prerequisite = {
 			focus = rural_development
+		}
+		completion_reward = {
+		527 = {
+		add_extra_state_shared_building_slots = 2
+			}
+		797 = {
+		add_extra_state_shared_building_slots = 2
+			}
 		}
 		x = 90
 		y = 3
@@ -1532,7 +1556,7 @@
 	}
 	focus = {
 		id = Launch_Anti_Communist_Youth
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_focus_kyc
 		cost = 10.00
 		prerequisite = {
 			focus = Lee_Seung-man_Elected
@@ -1616,6 +1640,197 @@
 		}
 		x = 29
 		y = 8
+
+	}
+	focus = {
+		id = illegal_occupation_of_northmen
+		icon = GFX_focus_prc_infiltration
+		cost = 10.00
+		prerequisite = {
+			focus = suppression_opposition
+		}
+		x = 31
+		y = 8
+
+	}
+	focus = {
+		id = Lee_Bum_suk_Returns
+		icon = GFX_
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_focus_strengthen_power_of_the_government
+		}
+		x = 33
+		y = 8
+
+	}
+	focus = {
+		id = commando_conscription
+		icon = GFX_
+		cost = 10.00
+		prerequisite = {
+			focus = Lee_Bum_suk_Returns
+		}
+		x = 33
+		y = 9
+
+	}
+	focus = {
+		id = establishment_news_federation
+		icon = GFX_
+		cost = 10.00
+		prerequisite = {
+			focus = illegal_occupation_of_northmen
+		}
+		x = 30
+		y = 9
+
+	}
+	focus = {
+		id = Jeju_Uprising_of_Namrodang
+		icon = GFX_
+		cost = 10.00
+
+		x = 25
+		y = 7
+
+	}
+	focus = {
+		id = bloody_suppression_Jeju_uprising
+		icon = GFX_
+		cost = 10.00
+		prerequisite = {
+			focus = Jeju_Uprising_of_Namrodang
+		}
+		prerequisite = {
+			focus = ilminism_reflected_party_regulations
+		}
+		x = 25
+		y = 9
+
+	}
+	focus = {
+		id = Assassination_Kim_Koo
+		icon = GFX_
+		cost = 10.00
+		prerequisite = {
+			focus = ilminism_reflected_party_regulations
+		}
+		x = 27
+		y = 8
+
+	}
+	focus = {
+		id = judicial_weakening
+		icon = GFX_
+		cost = 10.00
+		prerequisite = {
+			focus = Assassination_Kim_Koo
+			focus = local_life_law
+		}
+		x = 28
+		y = 9
+
+	}
+	focus = {
+		id = attempted_assassination
+		icon = GFX_focus_secret_agents
+		cost = 10.00
+		prerequisite = {
+			focus = judicial_weakening
+			focus = bloody_suppression_Jeju_uprising
+			focus = establishment_news_federation
+			focus = commando_conscription
+		}
+		x = 29
+		y = 10
+
+	}
+	focus = {
+		id = restart_of_election
+		icon = GFX_focus_assembly_election
+		cost = 10.00
+		prerequisite = {
+			focus = repent_of_one_deeds
+		}
+		x = 25
+		y = 12
+
+	}
+	focus = {
+		id = Re_strengthening_the_judiciary
+		icon = GFX_focus_interim_government
+		cost = 10.00
+		prerequisite = {
+			focus = repent_of_one_deeds
+		}
+		x = 28
+		y = 12
+
+	}
+	focus = {
+		id = repent_of_one_deeds
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10.00
+		prerequisite = {
+			focus = attempted_assassination
+		}
+		mutually_exclusive = {
+			focus = punishment_of_offenders
+		}
+		x = 27
+		y = 11
+
+	}
+	focus = {
+		id = punishment_of_offenders
+		icon = GFX_goal_generic_stable_government
+		cost = 10.00
+		prerequisite = {
+			focus = attempted_assassination
+		}
+		mutually_exclusive = {
+			focus = repent_of_one_deeds
+		}
+		x = 31
+		y = 11
+
+	}
+	focus = {
+		id = focus_saemaul_undong
+		icon = GFX_
+		cost = 10.00
+		prerequisite = {
+			focus = Re_strengthening_the_judiciary
+			#focus = 
+		}
+		x = 29
+		y = 13
+
+	}
+	focus = {
+		id = Anti_Communist_to_Security_Law
+		icon = GFX_
+		cost = 10.00
+		prerequisite = {
+			focus = restart_of_election
+		}
+		prerequisite = {
+			focus = Re_strengthening_the_judiciary
+		}
+		x = 27
+		y = 13
+
+	}
+	focus = {
+		id = enactment_Jeju_tragedy_law
+		icon = GFX_
+		cost = 10.00
+		prerequisite = {
+			focus = restart_of_election
+		}
+		x = 25
+		y = 13
 
 	}
 	focus = {

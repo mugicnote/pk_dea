@@ -78,3 +78,12 @@ form_united_KOR_category = {
 	}
 }
 
+Kor_Red_Cross_decision = {
+	allowed = {
+		original_tag = KOR
+		has_completed_focus = organization_Korean_Red_Cross
+	}
+	visible = {
+		has_completed_focus = organization_Korean_Red_Cross
+	}
+}

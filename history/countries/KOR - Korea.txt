@@ -54,7 +54,7 @@ set_convoys = 30
 add_ideas = {
 KOR_a_well_informed_general
 KOR_want_big
-Where_are_they
+coup_crisis
 KOR_disjointed_government
 bitterness_of_treaty
 KOR_great_depression
@@ -166,7 +166,7 @@ create_country_leader = {
 create_country_leader = {
   name = "김성수"
   desc = "POLITICS_KIM_SUNG_SOO_DESC"
-  picture = "#"
+  picture = "Kim_Seong-soo-South_Korean_Vicepresident_1951.dds"
   expire = "1947.7.19"
   ideology = lib_conservatism
   traits = {

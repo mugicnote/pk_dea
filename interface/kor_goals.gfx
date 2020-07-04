@@ -399,5 +399,29 @@ spriteTypes = {
 		name = "GFX_focus_syngman_rhee_2"
 		texturefile = "gfx/interface/goals/focus_syngman_rhee_2.dds"
 	}
+	SpriteType = {
+		name = "GFX_focus_kyc"
+		texturefile = "gfx/interface/goals/focus_kyc.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_secret_agents"
+		texturefile = "gfx/interface/goals/focus_secret_agents.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_generic_intelligence_exchange"
+		texturefile = "gfx/interface/goals/goal_generic_intelligence_exchange.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_kpg"
+		texturefile = "gfx/interface/goals/focus_kpg.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_DEA_commune_politics"
+		texturefile = "gfx/interface/goals/goal_DEA_commune_politics.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_kim_koo_2"
+		texturefile = "gfx/interface/goals/focus_kim_koo_2.dds"
+	}
 
 }

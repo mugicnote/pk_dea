@@ -1178,3 +1178,20 @@ country_event = { #야간 통행 금지
 		ai_chance = { factor = 1 }
 	}
 }
+
+country_event = { #대한적십자사 조직
+	id = KOR.33
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.33"}
+	title = KOR.33.t
+	desc = KOR.33.desc
+	picture = GFX_Korean_Red_Cross
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #ok
+		name = KOR.33.a
+		ai_chance = { factor = 1 }
+
+	}
+}

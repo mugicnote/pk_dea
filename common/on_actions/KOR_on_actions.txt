@@ -9,6 +9,7 @@ on_actions = {
 		set_country_flag = KOR_northern_bandits
 		set_country_flag = KOR_eastern_bandits
 		set_country_flag = KOR_western_bandits
+		country_lock_all_division_template = yes
 			}
 		}
 	}

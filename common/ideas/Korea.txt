@@ -40,7 +40,7 @@ ideas = {
                 justify_war_goal_time = -0.2
             }
         }
-        Where_are_they = {
+        coup_crisis = {
 
             allowed = {
                 original_tag = KOR
@@ -56,6 +56,7 @@ ideas = {
             
             modifier = {
                 stability_factor = -0.10
+                custom_modifier_tooltip = SPR_military_disloyalty_tt
             }
         }
         KOR_disjointed_government = {
@@ -254,49 +255,6 @@ ideas = {
 				consumer_goods_factor = -0.2
 			}
 		}
-        Democratic_Human_Rights_Bureau_idea = {
-			
-            picture = generic_democratic_drift_bonus
-
-			allowed = {
-				always = no
-			}
-
-			modifier = {
-			stability_factor = -0.1
-			war_support_factor = -0.1
-            democratic_drift = 0.1
-			}
-		}
-        Democratic_Human_Rights_Bureau_idea_2 = {
-			
-            picture = generic_pp_unity_bonus
-
-			allowed = {
-				always = no
-			}
-
-			modifier = {
-			stability_factor = 0.2
-			war_support_factor = -0.1
-            democratic_drift = 0.1
-			}
-		}
-        Democratic_Human_Rights_Bureau_idea_3 = {
-			
-            picture = generic_volunteer_expedition_bonus
-
-			allowed = {
-				always = no
-			}
-
-			modifier = {
-			stability_factor = 0.2
-			war_support_factor = 0.2
-            democratic_drift = 0.1
-		}
-
-    }
            unstable_security = {
 			
             picture = KTG_Industrial_Crisis_Town
@@ -307,6 +265,19 @@ ideas = {
 
 			modifier = {
 			stability_factor = -0.3
+		    }
+        }
+        Korean_Red_Cross = {
+			
+            picture = KTG_Industrial_Crisis_Town
+
+			allowed = {
+		        original_tag = KOR
+	        }
+
+			modifier = {
+            conscription = 0.01
+            army_morale_factor = 0.01
 		    }
         }
 }
@@ -335,7 +306,7 @@ ideas = {
                     original_tag = KOR
                 }
             
-                traits = { propaganda_expert }
+                traits = { social_democracy_revolutionary }
             }
             
             Rhee_Syngman = {
@@ -346,7 +317,7 @@ ideas = {
                     original_tag = KOR
                 }
             
-                traits = { democratic_reformer }
+                traits = { democratic_2_revolutionary }
             }
 
             Park_Heon_young = {
@@ -358,6 +329,15 @@ ideas = {
                 }
             
                 traits = { communist_revolutionary }
+            }
+
+            Kim_Won_Bong = {
+
+                allowed = {
+                    original_tag = KOR
+                }
+            
+                traits = { radical_socialism_revolutionary }
             }
 
             Kim_Il_Sung = {
@@ -446,6 +426,46 @@ ideas = {
                 }
             
                 traits = { editor }
+            }
+            AHN_JAE_HONG = {
+
+                picture = 
+
+                allowed = {
+                    original_tag = KOR
+                }
+            
+                traits = { social_liberalism_revolutionary }
+            }
+            CHO_MAN_SIK = {
+
+                picture = 
+
+                allowed = {
+                    original_tag = KOR
+                }
+            
+                traits = { market_liberalism_revolutionary }
+            }
+            KIM_SUNG_SOO = {
+
+                picture = 
+
+                allowed = {
+                    original_tag = KOR
+                }
+            
+                traits = { liberal_conservatism_revolutionary }
+            }
+        KING_WANT = {
+
+                picture = 
+
+                allowed = {
+                    original_tag = KOR
+                }
+            
+                traits = { autocracy_revolutionary }
             }
         }
         industrial_concern = {
