@@ -27,6 +27,9 @@ state = {
 		victory_points = {
 			4056 40 #부산
 		}
+        victory_points = {
+			7121 10 #포항
+		}
 	}
 
 	resources = {

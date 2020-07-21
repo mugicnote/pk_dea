@@ -423,5 +423,45 @@ spriteTypes = {
 		name = "GFX_focus_kim_koo_2"
 		texturefile = "gfx/interface/goals/focus_kim_koo_2.dds"
 	}
+	SpriteType = {
+		name = "GFX_focus_kim_koo_2"
+		texturefile = "gfx/interface/goals/focus_kim_koo_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_Polygon_with_Laurels_2"
+		texturefile = "gfx/interface/goals/Polygon_with_Laurels_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_Kim_Won_Bong"
+		texturefile = "gfx/interface/goals/focus_Kim_Won_Bong.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_Ahn_Jae_Hong"
+		texturefile = "gfx/interface/goals/focus_Ahn_Jae_Hong.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_Kim_Sung_Soo"
+		texturefile = "gfx/interface/goals/focus_Kim_Sung_Soo.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_Cho_Man_Sik"
+		texturefile = "gfx/interface/goals/focus_Cho_Man_Sik.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_ideology_social_democrat"
+		texturefile = "gfx/interface/goals/goal_ideology_social_democrat.dds"
+	}
+	SpriteType = {
+		name = "GFX_FRA_KOR_handshake"
+		texturefile = "gfx/interface/goals/FRA_KOR_handshake.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_SOV_Wreath"
+		texturefile = "gfx/interface/goals/KOR_SOV_Wreath.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_japanese_democracy"
+		texturefile = "gfx/interface/goals/goal_japanese_democracy.dds"
+	}
 
 }

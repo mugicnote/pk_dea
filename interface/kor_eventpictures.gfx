@@ -37,6 +37,38 @@ spriteTypes = {
 		name = "GFX_Korean_Red_Cross"
 		texturefile = "gfx/event_pictures/Korean_Red_Cross.dds"
 	}
+	spriteType = {
+		name = "GFX_victory_Trade_Unions"
+		texturefile = "gfx/event_pictures/victory_Trade_Unions.dds"
+	}
+	spriteType = {
+		name = "GFX_expansion_political_sphere"
+		texturefile = "gfx/event_pictures/expansion_political_sphere.dds"
+	}
+	spriteType = {
+		name = "GFX_worker_persuasion"
+		texturefile = "gfx/event_pictures/worker_persuasion.dds"
+	}
+	spriteType = {
+		name = "GFX_military_persuasion"
+		texturefile = "gfx/event_pictures/military_persuasion.dds"
+	}
+	spriteType = {
+		name = "GFX_Securing_Weapons_and_Funds"
+		texturefile = "gfx/event_pictures/Securing_Weapons_and_Funds.dds"
+	}
+	spriteType = {
+		name = "GFX_overthrow_of_government"
+		texturefile = "gfx/event_pictures/overthrow_of_government.dds"
+	}
+	spriteType = {
+		name = "GFX_jung_kka_chi"
+		texturefile = "gfx/event_pictures/jung_kka_chi.dds"
+	}
+	spriteType = {
+		name = "GFX_Mapo_galmegi"
+		texturefile = "gfx/event_pictures/Mapo_galmegi.dds"
+	}
 
 }
 	

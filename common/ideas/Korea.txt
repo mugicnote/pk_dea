@@ -353,8 +353,6 @@ ideas = {
             
             Shin_Chae_Ho = {
 
-                picture = 
-
                 allowed = {
                     original_tag = KOR
                 }
@@ -363,8 +361,6 @@ ideas = {
             }
 
             Lee_Bum_Suk = {
-
-                picture = 
 
                 allowed = {
                     original_tag = KOR
@@ -375,8 +371,6 @@ ideas = {
 
             Yu_Il_Han = {
 
-                picture = 
-
                 allowed = {
                     original_tag = KOR
                 }
@@ -385,8 +379,6 @@ ideas = {
             }
 
             Jang_Taek_Sang = {
-
-                picture = 
 
                 allowed = {
                     original_tag = KOR
@@ -397,8 +389,6 @@ ideas = {
 
             Chough_Pyung_ok = {
 
-                picture = 
-
                 allowed = {
                     original_tag = KOR
                 }
@@ -407,8 +397,6 @@ ideas = {
             }
 
             Korean_Regional_Defense_Association = {
-
-                picture = 
 
                 allowed = {
                     original_tag = KOR
@@ -419,8 +407,6 @@ ideas = {
 
             Jang_Duk_Soo = {
 
-                picture = 
-
                 allowed = {
                     original_tag = KOR
                 }
@@ -428,8 +414,6 @@ ideas = {
                 traits = { editor }
             }
             AHN_JAE_HONG = {
-
-                picture = 
 
                 allowed = {
                     original_tag = KOR
@@ -439,8 +423,6 @@ ideas = {
             }
             CHO_MAN_SIK = {
 
-                picture = 
-
                 allowed = {
                     original_tag = KOR
                 }
@@ -449,8 +431,6 @@ ideas = {
             }
             KIM_SUNG_SOO = {
 
-                picture = 
-
                 allowed = {
                     original_tag = KOR
                 }
@@ -458,8 +438,6 @@ ideas = {
                 traits = { liberal_conservatism_revolutionary }
             }
         KING_WANT = {
-
-                picture = 
 
                 allowed = {
                     original_tag = KOR
@@ -513,8 +491,8 @@ ideas = {
             picture = generic_industrial_concern_1    
 
             allowed = {
-                    original_tag = KOR
-                    }
+                original_tag = KOR
+            }
 
             research_bonus = {
                 industry = 0.15
@@ -533,7 +511,7 @@ ideas = {
             picture = generic_electronics_concern_1
 
             allowed = {
-                    original_tag = KOR
+                original_tag = KOR
             }
             
             research_bonus = {
@@ -563,4 +541,87 @@ ideas = {
             
             traits = { military_theorist }
         }
+    }
+    tank_manufacturer = {
+        KOR_kia = {
+
+		    allowed = {
+		    	original_TAG = KOR
+		    }
+
+		    research_bonus = {
+		    	armor = 0.10
+		    }
+			
+		    traits = { fast_tank_manufacturer }
+	    }
+		
+		KOR_Hyundai = {
+
+		    allowed = {
+		    	original_TAG = KOR
+		    }
+
+		    research_bonus = {
+		    	armor = 0.10
+		    }
+			
+		    traits = { medium_tank_manufacturer }
+	    }
+		
+		KOR_SSANGYONG = {
+
+		    allowed = {
+		    	original_TAG = KOR
+		    }
+
+		    research_bonus = {
+		    	armor = 0.10
+		    }
+			
+		    traits = { heavy_tank_manufacturer }
+	    }
+    }
+    naval_manufacturer = {
+		
+	    designer = yes
+		
+	    KOR_Daewoo_Heavy_Industries = {
+		
+		    allowed = {
+		    	original_TAG = KOR
+		    }
+						
+		    research_bonus = {
+		    	naval_equipment = 0.10
+		    }
+			
+		    traits = { coastal_defence_naval_manufacturer }
+    	}
+		
+		KOR_HYUNDAI = {
+    
+		    allowed = {
+		    	original_TAG = KOR
+		    }
+
+		    research_bonus = {
+		    	naval_equipment = 0.10
+		    }
+			
+		    traits = { battlefleet_designer }
+	    }
+		
+	    KOR_SAMSUNG = {
+    
+		    allowed = {
+		    	original_TAG = KOR
+		    }
+
+		    research_bonus = {
+		    	naval_equipment = 0.10
+		    }
+			
+		    traits = { raiding_fleet_naval_manufacturer }
+	    }
     }

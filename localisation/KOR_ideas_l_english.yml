@@ -3,7 +3,7 @@
 ###국민정신###
 KOR_a_well_informed_general:0 "박학다식한 장교들"
 KOR_a_well_informed_general_desc:0 "우리나라가 전쟁에서 패배하고 무너질지언정,그것은 장군들의 탓만이라고는 할 수 없을정도로 장군들은 오랜전투 동안 박학다식해졌습니다."
-KOR_want_big:0 "팽창주의적 이념"
+KOR_want_big:0 "범국민주의적 이념"
 KOR_want_big_desc:0 "우리나라가 군비가 축소되고 영토가 축소 되었을지언정 우리에 마음속에는 그 시절의 강대국인 한국이 남아있습니다."
 coup_crisis:0 "쿠데타 위기"
 coup_crisis_desc:0 "패전과 조약 이후 정부를 믿는사람은 점차 줄어갔으며 의문에 새력들이 점점 커져 나갔습니다."
@@ -43,7 +43,7 @@ Kim_Won_Bong:0 "김원봉"
 AHN_JAE_HONG:0 "안재홍"
 CHO_MAN_SIK:0 "조만식"
 KIM_SUNG_SOO:0 "김성수"
-KING_WANT:0 "황제즉위파 당원회"
+KING_WANT:0 "이강"
 
 KOR_railway_company:0 "의정부 공무아문 철도국"
 KOR_western_refinery:0 "한진 중공업"
@@ -56,3 +56,13 @@ Kim_Hak_kyu:0 "김학규"
 JAP_danger_civil_war:0 "내전의 위협"
 JAP_great_war_loser:0 "대전쟁의 패배자"
 JAP_royal_formalization:0 "왕실 형식화"
+
+###전차전차전차설계설계설계사아과제하기귀찮다###
+KOR_kia:0 "경성정공"
+KOR_Hyundai:0 "아도-서비스"
+KOR_SSANGYONG:0 "쌍용양회"
+
+###함정함정함정카드발동과제가산더미인데나는뭘하고있는가###
+KOR_Daewoo_Heavy_Industries:0 "대우 중공업 주식회사"
+KOR_HYUNDAI:0 "현대그룹 중공업 공장"
+KOR_SAMSUNG:0 "삼성 중공업"

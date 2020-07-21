@@ -31,7 +31,15 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_idea_Kim_Won_Bong"
-		texturefile = "gfx/interface/ideas/advisor_Kim_won_bong.dds"
+		texturefile = "gfx/interface/ideas/advisor_kim_wonbong.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Lee_Bum_Suk"
+		texturefile = "gfx/interface/ideas/advisor_lee_beomseok.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KING_WANT"
+		texturefile = "gfx/interface/ideas/advisor_yi_kang.dds"
 	}
 
 }

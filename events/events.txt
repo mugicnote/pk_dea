@@ -10,20 +10,25 @@ country_event = { #
 	is_triggered_only = yes
 	fire_only_once = yes
 	
-	option = { #
+	option = { #여운형
 		name = KOR.1.a
 		ai_chance = { factor = 1 }
-		complete_national_focus = Korean_People's_Party
+		complete_national_focus = Yeo_Un_hyung_Elected
 	}
-	option = { #
+	option = { #김구
 		name = KOR.1.b
 		ai_chance = { factor = 1 }
-		complete_national_focus = Korean_Independence_Party
+		complete_national_focus = Kim_Gu_Elected
 	}
-	option = { #
+	option = { #이승만
 		name = KOR.1.c
 		ai_chance = { factor = 1 }
-		complete_national_focus = KOR_focus_ilminism
+		complete_national_focus = Lee_Seung_man_Elected
+	}
+	option = { #제 4의 인물
+		name = KOR.1.d
+		ai_chance = { factor = 1 }
+		country_event = { id = KOR.34 }
 	}
 }
 
@@ -681,7 +686,14 @@ country_event = { #시작1
 	option = { #
 		name = KOR.14.b
 		ai_chance = { factor = 1 }
+		country_event = { id = KOR.47 }
 	}
+	option = { #
+		name = KOR.14.c
+		ai_chance = { factor = 1 }
+
+	}
+
 }
 
 add_namespace = KOR
@@ -691,17 +703,19 @@ country_event = { #시작2
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.15"}
 	title = KOR.15.t
 	desc = KOR.15.desc
-	picture = GFX_report_event_generic_naval_treaty
+	picture = GFX_NAREISION
 	
 	is_triggered_only = yes
 	
 	option = { #
 		name = KOR.15.a
 		ai_chance = { factor = 1 }
+		country_event = { id = KOR.41 }
 	}
 	option = { #
 		name = KOR.15.b
 		ai_chance = { factor = 1 }
+		country_event = { id = KOR.14 }
 	}
 }
 
@@ -1193,5 +1207,378 @@ country_event = { #대한적십자사 조직
 		name = KOR.33.a
 		ai_chance = { factor = 1 }
 
+	}
+}
+
+country_event = { #
+	id = KOR.34
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.34"}
+	title = KOR.34.t
+	desc = KOR.34.desc
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #김원봉
+		name = KOR.34.a
+		ai_chance = { factor = 1 }
+		complete_national_focus = Kim_Won_Bong_Elected
+	}
+	option = { #안재홍
+		name = KOR.34.b
+		ai_chance = { factor = 1 }
+		complete_national_focus = Ahn_Jae_Hong_Elected
+	}
+	option = { #조만식
+		name = KOR.34.c
+		ai_chance = { factor = 1 }
+		complete_national_focus = Cho_Man_Sik_Elected
+	}
+	option = { #김성수
+		name = KOR.34.d
+		ai_chance = { factor = 1 }
+		complete_national_focus = Kim_Sung_Soo_Elected
+	}
+}
+
+country_event = { #
+	id = KOR.35
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.35"}
+	title = KOR.35.t
+	desc = KOR.35.desc
+	picture = GFX_victory_Trade_Unions
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #김원봉
+		name = KOR.35.a
+		ai_chance = { factor = 1 }
+
+	}
+	option = { #조노연
+		name = KOR.35.b
+		ai_chance = { factor = 1 }
+		country_event = { id = KOR.36 days = 10 }
+		custom_effect_tooltip = KOR.35.b_tt
+	}
+}
+
+country_event = { #
+	id = KOR.36
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.36"}
+	title = KOR.36.t
+	desc = KOR.36.desc
+	picture = GFX_worker_persuasion
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #조노연
+		name = KOR.36.a
+		ai_chance = { factor = 1 }
+		country_event = { id = KOR.37 days = 10 }
+	}
+}
+
+country_event = { #
+	id = KOR.37
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.37"}
+	title = KOR.37.t
+	desc = KOR.37.desc
+	picture = GFX_expansion_political_sphere
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #조노연
+		name = KOR.37.a
+		ai_chance = { factor = 1 }
+		country_event = { id = KOR.38 days = 10 }
+	}
+}
+
+country_event = { #
+	id = KOR.38
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.38"}
+	title = KOR.38.t
+	desc = KOR.38.desc
+	picture = GFX_military_persuasion
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #조노연
+		name = KOR.38.a
+		ai_chance = { factor = 1 }
+		country_event = { id = KOR.39 days = 10 }
+	}
+}
+
+country_event = { #
+	id = KOR.39
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.39"}
+	title = KOR.39.t
+	desc = KOR.39.desc
+	picture = GFX_Securing_Weapons_and_Funds
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #조노연
+		name = KOR.39.a
+		ai_chance = { factor = 1 }
+		country_event = { id = KOR.40 days = 10 }
+	}
+}
+
+country_event = { #
+	id = KOR.40
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.40"}
+	title = KOR.40.t
+	desc = KOR.40.desc
+	picture = GFX_overthrow_of_government
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #조노연
+		name = KOR.40.a
+		ai_chance = { factor = 1 }
+		complete_national_focus = victory_Korean_Confederation_Trade_Unions
+		set_country_flag = Trade_Unions_is_victory
+	}
+}
+
+add_namespace = KOR
+
+country_event = { #시작3
+	id = KOR.41
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.41"}
+	title = KOR.41.t
+	desc = KOR.41.desc
+	picture = GFX_NAREISION
+	
+	is_triggered_only = yes
+	
+	option = { #
+		name = KOR.41.a
+		ai_chance = { factor = 1 }
+		country_event = { id = KOR.42 }
+	}
+	option = { #
+		name = KOR.41.b
+		ai_chance = { factor = 1 }
+		country_event = { id = KOR.14 }
+	}
+}
+
+country_event = { #시작4
+	id = KOR.42
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.42"}
+	title = KOR.42.t
+	desc = KOR.42.desc
+	picture = GFX_NAREISION
+	
+	is_triggered_only = yes
+	
+	option = { #
+		name = KOR.42.a
+		ai_chance = { factor = 1 }
+		country_event = { id = KOR.43 }
+	}
+	option = { #
+		name = KOR.42.b
+		ai_chance = { factor = 1 }
+		country_event = { id = KOR.14 }
+	}
+}
+
+country_event = { #시작5
+	id = KOR.43
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.43"}
+	title = KOR.43.t
+	desc = KOR.43.desc
+	picture = GFX_NAREISION
+	
+	is_triggered_only = yes
+	
+	option = { #
+		name = KOR.43.a
+		ai_chance = { factor = 1 }
+		country_event = { id = KOR.14 }
+	}
+}
+country_event = { #시작6
+	id = KOR.44
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.44"}
+	title = KOR.44.t
+	desc = KOR.44.desc
+	picture = GFX_jung_kka_chi
+	
+	is_triggered_only = yes
+	
+	option = { #
+		name = KOR.44.a
+		ai_chance = { factor = 1 }
+		country_event = { id = KOR.45 }
+	}
+	option = { #
+		name = KOR.44.b
+		ai_chance = { factor = 1 }
+		country_event = { id = KOR.14 }
+	}
+}
+
+country_event = { #시작7
+	id = KOR.45
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.45"}
+	title = KOR.45.t
+	desc = KOR.45.desc
+	picture = GFX_jung_kka_chi
+	
+	is_triggered_only = yes
+	
+	option = { #
+		name = KOR.45.a
+		ai_chance = { factor = 1 }
+		country_event = { id = KOR.46 }
+	}
+	option = { #
+		name = KOR.45.b
+		ai_chance = { factor = 1 }
+		country_event = { id = KOR.14 }
+	}
+}
+
+country_event = { #시작8
+	id = KOR.46
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.46"}
+	title = KOR.46.t
+	desc = KOR.46.desc
+	picture = GFX_jung_kka_chi
+	
+	is_triggered_only = yes
+	
+	option = { #
+		name = KOR.46.a
+		ai_chance = { factor = 1 }
+		country_event = { id = KOR.14 }
+	}
+}
+
+country_event = { #시작9
+	id = KOR.47
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.46"}
+	title = KOR.47.t
+	desc = KOR.47.desc
+	picture = GFX_NAREISION
+	
+	is_triggered_only = yes
+	
+	option = { #
+		name = KOR.47.a
+		ai_chance = { factor = 1 }
+		country_event = { id = KOR.44 }
+	}
+	option = { #
+		name = KOR.47.b
+		ai_chance = { factor = 1 }
+		country_event = { id = KOR.48 }
+	}
+	option = { #
+		name = KOR.47.c
+		ai_chance = { factor = 1 }
+		country_event = { id = KOR.14 }
+	}
+}
+
+country_event = { #시작9
+	id = KOR.48
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.48"}
+	title = KOR.48.t
+	desc = KOR.48.desc
+	picture = GFX_NAREISION
+	
+	is_triggered_only = yes
+	
+	option = { #
+		name = KOR.48.a
+		ai_chance = { factor = 1 }
+		country_event = { id = KOR.49 }
+	}
+	option = { #
+		name = KOR.48.b
+		ai_chance = { factor = 1 }
+		country_event = { id = KOR.51 }
+	}
+	option = { #
+		name = KOR.48.c
+		ai_chance = { factor = 1 }
+		country_event = { id = KOR.14 }
+	}
+}
+
+country_event = { #시작6
+	id = KOR.49
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.49"}
+	title = KOR.49.t
+	desc = KOR.44.desc
+	picture = GFX_Mapo_galmegi
+	
+	is_triggered_only = yes
+	
+	option = { #
+		name = KOR.49.a
+		ai_chance = { factor = 1 }
+		country_event = { id = KOR.50 }
+	}
+	option = { #
+		name = KOR.49.b
+		ai_chance = { factor = 1 }
+		country_event = { id = KOR.14 }
+	}
+}
+
+country_event = { #시작6
+	id = KOR.50
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.50"}
+	title = KOR.50.t
+	desc = KOR.50.desc
+	picture = GFX_Mapo_galmegi
+	
+	is_triggered_only = yes
+	
+	option = { #
+		name = KOR.50.a
+		ai_chance = { factor = 1 }
+		country_event = { id = KOR.14 }
+	}
+}
+
+country_event = { #시작9
+	id = KOR.51
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.51"}
+	title = KOR.51.t
+	desc = KOR.51.desc
+	picture = GFX_NAREISION
+	
+	is_triggered_only = yes
+	
+	option = { #
+		name = KOR.51.a
+		ai_chance = { factor = 1 }
+		country_event = { id = KOR.52 }
+	}
+	option = { #
+		name = KOR.51.b
+		ai_chance = { factor = 1 }
+		country_event = { id = KOR. }
+	}
+	option = { #
+		name = KOR.51.c
+		ai_chance = { factor = 1 }
+		country_event = { id = KOR.14 }
 	}
 }

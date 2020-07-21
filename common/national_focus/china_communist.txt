@@ -160,10 +160,10 @@ focus_tree = {
 	focus = {
 		id = PRC_maoism
 		icon = GFX_focus_prc_maoism
-		prerequisite = { focus = PRC_rectification_campaign}
+		prerequisite = { focus = PRC_rectification_campaign }
 		x = 0
-		y = 2
-		relative_position_id = PRC_agrarian_socialism
+		y = 1
+		relative_position_id = PRC_rectification_campaign
 
 		cost = 10
 
@@ -266,7 +266,8 @@ focus_tree = {
 	focus = {
 		id = PRC_proclaim_the_peoples_republic
 		icon = GFX_focus_prc_proclaim_the_peoples_republic 
-		prerequisite = { focus = PRC_socialism_with_chinese_characteristics focus = PRC_internationalism }
+		prerequisite = { focus = PRC_socialism_with_chinese_characteristics }
+		prerequisite = { focus = Soviet_tank_purchase }
 		x = -1
 		y = 4
 		relative_position_id = PRC_agrarian_socialism
@@ -306,7 +307,7 @@ focus_tree = {
 	focus = {
 		id = PRC_socialist_market_economy
 		icon = GFX_goal_generic_consumer_goods
-		prerequisite = { focus = PRC_proclaim_the_peoples_republic focus = PRC_remove_chiang_kai_shek }
+		prerequisite = { focus = PRC_proclaim_the_peoples_republic focus = PRC_form_the_academy_of_sciences }
 		x = 2
 		y = 5
 		relative_position_id = PRC_agrarian_socialism
@@ -350,9 +351,8 @@ focus_tree = {
 	focus = {
 		id = PRC_land_redistribution
 		icon = GFX_goal_generic_construction
-		x = 10
+		x = 7
 		y = 0
-		relative_position_id = PRC_strengthen_the_central_secretariat
 
 		cost = 10
 
@@ -380,10 +380,8 @@ focus_tree = {
 	focus = {
 		id = PRC_the_yanan_base_area
 		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = PRC_land_redistribution }
-		x = 6
-		y = 1
-		relative_position_id = PRC_land_redistribution
+		x = 15
+		y = 0
 
 		cost = 10
 
@@ -679,10 +677,8 @@ focus_tree = {
 	focus = {
 		id = PRC_revolutionary_military_commission
 		icon = GFX_goal_generic_occupy_states_ongoing_war
-		prerequisite = { focus = PRC_confrontation_with_the_warlords focus = PRC_infiltration }
-		x = 0
-		y = 1
-		relative_position_id = PRC_confrontation_with_the_warlords
+		x = 29
+		y = 0
 
 		cost = 10
 
@@ -708,10 +704,9 @@ focus_tree = {
 	}
 
 	focus = {
-		id = PRC_provoke_japan
+		id = PRC_Tactical_Selection
 		icon = GFX_goal_generic_position_armies
 		prerequisite = { focus = PRC_revolutionary_military_commission }
-		prerequisite = { focus = PRC_anti_japanese_expedition }
 		x = -3
 		y = 1
 		relative_position_id = PRC_revolutionary_military_commission
@@ -729,26 +724,11 @@ focus_tree = {
 		}
 
 		available = {
-			NOT = {
-				is_subject_of = JAP #was fun while it lasted
-			}
+			
 		}
 
 		bypass = {
-			OR = {
-				has_war_with = JAP
-				AND = {
-					MAN = {
-						is_subject = no
-					}
-					JAP = {
-						NOT = {
-							owns_state = 525
-							owns_state = 527
-						}
-					}
-				}
-			}
+
 		}
 
 		cancel_if_invalid = yes
@@ -757,18 +737,18 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
-			unlock_decision_tooltip = { decision = PRC_provoke_japan show_effect_tooltip = yes }
+			
 		}
 	}
 
 	focus = {
 		id = PRC_protracted_warfare
 		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = PRC_provoke_japan }
+		prerequisite = { focus = PRC_Tactical_Selection }
 		mutually_exclusive = { focus = PRC_mobile_warfare }
 		x = -1
 		y = 1
-		relative_position_id = PRC_provoke_japan
+		relative_position_id = PRC_Tactical_Selection
 
 		cost = 10
 
@@ -796,11 +776,11 @@ focus_tree = {
 	focus = {
 		id = PRC_mobile_warfare
 		icon = GFX_goal_generic_cavalry
-		prerequisite = { focus = PRC_provoke_japan }
+		prerequisite = { focus = PRC_Tactical_Selection }
 		mutually_exclusive = { focus = PRC_protracted_warfare }
 		x = 1
 		y = 1
-		relative_position_id = PRC_provoke_japan
+		relative_position_id = PRC_Tactical_Selection
 
 		cost = 10
 
@@ -831,7 +811,7 @@ focus_tree = {
 		prerequisite = { focus = PRC_protracted_warfare }
 		x = -1
 		y = 2
-		relative_position_id = PRC_provoke_japan
+		relative_position_id = PRC_Tactical_Selection
 
 		cost = 10
 
@@ -862,7 +842,7 @@ focus_tree = {
 		prerequisite = { focus = PRC_mobile_warfare }
 		x = 1
 		y = 2
-		relative_position_id = PRC_provoke_japan
+		relative_position_id = PRC_Tactical_Selection
 
 		cost = 10
 
@@ -1343,10 +1323,10 @@ focus_tree = {
 	focus = {
 		id = PRC_literacy_programs
 		icon = GFX_focus_generic_socialist_science
-		prerequisite = { focus = PRC_land_redistribution }
-		x = -4
+		prerequisite = { focus = PRC_strengthen_the_central_secretariat focus = PRC_land_redistribution }
+		x = 2
 		y = 1
-		relative_position_id = PRC_land_redistribution
+		relative_position_id = PRC_strengthen_the_central_secretariat
 
 		cost = 10
 

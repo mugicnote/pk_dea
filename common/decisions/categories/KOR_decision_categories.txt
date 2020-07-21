@@ -35,7 +35,7 @@ KOR_organize_the_blackshirts = {
 	}
 
 	visible = {
-			NOT = { has_government = fascism }
+			always = no
 	}
 }
 

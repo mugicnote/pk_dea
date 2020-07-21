@@ -28,8 +28,9 @@ leader_traits = {
 	}
 	traits_Yeo_Un1 = {
 		random = no
-		neutrality_drift = 0.1
-		democratic_drift = 0.2
+		social_democracy_drift = 0.1
+		stability_factor = 0.1
+		drift_defence_factor = 0.1
 		
 		ai_will_do = {
 			factor = 1

@@ -314,8 +314,8 @@ PRC = {
 }
 
 GXC = {
-	color = rgb { 71 113 97 }
-	color_ui = rgb { 71 113 97 }
+	color = rgb { 227 207 142 }
+	color_ui = rgb { 255 255 155 }
 }
 
 SHX = {
@@ -702,4 +702,32 @@ WUR = {
 SHL = {
 	color = rgb { 51 51 255 }
 	color_ui = rgb { 51 51 255 }
+}
+FNG = {
+	color = rgb { 189 113 33 }
+	color_ui = rgb { 189 113 33 }
+}
+SND = {
+	color = rgb { 0  51  153 }
+	color_ui = rgb { 204 81 39 }
+}
+SZC = {
+	color = rgb { 154 115 56 }
+	color_ui = rgb { 149 123 56 }
+}
+GDC = {
+	color = rgb { 71 113 97 }
+	color_ui = rgb { 71 113 97 }
+}
+SSK = {
+	color = rgb { 214 190 74 }
+	color_ui = rgb { 214 190 74 }
+}
+ETS = {
+	color = rgb { 71 178 224 }
+	color_ui = rgb { 71 178 224 }
+}
+KMK = {
+	color = rgb { 160 82 45 }
+	color_ui = rgb { 160 82 45 }
 }

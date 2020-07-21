@@ -21,281 +21,85 @@
 		available = {
             has_global_flag = surviving_prime
         }
-		x = 8
+		x = 29
 		y = 2
 		completion_reward = {
 			country_event = { id = KOR.1 }
-			set_popularities = {
-				democratic = 50
-				neutrality = 10
-				fascism = 25
-				communism = 15
-			}
-			set_politics = {
-				ruling_party = democratic
-				elections_allowed = yes
-			}
 		}
 	}
 	focus = {
-		id = The_Theory_of_Strengthening_External_Influence
-		icon = GFX_focus_jap_strike_south
-		cost = 10.00
-		prerequisite = {
-			focus = Strengthen_the_regime
-			focus = Strengthening_the_regime
-			focus = Strong_regime
-		}
-		x = 6
-		y = 10
-
-	}
-	focus = {
-		id = Korean_People's_Party
-		icon = GFX_focus_focus_fra_national_resistance_council
+		id = victory_Korean_Confederation_Trade_Unions
+		icon = GFX
 		cost = 10.00
 		prerequisite = {
 			focus = democratic_election
 		}
 		mutually_exclusive = {
-			focus = Korean_Independence_Party
-			focus = Korea_Association_for_the_Promotion_of_Independence
+			focus = Lee_Seung_man_Elected
+			focus = Kim_Gu_Elected
+			focus = Yeo_Un_hyung_Elected
+			focus = Cho_Man_Sik_Elected
+			focus = Kim_Sung_Soo_Elected
+			focus = Ahn_Jae_Hong_Elected
+			focus = Kim_Won_Bong_Elected
+
 		}
-		x = 6
+		x = -10
+		y = 3
+	}
+	focus = {
+		id = Kim_Won_Bong_Elected
+		icon = GFX_focus_Kim_Won_Bong
+		cost = 10.00
+		prerequisite = {
+			focus = democratic_election
+		}
+		mutually_exclusive = {
+			focus = Lee_Seung_man_Elected
+			focus = Kim_Gu_Elected
+			focus = Yeo_Un_hyung_Elected
+			focus = Cho_Man_Sik_Elected
+			focus = Kim_Sung_Soo_Elected
+			focus = Ahn_Jae_Hong_Elected
+			focus = victory_Korean_Confederation_Trade_Unions
+		}
+		x = -5
 		y = 3
 		completion_reward = {
-		set_party_name = { ideology = democratic long_name = Yeo_un_long name = Yeo_un }
+			set_politics = {
+				ruling_party = radical_socialism
+				elections_allowed = yes
+			}
+			#set_popularities = {
 		country_event = { id = KOR.2 }
+		country_event = { id = KOR.35 days = 10 }
 		}
 	}
 	focus = {
-		id = Yeo_Un-hyung's_election
+		id = Yeo_Un_hyung_Elected
 		icon = GFX_focus_ryuh_woonhyung
 		cost = 10.00
 		prerequisite = {
-			focus = Korean_People's_Party
+			focus = democratic_election
 		}
 		mutually_exclusive = {
-			focus = Lee_Seung-man_Elected
+			focus = Lee_Seung_man_Elected
 			focus = Kim_Gu_Elected
+			focus = Kim_Won_Bong_Elected
+			focus = Cho_Man_Sik_Elected
+			focus = Kim_Sung_Soo_Elected
+			focus = Ahn_Jae_Hong_Elected
+			focus = victory_Korean_Confederation_Trade_Unions
 		}
-		x = 3
-		y = 4
+		x = 7
+		y = 3
 		completion_reward = {
 			set_politics = {
 				ruling_party = social_democracy
 				elections_allowed = yes
 			}
+		country_event = { id = KOR.2 }
 		}
-	}
-	focus = { #좌-우의 의견 수용
-		id = accepting_left-right_opinions
-		icon = GFX_goal_generic_national_unity
-		cost = 5.00
-		prerequisite = {
-			focus = Yeo_Un-hyung's_election
-		}
-		x = 3
-		y = 5
-		completion_reward = {
-		}
-	}
-	focus = { #좌-우 대립 중재
-		id = left-right_conflict_arbitration
-		icon = GFX_goal_generic_major_alliance
-		cost = 5.00
-		prerequisite = {
-			focus = accepting_left-right_opinions
-		}
-		x = 3
-		y = 6
-		completion_reward = {
-		}
-	}
-	focus = { #모든 인민은 평등하다
-		id = all_people_are_equal
-		icon = GFX_focus_hol_abandon_the_gold_standard
-		cost = 10.00
-		prerequisite = {
-			focus = Yeo_Un-hyung's_election
-		}
-		x = 5
-		y = 5
-		completion_reward = {
-		}
-	}
-	focus = { #모든 인민은 보호받아야한다
-		id = all_people_should_be_protected
-		icon = GFX_goal_generic_military_sphere
-		cost = 10.00
-		prerequisite = {
-			focus = all_people_are_equal
-		}
-		x = 5
-		y = 6
-		completion_reward = {
-		}
-	}
-	focus = { #인민 복지
-		id = people's_welfare
-		icon = GFX_focus_generic_concessions
-		cost = 10.00
-		prerequisite = {
-			focus = Yeo_Un-hyung's_election
-		}
-		x = 1
-		y = 5
-		completion_reward = {
-		}
-	}
-	focus = { #치안 강화
-		id = safety_reinforce
-		icon = GFX_focus_generic_coastal_fort
-		cost = 10.00
-		prerequisite = {
-			focus = people's_welfare
-		}
-		x = 1
-		y = 6
-		completion_reward = {
-		}
-	}
-	focus = { #범죄와 싸워라
-		id = fight_crime
-		icon = GFX_goal_generic_imprison_people
-		cost = 10.00
-		prerequisite = {
-			focus = safety_reinforce
-		}
-		x = 1
-		y = 7
-		completion_reward = {
-		}
-	}
-	focus = { #부정부패 근절
-		id = eradication_of_corruption
-		icon = GFX_goal_generic_political_pressure
-		cost = 10.00
-		prerequisite = {
-			focus = safety_reinforce
-		}
-		x = 3
-		y = 7
-		completion_reward = {
-		}
-	}
-	focus = { #평등한 인민 사회
-		id = The_Equal_People's_Society
-		icon = GFX_goal_generic_neutrality_focus
-		cost = 10.00
-		prerequisite = {
-			focus = fight_crime
-		}
-		prerequisite = {
-			focus = eradication_of_corruption
-		}
-		prerequisite = {
-			focus = all_people_should_be_protected
-		}
-		x = 3
-		y = 8
-
-	}
-	focus = {
-		id = Manju_Korean_Governance_Theory
-		icon = GFX_focus_jap_cast_the_die
-		cost = 10.00
-		prerequisite = {
-			focus = The_Theory_of_Strengthening_External_Influence
-		}
-		x = 5
-		y = 11
-
-	}
-	focus = {
-		id = End_the_Civil_War
-		icon = GFX_focus_focus_fra_liberte_egalite_solidarite
-		cost = 10.00
-		x = 8
-		y = 6
-		
-	}
-	focus = {
-		id = Fight_the_Civil_War
-		icon = GFX_focus_generic_license_production
-		cost = 10.00
-		prerequisite = {
-			focus = End_the_Civil_War
-		}
-		x = 6
-		y = 7
-
-	}
-	focus = {
-		id = Promote_ideology
-		icon = GFX_focus_spr_war_of_independence
-		cost = 10.00
-		prerequisite = {
-			focus = End_the_Civil_War
-		}
-		x = 8
-		y = 7
-
-	}
-	focus = {
-		id = Fight_for_the_Nation
-		icon = GFX_focus_generic_support_the_left_right
-		cost = 10.00
-		prerequisite = {
-			focus = Promote_ideology
-		}
-		x = 8
-		y = 8
-
-	}
-	focus = {
-		id = Let's_fight_for_the_people
-		icon = GFX_focus_generic_the_giant_wakes
-		cost = 10.00
-		prerequisite = {
-			focus = Fight_for_the_Nation
-		}
-		x = 8
-		y = 9
-
-	}
-	focus = {
-		id = Request_help
-		icon = GFX_goal_molotov_ribbentrop_pact
-		cost = 10.00
-		prerequisite = {
-			focus = End_the_Civil_War
-		}
-		x = 10
-		y = 7
-
-	}
-	focus = {
-		id = Support_to_the_United_States
-		icon = GFX_focus_chi_mission_to_the_us
-		cost = 10.00
-		prerequisite = {
-			focus = Request_help
-		}
-		x = 10
-		y = 8
-
-	}
-	focus = {
-		id = Request_Support_to_the_United_Kingdom
-		icon = GFX_focus_eng_the_sun_never_sets
-		cost = 10.00
-		prerequisite = {
-			focus = Support_to_the_United_States
-		}
-		x = 10
-		y = 9
-
 	}
 	focus = {
 		id = Kim_Gu_Elected
@@ -305,8 +109,13 @@
 			focus = democratic_election
 		}
 		mutually_exclusive = {
-			focus = Lee_Seung-man_Elected
-			focus = Yeo_Un-hyung's_election
+			focus = Lee_Seung_man_Elected
+			focus = Yeo_Un_hyung_Elected
+			focus = Kim_Won_Bong_Elected
+			focus = Cho_Man_Sik_Elected
+			focus = Kim_Sung_Soo_Elected
+			focus = Ahn_Jae_Hong_Elected
+			focus = victory_Korean_Confederation_Trade_Unions
 		}
 		x = 16
 		y = 3
@@ -326,7 +135,7 @@
 		}
 	}
 	focus = {
-		id = Lee_Seung-man_Elected
+		id = Lee_Seung_man_Elected
 		icon = GFX_focus_syngman_rhee_2
 		cost = 10.00
 		prerequisite = {
@@ -334,7 +143,12 @@
 		}
 		mutually_exclusive = {
 			focus = Kim_Gu_Elected
-			focus = Yeo_Un-hyung's_election
+			focus = Yeo_Un_hyung_Elected
+			focus = Kim_Won_Bong_Elected
+			focus = Cho_Man_Sik_Elected
+			focus = Kim_Sung_Soo_Elected
+			focus = Ahn_Jae_Hong_Elected
+			focus = victory_Korean_Confederation_Trade_Unions
 		}
 		x = 29
 		y = 3
@@ -354,193 +168,82 @@
 		}
 	}
 	focus = {
-		id = Specify_vacuum_defense_line
-		icon = GFX_focus_generic_provoke_border_clashes
+		id = Ahn_Jae_Hong_Elected
+		icon = GFX_focus_Ahn_Jae_Hong
 		cost = 10.00
 		prerequisite = {
-			focus = Fight_the_Civil_War
-		}
-		x = 6
-		y = 8
-
-	}
-	focus = {
-		id = establishment_of_civil_war_command
-		icon = GFX_focus_spa_the_spanish_miracle
-		cost = 10.00
-		prerequisite = {
-			focus = Specify_vacuum_defense_line
-		}
-		x = 6
-		y = 9
-
-	}
-	focus = {
-		id = The_civil_war_is_ove
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = Let's_fight_for_the_people
-			focus = establishment_of_civil_war_command
-			focus = Request_Support_to_the_United_Kingdom
-		}
-		x = 8
-		y = 10
-
-	}
-	focus = {
-		id = Strong_regime
-		icon = GFX_goal_continuous_increase_nu
-		cost = 10.00
-		prerequisite = {
-			focus = The_Equal_People's_Society
-		}
-		x = 4
-		y = 9
-
-	}
-	focus = {
-		id = Former_Presidential_Law
-		icon = GFX_focus_usa_voter_registration_act
-		cost = 10.00
-		prerequisite = {
-			focus = Provoking_the_Issue_of_President's_Second_Term
+			focus = democratic_election
 		}
 		mutually_exclusive = {
-			focus = Return_President
+			focus = Lee_Seung_man_Elected
+			focus = Kim_Gu_Elected
+			focus = Yeo_Un_hyung_Elected
+			focus = Kim_Won_Bong_Elected
+			focus = Cho_Man_Sik_Elected
+			focus = Kim_Sung_Soo_Elected
+			focus = victory_Korean_Confederation_Trade_Unions
 		}
-		x = 11
-		y = 11
-
+		x = 42
+		y = 3
+		completion_reward = {
+			set_politics = {
+				ruling_party = social_liberalism
+				elections_allowed = yes
+			}
+		country_event = { id = KOR.2 }
+		}
 	}
 	focus = {
-		id = Return_President
-		icon = GFX_focus_assembly_election
+		id = Cho_Man_Sik_Elected
+		icon = GFX_focus_Cho_Man_Sik
 		cost = 10.00
 		prerequisite = {
-			focus = Provoking_the_Issue_of_President's_Second_Term
+			focus = democratic_election
 		}
 		mutually_exclusive = {
-			focus = Former_Presidential_Law
+			focus = Lee_Seung_man_Elected
+			focus = Kim_Gu_Elected
+			focus = Yeo_Un_hyung_Elected
+			focus = Kim_Won_Bong_Elected
+			focus = Ahn_Jae_Hong_Elected
+			focus = Kim_Sung_Soo_Elected
+			focus = victory_Korean_Confederation_Trade_Unions
 		}
-		x = 15
-		y = 11
-
+		x = 55
+		y = 3
+		completion_reward = {
+			set_politics = {
+				ruling_party = market_liberalism
+				elections_allowed = yes
+			}
+		country_event = { id = KOR.2 }
+		}
 	}
 	focus = {
-		id = Article_of_Article_of_Legislation
-		icon = GFX_focus_focus_fra_fascist_threat
+		id = Kim_Sung_Soo_Elected
+		icon = GFX_focus_Kim_Sung_Soo
 		cost = 10.00
 		prerequisite = {
-			focus = Cancel_the_second_term
-		}
-		x = 14
-		y = 13
-
-	}
-	focus = {
-		id = Introduction_to_a_second_term_additive
-		icon = GFX_focus_interim_government
-		cost = 10.00
-		prerequisite = {
-			focus = Return_President
+			focus = democratic_election
 		}
 		mutually_exclusive = {
-			focus = Cancel_the_second_term
+			focus = Lee_Seung_man_Elected
+			focus = Kim_Gu_Elected
+			focus = Yeo_Un_hyung_Elected
+			focus = Kim_Won_Bong_Elected
+			focus = Ahn_Jae_Hong_Elected
+			focus = Cho_Man_Sik_Elected
+			focus = victory_Korean_Confederation_Trade_Unions
 		}
-		x = 16
-		y = 12
-
-	}
-	focus = {
-		id = Cancel_the_second_term
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = Return_President
+		x = 68
+		y = 3
+		completion_reward = {
+			set_politics = {
+				ruling_party = liberal_conservatism
+				elections_allowed = yes
+			}
+		country_event = { id = KOR.2 }
 		}
-		mutually_exclusive = {
-			focus = Introduction_to_a_second_term_additive
-		}
-		x = 14
-		y = 12
-
-	}
-	focus = {
-		id = Provoking_the_Issue_of_President's_Second_Term
-		icon = GFX_two_peo
-		cost = 10.00
-		prerequisite = {
-			focus = Strengthen_the_regime
-			focus = Strengthening_the_regime
-			focus = Strong_regime
-		}
-		x = 13
-		y = 10
-
-	}
-	focus = {
-		id = The_judiciary's_condemnation_of_the_system
-		icon = GFX_goal_generic_territory_or_war
-		cost = 10.00
-		prerequisite = {
-			focus = Introduction_to_a_second_term_additive
-		}
-		x = 16
-		y = 13
-
-	}
-	focus = {
-		id = Legislation_consolidation_of_judiciary
-		icon = GFX_focus_spr_masters_of_our_own_fate
-		cost = 10.00
-		prerequisite = {
-			focus = Article_of_Article_of_Legislation
-			focus = The_judiciary's_condemnation_of_the_system
-		}
-		mutually_exclusive = {
-			focus = Presidential-centered_parliamentary_cabinet_system
-		}
-		x = 14
-		y = 14
-
-	}
-	focus = {
-		id = Claiming_Japan's_annexation_of_Korea
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = The_Theory_of_Strengthening_External_Influence
-		}
-		x = 7
-		y = 11
-
-	}
-	focus = {
-		id = Presidential-centered_parliamentary_cabinet_system
-		icon = GFX_focus_detain_members_of_opposition_party
-		cost = 10.00
-		prerequisite = {
-			focus = The_judiciary's_condemnation_of_the_system
-			focus = Article_of_Article_of_Legislation
-		}
-		mutually_exclusive = {
-			focus = Legislation_consolidation_of_judiciary
-		}
-		x = 16
-		y = 14
-
-	}
-	focus = {
-		id = Japan's_Collections_of_Mergers_Claims
-		icon = GFX_focus_jap_pacific_guardian
-		cost = 10.00
-		prerequisite = {
-			focus = Claiming_Japan's_annexation_of_Korea
-		}
-		x = 8
-		y = 12
-
 	}
 	focus = {
 		id = military_arrest
@@ -552,7 +255,10 @@
 		mutually_exclusive = {
 			focus = military_success
 		}
-		x = 18
+		completion_reward = {
+		country_lock_all_division_template = no
+		}
+		x = 29
 		y = 1
 
 	}
@@ -561,7 +267,7 @@
 		icon = GFX_goal_unknown
 		cost = 10.00
 
-		x = 23
+		x = 50
 		y = 0
 
 		completion_reward = {
@@ -569,48 +275,6 @@
 		}
 	}
 
-	focus = {
-		id = Bongcheon_say_ok
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = Manju_Korean_Governance_Theory
-		}
-		mutually_exclusive = {
-			focus = Bongcheon_say_no
-		}
-		x = 4
-		y = 12
-
-	}
-
-	focus = {
-		id = Bongcheon_say_no
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = Manju_Korean_Governance_Theory
-		}
-		mutually_exclusive = {
-			focus = Bongcheon_say_ok
-		}
-		x = 6
-		y = 12
-
-	}
-
-	focus = {
-		id = China's_threat_to_return_Manchuria
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = Bongcheon_say_ok
-			focus = Bongcheon_say_no
-		}
-		x = 5
-		y = 13
-
-	}
 	focus = {
 		id = military_success
 		icon = GFX_focus_military_coup
@@ -627,53 +291,10 @@
 				ruling_party = fascism
 				elections_allowed = no
 			}
+		country_lock_all_division_template = no
 		}
 		x = 50
 		y = 1
-
-	}
-	focus = {
-		id = return_of_Manchuria
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = China's_threat_to_return_Manchuria
-		}
-		x = 4
-		y = 14
-
-	}
-	focus = {
-		id = dramatic_opposition_from_the_opposition_party
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = Former_Presidential_Law
-		}
-		x = 10
-		y = 12
-
-	}
-	focus = {
-		id = Student_Civilization_a_worthy_undertaking
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = Former_Presidential_Law
-		}
-		x = 12
-		y = 12
-
-	}
-	focus = {
-		id = a_parliamentary_siege
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = dramatic_opposition_from_the_opposition_party
-		}
-		x = 10
-		y = 13
 
 	}
 
@@ -1170,13 +791,23 @@
 	}
 	focus = {
 		id = Republic_of_Korea_Navy
-		icon = GFX_KoreaMarines
+		icon = GFX_focus_Polygon_with_Laurels_2
 		cost = 10.00
 		prerequisite = {
 			focus = Republic_of_Korea_Armed_Forces
 		}
 		x = 113
 		y = 1
+	}
+	focus = {
+		id = Republic_of_Korea_ROKMC
+		icon = GFX_KoreaMarines
+		cost = 10.00
+		prerequisite = {
+			focus = Republic_of_Korea_Navy
+		}
+		x = 110
+		y = 2
 	}
 	focus = {
 		id = Ministry_of_National_Defense
@@ -1467,7 +1098,7 @@
 		icon = GFX_focus_ilminism
 		cost = 10.00
 		prerequisite = {
-			focus = Lee_Seung-man_Elected
+			focus = Lee_Seung_man_Elected
 		}
 		x = 27
 		y = 4
@@ -1478,7 +1109,7 @@
 		icon = GFX_KTG_Bookstack
 		cost = 10.00
 		prerequisite = {
-			focus = Lee_Seung-man_Elected
+			focus = Lee_Seung_man_Elected
 			focus = Kim_Gu_Elected
 		}
 		x = 23
@@ -1548,7 +1179,7 @@
 		icon = GFX_focus_syngman_rhee
 		cost = 10.00
 		prerequisite = {
-			focus = Lee_Seung-man_Elected
+			focus = Lee_Seung_man_Elected
 		}
 		x = 29
 		y = 4
@@ -1559,7 +1190,7 @@
 		icon = GFX_focus_kyc
 		cost = 10.00
 		prerequisite = {
-			focus = Lee_Seung-man_Elected
+			focus = Lee_Seung_man_Elected
 		}
 		x = 32
 		y = 4
@@ -2066,6 +1697,239 @@
 
 	}
 	focus = {
+		id = maintenance_public_order
+		icon = gfx
+		cost = 10.00
+		prerequisite = {
+			focus = Yeo_Un_hyung_Elected
+			focus = Kim_Won_Bong_Elected
+		}
+		x = 1
+		y = 4
+
+	}
+	focus = {
+		id = welfare_first_policy
+		icon = gfx
+		cost = 10.00
+		prerequisite = {
+			focus = Yeo_Un_hyung_Elected
+		}
+		x = 10
+		y = 4
+
+	}
+	focus = {
+		id = police_political_neutrality
+		icon = gfx
+		cost = 10.00
+		prerequisite = {
+			focus = maintenance_public_order
+		}
+		x = 0
+		y = 5
+
+	}
+	focus = {
+		id = security_police
+		icon = gfx
+		cost = 10.00
+		prerequisite = {
+			focus = maintenance_public_order
+		}
+		prerequisite = {
+			focus = Leader_of_Joseon
+		}
+		x = 3
+		y = 5
+
+	}
+	focus = {
+		id = food_distribution
+		icon = gfx
+		cost = 10.00
+		prerequisite = {
+			focus = welfare_first_policy
+		}
+		x = 9
+		y = 5
+
+	}
+	focus = {
+		id = compulsory_primary_education2
+		icon = gfx
+		cost = 10.00
+		prerequisite = {
+			focus = welfare_first_policy
+		}
+		x = 11
+		y = 5
+
+	}
+	focus = {
+		id = free_school_lunch_system
+		icon = gfx
+		cost = 10.00
+		prerequisite = {
+			focus = food_distribution
+		}
+		prerequisite = {
+			focus = compulsory_primary_education2
+		}
+		x = 11
+		y = 6
+
+	}
+	focus = {
+		id = corruption_investigation
+		icon = gfx
+		cost = 10.00
+		prerequisite = {
+			focus = security_police
+			focus = police_political_neutrality
+		}
+		x = 1
+		y = 6
+
+	}
+	focus = {
+		id = Trade_is_the_key
+		icon = GFX_SIA_maritmesilkroad
+		cost = 10.00
+		prerequisite = {
+			focus = Yeo_Un_hyung_Elected
+		}
+		x = 8
+		y = 4
+
+	}
+	focus = {
+		id = Leader_of_Joseon
+		icon = GFX_goal_ideology_social_democrat
+		cost = 10.00
+		prerequisite = {
+			focus = Yeo_Un_hyung_Elected
+		}
+		completion_reward = {
+		add_country_leader_trait = traits_Yeo_Un1
+		}
+		x = 6
+		y = 4
+
+	}
+	focus = {
+		id = contact_with_France
+		icon = GFX_FRA_KOR_handshake
+		cost = 10.00
+		prerequisite = {
+			focus = Leader_of_Joseon
+		}
+		x = 7
+		y = 5
+
+	}
+	focus = {
+		id = political_prisoner
+		icon = gfx
+		cost = 10.00
+		prerequisite = {
+			focus = Leader_of_Joseon
+		}
+		x = 5
+		y = 5
+
+	}
+	focus = {
+		id = extremist_arrest
+		icon = gfx
+		cost = 10.00
+		prerequisite = {
+			focus = security_police
+		}
+		x = 3
+		y = 6
+
+	}
+	focus = {
+		id = parliamentary_freeze
+		icon = gfx
+		cost = 10.00
+		prerequisite = {
+			focus = political_soldier
+		}
+		x = 7
+		y = 7
+
+	}
+	focus = {
+		id = political_soldier
+		icon = gfx
+		cost = 10.00
+		prerequisite = {
+			focus = political_prisoner
+		}
+		x = 5
+		y = 6
+
+	}
+	focus = {
+		id = political_prisoner2
+		icon = gfx
+		cost = 10.00
+		prerequisite = {
+			focus = political_soldier
+		}
+		x = 5
+		y = 7
+
+	}
+	focus = {
+		id = imports_French_products
+		icon = gfx
+		cost = 10.00
+		prerequisite = {
+			focus = food_distribution
+			focus = contact_with_France
+		}
+		x = 7
+		y = 6
+
+	}
+	focus = {
+		id = Contact_with_Three_Nordic_Countries
+		icon = GFX_KOR_SOV_Wreath
+		cost = 10.00
+		prerequisite = {
+			focus = food_distribution
+		}
+		x = 9
+		y = 7
+
+	}
+	focus = {
+		id = refugee_acceptance_problem
+		icon = gfx
+		cost = 10.00
+		prerequisite = {
+			focus = Contact_with_Three_Nordic_Countries
+			focus = free_school_lunch_system
+		}
+		x = 11
+		y = 8
+
+	}
+	focus = {
+		id = contact_with_Japan
+		icon = GFX_goal_japanese_democracy
+		cost = 10.00
+		prerequisite = {
+			focus = Contact_with_Three_Nordic_Countries
+		}
+		x = 9
+		y = 8
+
+	}
+	focus = {
 		id = threats_from_opposition_parties
 		icon = GFX_focus_generic_strike_at_democracy2
 		cost = 10.00
@@ -2100,1545 +1964,5 @@
 		y = 19
 
 	}
-	focus = {
-		id = emperor_returns
-		icon = GFX_focus_chunggun_aeguk
-		cost = 10.00
-		prerequisite = {
-			focus = military_success
-		}
-		mutually_exclusive = {
-			focus = division_of_party
-		}
-		completion_reward = {
-			set_cosmetic_tag = KOR_empire
-			create_country_leader = {
-  				name = "대한제국 황실"
-  				desc = ""
-  				picture = "emperor1.dds"
-  				expire = "1947.7.19"
-  				ideology = fascism_ideology
-  				traits = {
-    				disgraced_monarch
-					KOR_stammer	
-  					}
-				}
-			}
-		x = 67
-		y = 2
-
-     }
-	 
-	focus = {
-		id = form_imperial_party
-		icon = GFX_focus_accept_the_return_of_imperial_family
-		cost = 10.00
-		prerequisite = {
-			focus = emperor_returns
-		}
-		x = 66
-		y = 3
-		completion_reward = {
-			#
-		}
-     }
-	
-	focus = {
-		id = change_law
-		icon = GFX_focus_generic_treaty
-		cost = 10.00
-		prerequisite = {
-			focus = emperor_returns
-		}
-		x = 68
-		y = 3
-
-     }
-	focus = {
-		id = return_yi_kang
-		icon = GFX_focus_declare_empire
-		cost = 10.00
-		prerequisite = {
-			focus = change_law
-		}
-		prerequisite = {
-			focus = form_imperial_party
-		}
-		completion_reward = {
-			remove_ideas = KOR_disjointed_government
-			news_event = {id = KOR.16 }
-		}
-		x = 67
-		y = 4
-
-     }
-	focus = {
-		id = emperor_first
-		icon = GFX_focus_eok_armed_forces
-		cost = 10.00
-		prerequisite = {
-			focus = return_yi_kang
-		}
-		x = 61
-		y = 5
-
-     }
-	focus = {
-		id = form_imperial_guards
-		icon = GFX_focus_imperial_club
-		cost = 10.00
-		prerequisite = {
-			focus = return_yi_kang
-		}
-		x = 66
-		y = 5
-
-     }
-	focus = {
-		id = founding_boy_scouts
-		icon = GFX_focus_prc_infiltration
-		cost = 10.00
-		prerequisite = {
-			focus = form_imperial_guards
-		}
-		x = 66
-		y = 6
-
-     }
-	 focus = {
-		id = hire_imperial_supporter
-		icon = GFX_
-		cost = 10.00
-		prerequisite = {
-			focus = founding_boy_scouts
-		}
-		x = 66
-		y = 7
-
-     }
-	focus = {
-		id = researcher_mag
-		icon = GFX_
-		cost = 10.00
-		prerequisite = {
-			focus = hire_imperial_supporter
-		}
-		x = 66
-		y = 8
-
-     }
-	focus = {
-		id = korean_militarism
-		icon = GFX_
-		cost = 10.00
-		prerequisite = {
-			focus = researcher_mag
-		}
-		x = 66
-		y = 9
-
-     }
-	focus = {
-		id = intervention_spanish_civil_war
-		icon = GFX_
-		cost = 10.00
-		prerequisite = {
-			focus = return_yi_kang
-		}
-		completion_reward = {
-			unlock_decision_category_tooltip = KOR_spanish_intervention_category
-			set_country_flag = KOR_non_intervention
-		}
-		x = 68
-		y = 5
-
-     }
-	focus = {
-		id = support_national_front
-		icon = GFX_
-		cost = 10.00
-		prerequisite = {
-			focus = intervention_spanish_civil_war
-		}
-		completion_reward = {
-		custom_effect_tooltip = support_national_front_tt
-		}
-		x = 68
-		y = 6
-
-     }
-	focus = {
-		id = iberian_fascism
-		icon = GFX_
-		cost = 10.00
-		prerequisite = {
-			focus = support_national_front
-		}
-		completion_reward = {
-		custom_effect_tooltip = iberian_fascism_tt
-		}
-		x = 68
-		y = 7
-
-     }
-	focus = {
-		id = support_everything
-		icon = GFX_
-		cost = 10.00
-		prerequisite = {
-			focus = iberian_fascism
-		}
-		x = 68
-		y = 8
-
-     }
-	focus = {
-		id = win_civil_war
-		icon = GFX_
-		cost = 10.00
-		prerequisite = {
-			focus = support_everything
-		}
-		x = 68
-		y = 9
-
-     }
-	focus = {
-		id = start_economic_development_plan
-		icon = GFX_
-		cost = 10.00
-		prerequisite = {
-			focus = return_yi_kang
-		}
-		x = 73
-		y = 5
-
-     }
-	focus = {
-		id = opposition_dissolve
-		icon = GFX_
-		cost = 10.00
-		prerequisite = {
-			focus = emperor_first
-		}
-		x = 59
-		y = 6
-
-     }
-	 focus = {
-		id = kill_commes
-		icon = GFX_
-		cost = 10.00
-		prerequisite = {
-			focus = opposition_dissolve
-		}
-		x = 58
-		y = 7
-
-     }
-	focus = {
-		id = conversation_democratic
-		icon = GFX_focus_nationalism
-		cost = 10.00
-		prerequisite = {
-			focus = opposition_dissolve
-		}
-		x = 60
-		y = 7
-
-     }
-	focus = {
-		id = one_party_dictatorship
-		icon = GFX_
-		cost = 10.00
-		prerequisite = {
-			focus = kill_commes
-			focus = conversation_democratic
-		}
-		x = 59
-		y = 8
-
-     }
-	focus = {
-		id = reduce_permissions
-		icon = GFX_
-		cost = 10.00
-		prerequisite = {
-			focus = emperor_first
-		}
-		x = 63
-		y = 6
-
-     }
-	focus = {
-		id = annex_judiciary_legislature
-		icon = GFX_
-		cost = 10.00
-		prerequisite = {
-			focus = reduce_permissions
-		}
-		x = 62
-		y = 7
-
-     }
-	focus = {
-		id = monarchy_initiative
-		icon = GFX_
-		cost = 10.00
-		prerequisite = {
-			focus = reduce_permissions
-		}
-		x = 64
-		y = 7
-
-     }
-	focus = {
-		id = absolute_authority
-		icon = GFX_
-		cost = 10.00
-		prerequisite = {
-			focus = annex_judiciary_legislature
-			focus = monarchy_initiative
-		}
-		x = 63
-		y = 8
-
-     }
-	focus = {
-		id = god_save_the_emperor
-		icon = GFX_
-		cost = 10.00
-		prerequisite = {
-			focus = absolute_authority
-			focus = one_party_dictatorship
-		}
-		x = 61
-		y = 9
-
-     }
-	focus = {
-		id = economic_control
-		icon = GFX_
-		cost = 10.00
-		prerequisite = {
-			focus = start_economic_development_plan
-		}
-		x = 70
-		y = 6
-
-     }
-	 focus = {
-		id = export_control
-		icon = GFX_
-		cost = 10.00
-		prerequisite = {
-			focus = economic_control
-		}
-		x = 70
-		y = 7
-
-     }
-	 focus = {
-		id = corporate_control
-		icon = GFX_
-		cost = 10.00
-		prerequisite = {
-			focus = start_economic_development_plan
-		}
-		x = 72
-		y = 6
-
-     }
-	focus = {
-		id = corporation_nationalization
-		icon = GFX_
-		cost = 10.00
-		prerequisite = {
-			focus = corporate_control
-		}
-		x = 72
-		y = 7
-
-     }
-	focus = {
-		id = land_nationalization
-		icon = GFX_
-		cost = 10.00
-		prerequisite = {
-			focus = start_economic_development_plan
-		}
-		x = 74
-		y = 6
-
-     }
-	focus = {
-		id = korean_transversal_railway
-		icon = GFX_
-		cost = 10.00
-		prerequisite = {
-			focus = land_nationalization
-		}
-		x = 74
-		y = 7
-
-     }
-	focus = {
-		id = start_industrial_rev
-		icon = GFX_
-		cost = 10.00
-		prerequisite = {
-			focus = start_economic_development_plan
-		}
-		x = 76
-		y = 6
-
-     }
-	focus = {
-		id = currency_reform
-		icon = GFX_
-		cost = 10.00
-		prerequisite = {
-			focus = start_industrial_rev
-		}
-		x = 76
-		y = 7
-
-     }
-	focus = {
-		id = wartime_economy
-		icon = GFX_
-		cost = 10.00
-		prerequisite = {
-			focus = currency_reform
-			focus = korean_transversal_railway
-			focus = corporation_nationalization
-			focus = export_control
-		}
-		mutually_exclusive = {
-			focus = private_economy
-		}
-		x = 72
-		y = 8
-
-     }
-	focus = {
-		id = private_economy
-		icon = GFX_
-		cost = 10.00
-		prerequisite = {
-			focus = currency_reform
-			focus = korean_transversal_railway
-			focus = corporation_nationalization
-			focus = export_control
-		}
-		mutually_exclusive = {
-			focus = wartime_economy
-		}
-		x = 74
-		y = 8
-
-     }
-	focus = {
-		id = open_up_the_champagne
-		icon = GFX_
-		cost = 10.00
-		prerequisite = {
-			focus = wartime_economy
-			focus = private_economy
-		}
-		x = 73
-		y = 9
-
-     }
-	focus = {
-		id = eyes_oversea
-		icon = GFX_
-		cost = 10.00
-		prerequisite = {
-			focus = open_up_the_champagne
-			focus = win_civil_war
-			focus = korean_militarism
-			focus = god_save_the_emperor
-		}
-		x = 67
-		y = 10
-
-     }
-	 focus = {
-		id = asian_monarchy
-		icon = GFX_
-		cost = 10.00
-		prerequisite = {
-			focus = eyes_oversea
-		}
-		x = 62
-		y = 11
-
-     }
-	focus = {
-		id = alliance_with_mon
-		icon = GFX_
-		cost = 10.00
-		prerequisite = {
-			focus = asian_monarchy
-		}
-		x = 61
-		y = 12
-
-     }
-	focus = {
-		id = alliance_with_sia
-		icon = GFX_
-		cost = 10.00
-		prerequisite = {
-			focus = asian_monarchy
-		}
-		x = 63
-		y = 12
-
-     }
-	focus = {
-		id = asian_imperial_union
-		icon = GFX_
-		cost = 10.00
-		prerequisite = {
-			focus = alliance_with_mon
-			focus = alliance_with_sia
-		}
-		x = 62
-		y = 13
-
-     }
-	focus = {
-		id = japanese_fascism
-		icon = GFX_
-		cost = 10.00
-		prerequisite = {
-			focus = asian_imperial_union
-		}
-		x = 61
-		y = 14
-
-     }
-	focus = {
-		id = colonize_jap
-		icon = GFX_
-		cost = 10.00
-		prerequisite = {
-			focus = japanese_fascism
-		}
-		x = 61
-		y = 15
-
-     }
-	focus = {
-		id = return_puyi
-		icon = GFX_
-		cost = 10.00
-		prerequisite = {
-			focus = asian_imperial_union
-		}
-		x = 63
-		y = 14
-
-     }
-	focus = {
-		id = colonize_qing
-		icon = GFX_
-		cost = 10.00
-		prerequisite = {
-			focus = return_puyi
-		}
-		x = 63
-		y = 15
-
-     }
-	focus = {
-		id = american_monarchy
-		icon = GFX_
-		cost = 10.00
-		prerequisite = {
-			focus = eyes_oversea
-		}
-		x = 67
-		y = 11
-
-     }
-	focus = {
-		id = american_imperial_union
-		icon = GFX_
-		cost = 10.00
-		prerequisite = {
-			focus = american_monarchy
-		}
-		x = 67
-		y = 12
-
-     }
-	focus = {
-		id = contect_peru
-		icon = GFX_
-		cost = 10.00
-		prerequisite = {
-			focus = american_imperial_union
-		}
-		x = 66
-		y = 13
-
-     }
-	focus = {
-		id = annex_south_america
-		icon = GFX_
-		cost = 10.00
-		prerequisite = {
-			focus = contect_peru
-		}
-		x = 66
-		y = 14
-
-     }
-	focus = {
-		id = declare_south_american_empire
-		icon = GFX_
-		cost = 10.00
-		prerequisite = {
-			focus = annex_south_america
-		}
-		x = 66
-		y = 15
-
-     }
-	focus = {
-		id = alliance_mex
-		icon = GFX_
-		cost = 10.00
-		prerequisite = {
-			focus = american_imperial_union
-		}
-		x = 68
-		y = 13
-
-     }
-	focus = {
-		id = imperial_USA
-		icon = GFX_
-		cost = 10.00
-		prerequisite = {
-			focus = alliance_mex
-		}
-		x = 68
-		y = 14
-
-     }
-	focus = {
-		id = colonize_north_america
-		icon = GFX_
-		cost = 10.00
-		prerequisite = {
-			focus = imperial_USA
-		}
-		x = 68
-		y = 15
-
-     }
-	focus = {
-		id = Re_entry_europe
-		icon = GFX_
-		cost = 10.00
-		prerequisite = {
-			focus = eyes_oversea
-		}
-		x = 72
-		y = 11
-
-     }
-	focus = {
-		id = new_entente
-		icon = GFX_
-		cost = 10.00
-		prerequisite = {
-			focus = Re_entry_europe
-		}
-		mutually_exclusive = {
-			focus = new_central_power
-		}
-		x = 71
-		y = 12
-
-     }
-	focus = {
-		id = black_shirt_britain
-		icon = GFX_
-		cost = 10.00
-		prerequisite = {
-			focus = new_entente
-		}
-		x = 71
-		y = 13
-
-     }
-	focus = {
-	    id = fascist_fra
-		icon = GFX_
-		cost = 10.00
-		prerequisite = {
-			focus = black_shirt_britain
-		}
-		x = 71
-		y = 14
-
-     }
-	focus = {
-		id = new_tser
-		icon = GFX_
-		cost = 10.00
-		prerequisite = {
-			focus = fascist_fra
-		}
-		x = 71
-		y = 15
-
-     }
-	focus = {
-	    id = new_central_power
-		icon = GFX_
-		cost = 10.00
-		prerequisite = {
-			focus = Re_entry_europe
-		}
-		mutually_exclusive = {
-			focus = new_entente
-		}
-		x = 73
-		y = 12
-
-     }
-	focus = {
-	    id = real_fascist_ger
-		icon = GFX_
-		cost = 10.00
-		prerequisite = {
-			focus = new_central_power
-		}
-		x = 73
-		y = 13
-
-     }
-	focus = {
-	    id = new_aus_empire
-		icon = GFX_
-		cost = 10.00
-		prerequisite = {
-			focus = real_fascist_ger
-		}
-		x = 73
-		y = 15
-
-     }
-	focus = {
-	    id = alliance_with_ita
-		icon = GFX_
-		cost = 10.00
-		prerequisite = {
-			focus = new_aus_empire
-		}
-		x = 73
-		y = 14
-
-     }
-	focus = {
-	    id = form_pacific_empire
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = new_aus_empire
-			focus = new_tser
-			focus = colonize_north_america
-			focus = declare_south_american_empire
-			focus = colonize_qing
-			focus = colonize_jap
-		}
-		mutually_exclusive = {
-			focus = 
-		}
-		x = 67
-		y = 16
-
-     }
-	 focus = {
-		id = colonize_world
-		icon = GFX_
-		cost = 10.00
-		prerequisite = {
-			focus = form_pacific_empire
-		}
-		x = 67
-		y = 17
-
-     }
-	focus = {
-		id = international_empire
-		icon = GFX_
-		cost = 10.00
-		prerequisite = {
-			focus = colonize_world
-		}
-		x = 67
-		y = 18
-
-     }
-
-     focus = {
-		id = division_of_party
-		icon = GFX_focus_eng_concessions_to_the_trade_unions
-		cost = 10.00
-		prerequisite = {
-			focus = military_success
-		}
-		mutually_exclusive = {
-			focus = emperor_returns
-		}
-		completion_reward = {
-			set_cosmetic_tag = KOR_ku_de_end
-		}
-		x = 50
-		y = 2
-
-	}
-	focus = {
-		id = joeson_fascism_party
-		icon = GFX_focus_ger_revive_kaiserreich
-		cost = 10.00
-		prerequisite = {
-			focus = division_of_party
-		}
-		mutually_exclusive = {
-			focus = white_doctor
-		}
-		x = 46
-		y = 3
-
-     }
-	 	focus = {
-		id = white_doctor
-		icon = GFX_focus_eng_organise_the_blackshirts
-		cost = 10.00
-		prerequisite = {
-			focus = division_of_party
-		}
-		mutually_exclusive = {
-			focus = joeson_fascism_party
-		}
-		completion_reward = {
-			create_country_leader = {
-  				name = "염동진"
-  				desc = ""
-  				picture = ""
-  				expire = "1947.7.19"
-  				ideology = fascism_ideology
-  				traits = {
-    				fascist_militia_leader
-  				}
-			}
-		}
-		x = 54
-		y = 3
-
-     }
-	 	focus = {
-		id = general_lee
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = joeson_fascism_party
-		}
-		mutually_exclusive = {
-			focus = 
-		}
-		x = 45
-		y = 4
-
-     }
-	 	focus = {
-		id = yeom_dong_jin
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = white_doctor
-		}
-		mutually_exclusive = {
-			focus = 
-		}
-		x = 55
-		y = 4
-
-     }
-		focus = {
-		id = opposition_conciliation
-		icon = GFX_focus_generic_diplomatic_treaty
-		cost = 10.00
-		prerequisite = {
-			focus = general_lee
-		}
-		mutually_exclusive = {
-			focus = 
-		}
-		x = 43
-		y = 5
-
-     }
-	 	focus = {
-		id = general_recruitment
-		icon = GFX_focus_generic_manpower
-		cost = 10.00
-		prerequisite = {
-			focus = general_lee
-		}
-		mutually_exclusive = {
-			focus = 
-		}
-		x = 45
-		y = 5
-
-     }
-		focus = {
-		id = sharp_law
-		icon = GFX_focus_generic_monarchy_1
-		cost = 10.00
-		prerequisite = {
-			focus = general_lee
-		}
-		mutually_exclusive = {
-			focus = 
-		}
-		x = 47
-		y = 5
-
-     }
-	    focus = {
-		id = keep_going
-		icon = GFX_focus_eng_expose_the_belly_of_the_bear
-		cost = 10.00
-		prerequisite = {
-			focus = opposition_conciliation
-		}
-		mutually_exclusive = {
-			focus = kill_opposition
-		}
-		x = 42
-		y = 6
-
-     }
-	 	focus = {
-		id = kill_opposition
-		icon = GFX_focus_CZE_german_puppet
-		cost = 10.00
-		prerequisite = {
-			focus = opposition_conciliation
-		}
-		mutually_exclusive = {
-			focus = keep_going
-		}
-		x = 44
-		y = 6
-
-     }
-	 	focus = {
-		id = general_central_system
-		icon = GFX_focus_generic_little_entente
-		cost = 10.00
-		prerequisite = {
-			focus = general_recruitment 
-			focus = sharp_law
-		}
-		mutually_exclusive = {
-			focus = 
-		}
-		x = 46
-		y = 6
-
-     }
-	 	focus = {
-		id = general_center
-		icon = GFX_focus_generic_military_mission
-		cost = 10.00
-		prerequisite = {
-			focus = keep_going
-			focus = kill_opposition
-			focus = general_central_system
-		}
-		mutually_exclusive = {
-			focus = 
-		}
-		x = 46
-		y = 7
-
-     }
-	 	focus = {
-		id = press_censorship
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = yeom_dong_jin
-		}
-		mutually_exclusive = {
-			focus = 
-		}
-		x = 53
-		y = 5
-
-     }
-	 	focus = {
-		id = opposition_arrest
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = yeom_dong_jin
-		}
-		mutually_exclusive = {
-			focus = 
-		}
-		x = 55
-		y = 5
-
-     }
-	 	 focus = {
-		id = assassinate_communist
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = yeom_dong_jin
-		}
-		mutually_exclusive = {
-			focus = 
-		}
-		x = 57
-		y = 5
-
-     }
-	 	focus = {
-		id = economy_intervention
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = press_censorship
-		}
-		mutually_exclusive = {
-			focus = 
-		}
-		x = 53
-		y = 6
-
-     }
-	 	focus = {
-		id = merge_opposition_party
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = opposition_arrest
-		}
-		mutually_exclusive = {
-			focus = 
-		}
-		x = 55
-		y = 6
-
-     }
-	 	focus = {
-		id = appeasement_democratic
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = assassinate_communist
-		}
-		mutually_exclusive = {
-			focus = 
-		}
-		x = 57
-		y = 6
-
-     }
-	 	focus = {
-		id = yeom_dong_jin_center
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = economy_intervention
-			focus = merge_opposition_party
-			focus = appeasement_democratic
-		}
-		mutually_exclusive = {
-			focus = 
-		}
-		x = 54
-		y = 7
-
-     }
-	 	focus = {
-		id = secure_stability
-		icon = GFX_focus_generic_self_management
-		cost = 10.00
-		prerequisite = {
-			focus = joeson_fascism_party
-			focus = white_doctor
-		}
-		x = 49
-		y = 4
-	}
-		focus = {
-		id = nationalistic_education
-		icon = GFX_focus_generic_military_academy
-		cost = 10.00
-		prerequisite = {
-			focus = secure_stability
-		}
-		x = 49
-		y = 5
-	}
-	 	focus = {
-		id = found_youth
-		icon = GFX_focus_knyc
-		cost = 10.00
-		prerequisite = {
-			focus = nationalistic_education
-		}
-		mutually_exclusive = {
-			focus = 
-		}
-		x = 49
-		y = 6
-
-     }
-	 	focus = {
-		id = retake_shine
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = found_youth
-		}
-		mutually_exclusive = {
-			focus = 
-		}
-		x = 49
-		y = 7
-
-     }
-		focus = {
-		id = support_nationalist
-		icon = GFX_focus_spa_unify_the_nationalist_front
-		cost = 10.00
-		prerequisite = {
-			focus = joeson_fascism_party
-			focus = white_doctor
-		}	
-		mutually_exclusive = {
-			focus = 
-		}
-		x = 51
-		y = 4
-
-     }
-	    focus = {
-		id = alkassar_defense
-		icon = GFX_focus_spa_save_the_alcazar
-		cost = 10.00
-		prerequisite = {
-			focus = support_nationalist
-		}
-		mutually_exclusive = {
-			focus = 
-		}
-		x = 51
-		y = 5
-
-     }
-	 	focus = {
-		id = dispatch_special_force
-		icon = GFX_focus_spr_no_pasaran
-		cost = 10.00
-		prerequisite = {
-			focus = alkassar_defense
-		}
-		mutually_exclusive = {
-			focus = 
-		}
-		x = 51
-		y = 6
-
-     }
-	 	focus = {
-		id = support_anything
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = dispatch_special_force
-		}
-		mutually_exclusive = {
-			focus = 
-		}
-		x = 51
-		y = 7
-
-     }
-		focus = {
-	 	id = external_expansion
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = general_center
-			focus = yeom_dong_jin_center
-		}
-		x = 50
-		y = 8
-
-	}
-		focus = {
-		id = annex_man
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = external_expansion 
-		}
-		mutually_exclusive = {
-			focus = puppet_man
-		}
-		x = 49
-		y = 9
-
-     }
-	 	focus = {
-		id = puppet_man
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = external_expansion 
-		}
-		mutually_exclusive = {
-			focus = annex_man
-		}
-		x = 51
-		y = 9
-
-     }
-	 	focus = {
-		id = intervention_asia
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = annex_man
-			focus = puppet_man
-		}
-		mutually_exclusive = {
-			focus = 
-		}
-		x = 46
-		y = 10
-
-     }
-	 	focus = {
-		id = intervention_america
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = annex_man
-			focus = puppet_man
-		}
-		mutually_exclusive = {
-			focus = 
-		}
-		x = 50
-		y = 10
-
-     }
-	 	focus = {
-		id = intervention_europe
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = annex_man
-			focus = puppet_man
-		}
-		mutually_exclusive = {
-			focus = 
-		}
-		x = 54
-		y = 10
-
-     }	 
-	 	focus = {
-		id = alliance_siam
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = intervention_asia
-		}
-		mutually_exclusive = {
-			focus = 
-		}
-		x = 45
-		y = 11
-
-     }	 
-	 	 focus = {
-		id = trick_mongol
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = intervention_asia
-		}
-		mutually_exclusive = {
-			focus = 
-		}
-		x = 47
-		y = 11
-
-     }	 
-	 	focus = {
-		id = alliance_jap
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = trick_mongol
-			focus = alliance_siam
-		}
-		mutually_exclusive = {
-			focus = war_with_jap
-		}
-		x = 45
-		y = 12
-
-     }
-	 focus = {
-		id = war_with_jap
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = trick_mongol
-			focus = alliance_siam
-		}
-		mutually_exclusive = {
-			focus = alliance_jap
-		}
-		x = 47
-		y = 12
-
-     }	 
-	 	focus = {
-		id = support_chinese_fascism
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = alliance_jap
-			focus = war_with_jap
-		}
-		mutually_exclusive = {
-			focus = war_chi
-		}
-		x = 45
-		y = 13
-
-     }
-	 	focus = {
-		id = war_chi
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = alliance_jap
-			focus = war_with_jap
-		}
-		mutually_exclusive = {
-			focus = support_chinese_fascism
-		}
-		x = 47
-		y = 13
-
-     }	
-	 	focus = {
-		id = use_mex
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = intervention_america
-		}
-		mutually_exclusive = {
-			focus = 
-		}
-		x = 50
-		y = 11
-
-     }
-	 	focus = {
-		id = intervention_south_america
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = use_mex
-		}
-		mutually_exclusive = {
-			focus = 
-		}
-		x = 49
-		y = 12
-
-     }
-	 	focus = {
-		id = intervention_north_america
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = use_mex
-		}
-		mutually_exclusive = {
-			focus = 
-		}
-		x = 51
-		y = 12
-
-     }
-	 	focus = {
-		id = form_south_union
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = intervention_south_america
-		}
-		mutually_exclusive = {
-			focus = 
-		}
-		x = 49
-		y = 13
-
-     }
-	 	focus = {
-		id = direct_rule_from_mainland
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = intervention_north_america
-		}
-		mutually_exclusive = {
-			focus = 
-		}
-		x = 51
-		y = 13
-
-     }
-	 	focus = {
-		id = alliance_ger
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = intervention_europe
-		}
-		mutually_exclusive = {
-			focus = war_ger
-		}
-		x = 53
-		y = 11
-
-     }	 
-	 	focus = {
-		id = war_ger
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = intervention_europe
-		}
-		mutually_exclusive = {
-			focus = alliance_ger
-		}
-		x = 55
-		y = 11
-
-     }	 
-	 	focus = {
-		id = support_fra
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = alliance_ger
-			focus = war_ger
-		}
-		mutually_exclusive = {
-			focus = 
-		}
-		x = 53
-		y = 12
-    }
-		focus = {
-		id = support_rus
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = alliance_ger
-			focus = war_ger
-		}
-		mutually_exclusive = {
-			focus = 
-		}
-		x = 55
-		y = 12
-
-     }	 
-	 	focus = {
-		id = support_gbr
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = support_fra
-			focus = support_rus
-		}
-		mutually_exclusive = {
-			focus = 
-		}
-		x = 53
-		y = 13
-    }
-	    focus = {
-		id = support_ita
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = support_fra
-			focus = support_rus
-		}
-		mutually_exclusive = {
-			focus = 
-		}
-		x = 55
-		y = 13
-
-     }
-	 	focus = {
-		id = we_wont_lose
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = support_ita
-			focus = support_gbr
-			focus = direct_rule_from_mainland
-			focus = form_south_union
-			focus = war_chi
-			focus = support_chinese_fascism
-		}
-		mutually_exclusive = {
-			focus = 
-		}
-		x = 50
-		y = 14
-
-     }
-	 focus = {
-		id = Korean_Empire_controversy
-		icon = GFX_
-		cost = 10.00
-		prerequisite = {
-			focus = general_center
-			focus = yeom_dong_jin_center
-		}
-		x = 41
-		y = 8
-
-     }
 
 }
