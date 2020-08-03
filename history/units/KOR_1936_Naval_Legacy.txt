@@ -1,0 +1,78 @@
+﻿units = {
+	fleet = {
+		name = "대한민국 해상 제1함대"			
+		naval_base = 7221
+		task_force = {
+			name = "제1함대 제1해상전투단"
+			location = 7221
+        	ship = { name = "ROKN 충무공 이순신함" definition = battleship equipment = { battleship_1 = { amount = 1 owner = KOR} } }
+        	ship = { name = "ROKN 고종대왕함" definition = battleship equipment = { battleship_1 = { amount = 1 owner = KOR} } }
+        	ship = { name = "ROKN 정조대왕함" definition = battleship equipment = { battleship_1 = { amount = 1 owner = KOR} } }
+        	ship = { name = "ROKN 장보고함" definition = battleship equipment = { battleship_1 = { amount = 1 owner = KOR} } }
+			
+			ship = { name = "ROKN 동해급함" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = KOR} } }
+			ship = { name = "ROKN 낙동강함" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = KOR} } }
+
+			ship = { name = "ROKN 포항함" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = KOR} } }
+			ship = { name = "ROKN 대구함" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = KOR} } }
+			ship = { name = "ROKN 부산함" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = KOR} } }
+			ship = { name = "ROKN 대전함" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = KOR} } }
+			ship = { name = "ROKN 전주함" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = KOR} } }
+
+			ship = { name = "ROKN 대구함" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = KOR} } }
+			ship = { name = "ROKN 지리산함" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = KOR} } }
+			ship = { name = "ROKN 설악산함" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = KOR} } }
+			ship = { name = "ROKN 소백산함" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = KOR} } }
+			ship = { name = "ROKN 덕유산함" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = KOR} } }
+			ship = { name = "ROKN 오대산함" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = KOR} } }
+			ship = { name = "ROKN 한라산함" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = KOR} } }
+			ship = { name = "ROKN 북한산함" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = KOR} } }
+			ship = { name = "ROKN 계방산함" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = KOR} } }
+			ship = { name = "ROKN 함백산함" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = KOR} } }
+		}	
+		task_force = {
+			name = "제1함대 제1잠수전투단"
+			location = 7221
+			ship = { name = "ROKN 장보고-001" definition = submarine equipment = { submarine_1 = { amount = 1 owner = KOR} } }
+			ship = { name = "ROKN 장보고-002" definition = submarine equipment = { submarine_1 = { amount = 1 owner = KOR} } }
+			ship = { name = "ROKN 장보고-003" definition = submarine equipment = { submarine_1 = { amount = 1 owner = KOR} } }
+			ship = { name = "ROKN 장보고-004" definition = submarine equipment = { submarine_1 = { amount = 1 owner = KOR} } }
+			ship = { name = "ROKN 장보고-005" definition = submarine equipment = { submarine_1 = { amount = 1 owner = KOR} } }
+			ship = { name = "ROKN 장보고-006" definition = submarine equipment = { submarine_1 = { amount = 1 owner = KOR} } }
+			ship = { name = "ROKN 장보고-007" definition = submarine equipment = { submarine_1 = { amount = 1 owner = KOR} } }
+		}
+	}
+
+	fleet = {
+		name = "대한민국 해상 제2함대"			
+		naval_base = 4056
+		task_force = {
+			name = "제2함대 제1해상전투단"
+			location = 4056
+            ship = { name = "ROKN 세종대왕함" definition = battleship equipment = { battleship_1 = { amount = 1 owner = KOR} } }
+            ship = { name = "ROKN 김시민함" definition = battleship equipment = { battleship_1 = { amount = 1 owner = KOR} } }
+
+		    ship = { name = "ROKN 인천함" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = KOR} } }
+		    ship = { name = "ROKN 광주함" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = KOR} } }
+		    ship = { name = "ROKN 함흥함" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = KOR} } }
+
+		    ship = { name = "ROKN 울산함" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = KOR} } }
+		    ship = { name = "ROKN 해상구축함-001" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = KOR} } }
+		    ship = { name = "ROKN 해상구축함-002" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = KOR} } }
+			ship = { name = "ROKN 해상구축함-003" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = KOR} } }
+			ship = { name = "ROKN 해상구축함-004" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = KOR} } }
+			ship = { name = "ROKN 해상구축함-005" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = KOR} } }
+			ship = { name = "ROKN 해상구축함-006" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = KOR} } }
+			ship = { name = "ROKN 해상구축함-007" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = KOR} } }
+			ship = { name = "ROKN 해상구축함-008" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = KOR} } }
+			ship = { name = "ROKN 해상구축함-009" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = KOR} } }
+	    }
+		task_force = {
+			name = "제2함대 제1잠수전투단"
+			location = 4056
+			ship = { name = "ROKN 장보고-008" definition = submarine equipment = { submarine_1 = { amount = 1 owner = KOR} } }
+			ship = { name = "ROKN 장보고-009" definition = submarine equipment = { submarine_1 = { amount = 1 owner = KOR} } }
+			ship = { name = "ROKN 장보고-010" definition = submarine equipment = { submarine_1 = { amount = 1 owner = KOR} } }
+		}
+	}
+}

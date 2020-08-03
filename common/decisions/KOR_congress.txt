@@ -255,850 +255,6 @@ KOR_congress = {
 		}
 	}
 }
-	
-#내전 막기
-KOR_organize_the_blackshirts = {
-
-	KOR_blackshirt_march_in_london = {
-
-		icon = eng_blackshirt_march
-
-		available = {
-			NOT = { has_country_flag = ENG_march_timer_flag }
-			has_full_control_of_state = 797
-			has_completed_focus = threat_of_communism
-		}
-
-		highlight_state_targets = { state = 797 }
-
-		on_map_mode = map_only
-
-		cost = 200
-
-		fire_only_once = yes
-
-		visible = {
-			NOT = { has_government = fascism }
-		}
-
-		cancel_if_not_visible = yes
-
-		complete_effect = {
-			797 = { save_event_target_as = ENG_blackshirt_march_state }
-			797 = { set_state_flag = KOR_has_blackshirt_support }
-			random_list = {
-				25 = {
-					country_event = { id = KOR.7 days = 1 }
-					effect_tooltip = {
-						add_days_mission_timeout = {
-						mission = KOR_military_plot_nationalists
-							days = -10
-						}
-					}
-				}
-				50 = {
-					country_event = { id = KOR.6 days = 1 }
-					effect_tooltip = {
-						add_days_mission_timeout = {
-						mission = KOR_military_plot_nationalists
-							days = -20
-						}
-					}
-				}
-				25 = {
-					modifier = {
-						factor = 0.2
-						has_country_flag = ENG_restrained_march_flag
-					}
-					country_event = { id = KOR.8 days = 1 }
-					effect_tooltip = {
-						add_days_mission_timeout = {
-						mission = KOR_military_plot_nationalists
-							days = -30
-						}
-
-					}
-				}
-			}
-			custom_effect_tooltip = ENG_blackshirt_march_tt
-			set_country_flag = KOR_march_temp_northern_ireland
-			set_country_flag = ENG_march_timer_flag
-		}
-
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-			}
-			modifier = {
-				factor = 0
-			}
-		}
-	}
-
-	KOR_blackshirt_march_in_northern_ireland = {
-
-		icon = eng_blackshirt_march
-
-		available = {
-			NOT = { has_country_flag = ENG_march_timer_flag }
-			has_full_control_of_state = 798
-			has_completed_focus = threat_of_communism
-		}
-
-		highlight_state_targets = { state = 798 }
-
-		on_map_mode = map_only
-
-		cost = 180
-
-		fire_only_once = yes
-
-		visible = {
-			NOT = { has_government = fascism }
-		}
-
-		cancel_if_not_visible = yes
-
-		complete_effect = {
-			798 = { save_event_target_as = ENG_blackshirt_march_state }
-			798 = { set_state_flag = KOR_has_blackshirt_support }
-			random_list = {
-				25 = {
-					country_event = { id = KOR.7 days = 1 }
-					effect_tooltip = {
-						add_days_mission_timeout = {
-						mission = KOR_military_plot_nationalists
-							days = -8
-						}
-					}
-				}
-				50 = {
-					country_event = { id = KOR.6 days = 1 }
-					effect_tooltip = {
-						add_days_mission_timeout = {
-						mission = KOR_military_plot_nationalists
-							days = -10
-						}
-					}
-				}
-				25 = {
-					modifier = {
-						factor = 0.2
-						has_country_flag = ENG_restrained_march_flag
-					}
-					country_event = { id = KOR.8 days = 1 }
-					effect_tooltip = {
-						add_days_mission_timeout = {
-						mission = KOR_military_plot_nationalists
-							days = -20
-						}
-					}
-				}
-			}
-			custom_effect_tooltip = ENG_blackshirt_march_tt
-			set_country_flag = KOR_march_temp_northern_ireland
-			set_country_flag = ENG_march_timer_flag
-		}
-
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-			}
-			modifier = {
-				factor = 0
-			}
-		}
-	}
-
-	KOR_blackshirt_march_in_the_highlands = {
-
-		icon = eng_blackshirt_march
-
-		available = {
-			NOT = { has_country_flag = ENG_march_timer_flag }
-			has_full_control_of_state = 801
-			has_completed_focus = threat_of_communism
-		}
-
-		highlight_state_targets = { state = 801 }
-
-		on_map_mode = map_only
-
-		cost = 140
-
-		fire_only_once = yes
-
-		visible = {
-			NOT = { has_government = fascism }
-		}
-
-		cancel_if_not_visible = yes
-
-		complete_effect = {
-			801 = { save_event_target_as = ENG_blackshirt_march_state }
-			801 = { set_state_flag = KOR_has_blackshirt_support }
-			random_list = {
-				25 = {
-					country_event = { id = KOR.7 days = 1 }
-					effect_tooltip = {
-						add_days_mission_timeout = {
-						mission = KOR_military_plot_nationalists
-							days = -8
-						}
-					}
-				}
-				50 = {
-					country_event = { id = KOR.6 days = 1 }
-					effect_tooltip = {
-						add_days_mission_timeout = {
-						mission = KOR_military_plot_nationalists
-							days = -16
-					}
-				}
-			}
-				25 = {
-					modifier = {
-						factor = 0.2
-						has_country_flag = ENG_restrained_march_flag
-					}
-					country_event = { id = KOR.8 days = 1 }
-					effect_tooltip = {
-						add_days_mission_timeout = {
-						mission = KOR_military_plot_nationalists
-							days = -24
-						}
-					}
-				}
-			}
-			custom_effect_tooltip = ENG_blackshirt_march_tt
-			set_country_flag = KOR_march_temp_highlands
-			set_country_flag = ENG_march_timer_flag
-		}
-
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-			}
-			modifier = {
-				factor = 0
-			}
-		}
-	}
-
-	KOR_blackshirt_march_in_aberdeenshire = {
-
-		icon = eng_blackshirt_march
-
-		available = {
-			NOT = { has_country_flag = ENG_march_timer_flag }
-			has_full_control_of_state = 799
-			has_completed_focus = threat_of_communism
-		}
-
-		highlight_state_targets = { state = 799 }
-
-		on_map_mode = map_only
-
-		cost = 120
-
-		fire_only_once = yes
-
-		visible = {
-			NOT = { has_government = fascism }
-		}
-
-		cancel_if_not_visible = yes
-
-		complete_effect = {
-			799 = { save_event_target_as = ENG_blackshirt_march_state }
-			799 = { set_state_flag = KOR_has_blackshirt_support }
-			random_list = {
-				25 = {
-					country_event = { id = KOR.7 days = 1 }
-					effect_tooltip = {
-						add_days_mission_timeout = {
-						mission = KOR_military_plot_nationalists
-							days = -10
-						}
-					}
-				}
-				50 = {
-					country_event = { id = KOR.6 days = 1 }
-					effect_tooltip = {
-						add_days_mission_timeout = {
-						mission = KOR_military_plot_nationalists
-							days = -15
-						}
-					}
-				}
-				25 = {
-					modifier = {
-						factor = 0.2
-						has_country_flag = ENG_restrained_march_flag
-					}
-					country_event = { id = KOR.8 days = 1 }
-					effect_tooltip = {
-						add_days_mission_timeout = {
-						mission = KOR_military_plot_nationalists
-							days = -20
-						}
-					}
-				}
-			}
-			custom_effect_tooltip = ENG_blackshirt_march_tt
-			set_country_flag = ENG_march_temp_aberdeenshire
-			set_country_flag = ENG_march_timer_flag
-		}
-
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-			}
-			modifier = {
-				factor = 0
-			}
-		}
-	}
-
-		KOR_blackshirt_march_in_lanark = {
-
-		icon = eng_blackshirt_march
-
-		available = {
-			NOT = { has_country_flag = ENG_march_timer_flag }
-			has_full_control_of_state = 800
-			has_completed_focus = threat_of_communism
-		}
-
-		highlight_state_targets = { state = 800 }
-
-		on_map_mode = map_only
-
-		cost = 100
-
-		fire_only_once = yes
-
-		visible = {
-			NOT = { has_government = fascism }
-		}
-
-		cancel_if_not_visible = yes
-
-		complete_effect = {
-			800 = { save_event_target_as = ENG_blackshirt_march_state }
-			800 = { set_state_flag = KOR_has_blackshirt_support }
-			random_list = {
-				25 = {
-					country_event = { id = KOR.7 days = 1 }
-					effect_tooltip = {
-						add_days_mission_timeout = {
-						mission = KOR_military_plot_nationalists
-							days = -7
-						}
-					}
-				}
-				50 = {
-					country_event = { id = KOR.6 days = 1 }
-					effect_tooltip = {
-						add_days_mission_timeout = {
-						mission = KOR_military_plot_nationalists
-							days = -14
-						}
-					}
-				}
-				25 = {
-					modifier = {
-						factor = 0.2
-						has_country_flag = ENG_restrained_march_flag
-					}
-					country_event = { id = KOR.8 days = 1 }
-					effect_tooltip = {
-						add_days_mission_timeout = {
-						mission = KOR_military_plot_nationalists
-							days = -21
-						}
-					}
-				}
-			}
-			custom_effect_tooltip = ENG_blackshirt_march_tt
-			set_country_flag = ENG_march_temp_aberdeenshire
-			set_country_flag = ENG_march_timer_flag
-		}
-
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-			}
-			modifier = {
-				factor = 0
-			}
-		}
-	}
-
-	KOR_blackshirt_march_in_lothian = {
-
-		icon = eng_blackshirt_march
-
-		available = {
-			NOT = { has_country_flag = ENG_march_timer_flag }
-			has_full_control_of_state = 802
-			has_completed_focus = threat_of_communism
-		}
-
-		highlight_state_targets = { state = 802 }
-
-		on_map_mode = map_only
-
-		cost = 100
-
-		fire_only_once = yes
-
-		visible = {
-			NOT = { has_government = fascism }
-		}
-
-		cancel_if_not_visible = yes
-
-		complete_effect = {
-			802 = { save_event_target_as = ENG_blackshirt_march_state }
-			802 = { set_state_flag = KOR_has_blackshirt_support }
-			random_list = {
-				25 = {
-					country_event = { id = KOR.7 days = 1 }
-					effect_tooltip = {
-						add_days_mission_timeout = {
-						mission = KOR_military_plot_nationalists
-							days = -7
-						}
-					}
-				}
-				50 = {
-					country_event = { id = KOR.6 days = 1 }
-					effect_tooltip = {
-						add_days_mission_timeout = {
-						mission = KOR_military_plot_nationalists
-							days = -14
-						}
-					}
-				}
-				25 = {
-					modifier = {
-						factor = 0.2
-						has_country_flag = ENG_restrained_march_flag
-					}
-					country_event = { id = KOR.8 days = 1 }
-					effect_tooltip = {
-						add_days_mission_timeout = {
-						mission = KOR_military_plot_nationalists
-							days = -21
-						}
-					}
-				}
-			}
-			custom_effect_tooltip = ENG_blackshirt_march_tt
-			set_country_flag = ENG_march_temp_aberdeenshire
-			set_country_flag = ENG_march_timer_flag
-		}
-
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-			}
-			modifier = {
-				factor = 0
-			}
-		}
-	}
-
-		KOR_blackshirt_march_in_lothian2 = {
-
-		icon = eng_blackshirt_march
-
-		available = {
-			NOT = { has_country_flag = ENG_march_timer_flag }
-			has_full_control_of_state = 525
-			has_completed_focus = threat_of_communism
-		}
-
-		highlight_state_targets = { state = 525 }
-
-		on_map_mode = map_only
-
-		cost = 100
-
-		fire_only_once = yes
-
-		visible = {
-			NOT = { has_government = fascism }
-		}
-
-		cancel_if_not_visible = yes
-
-		complete_effect = {
-			525 = { save_event_target_as = ENG_blackshirt_march_state }
-			525 = { set_state_flag = KOR_has_blackshirt_support }
-			random_list = {
-				25 = {
-					country_event = { id = KOR.7 days = 1 }
-					effect_tooltip = {
-						add_days_mission_timeout = {
-						mission = KOR_military_plot_nationalists
-							days = -7
-						}
-					}
-				}
-				50 = {
-					country_event = { id = KOR.6 days = 1 }
-					effect_tooltip = {
-						add_days_mission_timeout = {
-						mission = KOR_military_plot_nationalists
-							days = -14
-						}
-					}
-				}
-				25 = {
-					modifier = {
-						factor = 0.2
-						has_country_flag = ENG_restrained_march_flag
-					}
-					country_event = { id = KOR.8 days = 1 }
-					effect_tooltip = {
-						add_days_mission_timeout = {
-						mission = KOR_military_plot_nationalists
-							days = -21
-						}
-					}
-				}
-			}
-			custom_effect_tooltip = ENG_blackshirt_march_tt
-			set_country_flag = ENG_march_temp_aberdeenshire
-			set_country_flag = ENG_march_timer_flag
-		}
-
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-			}
-			modifier = {
-				factor = 0
-			}
-		}
-	}
-	KOR_blackshirt_march_in_lothian3 = {
-
-		icon = eng_blackshirt_march
-
-		available = {
-			NOT = { has_country_flag = ENG_march_timer_flag }
-			has_full_control_of_state = 527
-			has_completed_focus = threat_of_communism
-		}
-
-		highlight_state_targets = { state = 527 }
-
-		on_map_mode = map_only
-
-		cost = 100
-
-		fire_only_once = yes
-
-		visible = {
-			NOT = { has_government = fascism }
-		}
-
-		cancel_if_not_visible = yes
-
-		complete_effect = {
-			527 = { save_event_target_as = ENG_blackshirt_march_state }
-			527 = { set_state_flag = KOR_has_blackshirt_support }
-			random_list = {
-				25 = {
-					country_event = { id = KOR.7 days = 1 }
-					effect_tooltip = {
-						add_days_mission_timeout = {
-						mission = KOR_military_plot_nationalists
-							days = -7
-						}
-					}
-				}
-				50 = {
-					country_event = { id = KOR.6 days = 1 }
-					effect_tooltip = {
-						add_days_mission_timeout = {
-						mission = KOR_military_plot_nationalists
-							days = -14
-						}
-					}
-				}
-				25 = {
-					modifier = {
-						factor = 0.2
-						has_country_flag = ENG_restrained_march_flag
-					}
-					country_event = { id = KOR.8 days = 1 }
-					effect_tooltip = {
-						add_days_mission_timeout = {
-						mission = KOR_military_plot_nationalists
-							days = -21
-						}
-					}
-				}
-			}
-			custom_effect_tooltip = ENG_blackshirt_march_tt
-			set_country_flag = ENG_march_temp_aberdeenshire
-			set_country_flag = ENG_march_timer_flag
-		}
-
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-			}
-			modifier = {
-				factor = 0
-			}
-		}
-	}
-	KOR_blackshirt_march_in_lothian4 = {
-
-		icon = eng_blackshirt_march
-
-		available = {
-			NOT = { has_country_flag = ENG_march_timer_flag }
-			has_full_control_of_state = 803
-			has_completed_focus = threat_of_communism
-		}
-
-		highlight_state_targets = { state = 803 }
-
-		on_map_mode = map_only
-
-		cost = 100
-
-		fire_only_once = yes
-
-		visible = {
-			NOT = { has_government = fascism }
-		}
-
-		cancel_if_not_visible = yes
-
-		complete_effect = {
-			803 = { save_event_target_as = ENG_blackshirt_march_state }
-			803 = { set_state_flag = KOR_has_blackshirt_support }
-			random_list = {
-				25 = {
-					country_event = { id = KOR.7 days = 1 }
-					effect_tooltip = {
-						add_days_mission_timeout = {
-						mission = KOR_military_plot_nationalists
-							days = -7
-						}
-					}
-				}
-				50 = {
-					country_event = { id = KOR.6 days = 1 }
-					effect_tooltip = {
-						add_days_mission_timeout = {
-						mission = KOR_military_plot_nationalists
-							days = -14
-						}
-					}
-				}
-				25 = {
-					modifier = {
-						factor = 0.2
-						has_country_flag = ENG_restrained_march_flag
-					}
-					country_event = { id = KOR.8 days = 1 }
-					effect_tooltip = {
-						add_days_mission_timeout = {
-						mission = KOR_military_plot_nationalists
-							days = -21
-						}
-					}
-				}
-			}
-			custom_effect_tooltip = ENG_blackshirt_march_tt
-			set_country_flag = ENG_march_temp_aberdeenshire
-			set_country_flag = ENG_march_timer_flag
-		}
-
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-			}
-			modifier = {
-				factor = 0
-			}
-		}
-	}
-		KOR_blackshirt_march_in_lothian5 = {
-
-		icon = eng_blackshirt_march
-
-		available = {
-			NOT = { has_country_flag = ENG_march_timer_flag }
-			has_full_control_of_state = 804
-			has_completed_focus = threat_of_communism
-		}
-
-		highlight_state_targets = { state = 804 }
-
-		on_map_mode = map_only
-
-		cost = 100
-
-		fire_only_once = yes
-
-		visible = {
-			NOT = { has_government = fascism }
-		}
-
-		cancel_if_not_visible = yes
-
-		complete_effect = {
-			804 = { save_event_target_as = ENG_blackshirt_march_state }
-			804 = { set_state_flag = KOR_has_blackshirt_support }
-			random_list = {
-				25 = {
-					country_event = { id = KOR.7 days = 1 }
-					effect_tooltip = {
-						add_days_mission_timeout = {
-						mission = KOR_military_plot_nationalists
-							days = -7
-						}
-					}
-				}
-				50 = {
-					country_event = { id = KOR.6 days = 1 }
-					effect_tooltip = {
-						add_days_mission_timeout = {
-						mission = KOR_military_plot_nationalists
-							days = -14
-						}
-					}
-				}
-				25 = {
-					modifier = {
-						factor = 0.2
-						has_country_flag = ENG_restrained_march_flag
-					}
-					country_event = { id = KOR.8 days = 1 }
-					effect_tooltip = {
-						add_days_mission_timeout = {
-						mission = KOR_military_plot_nationalists
-							days = -21
-						}
-					}
-				}
-			}
-			custom_effect_tooltip = ENG_blackshirt_march_tt
-			set_country_flag = ENG_march_temp_aberdeenshire
-			set_country_flag = ENG_march_timer_flag
-		}
-
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-			}
-			modifier = {
-				factor = 0
-			}
-		}
-	}
-	#군부의 쿠데타 음모
-	KOR_military_plot_nationalists = {
-
-		priority = 10
-
-		icon = generic_ignite_civil_war
-
-		available = {
-			hidden_trigger = { always = no }
-		}
-		activation = {
-			has_completed_focus = threat_of_communism
-			}
-
-		days_mission_timeout = 50
-
-		fire_only_once = yes
-
-		visible = {
-			tag = KOR
-		}
-
-		cancel_if_not_visible = yes
-
-		is_good = yes
-
-		timeout_effect = {
-			country_event = KOR.9
-		}
-	}
-
-	#민주파 장군의 연설
-	KOR_primo_de_rivera_speech = {
-
-		icon = eng_propaganda_campaigns
-
-		allowed = {
-			tag = KOR
-		}
-
-		cost = 30
-
-		fire_only_once = no
-
-		ai_will_do = {
-			base = 200
-		}
-
-		days_remove = 37
-
-		modifier = {
-			
-		}
-
-		visible = {
-			tag = KOR
-			has_completed_focus = threats_from_opposition_parties
-		}
-
-		complete_effect = {
-			set_country_flag = SPR_inevitable_civil_war_in_progress_flag
-		}
-
-		remove_effect = {
-			add_popularity = {
-			    ideology = democratic
-			    popularity = 0.05
-			}
-			add_days_mission_timeout = {
-				mission = KOR_military_plot_nationalists
-				days = 36
-			}
-			clr_country_flag = SPR_inevitable_civil_war_in_progress_flag
-			if = {
-				limit = {
-					NOT = { has_country_flag = SPR_primo_de_rivera_first_speech }
-				}
-				set_country_flag = SPR_primo_de_rivera_first_speech
-			}
-		}
-
-	}
-}
 
 KOR_spanish_intervention_category = {
 	KOR_invite_FROM_to_non_intervention = {
@@ -2285,3 +1441,596 @@ Kor_Red_Cross_decision = {
 		}
 	}
 }
+
+KOR_the_inevitable_civil_war = {
+	
+	KOR_military_plot_nationalists = {
+
+		priority = 10
+
+		icon = generic_ignite_civil_war
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		days_mission_timeout = 250
+
+		fire_only_once = yes
+
+		activation = {
+		}
+
+		visible = {
+			tag = KOR
+		}
+
+		cancel_if_not_visible = yes
+
+		is_good = yes
+
+		timeout_effect = {
+			country_event = lar_spain.2
+			if = {
+				limit = {
+					has_idea = SPA_awaiting_the_rebellion
+				}
+				remove_ideas = SPA_awaiting_the_rebellion
+			}
+		}
+	}
+
+	KOR_primo_de_rivera_speech = {
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			tag = KOR
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = SPA_primo_de_rivera_imprisoned
+				has_country_flag = SPR_inevitable_civil_war_in_progress_flag
+			}
+		}
+
+		cost = 30
+
+		fire_only_once = no
+
+		ai_will_do = {
+			base = 200
+		}
+
+		days_remove = 37
+
+		modifier = {
+			
+		}
+		
+		visible = {
+			tag = KOR
+		}
+
+		complete_effect = {
+			set_country_flag = SPR_inevitable_civil_war_in_progress_flag
+		}
+
+		remove_effect = {
+			add_popularity = {
+			    ideology = social_democracy
+			    popularity = 0.05
+			}
+			add_days_mission_timeout = {
+				mission = KOR_military_plot_nationalists
+				days = -36
+			}
+			clr_country_flag = SPR_inevitable_civil_war_in_progress_flag
+			if = {
+				limit = {
+					NOT = { has_country_flag = SPR_primo_de_rivera_first_speech }
+				}
+				set_country_flag = SPR_primo_de_rivera_first_speech
+			}
+		}
+
+	}
+
+	KOR_political_assassination = {
+
+		icon = spr_political_assassination
+
+		allowed = {
+			tag = KOR
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = SPR_inevitable_civil_war_in_progress_flag
+			}
+		}
+
+		cost = 30
+
+		fire_only_once = no
+
+		ai_will_do = {
+			base = 200
+		}
+
+		days_remove = 37
+
+		modifier = {
+			
+		}
+
+		visible = {
+			tag = KOR
+			NOT = { has_global_flag = kor_civil_war }
+		}
+
+		complete_effect = {
+			set_country_flag = SPR_inevitable_civil_war_in_progress_flag
+		}
+
+		remove_effect = {
+			add_stability = -0.05
+			add_war_support = 0.1
+			add_days_mission_timeout = {
+				mission = KOR_military_plot_nationalists
+				days = -36
+			}
+			clr_country_flag = SPR_inevitable_civil_war_in_progress_flag
+			set_country_flag = SPA_political_assassination_flag
+		}
+
+	}
+
+	Securing_Seoul_Influence = {
+
+		icon = {
+			key = kor_garrison_control_none
+			trigger = {
+				has_completed_focus = Yeo_Un_hyung_Elected
+				525 = { check_variable = { var = KOR_garrison_control value = 0 compare = equals } }
+			}
+		}
+		icon = {
+			key = kor_garrison_control_weak
+			trigger = {
+				has_completed_focus = Yeo_Un_hyung_Elected
+				525 = { check_variable = { var = KOR_garrison_control value = 1 compare = equals } }
+			}
+		}
+		icon = {
+			key = kor_garrison_control_strong
+			trigger = {
+				has_completed_focus = Yeo_Un_hyung_Elected
+				525 = { check_variable = { var = KOR_garrison_control value = 2 compare = equals } }
+			}
+		}
+		icon = {
+			key = kor_garrison_control_total
+			trigger = {
+				has_completed_focus = Yeo_Un_hyung_Elected
+				525 = { check_variable = { var = KOR_garrison_control value = 3 compare = greater_than_or_equals } }
+			}
+		}
+		icon = {
+			key = kor_garrison_control_none
+			trigger = {
+				NOT = { has_completed_focus = Yeo_Un_hyung_Elected }
+				525 = { check_variable = { var = KOR_garrison_control value = 0 compare = equals } }
+			}
+		}
+
+		available = {
+			has_full_control_of_state = 525
+			if = {
+				limit = {
+					has_completed_focus = Yeo_Un_hyung_Elected
+				}
+				custom_trigger_tooltip = {
+					tooltip = SPA_expand_influence_nationalists_trigger_tt
+					525 = { check_variable = { var = KOR_garrison_control value = 3 compare = less_than } }
+				}
+			}
+			NOT = {
+				has_country_flag = SPA_already_expanding_influence_flag
+			}
+		}
+
+		highlight_state_targets = { state = 525 }
+
+		on_map_mode = map_only
+
+		cost = 525.KOR_garrison_control_cost?10
+
+		fire_only_once = no
+
+		days_remove = 14
+
+		visible = {
+			NOT = { has_global_flag = kor_civil_war }
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			set_country_flag = SPA_already_expanding_influence_flag
+		}
+
+		remove_effect = {
+			if = {
+				limit = {
+					has_completed_focus = Yeo_Un_hyung_Elected
+				}
+				525 = {
+					custom_effect_tooltip = SPA_expand_influence_nationalists_tt
+					set_state_flag = { flag = SPR_recently_expanded_influence_flag value = 1 days = 15 }
+					hidden_effect = {
+						if = {
+							limit = { check_variable = { KOR_garrison_control < 3 } }
+							
+							add_to_variable = { var = KOR_garrison_control value = 0 }
+							KOR = { add_to_variable = { var = spa_civil_war_divisions_counter_var value = 1 } }
+							KOR = { subtract_from_variable = { var = spr_civil_war_divisions_counter_var value = 1 } }
+						}
+					}
+					KOR_garrison_control_tooltip = yes
+					KOR_garrison_control_cost_calculation = yes
+				}
+			}
+			clr_country_flag = SPA_already_expanding_influence_flag
+		}
+
+		ai_will_do = {
+			base = 110
+			modifier = {
+				525 = { has_state_flag = SPR_recently_expanded_influence_flag }
+				factor = 10
+			}
+			modifier = {
+				has_completed_focus = Yeo_Un_hyung_Elected
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
+	}
+	
+	Securing_Busan_Influence = {
+
+		icon = {
+			key = kor_garrison_control_none
+			trigger = {
+				has_completed_focus = Yeo_Un_hyung_Elected
+				801 = { check_variable = { var = KOR_garrison_control value = 0 compare = equals } }
+			}
+		}
+		icon = {
+			key = kor_garrison_control_weak
+			trigger = {
+				has_completed_focus = Yeo_Un_hyung_Elected
+				801 = { check_variable = { var = KOR_garrison_control value = 1 compare = equals } }
+			}
+		}
+		icon = {
+			key = kor_garrison_control_strong
+			trigger = {
+				has_completed_focus = Yeo_Un_hyung_Elected
+				801 = { check_variable = { var = KOR_garrison_control value = 2 compare = equals } }
+			}
+		}
+		icon = {
+			key = kor_garrison_control_total
+			trigger = {
+				has_completed_focus = Yeo_Un_hyung_Elected
+				801 = { check_variable = { var = KOR_garrison_control value = 3 compare = greater_than_or_equals } }
+			}
+		}
+		icon = {
+			key = kor_garrison_control_none
+			trigger = {
+				NOT = { has_completed_focus = Yeo_Un_hyung_Elected }
+				801 = { check_variable = { var = KOR_garrison_control value = 0 compare = equals } }
+			}
+		}
+
+		available = {
+			has_full_control_of_state = 801
+			if = {
+				limit = {
+					has_completed_focus = Yeo_Un_hyung_Elected
+				}
+				custom_trigger_tooltip = {
+					tooltip = SPA_expand_influence_nationalists_trigger_tt
+					801 = { check_variable = { var = KOR_garrison_control value = 3 compare = less_than } }
+				}
+			}
+			NOT = {
+				has_country_flag = SPA_already_expanding_influence_flag
+			}
+		}
+
+		highlight_state_targets = { state = 801 }
+
+		on_map_mode = map_only
+
+		cost = 801.KOR_garrison_control_cost?10
+
+		fire_only_once = no
+
+		days_remove = 14
+
+		visible = {
+			NOT = { has_global_flag = kor_civil_war }
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			set_country_flag = SPA_already_expanding_influence_flag
+		}
+
+		remove_effect = {
+			if = {
+				limit = {
+					has_completed_focus = Yeo_Un_hyung_Elected
+				}
+				801 = {
+					custom_effect_tooltip = SPA_expand_influence_nationalists_tt
+					set_state_flag = { flag = SPR_recently_expanded_influence_flag value = 1 days = 15 }
+					hidden_effect = {
+						if = {
+							limit = { check_variable = { KOR_garrison_control < 3 } }
+							
+							add_to_variable = { var = KOR_garrison_control value = 0 }
+							KOR = { add_to_variable = { var = spa_civil_war_divisions_counter_var value = 1 } }
+							KOR = { subtract_from_variable = { var = spr_civil_war_divisions_counter_var value = 1 } }
+						}
+					}
+					KOR_garrison_control_tooltip = yes
+					KOR_garrison_control_cost_calculation = yes
+				}
+			}
+			clr_country_flag = SPA_already_expanding_influence_flag
+		}
+
+		ai_will_do = {
+			base = 110
+			modifier = {
+				801 = { has_state_flag = SPR_recently_expanded_influence_flag }
+				factor = 10
+			}
+			modifier = {
+				has_completed_focus = Yeo_Un_hyung_Elected
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
+	}
+
+	Securing_Junla_Influence = {
+
+		icon = {
+			key = kor_garrison_control_none
+			trigger = {
+				has_completed_focus = Yeo_Un_hyung_Elected
+				802 = { check_variable = { var = KOR_garrison_control value = 0 compare = equals } }
+			}
+		}
+		icon = {
+			key = kor_garrison_control_weak
+			trigger = {
+				has_completed_focus = Yeo_Un_hyung_Elected
+				802 = { check_variable = { var = KOR_garrison_control value = 1 compare = equals } }
+			}
+		}
+		icon = {
+			key = kor_garrison_control_strong
+			trigger = {
+				has_completed_focus = Yeo_Un_hyung_Elected
+				802 = { check_variable = { var = KOR_garrison_control value = 2 compare = equals } }
+			}
+		}
+		icon = {
+			key = kor_garrison_control_total
+			trigger = {
+				has_completed_focus = Yeo_Un_hyung_Elected
+				802 = { check_variable = { var = KOR_garrison_control value = 3 compare = greater_than_or_equals } }
+			}
+		}
+		icon = {
+			key = kor_garrison_control_none
+			trigger = {
+				NOT = { has_completed_focus = Yeo_Un_hyung_Elected }
+				802 = { check_variable = { var = KOR_garrison_control value = 0 compare = equals } }
+			}
+		}
+
+		available = {
+			has_full_control_of_state = 802
+			if = {
+				limit = {
+					has_completed_focus = Yeo_Un_hyung_Elected
+				}
+				custom_trigger_tooltip = {
+					tooltip = SPA_expand_influence_nationalists_trigger_tt
+					802 = { check_variable = { var = KOR_garrison_control value = 3 compare = less_than } }
+				}
+			}
+			NOT = {
+				has_country_flag = SPA_already_expanding_influence_flag
+			}
+		}
+
+		highlight_state_targets = { state = 802 }
+
+		on_map_mode = map_only
+
+		cost = 802.KOR_garrison_control_cost?10
+
+		fire_only_once = no
+
+		days_remove = 14
+
+		visible = {
+			NOT = { has_global_flag = kor_civil_war }
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			set_country_flag = SPA_already_expanding_influence_flag
+		}
+
+		remove_effect = {
+			if = {
+				limit = {
+					has_completed_focus = Yeo_Un_hyung_Elected
+				}
+				802 = {
+					custom_effect_tooltip = SPA_expand_influence_nationalists_tt
+					set_state_flag = { flag = SPR_recently_expanded_influence_flag value = 1 days = 15 }
+					hidden_effect = {
+						if = {
+							limit = { check_variable = { KOR_garrison_control < 3 } }
+							
+							add_to_variable = { var = KOR_garrison_control value = 0 }
+							KOR = { add_to_variable = { var = spa_civil_war_divisions_counter_var value = 1 } }
+							KOR = { subtract_from_variable = { var = spr_civil_war_divisions_counter_var value = 1 } }
+						}
+					}
+					KOR_garrison_control_tooltip = yes
+					KOR_garrison_control_cost_calculation = yes
+				}
+			}
+			clr_country_flag = SPA_already_expanding_influence_flag
+		}
+
+		ai_will_do = {
+			base = 110
+			modifier = {
+				802 = { has_state_flag = SPR_recently_expanded_influence_flag }
+				factor = 10
+			}
+			modifier = {
+				has_completed_focus = Yeo_Un_hyung_Elected
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
+	}
+
+	Securing_Chungcheong_Influence = {
+
+		icon = {
+			key = kor_garrison_control_none
+			trigger = {
+				has_completed_focus = Yeo_Un_hyung_Elected
+				800 = { check_variable = { var = KOR_garrison_control value = 0 compare = equals } }
+			}
+		}
+		icon = {
+			key = kor_garrison_control_weak
+			trigger = {
+				has_completed_focus = Yeo_Un_hyung_Elected
+				800 = { check_variable = { var = KOR_garrison_control value = 1 compare = equals } }
+			}
+		}
+		icon = {
+			key = kor_garrison_control_strong
+			trigger = {
+				has_completed_focus = Yeo_Un_hyung_Elected
+				800 = { check_variable = { var = KOR_garrison_control value = 2 compare = equals } }
+			}
+		}
+		icon = {
+			key = kor_garrison_control_total
+			trigger = {
+				has_completed_focus = Yeo_Un_hyung_Elected
+				800 = { check_variable = { var = KOR_garrison_control value = 3 compare = greater_than_or_equals } }
+			}
+		}
+		icon = {
+			key = kor_garrison_control_none
+			trigger = {
+				NOT = { has_completed_focus = Yeo_Un_hyung_Elected }
+				800 = { check_variable = { var = KOR_garrison_control value = 0 compare = equals } }
+			}
+		}
+
+		available = {
+			has_full_control_of_state = 800
+			if = {
+				limit = {
+					has_completed_focus = Yeo_Un_hyung_Elected
+				}
+				custom_trigger_tooltip = {
+					tooltip = SPA_expand_influence_nationalists_trigger_tt
+					800 = { check_variable = { var = KOR_garrison_control value = 3 compare = less_than } }
+				}
+			}
+			NOT = {
+				has_country_flag = SPA_already_expanding_influence_flag
+			}
+		}
+
+		highlight_state_targets = { state = 800 }
+
+		on_map_mode = map_only
+
+		cost = 800.KOR_garrison_control_cost?10
+
+		fire_only_once = no
+
+		days_remove = 14
+
+		visible = {
+			NOT = { has_global_flag = kor_civil_war }
+		}
+
+		cancel_if_not_visible = yes
+
+		complete_effect = {
+			set_country_flag = SPA_already_expanding_influence_flag
+		}
+
+		remove_effect = {
+			if = {
+				limit = {
+					has_completed_focus = Yeo_Un_hyung_Elected
+				}
+				800 = {
+					custom_effect_tooltip = SPA_expand_influence_nationalists_tt
+					set_state_flag = { flag = SPR_recently_expanded_influence_flag value = 1 days = 15 }
+					hidden_effect = {
+						if = {
+							limit = { check_variable = { KOR_garrison_control < 3 } }
+							
+							add_to_variable = { var = KOR_garrison_control value = 0 }
+							KOR = { add_to_variable = { var = spa_civil_war_divisions_counter_var value = 1 } }
+							KOR = { subtract_from_variable = { var = spr_civil_war_divisions_counter_var value = 1 } }
+						}
+					}
+					KOR_garrison_control_tooltip = yes
+					KOR_garrison_control_cost_calculation = yes
+				}
+			}
+			clr_country_flag = SPA_already_expanding_influence_flag
+		}
+
+		ai_will_do = {
+			base = 110
+			modifier = {
+				800 = { has_state_flag = SPR_recently_expanded_influence_flag }
+				factor = 10
+			}
+			modifier = {
+				has_completed_focus = Yeo_Un_hyung_Elected
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
+	}

@@ -128,15 +128,6 @@ units = {
 		division_template = "대한민국 보병"
 		start_experience_factor = 0.3
 	}
-	division = { # "제8 기계화 보병사단 '오뚜기'부대'"
-		division_name = {
-			is_name_ordered = yes
-			name_order = 8
-		}
-		location = 13234
-		division_template = "기계화 보병사단"
-		start_experience_factor = 0.3
-	}
 	division = { # "제12 사단 '을지'"
 		division_name = {
 			is_name_ordered = yes
@@ -181,15 +172,6 @@ units = {
 		}
 		location = 4126
 		division_template = "대한민국 보병"
-		start_experience_factor = 0.3
-	}
-	division = { # "독도수비대"
-		division_name = {
-			is_name_ordered = yes
-			name_order = 20
-		}
-		location = 13241
-		division_template = "독도수비대"
 		start_experience_factor = 0.3
 	}
 	division = { # "제23 사단 '철벽'"
@@ -237,6 +219,24 @@ units = {
 		division_template = "대한민국 보병"
 		start_experience_factor = 0.3
 	}
+	division = { # "제33 사단 '상승'"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 33
+		}
+		location = 9899
+		division_template = "대한민국 보병"
+		start_experience_factor = 0.3
+	}
+	division = { # "제38 사단 '치악산'"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 38
+		}
+		location = 3860
+		division_template = "대한민국 보병"
+		start_experience_factor = 0.3
+	}
 	division = { # "제52 사단 '화살'"
 		division_name = {
 			is_name_ordered = yes
@@ -244,6 +244,80 @@ units = {
 		}
 		location = 4107
 		division_template = "대한민국 보병"
+		start_experience_factor = 0.3
+	}
+	division = { # "제57 사단 '용마'"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 57
+		}
+		location = 3912
+		division_template = "대한민국 보병"
+		start_experience_factor = 0.3
+	}
+
+	division = { # "수도기계화보병사단 '맹호'부대'"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 7125
+		division_template = "기계화 보병사단"
+		start_experience_factor = 0.3
+	}
+	division = { # "제8 기계화 보병사단 '오뚜기'부대'"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 13234
+		division_template = "기계화 보병사단"
+		start_experience_factor = 0.3
+	}
+	division = { # "제11 기계화 보병 사단 '화랑'부대'"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 11
+		}
+		location = 11915
+		division_template = "기계화 보병사단"
+		start_experience_factor = 0.3
+	}
+	division = { # "제20 기계화 보병 사단 '결전'부대'"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 20
+		}
+		location = 6944
+		division_template = "기계화 보병사단"
+		start_experience_factor = 0.3
+	}
+	division = { # "제26 기계화 보병 사단 '불무리'부대'"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 26
+		}
+		location = 9795
+		division_template = "기계화 보병사단"
+		start_experience_factor = 0.3
+	}
+	division = { # "제30 기계화 보병 사단 '필승'부대'"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 30
+		}
+		location = 4052
+		division_template = "기계화 보병사단"
+		start_experience_factor = 0.3
+	}
+
+	division = { # "독도수비대"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 20
+		}
+		location = 13241
+		division_template = "독도수비대"
 		start_experience_factor = 0.3
 	}
 }

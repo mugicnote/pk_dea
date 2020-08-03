@@ -10,12 +10,6 @@
  KOR_small_securement_of_support:0 "소규모 지지도 확보"
  KOR_medium_securement_of_support:0 "중규모 지지도 확보"
 
- KOR_primo_de_rivera_speech:0 "민주파 장군의 연설"
-
- KOR_organize_the_blackshirts:0 "내전 진압"
-
- KOR_military_plot_republicans:0 "군부의 쿠데타 음모"
-
  KOR_spanish_intervention_category:1 "스페인 내전에 개입"
  KOR_spanish_intervention_category_desc:0 "서로 다른 정치적 성향을 띄고 있는 정당들이 스페인 내전에 어떻게든 개입하려 하고 있습니다. 하지만 우리가 한 쪽 정당에 너무 많은 지지를 표하게 된다면 스페인 내전의 불씨가 우리에게도 퍼질 수 있습니다. 스페인에 우리와 친화적인 정부를 세우기 위해서는 조심스럽게 이 문제에 접근해야 합니다. "
  KOR_invite_FROM_to_non_intervention:0 "[From.GetNameDef](을)를 불간섭 조약에 초대"
@@ -151,3 +145,9 @@
 
  KOR_anti_graft_act:0 "부정청탁 방지법"
  KOR_recruitment_of_members:0 "국회의원 영입"
+
+ KOR_the_inevitable_civil_war:0 "막을수 없는 내전"
+ KOR_primo_de_rivera_speech:0 "사회노동당 당원의 연설"
+
+ KOR_military_plot_nationalists:0 "한국 전쟁"
+ KOR_political_assassination:0 "정치 암살"

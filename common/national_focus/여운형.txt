@@ -1,0 +1,254 @@
+	focus = {
+		id = maintenance_public_order
+		icon = gfx
+		cost = 10.00
+		prerequisite = {
+			focus = Yeo_Un_hyung_Elected
+			focus = Kim_Won_Bong_Elected
+		}
+		x = 1
+		y = 4
+
+	}
+	focus = {
+		id = welfare_first_policy
+		icon = gfx
+		cost = 10.00
+		prerequisite = {
+			focus = Yeo_Un_hyung_Elected
+		}
+		x = 10
+		y = 4
+
+	}
+	focus = {
+		id = police_political_neutrality
+		icon = gfx
+		cost = 10.00
+		prerequisite = {
+			focus = maintenance_public_order
+		}
+		x = 0
+		y = 5
+
+	}
+	focus = {
+		id = security_police
+		icon = gfx
+		cost = 10.00
+		prerequisite = {
+			focus = maintenance_public_order
+		}
+		prerequisite = {
+			focus = Leader_of_Joseon
+		}
+		x = 3
+		y = 5
+
+	}
+	focus = {
+		id = food_distribution
+		icon = gfx
+		cost = 10.00
+		prerequisite = {
+			focus = welfare_first_policy
+		}
+		x = 9
+		y = 5
+
+	}
+	focus = {
+		id = compulsory_primary_education2
+		icon = gfx
+		cost = 10.00
+		prerequisite = {
+			focus = welfare_first_policy
+		}
+		x = 11
+		y = 5
+
+	}
+	focus = {
+		id = free_school_lunch_system
+		icon = gfx
+		cost = 10.00
+		prerequisite = {
+			focus = food_distribution
+		}
+		prerequisite = {
+			focus = compulsory_primary_education2
+		}
+		x = 11
+		y = 6
+
+	}
+	focus = {
+		id = corruption_investigation
+		icon = gfx
+		cost = 10.00
+		prerequisite = {
+			focus = security_police
+			focus = police_political_neutrality
+		}
+		x = 1
+		y = 6
+
+	}
+	focus = {
+		id = Trade_is_the_key
+		icon = GFX_SIA_maritmesilkroad
+		cost = 10.00
+		prerequisite = {
+			focus = Yeo_Un_hyung_Elected
+		}
+		x = 8
+		y = 4
+
+	}
+	focus = {
+		id = Leader_of_Joseon
+		icon = GFX_goal_ideology_social_democrat
+		cost = 10.00
+		prerequisite = {
+			focus = Yeo_Un_hyung_Elected
+		}
+		completion_reward = {
+		add_country_leader_trait = traits_Yeo_Un1
+		}
+		x = 6
+		y = 4
+
+	}
+	focus = {
+		id = contact_with_France
+		icon = GFX_FRA_KOR_handshake
+		cost = 10.00
+		prerequisite = {
+			focus = Leader_of_Joseon
+		}
+		x = 7
+		y = 5
+
+	}
+	focus = {
+		id = political_prisoner
+		icon = gfx
+		cost = 10.00
+		prerequisite = {
+			focus = Leader_of_Joseon
+		}
+		x = 5
+		y = 5
+
+	}
+	focus = {
+		id = extremist_arrest
+		icon = gfx
+		cost = 10.00
+		prerequisite = {
+			focus = security_police
+		}
+		x = 3
+		y = 6
+
+	}
+	focus = {
+		id = parliamentary_freeze
+		icon = gfx
+		cost = 10.00
+		prerequisite = {
+			focus = political_soldier
+		}
+		x = 7
+		y = 7
+
+	}
+	focus = {
+		id = political_soldier
+		icon = gfx
+		cost = 10.00
+		prerequisite = {
+			focus = political_prisoner
+		}
+		x = 5
+		y = 6
+
+	}
+	focus = {
+		id = political_prisoner2
+		icon = gfx
+		cost = 10.00
+		prerequisite = {
+			focus = political_soldier
+		}
+		x = 5
+		y = 7
+
+	}
+	focus = {
+		id = imports_French_products
+		icon = gfx
+		cost = 10.00
+		prerequisite = {
+			focus = food_distribution
+			focus = contact_with_France
+		}
+		x = 7
+		y = 6
+
+	}
+	focus = {
+		id = Contact_with_Three_Nordic_Countries
+		icon = GFX_KOR_SOV_Wreath
+		cost = 10.00
+		prerequisite = {
+			focus = food_distribution
+		}
+		x = 9
+		y = 7
+
+	}
+	focus = {
+		id = refugee_acceptance_problem
+		icon = gfx
+		cost = 10.00
+		prerequisite = {
+			focus = Contact_with_Three_Nordic_Countries
+			focus = free_school_lunch_system
+		}
+		x = 11
+		y = 8
+
+	}
+	focus = {
+		id = contact_with_Japan
+		icon = GFX_goal_japanese_democracy
+		cost = 10.00
+		prerequisite = {
+			focus = Contact_with_Three_Nordic_Countries
+		}
+		x = 9
+		y = 8
+
+	}
+
+  maintenance_public_order:0 "치안 확보"
+  welfare_first_policy:0 "복지 우선 정책"
+  police_political_neutrality:0 "경찰의 정치적 중립"
+  food_distribution:0 "식량 배분"
+  corruption_investigation:0 "부패 수사"
+  security_police:0 "보안 경찰"
+  compulsory_primary_education2:0 "초등 의무 교육"
+  free_school_lunch_system:0 "무상급식 제도"
+  Trade_is_the_key:0 "무역이 생명이다"
+  Leader_of_Joseon:0 "조선의 사민주의 개혁가"
+  contact_with_France:0 "프랑스와 접촉"
+  political_prisoner:0 "정치범 재판"
+  extremist_arrest:0 "극단주의자 채포"
+  parliamentary_freeze:0 "국회 동결"
+  political_soldier:0 "정치 군인"
+  political_prisoner2:0 "정치범 2차 재판"
+  imports_French_products:0 "한-불 경제협력"
+  Contact_with_Three_Nordic_Countries:0 "대소관계 개선"
+  refugee_acceptance_problem:0 "중국 사민주의 전파"
+  contact_with_Japan:0 "일본과 접촉"

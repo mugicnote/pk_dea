@@ -1,0 +1,333 @@
+#####################
+### ANTI AIRCRAFT ###
+#####################
+	
+
+objectTypes = {	
+	pdxmesh = {
+		name = "building_anti_air_building"
+		file = "gfx/models/buildings/INS_aagun_01.mesh"
+		
+		animation = { id = "idle"  			type = "88aagun_idle_animation" }
+		animation = { id = "combat_idle"  	type = "88aagun_combat_idle_animation" }
+		animation = { id = "attack"  		type = "88aagun_attack_animation" }
+		
+		scale = 0.18
+	}
+}
+
+
+#################
+### ARTILLERY ###
+#################
+
+objectTypes = {		
+	pdxmesh = {
+		name = "MI_INS_unit_artillery_1_mesh"
+		file = "gfx/models/buildings/INS_artillery_01.mesh"
+		
+		animation = { id = "idle"  			type = "artillery_idle_animation" }
+		animation = { id = "move"  			type = "artillery_moving_animation" }
+		animation = { id = "attack"  		type = "artillery_attack_animation" }
+	}
+}
+
+objectTypes = {		
+	pdxmesh = {
+		name = "MI_INS_unit_artillery_2_mesh"
+		file = "gfx/models/buildings/INS_artillery_02.mesh"
+		
+		animation = { id = "idle"  			type = "artillery_idle_animation" }
+		animation = { id = "move"  			type = "artillery_moving_animation" }
+		animation = { id = "attack"  		type = "artillery_attack_animation" }
+	}
+}
+
+objectTypes = {		
+	pdxmesh = {
+		name = "MI_INS_unit_artillery_3_mesh"
+		file = "gfx/models/buildings/INS_artillery_03.mesh"
+		
+		animation = { id = "idle"  			type = "artillery_idle_animation" }
+		animation = { id = "move"  			type = "artillery_moving_animation" }
+		animation = { id = "attack"  		type = "artillery_attack_animation" }
+	}
+}
+
+objectTypes = {		
+	pdxmesh = {
+		name = "MI_KOR_unit_artillery_1_mesh"
+		file = "gfx/models/buildings/KOR_artillery_01.mesh"
+		
+		animation = { id = "idle"  			type = "artillery_idle_animation" }
+		animation = { id = "move"  			type = "artillery_moving_animation" }
+		animation = { id = "attack"  		type = "artillery_attack_animation" }
+	}
+}
+
+objectTypes = {		
+	pdxmesh = {
+		name = "MI_KOR_unit_artillery_2_mesh"
+		file = "gfx/models/buildings/KOR_artillery_02.mesh"
+		
+		animation = { id = "idle"  			type = "artillery_idle_animation" }
+		animation = { id = "move"  			type = "artillery_moving_animation" }
+		animation = { id = "attack"  		type = "artillery_attack_animation" }
+	}
+}
+
+objectTypes = {		
+	pdxmesh = {
+		name = "MI_PHI_unit_artillery_2_mesh"
+		file = "gfx/models/buildings/PHI_artillery_02.mesh"
+		
+		animation = { id = "idle"  			type = "artillery_idle_animation" }
+		animation = { id = "move"  			type = "artillery_moving_animation" }
+		animation = { id = "attack"  		type = "artillery_attack_animation" }
+	}
+}
+
+objectTypes = {		
+	pdxmesh = {
+		name = "MI_PRK_unit_artillery_1_mesh"
+		file = "gfx/models/buildings/PRK_artillery_01.mesh"
+		
+		animation = { id = "idle"  			type = "artillery_idle_animation" }
+		animation = { id = "move"  			type = "artillery_moving_animation" }
+		animation = { id = "attack"  		type = "artillery_attack_animation" }
+	}
+}
+
+objectTypes = {		
+	pdxmesh = {
+		name = "MI_PRK_unit_artillery_2_mesh"
+		file = "gfx/models/buildings/PRK_artillery_02.mesh"
+		
+		animation = { id = "idle"  			type = "artillery_idle_animation" }
+		animation = { id = "move"  			type = "artillery_moving_animation" }
+		animation = { id = "attack"  		type = "artillery_attack_animation" }
+	}
+}
+
+objectTypes = {		
+	pdxmesh = {
+		name = "MI_MAL_unit_artillery_2_mesh"
+		file = "gfx/models/buildings/MAL_artillery_02.mesh"
+		
+		animation = { id = "idle"  			type = "artillery_idle_animation" }
+		animation = { id = "move"  			type = "artillery_moving_animation" }
+		animation = { id = "attack"  		type = "artillery_attack_animation" }
+	}
+}
+
+
+###########################
+### ANTI TANK ARTILLERY ###
+###########################
+
+objectTypes = {		
+	pdxmesh = {
+		name = "MI_INS_unit_antitank_mesh"
+		file = "gfx/models/buildings/INS_antitank_01.mesh"
+		
+		animation = { id = "idle"  			type = "artillery_idle_animation" }
+		animation = { id = "move"  			type = "artillery_moving_animation" }
+		animation = { id = "attack"  		type = "artillery_attack_animation" }
+	}
+}
+
+
+
+##################
+### SMALL ARMS ###
+##################
+
+
+################
+### AUSTRIAN ###
+################
+
+objectTypes = {	
+	pdxmesh = {
+		name = "MI_INS_infantry_weapon_rifle_M1895_mesh"
+		file = "gfx/models/units/weapon_INS_rifle_M95.mesh"
+	}
+}
+
+objectTypes = {	
+	pdxmesh = {
+		name = "MI_INS_infantry_weapon_rifle_M1930_mesh"
+		file = "gfx/models/units/weapon_INS_rifle_M95-30.mesh"
+	}
+}
+
+###############
+### BELGIUM ###
+###############
+
+objectTypes = {	
+	pdxmesh = {
+		name = "MI_SIA_infantry_weapon_rifle_M24_mesh"
+		file = "gfx/models/units/weapon_SIA_rifle_M24.mesh"
+	}
+}
+
+objectTypes = {	
+	pdxmesh = {
+		name = "MI_MAL_infantry_weapon_rifle_SAFN_mesh"
+		file = "gfx/models/units/weapon_MAL_rifle_FN49.mesh"
+	}
+}
+
+#############
+### CHINA ###
+#############
+
+objectTypes = {	
+	pdxmesh = {
+		name = "MI_KOR_infantry_weapon_rifle_type88_mesh"
+		file = "gfx/models/units/weapon_KOR_rifle_type88.mesh"
+	}
+}
+
+objectTypes = {	
+	pdxmesh = {
+		name = "MI_KOR_infantry_weapon_rifle_type24_mesh"
+		file = "gfx/models/units/weapon_KOR_rifle_type24.mesh"
+	}
+}
+
+#######################
+### CZECHOSLOVAKIAN ###
+#######################
+
+objectTypes = {	
+	pdxmesh = {
+		name = "MI_KOR_infantry_weapon_rifle_ZH29_mesh"
+		file = "gfx/models/units/weapon_KOR_rifle_ZH29.mesh"
+	}
+}
+
+###############
+### BRITISH ###
+###############
+
+objectTypes = {	
+	pdxmesh = {
+		name = "MI_TIB_infantry_weapon_rifle_SMLE_mesh"
+		file = "gfx/models/units/weapon_TIB_rifle_SMLE.mesh"
+	}
+}
+
+objectTypes = {	
+	pdxmesh = {
+		name = "MI_TIB_infantry_weapon_rifle_No4_mesh"
+		file = "gfx/models/units/weapon_TIB_rifle_No4.mesh"
+	}
+}
+
+objectTypes = {	
+	pdxmesh = {
+		name = "MI_MAL_infantry_weapon_mg_Sten_mesh"
+		file = "gfx/models/units/weapon_MAL_mg_Sten.mesh"
+	}
+}
+
+##############
+### FRENCH ###
+##############
+
+objectTypes = {	
+	pdxmesh = {
+		name = "MI_VIN_infantry_weapon_rifle_Lebel_mesh"
+		file = "gfx/models/units/weapon_VIN_rifle_Lebel.mesh"
+	}
+}
+
+objectTypes = {	
+	pdxmesh = {
+		name = "MI_VIN_infantry_weapon_rifle_MAS-36_mesh"
+		file = "gfx/models/units/weapon_VIN_rifle_MAS-36.mesh"
+	}
+}
+
+objectTypes = {	
+	pdxmesh = {
+		name = "MI_VIN_infantry_weapon_mg_MAS-38_mesh"
+		file = "gfx/models/units/weapon_VIN_mg_MAS-38.mesh"
+	}
+}
+
+objectTypes = {	
+	pdxmesh = {
+		name = "MI_VIN_infantry_weapon_rifle_MAS-44_mesh"
+		file = "gfx/models/units/weapon_VIN_rifle_MAS-44.mesh"
+	}
+}
+
+##############
+### GERMAN ###
+##############
+
+objectTypes = {	
+	pdxmesh = {
+		name = "MI_INS_infantry_weapon_mg_MP28_mesh"
+		file = "gfx/models/units/weapon_INS_mg_MP28.mesh"
+	}
+}
+
+##############
+### SOVIET ###
+##############
+
+objectTypes = {	
+	pdxmesh = {
+		name = "MI_PRK_infantry_weapon_rifle_STV-40_mesh"
+		file = "gfx/models/units/weapon_PRK_rifle_STV-40.mesh"
+	}
+}
+
+###############
+### SWEDISH ###
+###############
+
+objectTypes = {	
+	pdxmesh = {
+		name = "MI_SIA_infantry_weapon_rifle_M96_mesh"
+		file = "gfx/models/units/weapon_SIA_rifle_M98.mesh"
+	}
+}
+
+#####################
+### UNITED STATES ###
+#####################
+
+objectTypes = {	
+	pdxmesh = {
+		name = "MI_PHI_infantry_weapon_rifle_M1903_mesh"
+		file = "gfx/models/units/weapon_PHI_rifle_M1903.mesh"
+	}
+}
+
+objectTypes = {	
+	pdxmesh = {
+		name = "MI_PHI_infantry_weapon_rifle_M1_mesh"
+		file = "gfx/models/units/weapon_PHI_rifle_M1.mesh"
+	}
+}
+
+objectTypes = {	
+	pdxmesh = {
+		name = "MI_PHI_infantry_weapon_mg_thompson_mesh"
+		file = "gfx/models/units/weapon_PHI_mg_thompson.mesh"
+	}
+}
+
+objectTypes = {	
+	pdxmesh = {
+		name = "MI_INS_infantry_weapon_rifle_M41_mesh"
+		file = "gfx/models/units/weapon_INS_rifle_M41.mesh"
+	}
+}
+
+

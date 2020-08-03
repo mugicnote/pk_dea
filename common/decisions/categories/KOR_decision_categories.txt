@@ -11,31 +11,57 @@ KOR_congress = {
 	priority = 100
 }
 
-KOR_organize_the_blackshirts = {
+KOR_the_inevitable_civil_war = {
+	priority = 10
+	icon = spr_the_inevitable_civil_war
 
-	icon = eng_organize_the_blackshirts
+	picture = GFX_decision_cat_picture_spr_the_inevitable_civil_war
 
-	picture = GFX_decision_cat_picture_organize_the_blackshirts
-	
 	allowed = {
+		original_tag = KOR
+	}
+
+	custom_icon = {
 		tag = KOR
-	}
+		value = spa_civil_war_divisions_counter_icon_value
+		desc = spa_civil_war_divisions_counter_full_breakdown
 
-	on_map_area = {
-		state = 797
-		name = ENG_organize_the_blackshirts_map_category_name
-		zoom = 250
+		visible = {
+			always = yes
+		}
 	}
+	
+	custom_icon = {
+		tag = KOR
+		value = spr_civil_war_divisions_counter_icon_value
+		desc = spr_civil_war_divisions_counter_full_breakdown
 
-	priority = {
-		base = 0
-		modifier = {
-			add = 10
+		visible = {
+			always = yes
 		}
 	}
 
+	visible_when_empty = yes
+
+	on_map_area = {
+		state = 525
+		name = SPR_the_inevitable_civil_war_map_category_name
+		zoom = 250
+	}
+
 	visible = {
-			always = no
+		
+	}
+}
+
+KOR_opposition_civil_war_preparations = {
+	priority = 9
+	icon = spr_the_inevitable_civil_war
+
+	picture = GFX_decision_cat_picture_spr_the_inevitable_civil_war
+	
+	allowed = {
+		original_tag = KOR
 	}
 }
 
