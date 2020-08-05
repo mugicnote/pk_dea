@@ -2,13 +2,6 @@ capital = 525
 
 oob = KOR_1936
 
-527 = {
-	start_resistance = no
-	set_compliance = 0
-	set_resistance = 0
-	set_garrison_strength = 0
-}
-
 #중추원 의석 설정
 set_variable = { var = senate_support value = 29 }
 set_variable = { var = senate_total value = 116 }
@@ -132,6 +125,18 @@ set_popularities = {
   autocracy = 5
   fascism = 22
 }
+
+create_dynamic_country = {
+	  original_tag = KOR
+	  set_country_flag = FKR_korea_flag
+		set_politics = {
+			ruling_party = neutrality
+		}
+		set_cosmetic_tag = FKR_korea
+		set_research_slots = 3
+	  reserve_dynamic_country = yes
+	}
+
 
 #정당별_리더
 create_country_leader = {

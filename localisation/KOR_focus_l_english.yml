@@ -35,9 +35,11 @@
   Establishment_Nakdong_Basin_Construction:0 "낙동강 유역공사 설립"
   enactment_Social_Security_Act:0 "사회보장법 제정"
   ###민주파내전###
-  threats_from_opposition_parties:0 "태스트"
-  threat_of_communism:0 "공산주의 주도회 습격"
-  outbreak_of_the_Korean_War:0 "한국전쟁 발발"
+  threats_from_opposition_parties:0 "북부지역 영향력 확대"
+  threat_of_communism:0 "향토 사단 충원"
+  outbreak_of_the_Korean_War:0 "좌파 지원 약속"
+  outbreak_of_the_Korean_War_tt:1 "내전이 시작하면, §Y6개 보병 대대§!로 이루어진 5개의 잘 훈련된 사단을 얻게 될 것입니다.\n"
+  outbreak_of_the_Korean_War_tt_2:0 "§R이 사단들은 좌파가 봉기하면 내전 이후 사라질 것입니다!§!\n"
   ###김구###
   Kim_Gu_Elected:0 "김구 당선"
   Kim_Gu_Elected_desc:0 "민주적인 선거를 통하여 김구선생께서 당선 되셨습니다,감구 선생께서는 국가의 법으로 시민들을 지키며 여러자유를 허락하며 시민들을 자신에 편으로 만듭니다."

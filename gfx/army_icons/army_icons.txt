@@ -8,127 +8,126 @@
 		available = {
 			tag = JAP
 			tag = USA
+			tag = KOR
 		}
 	}
 	icon = {
 		color_override = no
 		name = "Imperial Naval Ensign"
 		available = {
-			tag = JAP
+			tag = KOR
 		}
 	}
 	icon = {
 		color_override = no
 		name = "Homeland Defense Army"
 		available = {
-			tag = JAP
+			tag = KOR
 		}
 	}
 	icon = {
 		color_override = no
 		name = "Celestial Penetration Army"
 		available = {
-			tag = JAP
+			tag = KOR
 		}
 	}
 	icon = {
 		color_override = no
 		name = "Manchurian Storm Troopers"
 		available = {
-			tag = JAP
+			tag = KOR
 		}
 	}
 	icon = {
 		color_override = no
 		name = "5th Infantry 'Carp' Division"
 		available = {
-			tag = JAP
+			tag = KOR
 		}
 	}
 	icon = {
 		color_override = no
 		name = "3rd Infantry 'Lucky' Division"
 		available = {
-			tag = JAP
+			tag = KOR
 		}
 	}
 	icon = {
 		color_override = no
 		name = "4th Infantry 'Yodo' Division"
 		available = {
-			tag = JAP
+			tag = KOR
 		}
 	}
 	icon = {
 		color_override = no
 		name = "7th Infantry 'Bear' Division"
 		available = {
-			tag = JAP
+			tag = KOR
 		}
 	}
 	icon = {
 		color_override = no
 		name = "18th Infantry 'Chrysanthemum' Division"
 		available = {
-			tag = JAP
+			tag = KOR
 		}
 	}
 	icon = {
 		color_override = no
 		name = "19th Infantry 'Tiger' Division"
 		available = {
-			tag = JAP
+			tag = KOR
 		}
 	}
 	icon = {
 		color_override = no
 		name = "Co-Prosperity Sphere Emblem"
 		available = {
-			tag = JAP
+			tag = KOR
 		}
 	}
 	icon = {
 		color_override = no
 		name = "Manchukuo Imperial Army Emblem"
 		available = {
-			tag = JAP
+			tag = KOR
 		}
 	}
 	icon = {
 		color_override = no
 		name = "Five Races Under One Union"
 		available = {
-			tag = JAP
+			tag = KOR
 		}
 	}
 	icon = {
 		color_override = no
 		name = "24th Infantry 'Mountain' Division"
 		available = {
-			tag = JAP
+			tag = KOR
 		}
 	}
 	icon = {
 		color_override = no
 		name = "State Flag"
 		available = {
-			tag = JAP
+			tag = KOR
 		}
 	}
 	icon = {
 		color_override = no
 		name = "Tokugawa Seal"
 		available = {
-			tag = JAP
-			has_government = neutrality
+			tag = KOR
 		}
 	}
 	icon = {
 		color_override = no
 		name = "Tokugawa State Flag"
 		available = {
-			tag = JAP
-			has_government = neutrality
+			tag = KOR
 		}
 	}
 	icon = {
@@ -136,7 +135,7 @@
 		name = "Mori Family Crest"
 		available = 
 		{
-			tag = JAP
+			tag = KOR
 		}
 	}
 	icon = {
@@ -144,7 +143,7 @@
 		name = "Shimazu Family Crest"
 		available = 
 		{
-			tag = JAP
+			tag = KOR
 		}
 	}
 	icon = {
@@ -152,7 +151,7 @@
 		name = "Oda Family Crest"
 		available = 
 		{
-			tag = JAP
+			tag = KOR
 		}
 	}
 	icon = {
@@ -160,7 +159,7 @@
 		name = "Otomo Family Crest"
 		available = 
 		{
-			tag = JAP
+			tag = KOR
 		}
 	}
 	icon = {
@@ -168,7 +167,7 @@
 		name = "Army Air Force Symbol 1"
 		available = 
 		{
-			tag = JAP
+			tag = KOR
 		}
 	}
 	icon = {
@@ -176,7 +175,7 @@
 		name = "Army Air Force Symbol 2"
 		available = 
 		{
-			tag = JAP
+			tag = KOR
 		}
 	}
 	icon = {
@@ -184,7 +183,7 @@
 		name = "Army Air Force Symbol 3"
 		available = 
 		{
-			tag = JAP
+			tag = KOR
 		}
 	}
 	icon = {
@@ -192,7 +191,7 @@
 		name = "Flag of Mengjiang"
 		available = 
 		{
-			tag = JAP
+			tag = KOR
 		}
 	}
 	icon = {
@@ -200,7 +199,7 @@
 		name = "Flag of the Reformed Government of the Republic of China"
 		available = 
 		{
-			tag = JAP
+			tag = KOR
 		}
 	}
 	icon = {
@@ -208,7 +207,7 @@
 		name = "Flag of the Provisional Government of the Republic of China (Five Races)"
 		available = 
 		{
-			tag = JAP
+			tag = KOR
 		}
 	}
 	icon = {

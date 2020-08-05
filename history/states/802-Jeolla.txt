@@ -8,6 +8,7 @@ state = {
 	history = {
 		owner = KOR
 		add_core_of = KOR
+		add_core_of = FKR
 		
 		buildings = {
 			industrial_complex = 2

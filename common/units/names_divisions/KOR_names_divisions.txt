@@ -28,6 +28,16 @@
 		57 = { "제57 보병 사단 '용마'" }
 	}
 }
+KOR_NOM_4 = {
+	name = "대한민국 향토사단"
+	for_countries = { KOR }
+	can_use = { always = yes }
+	division_types = { "infantry" }
+	fallback_name = "제%d 향토 보병 사단"
+	ordered = {
+		31 = { "제31 향토 보병 사단 '충장'" }
+	}
+}
 KOR_NOM_2 = {
 	name = "기계화 보병사단"
 	for_countries = { KOR }

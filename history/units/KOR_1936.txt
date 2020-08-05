@@ -20,6 +20,24 @@
 	}
 }
 division_template = {
+	name = "대한민국 향토사단"
+	division_names_group = KOR_NOM_4
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	
+	support = {
+        recon = { x = 0 y = 0 }
+        artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
 	name = "기계화 보병사단"
 	division_names_group = KOR_NOM_2
 	
@@ -253,6 +271,16 @@ units = {
 		}
 		location = 3912
 		division_template = "대한민국 보병"
+		start_experience_factor = 0.3
+	}
+
+	division = { # "제31 향토사단 '충장'"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 31
+		}
+		location = 1054
+		division_template = "대한민국 향토사단"
 		start_experience_factor = 0.3
 	}
 

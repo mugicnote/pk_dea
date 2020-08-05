@@ -11,6 +11,25 @@ on_actions = {
 		set_country_flag = KOR_western_bandits
 		country_lock_all_division_template = yes
 			}
+		every_owned_state = {
+			limit = {
+				check_variable = { var = KOR_garrison_control value = 0 compare = equals }
+					OR = {
+						state = 797
+						state = 798
+						state = 799
+						state = 527
+						state = 525
+						state = 800
+						state = 801
+						state = 802
+						state = 803
+						state = 804
+						}
+					}
+					add_to_variable = { var = KOR_garrison_control value = 1 }
+					SPA_garrison_control_cost_calculation = yes
+				}
 		}
 	}
 }

@@ -94,6 +94,27 @@
 		x = 7
 		y = 3
 		completion_reward = {
+			hidden_effect = {
+				every_owned_state = {
+					limit = {
+						check_variable = { var = KOR_garrison_control value = 0 compare = equals }
+						OR = {
+							state = 797
+							state = 798
+							state = 799
+							state = 527
+							state = 525
+							state = 800
+							state = 801
+							state = 802
+							state = 803
+							state = 804
+						}
+					}
+					add_to_variable = { var = KOR_garrison_control value = 1 }
+					SPA_garrison_control_cost_calculation = yes
+				}
+			}
 			set_politics = {
 				ruling_party = social_democracy
 				elections_allowed = yes
@@ -1994,9 +2015,11 @@
 		x = 14
 		y = 17
 		completion_reward = {
+			custom_effect_tooltip = SPA_secure_the_northern_garrisons_tt
+			hidden_effect = {
 				every_owned_state = {
 					limit = {
-						check_variable = { var = KOR_control value = 1 compare = equals }
+						check_variable = { var = KOR_garrison_control value = 1 compare = equals }
 						OR = {
 							state = 797
 							state = 798
@@ -2004,41 +2027,42 @@
 						}
 					}
 					set_state_flag = KOR_northern_garrisons_state_flag
-					add_to_variable = { var = KOR_control value = 3 }
+					add_to_variable = { var = KOR_garrison_control value = 3 }
 					KOR = { add_to_variable = { var = ko_civil_war_divisions_counter_var value = 3 } }
 					KOR = { subtract_from_variable = { var = kor_civil_war_divisions_counter_var value = 3 } }
-					KOR_control_cost_calculation = yes
+					SPA_garrison_control_cost_calculation = yes
 				}
 				every_owned_state = {
 					limit = {
-						check_variable = { var = KOR_control value = 2 compare = equals }
+						check_variable = { var = KOR_garrison_control value = 2 compare = equals }
 						OR = {
 							state = 797
 							state = 798
 							state = 799
 						}
 					}
-					set_state_flag = kor_northern_garrisons_state_flag
-					add_to_variable = { var = KOR_control value = 2 }
+					set_state_flag = KOR_northern_garrisons_state_flag
+					add_to_variable = { var = KOR_garrison_control value = 2 }
 					KOR = { add_to_variable = { var = ko_civil_war_divisions_counter_var value = 2 } }
 					KOR = { subtract_from_variable = { var = kor_civil_war_divisions_counter_var value = 2 } }
-					KOR_control_cost_calculation = yes
+					SPA_garrison_control_cost_calculation = yes
 				}
 				every_owned_state = {
 					limit = {
-						check_variable = { var = KOR_control value = 3 compare = equals }
+						check_variable = { var = KOR_garrison_control value = 3 compare = equals }
 						OR = {
 							state = 797
 							state = 798
 							state = 799
 						}
 					}
-					set_state_flag = kor_northern_garrisons_state_flag
-					add_to_variable = { var = KOR_control value = 1 }
+					set_state_flag = KOR_northern_garrisons_state_flag
+					add_to_variable = { var = KOR_garrison_control value = 1 }
 					KOR = { add_to_variable = { var = ko_civil_war_divisions_counter_var value = 1 } }
 					KOR = { subtract_from_variable = { var = kor_civil_war_divisions_counter_var value = 1 } }
-					KOR_control_cost_calculation = yes
+					SPA_garrison_control_cost_calculation = yes
 				}
+			}
 		}
 	}
 	focus = {
@@ -2061,6 +2085,16 @@
 		}
 		prerequisite = {
 			focus = Anikist's_Threat
+		}
+		completion_reward = {
+			set_country_flag = KOR_negotiate_carlist_support_flag
+			add_popularity = {
+			    ideology = communism
+			    popularity = 0.05
+			}
+			add_to_variable = { var = KOR_civil_war_divisions_counter_var value = 5 }
+			custom_effect_tooltip = outbreak_of_the_Korean_War_tt
+			custom_effect_tooltip = outbreak_of_the_Korean_War_tt_2
 		}
 		x = 14
 		y = 19
