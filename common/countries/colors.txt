@@ -731,3 +731,21 @@ KMK = {
 	color = rgb { 160 82 45 }
 	color_ui = rgb { 160 82 45 }
 }
+
+MHB = {
+	color = rgb { 191 110 62 }
+	color_ui = rgb { 191 110 62 }
+}
+
+MHX = {
+	color = rgb { 55 108 158 }
+	color_ui = rgb { 55 108 158 }
+}
+GJU = {
+	color = rgb { 0 0 174 }
+	color_ui = rgb { 0 0 174 }
+}
+XIC = {
+	color = rgb { 140 104 51 }
+	color_ui = rgb { 140 104 51 }
+}

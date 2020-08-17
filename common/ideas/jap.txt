@@ -2,7 +2,7 @@ ideas = {
 
     country = {
         
-        JAP_danger_civil_war = {
+        constitution_of_japanese = {
 
             allowed = {
                 original_tag = JAP
@@ -12,49 +12,12 @@ ideas = {
                 always = yes
             }
 
-            picture = generic_disjointed_gov
+            picture = HUN_treaty_of_triannon
 
             removal_cost = -1
             
             modifier = {
-                stability_factor = -0.2
+                justify_war_goal_time = 10.0
             }
         }
-        JAP_great_war_loser = {
-            
-            allowed = {
-                original_tag = JAP
-                always = no
-            }
-
-            allowed_civil_war = {
-                always = yes
-            }
-
-            removal_cost = -1
-
-            picture = FRA_scw_intervention_republicans_focus
-            
-            modifier = {
-                war_support_factor = -0.2
-            }
-        }
-        JAP_royal_formalization = {
-			
-            picture = prc_low_popular_support
-
-			allowed = {
-				original_tag = JAP
-                always = no
-			}
-
-			allowed_civil_war = {
-                always = yes
-			}
-
-			modifier = {
-				fascism_drift = 0.3
-                democratic_drift = 0.3
-			}
-		}
     }

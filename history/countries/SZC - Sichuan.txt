@@ -68,46 +68,13 @@ set_politics = {
 
 ### Country Leaders ###
 create_country_leader = {
-	name = "Xiong Kewu"
-	desc = "POLITICS_SZC_XIONG_KEWU_DESC"
-	picture = "Portrait_SZC_Xiong_Kewu.tga"
-	expire = "1965.1.1"
-	ideology = liberalism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Liu Wenhui"
+	name = "Liu Xiang"
 	desc = "POLITICS_SZC_LIU_WENHUI_DESC"
-	picture = "Portrait_SZC_Liu_Wenhui.tga"
+	picture = "Portrait_SZC_Liu_Xiang.tga"
 	expire = "1865.1.1"
 	ideology = warloadism
 	traits = {
 	    #
-	}
-}
-
-create_country_leader = {
-	name = "Liu Wenhui"
-	desc = "POLITICS_SZC_LIU_WENHUI_DESC"
-	picture = "Portrait_SZC_Liu_Wenhui.tga"
-	expire = "1865.1.1"
-	ideology = stalinism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Liu Wenhui"
-	desc = "POLITICS_SZC_LIU_WENHUI_DESC"
-	picture = "Portrait_SZC_Liu_Wenhui.tga"
-	expire = "1865.1.1"
-	ideology = fascism_ideology
-	traits = {
-		#
 	}
 }
 #Armament Department generals

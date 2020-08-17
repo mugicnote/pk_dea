@@ -317,6 +317,22 @@ ideas = {
             army_morale_factor = 0.01
 		    }
         }
+        KOR_war_department = {	
+			picture = usa_war_department
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				max_command_power = 25	
+			}
+		}
 }
         political_advisor = {
 
@@ -585,6 +601,8 @@ ideas = {
 		    allowed = {
 		    	original_TAG = KOR
 		    }
+            
+            picture = fkr_company_kiamotors
 
 		    research_bonus = {
 		    	armor = 0.10
@@ -661,4 +679,18 @@ ideas = {
 			
 		    traits = { raiding_fleet_naval_manufacturer }
 	    }
+    }
+    army_chief = {
+        
+        Yu_Dong_yeal = {
+			
+            allowed = {
+				original_tag = KOR
+			}
+            available = {
+				has_completed_focus = Republic_of_Korea_Army
+			}
+
+			traits = { army_chief_defensive_2 }
+		}
     }

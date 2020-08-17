@@ -1,0 +1,256 @@
+﻿focus_tree = {
+	id = japan_wtt_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = JAP
+		}
+	}
+	
+
+	default = no
+
+	continuous_focus_position = { x = 20 y = 1200 }
+
+	focus = {
+		id = change_of_country_line
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10.00
+
+		x = 15
+		y = 0
+	}
+	
+	focus = {
+		id = ban_on_grand_political_parties
+		icon = GFX_focus_internal_dissent
+		cost = 10.00
+		prerequisite = {
+			focus = change_of_country_line
+		}
+		x = 14
+		y = 1
+	}
+
+	focus = {
+		id = state_support
+		icon = GFX_goal_generic_loans
+		cost = 10.00
+		prerequisite = {
+			focus = change_of_country_line
+		}
+		x = 16
+		y = 1
+	}
+	focus = {
+		id = superinflation
+		icon = GFX_econ_expension
+		cost = 10.00
+		prerequisite = {
+			focus = ban_on_grand_political_parties
+		}
+		prerequisite = {
+			focus = state_support
+		}
+		x = 15
+		y = 2
+	}
+	focus = {
+		id = Expansion_of_US_relations
+		icon = GFX_USA_Disenfranchise_African_Americans
+		cost = 10.00
+		prerequisite = {
+			focus = superinflation
+		}
+		x = 14
+		y = 3
+	}
+	focus = {
+		id = Korean_War
+		icon = GFX_Integration_of_Korea
+		cost = 10.00
+		prerequisite = {
+			focus = superinflation
+		}
+		x = 16
+		y = 3
+	}
+	focus = {
+		id = garyoan_aid_fund
+		icon = GFX_OTT_Restrict_Foreign_Exchange_Regime
+		cost = 10.00
+		prerequisite = {
+			focus = Expansion_of_US_relations
+		}
+		x = 13
+		y = 4
+	}
+	focus = {
+		id = House_Representatives_elections
+		icon = GFX_Adopt_Enhanced_Majority_System
+		cost = 10.00
+		prerequisite = {
+			focus = Expansion_of_US_relations
+		}
+		prerequisite = {
+			focus = Korean_War
+		}
+		x = 15
+		y = 4
+	}
+	focus = {
+		id = victory_constitutional_association
+		icon = GFX_Allow_Free_Speach
+		cost = 10.00
+		prerequisite = {
+			focus = House_Representatives_elections
+		}
+		mutually_exclusive = {
+			focus = constitutional_victory
+			focus = victory_Social_Popular_Party
+			focus = victory_Communist_Party_Japan
+		}
+		x = 20
+		y = 5
+	}
+	focus = {
+		id = constitutional_victory
+		icon = GFX_Allow_Free_Speach
+		cost = 10.00
+		prerequisite = {
+			focus = House_Representatives_elections
+		}
+		mutually_exclusive = {
+			focus = victory_constitutional_association
+			focus = victory_Social_Popular_Party
+			focus = victory_Communist_Party_Japan
+		}
+		x = 15
+		y = 5
+	}
+	focus = {
+		id = victory_Social_Popular_Party
+		icon = GFX_Allow_Free_Speach
+		cost = 10.00
+		prerequisite = {
+			focus = House_Representatives_elections
+		}
+		mutually_exclusive = {
+			focus = victory_constitutional_association
+			focus = constitutional_victory
+			focus = victory_Communist_Party_Japan
+		}
+		x = 25
+		y = 5
+	}
+	focus = {
+		id = victory_Communist_Party_Japan
+		icon = GFX_jcp
+		cost = 10.00
+		prerequisite = {
+			focus = House_Representatives_elections
+		}
+		mutually_exclusive = {
+			focus = victory_constitutional_association
+			focus = constitutional_victory
+			focus = victory_Social_Popular_Party
+		}
+		x = 10
+		y = 5
+	}
+	focus = {
+		id = Dodge_Line
+		icon = GFX_
+		cost = 10.00
+
+		x = 37
+		y = 0
+	}
+	focus = {
+		id = EROA_Aid_Fund
+		icon = GFX_
+		cost = 10.00
+		prerequisite = {
+			focus = Dodge_Line
+		}
+		x = 35
+		y = 1
+	}
+	focus = {
+		id = Support_for_South_Korea
+		icon = GFX_ExpandAidToROK
+		cost = 10.00
+		prerequisite = {
+			focus = Dodge_Line
+		}
+		x = 37
+		y = 1
+	}
+	focus = {
+		id = special_period
+		icon = GFX_
+		cost = 10.00
+		prerequisite = {
+			focus = EROA_Aid_Fund
+			focus = Support_for_South_Korea
+		}
+		x = 36
+		y = 2
+	}
+	focus = {
+		id = defense_economic_collapse
+		icon = GFX_
+		cost = 10.00
+		prerequisite = {
+			focus = Dodge_Line
+		}
+		x = 39
+		y = 1
+	}
+	focus = {
+		id = government_supply_expansion
+		icon = GFX_
+		cost = 10.00
+		prerequisite = {
+			focus = defense_economic_collapse
+		}
+		x = 41
+		y = 2
+	}
+	focus = {
+		id = factory_conversion
+		icon = GFX_
+		cost = 10.00
+		prerequisite = {
+			focus = Support_for_South_Korea
+		}
+		prerequisite = {
+			focus = defense_economic_collapse
+		}
+		x = 39
+		y = 2
+	}
+	focus = {
+		id = Securing_factory_sites
+		icon = GFX_
+		cost = 10.00
+		prerequisite = {
+			focus = factory_conversion
+			focus = special_period
+		}
+		x = 39
+		y = 3
+	}
+	focus = {
+		id = metropolitan_concentration_industry
+		icon = GFX_
+		cost = 10.00
+		prerequisite = {
+			focus = EROA_Aid_Fund
+		}
+		x = 33
+		y = 2
+	}
+}

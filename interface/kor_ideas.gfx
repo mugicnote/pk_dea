@@ -41,5 +41,21 @@ spriteTypes = {
 		name = "GFX_idea_KING_WANT"
 		texturefile = "gfx/interface/ideas/advisor_yi_kang.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_fkr_company_kiamotors"
+		texturefile = "gfx/interface/ideas/fkr_company_kiamotors.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_SSANGYONG"
+		texturefile = "gfx/interface/ideas/idea_fkr_company_ssanyong.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_Hyundai"
+		texturefile = "gfx/interface/ideas/idea_fkr_company_hyundai.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_Daewoo_Heavy_Industries"
+		texturefile = "gfx/interface/ideas/idea_fkr_company_daewoo.dds"
+	}
 
 }

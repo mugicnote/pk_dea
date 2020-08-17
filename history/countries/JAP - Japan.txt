@@ -8,52 +8,7 @@ set_war_support = 0.8
 set_research_slots = 4
 set_fuel_ratio = 1.0
 add_ideas = {
-	JAP_danger_civil_war
-	JAP_great_war_loser
-	JAP_royal_formalization
-}
-
-609 = {
-	start_resistance = yes
-	set_compliance = 5
-	set_resistance = 5
-	set_garrison_strength = 1.0
-}
-
-
-745 = {
-	start_resistance = yes
-	set_compliance = 5
-	set_resistance = 5
-	set_garrison_strength = 1.0
-}
-
-524 = {
-	start_resistance = yes
-	set_compliance = 5
-	set_resistance = 5
-	set_garrison_strength = 1.0
-}
-
-647 = {
-	start_resistance = yes
-	set_compliance = 20
-	set_resistance = 0
-	set_garrison_strength = 1.0
-}
-
-684 = {
-	start_resistance = yes
-	set_compliance = 20
-	set_resistance = 0
-	set_garrison_strength = 1.0
-}
-
-633 = {
-	start_resistance = yes
-	set_compliance = 20
-	set_resistance = 0
-	set_garrison_strength = 1.0
+constitution_of_japanese
 }
 
 set_technology = {
@@ -174,41 +129,7 @@ create_import = {
 		}
 		remove_ideas = MTG_naval_treaty_adherent
 	}
-	complete_national_focus = JAP_purge_the_kodoha_faction
-	complete_national_focus = JAP_army_expansion_law
-	complete_national_focus = JAP_guide_the_zaibatsus
-	complete_national_focus = JAP_new_naval_estimates
-	complete_national_focus = JAP_army_expansion
-	complete_national_focus = JAP_liaison_conference
-	complete_national_focus = JAP_greater_east_asian_co_prosperity_sphere
-	unlock_national_focus = JAP_intervene_in_china
-	complete_national_focus = JAP_fighter_modernization
-	complete_national_focus = JAP_carrier_warfare_experiments
-	complete_national_focus = JAP_supremacy_of_technology
-	complete_national_focus = JAP_national_mobilization_law
-	complete_national_focus = JAP_national_research_policy
-	complete_national_focus = JAP_nationalize_war_industry
-	complete_national_focus = JAP_cruiser_modernization
-	complete_national_focus = JAP_long_lance_torpedoes
-	complete_national_focus = JAP_bicycle_battalions
-	complete_national_focus = JAP_small_arms_modernization
 
-	declare_war_on = {
-		target = CHI
-		type = puppet_wargoal_focus
-	}
-	#declare_war_on = {
-	#	target = GXC
-	#	type = puppet_focus
-	#}
-	#declare_war_on = {
-	#	target = YUN
-	#	type = puppet_focus
-	#}
-	#declare_war_on = {
-	#	target = PRC
-	#	type = annex_everything
-	#}
 	oob = "JAP_1939"
 	set_technology = {
 
@@ -285,29 +206,14 @@ create_import = {
 
 set_convoys = 400
 
-if = {
-	limit = {
-		has_dlc = "Together for Victory"
-		not = { has_dlc = "Waking the Tiger" }
-	}
-	set_autonomy = {
-		target = MEN
-		autonomous_state = autonomy_integrated_puppet
-	}
-	set_autonomy = {
-		target = MAN
-		autonomous_state = autonomy_integrated_puppet
-	}
-}
-
 set_politics = {
-	ruling_party = fascism
+	ruling_party = democratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	communism = 8
+communism = 8
 radical_socialism = 2
 social_democracy = 3
 social_liberalism = 10
@@ -320,17 +226,14 @@ fascism = 18
 }
 
 create_country_leader = {
-	name = "Hirohito"
-	desc = "POLITICS_Hirohito_DESC"
-	picture = "Portrait_Japan_Hirohito.dds"
+	name = "와카쓰키 레이지로"
+	desc = "#"
+	picture = "Wakatsuki_Reijiro.dds"
 	expire = "1989.1.1"
-	ideology = fascism_ideology
+	ideology = conservatism
 	traits = {
-		warrior_code
-		emperor_showa
-		imperial_sanction
+		#
 	}
-	id = 700 #Hirohito
 }
 
 create_country_leader = {
@@ -339,16 +242,6 @@ create_country_leader = {
 	picture = "GFX_Portrait_kyuichi_tokuda"
 	expire = "1989.1.1"
 	ideology = marxism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Tetsu Katayama"
-	desc = "POLITICS_Hirohito_DESC"
-	picture = "GFX_Portrait_tetsu_katayama"
-	expire = "1989.1.1"
-	ideology = liberalism
 	traits = {
 	}
 }

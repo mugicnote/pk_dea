@@ -94,27 +94,6 @@
 		x = 7
 		y = 3
 		completion_reward = {
-			hidden_effect = {
-				every_owned_state = {
-					limit = {
-						check_variable = { var = KOR_garrison_control value = 0 compare = equals }
-						OR = {
-							state = 797
-							state = 798
-							state = 799
-							state = 527
-							state = 525
-							state = 800
-							state = 801
-							state = 802
-							state = 803
-							state = 804
-						}
-					}
-					add_to_variable = { var = KOR_garrison_control value = 1 }
-					SPA_garrison_control_cost_calculation = yes
-				}
-			}
 			set_politics = {
 				ruling_party = social_democracy
 				elections_allowed = yes
@@ -617,8 +596,8 @@
 		prerequisite = {
 
 		}
-		x = 86
-		y = 0
+		x = 105
+		y = 6
 	 }
 
 	  focus = {
@@ -628,10 +607,11 @@
 		prerequisite = {
 			focus = great_depression_aftermath
 		}
+		relative_position_id = great_depression_aftermath
 		completion_reward = {
 		custom_effect_tooltip = snip_back_deal_tt
 		}
-		x = 84
+		x = -2
 		y = 1
 	 }
 
@@ -642,6 +622,7 @@
 		prerequisite = {
 			focus = poverty_problem
 		}
+		relative_position_id = poverty_problem
 		completion_reward = {
 			add_equipment_to_stockpile = {
     			type = support_equipment
@@ -650,8 +631,8 @@
 			}
 			add_ideas = { Korean_Red_Cross }
 		}
-		x = 88
-		y = 2
+		x = 0
+		y = 1
 	 }
 
 	 focus = {
@@ -661,11 +642,12 @@
 		prerequisite = {
 			focus = snip_back_deal
 		}
+		relative_position_id = snip_back_deal
 		completion_reward = {
 		country_event = { id = KOR.31 }
 		}
-		x = 84
-		y = 2
+		x = 0
+		y = 1
 	 }
 
 	 focus = {
@@ -675,11 +657,12 @@
 		prerequisite = {
 			focus = war_against_crime_start
 		}
+		relative_position_id = war_against_crime_start
 		completion_reward = {
 		country_event = { id = KOR.32 }
 		}
-		x = 83
-		y = 3
+		x = -1
+		y = 1
 	 }
 
 	 focus = {
@@ -689,8 +672,9 @@
 		prerequisite = {
 			focus = war_against_crime_start
 		}
-		x = 85
-		y = 3
+		relative_position_id = war_against_crime_start
+		x = 1
+		y = 1
 	 }
 
 	 focus = {
@@ -700,8 +684,9 @@
 		prerequisite = {
 			focus = Urgent_Search_Launch
 		}
-		x = 85
-		y = 4
+		relative_position_id = Urgent_Search_Launch
+		x = 0
+		y = 1
 	 }
 
 	 focus = {
@@ -711,8 +696,9 @@
 		prerequisite = {
 			focus = organization_Korean_Red_Cross
 		}
-		x = 88
-		y = 3
+		relative_position_id = organization_Korean_Red_Cross
+		x = 0
+		y = 1
 	 }
 
 	 focus = {
@@ -722,7 +708,8 @@
 		prerequisite = {
 			focus = great_depression_aftermath
 		}
-		x = 88
+		relative_position_id = great_depression_aftermath
+		x = 2
 		y = 1
 	 }
 
@@ -733,7 +720,8 @@
 		prerequisite = {
 			focus = great_depression_aftermath
 		}
-		x = 90
+		relative_position_id = great_depression_aftermath
+		x = 4
 		y = 1
 		completion_reward = {
 		add_tech_bonus = {
@@ -755,6 +743,7 @@
 		prerequisite = {
 			focus = economic_development_approval
 		}
+		relative_position_id = poverty_problem
 		completion_reward = {
 		800 = {
 		add_extra_state_shared_building_slots = 2
@@ -763,8 +752,8 @@
 		add_extra_state_shared_building_slots = 2
 			}
 		}
-		x = 90
-		y = 2
+		x = 2
+		y = 1
 	 }
 
 	 focus = {
@@ -774,6 +763,7 @@
 		prerequisite = {
 			focus = rural_development
 		}
+		relative_position_id = rural_development
 		completion_reward = {
 		527 = {
 		add_extra_state_shared_building_slots = 2
@@ -782,8 +772,8 @@
 		add_extra_state_shared_building_slots = 2
 			}
 		}
-		x = 90
-		y = 3
+		x = 0
+		y = 1
 	 }
 
 	 focus = {
@@ -793,7 +783,8 @@
 		prerequisite = {
 			focus = great_depression_aftermath
 		}
-		x = 86
+		relative_position_id = great_depression_aftermath
+		x = 0
 		y = 1
 	 }
 
@@ -804,8 +795,9 @@
 		prerequisite = {
 			focus = night_curfew
 		}
-		x = 81
-		y = 4
+		relative_position_id = night_curfew
+		x = -2
+		y = 1
      }
 
 	 focus = {
@@ -817,11 +809,12 @@
 			focus = poverty_problem
 			focus = foreign_trade
 		}
+		relative_position_id = foreign_trade
 		completion_reward = {
 		custom_effect_tooltip = Information_Reorganization_tt
 		}
-		x = 86
-		y = 2
+		x = 0
+		y = 1
 
      }
 
@@ -833,8 +826,9 @@
 			focus = rural_development2
 			focus = health_insurance_expansion
 		}
-		x = 89
-		y = 4
+		relative_position_id = health_insurance_expansion
+		x = 1
+		y = 1
      }
 
 	 focus = {
@@ -844,8 +838,9 @@
 		prerequisite = {
 			focus = Urgent_Search_Launch
 		}
-		x = 87
-		y = 4
+		relative_position_id = Urgent_Search_Launch
+		x = 2
+		y = 1
      }
 
 	 focus = {
@@ -855,8 +850,9 @@
 		prerequisite = {
 			focus = economic_development_approval
 		}
-		x = 92
-		y = 2
+		relative_position_id = economic_development_approval
+		x = 2
+		y = 1
 		completion_reward = {
 		801 = {
 			if = {
@@ -917,8 +913,9 @@
 		prerequisite = {
 			focus = Gyeongbu_Expressway_1
 		}
-		x = 92
-		y = 3
+		relative_position_id = Gyeongbu_Expressway_1
+		x = 0
+		y = 1
      }
 
 	 focus = {
@@ -930,8 +927,9 @@
 			focus = passport_check
 			focus = forfeiture_back_money
 		}
-		x = 84
-		y = 5
+		relative_position_id = summary_judgment
+		x = 1
+		y = 1
      }
 
 	 focus = {
@@ -941,8 +939,9 @@
 		prerequisite = {
 			focus = night_curfew
 		}
-		x = 83
-		y = 4
+		relative_position_id = night_curfew
+		x = 0
+		y = 1
      }
 
 	 focus = {
@@ -952,7 +951,8 @@
 		prerequisite = {
 			focus = great_depression_aftermath
 		}
-		x = 81
+		relative_position_id = great_depression_aftermath
+		x = -5
 		y = 1
 		completion_reward = {
 			add_tech_bonus = {
@@ -972,8 +972,9 @@
 			focus = Seoul_cotton_mill
 			focus = north_munitions_factory
 		}
-		x = 81
-		y = 3
+		relative_position_id = Seoul_cotton_mill
+		x = 1
+		y = 1
 		completion_reward = {
 			525 = {
 				if = {
@@ -994,8 +995,9 @@
 		prerequisite = {
 			focus = facility_development
 		}
-		x = 80
-		y = 2
+		relative_position_id = facility_development
+		x = -1
+		y = 1
 		completion_reward = {
 			525 = {
 				if = {
@@ -1016,8 +1018,9 @@
 		prerequisite = {
 			focus = facility_development
 		}
-		x = 82
-		y = 2
+		relative_position_id = facility_development
+		x = 1
+		y = 1
 		completion_reward = {
 			797 = {
 				if = {
@@ -1049,8 +1052,9 @@
 			focus = rural_development2
 			focus = Gyeongbu_Expressway_2
 		}
-		x = 91
-		y = 4
+		relative_position_id = Gyeongbu_Expressway_2
+		x = -1
+		y = 1
 		completion_reward = {
 			add_timed_idea = { idea = KOR_matignon_agreements days = 365 }
      	}
@@ -1065,8 +1069,9 @@
 		prerequisite = {
 			focus = compulsory_primary_education
 		}
-		x = 90
-		y = 5
+		relative_position_id = land_filled_beauty
+		x = -1
+		y = 1
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = KOR_matignon_agreements
@@ -1080,6 +1085,35 @@
 		cost = 10.00
 		x = 105
 		y = 0
+		completion_reward = {	
+			army_experience = 50
+			525 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			798 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 2
+				category = land_doctrine
+			}		
+		}
 	}
 	focus = {
 		id = Republic_of_Korea_Army
@@ -1088,7 +1122,14 @@
 		prerequisite = {
 			focus = Republic_of_Korea_Armed_Forces
 		}
-		x = 100
+		completion_reward = {
+			army_experience = 50
+			add_war_support = 0.1
+			custom_effect_tooltip = available_chief_of_army
+			show_ideas_tooltip = Yu_Dong_yeal
+		}
+		relative_position_id = Republic_of_Korea_Armed_Forces
+		x = -5
 		y = 1
 	}
 	focus = {
@@ -1098,7 +1139,8 @@
 		prerequisite = {
 			focus = Republic_of_Korea_Armed_Forces
 		}
-		x = 107
+		relative_position_id = Republic_of_Korea_Armed_Forces
+		x = 2
 		y = 1
 	}
 	focus = {
@@ -1108,7 +1150,8 @@
 		prerequisite = {
 			focus = Republic_of_Korea_Armed_Forces
 		}
-		x = 113
+		relative_position_id = Republic_of_Korea_Armed_Forces
+		x = 8
 		y = 1
 	}
 	focus = {
@@ -1118,8 +1161,9 @@
 		prerequisite = {
 			focus = Republic_of_Korea_Navy
 		}
-		x = 110
-		y = 2
+		relative_position_id = Republic_of_Korea_Navy
+		x = -3
+		y = 1
 	}
 	focus = {
 		id = Ministry_of_National_Defense
@@ -1128,7 +1172,11 @@
 		prerequisite = {
 			focus = Republic_of_Korea_Armed_Forces
 		}
-		x = 104
+		completion_reward = {
+			add_ideas = KOR_war_department
+		}
+		relative_position_id = Republic_of_Korea_Armed_Forces
+		x = -1
 		y = 1
 	}
 	focus = {
@@ -1138,8 +1186,9 @@
 		prerequisite = {
 			focus = Ministry_of_National_Defense
 		}
-		x = 104
-		y = 2
+		relative_position_id = Ministry_of_National_Defense
+		x = 0
+		y = 1
 	}
 	focus = {
 		id = institute_of_doctr
@@ -1148,8 +1197,9 @@
 		prerequisite = {
 			focus = Republic_of_Korea_Army
 		}
-		x = 100
-		y = 2
+		relative_position_id = Republic_of_Korea_Army
+		x = 0
+		y = 1
 	}
 	focus = {
 		id = Firepower_Centered_training
@@ -1161,8 +1211,9 @@
 		mutually_exclusive = {
 			focus = Replacing_doctrines_before_manoeuvring
 		}
-		x = 98
-		y = 2
+		relative_position_id = Republic_of_Korea_Army
+		x = -2
+		y = 1
 	}
 	focus = {
 		id = Korean_style_conscription
@@ -1171,8 +1222,9 @@
 		prerequisite = {
 			focus = Republic_of_Korea_Army
 		}
-		x = 102
-		y = 2
+		relative_position_id = Republic_of_Korea_Army
+		x = 2
+		y = 1
 	}
 	focus = {
 		id = Reintroduction_of_General
@@ -1184,8 +1236,9 @@
 		prerequisite = {
 			focus = protection_national_merit
 		}
-		x = 104
-		y = 3
+		relative_position_id = protection_national_merit
+		x = 0
+		y = 1
 	}
 	focus = {
 		id = modification_of_treaty
@@ -1198,8 +1251,9 @@
 			focus = Firepower_Centered_training
 			focus = Replacing_doctrines_before_manoeuvring
 		}
-		x = 99
-		y = 3
+		relative_position_id = Firepower_Centered_training
+		x = 1
+		y = 1
 	}
 	focus = {
 		id = female_acceptance
@@ -1211,8 +1265,9 @@
 		prerequisite = {
 			focus = protection_national_merit
 		}
-		x = 102
-		y = 3
+		relative_position_id = Korean_style_conscription
+		x = 0
+		y = 1
 	}
 	focus = {
 		id = munitions_companies
@@ -1414,7 +1469,14 @@
 		}
 		x = 27
 		y = 4
-
+		completion_reward = {	
+			USA = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = opnion_ilminism
+				}
+			}
+		}
 	}
 	focus = {
 		id = new_education_law
@@ -2010,13 +2072,27 @@
 	}
 	focus = {
 		id = threats_from_opposition_parties
-		icon = GFX_focus_generic_strike_at_democracy2
+		icon = GFX_goal_ideology_radical_socialist
 		cost = 10.00
 		x = 14
 		y = 17
 		completion_reward = {
 			custom_effect_tooltip = SPA_secure_the_northern_garrisons_tt
-			hidden_effect = {
+				every_owned_state = {
+					limit = {
+						check_variable = { var = KOR_garrison_control value = 0 compare = equals }
+						OR = {
+							state = 797
+							state = 798
+							state = 799
+						}
+					}
+					set_state_flag = KOR_northern_garrisons_state_flag
+					add_to_variable = { var = KOR_garrison_control value = 4 }
+					KOR = { add_to_variable = { var = ko_civil_war_divisions_counter_var value = 4 } }
+					KOR = { subtract_from_variable = { var = kor_civil_war_divisions_counter_var value = 4 } }
+					SPA_garrison_control_cost_calculation = yes
+				}
 				every_owned_state = {
 					limit = {
 						check_variable = { var = KOR_garrison_control value = 1 compare = equals }
@@ -2062,7 +2138,6 @@
 					KOR = { subtract_from_variable = { var = kor_civil_war_divisions_counter_var value = 1 } }
 					SPA_garrison_control_cost_calculation = yes
 				}
-			}
 		}
 	}
 	focus = {
@@ -2071,6 +2146,11 @@
 		cost = 5.00
 		prerequisite = {
 			focus = threats_from_opposition_parties
+		}
+		completion_reward = {
+			army_experience = 10
+			add_to_variable = { var = ko_civil_war_divisions_counter_var value = 5 }
+			custom_effect_tooltip = SPA_the_army_of_africa_tt
 		}
 		x = 14
 		y = 18

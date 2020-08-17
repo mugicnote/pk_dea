@@ -1,26 +1,24 @@
-state = {
-	id = 715
-	name = "STATE_715"
-
-	provinces = {
-		1508 3978 4514 6988 10429 10499 11903 12469 12478 
-	}
-
-	manpower = 1724174
-	buildings_max_level_factor = 1.000
+state={
+	id=715
+	name="STATE_715"
+	manpower = 3643373
+	
 	state_category = town
 
-	history = {
+	history={
 		owner = PRC
-		add_core_of = MAN
 		add_core_of = CHI
+		add_core_of = MAN
 		add_core_of = PRC
-		
 		buildings = {
 			infrastructure = 3
-
+			arms_factory = 1
+			industrial_complex = 1
 		}
 
 	}
-	buildings_max_level_factor = 1.000
+
+	provinces={
+		916 930 1499 1508 1558 1627 1638 3877 3978 4561 4633 4642 6893 7812 9831 10429 11836 11903 12337 12469 12478 
+	}
 }

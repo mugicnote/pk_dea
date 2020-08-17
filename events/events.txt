@@ -1074,13 +1074,6 @@ country_event = {
 			}
 			set_global_flag = { flag = KOR_civil_war_startup value = 1 days = 3 } # Make AI avoid attacking for a few days
 		}
-
-#  #  ##  ### ###  ##  #  #  ##  #   ###  ## ###     ### ### ### ###  ##  ### 
-## # #  #  #   #  #  # ## # #  # #    #  #    #      #   #   #   #   #  #  #  
-# ## ####  #   #  #  # # ## #### #    #   #   #      ##  ##  ##  ##  #     #  
-#  # #  #  #   #  #  # #  # #  # #    #    #  #      #   #   #   #   #  #  #  
-#  # #  #  #  ###  ##  #  # #  # ### ### ##   #      ### #   #   ###  ##   #  
-
 		if = {
 			limit = {
 				has_completed_focus = Yeo_Un_hyung_Elected
@@ -1121,7 +1114,7 @@ country_event = {
 				if = {
 					limit = {
 						525 = {
-							check_variable = { var = KOR_garrison_control value = 0 compare = equals }
+							check_variable = { var = KOR_garrison_control value = 1 compare = equals }
 						}
 					}
 					FKR = {
@@ -1140,7 +1133,7 @@ country_event = {
 				else_if = {
 					limit = {
 						525 = {
-							check_variable = { var = KOR_garrison_control value = 1 compare = equals }
+							check_variable = { var = KOR_garrison_control value = 2 compare = equals }
 						}
 					}
 					FKR = {
@@ -1165,7 +1158,7 @@ country_event = {
 				else_if = {
 					limit = {
 						525 = {
-							check_variable = { var = KOR_garrison_control value = 2 compare = equals }
+							check_variable = { var = KOR_garrison_control value = 3 compare = equals }
 						}
 					}
 					FKR = {
@@ -1191,15 +1184,15 @@ country_event = {
 				if = {
 					limit = {
 						525 = {
-							check_variable = { var = KOR_garrison_control value = 3 compare = equals }
+							check_variable = { var = KOR_garrison_control value = 4 compare = equals }
 						}
 						any_owned_state = {
-							check_variable = { var = KOR_garrison_control value = 0 compare = equals }
+							check_variable = { var = KOR_garrison_control value = 1 compare = equals }
 						}
 					}
 					random_owned_state = {
 						limit = {
-							check_variable = { var = KOR_garrison_control value = 0 compare = equals }
+							check_variable = { var = KOR_garrison_control value = 1 compare = equals }
 						}
 						FKR = {
 							transfer_state = PREV
@@ -1217,15 +1210,15 @@ country_event = {
 				else_if = {
 					limit = {
 						525 = {
-							check_variable = { var = KOR_garrison_control value = 3 compare = equals }
+							check_variable = { var = KOR_garrison_control value = 4 compare = equals }
 						}
 						any_owned_state = {
-							check_variable = { var = KOR_garrison_control value = 1 compare = equals }
+							check_variable = { var = KOR_garrison_control value = 2 compare = equals }
 						}
 					}
 					random_owned_state = {
 						limit = {
-							check_variable = { var = KOR_garrison_control value = 1 compare = equals }
+							check_variable = { var = KOR_garrison_control value = 2 compare = equals }
 						}
 						FKR = {
 							transfer_state = PREV
@@ -1248,15 +1241,15 @@ country_event = {
 				else_if = {
 					limit = {
 						525 = {
-							check_variable = { var = KOR_garrison_control value = 3 compare = equals }
+							check_variable = { var = KOR_garrison_control value = 4 compare = equals }
 						}
 						any_owned_state = {
-							check_variable = { var = KOR_garrison_control value = 2 compare = equals }
+							check_variable = { var = KOR_garrison_control value = 3 compare = equals }
 						}
 					}
 					random_owned_state = {
 						limit = {
-							check_variable = { var = KOR_garrison_control value = 2 compare = equals }
+							check_variable = { var = KOR_garrison_control value = 3 compare = equals }
 						}
 						FKR = {
 							transfer_state = PREV
@@ -1291,9 +1284,9 @@ country_event = {
 						keep_unit_leaders = {
 						    
 						}
-                        keep_unit_leaders_trigger = {
-							has_trait = trait_KOR_communism
-						}
+                        #keep_unit_leaders_trigger = {
+						#	has_trait = trait_KOR_communism
+						#}
 					}
 				}
 				if = {
@@ -1311,9 +1304,9 @@ country_event = {
 						keep_unit_leaders = {
 						    
 						}
-                        keep_unit_leaders_trigger = {
-							has_trait = trait_KOR_communism
-						}
+                        #keep_unit_leaders_trigger = {
+						#	has_trait = trait_KOR_communism
+						#}
 					}
 				}
 				if = {
@@ -1330,9 +1323,9 @@ country_event = {
 						keep_unit_leaders = {
 						    
 						}
-                        keep_unit_leaders_trigger = {
-							has_trait = trait_KOR_communism
-						}
+                        #keep_unit_leaders_trigger = {
+						#	has_trait = trait_KOR_communism
+						#}
 					}
 				}
 				# If player has completed this focus, give North Africa and spawn units there (this effect is run first so the tag has any territory whatsoever - it's assumed all players take this focus)
@@ -1371,23 +1364,26 @@ country_event = {
 				# Republicans remove their army
 
 				# Switch leaders who do not have nationalist sympathies to the Republicans
-				every_unit_leader = {
-					limit = {
-						NOT = { has_trait = trait_KOR_communism }
-					}
-					set_nationality = FKR
-				}
+				#every_unit_leader = {
+				#	limit = {
+				#		NOT = { has_trait = trait_KOR_communism }
+				#	}
+				#	set_nationality = KOR
+				#}
 				# Remove unnecessary traits from Nationalist commanders (no longer relevant to see for the player, as the SCW has started)
-				every_unit_leader = {
-					limit = {
-						has_trait = trait_KOR_communism
-					}
-					remove_unit_leader_trait = trait_KOR_communism
-				}
+				#every_unit_leader = {
+				#	limit = {
+				#		has_trait = trait_KOR_communism
+				#	}
+				#	remove_unit_leader_trait = trait_KOR_communism
+				#}
 				# Add various loyalist traits that now become relevant - indicating loyalties to the different subfactions
 
 				# Add 3 Republican garrisons to every state where the Nationalists have NONE control
-				every_owned_state = {
+					every_owned_state = {
+					limit = {
+						check_variable = { var = KOR_garrison_control value = 1 compare = equals }
+					}
 					# Transfer states and set flag to prepare for post-Civil War de-coring
 					FKR = {
 						transfer_state = PREV
@@ -1411,7 +1407,7 @@ country_event = {
 				# Add 3 Nationalist garrisons to every state where the Nationalists have TOTAL control
 				every_owned_state = {
 					limit = {
-						check_variable = { var = KOR_garrison_control value = 3 compare = equals }
+						check_variable = { var = KOR_garrison_control value = 4 compare = equals }
 					}
 					create_unit = {
 						division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.1" 
@@ -1431,7 +1427,7 @@ country_event = {
 				# 2 Republican and 1 Nationalist garrisons spawned on all states with WEAK Nationalist control (except for Northern Garrison states)
 				every_owned_state = {
 					limit = {
-						check_variable = { var = KOR_garrison_control value = 1 compare = equals }
+						check_variable = { var = KOR_garrison_control value = 2 compare = equals }
 						NOT = { has_state_flag = KOR_northern_garrisons_state_flag }
 					}
 					# Transfer states and set flag to prepare for post-Civil War de-coring
@@ -1455,7 +1451,7 @@ country_event = {
 				# 2 Nationalist and 1 Republican garrisons spawned on all states with STRONG Nationalist control
 				every_owned_state = {
 					limit = {
-						check_variable = { var = KOR_garrison_control value = 2 compare = equals }
+						check_variable = { var = KOR_garrison_control value = 3 compare = equals }
 						NOT = { has_state_flag = KOR_northern_garrisons_state_flag }
 					}
 					# Transfer states and set flag to prepare for post-Civil War de-coring
@@ -1497,7 +1493,7 @@ country_event = {
 					}
 					random_state = {
 						limit = {
-							check_variable = { var = KOR_garrison_control value = 2 compare = greater_than_or_equals }
+							check_variable = { var = KOR_garrison_control value = 3 compare = greater_than_or_equals }
 						}
 						create_unit = {
 							division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.3" 
@@ -1507,7 +1503,7 @@ country_event = {
 					}
 					random_state = {
 						limit = {
-							check_variable = { var = KOR_garrison_control value = 2 compare = greater_than_or_equals }
+							check_variable = { var = KOR_garrison_control value = 3 compare = greater_than_or_equals }
 						}
 						create_unit = {
 							division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.3" 
@@ -1517,7 +1513,7 @@ country_event = {
 					}
 					random_state = {
 						limit = {
-							check_variable = { var = KOR_garrison_control value = 2 compare = greater_than_or_equals }
+							check_variable = { var = KOR_garrison_control value = 3 compare = greater_than_or_equals }
 						}
 						create_unit = {
 							division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.3" 
@@ -1534,7 +1530,7 @@ country_event = {
 						}
 						random_state = {
 							limit = {
-								check_variable = { var = KOR_garrison_control value = 2 compare = greater_than_or_equals }
+								check_variable = { var = KOR_garrison_control value = 3 compare = greater_than_or_equals }
 							}
 							create_unit = {
 								division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.3" 
@@ -1544,7 +1540,7 @@ country_event = {
 						}
 						random_state = {
 							limit = {
-								check_variable = { var = KOR_garrison_control value = 2 compare = greater_than_or_equals }
+								check_variable = { var = KOR_garrison_control value = 3 compare = greater_than_or_equals }
 							}
 							create_unit = {
 								division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.3" 
@@ -1555,7 +1551,7 @@ country_event = {
 					}
 					random_state = {
 						limit = {
-							check_variable = { var = KOR_garrison_control value = 1 compare = less_than_or_equals }
+							check_variable = { var = KOR_garrison_control value = 2 compare = less_than_or_equals }
 						}
 						create_unit = {
 							division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.1" 
@@ -1566,7 +1562,7 @@ country_event = {
 					}
 					random_state = {
 						limit = {
-							check_variable = { var = KOR_garrison_control value = 1 compare = less_than_or_equals }
+							check_variable = { var = KOR_garrison_control value = 2 compare = less_than_or_equals }
 						}
 						create_unit = {
 							division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.1" 
@@ -1577,7 +1573,7 @@ country_event = {
 					}
 					random_state = {
 						limit = {
-							check_variable = { var = KOR_garrison_control value = 1 compare = less_than_or_equals }
+							check_variable = { var = KOR_garrison_control value = 2 compare = less_than_or_equals }
 						}
 						create_unit = {
 							division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.1" 
@@ -1588,7 +1584,7 @@ country_event = {
 					}
 					random_state = {
 						limit = {
-							check_variable = { var = KOR_garrison_control value = 1 compare = less_than_or_equals }
+							check_variable = { var = KOR_garrison_control value = 2 compare = less_than_or_equals }
 						}
 						create_unit = {
 							division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.1" 
@@ -1599,7 +1595,7 @@ country_event = {
 					}
 					random_state = {
 						limit = {
-							check_variable = { var = KOR_garrison_control value = 1 compare = less_than_or_equals }
+							check_variable = { var = KOR_garrison_control value = 2 compare = less_than_or_equals }
 						}
 						create_unit = {
 							division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.1" 
@@ -1610,7 +1606,7 @@ country_event = {
 					}
 					random_state = {
 						limit = {
-							check_variable = { var = KOR_garrison_control value = 1 compare = less_than_or_equals }
+							check_variable = { var = KOR_garrison_control value = 2 compare = less_than_or_equals }
 						}
 						create_unit = {
 							division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.1" 
@@ -1628,7 +1624,7 @@ country_event = {
 						}
 						random_state = {
 							limit = {
-								check_variable = { var = KOR_garrison_control value = 1 compare = less_than_or_equals }
+								check_variable = { var = KOR_garrison_control value = 2 compare = less_than_or_equals }
 							}
 							create_unit = {
 								division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.1" 
@@ -1639,7 +1635,7 @@ country_event = {
 						}
 						random_state = {
 							limit = {
-								check_variable = { var = KOR_garrison_control value = 1 compare = less_than_or_equals }
+								check_variable = { var = KOR_garrison_control value = 2 compare = less_than_or_equals }
 							}
 							create_unit = {
 								division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.1" 
@@ -1650,7 +1646,7 @@ country_event = {
 						}
 						random_state = {
 							limit = {
-								check_variable = { var = KOR_garrison_control value = 1 compare = less_than_or_equals }
+								check_variable = { var = KOR_garrison_control value = 2 compare = less_than_or_equals }
 							}
 							create_unit = {
 								division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.1" 
@@ -2354,7 +2350,7 @@ country_event = {
 				#	ROOT = { remove_unit_leader = PREV }
 				#}
 				add_timed_idea = { idea = KOR_death_before_surrender days = 900 }
-				set_global_flag = spanish_civil_war # Start civil war - used in many triggers
+				set_global_flag = KOR_civil_war # Start civil war - used in many triggers
 			}
 		}
 		hidden_effect = {

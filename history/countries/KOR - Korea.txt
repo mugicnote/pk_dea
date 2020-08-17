@@ -126,6 +126,30 @@ set_popularities = {
   fascism = 22
 }
 
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	every_owned_state = {
+					limit = {
+						check_variable = { var = KOR_garrison_control value = 0 compare = equals }
+						OR = {
+							state = 797
+							state = 798
+							state = 799
+							state = 527
+							state = 525
+							state = 800
+							state = 801
+							state = 802
+							state = 803
+							state = 804
+						}
+					}
+					add_to_variable = { var = KOR_garrison_control value = 1 }
+					SPA_garrison_control_cost_calculation = yes
+				}
+
 create_dynamic_country = {
 	  original_tag = KOR
 	  set_country_flag = FKR_korea_flag
@@ -136,6 +160,7 @@ create_dynamic_country = {
 		set_research_slots = 3
 	  reserve_dynamic_country = yes
 	}
+}
 
 
 #정당별_리더

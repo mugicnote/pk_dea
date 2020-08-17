@@ -1,0 +1,27 @@
+state = {
+	id = 809
+	name = "STATE_809" #울릉도
+	manpower = 9000
+
+	state_category = small_island
+	
+	history = {
+		owner = KOR
+		add_core_of = KOR
+		
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			13251 5 #울릉
+		}
+	}
+
+	resources = {
+		
+	}
+
+	provinces = {
+		13251
+	}
+}

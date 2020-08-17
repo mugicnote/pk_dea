@@ -19,6 +19,7 @@ KOR_the_inevitable_civil_war = {
 
 	allowed = {
 		original_tag = KOR
+		has_completed_focus = Yeo_Un_hyung_Elected
 	}
 
 	custom_icon = {

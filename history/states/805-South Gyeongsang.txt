@@ -1,0 +1,36 @@
+state = {
+	id = 805
+	name = "STATE_805" #경상남도
+	manpower = 2215000
+
+	state_category = city
+	
+	history = {
+		owner = KOR
+		add_core_of = KOR
+		
+		buildings = {
+			industrial_complex = 2
+			arms_factory = 1
+			dockyard = 1
+			infrastructure = 5
+			4056 = {
+				naval_base = 3
+			}
+		}
+		victory_points = {
+			4056 40 #부산(후잔)
+		}
+		victory_points = {
+			13249 10 #마산(바산)
+		}
+	}
+
+	resources = {
+		steel = 40
+	}
+
+	provinces = {
+		1054 4056 10085 12060 13249
+	}
+}

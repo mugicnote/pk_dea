@@ -105,6 +105,116 @@ if = {
         autonomous_state = autonomy_wtt_imperial_protectorate
     }
 }
+if = {
+    limit = {
+        has_dlc = "Together for Victory"
+        not = { has_dlc = "Waking the Tiger" }
+    }
+
+    set_autonomy = {
+        target = SZC
+        autonomous_state = autonomy_integrated_puppet
+    }
+}
+if = {
+    limit = { 
+        not = {
+            has_dlc = "Waking the Tiger"
+            has_dlc = "Together for Victory"
+        }
+    }
+
+    set_autonomy = {
+        target = SZC
+        autonomous_state = autonomy_puppet
+    }
+}
+if = {
+    limit = { 
+        has_dlc = "Waking the Tiger"
+    }
+
+    set_autonomy = {
+        target = SZC
+        autonomous_state = autonomy_wtt_imperial_protectorate
+    }
+}
+if = {
+    limit = {
+        has_dlc = "Together for Victory"
+        not = { has_dlc = "Waking the Tiger" }
+    }
+
+    set_autonomy = {
+        target = GJU
+        autonomous_state = autonomy_integrated_puppet
+    }
+}
+if = {
+    limit = { 
+        not = {
+            has_dlc = "Waking the Tiger"
+            has_dlc = "Together for Victory"
+        }
+    }
+
+    set_autonomy = {
+        target = GJU
+        autonomous_state = autonomy_puppet
+    }
+}
+if = {
+    limit = { 
+        has_dlc = "Waking the Tiger"
+    }
+
+    set_autonomy = {
+        target = GJU
+        autonomous_state = autonomy_wtt_imperial_protectorate
+    }
+}
+if = {
+    limit = {
+        has_dlc = "Together for Victory"
+        not = { has_dlc = "Waking the Tiger" }
+    }
+
+    set_autonomy = {
+        target = XIC
+        autonomous_state = autonomy_integrated_puppet
+    }
+}
+if = {
+    limit = { 
+        not = {
+            has_dlc = "Waking the Tiger"
+            has_dlc = "Together for Victory"
+        }
+    }
+
+    set_autonomy = {
+        target = XIC
+        autonomous_state = autonomy_puppet
+    }
+}
+if = {
+    limit = { 
+        has_dlc = "Waking the Tiger"
+    }
+
+    set_autonomy = {
+        target = XIC
+        autonomous_state = autonomy_wtt_imperial_protectorate
+    }
+}
+
+create_faction = 국민정부
+add_to_faction = CHI
+add_to_faction = SZC
+add_to_faction = SND
+add_to_faction = GJU
+add_to_faction = XIC
+
 save_global_event_target_as = WTT_current_china_leader
 
 set_convoys = 40
@@ -253,7 +363,7 @@ create_country_leader = {
 	desc = "POLITICS_CHIANG_KAI-SHEK_DESC"
 	picture = "Chiang_Kai_Shek_kormod.dds"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = authoritarian
 	traits = {
 		generallissimo
 	}

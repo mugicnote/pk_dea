@@ -1,0 +1,32 @@
+state = {
+	id = 807
+	name = "STATE_807" #전라남도
+	manpower = 2417000
+
+	state_category = large_town	
+	
+	history = {
+		owner = KOR
+		add_core_of = KOR
+		
+		buildings = {
+			industrial_complex = 2
+			arms_factory = 1
+			infrastructure = 4
+			10110 = { #목포항
+				naval_base = 2
+			}
+		}
+		victory_points = {
+			10110 10 #광주(코슈)
+		}
+	}
+
+	resources = {
+		
+	}
+
+	provinces = {
+		10110 11948 12085
+	}
+}

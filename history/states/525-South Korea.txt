@@ -8,7 +8,6 @@ state = {
 	history = {
 		owner = KOR
 		add_core_of = KOR
-		add_core_of = FKR
 
 		buildings = {
 			industrial_complex = 2
@@ -21,19 +20,19 @@ state = {
 		}
 
 		victory_points = {
-			7125 50 #서울
+			7125 50 #서울(케이죠)
 		}
 
 		victory_points = {
-			7221 15 #인천
+			7221 15 #인천(진센)
 		}
 
 		victory_points = {
-			12040 10 #개성
+			12040 10 #개성(카이죠)
 		}
 	}
 
 	provinces = {
-		7125 7221 10036 12040 13236 13237
+		7125 7221 10036 12040 13240 13241 13242
 	}
 }

@@ -16,6 +16,9 @@
 				tag = SZC
 				tag = GDC
 				tag = SSK
+				tag = MHB
+				tag = MHX
+				tag = SZY
 			}
 			has_dlc = "Waking the Tiger"
 		}
@@ -112,9 +115,12 @@
 			modifier = {
 				factor = 10
 				OR = {
-					original_tag = GXC
 					original_tag = YUN
 					original_tag = XSM
+					original_tag = SND
+					original_tag = SZC
+					original_tag = MHB
+					original_tag = MHX
 				}
 			}
 		}
@@ -532,12 +538,9 @@
 			factor = 1
 			modifier = {
 				factor = 10
-				OR = {
-					original_tag = SHX
-					original_tag = SIK
+				original_tag = SIK
 				}
 			}
-		}
 
 		available = {
 			OR = {
@@ -582,7 +585,7 @@
 				}
 			}
 		}
-	}
+}
 
 	focus = {
 		id = CHI_land_redistribution
@@ -882,6 +885,13 @@
 
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 10
+				OR = {
+					original_tag = GXC
+					original_tag = GDC
+				}
+			}
 		}
 
 		available = {

@@ -67,7 +67,7 @@ SPD = {
 
 AKR = {
 	original_tag = KOR
-	has_country_flag = KOR_democrat_korea_flag
+	has_country_flag = FKR_korea_flag
 }
 
 FKR = {
