@@ -694,3 +694,40 @@ ideas = {
 			traits = { army_chief_defensive_2 }
 		}
     }
+    head_of_government = {
+        
+        Syngman_Rhee2 = {
+
+            picture = GFX_Portrait_Syngman_Rhee
+
+            visible = {
+				tag = KOR
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea test_Walter_Model"
+			}
+			traits = {
+				head_of_government
+				POSITION_main_opposition_party_leader
+			}
+            cancel_if_invalid = yes
+        }
+
+        Kim_Ku2 = {
+
+            picture = GFX_Portrait_Kim_Koo
+
+            visible = {
+				tag = KOR
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea test_Walter_Model"
+			}
+			traits = {
+				head_of_government
+				POSITION_main_opposition_party_leader
+			}
+            cancel_if_invalid = yes
+        }
+
+    }

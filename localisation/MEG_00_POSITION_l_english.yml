@@ -1,0 +1,47 @@
+﻿l_english:
+
+##Title##
+leader_title_one_none:0 "Leader"
+leader_title_two_none:0 "Leader 2"
+
+leader_title_one_generic:0 "Head of State" # 국가원수
+
+POSITION_GER_Reichsprasident:0 "Reichspräsident"
+POSITION_GER_Reichskanzler:0 "Reichskanzler" # 국가수상
+POSITION_GER_Fuhrer:0 "Führer" # 지도자 
+POSITION_GER_Deputy_Fuhrer:0 "Deputy Führer" # 지도자대리
+POSITION_GER_Parteikanzlei:0 "Parteikanzlei" # 당수부장
+POSITION_GER_Kaiser:0 "Deutscher Kaiser" # 독일 황제
+POSITION_AUS_Kaiser:0 "Präsident" # 대오스트리아 합중국 의장
+
+POSITION_EGY_Nasser:0 "Revolution Leader" # 혁명지도자
+
+POSITION_Chairman:0 "Chairman" # 주석
+POSITION_Chairman_TUC:0 "Chairman of TUC" # 영국 주석
+
+POSITION_President:0 "President" # 대통령
+POSITION_Vice_President:0 "Vice President" # 부통령
+POSITION_Prime_Minister:0 "Prime Minister"
+POSITION_Monarch:0 "Monarch"
+POSITION_King:0 "King" # 국왕
+POSITION_Queen:0 "Queen" # 여왕
+POSITION_Kommisariat:0 "Heilige Liga Hochkommissar" # 여왕
+POSITION_Emperor:0 "Emperor" # 황제
+POSITION_Premier:0 "Premier" # 수상
+POSITION_General_Secretary:0 "General Secretary" # 서기장
+POSITION_Military_Governor:0 "Military Governor" # 군정장관
+POSITION_Civil_Governor:0 "Civil Governor" # 민정장관 
+POSITION_Deputy_Commander:0 "Deputy Commander" # 부사령관
+POSITION_Governor_General:0 "Governor-General" # 총독
+King_of_Defence:0 "King of Defence"
+test_Walter_Model:0 "Walter Model"
+
+POSITION_main_opposition_party_leader:0 "제1 야당 지도자"
+
+Syngman_Rhee2:0 "§Y우남 이승만 박사§!"
+Syngman_Rhee2_name:0 "§Y우남 이승만 박사§!"
+Syngman_Rhee2_small_name:0 "§R우남 이승만 박사가 대통령이 되어야만 해당 효과가 발휘됩니다.§!\n§Y반공주의자§!\n - 일일 공산주의 지지: §R-0.01§!\n - 공산주의 외교의 수용: §R-50§!\n\n §Y"민주주의가 인민의 자유권리와 참정권을 다 허락하되 불량분자들이 민권자유라는 구실을 이용하여 정부를 전복하려는 것을 허락하는 나라는 없습니다, 또한 자유의 권리만 알고 자유의 한계를 모르는 이들은 자유의 권리를 누릴 자격이 없습니다."§!"
+
+Kim_Ku2:0 "§Y백범 김구 선생§!"
+Kim_Ku2_name:0 "§Y백범 김구 선생§!"
+Kim_Ku2_small_name:0 "§R백범 김구 선생이 대통령이 되어야만 해당 효과가 발휘됩니다.§!\n§Y현명한 애국자§!\n - 정치력 획득: §G+ 15%§!\n - 안정도: §G +20.00%§!\n\n §Y나는 우리나라가 세계에서 가장 아름다운 나라가 되기를 원한다. 가장 부강한 나라가 되기를 원하는 것은 아니다. 내가 남의 침략에 가슴이 아팠으니, 내 나라가 남을 침략하는 것을 원치 아니한다. 우리의 부력은 우리의 생활을 풍족히 할 만하고, 우리의 강력은 남의 침략을 막을 만하면 족하다. 오직 한없이 가지고 싶은 것은 높은 문화의 힘이다. 문화의 힘은 우리 자신을 행복되게 하고, 나아가서 남에게 행복을 주겠기 때문이다."

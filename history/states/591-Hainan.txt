@@ -5,8 +5,8 @@ state={
 	state_category = town
 
 	history={
-		owner = GXC
-		add_core_of = GXC
+		owner = GDC
+		add_core_of = GDC
 		add_core_of = CHI
 		add_core_of = PRC
 		
@@ -27,6 +27,6 @@ state={
 	}
 
 	provinces={
-		994 1038 1070 4160 7135 11963 11990 
+		994 1038 1070 4023 4160 7135 10105 11963 11990 
 	}
 }

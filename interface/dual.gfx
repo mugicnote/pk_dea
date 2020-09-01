@@ -1,0 +1,19 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_pol_leader_rank_frame"
+		texturefile = "gfx/interface/pol_leader_rank_frame.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Germany_Walter_Model"
+		texturefile = "gfx/interface/Portrait_Germany_Walter_Model.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Syngman_Rhee"
+		texturefile = "gfx/interface/Portrait_Syngman_Rhee.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Kim_Koo"
+		texturefile = "gfx/interface/Portrait_Kim_Koo.dds"
+	}
+}

@@ -1,4 +1,11 @@
 ﻿
+# MAIN THEME
+music = {
+	name = "maintheme"
+	file = "kbs/Gwanghwamun_love_song.ogg"
+	volume = 0.8
+}
+
 # Anthem
 
 music = {
@@ -21,7 +28,19 @@ music = {
 	volume = 0.8
 }
 
+music = {
+	name = "6.25s_mugic"
+	file = "kbs/6.25s_mugic.ogg"
+	volume = 0.8
+}
+
 # Peace Song
+
+music = {
+	name = "Seoul_Central_Radio_Station_1"
+	file = "kbs/Seoul_Central_Radio_Station_1.ogg"
+	volume = 0.8
+}
 
 music = {
 	name = "national_anthem"
@@ -30,7 +49,55 @@ music = {
 }
 
 music = {
+	name = "KOR_National_anthem"
+	file = "kbs/KOR_National_anthem.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "letter_private"
+	file = "kbs/letter_private.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "around_thirty"
+	file = "kbs/around_thirty.ogg"
+	volume = 1.5
+}
+
+music = {
+	name = "Four_Seasons"
+	file = "kbs/Four_Seasons.ogg"
+	volume = 0.8
+}
+
+music = {
 	name = "beautiful_country"
 	file = "kbs/beautiful_country.ogg"
 	volume = 0.8
+}
+
+music = {
+	name = "Good_night_comrade"
+	file = "kbs/Good_night_comrade.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "anthem_fascism"
+	file = "kbs/anthem_fascism.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "old_love"
+	file = "kbs/old_love.ogg"
+	volume = 1.5
+}
+
+music = {
+	name = "Though_I_Loved_You"
+	file = "kbs/Though_I_Loved_You.ogg"
+	volume = 1.7
 }

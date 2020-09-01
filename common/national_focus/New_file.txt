@@ -454,6 +454,8 @@
     				anti_communist
   				}
 			}
+			clr_country_flag = Syngman_Rhee2
+			set_country_flag = Kim_Ku2
 		set_party_name = { ideology = democratic long_name = Lee_Dem_long name = Lee_Dem }
 		country_event = { id = KOR.2 }
 		}
@@ -483,6 +485,16 @@
 			}
 		country_event = { id = KOR.2 }
 		}
+	}
+	focus = {
+		id = 
+		icon = GFX
+		cost = 10.00
+		prerequisite = {
+			focus = Ahn_Jae_Hong_Elected
+		}
+		x = 37
+		y = 4
 	}
 	focus = {
 		id = Cho_Man_Sik_Elected
@@ -562,7 +574,7 @@
 		y = 0
 
 		completion_reward = {
-			country_event = { id = KOR.10 }
+			country_event = { id = KOR.54 }
 		}
 	}
 
@@ -596,7 +608,7 @@
 		prerequisite = {
 
 		}
-		x = 105
+		x = 150
 		y = 6
 	 }
 
@@ -1083,7 +1095,7 @@
 		id = Republic_of_Korea_Armed_Forces
 		icon = GFX_KoreanArmedForcesFocus
 		cost = 10.00
-		x = 105
+		x = 150
 		y = 0
 		completion_reward = {	
 			army_experience = 50
@@ -1266,7 +1278,7 @@
 			focus = protection_national_merit
 		}
 		relative_position_id = Korean_style_conscription
-		x = 0
+		x = -1
 		y = 1
 	}
 	focus = {
@@ -1274,11 +1286,12 @@
 		icon = GFX_goal_AST_freedom_of_the_press
 		cost = 10.00
 		prerequisite = {
-			focus = Korean_style_conscription
+			focus = Firepower_Centered_training
 			focus = Replacing_doctrines_before_manoeuvring
 		}
-		x = 97
-		y = 3
+		relative_position_id = Firepower_Centered_training
+		x = -1
+		y = 1
 	}
 	focus = {
 		id = deliberate_offensive
@@ -1287,8 +1300,9 @@
 		prerequisite = {
 			focus = modification_of_treaty
 		}
-		x = 97
-		y = 4
+		relative_position_id = modification_of_treaty
+		x = -2
+		y = 1
 	}
 	focus = {
 		id = faster_offensive
@@ -1297,8 +1311,9 @@
 		prerequisite = {
 			focus = deliberate_offensive
 		}
-		x = 97
-		y = 5
+		relative_position_id = deliberate_offensive
+		x = 0
+		y = 1
 	}
 	focus = {
 		id = Special_Forces_Training
@@ -1308,8 +1323,9 @@
 			focus = modification_of_treaty
 			focus = Reintroduction_of_General
 		}
-		x = 103
-		y = 4
+		relative_position_id = Reintroduction_of_General
+		x = -1
+		y = 1
 	}
 	focus = {
 		id = Panzer_Study
@@ -1318,8 +1334,9 @@
 		prerequisite = {
 			focus = gun_production
 		}
-		x = 99
-		y = 5
+		relative_position_id = gun_production
+		x = 0
+		y = 1
 	}
 	focus = {
 		id = Special_Forces_Training2
@@ -1328,8 +1345,9 @@
 		prerequisite = {
 			focus = Special_Forces_Training
 		}
-		x = 103
-		y = 5
+		relative_position_id = Special_Forces_Training
+		x = 0
+		y = 1
 	}
 	focus = {
 		id = gun_production
@@ -1338,8 +1356,9 @@
 		prerequisite = {
 			focus = modification_of_treaty
 		}
-		x = 99
-		y = 4
+		relative_position_id = modification_of_treaty
+		x = 0
+		y = 1
 	}
 	focus = {
 		id = Expanded_Support
@@ -1348,8 +1367,9 @@
 		prerequisite = {
 			focus = modification_of_treaty
 		}
-		x = 101
-		y = 4
+		relative_position_id = modification_of_treaty
+		x = 2
+		y = 1
 	}
 	focus = {
 		id = establishment_military_academy
@@ -1359,8 +1379,9 @@
 			focus = gun_production
 			focus = Special_Forces_Training
 		}
-		x = 101
-		y = 5
+		relative_position_id = gun_production
+		x = 2
+		y = 1
 	}
 	focus = {
 		id = Replacing_doctrines_before_manoeuvring
@@ -1372,8 +1393,9 @@
 		mutually_exclusive = {
 			focus = Firepower_Centered_training
 		}
-		x = 96
-		y = 2
+		relative_position_id = Republic_of_Korea_Army
+		x = -4
+		y = 1
 	}
 	focus = {
 		id = Bombardment_Production_Support
@@ -1385,8 +1407,9 @@
 		mutually_exclusive = {
 			focus = assist_in_public_assistance
 		}
-		x = 106
-		y = 2
+		relative_position_id = Republic_of_Korea_Air_Force
+		x = -1
+		y = 1
 	}
 	focus = {
 		id = assist_in_public_assistance
@@ -1398,8 +1421,9 @@
 		mutually_exclusive = {
 			focus = Bombardment_Production_Support
 		}
-		x = 108
-		y = 2
+		relative_position_id = Republic_of_Korea_Air_Force
+		x = 1
+		y = 1
 	}
 	focus = {
 		id = Bombardment_Research_Support
@@ -1408,8 +1432,9 @@
 		prerequisite = {
 			focus = Bombardment_Production_Support
 		}
-		x = 106
-		y = 3
+		relative_position_id = Bombardment_Production_Support
+		x = 0
+		y = 1
 	}
 	focus = {
 		id = Fighter_Research_Support
@@ -1418,8 +1443,9 @@
 		prerequisite = {
 			focus = assist_in_public_assistance
 		}
-		x = 108
-		y = 3
+		relative_position_id = assist_in_public_assistance
+		x = 0
+		y = 1
 	}
 	focus = {
 		id = Pilot_Ace_Training
@@ -1432,8 +1458,9 @@
 		prerequisite = {
 			focus = Reintroduction_of_General
 		}
-		x = 105
-		y = 4
+		relative_position_id = Bombardment_Research_Support
+		x = -1
+		y = 1
 	}
 	focus = {
 		id = New_National_Security_Law2

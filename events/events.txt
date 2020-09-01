@@ -53,6 +53,23 @@ country_event = { #
 
 add_namespace = KOR
 
+country_event = { #연설
+	id = KOR.54
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.54"}
+	title = KOR.54.t
+	desc = KOR.54.desc
+	picture = GFX_report_event_kor_lee
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = KOR.54.a
+		ai_chance = { factor = 1 }
+		country_event = { id = KOR.10 }
+	}
+}
+
 country_event = { #시작 선택
 	id = KOR.10
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.10"}

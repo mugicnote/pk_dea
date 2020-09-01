@@ -1,0 +1,389 @@
+############################################
+# Leader Title
+############################################
+defined_text = {
+	name = FdS_rank
+
+	### President
+	text = {
+		trigger = {
+			has_country_leader_with_trait = POSITION_President
+		}
+		localization_key = POSITION_President
+	}
+	### Prime Minister
+	text = {
+		trigger = {
+			has_country_leader_with_trait = POSITION_Prime_Minister
+		}
+		localization_key = POSITION_Prime_Minister
+	}
+	### Monarch
+	text = {
+		trigger = {
+			has_country_leader_with_trait = POSITION_Monarch
+		}
+		localization_key = POSITION_Monarch
+	}
+	text = {
+		trigger = {
+			has_country_leader_with_trait = POSITION_King
+		}
+		localization_key = POSITION_King
+	}
+	text = {
+		trigger = {
+			has_country_leader_with_trait = POSITION_Queen
+		}
+		localization_key = POSITION_Queen
+	}
+	
+	### Emperor
+	text = {
+		trigger = {
+			has_country_leader_with_trait = POSITION_Emperor
+		}
+		localization_key = POSITION_Emperor
+	}
+	### Kaiser
+	text = {
+		trigger = {
+			has_country_leader_with_trait = POSITION_GER_Kaiser
+		}
+		localization_key = POSITION_GER_Kaiser
+	}
+	text = {
+		trigger = {
+			has_country_leader_with_trait = POSITION_AUS_Kaiser
+		}
+		localization_key = POSITION_AUS_Kaiser
+	}
+	### Premier
+	text = {
+		trigger = {
+			has_country_leader_with_trait = POSITION_Premier
+		}
+		localization_key = POSITION_Premier
+	}
+	### Chairman
+	text = {
+		trigger = {
+			has_country_leader_with_trait = POSITION_Chairman
+		}
+		localization_key = POSITION_Chairman
+	}
+		text = {
+			trigger = {
+				has_country_leader_with_trait = POSITION_Chairman_TUC
+			}
+			localization_key = POSITION_Chairman_TUC
+		}
+	### General-Secretary
+	text = {
+		trigger = {
+			has_country_leader_with_trait = POSITION_General_Secretary
+		}
+		localization_key = POSITION_General_Secretary
+	}
+	### Military Governor
+	text = {
+		trigger = {
+			has_country_leader_with_trait = POSITION_Military_Governor
+		}
+		localization_key = POSITION_Military_Governor
+	}
+	### Civil Governor
+	text = {
+		trigger = {
+			has_country_leader_with_trait = POSITION_Civil_Governor
+		}
+		localization_key = POSITION_Civil_Governor
+	}
+	### Deputy Commander
+	text = {
+		trigger = {
+			has_country_leader_with_trait = POSITION_Deputy_Commander
+		}
+		localization_key = POSITION_Deputy_Commander
+	}
+	### Governor-General
+	text = {
+		trigger = {
+			has_country_leader_with_trait = POSITION_Governor_General
+		}
+		localization_key = POSITION_Governor_General
+	}
+
+
+	### Reichsprasident
+	text = {
+		trigger = {
+			has_country_leader_with_trait = POSITION_GER_Reichsprasident
+		}
+		localization_key = POSITION_GER_Reichsprasident
+	}
+	### Reichskanzler
+	text = {
+		trigger = {
+			has_country_leader_with_trait = POSITION_GER_Reichskanzler
+		}
+		localization_key = POSITION_GER_Reichskanzler
+	}
+	### Fuhrer
+	text = {
+		trigger = {
+			has_country_leader_with_trait = POSITION_GER_Fuhrer
+		}
+		localization_key = POSITION_GER_Fuhrer
+	}
+	### Deputy Fuhrer
+	text = {
+		trigger = {
+			has_country_leader_with_trait = POSITION_GER_Deputy_Fuhrer
+		}
+		localization_key = POSITION_GER_Deputy_Fuhrer
+	}
+	### Parteikanzlei
+	text = {
+		trigger = {
+			has_country_leader_with_trait = POSITION_GER_Parteikanzlei
+		}
+		localization_key = POSITION_GER_Parteikanzlei
+	}
+	
+	
+	### Nasser 
+	text = {
+		trigger = {
+			has_country_leader_with_trait = POSITION_EGY_Nasser
+		}
+		localization_key = POSITION_EGY_Nasser
+	}
+
+	text = {
+		trigger = {
+			has_country_leader_with_trait = POSITION_Kommisariat
+		}
+		localization_key = POSITION_Kommisariat
+	}
+	### 제1 야당 대표
+	text = {
+		trigger = {
+			has_country_leader_with_trait = POSITION_main_opposition_party_leader
+		}
+		localization_key = POSITION_main_opposition_party_leader
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = leader_title_one_generic
+	}
+}
+
+############################################
+# Secondary Leader Title
+############################################
+
+defined_text = {
+	name = HoG_rank
+	### President
+	text = {
+		trigger = {
+			has_idea_with_trait = POSITION_President
+		}
+		localization_key = POSITION_President
+	}
+	### Vice President
+	text = {
+		trigger = {
+			has_idea_with_trait = POSITION_Vice_President
+		}
+		localization_key = POSITION_Vice_President
+	}
+	### Prime Minister
+	text = {
+		trigger = {
+			has_idea_with_trait = POSITION_Prime_Minister
+		}
+		localization_key = POSITION_Prime_Minister
+	}
+	### Monarch
+	text = {
+		trigger = {
+			has_idea_with_trait = POSITION_Monarch
+		}
+		localization_key = POSITION_Monarch
+	}
+	### Emperor
+	text = {
+		trigger = {
+			has_idea_with_trait = POSITION_Emperor
+		}
+		localization_key = POSITION_Emperor
+	}
+	### Premier
+	text = {
+		trigger = {
+			has_idea_with_trait = POSITION_Premier
+		}
+		localization_key = POSITION_Premier
+	}
+	### Chairman
+	text = {
+		trigger = {
+			has_idea_with_trait = POSITION_Chairman
+		}
+		localization_key = POSITION_Chairman
+	}
+	### General-Secretary
+	text = {
+		trigger = {
+			has_idea_with_trait = POSITION_General_Secretary
+		}
+		localization_key = POSITION_General_Secretary
+	}
+	### Military Governor
+	text = {
+		trigger = {
+			has_idea_with_trait = POSITION_Military_Governor
+		}
+		localization_key = POSITION_Military_Governor
+	}
+	### Civil Governor
+	text = {
+		trigger = {
+			has_idea_with_trait = POSITION_Civil_Governor
+		}
+		localization_key = POSITION_Civil_Governor
+	}
+	### Deputy Commander
+	text = {
+		trigger = {
+			has_idea_with_trait = POSITION_Deputy_Commander
+		}
+		localization_key = POSITION_Deputy_Commander
+	}
+	### Governor-General
+	text = {
+		trigger = {
+			has_idea_with_trait = POSITION_Governor_General
+		}
+		localization_key = POSITION_Governor_General
+	}
+
+
+	### Reichsprasident
+	text = {
+		trigger = {
+			has_idea_with_trait = POSITION_GER_Reichsprasident
+		}
+		localization_key = POSITION_GER_Reichsprasident
+	}
+	### Reichskanzler
+	text = {
+		trigger = {
+			has_idea_with_trait = POSITION_GER_Reichskanzler
+		}
+		localization_key = POSITION_GER_Reichskanzler
+	}
+	### Fuhrer
+	text = {
+		trigger = {
+			has_idea_with_trait = POSITION_GER_Fuhrer
+		}
+		localization_key = POSITION_GER_Fuhrer
+	}
+	### Deputy Fuhrer
+	text = {
+		trigger = {
+			has_idea_with_trait = POSITION_GER_Deputy_Fuhrer
+		}
+		localization_key = POSITION_GER_Deputy_Fuhrer
+	}
+	### Parteikanzlei
+	text = {
+		trigger = {
+			has_idea_with_trait = POSITION_GER_Parteikanzlei
+		}
+		localization_key = POSITION_GER_Parteikanzlei
+	}
+	### 제1 야당 대표
+	text = {
+		trigger = {
+			OR = {
+				has_country_flag = Syngman_Rhee2
+				has_country_flag = Kim_Ku2
+			}
+		}
+		localization_key = POSITION_main_opposition_party_leader
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = leader_title_two_generic
+	}
+}
+############################################
+# HoG Name
+############################################
+defined_text = {
+	name = FdS_name
+
+	### Generic
+	text = {
+		trigger = {
+			has_country_flag = Syngman_Rhee2
+		}
+		localization_key = Syngman_Rhee2_name
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = Kim_Ku2
+		}
+		localization_key = Kim_Ku2_name
+	}
+
+}
+defined_text = {
+	name = FdS_small_name
+
+	### Generic
+	text = {
+		trigger = {
+			has_country_flag = Syngman_Rhee2
+		}
+		localization_key = Syngman_Rhee2_small_name
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = Kim_Ku2
+		}
+		localization_key = Kim_Ku2_small_name
+	}
+
+}
+defined_text = {
+	name = leader_two_portrait
+	
+	### GER
+	text = { ### 발터모델
+		trigger = {
+			has_country_flag = Syngman_Rhee2
+		}
+		localization_key = GFX_Portrait_Syngman_Rhee
+	}
+
+	text = { ### 발터모델
+		trigger = {
+			has_country_flag = Kim_Ku2
+		}
+		localization_key = GFX_Portrait_Kim_Koo
+	}
+	
+}

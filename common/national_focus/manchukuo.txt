@@ -172,11 +172,11 @@
 
 		available = {
 			NOT = { has_idea = MAN_banditry }
-			NOT = { has_war_with = JAP }
+			NOT = { has_war_with = PRC }
 		}
 
 		bypass = {
-
+			has_war_with = PRC
 		}
 
 		cancel_if_invalid = yes
@@ -199,7 +199,7 @@
 		completion_reward = {
 			random_owned_state = {
 				limit = { is_fully_controlled_by = ROOT }
-				add_manpower = 25417
+				add_manpower = 80000
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
@@ -210,7 +210,7 @@
 			}
 			random_owned_state = {
 				limit = { is_fully_controlled_by = ROOT }
-				add_manpower = 33846
+				add_manpower = 80000
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
@@ -265,11 +265,196 @@
 	}
 
 	focus = {
-		id = MAN_law_university
-		icon = GFX_focus_research
+		id = our_destiny
+		icon = GFX_goal_generic_stable_government
 		prerequisite = { focus = MAN_collective_farms focus = MAN_mukden_military_academy focus = MAN_expand_the_textile_industry }
 		x = 0
 		y = 1
+		relative_position_id = MAN_collective_farms
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_political_power = 200
+		}
+	}
+
+	focus = {
+		id = The_enemy_is_before_us
+		icon = GFX_fate_of_Manchuria
+		prerequisite = { focus = our_destiny }
+		x = 8
+		y = 1
+		relative_position_id = our_destiny
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_ideas = MAN_bolster_nationalism2
+			unlock_decision_tooltip = MAN_recruit_bandits_generic
+		}
+	}
+
+	focus = {
+		id = Going_to_the_Peoples_Party
+		icon = GFX_ROCArmy
+		prerequisite = { focus = The_enemy_is_before_us }
+		x = -3
+		y = 1
+		relative_position_id = The_enemy_is_before_us
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_country_leader_trait = nationalist_symbol
+		}
+	}
+
+	focus = {
+		id = National_Army_Support
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = Going_to_the_Peoples_Party }
+		x = 0
+		y = 1
+		relative_position_id = Going_to_the_Peoples_Party
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		completion_reward = {
+			custom_effect_tooltip = MAN_five_people_armies_tt
+			hidden_effect = {
+				division_template = {
+					name = "People's Volunteers Division"
+					priority = 2
+					division_names_group = MAN_INF_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+					}
+				}
+				random_owned_controlled_state = {
+					limit = { ROOT = { has_full_control_of_state = PREV } }
+					prioritize = { 328 }
+					create_unit = {
+						division = "name = \"People's Volunteers Division\" division_template = \"People's Volunteers Division\" start_experience_factor = 1.0" 
+						owner = MAN
+					}
+					create_unit = {
+						division = "name = \"People's Volunteers Division\" division_template = \"People's Volunteers Division\" start_experience_factor = 1.0" 
+						owner = MAN
+					}
+					create_unit = {
+						division = "name = \"People's Volunteers Division\" division_template = \"People's Volunteers Division\" start_experience_factor = 1.0" 
+						owner = MAN
+					}
+					create_unit = {
+						division = "name = \"People's Volunteers Division\" division_template = \"People's Volunteers Division\" start_experience_factor = 1.0" 
+						owner = MAN
+					}
+					create_unit = {
+						division = "name = \"People's Volunteers Division\" division_template = \"People's Volunteers Division\" start_experience_factor = 1.0" 
+						owner = MAN
+					}
+					create_unit = {
+						division = "name = \"People's Volunteers Division\" division_template = \"People's Volunteers Division\" start_experience_factor = 1.0" 
+						owner = MAN
+					}
+					create_unit = {
+						division = "name = \"People's Volunteers Division\" division_template = \"People's Volunteers Division\" start_experience_factor = 1.0" 
+						owner = MAN
+					}
+				}			
+			}
+		}
+	}
+
+	focus = {
+		id = MAN_law_university
+		icon = GFX_focus_research
+		prerequisite = { focus = The_enemy_is_before_us }
+		x = 0
+		y = 3
 		relative_position_id = MAN_collective_farms
 
 		cost = 10
@@ -1229,52 +1414,12 @@
 	}
 
 	focus = {
-		id = MAN_assertiveness
-		icon = GFX_goal_generic_demand_territory
-		prerequisite = { focus = MAN_trade_delegation }
-		mutually_exclusive = { focus = MAN_obedience }
-		x = 2
-		y = 4
-		relative_position_id = MAN_trade_delegation
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-			is_subject = no
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		completion_reward = {
-			MAN_low_legitimacy_level_down = yes
-			set_country_flag = MAN_assertiveness
-			JAP = { 
-				set_autonomy = {
-					target = MAN
-					autonomy_state = autonomy_wtt_imperial_subject
-				}
-			}			
-		}
-	}
-
-	focus = {
 		id = MAN_request_control_of_the_railways
 		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = MAN_assertiveness }
-		x = 0
+		prerequisite = { focus = The_enemy_is_before_us }
+		x = 2
 		y = 1
-		relative_position_id = MAN_assertiveness
+		relative_position_id = The_enemy_is_before_us
 
 		cost = 10
 
@@ -1387,10 +1532,10 @@
 	focus = {
 		id = MAN_expand_the_imperial_guards
 		icon = GFX_focus_generic_little_entente
-		prerequisite = { focus = MAN_staff_the_court_with_manchus }
-		x = -1
+		prerequisite = { focus = Going_to_the_Peoples_Party }
+		x = 2
 		y = 1
-		relative_position_id = MAN_staff_the_court_with_manchus
+		relative_position_id = Going_to_the_Peoples_Party
 
 		cost = 10
 

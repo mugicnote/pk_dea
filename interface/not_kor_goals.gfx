@@ -1,0 +1,48 @@
+spriteTypes = {
+
+	SpriteType = {
+		name = "GFX_Allow_Free_Speach"
+		texturefile = "gfx/interface/goals/Allow_Free_Speach.dds"
+	}
+	SpriteType = {
+		name = "GFX_Adopt_Enhanced_Majority_System"
+		texturefile = "gfx/interface/goals/Adopt_Enhanced_Majority_System.dds"
+	}
+	SpriteType = {
+		name = "GFX_Integration_of_Korea"
+		texturefile = "gfx/interface/goals/Integration_of_Korea.dds"
+	}
+	SpriteType = {
+		name = "GFX_USA_Disenfranchise_African_Americans"
+		texturefile = "gfx/interface/goals/USA_Disenfranchise_African_Americans.dds"
+	}
+	SpriteType = {
+		name = "GFX_econ_expension"
+		texturefile = "gfx/interface/goals/econ_expension.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_internal_dissent"
+		texturefile = "gfx/interface/goals/focus_internal_dissent.dds"
+	}
+	SpriteType = {
+		name = "GFX_jcp"
+		texturefile = "gfx/interface/goals/jcp.dds"
+	}
+	SpriteType = {
+		name = "GFX_ExpandAidToROK"
+		texturefile = "gfx/interface/goals/ExpandAidToROK.dds"
+	}
+	SpriteType = {
+		name = "GFX_The_Second_Korean_War"
+		texturefile = "gfx/interface/goals/The_Second_Korean_War.dds"
+	}
+	SpriteType = {
+		name = "GFX_fate_of_Manchuria"
+		texturefile = "gfx/interface/goals/fate_of_Manchuria.dds"
+	}
+	SpriteType = {
+		name = "GFX_ROCArmy"
+		texturefile = "gfx/interface/goals/ROCArmy.dds"
+	}
+
+}

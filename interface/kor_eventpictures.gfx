@@ -69,6 +69,15 @@ spriteTypes = {
 		name = "GFX_Mapo_galmegi"
 		texturefile = "gfx/event_pictures/Mapo_galmegi.dds"
 	}
+	spriteType = {
+		name = "GFX_report_event_kor_democratic"
+		texturefile = "gfx/event_pictures/report_event_kor_democratic.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_kor_lee"
+		texturefile = "gfx/event_pictures/report_event_kor_lee.dds"
+	}
+
 
 }
 	

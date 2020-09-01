@@ -1,5 +1,14 @@
 music_station = "kbs"
 
+music = {
+	song = "maintheme"
+	chance = {
+		modifier = {
+			factor = 0.5
+		}
+	}
+}
+
 # Anthem
 
 music = {
@@ -27,6 +36,16 @@ music = {
 	}
 }
 
+music = {
+	song = "6.25s_mugic"
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = yes
+		}
+	}
+}
+
 # Peace Song
 
 music = {
@@ -40,7 +59,97 @@ music = {
 }
 
 music = {
+	song = "Seoul_Central_Radio_Station_1"
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+
+music = {
+	song = "KOR_National_anthem"
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+
+music = {
+	song = "letter_private"
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+
+music = {
+	song = "Four_Seasons"
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+
+music = {
+	song = "around_thirty"
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+
+music = {
 	song = "beautiful_country"
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+
+music = {
+	song = "Good_night_comrade"
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+
+music = {
+	song = "anthem_fascism"
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+
+music = {
+	song = "old_love"
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+
+music = {
+	song = "Though_I_Loved_You"
 	chance = {
 		modifier = {
 			factor = 2

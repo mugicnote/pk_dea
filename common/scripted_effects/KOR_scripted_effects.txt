@@ -14,14 +14,14 @@ KOR_congress_remove_state = {
 	custom_effect_tooltip = mtg_KOR_congress_remove_state_tt
 	subtract_from_variable = { senate_total = 2 }
 	clamp_variable = { var = senate_support max = enators_total min = 0 }
-	USA_congress_get_quorum = yes
+	KOR_congress_get_quorum = yes
 	USA_recalc_congress_icon_frames = yes
 }
 KOR_congress_add_state = {
 	custom_effect_tooltip = mtg_KOR_congress_add_state_tt
 	add_to_variable = { senate_total = 2 }
 	add_to_variable = { senate_support = 2 }
-	USA_congress_get_quorum = yes
+	KOR_congress_get_quorum = yes
 	USA_recalc_congress_icon_frames = yes
 }
 KOR_congress_small_opposition = {
