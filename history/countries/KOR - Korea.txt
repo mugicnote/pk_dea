@@ -3,10 +3,12 @@ capital = 525
 oob = KOR_1936
 
 #중추원 의석 설정
-set_variable = { var = senate_support value = 29 }
-set_variable = { var = senate_total value = 116 }
+set_variable = { var = senate_support value = 36 }
+set_variable = { var = senate_total value = 120 }
 set_variable = { var = commons_support value = 91 }
 set_variable = { var = commons_total value = 303 }
+set_variable = { var = house_support value = 90 }
+set_variable = { var = house_total value = 300 }
 
 #시작시_연구가능_칸
 set_research_slots = 4
@@ -144,17 +146,22 @@ if = {
 							state = 802
 							state = 803
 							state = 804
+							state = 805
+							state = 806
+							state = 807
+							state = 808
+							state = 809
 						}
 					}
 					add_to_variable = { var = KOR_garrison_control value = 1 }
-					SPA_garrison_control_cost_calculation = yes
+					KOR_garrison_control_cost_calculation = yes
 				}
 
 create_dynamic_country = {
 	  original_tag = KOR
 	  set_country_flag = FKR_korea_flag
 		set_politics = {
-			ruling_party = neutrality
+			ruling_party = fascism
 		}
 		set_cosmetic_tag = FKR_korea
 		set_research_slots = 3
@@ -169,7 +176,7 @@ create_country_leader = {
   desc = "POLITICS_JAE_PIL_DESC"
   picture = "jae_pil.dds"
   expire = "1949.6.26"
-  ideology = conservatism
+  ideology = Seo_Jae_Pil_conservatism
   traits = {
     figurehead_president
   }
@@ -232,7 +239,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-  name = "조만식"
+  name = "장면"
   desc = "POLITICS_CHO_MAN_SIK_DESC"
   picture = "jomansik_portrait.dds"
   expire = "1947.7.19"
@@ -243,9 +250,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-  name = "김성수"
+  name = "신익희"
   desc = "POLITICS_KIM_SUNG_SOO_DESC"
-  picture = "Kim_Seong-soo-South_Korean_Vicepresident_1951.dds"
+  picture = "Shin_Ik_Hee.dds"
   expire = "1947.7.19"
   ideology = lib_conservatism
   traits = {
@@ -256,7 +263,7 @@ create_country_leader = {
 create_country_leader = {
   name = "이범석"
   desc = "POLITICS_LEE_BEOM_DESC"
-  picture = "bom_sock.dds"
+  picture = "Portrait_Lee_Beomseok.dds"
   expire = "1947.7.19"
   ideology = oligarchism
   traits = {
@@ -278,9 +285,9 @@ create_country_leader = {
 create_country_leader = {
   name = "이범석"
   desc = "POLITICS_LEE_BEOM_DESC"
-  picture = "bom_sock.dds"
+  picture = "Portrait_Lee_Beomseok.dds"
   expire = "1972.5.11"
-  ideology = fascism_ideology
+  ideology = lee_fascism
   traits = {
     great_war_hero
   }

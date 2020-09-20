@@ -1,0 +1,9 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_event_text_line"
+		texturefile = "gfx/interface/event_text_line.dds"
+		#size = { x = 546 y = 205 }
+		allwaystransparent = yes
+	}
+}

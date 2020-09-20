@@ -57,5 +57,9 @@ spriteTypes = {
 		name = "GFX_idea_KOR_Daewoo_Heavy_Industries"
 		texturefile = "gfx/interface/ideas/idea_fkr_company_daewoo.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_advisor_Jang_TaekSang"
+		texturefile = "gfx/interface/ideas/advisor_Jang_TaekSang.dds"
+	}
 
 }

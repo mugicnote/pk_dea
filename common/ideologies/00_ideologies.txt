@@ -69,8 +69,8 @@ ideologies = {
 		
 		color = { 245 20 20 }
 		
-		war_impact_on_world_tension = 0.75		#Commie less threatening
-		faction_impact_on_world_tension = 0.5
+		war_impact_on_world_tension = 0.7	#Commie less threatening
+		faction_impact_on_world_tension = 0.45
 		
 		ai_communist = yes # uses the commie AI behaviour
 		
@@ -83,12 +83,11 @@ ideologies = {
 		can_collaborate = yes
 		
 		modifiers = {
-			puppet_cost_factor = -0.3
-			civilian_intel_to_others = 10.0
-			army_intel_to_others = 7.5
-			navy_intel_to_others = 12.5
-			airforce_intel_to_others = 7.5
-			hidden_modifier = { join_faction_tension = -0.1 }
+			puppet_cost_factor = -0.25
+			civilian_intel_to_others = 15.0
+			army_intel_to_others = 10.0
+			navy_intel_to_others = 15.0
+			airforce_intel_to_others = 10.0
 		}
 		
 		faction_modifiers = {
@@ -148,6 +147,7 @@ ideologies = {
 		types = {
 
 			liberalism = {} #사회자유주의
+			American_Soclib = {} #미국
 
 		}
 		
@@ -317,6 +317,7 @@ ideologies = {
 			
 			conservatism = {} #사회보수주의
 			national_conservatism = {} #국민보수주의
+			Seo_Jae_Pil_conservatism = {}
 
 		}
 		
@@ -377,6 +378,7 @@ ideologies = {
 			anarchism = {} #아나키즘
 			warloadism = {} #군벌
 			authoritarian = {} #권위주의
+			Peoples_Party_ideology = {} #국민당
 		}
 
 		dynamic_faction_names = {
@@ -477,6 +479,7 @@ ideologies = {
 			falangism = {} #팔랑헤주의
 			rexism = {} #렉시즘
 			ilminism = {} #일민주의
+			lee_fascism = {} #이범석
 
 		}
 		

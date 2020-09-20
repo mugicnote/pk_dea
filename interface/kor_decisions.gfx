@@ -49,4 +49,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/decisions/decision_kor_garrison_control_total.dds"
 	}
 
+	spriteType = {
+		name = "GFX_decision_category_national_assembly"
+		texturefile = "gfx/interface/decisions/decision_category_national_assembly.dds"
+	}
+
 }

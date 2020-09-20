@@ -1,0 +1,257 @@
+# Allows you to create your own dynamic keys
+# to be called in localization.
+# defined_text -> this is it, we're defining the text
+# text -> a discrete entry that can be picked to display in loc.
+# trigger -> determines if a text entry will be picked or not.
+# (The triggers need to be valid for the scope the key is called in
+# (eg Root or From.From).)
+# localization_key -> points to the localization key
+# that'll be used if trigger passes
+defined_text = {
+	name = GetNewsIcon
+	text = {
+		trigger = {
+			TAG = GER
+			has_government = fascism
+		}
+		localization_key = PK_NEWS.GER
+	}
+	text = {
+		trigger = {
+			TAG = GER
+			has_government = neutrality
+		}
+		localization_key = PK_NEWS.KAS
+	}
+	text = {
+		trigger = {
+			OR = {
+				TAG = GER
+				TAG = DDR
+			}
+			has_government = communism
+		}
+		localization_key = PK_NEWS.DDR
+	}
+	text = {
+		trigger = {
+			OR = {
+				TAG = GER
+				TAG = WGR
+			}
+			has_government = democratic
+		}
+		localization_key = PK_NEWS.WGR
+	}
+	text = {
+		trigger = {
+			TAG = SOV
+		}
+		localization_key = PK_NEWS.SOV
+	}
+	text = {
+		trigger = {
+			TAG = SOV
+			NOT = {
+				has_government = communism
+			}
+		}
+		localization_key = PK_NEWS.RUS
+	}
+	text = {
+		trigger = {
+			TAG = USA
+		}
+		localization_key = PK_NEWS.USA
+	}
+	text = {
+		trigger = {
+			TAG = ENG
+		}
+		localization_key = PK_NEWS.ENG
+	}
+	text = {
+		trigger = {
+			TAG = FRA
+			NOT = {
+				has_government = fascism
+			}
+		}
+		localization_key = PK_NEWS.FRA
+	}
+	text = {
+		trigger = {
+			TAG = FRA
+			has_government = fascism
+		}
+		localization_key = PK_NEWS.VIC
+	}
+	# text = {
+	# 	trigger = {
+	# 		OR = {
+	# 			is_warlord = yes
+	# 			AND = {
+	# 				tag = MAN
+	# 				has_completed_focus = MAN_assertiveness
+	# 				is_puppet = no
+	# 			}
+	# 			tag = event_target:WTT_current_china_leader
+	# 		}
+	# 		NOT = {
+	# 			OR = {
+	# 				is_subject_of = JAP
+	# 				has_government = communism
+	# 			}
+	# 		}
+	# 	}
+	# 	localization_key = PK_NEWS.CHI
+	# }
+	# text = {
+	# 	trigger = {
+	# 		AND = {
+	# 			tag = MAN
+	# 			has_completed_focus = MAN_Manshu_Nippo_focus
+	# 		}
+	# 	}
+	# 	localization_key = PK_NEWS.MAN_NIP
+	# }
+	text = {
+		trigger = {
+			tag = MAN
+		}
+		localization_key = PK_NEWS.MAN_DN
+	}
+	# text = {
+	# 	trigger = {
+	# 		NOT = {
+	# 			tag = SIK
+	# 		}
+	# 		OR = {
+	# 			is_warlord = yes
+	# 			tag = event_target:WTT_communist_china
+	# 		}
+	# 		has_government = communism
+	# 	}
+	# 	localization_key = PK_NEWS.PRC
+	# }
+	text = {
+		trigger = {
+			tag = SIK
+		}
+		localization_key = PK_NEWS.SIK
+	}
+	text = {
+		trigger = {
+			TAG = KOR
+		}
+		localization_key = PK_NEWS.KOR
+	}
+	text = {
+		trigger = {
+			OR = {
+				TAG = JAP
+				AND = {
+					is_subject_of = JAP
+					any_owned_state = {
+						is_capital = yes
+						is_on_continent = asia
+					}
+				}
+			}
+		}
+		localization_key = PK_NEWS.JAP
+	}
+
+	text = {
+		trigger = {
+			TAG = ITA
+		}
+		localization_key = PK_NEWS.ITA
+	}
+	#text = {
+	#	trigger = {
+	#		TAG = SWE
+	#	}
+	#	localization_key = PK_NEWS.SWE
+	#}
+	#text = {
+	#	trigger = {
+	#		TAG = FIN
+	#	}
+	#	localization_key = PK_NEWS.FIN
+	#}
+	#text = {
+	#	trigger = {
+	#		TAG = SPA
+	#	}
+	#	localization_key = PK_NEWS.SPA
+	#}
+	#text = {
+	#	trigger = {
+	#		TAG = CAN
+	#	}
+	#	localization_key = PK_NEWS.CAN
+	#}
+	#text = {
+	#	trigger = {
+	#		TAG = ROM
+	#	}
+	#	localization_key = PK_NEWS.ROM
+	#}
+	#text = {
+	#	trigger = {
+	#		TAG = HUN
+	#	}
+	#	localization_key = PK_NEWS.HUN
+	#}
+	#text = {
+	#	trigger = {
+	#		TAG = BUL
+	#	}
+	#	localization_key = PK_NEWS.BUL
+	#}
+	#text = {
+	#	trigger = {
+	#		TAG = CRO
+	#	}
+	#	localization_key = PK_NEWS.CRO
+	#}
+	#text = {
+	#	trigger = {
+	#		TAG = GRE
+	#	}
+	#	localization_key = PK_NEWS.GRE
+	#}
+	#text = {
+	#	trigger = {
+	#		TAG = DEN
+	#	}
+	#	localization_key = PK_NEWS.DEN
+	#}
+	#text = {
+	#	trigger = {
+	#		TAG = NOR
+	#	}rc
+	#	localization_key = PK_NEWS.NOR
+	#}
+	#text = {
+	#	trigger = {
+	#		TAG = IRE
+	#	}
+	#	localization_key = PK_NEWS.IRE
+	#}
+	#text = {
+	#	trigger = {
+	#		TAG = POR
+	#	}
+	#	localization_key = PK_NEWS.POR
+	#}
+	text = {
+		trigger = {
+			#NOT = {
+			#	has_custom_newspaper = yes
+			#}
+		}
+		localization_key = PK_NEWS.GENERIC
+	}
+}

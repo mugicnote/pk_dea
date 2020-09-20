@@ -1,0 +1,289 @@
+ideas = {
+
+	#정부수반
+	head_of_gov = {
+
+		#지청천
+		HoG_Ji_Cheongcheon = {
+
+			allowed = { original_tag = KOR }
+
+			available = {
+				custom_trigger_tooltip = {
+    				tooltip = minister_tooltip
+					always = no
+				}
+			}
+
+			cancel_if_invalid = no
+			removal_cost = -1
+			ai_will_do = { factor = 1 }
+
+			traits = {
+				# kia_commander
+				hog
+			}
+		}
+
+		#안재홍
+		HoG_Ahn_Jaehong = {
+
+			allowed = { original_tag = KOR }
+
+			available = {
+				custom_trigger_tooltip = {
+    				tooltip = minister_tooltip
+					always = no
+				}
+			}
+
+			cancel_if_invalid = no
+			removal_cost = -1
+			ai_will_do = { factor = 1 }
+
+			traits = {
+				# ppc_minister
+				hog
+			}
+		}
+
+		#김규식
+		HoG_Kim_Kyusik = {
+
+			allowed = { original_tag = KOR }
+
+			available = {
+				custom_trigger_tooltip = {
+    				tooltip = minister_tooltip
+					always = no
+				}
+			}
+
+			cancel_if_invalid = no
+			removal_cost = -1
+			ai_will_do = { factor = 1 }
+
+			traits = {
+				# ppc_minister
+				hog
+			}
+		}
+	}
+
+	#내무장관
+	security_minister = {
+		
+		#홍진
+		SM_Hong_Jin = {
+
+			allowed = { original_tag = KOR }
+
+			available = {
+				custom_trigger_tooltip = {
+    				tooltip = minister_tooltip
+					always = no
+				}
+			}
+
+			cancel_if_invalid = no
+			removal_cost = -1
+			ai_will_do = { factor = 1 }
+
+			traits = {
+				secmin
+			}
+		}
+	}
+
+	#외무장관
+	foreign_minister = {
+		
+		#조소앙
+		FM_Cho_Soang = {
+
+			allowed = { original_tag = KOR }
+
+			available = {
+				custom_trigger_tooltip = {
+    				tooltip = minister_tooltip
+					always = no
+				}
+			}
+
+			cancel_if_invalid = no
+			removal_cost = -1
+			ai_will_do = { factor = 1 }
+
+			traits = {
+				frnmin
+			}
+		}
+	}
+
+	#재무장관
+	economy_minister = {
+
+		#송병조
+		EM_Song_Byeongjo = {
+
+			allowed = { original_tag = KOR }
+
+			available = {
+				custom_trigger_tooltip = {
+    				tooltip = minister_tooltip
+					always = no
+				}
+			}
+
+			cancel_if_invalid = no
+			removal_cost = -1
+			ai_will_do = { factor = 1 }
+
+			traits = {
+				ecomin
+			}
+		}
+	}
+
+	#군무장관
+	military_minister = {
+
+		#유동열
+		MM_Ryu_Dongyol = {
+
+			allowed = { original_tag = KOR }
+
+			picture = No_Minister
+
+			available = {
+				custom_trigger_tooltip = {
+    				tooltip = minister_tooltip
+					always = no
+				}
+			}
+
+			cancel_if_invalid = no
+			removal_cost = -1
+			ai_will_do = { factor = 1 }
+
+			traits = {
+				milmin
+			}
+		}
+	}
+
+	#정보장관
+	intel_minister = {
+		IM_Jang_TaekSang = {
+
+			allowed = { original_tag = KOR }
+
+			picture = advisor_Jang_TaekSang
+
+			available = {
+				custom_trigger_tooltip = {
+    				tooltip = minister_tooltip
+					always = no
+				}
+			}
+
+			cancel_if_invalid = no
+			removal_cost = -1
+			ai_will_do = { factor = 1 }
+
+			traits = {
+				intmin
+			}
+		}
+	}
+
+	#육군 참모총장
+	army_chief = {
+
+		#지청천
+		KOR_CoA_Ji_Cheongcheon = {
+
+			allowed = { original_tag = KOR }
+
+			available = {
+				custom_trigger_tooltip = {
+    				tooltip = minister_tooltip
+					always = no
+				}
+			}
+
+			cancel_if_invalid = no
+			removal_cost = -1
+			ai_will_do = { factor = 1 }
+			
+			traits = { army_chief_offensive_2 }
+		}
+
+		#이범석
+		KOR_CoA_Lee_Beomseok = {
+
+			allowed = { original_tag = KOR }
+
+			available = {
+				custom_trigger_tooltip = {
+    				tooltip = minister_tooltip
+					always = no
+				}
+			}
+
+			cancel_if_invalid = no
+			removal_cost = -1
+			ai_will_do = { factor = 1 }
+			
+			traits = { army_chief_maneuver_3 }
+		}
+
+		#홍사익
+		KOR_CoA_Hong_Saik = {
+
+			allowed = { original_tag = KOR }
+
+			available = {
+				custom_trigger_tooltip = {
+    				tooltip = minister_tooltip
+					always = no
+				}
+			}
+
+			cancel_if_invalid = no
+			removal_cost = -1
+			ai_will_do = { factor = 1 }
+			
+			traits = { army_chief_reform_2 }
+		}
+	}
+
+	#해군 참모총장
+	navy_chief = {
+		
+	}
+
+	#공군 참모총장
+	air_chief = {
+
+		#최용덕
+		KOR_CAF_Choi_Yongdeok = {
+
+			allowed = { original_tag = KOR }
+
+			available = {
+				custom_trigger_tooltip = {
+    				tooltip = minister_tooltip
+					always = no
+				}
+			}
+
+			cancel_if_invalid = no
+			removal_cost = -1
+			ai_will_do = { factor = 1 }
+			
+			traits = { air_chief_all_weather_3 }
+		}
+	}
+
+}

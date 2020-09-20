@@ -3,8 +3,8 @@
  KOR_communism_DEF:0 "조선 민주주의 인민 공화국"
  KOR_rad_socialism:0 "조선 민주주의 인민 공화국"
  KOR_rad_socialism_DEF:0 "조선 민주주의 인민 공화국"
- KOR_social_democracy:0 "대한민국"
- KOR_social_democracy_DEF:0 "대한민국"
+ KOR_social_democracy:0 "조선 인민 공화국"
+ KOR_social_democracy_DEF:0 "조선 인민 공화국"
  KOR_social_liberalism:0 "대한민국"
  KOR_social_liberalism_DEF:0 "대한민국"
  KOR_liberal_conservatism:0 "대한민국"
@@ -19,9 +19,6 @@
  KOR_far_right_autocracy_DEF:0 "대한민국"
  KOR_fascism:0 "군사파 조선"
  KOR_fascism_DEF:0 "군사파 조선"
- 
- 
- 
  
  KOR_fascism_ADJ:0 "조선"
  KOR_democratic_ADJ:0 "조선"

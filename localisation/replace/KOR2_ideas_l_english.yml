@@ -1,0 +1,31 @@
+﻿l_english:
+#내각 시스템
+ cabinet:0 "내각"
+ head_of_gov:0 "정부수반"
+ security_minister:0 "내무장관"
+ economy_minister:0 "재무장관"
+ foreign_minister:0 "외무장관"
+ military_minister:0 "국방장관"
+ intel_minister:0 "정보장관"
+
+ hog:0 "정부수반"
+ secmin:0 "내무장관"
+ ecomin:0 "재무장관"
+ frnmin:0 "외무장관"
+ milmin:0 "국방장관"
+ intmin:0 "정보장관"
+
+ HoG_No_One:0 "공석"
+ FM_No_One:0 "공석"
+ EM_No_One:0 "공석"
+ SM_No_One:0 "공석"
+ MM_No_One:0 "공석"
+ IM_No_One:0 "공석"
+
+ CoA_No_One:0 "공석"
+ CoN_No_One:0 "공석"
+ CAF_No_One:0 "공석"
+
+ minister_tooltip:0 "장관을 수동으로 임명하거나 해임할 수 없습니다."
+
+IM_Jang_TaekSang:0 "장택상"

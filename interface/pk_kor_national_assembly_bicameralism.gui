@@ -1,0 +1,73 @@
+@HOUSE_TEXT_X = 245
+@SENATE_TEXT_X = 65
+@HEADERS_Y = 80
+@STATUS_Y = 60
+guiTypes = {
+
+	containerWindowType = {
+		name = "kor_national_assembly_bicameralism_ui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height = 115 }
+
+		instantTextBoxType = {
+			name ="bi_status_senate_icon"
+			position = { x= 105 y = 26 }
+			#font = "hoi_18mbs"
+			text = "KOR_senate_support_icon"
+			format = center
+			#fixedsize = yes
+		}
+
+		instantTextBoxType = {
+			name ="bi_status_senate"
+			position = { x= @SENATE_TEXT_X y = @STATUS_Y }
+			font = "hoi_18mbs"
+			text = "KOR_senate_support_amount"
+			format = center
+			fixedsize = yes
+			maxWidth = 280
+		}
+
+		instantTextBoxType = {
+			name ="bi_sanate_support_header"
+			position = { x= @SENATE_TEXT_X y = @HEADERS_Y }
+			font = "hoi_24header"
+			text = "KOR_senate_support_header"
+			format = center
+			maxHeight = 24
+			fixedsize = yes
+			maxWidth = 280
+		}
+
+
+		instantTextBoxType = {
+			name ="bi_status_house_icon"
+			position = { x= 285 y = 15 }
+			#font = "hoi_18mbs"
+			text = "KOR_house_support_icon"
+			format = center
+			#fixedsize = yes
+		}
+
+		instantTextBoxType = {
+			name ="bi_status_house"
+			position = { x= @HOUSE_TEXT_X y = @STATUS_Y }
+			font = "hoi_18mbs"
+			text = "KOR_house_support_amount"
+			format = center
+			fixedsize = yes
+			maxWidth = 280
+		}
+
+		instantTextBoxType = {
+			name ="bi_house_support_header"
+			position = { x= @HOUSE_TEXT_X y = @HEADERS_Y }
+			font = "hoi_24header"
+			text = "KOR_house_support_header"
+			format = center
+			maxHeight = 24
+			fixedsize = yes
+			maxWidth = 280
+		}
+	}
+}

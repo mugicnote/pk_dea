@@ -1914,5 +1914,124 @@ ideas = {
 		}
 
 	}
+	head_of_gov = {
+		HoG_No_One = {
+			picture = no_minister
+			allowed = {
+				always = yes
+			}
+			available = {
+				custom_trigger_tooltip = {
+    				tooltip = minister_tooltip
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			removal_cost = -1
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	security_minister = {
+		SM_No_One = {
+			picture = no_minister
+			allowed = {
+				always = yes
+			}
+			available = {
+				custom_trigger_tooltip = {
+    				tooltip = minister_tooltip
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			removal_cost = -1
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	economy_minister = {
+		EM_No_One = {
+			picture = no_minister
+			allowed = {
+				always = yes
+			}
+			available = {
+				custom_trigger_tooltip = {
+    				tooltip = minister_tooltip
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			removal_cost = -1
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	foreign_minister = {
+		FM_No_One = {
+			picture = no_minister
+			allowed = {
+				always = yes
+			}
+			available = {
+				custom_trigger_tooltip = {
+    				tooltip = minister_tooltip
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			removal_cost = -1
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	military_minister = {
+		MM_No_One = {
+			picture = no_minister
+			allowed = {
+				always = yes
+			}
+			available = {
+				custom_trigger_tooltip = {
+    				tooltip = minister_tooltip
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			removal_cost = -1
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	intel_minister = {
+		IM_No_One = {
+			picture = no_minister
+			allowed = {
+				always = yes
+			}
+			available = {
+				custom_trigger_tooltip = {
+    				tooltip = minister_tooltip
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			removal_cost = -1
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
 
 }

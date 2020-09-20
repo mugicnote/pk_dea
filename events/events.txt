@@ -66,7 +66,349 @@ country_event = { #연설
 	option = { #
 		name = KOR.54.a
 		ai_chance = { factor = 1 }
-		country_event = { id = KOR.10 }
+		add_stability = -0.05
+		hidden_effect = {
+			country_event = {
+				id = KOR.55
+				days = 2
+			}
+		}
+	}
+}
+
+country_event = { #연설
+	id = KOR.55
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.55"}
+	title = KOR.55.t
+	desc = KOR.55.desc
+	picture = GFX_report_event_kor_lee
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = KOR.55.a
+		ai_chance = { factor = 1 }
+		add_stability = -0.1
+		hidden_effect = {
+			country_event = {
+				id = KOR.56
+				days = 2
+			}
+		}
+	}
+}
+
+country_event = { #연설
+	id = KOR.56
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.56"}
+	title = KOR.56.t
+	desc = KOR.56.desc
+	picture = GFX_parliamentary_barricade
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = KOR.56.a
+		ai_chance = { factor = 1 }
+		add_political_power = -50
+		hidden_effect = {
+			country_event = {
+				id = KOR.57
+				days = 2
+			}
+		}
+	}
+}
+
+country_event = { #연설
+	id = KOR.57
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.57"}
+	title = KOR.57.t
+	desc = KOR.57.desc
+	picture = GFX_parliamentary_siege
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = KOR.57.a
+		ai_chance = { factor = 1 }
+		add_war_support = -0.1
+		hidden_effect = {
+			country_event = {
+				id = KOR.61
+				days = 2
+			}
+		}
+	}
+}
+
+country_event = { #연설
+	id = KOR.61
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.61"}
+	title = KOR.61.t
+	desc = KOR.61.desc
+	picture = GFX_Seo_Jae_pils_frustration
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = KOR.61.a
+		ai_chance = { factor = 1 }
+		remove_country_leader_trait = figurehead_president
+		add_country_leader_trait = disdain_for_politicians_3
+		hidden_effect = {
+			country_event = {
+				id = KOR.62
+				days = 2
+			}
+		}
+	}
+}
+
+country_event = { #연설
+	id = KOR.62
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.62"}
+	title = KOR.62.t
+	desc = KOR.62.desc
+	picture = GFX_Seo_Jae_pils_friction
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = KOR.62.a
+		ai_chance = { factor = 1 }
+		add_country_leader_trait = kor_dictator2
+		hidden_effect = {
+			country_event = {
+				id = KOR.63
+				days = 2
+			}
+		}
+	}
+}
+
+country_event = { #연설
+	id = KOR.63
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.63"}
+	title = KOR.63.t
+	desc = KOR.63.desc
+	picture = GFX_two_criminals
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = KOR.63.a
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			country_event = {
+				id = KOR.64
+				days = 2
+			}
+		}
+	}
+}
+
+country_event = { #연설
+	id = KOR.64
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.64"}
+	title = KOR.64.t
+	desc = KOR.64.desc
+	picture = GFX_Choi_Hwans_Suspicion
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = KOR.64.a
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			country_event = {
+				id = KOR.65
+				days = 2
+			}
+		}
+	}
+}
+
+country_event = { #연설
+	id = KOR.65
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.65"}
+	title = KOR.65.t
+	desc = KOR.65.desc
+	picture = GFX_prove_incentive_Article
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = KOR.65.a
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			country_event = {
+				id = KOR.66
+				days = 2
+			}
+		}
+	}
+}
+
+country_event = { #연설
+	id = KOR.66
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.66"}
+	title = KOR.66.t
+	desc = KOR.66.desc
+	picture = GFX_Its_a_mess
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = KOR.66.a
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			country_event = {
+				id = KOR.67
+				days = 2
+			}
+		}
+	}
+}
+
+country_event = { #연설
+	id = KOR.67
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.67"}
+	title = KOR.67.t
+	desc = KOR.67.desc
+	picture = GFX_Its_a_mess
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = KOR.67.a
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			country_event = {
+				id = KOR.68
+				days = 2
+			}
+		}
+	}
+}
+
+country_event = { #연설
+	id = KOR.68
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.68"}
+	title = KOR.68.t
+	desc = KOR.68.desc
+	picture = GFX_Its_a_mess
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = KOR.68.a
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			country_event = {
+				id = KOR.69
+				days = 2
+			}
+		}
+	}
+}
+
+country_event = { #연설
+	id = KOR.69
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.69"}
+	title = KOR.69.t
+	desc = KOR.69.desc
+	picture = GFX_Its_a_mess
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = KOR.69.a
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			country_event = {
+				id = KOR.70
+				days = 2
+			}
+		}
+	}
+}
+
+country_event = { #연설
+	id = KOR.70
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.70"}
+	title = KOR.70.t
+	desc = KOR.70.desc
+	picture = GFX_Its_a_mess
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = KOR.70.a
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			country_event = {
+				id = KOR.71
+				days = 2
+			}
+		}
+	}
+}
+
+country_event = { #연설
+	id = KOR.71
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.71"}
+	title = KOR.71.t
+	desc = KOR.71.desc
+	picture = GFX_Its_a_mess
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = KOR.71.a
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			country_event = {
+				id = KOR.72
+				days = 2
+			}
+		}
+	}
+}
+
+country_event = { #연설
+	id = KOR.72
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.72"}
+	title = KOR.72.t
+	desc = KOR.72.desc
+	picture = GFX_Its_a_mess
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = KOR.72.a
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			country_event = {
+				id = KOR.10
+				days = 2
+			}
+		}
 	}
 }
 
@@ -75,7 +417,7 @@ country_event = { #시작 선택
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.10"}
 	title = KOR.10.t
 	desc = KOR.10.desc
-	picture = GFX_military_coup
+	picture = GFX_report_event_kor_lee
 	
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -1096,15 +1438,20 @@ country_event = {
 				has_completed_focus = Yeo_Un_hyung_Elected
 			}
 			hidden_effect = {
-				AKR = { # Switch the tag alias for SPA - it now becomes SPD - the republicans
-					clr_country_flag = FKR_korea_flag
+				FKR = { # Switch the tag alias for SPA - it now becomes SPD - the republicans
 					drop_cosmetic_tag = yes
-					set_country_flag = KOR_korea_flag
-					else = {
-						set_cosmetic_tag = KOR_korea
-					}
 					set_politics = {
 						ruling_party = fascism
+					}
+					create_country_leader = {
+  						name = "이범석"
+  						desc = "POLITICS_LEE_BEOM_DESC"
+  						picture = "Portrait_Lee_Beomseok.dds"
+  						expire = "1947.7.19"
+  						ideology = lee_fascism
+  						traits = {
+    						#
+  						}
 					}
 					set_popularities = {
 						fascism = 100
@@ -1114,10 +1461,6 @@ country_event = {
 					retire_ideology_leader = communism
 				}
 				# Switch the tag alias for the player's country - the player goes from SPR to SPA
-				set_country_flag = FKR_korea_flag
-				else = {
-					set_cosmetic_tag = FKR_korea
-				}
 				set_politics = {
 					ruling_party = social_democracy
 				}
@@ -2388,5 +2731,798 @@ country_event = {
 			FKR = { add_timed_idea = { idea = FKR_death_before_surrender days = 500 } }
 		}
 		#complete_national_focus = 내전 중점
+	}
+}
+
+country_event = { #Size of funds discussion
+	id = KOR.58
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.58"}
+	title = KOR.58.t
+	desc = KOR.58.desc
+	picture = GFX_NAREISION
+	is_triggered_only = yes
+
+	option = {
+		name = KOR.58.a
+		RUS_zemstvo_focus_events = yes
+	}
+	option = {
+		name = KOR.58.b
+		trigger = {
+			num_of_civilian_factories_available_for_projects > 0
+		}
+		add_ideas = RUS_increased_zemstvo_investment
+		RUS_zemstvo_focus_events = yes
+	}
+	option = {
+		name = KOR.58.c
+		trigger = {
+			num_of_civilian_factories_available_for_projects > 1
+		}
+		add_ideas = RUS_large_zemstvo_investment
+		RUS_zemstvo_focus_events = yes
+	}
+}
+
+country_event = { #Funds direction discussion
+	id = KOR.59
+	immediate = { log = "[GetDateText]: [Root.GetName]: event KOR.59" }
+	title = KOR.59.t
+	desc = KOR.59.desc
+	picture = GFX_NAREISION
+	is_triggered_only = yes
+
+	option = { #civil services
+		name = KOR.59.a
+		RUS_set_zemstvo_result_social = yes
+		custom_effect_tooltip = RUS_zemstva_social_focus
+	}
+	option = { #industry
+		name = KOR.59.b
+		trigger = {
+			has_completed_focus = rural_development2
+		}
+		RUS_set_zemstvo_result_industry = yes
+		custom_effect_tooltip = RUs_zemstva_civilian_focus
+	}
+	option = { #research
+		name = KOR.59.c
+		trigger = {
+			has_completed_focus = organization_Korean_Red_Cross
+		}
+		RUS_set_zemstvo_result_research = yes
+		custom_effect_tooltip = RUs_zemstva_research_focus
+	}
+}
+
+country_event = { #Zemstvo Funding Results
+	id = KOR.60
+	immediate = { log = "[GetDateText]: [Root.GetName]: event KOR.60" }
+	
+	title = {
+		text = KOR.60.t.hospital
+		trigger = {
+			has_country_flag = RUS_zemstvo_hospital
+			NOT = { has_country_flag = RUS_zemstvo_failure }
+		}
+	}
+	desc = {
+		text = KOR.60.d.hospital
+		trigger = {
+			has_country_flag = RUS_zemstvo_hospital
+			NOT = { has_country_flag = RUS_zemstvo_failure }
+		}
+	}
+
+	title = {
+		text = KOR.60.t.schools
+		trigger = {
+			has_country_flag = RUS_zemstvo_schools
+			NOT = { has_country_flag = RUS_zemstvo_failure }
+		}
+	}
+	desc = {
+		text = KOR.60.d.schools
+		trigger = {
+			has_country_flag = RUS_zemstvo_schools
+			NOT = { has_country_flag = RUS_zemstvo_failure }
+		}
+	}
+
+	title = {
+		text = KOR.60.t.housing
+		trigger = {
+			has_country_flag = RUS_zemstvo_housing
+			NOT = { has_country_flag = RUS_zemstvo_failure }
+		}
+	}
+	desc = {
+		text = KOR.60.d.housing
+		trigger = {
+			has_country_flag = RUS_zemstvo_housing
+			NOT = { has_country_flag = RUS_zemstvo_failure }
+		}
+	}
+
+	title = {
+		text = KOR.60.t.civilian_industry_1
+		trigger = {
+			has_country_flag = RUS_zemstvo_civilian_industry
+			NOT = {
+				has_idea = RUS_increased_zemstvo_investment
+				has_idea = RUS_large_zemstvo_investment
+				has_country_flag = RUS_zemstvo_failure
+			}
+		}
+	}
+	desc = {
+		text = KOR.60.d.civilian_industry_1
+		trigger = {
+			has_country_flag = RUS_zemstvo_civilian_industry
+			NOT = {
+				has_idea = RUS_increased_zemstvo_investment
+				has_idea = RUS_large_zemstvo_investment
+				has_country_flag = RUS_zemstvo_failure
+			}
+		}
+	}
+
+	title = {
+		text = KOR.60.t.civilian_industry_2
+		trigger = {
+			has_country_flag = RUS_zemstvo_civilian_industry
+			has_idea = RUS_increased_zemstvo_investment
+			NOT = { has_country_flag = RUS_zemstvo_failure }
+		}
+	}
+	desc = {
+		text = KOR.60.d.civilian_industry_2
+		trigger = {
+			has_country_flag = RUS_zemstvo_civilian_industry
+			has_idea = RUS_increased_zemstvo_investment
+			NOT = { has_country_flag = RUS_zemstvo_failure }
+		}
+	}
+
+	title = {
+		text = KOR.60.t.civilian_industry_3
+		trigger = {
+			has_country_flag = RUS_zemstvo_civilian_industry
+			has_idea = RUS_large_zemstvo_investment
+			NOT = { has_country_flag = RUS_zemstvo_failure }
+		}
+	}
+	desc = {
+		text = KOR.60.d.civilian_industry_3
+		trigger = {
+			has_country_flag = RUS_zemstvo_civilian_industry
+			has_idea = RUS_large_zemstvo_investment
+			NOT = { has_country_flag = RUS_zemstvo_failure }
+		}
+	}
+
+	title = {
+		text = KOR.60.t.military_industry
+		trigger = {
+			has_country_flag = RUS_zemstvo_military_industry
+			NOT = { has_country_flag = RUS_zemstvo_failure }
+		}
+	}
+	desc = {
+		text = KOR.60.d.military_industry
+		trigger = {
+			has_country_flag = RUS_zemstvo_military_industry
+			NOT = { has_country_flag = RUS_zemstvo_failure }
+		}
+	}
+	title = {
+		text = KOR.60.t.infrastructure
+		trigger = {
+			has_country_flag = RUS_zemstvo_infrastructure
+			NOT = { has_country_flag = RUS_zemstvo_failure }
+		}
+	}
+	desc = {
+		text = KOR.60.d.infrastructure
+		trigger = {
+			has_country_flag = RUS_zemstvo_infrastructure
+			NOT = { has_country_flag = RUS_zemstvo_failure }
+		}
+	}
+	title = {
+		text = KOR.60.t.agriculture
+		trigger = {
+			has_country_flag = RUS_zemstvo_agriculture
+			NOT = { has_country_flag = RUS_zemstvo_failure }
+		}
+	}
+	desc = {
+		text = KOR.60.d.agriculture
+		trigger = {
+			has_country_flag = RUS_zemstvo_agriculture
+			NOT = { has_country_flag = RUS_zemstvo_failure }
+		}
+	}
+	title = {
+		text = KOR.60.t.synthetics
+		trigger = {
+			has_country_flag = RUS_zemstvo_synthetics
+			NOT = { has_country_flag = RUS_zemstvo_failure }
+		}
+	}
+	desc = {
+		text = KOR.60.d.synthetics
+		trigger = {
+			has_country_flag = RUS_zemstvo_synthetics
+			NOT = { has_country_flag = RUS_zemstvo_failure }
+		}
+	}
+
+	title = {
+		text = KOR.60.t.failure_1
+		trigger = {
+			has_country_flag = RUS_zemstvo_failure_1
+		}
+	}
+	desc = {
+		text = KOR.60.d.failure_1
+		trigger = {
+			has_country_flag = RUS_zemstvo_failure_1
+		}
+	}
+
+	title = {
+		text = KOR.60.t.failure_1
+		trigger = {
+			has_country_flag = RUS_zemstvo_failure_2
+		}
+	}
+	desc = {
+		text = KOR.60.d.failure_2
+		trigger = {
+			has_country_flag = RUS_zemstvo_failure_2
+		}
+	}
+
+	title = {
+		text = KOR.60.t.failure_3
+		trigger = {
+			has_country_flag = RUS_zemstvo_failure_3
+		}
+	}
+	desc = {
+		text = KOR.60.d.failure_3
+		trigger = {
+			has_country_flag = RUS_zemstvo_failure_3
+		}
+	}
+
+	title = {
+		text = KOR.60.t.industrial_research
+		trigger = {
+			has_country_flag = RUS_zemstvo_industry_research
+			NOT = { has_country_flag = RUS_zemstvo_failure }
+		}
+	}
+	desc = {
+		text = KOR.60.d.industrial_research
+		trigger = {
+			has_country_flag = RUS_zemstvo_industry_research
+			NOT = { has_country_flag = RUS_zemstvo_failure }
+		}
+	}
+	title = {
+		text = KOR.60.t.industrial_research_bonus
+		trigger = {
+			has_country_flag = RUS_zemstvo_industry_research_bonus
+			NOT = { has_country_flag = RUS_zemstvo_failure }
+		}
+	}
+	desc = {
+		text = KOR.60.d.industrial_research_bonus
+		trigger = {
+			has_country_flag = RUS_zemstvo_industry_research_bonus
+			NOT = { has_country_flag = RUS_zemstvo_failure }
+		}
+	}
+	title = {
+		text = KOR.60.t.industrial_research_failure
+		trigger = {
+			OR = {
+				has_country_flag = RUS_zemstvo_industry_research
+				has_country_flag = RUS_zemstvo_industry_research_bonus
+			}
+			has_country_flag = RUS_zemstvo_failure
+		}
+	}
+	desc = {
+		text = KOR.60.d.industrial_research_failure
+		trigger = {
+			OR = {
+				has_country_flag = RUS_zemstvo_industry_research
+				has_country_flag = RUS_zemstvo_industry_research_bonus
+			}
+			has_country_flag = RUS_zemstvo_failure
+		}
+	}
+	title = {
+		text = KOR.60.t.military_research
+		trigger = {
+			has_country_flag = RUS_zemstvo_military_research
+			NOT = { has_country_flag = RUS_zemstvo_failure }
+		}
+	}
+	desc = {
+		text = KOR.60.d.military_research
+		trigger = {
+			has_country_flag = RUS_zemstvo_military_research
+			NOT = { has_country_flag = RUS_zemstvo_failure }
+		}
+	}
+	title = {
+		text = KOR.60.t.military_research_bonus
+		trigger = {
+			has_country_flag = RUS_zemstvo_military_research_bonus
+			NOT = { has_country_flag = RUS_zemstvo_failure }
+		}
+	}
+	desc = {
+		text = KOR.60.d.military_research_bonus
+		trigger = {
+			has_country_flag = RUS_zemstvo_military_research_bonus
+			NOT = { has_country_flag = RUS_zemstvo_failure }
+		}
+	}
+	title = {
+		text = KOR.60.t.military_research_failure
+		trigger = {
+			OR = {
+				has_country_flag = RUS_zemstvo_military_research
+				has_country_flag = RUS_zemstvo_military_research_bonus
+			}
+			has_country_flag = RUS_zemstvo_failure
+		}
+	}
+	desc = {
+		text = KOR.60.d.military_research_failure
+		trigger = {
+			OR = {
+				has_country_flag = RUS_zemstvo_industry_research
+				has_country_flag = RUS_zemstvo_industry_research_bonus
+			}
+			has_country_flag = RUS_zemstvo_failure
+		}
+	}
+
+	### Effects
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = { RUS_pick_zemstvo_states = yes }
+	}
+
+	#SOCIAL
+	option = { #new hospitals
+		name = KOR.60.a
+		trigger = {
+			has_country_flag = RUS_zemstvo_hospital
+			NOT = { has_country_flag = RUS_zemstvo_failure }
+		}
+		RUS_calculate_zemstva_variables = yes
+		multiply_temp_variable = { RUS_zemstvo_base_value = 0.001 }
+		add_stability = RUS_zemstvo_base_value
+		RUS_clear_zemstvo_data = yes
+	}
+
+	option = { #new schools
+		name = KOR.60.a
+		trigger = {
+			has_country_flag = RUS_zemstvo_schools
+			NOT = { has_country_flag = RUS_zemstvo_failure }
+		}
+		RUS_calculate_zemstva_variables = yes
+		add_to_temp_variable = { RUS_zemstvo_base_value = 25 }
+		add_political_power = RUS_zemstvo_base_value
+		RUS_clear_zemstvo_data = yes
+	}
+
+	option = { #housing programme
+		name = KOR.60.a
+		trigger = {
+			has_country_flag = RUS_zemstvo_housing
+			NOT = { has_country_flag = RUS_zemstvo_failure }
+		}
+		RUS_calculate_zemstva_variables = yes
+		multiply_temp_variable = { RUS_zemstvo_base_value = 0.001 }
+		add_war_support = RUS_zemstvo_base_value
+		RUS_clear_zemstvo_data = yes
+	}
+
+	option = { #failed civil investments
+		name = KOR.60.b
+		trigger = {
+			OR = {
+				has_country_flag = RUS_zemstvo_hospital
+				has_country_flag = RUS_zemstvo_housing
+				has_country_flag = RUS_zemstvo_schools
+			}
+			has_country_flag = RUS_zemstvo_failure
+		}
+		RUS_calculate_zemstva_variables = yes
+		if = {
+			limit = { has_country_flag = RUS_zemstvo_hospital }
+			multiply_temp_variable = { RUS_zemstvo_base_value = -0.001 }
+			add_stability = RUS_zemstvo_base_value
+		}
+		if = {
+			limit = { has_country_flag = RUS_zemstvo_housing }
+			multiply_temp_variable = { RUS_zemstvo_base_value = -0.001 }
+			add_war_support = RUS_zemstvo_base_value
+		}
+		if = {
+			limit = { has_country_flag = RUS_zemstvo_schools }
+			add_to_temp_variable = { RUS_zemstvo_base_value = 25 }
+			multiply_temp_variable = { RUS_zemstvo_base_value = -1 }
+			add_political_power = RUS_zemstvo_base_value
+		}
+		RUS_clear_zemstvo_data = yes
+	}
+
+	#INDUSTRY
+	option = { #industrial expansion
+		name = KOR.60.a
+		trigger = {
+			has_country_flag = RUS_zemstvo_civilian_industry
+			NOT = { has_country_flag = RUS_zemstvo_failure }
+		}
+		event_target:RUS_zemstvo_state_1 = { RUS_zemstvo_add_civilian_factory = yes }
+		if = {
+			limit = {
+				OR = {
+					has_idea = RUS_increased_zemstvo_investment
+					has_idea = RUS_large_zemstvo_investment
+				}
+			}
+			event_target:RUS_zemstvo_state_2 = { RUS_zemstvo_add_civilian_factory = yes }
+		}
+		if = {
+			limit = { has_idea = RUS_large_zemstvo_investment }
+			event_target:RUS_zemstvo_state_3 = { RUS_zemstvo_add_civilian_factory = yes }
+		}
+		RUS_clear_zemstvo_data = yes
+	}
+
+	option = { #production increase
+		name = KOR.60.a
+		trigger = {
+			has_country_flag = RUS_zemstvo_military_industry
+			NOT = { has_country_flag = RUS_zemstvo_failure }
+		}
+		event_target:RUS_zemstvo_state_1 = { RUS_zemstvo_add_military_factory = yes }
+		if = {
+			limit = {
+				OR = {
+					has_idea = RUS_increased_zemstvo_investment
+					has_idea = RUS_large_zemstvo_investment
+				}
+			}
+			event_target:RUS_zemstvo_state_2 = { RUS_zemstvo_add_military_factory = yes }
+		}
+		if = {
+			limit = { has_idea = RUS_large_zemstvo_investment }
+			event_target:RUS_zemstvo_state_3 = { RUS_zemstvo_add_military_factory = yes }
+		}
+		RUS_clear_zemstvo_data = yes
+	}
+
+	option = { #infrastructure expansion
+		name = KOR.60.a
+		trigger = {
+			has_country_flag = RUS_zemstvo_infrastructure
+			NOT = { has_country_flag = RUS_zemstvo_failure }
+		}
+		event_target:RUS_zemstvo_state_1 = { RUS_zemstvo_add_infrastructure = yes }
+		if = {
+			limit = {
+				OR = {
+					has_idea = RUS_increased_zemstvo_investment
+					has_idea = RUS_large_zemstvo_investment
+				}
+			}
+			event_target:RUS_zemstvo_state_2 = { RUS_zemstvo_add_infrastructure = yes }
+		}
+		if = {
+			limit = { has_idea = RUS_large_zemstvo_investment }
+			event_target:RUS_zemstvo_state_3 = { RUS_zemstvo_add_infrastructure = yes }
+		}
+		RUS_clear_zemstvo_data = yes
+	}
+
+	option = { #agricultural development
+		name = KOR.60.a
+		trigger = {
+			has_country_flag = RUS_zemstvo_agriculture
+			NOT = { has_country_flag = RUS_zemstvo_failure }
+		}
+		event_target:RUS_zemstvo_state_1 = { add_extra_state_shared_building_slots = 1 }
+		if = {
+			limit = {
+				OR = {
+					has_idea = RUS_increased_zemstvo_investment
+					has_idea = RUS_large_zemstvo_investment
+				}
+			}
+			event_target:RUS_zemstvo_state_2 = { add_extra_state_shared_building_slots = 1 }
+		}
+		if = {
+			limit = { has_idea = RUS_large_zemstvo_investment }
+			event_target:RUS_zemstvo_state_3 = { add_extra_state_shared_building_slots = 1 }
+		}
+		RUS_clear_zemstvo_data = yes
+	}
+
+	option = { #refinery built
+		name = KOR.60.a
+		trigger = {
+			has_country_flag = RUS_zemstvo_synthetics
+			NOT = { has_country_flag = RUS_zemstvo_failure }
+		}
+		event_target:RUS_zemstvo_state_1 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = synthetic_refinery
+				level = 1
+				instant_build = yes
+			}
+		}
+		RUS_clear_zemstvo_data = yes
+	}
+
+	
+	option = { #failed industrial investment
+		name = KOR.60.b
+		trigger = {
+			OR = {
+				has_country_flag = RUS_zemstvo_civilian_industry
+				has_country_flag = RUS_zemstvo_military_industry
+				has_country_flag = RUS_zemstvo_infrastructure
+				has_country_flag = RUS_zemstvo_agriculture
+				has_country_flag = RUS_zemstvo_synthetics
+			}
+			has_country_flag = RUS_zemstvo_failure
+		}
+		if = {
+			limit = { has_idea = RUS_large_zemstvo_investment }
+			add_timed_idea = {
+				idea = RUS_zemstva_bad_investment
+				days = 180
+			}
+		}
+		else_if = {
+			limit = { has_idea = RUS_increased_zemstvo_investment }
+			add_timed_idea = {
+				idea = RUS_zemstva_bad_investment
+				days = 120
+			}
+		}
+		else = {
+			add_timed_idea = {
+				idea = RUS_zemstva_bad_investment
+				days = 60
+			}
+		}
+		RUS_clear_zemstvo_data = yes
+	}
+
+	#RESEARCH 
+
+	option = { #industrial research advance
+		name = KOR.60.a
+		trigger = {
+			has_country_flag = RUS_zemstvo_industry_research
+			NOT = { has_country_flag = RUS_zemstvo_failure }
+		}
+		clr_country_flag = RUS_zemstvo_industry_research
+		if = { # big investment
+			limit = { has_idea = RUS_large_zemstvo_investment }
+			add_tech_bonus = {
+				name = KOR.60.t.industrial_research
+				bonus = 0.6
+				uses = 1
+				category = industry
+				category = electronics
+			}
+		}
+		else_if = { # medium investment
+			limit = { has_idea = RUS_increased_zemstvo_investment }
+			add_tech_bonus = {
+				name = KOR.60.t.industrial_research
+				bonus = 0.4
+				uses = 1
+				category = industry
+				category = electronics
+			}
+		}
+		else = { # small investment
+			add_tech_bonus = {
+				name = KOR.60.t.industrial_research
+				bonus = 0.2
+				uses = 1
+				category = industry
+				category = electronics
+			}
+		}
+		RUS_clear_zemstvo_data = yes
+	}
+
+	option = { #industrial research breakthrough
+		name = KOR.60.a
+		trigger = {
+			has_country_flag = RUS_zemstvo_industry_research_bonus
+			NOT = { has_country_flag = RUS_zemstvo_failure }
+		}
+		if = { # big investment
+			limit = { has_idea = RUS_large_zemstvo_investment }
+			add_timed_idea = {
+				idea = RUS_zemstva_civil_research_positive
+				days = 270
+			}
+		}
+		else_if = { # medium investment
+			limit = { has_idea = RUS_increased_zemstvo_investment }
+			add_timed_idea = {
+				idea = RUS_zemstva_civil_research_positive
+				days = 180
+			}
+		}
+		else = { # small investment
+			add_timed_idea = {
+				idea = RUS_zemstva_civil_research_positive
+				days = 90
+			}
+		}
+		RUS_clear_zemstvo_data = yes
+	}
+
+	option = { #industrial research setback
+		name = KOR.60.b
+		trigger = {
+			OR = {
+				has_country_flag = RUS_zemstvo_industry_research
+				has_country_flag = RUS_zemstvo_industry_research_bonus
+			}
+			has_country_flag = RUS_zemstvo_failure
+		}
+		if = { # big investment
+			limit = { has_idea = RUS_large_zemstvo_investment }
+			add_timed_idea = {
+				idea = RUS_zemstva_civil_research_negative
+				days = 270
+			}
+		}
+		else_if = { # medium investment
+			limit = { has_idea = RUS_increased_zemstvo_investment }
+			remove_ideas = RUS_increased_zemstvo_investment
+			add_timed_idea = {
+				idea = RUS_zemstva_civil_research_negative
+				days = 180
+			}
+		}
+		else = { # small investment
+			add_timed_idea = {
+				idea = RUS_zemstva_civil_research_negative
+				days = 90
+			}
+		}
+		RUS_clear_zemstvo_data = yes
+	}
+
+	option = { #military research advance
+		name = KOR.60.a
+		trigger = {
+			has_country_flag = RUS_zemstvo_military_research
+			NOT = { has_country_flag = RUS_zemstvo_failure }
+		}
+		if = { # big investment
+			limit = { has_idea = RUS_large_zemstvo_investment }
+			remove_ideas = RUS_large_zemstvo_investment
+			add_tech_bonus = {
+				name = KOR.60.t.military_research
+				bonus = 0.6
+				uses = 1
+				category = armor
+				category = air_equipment
+				category = artillery
+				category = infantry_weapons
+			}
+		}
+		else_if = { # medium investment
+			limit = { has_idea = RUS_increased_zemstvo_investment }
+			remove_ideas = RUS_increased_zemstvo_investment
+			add_tech_bonus = {
+				name = KOR.60.t.military_research
+				bonus = 0.4
+				uses = 1
+				category = armor
+				category = air_equipment
+				category = artillery
+				category = infantry_weapons
+			}
+		}
+		else = { # small investment
+			add_tech_bonus = {
+				name = KOR.60.t.military_research
+				bonus = 0.2
+				uses = 1
+				category = armor
+				category = air_equipment
+				category = artillery
+				category = infantry_weapons
+			}
+		}
+		RUS_clear_zemstvo_data = yes
+	}
+	
+	option = { #military research breakthrough
+		name = KOR.60.a
+		trigger = {
+			has_country_flag = RUS_zemstvo_military_research_bonus
+			NOT = { has_country_flag = RUS_zemstvo_failure }
+		}
+		if = { # big investment
+			limit = { has_idea = RUS_large_zemstvo_investment }
+			add_timed_idea = {
+				idea = RUS_zemstva_military_research_positive
+				days = 270
+			}
+		}
+		else_if = { # medium investment
+			limit = { has_idea = RUS_increased_zemstvo_investment }
+			add_timed_idea = {
+				idea = RUS_zemstva_military_research_positive
+				days = 180
+			}
+		}
+		else = { # small investment
+			add_timed_idea = {
+				idea = RUS_zemstva_military_research_positive
+				days = 90
+			}
+		}
+		RUS_clear_zemstvo_data = yes
+	}
+
+	option = { #military research setback
+		name = KOR.60.b
+		trigger = {
+			OR = {
+				has_country_flag = RUS_zemstvo_military_research
+				has_country_flag = RUS_zemstvo_military_research_bonus
+			}
+			has_country_flag = RUS_zemstvo_failure
+		}
+		if = { # big investment
+			limit = { has_idea = RUS_large_zemstvo_investment }
+			add_timed_idea = {
+				idea = RUS_zemstva_military_research_negative
+				days = 270
+			}
+		}
+		else_if = { # medium investment
+			limit = { has_idea = RUS_increased_zemstvo_investment }
+			remove_ideas = RUS_increased_zemstvo_investment
+			add_timed_idea = {
+				idea = RUS_zemstva_military_research_negative
+				days = 180
+			}
+		}
+		else = { # small investment
+			add_timed_idea = {
+				idea = RUS_zemstva_military_research_negative
+				days = 90
+			}
+		}
+		RUS_clear_zemstvo_data = yes
 	}
 }

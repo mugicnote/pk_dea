@@ -363,7 +363,7 @@ create_country_leader = {
 	desc = "POLITICS_CHIANG_KAI-SHEK_DESC"
 	picture = "Chiang_Kai_Shek_kormod.dds"
 	expire = "1965.1.1"
-	ideology = authoritarian
+	ideology = Peoples_Party_ideology
 	traits = {
 		generallissimo
 	}

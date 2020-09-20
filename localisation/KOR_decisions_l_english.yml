@@ -146,8 +146,52 @@
  KOR_anti_graft_act:0 "부정청탁 방지법"
  KOR_recruitment_of_members:0 "국회의원 영입"
 
+ KOR_the_inevitable_civil_war_desc:0 "선거의 여파로 내전은 거의 확실해졌습니다. [Root.GetSCWsideloc] 우리는 주도권을 잡고, 주둔군에 대한 통제권을 확보해야 합니다."
  KOR_the_inevitable_civil_war:0 "막을수 없는 내전"
  KOR_primo_de_rivera_speech:0 "사회노동당 당원의 연설"
 
  KOR_military_plot_nationalists:0 "한국 전쟁"
  KOR_political_assassination:0 "정치 암살"
+
+RUS_Zemstvo_Funding_decisions:0 "경제 개발 투자"
+RUS_Zemstvo_Funding_decisions_desc:0 "test"
+RUS_funding_zemstva:0 "이미 다른 도심 지역에 자금을 지원 중임."
+
+RUS_Invest_In_The_Northern_Zemstva:0 "서울 도심에 투자"
+RUS_Invest_In_The_Southern_Zemstva:0 "부산 도심에 투자"
+RUS_Invest_In_The_Eastern_Zemstva:0 "평양 도심에 투자"
+RUS_Invest_In_The_Ural_Zemstva:0 "대구 도심에 투자"
+RUS_Invest_In_The_Siberian_Zemstva:0 "광주 도심에 투자"
+
+RUS_Invest_In_The_Zemstva_tooltip:0 "§C그 지역의 건설사들에게 잠재적으로 유익한 효과를 가져다 줄 수 있는 경제적 지원을 제공할 것입니다.§!"
+
+kor_civil_war_divisions_counter_full_breakdown:0 "[KOR.GetNameDefCap](은)는 만약 지금 내전이 시작된다면 [?SPR.spa_civil_war_divisions_counter_var|+0]개 §H사단§!을 가지고 시작하게 될 것입니다.\n"
+kor_civil_war_divisions_counter_icon_value:0 "[?SPR.spa_civil_war_divisions_counter_var|0H]"
+fkr_civil_war_divisions_counter_full_breakdown:0 "스페인 공화파는 만약 지금 내전이 시작된다면 [?SPR.spr_civil_war_divisions_counter_var|+0]개 §H사단§!을 가지고 시작하게 될 것입니다.\n"
+fkr_civil_war_divisions_counter_icon_value:0 "[?SPR.spr_civil_war_divisions_counter_var|0H]"
+
+KOR_opposition_civil_war_preparations:0 "반대파 내전 준비"
+KOR_opposition_civil_war_preparations_desc:0 "우리가 그들의 모든 움직임을 막기 위해 노력하는 동안, 우리의 적들은 놀고만 있지 않습니다. 우리는 다가올 갈등에 대비하며 그들의 행동을 면밀주시 해야합니다."
+
+KOR_national_assembly_unicameralism_decision:0 "대한민국 국회"
+ KOR_national_assembly_bicameralism_decision:0 "대한민국 국회"
+ KOR_national_assembly_unicameralism_decision_desc:0 "국회는 국민의 신임을 얻은 대표들로 구성되어 국민의 목소리를 대변한다는 점에서 단순한 입법기관이 아닌 그 이상의 가치를 지니고 있습니다.\n\n§Y국회의원 임기§!: 4년\n§Y집권 여당§!: [ROOT.GetDemocraticParty]"
+ KOR_national_assembly_bicameralism_decision_desc:0 "국회는 국민의 신임을 얻은 대표들로 구성되어 국민의 목소리를 대변한다는 점에서 단순한 입법기관이 아닌 그 이상의 가치를 지니고 있습니다.\n\n§Y국회의원 임기§!: 4년\n§Y집권 여당§!: [ROOT.GetDemocraticParty]"
+ 
+ KOR_uni_house_support_header:0 "§Y원내 지지도§!"
+
+ KOR_senate_support_amount:0 "§Y[?KOR.senate_support]§! / §G[?KOR.senate_total]§!"
+ KOR_senate_support_header:0 "§Y참의원 지지도§!"
+ KOR_senate_support_icon:0 "[ROOT.GetSenateSupportDecision]"
+ KOR_SENATE_0:0 "£senate_0"
+ KOR_SENATE_30:0 "£senate_30"
+ KOR_SENATE_50:0 "£senate_50"
+ KOR_SENATE_100:0 "£senate_100"
+
+ KOR_house_support_amount:0 "§Y[?KOR.house_support]§! / §G[?KOR.house_total]§!"
+ KOR_house_support_header:0 "§Y민의원 지지도§!"
+ KOR_house_support_icon:0 "[ROOT.GetHouseSupportDecision]"
+ KOR_HOUSE_0:0 "£house_0"
+ KOR_HOUSE_30:0 "£house_30"
+ KOR_HOUSE_50:0 "£house_50"
+ KOR_HOUSE_100:0 "£house_100"

@@ -1,5 +1,44 @@
 leader_traits = {
 
+	## 내각 관료 직책 ##
+	hog = {} #정부수반
+	secmin = {} #내무장관
+	frnmin =  {} #외무장관
+	ecomin = {} #재무장관
+	milmin = {} #군무장관
+	intmin = {} #정보장관
+	themin = {} #이론가
+	
+	coa = {} #육군참모총장
+	con = {} #해군참모총장
+	coaf = {} #공군참모총장
+	cos = {} #군 참모
+	
+	kor_dictator = {
+		random = no
+		political_power_factor = 0.15
+		stability_factor = -0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	kor_dictator2 = {
+		random = no
+		stability_factor = -0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	disdain_for_politicians_3 = {
+		random = no
+		political_power_factor = 0.1
+		stability_factor = -0.05
+	}
+
 	traits_kim_ku = {
 		random = no
 		stability_factor = 0.2

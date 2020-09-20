@@ -77,7 +77,38 @@ spriteTypes = {
 		name = "GFX_report_event_kor_lee"
 		texturefile = "gfx/event_pictures/report_event_kor_lee.dds"
 	}
-
+	spriteType = {
+		name = "GFX_parliamentary_barricade"
+		texturefile = "gfx/event_pictures/parliamentary_barricade.dds"
+	}
+	spriteType = {
+		name = "GFX_parliamentary_siege"
+		texturefile = "gfx/event_pictures/parliamentary_siege.dds"
+	}
+	spriteType = {
+		name = "GFX_Seo_Jae_pils_frustration"
+		texturefile = "gfx/event_pictures/Seo_Jae_pils_frustration.dds"
+	}
+	spriteType = {
+		name = "GFX_Seo_Jae_pils_friction"
+		texturefile = "gfx/event_pictures/Seo_Jae_pils_friction.dds"
+	}
+	spriteType = {
+		name = "GFX_Choi_Hwans_Suspicion"
+		texturefile = "gfx/event_pictures/Choi_Hwans_Suspicion.dds"
+	}
+	spriteType = {
+		name = "GFX_two_criminals"
+		texturefile = "gfx/event_pictures/two_criminals.dds"
+	}
+	spriteType = {
+		name = "GFX_prove_incentive_Article"
+		texturefile = "gfx/event_pictures/prove_incentive_Article.dds"
+	}
+	spriteType = {
+		name = "GFX_Its_a_mess"
+		texturefile = "gfx/event_pictures/Its_a_mess.dds"
+	}
 
 }
 	

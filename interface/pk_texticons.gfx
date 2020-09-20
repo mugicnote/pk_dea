@@ -1,0 +1,233 @@
+spriteTypes = {
+
+	#National Assembly
+	spriteType = {
+		name = "GFX_senate_0"
+		texturefile = "gfx/texticons/national_assembly/senate_0.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_senate_30"
+		texturefile = "gfx/texticons/national_assembly/senate_30.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_senate_50"
+		texturefile = "gfx/texticons/national_assembly/senate_50.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_senate_100"
+		texturefile = "gfx/texticons/national_assembly/senate_100.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_house_0"
+		texturefile = "gfx/texticons/national_assembly/house_0.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_house_30"
+		texturefile = "gfx/texticons/national_assembly/house_30.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_house_50"
+		texturefile = "gfx/texticons/national_assembly/house_50.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_house_100"
+		texturefile = "gfx/texticons/national_assembly/house_100.dds"
+		legacy_lazy_load = no
+	}
+
+	#News
+	spriteType = {
+		name = "GFX_soviet_news"
+		texturefile = "gfx/texticons/soviet_news.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_russian_news"
+		texturefile = "gfx/texticons/russian_news.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_nazi_news"
+		texturefile = "gfx/texticons/nazi_news.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_kaiser_news"
+		texturefile = "gfx/texticons/kaiser_news.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_east_ger_news"
+		texturefile = "gfx/texticons/east_ger_news.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_weimar_news"
+		texturefile = "gfx/texticons/weimar_news.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_usa_news"
+		texturefile = "gfx/texticons/usa_news.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_british_news"
+		texturefile = "gfx/texticons/british_news.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_generic_news"
+		texturefile = "gfx/texticons/generic_news.dds"
+		legacy_lazy_load = no
+	}
+	#spriteType = {
+	#	name = "GFX_generic_leftist_news"
+	#	texturefile = "gfx/texticons/generic_leftist_news.dds"
+	#	legacy_lazy_load = no
+	#}
+	spriteType = {
+		name = "GFX_vichy_news"
+		texturefile = "gfx/texticons/vichy_news.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_france_news"
+		texturefile = "gfx/texticons/france_news.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_china_news"
+		texturefile = "gfx/texticons/china_news.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_com_china_news"
+		texturefile = "gfx/texticons/com_china_news.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_sinkiang_news"
+		texturefile = "gfx/texticons/sinkiang_news.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_japanese_news"
+		texturefile = "gfx/texticons/japanese_news.dds"
+		legacy_lazy_load = no
+	}
+	#spriteType = {
+	#	name = "GFX_leftist_japan_news"
+	#	texturefile = "gfx/texticons/leftist_japan_news.dds"
+	#	legacy_lazy_load = no
+	#}
+	spriteType = {
+		name = "GFX_korean_news"
+		texturefile = "gfx/texticons/korean_news.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_italian_news"
+		texturefile = "gfx/texticons/italian_news.dds"
+		legacy_lazy_load = no
+	}
+	#spriteType = {
+	#	name = "GFX_swedish_news"
+	#	texturefile = "gfx/texticons/swedish_news.dds"
+	#	legacy_lazy_load = no
+	#}
+	#spriteType = {
+	#	name = "GFX_finnish_news"
+	#	texturefile = "gfx/texticons/finnish_news.dds"
+	#	legacy_lazy_load = no
+	#}
+	#spriteType = {
+	#	name = "GFX_spanish_news"
+	#	texturefile = "gfx/texticons/spanish_news.dds"
+	#	legacy_lazy_load = no
+	#}
+	#spriteType = {
+	#	name = "GFX_ss_news"
+	#	texturefile = "gfx/texticons/ss_news.dds"
+	#	legacy_lazy_load = no
+	#}
+	#spriteType = {
+	#	name = "GFX_rightistgeneric_news"
+	#	texturefile = "gfx/texticons/rightistgeneric_news.dds"
+	#	legacy_lazy_load = no
+	#}
+	#spriteType = {
+	#	name = "GFX_canadian_news"
+	#	texturefile = "gfx/texticons/canadian_news.dds"
+	#	legacy_lazy_load = no
+	#}
+	#spriteType = {
+	#	name = "GFX_romanian_news"
+	#	texturefile = "gfx/texticons/romanian_news.dds"
+	#	legacy_lazy_load = no
+	#}
+	#spriteType = {
+	#	name = "GFX_bulgarian_news"
+	#	texturefile = "gfx/texticons/bulgarian_news.dds"
+	#	legacy_lazy_load = no
+	#}
+	#spriteType = {
+	#	name = "GFX_hungarian_news"
+	#	texturefile = "gfx/texticons/hungarian_news.dds"
+	#	legacy_lazy_load = no
+	#}
+	#spriteType = {
+	#	name = "GFX_greek_news"
+	#	texturefile = "gfx/texticons/greek_news.dds"
+	#	legacy_lazy_load = no
+	#}
+	#spriteType = {
+	#	name = "GFX_norwegian_news"
+	#	texturefile = "gfx/texticons/norwegian_news.dds"
+	#	legacy_lazy_load = no
+	#}
+	#spriteType = {
+	#	name = "GFX_danish_news"
+	#	texturefile = "gfx/texticons/danish_news.dds"
+	#	legacy_lazy_load = no
+	#}
+	#spriteType = {
+	#	name = "GFX_croatian_news"
+	#	texturefile = "gfx/texticons/croatian_news.dds"
+	#	legacy_lazy_load = no
+	#}
+	#spriteType = {
+	#	name = "GFX_irish_news"
+	#	texturefile = "gfx/texticons/irish_news.dds"
+	#	legacy_lazy_load = no
+	#}
+	#spriteType = {
+	#	name = "GFX_portugese_news"
+	#	texturefile = "gfx/texticons/portugese_news.dds"
+	#	legacy_lazy_load = no
+	#}
+	spriteType = {
+		name = "GFX_man_nippon_news"
+		texturefile = "gfx/texticons/man_nippon_news.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_man_daily_news"
+		texturefile = "gfx/texticons/man_daily_news.dds"
+		legacy_lazy_load = no
+	}
+}

@@ -1,4 +1,8 @@
 ﻿l_english:
+  ###시작 결정###
+  military_arrest:0 "군부 체포"
+  A_military_revolution:0 "국회 회의 시작"
+  military_success:0 "군부가 혁명에 성공하다"
   ###민주주의###
   democratic_election:0 "대통령 선거"
   ###조노연###
@@ -78,7 +82,7 @@
   creation_liberal_party:0 "자유당 창당"
   Pater_Patriae_Lee:0 "이승만 정부"
   Launch_Anti_Communist_Youth:0 "대한청년단 결성"
-  Strengthened_National_Security_Law:0 "공산주의자 탄압"
+  Strengthened_National_Security_Law:0 "검열 강화"
   Strengthened_National_Security_Law_desc:0 "공산주의자는 콜레라와 같다. 인간은 콜레라와 같이 살 수 없다"
   Lee_constitutional_amendment:0 "헌법 개정"
   suppression_opposition:0 "반대파 탄압"
@@ -106,14 +110,12 @@
   opnion_ilminism:0 "일민주의 주창"
   ###안재홍###
   Ahn_Jae_Hong_Elected:0 "안재홍 당선"
-  ###조만식###
-  Cho_Man_Sik_Elected:0 "조만식 당선"
+  Movement_for_encourage_produce:0 "물산 장려 운동"
+  welfare_increase:0 "복지 증대"
+  ###장면###
+  Chang_Myon_Elected:0 "장면 당선"
   ###김성수###
   Kim_Sung_Soo_Elected:0 "김성수 당선"
-  ###시작 결정###
-  military_arrest:0 "군부 체포"
-  A_military_revolution:0 "군부의 혁명?"
-  military_success:0 "군부가 혁명에 성공하다"
 
   ###대공황###
   great_depression_aftermath:0 "대공황의 여파"
@@ -128,7 +130,7 @@
   health_insurance_expansion:0 "건강보험 확대"
   poverty_problem:0 "빈곤 문제 해결안"
   economic_development_approval:0 "경제 개발안 승인"
-  rural_development:0 "농촌 개발"
+  rural_development:0 "농업협동조합 설치"
   rural_development2:0 "산지 개발"
   foreign_trade:0 "외국과의 무역"
   compulsory_primary_education:0 "초등교육 의무화"

@@ -547,5 +547,9 @@ spriteTypes = {
 		name = "GFX_goal_ideology_radical_socialist"
 		texturefile = "gfx/interface/goals/goal_ideology_radical_socialist.dds"
 	}
+	SpriteType = {
+		name = "GFX_kor_political_reorganization"
+		texturefile = "gfx/interface/goals/kor_political_reorganization.dds"
+	}
 
 }

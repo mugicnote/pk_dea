@@ -1,0 +1,43 @@
+@INFO_TEXT_X = 125
+@INFO_TEXT_Y = 15
+@HOUSE_TEXT_X = 230
+@HEADERS_Y = 45
+@STATUS_Y = 25
+guiTypes = {
+
+	containerWindowType = {
+		name = "kor_national_assembly_unicameralism_ui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height = 80 }
+
+		instantTextBoxType = {
+			name ="uni_status_house_icon"
+			position = { x= 270 y = -20 }
+			#font = "hoi_18mbs"
+			text = "KOR_house_support_icon"
+			format = center
+			#fixedsize = yes
+		}
+
+		instantTextBoxType = {
+			name ="uni_status_house"
+			position = { x= @HOUSE_TEXT_X y = @STATUS_Y }
+			font = "hoi_18mbs"
+			text = "KOR_house_support_amount"
+			format = center
+			fixedsize = yes
+			maxWidth = 280
+		}
+
+		instantTextBoxType = {
+			name ="uni_house_support_header"
+			position = { x= @HOUSE_TEXT_X y = @HEADERS_Y }
+			font = "hoi_24header"
+			text = "KOR_uni_house_support_header"
+			format = center
+			maxHeight = 24
+			fixedsize = yes
+			maxWidth = 280
+		}
+	}
+}

@@ -38,7 +38,7 @@
 			focus = Lee_Seung_man_Elected
 			focus = Kim_Gu_Elected
 			focus = Yeo_Un_hyung_Elected
-			focus = Cho_Man_Sik_Elected
+			focus = Chang_Myon_Elected
 			focus = Kim_Sung_Soo_Elected
 			focus = Ahn_Jae_Hong_Elected
 			focus = Kim_Won_Bong_Elected
@@ -58,7 +58,7 @@
 			focus = Lee_Seung_man_Elected
 			focus = Kim_Gu_Elected
 			focus = Yeo_Un_hyung_Elected
-			focus = Cho_Man_Sik_Elected
+			focus = Chang_Myon_Elected
 			focus = Kim_Sung_Soo_Elected
 			focus = Ahn_Jae_Hong_Elected
 			focus = victory_Korean_Confederation_Trade_Unions
@@ -86,7 +86,7 @@
 			focus = Lee_Seung_man_Elected
 			focus = Kim_Gu_Elected
 			focus = Kim_Won_Bong_Elected
-			focus = Cho_Man_Sik_Elected
+			focus = Chang_Myon_Elected
 			focus = Kim_Sung_Soo_Elected
 			focus = Ahn_Jae_Hong_Elected
 			focus = victory_Korean_Confederation_Trade_Unions
@@ -98,6 +98,7 @@
 				ruling_party = social_democracy
 				elections_allowed = yes
 			}
+		unlock_decision_category_tooltip = KOR_the_inevitable_civil_war
 		country_event = { id = KOR.2 }
 		}
 	}
@@ -403,7 +404,7 @@
 			focus = Lee_Seung_man_Elected
 			focus = Yeo_Un_hyung_Elected
 			focus = Kim_Won_Bong_Elected
-			focus = Cho_Man_Sik_Elected
+			focus = Chang_Myon_Elected
 			focus = Kim_Sung_Soo_Elected
 			focus = Ahn_Jae_Hong_Elected
 			focus = victory_Korean_Confederation_Trade_Unions
@@ -436,7 +437,7 @@
 			focus = Kim_Gu_Elected
 			focus = Yeo_Un_hyung_Elected
 			focus = Kim_Won_Bong_Elected
-			focus = Cho_Man_Sik_Elected
+			focus = Chang_Myon_Elected
 			focus = Kim_Sung_Soo_Elected
 			focus = Ahn_Jae_Hong_Elected
 			focus = victory_Korean_Confederation_Trade_Unions
@@ -472,11 +473,11 @@
 			focus = Kim_Gu_Elected
 			focus = Yeo_Un_hyung_Elected
 			focus = Kim_Won_Bong_Elected
-			focus = Cho_Man_Sik_Elected
+			focus = Chang_Myon_Elected
 			focus = Kim_Sung_Soo_Elected
 			focus = victory_Korean_Confederation_Trade_Unions
 		}
-		x = 42
+		x = 40
 		y = 3
 		completion_reward = {
 			set_politics = {
@@ -487,7 +488,17 @@
 		}
 	}
 	focus = {
-		id = 
+		id = Movement_for_encourage_produce
+		icon = GFX
+		cost = 10.00
+		prerequisite = {
+			focus = Ahn_Jae_Hong_Elected
+		}
+		x = 41
+		y = 4
+	}
+	focus = {
+		id = welfare_increase
 		icon = GFX
 		cost = 10.00
 		prerequisite = {
@@ -497,8 +508,8 @@
 		y = 4
 	}
 	focus = {
-		id = Cho_Man_Sik_Elected
-		icon = GFX_focus_Cho_Man_Sik
+		id = Chang_Myon_Elected
+		icon = GFX
 		cost = 10.00
 		prerequisite = {
 			focus = democratic_election
@@ -535,7 +546,7 @@
 			focus = Yeo_Un_hyung_Elected
 			focus = Kim_Won_Bong_Elected
 			focus = Ahn_Jae_Hong_Elected
-			focus = Cho_Man_Sik_Elected
+			focus = Chang_Myon_Elected
 			focus = victory_Korean_Confederation_Trade_Unions
 		}
 		x = 68
@@ -567,7 +578,7 @@
 	}
 	focus = {
 		id = A_military_revolution
-		icon = GFX_goal_unknown
+		icon = GFX_kor_political_reorganization
 		cost = 10.00
 
 		x = 50
@@ -608,6 +619,12 @@
 		prerequisite = {
 
 		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KOR_great_depression
+				add_idea = KOR_great_depression_after_effect
+     		}
+		}
 		x = 150
 		y = 6
 	 }
@@ -636,6 +653,7 @@
 		}
 		relative_position_id = poverty_problem
 		completion_reward = {
+		custom_effect_tooltip = RUS_Zemstvo_Research_Initiatives_tooltip
 			add_equipment_to_stockpile = {
     			type = support_equipment
     			amount = 1000
@@ -742,6 +760,11 @@
 				uses = 2
 				category = industry
 			}
+		unlock_decision_tooltip = RUS_Invest_In_The_Northern_Zemstva
+		unlock_decision_tooltip = RUS_Invest_In_The_Southern_Zemstva
+		unlock_decision_tooltip = RUS_Invest_In_The_Eastern_Zemstva
+		unlock_decision_tooltip = RUS_Invest_In_The_Ural_Zemstva
+		unlock_decision_tooltip = RUS_Invest_In_The_Siberian_Zemstva
      	}
 	 }
 
@@ -757,6 +780,7 @@
 		}
 		relative_position_id = poverty_problem
 		completion_reward = {
+		custom_effect_tooltip = RUS_National_Investment_Bank_tooltip
 		800 = {
 		add_extra_state_shared_building_slots = 2
 			}
@@ -777,6 +801,7 @@
 		}
 		relative_position_id = rural_development
 		completion_reward = {
+		custom_effect_tooltip = RUS_Local_Development_tooltip
 		527 = {
 		add_extra_state_shared_building_slots = 2
 			}
@@ -866,6 +891,7 @@
 		x = 2
 		y = 1
 		completion_reward = {
+		custom_effect_tooltip = RUS_War_Preparations_Programme_tooltip
 		801 = {
 			if = {
 				limit = { is_controlled_by = ROOT }
@@ -2118,7 +2144,7 @@
 					add_to_variable = { var = KOR_garrison_control value = 4 }
 					KOR = { add_to_variable = { var = ko_civil_war_divisions_counter_var value = 4 } }
 					KOR = { subtract_from_variable = { var = kor_civil_war_divisions_counter_var value = 4 } }
-					SPA_garrison_control_cost_calculation = yes
+					KOR_garrison_control_cost_calculation = yes
 				}
 				every_owned_state = {
 					limit = {
@@ -2133,7 +2159,7 @@
 					add_to_variable = { var = KOR_garrison_control value = 3 }
 					KOR = { add_to_variable = { var = ko_civil_war_divisions_counter_var value = 3 } }
 					KOR = { subtract_from_variable = { var = kor_civil_war_divisions_counter_var value = 3 } }
-					SPA_garrison_control_cost_calculation = yes
+					KOR_garrison_control_cost_calculation = yes
 				}
 				every_owned_state = {
 					limit = {
@@ -2148,7 +2174,7 @@
 					add_to_variable = { var = KOR_garrison_control value = 2 }
 					KOR = { add_to_variable = { var = ko_civil_war_divisions_counter_var value = 2 } }
 					KOR = { subtract_from_variable = { var = kor_civil_war_divisions_counter_var value = 2 } }
-					SPA_garrison_control_cost_calculation = yes
+					KOR_garrison_control_cost_calculation = yes
 				}
 				every_owned_state = {
 					limit = {
@@ -2163,7 +2189,7 @@
 					add_to_variable = { var = KOR_garrison_control value = 1 }
 					KOR = { add_to_variable = { var = ko_civil_war_divisions_counter_var value = 1 } }
 					KOR = { subtract_from_variable = { var = kor_civil_war_divisions_counter_var value = 1 } }
-					SPA_garrison_control_cost_calculation = yes
+					KOR_garrison_control_cost_calculation = yes
 				}
 		}
 	}
@@ -2189,9 +2215,6 @@
 		cost = 10.00
 		prerequisite = {
 			focus = threat_of_communism
-		}
-		prerequisite = {
-			focus = Anikist's_Threat
 		}
 		completion_reward = {
 			set_country_flag = KOR_negotiate_carlist_support_flag

@@ -11,6 +11,61 @@ KOR_congress = {
 	priority = 100
 }
 
+#대한민국 국회(단원제)
+KOR_national_assembly_bicameralism_decision = {
+	icon = national_assembly
+
+	picture = GFX_decision_cat_national_assembly
+
+	visible_when_empty = yes
+
+	allowed = {
+		original_tag = KOR
+	}
+
+	visible = {
+
+	}
+
+	scripted_gui = kor_national_assembly_unicameralism_ui
+
+	priority = 100
+}
+
+#대한민국 국회(양원제)
+KOR_national_assembly_unicameralism_decision = {
+	icon = national_assembly
+
+	picture = GFX_decision_cat_national_assembly
+
+	visible_when_empty = yes
+
+	allowed = {
+		original_tag = KOR
+	}
+
+	visible = {
+
+	}
+
+	scripted_gui = kor_national_assembly_bicameralism_ui
+
+	priority = 100
+}
+
+
+KOR_opposition_civil_war_preparations = {
+	priority = 9
+	icon = spr_the_inevitable_civil_war
+
+	picture = GFX_decision_cat_picture_spr_the_inevitable_civil_war
+	
+	allowed = {
+		original_tag = KOR
+		has_dlc = "La Resistance"
+	}
+}
+
 KOR_the_inevitable_civil_war = {
 	priority = 10
 	icon = spr_the_inevitable_civil_war
@@ -18,15 +73,13 @@ KOR_the_inevitable_civil_war = {
 	picture = GFX_decision_cat_picture_spr_the_inevitable_civil_war
 
 	allowed = {
-		original_tag = KOR
-		has_completed_focus = Yeo_Un_hyung_Elected
+		tag = KOR
 	}
 
 	custom_icon = {
 		tag = KOR
-		value = spa_civil_war_divisions_counter_icon_value
-		desc = spa_civil_war_divisions_counter_full_breakdown
-
+		value = kor_civil_war_divisions_counter_icon_value
+		desc = kor_civil_war_divisions_counter_full_breakdown
 		visible = {
 			always = yes
 		}
@@ -34,9 +87,8 @@ KOR_the_inevitable_civil_war = {
 	
 	custom_icon = {
 		tag = KOR
-		value = spr_civil_war_divisions_counter_icon_value
-		desc = spr_civil_war_divisions_counter_full_breakdown
-
+		value = fkr_civil_war_divisions_counter_icon_value
+		desc = fkr_civil_war_divisions_counter_full_breakdown
 		visible = {
 			always = yes
 		}
@@ -51,7 +103,7 @@ KOR_the_inevitable_civil_war = {
 	}
 
 	visible = {
-		
+		NOT = { has_global_flag = kor_civil_war }
 	}
 }
 
@@ -112,5 +164,19 @@ Kor_Red_Cross_decision = {
 	}
 	visible = {
 		has_completed_focus = organization_Korean_Red_Cross
+	}
+}
+
+RUS_Zemstvo_Funding_decisions = {
+	icon = GFX_decision_category_generic_economy
+	picture = GFX_decision_cat_picture_government_in_exile
+	priority = 80
+
+	allowed = {
+		tag = KOR
+	}
+
+	visible = {
+		has_completed_focus = economic_development_approval
 	}
 }
