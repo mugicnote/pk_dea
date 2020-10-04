@@ -968,7 +968,6 @@ guiTypes = {
 	
 	containerWindowType = {
 		name = "political_party_info_entry"
-		verticalScrollbar = "right_vertical_slider"
 		size = { width = 330 height = 18 }
 		clipping = no
 

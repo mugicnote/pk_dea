@@ -1,0 +1,20 @@
+spriteTypes = {
+
+	### Korea ###
+	spriteType = {
+		name = "GFX_kor_western_conservative"
+		texturefile = "gfx/texticons/parties_icons/korea/kor_western_conservative.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_kor_western_conservative2"
+		texturefile = "gfx/texticons/parties_icons/korea/kor_western_conservative2.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_kor_western_conservative3"
+		texturefile = "gfx/texticons/parties_icons/korea/kor_western_conservative3.dds"
+		legacy_lazy_load = no
+	}
+	
+}

@@ -1,0 +1,578 @@
+############################################
+# Leader Title
+############################################
+defined_text = {
+	name = FdS_rank2
+
+	### 제1 야당 대표
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = POSITION_main_opposition_party_leader2
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = leader_title_one_generic
+	}
+}
+
+############################################
+# Secondary Leader Title
+############################################
+
+defined_text = {
+	name = HoG_rank2
+	### 제1 야당 대표
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = POSITION_main_opposition_party_leader2
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = leader_title_two_generic
+	}
+}
+############################################
+# HoG Name
+############################################
+defined_text = {
+	name = FdS_name2
+
+	### Generic
+	text = {
+		trigger = {
+			has_country_flag = Jang_TaekSang
+		}
+		localization_key = Jang_TaekSang
+	}
+
+}
+defined_text = {
+	name = general_outline
+
+	### Generic
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = general_outline
+	}
+
+}
+defined_text = {
+	name = leader_two_portrait2
+	
+	text = {
+		trigger = {
+			has_country_flag = Jang_TaekSang
+		}
+		localization_key = GFX_Portrait_Jang_TaekSang
+	}
+
+}
+
+
+############################################
+# Leader Title
+############################################
+defined_text = {
+	name = FdS_rank3
+
+	### 제1 야당 대표
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = POSITION_main_opposition_party_leader3
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = leader_title_one_generic
+	}
+}
+
+############################################
+# Secondary Leader Title
+############################################
+
+defined_text = {
+	name = HoG_rank3
+	### 제1 야당 대표
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = POSITION_main_opposition_party_leader3
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = leader_title_two_generic
+	}
+}
+############################################
+# HoG Name
+############################################
+defined_text = {
+	name = FdS_name3
+
+	### Generic
+	text = {
+		trigger = {
+			has_country_flag = Shin_Sung_mo
+		}
+		localization_key = Shin_Sung_mo
+	}
+
+}
+defined_text = {
+	name = leader_two_portrait3
+	
+	text = {
+		trigger = {
+			has_country_flag = Shin_Sung_mo
+		}
+		localization_key = GFX_Portrait_Shin_Sung_mo
+	}
+
+}
+
+
+############################################
+# Leader Title
+############################################
+defined_text = {
+	name = FdS_rank4
+
+	### 제1 야당 대표
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = POSITION_main_opposition_party_leader4
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = leader_title_one_generic
+	}
+}
+
+############################################
+# Secondary Leader Title
+############################################
+
+defined_text = {
+	name = HoG_rank4
+	### 제1 야당 대표
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = POSITION_main_opposition_party_leader4
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = leader_title_two_generic
+	}
+}
+############################################
+# HoG Name
+############################################
+defined_text = {
+	name = FdS_name4
+	### Generic
+	text = {
+		trigger = {
+			has_country_flag = Yoon_Bo_Sun
+		}
+		localization_key = Yoon_Bo_Sun
+	}
+
+
+}
+defined_text = {
+	name = leader_two_portrait4
+	
+	text = {
+		trigger = {
+			has_country_flag = Yoon_Bo_Sun
+		}
+		localization_key = GFX_Portrait_Yoon_Bo_Sun
+	}
+
+}
+
+
+############################################
+# Leader Title
+############################################
+defined_text = {
+	name = FdS_rank5
+
+	### 제1 야당 대표
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = POSITION_main_opposition_party_leader5
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = leader_title_one_generic
+	}
+}
+
+############################################
+# Secondary Leader Title
+############################################
+
+defined_text = {
+	name = HoG_rank5
+	### 제1 야당 대표
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = POSITION_main_opposition_party_leader5
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = leader_title_two_generic
+	}
+}
+############################################
+# HoG Name
+############################################
+defined_text = {
+	name = FdS_name5
+	### Generic
+	text = {
+		trigger = {
+			has_country_flag = Kim_Kyusik
+		}
+		localization_key = Kim_Kyusik
+	}
+
+
+}
+defined_text = {
+	name = leader_two_portrait5
+	
+	text = {
+		trigger = {
+			has_country_flag = Kim_Kyusik
+		}
+		localization_key = GFX_Portrait_Kim_Kyusik
+	}
+
+}
+
+
+############################################
+# Leader Title
+############################################
+defined_text = {
+	name = FdS_rank6
+
+	### 제1 야당 대표
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = POSITION_main_opposition_party_leader6
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = leader_title_one_generic
+	}
+}
+
+############################################
+# Secondary Leader Title
+############################################
+
+defined_text = {
+	name = HoG_rank6
+	### 제1 야당 대표
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = POSITION_main_opposition_party_leader6
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = leader_title_two_generic
+	}
+}
+############################################
+# HoG Name
+############################################
+defined_text = {
+	name = FdS_name6
+	### Generic
+	text = {
+		trigger = {
+			has_country_flag = Chough_Pyung_ok
+		}
+		localization_key = Chough_Pyung_ok
+	}
+
+
+}
+defined_text = {
+	name = leader_two_portrait6
+	
+	text = {
+		trigger = {
+			has_country_flag = Chough_Pyung_ok
+		}
+		localization_key = GFX_Portrait_Chough_Pyung_ok
+	}
+
+}
+
+
+############################################
+# Leader Title
+############################################
+defined_text = {
+	name = FdS_rank7
+
+	### 제1 야당 대표
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = POSITION_main_opposition_party_leader7
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = leader_title_one_generic
+	}
+}
+
+############################################
+# Secondary Leader Title
+############################################
+
+defined_text = {
+	name = HoG_rank7
+	### 제1 야당 대표
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = POSITION_main_opposition_party_leader7
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = leader_title_two_generic
+	}
+}
+############################################
+# HoG Name
+############################################
+defined_text = {
+	name = FdS_name7
+	### Generic
+	text = {
+		trigger = {
+			has_country_flag = Ahn_Chang_Ho
+		}
+		localization_key = Ahn_Chang_Ho
+	}
+
+
+}
+defined_text = {
+	name = leader_two_portrait7
+	
+	text = {
+		trigger = {
+			has_country_flag = Ahn_Chang_Ho
+		}
+		localization_key = GFX_Portrait_Ahn_Chang_Ho
+	}
+
+}
+
+
+############################################
+# Leader Title
+############################################
+defined_text = {
+	name = FdS_rank8
+
+	### 제1 야당 대표
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = POSITION_main_opposition_party_leader8
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = leader_title_one_generic
+	}
+}
+
+############################################
+# Secondary Leader Title
+############################################
+
+defined_text = {
+	name = HoG_rank8
+	### 제1 야당 대표
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = POSITION_main_opposition_party_leader8
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = leader_title_two_generic
+	}
+}
+############################################
+# HoG Name
+############################################
+defined_text = {
+	name = FdS_name8
+	### Generic
+	text = {
+		trigger = {
+			has_country_flag = jae_pil
+		}
+		localization_key = jae_pil
+	}
+
+
+}
+defined_text = {
+	name = leader_two_portrait8
+	
+	text = {
+		trigger = {
+			has_country_flag = jae_pil
+		}
+		localization_key = GFX_jae_pil
+	}
+
+}
+
+
+############################################
+# Leader Title
+############################################
+defined_text = {
+	name = FdS_rank9
+
+	### 제1 야당 대표
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = POSITION_main_opposition_party_leader9
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = leader_title_one_generic
+	}
+}
+
+############################################
+# Secondary Leader Title
+############################################
+
+defined_text = {
+	name = HoG_rank9
+	### 제1 야당 대표
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = POSITION_main_opposition_party_leader9
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = leader_title_two_generic
+	}
+}
+############################################
+# HoG Name
+############################################
+defined_text = {
+	name = FdS_name9
+	### Generic
+	text = {
+		trigger = {
+			has_country_flag = Kim_Byung_ro
+		}
+		localization_key = Kim_Byung_ro
+	}
+
+
+}
+defined_text = {
+	name = leader_two_portrait9
+	
+	text = {
+		trigger = {
+			has_country_flag = Kim_Byung_ro
+		}
+		localization_key = GFX_Portrait_Kim_Byung_ro
+	}
+
+}

@@ -16,4 +16,82 @@ spriteTypes = {
 		name = "GFX_Portrait_Kim_Koo"
 		texturefile = "gfx/interface/Portrait_Kim_Koo.dds"
 	}
+	spriteType = {
+		name = "GFX_Portrait_Jang_TaekSang"
+		texturefile = "gfx/interface/Portrait_Jang_TaekSang.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Shin_Sung_mo"
+		texturefile = "gfx/interface/Portrait_Shin_Sung_mo.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Yoon_Bo_Sun"
+		texturefile = "gfx/interface/Portrait_Yoon_Bo_Sun.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Kim_Kyusik"
+		texturefile = "gfx/interface/Portrait_Kim_Kyusik.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Chough_Pyung_ok"
+		texturefile = "gfx/interface/Portrait_Chough_Pyung_ok.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Ahn_Chang_Ho"
+		texturefile = "gfx/interface/Portrait_Ahn_Chang_Ho.dds"
+	}
+	spriteType = {
+		name = "GFX_jae_pil"
+		texturefile = "gfx/interface/jae_pil.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Kim_Byung_ro"
+		texturefile = "gfx/interface/Portrait_Kim_Byung_ro.dds"
+	}
+
+
+	spriteType = {
+		name = "GFX_SI_information_view_bg"
+		texturefile = "gfx/interface/SI_information_view_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_SI_open_button"
+		texturefile = "gfx/interface/SI_open_button.dds"
+	}
+	spriteType = {
+		name = "GFX_APPROVAL_RATING_ICON"
+		texturefile = "gfx/interface/approval_rating.dds"
+	}
+	spriteType = {
+		name = "GFX_FULL_POLITICS_VIEW_BUTTON"
+		texturefile = "gfx/interface/open_partyview_button.dds"
+	}
+	spriteType = {
+		name = "GFX_PUPPETS_VIEW_BUTTON"
+		texturefile = "gfx/interface/manage_puppets_button.dds"
+	}
+	spriteType = {
+		name = "GFX_OCCUPIED_VIEW_BUTTON"
+		texturefile = "gfx/interface/manage_occupied_button.dds"
+	}
+	spriteType = {
+		name = "GFX_EXILE_VIEW_BUTTON"
+		texturefile = "gfx/interface/manage_exile_button.dds"
+	}
+	spriteType = {
+		name = "GFX_boost_party_button"
+		texturefile = "gfx/interface/boost_party_button.dds"
+	}
+	spriteType = {
+		name = "GFX_boost_party_button_inactive"
+		texturefile = "gfx/interface/boost_party_button_inactive.dds"
+	}
+	spriteType = {
+		name = "GFX_attack_party_button"
+		texturefile = "gfx/interface/attack_party_button.dds"
+	}
+	spriteType = {
+		name = "GFX_attack_party_button_inactive"
+		texturefile = "gfx/interface/attack_party_button_inactive.dds"
+	}
 }

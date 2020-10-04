@@ -1,0 +1,76 @@
+scripted_gui = {
+
+	double_leader_system2 = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "double_leader_system_container2"
+		
+		ai_check = {
+			always = no
+		}
+		
+		visible = {
+			original_tag = KOR
+		}
+		
+		triggers = {
+			view_click_enabled = {
+				NOT = { has_country_flag = show_double_leader2 }
+			}
+		}
+
+		effects = {
+            view_click = {
+				set_country_flag = show_double_leader2
+			}
+		}
+	}
+
+	double_leader_system_popup2 = {
+		context_type = player_context
+		context_type = politics_tab
+		window_name = "double_leader_system_popup_ui_window2"
+		
+		ai_check = {
+			always = no
+		}
+		
+		visible = {
+			has_country_flag = show_double_leader2
+		}
+		
+		effects = {
+			close_click = {
+				clr_country_flag = show_double_leader2
+			}
+		}
+		
+		properties = {
+			HoG2 = {
+				image = "[This.leader_two_portrait2]"
+			}
+			HoG3 = {
+				image = "[This.leader_two_portrait3]"
+			}
+			HoG4 = {
+				image = "[This.leader_two_portrait4]"
+			}
+			HoG5 = {
+				image = "[This.leader_two_portrait5]"
+			}
+			HoG6 = {
+				image = "[This.leader_two_portrait6]"
+			}
+			HoG7 = {
+				image = "[This.leader_two_portrait7]"
+			}
+			HoG8 = {
+				image = "[This.leader_two_portrait8]"
+			}
+			HoG9 = {
+				image = "[This.leader_two_portrait9]"
+			}
+		}
+	}
+}
+

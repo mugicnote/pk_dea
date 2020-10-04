@@ -1,0 +1,450 @@
+guiTypes = {
+	containerWindowType = {
+		name = "double_leader_system_container2"
+		position = { x = 0 y = 0 }
+		
+		buttonType = { #2번째 지도자 뜨게 하는 버튼
+			name = "view"
+			position = { x = 200 y = 405 }
+			spriteType = "GFX_add_pol_idea_button"
+			pdx_tooltip = "테스트용"
+			pdx_tooltip_delayed = "테스트용2"
+		}
+	}
+	containerWindowType = {
+		name = "double_leader_system_popup_ui_window2"
+		position = { x = 550 y = 85 }
+		size = { width = 800 height = 700 }
+		fade_time = 300
+		fade_type = linear
+		moveable = yes
+		click_to_front = yes
+		show_sound = menu_open_window
+		
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_tiled_plain_bg"
+		}
+		
+		containerWindowType = {
+			name = "double_leader_system_popup_ui_window_test2"
+			position = { x = -40 y = 0 }
+			
+			iconType = { #사진
+				name = "HoG2"
+				position = { x = 65 y = 450 }
+				spriteType = "GFX_leader_unknown"
+				pdx_tooltip = "SECOND_LEADER_NAME"
+				pdx_tooltip_delayed = "SECOND_LEADER_DESC"
+			}
+			
+			iconType = { #사진 태두리
+				name = "leader_frame212"
+				spriteType = "GFX_pol_leader_frame"
+				position = { x = 60 y = 436 }		
+				allwaystransparent = yes
+				pdx_tooltip = "SECOND_LEADER_NAME"
+				pdx_tooltip_delayed = "SECOND_LEADER_DESC"
+			}
+					
+			iconType = { #제1 야당 지도자 바탕 배경
+				name = "HoG_rank_frame2"
+				spriteType = "GFX_pol_leader_rank_frame"
+				position = { x = 60 y = 403 }		
+				allwaystransparent = yes
+			}
+					
+			instantTextboxType = { #이름
+				name = "FdS_name2"
+				position = { x = 68 y = 660 }
+				font = "hoi_18mbs"
+				text = "[This.FdS_name2]"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+				pdx_tooltip = "SECOND_LEADER_NAME"
+			}
+			instantTextboxType = { #개요
+				name = "FdS_general_outline"
+				position = { x = -20 y = 20 }
+				font = "hoi_36header"
+				text = "[This.general_outline]"
+				maxWidth = 370
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+					
+			instantTextboxType = { #제1_야당_지도자
+				name = "HoG_rank2"
+				position = { x = 70 y = 412 }
+				font = "hoi_20b"
+				text = "[This.HoG_rank2]"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+				pdx_tooltip = "SECOND_LEADER_NAME"
+				pdx_tooltip_delayed = "SECOND_LEADER_DESC"
+			}
+			buttonType = {
+				name = "close"
+				spriteType = "GFX_closebutton"
+				position = { x = 800 y = 10 }
+				clicksound = click_close
+				pdx_tooltip = "닫기"
+				shortcut = "ESCAPE"
+			}
+			
+			iconType = { #사진2
+				name = "HoG3"
+				position = { x = 265 y = 450 }
+				spriteType = "GFX_leader_unknown"
+				pdx_tooltip = "SECOND_LEADER_NAME"
+				pdx_tooltip_delayed = "SECOND_LEADER_DESC"
+			}
+			
+			iconType = { #사진 태두리2
+				name = "leader_frame213"
+				spriteType = "GFX_pol_leader_frame"
+				position = { x = 260 y = 436 }		
+				allwaystransparent = yes
+				pdx_tooltip = "SECOND_LEADER_NAME"
+				pdx_tooltip_delayed = "SECOND_LEADER_DESC"
+			}
+					
+			iconType = { #제1 야당 지도자 바탕 배경2
+				name = "HoG_rank_frame3"
+				spriteType = "GFX_pol_leader_rank_frame"
+				position = { x = 260 y = 403 }		
+				allwaystransparent = yes
+			}
+					
+			instantTextboxType = { #이름2
+				name = "FdS_name3"
+				position = { x = 268 y = 660 }
+				font = "hoi_18mbs"
+				text = "[This.FdS_name3]"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+				pdx_tooltip = "SECOND_LEADER_NAME"
+			}
+					
+			instantTextboxType = { #제1_야당_지도자2
+				name = "HoG_rank3"
+				position = { x = 270 y = 412 }
+				font = "hoi_20b"
+				text = "[This.HoG_rank3]"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+				pdx_tooltip = "SECOND_LEADER_NAME"
+				pdx_tooltip_delayed = "SECOND_LEADER_DESC"
+			}
+
+
+			iconType = { #사진2
+				name = "HoG4"
+				position = { x = 465 y = 450 }
+				spriteType = "GFX_leader_unknown"
+				pdx_tooltip = "SECOND_LEADER_NAME"
+				pdx_tooltip_delayed = "SECOND_LEADER_DESC"
+			}
+			
+			iconType = { #사진 태두리2
+				name = "leader_frame214"
+				spriteType = "GFX_pol_leader_frame"
+				position = { x = 460 y = 436 }		
+				allwaystransparent = yes
+				pdx_tooltip = "SECOND_LEADER_NAME"
+				pdx_tooltip_delayed = "SECOND_LEADER_DESC"
+			}
+					
+			iconType = { #제1 야당 지도자 바탕 배경2
+				name = "HoG_rank_frame4"
+				spriteType = "GFX_pol_leader_rank_frame"
+				position = { x = 460 y = 403 }		
+				allwaystransparent = yes
+			}
+					
+			instantTextboxType = { #이름2
+				name = "FdS_name4"
+				position = { x = 468 y = 660 }
+				font = "hoi_18mbs"
+				text = "[This.FdS_name4]"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+				pdx_tooltip = "SECOND_LEADER_NAME"
+			}
+					
+			instantTextboxType = { #제1_야당_지도자2
+				name = "HoG_rank4"
+				position = { x = 470 y = 412 }
+				font = "hoi_20b"
+				text = "[This.HoG_rank4]"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+				pdx_tooltip = "SECOND_LEADER_NAME"
+				pdx_tooltip_delayed = "SECOND_LEADER_DESC"
+			}
+
+
+			iconType = { #사진
+				name = "HoG5"
+				position = { x = 265 y = 120 }
+				spriteType = "GFX_leader_unknown"
+				pdx_tooltip = "SECOND_LEADER_NAME"
+				pdx_tooltip_delayed = "SECOND_LEADER_DESC"
+			}
+			
+			iconType = { #사진 태두리
+				name = "leader_frame215"
+				spriteType = "GFX_pol_leader_frame"
+				position = { x = 260 y = 106 }		
+				allwaystransparent = yes
+				pdx_tooltip = "SECOND_LEADER_NAME"
+				pdx_tooltip_delayed = "SECOND_LEADER_DESC"
+			}
+					
+			iconType = { #제1 야당 지도자 바탕 배경
+				name = "HoG_rank_frame5"
+				spriteType = "GFX_pol_leader_rank_frame"
+				position = { x = 260 y = 73 }		
+				allwaystransparent = yes
+			}
+					
+			instantTextboxType = { #이름
+				name = "FdS_name5"
+				position = { x = 268 y = 330 }
+				font = "hoi_18mbs"
+				text = "[This.FdS_name5]"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+				pdx_tooltip = "SECOND_LEADER_NAME"
+			}
+					
+			instantTextboxType = { #제1_야당_지도자
+				name = "HoG_rank5"
+				position = { x = 270 y = 82 }
+				font = "hoi_20b"
+				text = "[This.HoG_rank5]"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+				pdx_tooltip = "SECOND_LEADER_NAME"
+				pdx_tooltip_delayed = "SECOND_LEADER_DESC"
+			}
+
+
+			iconType = { #사진2
+				name = "HoG6"
+				position = { x = 665 y = 450 }
+				spriteType = "GFX_leader_unknown"
+				pdx_tooltip = "SECOND_LEADER_NAME"
+				pdx_tooltip_delayed = "SECOND_LEADER_DESC"
+			}
+			
+			iconType = { #사진 태두리2
+				name = "leader_frame216"
+				spriteType = "GFX_pol_leader_frame"
+				position = { x = 660 y = 436 }		
+				allwaystransparent = yes
+				pdx_tooltip = "SECOND_LEADER_NAME"
+				pdx_tooltip_delayed = "SECOND_LEADER_DESC"
+			}
+					
+			iconType = { #제1 야당 지도자 바탕 배경2
+				name = "HoG_rank_frame6"
+				spriteType = "GFX_pol_leader_rank_frame"
+				position = { x = 660 y = 403 }		
+				allwaystransparent = yes
+			}
+					
+			instantTextboxType = { #이름2
+				name = "FdS_name6"
+				position = { x = 668 y = 660 }
+				font = "hoi_18mbs"
+				text = "[This.FdS_name6]"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+				pdx_tooltip = "SECOND_LEADER_NAME"
+			}
+					
+			instantTextboxType = { #제1_야당_지도자2
+				name = "HoG_rank6"
+				position = { x = 670 y = 412 }
+				font = "hoi_20b"
+				text = "[This.HoG_rank6]"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+				pdx_tooltip = "SECOND_LEADER_NAME"
+				pdx_tooltip_delayed = "SECOND_LEADER_DESC"
+			}
+
+
+			iconType = { #사진2
+				name = "HoG7"
+				position = { x = 665 y = 120 }
+				spriteType = "GFX_leader_unknown"
+				pdx_tooltip = "SECOND_LEADER_NAME"
+				pdx_tooltip_delayed = "SECOND_LEADER_DESC"
+			}
+			
+			iconType = { #사진 태두리2
+				name = "leader_frame217"
+				spriteType = "GFX_pol_leader_frame"
+				position = { x = 660 y = 106 }		
+				allwaystransparent = yes
+				pdx_tooltip = "SECOND_LEADER_NAME"
+				pdx_tooltip_delayed = "SECOND_LEADER_DESC"
+			}
+					
+			iconType = { #제1 야당 지도자 바탕 배경2
+				name = "HoG_rank_frame7"
+				spriteType = "GFX_pol_leader_rank_frame"
+				position = { x = 660 y = 73 }		
+				allwaystransparent = yes
+			}
+					
+			instantTextboxType = { #이름2
+				name = "FdS_name7"
+				position = { x = 668 y = 330 }
+				font = "hoi_18mbs"
+				text = "[This.FdS_name7]"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+				pdx_tooltip = "SECOND_LEADER_NAME"
+			}
+					
+			instantTextboxType = { #제1_야당_지도자2
+				name = "HoG_rank7"
+				position = { x = 670 y = 82 }
+				font = "hoi_20b"
+				text = "[This.HoG_rank7]"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+				pdx_tooltip = "SECOND_LEADER_NAME"
+				pdx_tooltip_delayed = "SECOND_LEADER_DESC"
+			}
+
+
+			iconType = { #사진
+				name = "HoG8"
+				position = { x = 65 y = 120 }
+				spriteType = "GFX_leader_unknown"
+				pdx_tooltip = "SECOND_LEADER_NAME"
+				pdx_tooltip_delayed = "SECOND_LEADER_DESC"
+			}
+			
+			iconType = { #사진 태두리
+				name = "leader_frame218"
+				spriteType = "GFX_pol_leader_frame"
+				position = { x = 60 y = 106 }		
+				allwaystransparent = yes
+				pdx_tooltip = "SECOND_LEADER_NAME"
+				pdx_tooltip_delayed = "SECOND_LEADER_DESC"
+			}
+					
+			iconType = { #제1 야당 지도자 바탕 배경
+				name = "HoG_rank_frame8"
+				spriteType = "GFX_pol_leader_rank_frame"
+				position = { x = 60 y = 73 }		
+				allwaystransparent = yes
+			}
+					
+			instantTextboxType = { #이름
+				name = "FdS_name8"
+				position = { x = 68 y = 330 }
+				font = "hoi_18mbs"
+				text = "[This.FdS_name8]"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+				pdx_tooltip = "SECOND_LEADER_NAME"
+			}
+					
+			instantTextboxType = { #제1_야당_지도자
+				name = "HoG_rank8"
+				position = { x = 70 y = 82 }
+				font = "hoi_20b"
+				text = "[This.HoG_rank8]"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+				pdx_tooltip = "SECOND_LEADER_NAME"
+				pdx_tooltip_delayed = "SECOND_LEADER_DESC"
+			}
+
+
+			iconType = { #사진
+				name = "HoG9"
+				position = { x = 465 y = 120 }
+				spriteType = "GFX_leader_unknown"
+				pdx_tooltip = "SECOND_LEADER_NAME"
+				pdx_tooltip_delayed = "SECOND_LEADER_DESC"
+			}
+			
+			iconType = { #사진 태두리
+				name = "leader_frame219"
+				spriteType = "GFX_pol_leader_frame"
+				position = { x = 460 y = 106 }		
+				allwaystransparent = yes
+				pdx_tooltip = "SECOND_LEADER_NAME"
+				pdx_tooltip_delayed = "SECOND_LEADER_DESC"
+			}
+					
+			iconType = { #제1 야당 지도자 바탕 배경
+				name = "HoG_rank_frame9"
+				spriteType = "GFX_pol_leader_rank_frame"
+				position = { x = 460 y = 73 }		
+				allwaystransparent = yes
+			}
+					
+			instantTextboxType = { #이름
+				name = "FdS_name9"
+				position = { x = 468 y = 330 }
+				font = "hoi_18mbs"
+				text = "[This.FdS_name9]"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+				pdx_tooltip = "SECOND_LEADER_NAME"
+			}
+					
+			instantTextboxType = { #제1_야당_지도자
+				name = "HoG_rank9"
+				position = { x = 470 y = 82 }
+				font = "hoi_20b"
+				text = "[This.HoG_rank9]"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+				pdx_tooltip = "SECOND_LEADER_NAME"
+				pdx_tooltip_delayed = "SECOND_LEADER_DESC"
+			}
+		}
+	}
+}

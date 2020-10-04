@@ -3,7 +3,7 @@ state = {
 	name = "STATE_800" #평안남도
 	manpower = 1435000
 
-	state_category = large_town
+	state_category = large_city
 	
 	history = {
 		owner = KOR

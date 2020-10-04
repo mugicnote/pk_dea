@@ -194,4 +194,7 @@ leader_traits = {
 	POSITION_main_opposition_party_leader = {
 		random = no
 	}
+	POSITION_main_opposition_party_leader2 = {
+		random = no
+	}
 }

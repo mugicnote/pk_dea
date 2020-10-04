@@ -4,38 +4,6 @@
 leader_title_one_none:0 "Leader"
 leader_title_two_none:0 "Leader 2"
 
-leader_title_one_generic:0 "Head of State" # 국가원수
-
-POSITION_GER_Reichsprasident:0 "Reichspräsident"
-POSITION_GER_Reichskanzler:0 "Reichskanzler" # 국가수상
-POSITION_GER_Fuhrer:0 "Führer" # 지도자 
-POSITION_GER_Deputy_Fuhrer:0 "Deputy Führer" # 지도자대리
-POSITION_GER_Parteikanzlei:0 "Parteikanzlei" # 당수부장
-POSITION_GER_Kaiser:0 "Deutscher Kaiser" # 독일 황제
-POSITION_AUS_Kaiser:0 "Präsident" # 대오스트리아 합중국 의장
-
-POSITION_EGY_Nasser:0 "Revolution Leader" # 혁명지도자
-
-POSITION_Chairman:0 "Chairman" # 주석
-POSITION_Chairman_TUC:0 "Chairman of TUC" # 영국 주석
-
-POSITION_President:0 "President" # 대통령
-POSITION_Vice_President:0 "Vice President" # 부통령
-POSITION_Prime_Minister:0 "Prime Minister"
-POSITION_Monarch:0 "Monarch"
-POSITION_King:0 "King" # 국왕
-POSITION_Queen:0 "Queen" # 여왕
-POSITION_Kommisariat:0 "Heilige Liga Hochkommissar" # 여왕
-POSITION_Emperor:0 "Emperor" # 황제
-POSITION_Premier:0 "Premier" # 수상
-POSITION_General_Secretary:0 "General Secretary" # 서기장
-POSITION_Military_Governor:0 "Military Governor" # 군정장관
-POSITION_Civil_Governor:0 "Civil Governor" # 민정장관 
-POSITION_Deputy_Commander:0 "Deputy Commander" # 부사령관
-POSITION_Governor_General:0 "Governor-General" # 총독
-King_of_Defence:0 "King of Defence"
-test_Walter_Model:0 "Walter Model"
-
 POSITION_main_opposition_party_leader:0 "제1 야당 지도자"
 
 Syngman_Rhee2:0 "§Y우남 이승만 박사§!"
@@ -45,3 +13,32 @@ Syngman_Rhee2_small_name:0 "§R우남 이승만 박사가 대통령이 되어야
 Kim_Ku2:0 "§Y백범 김구 선생§!"
 Kim_Ku2_name:0 "§Y백범 김구 선생§!"
 Kim_Ku2_small_name:0 "§R백범 김구 선생이 대통령이 되어야만 해당 효과가 발휘됩니다.§!\n§Y현명한 애국자§!\n - 정치력 획득: §G+ 15%§!\n - 안정도: §G +20.00%§!\n\n §Y나는 우리나라가 세계에서 가장 아름다운 나라가 되기를 원한다. 가장 부강한 나라가 되기를 원하는 것은 아니다. 내가 남의 침략에 가슴이 아팠으니, 내 나라가 남을 침략하는 것을 원치 아니한다. 우리의 부력은 우리의 생활을 풍족히 할 만하고, 우리의 강력은 남의 침략을 막을 만하면 족하다. 오직 한없이 가지고 싶은 것은 높은 문화의 힘이다. 문화의 힘은 우리 자신을 행복되게 하고, 나아가서 남에게 행복을 주겠기 때문이다."
+
+Jang_TaekSang:0 "장택상"
+POSITION_main_opposition_party_leader2:0 "대공처장"
+general_outline:0 "국무위원 개요"
+POSITION_main_opposition_party_leader3:0 "국방장관"
+Shin_Sung_mo:0 "신성모"
+POSITION_main_opposition_party_leader4:0 "정보부장"
+no_fds:0 "공직"
+Yoon_Bo_Sun:0 "윤보선"
+POSITION_main_opposition_party_leader5:0 "국무총리"
+Kim_Kyusik:0 "김규식"
+POSITION_main_opposition_party_leader6:0 "치안본부장"
+Chough_Pyung_ok:0 "조병옥"
+POSITION_main_opposition_party_leader7:0 "국회의장"
+Ahn_Chang_Ho:0 "안창호"
+POSITION_main_opposition_party_leader8:0 "대통령"
+jae_pil:0 "서재필"
+POSITION_main_opposition_party_leader9:0 "대법원장"
+Kim_Byung_ro:0 "김병로"
+
+
+KOR.conservatism:0 "정의민주당"
+KOR.conservatism_icon:0 "£kor_western_conservative"
+
+KOR.conservatism_L2:0 "대한촉성회"
+KOR.conservatism_L2_icon:0 "£kor_western_conservative2"
+
+KOR.conservatism_L3:0 "한국국민당"
+KOR.conservatism_L3_icon:0 "£kor_western_conservative3"

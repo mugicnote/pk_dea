@@ -3,7 +3,7 @@ state = {
 	name = "STATE_806" #전라북도
 	manpower = 1541000
 
-	state_category = large_town	
+	state_category = town	
 	
 	history = {
 		owner = KOR

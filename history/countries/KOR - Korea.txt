@@ -328,7 +328,7 @@ create_field_marshal = {
 
 create_field_marshal = {
   name = "이범석"
-  picture = "bom_sock.dds"
+  picture = "Portrait_Lee_Beomseok.dds"
   traits = { armor_officer infantry_officer fast_planner brilliant_strategist logistics_wizard offensive_doctrine }
   skill = 5
 
@@ -352,7 +352,7 @@ create_corps_commander = {
 
 create_corps_commander = {
   name = "김홍일"
-  picture = "hong_one.dds"
+  picture = "Portrait_Kim_Hong_Il.dds"
   traits = { KOR_independent_army logistics_wizard inspirational_leader }
   skill = 3
 
@@ -364,7 +364,7 @@ create_corps_commander = {
 
 create_corps_commander = {
   name = "지청천"
-  picture = "chong_chen.dds"
+  picture = "Portrait_ji_chong_chen.dds"
   traits = { inflexible_strategist infantry_officer logistics_wizard defensive_doctrine inspirational_leader }
   skill = 5
 
@@ -424,7 +424,7 @@ create_field_marshal = {
 }
 create_corps_commander = {
   name = "김학규"
-  picture = "kim_hak_ku.dds"
+  picture = "Portrait_Kim_Hak_kyu.dds"
   traits = { }
   skill = 3
 
@@ -432,27 +432,6 @@ create_corps_commander = {
   defense_skill = 5
   planning_skill = 4
   logistics_skill = 4
-}
-create_corps_commander = {
-	name = "신팔균"
-	portrait_path = "gfx/leaders/KOR/Portrait_KOR_Shin_Pal_gyun.dds"
-	traits = { infantry_officer career_officer trait_engineer }
-	skill = 3
-    attack_skill = 3
-    defense_skill = 2
-    planning_skill = 3
-    logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "양세봉"
-	portrait_path = "gfx/leaders/KOR/Portrait_KOR_Yang_Se_bong.dds"
-	traits = { infantry_officer commando trickster }
-	skill = 3
-    attack_skill = 3
-    defense_skill = 3
-    planning_skill = 2
-    logistics_skill = 2
 }
 
 create_corps_commander = {
@@ -523,7 +502,7 @@ create_field_marshal = {
 
 create_field_marshal = {
 	name = "김일성"
-  id = 3001
+  	id = 3001
 	picture = "Kim_portrait.dds"
 	traits = { trait_KOR_communism }
 	skill = 4
