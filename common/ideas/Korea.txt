@@ -2,6 +2,22 @@ ideas = {
 
     country = {
         
+        unstable_security = {
+			
+            picture = KTG_Industrial_Crisis_Town
+
+			allowed = {
+		        original_tag = KOR
+	        }
+
+			modifier = {
+            stability_factor = -0.1
+            political_power_cost = 0.2
+            training_time_factor = 0.2
+            conscription_factor = -0.1
+            consumer_goods_factor = 0.05  
+		    }
+        }
         KOR_a_well_informed_general = {
 
             allowed = {
@@ -314,18 +330,6 @@ ideas = {
 				consumer_goods_factor = -0.2
 			}
 		}
-           unstable_security = {
-			
-            picture = KTG_Industrial_Crisis_Town
-
-			allowed = {
-		        original_tag = KOR
-	        }
-
-			modifier = {
-			stability_factor = -0.3
-		    }
-        }
         Korean_Red_Cross = {
 			
             picture = KTG_Industrial_Crisis_Town

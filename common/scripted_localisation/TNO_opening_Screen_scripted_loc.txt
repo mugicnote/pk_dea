@@ -1,0 +1,98 @@
+GET_CLOSEBUTTON_TEXT = {
+	name = GET_CLOSEBUTTON_TEXT
+
+	##Italy
+	text = {
+		trigger = { tag = KOR }
+		localization_key = TNO_OPENING_SCREEN_BUTTON_TEXT_KOR
+	}
+	## Default
+	text = {
+		localization_key = TNO_OPENING_SCREEN_BUTTON_TEXT_GEN
+	}
+}
+
+GET_CURRENT_INTRO_TEXT = {
+	name = GET_CURRENT_INTRO_TEXT
+
+	text = {
+		trigger = { has_country_flag = OPEN_view_country_info }
+		localization_key = COUNTRY_INFO_TEXT
+	}
+
+	text = {
+		trigger = { has_country_flag = OPEN_view_region_info }
+		localization_key = REGIONAL_INFO_TEXT
+	}
+
+	text = {
+		trigger = { has_country_flag = OPEN_view_features_info }
+		localization_key = MOD_FEATURES_TEXT
+	}
+
+	text = {
+		trigger = { has_country_flag = OPEN_view_mod_info }
+		localization_key = MOD_INFO_TEXT
+	}
+
+}
+
+GET_COUNTRY_INFO = {
+	name = GET_COUNTRY_INFO
+
+	## Italy / Italosphere
+	text = {
+		trigger = { tag = KOR }
+		localization_key = COUNTRY_INFO_KOREA
+	}
+	## Default
+	text = {
+		localization_key = COUNTRY_INFO_NO_CONTENT
+	}
+}
+
+GET_REGIONAL_INFO = {
+	name = GET_REGIONAL_INFO
+
+	## Southern Urals
+	text = {
+		trigger = {
+				tag = KOR
+		}
+		localization_key = REGIONAL_INFO_ASIA
+
+	## Default
+	text = {
+		localization_key = REGIONAL_INFO_NO_CONTENT
+	}
+}
+
+GET_REGIONALSYMBOL = {
+	name = GET_REGIONALSYMBOL
+
+	## Southern Urals
+	text = {
+		trigger = {
+				tag = KOR
+		}
+		localization_key = "GFX_TNO_OpeningScreen_Region_KOR"
+	}
+
+	## Default
+	text = {
+		localization_key = "GFX_TNO_OpeningScreen_Region_EUROPE"
+	}
+}
+
+GET_POSTER = {
+	name = GET_POSTER
+	#Iberia
+	text = {
+		trigger = { tag = KOR }
+		localization_key = "GFX_TNO_OpeningScreen_Poster_Korea"
+	}
+	## Default
+	text = {
+		localization_key = "GFX_TNO_OpeningScreen_Poster_ChairmanPink"
+	}
+}

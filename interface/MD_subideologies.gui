@@ -493,7 +493,7 @@ guiTypes = {
 			name = "sif_16"
 			position = { x = 94 y = 426 }
 			font = "cg_16b"
-			text = "[si_large_oligarchism_L]"
+			text = "[si_large_conservatism_L4]"
 			maxWidth = 255
 			maxHeight = 18
 			format = left
@@ -517,7 +517,7 @@ guiTypes = {
 			name = "sif_17"
 			position = { x = 94 y = 448 }
 			font = "cg_16b"
-			text = "[si_large_Neutral_Libertarian_L]"
+			text = "[si_large_conservatism_L5]"
 			maxWidth = 255
 			maxHeight = 18
 			format = left

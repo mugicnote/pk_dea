@@ -1,0 +1,26 @@
+#scripted_gui = {
+#
+#	TNO_postapoc_topbar = {
+#		context_type = player_context
+#		parent_window_token = top_bar
+#		window_name = "TNO_postapoc_topbar"
+#
+#		visible = {
+#			has_global_flag = TNO_my_world_is_on_fire_how_about_yours
+#		}
+#	}
+#
+#	pol_power_icon = {
+#		context_type = player_context
+#		parent_window_token = top_bar
+#		window_name = "pol_power_icon"
+#
+#		visible = {
+#			NOT = {
+#			has_global_flag = TNO_my_world_is_on_fire_how_about_yours
+#			}
+#		}
+#	}
+#
+#
+#}

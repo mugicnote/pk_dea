@@ -20,6 +20,8 @@ on_actions = {
 		set_country_flag = Kim_Byung_ro
 		add_ideas = IM_Jang_TaekSang
 		country_lock_all_division_template = yes
+		set_country_flag = TNO_opening_screen_show
+		set_country_flag = OPEN_view_country_info
 			}
 		every_owned_state = {
 			limit = {

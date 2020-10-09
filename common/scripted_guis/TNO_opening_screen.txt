@@ -1,0 +1,143 @@
+scripted_gui = {
+	TNO_opening_button = {
+		parent_window_name = "MapmodesInterface_Ingame"
+		window_name = "TNO_OpeningScreen_OpenButton"
+
+		visible = {
+			NOT = { has_global_flag = TNO_my_world_is_on_fire_how_about_yours }
+		}
+
+		effects = {
+			topbar_opening_button_click = {
+				if = {
+					limit = { has_country_flag = TNO_opening_screen_show }
+					clr_country_flag = TNO_opening_screen_show
+					clr_country_flag = OPEN_view_country_info
+					clr_country_flag = OPEN_view_region_info
+					clr_country_flag = OPEN_view_mod_info
+					clr_country_flag = OPEN_view_features_info
+				}
+				else = {
+					set_country_flag = TNO_opening_screen_show
+					set_country_flag = OPEN_view_country_info
+				}
+			}
+		}
+	}
+	
+	TNO_opening_screen_main = {
+		context_type = player_context
+		parent_window_token = top_bar
+		window_name = "TNO_OpeningScreen_Main"
+
+		visible = {
+			has_country_flag = TNO_opening_screen_show
+		}
+
+		effects = {
+			TNO_OpeningScreen_CloseButton_click = {
+				clr_country_flag = TNO_opening_screen_show
+				clr_country_flag = OPEN_view_country_info
+				clr_country_flag = OPEN_view_region_info
+				clr_country_flag = OPEN_view_mod_info
+				clr_country_flag = OPEN_view_features_info
+			}
+			
+			TNO_OpeningScreen_Buttons_CountryView_click = {
+				set_country_flag = OPEN_view_country_info
+				
+				clr_country_flag = OPEN_view_region_info
+				clr_country_flag = OPEN_view_mod_info
+				clr_country_flag = OPEN_view_features_info
+			}
+
+			TNO_OpeningScreen_Buttons_RegionView_click = {
+				set_country_flag = OPEN_view_region_info
+				
+				clr_country_flag = OPEN_view_country_info
+				clr_country_flag = OPEN_view_mod_info
+				clr_country_flag = OPEN_view_features_info
+			}
+			
+			TNO_OpeningScreen_Buttons_FeatureView_click = {
+				set_country_flag = OPEN_view_features_info
+				
+				clr_country_flag = OPEN_view_region_info
+				clr_country_flag = OPEN_view_country_info
+				clr_country_flag = OPEN_view_mod_info
+			}
+
+			TNO_OpeningScreen_Buttons_ModView_click = {
+				set_country_flag = OPEN_view_mod_info
+				
+				clr_country_flag = OPEN_view_region_info
+				clr_country_flag = OPEN_view_country_info
+				clr_country_flag = OPEN_view_features_info
+			}
+		}
+		
+		triggers = {
+			TNO_OpeningScreen_Text_visible = {
+				NOT = { has_country_flag = OPEN_view_mod_info }
+			}
+			
+			TNO_OpeningScreen_Text_ModInfo_Buttons_visible = {
+				has_country_flag = OPEN_view_mod_info
+			}
+			
+			TNO_discord_button_visible = {
+				has_country_flag = OPEN_view_mod_info
+			}
+			TNO_reddit_button_visible = {
+				has_country_flag = OPEN_view_mod_info
+			}
+			TNO_tvtropes_button_visible = {
+				has_country_flag = OPEN_view_mod_info
+			}
+			TNO_twitter_button_visible = {
+				has_country_flag = OPEN_view_mod_info
+			}
+		}
+		
+		properties = {
+			TNO_OpeningScreen_PlayerFlag = {
+				image = "[This.GetFlag]"
+			}
+			
+			TNO_OpeningScreen_Poster = {
+				image = "[GET_POSTER]"
+			}
+			
+			TNO_OpeningScreen_RegionSymbol = {
+				image = "[GET_REGIONALSYMBOL]"
+			}
+		}
+	}
+	
+	TNO_closing_screen_main = {
+		context_type = player_context
+		parent_window_token = top_bar
+		window_name = "TNO_ClosingScreen_Main"
+
+		visible = {
+			AND = {
+				is_ai = no
+				has_country_flag = TNO_closing_screen_show
+			}
+		}
+		
+		effects = {
+			TNO_ClosingScreen_CloseButton_click = {
+				clr_country_flag = TNO_closing_screen_show
+			}
+		}
+		
+		triggers = {
+		
+		}
+		
+		properties = {
+		
+		}
+	}
+}

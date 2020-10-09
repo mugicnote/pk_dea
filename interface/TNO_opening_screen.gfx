@@ -1,0 +1,106 @@
+spriteTypes = {
+	# New Opening 
+	spriteType = {
+		name = "GFX_topbar_star_button"
+		textureFile = "gfx/interface/topbar/topbar_star_button.dds"
+	}
+
+	# Backgrounds
+	spriteType = {
+		name = "GFX_TNO_Intro_BG"
+		textureFile = "gfx/interface/opening_screen/TNO_Intro_BG.dds"
+	}
+	spriteType = {
+		name = "GFX_TNO_Closing_BG"
+		textureFile = "gfx/interface/opening_screen/TNO_Closing_BG.dds"
+	}
+
+	# Buttons
+	spriteType = {
+		name = "GFX_TNO_demo_tab_button"
+		textureFile = "gfx/interface/opening_screen/TNO_demo_tab_button.dds"
+	}
+	spriteType = {
+		name = "GFX_TNO_mod_features_mark"
+		textureFile = "gfx/interface/opening_screen/TNO_mod_features_mark.dds"
+	}
+	spriteType = {
+		name = "GFX_TNO_mod_logo"
+		textureFile = "gfx/interface/opening_screen/TNO_mod_logo.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_discord_button"
+		textureFile = "gfx/interface/opening_screen/discord_button.dds"
+	}
+	spriteType = {
+		name = "GFX_reddit_button"
+		textureFile = "gfx/interface/opening_screen/reddit_button.dds"
+	}
+	spriteType = {
+		name = "GFX_tvtropes_button"
+		textureFile = "gfx/interface/opening_screen/tvtropes_button.dds"
+	}
+	spriteType = {
+		name = "GFX_twitter_button"
+		textureFile = "gfx/interface/opening_screen/twitter_button.dds"
+	}
+	
+	# Regions
+	spriteType = {
+		name = "GFX_TNO_OpeningScreen_Poster_SouthAfrica"
+		textureFile = "gfx/interface/opening_screen/regions/TNO_OpeningScreen_Poster_SouthAfrica.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_TNO_OpeningScreen_Region_AMERICA"
+		texturefile = "gfx/interface/opening_screen/regions/AMERICA.dds"
+	}
+	SpriteType = {
+		name = "GFX_TNO_OpeningScreen_Region_CENTRAL_SIBERIA"
+		texturefile = "gfx/interface/opening_screen/regions/CENTRAL_SIBERIA.dds"
+	}
+	SpriteType = {
+		name = "GFX_TNO_OpeningScreen_Region_KOR"
+		texturefile = "gfx/interface/opening_screen/regions/EASTERN_ASIA.dds"
+	}
+	SpriteType = {
+		name = "GFX_TNO_OpeningScreen_Region_ENGLAND"
+		texturefile = "gfx/interface/opening_screen/regions/ENGLAND.dds"
+	}
+	SpriteType = {
+		name = "GFX_TNO_OpeningScreen_Region_EUROPE"
+		texturefile = "gfx/interface/opening_screen/regions/EUROPE.dds"
+	}
+	SpriteType = {
+		name = "GFX_TNO_OpeningScreen_Region_FAR_EAST"
+		texturefile = "gfx/interface/opening_screen/regions/FAR_EAST.dds"
+	}
+	SpriteType = {
+		name = "GFX_TNO_OpeningScreen_Region_SOUTHERN_AFRICA"
+		texturefile = "gfx/interface/opening_screen/regions/SOUTHERN_AFRICA.dds"
+	}
+	SpriteType = {
+		name = "GFX_TNO_OpeningScreen_Region_URALS"
+		texturefile = "gfx/interface/opening_screen/regions/URALS.dds"
+	}
+	SpriteType = {
+		name = "GFX_TNO_OpeningScreen_Region_WEST_RUSSIA"
+		texturefile = "gfx/interface/opening_screen/regions/WEST_RUSSIA.dds"
+	}
+	SpriteType = {
+		name = "GFX_TNO_OpeningScreen_Region_WEST_SIBERIA"
+		texturefile = "gfx/interface/opening_screen/regions/WEST_SIBERIA.dds"
+	}
+
+	# Posters
+	spriteType = {
+		name = "GFX_TNO_OpeningScreen_Poster_Korea"
+		textureFile = "gfx/interface/opening_screen/TNO_OpeningScreen_Poster_Korea.dds"
+	}
+	spriteType = {
+		name = "GFX_Justice_Democratic_Party"
+		textureFile = "gfx/interface/Justice_Democratic_Party.dds"
+		legacy_lazy_load = no
+	}
+}

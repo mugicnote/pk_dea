@@ -97,6 +97,7 @@ set_convoys = 30
 
 #국민정신
 add_ideas = {
+unstable_security
 KOR_a_well_informed_general
 KOR_want_big
 coup_crisis
@@ -104,7 +105,6 @@ KOR_disjointed_government
 bitterness_of_treaty
 KOR_great_depression
 KOR_police_corruption
-unstable_security
 }
 
 #시작_정당
@@ -126,6 +126,12 @@ set_popularities = {
   neutrality = 2
   autocracy = 5
   fascism = 22
+}
+
+1936.1.1 = {
+set_variable = { party_pop_array13 = 1 } #서재필 여당
+set_variable = { party_pop_array14 = 0.1 } #테스트
+set_variable = { party_pop_array15 = 0.11 } #테스트
 }
 
 if = {
