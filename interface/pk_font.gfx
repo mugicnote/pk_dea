@@ -41,8 +41,8 @@ bitmapfonts = {
 			H = { 220 218 80 } #둘 다 노랑 인데??
 			T = { 47 138 135 } #이놈도 청록인데??
 			O = { 234 161 14 } #오랜지
-			P = { 169 27 79 } #pink, for c-npp
-			r = { 132 50 0 } #brown, for yockeys
+			P = { 169 27 79 } #연한 빨강
+			r = { 132 50 0 } #진한 빨강보다 덜 빨강
 			w = { 211 201 0 } #조금 진한 노랑
 			e = { 146 0 0 } #어두운 빨강(눈 안아프고 좋음)
 			p = { 204 0 204 } #완전 핫핑크
@@ -50,11 +50,11 @@ bitmapfonts = {
 			S = { 255 128 114 } #연빨강 - 분홍22
 			x = { 255 0 0 } #빨강
 			y = { 0 255 0} #눈 아픈 초록
-			z = { 0 0 255 } #uber-blu
+			z = { 0 0 255 } #눈 아픈 파랑
 			l = { 147 112 219 } #Lavender, per Pacifica request
 			n = { 60 180 60 } #Dark Green
-			q = { 65 65 65 } #Dark Grey
-			k = { 210 180 140 } #Light Brown
+			q = { 65 65 65 } #검정과 회색 사이
+			k = { 210 180 140 } #베이지색
 			D = { 101 235 246 } #Default color I think
 			Q = { 0 84 142 } #Prussian blue, for speer econ GUI
 
@@ -131,6 +131,327 @@ bitmapfonts = {
 		textcolors = {
 			W = { 255 255 255 }
 			b = { 0 0 0 }
+		}
+	}
+
+	bitmapfont = {
+		name = "Bomb_24"
+		path = "gfx/fonts/Bomb_24"
+		color = 0xffffffff
+		textcolors = {
+			W = { 255 255 255 }
+			b = { 0 0 0 }
+		}
+	}
+
+	bitmapfont = {
+		name = "cg_16b"
+		path = "gfx/fonts/cg_16b"
+		color = 0xffb2c9c2
+		textcolors = {
+			M = { 35 206 255 } #하늘색
+			a = { 195 176 145 } #살색? 원 코드:l
+			b = { 255 255 255 } #하얀색 원 코드: W
+			A = { 47 138 135 } #청록색 B
+			c = { 133 234 142 } #연초록 G
+			d = { 224 130 130 } #연빨강 - 분홍 R
+			m = { 0 0 0 } #검정(잘 안보임 주의) b
+			o = { 176 176 176 } #회색(베이직 색 느낌) g
+			s = { 220 218 80 } #노랑 Y
+			h = { 220 218 80 } #둘 다 노랑 인데?? H
+			t = { 47 138 135 } #이놈도 청록인데?? T
+			f = { 234 161 14 } #오랜지 O
+			u = { 169 27 79 } #연한 빨강 P
+			r = { 132 50 0 } #진한 빨강보다 덜 빨강
+			w = { 211 201 0 } #조금 진한 노랑
+			e = { 146 0 0 } #어두운 빨강(눈 안아프고 좋음)
+			p = { 204 0 204 } #완전 핫핑크
+			j = { 153 102 51 } #갈색(똥색)
+			S = { 255 128 114 } #연빨강 - 분홍22
+			x = { 255 0 0 } #빨강
+			y = { 0 255 0} #눈 아픈 초록
+			z = { 0 0 255 } #uber-blu
+			l = { 147 112 219 } #Lavender, per Pacifica request
+			n = { 60 180 60 } #Dark Green
+			q = { 65 65 65 } #검정과 회색 사이
+			k = { 210 180 140 } #베이지색
+			D = { 101 235 246 } #Default color I think
+			Q = { 0 84 142 } #Prussian blue, for speer econ GUI
+		}
+	}
+
+	bitmapfont = {
+		name = "aldrich_18_outline"
+		path = "gfx/fonts/aldrich_18_outline"
+		color = 0xffb2c9c2
+		textcolors = {
+			M = { 35 206 255 }
+			L = { 195 176 145 }
+			W = { 255 255 255 }
+			B = { 47 138 135 }
+			G = { 133 234 142 }
+			R = { 224 130 130 }
+			b = { 0 0 0 }
+			g = { 176 176 176 }
+			Y = { 220 218 80 }
+			H = { 220 218 80 }
+			T = { 47 138 135 }
+			O = { 234 161 14 } #orange, for npp
+			P = { 169 27 79 } #pink, for c-npp
+			r = { 132 50 0 } #brown, for yockeys
+			w = { 211 201 0 } #yellow, for republicans (different from other yellow)
+			e = { 146 0 0 } #red, for l-npp (different from other red)
+			p = { 204 0 204 }
+			j = { 153 102 51 } #Brown-ish
+			S = { 255 128 114 } #Salmon
+			x = { 255 0 0 } #uber-red
+			y = { 0 255 0} #uber-green
+			z = { 0 0 255 } #uber-blu
+			l = { 147 112 219 } #Lavender, per Pacifica request
+			n = { 60 180 60 } #Dark Green
+			q = { 65 65 65 } #Dark Grey
+			k = { 210 180 140 } #Light Brown
+			D = { 101 235 246 } #Default color I think
+			Q = { 0 84 142 } #Prussian blue, for speer econ GUI
+
+			###Tomsk GUI Colors###
+			d = { 225 225 225 }
+			m = { 0 174 239 }
+			h = { 161 16 107 }
+			s = { 137 137 137 }
+
+			### Britain Parties ###
+			a = { 34 200 247 }	# SNP, Light (Neon) Blue
+			v = { 0 0 255 }		# UP, Deep Blue
+			c = { 169 27 79 }	# ILP, Magenta
+			V = { 213 40 20 }	# SLP, Scarlet
+			E = { 152 40 92 }	# RP, Purple
+			f = { 255 193 12 }	# NDP, Yellow
+			i = { 46 60 169 }	# UE, Periwinkle-ish Blue
+			J = { 213 87 57 }	# NF, Light Orange
+			K = { 45 152 40 }	# Plaid, Emerald Green
+			N = { 152 40 92 }	# Goch, Magenta
+			o = { 129 88 56 }	# Movement, Brown
+		}
+	}
+
+	bitmapfont = {
+		name = "aldrich_16_outline"
+		path = "gfx/fonts/aldrich_16_outline"
+		color = 0xffb2c9c2
+		textcolors = {
+			M = { 35 206 255 }
+			L = { 195 176 145 }
+			W = { 255 255 255 }
+			B = { 47 138 135 }
+			G = { 133 234 142 }
+			R = { 224 130 130 }
+			b = { 0 0 0 }
+			g = { 176 176 176 }
+			Y = { 220 218 80 }
+			H = { 220 218 80 }
+			T = { 47 138 135 }
+			O = { 234 161 14 } #orange, for npp
+			P = { 169 27 79 } #pink, for c-npp
+			r = { 132 50 0 } #brown, for yockeys
+			w = { 211 201 0 } #yellow, for republicans (different from other yellow)
+			e = { 146 0 0 } #red, for l-npp (different from other red)
+			p = { 204 0 204 }
+			j = { 153 102 51 } #Brown-ish
+			S = { 255 128 114 } #Salmon
+			x = { 255 0 0 } #uber-red
+			y = { 0 255 0} #uber-green
+			z = { 0 0 255 } #uber-blu
+			l = { 147 112 219 } #Lavender, per Pacifica request
+			n = { 60 180 60 } #Dark Green
+			q = { 65 65 65 } #Dark Grey
+			k = { 210 180 140 } #Light Brown
+			D = { 101 235 246 } #Default color I think
+			Q = { 0 84 142 } #Prussian blue, for speer econ GUI
+
+			###Tomsk GUI Colors###
+			d = { 225 225 225 }
+			m = { 0 174 239 }
+			h = { 161 16 107 }
+			s = { 137 137 137 }
+
+			### Britain Parties ###
+			a = { 34 200 247 }	# SNP, Light (Neon) Blue
+			v = { 0 0 255 }		# UP, Deep Blue
+			c = { 169 27 79 }	# ILP, Magenta
+			V = { 213 40 20 }	# SLP, Scarlet
+			E = { 152 40 92 }	# RP, Purple
+			f = { 255 193 12 }	# NDP, Yellow
+			i = { 46 60 169 }	# UE, Periwinkle-ish Blue
+			J = { 213 87 57 }	# NF, Light Orange
+			K = { 45 152 40 }	# Plaid, Emerald Green
+			N = { 152 40 92 }	# Goch, Magenta
+			o = { 129 88 56 }	# Movement, Brown
+		}
+	}
+
+	bitmapfont = {
+		name = "aldrich_30_outline"
+		path = "gfx/fonts/aldrich_30_outline"
+		color = 0xffb2c9c2
+		textcolors = {
+			M = { 35 206 255 }
+			L = { 195 176 145 }
+			W = { 255 255 255 }
+			B = { 47 138 135 }
+			G = { 133 234 142 }
+			R = { 224 130 130 }
+			b = { 0 0 0 }
+			g = { 176 176 176 }
+			Y = { 220 218 80 }
+			H = { 220 218 80 }
+			T = { 47 138 135 }
+			O = { 234 161 14 } #orange, for npp
+			P = { 169 27 79 } #pink, for c-npp
+			r = { 132 50 0 } #brown, for yockeys
+			w = { 211 201 0 } #yellow, for republicans (different from other yellow)
+			e = { 146 0 0 } #red, for l-npp (different from other red)
+			p = { 204 0 204 }
+			j = { 153 102 51 } #Brown-ish
+			S = { 255 128 114 } #Salmon
+			x = { 255 0 0 } #uber-red
+			y = { 0 255 0} #uber-green
+			z = { 0 0 255 } #uber-blu
+			l = { 147 112 219 } #Lavender, per Pacifica request
+			n = { 60 180 60 } #Dark Green
+			q = { 65 65 65 } #Dark Grey
+			k = { 210 180 140 } #Light Brown
+			D = { 101 235 246 } #Default color I think
+			Q = { 0 84 142 } #Prussian blue, for speer econ GUI
+
+			###Tomsk GUI Colors###
+			d = { 225 225 225 }
+			m = { 0 174 239 }
+			h = { 161 16 107 }
+			s = { 137 137 137 }
+
+			### Britain Parties ###
+			a = { 34 200 247 }	# SNP, Light (Neon) Blue
+			v = { 0 0 255 }		# UP, Deep Blue
+			c = { 169 27 79 }	# ILP, Magenta
+			V = { 213 40 20 }	# SLP, Scarlet
+			E = { 152 40 92 }	# RP, Purple
+			f = { 255 193 12 }	# NDP, Yellow
+			i = { 46 60 169 }	# UE, Periwinkle-ish Blue
+			J = { 213 87 57 }	# NF, Light Orange
+			K = { 45 152 40 }	# Plaid, Emerald Green
+			N = { 152 40 92 }	# Goch, Magenta
+			o = { 129 88 56 }	# Movement, Brown
+		}
+	}
+
+	bitmapfont = {
+		name = "aldrich_36_outline"
+		path = "gfx/fonts/aldrich_36_outline"
+		color = 0xffb2c9c2
+		textcolors = {
+			M = { 35 206 255 }
+			L = { 195 176 145 }
+			W = { 255 255 255 }
+			B = { 47 138 135 }
+			G = { 133 234 142 }
+			R = { 224 130 130 }
+			b = { 0 0 0 }
+			g = { 176 176 176 }
+			Y = { 220 218 80 }
+			H = { 220 218 80 }
+			T = { 47 138 135 }
+			O = { 234 161 14 } #orange, for npp
+			P = { 169 27 79 } #pink, for c-npp
+			r = { 132 50 0 } #brown, for yockeys
+			w = { 211 201 0 } #yellow, for republicans (different from other yellow)
+			e = { 146 0 0 } #red, for l-npp (different from other red)
+			p = { 204 0 204 }
+			j = { 153 102 51 } #Brown-ish
+			S = { 255 128 114 } #Salmon
+			x = { 255 0 0 } #uber-red
+			y = { 0 255 0} #uber-green
+			z = { 0 0 255 } #uber-blu
+			l = { 147 112 219 } #Lavender, per Pacifica request
+			n = { 60 180 60 } #Dark Green
+			q = { 65 65 65 } #Dark Grey
+			k = { 210 180 140 } #Light Brown
+			D = { 101 235 246 } #Default color I think
+			Q = { 0 84 142 } #Prussian blue, for speer econ GUI
+
+			###Tomsk GUI Colors###
+			d = { 225 225 225 }
+			m = { 0 174 239 }
+			h = { 161 16 107 }
+			s = { 137 137 137 }
+
+			### Britain Parties ###
+			a = { 34 200 247 }	# SNP, Light (Neon) Blue
+			v = { 0 0 255 }		# UP, Deep Blue
+			c = { 169 27 79 }	# ILP, Magenta
+			V = { 213 40 20 }	# SLP, Scarlet
+			E = { 152 40 92 }	# RP, Purple
+			f = { 255 193 12 }	# NDP, Yellow
+			i = { 46 60 169 }	# UE, Periwinkle-ish Blue
+			J = { 213 87 57 }	# NF, Light Orange
+			K = { 45 152 40 }	# Plaid, Emerald Green
+			N = { 152 40 92 }	# Goch, Magenta
+			o = { 129 88 56 }	# Movement, Brown
+		}
+	}
+
+	bitmapfont = {
+		name = "aldrich_20_outline"
+		path = "gfx/fonts/aldrich_20_outline"
+		color = 0xffb2c9c2
+		textcolors = {
+			M = { 35 206 255 }
+			L = { 195 176 145 }
+			W = { 255 255 255 }
+			B = { 47 138 135 }
+			G = { 133 234 142 }
+			R = { 224 130 130 }
+			b = { 0 0 0 }
+			g = { 176 176 176 }
+			Y = { 220 218 80 }
+			H = { 220 218 80 }
+			T = { 47 138 135 }
+			O = { 234 161 14 } #orange, for npp
+			P = { 169 27 79 } #pink, for c-npp
+			r = { 132 50 0 } #brown, for yockeys
+			w = { 211 201 0 } #yellow, for republicans (different from other yellow)
+			e = { 146 0 0 } #red, for l-npp (different from other red)
+			p = { 204 0 204 }
+			j = { 153 102 51 } #Brown-ish
+			S = { 255 128 114 } #Salmon
+			x = { 255 0 0 } #uber-red
+			y = { 0 255 0} #uber-green
+			z = { 0 0 255 } #uber-blu
+			l = { 147 112 219 } #Lavender, per Pacifica request
+			n = { 60 180 60 } #Dark Green
+			q = { 65 65 65 } #Dark Grey
+			k = { 210 180 140 } #Light Brown
+			D = { 101 235 246 } #Default color I think
+			Q = { 0 84 142 } #Prussian blue, for speer econ GUI
+
+			###Tomsk GUI Colors###
+			d = { 225 225 225 }
+			m = { 0 174 239 }
+			h = { 161 16 107 }
+			s = { 137 137 137 }
+
+			### Britain Parties ###
+			a = { 34 200 247 }	# SNP, Light (Neon) Blue
+			v = { 0 0 255 }		# UP, Deep Blue
+			c = { 169 27 79 }	# ILP, Magenta
+			V = { 213 40 20 }	# SLP, Scarlet
+			E = { 152 40 92 }	# RP, Purple
+			f = { 255 193 12 }	# NDP, Yellow
+			i = { 46 60 169 }	# UE, Periwinkle-ish Blue
+			J = { 213 87 57 }	# NF, Light Orange
+			K = { 45 152 40 }	# Plaid, Emerald Green
+			N = { 152 40 92 }	# Goch, Magenta
+			o = { 129 88 56 }	# Movement, Brown
 		}
 	}
 }

@@ -1,0 +1,21 @@
+﻿UPN_NOM_1 = {
+	name = "미 보병사단"
+	for_countries = { UPN }
+	can_use = { always = yes }
+	division_types = { "infantry" }
+	fallback_name = "제%d 미 보병 사단"
+	ordered = {
+		
+	}
+}
+UPN_NOM_2 = {
+	name = "미 기계화 보병사단"
+	for_countries = { UPN }
+	can_use = { always = yes }
+	division_types = { "motorized" }
+	fallback_name = "제%d 미 기계화 보병사단"
+	ordered = {
+		
+	}
+}
+

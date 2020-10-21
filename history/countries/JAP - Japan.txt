@@ -204,7 +204,16 @@ create_import = {
 	}
 }
 
-set_convoys = 400
+set_convoys = 40
+
+USA = {
+	set_autonomy = {
+		target = JAP
+		autonomous_state = autonomy_USA_Sponsored_Regime
+	}
+}
+
+give_military_access = UPN
 
 set_politics = {
 	ruling_party = democratic
@@ -226,9 +235,9 @@ fascism = 18
 }
 
 create_country_leader = {
-	name = "와카쓰키 레이지로"
+	name = "요시다 시게루"
 	desc = "#"
-	picture = "Wakatsuki_Reijiro.dds"
+	picture = "Shigeru_Yoshida.dds"
 	expire = "1989.1.1"
 	ideology = conservatism
 	traits = {

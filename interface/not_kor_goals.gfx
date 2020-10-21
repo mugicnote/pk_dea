@@ -44,5 +44,13 @@ spriteTypes = {
 		name = "GFX_ROCArmy"
 		texturefile = "gfx/interface/goals/ROCArmy.dds"
 	}
+	SpriteType = {
+		name = "GFX_goal_ANQ_fengtian_loyalty"
+		texturefile = "gfx/interface/goals/ANQ_fengtian_loyalty.tga"
+	}
+	SpriteType = {
+		name = "GFX_goal_YUN_Secure_Northern_China"
+		texturefile = "gfx/interface/goals/YUN_Secure_Northern_China.tga"
+	}
 
 }

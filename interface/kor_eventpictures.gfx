@@ -110,6 +110,12 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/Its_a_mess.dds"
 	}
 
+
+	spriteType = {
+		name = "GFX_report_event_LEC_xiangshen"
+		texturefile = "gfx/event_pictures/xiangshen.dds"
+	}
+
 }
 	
 	

@@ -1,0 +1,56 @@
+﻿add_namespace = fengtian
+
+country_event = { #The Gang of Three
+	id = fengtian.110
+	immediate = { log = "[GetDateText]: [Root.GetName]: event fengtian.110" }
+	title = fengtian.110.t
+	desc = fengtian.110.d
+	picture = GFX_report_event_LEC_xiangshen
+
+	is_triggered_only = yes
+
+	option = {
+		name = fengtian.110.a
+		add_political_power = -40
+		add_stability = -0.05
+		add_war_support = -0.05
+	}
+}
+
+country_event = { #Fuguo Qiangbing
+	id = fengtian.53
+	immediate = { log = "[GetDateText]: [Root.GetName]: event fengtian.53" }
+	title = fengtian.53.t
+	desc = fengtian.53.d
+	picture = GFX_report_event_FNG_troops
+
+	is_triggered_only = yes
+
+	option = { #We must enrich the Country!
+		name = fengtian.53.a
+		set_country_flag = enrich_country
+		custom_effect_tooltip = FNG_enrichment_path
+	}
+
+	option = { #We must strengthen the Army!
+		name = fengtian.53.b
+		set_country_flag = strengthen_army
+		custom_effect_tooltip = FNG_army_path
+	}
+
+	option = { #Tell me more about the state of the Economy
+		name = fengtian.53.c
+		trigger = {
+			is_ai = no
+		}
+		country_event = fengtian.54
+	}
+
+	option = { #Tell me more about the state of the Army
+		name = fengtian.53.e
+		trigger = {
+			is_ai = no
+		}
+		country_event = fengtian.55
+	}
+}

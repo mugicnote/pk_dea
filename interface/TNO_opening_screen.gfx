@@ -103,4 +103,9 @@ spriteTypes = {
 		textureFile = "gfx/interface/Justice_Democratic_Party.dds"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_Korean_Democratic_Congress"
+		textureFile = "gfx/interface/Korean_Democratic_Congress.dds"
+		legacy_lazy_load = no
+	}
 }

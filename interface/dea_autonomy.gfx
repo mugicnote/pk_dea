@@ -1,0 +1,11 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_USA_mac_puppet_icon"
+		texturefile = "gfx/interface/autonomy/autonomy_USA_Sponsored_Regime.dds"
+	}
+	spriteType = {
+		name = "GFX_autonomy_USA_Sponsored_Regime_icon"
+		texturefile = "gfx/interface/autonomy/autonomy_USA_Sponsored_Regime.dds"
+	}
+}

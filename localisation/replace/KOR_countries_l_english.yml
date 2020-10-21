@@ -259,3 +259,13 @@
  XIC:0 "서강"
  XIC_DEF:0 "서강"
  XIC_ADJ:0 "서강"
+
+ #미군정#
+
+ UPN:0 "미국 점령하 일본"
+ UPN_DEF:0 "미국 점령하 일본"
+ UPN_ADJ:0 "미국 점령하 일본"
+ UPN_social_liberalism:0 "미국 점령하 일본"
+ UPN_social_liberalism_DEF:0 "미국 점령하 일본"
+ UPN_neutrality:0 "미국 점령하 일본"
+ UPN_neutrality_DEF:0 "미국 점령하 일본"

@@ -119,6 +119,10 @@ give_guarantee = PAR
 give_guarantee = ARG
 give_guarantee = URG
 
+create_faction = 도쿄조약
+add_to_faction = JAP
+add_to_faction = UPN
+
 1939.1.1 = {
 
 	add_political_power = 1199
@@ -267,7 +271,7 @@ set_politics = {
 }
 set_popularities = {
   communism = 0
-  rad_socialism = 2
+  radical_socialism = 2
   social_democracy = 0
   market_liberalism = 8
   social_liberalism = 52
@@ -340,7 +344,7 @@ create_country_leader = {
 	desc = "POLITICS_FRANKLIN_DELANO_ROOSEVELT_DESC"
 	picture = "Portrait_USA_Franklin_Roosevelt.dds"
 	expire = "1947.1.1"
-	ideology = liberalism
+	ideology = American_Soclib
 	traits = {
 		dislikes_germany
 	}

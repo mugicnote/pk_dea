@@ -464,8 +464,8 @@ DDR = {
     color_ui = rgb { 150 180 120 }
 }
 KOR = {
-	color = rgb { 0  102  204 }
-	color_ui = rgb { 0 102 204 }	
+	color = rgb { 0  51  153}
+	color_ui = rgb { 0  51  153 }	
 }
 ISR = {
 	color = rgb { 152  130  191 }
@@ -708,8 +708,8 @@ FNG = {
 	color_ui = rgb { 189 113 33 }
 }
 SND = {
-	color = rgb { 0  51  153 }
-	color_ui = rgb { 204 81 39 }
+	color = rgb { 55 108 158 }
+	color_ui = rgb { 55 108 158 }
 }
 SZC = {
 	color = rgb { 154 115 56 }
@@ -748,4 +748,9 @@ GJU = {
 XIC = {
 	color = rgb { 140 104 51 }
 	color_ui = rgb { 140 104 51 }
+}
+
+UPN = {
+	color = rgb { 138 138 138 }
+	color_ui = rgb { 138 138 138 }
 }

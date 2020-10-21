@@ -1093,4 +1093,8 @@ opinion_modifiers = {
 	opnion_democratic_influence = { value = 30 }
 
 	opnion_ilminism = { value = -20 }
+
+	JAP_opnion_USA = { value = 100 }
+
+	USA_opnion_JAP = { value = 100 }
 }

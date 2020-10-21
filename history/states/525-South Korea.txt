@@ -3,7 +3,7 @@ state = {
 	name = "STATE_525" #경기도
 	manpower = 2400000
 
-	state_category = metropolis
+	state_category = large_city
 
 	history = {
 		owner = KOR
@@ -11,8 +11,9 @@ state = {
 
 		buildings = {
 			industrial_complex = 2
-			arms_factory = 1
-			dockyard = 1
+			air_base = 3
+			arms_factory = 2
+			dockyard = 2
 			infrastructure = 7
 			7221 = {
 				naval_base = 3
@@ -20,19 +21,19 @@ state = {
 		}
 
 		victory_points = {
-			7125 50 #서울
+			7125 50 #서울(케이죠)
 		}
 
 		victory_points = {
-			7221 15 #인천
+			7221 15 #인천(진센)
 		}
 
 		victory_points = {
-			12040 10 #개성
+			12040 10 #개성(카이죠)
 		}
 	}
 
 	provinces = {
-		7125 7221 10036 12040 13240 13241 13242
+		7125 7221 10036 12040 13242 13243 13244
 	}
 }

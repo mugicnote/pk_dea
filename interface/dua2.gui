@@ -34,6 +34,7 @@ guiTypes = {
 				name = "HoG2"
 				position = { x = 65 y = 450 }
 				spriteType = "GFX_leader_unknown"
+				font = "aldrich_24_outline"
 				pdx_tooltip = "SECOND_LEADER_NAME"
 				pdx_tooltip_delayed = "SECOND_LEADER_DESC"
 			}

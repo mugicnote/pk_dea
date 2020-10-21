@@ -18,7 +18,180 @@ ideas = {
             consumer_goods_factor = 0.05  
 		    }
         }
-        KOR_a_well_informed_general = {
+
+        KOR_great_depression = {
+            picture = usa_great_depression_3
+            
+            allowed = {
+                always = no
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+            
+            modifier = {
+                stability_factor = -0.2
+                political_power_cost = 0.5
+                industrial_capacity_factory = -0.1
+                production_factory_max_efficiency_factor = -0.1
+                production_speed_infrastructure_factor = -0.1
+                consumer_goods_factor = 0.2
+            }
+        }
+
+        huge_government_bond = {
+            picture = usa_great_depression_3
+            
+            allowed = {
+                always = no
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+            
+            modifier = {
+                war_support_factor = -0.2
+                political_power_cost = 0.3
+                local_resources_factor = -0.2
+                production_speed_arms_factory_factor = -0.3
+                production_speed_dockyard_factor = -0.1
+                consumer_goods_factor = 0.1
+                production_speed_industrial_complex_factor = -0.1
+            }
+        }
+
+        Kor_excessive_Inflation = {
+            picture = usa_great_depression_3
+            
+            allowed = {
+                always = no
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+            
+            modifier = {
+                stability_factor = -0.1
+                production_speed_industrial_complex_factor = -0.2
+                industrial_capacity_factory = -0.1
+                production_factory_max_efficiency_factor = -0.1
+                consumer_goods_factor = 0.1
+                conscription_factor = -0.2
+            }
+        }
+
+        fallen_rural_society = {
+            picture = usa_great_depression_3
+            
+            allowed = {
+                always = no
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+            
+            modifier = {
+                stability_factor = -0.1
+                war_support_factor = -0.1
+                production_speed_industrial_complex_factor = -0.1
+                production_speed_infrastructure_factor = -0.1
+                training_time_factor = 0.1
+                conscription_factor = -0.2
+            }
+        }
+
+        KOR_incompetent_government = {
+            picture = generic_disjointed_gov
+
+            allowed = {
+                original_tag = KOR
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+            
+            modifier = {
+                stability_factor = -0.2
+                political_power_cost = 0.5
+            }
+        }
+
+        KOR_divided_army = {
+            picture = chi_army_corruption
+
+            allowed = {
+                always = no
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+            
+            modifier = {
+                stability_factor = -0.1
+                training_time_factor = 0.1
+                planning_speed = -0.2
+            }
+        }
+
+        coup_crisis = {
+            picture = chi_army_corruption
+
+            allowed = {
+                original_tag = KOR
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+            
+            modifier = {
+                stability_factor = -0.10
+                custom_modifier_tooltip = SPR_military_disloyalty_tt
+            }
+        }
+
+        industrialization_experience = {
+            picture = chi_army_corruption
+
+            allowed = {
+                original_tag = KOR
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+            
+            modifier = {
+                production_speed_arms_factory_factor = 0.1
+                production_speed_industrial_complex_factor = 0.1
+                industrial_capacity_factory = 0.05
+                production_factory_max_efficiency_factor = 0.05
+            }
+        }
+
+        experienced_army = {
 
             allowed = {
                 original_tag = KOR
@@ -34,46 +207,10 @@ ideas = {
             
             modifier = {
                 army_org_Factor = 0.05
-                planning_speed = 0.25
+                army_speed_factor = 0.05
+                planning_speed = 0.2
             }
         }
-        KOR_death_before_surrender = {
-
-			picture = SPA_maquis
-
-			allowed = {
-				original_tag = KOR
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			modifier = {
-				surrender_limit = 1
-				max_surrender_limit_offset = 0.05
-			}
-		}
-        FKR_death_before_surrender = {
-
-			name = SPR_death_before_surrender
-
-			picture = SPR_nationalist_remnants
-
-			allowed = {
-				original_tag = KOR
-                NOT = { has_government = fascism }
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			modifier = {
-				surrender_limit = 1
-				max_surrender_limit_offset = 0.15
-			}
-		}
         KOR_want_big = {
 
             allowed = {
@@ -89,113 +226,13 @@ ideas = {
             removal_cost = -1
             
             modifier = {
-                war_support_factor = 0.2
-                justify_war_goal_time = -0.2
+                political_power_cost = -0.5
+                war_support_factor = 0.15
+                justify_war_goal_time = -0.15
             }
         }
-        coup_crisis = {
 
-            allowed = {
-                original_tag = KOR
-            }
-
-            allowed_civil_war = {
-                always = yes
-            }
-
-            picture = chi_army_corruption
-
-            removal_cost = -1
-            
-            modifier = {
-                stability_factor = -0.10
-                custom_modifier_tooltip = SPR_military_disloyalty_tt
-            }
-        }
-        KOR_disjointed_government = {
-            
-            allowed = {
-                original_tag = KOR
-                always = no
-            }
-
-            allowed_civil_war = {
-                has_government = democratic
-            }
-
-            removal_cost = -1
-
-            picture = generic_disjointed_gov
-            
-            modifier = {
-                political_power_cost = 0.8
-                stability_factor = -0.10
-                surrender_limit = -0.2
-            }
-        }
-        bitterness_of_treaty = {
-
-            allowed = {
-                original_tag = KOR
-                always = no
-            }
-
-            allowed_civil_war = {
-                has_government = democratic
-            }
-
-            removal_cost = -1
-
-            picture = generic_local_self_management
-            
-            modifier = {
-                production_speed_arms_factory_factor = 0.25
-                production_speed_dockyard_factor = 0.25
-                industrial_capacity_factory = -0.2
-            }
-        }
-        bitterness_of_treaty = {
-
-            allowed = {
-                original_tag = KOR
-                always = no
-            }
-
-            allowed_civil_war = {
-                has_government = democratic
-            }
-
-            removal_cost = -1
-
-            picture = generic_local_self_management
-            
-            modifier = {
-                production_speed_arms_factory_factor = 0.25
-                production_speed_dockyard_factor = 0.25
-                industrial_capacity_factory = -0.2
-            }
-        }
-        KOR_great_depression = {
-            picture = usa_great_depression_3
-            
-            allowed = {
-                always = no
-            }
-
-            allowed_civil_war = {
-                always = yes
-            }
-
-            removal_cost = -1
-            
-            modifier = {
-                political_power_cost = 1
-                consumer_goods_factor = 0.3
-                conscription_factor = -0.4
-                join_faction_tension = 0.50
-                local_resources_factor = -0.2
-            }
-        }
+        
         KOR_great_depression_after_effect = {
             picture = usa_great_depression
             
@@ -214,80 +251,6 @@ ideas = {
                 consumer_goods_factor = 0.15
                 conscription_factor = -0.2
                 join_faction_tension = 0.30
-            }
-        }
-        KOR_police_corruption = {
-            picture = generic_secret_police
-            
-            allowed = {
-                always = no
-            }
-
-            allowed_civil_war = {
-                always = yes
-            }
-
-            removal_cost = -1
-            
-            modifier = {
-                army_attack_factor = -0.2
-                army_defence_factor = -0.2
-                mobilization_speed = -0.2
-            }
-        }
-        KOR_police_corruption_2 = {
-            picture = generic_secret_police
-            
-            allowed = {
-                always = no
-            }
-
-            allowed_civil_war = {
-                always = yes
-            }
-
-            removal_cost = -1
-            
-            modifier = {
-                army_attack_factor = -0.1
-                army_defence_factor = -0.1
-                mobilization_speed = -0.1
-            }
-        }
-        KOR_police_corruption_3 = {
-            picture = generic_secret_police
-            
-            allowed = {
-                always = no
-            }
-
-            allowed_civil_war = {
-                always = yes
-            }
-
-            removal_cost = -1
-            
-            modifier = {
-                army_attack_factor = 0.1
-                mobilization_speed = 0.05
-            }
-        }
-        KOR_police_corruption_4 = {
-            picture = generic_secret_police
-            
-            allowed = {
-                always = no
-            }
-
-            allowed_civil_war = {
-                always = yes
-            }
-
-            removal_cost = -1
-            
-            modifier = {
-                army_defence_factor = 0.1
-                mobilization_speed = 0.05
             }
         }
         KOR_matignon_agreements = {
@@ -439,6 +402,43 @@ ideas = {
 				air_equipment = -0.1
 				artillery = -0.1
 				infantry_weapons = -0.1
+			}
+		}
+        KOR_death_before_surrender = {
+
+			picture = SPA_maquis
+
+			allowed = {
+				original_tag = KOR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				surrender_limit = 1
+				max_surrender_limit_offset = 0.05
+			}
+		}
+        FKR_death_before_surrender = {
+
+			name = SPR_death_before_surrender
+
+			picture = SPR_nationalist_remnants
+
+			allowed = {
+				original_tag = KOR
+                NOT = { has_government = fascism }
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				surrender_limit = 1
+				max_surrender_limit_offset = 0.15
 			}
 		}
     }

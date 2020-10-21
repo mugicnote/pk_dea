@@ -19,4 +19,12 @@ spriteTypes = {
 		name = "GFX_tt_overlay_150_20"
 		texturefile = "gfx//interface//tt_overlay_150_20.dds"
 	}
+	spriteType = {
+		name = "GFX_button_359x34"
+		texturefile = "gfx/interface/button_359x34.dds"
+	}
+	spriteType = {
+		name = "GFX_button_123x34"
+		texturefile = "gfx/interface/button_123x34.dds"
+	}
 }

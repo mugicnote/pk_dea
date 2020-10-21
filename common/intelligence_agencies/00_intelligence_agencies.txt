@@ -9,5 +9,4 @@ intelligence_agency = {
 	
 	default = { tag = KOR }
 	available = { original_tag = KOR 
-	has_completed_focus = Information_Reorganization}
 }
