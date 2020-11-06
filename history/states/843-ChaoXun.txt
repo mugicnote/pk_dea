@@ -1,0 +1,20 @@
+state={
+	id=843
+	name="STATE_843"
+
+	history={
+		owner = GDC
+		add_core_of = GDC
+		add_core_of = CHI
+		buildings = {
+
+		}
+
+	}
+
+	provinces={
+		1078 1162 4050 4165 4207 7067 7141 7182 9978 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

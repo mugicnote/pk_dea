@@ -256,6 +256,496 @@ KOR_national_assembly_unicameralism_decision = {
 	}
 }
 
+@KOR_HUNT_BANDITS_EQUIPMENT_COST_TRIGGER = 499
+@KOR_HUNT_BANDITS_EQUIPMENT_COST_EFFECT = -500
+
+KOR_banditry_category = {
+
+	KOR_pacify_bandits_in_the_northern_countryside = {
+
+		icon = generic_oppression
+		
+		available = {
+			has_completed_focus = war_against_crime_start
+			has_country_flag = KOR_northern_bandits
+			divisions_in_state = {
+				state = 525	
+				size > 5
+			}
+		}
+
+		highlight_state_targets = {
+			state = 525
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 200
+				divisions_in_state = {
+					state = 525	
+					size > 5
+				}
+			}
+		}
+
+		visible = {
+			NOT = { has_active_mission = KOR_maintain_northern_control }
+			has_completed_focus = snip_back_deal
+		}
+
+		is_good = yes
+
+		complete_effect = {
+			activate_mission = KOR_maintain_northern_control
+			custom_effect_tooltip = KOR_pacify_bandits_mission_explanation
+		}
+	}
+
+KOR_hunt_down_northern_bandits = {
+
+		icon = generic_oppression
+
+		available = {
+			has_completed_focus = war_against_crime_start
+			has_equipment = { infantry_equipment > @KOR_HUNT_BANDITS_EQUIPMENT_COST_TRIGGER }
+			has_country_flag = KOR_northern_bandits
+		}
+
+		cost = 0
+
+		highlight_state_targets = {
+			state = 525
+		}
+		visible = {
+			has_country_flag = KOR_northern_bandits
+			has_completed_focus = snip_back_deal
+		}
+		is_good = yes
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 200
+				divisions_in_state = {
+					state = 525	
+					size < 6
+				}
+			}
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = KOR_hunt_down_northern_bandits_tt
+			add_manpower = -1000
+			
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = @KOR_HUNT_BANDITS_EQUIPMENT_COST_EFFECT
+			}
+
+			army_experience = 10
+
+			remove_mission = KOR_maintain_northern_control
+			clr_country_flag = KOR_northern_bandits
+			if = {
+				limit = {
+					NOT = { has_country_flag = KOR_eastern_bandits }
+					NOT = { has_country_flag = KOR_western_bandits }
+				}
+				remove_ideas = unstable_security
+			}
+		}
+	}
+
+	KOR_maintain_northern_control = {
+
+		icon = generic_civil_support
+
+		available = {
+			always = no
+		}
+
+		days_mission_timeout = KOR_main_control_timer?180
+
+		activation = {
+			always = no #Triggered from effect
+		}
+
+		cancel_trigger = {
+			divisions_in_state = {
+				state = 525	
+				size < 6
+			}
+		}
+
+		highlight_state_targets = {
+			state = 525
+		}
+
+		visible = {
+			
+		}
+
+		is_good = yes
+
+		timeout_effect = {
+			custom_effect_tooltip = KOR_hunt_down_northern_bandits_tt
+			army_experience = 10
+			clr_country_flag = KOR_northern_bandits
+			if = {
+				limit = {
+					NOT = { has_country_flag = KOR_eastern_bandits }
+					NOT = { has_country_flag = KOR_western_bandits }
+				}
+				remove_ideas = unstable_security
+			}
+		}
+	}
+
+	KOR_pacify_bandits_in_the_eastern_countryside = {
+
+		icon = generic_oppression
+		
+		available = {
+			has_completed_focus = war_against_crime_start
+			has_country_flag = KOR_eastern_bandits
+			divisions_in_state = {
+				state = 798
+				size > 5
+			}
+		}
+
+		highlight_state_targets = {
+			state = 798
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 200
+				divisions_in_state = {
+					state = 798	
+					size > 5
+				}
+			}
+		}
+
+		visible = {
+			NOT = { has_active_mission = KOR_maintain_eastern_control }
+			has_country_flag = KOR_eastern_bandits
+			has_completed_focus = snip_back_deal
+		}
+
+		is_good = yes
+
+		complete_effect = {
+			activate_mission = KOR_maintain_eastern_control
+			custom_effect_tooltip = KOR_pacify_bandits_mission_explanation
+		}
+	}
+
+	KOR_hunt_down_eastern_bandits = {
+
+		icon = generic_oppression
+
+		available = {
+			has_completed_focus = war_against_crime_start
+			has_equipment = { infantry_equipment > @KOR_HUNT_BANDITS_EQUIPMENT_COST_TRIGGER }
+			has_country_flag = KOR_eastern_bandits
+		}
+
+		visible = {
+			has_completed_focus = snip_back_deal
+			has_country_flag = KOR_eastern_bandits
+		}
+
+		cost = 0
+
+		highlight_state_targets = {
+			state = 798
+		}
+
+		is_good = yes
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 200
+				divisions_in_state = {
+					state = 798	
+					size < 6
+				}
+			}
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = KOR_hunt_down_eastern_bandits_tt
+			add_manpower = -1000
+			
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = @KOR_HUNT_BANDITS_EQUIPMENT_COST_EFFECT
+			}
+
+			army_experience = 10
+
+			remove_mission = KOR_maintain_eastern_control
+			clr_country_flag = KOR_eastern_bandits
+			if = {
+				limit = {
+					NOT = { has_country_flag = KOR_northern_bandits }
+					NOT = { has_country_flag = KOR_western_bandits }
+				}
+				remove_ideas = unstable_security
+			}
+		}
+	}
+
+	KOR_maintain_eastern_control = {
+
+		icon = generic_civil_support
+
+		available = {			
+			always = no
+		}
+
+		days_mission_timeout = KOR_main_control_timer?180
+
+		activation = {
+			always = no #Triggered from effect
+		}
+
+		cancel_trigger = {
+			divisions_in_state = {
+				state = 798	
+				size < 6
+			}
+		}
+
+		highlight_state_targets = {
+			state = 798
+		}
+
+		visible = {
+			
+		}
+
+		is_good = yes
+
+		timeout_effect = {
+			custom_effect_tooltip = KOR_hunt_down_eastern_bandits_tt
+			army_experience = 10
+			clr_country_flag = KOR_eastern_bandits
+			if = {
+				limit = {
+					NOT = { has_country_flag = KOR_northern_bandits }
+					NOT = { has_country_flag = KOR_western_bandits }
+				}
+				remove_ideas = unstable_security
+			}
+		}
+	}
+
+	KOR_pacify_bandits_in_the_western_countryside = {
+
+		icon = generic_oppression
+		
+		available = {
+			has_completed_focus = war_against_crime_start
+			has_country_flag = KOR_western_bandits
+			divisions_in_state = {
+				state = 801	
+				size > 5
+			}
+		}
+
+		highlight_state_targets = {
+			state = 801
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 200
+				divisions_in_state = {
+					state = 801	
+					size > 5
+				}
+			}
+		}
+
+		visible = {
+			NOT = { has_active_mission = KOR_maintain_western_control }
+			has_country_flag = KOR_western_bandits
+			has_completed_focus = snip_back_deal
+		}
+
+		is_good = yes
+
+		complete_effect = {
+			activate_mission = KOR_maintain_western_control
+			custom_effect_tooltip = KOR_pacify_bandits_mission_explanation
+		}
+	}
+
+	KOR_hunt_down_western_bandits = {
+
+		icon = generic_oppression
+
+		available = {
+			has_completed_focus = war_against_crime_start
+			has_equipment = { infantry_equipment > @KOR_HUNT_BANDITS_EQUIPMENT_COST_TRIGGER }
+			has_country_flag = KOR_western_bandits
+		}
+
+		cost = 0
+
+		highlight_state_targets = {
+			state = 801
+		}
+
+		visible = {
+			has_country_flag = KOR_western_bandits
+			has_completed_focus = snip_back_deal
+		}
+
+		is_good = yes
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 200
+				divisions_in_state = {
+					state = 801	
+					size < 6
+				}
+			}
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = KOR_hunt_down_western_bandits_tt
+			add_manpower = -1000
+			
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = @KOR_HUNT_BANDITS_EQUIPMENT_COST_EFFECT
+			}
+
+			army_experience = 10
+
+			remove_mission = KOR_maintain_western_control
+			clr_country_flag = KOR_western_bandits
+			if = {
+				limit = {
+					NOT = { has_country_flag = KOR_eastern_bandits }
+					NOT = { has_country_flag = KOR_northern_bandits }
+				}
+				remove_ideas = unstable_security
+			}
+		}
+	}
+
+	KOR_maintain_western_control = {
+
+		icon = generic_civil_support
+
+		available = {			
+			always = no
+		}
+
+		days_mission_timeout = KOR_main_control_timer?180
+
+		activation = {
+			always = no #Triggered from effect
+		}
+
+		cancel_trigger = {
+			divisions_in_state = {
+				state = 801	
+				size < 6
+			}
+		}
+
+		highlight_state_targets = {
+			state = 801
+		}
+
+		visible = {
+			
+		}
+
+		is_good = yes
+
+		timeout_effect = {
+			custom_effect_tooltip = KOR_hunt_down_western_bandits_tt
+			army_experience = 10
+			clr_country_flag = KOR_western_bandits
+			if = {
+				limit = {
+					NOT = { has_country_flag = KOR_eastern_bandits }
+					NOT = { has_country_flag = KOR_northern_bandits }
+				}
+				remove_ideas = unstable_security
+			}
+		}
+	}
+
+	KOR_bandit_raids = {
+
+		icon = generic_civil_support
+
+		available = {
+			NOT = { has_idea = unstable_security }
+			has_completed_focus = war_against_crime_start
+		}
+
+		days_mission_timeout = 180
+
+		activation = {
+			has_idea = unstable_security
+		}
+
+		visible = {
+			has_completed_focus = snip_back_deal
+		}		
+
+		fixed_random_seed = no
+
+		fire_only_once = no
+
+		is_good = no
+
+		timeout_effect = {
+			random_list = {
+				25 = {
+					country_event = KOR.28
+				}
+				25 = {
+					country_event = KOR.29
+				}
+				25 = {
+					country_event = KOR.30
+				}
+				25 = {
+					
+				}
+			}
+		}
+	}
+}
+
 KOR_spanish_intervention_category = {
 	KOR_invite_FROM_to_non_intervention = {
 		available = {
@@ -852,495 +1342,6 @@ form_united_KOR_category = {
 			modifier = {
 				factor = 0
 				is_historical_focus_on = yes
-			}
-		}
-	}
-}
-@KOR_HUNT_BANDITS_EQUIPMENT_COST_TRIGGER = 499
-@KOR_HUNT_BANDITS_EQUIPMENT_COST_EFFECT = -500
-
-KOR_banditry_category = {
-
-	KOR_pacify_bandits_in_the_northern_countryside = {
-
-		icon = generic_oppression
-		
-		available = {
-			has_completed_focus = war_against_crime_start
-			has_country_flag = KOR_northern_bandits
-			divisions_in_state = {
-				state = 525	
-				size > 5
-			}
-		}
-
-		highlight_state_targets = {
-			state = 525
-		}
-
-		cost = 0
-
-		ai_will_do = {
-			factor = 0
-			modifier = {
-				add = 200
-				divisions_in_state = {
-					state = 525	
-					size > 5
-				}
-			}
-		}
-
-		visible = {
-			NOT = { has_active_mission = KOR_maintain_northern_control }
-			has_completed_focus = snip_back_deal
-		}
-
-		is_good = yes
-
-		complete_effect = {
-			activate_mission = KOR_maintain_northern_control
-			custom_effect_tooltip = KOR_pacify_bandits_mission_explanation
-		}
-	}
-
-KOR_hunt_down_northern_bandits = {
-
-		icon = generic_oppression
-
-		available = {
-			has_completed_focus = war_against_crime_start
-			has_equipment = { infantry_equipment > @KOR_HUNT_BANDITS_EQUIPMENT_COST_TRIGGER }
-			has_country_flag = KOR_northern_bandits
-		}
-
-		cost = 0
-
-		highlight_state_targets = {
-			state = 525
-		}
-		visible = {
-			has_country_flag = KOR_northern_bandits
-			has_completed_focus = snip_back_deal
-		}
-		is_good = yes
-
-		fire_only_once = yes
-
-		ai_will_do = {
-			factor = 0
-			modifier = {
-				add = 200
-				divisions_in_state = {
-					state = 525	
-					size < 6
-				}
-			}
-		}
-
-		complete_effect = {
-			custom_effect_tooltip = KOR_hunt_down_northern_bandits_tt
-			add_manpower = -1000
-			
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = @KOR_HUNT_BANDITS_EQUIPMENT_COST_EFFECT
-			}
-
-			army_experience = 10
-
-			remove_mission = KOR_maintain_northern_control
-			clr_country_flag = KOR_northern_bandits
-			if = {
-				limit = {
-					NOT = { has_country_flag = KOR_eastern_bandits }
-					NOT = { has_country_flag = KOR_western_bandits }
-				}
-				remove_ideas = unstable_security
-			}
-		}
-	}
-
-	KOR_maintain_northern_control = {
-
-		icon = generic_civil_support
-
-		available = {
-			always = no
-		}
-
-		days_mission_timeout = KOR_main_control_timer?180
-
-		activation = {
-			always = no #Triggered from effect
-		}
-
-		cancel_trigger = {
-			divisions_in_state = {
-				state = 525	
-				size < 6
-			}
-		}
-
-		highlight_state_targets = {
-			state = 525
-		}
-
-		visible = {
-			
-		}
-
-		is_good = yes
-
-		timeout_effect = {
-			custom_effect_tooltip = KOR_hunt_down_northern_bandits_tt
-			army_experience = 10
-			clr_country_flag = KOR_northern_bandits
-			if = {
-				limit = {
-					NOT = { has_country_flag = KOR_eastern_bandits }
-					NOT = { has_country_flag = KOR_western_bandits }
-				}
-				remove_ideas = unstable_security
-			}
-		}
-	}
-
-	KOR_pacify_bandits_in_the_eastern_countryside = {
-
-		icon = generic_oppression
-		
-		available = {
-			has_completed_focus = war_against_crime_start
-			has_country_flag = KOR_eastern_bandits
-			divisions_in_state = {
-				state = 798
-				size > 5
-			}
-		}
-
-		highlight_state_targets = {
-			state = 798
-		}
-
-		cost = 0
-
-		ai_will_do = {
-			factor = 0
-			modifier = {
-				add = 200
-				divisions_in_state = {
-					state = 798	
-					size > 5
-				}
-			}
-		}
-
-		visible = {
-			NOT = { has_active_mission = KOR_maintain_eastern_control }
-			has_country_flag = KOR_eastern_bandits
-			has_completed_focus = snip_back_deal
-		}
-
-		is_good = yes
-
-		complete_effect = {
-			activate_mission = KOR_maintain_eastern_control
-			custom_effect_tooltip = KOR_pacify_bandits_mission_explanation
-		}
-	}
-
-	KOR_hunt_down_eastern_bandits = {
-
-		icon = generic_oppression
-
-		available = {
-			has_completed_focus = war_against_crime_start
-			has_equipment = { infantry_equipment > @KOR_HUNT_BANDITS_EQUIPMENT_COST_TRIGGER }
-			has_country_flag = KOR_eastern_bandits
-		}
-
-		visible = {
-			has_completed_focus = snip_back_deal
-			has_country_flag = KOR_eastern_bandits
-		}
-
-		cost = 0
-
-		highlight_state_targets = {
-			state = 798
-		}
-
-		is_good = yes
-
-		fire_only_once = yes
-
-		ai_will_do = {
-			factor = 0
-			modifier = {
-				add = 200
-				divisions_in_state = {
-					state = 798	
-					size < 6
-				}
-			}
-		}
-
-		complete_effect = {
-			custom_effect_tooltip = KOR_hunt_down_eastern_bandits_tt
-			add_manpower = -1000
-			
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = @KOR_HUNT_BANDITS_EQUIPMENT_COST_EFFECT
-			}
-
-			army_experience = 10
-
-			remove_mission = KOR_maintain_eastern_control
-			clr_country_flag = KOR_eastern_bandits
-			if = {
-				limit = {
-					NOT = { has_country_flag = KOR_northern_bandits }
-					NOT = { has_country_flag = KOR_western_bandits }
-				}
-				remove_ideas = unstable_security
-			}
-		}
-	}
-
-	KOR_maintain_eastern_control = {
-
-		icon = generic_civil_support
-
-		available = {			
-			always = no
-		}
-
-		days_mission_timeout = KOR_main_control_timer?180
-
-		activation = {
-			always = no #Triggered from effect
-		}
-
-		cancel_trigger = {
-			divisions_in_state = {
-				state = 798	
-				size < 6
-			}
-		}
-
-		highlight_state_targets = {
-			state = 798
-		}
-
-		visible = {
-			
-		}
-
-		is_good = yes
-
-		timeout_effect = {
-			custom_effect_tooltip = KOR_hunt_down_eastern_bandits_tt
-			army_experience = 10
-			clr_country_flag = KOR_eastern_bandits
-			if = {
-				limit = {
-					NOT = { has_country_flag = KOR_northern_bandits }
-					NOT = { has_country_flag = KOR_western_bandits }
-				}
-				remove_ideas = unstable_security
-			}
-		}
-	}
-
-	KOR_pacify_bandits_in_the_western_countryside = {
-
-		icon = generic_oppression
-		
-		available = {
-			has_completed_focus = war_against_crime_start
-			has_country_flag = KOR_western_bandits
-			divisions_in_state = {
-				state = 801	
-				size > 5
-			}
-		}
-
-		highlight_state_targets = {
-			state = 801
-		}
-
-		cost = 0
-
-		ai_will_do = {
-			factor = 0
-			modifier = {
-				add = 200
-				divisions_in_state = {
-					state = 801	
-					size > 5
-				}
-			}
-		}
-
-		visible = {
-			NOT = { has_active_mission = KOR_maintain_western_control }
-			has_country_flag = KOR_western_bandits
-			has_completed_focus = snip_back_deal
-		}
-
-		is_good = yes
-
-		complete_effect = {
-			activate_mission = KOR_maintain_western_control
-			custom_effect_tooltip = KOR_pacify_bandits_mission_explanation
-		}
-	}
-
-	KOR_hunt_down_western_bandits = {
-
-		icon = generic_oppression
-
-		available = {
-			has_completed_focus = war_against_crime_start
-			has_equipment = { infantry_equipment > @KOR_HUNT_BANDITS_EQUIPMENT_COST_TRIGGER }
-			has_country_flag = KOR_western_bandits
-		}
-
-		cost = 0
-
-		highlight_state_targets = {
-			state = 801
-		}
-
-		visible = {
-			has_country_flag = KOR_western_bandits
-			has_completed_focus = snip_back_deal
-		}
-
-		is_good = yes
-
-		fire_only_once = yes
-
-		ai_will_do = {
-			factor = 0
-			modifier = {
-				add = 200
-				divisions_in_state = {
-					state = 801	
-					size < 6
-				}
-			}
-		}
-
-		complete_effect = {
-			custom_effect_tooltip = KOR_hunt_down_western_bandits_tt
-			add_manpower = -1000
-			
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = @KOR_HUNT_BANDITS_EQUIPMENT_COST_EFFECT
-			}
-
-			army_experience = 10
-
-			remove_mission = KOR_maintain_western_control
-			clr_country_flag = KOR_western_bandits
-			if = {
-				limit = {
-					NOT = { has_country_flag = KOR_eastern_bandits }
-					NOT = { has_country_flag = KOR_northern_bandits }
-				}
-				remove_ideas = unstable_security
-			}
-		}
-	}
-
-	KOR_maintain_western_control = {
-
-		icon = generic_civil_support
-
-		available = {			
-			always = no
-		}
-
-		days_mission_timeout = KOR_main_control_timer?180
-
-		activation = {
-			always = no #Triggered from effect
-		}
-
-		cancel_trigger = {
-			divisions_in_state = {
-				state = 801	
-				size < 6
-			}
-		}
-
-		highlight_state_targets = {
-			state = 801
-		}
-
-		visible = {
-			
-		}
-
-		is_good = yes
-
-		timeout_effect = {
-			custom_effect_tooltip = KOR_hunt_down_western_bandits_tt
-			army_experience = 10
-			clr_country_flag = KOR_western_bandits
-			if = {
-				limit = {
-					NOT = { has_country_flag = KOR_eastern_bandits }
-					NOT = { has_country_flag = KOR_northern_bandits }
-				}
-				remove_ideas = unstable_security
-			}
-		}
-	}
-
-	KOR_bandit_raids = {
-
-		icon = generic_civil_support
-
-		available = {
-			NOT = { has_idea = unstable_security }
-			has_completed_focus = war_against_crime_start
-		}
-
-		days_mission_timeout = 180
-
-		activation = {
-			has_idea = unstable_security
-		}
-
-		visible = {
-			has_completed_focus = snip_back_deal
-		}		
-
-		fixed_random_seed = no
-
-		fire_only_once = no
-
-		is_good = no
-
-		timeout_effect = {
-			random_list = {
-				25 = {
-					country_event = KOR.28
-				}
-				25 = {
-					country_event = KOR.29
-				}
-				25 = {
-					country_event = KOR.30
-				}
-				25 = {
-					
-				}
 			}
 		}
 	}
@@ -3378,4 +3379,23 @@ RUS_Zemstvo_Funding_decisions = {
 			country_event = KOR.60
 		}
 	}
+}
+
+KOR_KOR_focus_ilminism_category = {
+
+	KOR_focus_ilminism2 = {
+		available = {
+			tag = KOR
+		}
+
+		cost = 30
+		days_remove = 30
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision KOR_focus_ilminism2"
+			set_country_flag = KOR_focus_ilminism_is_ready
+		}
+		
+	}
+
 }

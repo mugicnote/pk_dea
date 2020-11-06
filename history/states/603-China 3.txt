@@ -1,26 +1,16 @@
+
 state={
 	id=603
 	name="STATE_603"
 
 	history={
-		owner = GJU
-		add_core_of = GJU
+		owner = YUN
+		add_core_of = YUN
 		add_core_of = CHI
-		add_core_of = PRC
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
 			arms_factory = 2
-
-		}
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 4
-				infrastructure = 4
-				air_base = 1
-				arms_factory = 2
-
-			}
 
 		}
 		victory_points = {
@@ -30,7 +20,7 @@ state={
 	}
 
 	provinces={
-		1474 1884 4192 4504 4532 5072 7521 7549 7577 8095 10616 10819 12841 
+		5072 10819 12841 1114 1172 1196 1319 1383 1522 1653 4501 7446 7606 8023 10346 10776 12262 12282
 	}
 	manpower=7543200
 	buildings_max_level_factor=1.000

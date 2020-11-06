@@ -9,7 +9,9 @@ on_actions = {
 		set_country_flag = KOR_northern_bandits
 		set_country_flag = KOR_eastern_bandits
 		set_country_flag = KOR_western_bandits
+
 		set_country_flag = Syngman_Rhee2
+
 		set_country_flag = Jang_TaekSang
 		set_country_flag = Shin_Sung_mo
 		set_country_flag = Yoon_Bo_Sun
@@ -18,6 +20,15 @@ on_actions = {
 		set_country_flag = Ahn_Chang_Ho
 		set_country_flag = jae_pil
 		set_country_flag = Kim_Byung_ro
+		set_country_flag = Lee_Beomseok
+		set_country_flag = ji_chong_chen
+		set_country_flag = Il_han_New
+		set_country_flag = Kim_Suk_Won
+		set_country_flag = jo_man_sik
+		set_country_flag = Ho_Jong
+		set_country_flag = Ahn_Jaehong
+		set_country_flag = Pak_Honyong
+
 		add_ideas = IM_Jang_TaekSang
 		country_lock_all_division_template = yes
 		set_country_flag = TNO_opening_screen_show

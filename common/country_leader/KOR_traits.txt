@@ -197,4 +197,40 @@ leader_traits = {
 	POSITION_main_opposition_party_leader2 = {
 		random = no
 	}
+	Fierce_Anti_Communist = {
+		random = no
+		communism_acceptance = -50
+		war_support_factor = 0.10
+		army_core_attack_factor = 0.05
+		army_core_defence_factor = 0.05
+		stability_factor = -0.05
+	}
+
+	third_term_president = {
+		random = no
+		political_power_factor = 0.15
+		stability_factor = 0.1
+		consumer_goods_factor = 0.05
+	}
+	perfectionist_president = {
+		random = no
+		max_planning = 0.1
+		planning_speed = 0.1
+		research_speed_factor = 0.05
+	}
+	Seo_Jae_pil_Doctrine = {
+		random = no
+		production_speed_buildings_factor = 0.10
+		production_speed_industrial_complex_factor = 0.35
+		production_speed_arms_factory_factor = -0.3
+		consumer_goods_factor = 0.05
+		war_support_factor = -0.10
+	}
+	Hitler_of_Korea = {
+		random = no
+		military_leader_cost_factor = -0.15
+		max_command_power = 50
+		stability_factor = -0.15
+	}
+	
 }

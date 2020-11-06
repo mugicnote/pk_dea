@@ -1,0 +1,46 @@
+#############
+### Setup ###
+#############
+
+defined_text = {
+	name = GetIntegrateChina
+	text = {
+		trigger = {
+			can_integration_chinese_provinces = yes
+		}
+		localization_key = integrate_china_desc_extra
+	}
+	text = {
+		trigger = {
+			can_integration_chinese_provinces = no
+		}
+		localization_key = ""
+	}
+}
+
+###############
+### Leaders ###
+###############
+
+defined_text = {
+	name = GetFactionAlignment
+	text = {
+		trigger = {
+			tag = KOR
+		}
+		localization_key = "사회보수주의 독립국"
+	}
+	text = {
+		trigger = {
+			tag = MAN
+		}
+		localization_key = "사회보수주의 독립국"
+	}
+	text = {
+		trigger = {
+			tag = CHI
+		}
+		localization_key = "사회보수주의 독립국"
+	}
+
+}

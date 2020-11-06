@@ -53,6 +53,18 @@ KOR_national_assembly_unicameralism_decision = {
 	priority = 100
 }
 
+###범죄와의 전쟁 디시전 (보안 작업 중)###
+KOR_banditry_category = {
+	
+	icon = GFX_decision_category_infiltration
+	
+	picture = GFX_KOR_jin_ap
+
+	allowed = {
+		tag = KOR
+	}
+
+}
 
 KOR_opposition_civil_war_preparations = {
 	priority = 9
@@ -118,6 +130,7 @@ KOR_opposition_civil_war_preparations = {
 	}
 }
 
+###미사용 디시전###
 KOR_spanish_intervention_category = {
 	allowed = {
 		original_tag = KOR
@@ -128,11 +141,11 @@ KOR_spanish_intervention_category = {
 	}
 }
 
-KOR_banditry_category = {
+KOR_KOR_focus_ilminism_category = {
 	
 	icon = GFX_decision_category_infiltration
 	
-	picture = GFX_KOR_jin_ap
+	picture = GFX_
 
 	allowed = {
 		tag = KOR

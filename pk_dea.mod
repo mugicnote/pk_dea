@@ -5,4 +5,7 @@ tags={
 	"Events"
 	"National Focuses"
 }
-supported_version="1.9.*"
+dependencies={
+    "Korean Language (Europa)"
+}
+supported_version="1.10.*"

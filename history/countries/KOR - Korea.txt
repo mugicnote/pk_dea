@@ -187,7 +187,10 @@ create_country_leader = {
   expire = "1949.6.26"
   ideology = Seo_Jae_Pil_conservatism
   traits = {
-    figurehead_president
+	third_term_president
+	perfectionist_president
+	Seo_Jae_pil_Doctrine
+	Hitler_of_Korea
   }
 }
 

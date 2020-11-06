@@ -1,4 +1,4 @@
-capital = 528
+capital = 526
 
 oob = UPN_1936
 

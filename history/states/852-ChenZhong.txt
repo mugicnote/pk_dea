@@ -1,0 +1,17 @@
+state={
+	id=852
+	name="STATE_852"
+
+	history={
+		owner = GJU
+		add_core_of = GJU
+		add_core_of = CHI
+
+	}
+	
+	provinces={
+		1010 4325 4532 8095 10616 10763 11972 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

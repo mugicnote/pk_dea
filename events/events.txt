@@ -512,6 +512,94 @@ country_event = { #연설
 	}
 }
 
+country_event = { #연설
+	id = KOR.77
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.77"}
+	title = KOR.77.t
+	desc = KOR.77.desc
+	picture = GFX_Its_a_mess
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = KOR.77.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = kor77_a_tt
+			country_event = {
+				id = KOR.78
+				days = 0
+			}
+	}
+	option = { #
+		name = KOR.77.b
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = kor77_b_tt
+	}
+}
+
+country_event = { #연설
+	id = KOR.78
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.78"}
+	title = KOR.78.t
+	desc = KOR.78.desc
+	picture = GFX_Its_a_mess
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = KOR.78.a
+		ai_chance = { factor = 1 }
+		country_event = {
+			id = KOR.79
+			days = 2
+		}
+	}
+}
+
+country_event = { #연설
+	id = KOR.79
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.79"}
+	title = KOR.79.t
+	desc = KOR.79.desc
+	picture = GFX_Its_a_mess
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = KOR.79.a
+		ai_chance = { factor = 1 }
+		country_event = {
+			id = KOR.1
+			days = 2
+		}
+	}
+}
+
+country_event = { #경찰 확대
+	id = KOR.80
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.80"}
+	title = KOR.80.t
+	desc = KOR.80.desc
+	picture = GFX_police_up
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = KOR.80.a
+		ai_chance = { factor = 1 }
+		add_stability = 0.05
+	}
+	option = { #
+		name = KOR.80.b
+		ai_chance = { factor = 1 }
+		add_war_support = 0.05
+	}
+}
+
 country_event = { #시작 선택
 	id = KOR.10
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.10"}

@@ -77,25 +77,28 @@ scripted_gui = {
 		}
 		
 		triggers = {
-			TNO_OpeningScreen_Text_visible = {
-				NOT = { has_country_flag = OPEN_view_mod_info }
+			TNO_OpeningScreen_Text_Country_visible = {
+				has_country_flag = OPEN_view_country_info
 			}
-			
-			TNO_OpeningScreen_Text_ModInfo_Buttons_visible = {
+			TNO_OpeningScreen_Text_Region_visible = {
+				has_country_flag = OPEN_view_region_info
+			}
+			TNO_OpeningScreen_Text_Mod_Features_visible = {
+				has_country_flag = OPEN_view_features_info
+			}
+			TNO_OpeningScreen_Text_Mod_Info_visible = {
 				has_country_flag = OPEN_view_mod_info
 			}
+			
+			# TNO_OpeningScreen_Text_ModInfo_Buttons_visible = {
+			# 	has_country_flag = OPEN_view_mod_info
+			# }
 			
 			TNO_discord_button_visible = {
-				has_country_flag = OPEN_view_mod_info
-			}
-			TNO_reddit_button_visible = {
-				has_country_flag = OPEN_view_mod_info
-			}
-			TNO_tvtropes_button_visible = {
-				has_country_flag = OPEN_view_mod_info
-			}
-			TNO_twitter_button_visible = {
-				has_country_flag = OPEN_view_mod_info
+				OR = {
+					has_country_flag = OPEN_view_features_info
+					has_country_flag = OPEN_view_mod_info
+				}
 			}
 		}
 		

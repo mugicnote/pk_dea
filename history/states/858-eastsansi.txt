@@ -1,0 +1,17 @@
+state={
+	id=858
+	name="STATE_858"
+
+	history={
+		owner = SHX
+		add_core_of = SHX
+		add_core_of = CHI
+
+	}
+
+	provinces={
+		1027 1180 1203 1438 1519 4469 4538 10421 10480 12078 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

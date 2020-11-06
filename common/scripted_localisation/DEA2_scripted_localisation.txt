@@ -2,6 +2,17 @@
 # Leader Title
 ############################################
 defined_text = {
+	name = FdS_front_name
+
+	text = {
+		trigger = {
+			has_country_flag = jae_pil
+		}
+		localization_key = jae_pil_front
+	}
+
+}
+defined_text = {
 	name = FdS_rank2
 
 	### 제1 야당 대표
@@ -55,6 +66,13 @@ defined_text = {
 		localization_key = Jang_TaekSang
 	}
 
+	text = {
+		trigger = {
+			has_country_flag = no_fd2
+		}
+		localization_key = no_fd2
+	}
+
 }
 defined_text = {
 	name = general_outline
@@ -76,6 +94,24 @@ defined_text = {
 			has_country_flag = Jang_TaekSang
 		}
 		localization_key = GFX_Portrait_Jang_TaekSang
+	}
+	text = {
+		trigger = {
+			has_country_flag = no_fd2
+		}
+		localization_key = GFX_Leader_Portrait_Background
+	}
+
+}
+
+defined_text = {
+	name = HoG2_desc
+
+	text = {
+		trigger = { 
+			has_country_flag = Jang_TaekSang 
+		}
+		localization_key = Jang_TaekSang_desc
 	}
 
 }
@@ -137,6 +173,12 @@ defined_text = {
 		}
 		localization_key = Shin_Sung_mo
 	}
+	text = {
+		trigger = {
+			has_country_flag = Lee_Beomseok
+		}
+		localization_key = Lee_Beomseok
+	}
 
 }
 defined_text = {
@@ -147,6 +189,12 @@ defined_text = {
 			has_country_flag = Shin_Sung_mo
 		}
 		localization_key = GFX_Portrait_Shin_Sung_mo
+	}
+	text = {
+		trigger = {
+			has_country_flag = Lee_Beomseok
+		}
+		localization_key = GFX_Portrait_Lee_Beomseok
 	}
 
 }
@@ -278,7 +326,12 @@ defined_text = {
 		}
 		localization_key = Kim_Kyusik
 	}
-
+	text = {
+		trigger = {
+			has_country_flag = Kim_Kyusik
+		}
+		localization_key = Kim_Kyusik
+	}
 
 }
 defined_text = {
@@ -506,6 +559,18 @@ defined_text = {
 
 }
 
+defined_text = {
+	name = HoG8_desc
+
+	#공석
+	text = {
+		trigger = { 
+			has_country_flag = jae_pil 
+		}
+		localization_key = jae_pil_desc
+	}
+
+}
 
 ############################################
 # Leader Title
@@ -573,6 +638,502 @@ defined_text = {
 			has_country_flag = Kim_Byung_ro
 		}
 		localization_key = GFX_Portrait_Kim_Byung_ro
+	}
+
+}
+
+
+defined_text = {
+	name = FdS_rank10
+
+	### 제1 야당 대표
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = POSITION_main_opposition_party_leader10
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = leader_title_one_generic
+	}
+}
+
+defined_text = {
+	name = HoG_rank10
+	### 제1 야당 대표
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = POSITION_main_opposition_party_leader10
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = leader_title_two_generic
+	}
+}
+
+defined_text = {
+	name = FdS_name10
+	### Generic
+	text = {
+		trigger = {
+			has_country_flag = Lee_Beomseok
+		}
+		localization_key = Lee_Beomseok
+	}
+
+
+}
+defined_text = {
+	name = leader_two_portrait10
+	
+	text = {
+		trigger = {
+			has_country_flag = Lee_Beomseok
+		}
+		localization_key = GFX_Portrait_Lee_Beomseok
+	}
+
+}
+
+
+defined_text = {
+	name = FdS_rank11
+
+	### 제1 야당 대표
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = POSITION_main_opposition_party_leader11
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = leader_title_one_generic
+	}
+}
+
+defined_text = {
+	name = HoG_rank11
+	### 제1 야당 대표
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = POSITION_main_opposition_party_leader11
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = leader_title_two_generic
+	}
+}
+
+defined_text = {
+	name = FdS_name11
+	### Generic
+	text = {
+		trigger = {
+			has_country_flag = ji_chong_chen
+		}
+		localization_key = ji_chong_chen
+	}
+
+
+}
+defined_text = {
+	name = leader_two_portrait11
+	
+	text = {
+		trigger = {
+			has_country_flag = ji_chong_chen
+		}
+		localization_key = GFX_Portrait_ji_chong_chen
+	}
+
+}
+
+
+defined_text = {
+	name = FdS_rank12
+
+	### 제1 야당 대표
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = POSITION_main_opposition_party_leader12
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = leader_title_one_generic
+	}
+}
+
+defined_text = {
+	name = HoG_rank12
+	### 제1 야당 대표
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = POSITION_main_opposition_party_leader12
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = leader_title_two_generic
+	}
+}
+
+defined_text = {
+	name = FdS_name12
+	### Generic
+	text = {
+		trigger = {
+			has_country_flag = Il_han_New
+		}
+		localization_key = Il_han_New
+	}
+
+
+}
+defined_text = {
+	name = leader_two_portrait12
+	
+	text = {
+		trigger = {
+			has_country_flag = Il_han_New
+		}
+		localization_key = GFX_Portrait_Il_han_New
+	}
+
+}
+
+
+defined_text = {
+	name = FdS_rank13
+
+	### 제1 야당 대표
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = POSITION_main_opposition_party_leader13
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = leader_title_one_generic
+	}
+}
+
+defined_text = {
+	name = HoG_rank13
+	### 제1 야당 대표
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = POSITION_main_opposition_party_leader13
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = leader_title_two_generic
+	}
+}
+
+defined_text = {
+	name = FdS_name13
+	### Generic
+	text = {
+		trigger = {
+			has_country_flag = Kim_Suk_Won
+		}
+		localization_key = Kim_Suk_Won
+	}
+
+
+}
+defined_text = {
+	name = leader_two_portrait13
+	
+	text = {
+		trigger = {
+			has_country_flag = Kim_Suk_Won
+		}
+		localization_key = GFX_Portrait_Kim_Suk_Won
+	}
+
+}
+
+
+defined_text = {
+	name = FdS_rank14
+
+	### 제1 야당 대표
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = POSITION_main_opposition_party_leader14
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = leader_title_one_generic
+	}
+}
+
+defined_text = {
+	name = HoG_rank14
+	### 제1 야당 대표
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = POSITION_main_opposition_party_leader14
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = leader_title_two_generic
+	}
+}
+
+defined_text = {
+	name = FdS_name14
+	### Generic
+	text = {
+		trigger = {
+			has_country_flag = jo_man_sik
+		}
+		localization_key = jo_man_sik
+	}
+
+
+}
+defined_text = {
+	name = leader_two_portrait14
+	
+	text = {
+		trigger = {
+			has_country_flag = jo_man_sik
+		}
+		localization_key = GFX_jomansik_portrait
+	}
+
+}
+
+
+defined_text = {
+	name = FdS_rank15
+
+	### 제1 야당 대표
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = POSITION_main_opposition_party_leader15
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = leader_title_one_generic
+	}
+}
+
+defined_text = {
+	name = HoG_rank15
+	### 제1 야당 대표
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = POSITION_main_opposition_party_leader15
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = leader_title_two_generic
+	}
+}
+
+defined_text = {
+	name = FdS_name15
+	### Generic
+	text = {
+		trigger = {
+			has_country_flag = Ho_Jong
+		}
+		localization_key = Ho_Jong
+	}
+
+
+}
+defined_text = {
+	name = leader_two_portrait15
+	
+	text = {
+		trigger = {
+			has_country_flag = Ho_Jong
+		}
+		localization_key = GFX_Portrait_Ho_Jong
+	}
+
+}
+
+
+defined_text = {
+	name = FdS_rank16
+
+	### 제1 야당 대표
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = POSITION_main_opposition_party_leader16
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = leader_title_one_generic
+	}
+}
+
+defined_text = {
+	name = HoG_rank16
+	### 제1 야당 대표
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = POSITION_main_opposition_party_leader16
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = leader_title_two_generic
+	}
+}
+
+defined_text = {
+	name = FdS_name16
+	### Generic
+	text = {
+		trigger = {
+			has_country_flag = Ahn_Jaehong
+		}
+		localization_key = Ahn_Jaehong
+	}
+
+
+}
+defined_text = {
+	name = leader_two_portrait16
+	
+	text = {
+		trigger = {
+			has_country_flag = Ahn_Jaehong
+		}
+		localization_key = GFX_Portrait_Ahn_Jaehong
+	}
+
+}
+
+
+defined_text = {
+	name = FdS_rank17
+
+	### 제1 야당 대표
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = POSITION_main_opposition_party_leader17
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = leader_title_one_generic
+	}
+}
+
+defined_text = {
+	name = HoG_rank17
+	### 제1 야당 대표
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = POSITION_main_opposition_party_leader17
+	}
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = leader_title_two_generic
+	}
+}
+
+defined_text = {
+	name = FdS_name17
+	### Generic
+	text = {
+		trigger = {
+			has_country_flag = Pak_Honyong
+		}
+		localization_key = Pak_Honyong
+	}
+
+
+}
+defined_text = {
+	name = leader_two_portrait17
+	
+	text = {
+		trigger = {
+			has_country_flag = Pak_Honyong
+		}
+		localization_key = GFX_Portrait_Pak_Honyong
 	}
 
 }

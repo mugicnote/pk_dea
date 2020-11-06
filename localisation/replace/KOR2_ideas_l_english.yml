@@ -1,12 +1,27 @@
 ﻿l_english:
 #내각 시스템
  cabinet:0 "내각"
- head_of_gov:0 "정부수반"
- security_minister:0 "내무장관"
- economy_minister:0 "재무장관"
- foreign_minister:0 "외무장관"
- military_minister:0 "국방장관"
- intel_minister:0 "정보장관"
+ cabinet2:0 "내각"
+ cabinet3:0 "내각"
+
+ head_of_gov:0 "대통령"
+ security_minister:0 "국무총리"
+ economy_minister:0 "대법원장"
+ foreign_minister:0 "국회의장"
+ military_minister:0 "재무부장"
+ intel_minister:0 "외무부장"
+
+ Industry_minister:0 "산업부장"
+ Labor_minister:0 "노동부장"
+ anticom_minister:0 "반공처장"
+ defense_minister:0 "국방장관"
+ intel_minister2:0 "정보부장"
+ police_minister:0 "치안본부장"
+
+ Staff_minister:0 "육군참모총장"
+ Home_minister:0 "내무부장"
+ Dev_minister:0 "개발부장"
+ Defense2_minister:0 "수방사사령관"
 
  hog:0 "정부수반"
  secmin:0 "내무장관"

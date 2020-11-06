@@ -7,10 +7,8 @@ state={
 	state_category = pastoral
 
 	history={
-		owner = PRC
-		add_core_of = MEN
+		owner = MAN
 		add_core_of = CHI
-		add_core_of = PRC
 		add_core_of = MAN
 		buildings = {
 			infrastructure = 3
@@ -22,6 +20,6 @@ state={
 	}
 
 	provinces={
-		828 952 1137 1489 1590 4495 4612 6904 7545 7674 9776 10397 11752 
+		828 881 952 1137 1590 3955 6904 9768 9776 10397 
 	}
 }

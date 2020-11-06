@@ -551,5 +551,9 @@ spriteTypes = {
 		name = "GFX_kor_political_reorganization"
 		texturefile = "gfx/interface/goals/kor_political_reorganization.dds"
 	}
+	SpriteType = {
+		name = "GFX_Focus_kor_st"
+		texturefile = "gfx/interface/goals/Focus_kor_st.dds"
+	}
 
 }

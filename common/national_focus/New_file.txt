@@ -452,13 +452,24 @@
   				expire = "1947.7.19"
   				ideology = conservatism
   				traits = {
-    				anti_communist
+    				Fierce_Anti_Communist
+
   				}
 			}
 			clr_country_flag = Syngman_Rhee2
 			set_country_flag = Kim_Ku2
+
+			clr_country_flag = Jang_TaekSang
+			clr_country_flag = Shin_Sung_mo
+			clr_country_flag = Yoon_Bo_Sun
+			clr_country_flag = Kim_Kyusik
+			clr_country_flag = Ahn_Chang_Ho
+			clr_country_flag = jae_pil
+			
+			set_country_flag = no_fd2
+			set_country_flag = Lee_Beomseok
+
 		set_party_name = { ideology = democratic long_name = Lee_Dem_long name = Lee_Dem }
-		country_event = { id = KOR.2 }
 		}
 	}
 	focus = {
@@ -1506,10 +1517,7 @@
 		prerequisite = {
 			focus = New_National_Security_Law2
 		}
-		mutually_exclusive = {
-			focus = Strengthened_National_Security_Law
-		}
-		x = 33
+		x = 32
 		y = 6
 
 	}
@@ -1520,7 +1528,7 @@
 		prerequisite = {
 			focus = Lee_Seung_man_Elected
 		}
-		x = 27
+		x = 26
 		y = 4
 		completion_reward = {	
 			USA = {
@@ -1555,39 +1563,48 @@
 
 	}
 	focus = {
-		id = ilminism_Training_Insertion
-		icon = GFX_OTT_constitution
-		cost = 10.00
-		prerequisite = {
-			focus = new_education_law
-		}
-		prerequisite = {
-			focus = KOR_focus_ilminism
-		}
-		x = 25
-		y = 5
-
-	}
-	focus = {
 		id = school_protection_group
 		icon = GFX_focus_npsc
 		cost = 10.00
 		prerequisite = {
-			focus = ilminism_Training_Insertion
+			focus = central_government_reinforcement
 		}
-		x = 25
-		y = 6
+		x = 27
+		y = 7
 
 	}
 	focus = {
 		id = alliance_with_white_doctors
-		icon = GFX_goal_generic_controlled_board
+		icon = GFX_focus_kyc
 		cost = 10.00
 		prerequisite = {
 			focus = KOR_focus_ilminism
 		}
+		x = 25
+		y = 5
+
+	}
+	focus = {
+		id = central_government_reinforcement
+		icon = GFX_
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_focus_ilminism
+			focus = Pater_Patriae_Lee
+		}
 		x = 27
 		y = 5
+
+	}
+	focus = {
+		id = Prime_Minister_Bum_seok
+		icon = GFX_Focus_kor_st
+		cost = 10.00
+		prerequisite = {
+			focus = alliance_with_white_doctors
+		}
+		x = 25
+		y = 6
 
 	}
 	focus = {
@@ -1595,10 +1612,29 @@
 		icon = GFX_KOR_Liberal_party
 		cost = 10.00
 		prerequisite = {
-			focus = alliance_with_white_doctors
+			focus = Lee_Seung_man_Elected
 		}
-		x = 27
+		x = 28
 		y = 6
+
+	}
+	focus = {
+		id = Security_Headquarters_Expansion
+		icon = GFX_
+		cost = 10.00
+		prerequisite = {
+			focus = Lee_Seung_man_Elected
+		}
+		x = 30
+		y = 4
+
+		completion_reward = {
+			add_stability = 0.05
+			show_ideas_tooltip = Chough_Pyung_ok
+			country_event = {
+				id = KOR.80
+			}
+		}
 
 	}
 	focus = {
@@ -1608,7 +1644,7 @@
 		prerequisite = {
 			focus = Lee_Seung_man_Elected
 		}
-		x = 29
+		x = 28
 		y = 4
 
 	}
@@ -1625,18 +1661,15 @@
 	}
 	focus = {
 		id = Strengthened_National_Security_Law
-		icon = GFX_SIA_ratthaniyom
+		icon = GFX_
 		cost = 10.00
 		prerequisite = {
 			focus = New_National_Security_Law2
 		}
 		prerequisite = {
-			focus = Lee_constitutional_amendment
+			focus = Security_Headquarters_Expansion
 		}
-		mutually_exclusive = {
-			focus = New_National_Security_Law3
-		}
-		x = 31
+		x = 30
 		y = 6
 
 	}
@@ -1657,6 +1690,7 @@
 		cost = 10.00
 		prerequisite = {
 			focus = creation_liberal_party
+			focus = Strengthened_National_Security_Law
 		}
 		prerequisite = {
 			focus = Lee_constitutional_amendment
@@ -1670,9 +1704,12 @@
 		icon = GFX_PAL_Closed_Immigration
 		cost = 10.00
 		prerequisite = {
+			focus = Prime_Minister_Bum_seok
+		}
+		prerequisite = {
 			focus = creation_liberal_party
 		}
-		x = 27
+		x = 25
 		y = 7
 
 	}
@@ -1681,7 +1718,6 @@
 		icon = GFX_focus_generic_strike_at_democracy2
 		cost = 10.00
 		prerequisite = {
-			focus = Strengthened_National_Security_Law
 			focus = New_National_Security_Law3
 		}
 		x = 32
@@ -1741,29 +1777,6 @@
 			focus = illegal_occupation_of_northmen
 		}
 		x = 30
-		y = 9
-
-	}
-	focus = {
-		id = Jeju_Uprising_of_Namrodang
-		icon = GFX_
-		cost = 10.00
-
-		x = 25
-		y = 7
-
-	}
-	focus = {
-		id = bloody_suppression_Jeju_uprising
-		icon = GFX_
-		cost = 10.00
-		prerequisite = {
-			focus = Jeju_Uprising_of_Namrodang
-		}
-		prerequisite = {
-			focus = ilminism_reflected_party_regulations
-		}
-		x = 25
 		y = 9
 
 	}
@@ -1925,21 +1938,6 @@
 		}
 		x = 23
 		y = 6
-
-	}
-	focus = {
-		id = establishment_new_university
-		icon = gfx
-		cost = 10.00
-		prerequisite = {
-			focus = Invitation_of_Professors_from_Overseas
-		}
-		prerequisite = {
-			focus = focus_on_fostering_talent
-			focus = school_protection_group
-		}
-		x = 23
-		y = 7
 
 	}
 	focus = {

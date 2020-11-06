@@ -1,0 +1,16 @@
+state={
+	id=854
+	name="STATE_854"
+
+	history={
+		owner = CHI
+		add_core_of = CHI
+
+	}
+	
+	provinces={
+		4041 5030 7948 10304 10757 12414 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

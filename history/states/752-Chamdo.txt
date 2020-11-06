@@ -2,7 +2,7 @@ state={
 	id=752
 	name="STATE_752"
 	provinces={
-		1918 7988 8104 12724 12837 4999
+		1918 7988 8104 12724 12837 4999 1999 2067 7294 10726 10841
 	}
 	manpower=300000
 	buildings_max_level_factor=1.000
@@ -17,17 +17,6 @@ state={
 		}
 		buildings = {
 			infrastructure = 1
-
-		}
-		1938.10.25 = {
-			controller = CHI
-		}
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 1
-				infrastructure = 2
-
-			}
 
 		}
 

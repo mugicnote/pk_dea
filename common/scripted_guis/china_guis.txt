@@ -1,0 +1,90 @@
+scripted_gui = {
+
+	china_open_faction_alignment = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "china_open_faction_alignment_container"
+
+		ai_enabled = {
+			always = no
+		}
+
+		visible = {
+			OR = {
+				tag = KOR
+			}
+		}
+
+		triggers = {
+			button_open_click_enabled = {
+				NOT = { has_country_flag = china_alignment_window_open }
+			}
+		}
+
+		effects = {
+			button_open_click = {
+				# Qing/Zhili
+				if = {
+					limit = { country_exists = KOR }
+					add_to_array = { ROOT.china_alignment_array = KOR }
+					add_to_array = { ROOT.china_alignment_array_leaders = KOR }
+				}
+				# Fengtian
+				if = {
+					limit = { country_exists = MAN }
+					add_to_array = { ROOT.china_alignment_array = MAN }
+					add_to_array = { ROOT.china_alignment_array_leaders = MAN }
+				}
+				# NPA
+				if = {
+					limit = { country_exists = CHI }
+					add_to_array = { ROOT.china_alignment_array = CHI }
+					add_to_array = { ROOT.china_alignment_array_leaders = CHI }
+				}
+				set_country_flag = china_alignment_window_open
+			}
+		}
+	}
+
+	china_faction_alignment = {
+		context_type = player_context
+		window_name = "faction_alignment_window"
+
+		ai_enabled = {
+			always = no
+		}
+
+		visible = {
+			has_country_flag = china_alignment_window_open
+		}
+
+		dynamic_lists = {
+			KR_china_tags_grid = {
+				array = china_alignment_array
+				change_scope = yes
+
+				entry_container = KR_china_tag_entry
+			}
+		}
+
+		triggers = {
+			major_country_overlay_visible = {
+				is_in_array = { ROOT.china_alignment_array_leaders = THIS }
+			}
+		}
+
+		effects = {
+			button_close_click = {
+				clear_array = china_alignment_array
+				clear_array = china_alignment_array_leaders
+				clr_country_flag = china_alignment_window_open
+			}
+		}
+
+		properties = {
+			flag = {
+				image = "[This.GetFlag]"
+			}
+		}
+	}
+}

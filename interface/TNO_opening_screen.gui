@@ -104,28 +104,61 @@ guiTypes = {
 			position = { x = 782 y = 420 }
 			shortcut = "ESCAPE"
 		}
-		
+
 		instantTextBoxType = {
-			name = "TNO_OpeningScreen_Text"
-			position = { x = 14 y = 38 }
-			font = "aldrich_24_outline"
-			text = "TNO_DEMO_TEXT_APPEAR"
-			maxWidth = 712
-			maxHeight = 410
-			alwaystransparent = yes
-			scrollbarType = standardtext_slider
-		}
+            name = "TNO_OpeningScreen_Text_Country"
+            position = { x = 22 y = 49 }
+            font = "aldrich_24_outline"
+            text = "COUNTRY_INFO_TEXT"
+            maxWidth = 700
+            maxHeight = 380
+            # alwaystransparent = yes
+            scrollbarType = standardtext_slider
+        }
+        
+        instantTextBoxType = {
+            name = "TNO_OpeningScreen_Text_Region"
+            position = { x = 22 y = 49 }
+            font = "aldrich_24_outline"
+            text = "REGIONAL_INFO_TEXT"
+            maxWidth = 700
+            maxHeight = 380
+            # alwaystransparent = yes
+            scrollbarType = standardtext_slider
+        }
+        
+        instantTextBoxType = {
+            name = "TNO_OpeningScreen_Text_Mod_Features"
+            position = { x = 22 y = 49 }
+            font = "aldrich_24_outline"
+            text = "MOD_FEATURES_TEXT"
+            maxWidth = 700
+            maxHeight = 380
+            # alwaystransparent = yes
+            scrollbarType = standardtext_slider
+        }
+        
+        instantTextBoxType = {
+            name = "TNO_OpeningScreen_Text_Mod_Info"
+            position = { x = 22 y = 49 }
+            font = "aldrich_24_outline"
+            text = "MOD_INFO_TEXT"
+            maxWidth = 700
+            maxHeight = 380
+            # alwaystransparent = yes
+            scrollbarType = standardtext_slider
+        }
 		
-		instantTextBoxType = {
-			name = "TNO_OpeningScreen_Text_ModInfo_Buttons"
-			position = { x = 14 y = 78 }
-			font = "aldrich_24_outline_closing"
-			text = "MOD_INFO_TEXT"
-			maxWidth = 712
-			maxHeight = 370
-			alwaystransparent = yes
-			scrollbarType = standardtext_slider
-		}
+		# instantTextBoxType = {
+		# 	name = "TNO_OpeningScreen_Text_ModInfo_Buttons"
+		# 	position = { x = 25 y = 49 }
+		# 	font = "aldrich_24_outline_closing"
+		# 	text = "MOD_INFO_TEXT"
+		# 	maxWidth = 712
+		# 	maxHeight = 410
+		# 	alwaystransparent = yes
+		# 	scrollbarType = standardtext_slider
+		# }
 		
 		buttonType = {
 			name = "TNO_discord_button"
@@ -133,24 +166,24 @@ guiTypes = {
 			position = { x = 14 y = 40 }
 			web_link = "https://discordapp.com/invite/NUmjGny"
 		}
-		buttonType = {
-			name = "TNO_reddit_button"
-			quadTextureSprite = "GFX_reddit_button"
-			position = { x = 202 y = 40 }
-			web_link = "https://www.reddit.com/r/TNOmod/"
-		}
-		buttonType = {
-			name = "TNO_tvtropes_button"
-			quadTextureSprite = "GFX_tvtropes_button"
-			position = { x = 578 y = 40 }
-			web_link = "https://tvtropes.org/pmwiki/pmwiki.php/VideoGame/TheNewOrderLastDaysOfEurope"
-		}
-		buttonType = {
-			name = "TNO_twitter_button"
-			quadTextureSprite = "GFX_twitter_button"
-			position = { x = 390 y = 40 }
-			web_link = "https://twitter.com/tnomod"
-		}
+		#buttonType = {
+		#	name = "TNO_reddit_button"
+		#	quadTextureSprite = "GFX_reddit_button"
+		#	position = { x = 202 y = 40 }
+		#	web_link = "https://www.reddit.com/r/TNOmod/"
+		#}
+		#buttonType = {
+		#	name = "TNO_tvtropes_button"
+		#	quadTextureSprite = "GFX_tvtropes_button"
+		#	position = { x = 578 y = 40 }
+		#	web_link = "https://tvtropes.org/pmwiki/pmwiki.php/VideoGame/TheNewOrderLastDaysOfEurope"
+		#}
+		#buttonType = {
+		#	name = "TNO_twitter_button"
+		#	quadTextureSprite = "GFX_twitter_button"
+		#	position = { x = 390 y = 40 }
+		#	web_link = "https://twitter.com/tnomod"
+		#}
 	}
 	
 	containerWindowType = {

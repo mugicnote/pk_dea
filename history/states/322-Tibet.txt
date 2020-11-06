@@ -1,0 +1,25 @@
+state={
+	id=322
+	name="STATE_322"
+	resources={
+		tungsten=2.000
+	}
+
+	history={
+		owner = TIB
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+
+		}
+		add_core_of = TIB
+
+	}
+
+	provinces={
+		5018 5080 8041 8059 10741
+	}
+	manpower=1722000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

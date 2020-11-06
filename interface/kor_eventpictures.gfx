@@ -106,6 +106,10 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/prove_incentive_Article.dds"
 	}
 	spriteType = {
+		name = "GFX_police_up"
+		texturefile = "gfx/event_pictures/police_up.dds"
+	}
+	spriteType = {
 		name = "GFX_Its_a_mess"
 		texturefile = "gfx/event_pictures/Its_a_mess.dds"
 	}

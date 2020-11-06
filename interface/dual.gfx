@@ -5,6 +5,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/pol_leader_rank_frame.dds"
 	}
 	spriteType = {
+		name = "GFX_cabinet_button"
+		texturefile = "gfx/interface/cabinet_button.dds"
+	}
+	spriteType = {
 		name = "GFX_Portrait_Germany_Walter_Model"
 		texturefile = "gfx/interface/Portrait_Germany_Walter_Model.dds"
 	}
@@ -47,6 +51,42 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_Portrait_Kim_Byung_ro"
 		texturefile = "gfx/interface/Portrait_Kim_Byung_ro.dds"
+	}
+	spriteType = {
+		name = "GFX_Leader_Portrait_Background"
+		texturefile = "gfx/interface/Leader_Portrait_Background.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Lee_Beomseok"
+		texturefile = "gfx/leaders/KOR/Portrait_Lee_Beomseok.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_ji_chong_chen"
+		texturefile = "gfx/leaders/KOR/Portrait_ji_chong_chen.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Il_han_New"
+		texturefile = "gfx/leaders/KOR/Portrait_Il_han_New.dds"
+	}
+	spriteType = {
+		name = "GFX_jomansik_portrait"
+		texturefile = "gfx/leaders/KOR/jomansik_portrait.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Pak_Honyong"
+		texturefile = "gfx/leaders/KOR/Portrait_Pak_Honyong.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Kim_Suk_Won"
+		texturefile = "gfx/leaders/KOR/Portrait_Kim_Suk_Won.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Ahn_Jaehong"
+		texturefile = "gfx/leaders/KOR/Portrait_Ahn_Jaehong.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Ho_Jong"
+		texturefile = "gfx/leaders/KOR/Portrait_Ho_Jong.dds"
 	}
 
 

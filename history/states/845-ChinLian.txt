@@ -1,0 +1,20 @@
+state={
+	id=845
+	name="STATE_845"
+
+	history={
+		owner = GXC
+		add_core_of = GXC
+		add_core_of = CHI
+		buildings = {
+
+		}
+
+	}
+
+	provinces={
+		1018 4023 10004 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

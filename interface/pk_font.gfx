@@ -118,7 +118,7 @@ bitmapfonts = {
 	bitmapfont = {
 		name = "Bomb_16"
 		path = "gfx/fonts/Bomb_16"
-		color = 0xffffffff
+		color = 0xffb2c9c2
 		textcolors = {
 			W = { 255 255 255 }
 			b = { 0 0 0 }
@@ -127,7 +127,7 @@ bitmapfonts = {
 	bitmapfont = {
 		name = "Bomb_18"
 		path = "gfx/fonts/Bomb_18"
-		color = 0xffffffff
+		color = 0xffb2c9c2
 		textcolors = {
 			W = { 255 255 255 }
 			b = { 0 0 0 }
@@ -137,7 +137,7 @@ bitmapfonts = {
 	bitmapfont = {
 		name = "Bomb_24"
 		path = "gfx/fonts/Bomb_24"
-		color = 0xffffffff
+		color = 0xffb2c9c2
 		textcolors = {
 			W = { 255 255 255 }
 			b = { 0 0 0 }
@@ -452,6 +452,19 @@ bitmapfonts = {
 			K = { 45 152 40 }	# Plaid, Emerald Green
 			N = { 152 40 92 }	# Goch, Magenta
 			o = { 129 88 56 }	# Movement, Brown
+		}
+	}
+	bitmapfont = {
+		name = "tahoma_60"
+		path = "gfx/fonts/mapfont"
+		color = 0xffffffff
+	
+		textcolors = {
+			G = { 86 172 91 }
+			R = { 222 86 70 }
+			Y = { 238 201 35 }
+			H = { 238 203 35 }
+			T = { 255 255 255 }
 		}
 	}
 }
