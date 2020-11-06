@@ -28,13 +28,13 @@ defined_text = {
 		trigger = {
 			tag = KOR
 		}
-		localization_key = "사회보수주의 독립국"
+		localization_key = "독립국 - 정의민주당"
 	}
 	text = {
 		trigger = {
 			tag = MAN
 		}
-		localization_key = "사회보수주의 독립국"
+		localization_key = "봉천군벌"
 	}
 	text = {
 		trigger = {
