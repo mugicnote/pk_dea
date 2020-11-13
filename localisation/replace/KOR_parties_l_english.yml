@@ -20,6 +20,24 @@
  FKR_neutrality_anarchism_party:0 "국군혁명군"
  FKR_neutrality_military_junta_party_long:0 "대한민국 국군 수뇌부"
  FKR_neutrality_military_junta_party_long:0 "대한민국 국군 수뇌부"
+ Lee_Dem_2_long:0 "자유당"
+ Lee_Dem_2:0 "자유당"
+ Lee_fas_1_long:0 "일민주의 사업회"
+ Lee_fas_1:0 "일민주의 사업회"
+ 
+ Lee_social_long:0 "민주자유당 - 안재홍파"
+ Lee_social:0 "민주자유당 - 안재홍파"
+ Lee_market_long:0 "민주자유당 - 장면파"
+ Lee_market:0 "민주자유당 - 장면파"
+ Lee_liberal_long:0 "민주자유당 - 신익희파"
+ Lee_liberal:0 "민주자유당 - 신익희파"
+ Lee_democratic_long:0 "민주자유당 - 이승만파"
+ Lee_democratic:0 "민주자유당 - 이승만파"
+
+ Lee_democratic_2_long:0 "민주자유당 - 해서파"
+ Lee_democratic_2:0 "민주자유당 - 해서파"
+
+ UFP_neutrality_party:0 "남직예군벌"
 
  communism:0 "공산주의"
  communism_noun:0 "공산주의"

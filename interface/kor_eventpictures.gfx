@@ -113,6 +113,14 @@ spriteTypes = {
 		name = "GFX_Its_a_mess"
 		texturefile = "gfx/event_pictures/Its_a_mess.dds"
 	}
+	spriteType = {
+		name = "GFX_Lee_Democratic_Liberal_Party"
+		texturefile = "gfx/event_pictures/Lee_Democratic_Liberal_Party.dds"
+	}
+	spriteType = {
+		name = "GFX_Kim_Koo_Harmony"
+		texturefile = "gfx/event_pictures/Kim_Koo_Harmony.dds"
+	}
 
 
 	spriteType = {

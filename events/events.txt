@@ -3,12 +3,35 @@ add_namespace = KOR
 country_event = { #
 	id = KOR.1
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.1"}
-	title = KOR.1.t
-	desc = KOR.1.desc
 	picture = GFX_report_event_election_vote
 	
 	is_triggered_only = yes
-	fire_only_once = yes
+
+	title = {
+		text = KOR.1.t.4th_election
+		trigger = {
+			has_country_flag = forth_election_start
+		}
+	}
+	desc = {
+		text = KOR.1.desc.4th_election
+		trigger = {
+			has_country_flag = forth_election_start
+		}
+	}
+
+	title = {
+		text = KOR.1.t.5th_election
+		trigger = {
+			has_country_flag = forth_election
+		}
+	}
+	desc = {
+		text = KOR.1.desc.5th_election
+		trigger = {
+			has_country_flag = forth_election
+		}
+	}
 	
 	option = { #여운형
 		name = KOR.1.a
@@ -24,6 +47,9 @@ country_event = { #
 		name = KOR.1.c
 		ai_chance = { factor = 1 }
 		complete_national_focus = Lee_Seung_man_Elected
+		trigger = {
+			NOT = { has_country_flag = Seung_man_end }
+		}
 	}
 	option = { #제 4의 인물
 		name = KOR.1.d
@@ -673,7 +699,7 @@ country_event = { #
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.13"}
 	title = KOR.13.t
 	desc = KOR.11.desc
-	picture = 
+	picture = gfx
 	
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -3712,5 +3738,107 @@ country_event = { #Zemstvo Funding Results
 			}
 		}
 		RUS_clear_zemstvo_data = yes
+	}
+}
+
+
+country_event = {
+	id = KOR.81
+	title = KOR.81.t	
+	desc = KOR.81.desc	#
+	picture = GFX_report_event_german_volunteers
+	
+	
+
+	is_triggered_only = yes
+	option = { 
+		name = KOR.81.a #historical
+		custom_effect_tooltip = Kor_mnt_tt
+		hidden_effect = {
+			525 = {
+				create_unit = {
+					division = "division_template = \"청년단 산악병\" start_experience_factor = 1 start_equipment_factor = 1" 
+					owner = KOR
+					count = 2
+				}
+			}
+		}
+
+	}
+	option = {
+		name = KOR.81.b #big
+		custom_effect_tooltip = Kor_nom_tt
+		hidden_effect = {
+			525 = {
+				create_unit = {
+					division = "division_template = \"청년단 기계화 보병\" start_experience_factor = 1 start_equipment_factor = 1" 
+					owner = KOR
+					count = 2
+				}
+			}
+		}
+	}
+
+}
+
+add_namespace = KOR
+
+country_event = { #
+	id = KOR.82
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.82"}
+	title = KOR.82.t
+	desc = KOR.82.desc
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #퇴임
+		name = KOR.82.a
+		ai_chance = { factor = 1 }
+		set_country_flag = Seung_man_end
+		clr_country_flag = Seung_man_Ele
+		country_event = {
+			id = KOR.1
+			days = 1
+		}
+	}
+}
+
+country_event = { #
+	id = KOR.83
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.83"}
+	title = KOR.83.t
+	desc = KOR.83.desc
+	picture = GFX_Lee_Democratic_Liberal_Party
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #만세!
+		name = KOR.83.a
+		ai_chance = { factor = 1 }
+		set_party_name = { ideology = social_liberalism long_name = Lee_social_long name = Lee_social }
+		set_party_name = { ideology = market_liberalism long_name = Lee_market_long name = Lee_market }
+		set_party_name = { ideology = liberal_conservatism long_name = Lee_liberal_long name = Lee_liberal }
+		set_party_name = { ideology = democratic long_name = Lee_democratic_long name = Lee_democratic }
+	}
+}
+
+country_event = { #
+	id = KOR.84
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.84"}
+	title = KOR.84.t
+	desc = KOR.84.desc
+	picture = GFX_Kim_Koo_Harmony
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #만세!
+		name = KOR.84.a
+		ai_chance = { factor = 1 }
+		set_party_name = { ideology = democratic long_name = Lee_democratic_2_long name = Lee_democratic_2 }
+
 	}
 }

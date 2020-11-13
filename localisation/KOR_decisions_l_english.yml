@@ -51,10 +51,13 @@
 
  mtg_KOR_congress_small_support_tt:1 "§Y5 참의원§! 그리고 §Y25 민의원§!이 정부를 §G지지§!할 것입니다.\n"
  mtg_KOR_congress_small_opposition_tt:1 "§Y4 참의원§! 그리고 §Y20 민의원§!이 §R반대파§!로 돌아섭니다.\n"
- mtg_KOR_congress_medium_opposition_tt:1 "§Y8 참의원§! 그리고 §Y40 민의원§!이 §R반대파§!로 돌아섭니다.\n"
- mtg_KOR_congress_large_opposition_tt:1 "§Y25 참의원§! 그리고 §Y100 민의원§!이 §R반대파§!로 돌아섭니다.\n"
+
  mtg_KOR_congress_medium_support_tt:1 "§Y10 참의원§! 그리고 §Y50 민의원§!이 정부를 §G지지§!할 것입니다.\n"
+ mtg_KOR_congress_medium_opposition_tt:1 "§Y8 참의원§! 그리고 §Y40 민의원§!이 §R반대파§!로 돌아섭니다.\n"
+
  mtg_KOR_congress_large_support_tt:1 "§Y30 참의원§! 그리고 §Y125 민의원§!이 정부를 §G지지§!할 것입니다.\n"
+ mtg_KOR_congress_large_opposition_tt:1 "§Y25 참의원§! 그리고 §Y100 민의원§!이 §R반대파§!로 돌아섭니다.\n"
+
  mtg_KOR_senate_small_opposition_tt:0 "§Y4 참의원§!이 §R반대파§§!로 돌아설 것입니다.\n"
  mtg_KOR_house_small_opposition_tt:0 "§Y20 민의원§!이 §R반대파§§!로 돌아설 것입니다.\n"
  mtg_KOR_senate_small_support_tt:0 "§Y5 참의원§!이 정부를 §G지지§!할 것입니다.\n"
@@ -198,3 +201,19 @@ KOR_national_assembly_unicameralism_decision:0 "대한민국 국회"
 
  KOR_KOR_focus_ilminism_category:0 "일민주의 계획"
  KOR_focus_ilminism2:0 "일민주의 확대"
+
+ KOR_Korea_Youth_Corps_category:0 "청년단 모집"
+ KOR_Korea_Youth_Corps_category_desc:0 "대한청년단은 국가의 안정을 위해 힘쓰기를 원하는 시민들을 모집하여 완전한 애국자로 만들어내는 프로젝트로 이범석이 만들어냈습니다."
+ KOR_Youth_525:0 "경기도에서의 청년단 모집"
+ KOR_Youth_811:0 "황해도에서의 청년단 모집"
+ KOR_Youth_527:0 "강원도에서의 청년단 모집"
+ KOR_Youth_810:0 "평안남도에서의 청년단 모집"
+ KOR_Youth_809:0 "평안북도에서의 청년단 모집"
+ KOR_Youth_807:0 "함경북도에서의 청년단 모집"
+ KOR_Youth_808:0 "함경남도에서의 청년단 모집"
+ KOR_Youth_814:0 "경상북도에서의 청년단 모집"
+ KOR_Youth_815:0 "경상남도에서의 청년단 모집"
+ KOR_Youth_816:0 "전라북도에서의 청년단 모집"
+ KOR_Youth_817:0 "전라남도에서의 청년단 모집"
+ KOR_Youth_813:0 "충청남도에서의 청년단 모집"
+ KOR_Youth_812:0 "충청북도에서의 청년단 모집"

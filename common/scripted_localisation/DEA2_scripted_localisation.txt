@@ -544,7 +544,12 @@ defined_text = {
 		}
 		localization_key = jae_pil
 	}
-
+	text = {
+		trigger = {
+			has_country_flag = Syngman_Rhee_Pres
+		}
+		localization_key = Syngman_Rhee_Pres
+	}
 
 }
 defined_text = {
@@ -555,6 +560,12 @@ defined_text = {
 			has_country_flag = jae_pil
 		}
 		localization_key = GFX_jae_pil
+	}
+	text = {
+		trigger = {
+			has_country_flag = Syngman_Rhee_Pres
+		}
+		localization_key = GFX_Portrait_Syngman_Rhee
 	}
 
 }
@@ -568,6 +579,12 @@ defined_text = {
 			has_country_flag = jae_pil 
 		}
 		localization_key = jae_pil_desc
+	}
+	text = {
+		trigger = { 
+			has_country_flag = Syngman_Rhee_Pres 
+		}
+		localization_key = Syngman_Rhee_Pres_desc
 	}
 
 }

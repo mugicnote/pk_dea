@@ -7,4 +7,16 @@ spriteTypes = {
 		name = "GFX_pk_splash_intro_box"
 		textureFile = "gfx/splash/splash_box.tga"
 	}
+	spriteType = {
+		name = "GFX_settings_icon"
+		textureFile = "gfx/interface/icon_settings.dds"
+	}
+	spriteType = {
+		name = "GFX_credits_icon"
+		textureFile = "gfx/interface/icon_credits.dds"
+	}
+	spriteType = {
+		name = "GFX_nudge_icon"
+		textureFile = "gfx/interface/icon_nudge.dds"
+	}
 }

@@ -22,11 +22,6 @@ add_ideas = {
 	#
 }
 
-declare_war_on = {
-		target = SSK
-		type = puppet_wargoal_focus
-	}
-
 create_country_leader = {
 	name = "Nasir Shah"
 	picture = "gfx/leaders/TAN/Portrait_TAN_Nasir.tga"

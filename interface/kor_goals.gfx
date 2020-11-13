@@ -555,5 +555,77 @@ spriteTypes = {
 		name = "GFX_Focus_kor_st"
 		texturefile = "gfx/interface/goals/Focus_kor_st.dds"
 	}
+	SpriteType = {
+		name = "GFX_focus_capitol"
+		texturefile = "gfx/interface/goals/focus_capitol.dds"
+	}
+	SpriteType = {
+		name = "GFX_conference_of_chicago"
+		texturefile = "gfx/interface/goals/conference_of_chicago.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_armed_police"
+		texturefile = "gfx/interface/goals/focus_armed_police.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_constitution"
+		texturefile = "gfx/interface/goals/focus_constitution.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_ncr"
+		texturefile = "gfx/interface/goals/focus_ncr.dds"
+	}
+	SpriteType = {
+		name = "GFX_freedom_society"
+		texturefile = "gfx/interface/goals/freedom_society.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_nationality"
+		texturefile = "gfx/interface/goals/focus_nationality.dds"
+	}
+	SpriteType = {
+		name = "GFX_Returning_JTS"
+		texturefile = "gfx/interface/goals/Returning_JTS.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_samgyunjuui"
+		texturefile = "gfx/interface/goals/focus_samgyunjuui.dds"
+	}
+	SpriteType = {
+		name = "GFX_political_reorganization"
+		texturefile = "gfx/interface/goals/political_reorganization.dds"
+	}
+	SpriteType = {
+		name = "GFX_Focus_Gwanseo_develop_plan"
+		texturefile = "gfx/interface/goals/Focus_Gwanseo_develop_plan.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_Roh_Moo_hyun"
+		texturefile = "gfx/interface/goals/focus_Roh_Moo_hyun.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_Kim_Dae_jung"
+		texturefile = "gfx/interface/goals/focus_Kim_Dae_jung.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_Lee_Myung_bak"
+		texturefile = "gfx/interface/goals/focus_Lee_Myung_bak.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_sou"
+		texturefile = "gfx/interface/goals/focus_sou.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_Kim_Young_sam"
+		texturefile = "gfx/interface/goals/focus_Kim_Young_sam.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_Roh_Tae_woo"
+		texturefile = "gfx/interface/goals/focus_Roh_Tae_woo.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_Chun_Doo_hwan"
+		texturefile = "gfx/interface/goals/focus_Chun_Doo_hwan.dds"
+	}
 
 }

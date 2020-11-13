@@ -1,6 +1,6 @@
 ﻿l_english:
   ###시작 결정###
-  military_arrest:0 "군부 체포"
+  military_arrest:0 "암살의 성공"
   A_military_revolution:0 "국회 회의 시작"
   military_success:0 "군부가 혁명에 성공하다"
   ###민주주의###
@@ -66,51 +66,89 @@
   parliamentary_control:0 "국회 통제"
   participation_in_the_Allies:0 "연합에 합류"
   Choose_your_own_route:0 "독자노선을 선택"
-  ###이승만###
-  Lee_Seung_man_Elected:0 "이승만 당선"
-  Lee_Seung_man_Elected_desc:0 "민주주의가 인민의 자유권리와 참정권을 다 허락하되 불량분자들이 민권자유라는 구실을 이용하여 정부를 전복하려는 것을 허락하는 나라는 없습니다. - 1948년 8월 15일, 정부 수립 기념 연설"
-  New_National_Security_Law2:0 "국가보안법 제정"
-  New_National_Security_Law3:0 "좌익 탄압"
-  KOR_focus_ilminism:0 "일민주의 주창"
+
   new_education_law:0 "신 교육법 도입"
   new_education_law_desc:0 "교육은 사사로운 이익을 위한것이 아닙니다."
   Strengthening_compulsory_education:0 "의무교육 강화"
   Strengthening_compulsory_education_desc:0 "장기적으로 봤을때 교육만큼이나 효과적인것은 없습니다."
-  ilminism_Training_Insertion:0 "일민주의 교육삽입"
+
+  ###이승만###
+  Lee_Seung_man_Elected:0 "이승만 당선"
+  Lee_Seung_man_Elected_desc:0 "민주주의가 인민의 자유권리와 참정권을 다 허락하되 불량분자들이 민권자유라는 구실을 이용하여 정부를 전복하려는 것을 허락하는 나라는 없습니다. - 1948년 8월 15일, 정부 수립 기념 연설"
+
+  New_National_Security_Law2:0 "국가보안법 제정"
+  New_National_Security_Law2_desc:0 "우리는 최후의 보루로 반공법과 기존의 국가보안법을 합친 하나의 법을 만들기로 했습니다. 이 새로운 법을 가장 먼저 적용받을 정보부는 바로 개혁을 단행하게 될 것입니다."
+
+  New_National_Security_Law3:0 "사회만행의 종결"
+
+  KOR_focus_ilminism:0 "일민주의 주창"
+
   school_protection_group:0 "학도 호국단 편성"
+
+  school_protection_group_desc:0 "속칭 '애국자'들을 학업에서부터 길러내는 프로그램입니다."
+  school_protection_group_tt:0 "§Y학도 호국단 모집§! 결정 해금하기."
+
+  school_protection_group_2:0 "청년장교회 설립"
+  school_protection_group_2_desc:0 "학도 호국단에서 길러지고 길러질 청년들을 위한 청년장교회가 설립되었습니다. 이범석 참모총장의 세력을 굳건히 하여 육군의 기세를 높여줌과 동시에 정치적 안정을 가져올 수 있을 것입니다."
+  school_protection_group_2_tt:0 "\n§Y육군이 이제 정치와 국가의 안정에 적극 개입할 것입니다!§!"
+
   alliance_with_white_doctors:0 "대한청년단 결성"
+  alliance_with_white_doctors_tt:0 "§Y청년단 모집§! 결정 해금하기."
+
   creation_liberal_party:0 "자유당 창당"
+
   Pater_Patriae_Lee:0 "이승만 정부"
-  Launch_Anti_Communist_Youth:0 "대한청년단 결성"
+
+  Launch_Anti_Communist_Youth:0 "장택상의 복귀"
+
   Strengthened_National_Security_Law:0 "사회 질서 강화"
+
   Security_Headquarters_Expansion:0 "치안본부 확대"
-  Strengthened_National_Security_Law_desc:0 "공산주의자는 콜레라와 같다. 인간은 콜레라와 같이 살 수 없다"
+
   Lee_constitutional_amendment:0 "헌법 보수"
-  suppression_opposition:0 "반대파 탄압"
-  ilminism_reflected_party_regulations:0 "일민주의를 당규에 반영"
-  central_government_reinforcement:0 "중앙정부 강화"
+  Lee_constitutional_amendment_desc:0 "지금의 헌법은 너무나도 문제가 많습니다. 제 1공화국이 남기고 간 독재정권의 유산을 독재타도, 민주쟁취를 외치며 독재정권을 타도한 우리가 가만히 보고있을수는 없습니다, 헌법의 보수와 함께 민주정권 시대를 엶으로써 그간 훼손되었던 헌법의 참된 기능을 회복하여야 합니다."
+
+  suppression_opposition:0 "여야 화합"
+  suppression_opposition_desc:0 "국민을 위한 민국이 새워진지 벌써 십여년이 넘어가고 있다만, 십여년간 의사당 내에서의 싸움은 끊이지 않고 있었습니다. 허나 우리는 독재자 서재필과의 같은 방식을 쓰지 않을것입니다. 국회에서의 말싸움에 관한 우리의 잘못를 인정하며 반성하고 싸움을 웅변으로 돌리며 서로를 이해 할 수 있다면, 여야는 화합의 길로 갈 수 있을 것입니다."
+
+  ilminism_reflected_party_regulations:0 "일민주의 당규 반영"
+
+  central_government_reinforcement:0 "중앙집권체제 강화"
+
   Prime_Minister_Bum_seok:0 "국무총리 이범석"
-  KOR_focus_strengthen_power_of_the_government:0 "정부의 권력 강화"
-  local_life_law:0 "국부 종신 대통령법"
-  illegal_occupation_of_northmen:0 "빨갱이들의 불법 점거"
-  Lee_Bum_suk_Returns:0 "이범석을 복귀"
-  establishment_news_federation:0 "보도연맹 설립"
-  Jeju_Uprising_of_Namrodang:0 "남로당의 제주봉기"
-  bloody_suppression_Jeju_uprising:0 "제주봉기 유혈진압"
+
+  KOR_focus_strengthen_power_of_the_government:0 "조소앙의 삼균"
+
+  local_life_law:0 "김구 포섭"
+
+  illegal_occupation_of_northmen:0 "개인의 자유"
+
+  Lee_Bum_suk_Returns:0 "국민의 안전"
+
+  establishment_news_federation:0 "우리새대의 성공"
+
   Assassination_Kim_Koo:0 "김구 암살 지시"
-  Assassination_Kim_Koo_desc:0 "반대파의 입을 막기 위해서 우리는 어떠한 방법이라도 사용할것입니다.원래 민주주의를 위해서는 그 어떠한 희생도 감수해야 되는것입니다."
-  judicial_weakening:0 "사법부 약화"
-  attempted_assassination:0 "대통령 암살 미수 발생"
-  restart_of_election:0 "선거 재시작"
+  Assassination_Kim_Koo_desc:0 "반대파의 입을 막기 위해서 우리는 어떠한 방법이라도 사용할것입니다. 원래 민주주의를 위해서는 그 어떠한 희생도 감수해야 되는것입니다."
+
+  judicial_weakening:0 "토지개혁의 실현"
+  judicial_weakening_desc:0 "기존의 조선과 대한제국, 미국과 일본의 토지법령과 법률을 뒤섞은 법은 그저 불쏘시개에 지나지 않습니다, 우리는 이 법을 개정함과 동시에 국토교통청을 설립함으로서 개발부 산하에 두며 적극 개혁에 나설 수 있을 것입니다!"
+
+  commando_conscription:0 "도시개혁의 현실화"
+  commando_conscription_tt:0 "§Y한반도§!의 §Y모든 주§!에 기반시설을 1씩 추가 합니다."
+  commando_conscription_2_tt:0 "§Y평안남도§!와 §Y함경남도§!에 민간공장을 1씩 추가 합니다."
+  commando_conscription_3_tt:0 "§Y강원도§!와 §Y경상남도§!에 조선소를 1씩 추가 합니다."
+  commando_conscription_4_tt:0 "§Y전라북도§!와 §Y충청남도§!에 군수공장을 1씩 추가 합니다."
+  commando_conscription_5_tt:0 "§Y수도권 지역(경기도)§!에 건설 슬롯을 3 추가 합니다."
+
+  attempted_assassination:0 "완벽한 끝맺음"
+  attempted_assassination_desc:0 "여러 번 죽었던 이 몸이 하나님의 은혜와 동포의 애호로 지금까지 살아오다가 오늘에 이와 같이 영광스러운 추대를 받은 나로서는 일변 감격한 마음과 일변 심당키 어려운 책임을 지고 두려운 생각을 금하기 어렵습니다..."
+  attempted_assassination_tt:0 "이승만 대통령은 헌법에 따라서 임기의 종료 후 대통령 자리에서 내려오며 정계에서 은퇴할것입니다."
+  attempted_assassination_2_tt:0 "\n§Y임기의 종료 후 지금까지 대통령이 되지 못한 후보들이 참여한 대통령 선거가 열리게 됩니다!§!"
+
+  ###허나 조국을 위해 물심양면하는 국가의 삼천만 동포와 우리의 조상을 생각하며 대통령으로서 국가와 국민의 모범이 되며 됨됨이를 바로하지 아니 할수 없습니다, 국민 여러분의 이러한 협조에 어찌 내가 헌법을 유린하며 재선이라는 무겁고도 할것이 되지못하는 행동을 입에 담으며 움직일수 있는가. 라는 생각을 몹시 하며 나라를 위하여 이제 정치인의 길에서 내려오는것이 맞다고 생각하는 바입니다..###
+
   repent_of_one_deeds:0 "행적을 참회"
   repent_of_one_deeds_desc:0 "여러 번 죽었던 이 몸이 하나님의 은혜와 동포의 애호로 지금까지 살아오다가 오늘에 이와 같이 영광스러운 추대를 받은 나로서는 일변 감격한 마음과 일변 심당키 어려운 책임을 지고 두려운 생각을 금하기 어렵습니다."
-  commando_conscription:0 "특공대 징병"
-  punishment_of_offenders:0 "범법자 처벌"
-  Re_strengthening_the_judiciary:0 "사법부 재강화"
-  focus_saemaul_undong:0 "새마을 운동"
-  Anti_Communist_to_Security_Law:0 "반공법 완화"
-  enactment_Jeju_tragedy_law:0 "제주 무력진압 사과"
-  opnion_ilminism:0 "일민주의 주창"
   ###안재홍###
   Ahn_Jae_Hong_Elected:0 "안재홍 당선"
   Movement_for_encourage_produce:0 "물산 장려 운동"
@@ -210,3 +248,10 @@
   Fighter_Research_Support_desc:0 "전투기가 폭격기 때문에 추락했다고? 내가 반대로 들은게 아니고?"
   Pilot_Ace_Training:0 "조종사 에이스 훈련"
   Pilot_Ace_Training_desc:0 "야! 저 조종사 어떤 놈 이야? 왜 저렇게 조종을 못해!? 저리로 끌어내!"
+
+  Chun_Doo_hwan_Elected:0 "5.17 내란"
+  Roh_Tae_woo_Elected:0 "노태우 당선"
+  Kim_Young_sam_Elected:0 "김영삼 당선"
+  Kim_Dae_jung_Elected:0 "김대중 당선"
+  Roh_Moo_hyun_Elected:0 "노무현 당선"
+  Lee_Myung_bak_Elected:0 "이명박 당선"

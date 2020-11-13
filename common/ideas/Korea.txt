@@ -231,6 +231,369 @@ ideas = {
                 justify_war_goal_time = -0.15
             }
         }
+        Public_Security_Headquarter = {
+
+            allowed = {
+                original_tag = KOR
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = generic_production_bonus
+
+            removal_cost = -1
+            
+            modifier = {
+                stability_factor = 0.05
+                political_power_factor = -0.05
+            }
+        }
+        Anti_Communist_Office = {
+
+            allowed = {
+                original_tag = KOR
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = generic_production_bonus
+
+            removal_cost = -1
+            
+            modifier = {
+                political_power_factor = 0.02
+                drift_defence_factor = 0.05
+            }
+        }
+        social_repression = {
+
+            allowed = {
+                original_tag = KOR
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = generic_production_bonus
+
+            removal_cost = -1
+            
+            modifier = {
+                drift_defence_factor = -0.1
+                stability_factor = -0.2
+                war_support_factor = -0.15
+            }
+        }
+        social_repression_2 = {
+
+            allowed = {
+                original_tag = KOR
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = generic_production_bonus
+
+            removal_cost = -1
+            
+            modifier = {
+                stability_factor = -0.1
+                war_support_factor = -0.2
+            }
+        }
+
+        ###이승만###
+        Pater_Patriae_Lee = {
+
+            allowed = {
+                original_tag = KOR
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = generic_production_bonus
+
+            removal_cost = -1
+            
+            modifier = {
+                stability_factor = 0.1
+                war_support_factor = 0.05
+            }
+        }
+
+        Pater_Patriae_Lee_2 = {
+
+            allowed = {
+                original_tag = KOR
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = generic_production_bonus
+
+            removal_cost = -1
+            
+            modifier = {
+                stability_factor = 0.1
+                war_support_factor = 0.05
+                army_core_defence_factor = 0.05
+                resistance_damage_to_garrison = -0.15
+                drift_defence_factor = 0.2
+            }
+        }
+        school_protection_group = {
+
+            allowed = {
+                original_tag = KOR
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = generic_production_bonus
+
+            removal_cost = -1
+            
+            modifier = {
+                max_command_power = 30
+                political_power_cost = -0.05
+                experience_gain_army = 0.05
+            }
+        }
+        school_protection_group_2 = {
+
+            allowed = {
+                original_tag = KOR
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = generic_production_bonus
+
+            removal_cost = -1
+            
+            modifier = {
+                max_command_power = 50
+                political_power_cost = -0.5
+                experience_gain_army = 0.1
+            }
+        }
+        judicial_weakening_idea = {
+
+            allowed = {
+                original_tag = KOR
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = generic_production_bonus
+
+            removal_cost = -1
+            
+            modifier = {
+                production_speed_infrastructure_factor = 0.3
+                production_speed_industrial_complex_factor = 0.2
+                production_speed_arms_factory_factor = 0.15
+            }
+        }
+        Launch_Anti_Communist_Youth_idea = {
+
+            allowed = {
+                original_tag = KOR
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = generic_production_bonus
+
+            removal_cost = -1
+            
+            modifier = {
+                political_power_cost = -0.05
+                encryption_factor = 0.1
+                decryption_factor = 0.1
+                foreign_subversive_activites = -0.05
+            }
+        }
+        Launch_Anti_Communist_Youth_2_idea = {
+
+            allowed = {
+                original_tag = KOR
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = generic_production_bonus
+
+            removal_cost = -1
+            
+            modifier = {
+                political_power_cost = -0.1
+                encryption_factor = 0.15
+                decryption_factor = 0.15
+                foreign_subversive_activites = -0.1
+            }
+        }
+        suppression_opposition_idea = {
+
+            allowed = {
+                original_tag = KOR
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = generic_production_bonus
+
+            removal_cost = -1
+            
+            modifier = {
+                political_power_factor = 0.05
+                stability_factor = 0.1
+            }
+        }
+        no_limit_freedom = {
+
+            allowed = {
+                original_tag = KOR
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = generic_production_bonus
+
+            removal_cost = -1
+            
+            modifier = {
+                political_power_factor = 0.05
+                stability_factor = 0.2
+                war_support_factor = -0.05
+            }
+        }
+        Ministry_of_Public_Security = {
+
+            allowed = {
+                original_tag = KOR
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = generic_production_bonus
+
+            removal_cost = -1
+            
+            modifier = {
+                political_power_factor = 0.05
+                stability_factor = 0.1
+                war_support_factor = 0.05
+                drift_defence_factor = 0.10
+                foreign_subversive_activites = -0.05
+            }
+        }
+        Public_Security_Headquarter_2 = {
+
+            allowed = {
+                original_tag = KOR
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = generic_production_bonus
+
+            removal_cost = -1
+            
+            modifier = {
+                army_core_attack_factor = 0.05
+		        army_core_defence_factor = 0.05
+            }
+        }
+        democratic_constitution = {
+
+            allowed = {
+                original_tag = KOR
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = generic_production_bonus
+
+            removal_cost = -1
+            
+            modifier = {
+                political_power_factor = 0.05
+                stability_factor = 0.1
+            }
+        }
+        samgyunjuui = {
+
+            allowed = {
+                original_tag = KOR
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = generic_production_bonus
+
+            removal_cost = -1
+            
+            modifier = {
+                political_power_factor = 0.05
+                drift_defence_factor = 0.05
+            }
+        }
+        success_our_generation = {
+
+            allowed = {
+                original_tag = KOR
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = generic_production_bonus
+
+            removal_cost = -1
+            
+            modifier = {
+                political_power_factor = 0.1
+                stability_factor = 0.15
+                war_support_factor = 0.1
+                consumer_goods_factor = -0.1
+            }
+        }
+
 
         
         KOR_great_depression_after_effect = {
@@ -509,7 +872,7 @@ ideas = {
                     original_tag = KOR
                 }
             
-                traits = { the_director }
+                traits = { prince_of_terror }
             }
 
             Yoon_Bong_Gil = {
@@ -561,6 +924,9 @@ ideas = {
 
                 allowed = {
                     original_tag = KOR
+                }
+                available = {
+                    has_completed_focus = Security_Headquarters_Expansion
                 }
             
                 traits = { backroom_backstabber }

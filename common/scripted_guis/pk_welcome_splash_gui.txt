@@ -1,0 +1,20 @@
+scripted_gui = {
+
+	pk_welcome_splash = {
+		context_type = player_context
+		window_name = "pk_welcome_splash_container"
+
+		visible = {
+			has_country_flag = show_welcome_splash
+		}
+
+		effects = {
+			mod_options_button_click = {
+				clr_country_flag = show_welcome_splash
+				# country_event = pk_startup.1
+				set_country_flag = TNO_opening_screen_show
+				set_country_flag = OPEN_view_country_info
+			}
+		}
+	}
+}

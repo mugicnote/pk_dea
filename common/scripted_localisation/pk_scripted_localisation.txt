@@ -8,31 +8,6 @@
 # localization_key -> points to the localization key
 # that'll be used if trigger passes
 
-defined_text = { #참의원 지지도
-	name = GetSenateSupportDecision
-	text = {
-		trigger = {
-			original_tag = KOR
-            check_variable = { senate_support = 0 }
-		}
-		localization_key = KOR_SENATE_0
-	}
-	text = {
-		trigger = {
-			original_tag = KOR
-            check_variable = { senate_support = 36 }
-		}
-		localization_key = KOR_SENATE_30
-	}
-	text = {
-		trigger = {
-			original_tag = KOR
-            check_variable = { senate_support = 100 }
-		}
-		localization_key = KOR_SENATE_100
-	}
-}
-
 defined_text = { #민의원 지지도
 	name = GetHouseSupportDecision
 	text = {
@@ -41,6 +16,13 @@ defined_text = { #민의원 지지도
             check_variable = { house_support = 0 }
 		}
 		localization_key = KOR_HOUSE_0
+	}
+	text = {
+		trigger = {
+			original_tag = KOR
+            check_variable = { house_support = 15 }
+		}
+		localization_key = KOR_HOUSE_5
 	}
 	text = {
 		trigger = {

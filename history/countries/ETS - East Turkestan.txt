@@ -24,11 +24,6 @@ add_ideas = {
 #
 }
 
-declare_war_on = {
-		target = SSK
-		type = puppet_wargoal_focus
-	}
-
 create_country_leader = {
 	name = "Ishaq Bey"
 	picture = "gfx/leaders/ETS/Portrait_ETS_Ishaq_Bey.tga"

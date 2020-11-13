@@ -681,12 +681,6 @@ sound =
 }
 sound =
 {
-	name = "intel_mapmode"
-	file = "menu/intel_mapmode.wav"
-	always_load = no
-}
-sound =
-{
 	name = "production_navy_01"
 	file = "menu/production_navy_01.wav"
 	always_load = no

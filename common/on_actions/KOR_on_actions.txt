@@ -2,10 +2,17 @@ on_actions = {
 	on_startup = {
 		effect = {
 			KOR = {
-      country_event = {
-          id = KOR.14
-          days = 0
-      			}
+      	country_event = {
+          	id = KOR.14
+          	days = 0
+		}
+		if = {
+			limit = { has_country_flag = Seung_man_Ele }
+			country_event = { 
+				id = KOR.82
+				days = 1800
+			}
+		}
 		set_country_flag = KOR_northern_bandits
 		set_country_flag = KOR_eastern_bandits
 		set_country_flag = KOR_western_bandits
@@ -34,31 +41,15 @@ on_actions = {
 		set_country_flag = TNO_opening_screen_show
 		set_country_flag = OPEN_view_country_info
 		create_intelligence_agency = yes
-			}
-			JAP = {
-				add_opinion_modifier = {
-					target = USA
-					modifier = JAP_opnion_USA
-				}
-			}
-			USA = {
-				add_opinion_modifier = {
-					target = JAP
-					modifier = USA_opnion_JAP
-				}
-			}
-			JAP = {
-				add_opinion_modifier = {
-					target = UPN
-					modifier = JAP_opnion_USA
-				}
-			}
-			UPN = {
-				add_opinion_modifier = {
-					target = JAP
-					modifier = USA_opnion_JAP
-				}
-			}
+
+		set_division_template_lock = {
+			division_template = "청년단 산악병"
+			is_locked = yes
+		}
+		set_division_template_lock = {
+			division_template = "청년단 기계화 보병"
+			is_locked = yes
+		}
 		every_owned_state = {
 			limit = {
 				check_variable = { var = KOR_garrison_control value = 0 compare = equals }
@@ -83,6 +74,30 @@ on_actions = {
 					add_to_variable = { var = KOR_garrison_control value = 1 }
 					KOR_garrison_control_cost_calculation = yes
 				}
+		}
+		JAP = {
+			add_opinion_modifier = {
+				target = USA
+				modifier = JAP_opnion_USA
+			}
+		}
+		USA = {
+			add_opinion_modifier = {
+				target = JAP
+				modifier = USA_opnion_JAP
+			}
+		}
+		JAP = {
+			add_opinion_modifier = {
+				target = UPN
+				modifier = JAP_opnion_USA
+			}
+		}
+		UPN = {
+			add_opinion_modifier = {
+				target = JAP
+				modifier = USA_opnion_JAP
+			}
 		}
 	}
 }

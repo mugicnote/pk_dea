@@ -319,8 +319,8 @@ GXC = {
 }
 
 SHX = {
-	color = rgb { 82  2  15 }
-	color_ui = rgb { 101  30  41 }
+	color = rgb { 105 90 132 }
+	color_ui = rgb { 105 90 132 }
 }
 
 XSM = {
@@ -753,4 +753,9 @@ XIC = {
 UPN = {
 	color = rgb { 138 138 138 }
 	color_ui = rgb { 138 138 138 }
+}
+
+UFP = {
+	color = hsv { 0.18 0.6 0.9 } #255 244 190
+	color_ui = hsv { 0.18 0.3 0.9 }
 }

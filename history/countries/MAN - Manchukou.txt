@@ -99,9 +99,16 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	fascism = 20
-	neutrality = 60
-	democratic = 20
+  communism = 10
+  radical_socialism = 5
+  social_democracy = 5
+  social_liberalism = 0
+  market_liberalism = 0
+  liberal_conservatism = 0
+  democratic = 10
+  neutrality = 60
+  autocracy = 10
+  fascism = 0
 }
 
 create_country_leader = {
