@@ -375,7 +375,7 @@ ideologies = {
 			moderatism = {} #온건주의
 			military_gov  = {} #군사정부
 			colony = {} #식민지
-			anarchism = {} #아나키즘
+			anarchism = { can_be_randomly_selected = no } #아나키즘
 			warloadism = {} #군벌
 			authoritarian = {} #권위주의
 			Peoples_Party_ideology = {} #국민당
@@ -480,6 +480,7 @@ ideologies = {
 			rexism = {} #렉시즘
 			ilminism = {} #일민주의
 			lee_fascism = {} #이범석
+			gen_nazism = {}
 
 		}
 		

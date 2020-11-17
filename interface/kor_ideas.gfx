@@ -62,4 +62,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/advisor_Jang_TaekSang.dds"
 	}
 
+	spriteType = {
+		name = "GFX_idea_advisor_Seo_Jae_Pil"
+		texturefile = "gfx/interface/ideas/advisor_Seo_Jae_Pil.dds"
+	}
+
 }

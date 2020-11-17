@@ -22,6 +22,12 @@ defined_text = {
 		}
 		localization_key = POSITION_main_opposition_party_leader2
 	}
+	text = {
+		trigger = {
+			has_country_flag = leader_ruling_party
+		}
+		localization_key = POSITION_ruling_party
+	}
 
 	text = {
 		trigger = {

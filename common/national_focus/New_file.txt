@@ -8,18 +8,9 @@
 		}
 	}
 	default = no
-	focus = {
-		id = A_military_revolution
-		icon = GFX_kor_political_reorganization
-		cost = 10.00
 
-		x = 50
-		y = 0
+	continuous_focus_position = { x = 20 y = 1600 }
 
-		completion_reward = {
-			country_event = { id = KOR.54 }
-		}
-	}
 	focus = {
 		id = military_arrest
 		icon = GFX_Gunpoint_Diplomacy
@@ -35,6 +26,30 @@
 		y = 1
 
 	}
+
+	focus = {
+		id = military_success
+		icon = GFX_focus_military_coup
+		cost = 10.00
+		prerequisite = {
+			focus = A_military_revolution
+		}
+		mutually_exclusive = {
+			focus = military_arrest
+		}
+		completion_reward = {
+			set_cosmetic_tag = KOR_ku_de
+		set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+		country_lock_all_division_template = no
+		}
+		x = 69
+		y = 1
+
+	}
+
 	focus = {
 		id = democratic_election
 		icon = GFX_focus_first_republic
@@ -440,7 +455,7 @@
 			focus = Ahn_Jae_Hong_Elected
 			focus = victory_Korean_Confederation_Trade_Unions
 		}
-		x = 16
+		x = 19
 		y = 3
 		completion_reward = {
 			create_country_leader = {
@@ -502,6 +517,8 @@
 
 			set_country_flag = Syngman_Rhee_Pres
 
+			set_country_flag = leader_ruling_party
+
 			set_country_flag = Seung_man_Ele
 			clr_country_flag = forth_election_start
 
@@ -524,7 +541,7 @@
 			focus = Kim_Sung_Soo_Elected
 			focus = victory_Korean_Confederation_Trade_Unions
 		}
-		x = 40
+		x = 39
 		y = 3
 		completion_reward = {
 			set_politics = {
@@ -571,7 +588,7 @@
 			focus = Kim_Sung_Soo_Elected
 			focus = victory_Korean_Confederation_Trade_Unions
 		}
-		x = 55
+		x = 49
 		y = 3
 		completion_reward = {
 			set_politics = {
@@ -598,7 +615,7 @@
 			focus = Chang_Myon_Elected
 			focus = victory_Korean_Confederation_Trade_Unions
 		}
-		x = 68
+		x = 59
 		y = 3
 		completion_reward = {
 			set_politics = {
@@ -611,25 +628,15 @@
 	}
 
 	focus = {
-		id = military_success
-		icon = GFX_focus_military_coup
+		id = Lee_Bum_seok_Success
+		icon = GFX_focus_Lee_Bum_seok
 		cost = 10.00
 		prerequisite = {
-			focus = A_military_revolution
+			focus = military_success
 		}
-		mutually_exclusive = {
-			focus = military_arrest
-		}
-		completion_reward = {
-			set_cosmetic_tag = KOR_ku_de
-		set_politics = {
-				ruling_party = fascism
-				elections_allowed = no
-			}
-		country_lock_all_division_template = no
-		}
-		x = 50
-		y = 1
+
+		x = 69
+		y = 3
 
 	}
 
@@ -646,7 +653,7 @@
 				add_idea = KOR_great_depression_after_effect
      		}
 		}
-		x = 150
+		x = 90
 		y = 6
 	 }
 
@@ -665,7 +672,19 @@
 		y = 1
 	 }
 
-	 focus = {
+	focus = {
+		id = poverty_problem
+		icon = GFX_PAL_Irrigation_Program
+		cost = 10.00
+		prerequisite = {
+			focus = great_depression_aftermath
+		}
+		relative_position_id = great_depression_aftermath
+		x = 2
+		y = 1
+	}
+	
+	focus = {
 		id = organization_Korean_Red_Cross
 		icon = GFX_goal_healthcare
 		cost = 10.00
@@ -684,7 +703,7 @@
 		}
 		x = 0
 		y = 1
-	 }
+	}
 
 	 focus = {
 		id = war_against_crime_start
@@ -749,18 +768,6 @@
 		}
 		relative_position_id = organization_Korean_Red_Cross
 		x = 0
-		y = 1
-	 }
-
-	 focus = {
-		id = poverty_problem
-		icon = GFX_PAL_Irrigation_Program
-		cost = 10.00
-		prerequisite = {
-			focus = great_depression_aftermath
-		}
-		relative_position_id = great_depression_aftermath
-		x = 2
 		y = 1
 	 }
 
@@ -978,6 +985,18 @@
      }
 
 	 focus = {
+		id = summary_judgment
+		icon = GFX_goal_generic_stable_government
+		cost = 10.00
+		prerequisite = {
+			focus = night_curfew
+		}
+		relative_position_id = night_curfew
+		x = 0
+		y = 1
+	 }
+	 
+	 focus = {
 		id = war_against_crime_end
 		icon = GFX_DOM_The_Trial
 		cost = 10.00
@@ -988,18 +1007,6 @@
 		}
 		relative_position_id = summary_judgment
 		x = 1
-		y = 1
-     }
-
-	 focus = {
-		id = summary_judgment
-		icon = GFX_goal_generic_stable_government
-		cost = 10.00
-		prerequisite = {
-			focus = night_curfew
-		}
-		relative_position_id = night_curfew
-		x = 0
 		y = 1
      }
 
@@ -1024,6 +1031,29 @@
 		}
      }
      focus = {
+		id = Seoul_cotton_mill
+		icon = GFX_goal_factory_complex
+		cost = 10.00
+		prerequisite = {
+			focus = facility_development
+		}
+		relative_position_id = facility_development
+		x = -1
+		y = 1
+		completion_reward = {
+			525 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
+	 }
+	 focus = {
 		id = Incheon_Shipyard_Restart
 		icon = GFX_goal_generic_construct_naval_dockyard
 		cost = 10.00
@@ -1040,29 +1070,6 @@
 					limit = { is_controlled_by = ROOT }
 					add_building_construction = {
 						type = dockyard
-						level = 2
-						instant_build = yes
-					}
-				}
-			}
-		}
-     }
-     focus = {
-		id = Seoul_cotton_mill
-		icon = GFX_goal_factory_complex
-		cost = 10.00
-		prerequisite = {
-			focus = facility_development
-		}
-		relative_position_id = facility_development
-		x = -1
-		y = 1
-		completion_reward = {
-			525 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = industrial_complex
 						level = 2
 						instant_build = yes
 					}
@@ -1375,6 +1382,17 @@
 		y = 1
 	}
 	focus = {
+		id = gun_production
+		icon = GFX_focus_generic_little_entente
+		cost = 10.00
+		prerequisite = {
+			focus = modification_of_treaty
+		}
+		relative_position_id = modification_of_treaty
+		x = 0
+		y = 1
+	}
+	focus = {
 		id = Panzer_Study
 		icon = GFX_goal_generic_army_tanks3
 		cost = 10.00
@@ -1393,17 +1411,6 @@
 			focus = Special_Forces_Training
 		}
 		relative_position_id = Special_Forces_Training
-		x = 0
-		y = 1
-	}
-	focus = {
-		id = gun_production
-		icon = GFX_focus_generic_little_entente
-		cost = 10.00
-		prerequisite = {
-			focus = modification_of_treaty
-		}
-		relative_position_id = modification_of_treaty
 		x = 0
 		y = 1
 	}
@@ -1567,29 +1574,6 @@
 			}
 			set_party_name = { ideology = fascism long_name = Lee_fas_1_long name = Lee_fas_1 }
 		}
-	}
-	focus = {
-		id = new_education_law
-		icon = GFX_KTG_Bookstack
-		cost = 10.00
-		prerequisite = {
-			focus = Lee_Seung_man_Elected
-			focus = Kim_Gu_Elected
-		}
-		x = 23
-		y = 4
-
-	}
-	focus = {
-		id = Strengthening_compulsory_education
-		icon = GFX_goal_AST_freedom_of_the_press
-		cost = 10.00
-		prerequisite = {
-			focus = new_education_law
-		}
-		x = 23
-		y = 5
-
 	}
 	focus = {
 		id = school_protection_group
@@ -2101,44 +2085,8 @@
 		prerequisite = {
 			focus = Kim_Gu_Elected
 		}
-		x = 19
+		x = 22
 		y = 4
-
-	}
-	focus = {
-		id = democratic_education
-		icon = gfx
-		cost = 10.00
-		prerequisite = {
-			focus = advocate_of_Korean_style_democracy
-		}
-		prerequisite = {
-			focus = new_education_law
-		}
-		x = 21
-		y = 5
-
-	}
-	focus = {
-		id = Invitation_of_Professors_from_Overseas
-		icon = gfx
-		cost = 10.00
-		prerequisite = {
-			focus = Strengthening_compulsory_education
-		}
-		x = 23
-		y = 6
-
-	}
-	focus = {
-		id = focus_on_fostering_talent
-		icon = gfx
-		cost = 10.00
-		prerequisite = {
-			focus = democratic_education
-		}
-		x = 21
-		y = 6
 
 	}
 	focus = {

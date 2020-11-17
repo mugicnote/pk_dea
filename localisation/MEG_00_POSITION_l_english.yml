@@ -52,6 +52,7 @@ Pak_Honyong:0 "박헌영"
 no_fd2:0 "폐지됨"
 no_fds:0 "공직"
 Syngman_Rhee_Pres:0 "이승만"
+POSITION_ruling_party:0 "여당 당대표"
 
 
 SECOND_LEADER_NAME2:0 "§Y[This.FdS_name2]§!\n[This.HoG_rank2]"

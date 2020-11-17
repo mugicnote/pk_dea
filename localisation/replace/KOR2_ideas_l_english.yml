@@ -23,7 +23,7 @@
  Dev_minister:0 "개발부장"
  Defense2_minister:0 "수방사사령관"
 
- hog:0 "정부수반"
+ hog:0 "대통령"
  secmin:0 "내무장관"
  ecomin:0 "재무장관"
  frnmin:0 "외무장관"
@@ -44,3 +44,4 @@
  minister_tooltip:0 "장관을 수동으로 임명하거나 해임할 수 없습니다."
 
 IM_Jang_TaekSang:0 "장택상"
+HG_Seo_Jae_Pil:0 "서재필"

@@ -82,18 +82,6 @@ KOR_Korea_Youth_Corps_category = {
 
 }
 
-KOR_opposition_civil_war_preparations = {
-	priority = 9
-	icon = spr_the_inevitable_civil_war
-
-	picture = GFX_decision_cat_picture_spr_the_inevitable_civil_war
-	
-	allowed = {
-		original_tag = KOR
-		has_dlc = "La Resistance"
-	}
-}
-
 KOR_the_inevitable_civil_war = {
 	priority = 10
 	icon = spr_the_inevitable_civil_war

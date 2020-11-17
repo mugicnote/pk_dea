@@ -13,10 +13,6 @@ music = {
 
 music = {
 	song = "National_Anthem_of_the_Korean_Empire"
-}
-
-music = {
-	song = "National_Anthem_of_the_Korean_Empire"
 	chance = {
 		modifier = {
 			factor = 0.1

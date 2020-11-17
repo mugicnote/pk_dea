@@ -627,5 +627,9 @@ spriteTypes = {
 		name = "GFX_focus_Chun_Doo_hwan"
 		texturefile = "gfx/interface/goals/focus_Chun_Doo_hwan.dds"
 	}
+	SpriteType = {
+		name = "GFX_focus_Lee_Bum_seok"
+		texturefile = "gfx/interface/goals/focus_Lee_Bum_seok.dds"
+	}
 
 }

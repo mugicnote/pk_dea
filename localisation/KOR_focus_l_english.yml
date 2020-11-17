@@ -2,7 +2,7 @@
   ###시작 결정###
   military_arrest:0 "암살의 성공"
   A_military_revolution:0 "국회 회의 시작"
-  military_success:0 "군부가 혁명에 성공하다"
+  military_success:0 "암살의 실패"
   ###민주주의###
   democratic_election:0 "대통령 선거"
   ###조노연###
@@ -52,7 +52,6 @@
   democratic_education:0 "민주주의 교육법"
   Invitation_of_Professors_from_Overseas:0 "이공계 인재 지원법"
   focus_on_fostering_talent:0 "인재양성에 초점을"
-  establishment_new_university:0 "관립최고학부 추가 개설"
   nationalism_for_unity:0 "단결을 위한 민족주의"
   Security_Law_Designation:0 "보안법 재정"
   communist_assassination:0 "반정부 인사 처리"
@@ -157,6 +156,9 @@
   Chang_Myon_Elected:0 "장면 당선"
   ###김성수###
   Kim_Sung_Soo_Elected:0 "김성수 당선"
+
+  ###이범석###
+  Lee_Bum_seok_Success:0 "이범석의 기도 성공"
 
   ###대공황###
   great_depression_aftermath:0 "대공황의 여파"
