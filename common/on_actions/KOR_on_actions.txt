@@ -1,10 +1,16 @@
 on_actions = {
 	on_startup = {
 		effect = {
-			KOR = {
-      	country_event = {
-          	id = KOR.14
-          	days = 0
+	every_country = {
+		news_event = {
+			id = fengtian.3
+			days = 7
+		}
+	}
+	KOR = {
+		country_event = { 
+			id = KOR.54
+			days = 5
 		}
 		if = {
 			limit = { has_country_flag = Seung_man_Ele }
@@ -36,7 +42,20 @@ on_actions = {
 		set_country_flag = Ahn_Jaehong
 		set_country_flag = Pak_Honyong
 
-		add_ideas = IM_Jang_TaekSang
+		add_ideas = HG_Seo_Jae_Pil
+		add_ideas = SE_kim_kyusik
+		add_ideas = EM_Kim_Byung_ro
+		add_ideas = FM_Ahn_Chang_Ho
+		add_ideas = MM_Jang_TaekSang
+		add_ideas = IM_Shin_Sung_mo
+
+		add_ideas = INM_Yoon_Bo_Sun
+		add_ideas = LM_Chough_Pyung_ok
+		add_ideas = AM_jomansik
+		add_ideas = DM_Ho_Jong
+		add_ideas = I2M_Ahn_Jaehong
+		add_ideas = PM_Pak_Hon_yong
+		
 		country_lock_all_division_template = yes
 		set_country_flag = TNO_opening_screen_show
 		set_country_flag = OPEN_view_country_info

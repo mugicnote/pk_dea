@@ -89,7 +89,7 @@ KOR_the_inevitable_civil_war = {
 	picture = GFX_decision_cat_picture_spr_the_inevitable_civil_war
 
 	allowed = {
-		tag = KOR
+		always = no
 	}
 
 	custom_icon = {
@@ -130,7 +130,7 @@ KOR_opposition_civil_war_preparations = {
 	picture = GFX_decision_cat_picture_spr_the_inevitable_civil_war
 	
 	allowed = {
-		original_tag = KOR
+		always = no
 	}
 }
 

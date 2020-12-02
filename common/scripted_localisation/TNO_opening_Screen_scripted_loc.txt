@@ -6,6 +6,10 @@ GET_CLOSEBUTTON_TEXT = {
 		trigger = { tag = KOR }
 		localization_key = TNO_OPENING_SCREEN_BUTTON_TEXT_KOR
 	}
+	text = {
+		trigger = { tag = CHI }
+		localization_key = TNO_OPENING_SCREEN_BUTTON_TEXT_CHI
+	}
 	## Default
 	text = {
 		localization_key = TNO_OPENING_SCREEN_BUTTON_TEXT_GEN
@@ -45,6 +49,10 @@ GET_COUNTRY_INFO = {
 		trigger = { tag = KOR }
 		localization_key = COUNTRY_INFO_KOREA
 	}
+	text = {
+		trigger = { tag = CHI }
+		localization_key = COUNTRY_INFO_CHINA
+	}
 	## Default
 	text = {
 		localization_key = COUNTRY_INFO_NO_CONTENT
@@ -57,7 +65,11 @@ GET_REGIONAL_INFO = {
 	## Southern Urals
 	text = {
 		trigger = {
-				tag = KOR
+			OR = {
+				original_tag = KOR
+				original_tag = CHI
+				original_tag = JAP
+			}
 		}
 		localization_key = REGIONAL_INFO_ASIA
 
@@ -73,9 +85,9 @@ GET_REGIONALSYMBOL = {
 	## Southern Urals
 	text = {
 		trigger = {
-				tag = KOR
+			tag = KOR
 		}
-		localization_key = "GFX_TNO_OpeningScreen_Region_KOR"
+		localization_key = "GFX_TNO_OpeningScreen_Region_EASTERN_ASIA"
 	}
 
 	## Default

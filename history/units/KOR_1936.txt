@@ -347,7 +347,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 8
 		}
-		location = 13234
+		location = 13241
 		division_template = "기계화 보병사단"
 		start_experience_factor = 0.3
 	}
@@ -393,7 +393,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 20
 		}
-		location = 13241
+		location = 13253
 		division_template = "독도수비대"
 		start_experience_factor = 0.3
 	}

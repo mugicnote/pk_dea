@@ -49,7 +49,7 @@ guiTypes = {
 			}
 			iconType = {
 				name = "TNO_OpeningScreen_RegionSymbol"
-				quadTextureSprite = "GFX_TNO_OpeningScreen_Region_AMERICA"
+				quadTextureSprite = "GFX_TNO_OpeningScreen_Region_EASTERN_ASIA"
 				position = { x = 269 y = 15 }
 				centerposition = yes
 				scale = 0.9

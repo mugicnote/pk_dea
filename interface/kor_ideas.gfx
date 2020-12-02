@@ -66,5 +66,58 @@ spriteTypes = {
 		name = "GFX_idea_advisor_Seo_Jae_Pil"
 		texturefile = "gfx/interface/ideas/advisor_Seo_Jae_Pil.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_advisor_kim_kyusik"
+		texturefile = "gfx/interface/ideas/advisor_kim_kyusik.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_advisor_Kim_Byung_ro"
+		texturefile = "gfx/interface/ideas/advisor_Kim_Byung_ro.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_advisor_Ahn_Chang_Ho"
+		texturefile = "gfx/interface/ideas/advisor_Ahn_Chang_Ho.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_advisor_Yoon_Bo_Sun"
+		texturefile = "gfx/interface/ideas/advisor_Yoon_Bo_Sun.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_advisor_Shin_Sung_mo"
+		texturefile = "gfx/interface/ideas/advisor_Shin_Sung_mo.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_advisor_Chough_Pyung_ok"
+		texturefile = "gfx/interface/ideas/advisor_Chough_Pyung_ok.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_advisor_jomansik"
+		texturefile = "gfx/interface/ideas/advisor_jomansik.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_advisor_Ho_Jong"
+		texturefile = "gfx/interface/ideas/advisor_Ho_Jong.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_advisor_Ahn_Jaehong"
+		texturefile = "gfx/interface/ideas/advisor_Ahn_Jaehong.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_advisor_Pak_Hon_yong"
+		texturefile = "gfx/interface/ideas/advisor_Pak_Hon_yong.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_illiteracy"
+		texturefile = "gfx/interface/ideas/illiteracy.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_slavery"
+		texturefile = "gfx/interface/ideas/slavery.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_Corruption_icon"
+		texturefile = "gfx/interface/ideas/Corruption_icon.tga"
+	}
 
 }

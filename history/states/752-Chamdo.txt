@@ -12,7 +12,6 @@ state={
 		add_core_of = CHI
 		add_core_of = PRC
 		add_core_of = SZC
-		add_core_of = XIC
 		victory_points = {
 			4999 1
 		}

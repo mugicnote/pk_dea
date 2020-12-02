@@ -68,9 +68,9 @@ set_politics = {
 
 ### Country Leaders ###
 create_country_leader = {
-	name = "Liu Xiang"
+	name = "Liu Wenhui"
 	desc = "POLITICS_SZC_LIU_WENHUI_DESC"
-	picture = "Portrait_Sichuan_Liu_Xiang.dds"
+	picture = "Portrait_SZC_Liu_Wenhui.tga"
 	expire = "1865.1.1"
 	ideology = warloadism
 	traits = {

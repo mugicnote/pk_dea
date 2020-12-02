@@ -1,11 +1,13 @@
 name="PROJECT KOREA: DAWN OF EAST ASIA"
-path="mod/pk_dea"
 tags={
 	"Alternative History"
 	"Events"
 	"National Focuses"
 }
 dependencies={
-    "Korean Language (Europa)"
+	"Korean Language (Europa)"
 }
+picture="thumbnail.png"
 supported_version="1.10.*"
+path="C:/Users/mom/Documents/Paradox Interactive/Hearts of Iron IV/mod/pk_dea"
+remote_file_id="2298789924"

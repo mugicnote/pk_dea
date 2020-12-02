@@ -61,7 +61,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/opening_screen/regions/CENTRAL_SIBERIA.dds"
 	}
 	SpriteType = {
-		name = "GFX_TNO_OpeningScreen_Region_KOR"
+		name = "GFX_TNO_OpeningScreen_Region_EASTERN_ASIA"
 		texturefile = "gfx/interface/opening_screen/regions/EASTERN_ASIA.dds"
 	}
 	SpriteType = {

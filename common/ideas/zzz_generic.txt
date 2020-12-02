@@ -2034,4 +2034,24 @@ ideas = {
 		}
 	}
 
+	Industry_minister = {
+		INM_No_One = {
+			picture = no_minister
+			allowed = {
+				always = yes
+			}
+			available = {
+				custom_trigger_tooltip = {
+    				tooltip = minister_tooltip
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			removal_cost = -1
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
 }

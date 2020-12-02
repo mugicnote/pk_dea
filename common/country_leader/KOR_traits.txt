@@ -1,19 +1,53 @@
 leader_traits = {
 
 	## 내각 관료 직책 ##
-	hog = {} #정부수반
-	secmin = {} #내무장관
+	hog = {} #대통령
+	secmin = {} #국무총리
 	frnmin =  {} #외무장관
 	ecomin = {} #재무장관
 	milmin = {} #군무장관
 	intmin = {} #정보장관
+
+	indmin = {}
+	labmin = {}
+	antmin = {}
+	defmin = {}
+	int2min = {}
+	polmin = {}
+
 	themin = {} #이론가
 	
 	coa = {} #육군참모총장
 	con = {} #해군참모총장
 	coaf = {} #공군참모총장
 	cos = {} #군 참모
-	
+
+	###내각 특성###
+	hog_Hitler_of_Korea = {
+		random = no
+		land_reinforce_rate = 0.1
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	sec_hidden_main_character = {
+		random = no
+		stability_factor = 0.05
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	frn_father_of_constitution = {
+		random = no
+		political_power_factor = 0.05
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	###지도자 특성###
 	kor_dictator = {
 		random = no
 		political_power_factor = 0.15

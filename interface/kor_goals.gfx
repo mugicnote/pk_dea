@@ -631,5 +631,21 @@ spriteTypes = {
 		name = "GFX_focus_Lee_Bum_seok"
 		texturefile = "gfx/interface/goals/focus_Lee_Bum_seok.dds"
 	}
+	SpriteType = {
+		name = "GFX_Focus_White_Shirts_Society"
+		texturefile = "gfx/interface/goals/Focus_White_Shirts_Society.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_syngman_rhee_3"
+		texturefile = "gfx/interface/goals/focus_syngman_rhee_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_Focus_Restoration_Constitution"
+		texturefile = "gfx/interface/goals/Focus_Restoration_Constitution.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_democracy"
+		texturefile = "gfx/interface/goals/focus_democracy.dds"
+	}
 
 }

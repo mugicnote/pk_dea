@@ -64,7 +64,7 @@ focus = {
 		log = "[GetDateText]: [Root.GetName]: Focus FNG_Preservation_of_the_Xinhai_Order"
 		add_political_power = 10
 			country_event = {
-				id = fengtian.110
+				id = fengtian.1
 				days = 0
 				random = 1248
 			}
@@ -209,7 +209,7 @@ focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus FNG_Fuguo_Qiangbing"
-		country_event = fengtian.53
+		country_event = fengtian.2
 		hidden_effect = {
 			country_event = {
 				id = fengtian.111

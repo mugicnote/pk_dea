@@ -8,14 +8,6 @@ set_technology = {
 	
 }
 
-if = {
-	limit = { has_dlc = "Waking the Tiger" }
-	set_country_flag = MAN_northern_bandits
-	set_country_flag = MAN_eastern_bandits
-	set_country_flag = MAN_western_bandits
-	add_ideas = MAN_banditry
-}
-
 set_convoys = 5
 
 1939.1.1 = {
@@ -98,6 +90,20 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = no
 }
+
+create_faction = 중화민국
+add_to_faction = MAN
+add_to_faction = SSK
+add_to_faction = SHX
+add_to_faction = SZC
+add_to_faction = GJU
+add_to_faction = SND
+add_to_faction = YUN
+add_to_faction = GXC
+add_to_faction = GDC
+add_to_faction = UFP
+add_to_faction = CHI
+
 set_popularities = {
   communism = 10
   radical_socialism = 5

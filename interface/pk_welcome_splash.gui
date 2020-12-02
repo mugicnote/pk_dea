@@ -3,7 +3,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "pk_welcome_splash_container"
 		position = { x = 0 y = 30 }
-		size = { width = 750 height = 630 }
+		size = { width = 750 height = 730 }
 		moveable = yes
 		orientation = CENTER
 		origo = center
@@ -17,7 +17,7 @@ guiTypes = {
 		background = {
 			name = "pk_logo_bg"
 			spriteType = "GFX_pk_splash_intro_box"
-			position = { x = -15 y = 357 }
+			position = { x = -3 y = 357 }
 		}
 
 		instantTextboxType = {
@@ -39,7 +39,7 @@ guiTypes = {
 
 		buttonType = {
 			name = "mod_options_button"
-			position = { x = 226 y = 590 }
+			position = { x = 226 y = 680 }
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "확인"
 			buttonFont = "aldrich_24_outline"

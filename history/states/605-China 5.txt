@@ -6,7 +6,7 @@ state={
 	}
 
 	history={
-		owner = SZC
+		owner = CHI
 		add_core_of = SZC
 		add_core_of = CHI
 		add_core_of = PRC

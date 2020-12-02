@@ -68,9 +68,9 @@ set_politics = {
 
 ### Country Leaders ###
 create_country_leader = {
-	name = "Wang Jialie"
+	name = "허잉친"
 	desc = "#"
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
+	picture = "gfx/leaders/GJU/Portrait_Guizhou_He_Yingqin.dds"
 	expire = "1865.1.1"
 	ideology = warloadism
 	traits = {

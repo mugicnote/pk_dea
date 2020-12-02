@@ -52,7 +52,7 @@
 
 	focus = {
 		id = democratic_election
-		icon = GFX_focus_first_republic
+		icon = GFX_kor_political_reorganization
 		cost = 10.00
 		prerequisite = {
 			focus = military_arrest
@@ -1643,7 +1643,7 @@
 			}
 			create_corps_commander = {
 				name = "박정희"
-				picture = ".dds"
+				picture = "Portrait_Park_Chung_hee.dds"
 				traits = {
 
 				}
@@ -1710,7 +1710,7 @@
 		icon = GFX_KOR_Liberal_party
 		cost = 10.00
 		prerequisite = {
-			focus = Lee_Seung_man_Elected
+			focus = Pater_Patriae_Lee
 		}
 		x = 28
 		y = 6
@@ -2080,7 +2080,7 @@
 
 	focus = {
 		id = advocate_of_Korean_style_democracy
-		icon = gfx
+		icon = GFX_Returning_JTS
 		cost = 10.00
 		prerequisite = {
 			focus = Kim_Gu_Elected
@@ -2088,175 +2088,237 @@
 		x = 22
 		y = 4
 
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = Anti_Communist_Office
+				add_idea = Ministry_of_Public_Security
+			}
+		}
 	}
 	focus = {
 		id = nationalism_for_unity
-		icon = gfx
+		icon = GFX_focus_syngman_rhee_3
 		cost = 10.00
 		prerequisite = {
 			focus = Kim_Gu_Elected
 		}
-		x = 14
+		x = 18
+		y = 4
+
+		completion_reward = {
+			add_ideas = Story_of_Two_Activists
+		}
+	}
+	focus = {
+		id = nationalism_for_unity2
+		icon = GFX_goal_HOL_progressive_tax
+		cost = 10.00
+		prerequisite = {
+			focus = Kim_Gu_Elected
+		}
+		x = 16
 		y = 4
 
 	}
 	focus = {
 		id = Security_Law_Designation
-		icon = gfx
+		icon = GFX_focus_kcpr
 		cost = 10.00
 		prerequisite = {
-			focus = nationalism_for_unity
+			focus = nationalism_for_unity2
 		}
-		x = 13
+		x = 15
 		y = 5
 
 	}
 	focus = {
 		id = communist_assassination
-		icon = gfx
+		icon = GFX_focus_constitution
 		cost = 10.00
 		prerequisite = {
 			focus = nationalism_for_unity
+			focus = nationalism_for_unity2
 		}
-		x = 15
+		x = 17
 		y = 5
 
+		completion_reward = {
+			set_party_name = { ideology = democratic long_name = Kim_Dem_2_long name = Kim_Dem_2 }
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+			add_political_power = 150
+		}
 	}
 	focus = {
 		id = coup_detat_referee
-		icon = gfx
+		icon = GFX_conference_of_chicago
 		cost = 10.00
 		prerequisite = {
+			focus = Protect_Lee_Bum_seok
 			focus = communist_assassination
 		}
-		prerequisite = {
-			focus = Security_Law_Designation
-		}
-		mutually_exclusive = {
-			focus = Protect_Lee_Bum-seok
-		}
-		x = 15
+		x = 18
 		y = 6
 
 	}
 	focus = {
-		id = Protect_Lee_Bum-seok
-		icon = gfx
+		id = Protect_Lee_Bum_seok
+		icon = GFX_freedom_society
 		cost = 10.00
 		prerequisite = {
-			focus = democratic_egotiations_with_China
-			focus = Exchanges_with_Constitutional_Jung_Woo_hoi
-		}
-		mutually_exclusive = {
-			focus = coup_detat_referee
-		}
-		x = 17
-		y = 6
-
-	}
-	focus = {
-		id = democratic_egotiations_with_China
-		icon = gfx
-		cost = 10.00
-		prerequisite = {
-			focus = book_written_by_Baekbeom
-		}
-		x = 17
-		y = 5
-
-	}
-	focus = {
-		id = Exchanges_with_Constitutional_Jung_Woo_hoi
-		icon = gfx
-		cost = 10.00
-		prerequisite = {
-			focus = advocate_of_Korean_style_democracy
+			focus = Kim_Gu_Elected
 		}
 		x = 19
 		y = 5
 
 	}
 	focus = {
+		id = democratic_egotiations_with_China
+		icon = GFX_focus_constitutional_amendment
+		cost = 10.00
+		prerequisite = {
+			focus = book_written_by_Baekbeom
+		}
+		x = 20
+		y = 6
+
+	}
+	focus = {
+		id = Exchanges_with_Constitutional_Jung_Woo_hoi
+		icon = GFX_Focus_White_Shirts_Society
+		cost = 10.00
+		prerequisite = {
+			focus = advocate_of_Korean_style_democracy
+			focus = book_written_by_Baekbeom
+		}
+		x = 22
+		y = 5
+
+		completion_reward = {
+			hidden_effect = {
+				create_operative_leader = {
+  					name = "염동진"
+  					desc = "SPY_Yeom_Dong_Jin_DESC"
+  					picture = "Portrait_Yeom_Dong_Jin.dds"
+  					traits = { }
+  					bypass_recruitment = no
+  					available_to_spy_master = yes
+  					nationalities = { KOR CHI MAN }
+				}
+			}
+			custom_effect_tooltip = Exchanges_with_Constitutional_Jung_Woo_hoi_tt
+			add_ideas = white_doctor
+		}
+	}
+	focus = {
 		id = book_written_by_Baekbeom
-		icon = gfx
+		icon = GFX_focus_interim_government
 		cost = 10.00
 		prerequisite = {
 			focus = Kim_Gu_Elected
 		}
-		x = 17
+		x = 20
 		y = 4
 
+		completion_reward = {
+			remove_ideas = social_repression_2
+		}
 	}
 	focus = {
 		id = parliamentary_control
-		icon = gfx
+		icon = GFX_focus_sou
 		cost = 10.00
-		prerequisite = {
-			focus = coup_detat_referee
-			focus = Protect_Lee_Bum-seok
-		}
 		prerequisite = {
 			focus = Security_Law_Designation
 		}
-		x = 13
+		x = 15
 		y = 7
 
 	}
 	focus = {
 		id = commando_draft
-		icon = gfx
+		icon = GFX_Corruption_investigate
 		cost = 10.00
 		prerequisite = {
 			focus = coup_detat_referee
-			focus = Protect_Lee_Bum-seok
-		}
-		x = 16
-		y = 7
-
-	}
-	focus = {
-		id = Contact_with_the_UK_USA_FRA
-		icon = gfx
-		cost = 10.00
-		prerequisite = {
-			focus = Exchanges_with_Constitutional_Jung_Woo_hoi
 		}
 		prerequisite = {
-			focus = coup_detat_referee
-			focus = Protect_Lee_Bum-seok
+			focus = democratic_egotiations_with_China
 		}
 		x = 19
 		y = 7
 
 	}
 	focus = {
-		id = participation_in_the_Allies
-		icon = gfx
+		id = commando_draft2
+		icon = GFX_Corruption_investigate
 		cost = 10.00
 		prerequisite = {
-			focus = Contact_with_the_UK_USA_FRA
-			focus = parliamentary_control
+			focus = commando_draft
 		}
-		mutually_exclusive = {
-			focus = Choose_your_own_route
-		}
-		x = 17
+		x = 19
 		y = 8
 
 	}
 	focus = {
-		id = Choose_your_own_route
-		icon = gfx
+		id = Contact_with_the_UK_USA_FRA
+		icon = GFX_GER_Winterhilfe
+		cost = 10.00
+		prerequisite = {
+			focus = Exchanges_with_Constitutional_Jung_Woo_hoi
+		}
+		prerequisite = {
+			focus = Protect_Lee_Bum_seok
+		}
+		x = 22
+		y = 6
+
+	}
+	focus = {
+		id = participation_in_the_Allies
+		icon = GFX_DOM_The_Trial
 		cost = 10.00
 		prerequisite = {
 			focus = Contact_with_the_UK_USA_FRA
-			focus = parliamentary_control
 		}
-		mutually_exclusive = {
-			focus = participation_in_the_Allies
+		x = 21
+		y = 7
+
+	}
+	focus = {
+		id = participation_in_the_Allies2
+		icon = GFX_focus_armed_police
+		cost = 10.00
+		prerequisite = {
+			focus = Contact_with_the_UK_USA_FRA
 		}
-		x = 15
-		y = 8
+		x = 23
+		y = 7
+
+	}
+	focus = {
+		id = Choose_your_own_route
+		icon = GFX_goal_consolidating_coalitionv2
+		cost = 10.00
+		prerequisite = {
+			focus = communist_assassination
+		}
+		x = 16
+		y = 6
+
+	}
+	focus = {
+		id = Choose_your_own_route2
+		icon = gfx
+		cost = 10.00
+		prerequisite = {
+			focus = Choose_your_own_route
+			focus = coup_detat_referee
+		}
+		x = 17
+		y = 7
 
 	}
 	focus = {

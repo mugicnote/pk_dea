@@ -44,27 +44,43 @@
   outbreak_of_the_Korean_War:0 "좌파 지원 약속"
   outbreak_of_the_Korean_War_tt:1 "내전이 시작하면, §Y6개 보병 대대§!로 이루어진 5개의 잘 훈련된 사단을 얻게 될 것입니다.\n"
   outbreak_of_the_Korean_War_tt_2:0 "§R이 사단들은 좌파가 봉기하면 내전 이후 사라질 것입니다!§!\n"
+
   ###김구###
   Kim_Gu_Elected:0 "김구 당선"
   Kim_Gu_Elected_desc:0 "민주적인 선거를 통하여 김구선생께서 당선 되셨습니다,감구 선생께서는 국가의 법으로 시민들을 지키며 여러자유를 허락하며 시민들을 자신에 편으로 만듭니다."
-  advocate_of_Korean_style_democracy:0 "한국식 민주주의 주창"
-  advocate_of_Korean_style_democracy_desc:0 "우리는 다른나라의 방식이 아닌 우리만의 방식으로 살아남는 법을 배워야합니다.그 방식을 실현하는 과정에서 고통이 따를지라도.."
-  democratic_education:0 "민주주의 교육법"
-  Invitation_of_Professors_from_Overseas:0 "이공계 인재 지원법"
-  focus_on_fostering_talent:0 "인재양성에 초점을"
-  nationalism_for_unity:0 "단결을 위한 민족주의"
-  Security_Law_Designation:0 "보안법 재정"
-  communist_assassination:0 "반정부 인사 처리"
-  coup_detat_referee:0 "쿠데타 심판"
-  Protect_Lee_Bum-seok:0 "이범석을 보호"
-  democratic_egotiations_with_China:0 "중화민국 국민정부와의 교섭"
-  book_written_by_Baekbeom:0 "백범일지 저술"
-  Exchanges_with_Constitutional_Jung_Woo_hoi:0 "입헌정우회와의 접촉"
-  commando_draft:0 "쿠데타 세력을 징병"
-  Contact_with_the_UK_USA_FRA:0 "미.영.프 3국과 친밀 형성"
-  parliamentary_control:0 "국회 통제"
-  participation_in_the_Allies:0 "연합에 합류"
-  Choose_your_own_route:0 "독자노선을 선택"
+
+  advocate_of_Korean_style_democracy:0 "행안부장관 장택상"
+
+  nationalism_for_unity:0 "두 운동가 이야기"
+
+  nationalism_for_unity2:0 "지방 분권 실천"
+
+  Security_Law_Designation:0 "군부 잔재 청산"
+
+  communist_assassination:0 "자유국민당 창설"
+
+  coup_detat_referee:0 "대화와 타협주의"
+
+  Protect_Lee_Bum_seok:0 "국민 정부의 실현"
+
+  democratic_egotiations_with_China:0 "국가보안법의 종결"
+
+  book_written_by_Baekbeom:0 "사회탄압의 종료"
+
+  Exchanges_with_Constitutional_Jung_Woo_hoi:0 "백의사와 정보부"
+  Exchanges_with_Constitutional_Jung_Woo_hoi_tt:0 "§Y염동진§!은 정보원이 될 것입니다."
+
+  commando_draft:0 "야당의 탄핵소추 발의"
+
+  Contact_with_the_UK_USA_FRA:0 "과거사 진상 규명"
+
+  parliamentary_control:0 "특무장교회 설립"
+
+  participation_in_the_Allies:0 "검찰 계혁의 시작"
+
+  participation_in_the_Allies2:0 "경찰 예우 강화"
+
+  Choose_your_own_route:0 "여권 단합"
 
   new_education_law:0 "신 교육법 도입"
   new_education_law_desc:0 "교육은 사사로운 이익을 위한것이 아닙니다."
@@ -75,7 +91,7 @@
   Lee_Seung_man_Elected:0 "이승만 당선"
   Lee_Seung_man_Elected_desc:0 "민주주의가 인민의 자유권리와 참정권을 다 허락하되 불량분자들이 민권자유라는 구실을 이용하여 정부를 전복하려는 것을 허락하는 나라는 없습니다. - 1948년 8월 15일, 정부 수립 기념 연설"
 
-  New_National_Security_Law2:0 "국가보안법 제정"
+  New_National_Security_Law2:0 "국민안전법 제정"
   New_National_Security_Law2_desc:0 "우리는 최후의 보루로 반공법과 기존의 국가보안법을 합친 하나의 법을 만들기로 했습니다. 이 새로운 법을 가장 먼저 적용받을 정보부는 바로 개혁을 단행하게 될 것입니다."
 
   New_National_Security_Law3:0 "사회만행의 종결"
@@ -148,6 +164,7 @@
 
   repent_of_one_deeds:0 "행적을 참회"
   repent_of_one_deeds_desc:0 "여러 번 죽었던 이 몸이 하나님의 은혜와 동포의 애호로 지금까지 살아오다가 오늘에 이와 같이 영광스러운 추대를 받은 나로서는 일변 감격한 마음과 일변 심당키 어려운 책임을 지고 두려운 생각을 금하기 어렵습니다."
+
   ###안재홍###
   Ahn_Jae_Hong_Elected:0 "안재홍 당선"
   Movement_for_encourage_produce:0 "물산 장려 운동"

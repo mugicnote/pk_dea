@@ -745,10 +745,6 @@ GJU = {
 	color = rgb { 0 0 174 }
 	color_ui = rgb { 0 0 174 }
 }
-XIC = {
-	color = rgb { 140 104 51 }
-	color_ui = rgb { 140 104 51 }
-}
 
 UPN = {
 	color = rgb { 138 138 138 }
