@@ -10,7 +10,7 @@ state = {
 		add_core_of = KOR
 		
 		buildings = {
-			infrastructure = 1
+			infrastructure = 3
 		}
 		victory_points = {
 			13253 5 #울릉

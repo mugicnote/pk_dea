@@ -1,0 +1,18 @@
+scripted_gui = {
+	nationality_screen = {
+		context_type = selected_state_context
+
+		window_name = "culture_icon_container"
+		parent_window_token = selected_state_view
+
+		visible = { }
+
+		effects = { }
+
+		triggers = {
+			culture_korean_visible = {
+				check_variable = { nationality = 1 }
+			}
+		}
+	}
+}

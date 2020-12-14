@@ -1,7 +1,8 @@
 ﻿l_english:
+  Seo_Jae_pils_Cabinet:0 "서재필 내각"
+  Korean_style_presidential_system:0 "한국식 대통령제"
   ###시작 결정###
   military_arrest:0 "암살의 성공"
-  A_military_revolution:0 "국회 회의 시작"
   military_success:0 "암살의 실패"
   ###민주주의###
   democratic_election:0 "대통령 선거"
@@ -72,20 +73,33 @@
 
   commando_draft:0 "야당의 탄핵소추 발의"
 
+  commando_draft2:0 "소추에서 깨닫다"
+
   Contact_with_the_UK_USA_FRA:0 "과거사 진상 규명"
 
   parliamentary_control:0 "특무장교회 설립"
 
-  participation_in_the_Allies:0 "검찰 계혁의 시작"
+  participation_in_the_Allies:0 "치한본부 개편"
 
   participation_in_the_Allies2:0 "경찰 예우 강화"
 
   Choose_your_own_route:0 "여권 단합"
 
-  new_education_law:0 "신 교육법 도입"
-  new_education_law_desc:0 "교육은 사사로운 이익을 위한것이 아닙니다."
-  Strengthening_compulsory_education:0 "의무교육 강화"
-  Strengthening_compulsory_education_desc:0 "장기적으로 봤을때 교육만큼이나 효과적인것은 없습니다."
+  Choose_your_own_route2:0 "뭐 쓰지"
+
+  Choose_your_own_route3:0 "뭐 쓰지"
+
+  Choose_your_own_route4:0 "뭐 쓰지"
+
+  Choose_your_own_route5:0 "뭐 쓰지"
+
+  Choose_your_own_route6:0 "뭐 쓰지"
+
+  Choose_your_own_route7:0 "뭐 쓰지"
+
+  Choose_your_own_route8:0 "뭐 쓰지"
+
+  Choose_your_own_route9:0 "뭐 쓰지"
 
   ###이승만###
   Lee_Seung_man_Elected:0 "이승만 당선"

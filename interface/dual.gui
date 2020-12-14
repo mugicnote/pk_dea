@@ -1,14 +1,15 @@
 guiTypes = {
 	containerWindowType = {
 		name = "double_leader_system_container"
-		position = { x = 0 y = 0 }
+		position = { x = 332 y = 262 }
+		orientation = upper_left
 		
-		buttonType = { #2번째 지도자 뜨게 하는 버튼
-			name = "view"
-			position = { x = 270 y = 405 }
-			spriteType = "GFX_add_pol_idea_button"
-			pdx_tooltip = "테스트용"
-			pdx_tooltip_delayed = "테스트용2"
+		buttonType = {
+			name = "double_open"
+			position = { x = 17 y = 0 }
+			quadTextureSprite ="GFX_button_148x34"
+			buttonFont = "hoi_16mbs"
+			buttonText = "야당 개요"
 		}
 	}
 	containerWindowType = {

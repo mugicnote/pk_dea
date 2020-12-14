@@ -9,9 +9,10 @@ on_actions = {
 	}
 	KOR = {
 		country_event = { 
-			id = KOR.54
+			id = KOR.86
 			days = 5
 		}
+		country_event = { id = CULTURE.1 }
 		if = {
 			limit = { has_country_flag = Seung_man_Ele }
 			country_event = { 
@@ -55,6 +56,11 @@ on_actions = {
 		add_ideas = DM_Ho_Jong
 		add_ideas = I2M_Ahn_Jaehong
 		add_ideas = PM_Pak_Hon_yong
+
+		add_ideas = SM_lee_beomseok
+		add_ideas = HM_Ji_Cheong_cheon
+		add_ideas = DM_Ilhan_New
+		add_ideas = DM_Kim_Suk_won
 		
 		country_lock_all_division_template = yes
 		set_country_flag = TNO_opening_screen_show

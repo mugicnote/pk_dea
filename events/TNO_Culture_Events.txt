@@ -1,0 +1,23 @@
+﻿############################
+## Culture events, thank you to AtomicSoviet and the End of a New Beginning team for this!!!
+############################
+
+add_namespace = CULTURE
+
+country_event = { #Korean
+	id = CULTURE.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event CULTURE.1"}
+	title = CULTURE.1.t
+	desc = CULTURE.1.desc
+	picture = GFX_
+	fire_only_once = yes
+
+	hidden = yes
+
+	option = {
+		name = CULTURE.1.a
+		525 = { set_variable = { nationality = 1 } }
+		813 = { set_variable = { nationality = 1 } }
+	}
+}
+

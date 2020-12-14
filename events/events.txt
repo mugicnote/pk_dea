@@ -3859,3 +3859,42 @@ country_event = { #
 
 	}
 }
+
+country_event = { #
+	id = KOR.86
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.86"}
+	title = KOR.86.t
+	desc = KOR.86.desc
+	picture = GFX_NAREISION
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #건너뛰기
+		name = KOR.86.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = kor_86_a_tt
+		hidden_effect = {
+			country_event = {
+				id = KOR.77
+				days = 105
+			}
+		}
+	}
+	option = { #요약문
+		name = KOR.86.b
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = kor_86_b_tt
+	}
+	option = { #전문
+		name = KOR.86.c
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = kor_86_c_tt
+		hidden_effect = {
+			country_event = {
+				id = KOR.54
+				days = 5
+			}
+		}
+	}
+}

@@ -1,0 +1,11 @@
+spriteTypes = {	
+	
+	### Korean Equipment ###
+	
+	SpriteType = {
+		name = "GFX_kor_doctrine_medium"
+		texturefile = "gfx/interface/technologies/delay.dds"
+		alwaystransparent = yes
+	}
+	
+}

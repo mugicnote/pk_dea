@@ -4,7 +4,7 @@
 guiTypes = {
 	containerWindowType =  {
 		name = "china_open_faction_alignment_container"
-		position = { x = 82 y = 425 }
+		position = { x = 172 y = 262 }
 		orientation = upper_left
 
 		buttonType = {

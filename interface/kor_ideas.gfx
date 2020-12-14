@@ -106,6 +106,18 @@ spriteTypes = {
 		name = "GFX_idea_advisor_Pak_Hon_yong"
 		texturefile = "gfx/interface/ideas/advisor_Pak_Hon_yong.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_advisor_Ji_Cheong_cheon"
+		texturefile = "gfx/interface/ideas/advisor_Ji_Cheong_cheon.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_advisor_Ilhan_New"
+		texturefile = "gfx/interface/ideas/advisor_Ilhan_New.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_advisor_Kim_Suk_won"
+		texturefile = "gfx/interface/ideas/advisor_Kim_Suk_won.dds"
+	}
 
 	spriteType = {
 		name = "GFX_idea_illiteracy"
@@ -118,6 +130,26 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_Corruption_icon"
 		texturefile = "gfx/interface/ideas/Corruption_icon.tga"
+	}
+	spriteType = {
+		name = "GFX_idea_GLD68_feeling_the_market"
+		texturefile = "gfx/interface/ideas/GLD68_feeling_the_market.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_idea_ARL_breakneck_industrialization"
+		texturefile = "gfx/interface/ideas/idea_ARL_breakneck_industrialization.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_kor_Political_broken2"
+		texturefile = "gfx/interface/ideas/kor_Political_broken2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_idea_rural_resistance"
+		texturefile = "gfx/interface/ideas/idea_rural_resistance.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Sichuan_milita"
+		texturefile = "gfx/interface/ideas/Sichuan_milita.dds"
 	}
 
 }

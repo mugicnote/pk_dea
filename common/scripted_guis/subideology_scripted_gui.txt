@@ -5,7 +5,7 @@ scripted_gui = {
 		window_name = "ruling_party_addon_info"
 
 		visible = {
-		  tag = KOR
+		  always = no
 		}
 
 		effects = { }
@@ -17,7 +17,7 @@ scripted_gui = {
 		window_name = "approval_rating_container"
 
 		visible = {
-		  always = yes
+			always = no
 		}
 
 		effects = {
@@ -31,7 +31,7 @@ scripted_gui = {
 		window_name = "list_of_parties_politics_tab"
 
 		visible = {
-		  always = yes
+			always = no
 		}
 
 		effects = { }
@@ -43,7 +43,7 @@ scripted_gui = {
 		window_name = "subideologiesview_open_button_window"
 
 		visible = {
-		  #not = { has_country_flag = subideologies_opened }
+			always = no
 		}
 
 		effects = {

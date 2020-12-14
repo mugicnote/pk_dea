@@ -91,19 +91,6 @@ set_politics = {
 	elections_allowed = no
 }
 
-create_faction = 중화민국
-add_to_faction = MAN
-add_to_faction = SSK
-add_to_faction = SHX
-add_to_faction = SZC
-add_to_faction = GJU
-add_to_faction = SND
-add_to_faction = YUN
-add_to_faction = GXC
-add_to_faction = GDC
-add_to_faction = UFP
-add_to_faction = CHI
-
 set_popularities = {
   communism = 10
   radical_socialism = 5

@@ -11,7 +11,7 @@ state = {
 		
 		buildings = {
 			industrial_complex = 1
-			infrastructure = 3
+			infrastructure = 6
 		}
 		victory_points = {
 			13245 10 #춘천(슌센)

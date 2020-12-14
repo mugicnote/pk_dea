@@ -11,7 +11,7 @@ state = {
 		
 		buildings = {
 			industrial_complex = 2
-			infrastructure = 4
+			infrastructure = 6
 		}
 		victory_points = {
 			13249 15 #대전(타이덴)

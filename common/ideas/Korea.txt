@@ -67,7 +67,7 @@ ideas = {
         }
 
         Kor_excessive_Inflation = {
-            picture = usa_great_depression_3
+            picture = GLD68_feeling_the_market
             
             allowed = {
                 always = no
@@ -90,7 +90,7 @@ ideas = {
         }
 
         fallen_rural_society = {
-            picture = usa_great_depression_3
+            picture = idea_rural_resistance
             
             allowed = {
                 always = no
@@ -132,7 +132,7 @@ ideas = {
         }
 
         KOR_divided_army = {
-            picture = chi_army_corruption
+            picture = kor_Political_broken2
 
             allowed = {
                 always = no
@@ -152,7 +152,7 @@ ideas = {
         }
 
         coup_crisis = {
-            picture = chi_army_corruption
+            picture = Sichuan_milita
 
             allowed = {
                 original_tag = KOR
@@ -171,7 +171,7 @@ ideas = {
         }
 
         industrialization_experience = {
-            picture = chi_army_corruption
+            picture = idea_ARL_breakneck_industrialization
 
             allowed = {
                 original_tag = KOR

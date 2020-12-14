@@ -14,13 +14,13 @@ scripted_gui = {
 		}
 		
 		triggers = {
-			view_click_enabled = {
+			double_open_click_enabled = {
 				NOT = { has_country_flag = show_double_leader }
 			}
 		}
 
 		effects = {
-            view_click = {
+            double_open_click = {
 				set_country_flag = show_double_leader
 			}
 		}

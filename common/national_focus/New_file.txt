@@ -2253,12 +2253,12 @@
 	}
 	focus = {
 		id = commando_draft2
-		icon = GFX_Corruption_investigate
+		icon = GFX_
 		cost = 10.00
 		prerequisite = {
 			focus = commando_draft
 		}
-		x = 19
+		x = 18
 		y = 8
 
 	}
@@ -2319,6 +2319,97 @@
 		}
 		x = 17
 		y = 7
+
+	}
+	focus = {
+		id = Choose_your_own_route3
+		icon = gfx
+		cost = 10.00
+		prerequisite = {
+			focus = Choose_your_own_route2
+		}
+		prerequisite = {
+			focus = parliamentary_control
+		}
+		x = 16
+		y = 8
+
+	}
+	focus = {
+		id = Choose_your_own_route4
+		icon = gfx
+		cost = 10.00
+		prerequisite = {
+			focus = participation_in_the_Allies
+		}
+		prerequisite = {
+			focus = participation_in_the_Allies2
+		}
+		x = 22
+		y = 8
+
+	}
+	focus = {
+		id = Choose_your_own_route5
+		icon = gfx
+		cost = 10.00
+		prerequisite = {
+			focus = commando_draft
+		}
+		x = 20
+		y = 8
+
+	}
+	focus = {
+		id = Choose_your_own_route6
+		icon = gfx
+		cost = 10.00
+		prerequisite = {
+			focus = commando_draft2
+			focus = Choose_your_own_route3
+		}
+		x = 17
+		y = 9
+
+	}
+	focus = {
+		id = Choose_your_own_route7
+		icon = gfx
+		cost = 10.00
+		prerequisite = {
+			focus = Choose_your_own_route4
+			focus = Choose_your_own_route5
+		}
+		x = 21
+		y = 9
+
+	}
+	focus = {
+		id = Choose_your_own_route8
+		icon = gfx
+		cost = 10.00
+		prerequisite = {
+			focus = commando_draft
+		}
+		x = 19
+		y = 9
+
+	}
+	focus = {
+		id = Choose_your_own_route9
+		icon = gfx
+		cost = 10.00
+		prerequisite = {
+			focus = Choose_your_own_route6
+		}
+		prerequisite = {
+			focus = Choose_your_own_route7
+		}
+		prerequisite = {
+			focus = Choose_your_own_route8
+		}
+		x = 19
+		y = 10
 
 	}
 	focus = {

@@ -11,7 +11,7 @@ state = {
 		
 		buildings = {
 			industrial_complex = 1
-			infrastructure = 4
+			infrastructure = 7
 		}
 		victory_points = {
 			13246 10 #청주(세이슈)

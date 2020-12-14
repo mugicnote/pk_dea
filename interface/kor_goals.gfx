@@ -647,5 +647,13 @@ spriteTypes = {
 		name = "GFX_focus_democracy"
 		texturefile = "gfx/interface/goals/focus_democracy.dds"
 	}
+	SpriteType = {
+		name = "GFX_focus_jae_pil"
+		texturefile = "gfx/interface/goals/focus_jae_pil.dds"
+	}
+	SpriteType = {
+		name = "GFX_USA_capitol"
+		texturefile = "gfx/interface/goals/USA_capitol.tga"
+	}
 
 }

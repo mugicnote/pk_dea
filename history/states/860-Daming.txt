@@ -1,17 +1,18 @@
 state={
 	id=860
 	name="STATE_860"
-
-	history={
+	manpower = 5964950
+	state_category = town
+	history = {
 		owner = CHI
-		add_core_of = CHI
-		add_core_of = MAN
-
+        add_core_of = CHI
+		buildings = {
+			infrastructure = 3
+		}
+		victory_points = { 1188 1 }
 	}
 
 	provinces={
 		1169 1188 4058 7092 12062 
 	}
-	manpower=0
-	buildings_max_level_factor=1.000
 }

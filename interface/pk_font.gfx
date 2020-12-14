@@ -135,6 +135,16 @@ bitmapfonts = {
 	}
 
 	bitmapfont = {
+		name = "Bomb_20"
+		path = "gfx/fonts/Bomb_20"
+		color = 0xffffffff
+		textcolors = {
+			W = { 255 255 255 }
+			b = { 0 0 0 }
+		}
+	}
+
+	bitmapfont = {
 		name = "Bomb_24"
 		path = "gfx/fonts/Bomb_24"
 		color = 0xffb2c9c2

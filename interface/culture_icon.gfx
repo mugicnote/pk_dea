@@ -1,0 +1,7 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_culture_korean"
+		texturefile = "gfx/interface/ideas/culture/culture_korean.dds"
+	}
+}

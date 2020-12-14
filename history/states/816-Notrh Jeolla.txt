@@ -11,7 +11,7 @@ state = {
 		
 		buildings = {
 			industrial_complex = 2
-			infrastructure = 4
+			infrastructure = 6
 			7175 = { #군산항
 				naval_base = 2
 			}

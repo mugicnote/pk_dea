@@ -287,6 +287,102 @@ ideas = {
 		}
 	}
 
+	Staff_minister = {
+		SM_lee_beomseok = {
+
+			allowed = { original_tag = KOR }
+
+			picture = Lee_Bum_Suk
+
+			available = {
+				custom_trigger_tooltip = {
+    				tooltip = minister_tooltip
+					always = no
+				}
+			}
+
+			cancel_if_invalid = no
+			removal_cost = -1
+			ai_will_do = { factor = 1 }
+
+			traits = {
+				stamin
+			}
+		}
+	}
+
+	Home_minister = {
+		HM_Ji_Cheong_cheon = {
+
+			allowed = { original_tag = KOR }
+
+			picture = advisor_Ji_Cheong_cheon
+
+			available = {
+				custom_trigger_tooltip = {
+    				tooltip = minister_tooltip
+					always = no
+				}
+			}
+
+			cancel_if_invalid = no
+			removal_cost = -1
+			ai_will_do = { factor = 1 }
+
+			traits = {
+				hommin
+			}
+		}
+	}
+
+	Dev_minister = {
+		DM_Ilhan_New = {
+
+			allowed = { original_tag = KOR }
+
+			picture = advisor_Ilhan_New
+
+			available = {
+				custom_trigger_tooltip = {
+    				tooltip = minister_tooltip
+					always = no
+				}
+			}
+
+			cancel_if_invalid = no
+			removal_cost = -1
+			ai_will_do = { factor = 1 }
+
+			traits = {
+				devmin
+			}
+		}
+	}
+
+	Defense2_minister = {
+		DM_Kim_Suk_won = {
+
+			allowed = { original_tag = KOR }
+
+			picture = advisor_Kim_Suk_won
+
+			available = {
+				custom_trigger_tooltip = {
+    				tooltip = minister_tooltip
+					always = no
+				}
+			}
+
+			cancel_if_invalid = no
+			removal_cost = -1
+			ai_will_do = { factor = 1 }
+
+			traits = {
+				defmin
+			}
+		}
+	}
+
 	#육군 참모총장
 	army_chief = {
 
