@@ -3,6 +3,7 @@
   Korean_style_presidential_system:0 "한국식 대통령제"
   ###시작 결정###
   military_arrest:0 "암살의 성공"
+  military_arrest_tt:0 "§Y이 중점은 서재필의 암살 이후 자동으로 완료될 것입니다§!"
   military_success:0 "암살의 실패"
   ###민주주의###
   democratic_election:0 "대통령 선거"
@@ -73,33 +74,33 @@
 
   commando_draft:0 "야당의 탄핵소추 발의"
 
-  commando_draft2:0 "소추에서 깨닫다"
+  commando_draft2:0 "시민들의 탄핵 반대"
 
   Contact_with_the_UK_USA_FRA:0 "과거사 진상 규명"
 
   parliamentary_control:0 "특무장교회 설립"
 
-  participation_in_the_Allies:0 "치한본부 개편"
+  participation_in_the_Allies:0 "치안본부 개편"
 
   participation_in_the_Allies2:0 "경찰 예우 강화"
 
   Choose_your_own_route:0 "여권 단합"
 
-  Choose_your_own_route2:0 "뭐 쓰지"
+  Choose_your_own_route2:0 "함께 나아가는 정치"
 
-  Choose_your_own_route3:0 "뭐 쓰지"
+  Choose_your_own_route3:0 "미국을 나란히 보다"
 
-  Choose_your_own_route4:0 "뭐 쓰지"
+  Choose_your_own_route4:0 "언론 비판 수용"
 
-  Choose_your_own_route5:0 "뭐 쓰지"
+  Choose_your_own_route5:0 "언론 정치 중립 실현"
 
-  Choose_your_own_route6:0 "뭐 쓰지"
+  Choose_your_own_route6:0 "시민이 원하는 정부"
 
-  Choose_your_own_route7:0 "뭐 쓰지"
+  Choose_your_own_route7:0 "경제 성장의 실천"
 
-  Choose_your_own_route8:0 "뭐 쓰지"
+  Choose_your_own_route8:0 "뒷 새대에 남기는 편지"
 
-  Choose_your_own_route9:0 "뭐 쓰지"
+  Choose_your_own_route9:0 "우리가 원해온 나라"
 
   ###이승만###
   Lee_Seung_man_Elected:0 "이승만 당선"
@@ -190,6 +191,14 @@
 
   ###이범석###
   Lee_Bum_seok_Success:0 "이범석의 기도 성공"
+  long_sword_night:0 "환도의 밤"
+  construction_of_camp:0 "수용소 건설"
+
+  ###외교###
+  foreign_policy_review:0 "외교적 담론 개방"
+  USA_Diplomacy_focus_1:0 "수없이 기다려온 복수"
+  USA_Diplomacy_focus_2:0 "공공의 적"
+  USA_Diplomacy_focus_3:0 "미국 해상 봉쇄"
 
   ###대공황###
   great_depression_aftermath:0 "대공황의 여파"

@@ -217,3 +217,13 @@ KOR_national_assembly_unicameralism_decision:0 "대한민국 국회"
  KOR_Youth_817:0 "전라남도에서의 청년단 모집"
  KOR_Youth_813:0 "충청남도에서의 청년단 모집"
  KOR_Youth_812:0 "충청북도에서의 청년단 모집"
+
+ KOR_training_of_officers_category:0 "장교회 장교 모집"
+ KOR_training_of_officers_category_desc:0 "대한민국의 군사력은 매우 강력해지고 있습니다만, 장교들은 아직도 수없이 부족합니다. 한 명의 장군이 수없이 많은 군대를 통솔하는것은 말그대로 불가능에 가깝습니다. 우리는 전국 각지에서 특출한 청년들을 모아 장교로 훈련 시킬수 있습니다."
+ KOR_appoint_Lee_Hyung_geun:0 "이형근 기용"
+ KOR_Youth_Lee_Hyung_geun:0 "이형근의 성장"
+ KOR_Youth_Lee_Hyung_geun_tt:0 "§Y이형근의 청년장교회, 청년 장교 특성이 사라집니다.§!"
+
+ KOR_appoint_Won_Yong_Duk:0 "원용덕 기용"
+ KOR_Youth_Won_Yong_Duk:0 "원용덕의 성장"
+ KOR_Youth_Won_Yong_Duk_tt:0 "§Y원용덕의 청년장교회, 청년 장교 특성이 사라집니다.§!"

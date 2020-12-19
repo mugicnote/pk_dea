@@ -655,5 +655,65 @@ spriteTypes = {
 		name = "GFX_USA_capitol"
 		texturefile = "gfx/interface/goals/USA_capitol.tga"
 	}
+	SpriteType = {
+		name = "GFX_AST_maintain_ofn"
+		texturefile = "gfx/interface/goals/AST_maintain_ofn.dds"
+	}
+	SpriteType = {
+		name = "GFX_USA_Forwards_Together"
+		texturefile = "gfx/interface/goals/USA_Forwards_Together.dds"
+	}
+	SpriteType = {
+		name = "GFX_USA_GLD_Out-of-Depression"
+		texturefile = "gfx/interface/goals/USA_GLD_Out-of-Depression.dds"
+	}
+	SpriteType = {
+		name = "GFX_Allow_Limited_Press_Liberalization"
+		texturefile = "gfx/interface/goals/Allow_Limited_Press_Liberalization.dds"
+	}
+	SpriteType = {
+		name = "GFX_USA_hands_votes"
+		texturefile = "gfx/interface/goals/USA_hands_votes.dds"
+	}
+	SpriteType = {
+		name = "GFX_WAL_Democracy_is_dead"
+		texturefile = "gfx/interface/goals/WAL_Democracy_is_dead.dds"
+	}
+	SpriteType = {
+		name = "GFX_GENERIC_Press_Liberalization"
+		texturefile = "gfx/interface/goals/GENERIC_Press_Liberalization.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_kim_koo_back_flag"
+		texturefile = "gfx/interface/goals/focus_kim_koo_back_flag.dds"
+	}
+	SpriteType = {
+		name = "GFX_end_of_Depression"
+		texturefile = "gfx/interface/goals/end_of_Depression.dds"
+	}
+	SpriteType = {
+		name = "GFX_USA_Nationwide_Riots"
+		texturefile = "gfx/interface/goals/USA_Nationwide_Riots.dds"
+	}
+	SpriteType = {
+		name = "GFX_ANG_rapid_runways"
+		texturefile = "gfx/interface/goals/ANG_rapid_runways.dds"
+	}
+	SpriteType = {
+		name = "GFX_CHI_Fortune_favors_the_Bold"
+		texturefile = "gfx/interface/goals/CHI_Fortune_favors_the_Bold.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_usa_america_is_on_fire"
+		texturefile = "gfx/interface/goals/focus_usa_america_is_on_fire.dds"
+	}
+	SpriteType = {
+		name = "GFX_USA_Campaign_in_the_North2"
+		texturefile = "gfx/interface/goals/USA_Campaign_in_the_North2.dds"
+	}
+	SpriteType = {
+		name = "GFX_usa_boat_and_statue_of_liberty"
+		texturefile = "gfx/interface/goals/usa_boat_and_statue_of_liberty.dds"
+	}
 
 }

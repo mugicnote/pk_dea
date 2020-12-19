@@ -482,6 +482,142 @@ KOR_Korea_Youth_Corps_category = {
 
 }
 
+KOR_training_of_officers_category = {
+
+	KOR_appoint_Lee_Hyung_geun = {
+		icon = generic_army_support
+		
+		allowed = {
+		    original_tag = KOR
+		}
+		available = { 
+            date > 1941.01.01
+		}
+
+		fire_only_once = yes
+
+		cost = 30
+
+		remove_effect = {
+			set_country_flag = Youth_Lee_Hyung_geun
+			create_corps_commander = {
+				name = "이형근"
+				id = 3002
+				picture = ""
+				traits = { media_personality trait_KOR_Youth_Presbyterian_Church trait_KOR_young_general }
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 1
+			}
+		}
+	}
+
+	KOR_Youth_Lee_Hyung_geun = {
+		icon = generic_army_support
+		
+		allowed = {
+		    original_tag = KOR
+		}
+		visible = { 
+            has_country_flag = Youth_Lee_Hyung_geun
+		}
+		available = { 
+            date > 1951.01.01
+		}
+
+		fire_only_once = yes
+
+		cost = 30
+
+		remove_effect = {
+			custom_effect_tooltip = KOR_Youth_Lee_Hyung_geun_tt
+			hidden_effect = {
+				clr_country_flag = Youth_Lee_Hyung_geun
+				remove_unit_leader = 3002
+				create_corps_commander = {
+					name = "이형근"
+					picture = ""
+					traits = {  }
+					skill = 2
+					attack_skill = 2
+					defense_skill = 2
+					planning_skill = 2
+					logistics_skill = 2
+				}
+			}
+		}
+	}
+
+	KOR_appoint_Won_Yong_Duk = {
+		icon = generic_army_support
+		
+		allowed = {
+		    original_tag = KOR
+		}
+		available = { 
+            date > 1929.01.01
+		}
+
+		fire_only_once = yes
+
+		cost = 30
+
+		remove_effect = {
+			set_country_flag = Youth_Won_Yong_Duk
+			create_corps_commander = {
+				name = "원용덕"
+				id = 3003
+				picture = ""
+				traits = { media_personality trait_KOR_Youth_Presbyterian_Church trait_KOR_young_general }
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 1
+			}
+		}
+	}
+
+	KOR_Youth_Won_Yong_Duk = {
+		icon = generic_army_support
+		
+		allowed = {
+		    original_tag = KOR
+		}
+		visible = { 
+            has_country_flag = Youth_Won_Yong_Duk
+		}
+		available = { 
+            date > 1939.01.01
+		}
+
+		fire_only_once = yes
+
+		cost = 30
+
+		remove_effect = {
+			custom_effect_tooltip = KOR_Youth_Won_Yong_Duk_tt
+			hidden_effect = {
+				clr_country_flag = Youth_Won_Yong_Duk
+				remove_unit_leader = 3003
+				create_corps_commander = {
+					name = "원용덕"
+					picture = ""
+					traits = {  }
+					skill = 2
+					attack_skill = 2
+					defense_skill = 2
+					planning_skill = 2
+					logistics_skill = 2
+				}
+			}
+		}
+	}
+	
+}
+
 
 @KOR_HUNT_BANDITS_EQUIPMENT_COST_TRIGGER = 499
 @KOR_HUNT_BANDITS_EQUIPMENT_COST_EFFECT = -500
