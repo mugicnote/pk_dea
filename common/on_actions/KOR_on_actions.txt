@@ -20,6 +20,14 @@ on_actions = {
 				days = 1800
 			}
 		}
+		if = {
+			limit = { has_country_flag = forth_election }
+			set_cosmetic_tag = KOR_SECOND
+		}
+		if = {
+			limit = { has_country_flag = fifth_election }
+			set_cosmetic_tag = KOR_THIRD
+		}
 		set_country_flag = KOR_northern_bandits
 		set_country_flag = KOR_eastern_bandits
 		set_country_flag = KOR_western_bandits

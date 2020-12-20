@@ -1097,4 +1097,6 @@ opinion_modifiers = {
 	JAP_opnion_USA = { value = 100 }
 
 	USA_opnion_JAP = { value = 100 }
+
+	Kor_Harbin_Talks_fail = { value = -40 }
 }

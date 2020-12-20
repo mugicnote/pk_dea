@@ -32,16 +32,43 @@ country_event = { #
 			has_country_flag = forth_election
 		}
 	}
+
+	title = {
+		text = KOR.1.t.6th_election
+		trigger = {
+			has_country_flag = fifth_election
+		}
+	}
+	desc = {
+		text = KOR.1.desc.6th_election
+		trigger = {
+			has_country_flag = fifth_election
+		}
+	}
 	
 	option = { #여운형
 		name = KOR.1.a
 		ai_chance = { factor = 1 }
 		complete_national_focus = Yeo_Un_hyung_Elected
+		if = { 
+			limit = { 
+				has_country_flag = forth_election
+			}
+		set_country_flag = fifth_election
+		clr_country_flag = forth_election
+		}
 	}
 	option = { #김구
 		name = KOR.1.b
 		ai_chance = { factor = 1 }
 		complete_national_focus = Kim_Gu_Elected
+		if = { 
+			limit = { 
+				has_country_flag = forth_election
+			}
+		set_country_flag = fifth_election
+		clr_country_flag = forth_election
+		}
 	}
 	option = { #이승만
 		name = KOR.1.c
@@ -49,6 +76,13 @@ country_event = { #
 		complete_national_focus = Lee_Seung_man_Elected
 		trigger = {
 			NOT = { has_country_flag = Seung_man_end }
+		}
+		if = { 
+			limit = { 
+				has_country_flag = forth_election
+			}
+		set_country_flag = fifth_election
+		clr_country_flag = forth_election
 		}
 	}
 	option = { #제 4의 인물
@@ -3896,5 +3930,143 @@ country_event = { #
 				days = 5
 			}
 		}
+	}
+}
+
+country_event = { #
+	id = KOR.87
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.87"}
+	title = KOR.87.t
+	desc = KOR.87.desc
+	picture = GFX_NAREISION
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #합병
+		name = KOR.87.a
+		ai_chance = { factor = 100 }
+		KOR = {
+			country_event = { hours = 2 id = KOR.88 }
+		}
+		custom_effect_tooltip = GAME_OVER_TT
+	}
+	option = { #반대
+		name = KOR.87.b
+		ai_chance = { factor = 1 }
+		KOR = {
+			add_opinion_modifier = { target = ROOT modifier = Kor_Harbin_Talks_fail }
+			country_event = { hours = 2 id = germany.29 }
+			if = { limit = { is_in_faction_with = MAN }
+				remove_from_faction = MAN
+			}
+		}
+	}
+
+}
+
+country_event = {
+	id = KOR.88
+	title = KOR.88.t
+	desc = KOR.88.desc
+	picture = GFX
+	
+	is_triggered_only = yes
+	
+ 	immediate = {
+ 		hidden_effect = {
+ 			add_named_threat = { threat = 5 name = KOR.88.t_ok }
+ 		} 		
+ 	}
+
+	option = {
+		name = KOR.88.a
+	hidden_effect = {
+		716 = {
+			if = {
+				limit = { is_owned_by = MAN }
+				add_core_of = KOR
+			}
+		}
+		328 = {
+			if = {
+				limit = { is_owned_by = MAN }
+				add_core_of = KOR
+			}
+		}
+		717 = {
+			if = {
+				limit = { is_owned_by = MAN }
+				add_core_of = KOR
+			}
+		}
+
+		set_state_owner = 716
+		set_state_controller = 716
+		set_state_owner = 328
+		set_state_controller = 328
+		set_state_owner = 717
+		set_state_controller = 717
+
+		MAN = {
+			remove_state_core = 716
+			remove_state_core = 328
+			remove_state_core = 717
+			remove_state_core = 745
+			set_politics = {
+				ruling_party = neutrality
+			}
+			set_popularities = {
+				neutrality = 100
+			}
+		}
+	}
+	custom_effect_tooltip = KOR.88_tt
+		puppet = MAN
+		add_political_power = 50
+		add_war_support = 0.05
+
+		hidden_effect = {
+			news_event = { hours = 6 id = KOR.89 }
+		}
+	}
+}
+
+news_event = {
+	id = KOR.89
+	title = KOR.89.t
+	desc = KOR.89.desc
+	picture = GFX
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = KOR.89.a
+		trigger = {
+			NOT = {
+				TAG = KOR
+				TAG = USA
+				TAG = JAP
+				TAG = CHI
+			}
+		}
+	}
+	option = {
+		name = KOR.89.b
+		trigger = { TAG = USA }
+	}
+	option = {
+		name = KOR.89.c
+		trigger = { TAG = JAP }
+	}
+	option = {
+		name = KOR.89.d
+		trigger = { TAG = CHI }
+	}
+	option = {
+		name = KOR.89.e
+		trigger = { TAG = KOR }
 	}
 }

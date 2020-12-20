@@ -715,5 +715,9 @@ spriteTypes = {
 		name = "GFX_usa_boat_and_statue_of_liberty"
 		texturefile = "gfx/interface/goals/usa_boat_and_statue_of_liberty.dds"
 	}
+	SpriteType = {
+		name = "GFX_Generic_Liberty_Handshake"
+		texturefile = "gfx/interface/goals/Generic_Liberty_Handshake.dds"
+	}
 
 }

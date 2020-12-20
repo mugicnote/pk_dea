@@ -2565,10 +2565,67 @@
 
 		}
 		completion_reward = {
-
+			add_named_threat = { threat = 3 name = foreign_policy_review }
 		}
 		x = 90
 		y = 12
+	}
+
+	focus = {
+		id = Kor_Harbin_Talks
+		icon = GFX_Generic_Liberty_Handshake
+		cost = 10.00
+		prerequisite = {
+			focus = foreign_policy_review
+		}
+		available = {
+			is_puppet = no
+		}
+		cancel = {
+			OR = {
+				is_subject = yes
+				has_war_with = MAN
+			}
+		}
+		bypass = {
+			OR = {
+				MAN = {
+					OR = {
+						is_subject = yes
+						exists = no 
+						AND = {
+							is_in_faction = yes
+							NOT = { is_in_faction_with = KOR }
+						}
+					}
+				}
+				KOR = {
+					owns_state = 716
+					owns_state = 328
+					owns_state = 717
+				}
+			}
+		}
+		cancel_if_invalid = no
+		completion_reward = {
+			army_experience = 10
+			add_named_threat = { threat = 5 name = Kor_Harbin_Talks }
+			716 = {
+                add_core_of = KOR
+			}
+			328 = {
+                add_core_of = KOR
+			}
+			717 = {
+                add_core_of = KOR
+			}
+			MAN = {
+				country_event = KOR.87
+			}
+			custom_effect_tooltip = Kor_Harbin_Talks_tt
+		}
+		x = 90
+		y = 13
 	}
 
 	focus = {

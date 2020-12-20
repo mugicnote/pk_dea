@@ -196,6 +196,8 @@
 
   ###외교###
   foreign_policy_review:0 "외교적 담론 개방"
+  Kor_Harbin_Talks:0 "하얼빈 회담 개최"
+  Kor_Harbin_Talks_tt:0 "\n우리는 하얼빈에서 봉천 군벌과 회담을 개최하여, 평화적 회담을 가지며 대전쟁 이전과 같은 §Y만주의 재통일§!을 제안할것입니다.\n"
   USA_Diplomacy_focus_1:0 "수없이 기다려온 복수"
   USA_Diplomacy_focus_2:0 "공공의 적"
   USA_Diplomacy_focus_3:0 "미국 해상 봉쇄"
