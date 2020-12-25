@@ -1,7 +1,7 @@
 state = {
 	id = 811
 	name = "STATE_811" #황해도
-	manpower = 1640000
+	manpower = 3280000
 
 	state_category = town
 	

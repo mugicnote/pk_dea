@@ -65,19 +65,19 @@ SPD = {
 	has_country_flag = SPR_republican_spain_flag
 }
 
-AKR = {
-	original_tag = KOR
-	has_country_flag = KOR_korea_flag
-}
-
-FKR = {
-	original_tag = KOR
-	has_country_flag = FKR_korea_flag
-}
-
 VIC = {
 	original_tag = FRA
 	has_focus_tree = vichy_french_focus
+}
+
+BUZ = {
+	original_tag = BUL
+	has_country_flag = BUL_zveno_bulgaria_flag
+}
+
+BUF = {
+	original_tag = BUL
+	has_country_flag = BUL_fatherland_front_flag
 }
 
 # operative operation target
@@ -87,3 +87,13 @@ MOT = {
 	variable = generic_operation_target
 }
 
+
+AKR = {
+	original_tag = KOR
+	has_country_flag = KOR_korea_flag
+}
+
+FKR = {
+	original_tag = KOR
+	has_country_flag = FKR_korea_flag
+}

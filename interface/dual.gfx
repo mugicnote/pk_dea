@@ -9,8 +9,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/cabinet_button.dds"
 	}
 	spriteType = {
-		name = "GFX_Portrait_Germany_Walter_Model"
-		texturefile = "gfx/interface/Portrait_Germany_Walter_Model.dds"
+		name = "GFX_KOR_democratic"
+		texturefile = "gfx/flags/KOR_democratic.tga"
 	}
 	spriteType = {
 		name = "GFX_Portrait_Syngman_Rhee"

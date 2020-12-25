@@ -152,4 +152,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/Sichuan_milita.dds"
 	}
 
+	spriteType = {
+		name = "GFX_idea_kor_conscription"
+		texturefile = "gfx/interface/ideas/idea_kor_conscription.dds"
+	}
+
 }

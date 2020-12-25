@@ -28,6 +28,9 @@ bookmarks = {
 			}
 		}
 
+		"KOR" = { history = "" }
+		"KOR" = { history = "" }
+
 		"KOR"={
 			history = "KOR_GATHERING_STORM_DESC"
 			ideology = democratic
@@ -41,6 +44,23 @@ bookmarks = {
 				Kim_Gu_Elected
 				Lee_Seung-man_Elected
 			}			
+		}
+
+		"KOR" = { history = "" }
+		"KOR" = { history = "" }
+
+		"SOV"={
+			history = "SOV_GATHERING_STORM_DESC"
+			ideology = communism
+			ideas = {
+				trotskyite_plot
+				home_of_revolution
+			}
+			focuses = {
+				SOV_great_purge
+				SOV_claims_on_baltic
+				SOV_war_with_uk
+			}	
 		}
 
 		"KOR" = { history = "" }
@@ -62,43 +82,164 @@ bookmarks = {
 			}
 		}
 
-		"ENG"={
-			history = "ENG_GATHERING_STORM_DESC"
-			ideology = democratic
-			available = { has_dlc = "Man the Guns" }
-			ideas = {
-				stiff_upper_lip
-				ENG_the_war_to_end_all_wars
-				george_v
-			}
-			focuses = {
-				ENG_imperial_federation
-				ENG_the_kings_party
-				ENG_organize_the_blackshirts
-			}
-		}
-
 	#### MAJORS ####
 
 	#### MINORS ####
 		### ROW 1 ###
-			# Buffer
-			"KOR" = { minor = yes history = "" }
-
 			## OFN ##
-				"KOR" = {
-					minor = yes
-					history = ""
+			"FRA"={
+				minor = yes
+				history = "FRA_GATHERING_STORM_DESC"
+				ideology = democratic
+				available = { has_dlc = "La Resistance" } 
+				ideas = {
+					FRA_victors_of_wwi
+					FRA_disjointed_government
+					FRA_protected_by_the_maginot_line
 				}
-				
-				"JAP"={
-					minor = yes
-					history = "JAP_GATHERING_STORM_DESC"
-					ideology = democratic
-					ideas = {
-					}	
-					focuses = {
-					}			
-		}	
+				focuses = {
+					FRA_invite_communist_ministers
+					FRA_utilize_the_leagues
+					FRA_je_suis_la_deluge
+				}
+			}
+
+			"ENG"={
+				minor = yes
+				history = "ENG_GATHERING_STORM_DESC"
+				ideology = democratic
+				available = { has_dlc = "Man the Guns" }
+				ideas = {
+					stiff_upper_lip
+					ENG_the_war_to_end_all_wars
+					george_v
+				}
+				focuses = {
+					ENG_imperial_federation
+					ENG_the_kings_party
+					ENG_organize_the_blackshirts
+				}
+			}
+
+			"HOL"={
+				minor = yes
+				history = "NETHERLANDS_GATHERING_STORM_DESC"
+				ideology = democratic
+				ideas = {
+					HOL_wilhelmina
+					HOL_shell_shocked_spectator_5
+					HOL_de_crisisjaren_5
+				}
+				focuses = {
+					HOL_continue_the_war_in_batavia
+					HOL_liberation
+					HOL_prepare_the_inundation_lines
+				}
+			}
+
+			"GXC"={
+				minor = yes
+				history = "SIA_GATHERING_STORM_DESC"
+				ideology = neutrality
+				ideas = {
+				}	
+				focuses = {
+				}			
+			}
+			
+			"JAP"={
+				minor = yes
+				history = "JAP_GATHERING_STORM_DESC"
+				ideology = democratic
+				ideas = {
+				}	
+				focuses = {
+				}			
+			}
+
+			"MAN"={
+				minor = yes
+				history = "MAN_GATHERING_STORM_DESC"
+				ideology = neutrality
+				ideas = {
+				}	
+				focuses = {
+				}			
+			}
+
+			"SSK"={
+				minor = yes
+				history = "SSK_GATHERING_STORM_DESC"
+				ideology = social_liberalism
+				ideas = {
+				}	
+				focuses = {
+				}			
+			}
+
+			"CHI"={
+				minor = yes
+				history = "CHI_GATHERING_STORM_DESC"
+				ideology = neutrality
+				ideas = {
+				}	
+				focuses = {
+				}			
+			}
+
+			"SHX"={
+				minor = yes
+				history = "SHX_GATHERING_STORM_DESC"
+				ideology = neutrality
+				ideas = {
+				}	
+				focuses = {
+				}			
+			}
+
+			"ITA"={
+				minor = yes
+				history = "ITA_GATHERING_STORM_DESC"
+				ideology = fascism
+				ideas = {
+					vittoria_mutilata
+					victor_emmanuel
+				}	
+				focuses = {
+					ITA_pact_of_steel
+					ITA_spanish_italian_faction
+					ITA_italy_first
+				}		
+			}
+
+			"HUN"={
+				minor = yes
+				history = "HUN_GATHERING_STORM_DESC"
+				ideology = neutrality
+				ideas = {
+					HUN_treaty_of_triannon
+				}
+				focuses = {
+					HUN_proclaim_the_restoration_of_austria_hungary
+					HUN_secret_rearmament
+					HUN_renounce_the_treaty_of_trianon
+				}
+			}
+
+			"BUL"={
+				minor = yes
+				history = "BUL_GATHERING_STORM_DESC"
+				ideology = neutrality
+				ideas = {
+					BUL_second_national_catastrophe
+					BUL_army_restrictions
+					BUL_imro_01
+				}
+				focuses = {
+					BUL_the_fatherland_front
+					BUL_restore_the_bulgarian_patriarchate
+					BUL_prussia_of_the_balkans
+				}
+			}
 	}
 }

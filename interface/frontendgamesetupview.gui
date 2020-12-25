@@ -667,42 +667,149 @@ guiTypes = {
 
 		containerWindowType = {
 			name ="countries"
-			position = { x = 15 y = 45 }
+			position = { x = 15 y = 41 }
 			size = { width = -15 height = 120}
-
+			
 			gridboxType = {
 				name ="countries_grid"
-				position = { x = 82 y = 0 }
+				position = { x = 80 y = 0 }
 				size = { width = 100% height = 100% }
-				slotsize = { width = 180 height = 0 }
+				slotsize = { width = 100 height = 0 }
 				add_horizontal = yes
 				max_slots_vertical = 1
 				format = "UPPER_LEFT"
 			}
 
+			iconType = {
+				name = "countries_flag_overlay_1"
+				spriteType ="GFX_tno_menu_screen_flag_overlay"
+				position = { x = 106 y = 23 }
+				Orientation = "UPPER_LEFT"
+			}
+			
+			iconType ={
+				name ="large_flag_frame_1"
+				spriteType = "GFX_large_flag_frame_menu"
+				position = { x= 101 y = 21 }
+				Orientation = "UPPER_LEFT"
+				allwaystransparent = yes
+			}
+			
+			iconType = {
+				name = "countries_flag_overlay_2"
+				spriteType ="GFX_tno_menu_screen_flag_overlay"
+				position = { x = 406 y = 23 }
+				Orientation = "UPPER_LEFT"
+			}
+			
+			iconType ={
+				name ="large_flag_frame_2"
+				spriteType = "GFX_large_flag_frame_menu"
+				position = { x= 401 y = 21 }
+				Orientation = "UPPER_LEFT"
+				allwaystransparent = yes
+			}
+			
+			iconType = {
+				name = "countries_flag_overlay_3"
+				spriteType ="GFX_tno_menu_screen_flag_overlay"
+				position = { x = 706 y = 23 }
+				Orientation = "UPPER_LEFT"
+			}
+			
+			iconType ={
+				name ="large_flag_frame_3"
+				spriteType = "GFX_large_flag_frame_menu"
+				position = { x= 701 y = 21 }
+				Orientation = "UPPER_LEFT"
+				allwaystransparent = yes
+			}
+			
+			iconType = {
+				name = "countries_flag_overlay_4"
+				spriteType ="GFX_tno_menu_screen_flag_overlay"
+				position = { x = 1006 y = 23 }
+				Orientation = "UPPER_LEFT"
+			}
+			
+			iconType ={
+				name ="large_flag_frame_4"
+				spriteType = "GFX_large_flag_frame_menu"
+				position = { x= 1001 y = 21 }
+				Orientation = "UPPER_LEFT"
+				allwaystransparent = yes
+			}
+			
+			#iconType = {
+			#	name = "countries_flag_overlay_6"
+			#	spriteType ="GFX_tno_menu_screen_flag_overlay"
+			#	position = { x = 1106 y = 23 }
+			#	Orientation = "UPPER_LEFT"
+			#}
+			
+			#iconType ={
+			#	name ="large_flag_frame_6"
+			#	spriteType = "GFX_large_flag_frame_menu"
+			#	position = { x= 1101 y = 21 }
+			#	Orientation = "UPPER_LEFT"
+			#	allwaystransparent = yes
+			#}
+			
 			#used for covering blank countries. increase by x = 100 per slot.
 			iconType = {
 				name ="dud_countries_overlay_1"
 				spriteType = "GFX_flag_blank_82_52"
-				position = { x = 206 y = 50 }
+				position = { x= 206 y = 21 }
 			}
+			
+			iconType = {
+				name ="dud_countries_overlay_2"
+				spriteType = "GFX_flag_blank_82_52"
+				position = { x= 306 y = 21 }
+			}
+			
+			iconType = {
+				name ="dud_countries_overlay_3"
+				spriteType = "GFX_flag_blank_82_52"
+				position = { x= 506 y = 21 }
+			}
+			
+			iconType = {
+				name ="dud_countries_overlay_4"
+				spriteType = "GFX_flag_blank_82_52"
+				position = { x= 606 y = 21 }
+			}
+			
+			iconType = {
+				name ="dud_countries_overlay_5"
+				spriteType = "GFX_flag_blank_82_52"
+				position = { x= 806 y = 21 }
+			}
+			
+			iconType = {
+				name ="dud_countries_overlay_6"
+				spriteType = "GFX_flag_blank_82_52"
+				position = { x= 906 y = 21 }
+			}
+			
 		}
-		#Minor countries section
+		#Minor countries section	
 		containerWindowType = {
 			name ="countries_medium"
-			position = { x = 14 y = 285 }
+			position = { x = 2 y = 281 }
 			size = { width = -15 height = 120}
-
+			
 			gridboxType = {
 				name ="countries_grid"
-				position = { x = 0 y = 0 }
+				position = { x = 36 y = 85 }
 				size = { width = 100% height = 100% }
-				slotsize = { width = 60 height = 40 }
+				slotsize = { width = 101 height = 40 } #should be 302 to perfectly center the flags
 				add_horizontal = yes
 				max_slots_horizontal = 20
 				max_slots_vertical = 3
 				format = "UPPER_LEFT"
 			}
+			
 			#used for covering blank minor countries. increase by x = 60 per slot.
 			#iconType = {
 			#	name ="dud_countries_minor_overlay_1"
@@ -713,187 +820,39 @@ guiTypes = {
 
 		containerWindowType = {
 			name ="countries_mini"
-			position = { x = 14 y = 285 }
+			position = { x = 14 y = 331 }
 			size = { width = -15 height = 120}
 
 			gridboxType = {
 				name ="countries_grid"
-				position = { x = 2 y = 0 }
+				position = { x = 26 y = 35 }
 				size = { width = 100% height = 100% }
-				slotsize = { width = 60 height = 40 }
+				slotsize = { width = 99 height = 40 }
 				add_horizontal = yes
-				max_slots_horizontal = 20
-				max_slots_vertical = 3
+				max_slots_horizontal = 12
+				max_slots_vertical = 4
 				format = "UPPER_LEFT"
 			}
 
-			#iconType = {
-			#	name ="country_selection_minor_entry_cover"
-			#	spriteType = "GFX_country_selection_minor_entry_cover"
-			#	position = { x= -14 y = -285 }
-			#}
-
-			#iconType = {
-			#	name ="dud_countries_overlay_mini_1"
-			#	spriteType = "GFX_flag_blank_60_46"
-			#	position = { x= -2 y = 0 }
-			#}
-		}
-
-		### Covers
-		# Covers the many Anarchy starting menu entries to make everything look purdier : )
-
-		# Visual Cover
-		iconType = {
-			name = "countries_cover"
-			position = { x = 2 y = 37 }
-			spriteType = "GFX_countries_cover"
-			alwaystransparent = yes
-		}
-
-		## Clickability Covers
-		# Edges
-		iconType = {
-			name = "countries_clickcover_edge_left_1"
-			position = { x = 7 y = 278 }
-			spriteType = "GFX_country_selection_clickcover_edge"
-		}
-		
-		iconType = {
-			name = "countries_clickcover_edge_left_2"
-			position = { x = 27 y = 278 }
-			spriteType = "GFX_country_selection_clickcover_edge"
+			iconType = {
+				name ="country_selection_minor_entry_cover"
+				spriteType = "GFX_country_selection_minor_entry_cover"
+				position = { x = -7 y = -331 }
+			}
 		}
 
 		iconType = {
-			name = "countries_clickcover_edge_left_3"
-			position = { x = 7 y = 298 }
-			spriteType = "GFX_country_selection_clickcover_edge"
-		}
-		
-		iconType = {
-			name = "countries_clickcover_edge_left_4"
-			position = { x = 27 y = 298 }
-			spriteType = "GFX_country_selection_clickcover_edge"
+			name = "minor_country_leader"
+			quadTextureSprite ="GFX_leader_unknown"
+			position = { x = 289 y = 473 }
+			scale=0.696
+			rotation=-0.04
 		}
 
 		iconType = {
-			name = "countries_clickcover_edge_right_1"
-			position = { x = 1152 y = 278 }
-			spriteType = "GFX_country_selection_clickcover_edge"
-		}
-		
-		iconType = {
-			name = "countries_clickcover_edge_right_2"
-			position = { x = 1167 y = 278 }
-			spriteType = "GFX_country_selection_clickcover_edge"
-		}
-
-		iconType = {
-			name = "countries_clickcover_edge_right_3"
-			position = { x = 1152 y = 298 }
-			spriteType = "GFX_country_selection_clickcover_edge"
-		}
-		
-		iconType = {
-			name = "countries_clickcover_edge_right_4"
-			position = { x = 1167 y = 298 }
-			spriteType = "GFX_country_selection_clickcover_edge"
-		}
-
-		# OFN
-		iconType = {
-			name = "countries_clickcover_ofn_1_1_entry"
-			position = { x = 75 y = 284 }
-			spriteType = "GFX_country_selection_clickcover_singleentry"		
-		}
-
-		iconType = {
-			name = "countries_clickcover_ofn_1_3_entry"
-			position = { x = 195 y = 284 }
-			spriteType = "GFX_country_selection_clickcover_singleentry"		
-		}
-
-		iconType = {
-			name = "countries_clickcover_ofn_2rows_1"
-			position = { x = 987 y = 324 }
-			spriteType = "GFX_country_selection_clickcover_2rows"
-		}
-		
-		iconType = {
-			name = "countries_clickcover_ofn_2rows_2"
-			position = { x = 967 y = 324 }
-			spriteType = "GFX_country_selection_clickcover_2rows"
-		}
-
-		# Pakt
-		iconType = {
-			name = "countries_clickcover_pakt_3_1_entry"
-			position = { x = 247 y = 364 }
-			spriteType = "GFX_country_selection_clickcover_singleentry"
-		}
-		
-		iconType = {
-			name = "countries_clickcover_pakt_3_1_mid_entry"
-			position = { x = 257 y = 364 }
-			spriteType = "GFX_country_selection_clickcover_singleentry"
-		}
-		
-		iconType = {
-			name = "countries_clickcover_pakt_3_2_mid_entry"
-			position = { x = 373 y = 364 }
-			spriteType = "GFX_country_selection_clickcover_singleentry"
-		}
-		
-		iconType = {
-			name = "countries_clickcover_pakt_3_3_entry"
-			position = { x = 377 y = 364 }
-			spriteType = "GFX_country_selection_clickcover_singleentry"
-		}
-
-		# Russia
-		iconType = {
-			name = "countries_clickcover_russia_bigboys"
-			position = { x = 438 y = 53 }
-			spriteType = "GFX_country_selection_clickcover_bigboys"		
-		}
-
-		iconType = {
-			name = "countries_clickcover_russia_3_1_entry"
-			position = { x = 436 y = 364 }
-			spriteType = "GFX_country_selection_clickcover_singleentry"		
-		}
-
-		iconType = {
-			name = "countries_clickcover_russia_3_6_entry"
-			position = { x = 736 y = 364 }
-			spriteType = "GFX_country_selection_clickcover_singleentry"		
-		}
-
-		# Sphere
-		iconType = {
-			name = "countries_clickcover_sphere_1"
-			position = { x = 795 y = 324 }
-			spriteType = "GFX_country_selection_clickcover_2rows"
-		}
-		
-		iconType = {
-			name = "countries_clickcover_sphere_2"
-			position = { x = 807 y = 324 }
-			spriteType = "GFX_country_selection_clickcover_2rows"
-		}
-
-		# Triumvirate
-		iconType = {
-			name = "countries_clickcover_triumvirate_1"
-			position = { x = 67 y = 324 }
-			spriteType = "GFX_country_selection_clickcover_2rows"
-		}
-		
-		iconType = {
-			name = "countries_clickcover_triumvirate_2"
-			position = { x = 82 y = 324 }
-			spriteType = "GFX_country_selection_clickcover_2rows"
+			name ="minor_portrait_overlay"
+			spriteType = "GFX_minor_portrait_overlay"
+			position = { x= 280 y = 462 }
 		}
 
 		## Info
@@ -1218,7 +1177,7 @@ guiTypes = {
 			instantTextBoxType = {
 				name = "leader_label"
 				position = { x = 0 y = 0 }
-				font = "hoi_20bs"
+				font = "aldrich_20_outline"
 				borderSize = {x = 0 y = 0}
 				text = "LEADER"
 				maxWidth = 340
@@ -1228,7 +1187,7 @@ guiTypes = {
 			instantTextBoxType = {
 				name = "leader"
 				position = { x = 60 y = 0 }
-				font = "hoi_20bs"
+				font = "aldrich_20_outline"
 				borderSize = {x = 0 y = 0}
 				maxWidth = 340
 				format = right
@@ -1237,7 +1196,7 @@ guiTypes = {
 			instantTextBoxType = {
 				name = "ideology_label"
 				position = { x = 0 y = 24 }
-				font = "hoi_20bs"
+				font = "aldrich_20_outline"
 				borderSize = {x = 0 y = 0}
 				text = "IDEOLOGY"
 				maxWidth = 340
@@ -1247,7 +1206,7 @@ guiTypes = {
 			instantTextBoxType = {
 				name = "ideology"
 				position = { x = 60 y = 24 }
-				font = "hoi_20bs"
+				font = "aldrich_20_outline"
 				borderSize = {x = 0 y = 0}
 				maxWidth = 340
 				format = right
@@ -1256,7 +1215,7 @@ guiTypes = {
 			instantTextBoxType = {
 				name = "government_label"
 				position = { x = 0 y = 48 }
-				font = "hoi_20bs"
+				font = "aldrich_20_outline"
 				borderSize = {x = 0 y = 0}
 				text = "GOVERNMENT"
 				maxWidth = 340
@@ -1267,7 +1226,7 @@ guiTypes = {
 				name = "government"
 				position = { x = 60 y = 48 }
 				textureFile = ""
-				font = "hoi_20bs"
+				font = "aldrich_20_outline"
 				borderSize = {x = 0 y = 0}
 				maxWidth = 340
 				format = right
@@ -1277,7 +1236,7 @@ guiTypes = {
 				name = "elections_label"
 				position = { x = 0 y = 72 }
 				textureFile = ""
-				font = "hoi_20bs"
+				font = "aldrich_20_outline"
 				borderSize = {x = 0 y = 0}
 				text = "POLITICS_NEXTELECTION"
 				maxWidth = 340
@@ -1288,7 +1247,7 @@ guiTypes = {
 				name = "elections"
 				position = { x = 60 y = 72 }
 				textureFile = ""
-				font = "hoi_20bs"
+				font = "aldrich_20_outline"
 				borderSize = {x = 0 y = 0}
 				maxWidth = 340
 				format = right
@@ -1298,7 +1257,7 @@ guiTypes = {
 				name = "party_label"
 				position = { x = 0 y = 96 }
 				textureFile = ""
-				font = "hoi_20bs"
+				font = "aldrich_20_outline"
 				borderSize = {x = 0 y = 0}
 				text = "RULING_PARTY"
 				maxWidth = 340
@@ -1309,7 +1268,7 @@ guiTypes = {
 				name = "party"
 				position = { x = 130 y = 96 }
 				textureFile = ""
-				font = "hoi_20bs"
+				font = "aldrich_20_outline"
 				borderSize = {x = 0 y = 0}
 				maxWidth = 270
 				maxHeight = 20

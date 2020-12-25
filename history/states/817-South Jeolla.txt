@@ -1,7 +1,7 @@
 state = {
 	id = 817
 	name = "STATE_817" #전라남도
-	manpower = 2417000
+	manpower = 4834000
 
 	state_category = large_town	
 	

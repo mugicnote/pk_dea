@@ -1,6 +1,7 @@
 ﻿l_english:
 
 ###국민정신###
+kor_conscription:0 "국방의 의무"
 unstable_security:0 "붕괴된 치안"
 unstable_security_desc:0 "경찰들이 무능한 정부의 허점을 노려 자신들의 지위를 치안유지가 아닌 사리사욕을 위해 사용하고 있으며, 정치· 경제적 혼란에서 비롯된 극단주의 테러와 시위까지 겹쳐 한국의 치안은 붕괴되고 말았습니다. 뼈를 깎는 개혁이 아니면 이 문제는 해결될 기미조차 보이지 않을 것입니다."
 KOR_great_depression:0 "대공황"
@@ -80,6 +81,8 @@ KOR_ele:0 "조선 전자공업 발전회"
 Kim_Hak_kyu:0 "김학규"
 
 Yu_Dong_yeal:0 "유동열"
+
+KOR_safety_public:0 "대외 내전 지원 정책"
 
 ###전차전차전차설계설계설계사아과제하기귀찮다###
 KOR_kia:0 "경성정공"

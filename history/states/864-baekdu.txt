@@ -1,0 +1,16 @@
+state={
+	id=864
+	name="STATE_864"
+	provinces={
+		800 861 9841 11781 11823 
+	}
+
+	history={
+		owner = MAN
+		add_core_of = MAN
+		buildings = {
+	}
+
+	manpower=0
+	buildings_max_level_factor=1.000
+}

@@ -1,7 +1,7 @@
 state = {
 	id = 812
 	name = "STATE_812" #충청북도
-	manpower = 907100
+	manpower = 1814200
 
 	state_category = large_town
 	

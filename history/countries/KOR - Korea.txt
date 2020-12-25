@@ -93,6 +93,7 @@ set_convoys = 30
 
 #국민정신
 add_ideas = {
+kor_conscription
 unstable_security
 KOR_great_depression
 huge_government_bond

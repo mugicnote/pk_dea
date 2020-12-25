@@ -1639,50 +1639,42 @@
 			create_corps_commander = {
 				name = "정일권"
 				picture = "Portrait_Chung_Il_kwon.dds"
-				traits = {
-
-				}
-				skill = 2
-				attack_skill = 2
-				defense_skill = 2
-				planning_skill = 2
-				logistics_skill = 2
+				traits = { media_personality trait_KOR_Youth_Presbyterian_Church trait_KOR_young_general }
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 1
 			}
 			create_corps_commander = {
 				name = "송요찬"
-				picture = ".dds"
-				traits = {
-
-				}
-				skill = 2
-				attack_skill = 2
-				defense_skill = 2
-				planning_skill = 2
-				logistics_skill = 2
+				picture = "Portrait_Song_Yo_chan.dds"
+				traits = { media_personality trait_KOR_Youth_Presbyterian_Church trait_KOR_young_general }
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 1
 			}
 			create_corps_commander = {
 				name = "최덕신"
-				picture = ".dds"
-				traits = {
-
-				}
-				skill = 2
-				attack_skill = 2
-				defense_skill = 2
-				planning_skill = 2
-				logistics_skill = 2
+				picture = "Portrait_Choi_Deok_Shin.dds"
+				traits = { media_personality trait_KOR_Youth_Presbyterian_Church trait_KOR_young_general }
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 1
 			}
 			create_corps_commander = {
 				name = "박정희"
 				picture = "Portrait_Park_Chung_hee.dds"
-				traits = {
-
-				}
-				skill = 2
-				attack_skill = 2
-				defense_skill = 2
-				planning_skill = 2
-				logistics_skill = 2
+				traits = { media_personality trait_KOR_Youth_Presbyterian_Church trait_KOR_young_general }
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 1
 			}
 			custom_effect_tooltip = school_protection_group_2_tt
 		}
@@ -2629,6 +2621,23 @@
 	}
 
 	focus = {
+		id = safety_public
+		icon = GFX_Generic_Liberty_Handshake
+		cost = 10.00
+		prerequisite = {
+			focus = foreign_policy_review
+		}
+
+		cancel_if_invalid = no
+		completion_reward = {
+			set_rule = { can_send_volunteers = yes }
+			add_ideas = KOR_safety_public
+		}
+		x = 92
+		y = 13
+	}
+
+	focus = {
 		id = USA_Diplomacy_focus_1
 		icon = GFX_focus_usa_america_is_on_fire
 		cost = 10.00
@@ -2639,7 +2648,7 @@
 
 		}
 		x = 88
-		y = 15
+		y = 18
 	}
 
 	focus = {
@@ -2653,7 +2662,7 @@
 
 		}
 		x = 90
-		y = 15
+		y = 18
 	}
 
 	focus = {
@@ -2667,7 +2676,7 @@
 
 		}
 		x = 92
-		y = 15
+		y = 18
 	}
 
 	focus = {

@@ -1,0 +1,17 @@
+state={
+	id=863
+	name="STATE_863"
+	provinces={
+		945 3949 3970 6860 6981 9759 9803 9848 
+	}
+	history={
+		owner = MAN
+		add_core_of = MAN
+		buildings = {
+		}
+
+	}
+
+	manpower=0
+	buildings_max_level_factor=1.000
+}
