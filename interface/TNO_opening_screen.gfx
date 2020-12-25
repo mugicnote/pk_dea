@@ -30,6 +30,15 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_opening_button_next_page"
+		textureFile = "gfx/interface/opening_button_next_page.dds"
+	}
+	spriteType = {
+		name = "GFX_opening_button_prev_page"
+		textureFile = "gfx/interface/opening_button_prev_page.dds"
+	}
+
+	spriteType = {
 		name = "GFX_discord_button"
 		textureFile = "gfx/interface/opening_screen/discord_button.dds"
 	}

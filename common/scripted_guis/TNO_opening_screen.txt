@@ -2,7 +2,6 @@ scripted_gui = {
 	TNO_opening_button = {
 		parent_window_name = "MapmodesInterface_Ingame"
 		window_name = "TNO_OpeningScreen_OpenButton"
-
 		visible = {
 			NOT = { has_global_flag = TNO_my_world_is_on_fire_how_about_yours }
 		}
@@ -10,16 +9,13 @@ scripted_gui = {
 		effects = {
 			topbar_opening_button_click = {
 				if = {
-					limit = { has_country_flag = TNO_opening_screen_show }
-					clr_country_flag = TNO_opening_screen_show
-					clr_country_flag = OPEN_view_country_info
-					clr_country_flag = OPEN_view_region_info
-					clr_country_flag = OPEN_view_mod_info
-					clr_country_flag = OPEN_view_features_info
+					limit = { has_variable = TNO_Opening_Screen }
+					clear_variable = TNO_Opening_Screen
+					set_variable = { FEATURES_INFO_PAGE = 0 }
+					set_variable = { COUNTRY_INFO_PAGE = 0 }
 				}
 				else = {
-					set_country_flag = TNO_opening_screen_show
-					set_country_flag = OPEN_view_country_info
+					set_variable = { TNO_Opening_Screen = 1 }
 				}
 			}
 		}
@@ -31,89 +27,154 @@ scripted_gui = {
 		window_name = "TNO_OpeningScreen_Main"
 
 		visible = {
-			has_country_flag = TNO_opening_screen_show
+			has_variable = TNO_Opening_Screen
 		}
 
 		effects = {
 			TNO_OpeningScreen_CloseButton_click = {
-				clr_country_flag = TNO_opening_screen_show
-				clr_country_flag = OPEN_view_country_info
-				clr_country_flag = OPEN_view_region_info
-				clr_country_flag = OPEN_view_mod_info
-				clr_country_flag = OPEN_view_features_info
+				clear_variable = TNO_Opening_Screen
 			}
+
+			#Country = 1
+			#Regions = 2
+			#Features = 3
+			#Mod Info = 4
 			
 			TNO_OpeningScreen_Buttons_CountryView_click = {
-				set_country_flag = OPEN_view_country_info
-				
-				clr_country_flag = OPEN_view_region_info
-				clr_country_flag = OPEN_view_mod_info
-				clr_country_flag = OPEN_view_features_info
+				set_variable = { TNO_Opening_Screen = 1 }
 			}
 
 			TNO_OpeningScreen_Buttons_RegionView_click = {
-				set_country_flag = OPEN_view_region_info
-				
-				clr_country_flag = OPEN_view_country_info
-				clr_country_flag = OPEN_view_mod_info
-				clr_country_flag = OPEN_view_features_info
+				set_variable = { TNO_Opening_Screen = 2 }
 			}
 			
 			TNO_OpeningScreen_Buttons_FeatureView_click = {
-				set_country_flag = OPEN_view_features_info
-				
-				clr_country_flag = OPEN_view_region_info
-				clr_country_flag = OPEN_view_country_info
-				clr_country_flag = OPEN_view_mod_info
+				set_variable = { TNO_Opening_Screen = 3 }
 			}
 
 			TNO_OpeningScreen_Buttons_ModView_click = {
-				set_country_flag = OPEN_view_mod_info
-				
-				clr_country_flag = OPEN_view_region_info
-				clr_country_flag = OPEN_view_country_info
-				clr_country_flag = OPEN_view_features_info
-			}
-		}
-		
-		triggers = {
-			TNO_OpeningScreen_Text_Country_visible = {
-				has_country_flag = OPEN_view_country_info
-			}
-			TNO_OpeningScreen_Text_Region_visible = {
-				has_country_flag = OPEN_view_region_info
-			}
-			TNO_OpeningScreen_Text_Mod_Features_visible = {
-				has_country_flag = OPEN_view_features_info
-			}
-			TNO_OpeningScreen_Text_Mod_Info_visible = {
-				has_country_flag = OPEN_view_mod_info
+				set_variable = { TNO_Opening_Screen = 4 }
 			}
 			
-			# TNO_OpeningScreen_Text_ModInfo_Buttons_visible = {
-			# 	has_country_flag = OPEN_view_mod_info
-			# }
+			opening_button_next_page_click = {
+				if = {
+					limit = {
+						check_variable = { TNO_Opening_Screen = 1 }
+					}
+					add_to_variable = { COUNTRY_INFO_PAGE = 1 }
+				}
+				else_if = {
+					limit = {
+						check_variable = { TNO_Opening_Screen = 3 }
+					}
+					add_to_variable = { FEATURES_INFO_PAGE = 1 }
+				}
+			}
 			
-			TNO_discord_button_visible = {
-				OR = {
-					has_country_flag = OPEN_view_features_info
-					has_country_flag = OPEN_view_mod_info
+			opening_button_prev_page_click = {
+				if = {
+					limit = {
+						check_variable = { TNO_Opening_Screen = 1 }
+					}
+					add_to_variable = { COUNTRY_INFO_PAGE = -1 }
+				}
+				else_if = {
+					limit = {
+						check_variable = { TNO_Opening_Screen = 3 }
+					}
+					add_to_variable = { FEATURES_INFO_PAGE = -1 }
 				}
 			}
 		}
 		
+		triggers = {
+			TNO_OpeningScreen_Text_visible = {
+				NOT = { check_variable = { TNO_Opening_Screen = 4 } }
+			}
+			
+			TNO_OpeningScreen_Text_ModInfo_Buttons_visible = {
+				check_variable = { TNO_Opening_Screen = 4 }
+			}
+			
+			TNO_discord_button_visible = {
+				check_variable = { TNO_Opening_Screen = 4 }
+			}
+			TNO_reddit_button_visible = {
+				check_variable = { TNO_Opening_Screen = 4 }
+			}
+			TNO_tvtropes_button_visible = {
+				check_variable = { TNO_Opening_Screen = 4 }
+			}
+			TNO_twitter_button_visible = {
+				check_variable = { TNO_Opening_Screen = 4 }
+			}
+			
+			opening_button_next_page_visible = {
+				NOT = {
+					OR = {
+						check_variable = { TNO_Opening_Screen = 2 }
+						check_variable = { TNO_Opening_Screen = 4 }
+					}
+				}
+				OR = {
+					AND = {
+						check_variable = { TNO_Opening_Screen = 1 }
+						TNO_has_big_opening_screen = yes
+						check_variable = { COUNTRY_INFO_PAGE < 1.99 }
+					}
+					AND = {
+						check_variable = { TNO_Opening_Screen = 3 }
+						check_variable = { FEATURES_INFO_PAGE < 0.99 }
+					}
+				}
+			}
+			opening_button_prev_page_visible = {
+				NOT = {
+					OR = {
+						check_variable = { TNO_Opening_Screen = 2 }
+						check_variable = { TNO_Opening_Screen = 4 }
+					}
+				}
+				OR = {
+					AND = {
+						check_variable = { TNO_Opening_Screen = 1 }
+						TNO_has_big_opening_screen = yes
+						check_variable = { COUNTRY_INFO_PAGE > 0.01 }
+					}
+					AND = {
+						check_variable = { TNO_Opening_Screen = 3 }
+						check_variable = { FEATURES_INFO_PAGE > 0.01 }
+					}
+				}
+			}
+			
+			TNO_OpeningScreen_Text_Small_visible = {
+				OR = {
+					AND = {
+						check_variable = { TNO_Opening_Screen = 1 }
+						TNO_has_big_opening_screen = yes
+					}
+					check_variable = { TNO_Opening_Screen = 3 }
+				}
+			}
+			
+			TNO_OpeningScreen_Text_visible = {
+				OR = {
+					check_variable = { TNO_Opening_Screen = 4 }
+					check_variable = { TNO_Opening_Screen = 2 }
+					AND = {
+						TNO_has_big_opening_screen = no
+						check_variable = { TNO_Opening_Screen = 1 }
+					}
+				}
+				NOT = { check_variable = { TNO_Opening_Screen = 4 } }
+			}
+		}
+		
 		properties = {
-			TNO_OpeningScreen_PlayerFlag = {
-				image = "[This.GetFlag]"
-			}
-			
-			TNO_OpeningScreen_Poster = {
-				image = "[GET_POSTER]"
-			}
-			
-			TNO_OpeningScreen_RegionSymbol = {
-				image = "[GET_REGIONALSYMBOL]"
-			}
+			TNO_OpeningScreen_PlayerFlag = { image = "[This.GetFlag]" }
+			TNO_OpeningScreen_Poster = { image = "[GET_POSTER]" }
+			TNO_OpeningScreen_RegionSymbol = { image = "[GET_REGIONALSYMBOL]" }
 		}
 	}
 	
@@ -133,14 +194,21 @@ scripted_gui = {
 			TNO_ClosingScreen_CloseButton_click = {
 				clr_country_flag = TNO_closing_screen_show
 			}
+			closing_button_next_page_click = {
+				add_to_variable = { ENDING_INFO_PAGE = 1 }
+			}
+			closing_button_prev_page_click = {
+				add_to_variable = { ENDING_INFO_PAGE = -1 }
+			}
 		}
 		
 		triggers = {
-		
-		}
-		
-		properties = {
-		
+			closing_button_next_page_visible = {
+				check_variable = { ENDING_INFO_PAGE < 0.99 }
+			}
+			closing_button_prev_page_visible = {
+				check_variable = { ENDING_INFO_PAGE > 0.01 }
+			}
 		}
 	}
 }

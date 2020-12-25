@@ -1,4 +1,4 @@
-GET_CLOSEBUTTON_TEXT = {
+defined_text = {
 	name = GET_CLOSEBUTTON_TEXT
 
 	##Italy
@@ -16,50 +16,56 @@ GET_CLOSEBUTTON_TEXT = {
 	}
 }
 
-GET_CURRENT_INTRO_TEXT = {
+defined_text = {
 	name = GET_CURRENT_INTRO_TEXT
 
 	text = {
-		trigger = { has_country_flag = OPEN_view_country_info }
-		localization_key = COUNTRY_INFO_TEXT
+		trigger = { check_variable = { TNO_Opening_Screen = 1 } }
+		localization_key = "[GET_COUNTRY_INFO]"
 	}
 
 	text = {
-		trigger = { has_country_flag = OPEN_view_region_info }
-		localization_key = REGIONAL_INFO_TEXT
+		trigger = { check_variable = { TNO_Opening_Screen = 2 } }
+		localization_key = "[GET_REGIONAL_INFO]"
 	}
 
 	text = {
-		trigger = { has_country_flag = OPEN_view_features_info }
-		localization_key = MOD_FEATURES_TEXT
+		trigger = { check_variable = { TNO_Opening_Screen = 3 } }
+		localization_key = "[GET_MOD_FEATURES_PAGE_TEXT]"
 	}
 
 	text = {
-		trigger = { has_country_flag = OPEN_view_mod_info }
+		trigger = { check_variable = { TNO_Opening_Screen = 4 } }
 		localization_key = MOD_INFO_TEXT
 	}
-
 }
 
-GET_COUNTRY_INFO = {
-	name = GET_COUNTRY_INFO
+defined_text = {
+	name = GET_COUNTRY_INFO_PAGE_TEXT_KOR
+	text = {
+		trigger = { check_variable = { COUNTRY_INFO_PAGE = 0 } }
+		localization_key = COUNTRY_INFO_1_KOR
+	}
+	text = {
+		trigger = { check_variable = { COUNTRY_INFO_PAGE = 1 } }
+		localization_key = COUNTRY_INFO_2_KOR
+	}
+	text = {
+		trigger = { check_variable = { COUNTRY_INFO_PAGE = 2 } }
+		localization_key = COUNTRY_INFO_3_KOR
+	}
+}
 
-	## Italy / Italosphere
+defined_text = {
+	name = GET_COUNTRY_INFO
+	## Countries with Opening pages
 	text = {
 		trigger = { tag = KOR }
-		localization_key = COUNTRY_INFO_KOREA
-	}
-	text = {
-		trigger = { tag = CHI }
-		localization_key = COUNTRY_INFO_CHINA
-	}
-	## Default
-	text = {
-		localization_key = COUNTRY_INFO_NO_CONTENT
+		localization_key = "[GET_COUNTRY_INFO_PAGE_TEXT_KOR]"
 	}
 }
 
-GET_REGIONAL_INFO = {
+defined_text = {
 	name = GET_REGIONAL_INFO
 
 	## Southern Urals
@@ -79,7 +85,7 @@ GET_REGIONAL_INFO = {
 	}
 }
 
-GET_REGIONALSYMBOL = {
+defined_text = {
 	name = GET_REGIONALSYMBOL
 
 	## Southern Urals
@@ -96,7 +102,7 @@ GET_REGIONALSYMBOL = {
 	}
 }
 
-GET_POSTER = {
+defined_text = {
 	name = GET_POSTER
 	#Iberia
 	text = {

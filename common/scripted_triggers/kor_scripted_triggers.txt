@@ -1,3 +1,7 @@
+TNO_has_big_opening_screen = {
+		tag = KOR
+}
+
 RUS_northern_zemstvo_state = {
 	OR = {
 		state = 525
