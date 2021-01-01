@@ -153,26 +153,26 @@ guiTypes = {
 			name = "TNO_discord_button"
 			quadTextureSprite = "GFX_discord_button"
 			position = { x = 14 y = 40 }
-			web_link = "https://discordapp.com/invite/NUmjGny"
+			web_link = "https://discordapp.com/invite/cPq4PNq"
 		}
-		buttonType = {
-			name = "TNO_reddit_button"
-			quadTextureSprite = "GFX_reddit_button"
-			position = { x = 202 y = 40 }
-			web_link = "https://www.reddit.com/r/TNOmod/"
-		}
-		buttonType = {
-			name = "TNO_tvtropes_button"
-			quadTextureSprite = "GFX_tvtropes_button"
-			position = { x = 578 y = 40 }
-			web_link = "https://tvtropes.org/pmwiki/pmwiki.php/VideoGame/TheNewOrderLastDaysOfEurope"
-		}
-		buttonType = {
-			name = "TNO_twitter_button"
-			quadTextureSprite = "GFX_twitter_button"
-			position = { x = 390 y = 40 }
-			web_link = "https://twitter.com/tnomod"
-		}
+		#buttonType = {
+		#	name = "TNO_reddit_button"
+		#	quadTextureSprite = "GFX_reddit_button"
+		#	position = { x = 202 y = 40 }
+		#	web_link = "https://www.reddit.com/r/TNOmod/"
+		#}
+		#buttonType = {
+		#	name = "TNO_tvtropes_button"
+		#	quadTextureSprite = "GFX_tvtropes_button"
+		#	position = { x = 578 y = 40 }
+		#	web_link = "https://tvtropes.org/pmwiki/pmwiki.php/VideoGame/TheNewOrderLastDaysOfEurope"
+		#}
+		#buttonType = {
+		#	name = "TNO_twitter_button"
+		#	quadTextureSprite = "GFX_twitter_button"
+		#	position = { x = 390 y = 40 }
+		#	web_link = "https://twitter.com/tnomod"
+		#}
 	}
 	
 	containerWindowType = {

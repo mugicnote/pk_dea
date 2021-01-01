@@ -1,256 +1,776 @@
 ﻿focus_tree = {
-	id = japan_wtt_focus
-	
+	id = dea_JAP
 	country = {
 		factor = 0
 		modifier = {
-			add = 20
+			add = 10
 			tag = JAP
 		}
 	}
-	
-
 	default = no
 
-	continuous_focus_position = { x = 20 y = 1200 }
-
 	focus = {
-		id = change_of_country_line
-		icon = GFX_goal_generic_intelligence_exchange
+		id = JAP_future
+		icon = GFX_JAP_future
 		cost = 10.00
-
-		x = 15
-		y = 0
-	}
-	
-	focus = {
-		id = ban_on_grand_political_parties
-		icon = GFX_focus_internal_dissent
-		cost = 10.00
-		prerequisite = {
-			focus = change_of_country_line
-		}
-		x = 14
+		x = 18
 		y = 1
-	}
 
-	focus = {
-		id = state_support
-		icon = GFX_goal_generic_loans
-		cost = 10.00
-		prerequisite = {
-			focus = change_of_country_line
-		}
-		x = 16
-		y = 1
 	}
 	focus = {
-		id = superinflation
-		icon = GFX_econ_expension
+		id = JAP_World_war_Loser
+		icon = GFX_goal_unknown
 		cost = 10.00
-		prerequisite = {
-			focus = ban_on_grand_political_parties
-		}
-		prerequisite = {
-			focus = state_support
-		}
-		x = 15
+		x = 41
 		y = 2
+
 	}
 	focus = {
-		id = Expansion_of_US_relations
-		icon = GFX_USA_Disenfranchise_African_Americans
+		id = JAP_new_politics
+		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = superinflation
+			focus = JAP_future
 		}
-		x = 14
-		y = 3
+		x = 17
+		y = 2
+
 	}
 	focus = {
-		id = Korean_War
-		icon = GFX_Integration_of_Korea
+		id = JAP_new_fund
+		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = superinflation
+			focus = JAP_future
 		}
-		x = 16
-		y = 3
+		x = 19
+		y = 2
+
 	}
 	focus = {
-		id = garyoan_aid_fund
-		icon = GFX_OTT_Restrict_Foreign_Exchange_Regime
+		id = JAP_problem
+		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = Expansion_of_US_relations
+			focus = JAP_new_politics
+		}
+		prerequisite = {
+			focus = JAP_new_fund
+		}
+		x = 18
+		y = 3
+
+	}
+	focus = {
+		id = JAP_people_revolut_problem
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_problem
 		}
 		x = 13
 		y = 4
+
 	}
 	focus = {
-		id = House_Representatives_elections
-		icon = GFX_Adopt_Enhanced_Majority_System
+		id = JAP_not_allow_united
+		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = Expansion_of_US_relations
-		}
-		prerequisite = {
-			focus = Korean_War
-		}
-		x = 15
-		y = 4
-	}
-	focus = {
-		id = victory_constitutional_association
-		icon = GFX_Allow_Free_Speach
-		cost = 10.00
-		prerequisite = {
-			focus = House_Representatives_elections
+			focus = JAP_people_revolut_problem
 		}
 		mutually_exclusive = {
-			focus = constitutional_victory
-			focus = victory_Social_Popular_Party
-			focus = victory_Communist_Party_Japan
+			focus = JAP_allow_united
 		}
-		x = 20
+		x = 12
 		y = 5
+
 	}
 	focus = {
-		id = constitutional_victory
-		icon = GFX_Allow_Free_Speach
+		id = JAP_police_arrangement
+		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = House_Representatives_elections
+			focus = JAP_not_allow_united
 		}
-		mutually_exclusive = {
-			focus = victory_constitutional_association
-			focus = victory_Social_Popular_Party
-			focus = victory_Communist_Party_Japan
-		}
-		x = 15
-		y = 5
+		x = 11
+		y = 6
+
 	}
 	focus = {
-		id = victory_Social_Popular_Party
-		icon = GFX_Allow_Free_Speach
+		id = JAP_low_demonstration
+		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = House_Representatives_elections
-		}
-		mutually_exclusive = {
-			focus = victory_constitutional_association
-			focus = constitutional_victory
-			focus = victory_Communist_Party_Japan
-		}
-		x = 25
-		y = 5
-	}
-	focus = {
-		id = victory_Communist_Party_Japan
-		icon = GFX_jcp
-		cost = 10.00
-		prerequisite = {
-			focus = House_Representatives_elections
-		}
-		mutually_exclusive = {
-			focus = victory_constitutional_association
-			focus = constitutional_victory
-			focus = victory_Social_Popular_Party
+			focus = JAP_police_arrangement
 		}
 		x = 10
-		y = 5
-	}
-	focus = {
-		id = Dodge_Line
-		icon = GFX_
-		cost = 10.00
+		y = 7
 
-		x = 37
-		y = 0
 	}
 	focus = {
-		id = EROA_Aid_Fund
-		icon = GFX_
+		id = JAP_allow_united
+		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = Dodge_Line
+			focus = JAP_people_revolut_problem
 		}
-		x = 35
-		y = 1
+		mutually_exclusive = {
+			focus = JAP_not_allow_united
+		}
+		x = 14
+		y = 5
+
 	}
 	focus = {
-		id = Support_for_South_Korea
-		icon = GFX_ExpandAidToROK
+		id = JAP_Hear_the_sound
+		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = Dodge_Line
+			focus = JAP_allow_united
 		}
-		x = 37
-		y = 1
+		x = 15
+		y = 6
+
 	}
 	focus = {
-		id = special_period
-		icon = GFX_
+		id = JAP_them_be_considerate
+		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = EROA_Aid_Fund
-			focus = Support_for_South_Korea
+			focus = JAP_Hear_the_sound
 		}
-		x = 36
-		y = 2
+		x = 16
+		y = 7
+
 	}
 	focus = {
-		id = defense_economic_collapse
-		icon = GFX_
+		id = JAP_collaps_economy
+		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = Dodge_Line
+			focus = JAP_problem
 		}
-		x = 39
-		y = 1
+		x = 26
+		y = 4
+
 	}
 	focus = {
-		id = government_supply_expansion
-		icon = GFX_
+		id = JAP_economic_plan_first
+		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = defense_economic_collapse
+			focus = JAP_collaps_economy
 		}
-		x = 41
-		y = 2
+		mutually_exclusive = {
+			focus = JAP_economic_plan_second
+		}
+		x = 23
+		y = 5
+
 	}
 	focus = {
-		id = factory_conversion
-		icon = GFX_
+		id = JAP_kushu_shipyard
+		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = Support_for_South_Korea
+			focus = JAP_economic_plan_first
 		}
-		prerequisite = {
-			focus = defense_economic_collapse
-		}
-		x = 39
-		y = 2
+		x = 22
+		y = 6
+
 	}
 	focus = {
-		id = Securing_factory_sites
-		icon = GFX_
+		id = ganto_economic_zone
+		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = factory_conversion
-			focus = special_period
+			focus = JAP_economic_plan_first
 		}
-		x = 39
-		y = 3
+		x = 24
+		y = 6
+
 	}
 	focus = {
-		id = metropolitan_concentration_industry
-		icon = GFX_
+		id = JAP_plan_start
+		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = EROA_Aid_Fund
+			focus = ganto_economic_zone
+		}
+		prerequisite = {
+			focus = JAP_kushu_shipyard
+		}
+		x = 23
+		y = 7
+
+	}
+	focus = {
+		id = JAP_investor_find
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_plan_start
+		}
+		x = 21
+		y = 8
+
+	}
+	focus = {
+		id = JAP_investor_invite
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_investor_find
+		}
+		x = 19
+		y = 9
+
+	}
+	focus = {
+		id = JAP_economic_plan_second
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_collaps_economy
+		}
+		mutually_exclusive = {
+			focus = JAP_economic_plan_first
+		}
+		x = 29
+		y = 5
+
+	}
+	focus = {
+		id = JAP_sicoku_shipyard
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_economic_plan_second
+		}
+		x = 28
+		y = 6
+
+	}
+	focus = {
+		id = JAP_zhukoku_economic_zone
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_economic_plan_second
+		}
+		x = 30
+		y = 6
+
+	}
+	focus = {
+		id = JAP_starting_fund
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_sicoku_shipyard
+		}
+		prerequisite = {
+			focus = JAP_zhukoku_economic_zone
+		}
+		x = 29
+		y = 7
+
+	}
+	focus = {
+		id = JAP_japanese_potential_power
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_plan_start
+			focus = JAP_starting_fund
+		}
+		x = 26
+		y = 8
+
+	}
+	focus = {
+		id = JAP_Aluminum_navigation
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_japanese_potential_power
+		}
+		x = 23
+		y = 9
+
+	}
+	focus = {
+		id = JAP_doyi_gold_mine
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_japanese_potential_power
+		}
+		x = 25
+		y = 9
+
+	}
+	focus = {
+		id = JAP_hosikari_gold_mine
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_japanese_potential_power
+		}
+		x = 27
+		y = 9
+
+	}
+	focus = {
+		id = JAP_steel_mine
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_japanese_potential_power
+		}
+		x = 29
+		y = 9
+
+	}
+	focus = {
+		id = JAP_japanese_companies_fund
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_starting_fund
+		}
+		x = 31
+		y = 8
+
+	}
+	focus = {
+		id = JAP_Overseas_fund
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_japanese_companies_fund
+		}
+		x = 31
+		y = 9
+
+	}
+	focus = {
+		id = JAP_Low_interest_rates
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_japanese_companies_fund
 		}
 		x = 33
-		y = 2
+		y = 9
+
+	}
+	focus = {
+		id = JAP_Successful_investment
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Overseas_fund
+		}
+		prerequisite = {
+			focus = JAP_Low_interest_rates
+		}
+		x = 31
+		y = 10
+
+	}
+	focus = {
+		id = JAP_big_compensation
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_World_war_Loser
+		}
+		x = 41
+		y = 3
+
+	}
+	focus = {
+		id = JAP_regain_our_authority
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_big_compensation
+		}
+		x = 37
+		y = 4
+
+	}
+	focus = {
+		id = JAP_Post_war_recovery 
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_big_compensation
+		}
+		x = 43
+		y = 4
+
+	}
+	focus = {
+		id = JAP_War_damage_investigation
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Post_war_recovery 
+		}
+		x = 43
+		y = 5
+
+	}
+	focus = {
+		id = JAP_Increase_recovery_budget
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_War_damage_investigation
+		}
+		x = 43
+		y = 6
+
+	}
+	focus = {
+		id = JAP_autoban_erection_first
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Increase_recovery_budget
+		}
+		x = 40
+		y = 7
+
+	}
+	focus = {
+		id = JAP_Introduction_of_mechanical_machine_tool
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Increase_recovery_budget
+		}
+		x = 42
+		y = 7
+
+	}
+	focus = {
+		id = JAP_USA_assistance
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Introduction_of_mechanical_machine_tool
+		}
+		x = 42
+		y = 9
+
+	}
+	focus = {
+		id = Recover_the_bombed_village
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Increase_recovery_budget
+		}
+		x = 46
+		y = 7
+
+	}
+	focus = {
+		id = JAP_Waterpipe_construction
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Recover_the_bombed_village
+		}
+		x = 46
+		y = 8
+
+	}
+	focus = {
+		id = JAP_Leg_construction
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Recover_the_bombed_village
+		}
+		x = 48
+		y = 8
+
+	}
+	focus = {
+		id = JAP_build_school
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Recover_the_bombed_village
+		}
+		x = -2
+		y = 1
+		relative_position_id = Recover_the_bombed_village
+
+	}
+	focus = {
+		id = JAP_Restored_village
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Waterpipe_construction
+		}
+		prerequisite = {
+			focus = JAP_Leg_construction
+		}
+		prerequisite = {
+			focus = JAP_build_school
+		}
+		x = 46
+		y = 9
+
+	}
+	focus = {
+		id = JAP_japan_Possibility
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_investor_find
+		}
+		x = 21
+		y = 9
+
+	}
+	focus = {
+		id = JAP_growing_fund
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_japan_Possibility
+		}
+		prerequisite = {
+			focus = JAP_investor_invite
+		}
+		x = 21
+		y = 10
+
+	}
+	focus = {
+		id = JAP_Harmonious_resources
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_doyi_gold_mine
+		}
+		prerequisite = {
+			focus = JAP_hosikari_gold_mine
+		}
+		prerequisite = {
+			focus = JAP_Aluminum_navigation
+		}
+		prerequisite = {
+			focus = JAP_steel_mine
+		}
+		x = 26
+		y = 10
+
+	}
+	focus = {
+		id = JAP_rising_sun_in_japan
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Successful_investment
+			focus = JAP_growing_fund
+		}
+		prerequisite = {
+			focus = JAP_Harmonious_resources
+		}
+		x = 26
+		y = 11
+
+	}
+	focus = {
+		id = JAP_care_of_livelihood
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_not_allow_united
+			focus = JAP_allow_united
+		}
+		x = 13
+		y = 6
+
+	}
+	focus = {
+		id = JAP_working_method
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Minimum_wage_increase
+		}
+		prerequisite = {
+			focus = JAP_Unemployment_policy
+		}
+		x = 13
+		y = 9
+
+	}
+	focus = {
+		id = JAP_Labor_improvement
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_care_of_livelihood
+		}
+		x = 13
+		y = 7
+
+	}
+	focus = {
+		id = JAP_Unemployment_policy
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Labor_improvement
+		}
+		x = 14
+		y = 8
+
+	}
+	focus = {
+		id = JAP_Minimum_wage_increase
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Labor_improvement
+		}
+		x = 12
+		y = 8
+
+	}
+	focus = {
+		id = JAP_Reduced_working_hours
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_united_Appointment
+			focus = JAP_increase_worker_treatment
+		}
+		x = 14
+		y = 10
+
+	}
+	focus = {
+		id = JAP_united_Appointment
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Find_compromise
+		}
+		x = 16
+		y = 9
+
+	}
+	focus = {
+		id = JAP_Find_compromise
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_them_be_considerate
+		}
+		x = 16
+		y = 8
+
+	}
+	focus = {
+		id = JAP_Accepting_partial_demand
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_low_demonstration
+		}
+		x = 10
+		y = 8
+
+	}
+	focus = {
+		id = JAP_increase_worker_treatment
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Accepting_partial_demand
+		}
+		x = 10
+		y = 9
+
+	}
+	focus = {
+		id = JAP_mordern_technology
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_united_Appointment
+			focus = JAP_increase_worker_treatment
+		}
+		x = 12
+		y = 10
+
+	}
+	focus = {
+		id = JAP_smail_workers
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Reduced_working_hours
+		}
+		prerequisite = {
+			focus = JAP_mordern_technology
+		}
+		prerequisite = {
+			focus = JAP_working_method
+		}
+		x = 13
+		y = 11
+
+	}
+	focus = {
+		id = JAP_autoban_erection_second
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_autoban_erection_first
+		}
+		x = 40
+		y = 8
+
+	}
+	focus = {
+		id = japanes_Highway_in_japan
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_autoban_erection_second
+		}
+		x = 40
+		y = 9
+
+	}
+	focus = {
+		id = JAP_Rise_from_the_ruins
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_USA_assistance
+		}
+		prerequisite = {
+			focus = JAP_Restored_village
+		}
+		prerequisite = {
+			focus = japanes_Highway_in_japan
+		}
+		x = 43
+		y = 10
+
 	}
 }

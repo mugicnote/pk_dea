@@ -1,10 +1,10 @@
-KOR_national_assembly_bicameralism_decision = {
+parliament_gui_decision_category = {
 
 	#소규모 지지도 확보
 	KOR_small_securement_of_support = {
 		icon = generic_political_discourse
 		available = {
-				check_variable = { house_support < house_total }
+			check_variable = { parliament_seat_array^temp_array^v < parliament_main_array^num }
 			not = {
 				has_decision = KOR_medium_securement_of_support
 			}
@@ -22,7 +22,9 @@ KOR_national_assembly_bicameralism_decision = {
 		}
 		days_remove = 10
 		remove_effect = {
-			KOR_congress_small_support = yes
+			set_temp_variable = { temp_member = v }
+			set_temp_variable = { temp_seats = 5 }
+			modify_parliament_seat = yes
 		}
 	}
 
@@ -491,7 +493,7 @@ KOR_training_of_officers_category = {
 		    original_tag = KOR
 		}
 		available = { 
-            date > 1941.01.01
+            date > 1940.01.01
 		}
 
 		fire_only_once = yes
@@ -524,7 +526,7 @@ KOR_training_of_officers_category = {
             has_country_flag = Youth_Lee_Hyung_geun
 		}
 		available = { 
-            date > 1951.01.01
+            date > 1950.01.01
 		}
 
 		fire_only_once = yes
@@ -557,7 +559,7 @@ KOR_training_of_officers_category = {
 		    original_tag = KOR
 		}
 		available = { 
-            date > 1929.01.01
+            date > 1928.01.01
 		}
 
 		fire_only_once = yes
@@ -590,7 +592,7 @@ KOR_training_of_officers_category = {
             has_country_flag = Youth_Won_Yong_Duk
 		}
 		available = { 
-            date > 1939.01.01
+            date > 1938.01.01
 		}
 
 		fire_only_once = yes
@@ -605,6 +607,72 @@ KOR_training_of_officers_category = {
 				create_corps_commander = {
 					name = "원용덕"
 					picture = ""
+					traits = {  }
+					skill = 2
+					attack_skill = 2
+					defense_skill = 2
+					planning_skill = 2
+					logistics_skill = 2
+				}
+			}
+		}
+	}
+
+	KOR_appoint_Chae_Byung_Tuk = {
+		icon = generic_army_support
+		
+		allowed = {
+		    original_tag = KOR
+		}
+		available = { 
+            date > 1935.01.01
+		}
+
+		fire_only_once = yes
+
+		cost = 30
+
+		remove_effect = {
+			set_country_flag = Youth_Chae_Byung_Tuk
+			create_corps_commander = {
+				name = "채병덕"
+				id = 3004
+				picture = "Portrait_Chae_Byung_Tuk.dds"
+				traits = { media_personality trait_KOR_Youth_Presbyterian_Church trait_KOR_young_general }
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 1
+			}
+		}
+	}
+
+	KOR_Youth_Chae_Byung_Tuk = {
+		icon = generic_army_support
+		
+		allowed = {
+		    original_tag = KOR
+		}
+		visible = { 
+            has_country_flag = Youth_Chae_Byung_Tuk
+		}
+		available = { 
+            date > 1945.01.01
+		}
+
+		fire_only_once = yes
+
+		cost = 30
+
+		remove_effect = {
+			custom_effect_tooltip = KOR_Youth_Chae_Byung_Tuk_tt
+			hidden_effect = {
+				clr_country_flag = Youth_Chae_Byung_Tuk
+				remove_unit_leader = 3004
+				create_corps_commander = {
+					name = "채병덕"
+					picture = "Portrait_Chae_Byung_Tuk.dds"
 					traits = {  }
 					skill = 2
 					attack_skill = 2

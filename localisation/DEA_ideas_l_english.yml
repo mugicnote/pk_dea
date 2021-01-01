@@ -94,5 +94,15 @@ KOR_Daewoo_Heavy_Industries:0 "대우 중공업 주식회사"
 KOR_HYUNDAI:0 "현대그룹 중공업 공장"
 KOR_SAMSUNG:0 "삼성 중공업"
 
-###일본일본2주넘게지났는데도과제가너무많아###
+###일본###
+Declaration_Emperor:0 "천황의 인간선언"
+Yoshida_Doctrine:0 "요시다 독트린"
 constitution_of_japanese:0 "일본국 헌법"
+far_right_party_military:0 "군부의 극우 정당 조직"
+aftermath_of_defeat:0 "패전의 여파"
+EROA:0 "EROA 원조 자금"
+Depression_of_USA:0 "미국의 공황"
+Depression_of_USA_tt:0 "§R우리는 각종 결정을 통하여 미국을 도울수도 있으며, 그들의 곁을 떠날수도 있습니다.§!"
+political_confrontation:0 "정계 대립"
+Communist_leadership_strike:0 "공산당의 파업 주도"
+Communist_leadership_strike_tt:0 "§R그들은 한달 마다 각기 다른 규모의 파업을 일으킬것 입니다, 우리는 노동자들과의 타협으로 파업을 막아야합니다.§!"

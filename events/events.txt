@@ -116,17 +116,52 @@ add_namespace = KOR
 country_event = { #연설
 	id = KOR.54
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.54"}
-	title = KOR.54.t
-	desc = KOR.54.desc
 	picture = GFX_report_event_kor_lee
 	
 	is_triggered_only = yes
 	fire_only_once = yes
+
+	title = {
+		text = KOR.54.t.1 #요약
+		trigger = {
+			has_country_flag = yo_yak
+		}
+	}
+	desc = {
+		text = KOR.54.desc.1 #요약
+		trigger = {
+			has_country_flag = yo_yak
+		}
+	}
+
+	title = {
+		text = KOR.54.t.2 #전문
+		trigger = {
+			NOT = { has_country_flag = yo_yak }
+		}
+	}
+	desc = {
+		text = KOR.54.desc.2 #전문
+		trigger = {
+			NOT = { has_country_flag = yo_yak }
+		}
+	}
 	
 	option = { #
 		name = KOR.54.a
 		ai_chance = { factor = 1 }
-	custom_effect_tooltip = kor54_tt
+		if = {
+			limit = {
+				has_country_flag = yo_yak
+			}
+		custom_effect_tooltip = kor54_1_tt
+		}
+		if = {
+			limit = {
+				NOT = { has_country_flag = yo_yak }
+			}
+		custom_effect_tooltip = kor54_2_tt
+		}
 		hidden_effect = {
 			country_event = {
 				id = KOR.55
@@ -137,13 +172,35 @@ country_event = { #연설
 	option = { #
 		name = KOR.54.b
 		ai_chance = { factor = 1 }
-	custom_effect_tooltip = kor54_tt
+		if = {
+			limit = {
+				has_country_flag = yo_yak
+			}
+		custom_effect_tooltip = kor54_1_tt
+		}
+		if = {
+			limit = {
+				NOT = { has_country_flag = yo_yak }
+			}
+		custom_effect_tooltip = kor54_2_tt
+		}
 		hidden_effect = {
 			country_event = {
 				id = KOR.55
 				days = 2
 			}
+		if = {
+			limit = {
+				has_country_flag = yo_yak
+			}
 		add_stability = -0.05
+		}
+		if = {
+			limit = {
+				NOT = { has_country_flag = yo_yak }
+			}
+		add_stability = -0.03
+		}
 		}
 	}
 }
@@ -151,22 +208,91 @@ country_event = { #연설
 country_event = { #연설
 	id = KOR.55
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.55"}
-	title = KOR.55.t
-	desc = KOR.55.desc
 	picture = GFX_report_event_kor_lee
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
+	title = {
+		text = KOR.55.t.1 #요약
+		trigger = {
+			has_country_flag = yo_yak
+		}
+	}
+	desc = {
+		text = KOR.55.desc.1 #요약
+		trigger = {
+			has_country_flag = yo_yak
+		}
+	}
+
+	title = {
+		text = KOR.55.t.2 #전문
+		trigger = {
+			NOT = { has_country_flag = yo_yak }
+		}
+	}
+	desc = {
+		text = KOR.55.desc.2 #전문
+		trigger = {
+			NOT = { has_country_flag = yo_yak }
+		}
+	}
+	
 	option = { #
 		name = KOR.55.a
 		ai_chance = { factor = 1 }
-		add_stability = -0.1
+		if = {
+			limit = {
+				has_country_flag = yo_yak
+			}
+		custom_effect_tooltip = kor54_1_tt
+		}
+		if = {
+			limit = {
+				NOT = { has_country_flag = yo_yak }
+			}
+		custom_effect_tooltip = kor54_2_tt
+		}
 		hidden_effect = {
 			country_event = {
 				id = KOR.56
 				days = 2
 			}
+		}
+	}
+	option = { #
+		name = KOR.55.b
+		ai_chance = { factor = 1 }
+		if = {
+			limit = {
+				has_country_flag = yo_yak
+			}
+		custom_effect_tooltip = kor54_1_tt
+		}
+		if = {
+			limit = {
+				NOT = { has_country_flag = yo_yak }
+			}
+		custom_effect_tooltip = kor54_2_tt
+		}
+		hidden_effect = {
+			country_event = {
+				id = KOR.56
+				days = 2
+			}
+		if = {
+			limit = {
+				has_country_flag = yo_yak
+			}
+		add_stability = -0.05
+		}
+		if = {
+			limit = {
+				NOT = { has_country_flag = yo_yak }
+			}
+		add_stability = -0.03
+		}
 		}
 	}
 }
@@ -3919,6 +4045,13 @@ country_event = { #
 		name = KOR.86.b
 		ai_chance = { factor = 1 }
 		custom_effect_tooltip = kor_86_b_tt
+		set_country_flag = yo_yak
+		hidden_effect = {
+			country_event = {
+				id = KOR.54
+				days = 5
+			}
+		}
 	}
 	option = { #전문
 		name = KOR.86.c

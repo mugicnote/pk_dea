@@ -2,6 +2,46 @@ ideas = {
 
     country = {
         
+        Declaration_Emperor = {
+
+            allowed = {
+                original_tag = JAP
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = GFX_Declaration_Emperor
+
+            removal_cost = -1
+            
+            modifier = {
+                stability_factor = 0.05
+                war_support_factor = -0.15
+            }
+        }
+
+        Yoshida_Doctrine = {
+
+            allowed = {
+                original_tag = JAP
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = GFX_Yoshida_Doctrine
+
+            removal_cost = -1
+            
+            modifier = {
+                production_speed_industrial_complex_factor = 0.3
+                consumer_goods_factor = 0.1
+            }
+        }
+
         constitution_of_japanese = {
 
             allowed = {
@@ -12,12 +52,146 @@ ideas = {
                 always = yes
             }
 
-            picture = HUN_treaty_of_triannon
+            picture = GFX_constitution_of_japanese
 
             removal_cost = -1
             
             modifier = {
                 justify_war_goal_time = 10.0
+                stability_factor = 0.10
+                war_support_factor = -0.15
+                custom_modifier_tooltip = SPR_military_disloyalty_tt
+            }
+        }
+
+        far_right_party_military = {
+
+            allowed = {
+                original_tag = JAP
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = GFX_far_right_party_military
+
+            removal_cost = -1
+            
+            modifier = {
+                fascism_drift = 0.1
+                stability_factor = -0.1
+            }
+        }
+        
+        aftermath_of_defeat = {
+
+            allowed = {
+                original_tag = JAP
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = GFX_aftermath_of_defeat
+
+            removal_cost = -1
+            
+            modifier = {
+                political_power_factor = -0.15
+                production_speed_infrastructure_factor = -0.4
+                production_speed_arms_factory_factor = -0.4
+                production_speed_dockyard_factor = -0.3
+                production_speed_fuel_silo_factor = -0.2
+                production_speed_naval_base_factor = -0.3
+                production_speed_radar_station_factor = -0.4
+                production_speed_air_base_factor = -0.3
+                production_speed_anti_air_building_factor = -0.4
+                production_speed_bunker_factor = -0.3
+                consumer_goods_factor = 0.1
+                stability_factor = -0.15
+            }
+        }
+
+        EROA = {
+
+            allowed = {
+                original_tag = JAP
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = GFX_EROA
+
+            removal_cost = -1
+            
+            modifier = {
+                consumer_goods_factor = -0.05
+            }
+        }
+
+        Depression_of_USA = {
+
+            allowed = {
+                original_tag = JAP
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = GFX_Depression_of_USA
+
+            removal_cost = -1
+            
+            modifier = {
+                stability_factor = -0.1
+                custom_modifier_tooltip = Depression_of_USA_tt
+            }
+        }
+
+        political_confrontation = {
+
+            allowed = {
+                original_tag = JAP
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = GFX_political_confrontation
+
+            removal_cost = -1
+            
+            modifier = {
+                political_power_factor = -0.1
+                stability_factor = -0.15
+            }
+        }
+
+        Communist_leadership_strike = {
+
+            allowed = {
+                original_tag = JAP
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = GFX_
+
+            removal_cost = -1
+            
+            modifier = {
+                radical_socialism_drift = 0.05
+                communism_drift = 0.05
+                stability_factor = -0.1
+                custom_modifier_tooltip = Communist_leadership_strike_tt
             }
         }
     }

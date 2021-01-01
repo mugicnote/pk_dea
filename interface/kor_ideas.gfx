@@ -157,4 +157,38 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_kor_conscription.dds"
 	}
 
+
+	spriteType = {
+		name = "GFX_idea_Declaration_Emperor"
+		texturefile = "gfx/interface/ideas/Declaration_Emperor.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Yoshida_Doctrine"
+		texturefile = "gfx/interface/ideas/Yoshida_Doctrine.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_aftermath_of_defeat"
+		texturefile = "gfx/interface/ideas/aftermath_of_defeat.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_constitution_of_japanese"
+		texturefile = "gfx/interface/ideas/constitution_of_japanese.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_far_right_party_military"
+		texturefile = "gfx/interface/ideas/far_right_party_military.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_EROA"
+		texturefile = "gfx/interface/ideas/EROA.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Depression_of_USA"
+		texturefile = "gfx/interface/ideas/Depression_of_USA.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_political_confrontation"
+		texturefile = "gfx/interface/ideas/political_confrontation.dds"
+	}
+
 }

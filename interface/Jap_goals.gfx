@@ -1,0 +1,7 @@
+spriteTypes = {
+
+	SpriteType = {
+		name = "GFX_JAP_future"
+		texturefile = "gfx/interface/goals/JAP_future.dds"
+	}
+}

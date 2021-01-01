@@ -1,6 +1,8 @@
 autonomy_state = {
 	id = autonomy_USA_Sponsored_Regime
 	
+	is_puppet = yes
+	
 	min_freedom_level = 0.0
 	
 	rule = {
@@ -35,10 +37,10 @@ autonomy_state = {
 	}
 	
 	can_take_level = {
-		#trigger here
+		always = no
 	}
 
 	can_lose_level = {
-		#trigger here
+		always = no
 	}
 }

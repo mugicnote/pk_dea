@@ -1,0 +1,18 @@
+﻿l_english:
+
+ # Decisions
+  parliament_gui_decision_category:0 "대한민국 국회"
+  parliament_gui_decision_category_desc:0 "국회는 국민의 신임을 얻은 대표들로 구성되어 국민의 목소리를 대변한다는 점에서 단순한 입법기관이 아닌 그 이상의 가치를 지니고 있습니다.\n\n§Y국회의원 임기§!: 4년\n§Y집권 여당§!: [ROOT.GetDemocraticParty]"
+
+ # Scripted GUIs
+  parliament_gui_title:0 "Grid Parliament"
+  semicircle_parliament_gui_title:0 "Semicircle Parliament"
+  parliament_main_icon_tt:0 "[GetParliamentSeatName] - [GetParliamentPartyName]"
+  parliament_seat_text:0 "좌석 [?temp_seat|Y0]"
+  parliament_member_text:0 "[GetParliamentPartyName] - [?parliament_seat_array^parliament_member_index] Seats"
+  parliament_modify_button_tt:0 "§GCtrl+Click§! to add §Y5§! Seats from [GetParliamentPartyName]\n§GShift+Click§! to subtract §Y5§! Seats from [GetParliamentPartyName]"
+
+  party_1_text:0 "§R여당§!"
+  party_2_text:0 "§YB§!"
+  party_3_text:0 "Party §GC§!"
+  party_4_text:0 "Party §BD§!"

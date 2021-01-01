@@ -2,12 +2,11 @@ on_actions = {
 	on_startup = {
 		effect = {
 	every_country = {
-		news_event = {
-			id = fengtian.3
-			days = 7
-		}
+		limit = { is_ai = no }
+		set_variable = { TNO_Opening_Screen = 1 }
 	}
 	KOR = {
+		parliament_gui_initial = yes
 		country_event = { 
 			id = KOR.86
 			days = 5
@@ -71,8 +70,6 @@ on_actions = {
 		add_ideas = DM_Kim_Suk_won
 		
 		country_lock_all_division_template = yes
-		set_country_flag = TNO_opening_screen_show
-		set_country_flag = OPEN_view_country_info
 		create_intelligence_agency = yes
 
 		set_division_template_lock = {
@@ -109,6 +106,7 @@ on_actions = {
 				}
 		}
 		JAP = {
+			country_lock_all_division_template = yes
 			add_opinion_modifier = {
 				target = USA
 				modifier = JAP_opnion_USA

@@ -32,6 +32,19 @@ KOR_national_assembly_bicameralism_decision = {
 	priority = 100
 }
 
+parliament_gui_decision_category = {
+	icon = national_assembly
+
+	picture = GFX_decision_cat_national_assembly
+
+	allowed = { original_tag = KOR }
+
+	priority = 1000
+
+	scripted_gui = parliament_gui
+	visible_when_empty = yes
+}
+
 #대한민국 국회(양원제)
 KOR_national_assembly_unicameralism_decision = {
 	icon = national_assembly

@@ -1,14 +1,23 @@
-﻿capital = 840
+capital = 840
 
 oob = "JAP_1936"
 
-set_stability = 0.2 #baseline, THE EMPEROR PROTECTS
+set_stability = 0.4
 set_war_support = 0.8
 
 set_research_slots = 4
 set_fuel_ratio = 1.0
+
 add_ideas = {
+Declaration_Emperor
+aftermath_of_defeat
+Yoshida_Doctrine
 constitution_of_japanese
+far_right_party_military
+EROA
+Depression_of_USA
+political_confrontation
+Communist_leadership_strike
 }
 
 set_technology = {
@@ -104,106 +113,6 @@ create_import = {
 		exporter = USA
 }
 
-1939.1.1 = {
-
-	add_political_power = 1198
-	
-
-	#adding ministers
-	add_ideas = {
-		JAP_mitsumasa_yonai
-		minoru_genda
-		hajime_sugiyama
-		soemu_toyoda
-		fushimi_hiroyasu
-		kawasaki
-
-		#laws
-		tot_economic_mobilisation
-		service_by_requirement
-		closed_economy
-	}
-	if = {
-		limit = {
-			has_dlc = "Man the Guns"
-		}
-		remove_ideas = MTG_naval_treaty_adherent
-	}
-
-	oob = "JAP_1939"
-	set_technology = {
-
-		#PLACEHOLDERS for vehicles
-		
-		cv_fighter1 = 1
-		fighter1 = 1
-		tactical_bomber1 = 1
-	
-		#doctrines
-		#air
-		force_rotation = 1
-		fighter_baiting = 1
-		low_echelon_support = 1
-		dispersed_fighting = 1
-
-		grand_battle_plan = 1
-		prepared_defense = 1
-		grand_assault = 1
-		carrier_primacy = 1
-		carrier_task_forces = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-		computing_machine = 1
-		basic_encryption = 1
-		basic_decryption = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		oil_processing = 1
-		fuel_refining2 = 1
-		construction1 = 1
-		construction2 = 1
-		construction3 = 1
-		concentrated_industry = 1
-		concentrated_industry2 = 1
-		concentrated_industry3 = 1
-	}
-	if = {
-		limit = {
-			has_dlc = "Man the Guns"
-		}
-		set_technology = {
-			improved_ship_hull_submarine = 1
-			basic_ship_hull_light = 1
-			improved_ship_hull_light = 1
-			improved_ship_hull_cruiser = 1
-			improved_ship_hull_carrier = 1
-			ship_hull_super_heavy = 1
-		}
-		set_naval_oob = "JAP_1939_naval"
-	}
-	if = {
-		limit = {
-			not = { has_dlc = "Man the Guns" }
-		}
-		set_technology = {
-			improved_submarine = 1
-			basic_destroyer = 1
-			improved_destroyer = 1
-			improved_heavy_cruiser = 1
-			improved_carrier = 1
-			heavy_battleship = 1
-		}
-		set_naval_oob = "JAP_1939_naval_legacy"
-	}
-}
-
 set_convoys = 40
 
 USA = {
@@ -221,24 +130,96 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = no
 }
+
 set_popularities = {
-communism = 8
-radical_socialism = 2
-social_democracy = 3
-social_liberalism = 10
-market_liberalism = 4
-liberal_conservatism = 16
-democratic = 24
-neutrality = 13
-autocracy = 2
-fascism = 18
+communism = 12 #일본 공산당 주 정파
+radical_socialism = 4 #일본 공산당2
+
+social_democracy = 17 #일본 사회당 주 정파
+social_liberalism = 6 #일본 사회당2
+
+market_liberalism = 16 #일본자유당
+
+liberal_conservatism = 7 #자유 민주당2
+democratic = 21 #자유 민주당 주 정파
+
+neutrality = 3 #대정익찬회2
+fascism = 9 #대정익찬회 주 정파
+
+autocracy = 5
+}
+
+create_country_leader = {
+	name = "도쿠다 규이치"
+	desc = "#"
+	picture = ".dds"
+	expire = "1999.1.1"
+	ideology = marxism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "미야모토 겐지"
+	desc = "#"
+	picture = ".dds"
+	expire = "1999.1.1"
+	ideology = rev_socialism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "가타야마 데쓰"
+	desc = "#"
+	picture = ".dds"
+	expire = "1999.1.1"
+	ideology = socialism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "카와카미 조타로"
+	desc = "#"
+	picture = ".dds"
+	expire = "1999.1.1"
+	ideology = liberalism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "하토야마 이치로"
+	desc = "#"
+	picture = ".dds"
+	expire = "1999.1.1"
+	ideology = market_liberal
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "오가타 다케토라"
+	desc = "#"
+	picture = ".dds"
+	expire = "1999.1.1"
+	ideology = lib_conservatism
+	traits = {
+		#
+	}
 }
 
 create_country_leader = {
 	name = "요시다 시게루"
 	desc = "#"
 	picture = "Shigeru_Yoshida.dds"
-	expire = "1989.1.1"
+	expire = "1999.1.1"
 	ideology = conservatism
 	traits = {
 		#
@@ -246,18 +227,43 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Kyuichi Tokuda"
-	desc = "POLITICS_Hirohito_DESC"
-	picture = "GFX_Portrait_kyuichi_tokuda"
-	expire = "1989.1.1"
-	ideology = marxism
+	name = "오자와 지사부로"
+	desc = "#"
+	picture = ".dds"
+	expire = "1999.1.1"
+	ideology = authoritarian
 	traits = {
+		#
 	}
 }
 
+create_country_leader = {
+	name = "쇼와 덴노"
+	desc = "#"
+	picture = ".dds"
+	expire = "1999.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "도조 히데키"
+	desc = "#"
+	picture = ".dds"
+	expire = "1999.1.1"
+	ideology = nazism
+	traits = {
+		#
+	}
+}
+
+
+
 create_corps_commander = {
 	name = "Tomoyuki Yamashita"
-		picture = "Portrait_Japan_Tomoyuki_Yamashita.dds"
+	picture = "Portrait_Japan_Tomoyuki_Yamashita.dds"
 	traits = {
 		trickster trait_engineer brilliant_strategist politically_connected
 	}
