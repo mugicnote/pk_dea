@@ -1,4 +1,4 @@
-﻿focus_tree = {
+focus_tree = {
 	id = New_file
 	country = {
 		factor = 0
@@ -152,8 +152,6 @@
 				ruling_party = social_democracy
 				elections_allowed = yes
 			}
-		unlock_decision_category_tooltip = KOR_the_inevitable_civil_war
-		country_event = { id = KOR.2 }
 		clr_country_flag = forth_election_start
 		}
 	}
@@ -167,24 +165,24 @@
 		completion_reward = {
 		add_country_leader_trait = traits_Yeo_Un1
 		}
-		x = 5
+		x = 4
 		y = 4
 
 	}
 	focus = {
 		id = arrest_of_offender
-		icon = GFX_goal_generic_imprison_people
+		icon =
 		cost = 10.00
 		prerequisite = {
 			focus = Yeo_Un_hyung_Elected
 		}
-		x = 9
+		x = 10
 		y = 4
 
 	}
 	focus = {
 		id = Lee_Beom_seoks_Track_Survey
-		icon = GFX_kor_investigate_focus
+		icon = 
 		cost = 10.00
 		prerequisite = {
 			focus = arrest_of_offender
@@ -238,8 +236,18 @@
 
 	}
 	focus = {
+		id = Recruitment_of_Kim_Koo
+		icon = GFX_
+		cost = 10.00
+		prerequisite = {
+			focus = three_party_merger
+		}
+		x = 7
+		y = 5
+
+	}
+	focus = {
 		id = Extreme_Left_Ban
-		icon = GFX_Anti_Communist
 		cost = 10.00
 		prerequisite = {
 			focus = Leader_of_Joseon
@@ -250,10 +258,11 @@
 	}
 	focus = {
 		id = conflict_agitation
-		icon = GFX_Communist_Discourse
+		icon =
 		cost = 10.00
 		prerequisite = {
 			focus = Leader_of_Joseon
+			focus = three_party_merger
 		}
 		x = 5
 		y = 5
@@ -264,7 +273,6 @@
 		icon = GFX_Gunpoint_Diplomacy
 		cost = 10.00
 		prerequisite = {
-			focus = conflict_agitation
 			focus = Extreme_Left_Ban
 		}
 		completion_reward = {
@@ -276,10 +284,13 @@
 	}
 	focus = {
 		id = diplomatic_relations_between_leaders_France
-		icon = GFX_goal_Paris
-		cost = 10.00
+		icon = 
+		cost = 5.00
 		prerequisite = {
 			focus = Recruitment_of_Kim_Koo
+		}
+		prerequisite = {
+			focus = opposition_personnel_incarceration
 		}
 		x = 9
 		y = 6
@@ -292,7 +303,10 @@
 		prerequisite = {
 			focus = conflict_agitation
 		}
-		x = 5
+		prerequisite = {
+			focus = Recruitment_of_Kim_Koo
+		}
+		x = 6
 		y = 6
 
 	}
@@ -303,16 +317,13 @@
 		prerequisite = {
 			focus = revision_of_labor_law
 		}
-		prerequisite = {
-			focus = Recruitment_of_Kim_Koo
-		}
 		x = 7
 		y = 7
 
 	}
 	focus = {
 		id = execution_coup_forces
-		icon = GFX_enormous_arrest
+		icon = 
 		cost = 10.00
 		prerequisite = {
 			focus = Lee_Beom_seok_wanted
@@ -431,10 +442,16 @@
 		icon = GFX_goal_dam
 		cost = 10.00
 		prerequisite = {
-			focus = new_policy_for_josun_economy
+			focus = enactment_Social_Security_Act
 		}
-		x = 9
-		y = 9
+		prerequisite = {
+			focus = seven_principles_right_wing_cooperation
+		}
+		prerequisite = {
+			focus = release_political_activists
+		}
+		x = 7
+		y = 10
 
 	}
 	focus = {
@@ -444,7 +461,7 @@
 		prerequisite = {
 			focus = new_policy_for_josun_economy
 		}
-		x = 11
+		x = 9
 		y = 9
 
 	}
