@@ -1,0 +1,29 @@
+scripted_gui = {
+
+	TNO_SG_big_event_assassination_Jae_pil = {
+		context_type = player_context
+		window_name = "TNO_SG_big_event_assassination_Jae_pil"
+
+		visible = {
+			has_country_flag = big_event_assassination_Jae_pil
+		}
+	}
+
+	TNO_SG_big_event_frame_assassination_Jae_pil = {
+		context_type = player_context
+		window_name = "TNO_SG_big_event_frame_assassination_Jae_pil"
+
+		visible = {
+			has_country_flag = big_event_assassination_Jae_pil
+		}
+
+		effects = {
+			Option_click = {
+				clr_country_flag = big_event_assassination_Jae_pil
+			}
+		}
+	}
+
+	##USE SUPER_EVENT_MAKER_GUI IN USEFUL PYTHON PROGRAMS TO MAKE NEW SUPER EVENTS##
+
+}

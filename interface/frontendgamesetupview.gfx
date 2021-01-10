@@ -305,11 +305,6 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_tno_button_148x34"
-		texturefile = "gfx/interface/tno_button_148x34.dds"
-	}
-
-	spriteType = {
 		name = "GFX_tno_bookmark_button"
 		texturefile = "gfx/interface/bookmark_button.dds"
 		noOfFrames = 3

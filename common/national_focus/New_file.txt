@@ -10,6 +10,7 @@ focus_tree = {
 	default = no
 
 	continuous_focus_position = { x = 20 y = 1600 }
+	shared_focus = rural_relief_policy
 
 	focus = {
 		id = military_arrest

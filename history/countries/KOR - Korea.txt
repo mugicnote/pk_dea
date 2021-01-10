@@ -209,7 +209,7 @@ create_country_leader = { #사진 작업 완료(DoS 머장? 도움 받음)
 create_country_leader = { #사진 작업 완료
   name = "박헌영"
   desc = "POLITICS_PARK_HEON_YOUNG_DESC"
-  picture = "Portrait_Park_Heon_young.dds"
+  picture = "Portrait_Pak_Honyong.dds"
   expire = "1947.7.19"
   ideology = leninism
   traits = {
@@ -358,6 +358,7 @@ create_field_marshal = { #사진 작업 완료
   picture = "Portrait_Lee_Beomseok.dds"
   traits = { armor_officer infantry_officer fast_planner brilliant_strategist logistics_wizard offensive_doctrine }
   skill = 5
+  id = 3005
 
   attack_skill = 5
   defense_skill = 3

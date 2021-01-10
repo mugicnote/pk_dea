@@ -75,16 +75,6 @@ music = {
 }
 
 music = {
-	song = "letter_private"
-	chance = {
-		modifier = {
-			factor = 2
-			has_war = no
-		}
-	}
-}
-
-music = {
 	song = "Four_Seasons"
 	chance = {
 		modifier = {
@@ -136,17 +126,6 @@ music = {
 
 music = {
 	song = "old_love"
-	chance = {
-		modifier = {
-			factor = 2
-			has_war = no
-		}
-	}
-}
-
-music = {
-	song = "Though_I_Loved_You"
-	
 	chance = {
 		modifier = {
 			factor = 2

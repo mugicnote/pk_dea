@@ -2,22 +2,17 @@ state={
 	id=760
 	name="STATE_760"
 	provinces={
-		1838 4704 4843 7732 10839 12524 12598 12671 
+		4704 4843 7732 10839 12524 12598 12671 
 	}
 	manpower=700000
 	buildings_max_level_factor=1.000
 	state_category = rural
 	history={
-		owner = SSK
-		add_core_of = SIK
-		add_core_of = SSK
-		add_core_of = CHI
+		owner = KMK
+		add_core_of = KMK
 		buildings = {
 			infrastructure = 3
 			arms_factory = 1
-		}
-		1936.10.25 = {
-			controller = SSK
 		}
 	}
 }

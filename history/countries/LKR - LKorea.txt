@@ -1,0 +1,201 @@
+capital = 817
+
+oob = LKR_1936
+
+#시작시_연구가능_칸
+set_research_slots = 3
+
+#시작시_안정도
+set_stability = 0.6 #(국민정신이 다 깎아먹어서)
+
+#시작시_전쟁지지도
+set_war_support = 0.7
+
+#연료_비율
+set_fuel_ratio = 1.0
+
+#시작시_연구된_장비
+set_technology = {
+    infantry_weapons = 1
+    infantry_weapons1 = 1
+    support_weapons = 1
+    motorised_infantry = 1
+    paratroopers = 1
+    marines = 1
+    tech_support = 1
+    tech_recon = 1
+    tech_engineers = 1
+    gwtank = 1
+    basic_light_tank = 1
+    gw_artillery = 1
+    interwar_artillery = 1
+    interwar_antiair = 1
+    superior_firepower = 1
+    sup_delay = 1
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		basic_torpedo = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_heavy_battery = 1
+		basic_medium_battery = 1
+		improved_ship_torpedo_launcher = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		mtg_transport = 1
+		coastal_defense_ships = 1
+		basic_secondary_battery = 1
+		basic_depth_charges = 1
+		basic_cruiser_armor_scheme = 1
+		cruiser_submarines = 1
+	}
+	set_naval_oob = "LKR_1936_Naval"
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		basic_heavy_cruiser = 1
+		early_battleship = 1
+		basic_battleship = 1
+		early_battlecruiser = 1
+		early_carrier = 1
+		basic_carrier = 1
+		transport = 1
+	}
+	set_naval_oob = "LKR_1936_Naval_Legacy"
+}
+
+#수송선
+set_convoys = 30
+
+#국민정신
+add_ideas = {
+}
+
+#시작_정당
+set_politics = {
+    ruling_party = fascism
+    last_election = "1936.1.1"
+    election_frequency = 48
+    elections_allowed = yes
+}
+#시작시_정당들의_인기도
+set_popularities = {
+  communism = 0
+  radical_socialism = 0
+  social_democracy = 0
+  social_liberalism = 0
+  market_liberalism = 0
+  liberal_conservatism = 0
+  democratic = 0
+  neutrality = 0
+  autocracy = 0
+  fascism = 100
+}
+
+create_country_leader = { #사진 작업 완료
+  name = "이범석"
+  desc = "POLITICS_LEE_BEOM_DESC"
+  picture = "Portrait_Lee_Beomseok.dds"
+  expire = "1972.5.11"
+  ideology = lee_fascism
+  traits = {
+    great_war_hero
+  }
+}
+
+#육군_장군_및_육군_원수
+create_field_marshal = { #사진 작업 완료
+  name = "이범석"
+  picture = "Portrait_Lee_Beomseok.dds"
+  traits = { armor_officer infantry_officer fast_planner brilliant_strategist logistics_wizard offensive_doctrine }
+  skill = 5
+
+  attack_skill = 5
+  defense_skill = 3
+  planning_skill = 4
+  logistics_skill = 5
+}
+
+create_corps_commander = {
+  name = "박경철"
+  picture = "keong_chor.dds"
+  traits = { }
+  skill = 3
+
+  attack_skill = 5
+  defense_skill = 6
+  planning_skill = 2
+  logistics_skill = 4
+}
+
+create_field_marshal = { #사진 작업 완료(Dos 도움)
+  name = "김경천"
+  picture = "Portrait_Kim_Kyung-cheon.dds"
+  traits = { 
+  #명석한 전략가
+  Brilliant_Strategist
+  #공격적인 돌격가
+  Aggressive_Assaulter
+  #언덕 싸움꾼
+  Hill_Fighter
+  }
+  skill = 4
+
+  attack_skill = 6
+  defense_skill = 5
+  planning_skill = 6
+  logistics_skill = 4
+}
+
+create_corps_commander = { #사진 작업 완료
+	name = "유동열"
+	portrait_path = "gfx/leaders/KOR/Portrait_Ryu_Dongyeol.dds"
+	traits = { cavalry_officer armor_officer organizer career_officer }
+	skill = 3
+    attack_skill = 3
+    defense_skill = 2
+    planning_skill = 2
+    logistics_skill = 3
+}
+
+create_corps_commander = { #사진 작업 완료(Dos 도움)
+	name = "김석원"
+	portrait_path = "gfx/leaders/KOR/Portrait_Kim_Suk_Won.dds"
+	traits = { infantry_officer brilliant_strategist career_officer }
+	skill = 3
+    attack_skill = 3
+    defense_skill = 2
+    planning_skill = 2
+    logistics_skill = 2
+}
+
+create_field_marshal = {
+	name = "송호성"
+	picture = "Portrait_song_hoseong.dds"
+	traits = { brilliant_strategist cavalry_officer offensive_doctrine trait_engineer aggressive_assaulter }
+	skill = 5
+	attack_skill = 6
+	defense_skill = 4
+	planning_skill = 5
+	logistics_skill = 5
+}

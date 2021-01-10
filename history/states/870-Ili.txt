@@ -1,0 +1,14 @@
+state={
+	id=870
+	name="STATE_870"
+	provinces={
+		7850 7866 12526 12601 
+	}
+	history={
+		owner = SSK
+		add_core_of = SSK
+
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}
