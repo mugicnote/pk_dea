@@ -4,4 +4,196 @@ spriteTypes = {
 		name = "GFX_JAP_future"
 		texturefile = "gfx/interface/goals/JAP_future.dds"
 	}
+	SpriteType = {
+		name = "GFX_show_me_the_money"
+		texturefile = "gfx/interface/goals/show_me_the_money.dds"
+	}
+	SpriteType = {
+		name = "GFX_new_politic"
+		texturefile = "gfx/interface/goals/new_politic.dds"
+	}
+	SpriteType = {
+		name = "GFX_probelm_JAP"
+		texturefile = "gfx/interface/goals/probelm_JAP.dds"
+	}
+	SpriteType = {
+		name = "GFX_revolut_jap"
+		texturefile = "gfx/interface/goals/revolut_jap.dds"
+	}
+	SpriteType = {
+		name = "GFX_never_united"
+		texturefile = "gfx/interface/goals/never_united.dds"
+	}
+	SpriteType = {
+		name = "GFX_YES_united_jap"
+		texturefile = "gfx/interface/goals/YES_united_jap.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_police"
+		texturefile = "gfx/interface/goals/JAP_police.dds"
+	}
+	SpriteType = {
+		name = "GFX_wo_ai_nozo"
+		texturefile = "gfx/interface/goals/wo_ai_nozo.dds"
+	}
+	SpriteType = {
+		name = "GFX_low_demo"
+		texturefile = "gfx/interface/goals/low_demo.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_sound"
+		texturefile = "gfx/interface/goals/JAP_sound.dds"
+	}
+	SpriteType = {
+		name = "GFX_collaps_japan"
+		texturefile = "gfx/interface/goals/collaps_japan.dds"
+	}
+	SpriteType = {
+		name = "GFX_kushu_port"
+		texturefile = "gfx/interface/goals/kushu_port.dds"
+	}
+	SpriteType = {
+		name = "GFX_ganto_economic"
+		texturefile = "gfx/interface/goals/ganto_economic.dds"
+	}
+	SpriteType = {
+		name = "GFX_starting_planing_jap"
+		texturefile = "gfx/interface/goals/starting_planing_jap.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAPAN_investor"
+		texturefile = "gfx/interface/goals/JAPAN_investor.dds"
+	}
+	SpriteType = {
+		name = "GFX_welcome_investor"
+		texturefile = "gfx/interface/goals/welcome_investor.dds"
+	}
+	SpriteType = {
+		name = "GFX_siguo_port"
+		texturefile = "gfx/interface/goals/siguo_port.dds"
+	}
+	SpriteType = {
+		name = "GFX_zhukoku_economic"
+		texturefile = "gfx/interface/goals/zhukoku_economic.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_big_invest"
+		texturefile = "gfx/interface/goals/JAP_big_invest.dds"
+	}
+	SpriteType = {
+		name = "GFX_miracle_JAPAN"
+		texturefile = "gfx/interface/goals/miracle_JAPAN.dds"
+	}
+	SpriteType = {
+		name = "GFX_alumibum_find"
+		texturefile = "gfx/interface/goals/alumibum_find.dds"
+	}
+		SpriteType = {
+		name = "GFX_doi_gold_mine"
+		texturefile = "gfx/interface/goals/doi_gold_mine.dds"
+	}
+		SpriteType = {
+		name = "GFX_hishikari_gold_mine"
+		texturefile = "gfx/interface/goals/hishikari_gold_mine.dds"
+	}
+		SpriteType = {
+		name = "GFX_iron_mine"
+		texturefile = "gfx/interface/goals/iron_mine.dds"
+	}
+		SpriteType = {
+		name = "GFX_japanese_companies_fund"
+		texturefile = "gfx/interface/goals/japanese_companies_fund.dds"
+	}
+		SpriteType = {
+		name = "GFX_iron_mine"
+		texturefile = "gfx/interface/goals/iron_mine.dds"
+	}
+	SpriteType = {
+		name = "GFX_Overseas_fund"
+		texturefile = "gfx/interface/goals/Overseas_fund.dds"
+	}
+	SpriteType = {
+		name = "GFX_Low_interest"
+		texturefile = "gfx/interface/goals/Low_interest.dds"
+	}
+		SpriteType = {
+		name = "GFX_Successful_investment"
+		texturefile = "gfx/interface/goals/Successful_investment.dds"
+	}
+		SpriteType = {
+		name = "GFX_World_war_Loser"
+		texturefile = "gfx/interface/goals/World_war_Loser.dds"
+	}
+		SpriteType = {
+		name = "GFX_big_compensation"
+		texturefile = "gfx/interface/goals/big_compensation.dds"
+	}
+		SpriteType = {
+		name = "GFX_regain_our_authority"
+		texturefile = "gfx/interface/goals/regain_our_authority.dds"
+	}
+		SpriteType = {
+		name = "GFX_Post_war_recovery"
+		texturefile = "gfx/interface/goals/Post_war_recovery.dds"
+	}
+		SpriteType = {
+		name = "GFX_War_damage_investigation"
+		texturefile = "gfx/interface/goals/War_damage_investigation.dds"
+	}
+		SpriteType = {
+		name = "GFX_Increase_recovery_budget"
+		texturefile = "gfx/interface/goals/Increase_recovery_budget.dds"
+	}
+	SpriteType = {
+		name = "GFX_autoban_erection_first"
+		texturefile = "gfx/interface/goals/autoban_erection_first.dds"
+	}
+	SpriteType = {
+		name = "GFX_autoban_erection_second"
+		texturefile = "gfx/interface/goals/autoban_erection_second.dds"
+	}
+	SpriteType = {
+		name = "GFX_Introduction_of_mechanical_machine_tool"
+		texturefile = "gfx/interface/goals/Introduction_of_mechanical_machine_tool.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_USA_assistance"
+		texturefile = "gfx/interface/goals/JAP_USA_assistance.dds"
+	}
+	SpriteType = {
+		name = "GFX_bombed_village"
+		texturefile = "gfx/interface/goals/bombed_village.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_Waterpipe_construction"
+		texturefile = "gfx/interface/goals/JAP_Waterpipe_construction.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_Leg_construction"
+		texturefile = "gfx/interface/goals/JAP_Leg_construction.dds"
+	}
+	SpriteType = {
+		name = "GFX_build_school"
+		texturefile = "gfx/interface/goals/build_school.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_Restored_village"
+		texturefile = "gfx/interface/goals/JAP_Restored_village.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_japan_Possibility"
+		texturefile = "gfx/interface/goals/JAP_japan_Possibility.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_growing_fund"
+		texturefile = "gfx/interface/goals/JAP_growing_fund.dds"
+	}
+	SpriteType = {
+		name = "GFX_Harmonious_resources"
+		texturefile = "gfx/interface/goals/Harmonious_resources.dds"
+	}
+	SpriteType = {
+		name = "GFX_rising_sun_in_japan"
+		texturefile = "gfx/interface/goals/rising_sun_in_japan.dds"
+	}
 }
