@@ -4,6 +4,12 @@ spriteTypes = {
 		name = "GFX_KOR_album_art"
 		texturefile = "gfx/KOR_album_art.dds"
 		noOfFrames = 2
-	}	
+	}
+
+	spriteType = {
+		name = "GFX_KOR_kim_kwang_seok_album_art"
+		texturefile = "gfx/KOR_kim_kwang_seok_album_art.dds"
+		noOfFrames = 2
+	}
 
 }

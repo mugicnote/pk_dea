@@ -4,7 +4,7 @@
 		factor = 0
 		modifier = {
 			add = 10
-			tag = KOR
+			tag = JAP
 		}
 	}
 	default = no

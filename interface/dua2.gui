@@ -78,7 +78,7 @@ guiTypes = {
 			}
 			instantTextboxType = { #개요
 				name = "FdS_general_outline"
-				position = { x = -20 y = 20 }
+				position = { x = -60 y = 20 }
 				font = "hoi_36header"
 				text = "[This.FdS_front_name]"
 				maxWidth = 600

@@ -1,0 +1,223 @@
+capital = 807
+
+oob = CKR_1936
+
+#시작시_연구가능_칸
+set_research_slots = 3
+
+#시작시_안정도
+set_stability = 0.6 #(국민정신이 다 깎아먹어서)
+
+#시작시_전쟁지지도
+set_war_support = 0.7
+
+#연료_비율
+set_fuel_ratio = 1.0
+
+#시작시_연구된_장비
+set_technology = {
+    infantry_weapons = 1
+    infantry_weapons1 = 1
+    support_weapons = 1
+    motorised_infantry = 1
+    paratroopers = 1
+    marines = 1
+    tech_support = 1
+    tech_recon = 1
+    tech_engineers = 1
+    gwtank = 1
+    basic_light_tank = 1
+    gw_artillery = 1
+    interwar_artillery = 1
+    interwar_antiair = 1
+    superior_firepower = 1
+    sup_delay = 1
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		basic_torpedo = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_heavy_battery = 1
+		basic_medium_battery = 1
+		improved_ship_torpedo_launcher = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		mtg_transport = 1
+		coastal_defense_ships = 1
+		basic_secondary_battery = 1
+		basic_depth_charges = 1
+		basic_cruiser_armor_scheme = 1
+		cruiser_submarines = 1
+	}
+	set_naval_oob = "CKR_1936_Naval"
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		basic_heavy_cruiser = 1
+		early_battleship = 1
+		basic_battleship = 1
+		early_battlecruiser = 1
+		early_carrier = 1
+		basic_carrier = 1
+		transport = 1
+	}
+	set_naval_oob = "CKR_1936_Naval_Legacy"
+}
+
+#수송선
+set_convoys = 30
+
+#국민정신
+add_ideas = {
+}
+
+#시작_정당
+set_politics = {
+    ruling_party = communism
+    last_election = "1936.1.1"
+    election_frequency = 48
+    elections_allowed = yes
+}
+#시작시_정당들의_인기도
+set_popularities = {
+  communism = 100
+  radical_socialism = 0
+  social_democracy = 0
+  social_liberalism = 0
+  market_liberalism = 0
+  liberal_conservatism = 0
+  democratic = 0
+  neutrality = 0
+  autocracy = 0
+  fascism = 0
+}
+create_country_leader = { #사진 작업 완료
+  name = "박헌영"
+  desc = "POLITICS_PARK_HEON_YOUNG_DESC"
+  picture = "Portrait_Pak_Honyong.dds"
+  expire = "1947.7.19"
+  ideology = leninism
+  traits = {
+    #
+  }
+}
+
+create_country_leader = { #사진 작업 완료
+  name = "김원봉"
+  desc = "POLITICS_KIM_WON_BONG_DESC"
+  picture = "Portrait_Kim_Wonbong.dds"
+  expire = "1947.7.19"
+  ideology = rev_socialism
+  traits = {
+    #
+  }
+}
+
+#육군_장군_및_육군_원수
+create_field_marshal = { #사진 작업 완료
+  name = "김원봉"
+  picture = "Portrait_Kim_Wonbong.dds"
+  traits = { 
+  #정계와의 연줄
+  Politically_Connected
+  #명석한 전략가
+  Brilliant_Strategist
+  #특공대
+  Commando
+  }
+  skill = 3
+
+  attack_skill = 5
+  defense_skill = 2
+  planning_skill = 5
+  logistics_skill = 4
+}
+
+###공산주의자###
+
+create_field_marshal = { #사진 작업 완료
+	name = "김일성"
+  	id = 3001
+	picture = "Kim_portrait.dds"
+	traits = { trait_KOR_communism }
+	skill = 4
+    attack_skill = 3
+    defense_skill = 3
+    planning_skill = 2
+    logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "김책"
+	picture = "kim_chek.dds"
+	traits = { trait_KOR_communism }
+	skill = 4
+    attack_skill = 3
+    defense_skill = 3
+    planning_skill = 2
+    logistics_skill = 2
+}
+
+create_corps_commander = { #사진 작업 완료
+	name = "최용건"
+	picture = "Choi_Yong_Gun.dds"
+	traits = { trait_KOR_communism trait_cautious trickster }
+	skill = 4
+    attack_skill = 3
+    defense_skill = 3
+    planning_skill = 2
+    logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "남일"
+	picture = "Nam_Il.dds"
+	traits = { trait_KOR_communism }
+	skill = 4
+    attack_skill = 3
+    defense_skill = 3
+    planning_skill = 2
+    logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "김무정"
+	picture = "kim_mu_jong.dds"
+	traits = { trait_KOR_communism }
+	skill = 4
+    attack_skill = 3
+    defense_skill = 3
+    planning_skill = 2
+    logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "박일우"
+	picture = "park_il_wu.dds"
+	traits = { trait_KOR_communism }
+	skill = 4
+    attack_skill = 3
+    defense_skill = 3
+    planning_skill = 2
+    logistics_skill = 2
+}

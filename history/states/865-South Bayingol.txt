@@ -1,0 +1,14 @@
+state={
+	id=865
+	name="STATE_865"
+	provinces={
+		1943 10315 10911 
+	}
+	history={
+		owner = MHX
+		add_core_of = MHX
+
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

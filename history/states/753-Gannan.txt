@@ -8,9 +8,8 @@ state={
 	buildings_max_level_factor=1.000
 	state_category = rural
 	history={
-		owner = MHX
-		add_core_of = MHX
-		add_core_of = CHI
+		owner = GMS
+		add_core_of = GMS
 		victory_points = {
 			2045 1 
 		}

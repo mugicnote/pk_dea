@@ -165,7 +165,7 @@ country_event = { #연설
 		hidden_effect = {
 			country_event = {
 				id = KOR.55
-				days = 2
+				days = 5
 			}
 		}
 	}
@@ -187,7 +187,7 @@ country_event = { #연설
 		hidden_effect = {
 			country_event = {
 				id = KOR.55
-				days = 2
+				days = 5
 			}
 		if = {
 			limit = {
@@ -257,7 +257,7 @@ country_event = { #연설
 		hidden_effect = {
 			country_event = {
 				id = KOR.56
-				days = 2
+				days = 5
 			}
 		}
 	}
@@ -279,7 +279,7 @@ country_event = { #연설
 		hidden_effect = {
 			country_event = {
 				id = KOR.56
-				days = 2
+				days = 5
 			}
 		if = {
 			limit = {
@@ -314,7 +314,7 @@ country_event = { #연설
 		hidden_effect = {
 			country_event = {
 				id = KOR.57
-				days = 2
+				days = 5
 			}
 		}
 	}
@@ -337,7 +337,7 @@ country_event = { #연설
 		hidden_effect = {
 			country_event = {
 				id = KOR.61
-				days = 2
+				days = 5
 			}
 		}
 	}
@@ -361,7 +361,7 @@ country_event = { #연설
 		hidden_effect = {
 			country_event = {
 				id = KOR.62
-				days = 2
+				days = 5
 			}
 		}
 	}
@@ -384,7 +384,7 @@ country_event = { #연설
 		hidden_effect = {
 			country_event = {
 				id = KOR.63
-				days = 2
+				days = 5
 			}
 		}
 	}
@@ -406,7 +406,7 @@ country_event = { #연설
 		hidden_effect = {
 			country_event = {
 				id = KOR.64
-				days = 2
+				days = 5
 			}
 		}
 	}
@@ -428,7 +428,7 @@ country_event = { #연설
 		hidden_effect = {
 			country_event = {
 				id = KOR.65
-				days = 2
+				days = 5
 			}
 		}
 	}
@@ -450,7 +450,7 @@ country_event = { #연설
 		hidden_effect = {
 			country_event = {
 				id = KOR.66
-				days = 2
+				days = 5
 			}
 		}
 	}
@@ -472,7 +472,7 @@ country_event = { #연설
 		hidden_effect = {
 			country_event = {
 				id = KOR.67
-				days = 2
+				days = 5
 			}
 		}
 	}
@@ -494,7 +494,7 @@ country_event = { #연설
 		hidden_effect = {
 			country_event = {
 				id = KOR.68
-				days = 2
+				days = 5
 			}
 		}
 	}
@@ -516,7 +516,7 @@ country_event = { #연설
 		hidden_effect = {
 			country_event = {
 				id = KOR.69
-				days = 2
+				days = 5
 			}
 		}
 	}
@@ -538,7 +538,7 @@ country_event = { #연설
 		hidden_effect = {
 			country_event = {
 				id = KOR.70
-				days = 2
+				days = 5
 			}
 		}
 	}
@@ -560,7 +560,7 @@ country_event = { #연설
 		hidden_effect = {
 			country_event = {
 				id = KOR.71
-				days = 2
+				days = 5
 			}
 		}
 	}
@@ -582,7 +582,7 @@ country_event = { #연설
 		hidden_effect = {
 			country_event = {
 				id = KOR.72
-				days = 2
+				days = 5
 			}
 		}
 	}
@@ -604,7 +604,7 @@ country_event = { #연설
 		hidden_effect = {
 			country_event = {
 				id = KOR.73
-				days = 2
+				days = 5
 			}
 		}
 	}
@@ -626,7 +626,7 @@ country_event = { #연설
 		hidden_effect = {
 			country_event = {
 				id = KOR.74
-				days = 2
+				days = 5
 			}
 		}
 	}
@@ -648,7 +648,7 @@ country_event = { #연설
 		hidden_effect = {
 			country_event = {
 				id = KOR.75
-				days = 2
+				days = 5
 			}
 		}
 	}
@@ -670,7 +670,7 @@ country_event = { #연설
 		hidden_effect = {
 			country_event = {
 				id = KOR.76
-				days = 2
+				days = 5
 			}
 		}
 	}
@@ -691,8 +691,8 @@ country_event = { #연설
 		ai_chance = { factor = 1 }
 		hidden_effect = {
 			country_event = {
-				id = KOR.10
-				days = 2
+				id = KOR.77
+				days = 5
 			}
 		}
 	}
@@ -739,7 +739,19 @@ country_event = { #연설
 		ai_chance = { factor = 1 }
 		country_event = {
 			id = KOR.79
-			days = 2
+			days = 5
+		}
+		set_country_flag = big_event_assassination_Jae_pil
+		kill_ideology_leader = democratic
+		create_country_leader = {
+			name = "대한민국 내각"
+			desc = ""
+			picture = "krGov.dds"
+			expire = "1999.1.1"
+			ideology = conservatism
+			traits = {
+				
+			}
 		}
 	}
 }
@@ -759,7 +771,18 @@ country_event = { #연설
 		ai_chance = { factor = 1 }
 		country_event = {
 			id = KOR.1
-			days = 2
+			days = 31
+		}
+		retire_ideology_leader = democratic
+		create_country_leader = {
+			name = "김규식"
+			desc = ""
+			picture = "Portrait_Kim_Kyusik.dds"
+			expire = "1999.1.1"
+			ideology = conservatism
+			traits = {
+				
+			}
 		}
 	}
 }
@@ -786,69 +809,87 @@ country_event = { #경찰 확대
 	}
 }
 
-country_event = { #시작 선택
+country_event = { #
 	id = KOR.10
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.10"}
 	title = KOR.10.t
 	desc = KOR.10.desc
-	picture = GFX_report_event_kor_lee
+	picture = GFX_
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
-	option = { #도주
+	option = { #
 		name = KOR.10.a
 		ai_chance = { factor = 1 }
-		complete_national_focus = military_arrest
-		country_event = { id = KOR.12 }
-	}
-	option = { #채포
-		name = KOR.10.b
-		ai_chance = { factor = 1 }
-		country_event = { id = KOR.11 }
+		CKR = {
+			set_state_owner = 807
+			set_state_owner = 808
+			add_state_core = 807
+			add_state_core = 808
+			set_capital = 807
+			set_state_controller = 807
+			set_state_controller = 808
+		}
 	}
 }
 
 add_namespace = KOR
 
-country_event = { #쿠데타 성공
+country_event = { #
 	id = KOR.11
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.11"}
 	title = KOR.11.t
 	desc = KOR.11.desc
-	picture = GFX_report_event_generic_military_parade
+	picture = GFX_
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
-	option = { #이범석 만세
+	option = { #
 		name = KOR.11.a
-		complete_national_focus = military_success
 		ai_chance = { factor = 1 }
+		remove_unit_leader = 3005
+		LKR = {
+			set_state_owner = 817
+			set_state_owner = 816
+			set_state_owner = 812
+			set_state_owner = 813
+			add_state_core = 817
+			add_state_core = 816
+			add_state_core = 812
+			add_state_core = 813
+			set_capital = 817
+			set_state_controller = 817
+			set_state_controller = 816
+			set_state_controller = 812
+			set_state_controller = 813
+		}
 	}
 }
 
 add_namespace = KOR
 
-country_event = { #공산당 패거리
+country_event = { #
 	id = KOR.12
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.12"}
 	title = KOR.12.t
 	desc = KOR.12.desc
-	picture = GFX_assassination_prime_minister
+	picture = GFX_
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
-	option = { #도망
+	option = { #
 		name = KOR.12.a
 		ai_chance = { factor = 1 }
-		country_event = { id = KOR.13 }
-	}
-	option = { #잡힘
-		name = KOR.12.b
-		ai_chance = { factor = 1 }
-		complete_national_focus = election_denial
+		CKR = {
+			declare_war_on = {
+				target = KOR
+				type = civil_war
+			}
+			add_civil_war_target = KOR
+		}
 	}
 }
 

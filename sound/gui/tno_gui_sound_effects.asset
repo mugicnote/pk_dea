@@ -1,0 +1,9 @@
+soundeffect = {
+	name = tno_se_assassination_Jae_pil
+	sounds = {
+		sound = tno_se_assassination_Jae_pil
+	}
+	volume = 3
+}
+
+##USE SUPER_EVENT_MAKER_GUI IN USEFUL PYTHON PROGRAMS TO MAKE NEW SUPER EVENTS##
