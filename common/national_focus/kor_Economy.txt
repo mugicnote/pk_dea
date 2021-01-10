@@ -1,0 +1,212 @@
+﻿shared_focus = {
+	id = rural_relief_policy
+	icon = GFX_
+	cost = 10
+
+	offset = {
+		x = 110
+		y = 6
+		trigger = {
+			tag = KOR
+		}
+	}
+	completion_reward = {
+	}
+	x = 0
+	y = 0
+}
+
+shared_focus = {
+	id = industrial_restructuring
+	icon = GFX_
+	cost = 10.00
+	prerequisite = {
+		focus = rural_relief_policy
+	}
+	relative_position_id = rural_relief_policy
+
+	completion_reward = {
+	}
+	x = -3
+	y = 1
+
+}
+
+shared_focus = {
+	id = NACF_Installation
+	icon = GFX_
+	cost = 10.00
+	prerequisite = {
+		focus = industrial_restructuring
+	}
+	relative_position_id = industrial_restructuring
+
+	completion_reward = {
+	}
+	x = 2
+	y = 1
+
+}
+
+shared_focus = {
+	id = Agricultural_equipment_imports_USA
+	icon = GFX_
+	cost = 10.00
+	prerequisite = {
+		focus = industrial_restructuring
+	}
+	relative_position_id = industrial_restructuring
+
+	completion_reward = {
+	}
+	x = -2
+	y = 1
+
+}
+
+shared_focus = {
+	id = Establishment_National_Institute_Industrial_Research
+	icon = GFX_
+	cost = 10.00
+	prerequisite = {
+		focus = rural_relief_policy
+	}
+	relative_position_id = rural_relief_policy
+
+	completion_reward = {
+	}
+	x = 3
+	y = 1
+
+}
+
+shared_focus = {
+	id = appointment_Minister_of_Education
+	icon = GFX_
+	cost = 10.00
+	prerequisite = {
+		focus = Establishment_National_Institute_Industrial_Research
+	}
+	relative_position_id = Establishment_National_Institute_Industrial_Research
+
+	completion_reward = {
+	}
+	x = 2
+	y = 1
+
+}
+
+shared_focus = {
+	id = industrial_subsidy_support
+	icon = GFX_
+	cost = 10.00
+	prerequisite = {
+		focus = Establishment_National_Institute_Industrial_Research
+	}
+	relative_position_id = Establishment_National_Institute_Industrial_Research
+
+	completion_reward = {
+	}
+	x = -2
+	y = 1
+
+}
+
+shared_focus = {
+	id = Enforcement_industrial_accident_compensation_insurance
+	icon = GFX_
+	cost = 10.00
+	prerequisite = {
+		focus = NACF_Installation
+	}
+	prerequisite = {
+		focus = industrial_subsidy_support
+	}
+	relative_position_id = NACF_Installation
+
+	completion_reward = {
+	}
+	x = 1
+	y = 1
+
+}
+
+shared_focus = {
+	id = Localization_agricultural_equipment
+	icon = GFX_
+	cost = 10.00
+	prerequisite = {
+		focus = Agricultural_equipment_imports_USA
+	}
+	relative_position_id = Agricultural_equipment_imports_USA
+
+	completion_reward = {
+	}
+	x = -1
+	y = 1
+
+}
+
+shared_focus = {
+	id = expansion_public_schools
+	icon = GFX_
+	cost = 10.00
+	prerequisite = {
+		focus = appointment_Minister_of_Education
+	}
+	relative_position_id = appointment_Minister_of_Education
+
+	completion_reward = {
+	}
+	x = 1
+	y = 1
+
+}
+
+shared_focus = {
+	id = establishment_national_university
+	icon = GFX_
+	cost = 10.00
+	prerequisite = {
+		focus = Enforcement_industrial_accident_compensation_insurance
+	}
+	relative_position_id = Enforcement_industrial_accident_compensation_insurance
+
+	completion_reward = {
+	}
+	x = -2
+	y = 1
+
+}
+
+shared_focus = {
+	id = establishment_radio_supply_business
+	icon = GFX_
+	cost = 10.00
+	prerequisite = {
+		focus = Enforcement_industrial_accident_compensation_insurance
+	}
+	relative_position_id = Enforcement_industrial_accident_compensation_insurance
+
+	completion_reward = {
+	}
+	x = 0
+	y = 1
+
+}
+
+shared_focus = {
+	id = Basic_National_Health_Insurance
+	icon = GFX_
+	cost = 10.00
+	prerequisite = {
+		focus = Enforcement_industrial_accident_compensation_insurance
+	}
+	relative_position_id = Enforcement_industrial_accident_compensation_insurance
+
+	completion_reward = {
+	}
+	x = 2
+	y = 1
+
+}

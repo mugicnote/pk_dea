@@ -1,3 +1,4 @@
+
 state={
 	id=617
 	name="STATE_617"
@@ -17,12 +18,13 @@ state={
 		}
 		1936.10.25 = {
 			controller = SSK
+
 		}
 
 	}
 
 	provinces={
-		1703 4682 4709 4770 7702 7792 7850 10545 10614 12526 12601 12656 
+		1703 4682 4770 4828 7702 7949 
 	}
 	manpower=1080500
 	buildings_max_level_factor=1.000

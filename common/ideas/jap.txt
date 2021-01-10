@@ -183,7 +183,7 @@ ideas = {
                 always = yes
             }
 
-            picture = GFX_
+            picture = GFX_Communist_leadership_strike
 
             removal_cost = -1
             

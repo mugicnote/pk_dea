@@ -190,5 +190,9 @@ spriteTypes = {
 		name = "GFX_idea_political_confrontation"
 		texturefile = "gfx/interface/ideas/political_confrontation.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_Communist_leadership_strike"
+		texturefile = "gfx/interface/ideas/Communist_leadership_strike.dds"
+	}
 
 }

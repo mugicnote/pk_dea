@@ -1,0 +1,143 @@
+music_station = "kim_kwang_seok"
+
+music = {
+	song = "letter_private"
+	chance = {
+		modifier = {
+			factor = 0.5
+		}
+	}
+}
+
+# Peace Song
+music = {
+	song = "on_the_grounds_of_love"
+	
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+
+music = {
+	song = "Though_I_Loved_You"
+	
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+
+music = {
+	song = "the_days"
+	
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+
+music = {
+	song = "to_you"
+	
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+
+music = {
+	song = "sad_song"
+	
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+
+music = {
+	song = "on_the_street"
+	
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+
+music = {
+	song = "My_love_I_couldnt_tell_you"
+	
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+
+music = {
+	song = "a_stump"
+	
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+
+music = {
+	song = "Please_wait_for_me"
+	
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+
+music = {
+	song = "Write_letter_cloudy_autumn_sky"
+	
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+
+music = {
+	song = "sound_of_your_laughter"
+	
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+
+music = {
+	song = "in_the_wilderness"
+	
+	chance = {
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}

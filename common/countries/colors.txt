@@ -263,8 +263,8 @@ MON = {
 	color_ui = rgb { 209 247 133 }
 }
 MEN = {
-	color = rgb { 185  255  152 }
-	color_ui = rgb { 165  230  132 }
+	color = rgb { 114 205 140 }
+	color_ui = rgb { 114 205 140 }
 }
 TAN = {
 	color = rgb { 139 14 27 }
@@ -319,8 +319,8 @@ GXC = {
 }
 
 SHX = {
-	color = rgb { 105 90 132 }
-	color_ui = rgb { 105 90 132 }
+	color = rgb { 82  2  15 }
+	color_ui = rgb { 101  30  41 }
 }
 
 XSM = {
@@ -464,7 +464,7 @@ DDR = {
     color_ui = rgb { 150 180 120 }
 }
 KOR = {
-	color = rgb { 0  51  153}
+	color = rgb { 0  51  153 }
 	color_ui = rgb { 0  51  153 }	
 }
 ISR = {
@@ -728,8 +728,8 @@ ETS = {
 	color_ui = rgb { 71 178 224 }
 }
 KMK = {
-	color = rgb { 160 82 45 }
-	color_ui = rgb { 160 82 45 }
+	color = rgb { 215 103 10 }
+	color_ui = rgb { 215 103 10 }
 }
 
 MHB = {
@@ -738,8 +738,8 @@ MHB = {
 }
 
 MHX = {
-	color = rgb { 55 108 158 }
-	color_ui = rgb { 55 108 158 }
+	color = rgb { 188 100 67 }
+	color_ui = rgb { 168 80 47 }
 }
 GJU = {
 	color = rgb { 0 0 174 }
@@ -754,4 +754,29 @@ UPN = {
 UFP = {
 	color = hsv { 0.18 0.6 0.9 } #255 244 190
 	color_ui = hsv { 0.18 0.3 0.9 }
+}
+
+UAC = {
+	color = rgb { 20 100 175 }
+	color_ui = rgb { 20 100 175 }
+}
+
+GMS = {
+	color = rgb { 55 108 158 }
+	color_ui = rgb { 55 108 158 }
+}
+
+LKR = {
+	color = rgb { 125 125 125 }
+    color_ui = rgb { 125 125 125 }
+}
+
+CKR = {
+	color = rgb { 178 34 52 }
+    color_ui = rgb { 178 34 52 }
+}
+
+RUS = {
+	color = rgb { 0 127 14 }
+	color_ui = rgb { 0 127 14 }
 }

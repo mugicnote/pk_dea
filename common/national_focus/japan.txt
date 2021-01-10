@@ -8,7 +8,7 @@
 		}
 	}
 	default = no
-
+	
 	focus = {
 		id = JAP_future
 		icon = GFX_JAP_future
@@ -19,7 +19,7 @@
 	}
 	focus = {
 		id = JAP_World_war_Loser
-		icon = GFX_goal_unknown
+		icon = GFX_World_war_Loser
 		cost = 10.00
 		x = 41
 		y = 2
@@ -27,7 +27,7 @@
 	}
 	focus = {
 		id = JAP_new_politics
-		icon = GFX_goal_unknown
+		icon = GFX_new_politic
 		cost = 10.00
 		prerequisite = {
 			focus = JAP_future
@@ -38,7 +38,7 @@
 	}
 	focus = {
 		id = JAP_new_fund
-		icon = GFX_goal_unknown
+		icon = GFX_show_me_the_money
 		cost = 10.00
 		prerequisite = {
 			focus = JAP_future
@@ -49,7 +49,7 @@
 	}
 	focus = {
 		id = JAP_problem
-		icon = GFX_goal_unknown
+		icon = GFX_probelm_JAP
 		cost = 10.00
 		prerequisite = {
 			focus = JAP_new_politics
@@ -63,7 +63,7 @@
 	}
 	focus = {
 		id = JAP_people_revolut_problem
-		icon = GFX_goal_unknown
+		icon = GFX_revolut_jap
 		cost = 10.00
 		prerequisite = {
 			focus = JAP_problem
@@ -74,7 +74,7 @@
 	}
 	focus = {
 		id = JAP_not_allow_united
-		icon = GFX_goal_unknown
+		icon = GFX_never_united
 		cost = 10.00
 		prerequisite = {
 			focus = JAP_people_revolut_problem
@@ -88,7 +88,7 @@
 	}
 	focus = {
 		id = JAP_police_arrangement
-		icon = GFX_goal_unknown
+		icon = GFX_JAP_police
 		cost = 10.00
 		prerequisite = {
 			focus = JAP_not_allow_united
@@ -99,7 +99,7 @@
 	}
 	focus = {
 		id = JAP_low_demonstration
-		icon = GFX_goal_unknown
+		icon = GFX_low_demo
 		cost = 10.00
 		prerequisite = {
 			focus = JAP_police_arrangement
@@ -110,7 +110,7 @@
 	}
 	focus = {
 		id = JAP_allow_united
-		icon = GFX_goal_unknown
+		icon = GFX_YES_united_jap
 		cost = 10.00
 		prerequisite = {
 			focus = JAP_people_revolut_problem
@@ -124,7 +124,7 @@
 	}
 	focus = {
 		id = JAP_Hear_the_sound
-		icon = GFX_goal_unknown
+		icon = GFX_wo_ai_nozo
 		cost = 10.00
 		prerequisite = {
 			focus = JAP_allow_united
@@ -135,7 +135,7 @@
 	}
 	focus = {
 		id = JAP_them_be_considerate
-		icon = GFX_goal_unknown
+		icon = GFX_JAP_sound
 		cost = 10.00
 		prerequisite = {
 			focus = JAP_Hear_the_sound
@@ -146,7 +146,7 @@
 	}
 	focus = {
 		id = JAP_collaps_economy
-		icon = GFX_goal_unknown
+		icon = GFX_collaps_japan
 		cost = 10.00
 		prerequisite = {
 			focus = JAP_problem
@@ -171,7 +171,7 @@
 	}
 	focus = {
 		id = JAP_kushu_shipyard
-		icon = GFX_goal_unknown
+		icon = GFX_kushu_port
 		cost = 10.00
 		prerequisite = {
 			focus = JAP_economic_plan_first
@@ -182,7 +182,7 @@
 	}
 	focus = {
 		id = ganto_economic_zone
-		icon = GFX_goal_unknown
+		icon = GFX_ganto_economic
 		cost = 10.00
 		prerequisite = {
 			focus = JAP_economic_plan_first
@@ -193,7 +193,7 @@
 	}
 	focus = {
 		id = JAP_plan_start
-		icon = GFX_goal_unknown
+		icon = GFX_starting_planing_jap
 		cost = 10.00
 		prerequisite = {
 			focus = ganto_economic_zone
@@ -207,7 +207,7 @@
 	}
 	focus = {
 		id = JAP_investor_find
-		icon = GFX_goal_unknown
+		icon = GFX_JAPAN_investor
 		cost = 10.00
 		prerequisite = {
 			focus = JAP_plan_start
@@ -218,7 +218,7 @@
 	}
 	focus = {
 		id = JAP_investor_invite
-		icon = GFX_goal_unknown
+		icon = GFX_welcome_investor
 		cost = 10.00
 		prerequisite = {
 			focus = JAP_investor_find
@@ -243,7 +243,7 @@
 	}
 	focus = {
 		id = JAP_sicoku_shipyard
-		icon = GFX_goal_unknown
+		icon = GFX_siguo_port
 		cost = 10.00
 		prerequisite = {
 			focus = JAP_economic_plan_second
@@ -254,7 +254,7 @@
 	}
 	focus = {
 		id = JAP_zhukoku_economic_zone
-		icon = GFX_goal_unknown
+		icon = GFX_zhukoku_economic
 		cost = 10.00
 		prerequisite = {
 			focus = JAP_economic_plan_second
@@ -265,7 +265,7 @@
 	}
 	focus = {
 		id = JAP_starting_fund
-		icon = GFX_goal_unknown
+		icon = GFX_JAP_big_invest
 		cost = 10.00
 		prerequisite = {
 			focus = JAP_sicoku_shipyard
@@ -279,7 +279,7 @@
 	}
 	focus = {
 		id = JAP_japanese_potential_power
-		icon = GFX_goal_unknown
+		icon = GFX_miracle_JAPAN
 		cost = 10.00
 		prerequisite = {
 			focus = JAP_plan_start
@@ -291,7 +291,7 @@
 	}
 	focus = {
 		id = JAP_Aluminum_navigation
-		icon = GFX_goal_unknown
+		icon = GFX_alumibum_find
 		cost = 10.00
 		prerequisite = {
 			focus = JAP_japanese_potential_power
@@ -302,7 +302,7 @@
 	}
 	focus = {
 		id = JAP_doyi_gold_mine
-		icon = GFX_goal_unknown
+		icon = GFX_doi_gold_mine
 		cost = 10.00
 		prerequisite = {
 			focus = JAP_japanese_potential_power
@@ -313,7 +313,7 @@
 	}
 	focus = {
 		id = JAP_hosikari_gold_mine
-		icon = GFX_goal_unknown
+		icon = GFX_hishikari_gold_mine
 		cost = 10.00
 		prerequisite = {
 			focus = JAP_japanese_potential_power
@@ -324,7 +324,7 @@
 	}
 	focus = {
 		id = JAP_steel_mine
-		icon = GFX_goal_unknown
+		icon = GFX_iron_mine
 		cost = 10.00
 		prerequisite = {
 			focus = JAP_japanese_potential_power
@@ -335,7 +335,7 @@
 	}
 	focus = {
 		id = JAP_japanese_companies_fund
-		icon = GFX_goal_unknown
+		icon = GFX_japanese_companies_fund
 		cost = 10.00
 		prerequisite = {
 			focus = JAP_starting_fund
@@ -346,7 +346,7 @@
 	}
 	focus = {
 		id = JAP_Overseas_fund
-		icon = GFX_goal_unknown
+		icon = GFX_Overseas_fund
 		cost = 10.00
 		prerequisite = {
 			focus = JAP_japanese_companies_fund
@@ -357,7 +357,7 @@
 	}
 	focus = {
 		id = JAP_Low_interest_rates
-		icon = GFX_goal_unknown
+		icon = GFX_Low_interest
 		cost = 10.00
 		prerequisite = {
 			focus = JAP_japanese_companies_fund
@@ -368,7 +368,7 @@
 	}
 	focus = {
 		id = JAP_Successful_investment
-		icon = GFX_goal_unknown
+		icon = GFX_Successful_investment
 		cost = 10.00
 		prerequisite = {
 			focus = JAP_Overseas_fund
@@ -382,7 +382,7 @@
 	}
 	focus = {
 		id = JAP_big_compensation
-		icon = GFX_goal_unknown
+		icon = GFX_big_compensation
 		cost = 10.00
 		prerequisite = {
 			focus = JAP_World_war_Loser
@@ -393,7 +393,7 @@
 	}
 	focus = {
 		id = JAP_regain_our_authority
-		icon = GFX_goal_unknown
+		icon = GFX_regain_our_authority
 		cost = 10.00
 		prerequisite = {
 			focus = JAP_big_compensation
@@ -404,7 +404,7 @@
 	}
 	focus = {
 		id = JAP_Post_war_recovery 
-		icon = GFX_goal_unknown
+		icon = GFX_Post_war_recovery
 		cost = 10.00
 		prerequisite = {
 			focus = JAP_big_compensation
@@ -415,7 +415,7 @@
 	}
 	focus = {
 		id = JAP_War_damage_investigation
-		icon = GFX_goal_unknown
+		icon = GFX_War_damage_investigation
 		cost = 10.00
 		prerequisite = {
 			focus = JAP_Post_war_recovery 
@@ -426,7 +426,7 @@
 	}
 	focus = {
 		id = JAP_Increase_recovery_budget
-		icon = GFX_goal_unknown
+		icon = GFX_Increase_recovery_budget
 		cost = 10.00
 		prerequisite = {
 			focus = JAP_War_damage_investigation
@@ -437,7 +437,7 @@
 	}
 	focus = {
 		id = JAP_autoban_erection_first
-		icon = GFX_goal_unknown
+		icon = GFX_autoban_erection_first
 		cost = 10.00
 		prerequisite = {
 			focus = JAP_Increase_recovery_budget
@@ -448,7 +448,7 @@
 	}
 	focus = {
 		id = JAP_Introduction_of_mechanical_machine_tool
-		icon = GFX_goal_unknown
+		icon = GFX_Introduction_of_mechanical_machine_tool
 		cost = 10.00
 		prerequisite = {
 			focus = JAP_Increase_recovery_budget
@@ -459,7 +459,7 @@
 	}
 	focus = {
 		id = JAP_USA_assistance
-		icon = GFX_goal_unknown
+		icon = GFX_JAP_USA_assistance
 		cost = 10.00
 		prerequisite = {
 			focus = JAP_Introduction_of_mechanical_machine_tool
@@ -470,7 +470,7 @@
 	}
 	focus = {
 		id = Recover_the_bombed_village
-		icon = GFX_goal_unknown
+		icon = GFX_bombed_village
 		cost = 10.00
 		prerequisite = {
 			focus = JAP_Increase_recovery_budget
@@ -481,7 +481,7 @@
 	}
 	focus = {
 		id = JAP_Waterpipe_construction
-		icon = GFX_goal_unknown
+		icon = GFX_JAP_Waterpipe_construction
 		cost = 10.00
 		prerequisite = {
 			focus = Recover_the_bombed_village
@@ -492,7 +492,7 @@
 	}
 	focus = {
 		id = JAP_Leg_construction
-		icon = GFX_goal_unknown
+		icon = GFX_JAP_Leg_construction
 		cost = 10.00
 		prerequisite = {
 			focus = Recover_the_bombed_village
@@ -503,7 +503,7 @@
 	}
 	focus = {
 		id = JAP_build_school
-		icon = GFX_goal_unknown
+		icon = GFX_build_school
 		cost = 10.00
 		prerequisite = {
 			focus = Recover_the_bombed_village
@@ -515,7 +515,7 @@
 	}
 	focus = {
 		id = JAP_Restored_village
-		icon = GFX_goal_unknown
+		icon = GFX_JAP_Restored_village
 		cost = 10.00
 		prerequisite = {
 			focus = JAP_Waterpipe_construction
@@ -532,7 +532,7 @@
 	}
 	focus = {
 		id = JAP_japan_Possibility
-		icon = GFX_goal_unknown
+		icon = GFX_JAP_japan_Possibility
 		cost = 10.00
 		prerequisite = {
 			focus = JAP_investor_find
@@ -543,7 +543,7 @@
 	}
 	focus = {
 		id = JAP_growing_fund
-		icon = GFX_goal_unknown
+		icon = GFX_JAP_growing_fund
 		cost = 10.00
 		prerequisite = {
 			focus = JAP_japan_Possibility
@@ -557,7 +557,7 @@
 	}
 	focus = {
 		id = JAP_Harmonious_resources
-		icon = GFX_goal_unknown
+		icon = GFX_Harmonious_resources
 		cost = 10.00
 		prerequisite = {
 			focus = JAP_doyi_gold_mine
@@ -577,7 +577,7 @@
 	}
 	focus = {
 		id = JAP_rising_sun_in_japan
-		icon = GFX_goal_unknown
+		icon = GFX_rising_sun_in_japan
 		cost = 10.00
 		prerequisite = {
 			focus = JAP_Successful_investment
@@ -592,7 +592,7 @@
 	}
 	focus = {
 		id = JAP_care_of_livelihood
-		icon = GFX_goal_unknown
+		icon = GFX_care_of_livelihood
 		cost = 10.00
 		prerequisite = {
 			focus = JAP_not_allow_united
@@ -736,7 +736,7 @@
 	}
 	focus = {
 		id = JAP_autoban_erection_second
-		icon = GFX_goal_unknown
+		icon = GFX_autoban_erection_second
 		cost = 10.00
 		prerequisite = {
 			focus = JAP_autoban_erection_first

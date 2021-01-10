@@ -1,14 +1,11 @@
+
 state={
 	id=287
 	name="STATE_287"
 
 	history={
-		owner = SSK
-		add_core_of = SIK
-		add_core_of = ETS
-		add_core_of = SSK
-		add_core_of = CHI
-		add_core_of = PRC
+		owner = KMK
+		add_core_of = KMK
 		buildings = {
 			infrastructure = 1
 
@@ -17,7 +14,7 @@ state={
 	}
 
 	provinces={
-		4973 8042 8086 10885 10911 12864 
+		1838 
 	}
 	manpower=408000
 	buildings_max_level_factor=1.000

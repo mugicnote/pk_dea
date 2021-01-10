@@ -265,7 +265,7 @@ guiTypes = {
 		######################################### Buttons at the bottom
 		ButtonType = {
 			name = "single_player_button"
-			position = { x = 96 y = 375 }
+			position = { x = 96 y = 377 }
 			quadTextureSprite ="GFX_main_lobby_button"
 			font = "aldrich_24_outline"
 			text = "FE_SINGLE_PLAYER"
@@ -275,7 +275,7 @@ guiTypes = {
 
 		ButtonType = {
 			name = "multi_player_button"
-			position = { x = 409 y = 375}
+			position = { x = 409 y = 377 }
 			quadTextureSprite ="GFX_main_lobby_button"
 			font = "aldrich_24_outline"
 			text = "FE_MULTI_PLAYER"

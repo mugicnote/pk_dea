@@ -1,0 +1,5 @@
+sound = {
+	name = "tno_se_assassination_Jae_pil"
+	file = "menu/tno_se_assassination_Jae_pil.wav"
+	always_load = no
+}
