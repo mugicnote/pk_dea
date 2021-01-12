@@ -42,9 +42,9 @@
 
  UFP_neutrality_party:0 "남직예군벌"
 
- communism:0 "공산주의"
- communism_noun:0 "공산주의"
- communism_desc:0 "공산주의"
+ communism:0 "사회공산주의"
+ communism_noun:0 "사회공산주의"
+ communism_desc:0 "사회공산주의"
  radical_socialism:0 "급진사회주의"
  radical_socialism_noun:0 "급진사회주의"
  radical_socialism_desc:0 "급진사회주의"
@@ -69,9 +69,9 @@
  autocracy:0 "전제주의"
  autocracy_noun:0 "전제주의"
  autocracy_desc:0 "전제주의"
- fascism:0 "파시즘"
- fascism_noun:0 "파시즘"
- fascism_desc:0 "파시즘"
+ fascism:0 "국가사회주의"
+ fascism_noun:0 "국가사회주의"
+ fascism_desc:0 "국가사회주의"
 
 USA_communism_party:0 "미국 공산당"
 USA_radical_socialism_party:0 "미국 사회당"

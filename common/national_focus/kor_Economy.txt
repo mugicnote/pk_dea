@@ -148,6 +148,38 @@ shared_focus = {
 }
 
 shared_focus = {
+	id = Re_construction_building_risk_collapse
+	icon = GFX_
+	cost = 10.00
+	prerequisite = {
+		focus = industrial_subsidy_support
+	}
+	relative_position_id = industrial_subsidy_support
+
+	completion_reward = {
+	}
+	x = 2
+	y = 1
+
+}
+
+shared_focus = {
+	id = pesticide_development
+	icon = GFX_
+	cost = 10.00
+	prerequisite = {
+		focus = Agricultural_equipment_imports_USA
+	}
+	relative_position_id = Agricultural_equipment_imports_USA
+
+	completion_reward = {
+	}
+	x = 1
+	y = 1
+
+}
+
+shared_focus = {
 	id = expansion_public_schools
 	icon = GFX_
 	cost = 10.00
@@ -207,6 +239,222 @@ shared_focus = {
 	completion_reward = {
 	}
 	x = 2
+	y = 1
+
+}
+
+shared_focus = {
+	id = restart_closed_factory
+	icon = GFX_
+	cost = 10.00
+	prerequisite = {
+		focus = Localization_agricultural_equipment
+	}
+	relative_position_id = Localization_agricultural_equipment
+
+	completion_reward = {
+	}
+	x = 0
+	y = 1
+
+}
+
+shared_focus = {
+	id = Expanding_Higher_Education
+	icon = GFX_
+	cost = 10.00
+	prerequisite = {
+		focus = expansion_public_schools
+	}
+	relative_position_id = expansion_public_schools
+
+	completion_reward = {
+	}
+	x = 0
+	y = 1
+
+}
+
+shared_focus = {
+	id = Establishment_Korea_Scholarship_Foundation
+	icon = GFX_
+	cost = 10.00
+	prerequisite = {
+		focus = establishment_national_university
+	}
+	relative_position_id = establishment_national_university
+
+	completion_reward = {
+	}
+	x = -1
+	y = 1
+
+}
+
+shared_focus = {
+	id = reorganization_national_telecommunications_business
+	icon = GFX_
+	cost = 10.00
+	prerequisite = {
+		focus = establishment_radio_supply_business
+	}
+	relative_position_id = establishment_radio_supply_business
+
+	completion_reward = {
+	}
+	x = -1
+	y = 1
+
+}
+
+shared_focus = {
+	id = establishment_medical_school_system
+	icon = GFX_
+	cost = 10.00
+	prerequisite = {
+		focus = Basic_National_Health_Insurance
+	}
+	prerequisite = {
+		focus = Expanding_Higher_Education
+	}
+	relative_position_id = Basic_National_Health_Insurance
+
+	completion_reward = {
+	}
+	x = 1
+	y = 1
+
+}
+
+shared_focus = {
+	id = introduction_CSAT
+	icon = GFX_
+	cost = 10.00
+	prerequisite = {
+		focus = Basic_National_Health_Insurance
+	}
+	prerequisite = {
+		focus = Expanding_Higher_Education
+	}
+	relative_position_id = Expanding_Higher_Education
+
+	completion_reward = {
+	}
+	x = -1
+	y = 1
+
+}
+
+shared_focus = {
+	id = creation_industrial_research_department
+	icon = GFX_
+	cost = 10.00
+	prerequisite = {
+		focus = restart_closed_factory
+	}
+	prerequisite = {
+		focus = establishment_national_university
+	}
+	relative_position_id = restart_closed_factory
+
+	completion_reward = {
+	}
+	x = 1
+	y = 1
+
+}
+
+shared_focus = {
+	id = Implementation_compulsory_elementary_education
+	icon = GFX_
+	cost = 10.00
+	prerequisite = {
+		focus = establishment_medical_school_system
+	}
+	prerequisite = {
+		focus = introduction_CSAT
+	}
+	relative_position_id = establishment_medical_school_system
+
+	completion_reward = {
+	}
+	x = 1
+	y = 1
+
+}
+
+shared_focus = {
+	id = Establishment_Electronics_Engineering_Department
+	icon = GFX_
+	cost = 10.00
+	prerequisite = {
+		focus = creation_industrial_research_department
+	}
+	prerequisite = {
+		focus = Establishment_Korea_Scholarship_Foundation
+	}
+	relative_position_id = creation_industrial_research_department
+
+	completion_reward = {
+	}
+	x = 1
+	y = 1
+
+}
+
+shared_focus = {
+	id = Establishment_National_Medical_Insurance_Association
+	icon = GFX_
+	cost = 10.00
+	prerequisite = {
+		focus = Basic_National_Health_Insurance
+	}
+	relative_position_id = Basic_National_Health_Insurance
+
+	completion_reward = {
+	}
+	x = -1
+	y = 1
+
+}
+
+shared_focus = {
+	id = Expanding_authority_Ministry_Health_Social_Affairs
+	icon = GFX_
+	cost = 10.00
+	prerequisite = {
+		focus = reorganization_national_telecommunications_business
+	}
+	prerequisite = {
+		focus = Establishment_National_Medical_Insurance_Association
+	}
+	relative_position_id = reorganization_national_telecommunications_business
+
+	completion_reward = {
+	}
+	x = 1
+	y = 1
+
+}
+
+shared_focus = {
+	id = industrial_boom
+	icon = GFX_
+	cost = 10.00
+	prerequisite = {
+		focus = Establishment_Electronics_Engineering_Department
+	}
+	prerequisite = {
+		focus = Expanding_authority_Ministry_Health_Social_Affairs
+	}
+	prerequisite = {
+		focus = Implementation_compulsory_elementary_education
+	}
+	relative_position_id = Expanding_authority_Ministry_Health_Social_Affairs
+
+	completion_reward = {
+	}
+	x = 0
 	y = 1
 
 }

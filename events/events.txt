@@ -830,6 +830,17 @@ country_event = { #
 			set_capital = 807
 			set_state_controller = 807
 			set_state_controller = 808
+
+			#대한민국 극좌파 사단 추가
+			#807 = {
+				#create_unit = {
+					#division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.1" 
+					#owner = CKR
+					#allow_spawning_on_enemy_provs = yes
+					#count = 3
+				#}
+			#}
+
 		}
 	}
 }
