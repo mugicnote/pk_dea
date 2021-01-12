@@ -88,9 +88,9 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Long Yun"
+	name = "룽윈"
 	desc = "POLITICS_LONG_YUN_DESC"
-	picture = "Portrait_Yunnan_Tang_Jiyao.tga"
+	picture = "Portrait_YUN_Long_Yun.dds"
 	expire = "1965.1.1"
 	ideology = warloadism
 	traits = {

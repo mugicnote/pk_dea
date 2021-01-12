@@ -90,7 +90,7 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Sheng Shicai"
+	name = "성스차이"
 	desc = "POLITICS_SHENG_SHICAI_DESC"
 	picture = "gfx/leaders/SIK/Portrait_Sinkiang_Sheng_Shicai.dds"
 	expire = "1965.1.1"
@@ -100,7 +100,7 @@ create_country_leader = {
 	}
 }
 create_country_leader = {
-	name = "Sheng Shicai"
+	name = "성스차이"
 	desc = "POLITICS_SHENG_SHICAI_DESC"
 	picture = "gfx/leaders/SIK/Portrait_Sinkiang_Sheng_Shicai.dds"
 	expire = "1965.1.1"
@@ -110,7 +110,7 @@ create_country_leader = {
 	}
 }
 create_country_leader = {
-	name = "Sheng Shicai"
+	name = "성스차이"
 	desc = "POLITICS_SHENG_SHICAI_DESC"
 	picture = "gfx/leaders/SIK/Portrait_Sinkiang_Sheng_Shicai.dds"
 	expire = "1965.1.1"

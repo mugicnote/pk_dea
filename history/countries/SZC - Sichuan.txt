@@ -68,9 +68,9 @@ set_politics = {
 
 ### Country Leaders ###
 create_country_leader = {
-	name = "Liu Wenhui"
-	desc = "POLITICS_SZC_LIU_WENHUI_DESC"
-	picture = "Portrait_SZC_Liu_Wenhui.tga"
+	name = "류샹"
+	desc = "POLITICS_SZC_Liu_Xiang_DESC"
+	picture = "Portrait_SZC_Liu_Xiang.tga"
 	expire = "1865.1.1"
 	ideology = warloadism
 	traits = {
