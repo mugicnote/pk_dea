@@ -127,7 +127,7 @@ create_country_leader = {
 }
 
 create_corps_commander = {
-	name = "Wang Jingguo"
+	name = "왕징궈"
 	portrait_path = "gfx/leaders/Asia/Portrait_Asia_Generic_land_2.dds"
 	traits = { politically_connected }
 	skill = 3

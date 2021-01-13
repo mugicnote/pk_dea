@@ -98,6 +98,7 @@ set_politics = {
     election_frequency = 48
     elections_allowed = no
 }
+
 #시작시_정당들의_인기도
 set_popularities = {
   communism = 0
@@ -115,11 +116,42 @@ set_popularities = {
 #정당별_리더
 create_country_leader = {
   name = "리미"
-  desc = ""
+  desc = "POLITICS_Li_Mi_DESC"
   picture = "Portrait_UAC_Li_Mi.dds"
   expire = "1947.7.19"
   ideology = warloadism
   traits = {
     #
   }
+}
+
+create_field_marshal = {
+  name = "리미"
+  desc = "GENERAL_Li_Mi_DESC"
+  picture = "Portrait_UAC_Li_Mi.dds"
+  traits = { 
+	inspirational_leader
+	trait_mountaineer
+	politically_connected
+	}
+  skill = 4
+  attack_skill = 4
+  defense_skill = 3
+  planning_skill = 6
+  logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "쑹칭링"
+	desc = "GENERAL_Song_Qingling_DESC"
+	picture = "Portrait_UAC_Song_Qingling.tga"
+	traits = {
+		politically_connected
+		inspirational_leader
+		}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
 }
