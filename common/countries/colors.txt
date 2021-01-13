@@ -732,12 +732,12 @@ KMK = {
 	color_ui = rgb { 215 103 10 }
 }
 
-MHB = {
+NXM = {
 	color = rgb { 191 110 62 }
 	color_ui = rgb { 191 110 62 }
 }
 
-MHX = {
+TNG = {
 	color = rgb { 188 100 67 }
 	color_ui = rgb { 168 80 47 }
 }
@@ -779,4 +779,9 @@ CKR = {
 RUS = {
 	color = rgb { 0 127 14 }
 	color_ui = rgb { 0 127 14 }
+}
+
+SHA = {
+	color = rgb { }
+	color_ui = rgb { }
 }

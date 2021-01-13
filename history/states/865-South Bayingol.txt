@@ -5,8 +5,8 @@ state={
 		1943 10315 10911 
 	}
 	history={
-		owner = MHX
-		add_core_of = MHX
+		owner = TNG
+		add_core_of = TNG
 
 	}
 	manpower=0

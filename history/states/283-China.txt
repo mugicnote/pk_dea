@@ -6,8 +6,8 @@ state={
 	}
 
 	history={
-		owner = MHB
-		add_core_of = MHB
+		owner = GMS
+		add_core_of = GMS
 		add_core_of = CHI
 		add_core_of = SHX
 		buildings = {
