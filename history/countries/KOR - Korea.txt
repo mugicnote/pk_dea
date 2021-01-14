@@ -414,13 +414,10 @@ create_field_marshal = { #사진 작업 완료(Dos 도움)
 		brilliant_strategist
 		career_officer
 		media_personality
-		reckless
 		organizer
 		infantry_leader
 		cavalry_leader
 		charismatic
-		cavalry_expert
-		infantry_expert
 		adaptable
 		caring_leader
 		}
