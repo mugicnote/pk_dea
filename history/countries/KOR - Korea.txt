@@ -307,157 +307,230 @@ create_country_leader = { #사진 작업 완료
   }
 }
 
-#육군_장군_및_육군_원수
-create_field_marshal = { #사진 작업 완료
-  name = "홍범도"
-  picture = "Portrait_Hong_Bum_do.dds"
-  traits = { 
-  #카리스마
-  inspirational_leader
-  #산악병        
-  trait_mountaineer
-  #매복가
-  ambusher
-  }
-  
-  skill = 4
+#####육군 원수#####
 
-  attack_skill = 4
-  defense_skill = 3
-  planning_skill = 6
-  logistics_skill = 4
+create_field_marshal = { #사진 작업 완료
+	name = "홍범도"
+	picture = "Portrait_Hong_Bum_do.dds"
+	traits = { 
+		#카리스마
+		inspirational_leader
+		#산악병        
+		trait_mountaineer
+		#매복가
+		ambusher
+		old_guard
+		war_hero
+		skilled_staffer
+		infantry_leader
+		}
+  
+	skill = 6
+	attack_skill = 5
+	defense_skill = 5
+	planning_skill = 6
+	logistics_skill = 5
 }
 
 create_field_marshal = { #사진 작업 완료(Dos 도움)
 	name = "안중근"
 	picture = "Portrait_an_junggeun.dds"
 	traits = { 
-
-	}
+		old_guard
+		war_hero
+		media_personality
+		skilled_staffer
+		}
 	
-	skill = 4
-  
-	attack_skill = 4
-	defense_skill = 3
+	skill = 5
+	attack_skill = 5
+	defense_skill = 4
 	planning_skill = 6
 	logistics_skill = 4
-  }
+}
 
 create_field_marshal = { #사진 작업 완료(Dos 도움)
-  name = "김좌진"
-  picture = "Portrait_Kim_Chwa-chin.dds"
-  traits = { brilliant_strategist offensive_doctrine war_hero media_personality career_officer }
-  skill = 4
-
-  attack_skill = 3
-  defense_skill = 5
-  planning_skill = 4
-  logistics_skill = 4
+	name = "김좌진"
+	picture = "Portrait_Kim_Chwa-chin.dds"
+	traits = {
+		brilliant_strategist
+		offensive_doctrine
+		war_hero
+		media_personality
+		career_officer
+		skilled_staffer
+		old_guard
+		}
+		
+	skill = 5
+	attack_skill = 4
+	defense_skill = 5
+	planning_skill = 4
+	logistics_skill = 4
 }
 
 create_field_marshal = { #사진 작업 완료
-  name = "이범석"
-  picture = "Portrait_Lee_Beomseok.dds"
-  traits = { armor_officer infantry_officer fast_planner brilliant_strategist logistics_wizard offensive_doctrine }
-  skill = 5
-  id = 3005
+	name = "지청천"
+	picture = "Portrait_ji_chong_chen.dds"
+	traits = {
+		inflexible_strategist
+		infantry_officer
+		logistics_wizard
+		defensive_doctrine
+		inspirational_leader
+		adaptable
+		skilled_staffer
+		}
+		
+	skill = 3
+	attack_skill = 5
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 5
+}
 
-  attack_skill = 5
-  defense_skill = 3
-  planning_skill = 4
-  logistics_skill = 5
+create_field_marshal = {
+	name = "송호성"
+	picture = "Portrait_song_hoseong.dds"
+	traits = {
+		politically_connected
+		old_guard
+		bad_staffer
+		}
+		
+	skill = 4
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_field_marshal = { #사진 작업 완료(Dos 도움)
+	name = "김석원"
+	portrait_path = "gfx/leaders/KOR/Portrait_Kim_Suk_Won.dds"
+	traits = {
+		infantry_officer
+		cavalry officer
+		brilliant_strategist
+		career_officer
+		media_personality
+		reckless
+		organizer
+		infantry_leader
+		cavalry_leader
+		charismatic
+		cavalry_expert
+		infantry_expert
+		adaptable
+		caring_leader
+		}
+		
+	skill = 4
+    attack_skill = 3
+    defense_skill = 3
+    planning_skill = 2
+    logistics_skill = 2
+}
+
+#####육군 장군#####
+
+create_corps_commander = { #사진 작업 완료
+	name = "이범석"
+	id = 3005
+	picture = "Portrait_Lee_Beomseok.dds"
+	traits = {
+		armor_officer
+		infantry_officer
+		fast_planner
+		brilliant_strategist
+		offensive_doctrine
+		adaptable
+		skilled_staffer
+		}
+	
+	skill = 4
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 4
 }
 
 create_corps_commander = {
-  name = "박경철"
-  picture = "keong_chor.dds"
-  traits = { }
-  skill = 3
-
-  attack_skill = 5
-  defense_skill = 6
-  planning_skill = 2
-  logistics_skill = 4
+	name = "박경철"
+	picture = "keong_chor.dds"
+	traits = {
+		infantry_officer
+		winter_specialist
+		winter_expert
+		adaptable
+		old_guard
+		}
+		
+	skill = 3
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 3
 }
 
 create_corps_commander = { #사진 작업 완료
-  name = "김홍일"
-  picture = "Portrait_Kim_Hong_Il.dds"
-  traits = { KOR_independent_army logistics_wizard inspirational_leader }
-  skill = 3
+	name = "김홍일"
+	picture = "Portrait_Kim_Hong_Il.dds"
+	traits = {
+		logistics_wizard
+		inspirational_leader
+		adaptable
+		caring_leader
+		}
+	skill = 4
+	attack_skill = 4
+	defense_skill = 5
+	planning_skill = 5
+	logistics_skill = 4
+}
 
-  attack_skill = 3
-  defense_skill = 6
-  planning_skill = 5
-  logistics_skill = 4
+create_corps_commander = { #사진 작업 완료(Dos 도움)
+	name = "김경천"
+	picture = "Portrait_Kim_Kyung-cheon.dds"
+	traits = { 
+		#명석한 전략가
+		brilliant_strategist
+		infantry_leader
+		ambusher
+		old_guard
+		}
+	skill = 4
+	attack_skill = 5
+	defense_skill = 4
+	planning_skill = 5
+	logistics_skill = 3
 }
 
 create_corps_commander = { #사진 작업 완료
-  name = "지청천"
-  picture = "Portrait_ji_chong_chen.dds"
-  traits = { inflexible_strategist infantry_officer logistics_wizard defensive_doctrine inspirational_leader }
-  skill = 5
-
-  attack_skill = 6
-  defense_skill = 3
-  planning_skill = 2
-  logistics_skill = 6
-}
-
-create_field_marshal = { #사진 작업 완료(Dos 도움)
-  name = "김경천"
-  picture = "Portrait_Kim_Kyung-cheon.dds"
-  traits = { 
-  #명석한 전략가
-  Brilliant_Strategist
-  #공격적인 돌격가
-  Aggressive_Assaulter
-  #언덕 싸움꾼
-  Hill_Fighter
-  }
-  skill = 4
-
-  attack_skill = 6
-  defense_skill = 5
-  planning_skill = 6
-  logistics_skill = 4
-}
-
-create_field_marshal = { #사진 작업 완료
-  name = "김원봉"
-  picture = "Portrait_Kim_Wonbong.dds"
-  traits = { 
-  #정계와의 연줄
-  Politically_Connected
-  #명석한 전략가
-  Brilliant_Strategist
-  #특공대
-  Commando
-  }
-  skill = 3
-
-  attack_skill = 5
-  defense_skill = 2
-  planning_skill = 5
-  logistics_skill = 4
-}
-create_corps_commander = { #사진 작업 완료
-  name = "김학규"
-  picture = "Portrait_Kim_Hak_kyu.dds"
-  traits = { }
-  skill = 3
-
-  attack_skill = 3
-  defense_skill = 5
-  planning_skill = 4
-  logistics_skill = 4
+	name = "김학규"
+	picture = "Portrait_Kim_Hak_kyu.dds"
+	traits = {
+		scavenger
+		commando
+		}
+	skill = 3
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 3
 }
 
 create_corps_commander = { #사진 작업 완료
 	name = "유동열"
 	portrait_path = "gfx/leaders/KOR/Portrait_Ryu_Dongyeol.dds"
-	traits = { cavalry_officer armor_officer organizer career_officer }
-	skill = 3
+	traits = {
+		cavalry_officer
+		old_guard
+		war_hero
+		politically_connected
+		}
+		
+	skill = 4
     attack_skill = 3
     defense_skill = 2
     planning_skill = 2
@@ -465,80 +538,102 @@ create_corps_commander = { #사진 작업 완료
 }
 
 create_corps_commander = { #사진 작업 완료(Dos 도움)
-	name = "김석원"
-	portrait_path = "gfx/leaders/KOR/Portrait_Kim_Suk_Won.dds"
-	traits = { infantry_officer brilliant_strategist career_officer }
-	skill = 3
-    attack_skill = 3
-    defense_skill = 2
-    planning_skill = 2
-    logistics_skill = 2
-}
-
-create_corps_commander = { #사진 작업 완료(Dos 도움)
 	name = "홍사익"
 	portrait_path = "gfx/leaders/KOR/Portrait_Hong_Sa-ik.dds"
-	traits = { organizer career_officer brilliant_strategist }
-	skill = 2
+	traits = {
+		organizer
+		career_officer
+		trait_cautious
+		skilled_staffer
+		}
+		
+	skill = 3
     attack_skill = 2
     defense_skill = 2
     planning_skill = 2
     logistics_skill = 3
 }
 
-create_field_marshal = {
-	name = "송호성"
-	picture = "Portrait_song_hoseong.dds"
-	traits = { brilliant_strategist cavalry_officer offensive_doctrine trait_engineer aggressive_assaulter }
-	skill = 5
-	attack_skill = 6
-	defense_skill = 4
-	planning_skill = 5
-	logistics_skill = 5
-}
-
 ###공산주의자###
 
-create_field_marshal = { #사진 작업 완료
+create_corps_commander = { #사진 작업 완료
 	name = "김일성"
   	id = 3001
 	picture = "Kim_portrait.dds"
-	traits = { trait_KOR_communism }
-	skill = 4
-    attack_skill = 3
-    defense_skill = 3
-    planning_skill = 2
-    logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "김책"
-	picture = "kim_chek.dds"
-	traits = { trait_KOR_communism }
-	skill = 4
-    attack_skill = 3
-    defense_skill = 3
+	traits = {
+		trait_KOR_communism
+		politically_connected
+		trait_KOR_young_general
+		}
+		
+	skill = 1
+    attack_skill = 2
+    defense_skill = 2
     planning_skill = 2
     logistics_skill = 2
 }
 
 create_corps_commander = { #사진 작업 완료
-	name = "최용건"
-	picture = "Choi_Yong_Gun.dds"
-	traits = { trait_KOR_communism trait_cautious trickster }
-	skill = 4
+	name = "김원봉"
+	picture = "Portrait_Kim_Wonbong.dds"
+	traits = { 
+		#정계와의 연줄
+		politically_connected
+		#특공대
+		commando
+		infantry_leader
+		trait_KOR_communism
+	}
+	
+	skill = 3
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "김책"
+	picture = "kim_chek.dds"
+	traits = {
+		trait_KOR_communism
+		trickster
+		}
+		
+	skill = 3
     attack_skill = 3
     defense_skill = 3
     planning_skill = 2
-    logistics_skill = 2
+    logistics_skill = 4
+}
+
+create_corps_commander = { #사진 작업 완료
+	name = "최용건"
+	picture = "Choi_Yong_Gun.dds"
+	traits = {
+		trait_KOR_communism
+		trait_cautious
+		trickster
+		skilled_staffer
+		}
+		
+	skill = 4
+    attack_skill = 4
+    defense_skill = 3
+    planning_skill = 2
+    logistics_skill = 3
 }
 
 create_corps_commander = {
 	name = "남일"
 	picture = "Nam_Il.dds"
-	traits = { trait_KOR_communism }
-	skill = 4
-    attack_skill = 3
+	traits = {
+		trait_KOR_communism
+		trait_KOR_young_general
+		}
+		
+	skill = 1
+    attack_skill = 2
     defense_skill = 3
     planning_skill = 2
     logistics_skill = 2
@@ -547,10 +642,12 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "김무정"
 	picture = "kim_mu_jong.dds"
-	traits = { trait_KOR_communism }
-	skill = 4
-    attack_skill = 3
-    defense_skill = 3
+	traits = {
+		trait_KOR_communism
+		}
+	skill = 3
+    attack_skill = 2
+    defense_skill = 2
     planning_skill = 2
     logistics_skill = 2
 }
@@ -558,11 +655,13 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "박일우"
 	picture = "park_il_wu.dds"
-	traits = { trait_KOR_communism }
-	skill = 4
+	traits = {
+		trait_KOR_communism
+		}
+	skill = 3
     attack_skill = 3
-    defense_skill = 3
-    planning_skill = 2
+    defense_skill = 2
+    planning_skill = 1
     logistics_skill = 2
 }
 
@@ -571,8 +670,12 @@ create_corps_commander = {
 create_field_marshal = { #사진 작업 완료
 	name = "이강"
 	portrait_path = "gfx/leaders/KOR/Portrait_Yi_Kang.dds"
-	traits = { politically_connected old_guard defensive_doctrine media_personality }
-	skill = 2
+	traits = {
+		politically_connected
+		old_guard
+		media_personality
+		}
+	skill = 3
     attack_skill = 2
     defense_skill = 4
     planning_skill = 3
@@ -582,12 +685,17 @@ create_field_marshal = { #사진 작업 완료
 create_corps_commander = { #사진 작업 완료(Dos 도움)
 	name = "이우"
 	portrait_path = "gfx/leaders/KOR/Portrait_Yi_Wu.dds"
-	traits = { politically_connected media_personality brilliant_strategist armor_officer trait_engineer }
-	skill = 4
-    attack_skill = 3
+	traits = {
+		politically_connected
+		old_guard
+		media_personality
+		caring_leader
+		}
+	skill = 3
+    attack_skill = 2
     defense_skill = 3
     planning_skill = 2
-    logistics_skill = 2
+    logistics_skill = 3
 }
 
 ###제독###
@@ -595,12 +703,17 @@ create_corps_commander = { #사진 작업 완료(Dos 도움)
 create_navy_leader = { #사진 작업 완료
 	name = "손원일"
 	picture = "Portrait_admiral_son_wonil.dds"
-	traits = { air_controller ironside superior_tactician }
+	traits = {
+		air_controller
+		ironside
+		superior_tactician
+		}
+		
 	skill = 5
-	attack_skill = 5
-	defense_skill = 3
-	maneuvering_skill = 4
-	coordination_skill = 4
+	attack_skill = 6
+	defense_skill = 4
+	maneuvering_skill = 5
+	coordination_skill = 5
 }
 
 create_navy_leader = {

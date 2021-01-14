@@ -43,5 +43,36 @@ leader_traits = {
             factor = 0
         }
     }
+	
+	caring_leader = {
+		type = land
+		trait_type = personality_trait
+		
+		defense_skill = 1
+		
+		modifier = {
+			army_morale_factor = 0.1
+			supply_consumption_factor = 0.02
+		}
+		defense_skill_factor = 1
+	}
+	
+	bad_staffer = { 
+		type = land
+		trait_type = personality_trait
+		allowed = {
+			always = no
+		}
+		gain_xp = {
+			always = no # not gainable
+		}
+		modifier = {
+			planning_speed = -0.1
+			recon_factor = -0.1
+		}
+		corps_commander_modifier = {
+			max_commander_army_size = -14
+		}
+	}
 
 }

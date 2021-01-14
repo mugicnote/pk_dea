@@ -1,16 +1,23 @@
-spriteTypes = {	
-
-	spriteType = {
+spriteTypes = {
+	
+spriteType = {
+	name = "GFX_trait_caring_leader"
+	texturefile = "gfx/interface/traits/personal/trait_caring_leader.dds"
+	}
+spriteType = {
+	name = "GFX_trait_bad_staffer"
+	texturefile = "gfx/interface/traits/personal/trait_bad_staffer.dds"
+	}
+spriteType = {
 		name = "GFX_trait_trait_KOR_communism"
 		texturefile = "gfx/interface/traits/personal/trait_KOR_communism.dds"
 	}
-	spriteType = {
+spriteType = {
 		name = "GFX_trait_trait_KOR_Youth_Presbyterian_Church"
 		texturefile = "gfx/interface/traits/personal/trait_KOR_Youth_Presbyterian_Church.dds"
 	}
-	spriteType = {
+spriteType = {
 		name = "GFX_trait_trait_KOR_young_general"
 		texturefile = "gfx/interface/traits/personal/trait_KOR_young_general.dds"
 	}
-
 }
