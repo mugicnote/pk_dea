@@ -207,14 +207,16 @@ create_country_leader = { #사진 작업 완료(DoS 머장? 도움 받음)
 #}
 
 create_country_leader = { #사진 작업 완료
-  name = "박헌영"
-  desc = "POLITICS_PARK_HEON_YOUNG_DESC"
-  picture = "Portrait_Pak_Honyong.dds"
-  expire = "1947.7.19"
-  ideology = leninism
-  traits = {
-    #
-  }
+	name = "김일성"
+	desc = "POLITICS_KIM_IL_SUNG_DESC"
+	picture = "Portrait_Pak_Honyong.dds"
+	expire = "1947.7.19"
+	ideology = leninism
+	traits = {
+		traits_Kim_Il1
+		traits_Kim_Il2
+		traits_Kim_Il3
+	}
 }
 
 create_country_leader = { #사진 작업 완료

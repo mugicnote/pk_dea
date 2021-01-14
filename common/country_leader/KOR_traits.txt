@@ -132,7 +132,7 @@ leader_traits = {
 	traits_Kim_Il1 = {
 		random = no
 		war_support_weekly = 0.005
-		communism_drift = 0.1
+		communism_drift = 0.05
 
 		
 		ai_will_do = {
@@ -150,6 +150,15 @@ leader_traits = {
 		air_chief_cost_factor = -0.05
 		army_chief_cost_factor = -0.05
 		navy_chief_cost_factor = -0.05
+
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	traits_Kim_Il3 = {
+		communism_drift = 0.05
+		political_power_gain = 0.3
 
 		
 		ai_will_do = {
