@@ -196,7 +196,7 @@ create_country_leader = { #사진 작업 완료(DoS 머장? 도움 받음)
 
 #create_country_leader = {
 #  name = "김일성"
-#  desc = ""
+#  desc = "POLITICS_KIM_IL_SUNG_DESC"
 #  picture = "Kim_portrait.dds"
 #  expire = "1947.7.19"
 #  ideology = leninism
@@ -207,7 +207,7 @@ create_country_leader = { #사진 작업 완료(DoS 머장? 도움 받음)
 #}
 
 create_country_leader = { #사진 작업 완료
-	name = "김일성"
+	name = "박헌영"
 	desc = "POLITICS_KIM_IL_SUNG_DESC"
 	picture = "Portrait_Pak_Honyong.dds"
 	expire = "1947.7.19"
