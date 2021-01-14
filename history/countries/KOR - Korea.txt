@@ -382,7 +382,7 @@ create_field_marshal = { #사진 작업 완료
 		skilled_staffer
 		}
 		
-	skill = 3
+	skill = 4
 	attack_skill = 5
 	defense_skill = 3
 	planning_skill = 2
