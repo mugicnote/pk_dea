@@ -285,12 +285,12 @@
  TNG_ADJ:0 "퉁가니스탄"
 
 #류원후이-서강군벌
- XIC_neutrality:0 "서강군벌"
- XIC_neutrality_DEF:0 "서강군벌"
- XIC_neutrality_ADJ:0 "서강군벌"
- XIC:0 "서강군벌"
- XIC_DEF:0 "서강군벌"
- XIC_ADJ:0 "서강군벌"
+ XKC_neutrality:0 "서강군벌"
+ XKC_neutrality_DEF:0 "서강군벌"
+ XKC_neutrality_ADJ:0 "서강군벌"
+ XKC:0 "서강군벌"
+ XKC_DEF:0 "서강군벌"
+ XKC_ADJ:0 "서강군벌"
 
 #우누-버마 연방
  BRM_fascism:1 "버마 연방"

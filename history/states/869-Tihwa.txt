@@ -5,8 +5,8 @@ state={
 		4709 7792 10545 10614 12656 
 	}
 	history={
-		owner = SSK
-		add_core_of = SSK
+		owner = SIK
+		add_core_of = SIK
 
 	}
 	manpower=0
