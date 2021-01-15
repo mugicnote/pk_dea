@@ -1,4 +1,4 @@
-﻿capital = 811
+﻿capital = 597
 OOB = "SND"
 set_research_slots = 2
 set_technology = {
@@ -28,7 +28,7 @@ set_politics = {
 }
 1939.1.1 = {
 	
-	oob = "FNG"
+	oob = "SND"
 
 	add_political_power = 1198
 	
@@ -67,9 +67,9 @@ set_politics = {
 }
 
 create_country_leader = {
-	name = "Zhang Zongchang"
+	name = "한푸쥐"
 	desc = "POLITICS_ZHANG_ZONGCHANG_DESC"
-	picture = "Portrait_Shandong_Zhang_Zongchang.tga"
+	picture = "Portrait_SND_Han_Fuju.dds"
 	expire = "1965.1.1"
 	ideology = liberalism
 	traits = {
@@ -78,9 +78,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Zhang Zongchang"
+	name = "한푸쥐"
 	desc = "POLITICS_ZHANG_ZONGCHANG_DESC"
-	picture = "Portrait_Shandong_Zhang_Zongchang.tga"
+	picture = "Portrait_SND_Han_Fuju.dds"
 	expire = "1965.1.1"
 	ideology = warloadism
 	traits = {
@@ -89,9 +89,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Zhang Zongchang"
+	name = "한푸쥐"
 	desc = "POLITICS_ZHANG_ZONGCHANG_DESC"
-	picture = "Portrait_Shandong_Zhang_Zongchang.tga"
+	picture = "Portrait_SND_Han_Fuju.dds"
 	expire = "1965.1.1"
 	ideology = stalinism
 	traits = {
@@ -100,9 +100,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Zhang Zongchang"
+	name = "한푸쥐"
 	desc = "POLITICS_ZHANG_ZONGCHANG_DESC"
-	picture = "Portrait_Shandong_Zhang_Zongchang.tga"
+	picture = "Portrait_SND_Han_Fuju.dds"
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
@@ -128,23 +128,6 @@ create_field_marshal = {
 
 	id = 1305
 	
-}
-
-create_field_marshal = {
-	name = "Song Zheyuan"
-	desc = "POLITICS_SONG_ZHEYUAN_ARMY_DESC"
-	picture = "Portrait_Shandong_Song_Zheyuan.tga"
-	traits = {
-		old_guard
-		politically_connected
-	}
-	skill = 2
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 2
-	logistics_skill = 3
-	
-	id = 1190
 }
 
 create_field_marshal = {

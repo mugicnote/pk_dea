@@ -703,10 +703,6 @@ SHL = {
 	color = rgb { 51 51 255 }
 	color_ui = rgb { 51 51 255 }
 }
-FNG = {
-	color = rgb { 189 113 33 }
-	color_ui = rgb { 189 113 33 }
-}
 SND = {
 	color = rgb { 55 108 158 }
 	color_ui = rgb { 55 108 158 }
@@ -719,7 +715,7 @@ GDC = {
 	color = rgb { 71 113 97 }
 	color_ui = rgb { 71 113 97 }
 }
-SSK = {
+SIK = {
 	color = rgb { 214 190 74 }
 	color_ui = rgb { 214 190 74 }
 }
@@ -741,19 +737,10 @@ TNG = {
 	color = rgb { 188 100 67 }
 	color_ui = rgb { 168 80 47 }
 }
-GJU = {
-	color = rgb { 0 0 174 }
-	color_ui = rgb { 0 0 174 }
-}
 
 UPN = {
 	color = rgb { 138 138 138 }
 	color_ui = rgb { 138 138 138 }
-}
-
-UFP = {
-	color = hsv { 0.18 0.6 0.9 } #255 244 190
-	color_ui = hsv { 0.18 0.3 0.9 }
 }
 
 UAC = {
@@ -782,6 +769,15 @@ RUS = {
 }
 
 SHA = {
-	color = rgb { }
-	color_ui = rgb { }
+	color = rgb { 42 42 95 }
+	color_ui = rgb { 101 30 41 }
+}
+
+XKC = {
+	color = rgb { 84 127 151 }
+	color_ui = rgb { 84 127 151 }
+}
+HBC = {
+	color = rgb {  }
+	color_ui = rgb {  }
 }

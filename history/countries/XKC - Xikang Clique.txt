@@ -1,4 +1,4 @@
-﻿capital = 601
+﻿capital = 752
 oob = "XKC"
 set_research_slots = 2
 set_technology = {

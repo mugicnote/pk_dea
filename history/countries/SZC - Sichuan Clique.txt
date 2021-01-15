@@ -1,4 +1,4 @@
-﻿capital = 605
+﻿capital = 748
 oob = "SZC"
 set_research_slots = 2
 set_technology = {
