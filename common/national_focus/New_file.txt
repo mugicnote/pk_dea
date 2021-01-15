@@ -27,7 +27,12 @@ focus_tree = {
 			hidden_effect = {
 				country_lock_all_division_template = no
 				set_country_flag = forth_election_start
+				swap_ideas = {
+					remove_idea = coup_crisis
+					add_idea = coup_crisis2
+				}
 			}
+		custom_effect_tooltip = coup_crisis_swap_tt
 		}
 		x = 29
 		y = 1
@@ -78,6 +83,10 @@ focus_tree = {
 			swap_ideas = {
 				remove_idea = social_repression
 				add_idea = social_repression_2
+			 }
+			swap_ideas = {
+				remove_idea = coup_crisis2
+				add_idea = coup_crisis3
      		}
 		}
 	}
@@ -2157,6 +2166,57 @@ focus_tree = {
 		prerequisite = {
 			focus = Kim_Gu_Elected
 		}
+		completion_reward = {
+			add_stability = 0.1
+			hidden_effect = {
+				525 = { #core 로 넣으면 한반도를 제외한 다른곳에 넣어질수 있기 때문에 이런 방식을 택함
+					add_extra_state_shared_building_slots = 1
+				}
+				527 = {
+					add_extra_state_shared_building_slots = 1
+				}
+				807 = {
+					add_extra_state_shared_building_slots = 1
+				}
+				808 = {
+					add_extra_state_shared_building_slots = 1
+				}
+				809 = {
+					add_extra_state_shared_building_slots = 1
+				}
+				810 = {
+					add_extra_state_shared_building_slots = 1
+				}
+				811 = {
+					add_extra_state_shared_building_slots = 1
+				}
+				812 = {
+					add_extra_state_shared_building_slots = 1
+				}
+				813 = {
+					add_extra_state_shared_building_slots = 1
+				}
+				814 = {
+					add_extra_state_shared_building_slots = 1
+				}
+				815 = {
+					add_extra_state_shared_building_slots = 1
+				}
+				816 = {
+					add_extra_state_shared_building_slots = 1
+				}
+				817 = {
+					add_extra_state_shared_building_slots = 1
+				}
+				818 = {
+					add_extra_state_shared_building_slots = 1
+				}
+				819 = {
+					add_extra_state_shared_building_slots = 1
+				}
+			}
+			custom_effect_tooltip = nationalism_for_unity2_tt
+		}
 		x = 16
 		y = 4
 
@@ -2167,6 +2227,9 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = nationalism_for_unity2
+		}
+		completion_reward = {
+			remove_ideas = coup_crisis3
 		}
 		x = 15
 		y = 5
@@ -2210,6 +2273,9 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = Kim_Gu_Elected
+		}
+		completion_reward = {
+			add_ideas = national_government
 		}
 		x = 19
 		y = 5
@@ -2345,6 +2411,13 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = communist_assassination
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+			add_ideas = unity_ruling_camp
 		}
 		x = 16
 		y = 6

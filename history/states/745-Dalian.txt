@@ -5,14 +5,9 @@ state={
 		1150 6851 
 	}
 	state_category = large_town
-	history=
-	{
-		owner = KOR
-		add_core_of = CHI
+	history={
+		owner = MAN
 		add_core_of = MAN
-		add_core_of = PRC
-		add_core_of = KOR
-		set_demilitarized_zone = yes
 		victory_points = {
 			1150 1 
 		}

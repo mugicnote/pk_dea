@@ -2,6 +2,7 @@
   ###시작 결정###
   military_arrest:0 "암살의 성공"
   military_arrest_tt:0 "§Y이 중점은 서재필의 암살 이후 자동으로 완료될 것입니다§!"
+  coup_crisis_swap_tt:0 "\n§Y쿠데타 위기§! 국민정신을 §Y쿠데타 위기의 후폭풍§! 국민정신으로 대치하며 군대를 훈련 및 해산시키거나 편재를 수정할수 있게됩니다."
   military_success:0 "암살의 실패"
   ###민주주의###
   democratic_election:0 "대통령 선거"
@@ -53,7 +54,8 @@
 
   nationalism_for_unity:0 "두 운동가 이야기"
 
-  nationalism_for_unity2:0 "지방 분권 실천"
+  nationalism_for_unity2:0 "지방 자치구 개편"
+  nationalism_for_unity2_tt:0 "§Y한반도§!의 모든 지역에 건설 슬롯을 1 추가 합니다."
 
   Security_Law_Designation:0 "군부 잔재 청산"
 
