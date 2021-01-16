@@ -12,5 +12,45 @@ spriteTypes = {
 		name = "GFX_CHI_Liuwenhui"
 		texturefile = "gfx/interface/goals/CHI_liuwenhui.dds"
 	}
+	SpriteType = {
+		name = "GFX_CHI_six_fort_plan"
+		texturefile = "gfx/interface/goals/CHI_six_fort_plan.dds"
+	}
+	SpriteType = {
+		name = "GFX_CHI_hongkong"
+		texturefile = "gfx/interface/goals/CHI_hongkong.dds"
+	}
+	SpriteType = {
+		name = "GFX_CHI_tshingtao"
+		texturefile = "gfx/interface/goals/CHI_tshingtao.dds"
+	}
+	SpriteType = {
+		name = "GFX_CHI_fujou"
+		texturefile = "gfx/interface/goals/CHI_fujou.dds"
+	}
+	SpriteType = {
+		name = "GFX_CHI_nhingbo"
+		texturefile = "gfx/interface/goals/CHI_nhingbo.dds"
+	}
+	SpriteType = {
+		name = "GFX_CHI_shanghai"
+		texturefile = "gfx/interface/goals/CHI_shanghai.dds"
+	}
+	SpriteType = {
+		name = "GFX_CHI_shantou"
+		texturefile = "gfx/interface/goals/CHI_shantou.dds"
+	}
+	SpriteType = {
+		name = "GFX_CHI_clame_guangzhou"
+		texturefile = "gfx/interface/goals/CHI_clame_guangzhou.dds"
+	}
+	SpriteType = {
+		name = "GFX_CHI_clame_makao"
+		texturefile = "gfx/interface/goals/CHI_clame_makao.dds"
+	}
+	SpriteType = {
+		name = "GFX_CHI_clame_hongkong"
+		texturefile = "gfx/interface/goals/CHI_clame_hongkong.dds"
+	}
 	
 }

@@ -23,7 +23,7 @@
 		completion_reward = {
 			add_political_power = 150
 		}
-		x = 38
+		x = 33
 		y = 0
 	}
 
@@ -570,6 +570,220 @@
 		y = 1
 	}
 
+	focus = {
+		id = CHI_clame_land					#본토 영유권 주장
+		icon = GFX_CHI_clame_land
+		cost = 10.00
+
+		relative_position_id = General_Kai_Shek
+
+		prerequisite = {
+			focus = CHI_General_Kai_Shek
+			focus = New_National_Revolutionary_Army
+		}
+		completion_reward = {
+		}
+		x = 14
+		y = 1
+	}
+
+	focus = {
+		id = CHI_clame_guangzhou
+		icon = GFX_CHI_clame_guangzhou
+		cost = 10.00
+
+		relative_position_id = CHI_clame_land
+
+		prerequisite = {
+			focus = CHI_clame_land
+		}
+		completion_reward = {
+		}
+		x = -2
+		y = 1
+	}
+
+	focus = {
+		id = CHI_clame_makao
+		icon = GFX_CHI_clame_makao
+		cost = 10.00
+
+		relative_position_id = CHI_clame_guangzhou
+
+		prerequisite = {
+			focus = CHI_clame_land
+		}
+		completion_reward = {
+		}
+		x = 2
+		y = 0
+	}
+
+	focus = {
+		id = CHI_clame_hongkong
+		icon = GFX_CHI_clame_hongkong
+		cost = 10.00
+
+		relative_position_id = CHI_clame_guangzhou
+
+		prerequisite = {
+			focus = CHI_clame_land
+		}
+		completion_reward = {
+		}
+		x = 4
+		y = 0
+	}
+
+	focus = {
+		id = CHI_six_fort_plan
+		icon = GFX_CHI_six_fort_plan
+		cost = 10.00
+
+		relative_position_id = CHI_clame_makao
+
+		prerequisite = {
+			focus = CHI_clame_guangzhou
+		}
+		prerequisite = {
+			focus = CHI_clame_makao
+		}
+		prerequisite = {
+			focus = CHI_clame_hongkong
+		}
+		completion_reward = {
+		}
+		x = 0
+		y = 1
+	}
+
+	focus = {
+		id = CHI_shanghai
+		icon = GFX_CHI_shanghai
+		cost = 10.00
+
+		relative_position_id = CHI_six_fort_plan
+
+		prerequisite = {
+			focus = CHI_six_fort_plan
+		}
+		completion_reward = {
+		}
+		x = -5
+		y = 1
+	}
+
+	focus = {
+		id = CHI_hongkong
+		icon = GFX_CHI_hongkong
+		cost = 10.00
+
+		relative_position_id = CHI_six_fort_plan
+
+		prerequisite = {
+			focus = CHI_six_fort_plan
+		}
+		completion_reward = {
+		}
+		x = -3
+		y = 1
+	}
+
+	focus = {
+		id = CHI_tshingtao
+		icon = GFX_CHI_tshingtao
+		cost = 10.00
+
+		relative_position_id = CHI_six_fort_plan
+
+		prerequisite = {
+			focus = CHI_six_fort_plan
+		}
+		completion_reward = {
+		}
+		x = -1
+		y = 1
+	}
+
+	focus = {
+		id = CHI_shantou
+		icon = GFX_CHI_shantou
+		cost = 10.00
+
+		relative_position_id = CHI_six_fort_plan
+
+		prerequisite = {
+			focus = CHI_six_fort_plan
+		}
+		completion_reward = {
+		}
+		x = 1
+		y = 1
+	}
+
+	focus = {
+		id = CHI_fujou
+		icon = GFX_CHI_fujou
+		cost = 10.00
+
+		relative_position_id = CHI_six_fort_plan
+
+		prerequisite = {
+			focus = CHI_six_fort_plan
+		}
+		completion_reward = {
+		}
+		x = 3
+		y = 1
+	}
+
+	focus = {
+		id = CHI_nhingbo
+		icon = GFX_CHI_nhingbo
+		cost = 10.00
+
+		relative_position_id = CHI_six_fort_plan
+
+		prerequisite = {
+			focus = CHI_six_fort_plan
+		}
+		completion_reward = {
+		}
+		x = 5
+		y = 1
+	}
+
+	focus = {
+		id = CHI_end_of_the_six_fort_plan
+		icon = GFX_CHI_six_fort_plan_end
+		cost = 5.00
+
+		relative_position_id = CHI_six_fort_plan
+
+		prerequisite = {
+			focus = CHI_shanghai
+		}
+		prerequisite = {
+			focus = CHI_hongkong
+		}
+		prerequisite = {
+			focus = CHI_tshingtao
+		}
+		prerequisite = {
+			focus = CHI_shantou
+		}
+		prerequisite = {
+			focus = CHI_fujou
+		}
+		prerequisite = {
+			focus = CHI_nhingbo
+		}
+		completion_reward = {
+		}
+		x = 0
+		y = 2
+	}
+
 	focus = {												#새로운 국민혁명군
 		id = New_National_Revolutionary_Army
 		icon = GFX_CHI_Our_Crusade
@@ -730,6 +944,22 @@
 	}
 
 	focus = {
+		id = personal_weapon_research
+		icon = GFX_CHI_Police
+		cost = 5.00
+
+		relative_position_id = light_republic_of_army
+
+		prerequisite = {
+			focus = light_division_design
+		}
+		completion_reward = {
+		}
+		x = 3
+		y = 1
+	}
+
+	focus = {
 		id = Regional_Minutemen_Division		#범지역 민병 사단
 		icon = GFX_CHI_New_Life_Movement_Fascist
 		cost = 5.00
@@ -841,11 +1071,32 @@
 
 		prerequisite = {
 			focus = securing_national_livelihood
+		}
+		prerequisite = {
 			focus = securing_national_income
 		}
 		completion_reward = {
 		}
 		x = 1
+		y = 1
+	}
+
+	focus = {
+		id = army_reform_ongoing
+		icon = GFX_CHI_Factory_of_Asia
+		cost = 5.00
+
+		relative_position_id = light_army_special_army
+
+		prerequisite = {
+			focus = light_army_special_army
+		}
+		prerequisite = {
+			focus = General_Sun_Li_Jen
+		}
+		completion_reward = {
+		}
+		x = 2
 		y = 1
 	}
 
