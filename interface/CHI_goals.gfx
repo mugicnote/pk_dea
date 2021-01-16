@@ -1,0 +1,16 @@
+spriteTypes = {
+
+	SpriteType = {
+		name = "GFX_CHI_Chenjitang"
+		texturefile = "gfx/interface/goals/CHI_chenjitang.dds"
+	}
+	SpriteType = {
+		name = "GFX_CHI_Hanfuju"
+		texturefile = "gfx/interface/goals/CHI_hanfuju.dds"
+	}
+	SpriteType = {
+		name = "GFX_CHI_Liuwenhui"
+		texturefile = "gfx/interface/goals/CHI_liuwenhui.dds"
+	}
+	
+}

@@ -16,22 +16,449 @@
 	continuous_focus_position = { x = 20 y = 1000 }
 
 	focus = {
-		id = General_Kai_Shek
+		id = General_Kai_Shek								#내정의 지속
 		icon = GFX_CHI_General_Kai_Shek
-		cost = 10.00
+		cost = 2.00
 
 		completion_reward = {
 			add_political_power = 150
 		}
-		x = 10
+		x = 38
 		y = 0
-
 	}
 
 	focus = {
-		id = warlord_Censorship
+		id = right_for_warlord								#군벌 자치권 보장
+		icon = GFX_CHI_Status_Quo
+		cost = 2.00
+
+		relative_position_id = General_Kai_Shek
+
+		prerequisite = {
+			focus = General_Kai_Shek
+		}
+		mutually_exclusive = {
+			focus = warlord_Censorship
+		}
+		completion_reward = {
+		}
+		x = -2
+		y = 1
+	}
+
+	focus = {
+		id = sourceful_treaty_with_warlords				#군벌과의 효과적 관계 개선 정책
+		icon = GFX_CHI_Status_Quo
+		cost = 5.00
+
+		relative_position_id = General_Kai_Shek
+
+		prerequisite = {
+			focus = right_for_warlord
+			focus = warlord_Censorship
+		}
+		completion_reward = {
+		}
+		x = 0
+		y = 2
+	}
+
+	focus = {
+		id = Censorship_with_ma
+		icon = GFX_CHI_Send_Mas_Away
+		cost = 2.00
+
+		relative_position_id = right_for_warlord
+
+		prerequisite = {
+			focus = right_for_warlord
+		}
+		completion_reward = {
+		}
+		x = -12
+		y = 1
+	}
+
+	focus = {
+		id = Censorship_with_ch
+		icon = GFX_CHI_KMT_Propaganda
+		cost = 1.00
+
+		relative_position_id = Censorship_with_ma
+
+		prerequisite = {
+			focus = Censorship_with_ma
+		}
+		completion_reward = {
+		}
+		x = -1
+		y = 1
+	}
+
+	focus = {
+		id = Censorship_with_gs
+		icon = GFX_CHI_KMT_Propaganda
+		cost = 1.00
+
+		relative_position_id = Censorship_with_ch
+
+		prerequisite = {
+			focus = Censorship_with_ch
+		}
+		completion_reward = {
+		}
+		x = 0
+		y = 1
+	}
+
+	focus = {
+		id = Censorship_with_yh
+		icon = GFX_CHI_KMT_Propaganda
+		cost = 1.00
+
+		relative_position_id = Censorship_with_ma
+
+		prerequisite = {
+			focus = Censorship_with_ma
+		}
+		completion_reward = {
+		}
+		x = 1
+		y = 1
+	}
+
+	focus = {
+		id = Censorship_with_tn
+		icon = GFX_CHI_KMT_Propaganda
+		cost = 1.00
+
+		relative_position_id = Censorship_with_yh
+
+		prerequisite = {
+			focus = Censorship_with_yh
+		}
+		completion_reward = {
+		}
+		x = 0
+		y = 1
+	}
+
+	focus = {
+		id = Censorship_with_sw
+		icon = GFX_CHI_KMT_Propaganda
+		cost = 1.00
+
+		relative_position_id = Censorship_with_tn
+
+		prerequisite = {
+			focus = Censorship_with_tn
+		}
+		prerequisite = {
+			focus = Censorship_with_gs
+		}
+		completion_reward = {
+		}
+		x = -1
+		y = 1
+	}
+
+	focus = {
+		id = Censorship_with_sg
+		icon = GFX_CHI_KMT_Propaganda
+		cost = 1.00
+
+		relative_position_id = Censorship_with_sw
+
+		prerequisite = {
+			focus = Censorship_with_sw
+		}
+		completion_reward = {
+		}
+		x = -1
+		y = 1
+	}
+
+	focus = {
+		id = Censorship_with_km
+		icon = GFX_CHI_KMT_Propaganda
+		cost = 1.00
+
+		relative_position_id = Censorship_with_sw
+
+		prerequisite = {
+			focus = Censorship_with_sw
+		}
+		completion_reward = {
+		}
+		x = 1
+		y = 1
+	}
+
+	focus = {
+		id = Censorship_with_sa
+		icon = GFX_CHI_military_affairs
+		cost = 2.00
+
+		relative_position_id = right_for_warlord
+
+		prerequisite = {
+			focus = right_for_warlord
+		}
+		completion_reward = {
+		}
+		x = -8
+		y = 1
+	}
+
+	focus = {
+		id = Censorship_with_sc
+		icon = GFX_CHI_military_affairs
+		cost = 1.00
+
+		relative_position_id = Censorship_with_sa
+
+		prerequisite = {
+			focus = Censorship_with_sa
+		}
+		completion_reward = {
+		}
+		x = -1
+		y = 2
+	}
+
+	focus = {
+		id = Censorship_with_sk
+		icon = GFX_CHI_Liuwenhui
+		cost = 1.00
+
+		relative_position_id = Censorship_with_sa
+
+		prerequisite = {
+			focus = Censorship_with_sa
+		}
+		completion_reward = {
+		}
+		x = 1
+		y = 2
+	}
+
+	focus = {
+		id = Censorship_with_south
+		icon = GFX_CHI_KMT_Propaganda
+		cost = 2.00
+
+		relative_position_id = right_for_warlord
+
+		prerequisite = {
+			focus = right_for_warlord
+		}
+		completion_reward = {
+		}
+		x = -4
+		y = 1
+	}
+
+	focus = {
+		id = Censorship_with_yn
+		icon = GFX_CHI_KMT_Propaganda
+		cost = 1.00
+
+		relative_position_id = Censorship_with_south
+
+		prerequisite = {
+			focus = Censorship_with_south
+		}
+		completion_reward = {
+		}
+		x = -1
+		y = 2
+	}
+
+	focus = {
+		id = Censorship_with_un
+		icon = GFX_CHI_KMT_Propaganda
+		cost = 1.00
+
+		relative_position_id = Censorship_with_yn
+
+		prerequisite = {
+			focus = Censorship_with_yn
+		}
+		completion_reward = {
+		}
+		x = 0
+		y = 2
+	}
+	
+	focus = {
+		id = Censorship_with_gd
+		icon = GFX_CHI_Chenjitang
+		cost = 1.00
+
+		relative_position_id = Censorship_with_south
+
+		prerequisite = {
+			focus = Censorship_with_south
+		}
+		completion_reward = {
+		}
+		x = 1
+		y = 2
+	}
+
+	focus = {
+		id = Censorship_with_gx
+		icon = GFX_CHI_KMT_Propaganda
+		cost = 1.00
+
+		relative_position_id = Censorship_with_gd
+
+		prerequisite = {
+			focus = Censorship_with_gd
+		}
+		completion_reward = {
+		}
+		x = 0
+		y = 2
+	}
+
+	focus = {
+		id = Censorship_with_north
+		icon = GFX_CHI_KMT_Propaganda
+		cost = 2.00
+
+		relative_position_id = right_for_warlord
+
+		prerequisite = {
+			focus = right_for_warlord
+		}
+		completion_reward = {
+		}
+		x = 0
+		y = 1
+	}
+
+	focus = {
+		id = Censorship_with_sx
+		icon = GFX_CHI_KMT_Propaganda
+		cost = 1.00
+
+		relative_position_id = Censorship_with_north
+
+		prerequisite = {
+			focus = Censorship_with_north
+		}
+		completion_reward = {
+		}
+		x = -1
+		y = 2
+	}
+
+	focus = {
+		id = Censorship_with_sh
+		icon = GFX_CHI_KMT_Propaganda
+		cost = 1.00
+
+		relative_position_id = Censorship_with_sx
+
+		prerequisite = {
+			focus = Censorship_with_sx
+		}
+		completion_reward = {
+		}
+		x = 0
+		y = 2
+	}
+
+	focus = {
+		id = Censorship_with_sd
+		icon = GFX_CHI_Hanfuju
+		cost = 1.00
+
+		relative_position_id = Censorship_with_north
+
+		prerequisite = {
+			focus = Censorship_with_north
+		}
+		completion_reward = {
+		}
+		x = 1
+		y = 2
+	}
+
+	focus = {
+		id = Censorship_with_hb
+		icon = GFX_CHI_KMT_Propaganda
+		cost = 1.00
+
+		relative_position_id = Censorship_with_sd
+
+		prerequisite = {
+			focus = Censorship_with_sd
+		}
+		completion_reward = {
+		}
+		x = 0
+		y = 2
+	}
+
+	focus = {
+		id = End_of_the_censorship
+		icon = GFX_CHI_KMT_Propaganda
+		cost = 2.00
+
+		relative_position_id = Censorship_with_km
+
+		prerequisite = {
+			focus = Censorship_with_sg
+		}
+		prerequisite = {
+			focus = Censorship_with_km
+		}
+		prerequisite = {
+			focus = Censorship_with_sc
+		}
+		prerequisite = {
+			focus = Censorship_with_sk
+		}
+		prerequisite = {
+			focus = Censorship_with_un
+		}
+		prerequisite = {
+			focus = Censorship_with_gx
+		}
+		prerequisite = {
+			focus = Censorship_with_sh
+		}
+		prerequisite = {
+			focus = Censorship_with_hb
+		}
+		completion_reward = {
+		}
+		x = 5
+		y = 1
+	}
+
+	focus = {
+		id = Its_time
+		icon = GFX_CHI_KMT_Propaganda
+		cost = 5.00
+
+		relative_position_id = End_of_the_censorship
+
+		prerequisite = {
+			focus = End_of_the_censorship
+		}
+		completion_reward = {
+		}
+		x = 0
+		y = 1
+	}
+
+	focus = {
+		id = warlord_Censorship								#군벌 규합 정책
 		icon = GFX_CHI_stabilize_the_KMT
-		cost = 10.00
+		cost = 1.00
 
 		relative_position_id = General_Kai_Shek
 
@@ -43,98 +470,121 @@
 		}
 		completion_reward = {
 		}
-		x = 1
+		x = 2
 		y = 1
-
 	}
 
 	focus = {
-		id = right_warlord
-		icon = GFX_CHI_Status_Quo
-		cost = 10.00
+		id = start_of_the_Censorship
+		icon = GFX_CHI_stabilize_the_KMT
+		cost = 1.00
 
-		relative_position_id = General_Kai_Shek
+		relative_position_id = warlord_Censorship
 
 		prerequisite = {
-			focus = General_Kai_Shek
-		}
-		mutually_exclusive = {
 			focus = warlord_Censorship
+		}
+		completion_reward = {
+		}
+		x = 0
+		y = 1
+	}
+
+	focus = {
+		id = keep_soft
+		icon = GFX_CHI_stabilize_the_KMT
+		cost = 1.00
+
+		relative_position_id = start_of_the_Censorship
+
+		prerequisite = {
+			focus = start_of_the_Censorship
+		}
+		completion_reward = {
+		}
+		x = 0
+		y = 1
+	}
+
+	focus = {
+		id = push_the_ma
+		icon = GFX_CHI_stabilize_the_KMT
+		cost = 1.00
+
+		relative_position_id = keep_soft
+
+		prerequisite = {
+			focus = keep_soft
 		}
 		completion_reward = {
 		}
 		x = -1
 		y = 1
-
 	}
 
 	focus = {
-		id = Censorship_with_ma
-		icon = GFX_CHI_Send_Mas_Away
-		cost = 10.00
+		id = push_the_sa
+		icon = GFX_CHI_stabilize_the_KMT
+		cost = 1.00
 
-		relative_position_id = warlord_Censorship
+		relative_position_id = keep_soft
 
 		prerequisite = {
-			focus = warlord_Censorship
+			focus = keep_soft
 		}
 		completion_reward = {
 		}
-		x = 0
+		x = 1
 		y = 1
-
 	}
 
 	focus = {
-		id = Censorship_with_sa
-		icon = GFX_CHI_military_affairs
-		cost = 10.00
+		id = push_the_south
+		icon = GFX_CHI_stabilize_the_KMT
+		cost = 1.00
 
-		relative_position_id = warlord_Censorship
+		relative_position_id = keep_soft
 
 		prerequisite = {
-			focus = warlord_Censorship
+			focus = keep_soft
 		}
 		completion_reward = {
 		}
-		x = 2
+		x = 3
 		y = 1
-
 	}
 
 	focus = {
-		id = Censorship_with_se
-		icon = GFX_CHI_KMT_Propaganda
-		cost = 10.00
+		id = push_the_north
+		icon = GFX_CHI_stabilize_the_KMT
+		cost = 1.00
 
-		relative_position_id = Censorship_with_ma
+		relative_position_id = keep_soft
 
 		prerequisite = {
-			focus = Censorship_with_ma
+			focus = keep_soft
 		}
 		completion_reward = {
 		}
-		x = 0
+		x = 5
 		y = 1
-
 	}
 
-	focus = {
+	focus = {												#새로운 국민혁명군
 		id = New_National_Revolutionary_Army
 		icon = GFX_CHI_Our_Crusade
 		cost = 10.00
 
 		completion_reward = {
 		}
-		x = 21
+		x = 60
 		y = 0
-
 	}
 
 	focus = {
 		id = integration_municipal_police
 		icon = GFX_CHI_Police
-		cost = 10.00
+		cost = 5.00
 
 		relative_position_id = New_National_Revolutionary_Army
 
@@ -146,53 +596,193 @@
 		}
 		x = -5
 		y = 1
-
 	}
 
 	focus = {
-		id = Regional_Minutemen_Division
-		icon = GFX_CHI_New_Life_Movement_Fascist
-		cost = 10.00
+		id = integration_militia
+		icon = GFX_CHI_Police
+		cost = 5.00
 
 		relative_position_id = New_National_Revolutionary_Army
 
 		prerequisite = {
 			focus = New_National_Revolutionary_Army
-		}
-		mutually_exclusive = {
-			focus = special_duty_elite
+			focus = General_Kai_Shek
 		}
 		completion_reward = {
 		}
-		x = -3
+		x = -7
 		y = 1
-
 	}
 
 	focus = {
-		id = special_duty_elite
-		icon = GFX_CHI_Volunteers
-		cost = 10.00
+		id = organised_shock_troops
+		icon = GFX_CHI_Police
+		cost = 5.00
 
-		relative_position_id = New_National_Revolutionary_Army
+		relative_position_id = integration_militia
 
 		prerequisite = {
-			focus = New_National_Revolutionary_Army
-		}
-		mutually_exclusive = {
-			focus = Regional_Minutemen_Division
+			focus = integration_militia
+			focus = integration_municipal_police
 		}
 		completion_reward = {
 		}
 		x = -1
 		y = 1
+	}
+	
+	focus = {
+		id = integrated_peoples_mil
+		icon = GFX_CHI_Police
+		cost = 5.00
 
+		relative_position_id = integration_militia
+
+		prerequisite = {
+			focus = integration_militia
+			focus = integration_municipal_police
+		}
+		completion_reward = {
+		}
+		x = 1
+		y = 1
+	}
+
+	focus = {
+		id = guns_for_people
+		icon = GFX_CHI_Police
+		cost = 5.00
+
+		relative_position_id = integration_militia
+
+		prerequisite = {
+			focus = integration_militia
+			focus = integration_municipal_police
+		}
+		completion_reward = {
+		}
+		x = 3
+		y = 1
+	}
+
+	focus = {
+		id = light_republic_of_army
+		icon = GFX_CHI_Police
+		cost = 5.00
+
+		relative_position_id = organised_shock_troops
+
+		prerequisite = {
+			focus = organised_shock_troops
+		}
+		prerequisite = {
+			focus = integrated_peoples_mil
+		}
+		prerequisite = {
+			focus = guns_for_people
+		}
+		completion_reward = {
+		}
+		x = 1
+		y = 1
+	}
+
+	focus = {
+		id = light_division_design
+		icon = GFX_CHI_Police
+		cost = 5.00
+
+		relative_position_id = organised_shock_troops
+
+		prerequisite = {
+			focus = organised_shock_troops
+		}
+		prerequisite = {
+			focus = integrated_peoples_mil
+		}
+		prerequisite = {
+			focus = guns_for_people
+		}
+		completion_reward = {
+		}
+		x = 3
+		y = 1
+	}
+
+	focus = {
+		id = light_army_special_army
+		icon = GFX_CHI_Police
+		cost = 5.00
+
+		relative_position_id = light_republic_of_army
+
+		prerequisite = {
+			focus = light_republic_of_army
+		}
+		prerequisite = {
+			focus = light_division_design
+		}
+		completion_reward = {
+		}
+		x = 1
+		y = 1
+	}
+
+	focus = {
+		id = Regional_Minutemen_Division		#범지역 민병 사단
+		icon = GFX_CHI_New_Life_Movement_Fascist
+		cost = 5.00
+
+		relative_position_id = New_National_Revolutionary_Army
+
+		prerequisite = {
+			focus = New_National_Revolutionary_Army
+		}
+		
+		completion_reward = {
+		}
+		x = -3
+		y = 1
+	}
+
+	focus = {
+		id = special_duty_elite		#특무 정예병 노선
+		icon = GFX_CHI_Volunteers
+		cost = 5.00
+
+		relative_position_id = New_National_Revolutionary_Army
+
+		prerequisite = {
+			focus = New_National_Revolutionary_Army
+		}
+		
+		completion_reward = {
+		}
+		x = -1
+		y = 1
+	}
+
+	focus = {
+		id = ready_for_special_force		#특수부대 계획
+		icon = GFX_CHI_Sinkiang_Oil
+		cost = 5.00
+
+		relative_position_id = special_duty_elite
+
+		prerequisite = {
+			focus = special_duty_elite
+		}
+		completion_reward = {
+		}
+		x = 1
+		y = 1
 	}
 
 	focus = {
 		id = steel_fuel_development
 		icon = GFX_CHI_Sinkiang_Oil
-		cost = 10.00
+		cost = 5.00
 
 		relative_position_id = Regional_Minutemen_Division
 
@@ -204,13 +794,12 @@
 		}
 		x = 1
 		y = 1
-
 	}
 
 	focus = {
 		id = securing_national_livelihood
 		icon = GFX_CHI_Land_Reform
-		cost = 10.00
+		cost = 5.00
 
 		relative_position_id = Regional_Minutemen_Division
 
@@ -218,20 +807,17 @@
 			focus = Regional_Minutemen_Division
 			focus = special_duty_elite
 		}
-		mutually_exclusive = {
-			focus = securing_national_income
-		}
+		
 		completion_reward = {
 		}
 		x = 0
 		y = 2
-
 	}
 
 	focus = {
 		id = securing_national_income
 		icon = GFX_CHI_Factory_of_Asia
-		cost = 10.00
+		cost = 5.00
 
 		relative_position_id = Regional_Minutemen_Division
 
@@ -239,20 +825,17 @@
 			focus = Regional_Minutemen_Division
 			focus = special_duty_elite
 		}
-		mutually_exclusive = {
-			focus = securing_national_livelihood
-		}
+		
 		completion_reward = {
 		}
 		x = 2
 		y = 2
-
 	}
 
 	focus = {
 		id = General_Sun_Li_Jen
 		icon = GFX_CHI_Generalissimo_Sun_Li_Jen
-		cost = 10.00
+		cost = 5.00
 
 		relative_position_id = securing_national_livelihood
 
@@ -264,13 +847,45 @@
 		}
 		x = 1
 		y = 1
-
 	}
 
 	focus = {
-		id = CHI_Military_Commission
+		id = call_all_army		#전군 집산
+		icon = GFX_CHI_New_Life_Movement_Fascist
+		cost = 5.00
+
+		relative_position_id = New_National_Revolutionary_Army
+
+		prerequisite = {
+			focus = New_National_Revolutionary_Army
+		}
+		
+		completion_reward = {
+		}
+		x = 1
+		y = 1
+	}
+
+	focus = {
+		id = ready_for_rightless_defense_force	#권력 없는 친위대 계획
+		icon = GFX_CHI_Sinkiang_Oil
+		cost = 5.00
+
+		relative_position_id = New_National_Revolutionary_Army
+
+		prerequisite = {
+			focus = New_National_Revolutionary_Army
+		}
+		completion_reward = {
+		}
+		x = 3
+		y = 1
+	}
+
+	focus = {
+		id = CHI_Military_Commission		#국부군 군사 위원회
 		icon = GFX_CHI_Military_Junta
-		cost = 10.00
+		cost = 5.00
 
 		relative_position_id = New_National_Revolutionary_Army
 
@@ -281,7 +896,111 @@
 		}
 		x = 5
 		y = 1
+	}
 
+	focus = {
+		id = Purchase_Decomposition		#외국산 비행기 구매
+		icon = GFX_CHI_Planes
+		cost = 5.00
+
+		relative_position_id = CHI_Military_Commission
+
+		prerequisite = {
+			focus = CHI_Military_Commission
+		}
+		completion_reward = {
+		}
+		x = -3
+		y = 1
+	}
+
+	focus = {
+		id = copy_plane_design
+		icon = GFX_GER_bussiness_as_usual
+		cost = 5.00
+
+		relative_position_id = Purchase_Decomposition
+
+		prerequisite = {
+			focus = Purchase_Decomposition
+		}
+		completion_reward = {
+		}
+		x = -1
+		y = 1
+	}
+
+	focus = {
+		id = Securing_design_funding
+		icon = GFX_GER_bussiness_as_usual
+		cost = 5.00
+
+		relative_position_id = Purchase_Decomposition
+
+		prerequisite = {
+			focus = Purchase_Decomposition
+		}
+		completion_reward = {
+		}
+		x = 1
+		y = 1
+	}
+
+	focus = {
+		id = army_flying_wing
+		icon = GFX_GER_bussiness_as_usual
+		cost = 5.00
+
+		relative_position_id = copy_plane_design
+
+		prerequisite = {
+			focus = copy_plane_design
+		}
+		prerequisite = {
+			focus = Securing_design_funding
+		}
+		completion_reward = {
+		}
+		x = -1
+		y = 1
+	}
+
+	focus = {
+		id = early_idea_for_airforce
+		icon = GFX_GER_bussiness_as_usual
+		cost = 5.00
+
+		relative_position_id = copy_plane_design
+
+		prerequisite = {
+			focus = copy_plane_design
+		}
+		prerequisite = {
+			focus = Securing_design_funding
+		}
+		completion_reward = {
+		}
+		x = 1
+		y = 1
+	}
+
+	focus = {
+		id = plan_for_secure_sky
+		icon = GFX_GER_bussiness_as_usual
+		cost = 5.00
+
+		relative_position_id = army_flying_wing
+
+		prerequisite = {
+			focus = army_flying_wing
+		}
+		prerequisite = {
+			focus = early_idea_for_airforce
+		}
+		completion_reward = {
+		}
+		x = 1
+		y = 1
 	}
 
 	focus = {
@@ -298,7 +1017,6 @@
 		}
 		x = 3
 		y = 1
-
 	}
 
 	focus = {
@@ -315,7 +1033,6 @@
 		}
 		x = 0
 		y = 1
-
 	}
 
 	focus = {
@@ -332,7 +1049,6 @@
 		}
 		x = 0
 		y = 1
-
 	}
 
 	focus = {
@@ -352,7 +1068,6 @@
 		}
 		x = 0
 		y = 1
-
 	}
 	
 	focus = {
@@ -369,7 +1084,6 @@
 		}
 		x = 0
 		y = 1
-
 	}
 
 	focus = {
@@ -386,7 +1100,6 @@
 		}
 		x = 0
 		y = 1
-
 	}
 
 	focus = {
@@ -403,7 +1116,6 @@
 		}
 		x = 1
 		y = 1
-
 	}
 
 	focus = {
@@ -420,7 +1132,6 @@
 		}
 		x = -1
 		y = 1
-
 	}
 
 	focus = {
@@ -437,41 +1148,5 @@
 		}
 		x = 0
 		y = 2
-
 	}
-
-	focus = {
-		id = Purchase_Decomposition
-		icon = GFX_CHI_Planes
-		cost = 10.00
-
-		relative_position_id = CHI_Military_Commission
-
-		prerequisite = {
-			focus = CHI_Military_Commission
-		}
-		completion_reward = {
-		}
-		x = -3
-		y = 1
-
-	}
-
-	focus = {
-		id = Securing_design_funding
-		icon = GFX_GER_bussiness_as_usual
-		cost = 10.00
-
-		relative_position_id = Purchase_Decomposition
-
-		prerequisite = {
-			focus = Purchase_Decomposition
-		}
-		completion_reward = {
-		}
-		x = 1
-		y = 1
-
-	}
-
 }

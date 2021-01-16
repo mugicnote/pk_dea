@@ -621,7 +621,7 @@ create_corps_commander = { #사진 작업 완료
 
 create_corps_commander = {
 	name = "남일"
-	picture = "Nam_Il.dds"
+	picture = "Portrait_KOR_Nam_Il.dds"
 	traits = {
 		trait_KOR_communism
 		trait_KOR_young_general
