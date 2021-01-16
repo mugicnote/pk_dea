@@ -161,9 +161,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "미야모토 겐지"
+	name = "미야모토 켄지"
 	desc = "#"
-	picture = ".dds"
+	picture = "JAP_Miyamoto_Kenji.dds"
 	expire = "1999.1.1"
 	ideology = rev_socialism
 	traits = {
@@ -172,9 +172,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "가타야마 데쓰"
+	name = "가타야마 데츠"
 	desc = "#"
-	picture = ".dds"
+	picture = "JAP_Katayama_Tetsu.dds"
 	expire = "1999.1.1"
 	ideology = socialism
 	traits = {
@@ -196,7 +196,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "하토야마 이치로"
 	desc = "#"
-	picture = ".dds"
+	picture = "JAP_Hatoyama_Ichiro.dds"
 	expire = "1999.1.1"
 	ideology = market_liberal
 	traits = {
@@ -218,7 +218,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "요시다 시게루"
 	desc = "#"
-	picture = "Shigeru_Yoshida.dds"
+	picture = "JAP_Yoshida_Shigeru.dds"
 	expire = "1999.1.1"
 	ideology = conservatism
 	traits = {
