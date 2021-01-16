@@ -719,10 +719,6 @@ SIK = {
 	color = rgb { 214 190 74 }
 	color_ui = rgb { 214 190 74 }
 }
-ETS = {
-	color = rgb { 71 178 224 }
-	color_ui = rgb { 71 178 224 }
-}
 KMK = {
 	color = rgb { 215 103 10 }
 	color_ui = rgb { 215 103 10 }
