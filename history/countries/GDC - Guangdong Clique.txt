@@ -1,6 +1,6 @@
 ﻿capital = 594
 
-oob = "GDC_1936"
+oob = "GDC"
 
 set_stability = 0.6
 set_war_support = 0.4
@@ -22,7 +22,7 @@ if = {
 
 1939.1.1 = {
 	
-	oob = "GDC_1939"
+	oob = "GDC"
 
 	add_political_power = 1198
 	

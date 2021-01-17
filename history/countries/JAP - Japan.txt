@@ -1,6 +1,6 @@
 capital = 840
 
-oob = "JAP_1936"
+oob = "JAP"
 
 set_stability = 0.4
 set_war_support = 0.8
@@ -76,7 +76,7 @@ if = {
 		basic_cruiser_armor_scheme = 1
 		cruiser_submarines = 1
 	}
-	set_naval_oob = "JAP_1936_naval"
+	set_naval_oob = "JAP_naval"
 }
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
@@ -95,7 +95,7 @@ if = {
 		basic_carrier = 1
 		transport = 1
 	}
-	set_naval_oob = "JAP_1936_naval_legacy"
+	set_naval_oob = "JAP_naval_legacy"
 }
 
 if = {

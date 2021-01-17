@@ -1,6 +1,6 @@
 capital = 807
 
-oob = CKR_1936
+oob = CKR
 
 #시작시_연구가능_칸
 set_research_slots = 3
@@ -62,7 +62,7 @@ if = {
 		basic_cruiser_armor_scheme = 1
 		cruiser_submarines = 1
 	}
-	set_naval_oob = "CKR_1936_Naval"
+	set_naval_oob = "CKR_Naval"
 }
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
@@ -81,7 +81,7 @@ if = {
 		basic_carrier = 1
 		transport = 1
 	}
-	set_naval_oob = "CKR_1936_Naval_Legacy"
+	set_naval_oob = "CKR_Naval_Legacy"
 }
 
 #수송선

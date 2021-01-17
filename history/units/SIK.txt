@@ -13,28 +13,6 @@
 }
 
 units = {
-	division = { # "1 Xin'jiang Juntuán"
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 5736
-		division_template = "Juntuán"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
-
-	}
-	division = { # "2 Xin'jiang Juntuán"
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location = 4947
-		division_template = "Juntuán"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
-
-	}
 	division = { # "3 Xin'jiang Juntuán"
 		division_name = {
 			is_name_ordered = yes
