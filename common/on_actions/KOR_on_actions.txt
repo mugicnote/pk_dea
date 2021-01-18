@@ -77,7 +77,7 @@ on_actions = {
 			is_locked = yes
 		}
 		set_division_template_lock = {
-			division_template = "청년단 기계화 보병"
+			division_template = "청년단 기계화보병"
 			is_locked = yes
 		}
 		every_owned_state = {
