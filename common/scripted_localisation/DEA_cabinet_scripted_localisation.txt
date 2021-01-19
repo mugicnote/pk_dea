@@ -13,9 +13,9 @@ defined_text = {
 
 	text = {
 		trigger = {
-			has_country_flag = Chiang_Kai_Shek
+			has_country_flag = People_Goverment
 		}
-		localization_key = Chiang_Kai_Shek_front
+		localization_key = People_Goverment_front
 	}
 
 }
@@ -170,7 +170,22 @@ defined_text = {
 		}
 		localization_key = GFX_Portrait_Lee_Beomseok
 	}
+}
+defined_text = {
+	name = HoG3_desc
 
+	text = {
+		trigger = { 
+			has_country_flag = Shin_Sung_mo
+		}
+		localization_key = Shin_Sung_mo_desc
+	}
+	text = {
+		trigger = { 
+			has_country_flag = Lee_Beomseok
+		}
+		localization_key = Lee_Beomseok_desc
+	}
 }
 
 
@@ -214,8 +229,6 @@ defined_text = {
 		}
 		localization_key = Yoon_Bo_Sun
 	}
-
-
 }
 defined_text = {
 	name = leader_two_portrait4
@@ -226,7 +239,16 @@ defined_text = {
 		}
 		localization_key = GFX_Portrait_Yoon_Bo_Sun
 	}
+}
+defined_text = {
+	name = HoG4_desc
 
+	text = {
+		trigger = { 
+			has_country_flag = Yoon_Bo_Sun
+		}
+		localization_key = Yoon_Bo_Sun_desc
+	}
 }
 
 
@@ -241,6 +263,12 @@ defined_text = {
 			tag = KOR
 		}
 		localization_key = POSITION_main_opposition_party_leader5
+	}
+	text = {
+		trigger = {
+			tag = CHI
+		}
+		localization_key = POSITION_main_opposition_VHog_CHI
 	}
 }
 
@@ -257,6 +285,12 @@ defined_text = {
 		}
 		localization_key = POSITION_main_opposition_party_leader5
 	}
+	text = {
+		trigger = {
+			tag = CHI
+		}
+		localization_key = POSITION_main_opposition_VHog_CHI
+	}
 }
 ############################################
 # HoG Name
@@ -272,11 +306,10 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			has_country_flag = Kim_Kyusik
+			has_country_flag = Wang_Jingwei
 		}
-		localization_key = Kim_Kyusik
+		localization_key = Wang_Jingwei
 	}
-
 }
 defined_text = {
 	name = leader_two_portrait5
@@ -287,7 +320,28 @@ defined_text = {
 		}
 		localization_key = GFX_Portrait_Kim_Kyusik
 	}
+	text = {
+		trigger = {
+			has_country_flag = Wang_Jingwei
+		}
+		localization_key = GFX_Portrait_Wang_Jingwei
+	}
+}
+defined_text = {
+	name = HoG5_desc
 
+	text = {
+		trigger = { 
+			has_country_flag = Kim_Kyusik
+		}
+		localization_key = Kim_Kyusik_desc
+	}
+	text = {
+		trigger = { 
+			has_country_flag = Wang_Jingwei
+		}
+		localization_key = Wang_Jingwei_desc
+	}
 }
 
 
@@ -331,8 +385,6 @@ defined_text = {
 		}
 		localization_key = Chough_Pyung_ok
 	}
-
-
 }
 defined_text = {
 	name = leader_two_portrait6
@@ -343,7 +395,16 @@ defined_text = {
 		}
 		localization_key = GFX_Portrait_Chough_Pyung_ok
 	}
+}
+defined_text = {
+	name = HoG6_desc
 
+	text = {
+		trigger = { 
+			has_country_flag = Chough_Pyung_ok
+		}
+		localization_key = Chough_Pyung_ok_desc
+	}
 }
 
 
@@ -358,13 +419,6 @@ defined_text = {
 			tag = KOR
 		}
 		localization_key = POSITION_main_opposition_party_leader7
-	}
-
-	text = {
-		trigger = {
-			tag = CHI
-		}
-		localization_key = POSITION_main_opposition_VHog_CHI
 	}
 }
 
@@ -381,13 +435,6 @@ defined_text = {
 		}
 		localization_key = POSITION_main_opposition_party_leader7
 	}
-
-	text = {
-		trigger = {
-			tag = CHI
-		}
-		localization_key = POSITION_main_opposition_VHog_CHI
-	}
 }
 ############################################
 # HoG Name
@@ -401,13 +448,6 @@ defined_text = {
 		}
 		localization_key = Ahn_Chang_Ho
 	}
-
-	text = {
-		trigger = {
-			has_country_flag = Wang_Jingwei
-		}
-		localization_key = Wang_Jingwei
-	}
 }
 defined_text = {
 	name = leader_two_portrait7
@@ -418,12 +458,15 @@ defined_text = {
 		}
 		localization_key = GFX_Portrait_Ahn_Chang_Ho
 	}
+}
+defined_text = {
+	name = HoG7_desc
 
 	text = {
-		trigger = {
-			has_country_flag = Wang_Jingwei
+		trigger = { 
+			has_country_flag = Ahn_Chang_Ho
 		}
-		localization_key = GFX_Portrait_Wang_Jingwei
+		localization_key = Ahn_Chang_Ho_desc
 	}
 }
 
@@ -607,8 +650,6 @@ defined_text = {
 		}
 		localization_key = Kim_Byung_ro
 	}
-
-
 }
 defined_text = {
 	name = leader_two_portrait9
@@ -619,7 +660,16 @@ defined_text = {
 		}
 		localization_key = GFX_Portrait_Kim_Byung_ro
 	}
+}
+defined_text = {
+	name = HoG9_desc
 
+	text = {
+		trigger = { 
+			has_country_flag = Kim_Byung_ro
+		}
+		localization_key = Kim_Byung_ro_desc
+	}
 }
 
 
@@ -655,8 +705,6 @@ defined_text = {
 		}
 		localization_key = Lee_Beomseok
 	}
-
-
 }
 defined_text = {
 	name = leader_two_portrait10
@@ -667,7 +715,16 @@ defined_text = {
 		}
 		localization_key = GFX_Portrait_Lee_Beomseok
 	}
+}
+defined_text = {
+	name = HoG10_desc
 
+	text = {
+		trigger = { 
+			has_country_flag = Lee_Beomseok
+		}
+		localization_key = Lee_Beomseok_desc
+	}
 }
 
 
@@ -703,8 +760,6 @@ defined_text = {
 		}
 		localization_key = ji_chong_chen
 	}
-
-
 }
 defined_text = {
 	name = leader_two_portrait11
@@ -715,7 +770,16 @@ defined_text = {
 		}
 		localization_key = GFX_Portrait_ji_chong_chen
 	}
+}
+defined_text = {
+	name = HoG11_desc
 
+	text = {
+		trigger = { 
+			has_country_flag = ji_chong_chen
+		}
+		localization_key = ji_chong_chen_desc
+	}
 }
 
 
@@ -751,8 +815,6 @@ defined_text = {
 		}
 		localization_key = Il_han_New
 	}
-
-
 }
 defined_text = {
 	name = leader_two_portrait12
@@ -763,7 +825,16 @@ defined_text = {
 		}
 		localization_key = GFX_Portrait_Il_han_New
 	}
+}
+defined_text = {
+	name = HoG12_desc
 
+	text = {
+		trigger = { 
+			has_country_flag = Il_han_New
+		}
+		localization_key = Il_han_New_desc
+	}
 }
 
 
@@ -799,8 +870,6 @@ defined_text = {
 		}
 		localization_key = Kim_Suk_Won
 	}
-
-
 }
 defined_text = {
 	name = leader_two_portrait13
@@ -811,7 +880,16 @@ defined_text = {
 		}
 		localization_key = GFX_Portrait_Kim_Suk_Won
 	}
+}
+defined_text = {
+	name = HoG13_desc
 
+	text = {
+		trigger = { 
+			has_country_flag = Kim_Suk_Won
+		}
+		localization_key = Kim_Suk_Won_desc
+	}
 }
 
 
@@ -847,8 +925,6 @@ defined_text = {
 		}
 		localization_key = jo_man_sik
 	}
-
-
 }
 defined_text = {
 	name = leader_two_portrait14
@@ -859,7 +935,16 @@ defined_text = {
 		}
 		localization_key = GFX_jomansik_portrait
 	}
+}
+defined_text = {
+	name = HoG14_desc
 
+	text = {
+		trigger = { 
+			has_country_flag = jo_man_sik
+		}
+		localization_key = jo_man_sik_desc
+	}
 }
 
 
@@ -895,8 +980,6 @@ defined_text = {
 		}
 		localization_key = Ho_Jong
 	}
-
-
 }
 defined_text = {
 	name = leader_two_portrait15
@@ -907,7 +990,16 @@ defined_text = {
 		}
 		localization_key = GFX_Portrait_Ho_Jong
 	}
+}
+defined_text = {
+	name = HoG15_desc
 
+	text = {
+		trigger = { 
+			has_country_flag = Ho_Jong
+		}
+		localization_key = Ho_Jong_desc
+	}
 }
 
 
@@ -943,8 +1035,6 @@ defined_text = {
 		}
 		localization_key = Ahn_Jaehong
 	}
-
-
 }
 defined_text = {
 	name = leader_two_portrait16
@@ -955,7 +1045,16 @@ defined_text = {
 		}
 		localization_key = GFX_Portrait_Ahn_Jaehong
 	}
+}
+defined_text = {
+	name = HoG16_desc
 
+	text = {
+		trigger = { 
+			has_country_flag = Ahn_Jaehong
+		}
+		localization_key = Ahn_Jaehong_desc
+	}
 }
 
 
@@ -991,8 +1090,6 @@ defined_text = {
 		}
 		localization_key = Pak_Honyong
 	}
-
-
 }
 defined_text = {
 	name = leader_two_portrait17
@@ -1003,5 +1100,14 @@ defined_text = {
 		}
 		localization_key = GFX_Portrait_Pak_Honyong
 	}
+}
+defined_text = {
+	name = HoG17_desc
 
+	text = {
+		trigger = { 
+			has_country_flag = Pak_Honyong
+		}
+		localization_key = Pak_Honyong_desc
+	}
 }
