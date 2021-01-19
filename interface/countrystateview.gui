@@ -144,6 +144,13 @@ guiTypes = {
 				position = { x = 74 y = 64 }
 			}
 
+			iconType ={
+				name ="controller_flag_border"
+				quadTextureSprite = "GFX_diplo_countrylist_flag_frame"
+				position = { x= -270 y = 59 }
+				alwaystransparent = yes
+			}
+
 			containerWindowType = {
 				name = "state_resources"
 				position = { x = 22 y = 268}

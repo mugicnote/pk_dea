@@ -105,9 +105,12 @@ on_actions = {
 					KOR_garrison_control_cost_calculation = yes
 				}
 		}
-		CHI = {
+		CHI = {			
 			set_country_flag = Chiang_Kai_Shek
 			set_country_flag = Wang_Jingwei
+
+			add_ideas = PRE_Chiang_Kai_Shek
+			add_ideas = VPRE_Wang_Jingwei
 		}
 		JAP = {
 			country_lock_all_division_template = yes

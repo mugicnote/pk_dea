@@ -79,7 +79,7 @@ ideas = {
             removal_cost = -1
             
             modifier = {
-                fascism_drift = 0.1
+                fascism_drift = 0.01
                 stability_factor = -0.1
             }
         }
@@ -188,8 +188,8 @@ ideas = {
             removal_cost = -1
             
             modifier = {
-                radical_socialism_drift = 0.05
-                communism_drift = 0.05
+                radical_socialism_drift = 0.01
+                communism_drift = 0.01
                 stability_factor = -0.1
                 custom_modifier_tooltip = Communist_leadership_strike_tt
             }

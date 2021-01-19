@@ -11,11 +11,17 @@ defined_text = {
 		localization_key = jae_pil_front
 	}
 
+	text = {
+		trigger = {
+			has_country_flag = Chiang_Kai_Shek
+		}
+		localization_key = Chiang_Kai_Shek_front
+	}
+
 }
 defined_text = {
 	name = FdS_rank2
 
-	### 제1 야당 대표
 	text = {
 		trigger = {
 			tag = KOR
@@ -30,7 +36,7 @@ defined_text = {
 
 defined_text = {
 	name = HoG_rank2
-	### 제1 야당 대표
+
 	text = {
 		trigger = {
 			tag = KOR
@@ -44,7 +50,6 @@ defined_text = {
 defined_text = {
 	name = FdS_name2
 
-	### Generic
 	text = {
 		trigger = {
 			has_country_flag = Jang_TaekSang
@@ -63,7 +68,6 @@ defined_text = {
 defined_text = {
 	name = general_outline
 
-	### Generic
 	text = {
 		trigger = {
 			tag = KOR
@@ -109,7 +113,6 @@ defined_text = {
 defined_text = {
 	name = FdS_rank3
 
-	### 제1 야당 대표
 	text = {
 		trigger = {
 			tag = KOR
@@ -124,7 +127,7 @@ defined_text = {
 
 defined_text = {
 	name = HoG_rank3
-	### 제1 야당 대표
+
 	text = {
 		trigger = {
 			tag = KOR
@@ -138,7 +141,6 @@ defined_text = {
 defined_text = {
 	name = FdS_name3
 
-	### Generic
 	text = {
 		trigger = {
 			has_country_flag = Shin_Sung_mo
@@ -178,7 +180,6 @@ defined_text = {
 defined_text = {
 	name = FdS_rank4
 
-	### 제1 야당 대표
 	text = {
 		trigger = {
 			tag = KOR
@@ -193,7 +194,7 @@ defined_text = {
 
 defined_text = {
 	name = HoG_rank4
-	### 제1 야당 대표
+
 	text = {
 		trigger = {
 			tag = KOR
@@ -206,7 +207,7 @@ defined_text = {
 ############################################
 defined_text = {
 	name = FdS_name4
-	### Generic
+
 	text = {
 		trigger = {
 			has_country_flag = Yoon_Bo_Sun
@@ -235,7 +236,6 @@ defined_text = {
 defined_text = {
 	name = FdS_rank5
 
-	### 제1 야당 대표
 	text = {
 		trigger = {
 			tag = KOR
@@ -250,7 +250,7 @@ defined_text = {
 
 defined_text = {
 	name = HoG_rank5
-	### 제1 야당 대표
+
 	text = {
 		trigger = {
 			tag = KOR
@@ -263,7 +263,7 @@ defined_text = {
 ############################################
 defined_text = {
 	name = FdS_name5
-	### Generic
+
 	text = {
 		trigger = {
 			has_country_flag = Kim_Kyusik
@@ -297,7 +297,6 @@ defined_text = {
 defined_text = {
 	name = FdS_rank6
 
-	### 제1 야당 대표
 	text = {
 		trigger = {
 			tag = KOR
@@ -312,7 +311,7 @@ defined_text = {
 
 defined_text = {
 	name = HoG_rank6
-	### 제1 야당 대표
+
 	text = {
 		trigger = {
 			tag = KOR
@@ -325,7 +324,7 @@ defined_text = {
 ############################################
 defined_text = {
 	name = FdS_name6
-	### Generic
+	
 	text = {
 		trigger = {
 			has_country_flag = Chough_Pyung_ok
@@ -354,12 +353,18 @@ defined_text = {
 defined_text = {
 	name = FdS_rank7
 
-	### 제1 야당 대표
 	text = {
 		trigger = {
 			tag = KOR
 		}
 		localization_key = POSITION_main_opposition_party_leader7
+	}
+
+	text = {
+		trigger = {
+			tag = CHI
+		}
+		localization_key = POSITION_main_opposition_VHog_CHI
 	}
 }
 
@@ -369,12 +374,19 @@ defined_text = {
 
 defined_text = {
 	name = HoG_rank7
-	### 제1 야당 대표
+	
 	text = {
 		trigger = {
 			tag = KOR
 		}
 		localization_key = POSITION_main_opposition_party_leader7
+	}
+
+	text = {
+		trigger = {
+			tag = CHI
+		}
+		localization_key = POSITION_main_opposition_VHog_CHI
 	}
 }
 ############################################
@@ -382,7 +394,7 @@ defined_text = {
 ############################################
 defined_text = {
 	name = FdS_name7
-	### Generic
+	
 	text = {
 		trigger = {
 			has_country_flag = Ahn_Chang_Ho
@@ -390,7 +402,12 @@ defined_text = {
 		localization_key = Ahn_Chang_Ho
 	}
 
-
+	text = {
+		trigger = {
+			has_country_flag = Wang_Jingwei
+		}
+		localization_key = Wang_Jingwei
+	}
 }
 defined_text = {
 	name = leader_two_portrait7
@@ -402,6 +419,12 @@ defined_text = {
 		localization_key = GFX_Portrait_Ahn_Chang_Ho
 	}
 
+	text = {
+		trigger = {
+			has_country_flag = Wang_Jingwei
+		}
+		localization_key = GFX_Portrait_Wang_Jingwei
+	}
 }
 
 
@@ -411,12 +434,19 @@ defined_text = {
 defined_text = {
 	name = FdS_rank8
 
-	### 제1 야당 대표
+	
 	text = {
 		trigger = {
 			tag = KOR
 		}
 		localization_key = POSITION_main_opposition_party_leader8
+	}
+
+	text = {
+		trigger = {
+			tag = CHI
+		}
+		localization_key = POSITION_main_opposition_Hog_CHI
 	}
 }
 
@@ -426,12 +456,19 @@ defined_text = {
 
 defined_text = {
 	name = HoG_rank8
-	### 제1 야당 대표
+	
 	text = {
 		trigger = {
 			tag = KOR
 		}
 		localization_key = POSITION_main_opposition_party_leader8
+	}
+
+	text = {
+		trigger = {
+			tag = CHI
+		}
+		localization_key = POSITION_main_opposition_Hog_CHI
 	}
 }
 ############################################
@@ -439,7 +476,7 @@ defined_text = {
 ############################################
 defined_text = {
 	name = FdS_name8
-	### Generic
+	
 	text = {
 		trigger = {
 			has_country_flag = jae_pil
@@ -451,6 +488,19 @@ defined_text = {
 			has_country_flag = Syngman_Rhee_Pres
 		}
 		localization_key = Syngman_Rhee_Pres
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = Chiang_Kai_Shek
+		}
+		localization_key = Chiang_Kai_Shek
+	}
+	text = {
+		trigger = {
+			has_country_flag = Wang_Jingwei_Pres
+		}
+		localization_key = Wang_Jingwei_Pres
 	}
 
 }
@@ -470,6 +520,18 @@ defined_text = {
 		localization_key = GFX_Portrait_Syngman_Rhee
 	}
 
+	text = {
+		trigger = {
+			has_country_flag = Chiang_Kai_Shek
+		}
+		localization_key = GFX_Portrait_Chiang_Kai_Shek
+	}
+	text = {
+		trigger = {
+			has_country_flag = Wang_Jingwei_Pres
+		}
+		localization_key = GFX_Portrait_Wang_Jingwei
+	}
 }
 
 defined_text = {
@@ -489,6 +551,19 @@ defined_text = {
 		localization_key = Syngman_Rhee_Pres_desc
 	}
 
+	text = {
+		trigger = { 
+			has_country_flag = Chiang_Kai_Shek
+		}
+		localization_key = Chiang_Kai_Shek_desc
+	}
+	text = {
+		trigger = { 
+			has_country_flag = Wang_Jingwei_Pres 
+		}
+		localization_key = Wang_Jingwei_Pres_desc
+	}
+
 }
 
 ############################################
@@ -497,7 +572,7 @@ defined_text = {
 defined_text = {
 	name = FdS_rank9
 
-	### 제1 야당 대표
+	
 	text = {
 		trigger = {
 			tag = KOR
@@ -512,7 +587,7 @@ defined_text = {
 
 defined_text = {
 	name = HoG_rank9
-	### 제1 야당 대표
+	
 	text = {
 		trigger = {
 			tag = KOR
@@ -525,7 +600,7 @@ defined_text = {
 ############################################
 defined_text = {
 	name = FdS_name9
-	### Generic
+	
 	text = {
 		trigger = {
 			has_country_flag = Kim_Byung_ro
@@ -551,7 +626,7 @@ defined_text = {
 defined_text = {
 	name = FdS_rank10
 
-	### 제1 야당 대표
+	
 	text = {
 		trigger = {
 			tag = KOR
@@ -562,7 +637,7 @@ defined_text = {
 
 defined_text = {
 	name = HoG_rank10
-	### 제1 야당 대표
+	
 	text = {
 		trigger = {
 			tag = KOR
@@ -573,7 +648,7 @@ defined_text = {
 
 defined_text = {
 	name = FdS_name10
-	### Generic
+	
 	text = {
 		trigger = {
 			has_country_flag = Lee_Beomseok
@@ -599,7 +674,7 @@ defined_text = {
 defined_text = {
 	name = FdS_rank11
 
-	### 제1 야당 대표
+	
 	text = {
 		trigger = {
 			tag = KOR
@@ -610,7 +685,7 @@ defined_text = {
 
 defined_text = {
 	name = HoG_rank11
-	### 제1 야당 대표
+	
 	text = {
 		trigger = {
 			tag = KOR
@@ -621,7 +696,7 @@ defined_text = {
 
 defined_text = {
 	name = FdS_name11
-	### Generic
+	
 	text = {
 		trigger = {
 			has_country_flag = ji_chong_chen
@@ -647,7 +722,7 @@ defined_text = {
 defined_text = {
 	name = FdS_rank12
 
-	### 제1 야당 대표
+	
 	text = {
 		trigger = {
 			tag = KOR
@@ -658,7 +733,7 @@ defined_text = {
 
 defined_text = {
 	name = HoG_rank12
-	### 제1 야당 대표
+	
 	text = {
 		trigger = {
 			tag = KOR
@@ -669,7 +744,7 @@ defined_text = {
 
 defined_text = {
 	name = FdS_name12
-	### Generic
+	
 	text = {
 		trigger = {
 			has_country_flag = Il_han_New
@@ -695,7 +770,7 @@ defined_text = {
 defined_text = {
 	name = FdS_rank13
 
-	### 제1 야당 대표
+	
 	text = {
 		trigger = {
 			tag = KOR
@@ -706,7 +781,7 @@ defined_text = {
 
 defined_text = {
 	name = HoG_rank13
-	### 제1 야당 대표
+	
 	text = {
 		trigger = {
 			tag = KOR
@@ -717,7 +792,7 @@ defined_text = {
 
 defined_text = {
 	name = FdS_name13
-	### Generic
+	
 	text = {
 		trigger = {
 			has_country_flag = Kim_Suk_Won
@@ -743,7 +818,7 @@ defined_text = {
 defined_text = {
 	name = FdS_rank14
 
-	### 제1 야당 대표
+	
 	text = {
 		trigger = {
 			tag = KOR
@@ -754,7 +829,7 @@ defined_text = {
 
 defined_text = {
 	name = HoG_rank14
-	### 제1 야당 대표
+	
 	text = {
 		trigger = {
 			tag = KOR
@@ -765,7 +840,7 @@ defined_text = {
 
 defined_text = {
 	name = FdS_name14
-	### Generic
+	
 	text = {
 		trigger = {
 			has_country_flag = jo_man_sik
@@ -791,7 +866,7 @@ defined_text = {
 defined_text = {
 	name = FdS_rank15
 
-	### 제1 야당 대표
+	
 	text = {
 		trigger = {
 			tag = KOR
@@ -802,7 +877,7 @@ defined_text = {
 
 defined_text = {
 	name = HoG_rank15
-	### 제1 야당 대표
+	
 	text = {
 		trigger = {
 			tag = KOR
@@ -813,7 +888,7 @@ defined_text = {
 
 defined_text = {
 	name = FdS_name15
-	### Generic
+	
 	text = {
 		trigger = {
 			has_country_flag = Ho_Jong
@@ -839,7 +914,7 @@ defined_text = {
 defined_text = {
 	name = FdS_rank16
 
-	### 제1 야당 대표
+	
 	text = {
 		trigger = {
 			tag = KOR
@@ -850,7 +925,7 @@ defined_text = {
 
 defined_text = {
 	name = HoG_rank16
-	### 제1 야당 대표
+	
 	text = {
 		trigger = {
 			tag = KOR
@@ -861,7 +936,7 @@ defined_text = {
 
 defined_text = {
 	name = FdS_name16
-	### Generic
+	
 	text = {
 		trigger = {
 			has_country_flag = Ahn_Jaehong
@@ -887,7 +962,7 @@ defined_text = {
 defined_text = {
 	name = FdS_rank17
 
-	### 제1 야당 대표
+	
 	text = {
 		trigger = {
 			tag = KOR
@@ -898,7 +973,7 @@ defined_text = {
 
 defined_text = {
 	name = HoG_rank17
-	### 제1 야당 대표
+	
 	text = {
 		trigger = {
 			tag = KOR
@@ -909,7 +984,7 @@ defined_text = {
 
 defined_text = {
 	name = FdS_name17
-	### Generic
+	
 	text = {
 		trigger = {
 			has_country_flag = Pak_Honyong
