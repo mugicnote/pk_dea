@@ -6,7 +6,12 @@ scripted_gui = {
 		window_name = "cabinet_button_ui"
 		
 		ai_check = { always = no }
-		visible = { tag = KOR }
+		visible = {
+			OR = {
+				tag = KOR
+				tag = CHI
+			}
+		}
 		
 		triggers = {
 			cabinet_button_click_enabled = {

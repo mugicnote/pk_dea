@@ -1,0 +1,11 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_Portrait_Chiang_Kai_Shek"
+		texturefile = "gfx/leaders/CHI/Portrait_CHI_Chiang_Kai_Shek.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Wang_Jingwei"
+		texturefile = "gfx/leaders/CHI/Portrait_CHI_Wang_Jingwei.dds"
+	}
+}

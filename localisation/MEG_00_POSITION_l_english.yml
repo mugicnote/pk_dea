@@ -54,6 +54,12 @@ no_fds:0 "공직"
 Syngman_Rhee_Pres:0 "이승만"
 POSITION_ruling_party:0 "여당 당대표"
 
+POSITION_main_opposition_Hog_CHI:0 "총통"
+Chiang_Kai_Shek:0 "장제스"
+POSITION_main_opposition_VHog_CHI:0 "부총통"
+Wang_Jingwei:0 "왕징웨이"
+Chiang_Kai_Shek_front:0 "국민정부 정부수반 개요"
+Wang_Jingwei_Pres:0 "왕징웨이"
 
 SECOND_LEADER_NAME2:0 "§Y[This.FdS_name2]§!\n[This.HoG_rank2]"
 SECOND_LEADER_DESC2:0 "[This.HoG2_desc]"
