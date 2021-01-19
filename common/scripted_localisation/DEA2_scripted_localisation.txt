@@ -18,22 +18,9 @@ defined_text = {
 	### 제1 야당 대표
 	text = {
 		trigger = {
-			always = yes
+			tag = KOR
 		}
 		localization_key = POSITION_main_opposition_party_leader2
-	}
-	text = {
-		trigger = {
-			has_country_flag = leader_ruling_party
-		}
-		localization_key = POSITION_ruling_party
-	}
-
-	text = {
-		trigger = {
-			always = yes
-		}
-		localization_key = leader_title_one_generic
 	}
 }
 
@@ -46,16 +33,9 @@ defined_text = {
 	### 제1 야당 대표
 	text = {
 		trigger = {
-			always = yes
+			tag = KOR
 		}
 		localization_key = POSITION_main_opposition_party_leader2
-	}
-
-	text = {
-		trigger = {
-			always = yes
-		}
-		localization_key = leader_title_two_generic
 	}
 }
 ############################################
@@ -86,7 +66,7 @@ defined_text = {
 	### Generic
 	text = {
 		trigger = {
-			always = yes
+			tag = KOR
 		}
 		localization_key = general_outline
 	}
@@ -132,16 +112,9 @@ defined_text = {
 	### 제1 야당 대표
 	text = {
 		trigger = {
-			always = yes
+			tag = KOR
 		}
 		localization_key = POSITION_main_opposition_party_leader3
-	}
-
-	text = {
-		trigger = {
-			always = yes
-		}
-		localization_key = leader_title_one_generic
 	}
 }
 
@@ -154,16 +127,9 @@ defined_text = {
 	### 제1 야당 대표
 	text = {
 		trigger = {
-			always = yes
+			tag = KOR
 		}
 		localization_key = POSITION_main_opposition_party_leader3
-	}
-
-	text = {
-		trigger = {
-			always = yes
-		}
-		localization_key = leader_title_two_generic
 	}
 }
 ############################################
@@ -215,16 +181,9 @@ defined_text = {
 	### 제1 야당 대표
 	text = {
 		trigger = {
-			always = yes
+			tag = KOR
 		}
 		localization_key = POSITION_main_opposition_party_leader4
-	}
-
-	text = {
-		trigger = {
-			always = yes
-		}
-		localization_key = leader_title_one_generic
 	}
 }
 
@@ -237,16 +196,9 @@ defined_text = {
 	### 제1 야당 대표
 	text = {
 		trigger = {
-			always = yes
+			tag = KOR
 		}
 		localization_key = POSITION_main_opposition_party_leader4
-	}
-
-	text = {
-		trigger = {
-			always = yes
-		}
-		localization_key = leader_title_two_generic
 	}
 }
 ############################################
@@ -286,16 +238,9 @@ defined_text = {
 	### 제1 야당 대표
 	text = {
 		trigger = {
-			always = yes
+			tag = KOR
 		}
 		localization_key = POSITION_main_opposition_party_leader5
-	}
-
-	text = {
-		trigger = {
-			always = yes
-		}
-		localization_key = leader_title_one_generic
 	}
 }
 
@@ -308,16 +253,9 @@ defined_text = {
 	### 제1 야당 대표
 	text = {
 		trigger = {
-			always = yes
+			tag = KOR
 		}
 		localization_key = POSITION_main_opposition_party_leader5
-	}
-
-	text = {
-		trigger = {
-			always = yes
-		}
-		localization_key = leader_title_two_generic
 	}
 }
 ############################################
@@ -362,16 +300,9 @@ defined_text = {
 	### 제1 야당 대표
 	text = {
 		trigger = {
-			always = yes
+			tag = KOR
 		}
 		localization_key = POSITION_main_opposition_party_leader6
-	}
-
-	text = {
-		trigger = {
-			always = yes
-		}
-		localization_key = leader_title_one_generic
 	}
 }
 
@@ -384,16 +315,9 @@ defined_text = {
 	### 제1 야당 대표
 	text = {
 		trigger = {
-			always = yes
+			tag = KOR
 		}
 		localization_key = POSITION_main_opposition_party_leader6
-	}
-
-	text = {
-		trigger = {
-			always = yes
-		}
-		localization_key = leader_title_two_generic
 	}
 }
 ############################################
@@ -433,16 +357,9 @@ defined_text = {
 	### 제1 야당 대표
 	text = {
 		trigger = {
-			always = yes
+			tag = KOR
 		}
 		localization_key = POSITION_main_opposition_party_leader7
-	}
-
-	text = {
-		trigger = {
-			always = yes
-		}
-		localization_key = leader_title_one_generic
 	}
 }
 
@@ -455,16 +372,9 @@ defined_text = {
 	### 제1 야당 대표
 	text = {
 		trigger = {
-			always = yes
+			tag = KOR
 		}
 		localization_key = POSITION_main_opposition_party_leader7
-	}
-
-	text = {
-		trigger = {
-			always = yes
-		}
-		localization_key = leader_title_two_generic
 	}
 }
 ############################################
@@ -504,16 +414,9 @@ defined_text = {
 	### 제1 야당 대표
 	text = {
 		trigger = {
-			always = yes
+			tag = KOR
 		}
 		localization_key = POSITION_main_opposition_party_leader8
-	}
-
-	text = {
-		trigger = {
-			always = yes
-		}
-		localization_key = leader_title_one_generic
 	}
 }
 
@@ -526,16 +429,9 @@ defined_text = {
 	### 제1 야당 대표
 	text = {
 		trigger = {
-			always = yes
+			tag = KOR
 		}
 		localization_key = POSITION_main_opposition_party_leader8
-	}
-
-	text = {
-		trigger = {
-			always = yes
-		}
-		localization_key = leader_title_two_generic
 	}
 }
 ############################################
@@ -604,16 +500,9 @@ defined_text = {
 	### 제1 야당 대표
 	text = {
 		trigger = {
-			always = yes
+			tag = KOR
 		}
 		localization_key = POSITION_main_opposition_party_leader9
-	}
-
-	text = {
-		trigger = {
-			always = yes
-		}
-		localization_key = leader_title_one_generic
 	}
 }
 
@@ -626,16 +515,9 @@ defined_text = {
 	### 제1 야당 대표
 	text = {
 		trigger = {
-			always = yes
+			tag = KOR
 		}
 		localization_key = POSITION_main_opposition_party_leader9
-	}
-
-	text = {
-		trigger = {
-			always = yes
-		}
-		localization_key = leader_title_two_generic
 	}
 }
 ############################################
@@ -672,16 +554,9 @@ defined_text = {
 	### 제1 야당 대표
 	text = {
 		trigger = {
-			always = yes
+			tag = KOR
 		}
 		localization_key = POSITION_main_opposition_party_leader10
-	}
-
-	text = {
-		trigger = {
-			always = yes
-		}
-		localization_key = leader_title_one_generic
 	}
 }
 
@@ -690,16 +565,9 @@ defined_text = {
 	### 제1 야당 대표
 	text = {
 		trigger = {
-			always = yes
+			tag = KOR
 		}
 		localization_key = POSITION_main_opposition_party_leader10
-	}
-
-	text = {
-		trigger = {
-			always = yes
-		}
-		localization_key = leader_title_two_generic
 	}
 }
 
@@ -734,16 +602,9 @@ defined_text = {
 	### 제1 야당 대표
 	text = {
 		trigger = {
-			always = yes
+			tag = KOR
 		}
 		localization_key = POSITION_main_opposition_party_leader11
-	}
-
-	text = {
-		trigger = {
-			always = yes
-		}
-		localization_key = leader_title_one_generic
 	}
 }
 
@@ -752,16 +613,9 @@ defined_text = {
 	### 제1 야당 대표
 	text = {
 		trigger = {
-			always = yes
+			tag = KOR
 		}
 		localization_key = POSITION_main_opposition_party_leader11
-	}
-
-	text = {
-		trigger = {
-			always = yes
-		}
-		localization_key = leader_title_two_generic
 	}
 }
 
@@ -796,16 +650,9 @@ defined_text = {
 	### 제1 야당 대표
 	text = {
 		trigger = {
-			always = yes
+			tag = KOR
 		}
 		localization_key = POSITION_main_opposition_party_leader12
-	}
-
-	text = {
-		trigger = {
-			always = yes
-		}
-		localization_key = leader_title_one_generic
 	}
 }
 
@@ -814,16 +661,9 @@ defined_text = {
 	### 제1 야당 대표
 	text = {
 		trigger = {
-			always = yes
+			tag = KOR
 		}
 		localization_key = POSITION_main_opposition_party_leader12
-	}
-
-	text = {
-		trigger = {
-			always = yes
-		}
-		localization_key = leader_title_two_generic
 	}
 }
 
@@ -858,16 +698,9 @@ defined_text = {
 	### 제1 야당 대표
 	text = {
 		trigger = {
-			always = yes
+			tag = KOR
 		}
 		localization_key = POSITION_main_opposition_party_leader13
-	}
-
-	text = {
-		trigger = {
-			always = yes
-		}
-		localization_key = leader_title_one_generic
 	}
 }
 
@@ -876,16 +709,9 @@ defined_text = {
 	### 제1 야당 대표
 	text = {
 		trigger = {
-			always = yes
+			tag = KOR
 		}
 		localization_key = POSITION_main_opposition_party_leader13
-	}
-
-	text = {
-		trigger = {
-			always = yes
-		}
-		localization_key = leader_title_two_generic
 	}
 }
 
@@ -920,16 +746,9 @@ defined_text = {
 	### 제1 야당 대표
 	text = {
 		trigger = {
-			always = yes
+			tag = KOR
 		}
 		localization_key = POSITION_main_opposition_party_leader14
-	}
-
-	text = {
-		trigger = {
-			always = yes
-		}
-		localization_key = leader_title_one_generic
 	}
 }
 
@@ -938,16 +757,9 @@ defined_text = {
 	### 제1 야당 대표
 	text = {
 		trigger = {
-			always = yes
+			tag = KOR
 		}
 		localization_key = POSITION_main_opposition_party_leader14
-	}
-
-	text = {
-		trigger = {
-			always = yes
-		}
-		localization_key = leader_title_two_generic
 	}
 }
 
@@ -982,16 +794,9 @@ defined_text = {
 	### 제1 야당 대표
 	text = {
 		trigger = {
-			always = yes
+			tag = KOR
 		}
 		localization_key = POSITION_main_opposition_party_leader15
-	}
-
-	text = {
-		trigger = {
-			always = yes
-		}
-		localization_key = leader_title_one_generic
 	}
 }
 
@@ -1000,16 +805,9 @@ defined_text = {
 	### 제1 야당 대표
 	text = {
 		trigger = {
-			always = yes
+			tag = KOR
 		}
 		localization_key = POSITION_main_opposition_party_leader15
-	}
-
-	text = {
-		trigger = {
-			always = yes
-		}
-		localization_key = leader_title_two_generic
 	}
 }
 
@@ -1044,16 +842,9 @@ defined_text = {
 	### 제1 야당 대표
 	text = {
 		trigger = {
-			always = yes
+			tag = KOR
 		}
 		localization_key = POSITION_main_opposition_party_leader16
-	}
-
-	text = {
-		trigger = {
-			always = yes
-		}
-		localization_key = leader_title_one_generic
 	}
 }
 
@@ -1062,16 +853,9 @@ defined_text = {
 	### 제1 야당 대표
 	text = {
 		trigger = {
-			always = yes
+			tag = KOR
 		}
 		localization_key = POSITION_main_opposition_party_leader16
-	}
-
-	text = {
-		trigger = {
-			always = yes
-		}
-		localization_key = leader_title_two_generic
 	}
 }
 
@@ -1106,16 +890,9 @@ defined_text = {
 	### 제1 야당 대표
 	text = {
 		trigger = {
-			always = yes
+			tag = KOR
 		}
 		localization_key = POSITION_main_opposition_party_leader17
-	}
-
-	text = {
-		trigger = {
-			always = yes
-		}
-		localization_key = leader_title_one_generic
 	}
 }
 
@@ -1124,16 +901,9 @@ defined_text = {
 	### 제1 야당 대표
 	text = {
 		trigger = {
-			always = yes
+			tag = KOR
 		}
 		localization_key = POSITION_main_opposition_party_leader17
-	}
-
-	text = {
-		trigger = {
-			always = yes
-		}
-		localization_key = leader_title_two_generic
 	}
 }
 

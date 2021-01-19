@@ -4255,3 +4255,20 @@ news_event = {
 		trigger = { TAG = KOR }
 	}
 }
+
+country_event = { #
+	id = KOR.90
+	immediate = { log = "[GetDateText]: [Root.GetName]: event KOR.90" }
+	title = KOR.90.t
+	desc = KOR.90.desc
+	picture = GFX
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #...
+		name = KOR.90.a
+		ai_chance = { factor = 1 }
+
+	}
+}
