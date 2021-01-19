@@ -1,0 +1,141 @@
+on_actions = {
+	on_startup = {
+		effect = {
+	every_country = {
+		limit = { is_ai = no }
+		set_variable = { TNO_Opening_Screen = 1 }
+	}
+	KOR = {
+		parliament_gui_initial = yes
+		country_event = { 
+			id = KOR.86
+			days = 5
+		}
+		country_event = { id = CULTURE.1 }
+		if = {
+			limit = { has_country_flag = Seung_man_Ele }
+			country_event = { 
+				id = KOR.82
+				days = 1800
+			}
+		}
+		if = {
+			limit = { has_country_flag = forth_election }
+			set_cosmetic_tag = KOR_SECOND
+		}
+		if = {
+			limit = { has_country_flag = fifth_election }
+			set_cosmetic_tag = KOR_THIRD
+		}
+		set_country_flag = KOR_northern_bandits
+		set_country_flag = KOR_eastern_bandits
+		set_country_flag = KOR_western_bandits
+
+		set_country_flag = Syngman_Rhee2
+
+		set_country_flag = Jang_TaekSang
+		set_country_flag = Shin_Sung_mo
+		set_country_flag = Yoon_Bo_Sun
+		set_country_flag = Kim_Kyusik
+		set_country_flag = Chough_Pyung_ok
+		set_country_flag = Ahn_Chang_Ho
+		set_country_flag = jae_pil
+		set_country_flag = Kim_Byung_ro
+		set_country_flag = Lee_Beomseok
+		set_country_flag = ji_chong_chen
+		set_country_flag = Il_han_New
+		set_country_flag = Kim_Suk_Won
+		set_country_flag = jo_man_sik
+		set_country_flag = Ho_Jong
+		set_country_flag = Ahn_Jaehong
+		set_country_flag = Pak_Honyong
+
+		add_ideas = HG_Seo_Jae_Pil
+		add_ideas = SE_kim_kyusik
+		add_ideas = EM_Kim_Byung_ro
+		add_ideas = FM_Ahn_Chang_Ho
+		add_ideas = MM_Jang_TaekSang
+		add_ideas = IM_Shin_Sung_mo
+
+		add_ideas = INM_Yoon_Bo_Sun
+		add_ideas = LM_Chough_Pyung_ok
+		add_ideas = AM_jomansik
+		add_ideas = DM_Ho_Jong
+		add_ideas = I2M_Ahn_Jaehong
+		add_ideas = PM_Pak_Hon_yong
+
+		add_ideas = SM_lee_beomseok
+		add_ideas = HM_Ji_Cheong_cheon
+		add_ideas = DM_Ilhan_New
+		add_ideas = DM_Kim_Suk_won
+		
+		country_lock_all_division_template = yes
+		create_intelligence_agency = yes
+
+		set_division_template_lock = {
+			division_template = "청년단 산악병"
+			is_locked = yes
+		}
+		set_division_template_lock = {
+			division_template = "청년단 기계화보병"
+			is_locked = yes
+		}
+		every_owned_state = {
+			limit = {
+				check_variable = { var = KOR_garrison_control value = 0 compare = equals }
+					OR = {
+						state = 797
+							state = 798
+							state = 799
+							state = 527
+							state = 525
+							state = 800
+							state = 801
+							state = 802
+							state = 803
+							state = 804
+							state = 805
+							state = 806
+							state = 807
+							state = 808
+							state = 809
+						}
+					}
+					add_to_variable = { var = KOR_garrison_control value = 1 }
+					KOR_garrison_control_cost_calculation = yes
+				}
+		}
+		CHI = {			
+			set_country_flag = Chiang_Kai_Shek
+			set_country_flag = Wang_Jingwei
+
+			add_ideas = PRE_Chiang_Kai_Shek
+			add_ideas = VPRE_Wang_Jingwei
+		}
+		JAP = {
+			country_lock_all_division_template = yes
+			add_opinion_modifier = {
+				target = USA
+				modifier = JAP_opnion_USA
+			}
+		}
+		USA = {
+			add_opinion_modifier = {
+				target = JAP
+				modifier = USA_opnion_JAP
+			}
+		}
+		JAP = {
+			add_opinion_modifier = {
+				target = UPN
+				modifier = JAP_opnion_USA
+			}
+		}
+		UPN = {
+			add_opinion_modifier = {
+				target = JAP
+				modifier = USA_opnion_JAP
+			}
+		}
+	}
+}
