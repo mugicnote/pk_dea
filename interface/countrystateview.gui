@@ -300,22 +300,22 @@ guiTypes = {
 
 			buttonType = {
 				name = "nuke_province"
-				quadTextureSprite ="GFX_empty_bg"
-				position = { x = 20 y = 166 }
+				quadTextureSprite ="GFX_nuke_button"
+				position = { x= 13 y = -11 }
 			}
-
+			
 			iconType = {
 				name = "nuclear_strike_bar"
-				spriteType = "GFX_empty_bg"
-				position = { x = 20 y = 166 }
-				rotation = 1.5708
-			}
-
+				spriteType = "GFX_nuke_progress"
+				position = { x=23 y= 27 }
+				rotation = 1.5708		
+			}	
+			
 			iconType = {
 				name = "nuke_progress_frame"
-				spriteType = "GFX_empty_bg"
-				position = { x = 20 y = 166 }
-			}
+				spriteType = "GFX_nuke_progress_frame"
+				position = { x=15 y= -6 }	
+			}	
 
 			### Positioning of these are controlled by the positionType "countrystateview_weathericons_position" and "countrystateview_weathericons_offset" above
 			iconType = {

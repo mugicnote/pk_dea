@@ -1,15 +1,20 @@
 state={
-	id=840
-	name="STATE_840"
+	id = 840
+	name = "STATE_840"
+	manpower = 4375667
+
+	state_category = city
 
 	history={
 		owner = JAP
 		add_core_of = JAP
 		buildings = {
-
+			7221 = {
+				naval_base = 3
+			}
 		}
 		victory_points = {
-			1182 50 
+			1182 30 
 		}
 
 	}
@@ -17,6 +22,4 @@ state={
 	provinces={
 		1182 
 	}
-	manpower=0
-	buildings_max_level_factor=1.000
 }
