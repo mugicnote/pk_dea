@@ -92,7 +92,7 @@ focus_tree = {
 	}
 	focus = {
 		id = victory_Korean_Confederation_Trade_Unions
-		icon = GFX
+		icon = GFX_focus_Kim_Won_Bong
 		cost = 10.00
 		prerequisite = {
 			focus = democratic_election
@@ -104,15 +104,24 @@ focus_tree = {
 			focus = Chang_Myon_Elected
 			focus = Kim_Sung_Soo_Elected
 			focus = Ahn_Jae_Hong_Elected
-			focus = Kim_Won_Bong_Elected
+			focus = Pak_Hon_Yong_Elected
 
 		}
 		x = -10
 		y = 3
+		completion_reward = {
+			set_politics = {
+				ruling_party = radical_socialism
+				elections_allowed = yes
+			}
+			#set_popularities = {
+		clr_country_flag = forth_election_start
+		country_event = { id = KOR.35 days = 10 }
+		}
 	}
 	focus = {
-		id = Kim_Won_Bong_Elected
-		icon = GFX_focus_Kim_Won_Bong
+		id = Pak_Hon_Yong_Elected
+		icon = GFX_focus_Pak_Hon_Yong
 		cost = 10.00
 		prerequisite = {
 			focus = democratic_election
@@ -130,13 +139,11 @@ focus_tree = {
 		y = 3
 		completion_reward = {
 			set_politics = {
-				ruling_party = radical_socialism
+				ruling_party = communism
 				elections_allowed = yes
 			}
 			#set_popularities = {
 		clr_country_flag = forth_election_start
-		country_event = { id = KOR.2 }
-		country_event = { id = KOR.35 days = 10 }
 		}
 	}
 	focus = {
@@ -149,7 +156,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = Lee_Seung_man_Elected
 			focus = Kim_Gu_Elected
-			focus = Kim_Won_Bong_Elected
+			focus = Pak_Hon_Yong_Elected
 			focus = Chang_Myon_Elected
 			focus = Kim_Sung_Soo_Elected
 			focus = Ahn_Jae_Hong_Elected
@@ -485,7 +492,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = Lee_Seung_man_Elected
 			focus = Yeo_Un_hyung_Elected
-			focus = Kim_Won_Bong_Elected
+			focus = Pak_Hon_Yong_Elected
 			focus = Chang_Myon_Elected
 			focus = Kim_Sung_Soo_Elected
 			focus = Ahn_Jae_Hong_Elected
@@ -519,7 +526,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = Kim_Gu_Elected
 			focus = Yeo_Un_hyung_Elected
-			focus = Kim_Won_Bong_Elected
+			focus = Pak_Hon_Yong_Elected
 			focus = Chang_Myon_Elected
 			focus = Kim_Sung_Soo_Elected
 			focus = Ahn_Jae_Hong_Elected
@@ -572,7 +579,7 @@ focus_tree = {
 			focus = Lee_Seung_man_Elected
 			focus = Kim_Gu_Elected
 			focus = Yeo_Un_hyung_Elected
-			focus = Kim_Won_Bong_Elected
+			focus = Pak_Hon_Yong_Elected
 			focus = Chang_Myon_Elected
 			focus = Kim_Sung_Soo_Elected
 			focus = victory_Korean_Confederation_Trade_Unions
@@ -619,7 +626,7 @@ focus_tree = {
 			focus = Lee_Seung_man_Elected
 			focus = Kim_Gu_Elected
 			focus = Yeo_Un_hyung_Elected
-			focus = Kim_Won_Bong_Elected
+			focus = Pak_Hon_Yong_Elected
 			focus = Ahn_Jae_Hong_Elected
 			focus = Kim_Sung_Soo_Elected
 			focus = victory_Korean_Confederation_Trade_Unions
@@ -646,7 +653,7 @@ focus_tree = {
 			focus = Lee_Seung_man_Elected
 			focus = Kim_Gu_Elected
 			focus = Yeo_Un_hyung_Elected
-			focus = Kim_Won_Bong_Elected
+			focus = Pak_Hon_Yong_Elected
 			focus = Ahn_Jae_Hong_Elected
 			focus = Chang_Myon_Elected
 			focus = victory_Korean_Confederation_Trade_Unions
