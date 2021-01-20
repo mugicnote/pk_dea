@@ -1,0 +1,89 @@
+add_namespace = nuket
+
+country_event = {
+	
+	id = nuket.0
+	title = nuket.0.t
+	desc = nuket.0.d
+	picture = GFX_news_event_nuke
+	
+	is_triggered_only = yes #this causes the game to crash sometimess, need to remove (anti mod copy)
+
+	option = { 
+		name = nuket.0.a
+				if = { limit = { has_idea = n_k_surrender_idea_6 } 
+		add_manpower = -20000
+		remove_ideas = { n_k_surrender_idea_6 }
+		add_timed_idea = { 
+			idea = n_k_surrender_idea_6 
+			days = 20 }
+		}
+		
+		
+		if = { limit = { has_idea = n_k_surrender_idea_5 } 
+		add_manpower = -20000
+		remove_ideas = { n_k_surrender_idea_5 }
+		add_timed_idea = { 
+			idea = n_k_surrender_idea_6 
+			days = 20 }
+		}
+		
+				if = { limit = { has_idea = n_k_surrender_idea_4 } 
+		add_manpower = -20000
+		remove_ideas = { n_k_surrender_idea_4 }
+		add_timed_idea = { 
+			idea = n_k_surrender_idea_5 
+			days = 30 }
+		}
+		
+				if = { limit = { has_idea = n_k_surrender_idea_3 } 
+		add_manpower = -20000
+		remove_ideas = { n_k_surrender_idea_3 }
+		add_timed_idea = { 
+			idea = n_k_surrender_idea_4 
+			days = 40 }
+		}
+		
+		
+		
+		if = { limit = { has_idea = n_k_surrender_idea_2 }
+		add_manpower = -20000
+		remove_ideas = { n_k_surrender_idea_2 }
+		add_timed_idea = { idea = n_k_surrender_idea_3 
+							days =  45 }
+		}		
+
+		if = { limit = { has_idea = n_k_surrender_idea }
+		add_manpower = -20000
+		remove_ideas = {
+			idea = n_k_surrender_idea
+			}
+		add_timed_idea = {
+			idea = n_k_surrender_idea_2
+			days = 80	
+		}  }	
+
+		if = { limit = { NOT = { has_idea = n_k_surrender_idea 
+								has_idea = n_k_surrender_idea_2
+								has_idea = n_k_surrender_idea_3
+								has_idea = n_k_surrender_idea_4
+								has_idea = n_k_surrender_idea_5
+								has_idea = n_k_surrender_idea_6
+								} }
+
+		add_manpower = -20000 
+		add_timed_idea = { 
+			idea = n_k_surrender_idea
+			days = 50
+		
+	
+		} }
+
+
+
+		
+		
+}
+}
+
+

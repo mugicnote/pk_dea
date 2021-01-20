@@ -1,0 +1,11 @@
+on_actions = {
+    on_nuke_drop = {
+        effect = {
+            FROM = {
+                owner = {
+                    country_event = { id = nuket.0 }
+                }
+            }
+        }
+    }
+}

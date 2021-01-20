@@ -22,7 +22,7 @@ idea_categories = {
 		ledger = hidden
 	}
 	
-	government = {
+	government1 = {
 		slot = mobilization_laws
 		slot = trade_laws
 		slot = economy
@@ -34,6 +34,18 @@ idea_categories = {
 		removal_cost = 0
 
 		ledger = civilian
+	}
+	
+	government2 = {
+		slot = political_advisor
+		slot = political_advisor
+		slot = political_advisor
+		slot = political_advisor
+		slot = political_advisor
+		slot = political_advisor
+
+		cost = 150
+		removal_cost = 0
 	}
 	
 	cabinet = {
@@ -78,28 +90,71 @@ idea_categories = {
 
 	research_production = {
 		slot = tank_manufacturer
+		slot = tank_manufacturer
+		slot = tank_manufacturer
 		slot = naval_manufacturer
+		slot = naval_manufacturer
+		slot = naval_manufacturer
+		cost = 150
+		removal_cost = 0
+
+	}
+
+	research_production1 = {
+		slot = aircraft_manufacturer
+		slot = aircraft_manufacturer
 		slot = aircraft_manufacturer
 		slot = materiel_manufacturer
+		slot = materiel_manufacturer
+		slot = materiel_manufacturer
+
+		cost = 150
+		removal_cost = 0
+
+	}
+
+	research_production2 = {
+		slot = industrial_concern
+		slot = industrial_concern
 		slot = industrial_concern
 		slot = theorist
+		slot = theorist
+		slot = theorist
 
-		ledger = civilian
+		cost = 150
+		removal_cost = 0
+
+	}
+	
+	chief = {
+		slot = army_chief 
+		slot = army_chief 
+		slot = army_chief
+		slot = navy_chief
+		slot = navy_chief
+		slot = navy_chief
+		
+		cost = 150
+		removal_cost = 0
+	}
+
+	chief = {
+		slot = air_chief
+		slot = air_chief
+		slot = air_chief
 		
 		cost = 150
 		removal_cost = 0
 	}
 	
-	military_staff = {
-		slot = army_chief 
-		slot = navy_chief 
-		slot = air_chief
+	high_commands = {
 		slot = high_command
 		slot = high_command
 		slot = high_command
-		
-		ledger = invalid # must be overridden
-		
+		slot = high_command
+		slot = high_command
+		slot = high_command
+
 		cost = 150
 		removal_cost = 0
 	}
