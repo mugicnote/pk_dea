@@ -1,9 +1,14 @@
 ﻿l_english:
 #내각 시스템
+ government1:0 "정치"
+ government2:0 "정치"
+ research_production1:0 "설계 및 연구"
+ research_production2:0 "설계 및 연구"
+ chief:0 "참모총장 및 참모차장, 총참모장"
+ high_commands:0 "군 고위 지휘관"
  cabinet:0 "내각"
  cabinet2:0 "내각"
  cabinet3:0 "내각"
-
  head_of_gov:0 "대통령"
  security_minister:0 "국무총리"
  economy_minister:0 "대법원장"
