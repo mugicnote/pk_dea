@@ -1282,7 +1282,7 @@ focus_tree = {
 			focus = Republic_of_Korea_Armed_Forces
 		}
 		relative_position_id = Republic_of_Korea_Armed_Forces
-		x = 8
+		x = 6
 		y = 1
 	}
 	focus = {
@@ -1293,7 +1293,101 @@ focus_tree = {
 			focus = Republic_of_Korea_Navy
 		}
 		relative_position_id = Republic_of_Korea_Navy
-		x = -3
+		x = -1
+		y = 1
+	}
+	focus = {
+		id = ROKMC_Expend
+		icon = GFX_KoreaMarines
+		cost = 10.00
+		prerequisite = {
+			focus = Republic_of_Korea_ROKMC
+		}
+		relative_position_id = Republic_of_Korea_ROKMC
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = Expended_Navy
+		icon = GFX_KoreaMarines
+		cost = 10.00
+		prerequisite = {
+			focus = Republic_of_Korea_Navy
+		}
+		relative_position_id = Republic_of_Korea_Navy
+		x = 1
+		y = 1
+	}
+	focus = {
+		id = Destroyer_and_Cruiser_and_Battleship_plan
+		icon = GFX_KoreaMarines
+		cost = 10.00
+		prerequisite = {
+			focus = Expended_Navy
+		}
+		relative_position_id = Expended_Navy
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = Navy_Airforce
+		icon = GFX_KoreaMarines
+		cost = 10.00
+		prerequisite = {
+			focus = Fighter_Research_Support
+		}
+		prerequisite = {
+			focus = Destroyer_and_Cruiser_and_Battleship_plan
+		}
+		relative_position_id = ROKMC_Expend
+		x = -1
+		y = 1
+	}
+	focus = {
+		id = Destroyer_and_Cruiser_and_Battleship_plan_2
+		icon = GFX_KoreaMarines
+		cost = 10.00
+		prerequisite = {
+			focus = ROKMC_Expend
+		}
+		prerequisite = {
+			focus = Destroyer_and_Cruiser_and_Battleship_plan
+		}
+		relative_position_id = ROKMC_Expend
+		x = 1
+		y = 1
+	}
+	focus = {
+		id = RoK_Destroyer
+		icon = GFX_KoreaMarines
+		cost = 10.00
+		prerequisite = {
+			focus = Destroyer_and_Cruiser_and_Battleship_plan_2
+		}
+		relative_position_id = Destroyer_and_Cruiser_and_Battleship_plan_2
+		x = -2
+		y = 1
+	}
+	focus = {
+		id = RoK_Cruiser
+		icon = GFX_KoreaMarines
+		cost = 10.00
+		prerequisite = {
+			focus = Destroyer_and_Cruiser_and_Battleship_plan_2
+		}
+		relative_position_id = Destroyer_and_Cruiser_and_Battleship_plan_2
+		x = 0
+		y = 1
+	}
+	focus = {
+		id = RoK_Battleship
+		icon = GFX_KoreaMarines
+		cost = 10.00
+		prerequisite = {
+			focus = Destroyer_and_Cruiser_and_Battleship_plan_2
+		}
+		relative_position_id = Destroyer_and_Cruiser_and_Battleship_plan_2
+		x = 2
 		y = 1
 	}
 	focus = {
@@ -1556,6 +1650,39 @@ focus_tree = {
 		y = 1
 	}
 	focus = {
+		id = St_Tt_Bombardment_Research
+		icon = GFX_goal_generic_air_bomber
+		cost = 10.00
+		prerequisite = {
+			focus = Bombardment_Research_Support
+		}
+		relative_position_id = Bombardment_Research_Support
+		x = 1
+		y = 1
+	}
+	focus = {
+		id = St_Bombardment_Research
+		icon = GFX_goal_generic_air_bomber
+		cost = 10.00
+		prerequisite = {
+			focus = St_Tt_Bombardment_Research
+		}
+		relative_position_id = St_Tt_Bombardment_Research
+		x = -2
+		y = 1
+	}
+	focus = {
+		id = Tt_Bombardment_Research
+		icon = GFX_goal_generic_air_bomber
+		cost = 10.00
+		prerequisite = {
+			focus = St_Tt_Bombardment_Research
+		}
+		relative_position_id = St_Tt_Bombardment_Research
+		x = 0
+		y = 1
+	}
+	focus = {
 		id = Fighter_Research_Support
 		icon = GFX_goal_industry_air
 		cost = 10.00
@@ -1571,7 +1698,6 @@ focus_tree = {
 		icon = GFX_focus_usa_escort_fighters
 		cost = 10.00
 		prerequisite = {
-			focus = Fighter_Research_Support
 			focus = Bombardment_Research_Support
 		}
 		prerequisite = {
@@ -2846,5 +2972,4 @@ focus_tree = {
 		y = 16
 
 	}
-
 }
