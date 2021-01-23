@@ -1,0 +1,38 @@
+﻿capital = 741
+
+oob = "ICU"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	mass_assault = 1
+}
+
+if = {
+	add_ideas = {
+	}
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	neutrality = 100
+}
+
+create_country_leader = {
+	name = "Eugène Jean Louis René Robin"
+	desc = ""
+	picture = "Portrait_ICU_Eugene_Robin.dds"
+	expire = "1965.1.1"
+	ideology = warloadism
+	traits = {
+		#
+	}
+}
+
+create_corps_commander = {
+}

@@ -219,4 +219,5 @@ CKR = "countries/CKorea.txt" #공산주의의 C
 RUS = "countries/Russia.txt"
 SHA = "countries/Shaanxi.txt"
 XKC = "countries/Xikang.txt"
-HBC = "countries/Hebei.txt
+HBC = "countries/Hebei.txt"
+ICU = "countries/Indochina.txt"
