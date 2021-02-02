@@ -33,7 +33,9 @@
 		cost = 2.00
 
 		relative_position_id = General_Kai_Shek
-
+		completion_reward = {
+			add_political_power = 50
+		}
 		prerequisite = {
 			focus = General_Kai_Shek
 		}
@@ -74,6 +76,7 @@
 			focus = right_for_warlord
 		}
 		completion_reward = {
+			add_political_power = 100
 		}
 		x = -12
 		y = 1
@@ -157,6 +160,7 @@
 			focus = Censorship_with_gs
 		}
 		completion_reward = {
+			add_political_power = 100
 		}
 		x = -1
 		y = 1
@@ -205,6 +209,7 @@
 			focus = right_for_warlord
 		}
 		completion_reward = {
+			add_political_power = 100
 		}
 		x = -8
 		y = 1
@@ -253,6 +258,7 @@
 			focus = right_for_warlord
 		}
 		completion_reward = {
+			add_political_power = 100
 		}
 		x = -4
 		y = 1
@@ -333,6 +339,7 @@
 			focus = right_for_warlord
 		}
 		completion_reward = {
+			add_political_power = 100
 		}
 		x = 0
 		y = 1
@@ -469,7 +476,9 @@
 			focus = right_warlord
 		}
 		completion_reward = {
+			add_political_power = 150
 		}
+	
 		x = 2
 		y = 1
 	}
@@ -485,6 +494,7 @@
 			focus = warlord_Censorship
 		}
 		completion_reward = {
+			add_political_power = 100
 		}
 		x = 0
 		y = 1
@@ -582,6 +592,7 @@
 			focus = New_National_Revolutionary_Army
 		}
 		completion_reward = {
+			add_political_power = 50
 		}
 		x = 14
 		y = 1
@@ -593,7 +604,12 @@
 		cost = 10.00
 
 		relative_position_id = CHI_clame_land
-
+		available = {
+			any_country = {
+				original_tag = FRA
+				owns_state = 728
+			}
+		}
 		prerequisite = {
 			focus = CHI_clame_land
 		}
@@ -613,6 +629,12 @@
 		prerequisite = {
 			focus = CHI_clame_land
 		}
+		available = {
+			any_country = {
+				original_tag = POR
+				owns_state = 729
+			}
+		}
 		completion_reward = {
 		}
 		x = 2
@@ -625,7 +647,12 @@
 		cost = 10.00
 
 		relative_position_id = CHI_clame_guangzhou
-
+		available = {
+			any_country = {
+				original_tag = ENG
+				owns_state = 326
+			}
+		}
 		prerequisite = {
 			focus = CHI_clame_land
 		}
@@ -652,6 +679,7 @@
 			focus = CHI_clame_hongkong
 		}
 		completion_reward = {
+			add_political_power = 50
 		}
 		x = 0
 		y = 1
@@ -661,13 +689,32 @@
 		id = CHI_shanghai
 		icon = GFX_CHI_shanghai
 		cost = 10.00
-
+		available = {
+			CHI = {
+				owns_state = 820
+			}
+		}
 		relative_position_id = CHI_six_fort_plan
 
 		prerequisite = {
 			focus = CHI_six_fort_plan
 		}
 		completion_reward = {
+			820 = {
+				add_building_construction = {
+					type = naval_base province = 7014 level = 4 instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 5
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
 		}
 		x = -5
 		y = 1
@@ -677,13 +724,32 @@
 		id = CHI_hongkong
 		icon = GFX_CHI_hongkong
 		cost = 10.00
-
+		available = {
+			CHI = {
+				owns_state = 326
+			}
+		}
 		relative_position_id = CHI_six_fort_plan
 
 		prerequisite = {
 			focus = CHI_six_fort_plan
 		}
 		completion_reward = {
+			326 = {
+				add_building_construction = {
+					type = naval_base province = 10062 level = 4 instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 5
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
 		}
 		x = -3
 		y = 1
@@ -693,13 +759,32 @@
 		id = CHI_tshingtao
 		icon = GFX_CHI_tshingtao
 		cost = 10.00
-
+		available = {
+			CHI = {
+				owns_state = 743
+			}
+		}
 		relative_position_id = CHI_six_fort_plan
 
 		prerequisite = {
 			focus = CHI_six_fort_plan
 		}
 		completion_reward = {
+			743 = {
+				add_building_construction = {
+					type = naval_base province = 10000 level = 5 instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 5
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
 		}
 		x = -1
 		y = 1
@@ -709,13 +794,32 @@
 		id = CHI_shantou
 		icon = GFX_CHI_shantou
 		cost = 10.00
-
+		available = {
+			CHI = {
+				owns_state = 842
+			}
+		}
 		relative_position_id = CHI_six_fort_plan
 
 		prerequisite = {
 			focus = CHI_six_fort_plan
 		}
 		completion_reward = {
+			842 = {
+				add_building_construction = {
+					type = naval_base province = 9938 level = 9 instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 10
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
 		}
 		x = 1
 		y = 1
@@ -725,13 +829,32 @@
 		id = CHI_fujou
 		icon = GFX_CHI_fujou
 		cost = 10.00
-
+		available = {
+			CHI = {
+				owns_state = 833
+			}
+		}
 		relative_position_id = CHI_six_fort_plan
 
 		prerequisite = {
 			focus = CHI_six_fort_plan
 		}
 		completion_reward = {
+			833 = {
+				add_building_construction = {
+					type = naval_base province = 4196 level = 10 instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 7
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
 		}
 		x = 3
 		y = 1
@@ -741,13 +864,32 @@
 		id = CHI_nhingbo
 		icon = GFX_CHI_nhingbo
 		cost = 10.00
-
+		available = {
+			CHI = {
+				owns_state = 826
+			}
+		}
 		relative_position_id = CHI_six_fort_plan
 
 		prerequisite = {
 			focus = CHI_six_fort_plan
 		}
 		completion_reward = {
+			826 = {
+				add_building_construction = {
+					type = naval_base province = 9974 level = 10 instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 7
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
 		}
 		x = 5
 		y = 1
@@ -757,7 +899,16 @@
 		id = CHI_end_of_the_six_fort_plan
 		icon = GFX_CHI_six_fort_plan_end
 		cost = 5.00
-
+		available = {
+			CHI = {
+				owns_state = 820
+				owns_state = 326
+				owns_state = 743
+				owns_state = 842
+				owns_state = 833
+				owns_state = 826
+			}
+		}
 		relative_position_id = CHI_six_fort_plan
 
 		prerequisite = {
@@ -779,6 +930,7 @@
 			focus = CHI_nhingbo
 		}
 		completion_reward = {
+			add_stability = 0.3
 		}
 		x = 0
 		y = 2
