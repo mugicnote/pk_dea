@@ -942,6 +942,7 @@
 		cost = 10.00
 
 		completion_reward = {
+			army_experience = 100
 		}
 		x = 60
 		y = 0
@@ -1172,7 +1173,73 @@
 			focus = Regional_Minutemen_Division
 			focus = special_duty_elite
 		}
+		available = {
+			CHI = {
+				owns_state = 867
+			}
+			CHI = {
+				owns_state = 617
+			}
+			CHI = {
+				owns_state = 869
+			}
+			CHI = {
+				owns_state = 619
+			}
+			CHI = {
+				owns_state = 870
+			}
+			CHI = {
+				owns_state = 618
+			}
+			CHI = {
+				owns_state = 871
+			}
+			CHI = {
+				owns_state = 868
+			}
+		}
 		completion_reward = {
+			add_resource = {
+				type = oil
+				amount = 2
+				state = 867
+			}
+			add_resource = {
+				type = oil
+				amount = 3
+				state = 617
+			}
+			add_resource = {
+				type = oil
+				amount = 3
+				state = 869
+			}
+			add_resource = {
+				type = oil
+				amount = 2
+				state = 619
+			}
+			add_resource = {
+				type = oil
+				amount = 2
+				state = 870
+			}
+			add_resource = {
+				type = oil
+				amount = 3
+				state = 618
+			}
+			add_resource = {
+				type = oil
+				amount = 3
+				state = 871
+			}
+			add_resource = {
+				type = oil
+				amount = 2
+				state = 868
+			}
 		}
 		x = 1
 		y = 1
@@ -1228,6 +1295,8 @@
 			focus = securing_national_income
 		}
 		completion_reward = {
+			set_country_flag = Sun_Lijen
+			add_ideas = MOF_Sun_Lijen
 		}
 		x = 1
 		y = 1

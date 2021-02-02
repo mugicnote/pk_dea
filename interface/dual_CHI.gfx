@@ -8,4 +8,8 @@ spriteTypes = {
 		name = "GFX_Portrait_Wang_Jingwei"
 		texturefile = "gfx/leaders/CHI/Portrait_CHI_Wang_Jingwei.dds"
 	}
+	spriteType = {
+		name = "GFX_Portrait_Sun_Lijen"
+		texturefile = "gfx/leaders/CHI/Portrait_CHI_Sun_Lijen.dds"
+	}
 }
