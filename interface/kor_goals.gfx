@@ -719,5 +719,9 @@ spriteTypes = {
 		name = "GFX_Generic_Liberty_Handshake"
 		texturefile = "gfx/interface/goals/Generic_Liberty_Handshake.dds"
 	}
+	SpriteType = {
+		name = "GFX_focus_impeachment_proceedings"
+		texturefile = "gfx/interface/goals/focus_impeachment_proceedings.dds"
+	}
 
 }

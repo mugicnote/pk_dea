@@ -13,7 +13,7 @@ focus_tree = {
 		factor = 0
 		modifier = {
 			add = 10
-			tag = PRC
+			tag = BRM
 			has_dlc = "Waking the Tiger"
 		}
 	}

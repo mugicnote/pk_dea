@@ -48,7 +48,7 @@
 
   ###김구###
   Kim_Gu_Elected:0 "김구 당선"
-  Kim_Gu_Elected_desc:0 "민주적인 선거를 통하여 김구선생께서 당선 되셨습니다,감구 선생께서는 국가의 법으로 시민들을 지키며 여러자유를 허락하며 시민들을 자신에 편으로 만듭니다."
+  Kim_Gu_Elected_desc:0 "자유 있는 나라의 법과 정의는 국민의 자유로운 의사에서 나오고, 자유 없는 나라의 법과 정의는 보이지 않는 선의 가장 위에 있는 일개 독제자에서 나온다."
 
   advocate_of_Korean_style_democracy:0 "행안부장관 장택상"
 
@@ -61,11 +61,11 @@
 
   communist_assassination:0 "자유국민당 창설"
 
-  coup_detat_referee:0 "대화와 타협주의"
+  coup_detat_referee:0 "대화와 타협"
 
   Protect_Lee_Bum_seok:0 "국민 정부의 실현"
 
-  democratic_egotiations_with_China:0 "국가보안법의 종결"
+  democratic_egotiations_with_China:0 "국가안보법 개정"
 
   book_written_by_Baekbeom:0 "사회탄압의 종료"
 
@@ -100,7 +100,7 @@
 
   Choose_your_own_route8:0 "뒷 새대에 남기는 편지"
 
-  Choose_your_own_route9:0 "우리가 원해온 나라"
+  Choose_your_own_route9:0 ""우리가 원해온 나라""
 
   ###이승만###
   Lee_Seung_man_Elected:0 "이승만 당선"

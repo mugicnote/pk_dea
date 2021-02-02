@@ -838,7 +838,7 @@ guiTypes = {
 			iconType = {
 				name ="country_selection_minor_entry_cover"
 				spriteType = "GFX_country_selection_minor_entry_cover"
-				position = { x = -7 y = -331 }
+				position = { x = -13 y = -338 }
 			}
 		}
 

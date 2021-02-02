@@ -49,6 +49,11 @@ white_doctor:0 "백의사"
 Story_of_Two_Activists:0 "두 운동가 이야기"
 national_government:0 "국민을 위한 정부"
 unity_ruling_camp:0 "여권의 단합"
+History_Records_Disclosure:0 "과거사 기록물 공개"
+unity_ruling_camp2:0 "국민과 함께 나아가는 정치"
+National_Security_Law_with_kim_ku:0 "국가안보법"
+opposition_partys_regime_judgment:0 "여당의 정권심판론?"
+Public_Security_Headquarter_3:0 "치안본부"
 
 KOR_police_corruption_3:0 "공격형 경찰"
 KOR_police_corruption_4:0 "방어형 경찰"
@@ -58,6 +63,9 @@ Korean_Red_Cross:0 "대한적십자사"
 KOR_war_department:0 "국방부"
 KOR_great_depression_after_effect:0 "대공황의 여파"
 
+KOR_safety_public:0 "대외 내전 지원 정책"
+
+###정치고문###
 kim_ku:0 "백범 김구"
 Yeo_Woon_Hyung:0 "여운형"
 Rhee_Syngman:0 "이승만"
@@ -77,23 +85,30 @@ KIM_SUNG_SOO:0 "김성수"
 KING_WANT:0 "이강"
 Yoon_Bong_Gil:0 "윤봉길"
 
+###산업업체###
 KOR_railway_company:0 "의정부 공무아문 철도국"
 KOR_western_refinery:0 "한진 중공업"
 KOR_showa_steel_works:0 "한전 산업 개발"
 KOR_ele:0 "조선 전자공업 발전회"
 
+###이론가###
 Kim_Hak_kyu:0 "김학규"
 
-Yu_Dong_yeal:0 "유동열"
+###육참총###
+KOR_AC_Lee_Beomseok:0 "이범석"
+KOR_AC_Kim_Hongil:0 "김홍일"
+KOR_AC_Yu_Dongyeal:0 "유동열"
 
-KOR_safety_public:0 "대외 내전 지원 정책"
+###군 고위지휘관###
+KOR_HC_Kim_Wonbong:0 "김원봉"
 
-###전차전차전차설계설계설계사아과제하기귀찮다###
+
+###전차설계사###
 KOR_kia:0 "경성정공"
 KOR_Hyundai:0 "아도-서비스"
 KOR_SSANGYONG:0 "쌍용양회"
 
-###함정함정함정카드발동과제가산더미인데나는뭘하고있는가###
+###함정###
 KOR_Daewoo_Heavy_Industries:0 "대우 중공업 주식회사"
 KOR_HYUNDAI:0 "현대그룹 중공업 공장"
 KOR_SAMSUNG:0 "삼성 중공업"
@@ -110,3 +125,12 @@ Depression_of_USA_tt:0 "§R우리는 각종 결정을 통하여 미국을 도울
 political_confrontation:0 "정계 대립"
 Communist_leadership_strike:0 "공산당의 파업 주도"
 Communist_leadership_strike_tt:0 "§R그들은 한달 마다 각기 다른 규모의 파업을 일으킬것 입니다, 우리는 노동자들과의 타협으로 파업을 막아야합니다.§!"
+
+###중국###
+National_Revolutionary_Army:0 "국민혁명군"
+Army_in_Need_of_Reform:0 "개혁이 필요한 육군"
+infantry_oriented_army:0 "보병 위주의 군대"
+relaxed_army:0 "긴장이 풀린 군대"
+threat_of_stable_left:0 "안정된 좌파의 위협"
+
+social_democracy_acceptance:0 "사회민주주의 외교의 수용"

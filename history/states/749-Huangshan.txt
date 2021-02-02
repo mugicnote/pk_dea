@@ -7,11 +7,14 @@ state={
 		owner = CHI
 		add_core_of = CHI
 		buildings = {
-			infrastructure = 4
+			infrastructure = 6
 
 		}
 		victory_points = {
-			12019 1 
+			1099 15
+		}
+		victory_points = {
+			1125 10
 		}
 
 	}

@@ -118,6 +118,22 @@ spriteTypes = {
 		name = "GFX_idea_advisor_Kim_Suk_won"
 		texturefile = "gfx/interface/ideas/advisor_Kim_Suk_won.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_advisor_KOR_AC_Lee_Beomseok"
+		texturefile = "gfx/interface/ideas/advisor_KOR_AC_Lee_Beomseok.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_advisor_KOR_AC_Kim_Hongil"
+		texturefile = "gfx/interface/ideas/advisor_KOR_AC_Kim_Hongil.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_advisor_KOR_AC_Yu_Dongyeal"
+		texturefile = "gfx/interface/ideas/advisor_KOR_AC_Yu_Dongyeal.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_advisor_KOR_HC_Kim_Wonbong"
+		texturefile = "gfx/interface/ideas/advisor_KOR_HC_Kim_Wonbong.dds"
+	}
 
 	spriteType = {
 		name = "GFX_idea_illiteracy"

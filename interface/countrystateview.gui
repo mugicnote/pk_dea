@@ -274,6 +274,30 @@ guiTypes = {
 				Orientation = "UPPER_LEFT"
 			}
 
+			containerWindowType = {
+				name = "custom_icon_container"
+				size = { width=100% height=100% }
+				position = { x = -334 y= 4 }
+
+				iconType = {
+					name = "terrain_seoul_icon"
+					spriteType = "GFX_terrain_seoul"
+					alwaystransparent = yes
+				}
+
+				iconType = {
+					name = "flooded_icon"
+					spriteType = "GFX_modifiers_flooded_icon"		
+				}
+
+				iconType = {
+					name = "unplanned_offensive_icon"
+					spriteType = "GFX_modifiers_unplanned_offensive_icon"
+					position = { x = 0 y = 0 }
+					Orientation = "UPPER_LEFT"			
+				}	
+			}
+
 			iconType = {
 				name = "province_header"
 				position = { x = 6 y= -34 }
@@ -355,19 +379,6 @@ guiTypes = {
 				format = "LOWER_LEFT"
 				slotsize = { width = 40 height = 47 }
 				max_slots_vertical = 1
-			}
-
-			containerWindowType = {
-				name = "custom_icon_container"
-				size = { width=100% height=100% }
-				position = { x = 0 y= 0 }
-
-				iconType = {
-					name = "flooded_icon"
-					spriteType = "GFX_modifiers_flooded_icon"
-					position = { x = 0 y = 0 }
-					Orientation = "UPPER_LEFT"
-				}
 			}
 
 			gridBoxType = {

@@ -1,0 +1,15 @@
+on_actions = {
+
+	on_startup = {
+		effect = {
+
+			525 = {
+				add_province_modifier = {
+					static_modifiers = { terrain_seoul }
+					province = { id = 7125 }
+				}
+			}
+
+		}
+	}
+}

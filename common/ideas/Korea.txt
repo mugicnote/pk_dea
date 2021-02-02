@@ -383,7 +383,6 @@ ideas = {
                 stability_factor = 0.1
                 war_support_factor = 0.05
                 army_core_defence_factor = 0.05
-                resistance_damage_to_garrison = -0.15
                 drift_defence_factor = 0.2
             }
         }
@@ -403,7 +402,6 @@ ideas = {
             
             modifier = {
                 max_command_power = 30
-                political_power_cost = -0.05
                 experience_gain_army = 0.05
             }
         }
@@ -423,7 +421,6 @@ ideas = {
             
             modifier = {
                 max_command_power = 50
-                political_power_cost = -0.5
                 experience_gain_army = 0.1
             }
         }
@@ -565,8 +562,8 @@ ideas = {
             removal_cost = -1
             
             modifier = {
-                army_core_attack_factor = 0.05
-		        army_core_defence_factor = 0.05
+                political_power_factor = 0.05
+		        stability_factor = 0.1
             }
         }
         democratic_constitution = {
@@ -704,6 +701,124 @@ ideas = {
             
             modifier = {
                 stability_factor = 0.05
+                political_power_factor = 0.05
+            }
+        }
+        History_Records_Disclosure = {
+
+            allowed = {
+                original_tag = KOR
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = generic_production_bonus
+
+            removal_cost = -1
+            
+            modifier = {
+                fascism_drift = -0.01
+                political_power_factor = 0.05
+                stability_factor = 0.1
+                war_support_factor = -0.05
+            }
+        }
+        parliamentary_control = {
+
+            allowed = {
+                original_tag = KOR
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = generic_production_bonus
+
+            removal_cost = -1
+            
+            modifier = {
+                max_command_power = 30
+                experience_gain_army = 0.05
+            }
+        }
+        unity_ruling_camp2 = {
+
+            allowed = {
+                original_tag = KOR
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = generic_production_bonus
+
+            removal_cost = -1
+            
+            modifier = {
+                stability_factor = 0.1
+                political_power_factor = 0.1
+                democratic_drift = 0.01
+            }
+        }
+        National_Security_Law_with_kim_ku = {
+
+            allowed = {
+                original_tag = KOR
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = generic_production_bonus
+
+            removal_cost = -1
+            
+            modifier = {
+                stability_factor = -0.05
+                war_support_factor = 0.05
+                communism_drift = -0.01
+            }
+        }
+        opposition_partys_regime_judgment = {
+
+            allowed = {
+                original_tag = KOR
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = generic_production_bonus
+
+            removal_cost = -1
+            
+            modifier = {
+                stability_factor = -0.15
+                democratic_drift = -0.01
+            }
+        }
+        Public_Security_Headquarter_3 = {
+
+            allowed = {
+                original_tag = KOR
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = generic_production_bonus
+
+            removal_cost = -1
+            
+            modifier = {
+                stability_factor = 0.1
                 political_power_factor = 0.05
             }
         }
@@ -1299,20 +1414,6 @@ ideas = {
 			
 		    traits = { raiding_fleet_naval_manufacturer }
 	    }
-    }
-    army_chief = {
-        
-        Yu_Dong_yeal = {
-			
-            allowed = {
-				original_tag = KOR
-			}
-            available = {
-				has_completed_focus = Republic_of_Korea_Army
-			}
-
-			traits = { army_chief_defensive_2 }
-		}
     }
 
 }

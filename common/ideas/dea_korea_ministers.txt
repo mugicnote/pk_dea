@@ -386,62 +386,58 @@ ideas = {
 	#육군 참모총장
 	army_chief = {
 
-		#지청천
-		KOR_CoA_Ji_Cheongcheon = {
-
-			allowed = { original_tag = KOR }
-
-			available = {
-				custom_trigger_tooltip = {
-    				tooltip = minister_tooltip
-					always = no
-				}
-			}
-
-			cancel_if_invalid = no
-			removal_cost = -1
-			ai_will_do = { factor = 1 }
-			
-			traits = { army_chief_offensive_2 }
-		}
-
 		#이범석
-		KOR_CoA_Lee_Beomseok = {
+		KOR_AC_Lee_Beomseok = {
 
 			allowed = { original_tag = KOR }
 
+			picture = advisor_KOR_AC_Lee_Beomseok
+
 			available = {
-				custom_trigger_tooltip = {
-    				tooltip = minister_tooltip
-					always = no
-				}
 			}
 
 			cancel_if_invalid = no
 			removal_cost = -1
 			ai_will_do = { factor = 1 }
 			
-			traits = { army_chief_maneuver_3 }
+			traits = { army_chief_offensive_3 }
 		}
 
-		#홍사익
-		KOR_CoA_Hong_Saik = {
+		#김홍일
+		KOR_AC_Kim_Hongil = {
 
 			allowed = { original_tag = KOR }
 
+			picture = advisor_KOR_AC_Kim_Hongil
+
 			available = {
-				custom_trigger_tooltip = {
-    				tooltip = minister_tooltip
-					always = no
-				}
 			}
 
 			cancel_if_invalid = no
 			removal_cost = -1
 			ai_will_do = { factor = 1 }
 			
-			traits = { army_chief_reform_2 }
+			traits = { army_chief_morale_2 }
 		}
+
+		#유동열
+		KOR_AC_Yu_Dongyeal = {
+			
+			allowed = { original_tag = KOR }
+			
+			picture = advisor_KOR_AC_Yu_Dongyeal
+
+            available = {
+				has_completed_focus = Republic_of_Korea_Army
+			}
+
+			cancel_if_invalid = no
+			removal_cost = -1
+			ai_will_do = { factor = 1 }
+
+			traits = { army_chief_defensive_2 }
+		}
+
 	}
 
 	#해군 참모총장
@@ -471,5 +467,24 @@ ideas = {
 			traits = { air_chief_all_weather_3 }
 		}
 	}
+
+	high_command = {
+
+		KOR_HC_Kim_Wonbong = {
+			ledger = army
+			
+			allowed = { original_tag = KOR }
+			
+			picture = advisor_KOR_HC_Kim_Wonbong
+
+			available = {
+			}
+
+			cancel_if_invalid = no
+			removal_cost = -1
+			ai_will_do = { factor = 1 }
+			
+			traits = { army_commando_2 }
+		}
 
 }

@@ -11,4 +11,8 @@
  PRECALC_NAVAL_DIST:0 "육군 참정을 방관하는 중"
  INIT_MAP_LOGIC:0 "새 지도를 만드는 중"
  INIT_GAMESTATE:0 "시대를 암흑기로 만드는 중"
- FE_LOADING_HISTORY:0 "운명을 뒤바꾸는 중"
+ FE_LOADING_HISTORY:0 "운명의 주사위를 던지는 중"
+ LOADING_DATABASES:0 "경제 전망을 분석하는 중"
+ LOADING_MAP_SPRITES:0 "신문 1면의 제목을 정하는 중"
+
+ TRIGGER_ALWAYS_FALSE:0 "이 중점은 향후 이벤트 혹은 결정으로 자동 완료됩니다."

@@ -13,18 +13,15 @@ bookmarks = {
 		}
 		
 	#### MAJORS ####
-		"USA"={
-			history = "USA_GATHERING_STORM_DESC"
+		"JAP"={
+			history = "JAP_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
-				home_of_the_free
-				great_depression
-				undisturbed_isolation
+				aftermath_of_defeat
+				constitution_of_japanese
+				Communist_leadership_strike
 			}
 			focuses = {
-				USA_war_plan_black
-				USA_limited_intervention
-				USA_reestablish_the_gold_standard
 			}
 		}
 
@@ -49,18 +46,13 @@ bookmarks = {
 		"KOR" = { history = "" }
 		"KOR" = { history = "" }
 
-		"SOV"={
-			history = "SOV_GATHERING_STORM_DESC"
-			ideology = communism
+		"CHI"={
+			history = "CHI_GATHERING_STORM_DESC"
+			ideology = neutrality
 			ideas = {
-				trotskyite_plot
-				home_of_revolution
 			}
 			focuses = {
-				SOV_great_purge
-				SOV_claims_on_baltic
-				SOV_war_with_uk
-			}	
+			}
 		}
 
 		"KOR" = { history = "" }
@@ -147,14 +139,20 @@ bookmarks = {
 				}			
 			}
 			
-			"JAP"={
+			"USA"={
 				minor = yes
-				history = "JAP_GATHERING_STORM_DESC"
+				history = "USA_GATHERING_STORM_DESC"
 				ideology = democratic
 				ideas = {
-				}	
+					home_of_the_free
+					great_depression
+					undisturbed_isolation
+				}
 				focuses = {
-				}			
+					USA_war_plan_black
+					USA_limited_intervention
+					USA_reestablish_the_gold_standard
+				}
 			}
 
 			"MAN"={
@@ -167,24 +165,35 @@ bookmarks = {
 				}			
 			}
 
-			"SSK"={
-				minor = yes
-				history = "SSK_GATHERING_STORM_DESC"
-				ideology = social_liberalism
+			"GER"={
+				history = "GER_GATHERING_STORM_DESC"
+				ideology = fascism
+				available = { has_dlc = "Waking the Tiger" }
 				ideas = {
-				}	
+					sour_loser
+					general_staff
+					GER_mefo_bills_1
+				}
 				focuses = {
-				}			
+					GER_anschluss
+					GER_danzig_or_war
+					GER_revive_the_kaiserreich
+				}
 			}
 
-			"CHI"={
+			"SOV"={
 				minor = yes
-				history = "CHI_GATHERING_STORM_DESC"
-				ideology = neutrality
+				history = "SOV_GATHERING_STORM_DESC"
+				ideology = communism
 				ideas = {
-				}	
+					trotskyite_plot
+					home_of_revolution
+				}
 				focuses = {
-				}			
+					SOV_great_purge
+					SOV_claims_on_baltic
+					SOV_war_with_uk
+				}	
 			}
 
 			"SHX"={

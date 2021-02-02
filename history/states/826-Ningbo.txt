@@ -5,10 +5,18 @@ state={
 	history={
 		owner = CHI
 		add_core_of = CHI
+		victory_points = {
+			9974 15
+		}
 		buildings = {
-			infrastructure = 3
+			infrastructure = 7
 			industrial_complex = 2
+			9974 = {
+				naval_base = 3
+				coastal_bunker = 2
+				bunker = 2
 
+			}
 		}
 
 	}

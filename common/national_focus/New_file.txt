@@ -188,7 +188,7 @@ focus_tree = {
 	}
 	focus = {
 		id = arrest_of_offender
-		icon =
+		icon = GFX
 		cost = 10.00
 		prerequisite = {
 			focus = Yeo_Un_hyung_Elected
@@ -199,7 +199,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Lee_Beom_seoks_Track_Survey
-		icon = 
+		icon = GFX
 		cost = 10.00
 		prerequisite = {
 			focus = arrest_of_offender
@@ -253,17 +253,6 @@ focus_tree = {
 
 	}
 	focus = {
-		id = Recruitment_of_Kim_Koo
-		icon = GFX_
-		cost = 10.00
-		prerequisite = {
-			focus = three_party_merger
-		}
-		x = 7
-		y = 5
-
-	}
-	focus = {
 		id = Extreme_Left_Ban
 		cost = 10.00
 		prerequisite = {
@@ -275,7 +264,7 @@ focus_tree = {
 	}
 	focus = {
 		id = conflict_agitation
-		icon =
+		icon = GFX
 		cost = 10.00
 		prerequisite = {
 			focus = Leader_of_Joseon
@@ -301,7 +290,7 @@ focus_tree = {
 	}
 	focus = {
 		id = diplomatic_relations_between_leaders_France
-		icon = 
+		icon = GFX
 		cost = 5.00
 		prerequisite = {
 			focus = Recruitment_of_Kim_Koo
@@ -340,7 +329,7 @@ focus_tree = {
 	}
 	focus = {
 		id = execution_coup_forces
-		icon = 
+		icon = GFX
 		cost = 10.00
 		prerequisite = {
 			focus = Lee_Beom_seok_wanted
@@ -2363,6 +2352,8 @@ focus_tree = {
 		}
 		completion_reward = {
 			remove_ideas = coup_crisis3
+			add_stability = 0.05
+			add_war_support = 0.05
 		}
 		x = 15
 		y = 5
@@ -2396,6 +2387,10 @@ focus_tree = {
 			focus = Protect_Lee_Bum_seok
 			focus = communist_assassination
 		}
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 150
+		}
 		x = 18
 		y = 6
 
@@ -2423,6 +2418,10 @@ focus_tree = {
 		}
 		x = 20
 		y = 6
+
+		completion_reward = {
+			add_ideas = National_Security_Law_with_kim_ku
+		}
 
 	}
 	focus = {
@@ -2476,11 +2475,20 @@ focus_tree = {
 		x = 15
 		y = 7
 
+		completion_reward = {
+			add_war_support = 0.05
+			army_experience = 30
+			add_ideas = parliamentary_control
+		}
+
 	}
 	focus = {
 		id = commando_draft
-		icon = GFX_Corruption_investigate
+		icon = GFX_focus_impeachment_proceedings
 		cost = 10.00
+		available = {
+			always = no
+		}
 		prerequisite = {
 			focus = coup_detat_referee
 		}
@@ -2489,6 +2497,10 @@ focus_tree = {
 		}
 		x = 19
 		y = 7
+
+		completion_reward = {
+			add_timed_idea = { idea = opposition_partys_regime_judgment days = 70 }
+		}
 
 	}
 	focus = {
@@ -2515,6 +2527,10 @@ focus_tree = {
 		x = 22
 		y = 6
 
+		completion_reward = {
+			add_timed_idea = { idea = History_Records_Disclosure days = 365 }
+		}
+
 	}
 	focus = {
 		id = participation_in_the_Allies
@@ -2525,6 +2541,13 @@ focus_tree = {
 		}
 		x = 21
 		y = 7
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = Public_Security_Headquarter
+				add_idea = Public_Security_Headquarter_3
+			}
+		}
 
 	}
 	focus = {
@@ -2560,12 +2583,22 @@ focus_tree = {
 		id = Choose_your_own_route2
 		icon = GFX_AST_maintain_ofn
 		cost = 10.00
+		available = {
+            has_idea = unity_ruling_camp
+        }
 		prerequisite = {
 			focus = Choose_your_own_route
 			focus = coup_detat_referee
 		}
 		x = 17
 		y = 7
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = unity_ruling_camp
+				add_idea = unity_ruling_camp2
+			}
+		}
 
 	}
 	focus = {

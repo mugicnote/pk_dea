@@ -1,0 +1,16 @@
+spriteTypes = {
+	#spriteType = {
+	#	name = "GFX_city_bg_paris"
+	#	textureFile = "gfx/interface/city_bg_paris.dds"
+	#}
+
+	# CITIES ----------------------------------------------------------------------------------------------------
+
+	# AUSTRALIA PERTH
+
+	spriteType = {
+		name = "GFX_terrain_seoul"
+		textureFile = "gfx/interface/terrains/terrain_seoul.dds"
+	}
+	
+}

@@ -20,7 +20,7 @@
 	}
 }
 division_template = {
-	name = "대한민국 향토방위군"
+	name = "대한민국 향토방위사단"
 	division_names_group = KOR_NOM_4
 
 	regiments = {
@@ -38,7 +38,7 @@ division_template = {
 	}
 }
 division_template = {
-	name = "기계화보병"
+	name = "기계화 보병사단"
 	division_names_group = KOR_NOM_2
 	
 	regiments = {
@@ -63,7 +63,7 @@ division_template = {
 }
 
 division_template = {
-	name = "독도수비대"				
+	name = "대한민국 해병대"				
 	division_names_group = KOR_NOM_3
 	regiments = {
 		marine = { x = 0 y = 0 }
@@ -102,7 +102,7 @@ division_template = {
 }
 
 division_template = {
-	name = "청년단 기계화보병"
+	name = "청년단 기계화 보병"
 	division_names_group = KOR_NOM_4
 	
 	regiments = {
@@ -329,7 +329,7 @@ units = {
 			name_order = 31
 		}
 		location = 1054
-		division_template = "대한민국 향토방위군"
+		division_template = "대한민국 향토방위사단"
 		start_experience_factor = 0.3
 	}
 
@@ -339,7 +339,7 @@ units = {
 			name_order = 4
 		}
 		location = 7125
-		division_template = "기계화보병사단"
+		division_template = "기계화 보병사단"
 		start_experience_factor = 0.3
 	}
 	division = { # "제8 기계화보병사단 '오뚜기'부대'"
@@ -348,7 +348,7 @@ units = {
 			name_order = 8
 		}
 		location = 13241
-		division_template = "기계화보병사단"
+		division_template = "기계화 보병사단"
 		start_experience_factor = 0.3
 	}
 	division = { # "제11 기계화보병사단 '화랑'부대'"
@@ -357,7 +357,7 @@ units = {
 			name_order = 11
 		}
 		location = 11915
-		division_template = "기계화보병사단"
+		division_template = "기계화 보병사단"
 		start_experience_factor = 0.3
 	}
 	division = { # "제20 기계화보병사단 '결전'부대'"
@@ -366,7 +366,7 @@ units = {
 			name_order = 20
 		}
 		location = 6944
-		division_template = "기계화보병사단"
+		division_template = "기계화 보병사단"
 		start_experience_factor = 0.3
 	}
 	division = { # "제26 기계화보병사단 '불무리'부대'"
@@ -375,7 +375,7 @@ units = {
 			name_order = 26
 		}
 		location = 9795
-		division_template = "기계화보병사단"
+		division_template = "기계화 보병사단"
 		start_experience_factor = 0.3
 	}
 	division = { # "제30 기계화보병사단 '필승'부대'"
@@ -384,17 +384,17 @@ units = {
 			name_order = 30
 		}
 		location = 4052
-		division_template = "기계화보병사단"
+		division_template = "기계화 보병사단"
 		start_experience_factor = 0.3
 	}
 
-	division = { # "독도수비대"
+	division = { # "대한민국 해병대"
 		division_name = {
 			is_name_ordered = yes
 			name_order = 20
 		}
 		location = 13253
-		division_template = "독도수비대"
+		division_template = "대한민국 해병대"
 		start_experience_factor = 0.3
 	}
 }

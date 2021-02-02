@@ -29,13 +29,13 @@
 	}
 }
 KOR_NOM_4 = {
-	name = "대한민국 향토사단"
+	name = "대한민국 향토방위사단"
 	for_countries = { KOR }
 	can_use = { always = yes }
 	division_types = { "infantry" }
-	fallback_name = "제%d 향토 보병 사단"
+	fallback_name = "제%d 향토방위사단"
 	ordered = {
-		31 = { "제31 향토 보병 사단 '충장'" }
+		31 = { "제31 향토방위사단 '충장'" }
 	}
 }
 KOR_NOM_2 = {
@@ -54,13 +54,13 @@ KOR_NOM_2 = {
 	}
 }
 KOR_NOM_3 = {
-	name = "독도수비대"
+	name = "대한민국 해병대"
 	for_countries = { KOR }
 	can_use = { always = yes }
 	division_types = { "marine" }
-	fallback_name = "제%d 독도수비대"
+	fallback_name = "제%d 대한민국 해병대"
 	ordered = {
-		20 = { "독도수비대" }
+		20 = { "대한민국 해병대" }
 	}
 }
 
