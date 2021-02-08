@@ -8,7 +8,6 @@
 		}
 	}
 	default = no
-	
 	focus = {
 		id = JAP_future
 		icon = GFX_JAP_future
@@ -18,11 +17,14 @@
 
 	}
 	focus = {
-		id = JAP_World_war_Loser
-		icon = GFX_World_war_Loser
+		id = JAP_USA_assistance
+		icon = GFX_JAP_USA_assistance
 		cost = 10.00
-		x = 41
-		y = 2
+		x = 51
+		y = 9
+		prerequisite = {
+			focus = JAP_Introduction_of_mechanical_machine_tool
+		}
 
 	}
 	focus = {
@@ -381,13 +383,171 @@
 
 	}
 	focus = {
+		id = jap_culture
+		icon = GFX_jap_culture
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_future
+		}
+		x = 38
+		y = 2
+
+	}
+	focus = {
+		id = jap_Cultural_property_protection
+		icon = GFX_jap_Cultural_property_protection
+		cost = 3.00
+		prerequisite = {
+			focus = jap_culture
+		}
+		x = 38
+		y = 3
+
+	}
+	focus = {
+		id = the_Law_Regarding_the_Preservation_of_Important_Works_of_Fine_Arts 
+		icon = GFX_Law_Regarding_the_Preservation_of_Important_Works_of_Fine_Arts 
+		cost = 3.00
+		prerequisite = {
+			focus = jap_Cultural_property_protection
+		}
+		x = 38
+		y = 4
+
+	}
+	focus = {
+		id = jap_cultural_heritage_rage_growing
+		icon = GFX_jap_cultural_heritage_rage_growing
+		cost = 10.00
+		prerequisite = {
+			focus = the_Law_Regarding_the_Preservation_of_Important_Works_of_Fine_Arts 
+		}
+		x = 38
+		y = 5
+
+	}
+	focus = {
+		id = jap_Tangible_Cultural_Property
+		icon = GFX_Tangible_Cultural_Property
+		cost = 3.00
+		prerequisite = {
+			focus = jap_cultural_heritage_rage_growing
+		}
+		x = 36
+		y = 6
+
+	}
+	focus = {
+		id = japanese_china
+		icon = GFX_japanese_china
+		cost = 2.00
+		prerequisite = {
+			focus = jap_Tangible_Cultural_Property
+		}
+		x = 35
+		y = 7
+
+	}
+	focus = {
+		id = JAP_before_file_restore
+		icon = GFX_JAP_before_file_restore
+		cost = 2.00
+		prerequisite = {
+			focus = japanese_china
+		}
+		x = 34
+		y = 8
+
+	}
+	focus = {
+		id = jap_Intangible_Cultural_Property
+		icon = GFX_jap_Intangible_Cultural_Property
+		cost = 3.00
+		prerequisite = {
+			focus = jap_cultural_heritage_rage_growing
+		}
+		x = 40
+		y = 6
+
+	}
+	focus = {
+		id = jap_Preservation_of_ancient_shrine_and_temples
+		icon = GFX_Preservation_of_ancient_shrine_and_temples
+		cost = 10.00
+		prerequisite = {
+			focus = jap_Intangible_Cultural_Property
+			focus = jap_Tangible_Cultural_Property
+		}
+		x = 38
+		y = 7
+
+	}
+	focus = {
+		id = jap_catlle_defend
+		icon = GFX_jap_catlle_defend
+		cost = 10.00
+		prerequisite = {
+			focus = jap_Preservation_of_ancient_shrine_and_temples
+		}
+		x = 40
+		y = 8
+
+	}
+	focus = {
+		id = japan_japanese_mu_sul
+		icon = GFX_japan_japanese_mu_sul
+		cost = 2.00
+		prerequisite = {
+			focus = jap_Intangible_Cultural_Property
+		}
+		x = 41
+		y = 7
+
+	}
+	focus = {
+		id = jap_Overseas_performance
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = japan_japanese_mu_sul
+		}
+		x = 42
+		y = 8
+
+	}
+	focus = {
+		id = jap_finish_defended_culture_property
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = jap_Overseas_performance
+		}
+		prerequisite = {
+			focus = jap_catlle_defend
+		}
+		x = 40
+		y = 9
+
+	}
+	focus = {
+		id = JAP_World_war_Loser
+		icon = GFX_World_war_Loser
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_future
+		}
+		x = 50
+		y = 2
+
+	}
+	focus = {
 		id = JAP_big_compensation
 		icon = GFX_big_compensation
 		cost = 10.00
 		prerequisite = {
 			focus = JAP_World_war_Loser
 		}
-		x = 41
+		x = 50
 		y = 3
 
 	}
@@ -398,18 +558,18 @@
 		prerequisite = {
 			focus = JAP_big_compensation
 		}
-		x = 37
+		x = 46
 		y = 4
 
 	}
 	focus = {
-		id = JAP_Post_war_recovery 
+		id = JAP_Post_war_recovery
 		icon = GFX_Post_war_recovery
 		cost = 10.00
 		prerequisite = {
 			focus = JAP_big_compensation
 		}
-		x = 43
+		x = 52
 		y = 4
 
 	}
@@ -418,9 +578,9 @@
 		icon = GFX_War_damage_investigation
 		cost = 10.00
 		prerequisite = {
-			focus = JAP_Post_war_recovery 
+			focus = JAP_Post_war_recovery
 		}
-		x = 43
+		x = 52
 		y = 5
 
 	}
@@ -431,7 +591,7 @@
 		prerequisite = {
 			focus = JAP_War_damage_investigation
 		}
-		x = 43
+		x = 52
 		y = 6
 
 	}
@@ -442,7 +602,7 @@
 		prerequisite = {
 			focus = JAP_Increase_recovery_budget
 		}
-		x = 40
+		x = 49
 		y = 7
 
 	}
@@ -453,19 +613,8 @@
 		prerequisite = {
 			focus = JAP_Increase_recovery_budget
 		}
-		x = 42
+		x = 51
 		y = 7
-
-	}
-	focus = {
-		id = JAP_USA_assistance
-		icon = GFX_JAP_USA_assistance
-		cost = 10.00
-		prerequisite = {
-			focus = JAP_Introduction_of_mechanical_machine_tool
-		}
-		x = 42
-		y = 9
 
 	}
 	focus = {
@@ -475,19 +624,8 @@
 		prerequisite = {
 			focus = JAP_Increase_recovery_budget
 		}
-		x = 46
+		x = 54
 		y = 7
-
-	}
-	focus = {
-		id = JAP_Waterpipe_construction
-		icon = GFX_JAP_Waterpipe_construction
-		cost = 10.00
-		prerequisite = {
-			focus = Recover_the_bombed_village
-		}
-		x = 46
-		y = 8
 
 	}
 	focus = {
@@ -497,7 +635,7 @@
 		prerequisite = {
 			focus = Recover_the_bombed_village
 		}
-		x = 48
+		x = 52
 		y = 8
 
 	}
@@ -508,9 +646,20 @@
 		prerequisite = {
 			focus = Recover_the_bombed_village
 		}
-		x = -2
+		x = 0
 		y = 1
 		relative_position_id = Recover_the_bombed_village
+
+	}
+	focus = {
+		id = JAP_Waterpipe_construction
+		icon = GFX_JAP_Waterpipe_construction
+		cost = 10.00
+		prerequisite = {
+			focus = Recover_the_bombed_village
+		}
+		x = 56
+		y = 8
 
 	}
 	focus = {
@@ -526,8 +675,110 @@
 		prerequisite = {
 			focus = JAP_build_school
 		}
+		x = 54
+		y = 9
+
+	}
+	focus = {
+		id = JAP_return_strong
+		icon = GFX_return_strong
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_regain_our_authority
+		}
+		x = 46
+		y = 5
+
+	}
+	focus = {
+		id = JAP_Referendum
+		icon = GFX_JAP_Referendum
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_return_strong
+		}
+		x = 46
+		y = 6
+
+	}
+	focus = {
+		id = JAP_USA_Re-agreement
+		icon = GFX_JAP_USA_Re-agreement
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Referendum
+		}
+		x = 46
+		y = 7
+
+	}
+	focus = {
+		id = JAP_Treaty_loyalty
+		icon = GFX_JAP_Treaty_loyalty
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Referendum
+		}
+		x = 44
+		y = 7
+
+	}
+	focus = {
+		id = JAP_Strengthening_the_Tokyo_Treaty
+		icon = GFX_JAP_Strengthening_the_Tokyo_Treaty
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_American_mission
+		}
+		x = 44
+		y = 9
+
+	}
+	focus = {
+		id = JAP_American_mission
+		icon = GFX_American_mission
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Treaty_loyalty
+		}
+		x = 44
+		y = 8
+
+	}
+	focus = {
+		id = JAP_Sticky_friendship
+		icon = GFX_Sticky_friendship
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_USA_Re-agreement
+		}
+		x = 46
+		y = 8
+
+	}
+	focus = {
+		id = JAP_What_do_they_think
+		icon = GFX_JAP_What_do_they_think
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Sticky_friendship
+		}
 		x = 46
 		y = 9
+
+	}
+	focus = {
+		id = JAP_First_treaty_amendment
+		icon = GFX_JAP_First_treaty_amendment
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_What_do_they_think
+		}
+		prerequisite = {
+			focus = JAP_Strengthening_the_Tokyo_Treaty
+		}
+		x = 46
+		y = 10
 
 	}
 	focus = {
@@ -604,7 +855,7 @@
 	}
 	focus = {
 		id = JAP_working_method
-		icon = GFX_goal_unknown
+		icon = GFX_working_method
 		cost = 10.00
 		prerequisite = {
 			focus = JAP_Minimum_wage_increase
@@ -618,7 +869,7 @@
 	}
 	focus = {
 		id = JAP_Labor_improvement
-		icon = GFX_goal_unknown
+		icon = GFX_Labor_improvement
 		cost = 10.00
 		prerequisite = {
 			focus = JAP_care_of_livelihood
@@ -629,7 +880,7 @@
 	}
 	focus = {
 		id = JAP_Unemployment_policy
-		icon = GFX_goal_unknown
+		icon = GFX_Unemployment_policy
 		cost = 10.00
 		prerequisite = {
 			focus = JAP_Labor_improvement
@@ -640,7 +891,7 @@
 	}
 	focus = {
 		id = JAP_Minimum_wage_increase
-		icon = GFX_goal_unknown
+		icon = GFX_Minimum_wage_increase
 		cost = 10.00
 		prerequisite = {
 			focus = JAP_Labor_improvement
@@ -651,7 +902,7 @@
 	}
 	focus = {
 		id = JAP_Reduced_working_hours
-		icon = GFX_goal_unknown
+		icon = GFX_Reduced_working_hours
 		cost = 10.00
 		prerequisite = {
 			focus = JAP_united_Appointment
@@ -663,7 +914,7 @@
 	}
 	focus = {
 		id = JAP_united_Appointment
-		icon = GFX_goal_unknown
+		icon = GFX_united_Appointment
 		cost = 10.00
 		prerequisite = {
 			focus = JAP_Find_compromise
@@ -674,7 +925,7 @@
 	}
 	focus = {
 		id = JAP_Find_compromise
-		icon = GFX_goal_unknown
+		icon = GFX_Find_compromise
 		cost = 10.00
 		prerequisite = {
 			focus = JAP_them_be_considerate
@@ -685,7 +936,7 @@
 	}
 	focus = {
 		id = JAP_Accepting_partial_demand
-		icon = GFX_goal_unknown
+		icon = GFX_Accepting_partial_demand
 		cost = 10.00
 		prerequisite = {
 			focus = JAP_low_demonstration
@@ -696,7 +947,7 @@
 	}
 	focus = {
 		id = JAP_increase_worker_treatment
-		icon = GFX_goal_unknown
+		icon = GFX_increase_worker_treatment
 		cost = 10.00
 		prerequisite = {
 			focus = JAP_Accepting_partial_demand
@@ -707,7 +958,7 @@
 	}
 	focus = {
 		id = JAP_mordern_technology
-		icon = GFX_goal_unknown
+		icon = GFX_mordern_technology
 		cost = 10.00
 		prerequisite = {
 			focus = JAP_united_Appointment
@@ -719,7 +970,7 @@
 	}
 	focus = {
 		id = JAP_smail_workers
-		icon = GFX_goal_unknown
+		icon = GFX_smail_workers
 		cost = 10.00
 		prerequisite = {
 			focus = JAP_Reduced_working_hours
@@ -741,24 +992,24 @@
 		prerequisite = {
 			focus = JAP_autoban_erection_first
 		}
-		x = 40
+		x = 49
 		y = 8
 
 	}
 	focus = {
 		id = japanes_Highway_in_japan
-		icon = GFX_goal_unknown
+		icon = GFX_japanes_Highway_in_japan
 		cost = 10.00
 		prerequisite = {
 			focus = JAP_autoban_erection_second
 		}
-		x = 40
+		x = 49
 		y = 9
 
 	}
 	focus = {
 		id = JAP_Rise_from_the_ruins
-		icon = GFX_goal_unknown
+		icon = GFX_JAP_Rise_from_the_ruins
 		cost = 10.00
 		prerequisite = {
 			focus = JAP_USA_assistance
@@ -769,8 +1020,238 @@
 		prerequisite = {
 			focus = japanes_Highway_in_japan
 		}
-		x = 43
+		x = 52
 		y = 10
+
+	}
+	focus = {
+		id = JAP_Second_Treaty_Amendment
+		icon = GFX_JAP_Second_Treaty_Amendment
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_First_treaty_amendment
+		}
+		prerequisite = {
+			focus = JAP_Rise_from_the_ruins
+		}
+		x = 48
+		y = 11
+
+	}
+	focus = {
+		id = JAP_Preparation_for_rearm
+		icon = GFX_Preparation_for_rearm
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Second_Treaty_Amendment
+		}
+		x = 48
+		y = 12
+
+	}
+	focus = {
+		id = JAP_Start_of_propaganda
+		icon = GFX_Start_of_propaganda
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Second_Treaty_Amendment
+		}
+		x = 52
+		y = 12
+
+	}
+	focus = {
+		id = JAP_Police_reform
+		icon = GFX_JAP_Police_reform
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Preparation_for_rearm
+		}
+		x = 48
+		y = 13
+
+	}
+	focus = {
+		id = JAP_Weapons_provided_to_the_police
+		icon = GFX_regain_our_authority
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Police_reform
+		}
+		x = 49
+		y = 14
+
+	}
+	focus = {
+		id = JAP_growing_police
+		icon = GFX_regain_our_authority
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Police_reform
+		}
+		x = 47
+		y = 14
+
+	}
+	focus = {
+		id = JAP_Military-born_police
+		icon = GFX_JAP_Military-born_police
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Weapons_provided_to_the_police
+		}
+		x = 49
+		y = 15
+
+	}
+	focus = {
+		id = JAP_training_police
+		icon = GFX_JAP_training_police
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_growing_police
+		}
+		x = 47
+		y = 15
+
+	}
+	focus = {
+		id = JAP_is_this_police
+		icon = GFX_JAP_training_police
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_training_police
+		}
+		prerequisite = {
+			focus = JAP_Military-born_police
+		}
+		x = 48
+		y = 16
+
+	}
+	focus = {
+		id = JAP_Prime_Minister's_Small_Gift
+		icon = GFX_Prime_Minister's_Small_Gift
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Second_Treaty_Amendment
+		}
+		x = 44
+		y = 12
+
+	}
+	focus = {
+		id = JAP_Increased_import_of_US_goods
+		icon = GFX_nazi
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Prime_Minister's_Small_Gift
+		}
+		x = 44
+		y = 13
+
+	}
+	focus = {
+		id = JAP_Police_reserve_training
+		icon = GFX_regain_our_authority
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Prime_Minister's_Small_Gift
+		}
+		x = 46
+		y = 13
+
+	}
+	focus = {
+		id = JAP_Export_to_the_US
+		icon = GFX_regain_our_authority
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Prime_Minister's_Small_Gift
+		}
+		x = 42
+		y = 13
+
+	}
+	focus = {
+		id = JAP_White_list_so_many
+		icon = GFX_regain_our_authority
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Increased_import_of_US_goods
+		}
+		prerequisite = {
+			focus = JAP_Export_to_the_US
+		}
+		x = 43
+		y = 14
+
+	}
+	focus = {
+		id = JAP_Gather_votes_in_favor_of_US
+		icon = GFX_regain_our_authority
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Increased_import_of_US_goods
+		}
+		prerequisite = {
+			focus = JAP_Police_reserve_training
+		}
+		x = 45
+		y = 14
+
+	}
+	focus = {
+		id = JAP_American_request
+		icon = GFX_regain_our_authority
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Gather_votes_in_favor_of_US
+		}
+		prerequisite = {
+			focus = JAP_White_list_so_many
+		}
+		x = 44
+		y = 15
+
+	}
+	focus = {
+		id = jap_shinsa_restore
+		icon = GFX_jap_shinsa_restore
+		cost = 10.00
+		prerequisite = {
+			focus = jap_Preservation_of_ancient_shrine_and_temples
+		}
+		x = 36
+		y = 8
+
+	}
+	focus = {
+		id = jap_culture_identity
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = jap_finish_restore_culture_property
+		}
+		prerequisite = {
+			focus = jap_finish_defended_culture_property
+		}
+		x = 38
+		y = 10
+
+	}
+	focus = {
+		id = jap_finish_restore_culture_property
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = jap_shinsa_restore
+		}
+		prerequisite = {
+			focus = JAP_before_file_restore
+		}
+		x = 36
+		y = 9
 
 	}
 }

@@ -196,4 +196,180 @@ spriteTypes = {
 		name = "GFX_rising_sun_in_japan"
 		texturefile = "gfx/interface/goals/rising_sun_in_japan.dds"
 	}
+	SpriteType = {
+		name = "GFX_care_of_livelihood"
+		texturefile = "gfx/interface/goals/care_of_livelihood.dds"
+	}
+	SpriteType = {
+		name = "GFX_Labor_improvement"
+		texturefile = "gfx/interface/goals/Labor_improvement.dds"
+	}
+	SpriteType = {
+		name = "GFX_Unemployment_policy"
+		texturefile = "gfx/interface/goals/Unemployment_policy.dds"
+	}
+	SpriteType = {
+		name = "GFX_Minimum_wage_increase"
+		texturefile = "gfx/interface/goals/Minimum_wage_increase.dds"
+	}
+	SpriteType = {
+		name = "GFX_Reduced_working_hours"
+		texturefile = "gfx/interface/goals/Reduced_working_hours.dds"
+	}
+	SpriteType = {
+		name = "GFX_united_Appointment"
+		texturefile = "gfx/interface/goals/united_Appointment.dds"
+	}
+	SpriteType = {
+		name = "GFX_Preparation_for_rearm"
+		texturefile = "gfx/interface/goals/Preparation_for_rearm.dds"
+	}
+	SpriteType = {
+		name = "GFX_Find_compromise"
+		texturefile = "gfx/interface/goals/Find_compromise.dds"
+	}
+	SpriteType = {
+		name = "GFX_Accepting_partial_demand"
+		texturefile = "gfx/interface/goals/Accepting_partial_demand.dds"
+	}
+	SpriteType = {
+		name = "GFX_increase_worker_treatment"
+		texturefile = "gfx/interface/goals/increase_worker_treatment.dds"
+	}
+	SpriteType = {
+		name = "GFX_mordern_technology"
+		texturefile = "gfx/interface/goals/mordern_technology.dds"
+	}
+	SpriteType = {
+		name = "GFX_smail_workers"
+		texturefile = "gfx/interface/goals/smail_workers.dds"
+	}
+	SpriteType = {
+		name = "GFX_working_method"
+		texturefile = "gfx/interface/goals/working_method.dds"
+	}
+	SpriteType = {
+		name = "GFX_japanes_Highway_in_japan"
+		texturefile = "gfx/interface/goals/japanes_Highway_in_japan.dds"
+	}
+	SpriteType = {
+		name = "GFX_return_strong"
+		texturefile = "gfx/interface/goals/return_strong.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_Referendum"
+		texturefile = "gfx/interface/goals/JAP_Referendum.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_USA_Re-agreement"
+		texturefile = "gfx/interface/goals/JAP_USA_Re-agreement.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_Treaty_loyalty"
+		texturefile = "gfx/interface/goals/JAP_Treaty_loyalty.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_Strengthening_the_Tokyo_Treaty"
+		texturefile = "gfx/interface/goals/JAP_Strengthening_the_Tokyo_Treaty.dds"
+	}
+	SpriteType = {
+		name = "GFX_American_mission"
+		texturefile = "gfx/interface/goals/American_mission.dds"
+	}
+	SpriteType = {
+		name = "GFX_Sticky_friendship"
+		texturefile = "gfx/interface/goals/Sticky_friendship.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_Rise_from_the_ruins"
+		texturefile = "gfx/interface/goals/JAP_Rise_from_the_ruins.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_What_do_they_think"
+		texturefile = "gfx/interface/goals/JAP_What_do_they_think.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_First_treaty_amendment"
+		texturefile = "gfx/interface/goals/JAP_First_treaty_amendment.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_Second_Treaty_Amendment"
+		texturefile = "gfx/interface/goals/JAP_Second_Treaty_Amendment.dds"
+	}
+	SpriteType = {
+		name = "GFX_Start_of_propaganda"
+		texturefile = "gfx/interface/goals/Start_of_propaganda.dds"
+	}
+	SpriteType = {
+		name = "GFX_Prime_Minister's_Small_Gift"
+		texturefile = "gfx/interface/goals/Prime_Minister's_Small_Gift.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_Police_reform"
+		texturefile = "gfx/interface/goals/JAP_Police_reform.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_growing_police"
+		texturefile = "gfx/interface/goals/JAP_growing_police.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_Weapons_provided_to_the_police"
+		texturefile = "gfx/interface/goals/JAP_Weapons_provided_to_the_police.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_Military-born_police"
+		texturefile = "gfx/interface/goals/JAP_Military-born_police.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_training_police"
+		texturefile = "gfx/interface/goals/JAP_training_police.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_is_this_police"
+		texturefile = "gfx/interface/goals/JAP_is_this_police.dds"
+	}
+	SpriteType = {
+		name = "GFX_jap_culture"
+		texturefile = "gfx/interface/goals/jap_culture.dds"
+	}
+	SpriteType = {
+		name = "GFX_jap_Cultural_property_protection"
+		texturefile = "gfx/interface/goals/jap_Cultural_property_protection.dds"
+	}
+	SpriteType = {
+		name = "GFX_Law_Regarding_the_Preservation_of_Important_Works_of_Fine_Arts"
+		texturefile = "gfx/interface/goals/Law_Regarding_the_Preservation_of_Important_Works_of_Fine_Arts.dds"
+	}
+	SpriteType = {
+		name = "GFX_jap_cultural_heritage_rage_growing"
+		texturefile = "gfx/interface/goals/jap_cultural_heritage_rage_growing.dds"
+	}
+	SpriteType = {
+		name = "GFX_Tangible_Cultural_Property"
+		texturefile = "gfx/interface/goals/Tangible_Cultural_Property.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_before_file_restore"
+		texturefile = "gfx/interface/goals/JAP_before_file_restore.dds"
+	}
+	SpriteType = {
+		name = "GFX_jap_Intangible_Cultural_Property"
+		texturefile = "gfx/interface/goals/jap_Intangible_Cultural_Property.dds"
+	}
+	SpriteType = {
+		name = "GFX_Preservation_of_ancient_shrine_and_temples"
+		texturefile = "gfx/interface/goals/Preservation_of_ancient_shrine_and_temples.dds"
+	}
+	SpriteType = {
+		name = "GFX_jap_shinsa_restore"
+		texturefile = "gfx/interface/goals/jap_shinsa_restore.dds"
+	}
+	SpriteType = {
+		name = "GFX_jap_catlle_defend"
+		texturefile = "gfx/interface/goals/jap_catlle_defend.dds"
+	}
+	SpriteType = {
+		name = "GFX_japan_japanese_mu_sul"
+		texturefile = "gfx/interface/goals/japan_japanese_mu_sul.dds"
+	}
 }
