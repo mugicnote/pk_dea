@@ -733,6 +733,49 @@ create_navy_leader = {
 	coordination_skill = 1
 }
 
+###스파이###
+
+#create_operative_leader = {
+	#name = "염동진"
+	#desc = "SPY_Yeom_Dong_Jin_DESC"
+	#picture = "Portrait_Yeom_Dong_Jin.dds"
+	#traits = { }
+	#bypass_recruitment = no
+	#available_to_spy_master = yes
+	#nationalities = { KOR CHI MAN }
+#}
+
+create_operative_leader = {
+	name = "유자명"
+	desc = ""
+	picture = "Portrait_Ryu_ja_myeong.dds"
+	traits = { }
+	bypass_recruitment = no
+	available_to_spy_master = yes
+	nationalities = { KOR CHI JAP }
+}
+
+create_operative_leader = {
+	name = "윤세주"
+	desc = ""
+	picture = "Portrait_Yoon_Se_joo.dds"
+	traits = { }
+	bypass_recruitment = no
+	available_to_spy_master = yes
+	nationalities = { KOR CHI JAP }
+}
+
+create_operative_leader = {
+	name = "안봉순"
+	desc = ""
+	picture = "Portrait_Ahn_Bong_Soon.dds"
+	traits = { }
+	bypass_recruitment = no
+	available_to_spy_master = yes
+	nationalities = { KOR CHI JAP }
+}
+
+###맨더건###
   if = {
 	limit = { has_dlc = "Man the Guns"}
 		### 항공모함

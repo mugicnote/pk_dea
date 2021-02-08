@@ -2444,7 +2444,7 @@ focus_tree = {
   					traits = { }
   					bypass_recruitment = no
   					available_to_spy_master = yes
-  					nationalities = { KOR CHI MAN }
+  					nationalities = { KOR CHI }
 				}
 			}
 			custom_effect_tooltip = Exchanges_with_Constitutional_Jung_Woo_hoi_tt

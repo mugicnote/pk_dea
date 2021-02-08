@@ -1,4 +1,4 @@
-﻿capital = 219
+﻿capital = 409
 
 oob = "RUS"
 if = {
@@ -90,9 +90,6 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 0
-	fascism = 0
-	communism = 0
 	neutrality = 100
 }
 
@@ -100,11 +97,11 @@ add_ideas = {
 }
 
 create_country_leader = {
-	name = ""
+	name = "알렉산드르 콜차크"
 	desc = ""
 	picture = ".dds"
-	expire = "1953.3.1"
-	ideology = authoritarian
+	expire = "1999.1.1"
+	ideology = military_gov
 	traits = {
 		
 	}

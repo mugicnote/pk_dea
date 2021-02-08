@@ -763,8 +763,8 @@ CKR = {
 }
 
 RUS = {
-	color = rgb { 0 127 14 }
-	color_ui = rgb { 0 127 14 }
+	color = rgb { 0 155 16 }
+	color_ui = rgb { 0 155 16 }
 }
 
 SHA = {
