@@ -2510,6 +2510,14 @@ focus_tree = {
 		prerequisite = {
 			focus = commando_draft
 		}
+		completion_reward = {
+			add_stability = -0.1
+			add_war_support = 0.1
+			add_popularity = {
+			ideology = democratic
+			popularity = 0.15
+			}
+		}
 		x = 18
 		y = 8
 
@@ -2556,6 +2564,10 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = Contact_with_the_UK_USA_FRA
+		}
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.05
 		}
 		x = 23
 		y = 7
@@ -2611,6 +2623,16 @@ focus_tree = {
 		prerequisite = {
 			focus = parliamentary_control
 		}
+		completion_reward = {
+			add_opinion_modifier = {
+			target = KOR
+			modifier = offered_support
+			}
+			add_opinion_modifier = {
+			target = USA
+			modifier = offered_support
+			}
+		}
 		x = 16
 		y = 8
 
@@ -2628,6 +2650,9 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = Choose_your_own_route5
 		}
+		completion_reward = {
+			add_stability = 0.1
+		}
 		x = 22
 		y = 8
 
@@ -2642,6 +2667,9 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = Choose_your_own_route4
 		}
+		completion_reward = {
+			add_stability = -0.1
+		}
 		x = 20
 		y = 8
 
@@ -2653,6 +2681,9 @@ focus_tree = {
 		prerequisite = {
 			focus = commando_draft2
 			focus = Choose_your_own_route3
+		}
+		completion_reward = {
+			add_stability = 0.1
 		}
 		x = 17
 		y = 9
