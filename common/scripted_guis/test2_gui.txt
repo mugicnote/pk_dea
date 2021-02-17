@@ -10,6 +10,7 @@ scripted_gui = {
 			OR = {
 				tag = KOR
 				tag = CHI
+				tag = JAP
 			}
 		}
 		

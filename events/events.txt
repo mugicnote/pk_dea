@@ -4272,3 +4272,20 @@ country_event = { #
 
 	}
 }
+
+country_event = { #
+	id = KOR.91
+	immediate = { log = "[GetDateText]: [Root.GetName]: event KOR.91" }
+	title = KOR.91.t
+	desc = KOR.91.desc
+	picture = GFX
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #...
+		name = KOR.91.a
+		ai_chance = { factor = 1 }
+
+	}
+}

@@ -1,0 +1,707 @@
+defined_text = {
+	name = JAP_Internal_GUI_GetInoOrIkeda
+	text = {
+		trigger = {
+			KOR = { NOT = { has_country_flag = JAP_Ino_deposed } }
+		}
+		localization_key = "GFX_Japan_Internal_GUI_Portrait_Ino_Hiroya"
+	}
+	text = {
+		trigger = {
+			KOR = { has_country_flag = JAP_Ino_deposed }
+		}
+		localization_key = "GFX_Japan_Internal_GUI_Portrait_Ikeda_Masanosuke"
+	}
+}
+
+defined_text = {
+	name = JAP_Internal_GUI_GetConservativePartyLeaderName
+	text = {
+		trigger = {
+			KOR = { NOT = { has_country_flag = JAP_Ino_deposed } }
+		}
+		localization_key = JAP_ConservativeParty_Ino
+	}
+	text = {
+		trigger = {
+			KOR = { has_country_flag = JAP_Ino_deposed }
+		}
+		localization_key = JAP_ConservativeParty_Ikeda
+	}
+}
+
+defined_text = {
+	name = getJAPDominatingFaction
+	text = {
+		trigger = {
+			check_variable = {JAP_Army_Balance > 0}
+		}
+		localization_key = JAP_GUI_IJA_title_sl
+	}
+	text = {
+		trigger = {
+			check_variable = {JAP_Army_Balance < 0}
+		}
+		localization_key = JAP_GUI_IJN_title_sl
+	}
+	text = {
+		trigger = {
+			check_variable = {JAP_Army_Balance = 0}
+		}
+		localization_key = JAP_GUI_balance_title_sl
+	}
+}
+
+defined_text = {
+	name = getJAPPeersSupport
+	text = {
+		trigger = {
+			check_variable = {JAP_Peers_support = 0}
+		}
+		localization_key = JAP_Peers_support_none
+	}
+	text = {
+		trigger = {
+			NOT = {check_variable = {JAP_Peers_support > 0.25}}
+		}
+		localization_key = JAP_Peers_support_weak
+	}
+	text = {
+		trigger = {
+			NOT = {check_variable = {JAP_Peers_support > 0.5}}
+		}
+		localization_key = JAP_Peers_support_average
+	}
+	text = {
+		trigger = {
+			NOT = {check_variable = {JAP_Peers_support > 0.75}}
+		}
+		localization_key = JAP_Peers_support_high
+	}
+	text = {
+		trigger = {
+			check_variable = {JAP_Peers_support > 0.75}
+		}
+		localization_key = JAP_Peers_support_veryhigh
+	}
+}
+
+defined_text = {
+	name = getJAPPublicSupport
+	text = {
+		trigger = {
+			check_variable = {JAP_Public_support = 0}
+		}
+		localization_key = JAP_Public_support_none
+	}
+	text = {
+		trigger = {
+			NOT = {check_variable = {JAP_Public_support > 0.25}}
+		}
+		localization_key = JAP_Public_support_weak
+	}
+	text = {
+		trigger = {
+			NOT = {check_variable = {JAP_Public_support > 0.5}}
+		}
+		localization_key = JAP_Public_support_average
+	}
+	text = {
+		trigger = {
+			NOT = {check_variable = {JAP_Public_support > 0.75}}
+		}
+		localization_key = JAP_Public_support_high
+	}
+	text = {
+		trigger = {
+			check_variable = {JAP_Public_support > 0.75}
+		}
+		localization_key = JAP_Public_support_veryhigh
+	}
+}
+
+defined_text = {
+	name = getJAPGUIFaction
+	text = {
+		trigger = {
+			has_country_flag = JAP_Kido_window_open
+		}
+		localization_key = JAP_D_royalist_faction
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_Takagi_window_open
+		}
+		localization_key = JAP_D_liberals_faction
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_Miki_window_open
+		}
+		localization_key = JAP_D_independents_faction
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_Ino_window_open
+		}
+		localization_key = JAP_D_conservatives_faction
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_Kaya_window_open
+		}
+		localization_key = JAP_D_reformists_faction
+	}
+}
+
+defined_text = {
+	name = getJAPGUIFactionStatus
+	text = {
+		trigger = {
+			has_country_flag = JAP_Kido_window_open
+			NOT = {check_variable = {JAP_Diet_Leadership^1 = 2}}
+		}
+		localization_key = JAP_GUI_faction_status_opposition
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_Kido_window_open
+			check_variable = {JAP_Diet_Leadership^1 = 2}
+		}
+		localization_key = JAP_GUI_faction_status_government
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_Takagi_window_open
+			NOT = {check_variable = {JAP_Diet_Leadership^2 = 2}}
+		}
+		localization_key = JAP_GUI_faction_status_opposition
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_Takagi_window_open
+			check_variable = {JAP_Diet_Leadership^2 = 2}
+		}
+		localization_key = JAP_GUI_faction_status_government
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_Miki_window_open
+			NOT = {check_variable = {JAP_Diet_Leadership^3 = 2}}
+		}
+		localization_key = JAP_GUI_faction_status_opposition
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_Miki_window_open
+			check_variable = {JAP_Diet_Leadership^3 = 2}
+		}
+		localization_key = JAP_GUI_faction_status_government
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_Ino_window_open
+			NOT = {check_variable = {JAP_Diet_Leadership^4 = 2}}
+		}
+		localization_key = JAP_GUI_faction_status_opposition
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_Ino_window_open
+			check_variable = {JAP_Diet_Leadership^4 = 2}
+		}
+		localization_key = JAP_GUI_faction_status_government
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_Kaya_window_open
+			NOT = {check_variable = {JAP_Diet_Leadership^5 = 2}}
+		}
+		localization_key = JAP_GUI_faction_status_opposition
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_Kaya_window_open
+			check_variable = {JAP_Diet_Leadership^5 = 2}
+		}
+		localization_key = JAP_GUI_faction_status_government
+	}
+}
+
+defined_text = {
+	name = getJAPGUIFactionSeats
+	text = {
+		trigger = {
+			has_country_flag = JAP_Kido_window_open
+		}
+		localization_key = JAP_GUI_faction_seats_1
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_Takagi_window_open
+		}
+		localization_key = JAP_GUI_faction_seats_2
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_Miki_window_open
+		}
+		localization_key = JAP_GUI_faction_seats_3
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_Ino_window_open
+		}
+		localization_key = JAP_GUI_faction_seats_4
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_Kaya_window_open
+		}
+		localization_key = JAP_GUI_faction_seats_5
+	}
+}
+
+defined_text = {
+	name = getJAPGUIAction1
+	text = {
+		trigger = {
+			has_country_flag = JAP_Kido_window_open
+			NOT = {check_variable = {JAP_Diet_Leadership^1 = 2}}
+		}
+		localization_key = JAP_opposition_action_1
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_Kido_window_open
+			check_variable = {JAP_Diet_Leadership^1 = 2}
+		}
+		localization_key = JAP_government_action_1
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_Takagi_window_open
+			NOT = {check_variable = {JAP_Diet_Leadership^2 = 2}}
+		}
+		localization_key = JAP_opposition_action_1
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_Takagi_window_open
+			check_variable = {JAP_Diet_Leadership^2 = 2}
+		}
+		localization_key = JAP_government_action_1
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_Miki_window_open
+			NOT = {check_variable = {JAP_Diet_Leadership^3 = 2}}
+		}
+		localization_key = JAP_opposition_action_1
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_Miki_window_open
+			check_variable = {JAP_Diet_Leadership^3 = 2}
+		}
+		localization_key = JAP_government_action_1
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_Ino_window_open
+			NOT = {check_variable = {JAP_Diet_Leadership^4 = 2}}
+		}
+		localization_key = JAP_opposition_action_1
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_Ino_window_open
+			check_variable = {JAP_Diet_Leadership^4 = 2}
+		}
+		localization_key = JAP_government_action_1
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_Kaya_window_open
+			NOT = {check_variable = {JAP_Diet_Leadership^5 = 2}}
+		}
+		localization_key = JAP_opposition_action_1
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_Kaya_window_open
+			check_variable = {JAP_Diet_Leadership^5 = 2}
+		}
+		localization_key = JAP_government_action_1
+	}
+}
+
+defined_text = {
+	name = getJAPGUIAction2
+	text = {
+		trigger = {
+			has_country_flag = JAP_Kido_window_open
+			NOT = {check_variable = {JAP_Diet_Leadership^1 = 2}}
+		}
+		localization_key = JAP_opposition_action_2
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_Kido_window_open
+			check_variable = {JAP_Diet_Leadership^1 = 2}
+		}
+		localization_key = JAP_government_action_2
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_Takagi_window_open
+			NOT = {check_variable = {JAP_Diet_Leadership^2 = 2}}
+		}
+		localization_key = JAP_opposition_action_2
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_Takagi_window_open
+			check_variable = {JAP_Diet_Leadership^2 = 2}
+		}
+		localization_key = JAP_government_action_2
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_Miki_window_open
+			NOT = {check_variable = {JAP_Diet_Leadership^3 = 2}}
+		}
+		localization_key = JAP_opposition_action_2
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_Miki_window_open
+			check_variable = {JAP_Diet_Leadership^3 = 2}
+		}
+		localization_key = JAP_government_action_2
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_Ino_window_open
+			NOT = {check_variable = {JAP_Diet_Leadership^4 = 2}}
+		}
+		localization_key = JAP_opposition_action_2
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_Ino_window_open
+			check_variable = {JAP_Diet_Leadership^4 = 2}
+		}
+		localization_key = JAP_government_action_2
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_Kaya_window_open
+			NOT = {check_variable = {JAP_Diet_Leadership^5 = 2}}
+		}
+		localization_key = JAP_opposition_action_2
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_Kaya_window_open
+			check_variable = {JAP_Diet_Leadership^5 = 2}
+		}
+		localization_key = JAP_government_action_2
+	}
+}
+
+defined_text = {
+	name = getJAPGUIAction3
+	text = {
+		trigger = {
+			has_country_flag = JAP_Kido_window_open
+			NOT = {check_variable = {JAP_Diet_Leadership^1 = 2}}
+		}
+		localization_key = JAP_opposition_action_3
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_Kido_window_open
+			check_variable = {JAP_Diet_Leadership^1 = 2}
+		}
+		localization_key = JAP_government_action_3
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_Takagi_window_open
+			NOT = {check_variable = {JAP_Diet_Leadership^2 = 2}}
+		}
+		localization_key = JAP_opposition_action_3
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_Takagi_window_open
+			check_variable = {JAP_Diet_Leadership^2 = 2}
+		}
+		localization_key = JAP_government_action_3
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_Miki_window_open
+			NOT = {check_variable = {JAP_Diet_Leadership^3 = 2}}
+		}
+		localization_key = JAP_opposition_action_3
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_Miki_window_open
+			check_variable = {JAP_Diet_Leadership^3 = 2}
+		}
+		localization_key = JAP_government_action_3
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_Ino_window_open
+			NOT = {check_variable = {JAP_Diet_Leadership^4 = 2}}
+		}
+		localization_key = JAP_opposition_action_3
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_Ino_window_open
+			check_variable = {JAP_Diet_Leadership^4 = 2}
+		}
+		localization_key = JAP_government_action_3
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_Kaya_window_open
+			NOT = {check_variable = {JAP_Diet_Leadership^5 = 2}}
+		}
+		localization_key = JAP_opposition_action_3
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_Kaya_window_open
+			check_variable = {JAP_Diet_Leadership^5 = 2}
+		}
+		localization_key = JAP_government_action_3
+	}
+}
+
+defined_text = {
+	name = getJAPGuiAction1tt
+	text = {
+		trigger = {
+			has_country_flag = JAP_Kido_window_open
+			NOT = {check_variable = {JAP_Diet_Leadership^1 = 2}}
+		}
+		localization_key = JAP_opposition_action_1_tt
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_Kido_window_open
+			check_variable = {JAP_Diet_Leadership^1 = 2}
+		}
+		localization_key = JAP_government_action_1_tt
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_Takagi_window_open
+			NOT = {check_variable = {JAP_Diet_Leadership^2 = 2}}
+		}
+		localization_key = JAP_opposition_action_1_tt
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_Takagi_window_open
+			check_variable = {JAP_Diet_Leadership^2 = 2}
+		}
+		localization_key = JAP_government_action_1_tt
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_Miki_window_open
+			NOT = {check_variable = {JAP_Diet_Leadership^3 = 2}}
+		}
+		localization_key = JAP_opposition_action_1_tt
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_Miki_window_open
+			check_variable = {JAP_Diet_Leadership^3 = 2}
+		}
+		localization_key = JAP_government_action_1_tt
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_Ino_window_open
+			NOT = {check_variable = {JAP_Diet_Leadership^4 = 2}}
+		}
+		localization_key = JAP_opposition_action_1_tt
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_Ino_window_open
+			check_variable = {JAP_Diet_Leadership^4 = 2}
+		}
+		localization_key = JAP_government_action_1_tt
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_Kaya_window_open
+			NOT = {check_variable = {JAP_Diet_Leadership^5 = 2}}
+		}
+		localization_key = JAP_opposition_action_1_tt
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_Kaya_window_open
+			check_variable = {JAP_Diet_Leadership^5 = 2}
+		}
+		localization_key = JAP_government_action_1_tt
+	}
+}
+
+defined_text = {
+	name = getJAPGuiAction2tt
+	text = {
+		trigger = {
+			has_country_flag = JAP_Kido_window_open
+			NOT = {check_variable = {JAP_Diet_Leadership^1 = 2}}
+		}
+		localization_key = JAP_opposition_action_2_tt
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_Kido_window_open
+			check_variable = {JAP_Diet_Leadership^1 = 2}
+		}
+		localization_key = JAP_government_action_2_tt
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_Takagi_window_open
+			NOT = {check_variable = {JAP_Diet_Leadership^2 = 2}}
+		}
+		localization_key = JAP_opposition_action_2_tt
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_Takagi_window_open
+			check_variable = {JAP_Diet_Leadership^2 = 2}
+		}
+		localization_key = JAP_government_action_2_tt
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_Miki_window_open
+			NOT = {check_variable = {JAP_Diet_Leadership^3 = 2}}
+		}
+		localization_key = JAP_opposition_action_2_tt
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_Miki_window_open
+			check_variable = {JAP_Diet_Leadership^3 = 2}
+		}
+		localization_key = JAP_government_action_2_tt
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_Ino_window_open
+			NOT = {check_variable = {JAP_Diet_Leadership^4 = 2}}
+		}
+		localization_key = JAP_opposition_action_2_tt
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_Ino_window_open
+			check_variable = {JAP_Diet_Leadership^4 = 2}
+		}
+		localization_key = JAP_government_action_2_tt
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_Kaya_window_open
+			NOT = {check_variable = {JAP_Diet_Leadership^5 = 2}}
+		}
+		localization_key = JAP_opposition_action_2_tt
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_Kaya_window_open
+			check_variable = {JAP_Diet_Leadership^5 = 2}
+		}
+		localization_key = JAP_government_action_2_tt
+	}
+}
+
+defined_text = {
+	name = getJAPGuiAction3tt
+	text = {
+		trigger = {
+			has_country_flag = JAP_Kido_window_open
+			NOT = {check_variable = {JAP_Diet_Leadership^1 = 2}}
+		}
+		localization_key = JAP_opposition_action_3_tt
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_Kido_window_open
+			check_variable = {JAP_Diet_Leadership^1 = 2}
+		}
+		localization_key = JAP_government_action_3_tt
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_Takagi_window_open
+			NOT = {check_variable = {JAP_Diet_Leadership^2 = 2}}
+		}
+		localization_key = JAP_opposition_action_3_tt
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_Takagi_window_open
+			check_variable = {JAP_Diet_Leadership^2 = 2}
+		}
+		localization_key = JAP_government_action_3_tt
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_Miki_window_open
+			NOT = {check_variable = {JAP_Diet_Leadership^3 = 2}}
+		}
+		localization_key = JAP_opposition_action_3_tt
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_Miki_window_open
+			check_variable = {JAP_Diet_Leadership^3 = 2}
+		}
+		localization_key = JAP_government_action_3_tt
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_Ino_window_open
+			NOT = {check_variable = {JAP_Diet_Leadership^4 = 2}}
+		}
+		localization_key = JAP_opposition_action_3_tt
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_Ino_window_open
+			check_variable = {JAP_Diet_Leadership^4 = 2}
+		}
+		localization_key = JAP_government_action_3_tt
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_Kaya_window_open
+			NOT = {check_variable = {JAP_Diet_Leadership^5 = 2}}
+		}
+		localization_key = JAP_opposition_action_3_tt
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_Kaya_window_open
+			check_variable = {JAP_Diet_Leadership^5 = 2}
+		}
+		localization_key = JAP_government_action_3_tt
+	}
+}

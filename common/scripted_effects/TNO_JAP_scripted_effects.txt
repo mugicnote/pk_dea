@@ -1,0 +1,1140 @@
+###OPINION MODIFIER EFFECTS###
+# ALL OF THESE ARE OUTDATED THESE ARE KEPT TO BE REFERENCES FOR ERROR
+#increase_ija_opinion_low = {
+#increase_ija_opinion_medium = {
+#increase_ija_opinion_high = {
+#decrease_ija_opinion_low = {
+#decrease_ija_opinion_medium = {
+#decrease_ija_opinion_high = {
+#increase_ijn_opinion_low = {
+#increase_ijn_opinion_medium = {
+#increase_ijn_opinion_high = {
+#decrease_ijn_opinion_low = {
+#decrease_ijn_opinion_medium = {
+#decrease_ijn_opinion_high = {
+	
+##
+increase_tension_low = {
+	add_to_variable = {
+		var = JAP_Tension
+		value = 5
+	}
+	clamp_variable = {
+			var = JAP_Tension
+			max = 100
+			min = 0
+	}
+}
+increase_tension_medium = {
+	add_to_variable = {
+		var = JAP_Tension
+		value = 10
+	}
+	clamp_variable = {
+			var = JAP_Tension
+			max = 100
+			min = 0
+	}
+}
+increase_tension_high = {
+	add_to_variable = {
+		var = JAP_Tension
+		value = 30
+	}
+	clamp_variable = {
+			var = JAP_Tension
+			max = 100
+			min = 0
+	}
+}
+decrease_tension_low = {
+	subtract_from_variable = {
+		var = JAP_Tension
+		value = 5
+	}
+	clamp_variable = {
+			var = JAP_Tension
+			max = 100
+			min = 0
+	}
+}
+decrease_tension_medium = {
+	subtract_from_variable = {
+		var = JAP_Tension
+		value = 10
+	}
+	clamp_variable = {
+			var = JAP_Tension
+			max = 100
+			min = 0
+	}
+}
+decrease_tension_high = {
+	subtract_from_variable = {
+		var = JAP_Tension
+		value = 30
+	}
+	clamp_variable = {
+			var = JAP_Tension
+			max = 100
+			min = 0
+	}
+}
+
+###STRENGTH MODIFIER EFFECTS###
+increase_ija_strength_low = {
+	add_to_variable = {
+		var = IJA_Power
+		value = 5
+	}
+	clamp_variable = {
+			var = IJA_Power
+			max = 100
+			min = 0
+	}
+}
+increase_ija_strength_medium = {
+	add_to_variable = {
+		var = IJA_Power
+		value = 10
+	}
+	clamp_variable = {
+			var = IJA_Power
+			max = 100
+			min = 0
+	}
+}
+increase_ija_strength_high = {
+	add_to_variable = {
+		var = IJA_Power
+		value = 30
+	}
+	clamp_variable = {
+			var = IJA_Power
+			max = 100
+			min = 0
+	}
+}
+decrease_ija_strength_low = {
+	subtract_from_variable = {
+		var = IJA_Power
+		value = 5
+	}
+	clamp_variable = {
+			var = IJA_Power
+			max = 100
+			min = 0
+	}
+}
+decrease_ija_strength_medium = {
+	subtract_from_variable = {
+		var = IJA_Power
+		value = 10
+	}
+	clamp_variable = {
+			var = IJA_Power
+			max = 100
+			min = 0
+	}
+}
+decrease_ija_strength_high = {
+	subtract_from_variable = {
+		var = IJA_Power
+		value = 30
+	}
+	clamp_variable = {
+			var = IJA_Power
+			max = 100
+			min = 0
+	}
+}
+increase_ijn_strength_low = {
+	add_to_variable = {
+		var = IJN_Power
+		value = 5
+	}
+	clamp_variable = {
+			var = IJN_Power
+			max = 100
+			min = 0
+	}
+}
+increase_ijn_strength_medium = {
+	add_to_variable = {
+		var = IJN_Power
+		value = 10
+	}
+	clamp_variable = {
+			var = IJN_Power
+			max = 100
+			min = 0
+	}
+}
+increase_ijn_strength_high = {
+	add_to_variable = {
+		var = IJN_Power
+		value = 30
+	}
+	clamp_variable = {
+			var = IJN_Power
+			max = 100
+			min = 0
+	}
+}
+decrease_ijn_strength_low = {
+	subtract_from_variable = {
+		var = IJN_Power
+		value = 5
+	}
+	clamp_variable = {
+			var = IJN_Power
+			max = 100
+			min = 0
+	}
+}
+decrease_ijn_strength_medium = {
+	subtract_from_variable = {
+		var = IJN_Power
+		value = 10
+	}
+	clamp_variable = {
+			var = IJN_Power
+			max = 100
+			min = 0
+	}
+}
+decrease_ijn_strength_high = {
+	subtract_from_variable = {
+		var = IJN_Power
+		value = 30
+	}
+	clamp_variable = {
+			var = IJN_Power
+			max = 100
+			min = 0
+	}
+}
+
+###POLITICAL modifier EFFECTS###
+increase_public_approval_low = {
+	hidden_effect = {
+		every_owned_state = {
+			limit = {
+				JAP_can_have_elections_in_state = yes
+			}
+			add_to_variable = { PUBLIC_APPROVAL = 5 }
+			clamp_variable = {
+				var = PUBLIC_APPROVAL
+				max = 100
+				min = 0
+			}
+		}
+	}
+}
+increase_public_approval_medium = {
+	hidden_effect = {
+		every_owned_state = {
+			limit = {
+				JAP_can_have_elections_in_state = yes
+			}
+			add_to_variable = { PUBLIC_APPROVAL = 10 }
+			clamp_variable = {
+				var = PUBLIC_APPROVAL
+				max = 100
+				min = 0
+			}
+		}
+	}
+}
+increase_public_approval_high = {
+	hidden_effect = {
+		every_owned_state = {
+			limit = {
+				JAP_can_have_elections_in_state = yes
+			}
+			add_to_variable = { PUBLIC_APPROVAL = 30 }
+			clamp_variable = {
+				var = PUBLIC_APPROVAL
+				max = 100
+				min = 0
+			}
+		}
+	}
+}
+decrease_public_approval_low = {
+	hidden_effect = {
+		every_owned_state = {
+			limit = {
+				JAP_can_have_elections_in_state = yes
+			}
+			add_to_variable = { PUBLIC_APPROVAL = -5 }
+			clamp_variable = {
+				var = PUBLIC_APPROVAL
+				max = 100
+				min = 0
+			}
+		}
+	}
+}
+decrease_public_approval_medium = {
+	hidden_effect = {
+		every_owned_state = {
+			limit = {
+				JAP_can_have_elections_in_state = yes
+			}
+			add_to_variable = { PUBLIC_APPROVAL = -10 }
+			clamp_variable = {
+				var = PUBLIC_APPROVAL
+				max = 100
+				min = 0
+			}
+		}
+	}
+}
+decrease_public_approval_high = {
+	hidden_effect = {
+		every_owned_state = {
+			limit = {
+				JAP_can_have_elections_in_state = yes
+			}
+			add_to_variable = { PUBLIC_APPROVAL = -30 }
+			clamp_variable = {
+				var = PUBLIC_APPROVAL
+				max = 100
+				min = 0
+			}
+		}
+	}
+}
+increase_party_unity_low = {
+	add_to_variable = {
+		var = JAP_Party_Unity
+		value = 5
+	}
+	clamp_variable = {
+			var = JAP_Party_Unity
+			max = 100
+			min = 0
+	}
+}
+increase_party_unity_medium = {
+	add_to_variable = {
+		var = JAP_Party_Unity
+		value = 10
+	}
+	clamp_variable = {
+			var = JAP_Party_Unity
+			max = 100
+			min = 0
+	}
+}
+increase_party_unity_high = {
+	add_to_variable = {
+		var = JAP_Party_Unity
+		value = 30
+	}
+	clamp_variable = {
+			var = JAP_Party_Unity
+			max = 100
+			min = 0
+	}
+}
+decrease_party_unity_low = {
+	subtract_from_variable = {
+		var = JAP_Party_Unity
+		value = 5
+	}
+	clamp_variable = {
+			var = JAP_Party_Unity
+			max = 100
+			min = 0
+	}
+}
+decrease_party_unity_medium = {
+	subtract_from_variable = {
+		var = JAP_Party_Unity
+		value = 10
+	}
+	clamp_variable = {
+			var = JAP_Party_Unity
+			max = 100
+			min = 0
+	}
+}
+decrease_party_unity_high = {
+	subtract_from_variable = {
+		var = JAP_Party_Unity
+		value = 30
+	}
+	clamp_variable = {
+			var = JAP_Party_Unity
+			max = 100
+			min = 0
+	}
+}
+
+#Called in ~/common/scripted_effects/TNO_pulse_effects.txt, <first_every_month_script>
+JAP_monthly_pulse = {
+
+	#Diet monthly pulse
+
+	JAP_diet_monthly_pulse = yes
+
+	#Monthly tick for the Showa Emperor NatSpirit, reduces Tension by 1 each month
+	if = { 
+		limit = { 
+			has_idea = JAP_showa_emperor
+			check_variable = { JAP_tension > 0 }
+				}
+		subtract_from_variable = { JAP_Tension = 1 }
+	}
+
+	#idk what this is use comments you fucking liberals
+	if = {
+		limit = {
+			has_country_flag = japan_kaya_hardliners_making_demands_of_us_flag
+		}
+		subtract_from_variable = { kaya_hardliners_contentment = 5 }
+		clamp_variable = {
+			var = kaya_hardliners_contentment
+			min = 0
+			max = 100
+		}
+		if = {
+			limit = {
+				check_variable = {
+					var = kaya_hardliners_contentment
+					value = 100
+					compare = equals
+				}
+			}
+			country_event = {
+				id = japkaya.150
+				days = 1
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					var = kaya_hardliners_contentment
+					value = 0
+					compare = equals
+				}
+			}
+			country_event = {
+				id = japkaya.151
+				days = 1
+			}
+		}
+	}
+
+}
+
+JAP_clear_PM_flags = {
+	clr_country_flag = JAP_Ino_Prime_Minister
+	clr_country_flag = JAP_Ikeda_Prime_Minister
+	clr_country_flag = JAP_Kaya_Prime_Minister
+	clr_country_flag = JAP_Takagi_Prime_Minister
+	clr_country_flag = JAP_Kido_Prime_Minister
+	clr_country_flag = JAP_Miki_Prime_Minister
+	clr_country_flag = JAP_Sasakawa_Prime_Minister
+	clr_country_flag = JAP_Takeda_Prime_Minister
+}
+
+JAP_kaya_start_mechanic = {
+	#Set up some useful arrays
+
+	#The following array represents the total amount of influence a clique has (based on how many seats they have) (UPDATED TO BE BASED ON PIE POPULARITY)
+	add_to_array = { 
+		array = JAP_kaya_clique_influence_array
+		value = 0
+		index = 1 #Kido
+	}
+	add_to_array = { 
+		array = JAP_kaya_clique_influence_array
+		value = 0
+		index = 2 #Takagi
+	}
+	add_to_array = { 
+		array = JAP_kaya_clique_influence_array
+		value = 0
+		index = 4 #Conservatives
+	}
+	add_to_array = { 
+		array = JAP_kaya_clique_influence_array
+		value = 0
+		index = 5 #Kaya
+	}
+
+	#The following array represents the total amount of influence a clique is giving you
+	add_to_array = { 
+		array = JAP_kaya_clique_loaned_influence_absolute_array
+		value = 0
+		index = 1 #Kido
+	}
+	add_to_array = { 
+		array = JAP_kaya_clique_loaned_influence_absolute_array
+		value = 0
+		index = 2 #Takagi
+	}
+	add_to_array = { 
+		array = JAP_kaya_clique_loaned_influence_absolute_array
+		value = 0
+		index = 4 #Conservatives
+	}
+	add_to_array = { 
+		array = JAP_kaya_clique_loaned_influence_absolute_array
+		value = 0
+		index = 5 #Kaya
+	}
+
+	#This array represents how much influence that clique is lending us
+	add_to_array = { 
+		array = JAP_kaya_clique_loaned_influence_percent_array
+		value = 0
+		index = 1 #Kido
+	}
+	add_to_array = { 
+		array = JAP_kaya_clique_loaned_influence_percent_array
+		value = 0
+		index = 2 #Takagi
+	}
+	add_to_array = { 
+		array = JAP_kaya_clique_loaned_influence_percent_array
+		value = 0
+		index = 4 #Conservatives
+	}
+	add_to_array = { 
+		array = JAP_kaya_clique_loaned_influence_percent_array
+		value = 0
+		index = 5 #Kaya
+	}
+	set_variable = { JAP_kaya_clique_loaned_influence_percent_array^1 = 0.4 } #For some reason game refuses to recognize if i have non zero as the value above so this is a workaround for now
+	set_variable = { JAP_kaya_clique_loaned_influence_percent_array^2 = 0.3 }
+	set_variable = { JAP_kaya_clique_loaned_influence_percent_array^4 = 0.6 }
+	set_variable = { JAP_kaya_clique_loaned_influence_percent_array^5 = 1 } 
+
+	set_variable = { JAP_kaya_influence_total = 0 } #Varaible for summing up Kaya influence
+	set_variable = { JAP_kaya_influence_ysk = 0 } #How much influence Kaya has over the YSK
+	set_variable = { JAP_kaya_total_ysk_influence = 0 } #Total YSK influence
+	set_variable = { JAP_kaya_kishi_rb_influence = 0 } #Determines how much of RB popularity on the wheel goes to Kishi.
+	JAP_kaya_calculate_clique_influences = yes #Figure out clique influences
+
+	activate_mission = JAP_kaya_hardliner_demands
+}
+
+JAP_kaya_calculate_influence = {
+	set_variable = { JAP_kaya_influence_total = JAP_kaya_total_ysk_influence }
+	clamp_variable = {
+		var = JAP_kaya_influence_ysk
+		min = 0
+		max = 1
+	}
+	multiply_variable = { JAP_kaya_influence_total = JAP_kaya_influence_ysk }
+}
+
+#Effect for recalculating how much influence each clique in the YSK gives Kaya, should be used whenever diet seats change
+JAP_kaya_calculate_clique_influences = {
+	set_variable = { JAP_kaya_clique_influence_array^1 = JAP.party_popularity@despotism } #Kido
+	set_variable = { JAP_kaya_clique_influence_array^2 = JAP.party_popularity@authoritarian_democrat } #Takagi
+	set_variable = { JAP_kaya_clique_influence_array^4 = JAP.party_popularity@fascism } #Conservatives
+	set_variable = { JAP_kaya_clique_influence_array^5 = JAP.party_popularity@national_socialism } #Kaya
+	
+	#Sum up these
+	set_temp_variable = { JAP_kaya_total_ysk_influence_calculator = 0 }
+	add_to_temp_variable = { JAP_kaya_total_ysk_influence_calculator = JAP_kaya_clique_influence_array^1 }
+	add_to_temp_variable = { JAP_kaya_total_ysk_influence_calculator = JAP_kaya_clique_influence_array^2 }
+	add_to_temp_variable = { JAP_kaya_total_ysk_influence_calculator = JAP_kaya_clique_influence_array^4 }
+	add_to_temp_variable = { JAP_kaya_total_ysk_influence_calculator = JAP_kaya_clique_influence_array^5 }
+	set_variable = { JAP_kaya_total_ysk_influence = JAP_kaya_total_ysk_influence_calculator }
+
+	#Now we figure out your new influence amount based omn how much each clique supports you
+
+	set_temp_variable = { JAP_kaya_coalition_influence = 0 }
+
+	#Use support fractions to recalc influence levels
+	set_temp_variable = { JAP_kaya_kido_gain = JAP_kaya_clique_influence_array^1 }
+	multiply_temp_variable = { JAP_kaya_kido_gain = JAP_kaya_clique_loaned_influence_percent_array^1 }
+	add_to_temp_variable = { JAP_kaya_coalition_influence = JAP_kaya_kido_gain }
+	set_variable = { JAP_kaya_clique_loaned_influence_absolute_array^1 = JAP_kaya_kido_gain }
+
+	set_temp_variable = { JAP_kaya_takagi_gain = JAP_kaya_clique_influence_array^2 }
+	multiply_temp_variable = { JAP_kaya_takagi_gain = JAP_kaya_clique_loaned_influence_percent_array^2 }
+	add_to_temp_variable = { JAP_kaya_coalition_influence = JAP_kaya_takagi_gain }
+	set_variable = { JAP_kaya_clique_loaned_influence_absolute_array^2 = JAP_kaya_takagi_gain }
+
+	set_temp_variable = { JAP_kaya_conservative_gain = JAP_kaya_clique_influence_array^4 }
+	multiply_temp_variable = { JAP_kaya_conservative_gain = JAP_kaya_clique_loaned_influence_percent_array^4 }
+	add_to_temp_variable = { JAP_kaya_coalition_influence = JAP_kaya_conservative_gain }
+	set_variable = { JAP_kaya_clique_loaned_influence_absolute_array^4 = JAP_kaya_coalition_influence }
+
+	set_temp_variable = { JAP_kaya_rb_gain = JAP_kaya_clique_influence_array^5 }
+	multiply_temp_variable = { JAP_kaya_rb_gain = JAP_kaya_clique_loaned_influence_percent_array^5 }
+	add_to_temp_variable = { JAP_kaya_coalition_influence = JAP_kaya_rb_gain }
+	set_variable = { JAP_kaya_clique_loaned_influence_absolute_array^5 = JAP_kaya_rb_gain }
+
+	set_variable = { JAP_kaya_influence_ysk = JAP_kaya_coalition_influence }
+
+	#Figure out how much support now derives from rbs
+	divide_temp_variable = { JAP_kaya_rb_gain = JAP_kaya_influence_ysk }
+	set_variable = { JAP_kaya_own_influence = JAP_kaya_rb_gain }
+	JAP_kaya_calculate_influence = yes
+}
+
+#For adding influence from a clique
+#The variables JAP_kaya_influence_divisor and JAP_kaya_targetted_clique need to be set before the effect is invoked.
+JAP_kaya_alter_clique_influence = {
+	#First we figure out how much influence is sought
+	set_temp_variable = { JAP_clique_seat_gain = JAP_kaya_clique_influence_array^JAP_kaya_targetted_clique }
+	divide_temp_variable = { JAP_clique_seat_gain = JAP_kaya_influence_divisor } #You don't get all the support from the clique at once
+	#Now its time to ensure you can't gain more influence from a clique than they actually have
+	subtract_from_variable = { JAP_kaya_influence_ysk = JAP_kaya_clique_loaned_influence_absolute_array^JAP_kaya_targetted_clique } #Remove the old influence amount
+	add_to_variable = { JAP_kaya_clique_loaned_influence_absolute_array^JAP_kaya_targetted_clique = JAP_clique_seat_gain } #Combine the old influence they were giving us with the new influence we will get
+	clamp_variable = { #Clamp that amount
+		var = JAP_kaya_clique_loaned_influence_absolute_array^JAP_kaya_targetted_clique
+		min = 0
+		max = JAP_kaya_clique_influence_array^JAP_kaya_targetted_clique
+	}
+	add_to_variable = { JAP_kaya_influence_ysk = JAP_kaya_clique_loaned_influence_absolute_array^JAP_kaya_targetted_clique } #Add the new influence amount
+	#Calculate how much support Kaya now has from the clique
+	set_temp_variable = { JAP_kaya_influence_fraction_checker = JAP_kaya_clique_loaned_influence_absolute_array^JAP_kaya_targetted_clique } #Temp variable for calcing how much of a clique will support Kaya
+	divide_temp_variable = { JAP_kaya_influence_fraction_checker = JAP_kaya_clique_influence_array^JAP_kaya_targetted_clique } #Gets us the % of the clique that supports us
+	set_variable = { JAP_kaya_clique_loaned_influence_percent_array^JAP_kaya_targetted_clique = JAP_kaya_influence_fraction_checker }
+	clamp_variable = { 
+		var = JAP_kaya_clique_loaned_influence_percent_array^JAP_kaya_targetted_clique
+		min = 0
+		max = 1
+	}
+	#Now we figure out your new coalition composition
+	set_temp_variable = { JAP_kaya_rb_influence = JAP_kaya_clique_loaned_influence_absolute_array^5 }
+	divide_temp_variable = { JAP_kaya_rb_influence = JAP_kaya_influence_ysk }
+	set_variable = { JAP_kaya_own_influence = JAP_kaya_rb_influence }
+	clamp_variable = {
+		var = JAP_kaya_own_influence
+		min = 0
+		max = 1
+	}
+	clear_variable = JAP_kaya_targetted_clique
+	clear_variable = JAP_kaya_influence_divisor
+	JAP_kaya_calculate_influence = yes
+}
+
+JAP_kaya_subtract_influence = {
+	#Use as much clique influence as possible
+	set_temp_variable = { JAP_kaya_influence_spending_left = JAP_kaya_influence_reduction }
+	#First we check if we can do all spending from just one clique
+	if = { #Kido
+		limit = { check_variable = { JAP_kaya_clique_loaned_influence_absolute_array^1 > JAP_kaya_influence_reduction } }
+		subtract_from_variable = { JAP_kaya_clique_loaned_influence_absolute_array^1 = JAP_kaya_influence_reduction }
+		subtract_from_variable = { JAP_kaya_influence_ysk = JAP_kaya_clique_loaned_influence_absolute_array^1 }
+	}
+	else_if = { #Takagi
+	limit = { check_variable = { JAP_kaya_clique_loaned_influence_absolute_array^2 > JAP_kaya_influence_reduction } }
+		subtract_from_variable = { JAP_kaya_clique_loaned_influence_absolute_array^2 = JAP_kaya_influence_reduction }
+		subtract_from_variable = { JAP_kaya_influence_ysk = JAP_kaya_clique_loaned_influence_absolute_array^2 }
+	}
+	else_if = { #Conservative
+	limit = { check_variable = { JAP_kaya_clique_loaned_influence_absolute_array^4 > JAP_kaya_influence_reduction } }
+		subtract_from_variable = { JAP_kaya_clique_loaned_influence_absolute_array^4 = JAP_kaya_influence_reduction }
+		subtract_from_variable = { JAP_kaya_influence_ysk = JAP_kaya_clique_loaned_influence_absolute_array^4 }
+	}
+	#We spend portions of influence from each clique untill we havbe used everything
+	else = {
+		subtract_from_temp_variable = { JAP_kaya_influence_spending_left = JAP_kaya_clique_loaned_influence_absolute_array^1 }
+		subtract_from_variable = { JAP_kaya_influence_ysk = JAP_kaya_clique_loaned_influence_absolute_array^1 }
+		set_variable = { JAP_kaya_clique_loaned_influence_absolute_array^1 = 0 }
+		#Check if next clique has enough influence for us to spend the rest of the cost
+		if = { # It is, thank god
+			limit = { check_variable = { JAP_kaya_clique_loaned_influence_absolute_array^2 > JAP_kaya_influence_reduction } }
+			subtract_from_variable = { JAP_kaya_clique_loaned_influence_absolute_array^2 = JAP_kaya_influence_reduction }
+			subtract_from_variable = { JAP_kaya_influence_ysk = JAP_kaya_clique_loaned_influence_absolute_array^2 }
+		}
+		else = { #Nope, prepare for future complications
+			subtract_from_temp_variable = { JAP_kaya_influence_spending_left = JAP_kaya_clique_loaned_influence_absolute_array^2 }
+			subtract_from_variable = { JAP_kaya_influence_ysk = JAP_kaya_clique_loaned_influence_absolute_array^2 }
+			set_variable = { JAP_kaya_clique_loaned_influence_absolute_array^2 = 0 }
+			#Repeat the same thing for the last clique
+			if = { #Last clique is enough
+				limit = { check_variable = { JAP_kaya_clique_loaned_influence_absolute_array^4 > JAP_kaya_influence_reduction } }
+				subtract_from_variable = { JAP_kaya_clique_loaned_influence_absolute_array^4 = JAP_kaya_influence_reduction }
+				subtract_from_variable = { JAP_kaya_influence_ysk = JAP_kaya_clique_loaned_influence_absolute_array^4 }
+			}
+			else = { #It isn't, we need to spend our own influence next
+				subtract_from_temp_variable = { JAP_kaya_influence_spending_left = JAP_kaya_clique_loaned_influence_absolute_array^4 }
+				subtract_from_variable = { JAP_kaya_influence_ysk = JAP_kaya_clique_loaned_influence_absolute_array^4 }
+				set_variable = { JAP_kaya_clique_loaned_influence_absolute_array^4 = 0 }
+				subtract_from_variable = { JAP_kaya_influence_ysk = JAP_kaya_influence_spending_left }
+				subtract_from_variable = { JAP_kaya_clique_loaned_influence_absolute_array^5 = JAP_kaya_influence_spending_left }
+			}
+		}
+	}
+	
+	#Update percentage support you have from each clique
+	set_temp_variable = { JAP_kaya_influence_fraction_checker = JAP_kaya_clique_loaned_influence_absolute_array^1 }
+	divide_temp_variable = { JAP_kaya_influence_fraction_checker = JAP_kaya_clique_influence_array^1 } #Gets us the % of the clique that supports us
+	set_variable = { JAP_kaya_clique_loaned_influence_percent_array^1 = JAP_kaya_influence_fraction_checker }
+
+	set_temp_variable = { JAP_kaya_influence_fraction_checker = JAP_kaya_clique_loaned_influence_absolute_array^2 }
+	divide_temp_variable = { JAP_kaya_influence_fraction_checker = JAP_kaya_clique_influence_array^2 } #Gets us the % of the clique that supports us
+	set_variable = { JAP_kaya_clique_loaned_influence_percent_array^2 = JAP_kaya_influence_fraction_checker }
+
+	set_temp_variable = { JAP_kaya_influence_fraction_checker = JAP_kaya_clique_loaned_influence_absolute_array^4 }
+	divide_temp_variable = { JAP_kaya_influence_fraction_checker = JAP_kaya_clique_influence_array^4 } #Gets us the % of the clique that supports us
+	set_variable = { JAP_kaya_clique_loaned_influence_percent_array^4 = JAP_kaya_influence_fraction_checker }
+
+	set_temp_variable = { JAP_kaya_influence_fraction_checker = JAP_kaya_clique_loaned_influence_absolute_array^5 }
+	divide_temp_variable = { JAP_kaya_influence_fraction_checker = JAP_kaya_clique_influence_array^5 } #Gets us the % of the clique that supports us
+	set_variable = { JAP_kaya_clique_loaned_influence_percent_array^5 = JAP_kaya_influence_fraction_checker }
+
+	#Now we figure out your new coalition composition
+	set_temp_variable = { JAP_kaya_rb_influence = JAP_kaya_clique_loaned_influence_absolute_array^5 }
+	divide_temp_variable = { JAP_kaya_rb_influence = JAP_kaya_influence_ysk }
+	set_variable = { JAP_kaya_own_influence = JAP_kaya_rb_influence }
+	clamp_variable = {
+		var = JAP_kaya_own_influence
+		min = 0
+		max = 1
+	}
+
+	JAP_kaya_calculate_influence = yes
+}
+
+JAP_kaya_increase_kishi_influence_low = {
+	custom_effect_tooltip = JAP_kaya_kishi_increase_low
+	add_to_variable = { JAP_kaya_kishi_rb_influence = 0.05 }
+	clamp_variable = {
+		var = JAP_kaya_kishi_rb_influence
+		min = 0
+		max = 1
+	}
+	JAP_kaya_calculate_influence = yes
+	JAP_diet_pop_wheel_translator = yes
+}
+
+JAP_kaya_increase_kishi_influence_medium = {
+	custom_effect_tooltip = JAP_kaya_kishi_increase_medium
+	add_to_variable = { JAP_kaya_kishi_rb_influence = 0.1 }
+	clamp_variable = {
+		var = JAP_kaya_kishi_rb_influence
+		min = 0
+		max = 1
+	}
+	JAP_kaya_calculate_influence = yes
+	JAP_diet_pop_wheel_translator = yes
+}
+
+JAP_kaya_increase_kishi_influence_large = {
+	custom_effect_tooltip = JAP_kaya_kishi_increase_high
+	add_to_variable = { JAP_kaya_kishi_rb_influence = 0.15 }
+	clamp_variable = {
+		var = JAP_kaya_kishi_rb_influence
+		min = 0
+		max = 1
+	}
+	JAP_kaya_calculate_influence = yes
+	JAP_diet_pop_wheel_translator = yes
+}
+
+JAP_kaya_decrease_kishi_influence_low = {
+	custom_effect_tooltip = JAP_kaya_kishi_decrease_low
+	subtract_from_variable = { JAP_kaya_kishi_rb_influence = 0.05 }
+	clamp_variable = {
+		var = JAP_kaya_kishi_rb_influence
+		min = 0
+		max = 1
+	}
+	JAP_kaya_calculate_influence = yes
+	JAP_diet_pop_wheel_translator = yes
+}
+
+JAP_kaya_decrease_kishi_influence_medium = {
+	custom_effect_tooltip = JAP_kaya_kishi_decrease_medium
+	subtract_from_variable = { JAP_kaya_kishi_rb_influence = 0.1 }
+	clamp_variable = {
+		var = JAP_kaya_kishi_rb_influence
+		min = 0
+		max = 1
+	}
+	JAP_kaya_calculate_influence = yes
+	JAP_diet_pop_wheel_translator = yes
+}
+
+JAP_kaya_decrease_kishi_influence_large = {
+	custom_effect_tooltip = JAP_kaya_kishi_decrease_high
+	subtract_from_variable = { JAP_kaya_kishi_rb_influence = 0.15 }
+	clamp_variable = {
+		var = JAP_kaya_kishi_rb_influence
+		min = 0
+		max = 1
+	}
+	JAP_kaya_calculate_influence = yes
+	JAP_diet_pop_wheel_translator = yes
+}
+
+###IKEDA MECHANIC: BROAD SIMILARITY WITH THE KAYA MECHANIC ABOVE###
+JAP_ikeda_start_mechanic = {
+	#Set up some useful arrays
+
+	#The following array represents the total amount of influence a clique has (based on how many seats they have) (UPDATED TO BE BASED ON PIE POPULARITY)
+	add_to_array = { 
+		array = JAP_ikeda_clique_influence_array
+		value = 0
+		index = 1 #Kido
+	}
+	add_to_array = { 
+		array = JAP_ikeda_clique_influence_array
+		value = 0
+		index = 2 #Takagi
+	}
+	add_to_array = { 
+		array = JAP_ikeda_clique_influence_array
+		value = 0
+		index = 4 #Conservatives
+	}
+	add_to_array = { 
+		array = JAP_ikeda_clique_influence_array
+		value = 0
+		index = 5 #Kaya
+	}
+
+	#The following array represents the total amount of influence a clique is giving you
+	add_to_array = { 
+		array = JAP_ikeda_clique_loaned_influence_absolute_array
+		value = 0
+		index = 1 #Kido
+	}
+	add_to_array = { 
+		array = JAP_ikeda_clique_loaned_influence_absolute_array
+		value = 0
+		index = 2 #Takagi
+	}
+	add_to_array = { 
+		array = JAP_ikeda_clique_loaned_influence_absolute_array
+		value = 0
+		index = 4 #Conservatives
+	}
+	add_to_array = { 
+		array = JAP_ikeda_clique_loaned_influence_absolute_array
+		value = 0
+		index = 5 #Kaya
+	}
+
+	#This array represents how much influence that clique is lending us
+    add_to_array = { 
+        array = JAP_ikeda_clique_loaned_influence_percent_array
+        value = 0.05
+        index = 1 #Kido
+    }
+    add_to_array = { 
+        array = JAP_ikeda_clique_loaned_influence_percent_array
+        value = 0.1
+        index = 2 #Takagi
+    }
+    add_to_array = { 
+        array = JAP_ikeda_clique_loaned_influence_percent_array
+        value = 1
+        index = 4 #Conservatives
+    }
+    add_to_array = { 
+        array = JAP_ikeda_clique_loaned_influence_percent_array
+        value = 0
+        index = 5 #Kaya
+    }
+    set_variable = { JAP_ikeda_clique_loaned_influence_percent_array^1 = 0.7 }
+    set_variable = { JAP_ikeda_clique_loaned_influence_percent_array^2 = 0.3 }
+    set_variable = { JAP_ikeda_clique_loaned_influence_percent_array^4 = 1 }
+    set_variable = { JAP_ikeda_clique_loaned_influence_percent_array^5 = 0.4 } 
+
+	JAP_ikeda_calculate_clique_influences = yes #Figure out clique influences
+}
+
+JAP_ikeda_calculate_influence = {
+	set_variable = { JAP_ikeda_influence_total = JAP_ikeda_total_ysk_influence }
+	clamp_variable = {
+		var = JAP_ikeda_influence_ysk
+		min = 0
+		max = 1
+	}
+	multiply_variable = { JAP_ikeda_influence_total = JAP_ikeda_influence_ysk }
+}
+
+#Effect for recalculating how much influence each clique in the YSK gives Ikeda, should be used whenever diet seats change
+JAP_ikeda_calculate_clique_influences = {
+	set_variable = { JAP_ikeda_clique_influence_array^1 = JAP.party_popularity@despotism } #Kido
+	set_variable = { JAP_ikeda_clique_influence_array^2 = JAP.party_popularity@authoritarian_democrat } #Takagi
+	set_variable = { JAP_ikeda_clique_influence_array^4 = JAP.party_popularity@fascism } #Conservatives
+	set_variable = { JAP_ikeda_clique_influence_array^5 = JAP.party_popularity@national_socialism } #Kaya
+
+	
+	#Sum up these
+    set_temp_variable = { JAP_ikeda_total_ysk_influence_calculator = 0 }
+    add_to_temp_variable = { JAP_ikeda_total_ysk_influence_calculator = JAP_ikeda_clique_influence_array^1 }
+    add_to_temp_variable = { JAP_ikeda_total_ysk_influence_calculator = JAP_ikeda_clique_influence_array^2 }
+    add_to_temp_variable = { JAP_ikeda_total_ysk_influence_calculator = JAP_ikeda_clique_influence_array^4 }
+    add_to_temp_variable = { JAP_ikeda_total_ysk_influence_calculator = JAP_ikeda_clique_influence_array^5 }
+
+	for_each_loop = {
+		array = JAP_ikeda_clique_influence_array
+		add_to_temp_variable = { JAP_ikeda_total_ysk_influence_calculator = v }
+	}
+	set_variable = { JAP_ikeda_total_ysk_influence = JAP_ikeda_total_ysk_influence_calculator }
+
+	#Now we figure out your new influence amount based omn how much each clique supports you
+	set_temp_variable = { JAP_ikeda_coalition_influence = 0 }
+
+	#Use support fractions to recalc influence levels
+	set_temp_variable = { JAP_ikeda_kido_gain = JAP_ikeda_clique_influence_array^1 }
+	multiply_temp_variable = { JAP_ikeda_kido_gain = JAP_ikeda_clique_loaned_influence_percent_array^1 }
+	add_to_temp_variable = { JAP_ikeda_coalition_influence = JAP_ikeda_kido_gain }
+	set_variable = { JAP_ikeda_clique_loaned_influence_absolute_array^1 = JAP_ikeda_kido_gain }
+	clamp_variable = {
+		var = JAP_ikeda_clique_loaned_influence_absolute_array^1
+		min = 0
+		max = 1
+	}
+
+	set_temp_variable = { JAP_ikeda_takagi_gain = JAP_ikeda_clique_influence_array^2 }
+	multiply_temp_variable = { JAP_ikeda_takagi_gain = JAP_ikeda_clique_loaned_influence_percent_array^2 }
+	add_to_temp_variable = { JAP_ikeda_coalition_influence = JAP_ikeda_takagi_gain }
+	set_variable = { JAP_ikeda_clique_loaned_influence_absolute_array^2 = JAP_ikeda_takagi_gain }
+	clamp_variable = {
+		var = JAP_ikeda_clique_loaned_influence_absolute_array^2
+		min = 0
+		max = 1
+	}
+
+	set_temp_variable = { JAP_ikeda_conservative_gain = JAP_ikeda_clique_influence_array^4 }
+	multiply_temp_variable = { JAP_ikeda_conservative_gain = JAP_ikeda_clique_loaned_influence_percent_array^4 }
+	add_to_temp_variable = { JAP_ikeda_coalition_influence = JAP_ikeda_conservative_gain }
+	set_variable = { JAP_ikeda_clique_loaned_influence_absolute_array^4 = JAP_ikeda_coalition_influence }
+	clamp_variable = {
+		var = JAP_ikeda_clique_loaned_influence_absolute_array^4
+		min = 0
+		max = 1
+	}
+
+	set_temp_variable = { JAP_ikeda_rb_gain = JAP_ikeda_clique_influence_array^5 }
+	log = "[GetDateText]: [?JAP_ikeda_clique_loaned_influence_percent_array^5]"
+	multiply_temp_variable = { JAP_ikeda_rb_gain = JAP_ikeda_clique_loaned_influence_percent_array^5 }
+	add_to_temp_variable = { JAP_ikeda_coalition_influence = JAP_ikeda_rb_gain }
+	set_variable = { JAP_ikeda_clique_loaned_influence_absolute_array^5 = JAP_ikeda_rb_gain }
+	clamp_variable = {
+		var = JAP_ikeda_clique_loaned_influence_absolute_array^5
+		min = 0
+		max = 1
+	}
+
+	set_variable = { JAP_ikeda_influence_ysk = JAP_ikeda_coalition_influence }
+	clamp_variable = {
+		var = JAP_ikeda_influence_ysk
+		min = 0
+		max = 1
+	}
+
+	#FIgure out how much support now derives from conservatives
+	set_temp_variable = { JAP_ikeda_conservative_gain = JAP_ikeda_clique_loaned_influence_absolute_array^4 }
+	divide_temp_variable = { JAP_ikeda_conservative_gain = JAP_ikeda_influence_ysk }
+	set_variable = { JAP_ikeda_own_influence = JAP_ikeda_conservative_gain }
+	clamp_variable = {
+		var = JAP_ikeda_own_influence
+		min = 0
+		max = 1
+	}
+	JAP_ikeda_calculate_influence = yes
+}
+
+#For adding influence from a clique
+JAP_ikeda_alter_clique_influence = {
+	#First we figure out how much influence is sought
+	set_temp_variable = { JAP_clique_seat_gain = JAP_ikeda_clique_influence_array^JAP_ikeda_targetted_clique }
+	divide_temp_variable = { JAP_clique_seat_gain = JAP_ikeda_influence_divisor } #You don't get all the support from the clique at once
+
+	log = "[GetDateText]: [?JAP_clique_seat_gain]"
+	#Now its time to ensure you can't gain more influence from a clique than they actually have
+	subtract_from_variable = { JAP_ikeda_influence_ysk = JAP_ikeda_clique_loaned_influence_absolute_array^JAP_ikeda_targetted_clique } #Remove the old influence amount
+	add_to_variable = { JAP_ikeda_clique_loaned_influence_absolute_array^JAP_ikeda_targetted_clique = JAP_clique_seat_gain }
+	clamp_variable = { 
+		var = JAP_ikeda_clique_loaned_influence_absolute_array^JAP_ikeda_targetted_clique
+		min = 0
+		max = JAP_ikeda_clique_influence_array^JAP_ikeda_targetted_clique
+	}
+	add_to_variable = { JAP_ikeda_influence_ysk = JAP_ikeda_clique_loaned_influence_absolute_array^JAP_ikeda_targetted_clique } #Add the new influence amount
+
+	#Calculate how much support Kaya now has from the clique
+	set_temp_variable = { JAP_ikeda_influence_fraction_checker = JAP_ikeda_clique_loaned_influence_absolute_array^JAP_ikeda_targetted_clique } #Temp variable for calcing how much of a clique will support Kaya
+	divide_temp_variable = { JAP_ikeda_influence_fraction_checker = JAP_ikeda_clique_influence_array^JAP_ikeda_targetted_clique } #Gets us the % of the clique that supports us
+	set_variable = { JAP_ikeda_clique_loaned_influence_percent_array^JAP_ikeda_targetted_clique = JAP_ikeda_influence_fraction_checker }
+	clamp_variable = { 
+		var = JAP_ikeda_clique_loaned_influence_percent_array^JAP_ikeda_targetted_clique
+		min = 0
+		max = 1
+	}
+
+	#Now we figure out your new coalition composition
+	set_temp_variable = { JAP_ikeda_conservative_gain = JAP_ikeda_clique_loaned_influence_absolute_array^4 }
+	divide_temp_variable = { JAP_ikeda_conservative_gain = JAP_ikeda_influence_ysk }
+	set_variable = { JAP_ikeda_own_influence = JAP_ikeda_conservative_gain }
+	clamp_variable = {
+		var = JAP_ikeda_own_influence
+		min = 0
+		max = 1
+	}
+
+	clear_variable = JAP_ikeda_targetted_clique
+	clear_variable = JAP_ikeda_influence_divisor
+	JAP_ikeda_calculate_influence = yes
+}
+
+JAP_ikeda_subtract_influence = {
+	#Use as much clique influence as possible
+	set_temp_variable = { JAP_ikeda_influence_spending_left = JAP_ikeda_influence_reduction }
+
+	#First we check if we can do all spending from just one clique
+	if = { #Kido
+		limit = { check_variable = { JAP_ikeda_clique_loaned_influence_absolute_array^1 > JAP_ikeda_influence_reduction } }
+		subtract_from_variable = { JAP_ikeda_clique_loaned_influence_absolute_array^1 = JAP_ikeda_influence_reduction }
+		subtract_from_variable = { JAP_ikeda_influence_ysk = JAP_ikeda_clique_loaned_influence_absolute_array^1 }
+	}
+	else_if = { #Takagi
+		limit = { check_variable = { JAP_ikeda_clique_loaned_influence_absolute_array^2 > JAP_ikeda_influence_reduction } }
+		subtract_from_variable = { JAP_ikeda_clique_loaned_influence_absolute_array^2 = JAP_ikeda_influence_reduction }
+		subtract_from_variable = { JAP_ikeda_influence_ysk = JAP_ikeda_clique_loaned_influence_absolute_array^2 }
+	}
+	else_if = { #Conservative
+		limit = { check_variable = { JAP_ikeda_clique_loaned_influence_absolute_array^4 > JAP_ikeda_influence_reduction } }
+		subtract_from_variable = { JAP_ikeda_clique_loaned_influence_absolute_array^4 = JAP_ikeda_influence_reduction }
+		subtract_from_variable = { JAP_ikeda_influence_ysk = JAP_ikeda_clique_loaned_influence_absolute_array^4 }
+	}
+	#We spend portions of influence from each clique untill we havbe used everything
+	else = {
+		subtract_from_temp_variable = { JAP_ikeda_influence_spending_left = JAP_ikeda_clique_loaned_influence_absolute_array^1 }
+		subtract_from_variable = { JAP_ikeda_influence_ysk = JAP_ikeda_clique_loaned_influence_absolute_array^1 }
+		set_variable = { JAP_ikeda_clique_loaned_influence_absolute_array^1 = 0 }
+		#Check if next clique has enough influence for us to spend the rest of the cost
+		if = { # It is, thank god
+			limit = { check_variable = { JAP_ikeda_clique_loaned_influence_absolute_array^2 > JAP_ikeda_influence_reduction } }
+			subtract_from_variable = { JAP_ikeda_clique_loaned_influence_absolute_array^2 = JAP_ikeda_influence_reduction }
+			subtract_from_variable = { JAP_ikeda_influence_ysk = JAP_ikeda_clique_loaned_influence_absolute_array^2 }
+		}
+		else = { #Nope, prepare for future complications
+			subtract_from_temp_variable = { JAP_ikeda_influence_spending_left = JAP_ikeda_clique_loaned_influence_absolute_array^2 }
+			subtract_from_variable = { JAP_ikeda_influence_ysk = JAP_ikeda_clique_loaned_influence_absolute_array^2 }
+			set_variable = { JAP_ikeda_clique_loaned_influence_absolute_array^2 = 0 }
+			#Repeat the same thing for the last clique
+			if = { #Last clique is enough
+				limit = { check_variable = { JAP_ikeda_clique_loaned_influence_absolute_array^4 > JAP_ikeda_influence_reduction } }
+				subtract_from_variable = { JAP_ikeda_clique_loaned_influence_absolute_array^4 = JAP_ikeda_influence_reduction }
+				subtract_from_variable = { JAP_ikeda_influence_ysk = JAP_ikeda_clique_loaned_influence_absolute_array^4 }
+			}
+			else = { #It isn't, we need to spend our own influence next
+				subtract_from_temp_variable = { JAP_ikeda_influence_spending_left = JAP_ikeda_clique_loaned_influence_absolute_array^4 }
+				subtract_from_variable = { JAP_ikeda_influence_ysk = JAP_ikeda_clique_loaned_influence_absolute_array^4 }
+				set_variable = { JAP_ikeda_clique_loaned_influence_absolute_array^4 = 0 }
+				subtract_from_variable = { JAP_ikeda_influence_ysk = JAP_ikeda_influence_spending_left }
+				subtract_from_variable = { JAP_ikeda_clique_loaned_influence_absolute_array^5 = JAP_ikeda_influence_spending_left }
+			}
+		}
+	}
+	#Update percentage support you have from each clique
+	set_temp_variable = { JAP_ikeda_influence_fraction_checker = JAP_ikeda_clique_loaned_influence_absolute_array^1 }
+	divide_temp_variable = { JAP_ikeda_influence_fraction_checker = JAP_ikeda_clique_influence_array^1 } #Gets us the % of the clique that supports us
+	set_variable = { JAP_ikeda_clique_loaned_influence_percent_array^1 = JAP_ikeda_influence_fraction_checker }
+
+	set_temp_variable = { JAP_ikeda_influence_fraction_checker = JAP_ikeda_clique_loaned_influence_absolute_array^2 }
+	divide_temp_variable = { JAP_ikeda_influence_fraction_checker = JAP_ikeda_clique_influence_array^2 } #Gets us the % of the clique that supports us
+	set_variable = { JAP_ikeda_clique_loaned_influence_percent_array^2 = JAP_ikeda_influence_fraction_checker }
+
+	set_temp_variable = { JAP_ikeda_influence_fraction_checker = JAP_ikeda_clique_loaned_influence_absolute_array^4 }
+	divide_temp_variable = { JAP_ikeda_influence_fraction_checker = JAP_ikeda_clique_influence_array^4 } #Gets us the % of the clique that supports us
+	set_variable = { JAP_ikeda_clique_loaned_influence_percent_array^4 = JAP_ikeda_influence_fraction_checker }
+
+	set_temp_variable = { JAP_ikeda_influence_fraction_checker = JAP_ikeda_clique_loaned_influence_absolute_array^5 }
+	divide_temp_variable = { JAP_ikeda_influence_fraction_checker = JAP_ikeda_clique_influence_array^5 } #Gets us the % of the clique that supports us
+	set_variable = { JAP_ikeda_clique_loaned_influence_percent_array^5 = JAP_ikeda_influence_fraction_checker }
+
+	#Now we figure out your new coalition composition
+	set_temp_variable = { JAP_ikeda_conservative_gain = JAP_ikeda_clique_loaned_influence_absolute_array^4 }
+	divide_temp_variable = { JAP_ikeda_conservative_gain = JAP_ikeda_influence_ysk }
+	set_variable = { JAP_ikeda_own_influence = JAP_ikeda_conservative_gain }
+	clamp_variable = {
+		var = JAP_ikeda_own_influence
+		min = 0
+		max = 1
+	}
+
+	JAP_ikeda_calculate_influence = yes
+}
+
+JAP_tree_swap = {
+	if = {
+		limit = {
+			has_country_flag = JAP_Ikeda_Prime_Minister
+			NOT = { has_focus_tree = Japan_ikeda_main }
+		}
+		load_focus_tree = { tree = Japan_ikeda_main keep_completed = yes }
+	}
+	else_if = {
+		limit = {
+			has_country_flag = JAP_Takagi_Prime_Minister
+			NOT = { has_focus_tree = japan_takagi_one }
+		}
+		load_focus_tree = { tree = japan_takagi_one keep_completed = yes }
+	}
+	else_if = {
+		limit = {
+			has_country_flag = JAP_Kaya_Prime_Minister
+			NOT = { has_focus_tree = japan_kaya_tree_one }
+		}
+		load_focus_tree = { tree = japan_kaya_tree_one keep_completed = yes }
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				has_focus_tree = JAP_tree_main
+				OR = {
+					has_country_flag = JAP_Kaya_Prime_Minister
+					has_country_flag = JAP_Takagi_Prime_Minister
+					has_country_flag = JAP_Ikeda_Prime_Minister
+				}
+			}
+		}
+		load_focus_tree = { tree = JAP_tree_main keep_completed = yes }
+	}
+	mark_focus_tree_layout_dirty = yes
+}
+
+### Japanese Sphere Diplomacy GUI ###
+JAP_clear_all_country_interactions = {
+	clr_country_flag = JapanDiploChinaInteractionsVisible
+	clr_country_flag = JapanDiploGuangdongInteractionsVisible
+	clr_country_flag = JapanDiploGuangxiInteractionsVisible
+	clr_country_flag = JapanDiploGuizhouInteractionsVisible
+	clr_country_flag = JapanDiploManchuriaInteractionsVisible
+	clr_country_flag = JapanDiploMengjiangInteractionsVisible
+	clr_country_flag = JapanDiploShaanxiInteractionsVisible
+	clr_country_flag = JapanDiploSichuanInteractionsVisible
+
+	clr_country_flag = JapanDiploIndiaInteractionsVisible
+	clr_country_flag = JapanDiploBengalInteractionsVisible
+	clr_country_flag = JapanDiploBhutanInteractionsVisible
+	clr_country_flag = JapanDiploNepalInteractionsVisible
+	clr_country_flag = JapanDiploAfghanInteractionsVisible
+
+	clr_country_flag = JapanDiploXikangInteractionsVisible
+	clr_country_flag = JapanDiploXinjiangInteractionsVisible
+	clr_country_flag = JapanDiploHuiInteractionsVisible
+	clr_country_flag = JapanDiploTibetInteractionsVisible
+	clr_country_flag = JapanDiploMaInteractionsVisible
+
+	clr_country_flag = JapanDiploRussiaInteractionsVisible
+
+	clr_country_flag = JapanDiploBurmaInteractionsVisible
+	clr_country_flag = JapanDiploYunnanInteractionsVisible
+	clr_country_flag = JapanDiploThailandInteractionsVisible
+	clr_country_flag = JapanDiploPhilInteractionsVisible
+	clr_country_flag = JapanDiploIndonesiaInteractionsVisible
+	clr_country_flag = JapanDiploShounanInteractionsVisible
+	clr_country_flag = JapanDiploVietnamInteractionsVisible
+	clr_country_flag = JapanDiploLaosInteractionsVisible
+	clr_country_flag = JapanDiploCambodiaInteractionsVisible
+}

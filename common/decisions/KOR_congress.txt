@@ -243,6 +243,128 @@ parliament_gui_decision_category = {
 	}
 }
 
+KOR_rural_relief_category = {
+	KOR_self_sufficiency_tick = {
+		allowed = {
+			original_tag = KOR
+		}
+		
+		available = {
+			hidden_trigger = {has_country_flag = KOR_tech_modernisation_complete}
+		}
+
+		activation = {
+			has_completed_focus = Establishment_National_Institute_Industrial_Research
+			NOT = { has_country_flag = KOR_tech_modernisation_complete }
+		}
+
+		is_good = yes 
+
+		days_mission_timeout = 30
+
+		timeout_effect = {
+			add_to_variable = {
+				  tech_innovation = innovation_gain
+			}
+	
+			clamp_variable = {
+					var = tech_innovation
+					min = 0
+					max = 1
+			}
+	
+			hidden_effect = {
+			  if = {
+				 limit = {
+					NOT = {has_country_flag = KOR_tech_modernisation_complete}
+				 }
+				 activate_mission = KOR_self_sufficiency_tick
+			  }
+			}    
+	 	}    
+
+		complete_effect = {
+		}
+  	}
+
+	KOR_increase_Self_Sufficiency = {
+	 	visible = {
+			has_completed_focus = Establishment_National_Institute_Industrial_Research
+			check_variable = {
+				  tech_self_sufficiency < 5
+			}
+	 	}
+	 	available = {
+	 		custom_trigger_tooltip = {
+	 			tooltip = KOR_increase_Self_Sufficiency_trigger_tt
+				check_variable = {
+					var = tech_innovation
+					value = 1
+					compare = greater_than_or_equals
+				}
+				check_variable = {
+					tech_self_sufficiency < 5
+				}
+	 		}
+	 	}
+
+	 	cost = 50
+
+		complete_effect = {
+			add_to_variable = {
+				tech_self_sufficiency = 1
+			}
+			set_variable = {
+				tech_innovation = 0
+			}
+			hidden_effect = {
+			 	#country_event = {
+					# id = chi.213
+			 	#}
+			}
+			custom_effect_tooltip = KOR_Technology_Boost_tt
+	 	}
+
+	 	ai_will_do = {
+	 		factor = 1000
+	 	}
+  	}
+
+	KOR_self_sufficient = {
+		visible = {
+			has_completed_focus = Establishment_National_Institute_Industrial_Research
+			check_variable = {
+				tech_self_sufficiency = 5
+			}
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = KOR_self_sufficient_trigger_tt
+				check_variable = {
+					tech_self_sufficiency = 5
+				}
+			}
+		}
+
+		cost = 150
+		fire_only_once = yes
+
+		complete_effect = {
+			clear_variable = tech_innovation
+			clear_variable = innovation_gain
+			clear_variable = tech_self_sufficiency
+			custom_effect_tooltip = KOR_self_sufficient_tt
+			set_country_flag = KOR_tech_modernisation_complete
+			remove_mission = KOR_self_sufficiency_tick
+		}
+
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+
+}
+
 KOR_Korea_Youth_Corps_category = {
 
 	KOR_Youth_525 = {

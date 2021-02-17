@@ -67,6 +67,22 @@ KOR_national_assembly_unicameralism_decision = {
 	priority = 100
 }
 
+KOR_rural_relief_category = {
+	
+	icon = GFX_
+	
+	picture = GFX
+
+	allowed = {
+		original_tag = KOR
+	}
+	visible = {
+		has_completed_focus = Establishment_National_Institute_Industrial_Research
+		NOT = { has_country_flag = KOR_tech_modernisation_complete }
+	}
+
+}
+
 ###범죄와의 전쟁 디시전 (보안 작업 중)###
 KOR_banditry_category = {
 	

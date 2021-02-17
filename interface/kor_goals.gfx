@@ -723,5 +723,9 @@ spriteTypes = {
 		name = "GFX_focus_impeachment_proceedings"
 		texturefile = "gfx/interface/goals/focus_impeachment_proceedings.dds"
 	}
+	SpriteType = {
+		name = "GFX_NACF_Installation"
+		texturefile = "gfx/interface/goals/NACF_Installation.dds"
+	}
 
 }

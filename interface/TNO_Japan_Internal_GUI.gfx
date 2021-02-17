@@ -1,0 +1,136 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_Diet_Seat_Boxes"
+		texturefile = "gfx/interface/japan_internal_gui/ParliamentMechanic_Seat_Boxes_10x10.dds"
+		noOfFrames = 6
+	}
+
+	spriteType = {
+		name = "GFX_Japan_Internal_GUI_Open_Button"
+		texturefile = "gfx/interface/japan_internal_gui/Japan_Internal_GUI_Open_Button.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Japan_Internal_GUI_Background"
+		texturefile = "gfx/interface/japan_internal_gui/Japan_Internal_GUI_Background.dds"
+	}
+	spriteType = {
+		name = "GFX_Japan_Internal_GUI_Sidebar_Background"
+		texturefile = "gfx/interface/japan_internal_gui/Japan_Internal_GUI_Sidebar_Background.dds"
+	}
+	spriteType = {
+		name = "GFX_Japan_Internal_GUI_Sidebar_Button_Green"
+		texturefile = "gfx/interface/japan_internal_gui/Japan_Internal_GUI_Sidebar_Button_Green.dds"
+	}
+	spriteType = {
+		name = "GFX_Japan_Internal_GUI_Sidebar_Button_Red"
+		texturefile = "gfx/interface/japan_internal_gui/Japan_Internal_GUI_Sidebar_Button_Red.dds"
+	}
+	spriteType = {
+		name = "GFX_Japan_Internal_GUI_Military_Button"
+		texturefile = "gfx/interface/japan_internal_gui/Japan_Internal_GUI_Military_Button.dds"
+	}
+	spriteType = {
+		name = "GFX_Japan_Internal_GUI_Seats_Grid"
+		texturefile = "gfx/interface/japan_internal_gui/Japan_Internal_GUI_Seats_Grid.dds"
+	}
+	spriteType = {
+		name = "GFX_Japan_Internal_GUI_Box_Outline"
+		texturefile = "gfx/interface/japan_internal_gui/Japan_Internal_GUI_Box_Outline.dds"
+	}
+	spriteType = {
+		name = "GFX_Japan_Internal_GUI_Box_Button"
+		texturefile = "gfx/interface/japan_internal_gui/Japan_Internal_GUI_Box_Button.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Japan_Internal_GUI_Seat_Blue"
+		texturefile = "gfx/interface/japan_internal_gui/Japan_Internal_GUI_Seat_Blue.dds"
+	}
+	spriteType = {
+		name = "GFX_Japan_Internal_GUI_Seat_Brown"
+		texturefile = "gfx/interface/japan_internal_gui/Japan_Internal_GUI_Seat_Brown.dds"
+	}
+	spriteType = {
+		name = "GFX_Japan_Internal_GUI_Seat_Green"
+		texturefile = "gfx/interface/japan_internal_gui/Japan_Internal_GUI_Seat_Green.dds"
+	}
+	spriteType = {
+		name = "GFX_Japan_Internal_GUI_Seat_Grey"
+		texturefile = "gfx/interface/japan_internal_gui/Japan_Internal_GUI_Seat_Grey.dds"
+	}
+	spriteType = {
+		name = "GFX_Japan_Internal_GUI_Seat_Yellow"
+		texturefile = "gfx/interface/japan_internal_gui/Japan_Internal_GUI_Seat_Yellow.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Japan_Internal_GUI_Portrait_Ikeda_Masanosuke"
+		texturefile = "gfx/interface/japan_internal_gui/Japan_Internal_GUI_Portrait_Japan_Ikeda_Masanosuke.dds"
+	}
+	spriteType = {
+		name = "GFX_Japan_Internal_GUI_Portrait_Ino_Hiroya"
+		texturefile = "gfx/interface/japan_internal_gui/Japan_Internal_GUI_Portrait_Japan_Ino_Hiroya.dds"
+	}
+	spriteType = {
+		name = "GFX_Japan_Internal_GUI_Portrait_Kaya_Okinori"
+		texturefile = "gfx/interface/japan_internal_gui/Japan_Internal_GUI_Portrait_Japan_Kaya_Okinori.dds"
+	}
+	spriteType = {
+		name = "GFX_Japan_Internal_GUI_Portrait_Kido_Kouichi"
+		texturefile = "gfx/interface/japan_internal_gui/Japan_Internal_GUI_Portrait_Japan_Kido_Kouichi.dds"
+	}
+	spriteType = {
+		name = "GFX_Japan_Internal_GUI_Portrait_Takagi_Soukichi"
+		texturefile = "gfx/interface/japan_internal_gui/Japan_Internal_GUI_Portrait_Japan_Takagi_Soukichi.dds"
+	}
+	spriteType = {
+		name = "GFX_Japan_Internal_GUI_Portrait_Miki_Takeo"
+		texturefile = "gfx/interface/japan_internal_gui/Japan_Internal_GUI_Portrait_Japan_Miki_Takeo.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Japan_Internal_GUI_BtnIcn_1"
+		texturefile = "gfx/interface/japan_internal_gui/Japan_Internal_GUI_BtnIcn_1.dds"
+	}
+	spriteType = {
+		name = "GFX_Japan_Internal_GUI_BtnIcn_2"
+		texturefile = "gfx/interface/japan_internal_gui/Japan_Internal_GUI_BtnIcn_2.dds"
+	}
+	spriteType = {
+		name = "GFX_Japan_Internal_GUI_BtnIcn_3"
+		texturefile = "gfx/interface/japan_internal_gui/Japan_Internal_GUI_BtnIcn_3.dds"
+	}
+	spriteType = {
+		name = "GFX_Japan_Internal_GUI_BtnIcn_4"
+		texturefile = "gfx/interface/japan_internal_gui/Japan_Internal_GUI_BtnIcn_4.dds"
+	}
+	spriteType = {
+		name = "GFX_Japan_Internal_GUI_BtnIcn_5"
+		texturefile = "gfx/interface/japan_internal_gui/Japan_Internal_GUI_BtnIcn_5.dds"
+	}
+	spriteType = {
+		name = "GFX_Japan_Internal_GUI_BtnIcn_6"
+		texturefile = "gfx/interface/japan_internal_gui/Japan_Internal_GUI_BtnIcn_6.dds"
+	}
+	
+	progressbartype = {
+		name = "GFX_Japan_Internal_GUI_ProgressBar"
+		textureFile1 = "gfx/interface/japan_internal_gui/Japan_Internal_GUI_ProgressBar.dds"
+		textureFile2 = "gfx/interface/japan_internal_gui/Japan_Internal_GUI_ProgressBar_bg.dds"
+		color = { 0.0 0.0 0.0 }
+		colortwo = { 0.0 0.0 0.0 }
+		size = { 
+			x = 162
+			y = 36
+		}
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = yes
+	}
+
+	spriteType = {
+		name = "GFX_SGR_state_info_buttons_bg"
+		texturefile = "gfx/interface/state_info_buttons_bg.dds"
+	}
+}

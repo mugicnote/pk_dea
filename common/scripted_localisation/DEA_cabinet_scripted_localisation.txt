@@ -18,6 +18,13 @@ defined_text = {
 		localization_key = People_Goverment_front
 	}
 
+	text = {
+		trigger = {
+			has_country_flag = Yoshida_Cabinet
+		}
+		localization_key = Yoshida_Cabinet_front
+	}
+
 }
 defined_text = {
 	name = FdS_rank2
@@ -27,6 +34,12 @@ defined_text = {
 			tag = KOR
 		}
 		localization_key = POSITION_main_opposition_party_leader2
+	}
+	text = {
+		trigger = {
+			tag = JAP
+		}
+		localization_key = POSITION_main_opposition_EMP_JAP
 	}
 }
 
@@ -42,6 +55,12 @@ defined_text = {
 			tag = KOR
 		}
 		localization_key = POSITION_main_opposition_party_leader2
+	}
+	text = {
+		trigger = {
+			tag = JAP
+		}
+		localization_key = POSITION_main_opposition_EMP_JAP
 	}
 }
 ############################################
@@ -64,18 +83,15 @@ defined_text = {
 		localization_key = no_fd2
 	}
 
-}
-defined_text = {
-	name = general_outline
-
 	text = {
 		trigger = {
-			tag = KOR
+			has_country_flag = showa_tenno
 		}
-		localization_key = general_outline
+		localization_key = showa_tenno
 	}
 
 }
+
 defined_text = {
 	name = leader_two_portrait2
 	
@@ -90,6 +106,12 @@ defined_text = {
 			has_country_flag = no_fd2
 		}
 		localization_key = GFX_Leader_Portrait_Background
+	}
+	text = {
+		trigger = {
+			has_country_flag = showa_tenno
+		}
+		localization_key = GFX_Portrait_showa_tenno
 	}
 
 }
@@ -153,7 +175,6 @@ defined_text = {
 		}
 		localization_key = Lee_Beomseok
 	}
-
 }
 defined_text = {
 	name = leader_two_portrait3
@@ -270,6 +291,12 @@ defined_text = {
 		}
 		localization_key = POSITION_main_opposition_VHog_CHI
 	}
+	text = {
+		trigger = {
+			tag = JAP
+		}
+		localization_key = POSITION_main_opposition_VHog_JAP
+	}
 }
 
 ############################################
@@ -291,6 +318,12 @@ defined_text = {
 		}
 		localization_key = POSITION_main_opposition_VHog_CHI
 	}
+	text = {
+		trigger = {
+			tag = JAP
+		}
+		localization_key = POSITION_main_opposition_VHog_JAP
+	}
 }
 ############################################
 # HoG Name
@@ -310,6 +343,13 @@ defined_text = {
 		}
 		localization_key = Wang_Jingwei
 	}
+
+	text = {
+		trigger = {
+			has_country_flag = Ogata_Taketora
+		}
+		localization_key = Ogata_Taketora
+	}
 }
 defined_text = {
 	name = leader_two_portrait5
@@ -325,6 +365,12 @@ defined_text = {
 			has_country_flag = Wang_Jingwei
 		}
 		localization_key = GFX_Portrait_Wang_Jingwei
+	}
+	text = {
+		trigger = {
+			has_country_flag = Ogata_Taketora
+		}
+		localization_key = GFX_Portrait_Ogata_Taketora
 	}
 }
 defined_text = {
@@ -420,6 +466,12 @@ defined_text = {
 		}
 		localization_key = POSITION_main_opposition_party_leader7
 	}
+	text = {
+		trigger = {
+			tag = JAP
+		}
+		localization_key = POSITION_main_opposition_MOJ_JAP
+	}
 }
 
 ############################################
@@ -435,6 +487,12 @@ defined_text = {
 		}
 		localization_key = POSITION_main_opposition_party_leader7
 	}
+	text = {
+		trigger = {
+			tag = JAP
+		}
+		localization_key = POSITION_main_opposition_MOJ_JAP
+	}
 }
 ############################################
 # HoG Name
@@ -448,6 +506,12 @@ defined_text = {
 		}
 		localization_key = Ahn_Chang_Ho
 	}
+	text = {
+		trigger = {
+			has_country_flag = Kimura_Tokutaro
+		}
+		localization_key = Kimura_Tokutaro
+	}
 }
 defined_text = {
 	name = leader_two_portrait7
@@ -457,6 +521,12 @@ defined_text = {
 			has_country_flag = Ahn_Chang_Ho
 		}
 		localization_key = GFX_Portrait_Ahn_Chang_Ho
+	}
+	text = {
+		trigger = {
+			has_country_flag = Kimura_Tokutaro
+		}
+		localization_key = GFX_Portrait_Kimura_Tokutaro
 	}
 }
 defined_text = {
@@ -491,6 +561,13 @@ defined_text = {
 		}
 		localization_key = POSITION_main_opposition_Hog_CHI
 	}
+
+	text = {
+		trigger = {
+			tag = JAP
+		}
+		localization_key = POSITION_main_opposition_Hog_JAP
+	}
 }
 
 ############################################
@@ -512,6 +589,13 @@ defined_text = {
 			tag = CHI
 		}
 		localization_key = POSITION_main_opposition_Hog_CHI
+	}
+
+	text = {
+		trigger = {
+			tag = JAP
+		}
+		localization_key = POSITION_main_opposition_Hog_JAP
 	}
 }
 ############################################
@@ -546,6 +630,13 @@ defined_text = {
 		localization_key = Wang_Jingwei_Pres
 	}
 
+	text = {
+		trigger = {
+			has_country_flag = Yoshida_Shigeru
+		}
+		localization_key = Yoshida_Shigeru
+	}
+
 }
 defined_text = {
 	name = leader_two_portrait8
@@ -574,6 +665,13 @@ defined_text = {
 			has_country_flag = Wang_Jingwei_Pres
 		}
 		localization_key = GFX_Portrait_Wang_Jingwei
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = Yoshida_Shigeru
+		}
+		localization_key = GFX_Portrait_Yoshida_Shigeru
 	}
 }
 
@@ -628,6 +726,12 @@ defined_text = {
 		}
 		localization_key = POSITION_main_opposition_MOF_CHI
 	}
+	text = {
+		trigger = {
+			tag = JAP
+		}
+		localization_key = POSITION_main_opposition_MIC_JAP
+	}
 }
 
 ############################################
@@ -649,6 +753,12 @@ defined_text = {
 		}
 		localization_key = POSITION_main_opposition_MOF_CHI
 	}
+	text = {
+		trigger = {
+			tag = JAP
+		}
+		localization_key = POSITION_main_opposition_MIC_JAP
+	}
 }
 ############################################
 # HoG Name
@@ -668,6 +778,12 @@ defined_text = {
 		}
 		localization_key = Sun_Lijen
 	}
+	text = {
+		trigger = {
+			has_country_flag = Hitotsumatsu_Sadayoshi
+		}
+		localization_key = Hitotsumatsu_Sadayoshi
+	}
 }
 defined_text = {
 	name = leader_two_portrait9
@@ -682,7 +798,13 @@ defined_text = {
 		trigger = {
 			has_country_flag = Sun_Lijen
 		}
-		localization_key = Sun_Lijen
+		localization_key = GFX_Sun_Lijen
+	}
+	text = {
+		trigger = {
+			has_country_flag = Hitotsumatsu_Sadayoshi
+		}
+		localization_key = GFX_Portrait_Hitotsumatsu_Sadayoshi
 	}
 }
 defined_text = {
@@ -933,6 +1055,13 @@ defined_text = {
 		}
 		localization_key = POSITION_main_opposition_party_leader14
 	}
+
+	text = {
+		trigger = {
+			tag = JAP
+		}
+		localization_key = POSITION_main_opposition_FRM_JAP
+	}
 }
 
 defined_text = {
@@ -943,6 +1072,13 @@ defined_text = {
 			tag = KOR
 		}
 		localization_key = POSITION_main_opposition_party_leader14
+	}
+
+	text = {
+		trigger = {
+			tag = JAP
+		}
+		localization_key = POSITION_main_opposition_FRM_JAP
 	}
 }
 
@@ -955,6 +1091,13 @@ defined_text = {
 		}
 		localization_key = jo_man_sik
 	}
+
+	text = {
+		trigger = {
+			has_country_flag = Okazaki_Katsuo
+		}
+		localization_key = Okazaki_Katsuo
+	}
 }
 defined_text = {
 	name = leader_two_portrait14
@@ -964,6 +1107,13 @@ defined_text = {
 			has_country_flag = jo_man_sik
 		}
 		localization_key = GFX_jomansik_portrait
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = Okazaki_Katsuo
+		}
+		localization_key = GFX_Portrait_Okazaki_Katsuo
 	}
 }
 defined_text = {
@@ -981,12 +1131,18 @@ defined_text = {
 defined_text = {
 	name = FdS_rank15
 
-	
 	text = {
 		trigger = {
 			tag = KOR
 		}
 		localization_key = POSITION_main_opposition_party_leader15
+	}
+
+	text = {
+		trigger = {
+			tag = JAP
+		}
+		localization_key = POSITION_main_opposition_MOF_JAP
 	}
 }
 
@@ -999,6 +1155,13 @@ defined_text = {
 		}
 		localization_key = POSITION_main_opposition_party_leader15
 	}
+
+	text = {
+		trigger = {
+			tag = JAP
+		}
+		localization_key = POSITION_main_opposition_MOF_JAP
+	}
 }
 
 defined_text = {
@@ -1010,6 +1173,13 @@ defined_text = {
 		}
 		localization_key = Ho_Jong
 	}
+
+	text = {
+		trigger = {
+			has_country_flag = Ishibashi_Danzan
+		}
+		localization_key = Ishibashi_Danzan
+	}
 }
 defined_text = {
 	name = leader_two_portrait15
@@ -1019,6 +1189,13 @@ defined_text = {
 			has_country_flag = Ho_Jong
 		}
 		localization_key = GFX_Portrait_Ho_Jong
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = Ishibashi_Danzan
+		}
+		localization_key = GFX_Portrait_Ishibashi_Danzan
 	}
 }
 defined_text = {
@@ -1043,6 +1220,12 @@ defined_text = {
 		}
 		localization_key = POSITION_main_opposition_party_leader16
 	}
+	text = {
+		trigger = {
+			tag = JAP
+		}
+		localization_key = POSITION_main_opposition_MOE_JAP
+	}
 }
 
 defined_text = {
@@ -1053,6 +1236,12 @@ defined_text = {
 			tag = KOR
 		}
 		localization_key = POSITION_main_opposition_party_leader16
+	}
+	text = {
+		trigger = {
+			tag = JAP
+		}
+		localization_key = POSITION_main_opposition_MOE_JAP
 	}
 }
 
@@ -1065,6 +1254,12 @@ defined_text = {
 		}
 		localization_key = Ahn_Jaehong
 	}
+	text = {
+		trigger = {
+			has_country_flag = Takahashi_Seiichi
+		}
+		localization_key = Takahashi_Seiichi
+	}
 }
 defined_text = {
 	name = leader_two_portrait16
@@ -1074,6 +1269,12 @@ defined_text = {
 			has_country_flag = Ahn_Jaehong
 		}
 		localization_key = GFX_Portrait_Ahn_Jaehong
+	}
+	text = {
+		trigger = {
+			has_country_flag = Takahashi_Seiichi
+		}
+		localization_key = GFX_Portrait_Takahashi_Seiichi
 	}
 }
 defined_text = {
@@ -1098,6 +1299,13 @@ defined_text = {
 		}
 		localization_key = POSITION_main_opposition_party_leader17
 	}
+
+	text = {
+		trigger = {
+			tag = JAP
+		}
+		localization_key = POSITION_main_opposition_MOL_JAP
+	}
 }
 
 defined_text = {
@@ -1108,6 +1316,13 @@ defined_text = {
 			tag = KOR
 		}
 		localization_key = POSITION_main_opposition_party_leader17
+	}
+
+	text = {
+		trigger = {
+			tag = JAP
+		}
+		localization_key = POSITION_main_opposition_MOL_JAP
 	}
 }
 
@@ -1120,6 +1335,13 @@ defined_text = {
 		}
 		localization_key = Pak_Honyong
 	}
+
+	text = {
+		trigger = {
+			has_country_flag = Kawaii_Yoshinari
+		}
+		localization_key = Kawaii_Yoshinari
+	}
 }
 defined_text = {
 	name = leader_two_portrait17
@@ -1129,6 +1351,13 @@ defined_text = {
 			has_country_flag = Pak_Honyong
 		}
 		localization_key = GFX_Portrait_Pak_Honyong
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = Kawaii_Yoshinari
+		}
+		localization_key = GFX_Portrait_Kawaii_Yoshinari
 	}
 }
 defined_text = {
@@ -1140,4 +1369,17 @@ defined_text = {
 		}
 		localization_key = Pak_Honyong_desc
 	}
+}
+
+defined_text = {
+	name = rural_relief1_level
+
+	text = {
+		trigger = {
+			check_variable = { tech_self_sufficiency = 0 }
+		}
+		localization_key = rural_relief_level_1
+	}
+
+
 }

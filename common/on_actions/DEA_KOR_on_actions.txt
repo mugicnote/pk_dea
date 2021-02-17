@@ -7,6 +7,7 @@ on_actions = {
 	}
 	KOR = {
 		parliament_gui_initial = yes
+		JAP_diet_arrays_initialization = yes
 		country_event = { 
 			id = KOR.86
 			days = 5
@@ -49,6 +50,8 @@ on_actions = {
 		set_country_flag = Ho_Jong
 		set_country_flag = Ahn_Jaehong
 		set_country_flag = Pak_Honyong
+
+		set_country_flag = rural_relief_level_is_1
 
 		add_ideas = HG_Seo_Jae_Pil
 		add_ideas = SE_kim_kyusik
@@ -111,6 +114,17 @@ on_actions = {
 				target = USA
 				modifier = JAP_opnion_USA
 			}
+
+			set_country_flag = Yoshida_Cabinet
+			set_country_flag = Yoshida_Shigeru
+			set_country_flag = Ogata_Taketora
+			set_country_flag = Hitotsumatsu_Sadayoshi
+			set_country_flag = Kimura_Tokutaro
+			set_country_flag = Okazaki_Katsuo
+			set_country_flag = Ishibashi_Danzan
+			set_country_flag = Takahashi_Seiichi
+			set_country_flag = showa_tenno
+			set_country_flag = Kawaii_Yoshinari
 		}
 		USA = {
 			add_opinion_modifier = {

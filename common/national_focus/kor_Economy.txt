@@ -1,7 +1,7 @@
 ﻿shared_focus = {
 	id = rural_relief_policy
-	icon = GFX_
-	cost = 10
+	icon = GFX_goal_SZC_improvised_farming_machinery
+	cost = 1
 
 	offset = {
 		x = 110
@@ -11,6 +11,8 @@
 		}
 	}
 	completion_reward = {
+		country_event = { id = KOR.91 }
+
 	}
 	x = 0
 	y = 0
@@ -34,7 +36,7 @@ shared_focus = {
 
 shared_focus = {
 	id = NACF_Installation
-	icon = GFX_
+	icon = GFX_NACF_Installation
 	cost = 10.00
 	prerequisite = {
 		focus = industrial_restructuring
@@ -74,6 +76,18 @@ shared_focus = {
 	relative_position_id = rural_relief_policy
 
 	completion_reward = {
+		hidden_effect = {
+    		activate_mission = KOR_self_sufficiency_tick
+		}
+		set_variable = {
+			tech_self_sufficiency = 0
+		}
+		set_variable = {
+			tech_innovation = 0.15
+		}
+		set_variable = {
+			innovation_gain = 0.05
+		}
 	}
 	x = 3
 	y = 1

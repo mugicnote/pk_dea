@@ -230,4 +230,35 @@ spriteTypes = {
 		texturefile = "gfx/texticons/man_daily_news.dds"
 		legacy_lazy_load = no
 	}
+
+
+	spriteType = {
+		name = "GFX_podium_texticon"
+		texturefile = "gfx/texticons/podium_texticon.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_diet_texticon"
+		texturefile = "gfx/texticons/diet_texticon.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_approval_texticon"
+		texturefile = "gfx/texticons/approval_texticon.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_political_power_texticon"
+		texturefile = "gfx/texticons/pol_power_20x20.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_dollar_sign"
+		texturefile = "gfx/texticons/dollar_sign.dds"
+		legacy_lazy_load = no
+	}
 }

@@ -89,6 +89,42 @@ spriteTypes = {
 		texturefile = "gfx/leaders/KOR/Portrait_Ho_Jong.dds"
 	}
 
+	spriteType = {
+		name = "GFX_Portrait_Yoshida_Shigeru"
+		texturefile = "gfx/leaders/JAP/JAP_Yoshida_Shigeru.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Ogata_Taketora"
+		texturefile = "gfx/leaders/JAP/JAP_Ogata_Taketora.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Hitotsumatsu_Sadayoshi"
+		texturefile = "gfx/leaders/JAP/JAP_Hitotsumatsu_Sadayoshi.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Kimura_Tokutaro"
+		texturefile = "gfx/leaders/JAP/JAP_Kimura_Tokutaro.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_showa_tenno"
+		texturefile = "gfx/leaders/JAP/JAP_showa_tenno.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Takahashi_Seiichi"
+		texturefile = "gfx/leaders/JAP/JAP_Takahashi_Seiichi.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Okazaki_Katsuo"
+		texturefile = "gfx/leaders/JAP/JAP_Okazaki_Katsuo.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Kawaii_Yoshinari"
+		texturefile = "gfx/leaders/JAP/JAP_Kawaii_Yoshinari.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Ishibashi_Danzan"
+		texturefile = "gfx/leaders/JAP/JAP_Ishibashi_Danzan.dds"
+	}
 
 	spriteType = {
 		name = "GFX_SI_information_view_bg"
