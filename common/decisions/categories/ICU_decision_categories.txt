@@ -1,0 +1,15 @@
+ICU_the_inevitable_civil_war = {
+	
+	icon = gfx
+	
+	picture = GFX
+
+	allowed = {
+		original_tag = ICU
+	}
+	visible = {
+		always = yes
+	}	
+
+	priority = 100
+}

@@ -1,0 +1,56 @@
+﻿division_template = {
+	name = "베트남 공화국 사단"
+	division_names_group = ICU_NOM_1
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+}
+division_template = {
+	name = "베트남 의용사단"
+	division_names_group = ICU_NOM_1
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+}
+
+units = {
+	
+	division = {
+		name = "4 베트남 방위사단"
+		location = 11936
+		division_template = "베트남 식민지 사단"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "5 베트남 방위사단"
+		location = 9948
+		division_template = "베트남 식민지 사단"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "6 베트남 방위사단"
+		location = 12319
+		division_template = "베트남 식민지 사단"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "1 의용사단"
+		location = 4075
+		division_template = "베트남 의용사단"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "2 의용사단"
+		location = 4075
+		division_template = "베트남 의용사단"
+		start_experience_factor = 0.1
+	}	
+}

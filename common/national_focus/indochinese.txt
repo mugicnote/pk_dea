@@ -1,0 +1,290 @@
+﻿focus_tree = {
+	id = dea_ICU
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ICU
+		}
+	}
+	default = no
+
+	focus = { #현실 직시
+		id = ICU_future_1
+		icon = ""
+		cost = 3
+		x = 18
+		y = 1
+
+		completion_reward = {
+		   add_political_power = 50
+			}	
+	}
+	focus = { #민생 안전 작전
+		id = ICU_future_2
+		icon = ""
+		cost = 3
+		prerequisite = {
+			focus = ICU_future_1
+		}
+		x = 18
+		y = 2
+		completion_reward = {
+		   add_political_power = -80
+		   add_stability = 0.05
+			}		
+	}
+	focus = { #산업 회복
+		id = ICU_future_3
+		icon = ""
+		cost = 3
+		prerequisite = {
+			focus = ICU_future_2
+		}		
+		x = 18
+		y = 3
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.2
+				uses = 1
+				category = industry
+				}
+			}		
+
+	}
+	focus = {#베트남 시위
+		id = ICU_future_4
+		icon = ""
+		cost = 5
+		prerequisite = {
+			focus = ICU_future_3
+		}		
+		x = 18
+		y = 4
+		completion_reward = {
+			ICU = { country_event = ICU.1 }
+		}
+	}	
+	focus = { #본국 지원 요청
+		id = ICU_future_5
+		icon = ""
+		cost = 3
+		prerequisite = {
+			focus = ICU_future_4
+		}		
+		x = 18
+		y = 5
+		completion_reward = {
+			FRA = { country_event = ICU.2 }
+		}
+	}
+	focus = {#사이공 요새화
+		id = ICU_future_6
+		icon = ""
+		cost = 5
+		prerequisite = {
+			focus = ICU_future_5
+		}		
+		x = 18
+		y = 6
+
+		completion_reward = {
+			286 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 4401
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 12232
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 7238
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	focus = {#하노이 요새화
+		id = ICU_future_7
+		icon = ""
+		cost = 5
+		prerequisite = {
+			focus = ICU_future_5
+		}		
+		x = 16
+		y = 6
+
+		completion_reward = {
+			851 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 4075
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 1185
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 10129
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	focus = {#프놈펜 요새화
+		id = ICU_future_8
+		icon = ""
+		cost = 5
+		prerequisite = {
+			focus = ICU_future_5
+		}		
+		x = 20
+		y = 6
+
+		completion_reward = {
+			741 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 7376
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 12260
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 2
+						province = 7645
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	focus = {#사이공 항구
+		id = ICU_future_9
+		icon = ""
+		cost = 5
+		prerequisite = {
+			focus = ICU_future_8
+		}
+		prerequisite = {
+			focus = ICU_future_7
+		}
+		prerequisite = {
+			focus = ICU_future_6
+		}		
+		x = 17
+		y = 7
+
+		completion_reward = {	
+			851 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = naval_base
+						level = 2
+						province = 4075
+						instant_build = yes
+					}
+				}
+			}
+		}
+		
+	}
+	focus = {#프놈펜 공항 건설
+		id = ICU_future_10
+		icon = ""
+		cost = 5
+		prerequisite = {
+			focus = ICU_future_8
+		}
+		prerequisite = {
+			focus = ICU_future_7
+		}
+		prerequisite = {
+			focus = ICU_future_6
+		}		
+		x = 19
+		y = 7
+
+		completion_reward = {	
+			741 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = air_base
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	focus = {#폭격기 요청
+		id = ICU_future_11
+		icon = ""
+		cost = 5
+		prerequisite = {
+			focus = ICU_future_9
+		}		
+		prerequisite = {
+			focus = ICU_future_10
+		}		
+		x = 18
+		y = 8
+
+		completion_reward = {	
+			add_equipment_to_stockpile = {
+			type = tac_bomber_equipment
+			amount = 10
+			producer = FRA
+			}
+		}
+	}
+	focus = {#프랑스 군대 증원
+		id = ICU_future_12
+		icon = ""
+		cost = 5
+		prerequisite = {
+			focus = ICU_future_11
+		}
+		x = 18
+		y = 9
+
+		completion_reward = {	
+			capital_scope = {
+				create_unit = {
+					division = "name = \"프랑스 1 증원사단\" division_template = \"프랑스 본토원정사단\" start_experience_factor = 0.3" 
+					owner = ROOT
+				}
+			}
+		}
+	}	
+}

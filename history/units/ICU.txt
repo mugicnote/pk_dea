@@ -1,0 +1,117 @@
+﻿division_template = {
+	name = "프랑스 본토원정사단"
+	division_names_group = ICU_NOM_1
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+}
+division_template = {
+	name = "베트남 식민지 사단"
+	division_names_group = ICU_NOM_1
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+}
+division_template = {
+	name = "라오스 식민지 사단"
+	division_names_group = ICU_NOM_1
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+}
+division_template = {
+	name = "캄보디아 식민지 사단"
+	division_names_group = ICU_NOM_1
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+}
+
+units = {
+
+	division = {
+		name = "1 연방 방위 사단"
+		location = 11936
+		division_template = "프랑스 본토원정사단"
+		start_experience_factor = 0.1
+	}
+		division = {
+		name = "2 연방 방위 사단"
+		location = 12204
+		division_template = "프랑스 본토원정사단"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "프놈펜 방위 사단"
+		location = 7376
+		division_template = "프랑스 본토원정사단"
+		start_experience_factor = 0.1
+	}	
+	division = {
+		name = "1 베트남 방위사단"
+		location = 4223
+		division_template = "베트남 식민지 사단"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "2 베트남 방위사단"
+		location = 4401
+		division_template = "베트남 식민지 사단"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "3 베트남 방위사단"
+		location = 10309
+		division_template = "베트남 식민지 사단"
+		start_experience_factor = 0.1
+	}	
+	division = {
+		name = "4 베트남 방위사단"
+		location = 4075
+		division_template = "베트남 식민지 사단"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "5 베트남 방위사단"
+		location = 9948
+		division_template = "베트남 식민지 사단"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "6 베트남 방위사단"
+		location = 12319
+		division_template = "베트남 식민지 사단"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "1 캄보디아 방위사단"
+		location = 1324
+		division_template = "캄보디아 식민지 사단"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "1 라오스 방위사단"
+		location = 1464
+		division_template = "라오스 식민지 사단"
+		start_experience_factor = 0.1
+	}	
+}

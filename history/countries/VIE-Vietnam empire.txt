@@ -1,6 +1,6 @@
-﻿capital = 741
+﻿capital = 286 #사이공
 
-oob = "ICU"
+oob = "VIE"
 
 # Starting tech
 set_technology = {
@@ -9,13 +9,10 @@ set_technology = {
 }
 
 add_ideas = {
-	ICU_independence_hot
-	ICU_bad_economy
 }
 
 set_politics = {
 	ruling_party = neutrality
-	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
@@ -24,7 +21,7 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Eugène Jean Louis René Robin"
+	name = "Hoang de Bao Dai"
 	desc = ""
 	picture = "Portrait_ICU_Eugene_Robin.dds"
 	expire = "1965.1.1"

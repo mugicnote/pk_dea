@@ -1,0 +1,28 @@
+﻿l_english:
+##남부 베트남## 
+ VIE_fascism:0 "베트남 제국"
+ VIE_fascism_DEF:0 "베트남 제국"
+ VIE_democratic:0 "베트남 제국"
+ VIE_democratic_DEF:0 "베트남 제국"
+ VIE_neutrality:1 "베트남 제국"
+ VIE_neutrality_DEF:1 "베트남 제국"
+ VIE_communism:0 "베트남 사회민주주의 공화국"
+ VIE_communism_DEF:0 "베트남 사회민주주의 공화국"
+ VIE_fascism_ADJ:0 "베트남"
+ VIE_democratic_ADJ:0 "베트남"
+ VIE_neutrality_ADJ:0 "베트남"
+ VIE_communism_ADJ:0 "베트남"
+ ##북부 베트남## 
+ VIC_fascism:0 "베트남 공화국"
+ VIC_fascism_DEF:0 "베트남 공화국"
+ VIC_democratic:0 "베트남 공화국"
+ VIC_democratic_DEF:0 "베트남 공화국"
+ VIC_neutrality:1 "베트남 공화국"
+ VIC_neutrality_DEF:1 "베트남 공화국"
+ VIC_communism:0 "베트남 민주 공화국"
+ VIC_communism_DEF:0 "베트남 민주 공화국"
+ VIC_fascism_ADJ:0 "베트남"
+ VIC_democratic_ADJ:0 "베트남"
+ VIC_neutrality_ADJ:0 "베트남"
+ VIC_communism_ADJ:0 "베트남"
+ 

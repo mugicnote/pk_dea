@@ -1,0 +1,9 @@
+on_actions = {
+	on_startup = {
+		effect = {
+		ICU = {
+			country_lock_all_division_template = yes
+		}
+	}
+}
+}
