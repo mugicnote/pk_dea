@@ -1,4 +1,4 @@
-﻿focus_tree = {
+focus_tree = {
 	id = dea_JAP
 	country = {
 		factor = 0
@@ -14,17 +14,22 @@
 		cost = 10.00
 		x = 18
 		y = 1
+			completion_reward = {
+					country_event = {
+							id = britain.4000
+							days = 4
+							random = 100
+							random_days = 4
+						}
+				}
 
 	}
 	focus = {
-		id = JAP_USA_assistance
-		icon = GFX_JAP_USA_assistance
+		id = JAP_General_political_election
+		icon = GFX_General_political_election
 		cost = 10.00
-		x = 51
-		y = 9
-		prerequisite = {
-			focus = JAP_Introduction_of_mechanical_machine_tool
-		}
+		x = 83
+		y = 2
 
 	}
 	focus = {
@@ -405,8 +410,8 @@
 
 	}
 	focus = {
-		id = the_Law_Regarding_the_Preservation_of_Important_Works_of_Fine_Arts 
-		icon = GFX_Law_Regarding_the_Preservation_of_Important_Works_of_Fine_Arts 
+		id = the_Law_Regarding_the_Preservation_of_Important_Works_of_Fine_Arts
+		icon = GFX_Law_Regarding_the_Preservation_of_Important_Works_of_Fine_Arts
 		cost = 3.00
 		prerequisite = {
 			focus = jap_Cultural_property_protection
@@ -420,7 +425,7 @@
 		icon = GFX_jap_cultural_heritage_rage_growing
 		cost = 10.00
 		prerequisite = {
-			focus = the_Law_Regarding_the_Preservation_of_Important_Works_of_Fine_Arts 
+			focus = the_Law_Regarding_the_Preservation_of_Important_Works_of_Fine_Arts
 		}
 		x = 38
 		y = 5
@@ -652,6 +657,17 @@
 
 	}
 	focus = {
+		id = JAP_USA_assistance
+		icon = GFX_JAP_USA_assistance
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Introduction_of_mechanical_machine_tool
+		}
+		x = 51
+		y = 9
+
+	}
+	focus = {
 		id = JAP_Waterpipe_construction
 		icon = GFX_JAP_Waterpipe_construction
 		cost = 10.00
@@ -677,6 +693,672 @@
 		}
 		x = 54
 		y = 9
+
+	}
+	focus = {
+		id = JAP_totally_election
+		icon = GFX_JAP_totally_election
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_General_political_election
+		}
+		mutually_exclusive = {
+			focus = JAP_far_right_totally_union
+		}
+		x = 68
+		y = 3
+
+	}
+	focus = {
+		id = JAP_communism_party
+		icon = GFX_JAP_communism_party
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_totally_election
+		}
+		mutually_exclusive = {
+			focus = JAP_social_party
+			focus = JAP_liberal_democratic_party
+		}
+		x = 60
+		y = 4
+
+	}
+	focus = {
+		id = JAP_social_party
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_totally_election
+		}
+		mutually_exclusive = {
+			focus = JAP_communism_party
+			focus = JAP_liberal_democratic_party
+		}
+		x = 68
+		y = 4
+
+	}
+	focus = {
+		id = JAP_social_party_left
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_social_party
+		}
+		mutually_exclusive = {
+			focus = JAP_social_party_right
+		}
+		x = 64
+		y = 5
+
+	}
+	focus = {
+		id = JAP_social_party_right
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_social_party
+		}
+		mutually_exclusive = {
+			focus = JAP_social_party_left
+		}
+		x = 72
+		y = 5
+
+	}
+	focus = {
+		id = JAP_liberal_democratic_party
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_totally_election
+		}
+		mutually_exclusive = {
+			focus = JAP_communism_party
+			focus = JAP_social_party
+		}
+		x = 76
+		y = 4
+
+	}
+	focus = {
+		id = JAP_far_right_totally_union
+		icon = GFX_JAP_far_right_totally_union
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_General_political_election
+		}
+		mutually_exclusive = {
+			focus = JAP_totally_election
+		}
+		x = 93
+		y = 3
+
+	}
+	focus = {
+		id = jap_showa_denno
+		icon = GFX_jap_showa_denno
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_far_right_totally_union
+		}
+		mutually_exclusive = {
+			focus = JAP_general_tojo
+		}
+		x = 87
+		y = 4
+
+	}
+	focus = {
+		id = JAP_Resurrection_of_the_monarchy
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = jap_showa_denno
+		}
+		x = 85
+		y = 5
+
+	}
+	focus = {
+		id = JAP_Parliamentary_pissolution
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Resurrection_of_the_monarchy
+		}
+		x = 83
+		y = 6
+
+	}
+	focus = {
+		id = JAP_Realization_of_despotism
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Parliamentary_pissolution
+		}
+		x = 82
+		y = 8
+
+	}
+	focus = {
+		id = JAP_showa_Deification
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Realization_of_despotism
+		}
+		x = 81
+		y = 9
+
+	}
+	focus = {
+		id = Showa_Restoration
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = jap_showa_denno
+		}
+		x = 87
+		y = 5
+
+	}
+	focus = {
+		id = JAP_Strengthening_the_rule_of_law
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Showa_Restoration
+		}
+		x = 86
+		y = 6
+
+	}
+	focus = {
+		id = Confiscation_of_private_property
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Showa_Restoration
+		}
+		x = 88
+		y = 6
+
+	}
+	focus = {
+		id = JAP_Land_lending_law
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Confiscation_of_private_property
+		}
+		prerequisite = {
+			focus = JAP_Strengthening_the_rule_of_law
+		}
+		x = 87
+		y = 7
+
+	}
+	focus = {
+		id = JAP_A_devoted_slave
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Strengthening_the_rule_of_law
+		}
+		x = 85
+		y = 7
+
+	}
+	focus = {
+		id = JAP_Land_redistribution
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Confiscation_of_private_property
+		}
+		x = 89
+		y = 7
+
+	}
+	focus = {
+		id = JAP_Emperor's_words_are_law
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Land_lending_law
+		}
+		prerequisite = {
+			focus = JAP_A_devoted_slave
+		}
+		prerequisite = {
+			focus = JAP_Land_redistribution
+		}
+		x = 87
+		y = 8
+
+	}
+	focus = {
+		id = Sacrifice_for_the_emperor
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_A_devoted_slave
+		}
+		x = 84
+		y = 8
+
+	}
+	focus = {
+		id = JAP_Revitalization_of_Japanese_education
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = jap_showa_denno
+		}
+		x = 89
+		y = 5
+
+	}
+	focus = {
+		id = JAP_Nurturing_economic_talent
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Revitalization_of_Japanese_education
+		}
+		x = 91
+		y = 6
+
+	}
+	focus = {
+		id = JAP_Class_society
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Land_redistribution
+		}
+		prerequisite = {
+			focus = JAP_Nurturing_economic_talent
+		}
+		x = 90
+		y = 8
+
+	}
+	focus = {
+		id = JAP_New_constitution
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Emperor's_words_are_law
+		}
+		prerequisite = {
+			focus = Sacrifice_for_the_emperor
+		}
+		prerequisite = {
+			focus = JAP_Class_society
+		}
+		x = 87
+		y = 9
+
+	}
+	focus = {
+		id = JAP_Opposition_purge
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Class_society
+		}
+		prerequisite = {
+			focus = JAP_Emperor's_words_are_law
+		}
+		x = 89
+		y = 9
+
+	}
+	focus = {
+		id = JAP_Privileged_support
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Opposition_purge
+		}
+		x = 90
+		y = 10
+
+	}
+	focus = {
+		id = JAP_general_tojo
+		icon = GFX_JAP_general_tojo
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_far_right_totally_union
+		}
+		mutually_exclusive = {
+			focus = jap_showa_denno
+		}
+		x = 99
+		y = 4
+
+	}
+	focus = {
+		id = JAP_Tojo_ideki_aide
+		icon = GFX_Tojo_ideki_aide
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_general_tojo
+		}
+		x = 97
+		y = 5
+
+	}
+	focus = {
+		id = Expansion_of_far_right_impact
+		icon = GFX_Expansion_of_far_right_impact
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_general_tojo
+		}
+		x = 99
+		y = 5
+
+	}
+	focus = {
+		id = JAP_Paramilitary_organization
+		icon = GFX_JAP_Paramilitary_organization
+		cost = 10.00
+		prerequisite = {
+			focus = Expansion_of_far_right_impact
+		}
+		x = 98
+		y = 6
+
+	}
+	focus = {
+		id = Tojo's_conomic_policy
+		icon = GFX_Tojos_conomic_policy
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Tojo_ideki_aide
+		}
+		prerequisite = {
+			focus = Expansion_of_far_right_impact
+		}
+		x = 95
+		y = 6
+
+	}
+	focus = {
+		id = JAP_Talent_selection_from_the_far_right
+		icon = GFX_Talent_selection_farright
+		cost = 10.00
+		prerequisite = {
+			focus = Tojo's_conomic_policy
+			focus = JAP_Nurturing_economic_talent
+		}
+		x = 93
+		y = 8
+
+	}
+	focus = {
+		id = JAP_Education_system_reorganization
+		icon = GFX_Education_system_reorganization
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Talent_selection_from_the_far_right
+		}
+		x = 92
+		y = 9
+
+	}
+	focus = {
+		id = JAP_Teacher_election
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Talent_selection_from_the_far_right
+		}
+		x = 94
+		y = 9
+
+	}
+	focus = {
+		id = JAP_Nationalization_of_Japanese_companies
+		icon = GFX_JAP_Nationalization_of_Japanese_companies
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Paramilitary_organization
+		}
+		x = 97
+		y = 7
+
+	}
+	focus = {
+		id = JAP_Maintaining_a_state-led_economy
+		icon = GFX_Maintaining_a_state-led_economy
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Nationalization_of_Japanese_companies
+		}
+		prerequisite = {
+			focus = Tojo's_conomic_policy
+		}
+		x = 96
+		y = 8
+
+	}
+	focus = {
+		id = JAP_anti_communism
+		icon = GFX_anti_communism
+		cost = 10.00
+		prerequisite = {
+			focus = Expansion_of_far_right_impact
+		}
+		x = 100
+		y = 6
+
+	}
+	focus = {
+		id = JAP_puppetes_showa
+		icon = GFX_puppetes_showa
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_anti_communism
+			focus = JAP_Paramilitary_organization
+		}
+		x = 99
+		y = 7
+
+	}
+	focus = {
+		id = JAP_Anti_capitalist_propaganda
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_puppetes_showa
+		}
+		prerequisite = {
+			focus = JAP_Nationalization_of_Japanese_companies
+		}
+		x = 98
+		y = 8
+
+	}
+	focus = {
+		id = JAP_Communist_Party_weakening
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_anti_communism
+		}
+		x = 101
+		y = 7
+
+	}
+	focus = {
+		id = JAP_Anti_communist_propaganda
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Communist_Party_weakening
+		}
+		prerequisite = {
+			focus = JAP_puppetes_showa
+		}
+		x = 100
+		y = 8
+
+	}
+	focus = {
+		id = JAP_Reduced_US_influence
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Anti_communist_propaganda
+		}
+		prerequisite = {
+			focus = JAP_Anti_capitalist_propaganda
+		}
+		x = 99
+		y = 9
+
+	}
+	focus = {
+		id = JAP_Equal_rights
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Reduced_US_influence
+		}
+		x = 100
+		y = 10
+
+	}
+	focus = {
+		id = JAP_Military_politician
+		icon = GFX_JAP_Military_politician
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_general_tojo
+		}
+		x = 101
+		y = 5
+
+	}
+	focus = {
+		id = JAP_Communist_Party_Remnant_Removal
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Communist_Party_weakening
+		}
+		x = 102
+		y = 8
+
+	}
+	focus = {
+		id = JAP_Media_control
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Anti_communist_propaganda
+		}
+		prerequisite = {
+			focus = JAP_Communist_Party_Remnant_Removal
+		}
+		x = 101
+		y = 9
+
+	}
+	focus = {
+		id = JAP_Strengthening_the_intelligence_network
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Media_control
+		}
+		x = 102
+		y = 10
+
+	}
+	focus = {
+		id = jAP_Congressional_ccupation
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Expansion_of_far_right_impact
+		}
+		prerequisite = {
+			focus = JAP_Military_politician
+		}
+		x = 103
+		y = 6
+
+	}
+	focus = {
+		id = jAP_Revision
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = jAP_Congressional_ccupation
+		}
+		x = 104
+		y = 8
+
+	}
+	focus = {
+		id = JAP_Communist_party_llegalization
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Communist_Party_Remnant_Removal
+		}
+		prerequisite = {
+			focus = jAP_Revision
+		}
+		x = 103
+		y = 9
+
+	}
+	focus = {
+		id = JAP_Legalization_of_paramilitary_organizations
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = jAP_Revision
+		}
+		x = 105
+		y = 9
+
+	}
+	focus = {
+		id = JAP_Secret_police_Organization
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Legalization_of_paramilitary_organizations
+		}
+		x = 104
+		y = 10
+
+	}
+	focus = {
+		id = JAP_Sure_control
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Strengthening_the_intelligence_network
+		}
+		prerequisite = {
+			focus = JAP_Communist_party_llegalization
+		}
+		prerequisite = {
+			focus = JAP_Secret_police_Organization
+		}
+		x = 103
+		y = 11
 
 	}
 	focus = {
@@ -1252,6 +1934,630 @@
 		}
 		x = 36
 		y = 9
+
+	}
+	focus = {
+		id = JAP_Empire_resurrection
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Democratic_Remnant_Removal
+		}
+		prerequisite = {
+			focus = JAP_Building_a_foundation_for_support
+		}
+		prerequisite = {
+			focus = JAP_Japan_first
+		}
+		prerequisite = {
+			focus = jAP_Foreign_investment
+		}
+		prerequisite = {
+			focus = JAP_Foreign_propaganda
+		}
+		x = 99
+		y = 13
+
+	}
+	focus = {
+		id = JAP_Renegotiation_with_the_US
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Reduced_US_influence
+		}
+		x = 98
+		y = 10
+
+	}
+	focus = {
+		id = Confiscation_of_privileged_assets
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Maintaining_a_state-led_economy
+		}
+		prerequisite = {
+			focus = JAP_Anti_capitalist_propaganda
+		}
+		x = 97
+		y = 9
+
+	}
+	focus = {
+		id = JAP_Securing_current_reserve_assets
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Confiscation_of_privileged_assets
+		}
+		x = 96
+		y = 10
+
+	}
+	focus = {
+		id = JAP_Avoidance_of_war_responsibility
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Renegotiation_with_the_US
+		}
+		prerequisite = {
+			focus = JAP_Equal_rights
+		}
+		x = 99
+		y = 11
+
+	}
+	focus = {
+		id = JAP_Social_Investment
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_National_textbook
+		}
+		prerequisite = {
+			focus = JAP_Securing_current_reserve_assets
+		}
+		mutually_exclusive = {
+			focus = JAP_Invest_in_nobles
+		}
+		x = 95
+		y = 11
+
+	}
+	focus = {
+		id = JAP_National_textbook
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Education_system_reorganization
+		}
+		prerequisite = {
+			focus = JAP_Teacher_election
+		}
+		x = 93
+		y = 10
+
+	}
+	focus = {
+		id = JAP_Building_a_foundation_for_support
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Sure_control
+		}
+		prerequisite = {
+			focus = JAP_Avoidance_of_war_responsibility
+		}
+		x = 101
+		y = 12
+
+	}
+	focus = {
+		id = JAP_Japan_first
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Avoidance_of_war_responsibility
+		}
+		prerequisite = {
+			focus = JAP_Securing_current_reserve_assets
+		}
+		x = 97
+		y = 12
+
+	}
+	focus = {
+		id = JAP_Democratic_Remnant_Removal
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Avoidance_of_war_responsibility
+		}
+		x = 99
+		y = 12
+
+	}
+	focus = {
+		id = JAP_Japan_to_the_world
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Empire_resurrection
+		}
+		x = 90
+		y = 14
+
+	}
+	focus = {
+		id = jAP_Foreign_investment
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Social_Investment
+		}
+		x = 95
+		y = 12
+
+	}
+	focus = {
+		id = JAP_Foreign_propaganda
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Sure_control
+		}
+		x = 103
+		y = 12
+
+	}
+	focus = {
+		id = JAP_Chinese_economic_support
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Japan_to_the_world
+		}
+		x = 93
+		y = 15
+
+	}
+	focus = {
+		id = JAP_Excessive_investment
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Chinese_economic_support
+		}
+		x = 91
+		y = 16
+
+	}
+	focus = {
+		id = JAP_hard_investment
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Excessive_investment
+		}
+		x = 91
+		y = 17
+
+	}
+	focus = {
+		id = JAP_An_inequality_treaty_with_china
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_China's_demand_for_transfer_of_rights
+		}
+		prerequisite = {
+			focus = JAP_Chinese_political_intervention
+		}
+		x = 93
+		y = 19
+
+	}
+	focus = {
+		id = JAP_China's_demand_for_transfer_of_rights
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Economic_subordination
+		}
+		x = 95
+		y = 18
+
+	}
+	focus = {
+		id = JAP_Southeast_Asia_support
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Japan_to_the_world
+		}
+		x = 98
+		y = 15
+
+	}
+	focus = {
+		id = JAP_Economic_subordination
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Dispatch_of_Japanese_officials
+		}
+		x = 95
+		y = 17
+
+	}
+	focus = {
+		id = JAP_Chinese_political_intervention
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_hard_investment
+		}
+		x = 91
+		y = 18
+
+	}
+	focus = {
+		id = JAP_Hanoi_Highway
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Southeast_Asia_support
+		}
+		x = 97
+		y = 16
+
+	}
+	focus = {
+		id = JAP_Japanese_factory_construction
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Southeast_Asia_support
+		}
+		x = 99
+		y = 16
+
+	}
+	focus = {
+		id = JAP_Strengthening_influence
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Hanoi_Highway
+		}
+		prerequisite = {
+			focus = JAP_Japanese_factory_construction
+		}
+		x = 98
+		y = 17
+
+	}
+	focus = {
+		id = JAP_Continuous_yen_injection
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Strengthening_influence
+		}
+		x = 97
+		y = 18
+
+	}
+	focus = {
+		id = JAP_Political_Intervention_in_Southeast_Asia
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Strengthening_influence
+		}
+		x = 99
+		y = 18
+
+	}
+	focus = {
+		id = JAP_Inequality_treaty_signed_with_Southeast_Asia
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Continuous_yen_injection
+		}
+		prerequisite = {
+			focus = JAP_Political_Intervention_in_Southeast_Asia
+		}
+		x = 98
+		y = 19
+
+	}
+	focus = {
+		id = JAP_Dispatch_of_Japanese_officials
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Chinese_economic_support
+		}
+		x = 95
+		y = 16
+
+	}
+	focus = {
+		id = JAP_Diplomacy_with_India
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Japan_to_the_world
+		}
+		x = 86
+		y = 15
+
+	}
+	focus = {
+		id = JAP_Massive_funding_for_India
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Diplomacy_with_India
+		}
+		mutually_exclusive = {
+			focus = JAP_British_criticism_of_india_neglect
+		}
+		x = 83
+		y = 16
+
+	}
+	focus = {
+		id = JAP_Investment_in_new_city_development_in_India
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Massive_funding_for_India
+		}
+		x = 83
+		y = 17
+
+	}
+	focus = {
+		id = JAP_Indian_company_merger
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Investment_in_new_city_development_in_India
+		}
+		x = 83
+		y = 18
+
+	}
+	focus = {
+		id = JAP_British_criticism_of_india_neglect
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Diplomacy_with_India
+		}
+		mutually_exclusive = {
+			focus = JAP_Massive_funding_for_India
+		}
+		x = 89
+		y = 16
+
+	}
+	focus = {
+		id = JAP_Demand_for_autonomy_in_India
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_British_criticism_of_india_neglect
+		}
+		x = 89
+		y = 17
+
+	}
+	focus = {
+		id = JAP_India_independence_support
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Demand_for_autonomy_in_India
+		}
+		x = 89
+		y = 18
+
+	}
+	focus = {
+		id = JAP_Negotiations_with_the_UK
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Massive_funding_for_India
+		}
+		x = 85
+		y = 17
+
+	}
+	focus = {
+		id = JAP_Indian_far-right_group_support
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_British_criticism_of_india_neglect
+		}
+		x = 87
+		y = 17
+
+	}
+	focus = {
+		id = JAP_Justification_for_intervention_In_india
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Negotiations_with_the_UK
+			focus = JAP_Indian_far-right_group_support
+		}
+		x = 86
+		y = 18
+
+	}
+	focus = {
+		id = JAP_Indian_legation
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Indian_company_merger
+		}
+		prerequisite = {
+			focus = JAP_Justification_for_intervention_In_india
+		}
+		x = 84
+		y = 19
+
+	}
+	focus = {
+		id = JAP_Indian_revolutionary_War_unfolds
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_India_independence_support
+		}
+		prerequisite = {
+			focus = JAP_Justification_for_intervention_In_india
+		}
+		x = 88
+		y = 19
+
+	}
+	focus = {
+		id = JAP_Demand_for_subordination_from_india
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Indian_revolutionary_War_unfolds
+		}
+		prerequisite = {
+			focus = JAP_Indian_legation
+		}
+		x = 86
+		y = 20
+
+	}
+	focus = {
+		id = JAP_Invest_in_nobles
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_National_textbook
+		}
+		prerequisite = {
+			focus = JAP_Privileged_support
+		}
+		mutually_exclusive = {
+			focus = JAP_Social_Investment
+		}
+		x = 91
+		y = 11
+
+	}
+	focus = {
+		id = JAP_Surplus_labor
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Sacrifice_for_the_emperor
+		}
+		prerequisite = {
+			focus = JAP_Emperor's_words_are_law
+		}
+		x = 85
+		y = 9
+
+	}
+	focus = {
+		id = JAP_Establishment_Imperial_Guard
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = Sacrifice_for_the_emperor
+		}
+		prerequisite = {
+			focus = JAP_Realization_of_despotism
+		}
+		x = 83
+		y = 9
+
+	}
+	focus = {
+		id = JAP_Residual_dissolution
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Daejeong_Ik_Chanhoe
+		}
+		x = 86
+		y = 11
+
+	}
+	focus = {
+		id = JAP_Daejeong_Ik_Chanhoe
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Opposition_purge
+		}
+		prerequisite = {
+			focus = JAP_New_constitution
+		}
+		prerequisite = {
+			focus = JAP_Surplus_labor
+		}
+		x = 87
+		y = 10
+
+	}
+	focus = {
+		id = JAP_Emperor_Loyalists_Employment
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Privileged_support
+		}
+		prerequisite = {
+			focus = JAP_Daejeong_Ik_Chanhoe
+		}
+		x = 88
+		y = 11
+
+	}
+	focus = {
+		id = JAP_Self-sufficient_labor
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Surplus_labor
+		}
+		prerequisite = {
+			focus = JAP_Establishment_Imperial_Guard
+		}
+		x = 85
+		y = 10
+
+	}
+	focus = {
+		id = JAP_Cheon_Myung_Claim
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_showa_Deification
+		}
+		prerequisite = {
+			focus = JAP_Establishment_Imperial_Guard
+		}
+		x = 83
+		y = 10
 
 	}
 }

@@ -372,4 +372,76 @@ spriteTypes = {
 		name = "GFX_japan_japanese_mu_sul"
 		texturefile = "gfx/interface/goals/japan_japanese_mu_sul.dds"
 	}
+	SpriteType = {
+		name = "GFX_General_political_election"
+		texturefile = "gfx/interface/goals/General_political_election.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_totally_election"
+		texturefile = "gfx/interface/goals/JAP_totally_election.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_far_right_totally_union"
+		texturefile = "gfx/interface/goals/JAP_far_right_totally_union.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_general_tojo"
+		texturefile = "gfx/interface/goals/JAP_general_tojo.dds"
+	}
+	SpriteType = {
+		name = "GFX_jap_showa_denno"
+		texturefile = "gfx/interface/goals/jap_showa_denno.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_communism_party"
+		texturefile = "gfx/interface/goals/JAP_communism_party.dds"
+	}
+	SpriteType = {
+		name = "GFX_Expansion_of_far_right_impact"
+		texturefile = "gfx/interface/goals/Expansion_of_far_right_impact.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_Military_politician"
+		texturefile = "gfx/interface/goals/JAP_Military_politician.dds"
+	}
+	SpriteType = {
+		name = "GFX_Tojo_ideki_aide"
+		texturefile = "gfx/interface/goals/Tojo_ideki_aide.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_Paramilitary_organization"
+		texturefile = "gfx/interface/goals/JAP_Paramilitary_organization.dds"
+	}
+	SpriteType = {
+		name = "GFX_Tojos_conomic_policy"
+		texturefile = "gfx/interface/goals/Tojos_conomic_policy.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_Paramilitary_organization"
+		texturefile = "gfx/interface/goals/JAP_Paramilitary_organization.dds"
+	}
+	SpriteType = {
+		name = "GFX_Talent_selection_farright"
+		texturefile = "gfx/interface/goals/Talent_selection_farright.dds"
+	}
+	SpriteType = {
+		name = "GFX_Education_system_reorganization"
+		texturefile = "gfx/interface/goals/Education_system_reorganization.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_Nationalization_of_Japanese_companies"
+		texturefile = "gfx/interface/goals/JAP_Nationalization_of_Japanese_companies.dds"
+	}
+	SpriteType = {
+		name = "GFX_Maintaining_a_state-led_economy"
+		texturefile = "gfx/interface/goals/Maintaining_a_state-led_economy.dds"
+	}
+	SpriteType = {
+		name = "GFX_anti_communism"
+		texturefile = "gfx/interface/goals/anti_communism.dds"
+	}
+	SpriteType = {
+		name = "GFX_puppetes_showa"
+		texturefile = "gfx/interface/goals/puppetes_showa.dds"
+	}
 }
