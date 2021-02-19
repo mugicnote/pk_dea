@@ -14,7 +14,7 @@ ICU_the_inevitable_civil_war = {
 			original_tag = ICU
 		}
 
-		days_mission_timeout = 3
+		days_mission_timeout = 278
 
 		fixed_random_seed = no
 
@@ -29,7 +29,6 @@ ICU_the_inevitable_civil_war = {
 
 		visible = {
 			tag = ICU
-			has_country_flag = free_mov_civilwar
 		}
 
 		timeout_effect = {

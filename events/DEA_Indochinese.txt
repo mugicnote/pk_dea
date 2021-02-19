@@ -98,13 +98,14 @@ country_event = { #인도차이나 내전
 		tag = ICU
 		has_defensive_war = no
 		NOT = { has_government = fascism }
+		date > 1937.1.13
 	}
 	
 	option = {
 		name = ICU.5.a	
 		ai_chance = { factor = 100 }
 		remove_ideas = ICU_freedom_hot
-		set_country_flag = first_ICU_civilwar		
+		set_country_flag = first_ICU_civilwar
         if = {	
 			name = ICU.5.a			
 			VIE = {
@@ -113,7 +114,7 @@ country_event = { #인도차이나 내전
 			    set_state_owner  = 286
 			    set_state_owner  = 671
 			}	
-			VIC = {
+			VIS = {
 				transfer_state = 850
 				transfer_state = 851			
 			    set_state_owner  = 850
@@ -155,9 +156,9 @@ country_event = { #인도차이나 내전
 				         name = "베트남 독립당"
 			         }
 				 }	 
-			     VIC = {
-                     load_oob = VIC_civilwar
-                     VIC_create_units = yes
+			     VIS = {
+                     load_oob = VIS_civilwar
+                     VIS_create_units = yes
 		set_country_flag = first_ICU_civilwar
 					 set_party_name = {
 				         ideology = democratic
@@ -186,11 +187,11 @@ country_event = { #인도차이나 내전
                         type = annex_everything
                     }
                     declare_war_on = {
-                        target = VIC
+                        target = VIS
                         type = annex_everything
                     }					
                  }				 
-				 VIC = {
+				 VIS = {
                     declare_war_on = {
                         target = ICU
                         type = annex_everything
@@ -203,19 +204,19 @@ country_event = { #인도차이나 내전
                  
 				671 = {
 					add_core_of = VIE
-					add_core_of = VIC
+					add_core_of = VIS
 				}
 				286 = {
 					add_core_of = VIE
-					add_core_of = VIC
+					add_core_of = VIS
 				}
 				850 = {
 					add_core_of = VIE
-					add_core_of = VIC
+					add_core_of = VIS
 				}
 				851 = {
 					add_core_of = VIE
-					add_core_of = VIC
+					add_core_of = VIS
 				}
 			}			
 		}
