@@ -39,7 +39,7 @@ parliament_gui_decision_category = {
 
 	allowed = { original_tag = KOR }
 
-	priority = 1000
+	priority = 100
 
 	scripted_gui = parliament_gui
 	visible_when_empty = yes
@@ -81,6 +81,7 @@ KOR_rural_relief_category = {
 		NOT = { has_country_flag = KOR_tech_modernisation_complete }
 	}
 
+	priority = 1000
 }
 
 ###범죄와의 전쟁 디시전 (보안 작업 중)###

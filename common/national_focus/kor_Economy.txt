@@ -1,11 +1,15 @@
 ﻿shared_focus = {
 	id = rural_relief_policy
-	icon = GFX_goal_SZC_improvised_farming_machinery
+	icon = GFX_usa_truman_agri_act
 	cost = 1
 
+	prerequisite = {
+		focus = first_step_in_economic_revival
+	}
+
 	offset = {
-		x = 110
-		y = 6
+		x = 39
+		y = 13
 		trigger = {
 			tag = KOR
 		}

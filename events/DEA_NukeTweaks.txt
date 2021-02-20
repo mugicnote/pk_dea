@@ -7,6 +7,8 @@ country_event = {
 	desc = nuket.0.d
 	picture = GFX_news_event_nuke
 
+	is_triggered_only = yes
+
 	option = { 
 		name = nuket.0.a
 				if = { limit = { has_idea = n_k_surrender_idea_6 } 
