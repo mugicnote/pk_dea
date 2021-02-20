@@ -1,3 +1,4 @@
+
 state={
 	id=850
 	name="STATE_850"
@@ -6,13 +7,13 @@ state={
 		add_core_of = VIN
 		owner = ICU
 		buildings = {
-			
+
 		}
 
 	}
 
 	provinces={
-		1073 1157 7015 7093 7518 9948 12008 12048 12065 
+		1073 1157 7015 7518 9948 12008 13260 13261 13262 13263 13264 
 	}
 	manpower=0
 	buildings_max_level_factor=1.000

@@ -2968,72 +2968,17 @@ focus_tree = {
 	}
 
 	focus = {
-		id = Chun_Doo_hwan_Elected
-		icon = GFX_focus_Chun_Doo_hwan
+		id = first_step_in_economic_revival
+		icon = GFX
 		cost = 10.00
 		prerequisite = {
 
 		}
-		x = 21
-		y = 16
+		completion_reward = {
 
-	}
-	focus = {
-		id = Roh_Tae_woo_Elected
-		icon = GFX_focus_Roh_Tae_woo
-		cost = 10.00
-		prerequisite = {
-
-		}
-		x = 23
-		y = 16
-
-	}
-	focus = {
-		id = Kim_Young_sam_Elected
-		icon = GFX_focus_Kim_Young_sam
-		cost = 10.00
-		prerequisite = {
-
-		}
-		x = 25
-		y = 16
-
-	}
-	focus = {
-		id = Kim_Dae_jung_Elected
-		icon = GFX_focus_Kim_Dae_jung
-		cost = 10.00
-		prerequisite = {
-
-		}
-		x = 27
-		y = 16
-
-	}
-	focus = {
-		id = Roh_Moo_hyun_Elected
-		icon = GFX_focus_Roh_Moo_hyun
-		cost = 10.00
-		prerequisite = {
-
-		}
-		available = { 
-			date > 2002.12.19
 		}
 		x = 29
-		y = 16
-
+		y = 12
 	}
-	focus = {
-		id = Lee_Myung_bak_Elected
-		icon = GFX_focus_Lee_Myung_bak
-		cost = 10.00
-		prerequisite = {
 
-		}
-		x = 31
-		y = 16
-
-	}
 }
