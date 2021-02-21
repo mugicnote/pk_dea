@@ -102,13 +102,13 @@
 					add_building_construction = {
 						type = bunker
 						level = 2
-						province = 12232
+						province = 13306
 						instant_build = yes
 					}
 					add_building_construction = {
 						type = bunker
 						level = 2
-						province = 7238
+						province = 13308
 						instant_build = yes
 					}
 				}
@@ -174,13 +174,13 @@
 					add_building_construction = {
 						type = bunker
 						level = 2
-						province = 12260
+						province = 10317
 						instant_build = yes
 					}
 					add_building_construction = {
 						type = bunker
 						level = 2
-						province = 7645
+						province = 13315
 						instant_build = yes
 					}
 				}
@@ -210,7 +210,7 @@
 					add_building_construction = {
 						type = naval_base
 						level = 2
-						province = 4075
+						province = 13306
 						instant_build = yes
 					}
 				}

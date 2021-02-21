@@ -110,16 +110,32 @@ country_event = { #인도차이나 내전
 			name = ICU.5.a			
 			VIE = {
 				transfer_state = 286
-				transfer_state = 671
+				transfer_state = 885
+				transfer_state = 887
+				transfer_state = 888
+				transfer_state = 889
+				transfer_state = 890
+				transfer_state = 891
+				transfer_state = 892
+				transfer_state = 893				
 			    set_state_owner  = 286
-			    set_state_owner  = 671
+			    set_state_owner  = 885
+			    set_state_owner  = 887	
+			    set_state_owner  = 888
+			    set_state_owner  = 889
+			    set_state_owner  = 890
+			    set_state_owner  = 891
+			    set_state_owner  = 892
+			    set_state_owner  = 893					
 			}	
 			VIS = {
+				transfer_state = 671
 				transfer_state = 850
 				transfer_state = 851
 				transfer_state = 874
 				transfer_state = 875
-				transfer_state = 876				
+				transfer_state = 876	
+				set_state_owner  = 671
 			    set_state_owner  = 850
 			    set_state_owner  = 851
 			    set_state_owner  = 874
@@ -146,11 +162,9 @@ country_event = { #인도차이나 내전
 					infantry = { x = 0 y = 2 }
 					infantry = { x = 1 y = 0 }
 					infantry = { x = 1 y = 1 }
-					infantry = { x = 1 y = 2 }
-					infantry = { x = 2 y = 0 }
 						}
 					}
-					670 = {
+					886 = {
 						create_unit = {
 							division = "division_template = \"연방 진압사단\" start_experience_factor = 0.1" 
 							owner = ICU
@@ -169,7 +183,13 @@ country_event = { #인도차이나 내전
 							division = "division_template = \"연방 진압사단\" start_experience_factor = 0.1" 
 							owner = ICU
 							}
-						}						
+						}
+					882 = {
+						create_unit = {
+							division = "division_template = \"연방 진압사단\" start_experience_factor = 0.1" 
+							owner = ICU
+							}
+						}												
 			hidden_effect = { 
 			     VIE = {
                      load_oob = VIE_civilwar
@@ -269,6 +289,38 @@ country_event = { #인도차이나 내전
 				876 = {
 					add_core_of = VIE
 					add_core_of = VIS
+				}
+				885 = {
+					add_core_of = VIE
+					add_core_of = VIS
+				}
+				887 = {
+					add_core_of = VIE
+					add_core_of = VIS
+				}
+				888 = {
+					add_core_of = VIE
+					add_core_of = VIS
+				}
+				889 = {
+					add_core_of = VIE
+					add_core_of = VIS
+				}
+				890 = {
+					add_core_of = VIE
+					add_core_of = VIS
+				}
+				891 = {
+					add_core_of = VIE
+					add_core_of = VIS
+				}
+				892 = {
+					add_core_of = VIE
+					add_core_of = VIS
+				}
+				893 = {
+					add_core_of = VIE
+					add_core_of = VIS
 				}				
 			}
 	immediate = {
@@ -326,12 +378,16 @@ country_event = {
 	        if = {	
 			name = ICU.6.a			
 			VIV = {
-				transfer_state = 741
-			    set_state_owner  = 741
+				transfer_state = 887
+			    set_state_owner  = 887
 			}	
 			VIR = {
-				transfer_state = 286			
-			    set_state_owner  = 286
+				transfer_state = 888
+				transfer_state = 889
+				transfer_state = 890				
+			    set_state_owner  = 888
+			    set_state_owner  = 889
+			    set_state_owner  = 890			
 			}
 		}
 			hidden_effect = { 
@@ -450,8 +506,37 @@ country_event = {
 					add_core_of = VIV
 					add_core_of = VIR
 				}				
-				741 = {
+				885 = {
 					add_core_of = VIV
+					add_core_of = VIR
+				}
+				887 = {
+					add_core_of = VIV
+					add_core_of = VIR
+				}
+				888 = {
+					add_core_of = VIV
+					add_core_of = VIR
+				}
+				889 = {
+					add_core_of = VIV
+					add_core_of = VIR
+				}
+				890 = {
+					add_core_of = VIV
+					add_core_of = VIR
+				}
+				891 = {
+					add_core_of = VIV
+					add_core_of = VIR
+				}
+				892 = {
+					add_core_of = VIV
+					add_core_of = VIR
+				}
+				893 = {
+					add_core_of = VIV
+					add_core_of = VIR
 				}				
 			}
 	immediate = {

@@ -15,19 +15,19 @@ units = {
 	
 	division = {
 		name = "1 인민사단"
-		location = 7376
+		location = 1248
 		division_template = "남베트남 인민사단"
 		start_experience_factor = 0.1
 	}
 	division = {
 		name = "2 인민사단"
-		location = 4639
+		location = 4363
 		division_template = "남베트남 인민사단"
 		start_experience_factor = 0.1
 	}
 	division = {
 		name = "3 인민사단"
-		location = 10177
+		location = 1248
 		division_template = "남베트남 인민사단"
 		start_experience_factor = 0.1
 	}	

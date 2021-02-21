@@ -21,14 +21,20 @@ units = {
 	}
 	division = {
 		name = "2 베트남 자유해방군"
-		location = 12150
+		location = 1400
 		division_template = "베트남 자유해방군"
 		start_experience_factor = 0.1
 	}
 	division = {
 		name = "3 베트남 자유해방군"
-		location = 1423
+		location = 7238
 		division_template = "베트남 자유해방군"
 		start_experience_factor = 0.1
-	}			
+	}
+	division = {
+		name = "4 베트남 자유해방군"
+		location = 12133
+		division_template = "베트남 자유해방군"
+		start_experience_factor = 0.1
+	}	
 }
