@@ -24,21 +24,21 @@ division_template = {
 units = {
 	
 	division = {
-		name = "4 베트남 방위사단"
-		location = 11936
-		division_template = "베트남 식민지 사단"
+		name = "1 베트남 공화국 사단"
+		location = 1185
+		division_template = "베트남 공화국 사단"
 		start_experience_factor = 0.1
 	}
 	division = {
-		name = "5 베트남 방위사단"
-		location = 9948
-		division_template = "베트남 식민지 사단"
+		name = "2 베트남 공화국 사단"
+		location = 13267
+		division_template = "베트남 공화국 사단"
 		start_experience_factor = 0.1
 	}
 	division = {
-		name = "6 베트남 방위사단"
-		location = 12319
-		division_template = "베트남 식민지 사단"
+		name = "3 베트남 공화국 사단"
+		location = 4529
+		division_template = "베트남 공화국 사단"
 		start_experience_factor = 0.1
 	}
 	division = {

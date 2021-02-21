@@ -1,5 +1,5 @@
 ﻿l_english:
-##남부 베트남## 
+##중부 베트남## 
  VIE_fascism:0 "베트남 제국"
  VIE_fascism_DEF:0 "베트남 제국"
  VIE_democratic:0 "베트남 제국"
@@ -25,4 +25,29 @@
  VIS_democratic_ADJ:0 "베트남"
  VIS_neutrality_ADJ:0 "베트남"
  VIS_communism_ADJ:0 "베트남"
- 
+ ##남부 베트남## 
+ VIR_fascism:0 "베트남 군사정부"
+ VIR_fascism_DEF:0 "베트남 군사정부"
+ VIR_democratic:0 "베트남 자유 공화국"
+ VIR_democratic_DEF:0 "베트남 자유 공화국"
+ VIR_neutrality:1 "베트남 독립연맹"
+ VIR_neutrality_DEF:1 "베트남 독립연맹"
+ VIR_communism:0 "베트남 사회주의 공화국"
+ VIR_communism_DEF:0 "베트남 사회주의 공화국"
+ VIR_fascism_ADJ:0 "베트남"
+ VIR_democratic_ADJ:0 "베트남"
+ VIR_neutrality_ADJ:0 "베트남"
+ VIR_communism_ADJ:0 "베트남"
+ ##남베트남 해방전선## 
+ VIV_fascism:0 "베트남 공화국"
+ VIV_fascism_DEF:0 "베트남 공화국"
+ VIV_democratic:0 "베트남 공화국"
+ VIV_democratic_DEF:0 "베트남 공화국"
+ VIV_neutrality:1 "베트남 공화국"
+ VIV_neutrality_DEF:1 "베트남 공화국"
+ VIV_communism:0 "남베트남 인민해방전선"
+ VIV_communism_DEF:0 "남베트남 인민해방전선"
+ VIV_fascism_ADJ:0 "남베트남"
+ VIV_democratic_ADJ:0 "남베트남"
+ VIV_neutrality_ADJ:0 "남베트남"
+ VIV_communism_ADJ:0 "남베트남"

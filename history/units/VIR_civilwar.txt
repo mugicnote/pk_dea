@@ -1,0 +1,34 @@
+﻿division_template = {
+	name = "베트남 자유해방군"
+	division_names_group = ICU_NOM_1
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+}
+
+units = {
+	
+	division = {
+		name = "1 베트남 자유해방군"
+		location = 4401
+		division_template = "베트남 자유해방군"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "2 베트남 자유해방군"
+		location = 12150
+		division_template = "베트남 자유해방군"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "3 베트남 자유해방군"
+		location = 1423
+		division_template = "베트남 자유해방군"
+		start_experience_factor = 0.1
+	}			
+}

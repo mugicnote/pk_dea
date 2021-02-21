@@ -1,0 +1,35 @@
+﻿capital = 741 #일단은 프놈펜 
+
+oob = "VIV"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	mass_assault = 1
+}
+
+add_ideas = {
+}
+
+set_politics = {
+	ruling_party = communism
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	communism = 100
+}
+
+create_country_leader = {
+	name = "남베트남 혁명 위원회"
+	desc = ""
+	picture = "Portrait_ICU_Eugene_Robin.dds"
+	expire = "1965.1.1"
+	ideology = communism
+	traits = {
+		#
+	}
+}
+
+create_corps_commander = {
+}
