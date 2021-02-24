@@ -1,0 +1,143 @@
+### Don't touch!!!
+
+defined_text = {
+	name = first_leader_title_text
+	text = {
+		trigger = {
+			tag = KOR
+			has_government = democratic
+		}
+		localization_key = KOR_FIRST_TITLE
+	}
+	text = {
+		trigger = {
+			tag = JAP
+			has_government = democratic
+		}
+		localization_key = JAP_FIRST_TITLE
+	}
+	text = {
+		trigger = {
+			tag = CHI
+			has_government = neutrality
+		}
+		localization_key = CHI_FIRST_TITLE
+	}
+}
+
+defined_text = {
+	name = second_leader_title_text
+	text = {
+		trigger = {
+			tag = KOR
+			has_government = democratic
+		}
+		localization_key = KOR_SECOND_TITLE
+	}
+	text = {
+		trigger = {
+			tag = JAP
+			has_government = democratic
+		}
+		localization_key = JAP_SECOND_TITLE
+	}
+	text = {
+		trigger = {
+			tag = CHI
+			has_government = neutrality
+		}
+		localization_key = CHI_SECOND_TITLE
+	}
+}
+
+defined_text = {
+	name = dual_leader_name_text
+	text = {
+		trigger = {
+			tag = KOR
+			has_government = democratic
+		}
+		localization_key = KOR_DUAL_NAME
+	}
+	text = {
+		trigger = {
+			tag = JAP
+			has_government = democratic
+		}
+		localization_key = JAP_DUAL_NAME
+	}
+	text = {
+		trigger = {
+			tag = CHI
+			has_government = neutrality
+		}
+		localization_key = CHI_DUAL_NAME
+	}
+}
+
+defined_text = {
+    name = dual_leader
+	text = {
+		trigger = {
+			tag = KOR
+			has_government = democratic
+		}
+		localization_key = GFX_Portrait_Kim_Kyusik
+	}
+	text = {
+		trigger = {
+			tag = JAP
+			has_government = democratic
+		}
+		localization_key = GFX_Portrait_showa_tenno
+	}
+	text = {
+		trigger = {
+			tag = CHI
+			has_government = neutrality
+		}
+		localization_key = GFX_Portrait_Wang_Jingwei
+	}
+}
+
+defined_text = {
+    name = GetDualLeaderDesc
+    
+    text = {
+        trigger = {
+			tag = JAP
+			has_government = fascism
+		}
+        localization_key = "POLITICS_FUKUDA_DESC"
+	}
+	text = {
+        trigger = {
+			tag = JAP
+			has_government = neutrality
+			has_completed_focus = JAP_showa_restoration
+		}
+        localization_key = "POLITICS_TAMADA_DESC"
+	}
+	text = {
+        trigger = {
+			tag = JAP
+			has_government = neutrality
+			has_completed_focus = JAP_modern_shogunate
+		}
+        localization_key = "POLITICS_TAMADA_DESC"
+	}
+}
+
+#defined_text = {
+#    name = GetFirstLeaderDesc
+#   
+#    text = {
+#        trigger = {
+#			original_tag = ENG
+#			ENG = {
+#				has_idea = george_v
+#			}
+#		}
+#	    localization_key = "FIRST_LEADER_DESC_TEST"
+#	}
+#}

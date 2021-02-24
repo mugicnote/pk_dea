@@ -25,6 +25,7 @@ guiTypes = {
 		size = { width = 778 height = 672 }
 		position = { x = 541 y = 79 }
 		moveable = yes
+		
 
 		background = {
 			name = "Background"

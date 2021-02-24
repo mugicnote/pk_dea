@@ -1,6 +1,10 @@
 spriteTypes = {
 	
 	spriteType = {
+		name = "GFX_pol_leader_frame_cab"
+		texturefile = "gfx/interface/pol_leader_frame_cab.dds"
+	}
+	spriteType = {
 		name = "GFX_pol_leader_rank_frame"
 		texturefile = "gfx/interface/pol_leader_rank_frame.dds"
 	}

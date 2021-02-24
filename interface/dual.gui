@@ -1,13 +1,13 @@
 guiTypes = {
 	containerWindowType = {
 		name = "double_leader_system_container"
-		position = { x = 332 y = 262 }
+		position = { x = 460 y = 52 }
 		orientation = upper_left
 		
 		buttonType = {
 			name = "double_open"
 			position = { x = 17 y = 0 }
-			quadTextureSprite ="GFX_button_148x34"
+			quadTextureSprite ="GFX_cabinet_button"
 			buttonFont = "hoi_16mbs"
 			buttonText = "야당 개요"
 		}

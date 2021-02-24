@@ -1,7 +1,7 @@
 guiTypes = {
 	containerWindowType = {
 		name = "cabinet_button_ui"
-		position = { x = 390 y = 657 }
+		position = { x = 355 y = 192 }
 		
 		buttonType = {
 			name = "cabinet_button"
@@ -72,7 +72,7 @@ guiTypes = {
 			
 			iconType = { #사진 태두리
 				name = "leader_frame212"
-				spriteType = "GFX_pol_leader_frame"
+				spriteType = "GFX_pol_leader_frame_cab"
 				position = { x = 60 y = 436 }		
 				allwaystransparent = yes
 				pdx_tooltip = "SECOND_LEADER_NAME2"
@@ -122,7 +122,7 @@ guiTypes = {
 			
 			iconType = { #사진 태두리2
 				name = "leader_frame213"
-				spriteType = "GFX_pol_leader_frame"
+				spriteType = "GFX_pol_leader_frame_cab"
 				position = { x = 240 y = 436 }		
 				allwaystransparent = yes
 				pdx_tooltip = "SECOND_LEADER_NAME3"
@@ -172,7 +172,7 @@ guiTypes = {
 			
 			iconType = { #사진 태두리2
 				name = "leader_frame214"
-				spriteType = "GFX_pol_leader_frame"
+				spriteType = "GFX_pol_leader_frame_cab"
 				position = { x = 420 y = 436 }		
 				allwaystransparent = yes
 				pdx_tooltip = "SECOND_LEADER_NAME4"
@@ -222,7 +222,7 @@ guiTypes = {
 			
 			iconType = { #사진 태두리
 				name = "leader_frame215"
-				spriteType = "GFX_pol_leader_frame"
+				spriteType = "GFX_pol_leader_frame_cab"
 				position = { x = 240 y = 106 }		
 				allwaystransparent = yes
 				pdx_tooltip = "SECOND_LEADER_NAME5"
@@ -272,7 +272,7 @@ guiTypes = {
 			
 			iconType = { #사진 태두리2
 				name = "leader_frame216"
-				spriteType = "GFX_pol_leader_frame"
+				spriteType = "GFX_pol_leader_frame_cab"
 				position = { x = 600 y = 436 }		
 				allwaystransparent = yes
 				pdx_tooltip = "SECOND_LEADER_NAME6"
@@ -322,7 +322,7 @@ guiTypes = {
 			
 			iconType = { #사진 태두리2
 				name = "leader_frame217"
-				spriteType = "GFX_pol_leader_frame"
+				spriteType = "GFX_pol_leader_frame_cab"
 				position = { x = 600 y = 106 }		
 				allwaystransparent = yes
 				pdx_tooltip = "SECOND_LEADER_NAME7"
@@ -372,7 +372,7 @@ guiTypes = {
 			
 			iconType = { #사진 태두리
 				name = "leader_frame218"
-				spriteType = "GFX_pol_leader_frame"
+				spriteType = "GFX_pol_leader_frame_cab"
 				position = { x = 60 y = 106 }		
 				allwaystransparent = yes
 				pdx_tooltip = "SECOND_LEADER_NAME8"
@@ -422,7 +422,7 @@ guiTypes = {
 			
 			iconType = { #사진 태두리
 				name = "leader_frame219"
-				spriteType = "GFX_pol_leader_frame"
+				spriteType = "GFX_pol_leader_frame_cab"
 				position = { x = 420 y = 106 }		
 				allwaystransparent = yes
 				pdx_tooltip = "SECOND_LEADER_NAME9"
@@ -472,7 +472,7 @@ guiTypes = {
 			
 			iconType = { #사진 태두리2
 				name = "leader_frame2110"
-				spriteType = "GFX_pol_leader_frame"
+				spriteType = "GFX_pol_leader_frame_cab"
 				position = { x = 780 y = 436 }		
 				allwaystransparent = yes
 				pdx_tooltip = "SECOND_LEADER_NAME10"
@@ -522,7 +522,7 @@ guiTypes = {
 			
 			iconType = { #사진 태두리2
 				name = "leader_frame2111"
-				spriteType = "GFX_pol_leader_frame"
+				spriteType = "GFX_pol_leader_frame_cab"
 				position = { x = 960 y = 436 }		
 				allwaystransparent = yes
 				pdx_tooltip = "SECOND_LEADER_NAME11"
@@ -572,7 +572,7 @@ guiTypes = {
 			
 			iconType = { #사진 태두리2
 				name = "leader_frame2112"
-				spriteType = "GFX_pol_leader_frame"
+				spriteType = "GFX_pol_leader_frame_cab"
 				position = { x = 1140 y = 436 }		
 				allwaystransparent = yes
 				pdx_tooltip = "SECOND_LEADER_NAME12"
@@ -622,7 +622,7 @@ guiTypes = {
 			
 			iconType = { #사진 태두리2
 				name = "leader_frame2113"
-				spriteType = "GFX_pol_leader_frame"
+				spriteType = "GFX_pol_leader_frame_cab"
 				position = { x = 1320 y = 436 }		
 				allwaystransparent = yes
 				pdx_tooltip = "SECOND_LEADER_NAME13"
@@ -672,7 +672,7 @@ guiTypes = {
 			
 			iconType = { #사진 태두리2
 				name = "leader_frame2114"
-				spriteType = "GFX_pol_leader_frame"
+				spriteType = "GFX_pol_leader_frame_cab"
 				position = { x = 780 y = 106 }		
 				allwaystransparent = yes
 				pdx_tooltip = "SECOND_LEADER_NAME14"
@@ -722,7 +722,7 @@ guiTypes = {
 			
 			iconType = { #사진 태두리2
 				name = "leader_frame2115"
-				spriteType = "GFX_pol_leader_frame"
+				spriteType = "GFX_pol_leader_frame_cab"
 				position = { x = 960 y = 106 }		
 				allwaystransparent = yes
 				pdx_tooltip = "SECOND_LEADER_NAME15"
@@ -772,7 +772,7 @@ guiTypes = {
 			
 			iconType = { #사진 태두리2
 				name = "leader_frame2116"
-				spriteType = "GFX_pol_leader_frame"
+				spriteType = "GFX_pol_leader_frame_cab"
 				position = { x = 1140 y = 106 }		
 				allwaystransparent = yes
 				pdx_tooltip = "SECOND_LEADER_NAME16"
@@ -822,7 +822,7 @@ guiTypes = {
 			
 			iconType = { #사진 태두리2
 				name = "leader_frame2117"
-				spriteType = "GFX_pol_leader_frame"
+				spriteType = "GFX_pol_leader_frame_cab"
 				position = { x = 1320 y = 106 }		
 				allwaystransparent = yes
 				pdx_tooltip = "SECOND_LEADER_NAME17"

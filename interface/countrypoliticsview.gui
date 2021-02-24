@@ -7,7 +7,7 @@ guiTypes = {
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
 		animation_time = 300	
-		size = { width=550 height=100%% }
+		size = { width=732 height=100%% }
 		
 		#hide_sound = menu_close_window
 		show_sound = menu_open_window
@@ -46,7 +46,7 @@ guiTypes = {
 		iconType ={
 			name ="pol_faction_icon"
 			spriteType = "GFX_pol_factions_strip"
-			position = { x= 19 y = 305 }
+			position = { x= 19 y = 338 }
 			Orientation = "UPPER_LEFT"
 			frame = 1
 		}			
@@ -82,13 +82,13 @@ guiTypes = {
 			iconType = {
 				name = "chart"
 				spriteType = "GFX_political_chart"
-				position = { x = 28 y = 5 }
+				position = { x = 43 y = 40 }
 			}
 			
 			iconType ={
 				name ="pol_view_bg"
 				spriteType = "GFX_pol_piechart_overlay_63x63"
-				position = { x= -2 y = 1s }
+				position = { x= 13 y = 36s }
 			}
 		}
 
@@ -154,7 +154,7 @@ guiTypes = {
 			
 			instantTextboxType = {
 				name = "ideology"
-				position = { x = 9 y = 3 }
+				position = { x = 9 y = 39 }
 				font = "hoi_18mbs"
 				text = "ideology"
 				maxWidth = 155
@@ -163,7 +163,7 @@ guiTypes = {
 			
 			instantTextboxType = {
 				name = "elections"
-				position = { x = 9 y = 42 }
+				position = { x = 9 y = 79 }
 				font = "hoi_16mbs"
 				text = "elections"
 				maxWidth = 155
@@ -286,14 +286,14 @@ guiTypes = {
 			}			
 			iconType = {
 				name = "current_autonomy_level_icon"
-				position = { x = 225 y = 778 }
+				position = { x = 225 y = 868 }
 				quadTextureSprite = "GFX_autonomy_unknown_icon"
 			}
 		}
 			
 		containerWindowType = {
 			name = "active_goal"
-			position = { x = 179 y = 48 }
+			position = { x = 359 y = 58 }
 			size = { width = 330 height = 50 }
 			clipping = no
 						
@@ -397,13 +397,13 @@ guiTypes = {
 		}
 		containerWindowType = {
 			name = "national_spirit"
-			position = { x = 81 y = 153 }
+			position = { x = 261 y = 183 }
 			size = { width = 360 height = 50 }
 			clipping = no
 						
 			instantTextboxType = {
 				name = "title"
-				position = { x = 110 y = -2 }
+				position = { x = 110 y = 3 }
 				font = "hoi_18mbs"
 				text = "POLITICS_NATIONAL_SPIRIT"
 				maxWidth = 200
@@ -442,21 +442,21 @@ guiTypes = {
 		}
 		iconType = {
 			name = "leader"
-			position = { x = 18 y = 58 }
+			position = { x = 18 y = 97 }
 			spriteType = "GFX_leader_unknown"
 		}
 
 		iconType = {
 			name = "leader_frame2"
 			spriteType = "GFX_pol_leader_frame"
-			position = { x = 10 y = 44 }		
+			position = { x = 11 y = 46 }		
 			alwaystransparent = yes
 		}
 
 		
 		instantTextboxType = {
 			name = "leader_name"
-			position = { x = 18 y = 269 }
+			position = { x = 18 y = 306 }
 			font = "hoi_18mbs"
 			text = "leader_name"
 			maxWidth = 155
@@ -501,7 +501,7 @@ guiTypes = {
 		
 		buttonType = {
 			name = "close_button"
-			position = { x = -42 y = 9 }
+			position = { x = -43 y = 10 }
 			quadTextureSprite ="GFX_closebutton"
 			buttonFont = "Main_14_black"
 			shortcut = "ESCAPE"
@@ -510,24 +510,15 @@ guiTypes = {
 			pdx_tooltip = "CLOSE"
 		}
 
-
-		iconType ={
-			name ="politics_bottom"
-			spriteType = "GFX_main_screens_bottom"
-			position = { x = -2 y = 485 }
-			Orientation = "UPPER_LEFT"
-			scale = 1.02
-		}
-		
 		iconType = {
 			name = "rules"
 			spriteType = "GFX_rules_sum_icon"
-			position = { x = 460 y = 7 }
+			position = { x = 640 y = 7 }
 		}
 		
 		buttonType = {
 			name = "manage_occupied_button"
-			position = { x = 10 y = 492 }
+			position = { x = 550 y = 302 }
 			quadTextureSprite = "GFX_government_button"
 			buttonFont = "hoi_16mbs"
 			Orientation = "UPPER_LEFT"
@@ -535,7 +526,7 @@ guiTypes = {
 
 		instantTextboxType = {
 			name = "manage_occupied_button_text"
-			position = { x = 48 y = 499 }
+			position = { x = 588 y = 309 }
 			font = "hoi_16mbs"
 			text = "MANAGE_OCCUPIED_TERRITORIES"
 			maxWidth = 122
@@ -548,7 +539,7 @@ guiTypes = {
 
 			buttonType = {
 				name = "show_subjects_button"
-				position = { x = 0 y = 0 }
+				position = { x = 183 y = -105 }
 				quadTextureSprite = "GFX_government_button"
 				buttonFont = "hoi_16mbs"
 				Orientation = "UPPER_RIGHT"
@@ -556,7 +547,7 @@ guiTypes = {
 
 			instantTextboxType = {
 				name = "show_subjects_button_text"
-				position = { x = 0 y = 8 }
+				position = { x = 144 y = -97 }
 				font = "hoi_16mbs"
 				text = "MANAGE_SUBJECTS"
 				Orientation = "UPPER_LEFT"
@@ -567,14 +558,14 @@ guiTypes = {
 			iconType = {
 				name = "icon_manage_subjects"
 				spriteType = "GFX_icon_manage_subjects"
-				position = { x = 2 y = 1 }
+				position = { x = 185 y = -104 }
 				alwaystransparent = yes
 			}
 		}
 		
 		buttonType = {
 			name = "show_exiles_collaborations_button"
-			position = { x = 190 y = 492 }
+			position = { x = 550 y = 344 }
 			quadTextureSprite = "GFX_government_button"
 			buttonFont = "hoi_16mbs"
 			Orientation = "UPPER_LEFT"
@@ -583,7 +574,7 @@ guiTypes = {
 
 		instantTextboxType = {
 			name = "manage_exiled_collaborations_governments"
-			position = { x = 223 y = 499 }
+			position = { x = 546 y = 352 }
 			font = "hoi_16mbs"
 			maxWidth = 130
 			maxHeight = 20
@@ -596,13 +587,13 @@ guiTypes = {
 		iconType = {
 			name = "icon_exiled_collaborations_governments"
 			spriteType = "GFX_icon_exiled_governments"
-			position = { x = 192 y = 492 }
+			position = { x = 552 y = 346 }
 		}
 
 		iconType = {
 			name = "icon_occupied_territories"
 			spriteType = "GFX_icon_occupied_territories"
-			position = { x = 12 y = 492 }
+			position = { x = 552 y = 304 }
 		}
 	}
 	
@@ -984,19 +975,19 @@ guiTypes = {
 
 		iconType = {
 			name = "leading_pol_party_bg"
-			position = { x = 60 y = 5 }
+			position = { x = 77 y = -5 }
 			spriteType = "GFX_leading_pol_party_bg"
 		}		
 		
 		iconType = {
 			name = "color_block_bg"
-			position = { x = 60 y = 2 }
+			position = { x = 76 y = -8 }
 			spriteType = "GFX_pol_party_colour_bg"
 		}
 		
 		iconType = {
 			name = "color_block"
-			position = { x = 64 y = 6 }
+			position = { x = 80 y = -4 }
 			spriteType = "GFX_pol_party_colour"
 		}
 		
@@ -1011,7 +1002,7 @@ guiTypes = {
 			
 		instantTextboxType = {
 			name = "name"
-			position = { x = 82 y = 4 }
+			position = { x = 98 y = -6 }
 			font = "hoi_16mbs"
 			text = "party name"
 			fixedsize = yes
