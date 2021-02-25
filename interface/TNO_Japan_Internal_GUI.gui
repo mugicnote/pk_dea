@@ -3,12 +3,12 @@ guiTypes = {
 	containerWindowType = {
 		name = "TNO_Japan_Internal_GUI_open"
 		size = { width = 220 height = 128 }
-		position = { x = 0 y = 289 }
+		position = { x = 170 y = -10 }
 
 		buttonType = {
 			name = "Japan_Internal_GUI_Open_Button"
 			quadTextureSprite = "GFX_Japan_Internal_GUI_Open_Button"
-			position = { x = 263 y = 121 }
+			position = { x = 263 y = 0 }
 			pdx_tooltip = "scripted_gui_open_tt_jap_gov"
 			scale = 0.65
 		}

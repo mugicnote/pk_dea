@@ -1,7 +1,7 @@
 guiTypes = {
 	containerWindowType = {
 		name = "double_leader_system_container"
-		position = { x = 460 y = 52 }
+		position = { x = 265 y = 10 }
 		orientation = upper_left
 		
 		buttonType = {
