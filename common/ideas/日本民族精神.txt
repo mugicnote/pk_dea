@@ -1,0 +1,239 @@
+ideas = {
+
+    country = {
+        
+        JAP_new_fund_ideas = { 
+
+            allowed = {
+                original_tag = JAP
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = JAP_new_fund_ideas
+
+            removal_cost = -1
+            
+            modifier = {
+                consumer_goods_factor = 0.02
+            }
+        }
+    }
+
+    country = {
+
+        JAP_new_politics_ideas = {
+
+            allowed = {
+                original_tag = JAP
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = JAP_new_politics_ideas
+
+            removal_cost = -1
+            
+            modifier = {
+                political_power_cost = -0.02
+            }
+        }
+    }
+
+    country = {
+
+        JAP_zero_money = {
+
+            allowed = {
+                original_tag = JAP
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = JAP_zero_money_ideas
+
+            removal_cost = -1
+            
+            modifier = {
+                consumer_goods_factor = 0.1
+            }
+        }
+    }
+
+    country = {
+
+        JAP_money_in_safe = {
+
+            allowed = {
+                original_tag = JAP
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = JAP_money_in_safe_ideas
+
+            removal_cost = -1
+            
+            modifier = {
+                consumer_goods_factor = 0.03
+            }
+        }
+    }
+
+    country = {
+
+        JAP_Increased_suicide_rate = {
+
+            allowed = {
+                original_tag = JAP
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = JAP_Fathers_suicide_ideas
+
+            removal_cost = -1
+            
+            hidden_modifier = {
+                monthly_population = -1
+                production_speed_buildings_factor = -0.5
+            }
+        }
+    }
+
+    country = {
+
+        JAP_kushu_shipard = {
+
+            allowed = {
+                original_tag = JAP
+            }
+            available = {
+                owns_state = 528
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = JAP_kushu_shipard_ideas
+
+            removal_cost = -1
+            
+            modifier = {
+                industrial_capacity_dockyard = 0.1
+            }
+        }
+    }
+
+    country = {
+
+        JAP_ganto_factory = {
+
+            allowed = {
+                original_tag = JAP
+            }
+            available = {
+                owns_state = 282
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = JAP_ganto_factory_ideas
+
+            removal_cost = -1
+            
+            modifier = {
+                industrial_capacity_factory = 0.1
+                production_speed_buildings_factor = 0.05
+            }
+        }
+    }
+
+    country = { #우리도 사람이다. 먹을 것이 필요하다 중간
+
+        JAP_stricke_to_eat = {
+
+            allowed = {
+                original_tag = JAP
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = JAP_stricke_to_eat_ideas
+
+            removal_cost = -1
+            
+            modifier = {
+                consumer_goods_factor = 0.08
+                production_speed_buildings_factor = -0.25
+                industrial_capacity_dockyard = -0.25
+                industrial_capacity_factory = -0.15
+            }
+        }
+    }
+
+    country = { #우리도 사람이다. 먹을 것이 필요하다 상승
+
+        JAP_stricke_to_eat_up_1level = {
+
+            allowed = {
+                original_tag = JAP
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = JAP_stricke_to_eat_ideas
+
+            removal_cost = -1
+            
+            modifier = {
+                consumer_goods_factor = 0.1
+                production_speed_buildings_factor = -0.3
+                industrial_capacity_dockyard = -0.3
+                industrial_capacity_factory = -0.2
+            }
+        }
+    }
+
+    country = { #우리도 사람이다. 먹을 것이 필요하다 다운
+
+        JAP_stricke_to_eat_up_1down = {
+
+            allowed = {
+                original_tag = JAP
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = JAP_stricke_to_eat_ideas
+
+            removal_cost = -1
+            
+            modifier = {
+                consumer_goods_factor = 0.06
+                production_speed_buildings_factor = -0.2
+                industrial_capacity_dockyard = -0.2
+                industrial_capacity_factory = -0.15
+            }
+        }
+    }
+

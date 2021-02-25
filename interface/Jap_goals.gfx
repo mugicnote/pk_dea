@@ -444,4 +444,16 @@ spriteTypes = {
 		name = "GFX_puppetes_showa"
 		texturefile = "gfx/interface/goals/puppetes_showa.dds"
 	}
+	SpriteType = {
+		name = "GFX_JAP_purge"
+		texturefile = "gfx/interface/goals/JAP_purge.dds"
+	}
+    SpriteType = {
+		name = "GFX_Showa_Restoration"
+		texturefile = "gfx/interface/goals/Showa_Restoration.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_Realization_of_despotism"
+		texturefile = "gfx/interface/goals/JAP_Realization_of_despotism.dds"
+	}
 }

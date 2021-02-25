@@ -1,0 +1,43 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_jap_future_event_picture"
+		texturefile = "gfx/event_pictures/jap_future_event_picture.dds"
+	}
+	spriteType = {
+		name = "GFX_New_Fund_event_picture"
+		texturefile = "gfx/event_pictures/New_Fund_event_picture.dds"
+	}
+	spriteType = {
+		name = "GFX_JAP_new_politics_event_picture"
+		texturefile = "gfx/event_pictures/JAP_new_politics_event_picture.dds"
+	}
+	spriteType = {
+		name = "GFX_JAP_US_stock_market_event_picture"
+		texturefile = "gfx/event_pictures/JAP_US_stock_market_event_picture.dds"
+	}
+	spriteType = {
+		name = "GFX_JAP_A_tough_journey_event_picture"
+		texturefile = "gfx/event_pictures/JAP_A_tough_journey_event_picture.dds"
+	}
+	spriteType = {
+		name = "GFX_JAP_thasnks_dad_event_picture"
+		texturefile = "gfx/event_pictures/JAP_thasnks_dad_event_picture.dds"
+	}
+	spriteType = {
+		name = "GFX_JAP_Suicide_rope_event_picture_picture"
+		texturefile = "gfx/event_pictures/JAP_Suicide_rope_event_picture_picture.dds"
+	}
+	spriteType = {
+		name = "GFX_JAP_shipyard_in_1939_event_picture"
+		texturefile = "gfx/event_pictures/JAP_shipyard_in_1939_event_picture.dds"
+	}
+	spriteType = {
+		name = "GFX_JAP_factory_in_1939_event_picture"
+		texturefile = "gfx/event_pictures/JAP_factory_in_1939_event_picture.dds"
+	}
+	spriteType = {
+		name = "GFX_JAP_strike_in_tokyo_event_picture"
+		texturefile = "gfx/event_pictures/JAP_strike_in_tokyo_event_picture.dds"
+	}
+}

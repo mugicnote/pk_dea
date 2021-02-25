@@ -1,0 +1,38 @@
+spriteTypes = {
+
+	SpriteType = {
+		name = "GFX_idea_JAP_new_fund_ideas"
+		texturefile = "gfx/interface/ideas/JAP_new_fund_ideas.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_JAP_new_politics_ideas"
+		texturefile = "gfx/interface/ideas/JAP_new_politics_ideas.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_JAP_zero_money_ideas"
+		texturefile = "gfx/interface/ideas/JAP_zero_money_ideas.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_JAP_money_in_safe_ideas"
+		texturefile = "gfx/interface/ideas/JAP_money_in_safe_ideas.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_JAP_Fathers_suicide_ideas"
+		texturefile = "gfx/interface/ideas/JAP_Fathers_suicide_ideas.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_JAP_kushu_shipard_ideas"
+		texturefile = "gfx/interface/ideas/JAP_kushu_shipard_ideas.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_JAP_ganto_factory_ideas"
+		texturefile = "gfx/interface/ideas/JAP_ganto_factory_ideas.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_JAP_stricke_to_eat_ideas"
+		texturefile = "gfx/interface/ideas/JAP_stricke_to_eat_ideas.dds"
+	}
+}

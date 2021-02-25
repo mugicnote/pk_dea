@@ -16,22 +16,21 @@ focus_tree = {
 		y = 1
 			completion_reward = {
 					country_event = {
-							id = britain.4000
-							days = 4
-							random = 100
-							random_days = 4
+							id = JAP.1
+							days = 1
+							random = 1
+							random_days = 1
 						}
 				}
-
 	}
 	focus = {
-		id = JAP_General_political_election
+		id = JAP_General_political_election       #선거
 		icon = GFX_General_political_election
 		cost = 10.00
 		x = 83
 		y = 2
-
 	}
+
 	focus = {
 		id = JAP_new_politics
 		icon = GFX_new_politic
@@ -41,7 +40,14 @@ focus_tree = {
 		}
 		x = 17
 		y = 2
-
+			completion_reward = { add_timed_idea = { idea = JAP_new_politics_ideas days = 60 }
+				country_event = {
+					id = JAP.3
+					days = 1
+					random = 1
+					random_days = 1
+				}
+			}
 	}
 	focus = {
 		id = JAP_new_fund
@@ -52,8 +58,16 @@ focus_tree = {
 		}
 		x = 19
 		y = 2
-
+	        completion_reward = { add_timed_idea = { idea = JAP_new_fund_ideas days = 60 }
+			country_event = {
+				id = JAP.2
+				days = 1
+				random = 1
+				random_days = 1
+			}
+		}
 	}
+
 	focus = {
 		id = JAP_problem
 		icon = GFX_probelm_JAP
@@ -66,9 +80,11 @@ focus_tree = {
 		}
 		x = 18
 		y = 3
-
+          completion_reward = { add_political_power = -50 }  
 	}
-	focus = {
+	                                              #기본 4가지중점라인
+
+	focus = {                                     #봉기문제 시작라인
 		id = JAP_people_revolut_problem
 		icon = GFX_revolut_jap
 		cost = 10.00
@@ -77,12 +93,22 @@ focus_tree = {
 		}
 		x = 13
 		y = 4
-
+		completion_reward = {
+			country_event = {
+				id = JAP.7
+				days = 4
+				random = 1
+				random_days = 1
+			}
+		}
 	}
 	focus = {
 		id = JAP_not_allow_united
 		icon = GFX_never_united
 		cost = 10.00
+		available = {
+			has_country_flag = JAP_not_allow_united_flag
+		}
 		prerequisite = {
 			focus = JAP_people_revolut_problem
 		}
@@ -91,7 +117,20 @@ focus_tree = {
 		}
 		x = 12
 		y = 5
-
+		completion_reward = { 
+			add_popularity = {
+                ideology = neutrality
+                popularity = 0.05
+			}
+			add_popularity = {
+                ideology = autocracy
+                popularity = 0.05
+			}
+			add_popularity = {
+                ideology = fascism
+                popularity = 0.05
+			}
+		}
 	}
 	focus = {
 		id = JAP_police_arrangement
@@ -102,8 +141,10 @@ focus_tree = {
 		}
 		x = 11
 		y = 6
-
+		completion_reward = { 
+		}
 	}
+
 	focus = {
 		id = JAP_low_demonstration
 		icon = GFX_low_demo
@@ -119,6 +160,9 @@ focus_tree = {
 		id = JAP_allow_united
 		icon = GFX_YES_united_jap
 		cost = 10.00
+		available = {
+			has_country_flag = JAP_allow_united_flag
+		}
 		prerequisite = {
 			focus = JAP_people_revolut_problem
 		}
@@ -127,7 +171,20 @@ focus_tree = {
 		}
 		x = 14
 		y = 5
-
+		completion_reward = { 
+		    add_popularity = {
+                ideology = radical_socialism
+                popularity = 0.05
+            }
+			add_popularity = {
+                ideology = social_democracy
+                popularity = 0.05
+			}
+			add_popularity = {
+                ideology = communism
+                popularity = 0.05
+			}
+		}
 	}
 	focus = {
 		id = JAP_Hear_the_sound
@@ -151,7 +208,7 @@ focus_tree = {
 		y = 7
 
 	}
-	focus = {
+	focus = {                                                               #경제중점
 		id = JAP_collaps_economy
 		icon = GFX_collaps_japan
 		cost = 10.00
@@ -160,12 +217,23 @@ focus_tree = {
 		}
 		x = 26
 		y = 4
-
+		completion_reward = { 
+			country_event = {
+					id = JAP.4
+					days = 1
+					random = 1
+					random_days = 1
+			}
+		}
 	}
-	focus = {
+
+	focus = {                                                               #찻반쪠 경제
 		id = JAP_economic_plan_first
 		icon = GFX_goal_unknown
 		cost = 10.00
+		available = {
+			always = no
+		}
 		prerequisite = {
 			focus = JAP_collaps_economy
 		}
@@ -185,7 +253,13 @@ focus_tree = {
 		}
 		x = 22
 		y = 6
-
+		completion_reward = { country_event = {
+					id = JAP.5
+					days = 1
+					random = 1 
+					random_days = 1
+            }
+		}
 	}
 	focus = {
 		id = ganto_economic_zone
@@ -196,7 +270,13 @@ focus_tree = {
 		}
 		x = 24
 		y = 6
-
+		completion_reward = { country_event = {
+					id = JAP.6
+					days = 1
+					random = 1
+					random_days = 1
+			}
+		}
 	}
 	focus = {
 		id = JAP_plan_start
@@ -210,7 +290,6 @@ focus_tree = {
 		}
 		x = 23
 		y = 7
-
 	}
 	focus = {
 		id = JAP_investor_find
@@ -234,10 +313,13 @@ focus_tree = {
 		y = 9
 
 	}
-	focus = {
-		id = JAP_economic_plan_second
+	focus = {                                                                 #두번쨰 경제
+		id = JAP_economic_plan_second          
 		icon = GFX_goal_unknown
 		cost = 10.00
+		available = {
+			always = no
+		}
 		prerequisite = {
 			focus = JAP_collaps_economy
 		}
@@ -246,8 +328,8 @@ focus_tree = {
 		}
 		x = 29
 		y = 5
-
 	}
+
 	focus = {
 		id = JAP_sicoku_shipyard
 		icon = GFX_siguo_port
@@ -534,7 +616,7 @@ focus_tree = {
 		y = 9
 
 	}
-	focus = {
+	focus = {                                                                           #대전의 패자
 		id = JAP_World_war_Loser
 		icon = GFX_World_war_Loser
 		cost = 10.00
@@ -834,7 +916,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_Realization_of_despotism
-		icon = GFX_goal_unknown
+		icon = GFX_JAP_Realization_of_despotism
 		cost = 10.00
 		prerequisite = {
 			focus = JAP_Parliamentary_pissolution
@@ -856,7 +938,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Showa_Restoration
-		icon = GFX_goal_unknown
+		icon = GFX_Showa_Restoration
 		cost = 10.00
 		prerequisite = {
 			focus = jap_showa_denno
@@ -1006,7 +1088,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_Opposition_purge
-		icon = GFX_goal_unknown
+		icon = GFX_JAP_purge
 		cost = 10.00
 		prerequisite = {
 			focus = JAP_Class_society
@@ -2085,8 +2167,9 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = JAP_Empire_resurrection
+			focus = JAP_Japanese_empire_ascending_to_the_rise
 		}
-		x = 90
+		x = 93
 		y = 14
 
 	}
@@ -2119,7 +2202,7 @@ focus_tree = {
 		prerequisite = {
 			focus = JAP_Japan_to_the_world
 		}
-		x = 93
+		x = 95
 		y = 15
 
 	}
@@ -2130,7 +2213,7 @@ focus_tree = {
 		prerequisite = {
 			focus = JAP_Chinese_economic_support
 		}
-		x = 91
+		x = 93
 		y = 16
 
 	}
@@ -2141,7 +2224,7 @@ focus_tree = {
 		prerequisite = {
 			focus = JAP_Excessive_investment
 		}
-		x = 91
+		x = 93
 		y = 17
 
 	}
@@ -2155,7 +2238,7 @@ focus_tree = {
 		prerequisite = {
 			focus = JAP_Chinese_political_intervention
 		}
-		x = 93
+		x = 95
 		y = 19
 
 	}
@@ -2166,7 +2249,7 @@ focus_tree = {
 		prerequisite = {
 			focus = JAP_Economic_subordination
 		}
-		x = 95
+		x = 97
 		y = 18
 
 	}
@@ -2177,7 +2260,7 @@ focus_tree = {
 		prerequisite = {
 			focus = JAP_Japan_to_the_world
 		}
-		x = 98
+		x = 100
 		y = 15
 
 	}
@@ -2188,7 +2271,7 @@ focus_tree = {
 		prerequisite = {
 			focus = JAP_Dispatch_of_Japanese_officials
 		}
-		x = 95
+		x = 97
 		y = 17
 
 	}
@@ -2199,7 +2282,7 @@ focus_tree = {
 		prerequisite = {
 			focus = JAP_hard_investment
 		}
-		x = 91
+		x = 93
 		y = 18
 
 	}
@@ -2210,7 +2293,7 @@ focus_tree = {
 		prerequisite = {
 			focus = JAP_Southeast_Asia_support
 		}
-		x = 97
+		x = 99
 		y = 16
 
 	}
@@ -2221,7 +2304,7 @@ focus_tree = {
 		prerequisite = {
 			focus = JAP_Southeast_Asia_support
 		}
-		x = 99
+		x = 101
 		y = 16
 
 	}
@@ -2235,7 +2318,7 @@ focus_tree = {
 		prerequisite = {
 			focus = JAP_Japanese_factory_construction
 		}
-		x = 98
+		x = 100
 		y = 17
 
 	}
@@ -2246,7 +2329,7 @@ focus_tree = {
 		prerequisite = {
 			focus = JAP_Strengthening_influence
 		}
-		x = 97
+		x = 99
 		y = 18
 
 	}
@@ -2257,7 +2340,7 @@ focus_tree = {
 		prerequisite = {
 			focus = JAP_Strengthening_influence
 		}
-		x = 99
+		x = 101
 		y = 18
 
 	}
@@ -2271,7 +2354,7 @@ focus_tree = {
 		prerequisite = {
 			focus = JAP_Political_Intervention_in_Southeast_Asia
 		}
-		x = 98
+		x = 100
 		y = 19
 
 	}
@@ -2282,7 +2365,7 @@ focus_tree = {
 		prerequisite = {
 			focus = JAP_Chinese_economic_support
 		}
-		x = 95
+		x = 97
 		y = 16
 
 	}
@@ -2293,7 +2376,7 @@ focus_tree = {
 		prerequisite = {
 			focus = JAP_Japan_to_the_world
 		}
-		x = 86
+		x = 88
 		y = 15
 
 	}
@@ -2307,7 +2390,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = JAP_British_criticism_of_india_neglect
 		}
-		x = 83
+		x = 85
 		y = 16
 
 	}
@@ -2318,7 +2401,7 @@ focus_tree = {
 		prerequisite = {
 			focus = JAP_Massive_funding_for_India
 		}
-		x = 83
+		x = 85
 		y = 17
 
 	}
@@ -2329,7 +2412,7 @@ focus_tree = {
 		prerequisite = {
 			focus = JAP_Investment_in_new_city_development_in_India
 		}
-		x = 83
+		x = 85
 		y = 18
 
 	}
@@ -2343,7 +2426,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = JAP_Massive_funding_for_India
 		}
-		x = 89
+		x = 91
 		y = 16
 
 	}
@@ -2354,7 +2437,7 @@ focus_tree = {
 		prerequisite = {
 			focus = JAP_British_criticism_of_india_neglect
 		}
-		x = 89
+		x = 91
 		y = 17
 
 	}
@@ -2365,7 +2448,7 @@ focus_tree = {
 		prerequisite = {
 			focus = JAP_Demand_for_autonomy_in_India
 		}
-		x = 89
+		x = 91
 		y = 18
 
 	}
@@ -2376,7 +2459,7 @@ focus_tree = {
 		prerequisite = {
 			focus = JAP_Massive_funding_for_India
 		}
-		x = 85
+		x = 87
 		y = 17
 
 	}
@@ -2387,7 +2470,7 @@ focus_tree = {
 		prerequisite = {
 			focus = JAP_British_criticism_of_india_neglect
 		}
-		x = 87
+		x = 89
 		y = 17
 
 	}
@@ -2399,7 +2482,7 @@ focus_tree = {
 			focus = JAP_Negotiations_with_the_UK
 			focus = JAP_Indian_far-right_group_support
 		}
-		x = 86
+		x = 88
 		y = 18
 
 	}
@@ -2413,7 +2496,7 @@ focus_tree = {
 		prerequisite = {
 			focus = JAP_Justification_for_intervention_In_india
 		}
-		x = 84
+		x = 86
 		y = 19
 
 	}
@@ -2427,7 +2510,7 @@ focus_tree = {
 		prerequisite = {
 			focus = JAP_Justification_for_intervention_In_india
 		}
-		x = 88
+		x = 90
 		y = 19
 
 	}
@@ -2441,7 +2524,7 @@ focus_tree = {
 		prerequisite = {
 			focus = JAP_Indian_legation
 		}
-		x = 86
+		x = 88
 		y = 20
 
 	}
@@ -2558,6 +2641,48 @@ focus_tree = {
 		}
 		x = 83
 		y = 10
+
+	}
+	focus = {
+		id = JAP_Legal_slavery
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Cheon_Myung_Claim
+		}
+		x = 84
+		y = 11
+
+	}
+	focus = {
+		id = JAP_Japanese_empire_ascending_to_the_rise
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Strengthen_the_emperor's_authority
+		}
+		x = 87
+		y = 13
+
+	}
+	focus = {
+		id = JAP_Strengthen_the_emperor's_authority
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = JAP_Invest_in_nobles
+		}
+		prerequisite = {
+			focus = JAP_Emperor_Loyalists_Employment
+		}
+		prerequisite = {
+			focus = JAP_Residual_dissolution
+		}
+		prerequisite = {
+			focus = JAP_Legal_slavery
+		}
+		x = 87
+		y = 12
 
 	}
 }
