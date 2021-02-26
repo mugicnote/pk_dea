@@ -1,0 +1,21 @@
+﻿add_namespace = ICWwar
+
+country_event = { #100대 전술 폭격기 지원
+	id = ICW.1
+	title = ICW.1.t
+	desc = ICW.1.d
+	picture = gfx
+	
+	is_triggered_only = yes	
+	fire_only_once = yes
+	
+	option = { #이 지원은 그들에게 매우 필요할 것이다.
+		name = ICW.1.a
+		effect_tooltip = {
+			add_equipment_to_stockpile = {
+				type = tac_bomber_equipment_1
+				amount = 100
+			}
+		}
+	}	
+}

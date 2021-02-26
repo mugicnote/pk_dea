@@ -1,23 +1,18 @@
 focus_tree = {
-	id = VIE_warlord_focus
+	id = LAO_warlord_focus
 	
 	country = {
 		factor = 0
 		
 		modifier = {
 			add = 10
-			OR = {
-				tag = VIV
-				tag = VIR
-				tag = VIS
-				tag = VIE
-			}
+			tag = LAO
 		}
 	}
 	default = no
 
 	focus = { #민간인 자원병
-		id = VIE_war_1
+		id = LAO_war_1
 		icon = ""
 		cost = 5
 		x = 14
@@ -27,12 +22,12 @@ focus_tree = {
 		   add_manpower = 2000
 			}	
 	}
-	focus = { #베트남 민심
-		id = VIE_war_2
+	focus = { #라오스 민심
+		id = LAO_war_2
 		icon = ""
 		cost = 4
 		prerequisite = {
-			focus = VIE_war_1
+			focus = LAO_war_1
 		}
 		x = 14
 		y = 2
@@ -43,11 +38,11 @@ focus_tree = {
 			}		
 	}
 	focus = { #비밀 군수공장
-		id = VIE_war_3
+		id = LAO_war_3
 		icon = ""
 		cost = 5
 		prerequisite = {
-			focus = VIE_war_2
+			focus = LAO_war_2
 		}		
 		x = 14
 		y = 3
@@ -86,11 +81,11 @@ focus_tree = {
 
 	}
 	focus = {#유출된 연방 무기
-		id = VIE_war_4
+		id = LAO_war_4
 		icon = ""
 		cost = 5
 		prerequisite = {
-			focus = VIE_war_3
+			focus = LAO_war_3
 		}		
 		x = 14
 		y = 4
@@ -103,11 +98,11 @@ focus_tree = {
 		}
 	}	
 	focus = {#베트남 총기 개발
-		id = VIE_war_5
+		id = LAO_war_5
 		icon = ""
 		cost = 5
 		prerequisite = {
-			focus = VIE_war_4
+			focus = LAO_war_4
 		}		
 		x = 14
 		y = 5
@@ -121,11 +116,11 @@ focus_tree = {
 		}
 	}
 	focus = {#유출된 폭격기
-		id = VIE_war_6
+		id = LAO_war_6
 		icon = ""
 		cost = 5
 		prerequisite = {
-			focus = VIE_war_5
+			focus = LAO_war_5
 		}		
 		x = 14
 		y = 6
@@ -139,11 +134,11 @@ focus_tree = {
 		}
 	}
 	focus = {#긴급 징병
-		id = VIE_war_7
+		id = LAO_war_7
 		icon = ""
 		cost = 5
 		prerequisite = {
-			focus = VIE_war_5
+			focus = LAO_war_5
 		}		
 		x = 12
 		y = 6
@@ -154,11 +149,11 @@ focus_tree = {
 		}
 	}
 	focus = {#비밀 군수공장 증축
-		id = VIE_war_8
+		id = LAO_war_8
 		icon = ""
 		cost = 5
 		prerequisite = {
-			focus = VIE_war_5
+			focus = LAO_war_5
 		}		
 		x = 16
 		y = 6
@@ -197,17 +192,17 @@ focus_tree = {
 		}
 	}
 	focus = {#중국제 무기 수입
-		id = VIE_war_9
+		id = LAO_war_9
 		icon = ""
 		cost = 5
 		prerequisite = {
-			focus = VIE_war_6
+			focus = LAO_war_6
 		}
 		prerequisite = {
-			focus = VIE_war_7
+			focus = LAO_war_7
 		}
 		prerequisite = {
-			focus = VIE_war_8
+			focus = LAO_war_8
 		}		
 		x = 13
 		y = 7
@@ -223,17 +218,17 @@ focus_tree = {
 		
 	}
 	focus = {#임시 공항 건설
-		id = VIE_war_10
+		id = LAO_war_10
 		icon = ""
 		cost = 5
 		prerequisite = {
-			focus = VIE_war_6
+			focus = LAO_war_6
 		}
 		prerequisite = {
-			focus = VIE_war_7
+			focus = LAO_war_7
 		}
 		prerequisite = {
-			focus = VIE_war_8
+			focus = LAO_war_8
 		}		
 		x = 15
 		y = 7
@@ -254,15 +249,15 @@ focus_tree = {
 			}
 		}
 	}
-	focus = {#베트남 총력전
-		id = VIE_war_11
+	focus = {#라오스 총력전
+		id = LAO_war_11
 		icon = ""
 		cost = 5
 		prerequisite = {
-			focus = VIE_war_9
+			focus = LAO_war_9
 		}		
 		prerequisite = {
-			focus = VIE_war_10
+			focus = LAO_war_10
 		}		
 		x = 14
 		y = 8
@@ -273,11 +268,11 @@ focus_tree = {
 		}
 	}
 	focus = {#전쟁의 끝
-		id = VIE_war_12
+		id = LAO_war_12
 		icon = ""
 		cost = 5
 		prerequisite = {
-			focus = VIE_war_11
+			focus = LAO_war_11
 		}				
 		x = 14
 		y = 9
@@ -291,12 +286,12 @@ focus_tree = {
 		remove_ideas = ICU_Indochinese_war
 		}
 	}	
-	focus = {#베트남
-		id = VIE_war_13
+	focus = {#라오스
+		id = LAO_war_13
 		icon = ""
 		cost = 5
 		prerequisite = {
-			focus = VIE_war_11
+			focus = LAO_war_11
 		}				
 		x = 14
 		y = 10

@@ -1,6 +1,22 @@
 ﻿l_english:
 
+ ####내전 전 디시전####
  ICU_the_inevitable_civil_war:0 "인도차이나 위기"
  ICU_the_inevitable_civil_war_desc:0 "지금까지 연방은 유지되었습니다. 하지만 베트남에서의 대규모 시위로 인해 베트남 각지에서 독립운동이 일어났습니다. 연방군은 시위 제압을 실패했다고 판단했으며 곧 베트남 지역에서 지금보다 더 큰 혼란이 올 것이라고 예측하고 있습니다."
  ICU_military_plot_nationalists:0 "연방 붕괴 임박"
  ICU_military_plot_nationalists_desc:0 "인도차이나 연방정부는 지금까지 많은 독립세력들의 공격을 잘 버텼지만 이제 연방 붕괴의 징조가 보이기 시작합니다."
+ ####내전 디시전####
+ ICW_foreign_volunteer_decisions:0 "인도차이나 내전 지원"
+ ICW_foreign_volunteer_decisions_desc:0 "인도차이나에 직접적으로 개입하기 힘들지만 무기 지원을 통해 인도차이나에 우리 영향을 높일 수 있을 것입니다."
+ ICW_support_ICU_dec:0 "인도차이나 연방에게 100대 전술폭격기 지원"
+ ICW_support_ICU_dec_desc:0 "우리는 100대의 전술폭격기를 지원할 것입니다."
+ ICW_support_VIE_dec:0 "베트남 제국에게 100대 전술폭격기 지원"
+ ICW_support_VIE_dec_desc:0 "우리는 100대의 전술폭격기를 지원할 것입니다."
+ ICW_support_VIV_dec:0 "남베트남 인민 해방전선에게 100대 전술폭격기 지원"
+ ICW_support_VIV_dec_desc:0 "우리는 100대의 전술폭격기를 지원할 것입니다."
+ ICW_support_VIS_dec:0 "베트남 민주 공화국에게 100대 전술폭격기 지원"
+ ICW_support_VIS_dec_desc:0 "우리는 100대의 전술폭격기를 지원할 것입니다."
+ ICW_support_VIR_dec:0 "베트남 공화국에게 100대 전술폭격기 지원"
+ ICW_support_VIR_dec_desc:0 "우리는 100대의 전술폭격기를 지원할 것입니다."
+ ICW_support_LAO_dec:0 "라오스 인민공화국에게 100대 전술폭격기 지원"
+ ICW_support_LAO_dec_desc:0 "우리는 100대의 전술폭격기를 지원할 것입니다."

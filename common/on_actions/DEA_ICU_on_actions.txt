@@ -4,6 +4,21 @@ on_actions = {
 		ICU = {
 			country_lock_all_division_template = yes
 		}
+		VIV = {
+			country_lock_all_division_template = yes
+		}
+		VIS = {
+			country_lock_all_division_template = yes
+		}
+		VIC = {
+			country_lock_all_division_template = yes
+		}
+		VIE = {
+			country_lock_all_division_template = yes
+		}
+		LAO = {
+			country_lock_all_division_template = yes
+		}		
 	}
 }
 }

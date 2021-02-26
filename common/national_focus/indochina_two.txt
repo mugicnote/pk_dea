@@ -1,0 +1,51 @@
+﻿focus_tree = {
+	id = dea_ICU_2
+	country = {
+		factor = 0
+	}
+	default = no
+
+	focus = {#침로 분석
+		id = ICU_war_1
+		icon = ""
+		cost = 5
+		x = 13
+		y = 1
+
+		completion_reward = {
+			ICU = { country_event = ICU.7}
+		}
+	}
+	focus = {# 영국에게로
+		id = ICU_ENG_1
+		icon = ""
+		cost = 0
+		prerequisite = {
+			focus = ICU_war_1
+		}		
+		mutually_exclusive = {
+			focus = ICU_FRA_1
+		}		
+		x = 12
+		y = 2
+
+		completion_reward = {
+		}
+	}
+	focus = {# 침로 유지
+		id = ICU_FRA_1
+		icon = ""
+		cost = 0
+		prerequisite = {
+			focus = ICU_war_1
+		}		
+		mutually_exclusive = {
+			focus = ICU_ENG_1
+		}		
+		x = 14
+		y = 2
+
+		completion_reward = {
+		}
+	}		
+}		

@@ -1,0 +1,23 @@
+ICW_foreign_volunteer_decisions = {
+
+	icon = gfx
+
+	picture = GFX
+	
+	allowed = {
+		NOT = {
+				tag = ICU
+				tag = LAO
+				tag = VIV
+				tag = VIE
+				tag = VIS
+				tag = VIR
+		}
+	}
+	visible = {
+		has_global_flag = ICU_civilwar
+		NOT =  { has_global_flag = ICU_war_ove }
+	}
+	
+		priority = 57
+}
