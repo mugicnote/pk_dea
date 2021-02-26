@@ -9,3 +9,9 @@ POLITICS_KIM_SUNG_SOO_DESC:0 "김성수는 경제 전문가라고 할 수 있습
 POLITICS_LEE_BEOM_DESC:0 "이범석은 국가사회주의자입니다. 그럼에도 불구하고, 그는 절대로 사상을 신봉하지는 않습니다. 그에게 국가사회주의는 그저 대한민국을 부흥시킬 구심점일 뿐이지, 대한민국이 완전히 발전하고 나서도 국가사회주의를 고집할 필요는 없다고 느낍니다. 물론, 그가 추구하는 방향은 다 겪어보아야 어떻게 흘러갈 지 알 수 있을 것입니다."
 POLITICS_KING_WANT_DESC:0 "황제만이 이나라를 다시 부활시킬것입니다 여러분!!"
 POLITICS_KIM_KOO_DESC:0 "김구는 어두운 과거가 존재합니다. 그러나 그에게 드리워진 그림자는 그가 성장하며 거의 가려지게 되었습니다. 지금 그는, 대한민국에서 가장 중요한 정치가 중 한 명이며, 그의 사상을 반대하는 사람은 있어도 그가 현명하고 인성 좋은 사람이라는 것은 반대하는 사람이 별로 없습니다."
+
+DUAL_LEADER_NAME2:0 "§Y[This.DUAL_NAME]§!\n[This.DUAL_TRAIT]"
+DUAL_LEADER_DESC2:0 "[This.DUAL_DESC]"
+KOREA_DUAL_NAME:0 "§Y김규식§!"
+KOREA_DUAL_TRAIT:0 "§Y보수계의 3대 거물§!\n - 안정도: §G+5.00%§!"
+KOREA_DUAL_DESC:0 ".ㅅ."

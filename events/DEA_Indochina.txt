@@ -431,7 +431,7 @@ country_event = {
 		VIV = {
 		add_ideas = ICU_Indochinese_war
 		}		
-	        if = {	
+	    if = {	
 			name = ICU.6.a			
 			VIV = {
 				transfer_state = 887
@@ -446,7 +446,7 @@ country_event = {
 			    set_state_owner  = 890			
 			}
 		}
-		load_focus_tree = dea_ICU_2
+		load_focus_tree = indochina_two
 		VIV = {
             delete_unit_template_and_units = {
                 division_template = "베트남 식민지 사단" #베트남 식민지 사단 제거
@@ -474,28 +474,28 @@ country_event = {
             delete_unit_template_and_units = {
                 division_template = "프랑스 본토원정사단" #프랑스 본토원정사단 제거
             }			
-		}		
-			hidden_effect = {
-				set_global_flag = ICU_civilwar 
-			     VIR = {
-                     load_oob = VIR_civilwar
-                     VIR_create_units = yes
-		set_country_flag = second_ICU_civilwar				 
-					 set_party_name = {
-				         ideology = fascism
-				         long_name = "베트남 독립당"
-				         name = "베트남 독립당"
-			         }
-					 set_party_name = {
-				         ideology = neutrality
-				         long_name = "베트남 독립당"
-				         name = "베트남 독립당"
-			         }
-					 set_party_name = {
-				         ideology = communism
-				         long_name = "베트남 독립당"
-				         name = "베트남 독립당"
-			         }
+		}	
+		hidden_effect = {
+			set_global_flag = ICU_civilwar 
+			    VIR = {
+                    load_oob = VIR_civilwar
+                    VIR_create_units = yes
+					set_country_flag = second_ICU_civilwar				 
+					set_party_name = {
+				        ideology = fascism
+				        long_name = "베트남 독립당"
+				        name = "베트남 독립당"
+			        }
+					set_party_name = {
+				        ideology = neutrality
+				        long_name = "베트남 독립당"
+				        name = "베트남 독립당"
+			        }
+					set_party_name = {
+				        ideology = communism
+				        long_name = "베트남 독립당"
+				        name = "베트남 독립당"
+			        }
 					 set_party_name = {
 				         ideology = democratic
 				         long_name = "베트남 독립당"
@@ -625,6 +625,7 @@ country_event = {
 					add_core_of = VIR
 				}				
 			}
+	}
 }
 
 country_event = { #침로 선택

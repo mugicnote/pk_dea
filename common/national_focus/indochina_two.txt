@@ -1,7 +1,11 @@
-﻿focus_tree = {
-	id = dea_ICU_2
+focus_tree = {
+	id = indochina_two
 	country = {
 		factor = 0
+		modifier = {
+			add = 10
+			tag = ICU
+		}
 	}
 	default = no
 
@@ -13,7 +17,7 @@
 		y = 1
 
 		completion_reward = {
-			ICU = { country_event = ICU.7}
+			ICU = { country_event = ICU.7 }
 		}
 	}
 	focus = {# 영국에게로
@@ -22,10 +26,10 @@
 		cost = 0
 		prerequisite = {
 			focus = ICU_war_1
-		}		
+		}
 		mutually_exclusive = {
 			focus = ICU_FRA_1
-		}		
+		}	
 		x = 12
 		y = 2
 
@@ -38,14 +42,14 @@
 		cost = 0
 		prerequisite = {
 			focus = ICU_war_1
-		}		
+		}	
 		mutually_exclusive = {
 			focus = ICU_ENG_1
-		}		
+		}
 		x = 14
 		y = 2
 
 		completion_reward = {
 		}
-	}		
+	}
 }		

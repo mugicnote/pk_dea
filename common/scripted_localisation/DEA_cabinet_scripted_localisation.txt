@@ -141,6 +141,12 @@ defined_text = {
 		}
 		localization_key = POSITION_main_opposition_party_leader3
 	}
+	text = {
+		trigger = {
+			tag = JAP
+		}
+		localization_key = POSITION_main_opposition_CBO_JAP
+	}
 }
 
 ############################################
@@ -155,6 +161,12 @@ defined_text = {
 			tag = KOR
 		}
 		localization_key = POSITION_main_opposition_party_leader3
+	}
+	text = {
+		trigger = {
+			tag = JAP
+		}
+		localization_key = POSITION_main_opposition_CBO_JAP
 	}
 }
 ############################################
@@ -175,6 +187,12 @@ defined_text = {
 		}
 		localization_key = Lee_Beomseok
 	}
+	text = {
+		trigger = {
+			has_country_flag = G_Macarthur
+		}
+		localization_key = G_Macarthur
+	}
 }
 defined_text = {
 	name = leader_two_portrait3
@@ -190,6 +208,12 @@ defined_text = {
 			has_country_flag = Lee_Beomseok
 		}
 		localization_key = GFX_Portrait_Lee_Beomseok
+	}
+	text = {
+		trigger = {
+			has_country_flag = G_Macarthur
+		}
+		localization_key = GFX_Portrait_USA_G_Macarthur
 	}
 }
 defined_text = {

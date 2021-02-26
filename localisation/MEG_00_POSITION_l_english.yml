@@ -73,6 +73,7 @@ POSITION_main_opposition_MOF_JAP:0 "대장대신"
 POSITION_main_opposition_MOE_JAP:0 "문부대신"
 POSITION_main_opposition_EMP_JAP:0 "천황"
 POSITION_main_opposition_MOL_JAP:0 "후생대신"
+POSITION_main_opposition_CBO_JAP:0 "집정직무사령관"
 
 Yoshida_Shigeru:0 "요시다 시게루"
 Ogata_Taketora:0 "오자와 다케토라"
@@ -83,6 +84,7 @@ Ishibashi_Danzan:0 "이시바시 단잔"
 Takahashi_Seiichi:0 "다카하시 세이이치로"
 showa_tenno:0 "히로히토"
 Kawaii_Yoshinari:0 "가와이 요시나리"
+G_Macarthur:0 "더글러스 맥아더"
 
 ###듀얼 지도자###
 KOR_FIRST_TITLE:0 "대통령"
@@ -96,6 +98,10 @@ JAP_DUAL_NAME:0 "히로히토"
 CHI_FIRST_TITLE:0 "총통"
 CHI_SECOND_TITLE:0 "부총통"
 CHI_DUAL_NAME:0 "왕징웨이"
+
+USA_FIRST_TITLE:0 "대통령"
+USA_SECOND_TITLE:0 "부통령"
+USA_DUAL_NAME:0 "John Nance Garner III"
 
 Chiang_Kai_Shek:0 "장제스"
 Chiang_Kai_Shek_desc:0 "장제스는 국민당의 총재임과 동시에, 국민정부의 총통입니다. 국민당 창당에도 큰 역할을 했으며, 쑨원 사망 이후 국민당을 이끌고 있습니다. 그는 공산주의자들과 적대하고 있으며, 그들이 꼬리를 내리기만 한다면야 등용할 생각까지는 가지고 있습니다. 그러나 현재는 공산당을 항상 주시하고 있으며, 그들이 어떠한 움직임이라도 보일 시에는 바로 대응할 준비가 되어 있습니다. 그는 부총통인 왕징웨이와는 다르게 군부를 확실히 통제하는 역할을 맡고 있습니다."

@@ -129,6 +129,15 @@ spriteTypes = {
 		name = "GFX_Portrait_Ishibashi_Danzan"
 		texturefile = "gfx/leaders/JAP/JAP_Ishibashi_Danzan.dds"
 	}
+	spriteType = {
+		name = "GFX_Portrait_USA_G_Macarthur"
+		texturefile = "gfx/leaders/UPN/Portrait_USA_G_Macarthur.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_USA_John_Nance_Garner"
+		texturefile = "gfx/leaders/USA/Portrait_USA_John_Nance_Garner.dds"
+	}
 
 	spriteType = {
 		name = "GFX_SI_information_view_bg"

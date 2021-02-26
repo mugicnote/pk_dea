@@ -23,6 +23,13 @@ defined_text = {
 		}
 		localization_key = CHI_FIRST_TITLE
 	}
+	text = {
+		trigger = {
+			tag = USA
+			has_government = social_liberalism
+		}
+		localization_key = USA_FIRST_TITLE
+	}
 }
 
 defined_text = {
@@ -47,6 +54,13 @@ defined_text = {
 			has_government = neutrality
 		}
 		localization_key = CHI_SECOND_TITLE
+	}
+	text = {
+		trigger = {
+			tag = USA
+			has_government = social_liberalism
+		}
+		localization_key = USA_SECOND_TITLE
 	}
 }
 
@@ -73,6 +87,13 @@ defined_text = {
 		}
 		localization_key = CHI_DUAL_NAME
 	}
+	text = {
+		trigger = {
+			tag = USA
+			has_government = social_liberalism
+		}
+		localization_key = USA_DUAL_NAME
+	}
 }
 
 defined_text = {
@@ -98,33 +119,48 @@ defined_text = {
 		}
 		localization_key = GFX_Portrait_Wang_Jingwei
 	}
+	text = {
+		trigger = {
+			tag = USA
+			has_government = social_liberalism
+		}
+		localization_key = GFX_Portrait_USA_John_Nance_Garner
+	}
 }
 
 defined_text = {
-    name = GetDualLeaderDesc
+    name = DUAL_DESC
     
     text = {
         trigger = {
-			tag = JAP
-			has_government = fascism
+			tag = KOR
+			has_government = democratic
 		}
-        localization_key = "POLITICS_FUKUDA_DESC"
+        localization_key = "KOREA_DUAL_DESC"
 	}
-	text = {
+}
+
+defined_text = {
+    name = DUAL_NAME
+    
+    text = {
         trigger = {
-			tag = JAP
-			has_government = neutrality
-			has_completed_focus = JAP_showa_restoration
+			tag = KOR
+			has_government = democratic
 		}
-        localization_key = "POLITICS_TAMADA_DESC"
+        localization_key = "KOREA_DUAL_NAME"
 	}
-	text = {
+}
+
+defined_text = {
+    name = DUAL_TRAIT
+    
+    text = {
         trigger = {
-			tag = JAP
-			has_government = neutrality
-			has_completed_focus = JAP_modern_shogunate
+			tag = KOR
+			has_government = democratic
 		}
-        localization_key = "POLITICS_TAMADA_DESC"
+        localization_key = "KOREA_DUAL_TRAIT"
 	}
 }
 
