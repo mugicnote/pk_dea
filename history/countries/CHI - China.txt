@@ -48,6 +48,7 @@ add_ideas = {
 	infantry_oriented_army
 	relaxed_army
 	threat_of_stable_left
+	disorderly_army
 }
 
 set_convoys = 40

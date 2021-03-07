@@ -3,7 +3,7 @@ ideas = {
 		###모드###
 		National_Revolutionary_Army = {
 			
-            picture = KTG_Industrial_Crisis_Town
+            picture = CHI_national_revolutionary_army
 
 			allowed = {
 		        original_tag = CHI
@@ -16,7 +16,7 @@ ideas = {
         }
 		Army_in_Need_of_Reform = {
 			
-            picture = KTG_Industrial_Crisis_Town
+            picture = CHI_progress_amry_1
 
 			allowed = {
 		        original_tag = CHI
@@ -31,7 +31,7 @@ ideas = {
         }
 		infantry_oriented_army = {
 			
-            picture = KTG_Industrial_Crisis_Town
+            picture = CHI_unmoterized_army
 
 			allowed = {
 		        original_tag = CHI
@@ -57,7 +57,7 @@ ideas = {
         }
 		relaxed_army = {
 			
-            picture = KTG_Industrial_Crisis_Town
+            picture = CHI_low_tention_army
 
 			allowed = {
 		        original_tag = CHI
@@ -72,7 +72,7 @@ ideas = {
 		}
 		threat_of_stable_left = {
 			
-            picture = KTG_Industrial_Crisis_Town
+            picture = CHI_warning_left_2
 
 			allowed = {
 		        original_tag = CHI
@@ -84,6 +84,19 @@ ideas = {
 				drift_defence_factor = 0.1
 				stability_weekly_factor = 0.001
 				social_democracy_acceptance = 5
+		    }
+        }
+		disorderly_army = {
+			
+            picture = CHI_messy_army
+
+			allowed = {
+		        original_tag = CHI
+	        }
+
+			modifier = {
+				land_reinforce_rate = -0.03
+				custom_modifier_tooltip = SPR_military_disloyalty_tt
 		    }
         }
 

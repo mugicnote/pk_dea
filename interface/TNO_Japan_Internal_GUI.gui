@@ -3,7 +3,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "TNO_Japan_Internal_GUI_open"
 		size = { width = 220 height = 128 }
-		position = { x = 170 y = -10 }
+		position = { x = 170 y = -130 }
 
 		buttonType = {
 			name = "Japan_Internal_GUI_Open_Button"

@@ -99,7 +99,7 @@ KOR_great_depression
 huge_government_bond
 Kor_excessive_Inflation
 fallen_rural_society
-KOR_incompetent_government
+KOR_incompetent_goverment
 KOR_divided_army
 coup_crisis
 industrialization_experience
@@ -120,67 +120,63 @@ set_politics = {
 #시작시_정당들의_인기도
 set_popularities = {
   communism = 10
+  authoritarian_socialism = 4
   radical_socialism = 9
-  social_democracy = 9
-  social_liberalism = 6
-  market_liberalism = 3
-  liberal_conservatism = 7
-  democratic = 27
-  neutrality = 2
-  autocracy = 5
-  fascism = 22
+  social_democracy = 12
+  social_liberalism = 4
+  national_liberalism = 3
+  liberal_conservatism = 4
+  democratic = 20
+  national_conservatism = 12
+  neutrality = 6
+  auto_despotism = 5
+  fascism = 11
 }
 
-1936.1.1 = {
-set_variable = { party_pop_array13 = 1 } #서재필 여당
-set_variable = { party_pop_array14 = 0.1 } #테스트
-set_variable = { party_pop_array15 = 0.11 } #테스트
-}
-
-if = {
-	limit = {
-		has_dlc = "La Resistance"
-	}
-	every_owned_state = {
-					limit = {
-						check_variable = { var = KOR_garrison_control value = 0 compare = equals }
-						OR = {
-							state = 797
-							state = 798
-							state = 799
-							state = 527
-							state = 525
-							state = 800
-							state = 801
-							state = 802
-							state = 803
-							state = 804
-							state = 805
-							state = 806
-							state = 807
-							state = 808
-							state = 809
-						}
-					}
-					add_to_variable = { var = KOR_garrison_control value = 1 }
-					KOR_garrison_control_cost_calculation = yes
-				}
-
-create_dynamic_country = {
-	  original_tag = KOR
-	  set_country_flag = FKR_korea_flag
-		set_politics = {
-			ruling_party = fascism
-		}
-		set_cosmetic_tag = FKR_korea
-		set_research_slots = 3
-	  reserve_dynamic_country = yes
-	}
-}
+#if = {
+#	limit = {
+#		has_dlc = "La Resistance"
+#	}
+#	every_owned_state = {
+#					limit = {
+#						check_variable = { var = KOR_garrison_control value = 0 compare = equals }
+#						OR = {
+#							state = 797
+#							state = 798
+#							state = 799
+#							state = 527
+#							state = 525
+#							state = 800
+#							state = 801
+#							state = 802
+#							state = 803
+#							state = 804
+#							state = 805
+#							state = 806
+#							state = 807
+#							state = 808
+#							state = 809
+#						}
+#					}
+#					add_to_variable = { var = KOR_garrison_control value = 1 }
+#					KOR_garrison_control_cost_calculation = yes
+#				}
+#
+#create_dynamic_country = {
+#	  original_tag = KOR
+#	  set_country_flag = FKR_korea_flag
+#		set_politics = {
+#			ruling_party = fascism
+#		}
+#		set_cosmetic_tag = FKR_korea
+#		set_research_slots = 3
+#	  reserve_dynamic_country = yes
+#	}
+#}
 
 
 #정당별_리더
-create_country_leader = { #사진 작업 완료(DoS 머장? 도움 받음)
+create_country_leader = { #사진 작업 완료(DoS 도움 받음)
   name = "서재필"
   desc = "POLITICS_JAE_PIL_DESC"
   picture = "jae_pil.dds"
@@ -208,15 +204,26 @@ create_country_leader = { #사진 작업 완료(DoS 머장? 도움 받음)
 
 create_country_leader = { #사진 작업 완료
 	name = "박헌영"
-	desc = "POLITICS_KIM_IL_SUNG_DESC"
+	desc = "POLITICS_PAK_HON_YONG_DESC"
 	picture = "Portrait_Pak_Honyong.dds"
 	expire = "1947.7.19"
 	ideology = leninism
 	traits = {
-		traits_Kim_Il1
-		traits_Kim_Il2
-		traits_Kim_Il3
+		#traits_Kim_Il1
+		#traits_Kim_Il2
+		#traits_Kim_Il3
 	}
+}
+
+create_country_leader = { #사진 작업 완료(DoS 도움 받음)
+  name = "김두봉"
+  desc = "POLITICS_KIM_TU_BONG_DESC"
+  picture = "Portrait_Kim_Tu_bong.dds"
+  expire = "1947.7.19"
+  ideology = auth_socialism
+  traits = {
+    #
+  }
 }
 
 create_country_leader = { #사진 작업 완료
@@ -224,7 +231,7 @@ create_country_leader = { #사진 작업 완료
   desc = "POLITICS_KIM_WON_BONG_DESC"
   picture = "Portrait_Kim_Wonbong.dds"
   expire = "1947.7.19"
-  ideology = rev_socialism
+  ideology = rad_socialism
   traits = {
     #
   }
@@ -242,9 +249,9 @@ create_country_leader = { #사진 작업 완료
 }
 
 create_country_leader = { #사진 작업 완료
-  name = "안재홍"
-  desc = "POLITICS_AHN_JAE_HONG_DESC"
-  picture = "Portrait_Ahn_Jaehong.dds"
+  name = "장면"
+  desc = "POLITICS_CHANG_MYON_DESC"
+  picture = "Portrait_Chang_Myon.dds"
   expire = "1947.7.19"
   ideology = liberalism
   traits = {
@@ -253,18 +260,18 @@ create_country_leader = { #사진 작업 완료
 }
 
 create_country_leader = { #사진 작업 완료
-  name = "장면"
-  desc = "POLITICS_CHO_MAN_SIK_DESC"
-  picture = "Portrait_Chang_Myon.dds"
+  name = "안재홍"
+  desc = "POLITICS_AHN_JAE_HONG_DESC"
+  picture = "Portrait_Ahn_Jaehong.dds"
   expire = "1947.7.19"
-  ideology = market_liberal
+  ideology = nat_liberal
   traits = {
     #
   }
 }
 
 create_country_leader = { #사진 작업 완료
-  name = "신익희"
+  name = "송진우"
   desc = "POLITICS_KIM_SUNG_SOO_DESC"
   picture = "Portrait_Shin_Ik_Hee.dds"
   expire = "1947.7.19"
@@ -274,20 +281,31 @@ create_country_leader = { #사진 작업 완료
   }
 }
 
+create_country_leader = {
+  	name = "김구"
+  	desc = "POLITICS_KIM_KOO_DESC"
+  	picture = "Portrait_Kim_Koo.dds"
+	expire = "1947.7.19"
+	ideology = korean_nationalism
+  	traits = {
+    	traits_kim_ku
+  	}
+}
+
 create_country_leader = { #사진 작업 완료
-  name = "이범석"
-  desc = "POLITICS_LEE_BEOM_DESC"
-  picture = "Portrait_Lee_Beomseok.dds"
+  name = "지청천"
+  desc = "POLITICS_JI_CHONG_CHEN_DESC"
+  picture = "Portrait_ji_chong_chen.dds"
   expire = "1947.7.19"
-  ideology = oligarchism
+  ideology = military_dic
   traits = {
     #
   }
 }
 
 create_country_leader = {
-  name = "황제즉위파 당원회"
-  desc = "POLITICS_KING_WANT_DESC"
+  name = "국군유신회 지도부"
+  desc = "POLITICS_AFRS_DESC"
   picture = "#"
   expire = "1947.7.19"
   ideology = despotism

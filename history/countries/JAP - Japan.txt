@@ -133,20 +133,22 @@ set_politics = {
 
 set_popularities = {
 communism = 12 #일본 공산당 주 정파
-radical_socialism = 4 #일본 공산당2
+authoritarian_socialism = 2
+radical_socialism = 2 #일본 공산당2
 
 social_democracy = 17 #일본 사회당 주 정파
 social_liberalism = 6 #일본 사회당2
 
-market_liberalism = 16 #일본자유당
+national_liberalism = 16 #일본자유당
 
 liberal_conservatism = 7 #자유 민주당2
 democratic = 21 #자유 민주당 주 정파
+national_conservatism = 0
 
 neutrality = 3 #대정익찬회2
 fascism = 9 #대정익찬회 주 정파
 
-autocracy = 5
+auto_despotism = 5
 }
 
 create_country_leader = {

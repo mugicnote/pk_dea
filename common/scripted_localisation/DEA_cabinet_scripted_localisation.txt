@@ -183,6 +183,12 @@ defined_text = {
 	}
 	text = {
 		trigger = {
+			has_country_flag = Sohn_Won_yil
+		}
+		localization_key = Sohn_Won_yil
+	}
+	text = {
+		trigger = {
 			has_country_flag = Lee_Beomseok
 		}
 		localization_key = Lee_Beomseok
@@ -202,6 +208,12 @@ defined_text = {
 			has_country_flag = Shin_Sung_mo
 		}
 		localization_key = GFX_Portrait_Shin_Sung_mo
+	}
+	text = {
+		trigger = {
+			has_country_flag = Sohn_Won_yil
+		}
+		localization_key = GFX_Portrait_Sohn_Won_yil
 	}
 	text = {
 		trigger = {

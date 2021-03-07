@@ -100,15 +100,6 @@ set_politics = {
 }
 #시작시_정당들의_인기도
 set_popularities = {
-  communism = 0
-  radical_socialism = 0
-  social_democracy = 0
-  social_liberalism = 0
-  market_liberalism = 0
-  liberal_conservatism = 0
-  democratic = 0
-  neutrality = 0
-  autocracy = 0
   fascism = 100
 }
 

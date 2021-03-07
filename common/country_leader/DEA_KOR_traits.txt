@@ -165,9 +165,17 @@ leader_traits = {
 			factor = 1
 		}
 	}
+	authoritarian_socialism_revolutionary = {
+		random = no
+		sprite = 13
+		authoritarian_socialism_drift = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
 	radical_socialism_revolutionary = {
 		random = no
-		# Boosts Communism
 		sprite = 13
 		radical_socialism_drift = 0.1
 		
@@ -193,10 +201,10 @@ leader_traits = {
 			factor = 1
 		}
 	}
-	market_liberalism_revolutionary = {
+	national_liberalism_revolutionary = {
 		random = no
 		sprite = 13
-		market_liberalism_drift = 0.1
+		national_liberalism_drift = 0.1
 		
 		ai_will_do = {
 			factor = 1
@@ -220,6 +228,15 @@ leader_traits = {
 			factor = 1
 		}
 	}
+	national_conservatism_revolutionary = {
+		random = no
+		sprite = 13
+		national_conservatism_drift = 0.1
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
 	neutrality_2_revolutionary = {
 		random = no
 		sprite = 13
@@ -229,10 +246,10 @@ leader_traits = {
 			factor = 1
 		}
 	}
-	autocracy_revolutionary = {
+	auto_despotism_revolutionary = {
 		random = no
 		sprite = 13
-		autocracy_drift = 0.1
+		auto_despotism_drift = 0.1
 		
 		ai_will_do = {
 			factor = 1

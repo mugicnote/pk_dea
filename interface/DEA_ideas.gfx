@@ -173,7 +173,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_kor_conscription.dds"
 	}
 
-
+	#일본
 	spriteType = {
 		name = "GFX_idea_Declaration_Emperor"
 		texturefile = "gfx/interface/ideas/Declaration_Emperor.dds"
@@ -209,6 +209,38 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_Communist_leadership_strike"
 		texturefile = "gfx/interface/ideas/Communist_leadership_strike.dds"
+	}
+
+	#한국
+	spriteType = {
+		name = "GFX_idea_KOR_incompetent_goverment"
+		texturefile = "gfx/interface/ideas/KOR_incompetent_goverment.dds"
+	}
+
+	#중국
+	spriteType = {
+		name = "GFX_idea_CHI_national_revolutionary_army"
+		texturefile = "gfx/interface/ideas/CHI_national_revolutionary_army.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CHI_progress_amry_1"
+		texturefile = "gfx/interface/ideas/CHI_progress_amry_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CHI_unmoterized_army"
+		texturefile = "gfx/interface/ideas/CHI_unmoterized_army.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CHI_low_tention_army"
+		texturefile = "gfx/interface/ideas/CHI_low_tention_army.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CHI_warning_left_2"
+		texturefile = "gfx/interface/ideas/CHI_warning_left_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CHI_messy_army"
+		texturefile = "gfx/interface/ideas/CHI_messy_army.dds"
 	}
 
 }

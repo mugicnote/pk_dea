@@ -18,16 +18,7 @@ set_politics = {
 }
 
 set_popularities = {
-  communism = 10
-  radical_socialism = 5
-  social_democracy = 5
-  social_liberalism = 0
-  market_liberalism = 0
-  liberal_conservatism = 0
-  democratic = 10
-  neutrality = 60
-  autocracy = 10
-  fascism = 0
+  neutrality = 100
 }
 
 create_country_leader = {

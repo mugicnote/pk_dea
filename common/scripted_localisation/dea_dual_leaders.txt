@@ -11,6 +11,13 @@ defined_text = {
 	}
 	text = {
 		trigger = {
+			tag = KOR
+			has_government = communism
+		}
+		localization_key = KOR_COM_FIRST_TITLE
+	}
+	text = {
+		trigger = {
 			tag = JAP
 			has_government = democratic
 		}
