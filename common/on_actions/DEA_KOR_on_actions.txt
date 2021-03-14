@@ -88,62 +88,52 @@ on_actions = {
 				check_variable = { var = KOR_garrison_control value = 0 compare = equals }
 					OR = {
 						state = 797
-							state = 798
-							state = 799
-							state = 527
-							state = 525
-							state = 800
-							state = 801
-							state = 802
-							state = 803
-							state = 804
-							state = 805
-							state = 806
-							state = 807
-							state = 808
-							state = 809
-						}
+						state = 798
+						state = 799
+						state = 527
+						state = 525
+						state = 800
+						state = 801
+						state = 802
+						state = 803
+						state = 804
+						state = 805
+						state = 806
+						state = 807
+						state = 808
+						state = 809
 					}
-					add_to_variable = { var = KOR_garrison_control value = 1 }
-					KOR_garrison_control_cost_calculation = yes
 				}
+			add_to_variable = { var = KOR_garrison_control value = 1 }
+			KOR_garrison_control_cost_calculation = yes
 		}
-		JAP = {
-			country_lock_all_division_template = yes
-			add_opinion_modifier = {
-				target = USA
-				modifier = JAP_opnion_USA
-			}
-
-			set_country_flag = Yoshida_Cabinet
-			set_country_flag = Yoshida_Shigeru
-			set_country_flag = Ogata_Taketora
-			set_country_flag = Hitotsumatsu_Sadayoshi
-			set_country_flag = Kimura_Tokutaro
-			set_country_flag = Okazaki_Katsuo
-			set_country_flag = Ishibashi_Danzan
-			set_country_flag = Takahashi_Seiichi
-			set_country_flag = showa_tenno
-			set_country_flag = Kawaii_Yoshinari
-			set_country_flag = G_Macarthur
+		set_variable = {
+			KORCenterPower = 54
 		}
-		USA = {
-			add_opinion_modifier = {
-				target = JAP
-				modifier = USA_opnion_JAP
-			}
+		set_variable = {
+			KORRightPower = 62
 		}
-		JAP = {
-			add_opinion_modifier = {
-				target = UPN
-				modifier = JAP_opnion_USA
-			}
+		set_variable = {
+			KORLeftPower = 58
 		}
-		UPN = {
-			add_opinion_modifier = {
-				target = JAP
-				modifier = USA_opnion_JAP
-			}
+		set_variable = {
+			KORPakhonyongInfluence = 62
+		}
+		set_variable = {
+			KORKimwonbongInfluence = 48
+		}
+		set_variable = {
+			KORKimilsungInfluence = 32
+		}
+		set_variable = {
+			KORLyuhwoonhyungInfluence = 71
+		}
+		set_variable = {
+			KORAnjaehongInfluence = 46
+		}
+		set_variable = {
+			KORSongjinwooInfluence = 52
+		}
 		}
 	}
 }

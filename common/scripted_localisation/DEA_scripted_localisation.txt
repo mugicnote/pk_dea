@@ -88,15 +88,14 @@ defined_text = {
 defined_text = {
 	name = leader_two_portrait
 	
-	### GER
-	text = { ### 발터모델
+	text = { 
 		trigger = {
 			has_country_flag = Syngman_Rhee2
 		}
 		localization_key = GFX_Portrait_Syngman_Rhee
 	}
 
-	text = { ### 발터모델
+	text = { 
 		trigger = {
 			has_country_flag = Kim_Ku2
 		}

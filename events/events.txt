@@ -603,6 +603,7 @@ country_event = { #연설
 			days = 5
 		}
 		set_country_flag = big_event_assassination_Jae_pil
+		set_country_flag = Seo_Jae_pil_died
 		kill_ideology_leader = democratic
 		create_country_leader = {
 			name = "대한민국 내각"
