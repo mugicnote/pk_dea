@@ -2320,10 +2320,19 @@ focus_tree = {
 			716 = {
                 add_core_of = KOR
 			}
-			328 = {
+			717 = {
                 add_core_of = KOR
 			}
-			717 = {
+			863 = {
+                add_core_of = KOR
+			}
+			864 = {
+                add_core_of = KOR
+			}	
+			897 = {
+                add_core_of = KOR
+			}
+			745 = {
                 add_core_of = KOR
 			}
 			MAN = {
