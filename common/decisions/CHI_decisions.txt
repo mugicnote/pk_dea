@@ -1,0 +1,244 @@
+china_army_decisions = {
+	china_army_reform_1 = {
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			starts_at_army_reform_level_two = no
+		}
+
+		visible = {
+			has_idea = china_inadequate_army_1
+		}
+
+		custom_cost_text = china_army_reform_tooltip_150
+		custom_cost_trigger = {
+			has_army_experience > 149.99
+		}
+
+		days_remove = china_army_reform_var?100
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 500
+		}
+
+		modifier = {
+			political_power_gain = -0.1
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision china_army_reform_1"
+			if = {
+				limit = {
+					NOT = { has_variable = china_army_reform_var }
+				}
+				hidden_effect = { army_experience = -150 }
+			}
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove china_army_reform_1"
+			clear_variable = china_army_reform_var
+			add_to_variable = { army_reform_frame = 1 }
+			add_to_variable = { army_reform_var_org = 0.1 }
+			add_to_variable = { army_reform_var_exp = -0.15 }
+			custom_effect_tooltip = china_army_reform_effect
+			hidden_effect = {
+				swap_ideas = {
+					remove_idea = china_inadequate_army_1
+					add_idea = china_inadequate_army_2
+				}
+			}
+		}
+	}
+	china_army_reform_2 = {
+		name = china_army_reform_1
+		icon = generic_prepare_civil_war
+
+		visible = {
+			has_idea = china_inadequate_army_2
+		}
+
+		custom_cost_text = china_army_reform_tooltip_100
+		custom_cost_trigger = {
+			has_army_experience > 99.99
+		}
+
+		days_remove = china_army_reform_var?100
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 500
+		}
+
+		modifier = {
+			political_power_gain = -0.1
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision china_army_reform_2"
+			if = {
+				limit = {
+					NOT = { has_variable = china_army_reform_var }
+				}
+				hidden_effect = { army_experience = -100 }
+			}
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove china_army_reform_2"
+			clear_variable = china_army_reform_var
+			add_to_variable = { army_reform_frame = 1 }
+			add_to_variable = { army_reform_var_org = 0.1 }
+			add_to_variable = { army_reform_var_exp = -0.15 }
+			custom_effect_tooltip = china_army_reform_effect
+			hidden_effect = {
+				swap_ideas = {
+					remove_idea = china_inadequate_army_2
+					add_idea = china_inadequate_army_3
+				}
+			}
+		}
+	}
+	china_army_reform_3 = {
+		name = china_army_reform_1
+		icon = generic_prepare_civil_war
+
+		visible = {
+			has_idea = china_inadequate_army_3
+		}
+
+		custom_cost_text = china_army_reform_tooltip_50
+		custom_cost_trigger = {
+			has_army_experience > 49.99
+		}
+
+		days_remove = china_army_reform_var?100
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 500
+		}
+
+		modifier = {
+			political_power_gain = -0.1
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision china_army_reform_3"
+			if = {
+				limit = {
+					NOT = { has_variable = china_army_reform_var }
+				}
+				hidden_effect = { army_experience = -50 }
+			}
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove china_army_reform_3"
+			clear_variable = china_army_reform_var
+			add_to_variable = { army_reform_frame = 1 }
+			add_to_variable = { army_reform_var_org = 0.1 }
+			add_to_variable = { army_reform_var_exp = -0.15 }
+			custom_effect_tooltip = china_army_reform_effect
+			hidden_effect = {
+				swap_ideas = {
+					remove_idea = china_inadequate_army_3
+					add_idea = china_inadequate_army_4
+				}
+			}
+		}
+	}
+	china_army_reform_4 = {
+		name = china_army_reform_1
+		icon = generic_prepare_civil_war
+
+		visible = {
+			has_idea = china_inadequate_army_4
+		}
+
+		custom_cost_text = china_army_reform_tooltip_100
+		custom_cost_trigger = {
+			has_army_experience > 99.99
+		}
+
+		days_remove = china_army_reform_var?100
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 500
+		}
+
+		modifier = {
+			political_power_gain = -0.1
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision china_army_reform_4"
+			if = {
+				limit = {
+					NOT = { has_variable = china_army_reform_var }
+				}
+				hidden_effect = { army_experience = -100 }
+			}
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove china_army_reform_4"
+			clear_variable = china_army_reform_var
+			add_to_variable = { army_reform_frame = 1 }
+			add_to_variable = { army_reform_var_org = 0.1 }
+			add_to_variable = { army_reform_var_exp = -0.15 }
+			custom_effect_tooltip = china_army_reform_effect
+			hidden_effect = {
+				swap_ideas = {
+					remove_idea = china_inadequate_army_4
+					add_idea = china_inadequate_army_5
+				}
+			}
+		}
+	}
+	china_army_reform_5 = {
+		icon = generic_prepare_civil_war
+
+		visible = {
+			has_idea = china_inadequate_army_5
+		}
+
+		custom_cost_text = china_army_reform_tooltip_150
+		custom_cost_trigger = {
+			has_army_experience > 149.99
+		}
+
+		days_remove = china_army_reform_var?100
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 500
+		}
+
+		modifier = {
+			political_power_gain = -0.1
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision china_army_reform_5"
+			if = {
+				limit = {
+					NOT = { has_variable = china_army_reform_var }
+				}
+				hidden_effect = { army_experience = -150 }
+			}
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove china_army_reform_5"
+			clear_variable = china_army_reform_var
+			custom_effect_tooltip = china_army_reform_effect_complete
+			hidden_effect = { remove_ideas = china_inadequate_army_5 }
+			clear_variable = army_reform_var_org
+			clear_variable = army_reform_var_exp
+			#clear_variable = army_reform_frame
+		}
+	}
+}

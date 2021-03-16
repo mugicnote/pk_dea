@@ -44,7 +44,7 @@ if = {
 
 add_ideas = {
 	National_Revolutionary_Army
-	Army_in_Need_of_Reform
+	china_inadequate_army_1
 	infantry_oriented_army
 	relaxed_army
 	threat_of_stable_left
