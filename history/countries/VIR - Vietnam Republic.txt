@@ -12,12 +12,12 @@ add_ideas = {
 }
 
 set_politics = {
-	ruling_party = democratic
+	ruling_party = neutrality
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	domocratic = 100
+	authoritarian = 100
 }
 
 create_country_leader = {
@@ -25,11 +25,9 @@ create_country_leader = {
 	desc = ""
 	picture = "Portrait_ICU_Eugene_Robin.dds"
 	expire = "1965.1.1"
-	ideology = democratic
+	ideology = authoritarian
 	traits = {
 		#
 	}
 }
 
-create_corps_commander = {
-}

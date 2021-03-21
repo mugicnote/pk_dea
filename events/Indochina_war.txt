@@ -9,11 +9,49 @@ country_event = { #100대 전술 폭격기 지원
 	is_triggered_only = yes	
 	fire_only_once = yes
 	
-	option = { #이 지원은 그들에게 매우 필요할 것이다.
+	option = { #매우 고맙군.
 		name = ICW.1.a
 		effect_tooltip = {
 			add_equipment_to_stockpile = {
-				type = tac_bomber_equipment_1
+				type = tac_bomber_equipment
+				amount = 100
+			}
+		}
+	}	
+}
+country_event = { #100대 전략 폭격기 지원
+	id = ICW.2
+	title = ICW.2.t
+	desc = ICW.2.d
+	picture = gfx
+	
+	is_triggered_only = yes	
+	fire_only_once = yes
+	
+	option = { #매우 고맙군.
+		name = ICW.2.a
+		effect_tooltip = {
+			add_equipment_to_stockpile = {
+				type = strat_bomber_equipment
+				amount = 100
+			}
+		}
+	}	
+}
+country_event = { #100대 뇌격기 지원
+	id = ICW.3
+	title = ICW.3.t
+	desc = ICW.3.d
+	picture = gfx
+	
+	is_triggered_only = yes	
+	fire_only_once = yes
+	
+	option = { #매우 고맙군.
+		name = ICW.3.a
+		effect_tooltip = {
+			add_equipment_to_stockpile = {
+				type = nav_bomber_equipment
 				amount = 100
 			}
 		}

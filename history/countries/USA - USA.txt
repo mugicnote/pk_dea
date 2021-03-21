@@ -134,14 +134,16 @@ set_politics = {
 }
 set_popularities = {
   communism = 0
+  authoritarian_socialism = 0
   radical_socialism = 2
   social_democracy = 0
-  market_liberalism = 8
   social_liberalism = 52
+  national_liberalism = 8
   liberal_conservatism = 6
   democratic = 30
+  national_conservatism = 0
   neutrality = 0
-  autocracy = 0
+  auto_despotism = 0
   fascism = 2
 }
 

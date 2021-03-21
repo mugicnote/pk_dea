@@ -92,6 +92,10 @@ spriteTypes = {
 		name = "GFX_Portrait_Ho_Jong"
 		texturefile = "gfx/leaders/KOR/Portrait_Ho_Jong.dds"
 	}
+	spriteType = {
+		name = "GFX_Portrait_Sohn_Won_yil"
+		texturefile = "gfx/leaders/KOR/Portrait_Sohn_Won_yil.dds"
+	}
 
 	spriteType = {
 		name = "GFX_Portrait_Yoshida_Shigeru"

@@ -11,7 +11,6 @@ state={
 		add_core_of = KOR
 		add_core_of = CHI
 		add_core_of = MAN
-		add_core_of = PRC
 		buildings = {
 			infrastructure = 4
 			arms_factory = 2
@@ -30,7 +29,7 @@ state={
 	}
 
 	provinces={
-		836 846 892 964 987 3783 3839 3849 3895 6804 6910 6868 6918 6951 9781 9788 9835 9854 9885 11764 11771 11808 11815 
+		836 892 964 987 3783 3839 3849 3895 6918 9781 9854 9885 11764 11771 11808 
 	}
 	manpower=10264620
 	buildings_max_level_factor=1.000

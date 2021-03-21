@@ -1,0 +1,136 @@
+﻿l_english:
+ communism:0 "공산주의"
+ communism_noun:0 "공산주의"
+ communism_desc:0 "전체주의 정권"
+
+ authoritarian_socialism:0 "권위사회주의"
+ authoritarian_socialism_noun:0 "권위사회주의"
+ authoritarian_socialism_desc:0 "사회주의 정권"
+
+ radical_socialism:0 "급진사회주의"
+ radical_socialism_noun:0 "급진사회주의"
+ radical_socialism_desc:0 "사회주의 정권"
+
+ social_democracy:0 "사회민주주의"
+ social_democracy_noun:0 "사회민주주의"
+ social_democracy_desc:0 "민주주의 정권"
+
+ social_liberalism:0 "사회자유주의"
+ social_liberalism_noun:0 "사회자유주의"
+ social_liberalism_desc:0 "민주주의 정권"
+
+ national_liberalism:0 "국민자유주의"
+ national_liberalism_noun:0 "국민자유주의"
+ national_liberalism_desc:0 "민주주의 정권"
+
+ liberal_conservatism:0 "자유보수주의"
+ liberal_conservatism_noun:0 "자유보수주의"
+ liberal_conservatism_desc:0 "민주주의 정권"
+
+ democratic:0 "사회보수주의"
+ democratic_noun:0 "사회보수주의"
+ democratic_desc:0 "민주주의 정권"
+
+ national_conservatism:0 "국민보수주의"
+ national_conservatism_noun:0 "국민보수주의"
+ national_conservatism_desc:0 "민주주의 정권"
+
+ neutrality:0 "권위주의"
+ neutrality_noun:0 "권위주의"
+ neutrality_desc:0 "권위주의 정권"
+
+ auto_despotism:0 "전제독재주의"
+ auto_despotism_noun:0 "전제독재주의"
+ auto_despotism_desc:0 "전제주의 정권"
+
+ fascism:0 "파시즘"
+ fascism_noun:0 "파시즘"
+ fascism_desc:0 "전체주의 정권"
+
+ #공산주의
+ leninism:0 "레닌주의"
+ leninism_desc:0 ""
+ stalinism:0 "스탈린주의"
+ stalinism_desc:0 ""
+ maoism:0 "마오주의"
+ maoism_desc:0 ""
+
+ #권위사회주의
+auth_socialism:0 "권위사회주의"
+ 
+ #급진사회주의
+ rad_socialism:0 "급진사회주의"
+ rad_socialism_desc:0 ""
+ social_nationalism:0 "좌익 국민주의"
+ social_nationalism_desc:0 ""
+ syndicalism:0 "생디칼리슴"
+ syndicalism_desc:0 ""
+ anarcho_syndicalism:0 "아나코-생디칼리슴"
+ anarcho_syndicalism_desc:0 ""
+ agrarian_socialism_rev:0 "농업사회주의"
+ agrarian_socialism_rev_desc:0 ""
+
+ #사회민주주의
+ socialism:0 "사회민주주의"
+ socialism_desc:0 ""
+
+ #사회자유주의
+ liberalism:0 "사회자유주의"
+ liberalism_desc:0 ""
+ market_liberal:0 "시장자유주의"
+ market_liberal_desc:0 """
+ #자유보수주의
+ liberal_conservatism:0 "자유보수주의"
+ liberal_conservatism_desc:0 ""
+ christian_democracy:0 "기독교 민주주의"
+ christian_democracy_desc:0 ""
+ centrism:0 "중도주의"
+ centrism_desc:0 ""
+
+ #사회보수주의
+ conservatism:0 "사회보수주의"
+ conservatism_desc:0 ""
+ christian_democracy_soccon:0 "기독교 민주주의"
+ christian_democracy_soccon_desc:0 ""
+
+ #국민보수주의
+ national_conservatism:0 "국민보수주의"
+ national_conservatism_desc:0 ""
+
+ #권위주의
+ authoritarian:0 "권위주의"
+ authoritarian_desc:0 ""
+ military_dic:0 "군부 독재"
+ military_dic_desc:0 ""
+ oligarchism:0 "과두제"
+ oligarchism_desc:0 ""
+ colonial_gov:0 "식민지 정부"
+ colonial_gov_desc:0 ""
+
+ #전제독재주의
+ despotism:0 "전제주의"
+ despotism_desc:0 ""
+ statism:0 "국가주의"
+ statism_desc:0 ""
+ semi_constitutional:0 "외견적 입헌군주제"
+ semi_constitutional_desc:0 ""
+ dang_guo:0 "삼민주의"
+ dang_guo_desc:0 ""
+ warlordism:0 "군벌"
+ warlordism_desc:0 ""
+ yokusan:0 "익찬 체제"
+ yokusan_desc:0 ""
+
+ #파시즘
+ fascism_ideology:0 "파시즘"
+ fascism_ideology_desc:0 ""
+ nazism:0 "나치즘"
+ nazism_desc:0 ""
+ italian_fascism:0 "이탈리안 파시즘"
+ italian_fascism_desc:0 ""
+ falangism:0 "팔랑헤주의"
+ falangism_desc:0 ""
+ rexism:0 "렉시즘"
+ rexism_desc:0 ""
+ japanese_fascism:0 ""
+ japanese_fascism_desc:0 ""

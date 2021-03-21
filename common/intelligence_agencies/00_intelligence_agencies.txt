@@ -10,3 +10,21 @@ intelligence_agency = {
 	default = { tag = KOR }
 	available = { original_tag = KOR }
 }
+
+intelligence_agency = {
+
+	picture = GFX_intelligence_agency_logo_jap
+	names = { "내각정보조사실" }
+	
+	default = { tag = JAP }
+	available = { original_tag = JAP }
+}
+
+intelligence_agency = {
+
+	picture = GFX_intelligence_agency_logo_chi
+	names = { "남의사" }
+	
+	default = { tag = CHI }
+	available = { original_tag = CHI }
+}

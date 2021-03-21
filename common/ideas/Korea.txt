@@ -112,8 +112,8 @@ ideas = {
             }
         }
 
-        KOR_incompetent_government = {
-            picture = illiteracy
+        KOR_incompetent_goverment = {
+            picture = KOR_incompetent_goverment
 
             allowed = {
                 original_tag = KOR

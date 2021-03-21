@@ -12,24 +12,32 @@ add_ideas = {
 }
 
 set_politics = {
-	ruling_party = communism
+	ruling_party = radical_socialism
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	communism = 100
+	rad_socialism = 100
 }
 
 create_country_leader = {
-	name = "남베트남 혁명 위원회"
+	name = "Nguyen Huu Tho"
 	desc = ""
-	picture = "Portrait_ICU_Eugene_Robin.dds"
+	picture = "nguyen_huu_tho.dds"
 	expire = "1965.1.1"
-	ideology = communism
+	ideology = rad_socialism
 	traits = {
 		#
 	}
 }
 
 create_corps_commander = {
+        name = "Nguyen Thi Dinh"
+		picture = "Nguyen_Dinh.dds"
+        traits = {  }
+        skill = 2
+        attack_skill = 1
+        defense_skill = 2
+        planning_skill = 2
+        logistics_skill = 3
 }

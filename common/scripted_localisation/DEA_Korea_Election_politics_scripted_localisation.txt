@@ -1,0 +1,1074 @@
+###POLITICS SCREEN###
+defined_text = {
+	name = GetKORMostPowerfulParty
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORLeftPower > KORRightPower
+				}
+				check_variable = {
+					KORLeftPower > KORCenterPower
+				}
+			}
+		}
+		localization_key = KOR_Left_Leading
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORCenterPower > KORLeftPower
+				}
+				check_variable = {
+					KORCenterPower > KORRightPower
+				}
+			}
+		}
+		localization_key = KOR_Center_Leading
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORRightPower > KORLeftPower
+				}
+				check_variable = {
+					KORRightPower > KORCenterPower
+				}
+			}
+		}
+		localization_key = KOR_Right_Leading
+	}
+	text = {
+		localization_key = KOR_default
+	}
+}
+
+defined_text = {
+	name = GetKORShowLeftPower
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORLeftPower > 90
+				}
+			}
+		}
+		localization_key = KOR_Movement_Overpowering
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORLeftPower > 80
+				}
+			}
+		}
+		localization_key = KOR_Movement_Very_High
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORLeftPower > 70
+				}
+			}
+		}
+		localization_key = KOR_Movement_High
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORLeftPower > 60
+				}
+			}
+		}
+		localization_key = KOR_Movement_Moderately_High
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORLeftPower > 50
+				}
+			}
+		}
+		localization_key = KOR_Movement_Medium
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORLeftPower > 40
+				}
+			}
+		}
+		localization_key = KOR_Movement_Moderately_Low
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORLeftPower > 30
+				}
+			}
+		}
+		localization_key = KOR_Movement_Low
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORLeftPower > 20
+				}
+			}
+		}
+		localization_key = KOR_Movement_Very_Low
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORLeftPower > 9.99
+				}
+			}
+		}
+		localization_key = KOR_Movement_Irrelevant
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORLeftPower < 10
+				}
+			}
+		}
+		localization_key = KOR_Movement_Nonexistent
+	}
+}
+
+defined_text = {
+	name = GetKORShowRightPower
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORRightPower > 90
+				}
+			}
+		}
+		localization_key = KOR_Movement_Overpowering
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORRightPower > 80
+				}
+			}
+		}
+		localization_key = KOR_Movement_Very_High
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORRightPower > 70
+				}
+			}
+		}
+		localization_key = KOR_Movement_High
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORRightPower > 60
+				}
+			}
+		}
+		localization_key = KOR_Movement_Moderately_High
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORRightPower > 50
+				}
+			}
+		}
+		localization_key = KOR_Movement_Medium
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORRightPower > 40
+				}
+			}
+		}
+		localization_key = KOR_Movement_Moderately_Low
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORRightPower > 30
+				}
+			}
+		}
+		localization_key = KOR_Movement_Low
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORRightPower > 20
+				}
+			}
+		}
+		localization_key = KOR_Movement_Very_Low
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORRightPower > 9.99
+				}
+			}
+		}
+		localization_key = KOR_Movement_Irrelevant
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORRightPower < 10
+				}
+			}
+		}
+		localization_key = KOR_Movement_Nonexistent
+	}
+}
+
+defined_text = {
+	name = GetKORLeftLeader
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORPakhonyongInfluence > KORKimilsungInfluence
+				}
+				check_variable = {
+					KORPakhonyongInfluence > KORKimwonbongInfluence
+				}
+			}
+		}
+		localization_key = KOR_Left_Pakhonyong_Leading
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORKimwonbongInfluence > KORPakhonyongInfluence
+				}
+				check_variable = {
+					KORKimwonbongInfluence > KORKimilsungInfluence
+				}
+			}
+		}
+		localization_key = KOR_Left_Kimwonbong_Leading
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORKimilsungInfluence > KORKimwonbongInfluence
+				}
+				check_variable = {
+					KORKimilsungInfluence > KORPakhonyongInfluence
+				}
+			}
+		}
+		localization_key = NIK_Left_Kimilsung_Leading
+	}
+	text = {
+		localization_key = KOR_default
+	}
+}
+
+defined_text = {
+	name = GetKORKimilsungInfluence
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORKimilsungInfluence > 90
+				}
+			}
+		}
+		localization_key = KOR_Politician_Overpowering
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORKimilsungInfluence > 80
+				}
+			}
+		}
+		localization_key = KOR_Politician_Very_High
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORKimilsungInfluence > 70
+				}
+			}
+		}
+		localization_key = KOR_Politician_High
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORKimilsungInfluence > 60
+				}
+			}
+		}
+		localization_key = KOR_Politician_Moderately_High
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORKimilsungInfluence > 50
+				}
+			}
+		}
+		localization_key = KOR_Politician_Medium
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORKimilsungInfluence > 40
+				}
+			}
+		}
+		localization_key = KOR_Politician_Moderately_Low
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORKimilsungInfluence > 30
+				}
+			}
+		}
+		localization_key = KOR_Politician_Low
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORKimilsungInfluence > 20
+				}
+			}
+		}
+		localization_key = KOR_Politician_Very_Low
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORKimilsungInfluence > 9.99
+				}
+			}
+		}
+		localization_key = KOR_Politician_Irrelevant
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORKimilsungInfluence < 10
+				}
+			}
+		}
+		localization_key = KOR_Politician_Nonexistent
+	}
+}
+
+defined_text = {
+	name = GetKORPakhonyongInfluence
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORPakhonyongInfluence > 90
+				}
+			}
+		}
+		localization_key = KOR_Politician_Overpowering
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORPakhonyongInfluence > 80
+				}
+			}
+		}
+		localization_key = KOR_Politician_Very_High
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORPakhonyongInfluence > 70
+				}
+			}
+		}
+		localization_key = KOR_Politician_High
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORPakhonyongInfluence > 60
+				}
+			}
+		}
+		localization_key = KOR_Politician_Moderately_High
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORPakhonyongInfluence > 50
+				}
+			}
+		}
+		localization_key = KOR_Politician_Medium
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORPakhonyongInfluence > 40
+				}
+			}
+		}
+		localization_key = KOR_Politician_Moderately_Low
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORPakhonyongInfluence > 30
+				}
+			}
+		}
+		localization_key = KOR_Politician_Low
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORPakhonyongInfluence > 20
+				}
+			}
+		}
+		localization_key = KOR_Politician_Very_Low
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORPakhonyongInfluence > 9.99
+				}
+			}
+		}
+		localization_key = KOR_Politician_Irrelevant
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORPakhonyongInfluence < 10
+				}
+			}
+		}
+		localization_key = KOR_Politician_Nonexistent
+	}
+}
+
+defined_text = {
+	name = GetKORKimwonbongInfluence
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORKimwonbongInfluence > 90
+				}
+			}
+		}
+		localization_key = KOR_Politician_Overpowering
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORKimwonbongInfluence > 80
+				}
+			}
+		}
+		localization_key = KOR_Politician_Very_High
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORKimwonbongInfluence > 70
+				}
+			}
+		}
+		localization_key = KOR_Politician_High
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORKimwonbongInfluence > 60
+				}
+			}
+		}
+		localization_key = KOR_Politician_Moderately_High
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORKimwonbongInfluence > 50
+				}
+			}
+		}
+		localization_key = KOR_Politician_Medium
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORKimwonbongInfluence > 40
+				}
+			}
+		}
+		localization_key = KOR_Politician_Moderately_Low
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORKimwonbongInfluence > 30
+				}
+			}
+		}
+		localization_key = KOR_Politician_Low
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORKimwonbongInfluence > 20
+				}
+			}
+		}
+		localization_key = KOR_Politician_Very_Low
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORKimwonbongInfluence > 9.99
+				}
+			}
+		}
+		localization_key = KOR_Politician_Irrelevant
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORKimwonbongInfluence < 10
+				}
+			}
+		}
+		localization_key = KOR_Politician_Nonexistent
+	}
+}
+
+defined_text = {
+	name = GetKORShowCenterPower
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORCenterPower > 90
+				}
+			}
+		}
+		localization_key = KOR_Movement_Overpowering
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORCenterPower > 80
+				}
+			}
+		}
+		localization_key = KOR_Movement_Very_High
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORCenterPower > 70
+				}
+			}
+		}
+		localization_key = KOR_Movement_High
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORCenterPower > 60
+				}
+			}
+		}
+		localization_key = KOR_Movement_Moderately_High
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORCenterPower > 50
+				}
+			}
+		}
+		localization_key = KOR_Movement_Medium
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORCenterPower > 40
+				}
+			}
+		}
+		localization_key = KOR_Movement_Moderately_Low
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORCenterPower > 30
+				}
+			}
+		}
+		localization_key = KOR_Movement_Low
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORCenterPower > 20
+				}
+			}
+		}
+		localization_key = KOR_Movement_Very_Low
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORCenterPower > 9.99
+				}
+			}
+		}
+		localization_key = KOR_Movement_Irrelevant
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORCenterPower < 10
+				}
+			}
+		}
+		localization_key = KOR_Movement_Nonexistent
+	}
+}
+
+defined_text = {
+	name = GetKORCenterLeader
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORSongjinwooInfluence > KORLyuhwoonhyungInfluence
+				}
+				check_variable = {
+					KORSongjinwooInfluence > KORAnjaehongInfluence
+				}
+			}
+		}
+		localization_key = KOR_Center_Songjinwoo_Leading
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORAnjaehongInfluence > KORSongjinwooInfluence
+				}
+				check_variable = {
+					KORAnjaehongInfluence > KORLyuhwoonhyungInfluence
+				}
+			}
+		}
+		localization_key = KOR_Center_Anjaehong_Leading
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORLyuhwoonhyungInfluence > KORAnjaehongInfluence
+				}
+				check_variable = {
+					KORLyuhwoonhyungInfluence > KORSongjinwooInfluence
+				}
+			}
+		}
+		localization_key = KOR_Center_Lyuhwoonhyung_Leading
+	}
+	text = {
+		localization_key = KOR_default
+	}
+}
+
+defined_text = {
+	name = GetKORLyuhwoonhyungInfluence
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORLyuhwoonhyungInfluence > 90
+				}
+			}
+		}
+		localization_key = KOR_Politician_Overpowering
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORLyuhwoonhyungInfluence > 80
+				}
+			}
+		}
+		localization_key = KOR_Politician_Very_High
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORLyuhwoonhyungInfluence > 70
+				}
+			}
+		}
+		localization_key = KOR_Politician_High
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORLyuhwoonhyungInfluence > 60
+				}
+			}
+		}
+		localization_key = KOR_Politician_Moderately_High
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORLyuhwoonhyungInfluence > 50
+				}
+			}
+		}
+		localization_key = KOR_Politician_Medium
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORLyuhwoonhyungInfluence > 40
+				}
+			}
+		}
+		localization_key = KOR_Politician_Moderately_Low
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORLyuhwoonhyungInfluence > 30
+				}
+			}
+		}
+		localization_key = KOR_Politician_Low
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORLyuhwoonhyungInfluence > 20
+				}
+			}
+		}
+		localization_key = KOR_Politician_Very_Low
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORLyuhwoonhyungInfluence > 9.99
+				}
+			}
+		}
+		localization_key = KOR_Politician_Irrelevant
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORLyuhwoonhyungInfluence < 10
+				}
+			}
+		}
+		localization_key = KOR_Politician_Nonexistent
+	}
+}
+
+defined_text = {
+	name = GetKORAnjaehongInfluence
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORAnjaehongInfluence > 90
+				}
+			}
+		}
+		localization_key = KOR_Politician_Overpowering
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORAnjaehongInfluence > 80
+				}
+			}
+		}
+		localization_key = KOR_Politician_Very_High
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORAnjaehongInfluence > 70
+				}
+			}
+		}
+		localization_key = KOR_Politician_High
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORAnjaehongInfluence > 60
+				}
+			}
+		}
+		localization_key = KOR_Politician_Moderately_High
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORAnjaehongInfluence > 50
+				}
+			}
+		}
+		localization_key = KOR_Politician_Medium
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORAnjaehongInfluence > 40
+				}
+			}
+		}
+		localization_key = KOR_Politician_Moderately_Low
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORAnjaehongInfluence > 30
+				}
+			}
+		}
+		localization_key = KOR_Politician_Low
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORAnjaehongInfluence > 20
+				}
+			}
+		}
+		localization_key = KOR_Politician_Very_Low
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORAnjaehongInfluence > 9.99
+				}
+			}
+		}
+		localization_key = KOR_Politician_Irrelevant
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORAnjaehongInfluence < 10
+				}
+			}
+		}
+		localization_key = KOR_Politician_Nonexistent
+	}
+}
+
+defined_text = {
+	name = GetKORSongjinwooInfluence
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORSongjinwooInfluence > 90
+				}
+			}
+		}
+		localization_key = KOR_Politician_Overpowering
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORSongjinwooInfluence > 80
+				}
+			}
+		}
+		localization_key = KOR_Politician_Very_High
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORSongjinwooInfluence > 70
+				}
+			}
+		}
+		localization_key = KOR_Politician_High
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORSongjinwooInfluence > 60
+				}
+			}
+		}
+		localization_key = KOR_Politician_Moderately_High
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORSongjinwooInfluence > 50
+				}
+			}
+		}
+		localization_key = KOR_Politician_Medium
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORSongjinwooInfluence > 40
+				}
+			}
+		}
+		localization_key = KOR_Politician_Moderately_Low
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORSongjinwooInfluence > 30
+				}
+			}
+		}
+		localization_key = KOR_Politician_Low
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORSongjinwooInfluence > 20
+				}
+			}
+		}
+		localization_key = KOR_Politician_Very_Low
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORSongjinwooInfluence > 9.99
+				}
+			}
+		}
+		localization_key = KOR_Politician_Irrelevant
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORSongjinwooInfluence < 10
+				}
+			}
+		}
+		localization_key = KOR_Politician_Nonexistent
+	}
+}

@@ -17,7 +17,7 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	communism = 100
+	stalinism = 100
 }
 
 create_country_leader = {
@@ -25,7 +25,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Portrait_ICU_Eugene_Robin.dds"
 	expire = "1965.1.1"
-	ideology = communism
+	ideology = stalinism
 	traits = {
 		#
 	}

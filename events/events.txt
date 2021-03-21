@@ -603,6 +603,7 @@ country_event = { #연설
 			days = 5
 		}
 		set_country_flag = big_event_assassination_Jae_pil
+		set_country_flag = Seo_Jae_pil_died
 		kill_ideology_leader = democratic
 		create_country_leader = {
 			name = "대한민국 내각"
@@ -4028,44 +4029,12 @@ country_event = {
 	option = {
 		name = KOR.88.a
 	hidden_effect = {
-		716 = {
-			if = {
-				limit = { is_owned_by = MAN }
-				add_core_of = KOR
-			}
-		}
-		328 = {
-			if = {
-				limit = { is_owned_by = MAN }
-				add_core_of = KOR
-			}
-		}
-		717 = {
-			if = {
-				limit = { is_owned_by = MAN }
-				add_core_of = KOR
-			}
-		}
-
-		set_state_owner = 716
-		set_state_controller = 716
-		set_state_owner = 328
-		set_state_controller = 328
-		set_state_owner = 717
-		set_state_controller = 717
-
-		MAN = {
-			remove_state_core = 716
-			remove_state_core = 328
-			remove_state_core = 717
-			remove_state_core = 745
-			set_politics = {
-				ruling_party = neutrality
-			}
-			set_popularities = {
-				neutrality = 100
-			}
-		}
+		transfer_state = 716
+		transfer_state = 717
+		transfer_state = 863
+		transfer_state = 864
+		transfer_state = 897
+		transfer_state = 745
 	}
 	custom_effect_tooltip = KOR.88_tt
 		puppet = MAN
@@ -4074,6 +4043,7 @@ country_event = {
 
 		hidden_effect = {
 			news_event = { hours = 6 id = KOR.89 }
+			news_event = { hours = 0 id = KOR.92 }
 		}
 	}
 }
@@ -4148,5 +4118,35 @@ country_event = { #
 		name = KOR.91.a
 		ai_chance = { factor = 1 }
 
+	}
+}
+
+country_event = { #
+	id = KOR.92
+	immediate = { log = "[GetDateText]: [Root.GetName]: event KOR.92" }
+	title = KOR.92.t
+	desc = KOR.92.desc
+	picture = GFX
+	
+	hidden = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	immediate = {
+		MAN = {
+			remove_state_core = 716
+			remove_state_core = 717
+			remove_state_core = 745
+			remove_state_core = 863
+			remove_state_core = 864
+			remove_state_core = 897
+			
+			set_politics = {
+				ruling_party = neutrality
+			}
+			set_popularities = {
+				neutrality = 100
+			}
+		}
 	}
 }

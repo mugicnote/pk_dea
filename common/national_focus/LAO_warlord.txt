@@ -291,7 +291,7 @@ focus_tree = {
 		icon = ""
 		cost = 5
 		prerequisite = {
-			focus = LAO_war_11
+			focus = LAO_war_12
 		}				
 		x = 14
 		y = 10

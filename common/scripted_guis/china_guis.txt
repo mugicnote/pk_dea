@@ -1,5 +1,21 @@
 scripted_gui = {
 
+	china_army_reform_tooltip = {
+		context_type = decision_category
+		window_name = "china_army_reform_button"
+		dirty = army_reform_frame
+
+		ai_enabled = {
+			always = no
+		}
+
+		properties = {
+			china_army_reform_icon = {
+				frame = army_reform_frame
+			}
+		}
+	}
+
 	china_open_faction_alignment = {
 		context_type = player_context
 		parent_window_token = politics_tab

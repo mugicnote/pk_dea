@@ -1,9 +1,56 @@
 ideas = {
+	hidden_ideas = {
+		china_inadequate_army_1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea china_inadequate_army_1"}
+			name = china_inadequate_army
+			modifier = {
+				experience_loss_factor = 0.75
+				army_org_factor = -0.5
+				army_morale_factor = 0.25
+			}
+		}
+		china_inadequate_army_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea china_inadequate_army_2"}
+			name = china_inadequate_army
+			modifier = {
+				experience_loss_factor = 0.6
+				army_org_factor = -0.4
+				army_morale_factor = 0.2
+			}
+		}
+		china_inadequate_army_3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea china_inadequate_army_3"}
+			name = china_inadequate_army
+			modifier = {
+				experience_loss_factor = 0.45
+				army_org_factor = -0.3
+				army_morale_factor = 0.15
+			}
+		}
+		china_inadequate_army_4 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea china_inadequate_army_4"}
+			name = china_inadequate_army
+			modifier = {
+				experience_loss_factor = 0.3
+				army_org_factor = -0.2
+				army_morale_factor = 0.1
+			}
+		}
+		china_inadequate_army_5 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea china_inadequate_army_5"}
+			name = china_inadequate_army
+			modifier = {
+				experience_loss_factor = 0.15
+				army_org_factor = -0.1
+				army_morale_factor = 0.05
+			}
+		}
+	}
 	country = {
 		###모드###
 		National_Revolutionary_Army = {
 			
-            picture = KTG_Industrial_Crisis_Town
+            picture = CHI_national_revolutionary_army
 
 			allowed = {
 		        original_tag = CHI
@@ -16,7 +63,7 @@ ideas = {
         }
 		Army_in_Need_of_Reform = {
 			
-            picture = KTG_Industrial_Crisis_Town
+            picture = CHI_progress_amry_1
 
 			allowed = {
 		        original_tag = CHI
@@ -31,7 +78,7 @@ ideas = {
         }
 		infantry_oriented_army = {
 			
-            picture = KTG_Industrial_Crisis_Town
+            picture = CHI_unmoterized_army
 
 			allowed = {
 		        original_tag = CHI
@@ -57,7 +104,7 @@ ideas = {
         }
 		relaxed_army = {
 			
-            picture = KTG_Industrial_Crisis_Town
+            picture = CHI_low_tention_army
 
 			allowed = {
 		        original_tag = CHI
@@ -72,7 +119,7 @@ ideas = {
 		}
 		threat_of_stable_left = {
 			
-            picture = KTG_Industrial_Crisis_Town
+            picture = CHI_warning_left_2
 
 			allowed = {
 		        original_tag = CHI
@@ -84,6 +131,19 @@ ideas = {
 				drift_defence_factor = 0.1
 				stability_weekly_factor = 0.001
 				social_democracy_acceptance = 5
+		    }
+        }
+		disorderly_army = {
+			
+            picture = CHI_messy_army
+
+			allowed = {
+		        original_tag = CHI
+	        }
+
+			modifier = {
+				land_reinforce_rate = -0.03
+				custom_modifier_tooltip = SPR_military_disloyalty_tt
 		    }
         }
 

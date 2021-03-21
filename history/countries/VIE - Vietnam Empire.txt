@@ -12,12 +12,12 @@ add_ideas = {
 }
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = auto_despotism
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	neutrality = 100
+	despotism = 100
 }
 
 create_country_leader = {
@@ -25,7 +25,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Portrait_ICU_Eugene_Robin.dds"
 	expire = "1965.1.1"
-	ideology = warloadism
+	ideology = despotism
 	traits = {
 		#
 	}

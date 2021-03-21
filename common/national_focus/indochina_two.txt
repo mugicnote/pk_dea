@@ -36,6 +36,87 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
+	focus = {# 
+		id = ICU_ENG_2
+		icon = ""
+		cost = 0
+		prerequisite = {
+			focus = ICU_ENG_1
+		}	
+		x = 8
+		y = 3
+
+		completion_reward = {
+		}
+	}
+	focus = {#
+		id = ICU_ENG_3
+		icon = ""
+		cost = 0
+		prerequisite = {
+			focus = ICU_ENG_1
+		}	
+		x = 10
+		y = 3
+
+		completion_reward = {
+		}
+	}
+	focus = {#
+		id = ICU_ENG_4
+		icon = ""
+		cost = 0
+		prerequisite = {
+			focus = ICU_ENG_1
+		}
+		x = 12
+		y = 3
+
+		completion_reward = {
+		}
+	}
+	focus = {#
+		id = ICU_ENG_5
+		icon = ""
+		cost = 0
+		prerequisite = {
+			focus = ICU_ENG_2
+		}	
+		x = 8
+		y = 4
+
+		completion_reward = {
+		}
+	}
+	focus = {#
+		id = ICU_ENG_6
+		icon = ""
+		cost = 0
+		prerequisite = {
+			focus = ICU_ENG_4
+		}	
+		x = 12
+		y = 4
+
+		completion_reward = {
+		}
+	}
+	focus = {#
+		id = ICU_ENG_7
+		icon = ""
+		cost = 0
+		prerequisite = {
+			focus = ICU_ENG_5
+		}		
+		prerequisite = {
+			focus = ICU_ENG_6
+		}	
+		x = 10
+		y = 5
+
+		completion_reward = {
+		}
+	}	
 	focus = {# 침로 유지
 		id = ICU_FRA_1
 		icon = ""
@@ -52,4 +133,85 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
+	focus = {# 
+		id = ICU_FRA_2
+		icon = ""
+		cost = 0
+		prerequisite = {
+			focus = ICU_FRA_1
+		}	
+		x = 14
+		y = 3
+
+		completion_reward = {
+		}
+	}
+	focus = {# 
+		id = ICU_FRA_3
+		icon = ""
+		cost = 0
+		prerequisite = {
+			focus = ICU_FRA_1
+		}	
+		x = 16
+		y = 3
+
+		completion_reward = {
+		}
+	}
+	focus = {# 
+		id = ICU_FRA_4
+		icon = ""
+		cost = 0
+		prerequisite = {
+			focus = ICU_FRA_1
+		}	
+		x = 18
+		y = 3
+
+		completion_reward = {
+		}
+	}	
+	focus = {#
+		id = ICU_FRA_5
+		icon = ""
+		cost = 0
+		prerequisite = {
+			focus = ICU_FRA_2
+		}	
+		x = 14
+		y = 4
+
+		completion_reward = {
+		}
+	}
+	focus = {# 
+		id = ICU_FRA_6
+		icon = ""
+		cost = 0
+		prerequisite = {
+			focus = ICU_FRA_4
+		}	
+		x = 18
+		y = 4
+
+		completion_reward = {
+		}
+	}
+	focus = {# 
+		id = ICU_FRA_7
+		icon = ""
+		cost = 0
+		prerequisite = {
+			focus = ICU_FRA_5
+		}
+		prerequisite = {
+			focus = ICU_FRA_6
+		}		
+		x = 16
+		y = 5
+
+		completion_reward = {
+		}
+	}	
 }		

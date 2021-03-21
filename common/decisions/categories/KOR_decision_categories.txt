@@ -1,9 +1,30 @@
+KOR_Election_politics_category = {
+	icon = GFX_decision_category_generic_political_actions
+
+	picture = GFX_VTY_political_fighting
+
+	allowed = {
+		original_tag = KOR
+	}
+	visible = {
+		#NOT = {
+			#has_country_flag = KOR_Finish_ELECTION
+		#}
+		#NOT = {
+			#has_country_flag = Seo_Jae_pil_died #event KOR.78
+		#}
+	}
+	visible_when_empty = yes
+
+	priority = 1000
+}
 #의회
 KOR_congress = {
 	icon = usa_congress
 	picture = GFX_decision_cat_national_assembly
 	allowed = {
 		original_tag = KOR
+		always = no
 	}
 
 	scripted_gui = kor_congress_decision_ui	
@@ -21,6 +42,7 @@ KOR_national_assembly_bicameralism_decision = {
 
 	allowed = {
 		original_tag = KOR
+		always = no
 	}
 
 	visible = {
@@ -37,7 +59,10 @@ parliament_gui_decision_category = {
 
 	picture = GFX_decision_cat_national_assembly
 
-	allowed = { original_tag = KOR }
+	allowed = {
+		original_tag = KOR 
+		always = no
+	}
 
 	priority = 100
 
