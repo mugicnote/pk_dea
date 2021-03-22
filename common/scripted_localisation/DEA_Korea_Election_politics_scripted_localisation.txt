@@ -1072,3 +1072,315 @@ defined_text = {
 		localization_key = KOR_Politician_Nonexistent
 	}
 }
+
+defined_text = {
+	name = GetKORKimkyusikInfluence
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORKimkyusikInfluence > 90
+				}
+			}
+		}
+		localization_key = KOR_Politician_Overpowering
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORKimkyusikInfluence > 80
+				}
+			}
+		}
+		localization_key = KOR_Politician_Very_High
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORKimkyusikInfluence > 70
+				}
+			}
+		}
+		localization_key = KOR_Politician_High
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORKimkyusikInfluence > 60
+				}
+			}
+		}
+		localization_key = KOR_Politician_Moderately_High
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORKimkyusikInfluence > 50
+				}
+			}
+		}
+		localization_key = KOR_Politician_Medium
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORKimkyusikInfluence > 40
+				}
+			}
+		}
+		localization_key = KOR_Politician_Moderately_Low
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORKimkyusikInfluence > 30
+				}
+			}
+		}
+		localization_key = KOR_Politician_Low
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORKimkyusikInfluence > 20
+				}
+			}
+		}
+		localization_key = KOR_Politician_Very_Low
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORKimkyusikInfluence > 9.99
+				}
+			}
+		}
+		localization_key = KOR_Politician_Irrelevant
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORKimkyusikInfluence < 10
+				}
+			}
+		}
+		localization_key = KOR_Politician_Nonexistent
+	}
+}
+
+defined_text = {
+	name = GetKORSyngmanrheeInfluence
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORSyngmanrheeInfluence > 90
+				}
+			}
+		}
+		localization_key = KOR_Politician_Overpowering
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORSyngmanrheeInfluence > 80
+				}
+			}
+		}
+		localization_key = KOR_Politician_Very_High
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORSyngmanrheeInfluence > 70
+				}
+			}
+		}
+		localization_key = KOR_Politician_High
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORSyngmanrheeInfluence > 60
+				}
+			}
+		}
+		localization_key = KOR_Politician_Moderately_High
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORSyngmanrheeInfluence > 50
+				}
+			}
+		}
+		localization_key = KOR_Politician_Medium
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORSyngmanrheeInfluence > 40
+				}
+			}
+		}
+		localization_key = KOR_Politician_Moderately_Low
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORSyngmanrheeInfluence > 30
+				}
+			}
+		}
+		localization_key = KOR_Politician_Low
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORSyngmanrheeInfluence > 20
+				}
+			}
+		}
+		localization_key = KOR_Politician_Very_Low
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORSyngmanrheeInfluence > 9.99
+				}
+			}
+		}
+		localization_key = KOR_Politician_Irrelevant
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORSyngmanrheeInfluence < 10
+				}
+			}
+		}
+		localization_key = KOR_Politician_Nonexistent
+	}
+}
+
+defined_text = {
+	name = GetKORKimguInfluence
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORKimguInfluence > 90
+				}
+			}
+		}
+		localization_key = KOR_Politician_Overpowering
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORKimguInfluence > 80
+				}
+			}
+		}
+		localization_key = KOR_Politician_Very_High
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORKimguInfluence > 70
+				}
+			}
+		}
+		localization_key = KOR_Politician_High
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORKimguInfluence > 60
+				}
+			}
+		}
+		localization_key = KOR_Politician_Moderately_High
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORKimguInfluence > 50
+				}
+			}
+		}
+		localization_key = KOR_Politician_Medium
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORKimguInfluence > 40
+				}
+			}
+		}
+		localization_key = KOR_Politician_Moderately_Low
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORKimguInfluence > 30
+				}
+			}
+		}
+		localization_key = KOR_Politician_Low
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORKimguInfluence > 20
+				}
+			}
+		}
+		localization_key = KOR_Politician_Very_Low
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORKimguInfluence > 9.99
+				}
+			}
+		}
+		localization_key = KOR_Politician_Irrelevant
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = {
+					KORKimguInfluence < 10
+				}
+			}
+		}
+		localization_key = KOR_Politician_Nonexistent
+	}
+}

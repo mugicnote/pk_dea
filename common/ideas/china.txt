@@ -133,6 +133,7 @@ ideas = {
 				social_democracy_acceptance = 5
 		    }
         }
+
 		disorderly_army = {
 			
             picture = CHI_messy_army
@@ -146,7 +147,19 @@ ideas = {
 				custom_modifier_tooltip = SPR_military_disloyalty_tt
 		    }
         }
+		
+		policy_warlord_relate = {
+			
+            picture = KTG_Industrial_Crisis_Town
+			allowed = {
+		        original_tag = CHI
+	        }
 
+			modifier = {
+				political_power_gain = 0.4
+				training_time_factor = 0.05
+		    }
+        }
 
 
 

@@ -50,6 +50,10 @@ country_event = { #
 		name = KOR.1.a
 		ai_chance = { factor = 1 }
 		complete_national_focus = Yeo_Un_hyung_Elected
+		if = {
+			limit = { has_country_flag = forth_election }
+			set_cosmetic_tag = korea_is_second
+		}
 		if = { 
 			limit = { 
 				has_country_flag = forth_election
@@ -62,6 +66,10 @@ country_event = { #
 		name = KOR.1.b
 		ai_chance = { factor = 1 }
 		complete_national_focus = Kim_Gu_Elected
+		if = {
+			limit = { has_country_flag = forth_election }
+			set_cosmetic_tag = korea_is_second
+		}
 		if = { 
 			limit = { 
 				has_country_flag = forth_election
@@ -76,6 +84,10 @@ country_event = { #
 		complete_national_focus = Lee_Seung_man_Elected
 		trigger = {
 			NOT = { has_country_flag = Seung_man_end }
+		}
+		if = {
+			limit = { has_country_flag = forth_election }
+			set_cosmetic_tag = korea_is_second
 		}
 		if = { 
 			limit = { 
@@ -233,7 +245,6 @@ country_event = { #연설
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.62"}
 	title = KOR.62.t
 	desc = KOR.62.desc
-	picture = GFX_Seo_Jae_pils_friction
 	
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -241,7 +252,6 @@ country_event = { #연설
 	option = { #
 		name = KOR.62.a
 		ai_chance = { factor = 1 }
-		add_country_leader_trait = kor_dictator2
 		hidden_effect = {
 			country_event = {
 				id = KOR.63
@@ -256,7 +266,6 @@ country_event = { #연설
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.63"}
 	title = KOR.63.t
 	desc = KOR.63.desc
-	picture = GFX_two_criminals
 	
 	is_triggered_only = yes
 	fire_only_once = yes

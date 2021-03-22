@@ -20,6 +20,12 @@
 		icon = GFX_CHI_General_Kai_Shek
 		cost = 2.00
 
+		available = {
+			has_army_manpower = {
+				size > 150000
+			}
+		}
+
 		completion_reward = {
 			add_political_power = 150
 		}
@@ -33,6 +39,30 @@
 		cost = 2.00
 
 		relative_position_id = General_Kai_Shek
+
+		available = {
+			NOT = { 
+				CHI = {
+					has_war_with = SND
+					has_war_with = HBC
+					has_war_with = SHX
+					has_war_with = SHA
+					has_war_with = NXM
+					has_war_with = GMS
+					has_war_with = SZC
+					has_war_with = XKC
+					has_war_with = XSM
+					has_war_with = YUN
+					has_war_with = SIK
+					has_war_with = GXC
+					has_war_with = GDC
+					has_war_with = KMK
+					has_war_with = TNG
+					has_war_with = UAC
+				}
+			}
+		}
+
 		completion_reward = {
 			add_political_power = 50
 		}
@@ -60,6 +90,71 @@
 			focus = warlord_Censorship
 		}
 		completion_reward = {
+			add_opinion_modifier = {
+				target = SND
+				modifier = small_increase
+			}
+			add_opinion_modifier = {
+				target = HBC
+				modifier = small_increase
+			}
+			add_opinion_modifier = {
+				target = SHX
+				modifier = small_increase
+			}
+			add_opinion_modifier = {
+				target = SHA
+				modifier = small_increase
+			}
+			add_opinion_modifier = {
+				target = NXM
+				modifier = small_increase
+			}
+			add_opinion_modifier = {
+				target = GMS
+				modifier = small_increase
+			}
+			add_opinion_modifier = {
+				target = SZC
+				modifier = small_increase
+			}
+			add_opinion_modifier = {
+				target = XKC
+				modifier = small_increase
+			}
+			add_opinion_modifier = {
+				target = YUN
+				modifier = small_increase
+			}
+			add_opinion_modifier = {
+				target = SIK
+				modifier = small_increase
+			}
+			add_opinion_modifier = {
+				target = GXC
+				modifier = small_increase
+			}
+			add_opinion_modifier = {
+				target = GDC
+				modifier = small_increase
+			}
+			add_opinion_modifier = {
+				target = GXC
+				modifier = small_increase
+			}
+			add_opinion_modifier = {
+				target = KMK
+				modifier = small_increase
+			}
+			add_opinion_modifier = {
+				target = TNG
+				modifier = small_increase
+			}
+			add_opinion_modifier = {
+				target = UAC
+				modifier = small_increase
+			}
+			add_timed_idea = { idea = policy_warlord_relate  days = 150 }
 		}
 		x = 0
 		y = 2
@@ -71,6 +166,15 @@
 		cost = 2.00
 
 		relative_position_id = right_for_warlord
+
+		available = {
+			NOT = {
+				CHI = {
+					has_war_with = XSM
+					has_war_with = SIK
+				}
+			}
+		}
 
 		prerequisite = {
 			focus = right_for_warlord
@@ -93,6 +197,7 @@
 			focus = Censorship_with_ma
 		}
 		completion_reward = {
+			XSM = { country_event = { id = DEA_china.1 } }
 		}
 		x = -1
 		y = 1
@@ -109,6 +214,7 @@
 			focus = Censorship_with_ch
 		}
 		completion_reward = {
+			GMS = { country_event = { id = DEA_china.2 } }
 		}
 		x = 0
 		y = 1
@@ -125,6 +231,7 @@
 			focus = Censorship_with_ma
 		}
 		completion_reward = {
+			NXM = { country_event = { id = DEA_china.3 } }
 		}
 		x = 1
 		y = 1
@@ -141,6 +248,7 @@
 			focus = Censorship_with_yh
 		}
 		completion_reward = {
+			TNG = { country_event = { id = DEA_china.4 } }
 		}
 		x = 0
 		y = 1
@@ -177,6 +285,7 @@
 			focus = Censorship_with_sw
 		}
 		completion_reward = {
+			SIK = { country_event = { id = DEA_china.5 } }
 		}
 		x = -1
 		y = 1
@@ -193,6 +302,7 @@
 			focus = Censorship_with_sw
 		}
 		completion_reward = {
+			KMK = { country_event = { id = DEA_china.6 } }
 		}
 		x = 1
 		y = 1
@@ -226,6 +336,7 @@
 			focus = Censorship_with_sa
 		}
 		completion_reward = {
+			SZC = { country_event = { id = DEA_china.7 } }
 		}
 		x = -1
 		y = 2
@@ -242,6 +353,7 @@
 			focus = Censorship_with_sa
 		}
 		completion_reward = {
+			XKC = { country_event = { id = DEA_china.8 } }
 		}
 		x = 1
 		y = 2
@@ -275,6 +387,7 @@
 			focus = Censorship_with_south
 		}
 		completion_reward = {
+			YUN = { country_event = { id = DEA_china.9 } }
 		}
 		x = -1
 		y = 2
@@ -291,6 +404,7 @@
 			focus = Censorship_with_yn
 		}
 		completion_reward = {
+			UAC = { country_event = { id = DEA_china.10 } }
 		}
 		x = 0
 		y = 2
@@ -307,6 +421,7 @@
 			focus = Censorship_with_south
 		}
 		completion_reward = {
+			GXC = { country_event = { id = DEA_china.11 } }
 		}
 		x = 1
 		y = 2
@@ -323,6 +438,7 @@
 			focus = Censorship_with_gd
 		}
 		completion_reward = {
+			GDC = { country_event = { id = DEA_china.12 } }
 		}
 		x = 0
 		y = 2
@@ -356,6 +472,7 @@
 			focus = Censorship_with_north
 		}
 		completion_reward = {
+			SHX = { country_event = { id = DEA_china.13 } }
 		}
 		x = -1
 		y = 2
@@ -372,6 +489,7 @@
 			focus = Censorship_with_sx
 		}
 		completion_reward = {
+			SHA = { country_event = { id = DEA_china.14 } }
 		}
 		x = 0
 		y = 2
@@ -388,6 +506,7 @@
 			focus = Censorship_with_north
 		}
 		completion_reward = {
+			SND = { country_event = { id = DEA_china.15 } }
 		}
 		x = 1
 		y = 2
@@ -404,6 +523,7 @@
 			focus = Censorship_with_sd
 		}
 		completion_reward = {
+			HBC = { country_event = { id = DEA_china.16 } }
 		}
 		x = 0
 		y = 2

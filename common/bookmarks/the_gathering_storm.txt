@@ -4,7 +4,7 @@ bookmarks = {
 		desc = "GATHERING_STORM_DESC"
 		date = 1936.1.1.12
 		picture = "GFX_select_date_1939"
-		default_country = "GER"
+		default_country = "KOR"
 		default = yes
 
 		effect = {
@@ -13,6 +13,21 @@ bookmarks = {
 		}
 		
 	#### MAJORS ####
+		"KOR"={
+			history = "KOR_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				unstable_security
+				KOR_great_depression
+				huge_government_bond
+			}	
+			focuses = {
+				military_arrest
+				military_success
+				democratic_election
+			}
+		}
+
 		"JAP"={
 			history = "JAP_GATHERING_STORM_DESC"
 			ideology = democratic
@@ -28,24 +43,6 @@ bookmarks = {
 		"KOR" = { history = "" }
 		"KOR" = { history = "" }
 
-		"KOR"={
-			history = "KOR_GATHERING_STORM_DESC"
-			ideology = democratic
-			ideas = {
-				KOR_a_well_informed_general
-				KOR_want_big
-				Where_are_they
-			}	
-			focuses = {
-				Yeo_Un-hyung's_election
-				Kim_Gu_Elected
-				Lee_Seung-man_Elected
-			}			
-		}
-
-		"KOR" = { history = "" }
-		"KOR" = { history = "" }
-
 		"CHI"={
 			history = "CHI_GATHERING_STORM_DESC"
 			ideology = neutrality
@@ -55,22 +52,12 @@ bookmarks = {
 			}
 		}
 
-		"KOR" = { history = "" }
-		"KOR" = { history = "" }
-
-		"GER"={
-			history = "GER_GATHERING_STORM_DESC"
-			ideology = fascism
-			available = { has_dlc = "Waking the Tiger" }
+		"ICU"={
+			history = "ICU_GATHERING_STORM_DESC"
+			ideology = neutrality
 			ideas = {
-				sour_loser
-				general_staff
-				GER_mefo_bills_1
 			}
 			focuses = {
-				GER_anschluss
-				GER_danzig_or_war
-				GER_revive_the_kaiserreich
 			}
 		}
 
@@ -166,6 +153,7 @@ bookmarks = {
 			}
 
 			"GER"={
+				minor = yes
 				history = "GER_GATHERING_STORM_DESC"
 				ideology = fascism
 				available = { has_dlc = "Waking the Tiger" }
