@@ -5,11 +5,31 @@
 		task_force = {
 			name = "제1전단"
 			location = 7221
-			ship = { name = "ROKN 거제함" definition = carrier start_experience_factor = 1 equipment = { ship_hull_carrier_conversion_bb = { amount = 1 owner = KOR version_name = "울릉급" } } }
-			ship = { name = "ROKN 백령함" definition = carrier start_experience_factor = 1 equipment = { ship_hull_carrier_conversion_bb = { amount = 1 owner = KOR version_name = "울릉급" } } }
+			ship = { name = "ROKN 거제함" definition = carrier start_experience_factor = 1 equipment = { ship_hull_carrier_conversion_bb = { amount = 1 owner = KOR version_name = "울릉급" } }
+				air_wings = {
+					cv_fighter_equipment_0 =  { owner = "KOR" amount = 20 }
+					cv_nav_bomber_equipment_1 =  { owner = "KOR" amount = 20 }
+				}
+			}
+			ship = { name = "ROKN 백령함" definition = carrier start_experience_factor = 1 equipment = { ship_hull_carrier_conversion_bb = { amount = 1 owner = KOR version_name = "울릉급" } } 
+				air_wings = {
+					cv_fighter_equipment_0 =  { owner = "KOR" amount = 20 }
+					cv_nav_bomber_equipment_1 =  { owner = "KOR" amount = 20 }
+				}			
+			}
 			
-			ship = { name = "ROKN 마라함" definition = carrier start_experience_factor = 1 equipment = { ship_hull_carrier_conversion_ca = { amount = 1 owner = KOR version_name = "독도급" } } }
-			ship = { name = "ROKN 대마함" definition = carrier start_experience_factor = 1 equipment = { ship_hull_carrier_conversion_ca = { amount = 1 owner = KOR version_name = "독도급" } } }
+			ship = { name = "ROKN 마라함" definition = carrier start_experience_factor = 1 equipment = { ship_hull_carrier_conversion_ca = { amount = 1 owner = KOR version_name = "독도급" } }
+				air_wings = {
+					cv_fighter_equipment_0 =  { owner = "KOR" amount = 10 }
+					cv_nav_bomber_equipment_1 =  { owner = "KOR" amount = 10 }
+				}
+			}
+			ship = { name = "ROKN 대마함" definition = carrier start_experience_factor = 1 equipment = { ship_hull_carrier_conversion_ca = { amount = 1 owner = KOR version_name = "독도급" } }
+				air_wings = {
+					cv_fighter_equipment_0 =  { owner = "KOR" amount = 10 }
+					cv_nav_bomber_equipment_1 =  { owner = "KOR" amount = 10 }
+				}
+			}
 			
         	ship = { name = "ROKN 강감찬함" definition = battleship start_experience_factor = 1 equipment = { ship_hull_heavy_1 = { amount = 1 owner = KOR version_name = "초기식 강감찬급" } } }
 			ship = { name = "ROKN 고종함" definition = battleship start_experience_factor = 1 equipment = { ship_hull_heavy_1 = { amount = 1 owner = KOR version_name = "초기식 강감찬급" } } }

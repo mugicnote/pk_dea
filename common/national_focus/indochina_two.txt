@@ -94,7 +94,7 @@ focus_tree = {
 			}		
 		}
 	}
-	focus = {#
+	focus = {#톨 보이
 		id = ICU_ENG_5
 		icon = ""
 		cost = 5
@@ -105,6 +105,11 @@ focus_tree = {
 		y = 4
 
 		completion_reward = {
+			add_equipment_to_stockpile = {
+			type = tac_bomber_equipment
+			amount = 50
+			producer = ENG
+			}		
 		}
 	}
 	focus = {#

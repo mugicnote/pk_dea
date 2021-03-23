@@ -426,6 +426,9 @@ country_event = {
 		ai_chance = { factor = 100 }	
 		set_country_flag = second_ICU_civilwar						
 		hidden_effect = {
+			ICU = {
+				load_focus_tree = indochina_two
+			}
 			VIR = {
 			add_ideas = ICU_Indochinese_war
 			}
@@ -447,7 +450,6 @@ country_event = {
 			    set_state_owner  = 890			
 			}
 		}
-		load_focus_tree = indochina_two
 		VIV = {
             delete_unit_template_and_units = {
                 division_template = "베트남 식민지 사단" #베트남 식민지 사단 제거
