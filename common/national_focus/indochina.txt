@@ -281,7 +281,7 @@ focus_tree = {
 		completion_reward = {	
 			741 = {
 				create_unit = {
-					division = "name = \"프랑스 1 증원사단\" division_template = \"프랑스 본토원정사단\" start_experience_factor = 0.1" 
+					division = "name = \"1 증원사단\" division_template = \"본토원정사단\" start_experience_factor = 0.1" 
 					owner = ICU
 					}			
 

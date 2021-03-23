@@ -6,6 +6,11 @@ state={
 		add_core_of = CAM
 		owner = ICU
 
+		buildings = {
+			7404 = {
+				naval_base = 1
+			}
+		}
 	}
 
 	provinces={

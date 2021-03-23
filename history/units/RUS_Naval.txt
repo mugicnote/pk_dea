@@ -1,0 +1,51 @@
+﻿units = {
+	fleet = {
+		name = "1st Russian Fleet"			
+		naval_base = 957
+		task_force = {
+			name = "1st Russian Battle Fleet"
+			location = 957
+        	ship = { name = "Imperator Nikolai I" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = RUS version_name = "Imperator Nikolai I Class" } } }
+			ship = { name = "Imperator Aleksandor III" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = RUS version_name = "Imperatritsa Mariya Class" } } }
+        	ship = { name = "Izmail" definition = battle_cruiser equipment = { ship_hull_heavy_1 = { amount = 1 owner = RUS version_name = "Izmail  Class" } } }
+        	ship = { name = "Borodino" definition = battle_cruiser equipment = { ship_hull_heavy_1 = { amount = 1 owner = RUS version_name = "Izmail  Class" } } }
+			
+			ship = { name = "Rurik" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = RUS version_name = "Rurik Class" } } }
+
+			ship = { name = "Bogatyr" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = RUS version_name = "Bogatyr Class" } } }
+			ship = { name = "Kagul" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = RUS version_name = "Bogatyr Class" } } }
+			ship = { name = "Vityaz" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = RUS version_name = "Bogatyr Class" } } }
+			ship = { name = "Novik" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = RUS version_name = "Novik Class" } } }
+			ship = { name = "Almaz" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = RUS version_name = "Almaz Class" } } }
+			ship = { name = "Varyag" definition = light_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = {amount = 1 owner = RUS version_name = "Varyag Class" } } }
+
+			ship = { name = "Bespokoiny" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "Bespokoiny Class" } } }
+			ship = { name = "Derzky" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "Bespokoiny Class" } } }
+			ship = { name = "Gnevny" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "Bespokoiny Class" } } }
+			ship = { name = "Pospeshny" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "Bespokoiny Class" } } }
+			ship = { name = "Pylki" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "Bespokoiny Class" } } }
+			ship = { name = "Schastlivy" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "Bespokoiny Class" } } }
+			ship = { name = "Kapitan Kroun" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "Orfey Class" } } }
+			ship = { name = "Lieutenant Dubasov" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "Orfey Class" } } }
+			ship = { name = "Mikhail" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "Orfey Class" } } }
+			ship = { name = "Mechislav" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "Orfey Class" } } }
+			ship = { name = "Sokol" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "Orfey Class" } } }
+			ship = { name = "Bryachislav" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "Izyaslav Class" } } }
+			ship = { name = "Fedor Stratilat" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = RUS version_name = "Izyaslav Class" } } }
+		}	
+		task_force = {
+			name = "1st Russian SUB Fleet"
+			location = 957
+			ship = { name = "R-1" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = RUS version_name = "R Class" } } }
+			ship = { name = "R-2" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = RUS version_name = "R Class" } } }
+			ship = { name = "R-3" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = RUS version_name = "R Class" } } }
+			ship = { name = "R-4" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = RUS version_name = "R Class" } } }
+			ship = { name = "R-5" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = RUS version_name = "R Class" } } }
+			ship = { name = "R-6" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = RUS version_name = "R Class" } } }
+			ship = { name = "R-7" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = RUS version_name = "R Class" } } }
+			ship = { name = "R-8" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = RUS version_name = "R Class" } } }
+			ship = { name = "R-9" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = RUS version_name = "R Class" } } }
+			ship = { name = "R-10" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = RUS version_name = "R Class" } } }			
+		}
+	}	
+}

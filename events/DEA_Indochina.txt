@@ -104,18 +104,19 @@ country_event = { #인도차이나 내전
 	option = {
 		name = ICU.5.a	
 		ai_chance = { factor = 100 }
-		remove_ideas = ICU_freedom_hot
-		add_ideas = ICU_Indochinese_war
-		set_country_flag = first_ICU_civilwar	
-		VIE = {
-		add_ideas = ICU_Indochinese_war
-		}
-		VIS = {
-		add_ideas = ICU_Indochinese_war
-		}	
-		LAO = {
-		add_ideas = ICU_Indochinese_war
-		}		
+		set_country_flag = first_ICU_civilwar							
+		hidden_effect = { 
+			remove_ideas = ICU_freedom_hot
+			add_ideas = ICU_Indochinese_war
+			VIE = {
+			add_ideas = ICU_Indochinese_war
+			}
+			VIS = {
+			add_ideas = ICU_Indochinese_war
+			}	
+			LAO = {
+			add_ideas = ICU_Indochinese_war
+			}			
         if = {	
 			name = ICU.5.a			
 			VIE = {
@@ -175,7 +176,7 @@ country_event = { #인도차이나 내전
                 division_template = "캄보디아 식민지 사단" #캄보디아 식민지 사단 제거
             }
 			division_template = {
-				name = "프랑스 연방진압군"
+				name = "연방진압군"
 				template_counter = 5
 				division_names_group = ICU_INF_01
 				is_locked = yes
@@ -188,35 +189,35 @@ country_event = { #인도차이나 내전
 				}
 			886 = {
 				create_unit = {
-					division = "division_template = \"프랑스 연방진압군\" start_experience_factor = 0.1" 
+					division = "division_template = \"연방진압군\" start_experience_factor = 0.1" 
 					owner = ICU
 				}
 				create_unit = {
-					division = "division_template = \"프랑스 연방진압군\" start_experience_factor = 0.1" 
+					division = "division_template = \"연방진압군\" start_experience_factor = 0.1" 
 					owner = ICU
 				}
 				create_unit = {
-					division = "division_template = \"프랑스 연방진압군\" start_experience_factor = 0.1" 
+					division = "division_template = \"연방진압군\" start_experience_factor = 0.1" 
 					owner = ICU
 				}				
 			}
 			894 = {
 				create_unit = {
-					division = "division_template = \"프랑스 연방진압군\" start_experience_factor = 0.1" 
+					division = "division_template = \"연방진압군\" start_experience_factor = 0.1" 
 					owner = ICU
 				}
 				create_unit = {
-					division = "division_template = \"프랑스 연방진압군\" start_experience_factor = 0.1" 
+					division = "division_template = \"연방진압군\" start_experience_factor = 0.1" 
 					owner = ICU
 				}
 			}
 			883 = {
 				create_unit = {
-					division = "division_template = \"프랑스 연방진압군\" start_experience_factor = 0.1" 
+					division = "division_template = \"연방진압군\" start_experience_factor = 0.1" 
 					owner = ICU
 				}
 				create_unit = {
-					division = "division_template = \"프랑스 연방진압군\" start_experience_factor = 0.1" 
+					division = "division_template = \"연방진압군\" start_experience_factor = 0.1" 
 					owner = ICU
 				}				
 			}			
@@ -231,7 +232,7 @@ country_event = { #인도차이나 내전
                 division_template = "캄보디아 식민지 사단" #캄보디아 식민지 사단 제거
             }
             delete_unit_template_and_units = {
-                division_template = "프랑스 본토원정사단" #프랑스 본토원정사단 제거
+                division_template = "본토원정사단" #본토원정사단 제거
             }			
 		}
 		VIS = {
@@ -245,7 +246,7 @@ country_event = { #인도차이나 내전
                 division_template = "캄보디아 식민지 사단" #캄보디아 식민지 사단 제거
             }
             delete_unit_template_and_units = {
-                division_template = "프랑스 본토원정사단" #프랑스 본토원정사단 제거
+                division_template = "본토원정사단" #본토원정사단 제거
             }			
 		}
 		LAO = {
@@ -259,10 +260,9 @@ country_event = { #인도차이나 내전
                 division_template = "캄보디아 식민지 사단" #캄보디아 식민지 사단 제거
             }
             delete_unit_template_and_units = {
-                division_template = "프랑스 본토원정사단" #프랑스 본토원정사단 제거
+                division_template = "본토원정사단" #본토원정사단 제거
             }			
-		}					
-			hidden_effect = { 				
+		}		
 			     LAO = {
                      load_oob = LAO_civilwar
                      LAO_create_units = yes
@@ -424,13 +424,14 @@ country_event = {
 	option = {
 		name = ICU.6.a	
 		ai_chance = { factor = 100 }	
-		set_country_flag = second_ICU_civilwar			
-		VIR = {
-		add_ideas = ICU_Indochinese_war
-		}
-		VIV = {
-		add_ideas = ICU_Indochinese_war
-		}		
+		set_country_flag = second_ICU_civilwar						
+		hidden_effect = {
+			VIR = {
+			add_ideas = ICU_Indochinese_war
+			}
+			VIV = {
+			add_ideas = ICU_Indochinese_war
+			}		
 	    if = {	
 			name = ICU.6.a			
 			VIV = {
@@ -458,7 +459,7 @@ country_event = {
                 division_template = "캄보디아 식민지 사단" #캄보디아 식민지 사단 제거
             }
             delete_unit_template_and_units = {
-                division_template = "프랑스 본토원정사단" #프랑스 본토원정사단 제거
+                division_template = "본토원정사단" #본토원정사단 제거
             }			
 		}
 		VIR = {
@@ -472,10 +473,9 @@ country_event = {
                 division_template = "캄보디아 식민지 사단" #캄보디아 식민지 사단 제거
             }
             delete_unit_template_and_units = {
-                division_template = "프랑스 본토원정사단" #프랑스 본토원정사단 제거
+                division_template = "본토원정사단" #본토원정사단 제거
             }			
-		}	
-		hidden_effect = {
+		}		
 			set_global_flag = ICU_civilwar 
 			    VIR = {
                     load_oob = VIR_civilwar

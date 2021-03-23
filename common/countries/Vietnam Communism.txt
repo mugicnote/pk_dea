@@ -3,5 +3,5 @@
 graphical_culture = asian_gfx
 graphical_culture_2d = asian_2d
 
-color = rgb { 232  223  55 }
-color_ui = rgb { 232  223  55 }
+color = rgb { 232  30  15 }
+color_ui = rgb { 232  30  15 }

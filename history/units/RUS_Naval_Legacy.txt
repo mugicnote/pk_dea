@@ -1,0 +1,52 @@
+﻿units = {
+	fleet = {
+		name = "1st Russian Fleet"			
+		naval_base = 957
+		task_force = {
+			name = "1st Russian Battle Fleet"
+			location = 957
+        	ship = { name = "Imperator Nikolai I" definition = battleship equipment = { battleship_1 = { amount = 1 owner = RUS} } }
+        	ship = { name = "Imperator Aleksandor III" definition = battleship equipment = { battleship_1 = { amount = 1 owner = RUS} } }
+			
+        	ship = { name = "Izmail" definition = battle_cruiser equipment = { battle_cruiser_1 = { amount = 1 owner = RUS} } }
+        	ship = { name = "Borodino" definition = battle_cruiser equipment = { battle_cruiser_1 = { amount = 1 owner = RUS} } }
+			
+			ship = { name = "Rurik" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = RUS} } }
+
+			ship = { name = "Bogatyr" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = RUS} } }
+			ship = { name = "Kagul" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = RUS} } }
+			ship = { name = "Vityaz" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = RUS} } }
+			ship = { name = "Novik" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = RUS} } }
+			ship = { name = "Almaz" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = RUS} } }
+			ship = { name = "Varyag" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = RUS} } }
+
+			ship = { name = "Bespokoiny" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = RUS} } }
+			ship = { name = "Derzky" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = RUS} } }
+			ship = { name = "Gnevny" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = RUS} } }
+			ship = { name = "Pospeshny" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = RUS} } }
+			ship = { name = "Pylki" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = RUS} } }
+			ship = { name = "Schastlivy" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = RUS} } }
+			ship = { name = "Kapitan Kroun" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = RUS} } }
+			ship = { name = "Lieutenant Dubasov" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = RUS} } }
+			ship = { name = "Mikhail" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = RUS} } }
+			ship = { name = "Mechislav" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = RUS} } }
+			ship = { name = "Sokol" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = RUS} } }
+			ship = { name = "Bryachislav" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = RUS} } }
+			ship = { name = "Fedor Stratilat" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = RUS} } }			
+		}	
+		task_force = {
+			name = "1st Russian SUB Fleet"
+			location = 957
+			ship = { name = "R-1" definition = submarine equipment = { submarine_1 = { amount = 1 owner = RUS} } }
+			ship = { name = "R-2" definition = submarine equipment = { submarine_1 = { amount = 1 owner = RUS} } }
+			ship = { name = "R-3" definition = submarine equipment = { submarine_1 = { amount = 1 owner = RUS} } }
+			ship = { name = "R-4" definition = submarine equipment = { submarine_1 = { amount = 1 owner = RUS} } }
+			ship = { name = "R-5" definition = submarine equipment = { submarine_1 = { amount = 1 owner = RUS} } }
+			ship = { name = "R-6" definition = submarine equipment = { submarine_1 = { amount = 1 owner = RUS} } }
+			ship = { name = "R-7" definition = submarine equipment = { submarine_1 = { amount = 1 owner = RUS} } }
+			ship = { name = "R-8" definition = submarine equipment = { submarine_1 = { amount = 1 owner = RUS} } }
+			ship = { name = "R-9" definition = submarine equipment = { submarine_1 = { amount = 1 owner = RUS} } }
+			ship = { name = "R-10" definition = submarine equipment = { submarine_1 = { amount = 1 owner = RUS} } }			
+		}
+	}
+}

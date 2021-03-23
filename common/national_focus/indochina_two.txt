@@ -20,7 +20,7 @@ focus_tree = {
 			ICU = { country_event = ICU.7 }
 		}
 	}
-	focus = {# 영국에게로
+	focus = {#태양이 있는 곳에
 		id = ICU_ENG_1
 		icon = ""
 		cost = 0
@@ -36,10 +36,10 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
-	focus = {# 
+	focus = {#여왕의 군대
 		id = ICU_ENG_2
 		icon = ""
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = ICU_ENG_1
 		}	
@@ -47,12 +47,18 @@ focus_tree = {
 		y = 3
 
 		completion_reward = {
+			741 = {
+				create_unit = {
+					division = "name = \"여왕의 지원사단\" division_template = \"본토원정사단\" start_experience_factor = 0.3" 
+					owner = ICU
+				}
+			}	
 		}
 	}
-	focus = {#
+	focus = {#여왕의 총
 		id = ICU_ENG_3
 		icon = ""
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = ICU_ENG_1
 		}	
@@ -60,12 +66,17 @@ focus_tree = {
 		y = 3
 
 		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 2000
+				producer = ENG
+				}		
 		}
 	}
-	focus = {#
+	focus = {#긴급 산업동원령
 		id = ICU_ENG_4
 		icon = ""
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = ICU_ENG_1
 		}
@@ -73,12 +84,20 @@ focus_tree = {
 		y = 3
 
 		completion_reward = {
+		   	741 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes	
+				}
+			}		
 		}
 	}
 	focus = {#
 		id = ICU_ENG_5
 		icon = ""
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = ICU_ENG_2
 		}	
@@ -91,7 +110,7 @@ focus_tree = {
 	focus = {#
 		id = ICU_ENG_6
 		icon = ""
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = ICU_ENG_4
 		}	
@@ -101,10 +120,10 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
-	focus = {#
+	focus = {#태양과 함께
 		id = ICU_ENG_7
 		icon = ""
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = ICU_ENG_5
 		}		
@@ -136,7 +155,7 @@ focus_tree = {
 	focus = {# 
 		id = ICU_FRA_2
 		icon = ""
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = ICU_FRA_1
 		}	
@@ -149,7 +168,7 @@ focus_tree = {
 	focus = {# 
 		id = ICU_FRA_3
 		icon = ""
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = ICU_FRA_1
 		}	
@@ -162,7 +181,7 @@ focus_tree = {
 	focus = {# 
 		id = ICU_FRA_4
 		icon = ""
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = ICU_FRA_1
 		}	
@@ -175,7 +194,7 @@ focus_tree = {
 	focus = {#
 		id = ICU_FRA_5
 		icon = ""
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = ICU_FRA_2
 		}	
@@ -188,7 +207,7 @@ focus_tree = {
 	focus = {# 
 		id = ICU_FRA_6
 		icon = ""
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = ICU_FRA_4
 		}	
@@ -201,7 +220,7 @@ focus_tree = {
 	focus = {# 
 		id = ICU_FRA_7
 		icon = ""
-		cost = 0
+		cost = 5
 		prerequisite = {
 			focus = ICU_FRA_5
 		}
