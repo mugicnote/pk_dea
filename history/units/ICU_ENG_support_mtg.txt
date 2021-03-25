@@ -1,0 +1,14 @@
+﻿units = {
+		##### NAVAL UNITS #####
+	fleet = {
+		name = "1st British support Fleet"
+		naval_base = 7404
+		task_force = {
+		name = "1st British support Fleet"
+		location = 7404  
+		ship = { name = "I-001" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ICU version_name "I Class"} } }
+		ship = { name = "I-002" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ICU version_name "I Class" } } }
+	}
+	}
+}	
+
