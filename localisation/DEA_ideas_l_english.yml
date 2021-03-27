@@ -133,5 +133,7 @@ infantry_oriented_army:0 "보병 위주의 군대"
 relaxed_army:0 "긴장이 풀린 군대"
 threat_of_stable_left:0 "안정된 좌파의 위협"
 disorderly_army:0 "난잡한 군대"
+Yan_Province_government_dream:0 "북양 정부의 꿈"
+Yan_Province_government_dream_tt:0 "§G봉천 군벌은 북양 정부를 반드시 재결성 하겠다는 의지를 가지고 있습니다.§!"
 
 social_democracy_acceptance:0 "사회민주주의 외교의 수용"

@@ -160,7 +160,20 @@ ideas = {
 				training_time_factor = 0.05
 		    }
         }
+		#봉천 군벌
+		Yan_Province_government_dream = {
+			allowed = {
+				original_tag = MAN
+			}
 
+			modifier = {
+				custom_modifier_tooltip = Yan_Province_government_dream_tt
+				political_power_gain = 0.15
+				training_time_factor = -0.1
+				generate_wargoal_tension = -0.25
+				
+			}
+		}
 
 
 
