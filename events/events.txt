@@ -632,7 +632,7 @@ country_event = { #연설
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.79"}
 	title = KOR.79.t
 	desc = KOR.79.desc
-	picture = GFX_Its_a_mess
+	picture = GFX_back_to_back_discussion
 	
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -641,10 +641,10 @@ country_event = { #연설
 		name = KOR.79.a
 		ai_chance = { factor = 1 }
 		country_event = {
-			id = KOR.1
-			days = 31
+			id = KOR.13
+			days = 1
 		}
-		retire_ideology_leader = democratic
+		kill_ideology_leader = democratic
 		create_country_leader = {
 			name = "김규식"
 			desc = ""
@@ -657,6 +657,52 @@ country_event = { #연설
 		}
 	}
 }
+
+country_event = {
+	id = KOR.13
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.13"}
+	title = KOR.13.t
+	desc = KOR.13.desc
+	picture = GFX_successor_dispute
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = KOR.13.a
+		ai_chance = { factor = 1 }
+		country_event = {
+			id = KOR.14
+			days = 0
+		}
+	}
+	option = { #
+		name = KOR.13.b
+		ai_chance = { factor = 1 }
+		country_event = {
+			id = KOR.14
+			days = 0
+		}
+	}
+}
+
+country_event = {
+	id = KOR.14
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.14"}
+	title = KOR.14.t
+	desc = KOR.14.desc
+	picture = GFX_law_passed_is_the_law
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = KOR.14.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+#----------------------------------
 
 country_event = { #경찰 확대
 	id = KOR.80
@@ -773,54 +819,6 @@ country_event = { #
 			add_civil_war_target = KOR
 		}
 	}
-}
-
-add_namespace = KOR
-
-country_event = { #
-	id = KOR.13
-	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.13"}
-	title = KOR.13.t
-	desc = KOR.11.desc
-	picture = gfx
-	
-	is_triggered_only = yes
-	fire_only_once = yes
-	
-	option = { #살아남은 총리
-		name = KOR.13.a
-		set_global_flag = surviving_prime
-		ai_chance = { factor = 1 }
-	}
-}
-
-add_namespace = KOR
-
-country_event = { #시작1
-	id = KOR.14
-	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.14"}
-	title = KOR.14.t
-	desc = KOR.14.desc
-	picture = GFX_NAREISION
-	
-	is_triggered_only = yes
-	
-	option = { #
-		name = KOR.14.a
-		ai_chance = { factor = 1 }
-		country_event = { id = KOR.15 }
-	}
-	option = { #
-		name = KOR.14.b
-		ai_chance = { factor = 1 }
-		country_event = { id = KOR.47 }
-	}
-	option = { #
-		name = KOR.14.c
-		ai_chance = { factor = 1 }
-
-	}
-
 }
 
 add_namespace = KOR

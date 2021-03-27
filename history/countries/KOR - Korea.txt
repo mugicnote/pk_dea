@@ -381,7 +381,7 @@ create_field_marshal = { #사진 작업 완료(Dos 도움)
 	logistics_skill = 4
 }
 
-create_field_marshal = { #사진 작업 완료(Dos 도움)
+create_field_marshal = { #사진 작업 완료(Dos 도움) + dea 추가 작업
 	name = "김좌진"
 	picture = "Portrait_Kim_Chwa-chin.dds"
 	traits = {
@@ -421,7 +421,7 @@ create_field_marshal = { #사진 작업 완료
 	logistics_skill = 5
 }
 
-create_field_marshal = {
+create_field_marshal = { #사진 작업 완료 (리메이크 하고 싶음)
 	name = "송호성"
 	picture = "Portrait_song_hoseong.dds"
 	traits = {
@@ -437,7 +437,7 @@ create_field_marshal = {
 	logistics_skill = 2
 }
 
-create_field_marshal = { #사진 작업 완료(Dos 도움)
+create_field_marshal = { #사진 작업 완료(Dos 도움) + dea 추가 작업
 	name = "김석원"
 	portrait_path = "gfx/leaders/KOR/Portrait_Kim_Suk_Won.dds"
 	traits = {
@@ -516,7 +516,7 @@ create_corps_commander = { #사진 작업 완료
 	logistics_skill = 4
 }
 
-create_corps_commander = { #사진 작업 완료(Dos 도움)
+create_corps_commander = { #사진 작업 완료
 	name = "김경천"
 	picture = "Portrait_Kim_Kyung-cheon.dds"
 	traits = { 

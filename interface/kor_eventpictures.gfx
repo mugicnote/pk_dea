@@ -121,6 +121,18 @@ spriteTypes = {
 		name = "GFX_Kim_Koo_Harmony"
 		texturefile = "gfx/event_pictures/Kim_Koo_Harmony.dds"
 	}
+	spriteType = {
+		name = "GFX_successor_dispute"
+		texturefile = "gfx/event_pictures/successor_dispute.dds"
+	}
+	spriteType = {
+		name = "GFX_back_to_back_discussion"
+		texturefile = "gfx/event_pictures/back_to_back_discussion.dds"
+	}
+	spriteType = {
+		name = "GFX_law_passed_is_the_law"
+		texturefile = "gfx/event_pictures/law_passed_is_the_law.dds"
+	}
 
 
 	spriteType = {
