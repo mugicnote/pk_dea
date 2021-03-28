@@ -642,9 +642,40 @@ country_event = { #침로 선택
 	option = { #영국에 지원요청을 하자
 		name = ICU.7.a
 		complete_national_focus = ICU_ENG_1
+		hidden_effect = {
+			create_country_leader = {
+				name = "Claude Auchinleck"
+				picture ="Portrait_ICU_Claude_Auchinleck.dds"
+				expire = "1969.9.17"
+				ideology = warloadism
+				traits = {
+					}
+			}
+		}
 	}
 	option = { #우리는 프랑스를 믿는다
 		name = ICU.7.b
 		complete_national_focus = ICU_FRA_1
+	}	
+}
+
+country_event = { #동쪽에서 태양이
+	id = ICU.8
+	title = ICU.8.t
+	desc = ICU.8.d
+	picture = gfx
+	
+	is_triggered_only = yes	
+	fire_only_once = yes
+	
+	option = { #과연 가능할까
+		name = ICU.8.a
+	hidden_effect = {
+		ICU = {
+			add_ideas = ICU_broken_army
+			add_ideas = ICU_destroyed_economy
+			remove_ideas = ICU_bad_economy
+			}
+		}
 	}	
 }

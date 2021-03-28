@@ -175,7 +175,17 @@ focus_tree = {
 		x = 10
 		y = 5
 
+		available = {
+			NOT = {
+				has_war_with = LAO
+				has_war_with = VIR
+				has_war_with = VIV
+				has_war_with = VIE
+				has_war_with = VIS				
+			}
+		}
 		completion_reward = {
+			ICU = { country_event = ICU.8 }	
 		}
 	}	
 	focus = {# 침로 유지
