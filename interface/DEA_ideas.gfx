@@ -242,5 +242,8 @@ spriteTypes = {
 		name = "GFX_idea_CHI_messy_army"
 		texturefile = "gfx/interface/ideas/CHI_messy_army.dds"
 	}
-
+	spriteType = {
+		name = "GFX_idea_Yan_Province_government_dream"
+		texturefile = "gfx/interface/ideas/idea_Yan_Province_government_dream.dds"
+	}
 }

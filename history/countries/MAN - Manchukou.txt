@@ -9,7 +9,9 @@ set_technology = {
 }
 
 set_convoys = 5
-
+add_ideas = {
+	Yan_Province_government_dream
+}
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1936.1.1"
