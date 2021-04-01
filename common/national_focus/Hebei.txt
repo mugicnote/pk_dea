@@ -1,0 +1,176 @@
+﻿focus_tree = {
+	id = hebei_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = HBC
+		}
+	}
+	
+
+	default = no
+
+	continuous_focus_position = { x = 20 y = 1600 }
+
+focus = {
+	id = HBC_songzueyan_administration
+	icon = GFX_
+	cost = 5
+	x = 10
+	y = 0
+	ai_will_do = {
+		factor = 90
+	}
+	completion_reward = {
+		add_political_power = 10
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+}
+focus = {
+	id = HBC_political_reform
+	icon = GFX_
+	prerequisite = { focus = HBC_songzueyan_administration }
+	cost = 5
+	x = 0
+	y = 2
+	relative_position_id = HBC_songzueyan_administration
+	ai_will_do = {
+		factor = 90
+	}
+	completion_reward = {
+		add_political_power = 10
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+}
+focus = {
+	id = HBC_construction_reform
+	icon = GFX_
+	prerequisite = { focus = HBC_political_reform }
+	cost = 5
+	x = 0
+	y = 2
+	relative_position_id = HBC_political_reform
+	ai_will_do = {
+		factor = 
+	}
+	completion_reward = {
+		add_political_power = 10
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+}
+focus = {
+	id = HBC_beijing_reform
+	icon = GFX_
+	prerequisite = { focus = HBC_construction_reform }
+	cost = 5
+	x = 0
+	y = 2
+	relative_position_id = HBC_construction_reform
+	ai_will_do = {
+		factor = 
+	}
+	completion_reward = {
+		add_political_power = 10
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+}
+focus = {
+	id = HBC_tianjin_reform
+	icon = GFX_
+	prerequisite = { focus = HBC_beijing_reform }
+	cost = 5
+	x = 0
+	y = 2
+	relative_position_id = HBC_beijing_reform
+	ai_will_do = {
+		factor = 
+	}
+	completion_reward = {
+		add_political_power = 10
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+}
+focus = {
+	id = HBC_baoding_reform
+	icon = GFX_
+	prerequisite = { focus = HBC_tianjin_reform }
+	cost = 5
+	x = 0
+	y = 2
+	relative_position_id = HBC_tianjin_reform
+	ai_will_do = {
+		factor = 
+	}
+	completion_reward = {
+		add_political_power = 10
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+}
+focus = {
+	id = HBC_diplomacy_reform
+	icon = GFX_
+	prerequisite = { focus = HBC_political_reform }
+	cost = 5
+	x = 3
+	y = 2
+	relative_position_id = HBC_political_reform
+	ai_will_do = {
+		factor = 
+	}
+	completion_reward = {
+		add_political_power = 10
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+}
+focus = {
+	id = HBC_fengtian
+	icon = GFX_
+	prerequisite = { focus = HBC_diplomacy_reform }
+	cost = 5
+	x = 0
+	y = 2
+	relative_position_id = HBC_diplomacy_reform
+	ai_will_do = {
+		factor = 
+	}
+	completion_reward = {
+		add_political_power = 10
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+}
+focus = {
+	id = HBC_shandong
+	icon = GFX_
+	prerequisite = { focus = HBC_fengtian }
+	cost = 5
+	x = 0
+	y = 2
+	relative_position_id = HBC_fengtian
+	ai_will_do = {
+		factor = 
+	}
+	completion_reward = {
+		add_political_power = 10
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+}
+focus = {
+	id = HBC_shanxi
+	icon = GFX_
+	prerequisite = { focus = HBC_shandong }
+	cost = 5
+	x = 0
+	y = 2
+	relative_position_id = HBC_shandong
+	ai_will_do = {
+		factor = 
+	}
+	completion_reward = {
+		add_political_power = 10
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+}
+
+}

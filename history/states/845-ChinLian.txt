@@ -6,6 +6,9 @@ state={
 		owner = GXC
 		add_core_of = GXC
 		add_core_of = CHI
+		victory_points = {
+			10004 1
+		}
 		buildings = {
 
 		}

@@ -14,6 +14,13 @@ state={
 		victory_points = {
 			8049 3 
 		}
+		victory_points = {
+			12156 5
+		}
+		set_province_name = {
+            id = 12156
+            name = "시안"
+        }
 		buildings = {
 			infrastructure = 2
 			arms_factory = 3

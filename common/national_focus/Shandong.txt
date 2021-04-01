@@ -1,0 +1,176 @@
+﻿focus_tree = {
+	id = shandong_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SND
+		}
+	}
+	
+
+	default = no
+
+	continuous_focus_position = { x = 20 y = 1600 }
+
+focus = {
+	id = SND_hanfuju_administration
+	icon = GFX_
+	cost = 5
+	x = 10
+	y = 0
+	ai_will_do = {
+		factor = 90
+	}
+	completion_reward = {
+		add_political_power = 10
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+}
+focus = {
+	id = SND_political_reform
+	icon = GFX_
+	prerequisite = { focus = SND_hanfuju_administration }
+	cost = 5
+	x = 0
+	y = 2
+	relative_position_id = SND_hanfuju_administration
+	ai_will_do = {
+		factor = 90
+	}
+	completion_reward = {
+		add_political_power = 10
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+}
+focus = {
+	id = SND_construction_reform
+	icon = GFX_
+	prerequisite = { focus = SND_political_reform }
+	cost = 5
+	x = 0
+	y = 2
+	relative_position_id = SND_political_reform
+	ai_will_do = {
+		factor = 
+	}
+	completion_reward = {
+		add_political_power = 10
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+}
+focus = {
+	id = SND_tsingtao_reform
+	icon = GFX_
+	prerequisite = { focus = SND_construction_reform }
+	cost = 5
+	x = 0
+	y = 2
+	relative_position_id = SND_construction_reform
+	ai_will_do = {
+		factor = 
+	}
+	completion_reward = {
+		add_political_power = 10
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+}
+focus = {
+	id = SND_tsinan_reform
+	icon = GFX_
+	prerequisite = { focus = SND_tsingtao_reform }
+	cost = 5
+	x = 0
+	y = 2
+	relative_position_id = SND_tsingtao_reform
+	ai_will_do = {
+		factor = 
+	}
+	completion_reward = {
+		add_political_power = 10
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+}
+focus = {
+	id = SND_weihai_reform
+	icon = GFX_
+	prerequisite = { focus = SND_tsinan_reform }
+	cost = 5
+	x = 0
+	y = 2
+	relative_position_id = SND_tsinan_reform
+	ai_will_do = {
+		factor = 
+	}
+	completion_reward = {
+		add_political_power = 10
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+}
+focus = {
+	id = SND_diplomacy_reform
+	icon = GFX_
+	prerequisite = { focus = SND_political_reform }
+	cost = 5
+	x = 3
+	y = 2
+	relative_position_id = SND_political_reform
+	ai_will_do = {
+		factor = 
+	}
+	completion_reward = {
+		add_political_power = 10
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+}
+focus = {
+	id = SND_hebei
+	icon = GFX_
+	prerequisite = { focus = SND_diplomacy_reform }
+	cost = 5
+	x = 0
+	y = 2
+	relative_position_id = SND_diplomacy_reform
+	ai_will_do = {
+		factor = 
+	}
+	completion_reward = {
+		add_political_power = 10
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+}
+focus = {
+	id = SND_fengtian
+	icon = GFX_
+	prerequisite = { focus = SND_hebei }
+	cost = 5
+	x = 0
+	y = 2
+	relative_position_id = SND_hebei
+	ai_will_do = {
+		factor = 
+	}
+	completion_reward = {
+		add_political_power = 10
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+}
+focus = {
+	id = SND_shanxi
+	icon = GFX_
+	prerequisite = { focus = SND_fengtian }
+	cost = 5
+	x = 0
+	y = 2
+	relative_position_id = SND_fengtian
+	ai_will_do = {
+		factor = 
+	}
+	completion_reward = {
+		add_political_power = 10
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+}
+
+}
