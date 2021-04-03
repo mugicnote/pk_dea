@@ -675,6 +675,31 @@ country_event = { #동쪽에서 태양이
 			add_ideas = ICU_broken_army
 			add_ideas = ICU_destroyed_economy
 			remove_ideas = ICU_bad_economy
+			remove_ideas = ICU_Indochinese_war
+			}
+		}
+	}	
+}
+
+country_event = { #대청소 작전
+	id = ICU.9
+	title = ICU.9.t
+	desc = ICU.9.d
+	picture = gfx
+	
+	is_triggered_only = yes	
+	fire_only_once = yes
+	
+	option = { #다 제거하자
+		name = ICU.9.a
+	hidden_effect = {
+		add_manpower = -200000
+		add_stability = -0.4
+		ICU = {
+			add_ideas = ICU_broken_army
+			add_ideas = ICU_destroyed_economy
+			remove_ideas = ICU_bad_economy
+			remove_ideas = ICU_Indochinese_war			
 			}
 		}
 	}	
