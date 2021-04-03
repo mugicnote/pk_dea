@@ -204,7 +204,7 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
-	focus = {# 
+	focus = {#외인부대
 		id = ICU_FRA_2
 		icon = ""
 		cost = 5
@@ -215,9 +215,15 @@ focus_tree = {
 		y = 3
 
 		completion_reward = {
+			741 = {
+				create_unit = {
+					division = "name = \"1 인도차이나 외인부대\" division_template = \"연방진압군\" start_experience_factor = 0.1" 
+					owner = ICU
+				}
+			}		
 		}
 	}
-	focus = {# 
+	focus = {#하늘의 요새
 		id = ICU_FRA_3
 		icon = ""
 		cost = 5
@@ -228,9 +234,14 @@ focus_tree = {
 		y = 3
 
 		completion_reward = {
+			add_equipment_to_stockpile = {
+			type = tac_bomber_equipment
+			amount = 20
+			producer = FRA
+			}		
 		}
 	}
-	focus = {# 
+	focus = {#공장을 가동해라
 		id = ICU_FRA_4
 		icon = ""
 		cost = 5
@@ -241,9 +252,17 @@ focus_tree = {
 		y = 3
 
 		completion_reward = {
+		   	741 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes	
+				}
+			}		
 		}
 	}	
-	focus = {#
+	focus = {#청소 작전
 		id = ICU_FRA_5
 		icon = ""
 		cost = 5
@@ -254,9 +273,16 @@ focus_tree = {
 		y = 4
 
 		completion_reward = {
+			add_stability = -0.15
+			add_manpower = -10000
+			add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 1000
+			producer = ICU
+			}		
 		}
 	}
-	focus = {# 
+	focus = {#연방은 위대하다
 		id = ICU_FRA_6
 		icon = ""
 		cost = 5
@@ -267,9 +293,17 @@ focus_tree = {
 		y = 4
 
 		completion_reward = {
+			add_political_power = -100		
+			add_stability = -0.2
+			add_manpower = 2000
+			add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 500
+			producer = ICU
+			}			
 		}
 	}
-	focus = {# 
+	focus = {#악마의 속삭임
 		id = ICU_FRA_7
 		icon = ""
 		cost = 5
@@ -282,7 +316,17 @@ focus_tree = {
 		x = 16
 		y = 5
 
+		available = {
+			NOT = {
+				has_war_with = LAO
+				has_war_with = VIR
+				has_war_with = VIV
+				has_war_with = VIE
+				has_war_with = VIS				
+			}
+		}
 		completion_reward = {
+			ICU = { country_event = ICU.9 }		
 		}
 	}	
 }		
