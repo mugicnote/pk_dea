@@ -1,7 +1,7 @@
 guiTypes = {
 	containerWindowType = {
 		name = "cabinet_button_ui"
-		position = { x = 155 y = 10 }
+		position = { x = 100 y = 8 }
 		
 		buttonType = {
 			name = "cabinet_button"
