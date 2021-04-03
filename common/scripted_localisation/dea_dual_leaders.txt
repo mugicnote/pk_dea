@@ -1,7 +1,7 @@
 ### Don't touch!!!
 
 defined_text = {
-	name = first_leader_title_text
+	name = leader1_rank
 	text = {
 		trigger = {
 			tag = KOR
@@ -40,7 +40,7 @@ defined_text = {
 }
 
 defined_text = {
-	name = second_leader_title_text
+	name = leader2_rank
 	text = {
 		trigger = {
 			tag = KOR
@@ -72,7 +72,7 @@ defined_text = {
 }
 
 defined_text = {
-	name = dual_leader_name_text
+	name = leader2_name
 	text = {
 		trigger = {
 			tag = KOR
@@ -104,7 +104,7 @@ defined_text = {
 }
 
 defined_text = {
-    name = dual_leader
+    name = leader2_poartrait
 	text = {
 		trigger = {
 			tag = KOR
@@ -136,7 +136,7 @@ defined_text = {
 }
 
 defined_text = {
-    name = DUAL_DESC
+    name = leader2_desc
     
     text = {
         trigger = {
@@ -148,7 +148,7 @@ defined_text = {
 }
 
 defined_text = {
-    name = DUAL_NAME
+    name = leader2_desc
     
     text = {
         trigger = {

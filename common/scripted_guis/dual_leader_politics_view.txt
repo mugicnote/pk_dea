@@ -3,11 +3,11 @@ scripted_gui = {
 	dual_leader_politics_view = {
 		context_type = player_context
 		parent_window_token = politics_tab
-		window_name = "dual_leader_politics_view_container"
+		window_name = "dual_leader_container"
 
 		properties = {
-			dual_leader = {
-				image = "[This.dual_leader]"
+			leader2_poartrait = {
+				image = "[This.leader2_poartrait]"
 			}
 		}
 		
@@ -21,4 +21,5 @@ scripted_gui = {
 		}
 	}
 }
+
 
