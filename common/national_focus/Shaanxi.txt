@@ -1,11 +1,11 @@
 ﻿focus_tree = {
-	id = shanxi_focus
+	id = shaanxi_focus
 	
 	country = {
 		factor = 0
 		modifier = {
 			add = 10
-			tag = SHX
+			tag = SHA
 		}
 	}
 	
@@ -15,7 +15,7 @@
 	continuous_focus_position = { x = 20 y = 1600 }
 
 focus = {
-	id = SHX_yanxishan_administration
+	id = SHA_yanghucheng_administration
 	icon = GFX_
 	cost = 5
 	x = 10
@@ -29,13 +29,13 @@ focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 }
 focus = {
-	id = SHX_political_reform
+	id = SHA_political_reform
 	icon = GFX_
-	prerequisite = { focus = SHX_yanxishan_administration }
+	prerequisite = { focus = SHA_yanghucheng_administration }
 	cost = 5
 	x = 0
 	y = 2
-	relative_position_id = SHX_yanxishan_administration
+	relative_position_id = SHA_yanghucheng_administration
 	ai_will_do = {
 		factor = 90
 	}
@@ -45,13 +45,13 @@ focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 }
 focus = {
-	id = SHX_construction_reform
+	id = SHA_construction_reform
 	icon = GFX_
-	prerequisite = { focus = SHX_political_reform }
+	prerequisite = { focus = SHA_political_reform }
 	cost = 5
 	x = 0
 	y = 2
-	relative_position_id = SHX_political_reform
+	relative_position_id = SHA_political_reform
 	ai_will_do = {
 		factor = 
 	}
@@ -61,13 +61,13 @@ focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 }
 focus = {
-	id = SHX_taiyuan_reform
+	id = SHA_sian_reform
 	icon = GFX_
-	prerequisite = { focus = SHX_construction_reform }
+	prerequisite = { focus = SHA_construction_reform }
 	cost = 5
 	x = 0
 	y = 2
-	relative_position_id = SHX_construction_reform
+	relative_position_id = SHA_construction_reform
 	ai_will_do = {
 		factor = 
 	}
@@ -77,13 +77,13 @@ focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 }
 focus = {
-	id = SHX_taiyuan2_reform
+	id = SHA_yanan_reform
 	icon = GFX_
-	prerequisite = { focus = SHX_taiyuan_reform }
+	prerequisite = { focus = SHA_sian_reform }
 	cost = 5
 	x = 0
 	y = 2
-	relative_position_id = SHX_taiyuan_reform
+	relative_position_id = SHA_sian_reform
 	ai_will_do = {
 		factor = 
 	}
@@ -93,13 +93,13 @@ focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 }
 focus = {
-	id = SHX_taiyuan3_reform
+	id = SHA_sian2_reform
 	icon = GFX_
-	prerequisite = { focus = SHX_taiyuan2_reform }
+	prerequisite = { focus = SHA_yanan_reform }
 	cost = 5
 	x = 0
 	y = 2
-	relative_position_id = SHX_taiyuan2_reform
+	relative_position_id = SHA_yanan_reform
 	ai_will_do = {
 		factor = 
 	}
@@ -109,13 +109,13 @@ focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 }
 focus = {
-	id = SHX_diplomacy_reform
+	id = SHA_diplomacy_reform
 	icon = GFX_
-	prerequisite = { focus = SHX_political_reform }
+	prerequisite = { focus = SHA_political_reform }
 	cost = 5
 	x = 3
 	y = 2
-	relative_position_id = SHX_political_reform
+	relative_position_id = SHA_political_reform
 	ai_will_do = {
 		factor = 
 	}
@@ -125,13 +125,13 @@ focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 }
 focus = {
-	id = SHX_hebei
+	id = SHA_gansu
 	icon = GFX_
-	prerequisite = { focus = SHX_diplomacy_reform }
+	prerequisite = { focus = SHA_diplomacy_reform }
 	cost = 5
 	x = 0
 	y = 2
-	relative_position_id = SHX_diplomacy_reform
+	relative_position_id = SHA_diplomacy_reform
 	ai_will_do = {
 		factor = 
 	}
@@ -141,13 +141,13 @@ focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 }
 focus = {
-	id = SHX_shaanxi
+	id = SHA_shanxi
 	icon = GFX_
-	prerequisite = { focus = SHX_hebei }
+	prerequisite = { focus = SHA_gansu }
 	cost = 5
 	x = 0
 	y = 2
-	relative_position_id = SHX_hebei
+	relative_position_id = SHA_gansu
 	ai_will_do = {
 		factor = 
 	}
@@ -157,13 +157,13 @@ focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 }
 focus = {
-	id = SHX_mengkuko
+	id = SHA_mengkuko
 	icon = GFX_
-	prerequisite = { focus = SHX_shaanxi }
+	prerequisite = { focus = SHA_shanxi }
 	cost = 5
 	x = 0
 	y = 2
-	relative_position_id = SHX_shaanxi
+	relative_position_id = SHA_shanxi
 	ai_will_do = {
 		factor = 
 	}
