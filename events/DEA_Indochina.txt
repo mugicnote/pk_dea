@@ -4,7 +4,7 @@ country_event = { #베트남 자유화 운동
 	id = ICU.1
 	title = ICU.1.t
 	desc = ICU.1.d
-	picture = gfx
+	picture = GFX_news_event_generic_riot
 	
 	is_triggered_only = yes	
 	fire_only_once = yes
@@ -22,7 +22,7 @@ country_event = { #본국 지원요청
 	id = ICU.2
 	title = ICU.2.t
 	desc = ICU.2.d
-	picture = gfx
+	picture = GFX_news_event_generic_read_write
 	
 	is_triggered_only = yes	
 	fire_only_once = yes
@@ -49,7 +49,7 @@ country_event = { #프랑스의 승낙
 	id = ICU.3
 	title = ICU.3.t
 	desc = ICU.3.d
-	picture = gfx
+	picture = GFX_news_event_generic_read_write
 	
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -77,7 +77,7 @@ country_event = { #프랑스의 거절
 	id = ICU.4
 	title = ICU.4.t
 	desc = ICU.4.d
-	picture = gfx
+	picture = GFX_news_event_generic_read_write
 	
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -90,7 +90,7 @@ country_event = { #인도차이나 내전
 	id = ICU.5
 	title = ICU.5.t
 	desc = ICU.5.d
-	picture = gfx
+	picture = GFX_news_event_056
 
 	fire_only_once = yes
 
@@ -411,7 +411,7 @@ country_event = {
 	id = ICU.6
 	title = ICU.6.t
 	desc = ICU.6.d
-	picture = GFX
+	picture = GFX_news_event_soviet_soldiers_ruins
 	
 	fire_only_once = yes
 	
@@ -634,7 +634,7 @@ country_event = { #침로 선택
 	id = ICU.7
 	title = ICU.7.t
 	desc = ICU.7.d
-	picture = gfx
+	picture = GFX_news_event_military_planning
 	
 	is_triggered_only = yes	
 	fire_only_once = yes
@@ -663,7 +663,7 @@ country_event = { #동쪽에서 태양이
 	id = ICU.8
 	title = ICU.8.t
 	desc = ICU.8.d
-	picture = gfx
+	picture = GFX_news_event_kiev_ruins
 	
 	is_triggered_only = yes	
 	fire_only_once = yes
@@ -685,7 +685,7 @@ country_event = { #대청소 작전
 	id = ICU.9
 	title = ICU.9.t
 	desc = ICU.9.d
-	picture = gfx
+	picture = GFX_news_event_kiev_ruins
 	
 	is_triggered_only = yes	
 	fire_only_once = yes
