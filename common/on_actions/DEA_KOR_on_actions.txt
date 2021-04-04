@@ -134,6 +134,12 @@ on_actions = {
 		set_variable = {
 			KORSongjinwooInfluence = 52
 		}
+		set_variable = {
+			CURRENT_MILITARY_BAR = 245
+		}
+		set_variable = {
+			CURRENT_MILITARY_PROGRESS = 50
+		}
 		}
 	}
 }

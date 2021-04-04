@@ -1,0 +1,20 @@
+scripted_gui = {
+	Militrary_progress_bar_gui = {
+		context_type = decision_category
+		
+		window_name = "Militrary_progress_bar_gui"
+
+		visible = {
+			always = yes
+		}
+		
+		properties = {
+			military_progress = {
+				frame = CURRENT_MILITARY_PROGRESS
+			}
+			military_bar = {
+				x = CURRENT_MILITARY_BAR
+			}
+		}
+	}
+}

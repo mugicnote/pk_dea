@@ -1,0 +1,22 @@
+spriteTypes = {
+	progressbartype = {
+		name = "GFX_Military_progress_bar"
+		textureFile1 = "gfx/Military_GUI/KOR_GUI_progress_bar.tga"
+		textureFile2 = "gfx/Military_GUI/KOR_GUI_progress_bg.tga"
+		color = { 0.0 0.0 0.0 }
+		colortwo = { 0.0 0.0 0.0 }
+		size = {
+			x = 400
+			y = 18
+		}
+		effectFile = "gfx/FX/progress.lua"
+	}
+    SpriteType = {
+        name = "GFX_bar"
+        texturefile = "gfx/Military_GUI/bar.dds"			
+	}
+    SpriteType = { #Text icon
+        name = "GFX_decision_header_Military"
+        texturefile = "gfx/texticons/decision_header_Military.dds"			
+	}
+}

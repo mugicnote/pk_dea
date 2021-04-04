@@ -1,3 +1,6 @@
+DEA_KOR_Military_decisions = {
+}
+
 parliament_gui_decision_category = {
 
 	#소규모 지지도 확보
