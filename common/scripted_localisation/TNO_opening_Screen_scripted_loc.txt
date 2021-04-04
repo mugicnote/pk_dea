@@ -51,6 +51,10 @@ defined_text = {
 		trigger = { tag = CHI }
 		localization_key = "[GET_COUNTRY_INFO_PAGE_TEXT_CHI]"
 	}
+	text = {
+		trigger = { tag = ICU }
+		localization_key = "[GET_COUNTRY_INFO_PAGE_TEXT_ICU]"
+	}
 }
 
 defined_text = {
@@ -82,6 +86,22 @@ defined_text = {
 	text = {
 		trigger = { check_variable = { COUNTRY_INFO_PAGE = 2 } }
 		localization_key = COUNTRY_INFO_3_CHI
+	}
+}
+
+defined_text = {
+	name = GET_COUNTRY_INFO_PAGE_TEXT_ICU
+	text = {
+		trigger = { check_variable = { COUNTRY_INFO_PAGE = 0 } }
+		localization_key = COUNTRY_INFO_1_ICU
+	}
+	text = {
+		trigger = { check_variable = { COUNTRY_INFO_PAGE = 1 } }
+		localization_key = COUNTRY_INFO_2_ICU
+	}
+	text = {
+		trigger = { check_variable = { COUNTRY_INFO_PAGE = 2 } }
+		localization_key = COUNTRY_INFO_3_ICU
 	}
 }
 
