@@ -709,139 +709,9 @@ create_navy_leader = {
 }
 
 if = {
-	limit = {
-		not = { has_dlc = "Man the Guns" }
-	}
-### VARIANTS ###
-		### Carrier Variants
-		create_equipment_variant = {
-			name = Ryujo Class"
-			type = carrier_1
-			parent_version = 0
-			upgrades = {
-				ship_deckspace_upgrade = 1
-				carrier_armor_upgrade = 1
-				ship_engine_upgrade = 1
-				ship_reliability_upgrade = 1
-			}
-			obsolete = yes
-		}
-		### Battleship Variants	
-		create_equipment_variant = {
-			name = "Kawachi Class"
-			type = battleship_1
-			parent_version = 0
-			upgrades = {
-				ship_reliability_upgrade = 1
-				ship_engine_upgrade = 1
-				ship_armor_upgrade = 1
-				ship_gun_upgrade = 1
-			}
-			obsolete = yes
-		}
-		create_equipment_variant = {
-			name = "Nagato Class"
-			type = battleship_1
-			parent_version = 1
-			upgrades = {
-				ship_reliability_upgrade = 3
-				ship_engine_upgrade = 4
-				ship_armor_upgrade = 3
-				ship_gun_upgrade = 4
-			}
-			obsolete = yes
-		}
-		# Battlecruisers #
-		create_equipment_variant = {
-			name = "Kongo Class"
-			type = battle_cruiser_1
-			parent_version = 0
-			upgrades = {
-				ship_reliability_upgrade = 2
-				ship_engine_upgrade = 2
-				ship_armor_upgrade = 2
-				ship_gun_upgrade = 2
-			}
-		}		
-		### Heavy Cruiser Variants	
-		create_equipment_variant = {
-			name = "Myoko Class"
-			type = heavy_cruiser_1
-			parent_version = 0
-			upgrades = {
-				ship_reliability_upgrade = 2
-				ship_engine_upgrade = 2
-				ship_armor_upgrade = 2
-				ship_gun_upgrade = 3
-			}
-		}
-		### Light Cruiser Variants	
-		create_equipment_variant = {
-			name = "Kuma Class"
-			type = light_cruiser_1
-			parent_version = 0
-			upgrades = {
-				ship_reliability_upgrade = 2
-				ship_engine_upgrade = 2
-				ship_gun_upgrade = 1
-				ship_anti_air_upgrade = 1
-			}
-			obsolete = yes
-		}
-		create_equipment_variant = {
-			name = "Sendai Class"
-			type = light_cruiser_1
-			parent_version = 1
-			upgrades = {
-				ship_reliability_upgrade = 2
-				ship_engine_upgrade = 3
-				ship_gun_upgrade = 1
-				ship_anti_air_upgrade = 2
-			}
-			obsolete = yes
-		}
-		### Destroyer Variants
-		create_equipment_variant = {
-			name = "Wakatake Class"
-			type = destroyer_1
-			parent_version = 0
-			upgrades = {
-				ship_torpedo_upgrade = 1
-				destroyer_engine_upgrade = 1
-				ship_ASW_upgrade = 1
-				ship_anti_air_upgrade = 1
-			}
-			obsolete = yes
-		}
-		create_equipment_variant = {
-			name = "Kamikaze Class"
-			type = destroyer_1
-			parent_version = 0
-			upgrades = {
-				ship_torpedo_upgrade = 2
-				destroyer_engine_upgrade = 2
-				ship_ASW_upgrade = 2
-				ship_anti_air_upgrade = 2
-			}
-		}	
-		### Submarine Variants	
-		create_equipment_variant = {
-			name = "I-1 Class"
-			type = submarine_1
-			parent_version = 0
-			upgrades = {
-				ship_reliability_upgrade = 3
-				sub_engine_upgrade = 3
-				sub_stealth_upgrade = 1
-				sub_torpedo_upgrade = 2
-			}
-			obsolete = yes
-		}	
-}
-if = {
 	limit = { has_dlc = "Man the Guns"}
 	### VARIANTS ###
-		### Carrier Variants
+		# Carrier Variants #
 		create_equipment_variant = {
 			name = "Hosho Class"
 			type = ship_hull_carrier_conversion_ca
@@ -867,7 +737,7 @@ if = {
 				fixed_ship_deck_slot_2 = ship_deck_space
 				fixed_ship_anti_air_slot = ship_anti_air_1
 				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = heavy_ship_engine_2
+				fixed_ship_engine_slot = heavy_ship_engine_1
 				fixed_ship_secondaries_slot = ship_secondaries_1
 			}
 			obsolete = yes
@@ -875,7 +745,7 @@ if = {
 		create_equipment_variant = {
 			name = "Zuiho Class"
 			type = ship_hull_carrier_conversion_ca
-			name_group = JAP_CVL_HISTORICAL
+			name_group = JAP_CV_HISTORICAL
 			parent_version = 0
 			modules = {
 				fixed_ship_deck_slot_1 = ship_deck_space
@@ -886,11 +756,11 @@ if = {
 				fixed_ship_secondaries_slot = ship_secondaries_1
 			}
 		}
-		### Battleship Variants	
+		# Battleship #
 		create_equipment_variant = {
 			name = "Kawachi Class"
-			name_group = JAP_BB_HISTORICAL
 			type = ship_hull_heavy_1
+			name_group = JAP_BB_HISTORICAL			
 			parent_version = 0
 			modules = {
 				fixed_ship_battery_slot = ship_heavy_battery_1
@@ -908,8 +778,8 @@ if = {
 		}
 		create_equipment_variant = {
 			name = "Nagato Class"
-			name_group = JAP_BB_HISTORICAL
 			type = ship_hull_heavy_1
+			name_group = JAP_BB_HISTORICAL
 			parent_version = 0
 			modules = {
 				fixed_ship_battery_slot = ship_heavy_battery_2
@@ -965,7 +835,7 @@ if = {
 				rear_1_custom_slot = ship_heavy_battery_1
 			}
 		}	
-		### Heavy Cruiser Variants			
+		# Cruiser #	
 		create_equipment_variant = {
 			name = "Furutaka Class"
 			type = ship_hull_cruiser_1
@@ -981,14 +851,14 @@ if = {
 				fixed_ship_secondaries_slot = ship_secondaries_1
 				front_1_custom_slot = ship_medium_battery_1
 				mid_1_custom_slot = ship_torpedo_1
-				mid_2_custom_slot = ship_anti_air_1
+				mid_2_custom_slot = ship_secondaries_1
 				rear_1_custom_slot = ship_airplane_launcher_1
 			}
 			obsolete = yes			
 		}
 		create_equipment_variant = {
 			name = "Myoko Class"
-			type = ship_hull_cruiser_2
+			type = ship_hull_cruiser_1
 			name_group = JAP_CA_HISTORICAL
 			parent_version = 0
 			modules = {
@@ -1001,7 +871,7 @@ if = {
 				fixed_ship_secondaries_slot = ship_secondaries_1
 				front_1_custom_slot = ship_medium_battery_2
 				mid_1_custom_slot = ship_torpedo_1
-				mid_2_custom_slot = ship_anti_air_1
+				mid_2_custom_slot = ship_medium_battery_2
 				rear_1_custom_slot = ship_airplane_launcher_1
 			}
 		}
@@ -1076,7 +946,7 @@ if = {
 				rear_1_custom_slot = ship_mine_layer_1
 			}
 		}		
-		### Destroyer Variants
+		# Destroyer #
 		create_equipment_variant = {
 			name = "Momo Class" 
 			type = ship_hull_light_1
@@ -1175,10 +1045,10 @@ if = {
 				fixed_ship_engine_slot = light_ship_engine_1
 				fixed_ship_torpedo_slot = ship_torpedo_1
 				mid_1_custom_slot = ship_torpedo_1
-				rear_1_custom_slot = ship_light_battery_1
+				rear_1_custom_slot = ship_depth_charge_1
 			}
 		}		
-		### Submarine Variants		
+		# Submarine #
 		create_equipment_variant = {
 			name = "Kaichu Class"
 			type = ship_hull_submarine_1
