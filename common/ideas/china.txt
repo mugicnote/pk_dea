@@ -174,8 +174,36 @@ ideas = {
 				
 			}
 		}
-
-
+		bandit_influence = {
+			allowed = {
+				original_tag = MAN
+			}
+			modifier = {
+				stability_factor = -0.15
+				political_power_gain = -0.1
+				consumer_goods_factor = 0.15
+				custom_modifier_tooltip = MAN_fucking_bandit
+			}
+		}
+		MAN_power_confrontation = {
+			allowed = {
+				original_tag = MAN
+			}
+			modifier = {
+				stability_factor = -0.1
+				political_power_gain = -0.2
+				custom_modifier_tooltip = MAN_power_confrontation_tt
+			}
+		}
+		MAN_severe_economic_crisis = {
+			allowed = {
+				original_tag = MAN
+			}
+			modifier = {
+				consumer_goods_factor = 0.2
+				production_factory_max_efficiency_factor = -0.2
+			}
+		}
 
 		###바닐라###
 		german_advisors = {

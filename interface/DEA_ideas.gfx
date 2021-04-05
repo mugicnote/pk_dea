@@ -246,4 +246,8 @@ spriteTypes = {
 		name = "GFX_idea_Yan_Province_government_dream"
 		texturefile = "gfx/interface/ideas/idea_Yan_Province_government_dream.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_bandit_influence"
+		texturefile = "gfx/interface/ideas/idea_bandit_influence.tga"
+	}
 }

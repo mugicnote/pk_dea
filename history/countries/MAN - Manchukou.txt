@@ -11,6 +11,9 @@ set_technology = {
 set_convoys = 5
 add_ideas = {
 	Yan_Province_government_dream
+	bandit_influence
+	MAN_power_confrontation
+	MAN_severe_economic_crisis
 }
 set_politics = {
 	ruling_party = neutrality
