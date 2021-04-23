@@ -1,4 +1,15 @@
 ﻿l_english:
+ ###서재필 행정부###
+ Seo_Jae_pil_administration:0 "서재필 행정부"
+ policy_encouraging_universities:0 "대학 장려 정책"
+ call_assistance_United_States:0 "대미 원조 지원 요청"
+ export_incentive_policy:0 "수출 장려 정책"
+ situation_we_are_in:0 "우리가 처한 상황"
+ Introduction_Korean_style_job_security_measures:0 "한국식 일자리 안정책 도입"
+ Korea_China_Japan_trilateral_meeting:0 "한중일 삼자 회담 개최"
+ Protection_Democratic_Republic:0 "민주공화국 수호"
+
+
  ###시작 결정###
  military_arrest:0 "암살의 성공"
  military_arrest_tt:0 "§Y이 중점은 서재필의 암살 이후 자동으로 완료될 것입니다§!"

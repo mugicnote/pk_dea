@@ -216,6 +216,18 @@ spriteTypes = {
 		name = "GFX_idea_KOR_incompetent_goverment"
 		texturefile = "gfx/interface/ideas/KOR_incompetent_goverment.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_KOR_too_many_cashes"
+		texturefile = "gfx/interface/ideas/KOR_too_many_cashes.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_great_depression_new"
+		texturefile = "gfx/interface/ideas/KOR_great_depression_new.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_extreme_inflation"
+		texturefile = "gfx/interface/ideas/KOR_extreme_inflation.dds"
+	}
 
 	#중국
 	spriteType = {

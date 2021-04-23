@@ -16,6 +16,8 @@ spriteTypes = {
 		name = "GFX_KOR_democratic"
 		texturefile = "gfx/flags/KOR_democratic.tga"
 	}
+
+	#대한민국
 	spriteType = {
 		name = "GFX_Portrait_Syngman_Rhee"
 		texturefile = "gfx/interface/Portrait_Syngman_Rhee.dds"
@@ -26,7 +28,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_Portrait_Jang_TaekSang"
-		texturefile = "gfx/interface/Portrait_Jang_TaekSang.dds"
+		texturefile = "gfx/leaders/KOR/Portrait_Chang_Taek_sang_2.dds"
 	}
 	spriteType = {
 		name = "GFX_Portrait_Shin_Sung_mo"
@@ -97,6 +99,7 @@ spriteTypes = {
 		texturefile = "gfx/leaders/KOR/Portrait_Sohn_Won_yil.dds"
 	}
 
+	#일본
 	spriteType = {
 		name = "GFX_Portrait_Yoshida_Shigeru"
 		texturefile = "gfx/leaders/JAP/JAP_Yoshida_Shigeru.dds"
@@ -138,9 +141,19 @@ spriteTypes = {
 		texturefile = "gfx/leaders/UPN/Portrait_USA_G_Macarthur.dds"
 	}
 
+	#미국
 	spriteType = {
 		name = "GFX_Portrait_USA_John_Nance_Garner"
 		texturefile = "gfx/leaders/USA/Portrait_USA_John_Nance_Garner.dds"
+	}
+	#중국
+	spriteType = {
+		name = "GFX_Portrait_CHI_Hu_Hanmin"
+		texturefile = "gfx/leaders/CHI/Portrait_CHI_Hu_Hanmin.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_CHI_Li_Zongren"
+		texturefile = "gfx/leaders/CHI/GFX_Portrait_CHI_Li_Zongren.dds"
 	}
 
 	spriteType = {

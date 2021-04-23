@@ -3,9 +3,9 @@ state={
 	name="STATE_845"
 
 	history={
-		owner = GXC
-		add_core_of = GXC
+		owner = CHI
 		add_core_of = CHI
+		add_core_of = GDC
 		victory_points = {
 			10004 1
 		}

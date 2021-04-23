@@ -5,8 +5,8 @@ state={
 		1811 1871 4495 4555 7578 7648 7674 10363 12348 12554 
 	}
 	history={
-		owner = MEN
-		add_core_of = MEN
+		owner = MAN
+		add_core_of = MAN
 
 	}
 	manpower=0

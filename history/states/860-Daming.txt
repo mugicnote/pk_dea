@@ -4,9 +4,8 @@ state={
 	manpower = 5964950
 	state_category = town
 	history = {
-		owner = HBC
-		add_core_of = HBC
-        add_core_of = CHI
+		owner = MAN
+		add_core_of = MAN
 		buildings = {
 			infrastructure = 3
 		}

@@ -4,7 +4,9 @@ on_actions = {
 		CHI = {
 			set_country_flag = People_Goverment
 			set_country_flag = Chiang_Kai_Shek
-			set_country_flag = Wang_Jingwei
+			set_country_flag = Hu_Hanmin
+			set_country_flag = Li_Zongren
+			set_country_flag = Li_Jishen
 
 			add_ideas = PRE_Chiang_Kai_Shek
 			add_ideas = VPRE_Wang_Jingwei

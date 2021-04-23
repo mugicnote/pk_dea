@@ -4,10 +4,9 @@ state={
 	name="STATE_591"
 
 	history={
-		owner = GXC
-		add_core_of = GXC
+		owner = CHI
 		add_core_of = CHI
-		add_core_of = PRC
+		add_core_of = GDC
 		set_province_name = {
             id = 1070
             name = "하이커우"

@@ -253,8 +253,8 @@ VEN = {
 	color_ui = rgb { 222 247 198 }
 }
 YUN = {
-	color = rgb { 114 148 80 }
-	color_ui = rgb { 222 247 198 }
+	color = rgb { 30 71 151 }
+	color_ui = rgb { 30 71 151 }
 }
 USA = {
 	color = rgb { 20 133 237 }
@@ -317,8 +317,8 @@ PRC = {
 }
 
 GXC = {
-	color = rgb { 227 207 142 }
-	color_ui = rgb { 255 255 155 }
+	color = rgb { 45 106 164 }
+	color_ui = rgb { 45 106 164 }
 }
 
 SHX = {
@@ -426,8 +426,8 @@ BLR = {
 	color_ui = rgb { 180 220 190 }
 }
 MAN = {
-	color = rgb { 255 120 71 }
-	color_ui = rgb { 255 120 71 }
+	color = rgb { 189 113 33 }
+	color_ui = rgb { 189 113 33 }
 }
 ANG = {
 	color = rgb { 37 140 61 }
@@ -707,8 +707,8 @@ SHL = {
 	color_ui = rgb { 51 51 255 }
 }
 SND = {
-	color = rgb { 55 108 158 }
-	color_ui = rgb { 55 108 158 }
+	color = rgb { 213 171 54 }
+	color_ui = rgb { 213 171 54 }
 }
 SZC = {
 	color = rgb { 154 115 56 }
@@ -752,36 +752,37 @@ GMS = {
 	color_ui = rgb { 55 108 158 }
 }
 
-LKR = {
-	color = rgb { 125 125 125 }
-    color_ui = rgb { 125 125 125 }
-}
-
-CKR = {
-	color = rgb { 178 34 52 }
-    color_ui = rgb { 178 34 52 }
-}
-
 RUS = {
-	color = rgb { 0 155 16 }
-	color_ui = rgb { 0 155 16 }
+	color = rgb { 157 183 110 }
+	color_ui = rgb { 157 183 110 }
 }
 
-SHA = {
-	color = rgb { 42 42 95 }
-	color_ui = rgb { 101 30 41 }
-}
-
-XKC = {
-	color = rgb { 84 127 151 }
-	color_ui = rgb { 84 127 151 }
-}
-
-HBC = {
-	color = rgb { 93 181 227 }
-	color_ui = rgb { 93 181 227 }
-}
 ICU = {
 	color = rgb { 51 153 255 }
 	color_ui = rgb { 51 153 255 }
+}
+
+ZHI = {
+	color = rgb { 246 212 79 }
+	color_ui = rgb { 246 212 79 }
+}
+
+NAN = {
+	color = rgb { 200 159 47 }
+	color_ui = rgb { 200 159 47 }
+}
+
+NAC = {
+	color = rgb { 170 19 19 }
+	color_ui = rgb { 170 19 19 }
+}
+
+HNC = {
+	color = rgb { 11 88 160 }
+	color_ui = rgb { 11 88 160 }
+}
+
+GIZ = {
+	color = rgb { 29 84 136 }
+	color_ui = rgb { 29 84 136 }
 }

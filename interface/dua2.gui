@@ -82,7 +82,7 @@ guiTypes = {
 			iconType = { #제1 야당 지도자 바탕 배경
 				name = "HoG_rank_frame2"
 				spriteType = "GFX_pol_leader_rank_frame"
-				position = { x = 60 y = 403 }		
+				position = { x = 62 y = 408 }		
 				allwaystransparent = yes
 			}
 					
@@ -100,7 +100,7 @@ guiTypes = {
 					
 			instantTextboxType = { #제1_야당_지도자
 				name = "HoG_rank2"
-				position = { x = 70 y = 412 }
+				position = { x = 70 y = 415 }
 				font = "hoi_20b"
 				text = "[This.HoG_rank2]"
 				maxWidth = 155
@@ -132,7 +132,7 @@ guiTypes = {
 			iconType = { #제1 야당 지도자 바탕 배경2
 				name = "HoG_rank_frame3"
 				spriteType = "GFX_pol_leader_rank_frame"
-				position = { x = 240 y = 403 }		
+				position = { x = 242 y = 408 }		
 				allwaystransparent = yes
 			}
 					
@@ -150,7 +150,7 @@ guiTypes = {
 					
 			instantTextboxType = { #제1_야당_지도자2
 				name = "HoG_rank3"
-				position = { x = 250 y = 412 }
+				position = { x = 250 y = 415 }
 				font = "hoi_20b"
 				text = "[This.HoG_rank3]"
 				maxWidth = 155
@@ -182,7 +182,7 @@ guiTypes = {
 			iconType = { #제1 야당 지도자 바탕 배경2
 				name = "HoG_rank_frame4"
 				spriteType = "GFX_pol_leader_rank_frame"
-				position = { x = 420 y = 403 }		
+				position = { x = 422 y = 408 }		
 				allwaystransparent = yes
 			}
 					
@@ -200,7 +200,7 @@ guiTypes = {
 					
 			instantTextboxType = { #제1_야당_지도자2
 				name = "HoG_rank4"
-				position = { x = 430 y = 412 }
+				position = { x = 430 y = 415 }
 				font = "hoi_20b"
 				text = "[This.HoG_rank4]"
 				maxWidth = 155
@@ -232,7 +232,7 @@ guiTypes = {
 			iconType = { #제1 야당 지도자 바탕 배경
 				name = "HoG_rank_frame5"
 				spriteType = "GFX_pol_leader_rank_frame"
-				position = { x = 240 y = 73 }		
+				position = { x = 242 y = 78 }		
 				allwaystransparent = yes
 			}
 					
@@ -250,7 +250,7 @@ guiTypes = {
 					
 			instantTextboxType = { #제1_야당_지도자
 				name = "HoG_rank5"
-				position = { x = 250 y = 82 }
+				position = { x = 250 y = 85 }
 				font = "hoi_20b"
 				text = "[This.HoG_rank5]"
 				maxWidth = 155
@@ -282,7 +282,7 @@ guiTypes = {
 			iconType = { #제1 야당 지도자 바탕 배경2
 				name = "HoG_rank_frame6"
 				spriteType = "GFX_pol_leader_rank_frame"
-				position = { x = 600 y = 403 }		
+				position = { x = 602 y = 408 }		
 				allwaystransparent = yes
 			}
 					
@@ -300,7 +300,7 @@ guiTypes = {
 					
 			instantTextboxType = { #제1_야당_지도자2
 				name = "HoG_rank6"
-				position = { x = 610 y = 412 }
+				position = { x = 610 y = 415 }
 				font = "hoi_20b"
 				text = "[This.HoG_rank6]"
 				maxWidth = 155
@@ -332,7 +332,7 @@ guiTypes = {
 			iconType = { #제1 야당 지도자 바탕 배경2
 				name = "HoG_rank_frame7"
 				spriteType = "GFX_pol_leader_rank_frame"
-				position = { x = 600 y = 73 }		
+				position = { x = 602 y = 78 }		
 				allwaystransparent = yes
 			}
 					
@@ -350,7 +350,7 @@ guiTypes = {
 					
 			instantTextboxType = { #제1_야당_지도자2
 				name = "HoG_rank7"
-				position = { x = 610 y = 82 }
+				position = { x = 610 y = 85 }
 				font = "hoi_20b"
 				text = "[This.HoG_rank7]"
 				maxWidth = 155
@@ -382,7 +382,7 @@ guiTypes = {
 			iconType = { #제1 야당 지도자 바탕 배경
 				name = "HoG_rank_frame8"
 				spriteType = "GFX_pol_leader_rank_frame"
-				position = { x = 60 y = 73 }		
+				position = { x = 62 y = 78 }		
 				allwaystransparent = yes
 			}
 					
@@ -400,7 +400,7 @@ guiTypes = {
 					
 			instantTextboxType = { #제1_야당_지도자
 				name = "HoG_rank8"
-				position = { x = 70 y = 82 }
+				position = { x = 70 y = 85 }
 				font = "hoi_20b"
 				text = "[This.HoG_rank8]"
 				maxWidth = 155
@@ -432,7 +432,7 @@ guiTypes = {
 			iconType = { #제1 야당 지도자 바탕 배경
 				name = "HoG_rank_frame9"
 				spriteType = "GFX_pol_leader_rank_frame"
-				position = { x = 420 y = 73 }		
+				position = { x = 422 y = 78 }		
 				allwaystransparent = yes
 			}
 					
@@ -450,7 +450,7 @@ guiTypes = {
 					
 			instantTextboxType = { #제1_야당_지도자
 				name = "HoG_rank9"
-				position = { x = 430 y = 82 }
+				position = { x = 430 y = 85 }
 				font = "hoi_20b"
 				text = "[This.HoG_rank9]"
 				maxWidth = 155
@@ -482,7 +482,7 @@ guiTypes = {
 			iconType = { #제1 야당 지도자 바탕 배경2
 				name = "HoG_rank_frame10"
 				spriteType = "GFX_pol_leader_rank_frame"
-				position = { x = 780 y = 403 }		
+				position = { x = 782 y = 408 }		
 				allwaystransparent = yes
 			}
 					
@@ -500,7 +500,7 @@ guiTypes = {
 					
 			instantTextboxType = { #제1_야당_지도자2
 				name = "HoG_rank10"
-				position = { x = 790 y = 412 }
+				position = { x = 790 y = 415 }
 				font = "hoi_20b"
 				text = "[This.HoG_rank10]"
 				maxWidth = 155
@@ -532,7 +532,7 @@ guiTypes = {
 			iconType = { #제1 야당 지도자 바탕 배경2
 				name = "HoG_rank_frame11"
 				spriteType = "GFX_pol_leader_rank_frame"
-				position = { x = 960 y = 403 }		
+				position = { x = 962 y = 408 }		
 				allwaystransparent = yes
 			}
 					
@@ -550,7 +550,7 @@ guiTypes = {
 					
 			instantTextboxType = { #제1_야당_지도자2
 				name = "HoG_rank11"
-				position = { x = 970 y = 412 }
+				position = { x = 970 y = 415 }
 				font = "hoi_20b"
 				text = "[This.HoG_rank11]"
 				maxWidth = 155
@@ -582,7 +582,7 @@ guiTypes = {
 			iconType = { #제1 야당 지도자 바탕 배경2
 				name = "HoG_rank_frame12"
 				spriteType = "GFX_pol_leader_rank_frame"
-				position = { x = 1140 y = 403 }		
+				position = { x = 1142 y = 408 }		
 				allwaystransparent = yes
 			}
 					
@@ -600,7 +600,7 @@ guiTypes = {
 					
 			instantTextboxType = { #제1_야당_지도자2
 				name = "HoG_rank12"
-				position = { x = 1150 y = 412 }
+				position = { x = 1150 y = 415 }
 				font = "hoi_20b"
 				text = "[This.HoG_rank12]"
 				maxWidth = 155
@@ -632,7 +632,7 @@ guiTypes = {
 			iconType = { #제1 야당 지도자 바탕 배경2
 				name = "HoG_rank_frame13"
 				spriteType = "GFX_pol_leader_rank_frame"
-				position = { x = 1320 y = 403 }		
+				position = { x = 1322 y = 408 }		
 				allwaystransparent = yes
 			}
 					
@@ -650,7 +650,7 @@ guiTypes = {
 					
 			instantTextboxType = { #제1_야당_지도자2
 				name = "HoG_rank13"
-				position = { x = 1330 y = 412 }
+				position = { x = 1330 y = 415 }
 				font = "hoi_20b"
 				text = "[This.HoG_rank13]"
 				maxWidth = 155
@@ -682,7 +682,7 @@ guiTypes = {
 			iconType = { #제1 야당 지도자 바탕 배경2
 				name = "HoG_rank_frame14"
 				spriteType = "GFX_pol_leader_rank_frame"
-				position = { x = 780 y = 73 }		
+				position = { x = 782 y = 78 }		
 				allwaystransparent = yes
 			}
 					
@@ -700,7 +700,7 @@ guiTypes = {
 					
 			instantTextboxType = { #제1_야당_지도자2
 				name = "HoG_rank14"
-				position = { x = 790 y = 82 }
+				position = { x = 790 y = 85 }
 				font = "hoi_20b"
 				text = "[This.HoG_rank14]"
 				maxWidth = 155
@@ -732,7 +732,7 @@ guiTypes = {
 			iconType = { #제1 야당 지도자 바탕 배경2
 				name = "HoG_rank_frame15"
 				spriteType = "GFX_pol_leader_rank_frame"
-				position = { x = 960 y = 73 }		
+				position = { x = 962 y = 78 }		
 				allwaystransparent = yes
 			}
 					
@@ -750,7 +750,7 @@ guiTypes = {
 					
 			instantTextboxType = { #제1_야당_지도자2
 				name = "HoG_rank15"
-				position = { x = 970 y = 82 }
+				position = { x = 970 y = 85 }
 				font = "hoi_20b"
 				text = "[This.HoG_rank15]"
 				maxWidth = 155
@@ -782,7 +782,7 @@ guiTypes = {
 			iconType = { #제1 야당 지도자 바탕 배경2
 				name = "HoG_rank_frame16"
 				spriteType = "GFX_pol_leader_rank_frame"
-				position = { x = 1140 y = 73 }		
+				position = { x = 1142 y = 78 }		
 				allwaystransparent = yes
 			}
 					
@@ -800,7 +800,7 @@ guiTypes = {
 					
 			instantTextboxType = { #제1_야당_지도자2
 				name = "HoG_rank16"
-				position = { x = 1150 y = 82 }
+				position = { x = 1150 y = 85 }
 				font = "hoi_20b"
 				text = "[This.HoG_rank16]"
 				maxWidth = 155
@@ -832,7 +832,7 @@ guiTypes = {
 			iconType = { #제1 야당 지도자 바탕 배경2
 				name = "HoG_rank_frame17"
 				spriteType = "GFX_pol_leader_rank_frame"
-				position = { x = 1320 y = 73 }		
+				position = { x = 1322 y = 78 }		
 				allwaystransparent = yes
 			}
 					
@@ -850,7 +850,7 @@ guiTypes = {
 					
 			instantTextboxType = { #제1_야당_지도자2
 				name = "HoG_rank17"
-				position = { x = 1330 y = 82 }
+				position = { x = 1330 y = 85 }
 				font = "hoi_20b"
 				text = "[This.HoG_rank17]"
 				maxWidth = 155

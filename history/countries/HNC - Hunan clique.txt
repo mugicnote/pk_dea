@@ -1,0 +1,31 @@
+﻿capital = 602
+OOB = "HNC"
+set_research_slots = 2
+set_technology = {
+	infantry_weapons = 1
+	mass_assault = 1
+}
+
+set_stability = 0.8
+set_war_support = 0.6
+
+set_popularities = {
+	neutrality = 100
+}
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "탕성즈"
+	desc = "."
+	picture = "..dds"
+	expire = "1965.1.1"
+	ideology = warloadism
+	traits = {
+	    #
+	}
+}

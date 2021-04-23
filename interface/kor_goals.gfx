@@ -730,6 +730,10 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_usa_truman_agri_act"
 		texturefile = "gfx/interface/goals/usa_truman_agri_act.dds"
-	}	
+	}
+	SpriteType = {
+		name = "GFX_Seo_Jae_pil_administration"
+		texturefile = "gfx/interface/goals/Seo_Jae_pil_administration.tga"
+	}
 
 }

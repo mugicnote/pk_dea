@@ -124,7 +124,7 @@ defined_text = {
 			tag = CHI
 			has_government = neutrality
 		}
-		localization_key = GFX_Portrait_Wang_Jingwei
+		localization_key = GFX_Portrait_CHI_Hu_Hanmin
 	}
 	text = {
 		trigger = {

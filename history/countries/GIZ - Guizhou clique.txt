@@ -1,0 +1,76 @@
+﻿capital = 853
+
+oob = "GIZ"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	mass_assault = 1
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	neutrality = 100
+}
+
+create_country_leader = {
+	name = "허잉친"
+	desc = ""
+	picture = "..dds"
+	expire = "1965.1.1"
+	ideology = warloadism
+	traits = {
+		#
+	}
+}
+
+create_field_marshal = {
+	name = "마훙쿠이"
+	portrait_path = "Portrait_NXM_Ma_Hongkui.dds"
+	traits = {
+    	brilliant_strategist
+		war_hero
+		old_guard
+	}
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Ma Biao"
+	desc = "POLITICS_NXM_MA_BIAO_ARMY_DESC"
+	picture = "Portrait_NXM_Ma_Biao.tga"
+	traits = {
+		urban_assault_specialist
+		politically_connected
+	}
+	id = 2206
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Ma Dunjing"
+	desc = "POLITICS_NXM_MA_DUNJING_ARMY_DESC"
+	picture = "Portrait_NXM_Ma_Dunjing.tga"
+	traits = {
+		urban_assault_specialist
+		politically_connected
+	}
+	skill = 1
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}

@@ -3,7 +3,7 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 10
+			add = 100
 			tag = KOR
 		}
 	}
@@ -12,589 +12,160 @@ focus_tree = {
 	continuous_focus_position = { x = 20 y = 1600 }
 
 	focus = {
-		id = Lee_Seung_man_Elected2
-		icon = GFX_focus_syngman_rhee_2
+		id = Seo_Jae_pil_administration
+		icon = GFX_Seo_Jae_pil_administration
+		cost = 10.00
+
+		completion_reward = {
+			add_political_power = 100
+		}
+		x = 8
+		y = 1
+
+	}
+
+	focus = {
+		id = policy_encouraging_universities
+		icon = GFX
 		cost = 10.00
 		prerequisite = {
+			focus = Seo_Jae_pil_administration
 		}
-		mutually_exclusive = {
-		}
-		x = 29
-		y = 3
-		completion_reward = {
-			clr_country_flag = Syngman_Rhee2
-			set_country_flag = Kim_Ku2
+		relative_position_id = Seo_Jae_pil_administration
 
-			clr_country_flag = Jang_TaekSang
-			clr_country_flag = Shin_Sung_mo
-			clr_country_flag = Yoon_Bo_Sun
-			clr_country_flag = Kim_Kyusik
-			clr_country_flag = jae_pil
+		completion_reward = {
 			
-			set_country_flag = no_fd2
-			set_country_flag = Lee_Beomseok
-
-			set_country_flag = Syngman_Rhee_Pres
-
-			set_country_flag = leader_ruling_party
-
-			set_country_flag = Seung_man_Ele
-			clr_country_flag = forth_election_start
-
-		set_party_name = { ideology = democratic long_name = Lee_Dem_long name = Lee_Dem }
 		}
+		x = -2
+		y = 1
+
 	}
+
 	focus = {
-		id = New_National_Security_Law2
-		icon = GFX_focus_national_security_law
+		id = call_assistance_United_States
+		icon = GFX
 		cost = 10.00
 		prerequisite = {
-			focus = Launch_Anti_Communist_Youth
-			focus = Security_Headquarters_Expansion
+			focus = Seo_Jae_pil_administration
 		}
-		x = 32
-		y = 5
+		relative_position_id = Seo_Jae_pil_administration
 
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = Launch_Anti_Communist_Youth_idea
-				add_idea = Launch_Anti_Communist_Youth_2_idea
-			}
-			add_popularity = {
-				ideology = communism
-				popularity = -0.1
-			}
+			
 		}
+		x = 0
+		y = 1
+
 	}
+
 	focus = {
-		id = New_National_Security_Law3
-		icon = GFX_goal_generic_imprison_people
+		id = export_incentive_policy
+		icon = GFX
 		cost = 10.00
 		prerequisite = {
-			focus = New_National_Security_Law2
+			focus = Seo_Jae_pil_administration
 		}
-		x = 32
-		y = 6
+		relative_position_id = Seo_Jae_pil_administration
 
 		completion_reward = {
-			remove_ideas = social_repression_2
+			
 		}
+		x = 2
+		y = 1
+
 	}
+
 	focus = {
-		id = KOR_focus_ilminism
-		icon = GFX_focus_ilminism
+		id = situation_we_are_in
+		icon = GFX
 		cost = 10.00
 		prerequisite = {
-			focus = Lee_Seung_man_Elected2
+			focus = policy_encouraging_universities
 		}
-		x = 26
-		y = 4
-		completion_reward = {
-			add_stability = 0.05
-			add_war_support = 0.1
-			add_popularity = {
-				ideology = democratic
-				popularity = 0.05
-			}
-			add_popularity = {
-				ideology = fascism
-				popularity = 0.05
-			}
-			set_party_name = { ideology = fascism long_name = Lee_fas_1_long name = Lee_fas_1 }
-		}
-	}
-	focus = {
-		id = school_protection_group
-		icon = GFX_focus_npsc
-		cost = 10.00
 		prerequisite = {
-			focus = central_government_reinforcement
+			focus = call_assistance_United_States
 		}
-		x = 27
-		y = 7
+		relative_position_id = policy_encouraging_universities
 
 		completion_reward = {
-			add_ideas = school_protection_group
+			
 		}
+		x = 1
+		y = 1
 
 	}
+
 	focus = {
-		id = school_protection_group_2
-		icon = GFX_focus_sou
+		id = Introduction_Korean_style_job_security_measures
+		icon = GFX
 		cost = 10.00
 		prerequisite = {
-			focus = school_protection_group
+			focus = call_assistance_United_States
 		}
-		x = 24
-		y = 8
+		prerequisite = {
+			focus = export_incentive_policy
+		}
+		relative_position_id = call_assistance_United_States
 
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = school_protection_group
-				add_idea = school_protection_group_2
-			 }
-			create_corps_commander = {
-				name = "정일권"
-				picture = "Portrait_Chung_Il_kwon.dds"
-				traits = { media_personality trait_KOR_Youth_Presbyterian_Church trait_KOR_young_general }
-				skill = 1
-				attack_skill = 1
-				defense_skill = 1
-				planning_skill = 1
-				logistics_skill = 1
-			}
-			create_corps_commander = {
-				name = "송요찬"
-				picture = "Portrait_Song_Yo_chan.dds"
-				traits = { media_personality trait_KOR_Youth_Presbyterian_Church trait_KOR_young_general }
-				skill = 1
-				attack_skill = 1
-				defense_skill = 1
-				planning_skill = 1
-				logistics_skill = 1
-			}
-			create_corps_commander = {
-				name = "최덕신"
-				picture = "Portrait_Choi_Deok_Shin.dds"
-				traits = { media_personality trait_KOR_Youth_Presbyterian_Church trait_KOR_young_general }
-				skill = 1
-				attack_skill = 1
-				defense_skill = 1
-				planning_skill = 1
-				logistics_skill = 1
-			}
-			create_corps_commander = {
-				name = "박정희"
-				picture = "Portrait_Park_Chung_hee.dds"
-				traits = { media_personality trait_KOR_Youth_Presbyterian_Church trait_KOR_young_general }
-				skill = 1
-				attack_skill = 1
-				defense_skill = 1
-				planning_skill = 1
-				logistics_skill = 1
-			}
-			custom_effect_tooltip = school_protection_group_2_tt
+			
 		}
+		x = 1
+		y = 1
 
 	}
+
 	focus = {
-		id = alliance_with_white_doctors
-		icon = GFX_focus_kyc
+		id = Korea_China_Japan_trilateral_meeting
+		icon = GFX
 		cost = 10.00
 		prerequisite = {
-			focus = KOR_focus_ilminism
+			focus = situation_we_are_in
 		}
-		x = 25
-		y = 5
+		prerequisite = {
+			focus = Introduction_Korean_style_job_security_measures
+		}
+		relative_position_id = situation_we_are_in
 
 		completion_reward = {
-		custom_effect_tooltip = alliance_with_white_doctors_tt 
+			
 		}
+		x = 1
+		y = 1
 
 	}
+
 	focus = {
-		id = central_government_reinforcement
-		icon = GFX_focus_capitol
+		id = Protection_Democratic_Republic
+		icon = GFX
 		cost = 10.00
 		prerequisite = {
-			focus = KOR_focus_ilminism
-			focus = Pater_Patriae_Lee
+			focus = Korea_China_Japan_trilateral_meeting
 		}
-		available = {
-            has_idea = Pater_Patriae_Lee
-        }
-		x = 27
-		y = 5
+		relative_position_id = Korea_China_Japan_trilateral_meeting
 
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = Pater_Patriae_Lee
-				add_idea = Pater_Patriae_Lee_2
-     		}
+			
 		}
+		x = -2
+		y = 1
 
 	}
-	focus = {
-		id = Prime_Minister_Bum_seok
-		icon = GFX_Focus_kor_st
-		cost = 10.00
-		prerequisite = {
-			focus = alliance_with_white_doctors
-		}
-		x = 25
-		y = 6
 
-	}
 	focus = {
-		id = creation_liberal_party
-		icon = GFX_KOR_Liberal_party
+		id = Protection_Democratic_Republic
+		icon = GFX
 		cost = 10.00
 		prerequisite = {
-			focus = Pater_Patriae_Lee
+			focus = Korea_China_Japan_trilateral_meeting
 		}
-		x = 28
-		y = 6
+		relative_position_id = Korea_China_Japan_trilateral_meeting
 
 		completion_reward = {
-			set_party_name = { ideology = democratic long_name = Lee_Dem_2_long name = Lee_Dem_2 }
-			add_popularity = {
-				ideology = democratic
-				popularity = 0.1
-			}
-			add_stability = 0.05
+			
 		}
-	}
-	focus = {
-		id = Security_Headquarters_Expansion
-		icon = GFX_focus_armed_police
-		cost = 10.00
-		prerequisite = {
-			focus = Lee_Seung_man_Elected2
-		}
-		x = 30
-		y = 4
-
-		completion_reward = {
-			add_stability = 0.05
-			show_ideas_tooltip = Chough_Pyung_ok
-			country_event = {
-				id = KOR.80
-			}
-		}
-
-	}
-	focus = {
-		id = Pater_Patriae_Lee
-		icon = GFX_focus_syngman_rhee
-		cost = 10.00
-		prerequisite = {
-			focus = Lee_Seung_man_Elected2
-		}
-		x = 28
-		y = 4
-
-		completion_reward = {
-			add_ideas = Pater_Patriae_Lee
-		}
-
-	}
-	focus = {
-		id = Launch_Anti_Communist_Youth
-		icon = GFX_Returning_JTS
-		cost = 10.00
-		prerequisite = {
-			focus = Lee_Seung_man_Elected2
-		}
-		x = 32
-		y = 4
-
-		completion_reward = {
-			add_ideas = Launch_Anti_Communist_Youth_idea
-		}
-
-	}
-	focus = {
-		id = Strengthened_National_Security_Law
-		icon = GFX_focus_ncr
-		cost = 10.00
-		prerequisite = {
-			focus = New_National_Security_Law2
-		}
-		prerequisite = {
-			focus = Security_Headquarters_Expansion
-		}
-		x = 30
-		y = 6
-
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = Public_Security_Headquarter
-				add_idea = Public_Security_Headquarter_2
-			}
-		}
-	}
-	focus = {
-		id = Lee_constitutional_amendment
-		icon = GFX_focus_constitution
-		cost = 10.00
-		prerequisite = {
-			focus = Pater_Patriae_Lee
-		}
-		x = 29
-		y = 5
-
-		completion_reward = {
-			add_ideas = democratic_constitution
-		}
-	}
-	focus = {
-		id = suppression_opposition
-		icon = GFX_conference_of_chicago
-		cost = 10.00
-		prerequisite = {
-			focus = creation_liberal_party
-			focus = Strengthened_National_Security_Law
-		}
-		prerequisite = {
-			focus = Lee_constitutional_amendment
-		}
-		x = 29
-		y = 7
-
-		completion_reward = {
-			add_ideas = suppression_opposition_idea
-			country_event = {
-				id = KOR.83
-			}
-		}
-
-	}
-	focus = {
-		id = ilminism_reflected_party_regulations
-		icon = GFX_PAL_Closed_Immigration
-		cost = 10.00
-		prerequisite = {
-			focus = Prime_Minister_Bum_seok
-		}
-		prerequisite = {
-			focus = creation_liberal_party
-		}
-		x = 25
-		y = 7
-
-	}
-	focus = {
-		id = KOR_focus_strengthen_power_of_the_government
-		icon = GFX_focus_samgyunjuui
-		cost = 10.00
-		prerequisite = {
-			focus = New_National_Security_Law3
-		}
-		x = 31
-		y = 7
-
-		completion_reward = {
-			add_ideas = samgyunjuui
-		}
-	}
-	focus = {
-		id = local_life_law
-		icon = GFX_focus_kim_koo_3
-		cost = 10.00
-		prerequisite = {
-			focus = suppression_opposition
-		}
-		mutually_exclusive = {
-			focus = Assassination_Kim_Koo
-		}
-		x = 28
-		y = 8
-
-		completion_reward = {
-			country_event = {
-				id = KOR.84
-			}
-		}
-
-	}
-	focus = {
-		id = illegal_occupation_of_northmen
-		icon = GFX_freedom_society
-		cost = 10.00
-		prerequisite = {
-			focus = suppression_opposition
-			focus = KOR_focus_strengthen_power_of_the_government
-		}
-		prerequisite = {
-			focus = Strengthened_National_Security_Law
-		}
-		mutually_exclusive = {
-			focus = Lee_Bum_suk_Returns
-		}
-		x = 30
-		y = 8
-
-		completion_reward = {
-			add_ideas = no_limit_freedom
-		}
-	}
-	focus = {
-		id = Lee_Bum_suk_Returns
-		icon = GFX_focus_nationality
-		cost = 10.00
-		prerequisite = {
-			focus = KOR_focus_strengthen_power_of_the_government
-		}
-		mutually_exclusive = {
-			focus = illegal_occupation_of_northmen
-		}
-		x = 32
-		y = 8
-
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = Anti_Communist_Office
-				add_idea = Ministry_of_Public_Security
-			 }
-		}
-	}
-	focus = {
-		id = commando_conscription
-		icon = GFX_Focus_Gwanseo_develop_plan
-		cost = 10.00
-		prerequisite = {
-			focus = Lee_Bum_suk_Returns
-			focus = illegal_occupation_of_northmen
-		}
-		x = 31
-		y = 9
-
-		completion_reward = {
-			hidden_effect = {
-				every_state = {
-					limit = { is_control_by = KOR }
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-				810 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
-							type = industrial_complex
-							level = 1
-							instant_build = yes
-						}
-					}
-				}
-				808 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
-							type = industrial_complex
-							level = 1
-							instant_build = yes
-						}
-					}
-				}
-				815 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
-							type = dockyard
-							level = 1
-							instant_build = yes
-						}
-					}
-				}
-				527 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
-							type = dockyard
-							level = 1
-							instant_build = yes
-						}
-					}
-				}
-				816 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
-							type = arms_factory
-							level = 1
-							instant_build = yes
-						}
-					}
-				}
-				813 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
-							type = arms_factory
-							level = 1
-							instant_build = yes
-						}
-					}
-				}
-				525 = {
-					add_extra_state_shared_building_slots = 3
-				}
-			}
-			custom_effect_tooltip = commando_conscription_2_tt
-			custom_effect_tooltip = commando_conscription_3_tt
-			custom_effect_tooltip = commando_conscription_4_tt
-			custom_effect_tooltip = commando_conscription_5_tt
-			custom_effect_tooltip = commando_conscription_tt
-		}
-
-	}
-	focus = {
-		id = establishment_news_federation
-		icon = GFX_kor_political_reorganization
-		cost = 10.00
-		prerequisite = {
-			focus = suppression_opposition
-		}
-		x = 29
-		y = 9
-
-		completion_reward = {
-			add_timed_idea = { idea = success_our_generation days = 365 }
-     	}
-	}
-	focus = {
-		id = Assassination_Kim_Koo
-		icon = GFX_goal_split_helmet
-		cost = 10.00
-		prerequisite = {
-			focus = ilminism_reflected_party_regulations
-		}
-		mutually_exclusive = {
-			focus = local_life_law
-		}
-		x = 26
-		y = 8
-
-	}
-	focus = {
-		id = judicial_weakening
-		icon = GFX_goal_SZC_improvised_farming_machinery
-		cost = 10.00
-		prerequisite = {
-			focus = Assassination_Kim_Koo
-			focus = local_life_law
-		}
-		x = 27
-		y = 9
-
-		completion_reward = {
-			add_ideas = judicial_weakening_idea
-		}
-
-	}
-	focus = {
-		id = attempted_assassination
-		icon = GFX_rhee
-		cost = 10.00
-		prerequisite = {
-			focus = judicial_weakening
-		}
-		prerequisite = {
-			focus = establishment_news_federation
-		}
-		prerequisite = {
-			focus = commando_conscription
-		}
-		x = 29
-		y = 10
-
-		completion_reward = {
-			custom_effect_tooltip = attempted_assassination_tt
-			custom_effect_tooltip = attempted_assassination_2_tt
-			}
+		x = -2
+		y = 1
 
 	}
 }

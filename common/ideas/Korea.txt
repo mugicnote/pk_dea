@@ -20,7 +20,7 @@ ideas = {
         }
 
         KOR_great_depression = {
-            picture = Corruption_icon
+            picture = KOR_great_depression_new
             
             allowed = {
                 always = no
@@ -43,7 +43,7 @@ ideas = {
         }
 
         huge_government_bond = {
-            picture = usa_great_depression_3
+            picture = KOR_too_many_cashes
             
             allowed = {
                 always = no
@@ -67,7 +67,7 @@ ideas = {
         }
 
         Kor_excessive_Inflation = {
-            picture = GLD68_feeling_the_market
+            picture = KOR_extreme_inflation
             
             allowed = {
                 always = no

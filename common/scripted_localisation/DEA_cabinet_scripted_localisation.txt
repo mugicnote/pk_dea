@@ -375,9 +375,9 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			has_country_flag = Wang_Jingwei
+			has_country_flag = Hu_Hanmin
 		}
-		localization_key = Wang_Jingwei
+		localization_key = Hu_Hanmin
 	}
 
 	text = {
@@ -398,9 +398,9 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			has_country_flag = Wang_Jingwei
+			has_country_flag = Hu_Hanmin
 		}
-		localization_key = GFX_Portrait_Wang_Jingwei
+		localization_key = GFX_Portrait_CHI_Hu_Hanmin
 	}
 	text = {
 		trigger = {
@@ -420,9 +420,9 @@ defined_text = {
 	}
 	text = {
 		trigger = { 
-			has_country_flag = Wang_Jingwei
+			has_country_flag = Hu_Hanmin
 		}
-		localization_key = Wang_Jingwei_desc
+		localization_key = Hu_Hanmin_desc
 	}
 }
 
@@ -504,6 +504,12 @@ defined_text = {
 	}
 	text = {
 		trigger = {
+			tag = CHI
+		}
+		localization_key = POSITION_main_opposition_rank7_CHI
+	}
+	text = {
+		trigger = {
 			tag = JAP
 		}
 		localization_key = POSITION_main_opposition_MOJ_JAP
@@ -525,6 +531,12 @@ defined_text = {
 	}
 	text = {
 		trigger = {
+			tag = CHI
+		}
+		localization_key = POSITION_main_opposition_rank7_CHI
+	}
+	text = {
+		trigger = {
 			tag = JAP
 		}
 		localization_key = POSITION_main_opposition_MOJ_JAP
@@ -541,6 +553,12 @@ defined_text = {
 			has_country_flag = Ahn_Chang_Ho
 		}
 		localization_key = Ahn_Chang_Ho
+	}
+	text = {
+		trigger = {
+			has_country_flag = Li_Jishen
+		}
+		localization_key = Li_Jishen
 	}
 	text = {
 		trigger = {
@@ -573,6 +591,12 @@ defined_text = {
 			has_country_flag = Ahn_Chang_Ho
 		}
 		localization_key = Ahn_Chang_Ho_desc
+	}
+	text = {
+		trigger = { 
+			has_country_flag = Li_Jishen
+		}
+		localization_key = Li_Jishen_desc
 	}
 }
 
@@ -810,9 +834,9 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			has_country_flag = Sun_Lijen
+			has_country_flag = Li_Zongren
 		}
-		localization_key = Sun_Lijen
+		localization_key = Li_Zongren
 	}
 	text = {
 		trigger = {
@@ -832,9 +856,9 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			has_country_flag = Sun_Lijen
+			has_country_flag = Li_Zongren
 		}
-		localization_key = GFX_Sun_Lijen
+		localization_key = GFX_Portrait_CHI_Li_Zongren
 	}
 	text = {
 		trigger = {
@@ -854,9 +878,9 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			has_country_flag = Sun_Lijen
+			has_country_flag = Li_Zongren
 		}
-		localization_key = Sun_Lijen
+		localization_key = Li_Zongren_desc
 	}
 }
 
