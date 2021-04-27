@@ -1,4 +1,4 @@
-﻿capital = 325
+capital = 325
 oob = "YUN"
 
 set_technology = {
@@ -16,22 +16,25 @@ if = {
 }
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = national_conservatism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	fascism = 20
-	neutrality = 80
+	fascism = 1
+	neutrality = 6
+	national_conservatism = 69
+	liberal_conservatism = 19
+	social_liberalism = 5
 }
 
 create_country_leader = {
-	name = "룽윈"
+	name = "탕지야오"
 	desc = "POLITICS_LONG_YUN_DESC"
-	picture = "Portrait_YUN_Long_Yun.dds"
+	picture = "tang_jiao.dds"
 	expire = "1965.1.1"
-	ideology = warloadism
+	ideology = samgyun
 	traits = {
 		#
 	}
