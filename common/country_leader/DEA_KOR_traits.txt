@@ -26,6 +26,8 @@ leader_traits = {
 	coaf = {} #공군참모총장
 	cos = {} #군 참모
 
+	partypopidea = {}
+
 	###내각 특성###
 	hog_Hitler_of_Korea = {
 		random = no

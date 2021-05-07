@@ -1,0 +1,867 @@
+spriteTypes = {
+	
+	### US VOTING SECTION ###
+
+	spriteType = {
+		name = "GFX_us_vote_open_button"
+		textureFile = "gfx/interface/us_voting_gui/us_vote_open_button.dds"
+	}
+
+	spriteType = {
+		name = "GFX_us_voting_senate_controlled_by"
+		textureFile = "gfx/interface/us_voting_gui/us_voting_senate_controlled_by.dds"
+	}
+
+	spriteType = {
+		name = "GFX_us_voting_background"
+		textureFile = "gfx/interface/us_voting_gui/us_voting_background.dds"
+	}
+
+	spriteType = {
+		name = "GFX_KR_NA_gyeonggi_democratic" 
+		textureFile = "gfx/interface/us_voting_gui/state_democratic/KR_NA_gyeonggi_democratic.dds"
+	}
+	spriteType = {
+		name = "GFX_KR_NA_gangwon_national_conservatism" 
+		textureFile = "gfx/interface/us_voting_gui/state_national_conservatism/KR_NA_gangwon_national_conservatism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_us_voting_LA"
+		textureFile = "gfx/interface/us_voting_gui/us_voting_LA.dds"
+	}
+
+	spriteType = {
+		name = "GFX_us_voting_free_states"
+		textureFile = "gfx/interface/us_voting_gui/us_voting_free_states.dds"
+	}
+
+	spriteType = {
+		name = "GFX_us_voting_occupied_states"
+		textureFile = "gfx/interface/us_voting_gui/us_voting_occupied_states.dds"
+	}
+
+	spriteType = {
+		name = "GFX_us_voting_occupied_states_alaska"
+		textureFile = "gfx/interface/us_voting_gui/us_voting_occupied_states_alaska.dds"
+	}
+
+	spriteType = {
+		name = "GFX_us_elections_approval1"
+		textureFile = "gfx/interface/us_voting_gui/us_elections_approval1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_us_elections_approval2"
+		textureFile = "gfx/interface/us_voting_gui/us_elections_approval2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_us_elections_approval3"
+		textureFile = "gfx/interface/us_voting_gui/us_elections_approval3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_us_elections_approval4"
+		textureFile = "gfx/interface/us_voting_gui/us_elections_approval4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_us_elections_approval5"
+		textureFile = "gfx/interface/us_voting_gui/us_elections_approval5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_us_elections_approval6"
+		textureFile = "gfx/interface/us_voting_gui/us_elections_approval6.dds"
+	}
+
+	##### Dots as mate
+	spriteType = {
+		name = "GFX_us_voting_RD_dot"
+		textureFile = "gfx/interface/us_voting_gui/RD_dot.dds"
+	}
+
+	spriteType = {
+		name = "GFX_us_voting_NPP_dot"
+		textureFile = "gfx/interface/us_voting_gui/NPP_dot.dds"
+	}
+
+	spriteType = {
+		name = "GFX_us_voting_empty_dot"
+		textureFile = "gfx/interface/us_voting_gui/empty_dot.dds"
+	}
+	######
+
+	###### Party GFX ######
+	spriteType = {
+		name = "GFX_us_voting_the_npp_senate"
+		textureFile = "gfx/interface/us_voting_gui/us_voting_the_npp_senate.dds"
+	}
+
+	spriteType = {
+		name = "GFX_us_voting_the_rd_senate"
+		textureFile = "gfx/interface/us_voting_gui/us_voting_the_rd_senate.dds"
+	}
+
+	spriteType = {
+		name = "GFX_us_voting_none_senate"
+		textureFile = "gfx/interface/us_voting_gui/us_voting_none_senate.dds"
+	}
+	#######################
+
+	##### STATES GFX #####
+	#ALABAMA
+	spriteType = {
+		name = "GFX_us_voting_alabama_rd"
+		textureFile = "gfx/interface/us_voting_gui/state_rd/us_voting_alabama_rd.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_alabama_npp"
+		textureFile = "gfx/interface/us_voting_gui/state_npp/us_voting_alabama_npp.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_alabama_mixed"
+		textureFile = "gfx/interface/us_voting_gui/state_mixed/us_voting_alabama_mixed.dds"
+	}
+
+	#ALASKA_ISLANDS
+	spriteType = {
+		name = "GFX_us_voting_alaskawithislands_rd"
+		textureFile = "gfx/interface/us_voting_gui/state_rd/us_voting_alaskawithislands_rd.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_alaskawithislands_npp"
+		textureFile = "gfx/interface/us_voting_gui/state_npp/us_voting_alaskawithislands_npp.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_alaskawithislands_mixed"
+		textureFile = "gfx/interface/us_voting_gui/state_mixed/us_voting_alaskawithislands_mixed.dds"
+	}
+
+	#ALASKA_NO_ISLANDS
+	spriteType = {
+		name = "GFX_us_voting_alaskawithoutislands_rd"
+		textureFile = "gfx/interface/us_voting_gui/state_rd/us_voting_alaskawithoutislands_rd.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_alaskawithoutislands_npp"
+		textureFile = "gfx/interface/us_voting_gui/state_npp/us_voting_alaskawithoutislands_npp.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_alaskawithoutislands_mixed"
+		textureFile = "gfx/interface/us_voting_gui/state_mixed/us_voting_alaskawithoutislands_mixed.dds"
+	}
+
+	#arizona
+	spriteType = {
+		name = "GFX_us_voting_arizona_rd"
+		textureFile = "gfx/interface/us_voting_gui/state_rd/us_voting_arizona_rd.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_arizona_npp"
+		textureFile = "gfx/interface/us_voting_gui/state_npp/us_voting_arizona_npp.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_arizona_mixed"
+		textureFile = "gfx/interface/us_voting_gui/state_mixed/us_voting_arizona_mixed.dds"
+	}
+
+	#arkansas
+	spriteType = {
+		name = "GFX_us_voting_arkansas_rd"
+		textureFile = "gfx/interface/us_voting_gui/state_rd/us_voting_arkansas_rd.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_arkansas_npp"
+		textureFile = "gfx/interface/us_voting_gui/state_npp/us_voting_arkansas_npp.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_arkansas_mixed"
+		textureFile = "gfx/interface/us_voting_gui/state_mixed/us_voting_arkansas_mixed.dds"
+	}
+
+	#california_no_ports
+	spriteType = {
+		name = "GFX_us_voting_californiawithoutports_rd"
+		textureFile = "gfx/interface/us_voting_gui/state_rd/us_voting_californiawithoutports_rd.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_californiawithoutports_npp"
+		textureFile = "gfx/interface/us_voting_gui/state_npp/us_voting_californiawithoutports_npp.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_californiawithoutports_mixed"
+		textureFile = "gfx/interface/us_voting_gui/state_mixed/us_voting_californiawithoutports_mixed.dds"
+	}
+
+	#california_with_ports
+	spriteType = {
+		name = "GFX_us_voting_californiawithports_rd"
+		textureFile = "gfx/interface/us_voting_gui/state_rd/us_voting_californiawithports_rd.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_californiawithports_npp"
+		textureFile = "gfx/interface/us_voting_gui/state_npp/us_voting_californiawithports_npp.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_californiawithports_mixed"
+		textureFile = "gfx/interface/us_voting_gui/state_mixed/us_voting_californiawithports_mixed.dds"
+	}
+
+	#colorado
+	spriteType = {
+		name = "GFX_us_voting_colorado_rd"
+		textureFile = "gfx/interface/us_voting_gui/state_rd/us_voting_colorado_rd.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_colorado_npp"
+		textureFile = "gfx/interface/us_voting_gui/state_npp/us_voting_colorado_npp.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_colorado_mixed"
+		textureFile = "gfx/interface/us_voting_gui/state_mixed/us_voting_colorado_mixed.dds"
+	}
+
+	#connecticut
+	spriteType = {
+		name = "GFX_us_voting_connecticut_rd"
+		textureFile = "gfx/interface/us_voting_gui/state_rd/us_voting_connecticut_rd.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_connecticut_npp"
+		textureFile = "gfx/interface/us_voting_gui/state_npp/us_voting_connecticut_npp.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_connecticut_mixed"
+		textureFile = "gfx/interface/us_voting_gui/state_mixed/us_voting_connecticut_mixed.dds"
+	}
+
+	#dc
+	spriteType = {
+		name = "GFX_us_voting_dc_rd"
+		textureFile = "gfx/interface/us_voting_gui/state_rd/us_voting_dc_rd.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_dc_npp"
+		textureFile = "gfx/interface/us_voting_gui/state_npp/us_voting_dc_npp.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_dc_mixed"
+		textureFile = "gfx/interface/us_voting_gui/state_mixed/us_voting_dc_mixed.dds"
+	}
+
+	#delaware
+	spriteType = {
+		name = "GFX_us_voting_delaware_rd"
+		textureFile = "gfx/interface/us_voting_gui/state_rd/us_voting_delaware_rd.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_delaware_npp"
+		textureFile = "gfx/interface/us_voting_gui/state_npp/us_voting_delaware_npp.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_delaware_mixed"
+		textureFile = "gfx/interface/us_voting_gui/state_mixed/us_voting_delaware_mixed.dds"
+	}
+
+	#florida
+	spriteType = {
+		name = "GFX_us_voting_florida_rd"
+		textureFile = "gfx/interface/us_voting_gui/state_rd/us_voting_florida_rd.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_florida_npp"
+		textureFile = "gfx/interface/us_voting_gui/state_npp/us_voting_florida_npp.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_florida_mixed"
+		textureFile = "gfx/interface/us_voting_gui/state_mixed/us_voting_florida_mixed.dds"
+	}
+
+	#georgia
+	spriteType = {
+		name = "GFX_us_voting_georgia_rd"
+		textureFile = "gfx/interface/us_voting_gui/state_rd/us_voting_georgia_rd.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_georgia_npp"
+		textureFile = "gfx/interface/us_voting_gui/state_npp/us_voting_georgia_npp.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_georgia_mixed"
+		textureFile = "gfx/interface/us_voting_gui/state_mixed/us_voting_georgia_mixed.dds"
+	}
+
+	#hawaii
+	spriteType = {
+		name = "GFX_us_voting_hawaii_rd"
+		textureFile = "gfx/interface/us_voting_gui/state_rd/us_voting_hawaii_rd.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_hawaii_npp"
+		textureFile = "gfx/interface/us_voting_gui/state_npp/us_voting_hawaii_npp.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_hawaii_mixed"
+		textureFile = "gfx/interface/us_voting_gui/state_mixed/us_voting_hawaii_mixed.dds"
+	}
+
+	#idaho
+	spriteType = {
+		name = "GFX_us_voting_idaho_rd"
+		textureFile = "gfx/interface/us_voting_gui/state_rd/us_voting_idaho_rd.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_idaho_npp"
+		textureFile = "gfx/interface/us_voting_gui/state_npp/us_voting_idaho_npp.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_idaho_mixed"
+		textureFile = "gfx/interface/us_voting_gui/state_mixed/us_voting_idaho_mixed.dds"
+	}
+
+	#illinois
+	spriteType = {
+		name = "GFX_us_voting_illinois_rd"
+		textureFile = "gfx/interface/us_voting_gui/state_rd/us_voting_illinois_rd.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_illinois_npp"
+		textureFile = "gfx/interface/us_voting_gui/state_npp/us_voting_illinois_npp.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_illinois_mixed"
+		textureFile = "gfx/interface/us_voting_gui/state_mixed/us_voting_illinois_mixed.dds"
+	}
+
+	#indiana
+	spriteType = {
+		name = "GFX_us_voting_indiana_rd"
+		textureFile = "gfx/interface/us_voting_gui/state_rd/us_voting_indiana_rd.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_indiana_npp"
+		textureFile = "gfx/interface/us_voting_gui/state_npp/us_voting_indiana_npp.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_indiana_mixed"
+		textureFile = "gfx/interface/us_voting_gui/state_mixed/us_voting_indiana_mixed.dds"
+	}
+
+	#iowa
+	spriteType = {
+		name = "GFX_us_voting_iowa_rd"
+		textureFile = "gfx/interface/us_voting_gui/state_rd/us_voting_iowa_rd.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_iowa_npp"
+		textureFile = "gfx/interface/us_voting_gui/state_npp/us_voting_iowa_npp.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_iowa_mixed"
+		textureFile = "gfx/interface/us_voting_gui/state_mixed/us_voting_iowa_mixed.dds"
+	}
+
+	#kansas
+	spriteType = {
+		name = "GFX_us_voting_kansas_rd"
+		textureFile = "gfx/interface/us_voting_gui/state_rd/us_voting_kansas_rd.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_kansas_npp"
+		textureFile = "gfx/interface/us_voting_gui/state_npp/us_voting_kansas_npp.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_kansas_mixed"
+		textureFile = "gfx/interface/us_voting_gui/state_mixed/us_voting_kansas_mixed.dds"
+	}
+
+	#kentucky
+	spriteType = {
+		name = "GFX_us_voting_kentucky_rd"
+		textureFile = "gfx/interface/us_voting_gui/state_rd/us_voting_kentucky_rd.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_kentucky_npp"
+		textureFile = "gfx/interface/us_voting_gui/state_npp/us_voting_kentucky_npp.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_kentucky_mixed"
+		textureFile = "gfx/interface/us_voting_gui/state_mixed/us_voting_kentucky_mixed.dds"
+	}
+
+	#louisianna
+	spriteType = {
+		name = "GFX_us_voting_louisianna_rd"
+		textureFile = "gfx/interface/us_voting_gui/state_rd/us_voting_louisianna_rd.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_louisianna_npp"
+		textureFile = "gfx/interface/us_voting_gui/state_npp/us_voting_louisianna_npp.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_louisianna_mixed"
+		textureFile = "gfx/interface/us_voting_gui/state_mixed/us_voting_louisianna_mixed.dds"
+	}
+
+	#maine
+	spriteType = {
+		name = "GFX_us_voting_maine_rd"
+		textureFile = "gfx/interface/us_voting_gui/state_rd/us_voting_maine_rd.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_maine_npp"
+		textureFile = "gfx/interface/us_voting_gui/state_npp/us_voting_maine_npp.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_maine_mixed"
+		textureFile = "gfx/interface/us_voting_gui/state_mixed/us_voting_maine_mixed.dds"
+	}
+
+	#maryland
+	spriteType = {
+		name = "GFX_us_voting_maryland_rd"
+		textureFile = "gfx/interface/us_voting_gui/state_rd/us_voting_maryland_rd.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_maryland_npp"
+		textureFile = "gfx/interface/us_voting_gui/state_npp/us_voting_maryland_npp.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_maryland_mixed"
+		textureFile = "gfx/interface/us_voting_gui/state_mixed/us_voting_maryland_mixed.dds"
+	}
+
+	#massachusetts
+	spriteType = {
+		name = "GFX_us_voting_massachusetts_rd"
+		textureFile = "gfx/interface/us_voting_gui/state_rd/us_voting_massachusetts_rd.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_massachusetts_npp"
+		textureFile = "gfx/interface/us_voting_gui/state_npp/us_voting_massachusetts_npp.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_massachusetts_mixed"
+		textureFile = "gfx/interface/us_voting_gui/state_mixed/us_voting_massachusetts_mixed.dds"
+	}
+
+	#michigan
+	spriteType = {
+		name = "GFX_us_voting_michigan_rd"
+		textureFile = "gfx/interface/us_voting_gui/state_rd/us_voting_michigan_rd.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_michigan_npp"
+		textureFile = "gfx/interface/us_voting_gui/state_npp/us_voting_michigan_npp.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_michigan_mixed"
+		textureFile = "gfx/interface/us_voting_gui/state_mixed/us_voting_michigan_mixed.dds"
+	}
+
+	#minnesota
+	spriteType = {
+		name = "GFX_us_voting_minnesota_rd"
+		textureFile = "gfx/interface/us_voting_gui/state_rd/us_voting_minnesota_rd.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_minnesota_npp"
+		textureFile = "gfx/interface/us_voting_gui/state_npp/us_voting_minnesota_npp.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_minnesota_mixed"
+		textureFile = "gfx/interface/us_voting_gui/state_mixed/us_voting_minnesota_mixed.dds"
+	}
+
+	#mississippi
+	spriteType = {
+		name = "GFX_us_voting_mississippi_rd"
+		textureFile = "gfx/interface/us_voting_gui/state_rd/us_voting_mississippi_rd.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_mississippi_npp"
+		textureFile = "gfx/interface/us_voting_gui/state_npp/us_voting_mississippi_npp.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_mississippi_mixed"
+		textureFile = "gfx/interface/us_voting_gui/state_mixed/us_voting_mississippi_mixed.dds"
+	}
+
+	#missouri
+	spriteType = {
+		name = "GFX_us_voting_missouri_rd"
+		textureFile = "gfx/interface/us_voting_gui/state_rd/us_voting_missouri_rd.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_missouri_npp"
+		textureFile = "gfx/interface/us_voting_gui/state_npp/us_voting_missouri_npp.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_missouri_mixed"
+		textureFile = "gfx/interface/us_voting_gui/state_mixed/us_voting_missouri_mixed.dds"
+	}
+
+	#montana
+	spriteType = {
+		name = "GFX_us_voting_montana_rd"
+		textureFile = "gfx/interface/us_voting_gui/state_rd/us_voting_montana_rd.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_montana_npp"
+		textureFile = "gfx/interface/us_voting_gui/state_npp/us_voting_montana_npp.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_montana_mixed"
+		textureFile = "gfx/interface/us_voting_gui/state_mixed/us_voting_montana_mixed.dds"
+	}
+
+	#nebraska
+	spriteType = {
+		name = "GFX_us_voting_nebraska_rd"
+		textureFile = "gfx/interface/us_voting_gui/state_rd/us_voting_nebraska_rd.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_nebraska_npp"
+		textureFile = "gfx/interface/us_voting_gui/state_npp/us_voting_nebraska_npp.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_nebraska_mixed"
+		textureFile = "gfx/interface/us_voting_gui/state_mixed/us_voting_nebraska_mixed.dds"
+	}
+
+	#nevada
+	spriteType = {
+		name = "GFX_us_voting_nevada_rd"
+		textureFile = "gfx/interface/us_voting_gui/state_rd/us_voting_nevada_rd.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_nevada_npp"
+		textureFile = "gfx/interface/us_voting_gui/state_npp/us_voting_nevada_npp.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_nevada_mixed"
+		textureFile = "gfx/interface/us_voting_gui/state_mixed/us_voting_nevada_mixed.dds"
+	}
+
+	#new_hampshire
+	spriteType = {
+		name = "GFX_us_voting_new_hampshire_rd"
+		textureFile = "gfx/interface/us_voting_gui/state_rd/us_voting_new_hampshire_rd.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_new_hampshire_npp"
+		textureFile = "gfx/interface/us_voting_gui/state_npp/us_voting_new_hampshire_npp.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_new_hampshire_mixed"
+		textureFile = "gfx/interface/us_voting_gui/state_mixed/us_voting_new_hampshire_mixed.dds"
+	}
+
+	#new_mexico
+	spriteType = {
+		name = "GFX_us_voting_new_mexico_rd"
+		textureFile = "gfx/interface/us_voting_gui/state_rd/us_voting_new_mexico_rd.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_new_mexico_npp"
+		textureFile = "gfx/interface/us_voting_gui/state_npp/us_voting_new_mexico_npp.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_new_mexico_mixed"
+		textureFile = "gfx/interface/us_voting_gui/state_mixed/us_voting_new_mexico_mixed.dds"
+	}
+
+	#new_jersey
+	spriteType = {
+		name = "GFX_us_voting_new_jersey_rd"
+		textureFile = "gfx/interface/us_voting_gui/state_rd/us_voting_new_jersey_rd.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_new_jersey_npp"
+		textureFile = "gfx/interface/us_voting_gui/state_npp/us_voting_new_jersey_npp.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_new_jersey_mixed"
+		textureFile = "gfx/interface/us_voting_gui/state_mixed/us_voting_new_jersey_mixed.dds"
+	}
+
+	#new_york
+	spriteType = {
+		name = "GFX_us_voting_new_york_rd"
+		textureFile = "gfx/interface/us_voting_gui/state_rd/us_voting_new_york_rd.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_new_york_npp"
+		textureFile = "gfx/interface/us_voting_gui/state_npp/us_voting_new_york_npp.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_new_york_mixed"
+		textureFile = "gfx/interface/us_voting_gui/state_mixed/us_voting_new_york_mixed.dds"
+	}
+
+	#north_carolina
+	spriteType = {
+		name = "GFX_us_voting_north_carolina_rd"
+		textureFile = "gfx/interface/us_voting_gui/state_rd/us_voting_north_carolina_rd.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_north_carolina_npp"
+		textureFile = "gfx/interface/us_voting_gui/state_npp/us_voting_north_carolina_npp.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_north_carolina_mixed"
+		textureFile = "gfx/interface/us_voting_gui/state_mixed/us_voting_north_carolina_mixed.dds"
+	}
+
+	#north_dakota
+	spriteType = {
+		name = "GFX_us_voting_north_dakota_rd"
+		textureFile = "gfx/interface/us_voting_gui/state_rd/us_voting_north_dakota_rd.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_north_dakota_npp"
+		textureFile = "gfx/interface/us_voting_gui/state_npp/us_voting_north_dakota_npp.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_north_dakota_mixed"
+		textureFile = "gfx/interface/us_voting_gui/state_mixed/us_voting_north_dakota_mixed.dds"
+	}
+
+	#ohio
+	spriteType = {
+		name = "GFX_us_voting_ohio_rd"
+		textureFile = "gfx/interface/us_voting_gui/state_rd/us_voting_ohio_rd.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_ohio_npp"
+		textureFile = "gfx/interface/us_voting_gui/state_npp/us_voting_ohio_npp.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_ohio_mixed"
+		textureFile = "gfx/interface/us_voting_gui/state_mixed/us_voting_ohio_mixed.dds"
+	}
+
+	#oklahoma
+	spriteType = {
+		name = "GFX_us_voting_oklahoma_rd"
+		textureFile = "gfx/interface/us_voting_gui/state_rd/us_voting_oklahoma_rd.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_oklahoma_npp"
+		textureFile = "gfx/interface/us_voting_gui/state_npp/us_voting_oklahoma_npp.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_oklahoma_mixed"
+		textureFile = "gfx/interface/us_voting_gui/state_mixed/us_voting_oklahoma_mixed.dds"
+	}
+
+	#oregon
+	spriteType = {
+		name = "GFX_us_voting_oregon_rd"
+		textureFile = "gfx/interface/us_voting_gui/state_rd/us_voting_oregon_rd.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_oregon_npp"
+		textureFile = "gfx/interface/us_voting_gui/state_npp/us_voting_oregon_npp.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_oregon_mixed"
+		textureFile = "gfx/interface/us_voting_gui/state_mixed/us_voting_oregon_mixed.dds"
+	}
+
+	#pennsylvania
+	spriteType = {
+		name = "GFX_us_voting_pennsylvania_rd"
+		textureFile = "gfx/interface/us_voting_gui/state_rd/us_voting_pennsylvania_rd.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_pennsylvania_npp"
+		textureFile = "gfx/interface/us_voting_gui/state_npp/us_voting_pennsylvania_npp.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_pennsylvania_mixed"
+		textureFile = "gfx/interface/us_voting_gui/state_mixed/us_voting_pennsylvania_mixed.dds"
+	}
+
+	#rhode_island
+	spriteType = {
+		name = "GFX_us_voting_rhode_island_rd"
+		textureFile = "gfx/interface/us_voting_gui/state_rd/us_voting_rhode_island_rd.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_rhode_island_npp"
+		textureFile = "gfx/interface/us_voting_gui/state_npp/us_voting_rhode_island_npp.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_rhode_island_mixed"
+		textureFile = "gfx/interface/us_voting_gui/state_mixed/us_voting_rhode_island_mixed.dds"
+	}
+
+	#south_carolina
+	spriteType = {
+		name = "GFX_us_voting_south_carolina_rd"
+		textureFile = "gfx/interface/us_voting_gui/state_rd/us_voting_south_carolina_rd.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_south_carolina_npp"
+		textureFile = "gfx/interface/us_voting_gui/state_npp/us_voting_south_carolina_npp.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_south_carolina_mixed"
+		textureFile = "gfx/interface/us_voting_gui/state_mixed/us_voting_south_carolina_mixed.dds"
+	}
+
+	#south_dakota
+	spriteType = {
+		name = "GFX_us_voting_south_dakota_rd"
+		textureFile = "gfx/interface/us_voting_gui/state_rd/us_voting_south_dakota_rd.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_south_dakota_npp"
+		textureFile = "gfx/interface/us_voting_gui/state_npp/us_voting_south_dakota_npp.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_south_dakota_mixed"
+		textureFile = "gfx/interface/us_voting_gui/state_mixed/us_voting_south_dakota_mixed.dds"
+	}
+
+	#tennessee
+	spriteType = {
+		name = "GFX_us_voting_tennesee_rd"
+		textureFile = "gfx/interface/us_voting_gui/state_rd/us_voting_tennessee_rd.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_tennesee_npp"
+		textureFile = "gfx/interface/us_voting_gui/state_npp/us_voting_tennessee_npp.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_tennesee_mixed"
+		textureFile = "gfx/interface/us_voting_gui/state_mixed/us_voting_tennesee_mixed.dds"
+	}
+
+	#texas
+	spriteType = {
+		name = "GFX_us_voting_texas_rd"
+		textureFile = "gfx/interface/us_voting_gui/state_rd/us_voting_texas_rd.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_texas_npp"
+		textureFile = "gfx/interface/us_voting_gui/state_npp/us_voting_texas_npp.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_texas_mixed"
+		textureFile = "gfx/interface/us_voting_gui/state_mixed/us_voting_texas_mixed.dds"
+	}
+
+	#utah
+	spriteType = {
+		name = "GFX_us_voting_utah_rd"
+		textureFile = "gfx/interface/us_voting_gui/state_rd/us_voting_utah_rd.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_utah_npp"
+		textureFile = "gfx/interface/us_voting_gui/state_npp/us_voting_utah_npp.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_utah_mixed"
+		textureFile = "gfx/interface/us_voting_gui/state_mixed/us_voting_utah_mixed.dds"
+	}
+
+	#vermont
+	spriteType = {
+		name = "GFX_us_voting_vermont_rd"
+		textureFile = "gfx/interface/us_voting_gui/state_rd/us_voting_vermont_rd.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_vermont_npp"
+		textureFile = "gfx/interface/us_voting_gui/state_npp/us_voting_vermont_npp.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_vermont_mixed"
+		textureFile = "gfx/interface/us_voting_gui/state_mixed/us_voting_vermont_mixed.dds"
+	}
+
+	#virginia
+	spriteType = {
+		name = "GFX_us_voting_virginia_rd"
+		textureFile = "gfx/interface/us_voting_gui/state_rd/us_voting_virginia_rd.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_virginia_npp"
+		textureFile = "gfx/interface/us_voting_gui/state_npp/us_voting_virginia_npp.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_virginia_mixed"
+		textureFile = "gfx/interface/us_voting_gui/state_mixed/us_voting_virginia_mixed.dds"
+	}
+
+	#washington
+	spriteType = {
+		name = "GFX_us_voting_washington_rd"
+		textureFile = "gfx/interface/us_voting_gui/state_rd/us_voting_washington_rd.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_washington_npp"
+		textureFile = "gfx/interface/us_voting_gui/state_npp/us_voting_washington_npp.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_washington_mixed"
+		textureFile = "gfx/interface/us_voting_gui/state_mixed/us_voting_washington_mixed.dds"
+	}
+
+	#west_virginia
+	spriteType = {
+		name = "GFX_us_voting_west_virginia_rd"
+		textureFile = "gfx/interface/us_voting_gui/state_rd/us_voting_west_virginia_rd.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_west_virginia_npp"
+		textureFile = "gfx/interface/us_voting_gui/state_npp/us_voting_west_virginia_npp.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_west_virginia_mixed"
+		textureFile = "gfx/interface/us_voting_gui/state_mixed/us_voting_west_virginia_mixed.dds"
+	}
+
+	#wisconsin
+	spriteType = {
+		name = "GFX_us_voting_wisconsin_rd"
+		textureFile = "gfx/interface/us_voting_gui/state_rd/us_voting_wisconsin_rd.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_wisconsin_npp"
+		textureFile = "gfx/interface/us_voting_gui/state_npp/us_voting_wisconsin_npp.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_wisconsin_mixed"
+		textureFile = "gfx/interface/us_voting_gui/state_mixed/us_voting_wisconsin_mixed.dds"
+	}
+
+	#wyoming
+	spriteType = {
+		name = "GFX_us_voting_wyoming_rd"
+		textureFile = "gfx/interface/us_voting_gui/state_rd/us_voting_wyoming_rd.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_wyoming_npp"
+		textureFile = "gfx/interface/us_voting_gui/state_npp/us_voting_wyoming_npp.dds"
+	}
+	spriteType = {
+		name = "GFX_us_voting_wyoming_mixed"
+		textureFile = "gfx/interface/us_voting_gui/state_mixed/us_voting_wyoming_mixed.dds"
+	}
+
+
+
+
+	#var display bg
+	spriteType = {
+		name = "GFX_us_pop_display_bg"
+		textureFile = "gfx/interface/us_voting_gui/us_pop_display_bg.dds"
+	}
+
+
+	######################
+}

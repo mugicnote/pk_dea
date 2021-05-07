@@ -1,0 +1,264 @@
+ideas = {
+	hidden_ideas = {		
+		very_low_popularity = { #0<x<5
+			removal_cost = -1
+			available = {
+				always = no
+			}
+			cancel_if_invalid = no
+			modifier = {
+			political_power_gain = -0.50
+			}
+			traits = {
+				partypopidea
+			}
+		}
+		popularity_5_10 = { #5<x<10
+			removal_cost = -1
+			available = {
+				always = no
+			}
+			cancel_if_invalid = no
+			modifier = {
+			political_power_gain = -0.45
+			}
+			traits = {
+				partypopidea
+			}
+		}
+		popularity_10_15 = { #10<x<15
+			removal_cost = -1
+			available = {
+				always = no
+			}
+			cancel_if_invalid = no
+			modifier = {
+			political_power_gain = -0.40
+			}
+			traits = {
+				partypopidea
+			}
+		}
+		popularity_15_20 = { #15<x<20
+			removal_cost = -1
+			available = {
+				always = no
+			}
+			cancel_if_invalid = no
+			modifier = {
+			political_power_gain = -0.35
+			}
+			traits = {
+				partypopidea
+			}
+		}
+		low_popularity = { #20<x<25
+			removal_cost = -1
+			available = {
+				always = no
+			}
+			cancel_if_invalid = no
+			modifier = {
+				political_power_gain = -0.30
+			}
+			traits = {
+				partypopidea
+			}
+		}
+		popularity_25_30 = { #25<x<30
+			removal_cost = -1
+			available = {
+				always = no
+			}
+			cancel_if_invalid = no
+			modifier = {
+				political_power_gain = -0.25
+			}
+			traits = {
+				partypopidea
+			}
+		}
+		popularity_30_35 = { #30<x<35
+			removal_cost = -1
+			available = {
+				always = no
+			}
+			cancel_if_invalid = no
+			modifier = {
+				political_power_gain = -0.20
+			}
+			traits = {
+				partypopidea
+			}
+		}
+		popularity_35_40 = { #35<x<40
+			removal_cost = -1
+			available = {
+				always = no
+			}
+			cancel_if_invalid = no
+			modifier = {
+				political_power_gain = -0.15
+			}
+			traits = {
+				partypopidea
+			}
+		}
+		medium_popularity = { #40<x<45
+			removal_cost = -1
+			available = {
+				always = no
+			}
+			cancel_if_invalid = no
+			modifier = {
+				political_power_gain = -0.10
+			}
+			traits = {
+				partypopidea
+			}
+		}
+		popularity_45_50 = { #45<x<50
+			removal_cost = -1
+			available = {
+				always = no
+			}
+			cancel_if_invalid = no
+			modifier = {
+				political_power_gain = -0.05
+			}
+			traits = {
+				partypopidea
+			}
+		}
+		popularity_50_55 = { #50<x<55
+			removal_cost = -1
+			available = {
+				always = no
+			}
+			cancel_if_invalid = no
+			modifier = {
+				political_power_gain = 0
+			}
+			traits = {
+				partypopidea
+			}
+		}
+		popularity_55_60 = { #55<x<60
+			removal_cost = -1
+			available = {
+				always = no
+			}
+			cancel_if_invalid = no
+			modifier = {
+				political_power_gain = 0.05
+			}
+			traits = {
+				partypopidea
+			}
+		}
+		high_popularity = { #60<x<65
+			removal_cost = -1
+			available = {
+				always = no
+			}
+			cancel_if_invalid = no
+			modifier = {
+				political_power_gain = 0.10
+			}
+			traits = {
+				partypopidea
+			}
+		}
+		popularity_65_70 = { #65<x<70
+			removal_cost = -1
+			available = {
+				always = no
+			}
+			cancel_if_invalid = no
+			modifier = {
+				political_power_gain = 0.15
+			}
+			traits = {
+				partypopidea
+			}
+		}
+		popularity_70_75 = { #70<x<75
+			removal_cost = -1
+			available = {
+				always = no
+			}
+			modifier = {
+				political_power_gain = 0.20
+			}
+			cancel_if_invalid = no
+			traits = {
+				partypopidea
+			}
+		}
+		popularity_75_80 = { #75<x<80
+			removal_cost = -1
+			available = {
+				always = no
+			}
+			cancel_if_invalid = no
+			modifier = {
+				political_power_gain = 0.25
+			}
+			traits = {
+				partypopidea
+			}
+		}
+		very_high_popularity = { #80<x<85
+			removal_cost = -1
+			available = {
+				always = no
+			}
+			cancel_if_invalid = no
+			modifier = {
+				political_power_gain = 0.30
+			}
+			traits = {
+				partypopidea
+			}
+		}
+		popularity_85_90 = { #85<x<90
+			removal_cost = -1
+			available = {
+				always = no
+			}
+			cancel_if_invalid = no
+			modifier = {
+				political_power_gain = 0.35
+			}
+			traits = {
+				partypopidea
+			}
+		}
+		popularity_90_95 = { #90<x<95
+			removal_cost = -1
+			available = {
+				always = no
+			}
+			cancel_if_invalid = no
+			modifier = {
+				political_power_gain = 0.40
+			}
+			traits = {
+				partypopidea
+			}
+		}
+		popularity_95_100 = { #95<x<100
+			removal_cost = -1
+			available = {
+				always = no
+			}
+			cancel_if_invalid = no
+			modifier = {
+				political_power_gain = 0.50
+			}
+			traits = {
+				partypopidea
+			}
+		}
+	}			
+}

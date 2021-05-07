@@ -1,0 +1,132 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			KOR = {
+				#경기
+				set_variable = {
+					seats_gyeonggi = 17
+				}
+				set_variable = {
+					seats_gyeonggi_lee = 7
+				}
+				set_variable = {
+					seats_gyeonggi_gu = 6
+				}
+				set_variable = {
+					seats_gyeonggi_Lyuh = 1
+				}
+				set_variable = {
+					seats_gyeonggi_park = 0
+				}
+				set_variable = {
+					seats_gyeonggi_song = 0
+				}
+				set_variable = {
+					seats_gyeonggi_an = 0
+				}
+				set_variable = {
+					seats_gyeonggi_Chang = 0
+				}
+				set_variable = {
+					seats_gyeonggi_tu = 0
+				}
+				set_variable = {
+					seats_gyeonggi_one = 0
+				}
+				#강원
+				set_variable = {
+					seats_gangwon = 3
+				}
+				set_variable = {
+					seats_gangwon_lee = 4
+				}
+				set_variable = {
+					seats_gangwon_gu = 16
+				}
+				set_variable = {
+					seats_gangwon_Lyuh = 2
+				}
+				set_variable = {
+					seats_gangwon_park = 2
+				}
+				set_variable = {
+					seats_gangwon_song = 1
+				}
+				set_variable = {
+					seats_gangwon_an = 0
+				}
+				set_variable = {
+					seats_gangwon_Chang = 0
+				}
+				set_variable = {
+					seats_gangwon_tu = 0
+				}
+				set_variable = {
+					seats_gangwon_one = 0 
+				}
+				#황해
+				set_variable = {
+					seats_hwanghae = 10
+				}
+				set_variable = {
+					seats_hwanghae_lee = 14
+				}
+				set_variable = {
+					seats_hwanghae_gu = 5
+				}
+				set_variable = {
+					seats_hwanghae_Lyuh = 4
+				}
+				set_variable = {
+					seats_hwanghae_park = 2
+				}
+				set_variable = {
+					seats_hwanghae_song = 0
+				}
+				set_variable = {
+					seats_hwanghae_an = 1
+				}
+				set_variable = {
+					seats_hwanghae_Chang = 0
+				}
+				set_variable = {
+					seats_hwanghae_tu = 0
+				}
+				set_variable = {
+					seats_hwanghae_one = 0 
+				}
+				#경북
+				set_variable = {
+					seats_gyeongbuk = 1
+				}
+				set_variable = {
+					seats_gyeongbuk_lee = 0
+				}
+				set_variable = {
+					seats_gyeongbuk_gu = 0
+				}
+				set_variable = {
+					seats_gyeongbuk_Lyuh = 7
+				}
+				set_variable = {
+					seats_gyeongbuk_park = 20
+				}
+				set_variable = {
+					seats_gyeongbuk_song = 0
+				}
+				set_variable = {
+					seats_gyeongbuk_an = 0
+				}
+				set_variable = {
+					seats_gyeongbuk_Chang = 0
+				}
+				set_variable = {
+					seats_gyeongbuk_tu = 2
+				}
+				set_variable = {
+					seats_gyeongbuk_one = 3
+				}
+			}
+		}
+	}
+}

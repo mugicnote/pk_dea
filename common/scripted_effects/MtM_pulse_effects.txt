@@ -1,0 +1,702 @@
+first_every_month_script = {
+	every_country = {
+		set_variable = {
+			total_party_pop = 0
+		}
+		COALITION_POP_NUMBER = yes
+		if = { #0<=x<5
+			limit = {
+				check_variable = {
+					total_party_pop < 5
+				}
+				NOT = {
+					has_idea = very_low_popularity
+				}
+			}
+			remove_ideas = {
+				low_popularity
+				medium_popularity
+				high_popularity
+				very_high_popularity
+				popularity_5_10
+				popularity_10_15
+				popularity_15_20
+				popularity_25_30
+				popularity_30_35
+				popularity_35_40
+				popularity_45_50
+				popularity_50_55
+				popularity_55_60
+				popularity_65_70
+				popularity_70_75
+				popularity_75_80
+				popularity_85_90
+				popularity_90_95
+				popularity_95_100
+			}
+			add_ideas = very_low_popularity
+		}
+		else_if = { #5<=x<10
+			limit = {
+				check_variable = {
+					total_party_pop > 4.99
+				}
+				check_variable = {
+					total_party_pop < 10
+				}
+				NOT = {
+					has_idea = popularity_5_10
+				}
+			}
+			remove_ideas = {
+				low_popularity
+				medium_popularity
+				high_popularity
+				very_high_popularity
+				very_low_popularity
+				popularity_10_15
+				popularity_15_20
+				popularity_25_30
+				popularity_30_35
+				popularity_35_40
+				popularity_45_50
+				popularity_50_55
+				popularity_55_60
+				popularity_65_70
+				popularity_70_75
+				popularity_75_80
+				popularity_85_90
+				popularity_90_95
+				popularity_95_100
+			}
+			add_ideas = popularity_5_10
+		}
+		else_if = { #10<=x<15
+			limit = {
+				check_variable = {
+					total_party_pop > 9.99
+				}
+				check_variable = {
+					total_party_pop < 15
+				}
+				NOT = {
+					has_idea = popularity_10_15
+				}
+			}
+			remove_ideas = {
+				low_popularity
+				medium_popularity
+				high_popularity
+				very_high_popularity
+				very_low_popularity
+				popularity_5_10
+				popularity_15_20
+				popularity_25_30
+				popularity_30_35
+				popularity_35_40
+				popularity_45_50
+				popularity_50_55
+				popularity_55_60
+				popularity_65_70
+				popularity_70_75
+				popularity_75_80
+				popularity_85_90
+				popularity_90_95
+				popularity_95_100
+			}
+			add_ideas = popularity_10_15
+		}
+		else_if = { #15<=x<20
+			limit = {
+				check_variable = {
+					total_party_pop > 14.99
+				}
+				check_variable = {
+					total_party_pop < 20
+				}
+				NOT = {
+					has_idea = popularity_15_20
+				}
+			}
+			remove_ideas = {
+				low_popularity
+				medium_popularity
+				high_popularity
+				very_high_popularity
+				very_low_popularity
+				popularity_5_10
+				popularity_10_15
+				popularity_25_30
+				popularity_30_35
+				popularity_35_40
+				popularity_45_50
+				popularity_50_55
+				popularity_55_60
+				popularity_65_70
+				popularity_70_75
+				popularity_75_80
+				popularity_85_90
+				popularity_90_95
+				popularity_95_100
+			}
+			add_ideas = popularity_15_20
+		}
+		else_if = { #20<=x<25
+			limit = {
+				check_variable = {
+					total_party_pop > 19.99
+				}
+				check_variable = {
+					total_party_pop < 25
+				}
+				NOT = {
+					has_idea = low_popularity
+				}
+			}
+			remove_ideas = {
+				popularity_15_20
+				medium_popularity
+				high_popularity
+				very_high_popularity
+				very_low_popularity
+				popularity_5_10
+				popularity_10_15
+				popularity_25_30
+				popularity_30_35
+				popularity_35_40
+				popularity_45_50
+				popularity_50_55
+				popularity_55_60
+				popularity_65_70
+				popularity_70_75
+				popularity_75_80
+				popularity_85_90
+				popularity_90_95
+				popularity_95_100
+			}
+			add_ideas = low_popularity
+		}
+		else_if = { #25<=x<30
+			limit = {
+				check_variable = {
+					total_party_pop > 24.99
+				}
+				check_variable = {
+					total_party_pop < 30
+				}
+				NOT = {
+					has_idea = popularity_25_30
+				}
+			}
+			remove_ideas = {
+				popularity_15_20
+				medium_popularity
+				high_popularity
+				very_high_popularity
+				very_low_popularity
+				popularity_5_10
+				popularity_10_15
+				low_popularity
+				popularity_30_35
+				popularity_35_40
+				popularity_45_50
+				popularity_50_55
+				popularity_55_60
+				popularity_65_70
+				popularity_70_75
+				popularity_75_80
+				popularity_85_90
+				popularity_90_95
+				popularity_95_100
+			}
+			add_ideas = popularity_25_30
+		}
+		else_if = { #30<=x<35
+			limit = {
+				check_variable = {
+					total_party_pop > 29.99
+				}
+				check_variable = {
+					total_party_pop < 35
+				}
+				NOT = {
+					has_idea = popularity_30_35
+				}
+			}
+			remove_ideas = {
+				popularity_15_20
+				medium_popularity
+				high_popularity
+				very_high_popularity
+				very_low_popularity
+				popularity_5_10
+				popularity_10_15
+				low_popularity
+				popularity_25_30
+				popularity_35_40
+				popularity_45_50
+				popularity_50_55
+				popularity_55_60
+				popularity_65_70
+				popularity_70_75
+				popularity_75_80
+				popularity_85_90
+				popularity_90_95
+				popularity_95_100
+			}
+			add_ideas = popularity_30_35
+		}
+		else_if = { #35<=x<40
+			limit = {
+				check_variable = {
+					total_party_pop > 34.99
+				}
+				check_variable = {
+					total_party_pop < 40
+				}
+				NOT = {
+					has_idea = popularity_35_40
+				}
+			}
+			remove_ideas = {
+				popularity_15_20
+				medium_popularity
+				high_popularity
+				very_high_popularity
+				very_low_popularity
+				popularity_5_10
+				popularity_10_15
+				low_popularity
+				popularity_25_30
+				popularity_30_35
+				popularity_45_50
+				popularity_50_55
+				popularity_55_60
+				popularity_65_70
+				popularity_70_75
+				popularity_75_80
+				popularity_85_90
+				popularity_90_95
+				popularity_95_100
+			}
+			add_ideas = popularity_35_40
+		}
+		else_if = { #40<=x<45
+			limit = {
+				check_variable = {
+					total_party_pop > 39.99
+				}
+				check_variable = {
+					total_party_pop < 45
+				}
+				NOT = {
+					has_idea = medium_popularity
+				}
+			}
+			remove_ideas = {
+				popularity_15_20
+				popularity_35_40
+				high_popularity
+				very_high_popularity
+				very_low_popularity
+				popularity_5_10
+				popularity_10_15
+				low_popularity
+				popularity_25_30
+				popularity_30_35
+				popularity_45_50
+				popularity_50_55
+				popularity_55_60
+				popularity_65_70
+				popularity_70_75
+				popularity_75_80
+				popularity_85_90
+				popularity_90_95
+				popularity_95_100
+			}
+			add_ideas = medium_popularity
+		}
+		else_if = { #45<=x<50
+			limit = {
+				check_variable = {
+					total_party_pop > 44.99
+				}
+				check_variable = {
+					total_party_pop < 50
+				}
+				NOT = {
+					has_idea = popularity_45_50
+				}
+			}
+			remove_ideas = {
+				popularity_15_20
+				popularity_35_40
+				high_popularity
+				very_high_popularity
+				very_low_popularity
+				popularity_5_10
+				popularity_10_15
+				low_popularity
+				popularity_25_30
+				popularity_30_35
+				medium_popularity
+				popularity_50_55
+				popularity_55_60
+				popularity_65_70
+				popularity_70_75
+				popularity_75_80
+				popularity_85_90
+				popularity_90_95
+				popularity_95_100
+			}
+			add_ideas = popularity_45_50
+		}
+		else_if = { #50<=x<55
+			limit = {
+				check_variable = {
+					total_party_pop > 49.99
+				}
+				check_variable = {
+					total_party_pop < 55
+				}
+				NOT = {
+					has_idea = popularity_50_55
+				}
+			}
+			remove_ideas = {
+				popularity_15_20
+				popularity_35_40
+				high_popularity
+				very_high_popularity
+				very_low_popularity
+				popularity_5_10
+				popularity_10_15
+				low_popularity
+				popularity_25_30
+				popularity_30_35
+				medium_popularity
+				popularity_45_50
+				popularity_55_60
+				popularity_65_70
+				popularity_70_75
+				popularity_75_80
+				popularity_85_90
+				popularity_90_95
+				popularity_95_100
+			}
+			add_ideas = popularity_50_55
+		}
+		else_if = { #55<=x<60
+			limit = {
+				check_variable = {
+					total_party_pop > 54.99
+				}
+				check_variable = {
+					total_party_pop < 60
+				}
+				NOT = {
+					has_idea = popularity_55_60
+				}
+			}
+			remove_ideas = {
+				popularity_15_20
+				popularity_35_40
+				high_popularity
+				very_high_popularity
+				very_low_popularity
+				popularity_5_10
+				popularity_10_15
+				low_popularity
+				popularity_25_30
+				popularity_30_35
+				medium_popularity
+				popularity_45_50
+				popularity_50_55
+				popularity_65_70
+				popularity_70_75
+				popularity_75_80
+				popularity_85_90
+				popularity_90_95
+				popularity_95_100
+			}
+			add_ideas = popularity_55_60
+		}
+		else_if = { #60<=x<65
+			limit = {
+				check_variable = {
+					total_party_pop > 59.99
+				}
+				check_variable = {
+					total_party_pop < 65
+				}
+				NOT = {
+					has_idea = high_popularity
+				}
+			}
+			remove_ideas = {
+				popularity_15_20
+				popularity_35_40
+				popularity_55_60
+				very_high_popularity
+				very_low_popularity
+				popularity_5_10
+				popularity_10_15
+				low_popularity
+				popularity_25_30
+				popularity_30_35
+				medium_popularity
+				popularity_45_50
+				popularity_50_55
+				popularity_65_70
+				popularity_70_75
+				popularity_75_80
+				popularity_85_90
+				popularity_90_95
+				popularity_95_100
+			}
+			add_ideas = high_popularity
+		}
+		else_if = { #65<=x<70
+			limit = {
+				check_variable = {
+					total_party_pop > 64.99
+				}
+				check_variable = {
+					total_party_pop < 70
+				}
+				NOT = {
+					has_idea = popularity_65_70
+				}
+			}
+			remove_ideas = {
+				popularity_15_20
+				popularity_35_40
+				popularity_55_60
+				very_high_popularity
+				very_low_popularity
+				popularity_5_10
+				popularity_10_15
+				low_popularity
+				popularity_25_30
+				popularity_30_35
+				medium_popularity
+				popularity_45_50
+				popularity_50_55
+				high_popularity
+				popularity_70_75
+				popularity_75_80
+				popularity_85_90
+				popularity_90_95
+				popularity_95_100
+			}
+			add_ideas = popularity_65_70
+		}
+		else_if = { #70<=x<75
+			limit = {
+				check_variable = {
+					total_party_pop > 69.99
+				}
+				check_variable = {
+					total_party_pop < 75
+				}
+				NOT = {
+					has_idea = popularity_70_75
+				}
+			}
+			remove_ideas = {
+				popularity_15_20
+				popularity_35_40
+				popularity_55_60
+				very_high_popularity
+				very_low_popularity
+				popularity_5_10
+				popularity_10_15
+				low_popularity
+				popularity_25_30
+				popularity_30_35
+				medium_popularity
+				popularity_45_50
+				popularity_50_55
+				high_popularity
+				popularity_65_70
+				popularity_75_80
+				popularity_85_90
+				popularity_90_95
+				popularity_95_100
+			}
+			add_ideas = popularity_70_75
+		}
+		else_if = { #75<=x<80
+			limit = {
+				check_variable = {
+					total_party_pop > 74.99
+				}
+				check_variable = {
+					total_party_pop < 80
+				}
+				NOT = {
+					has_idea = popularity_75_80
+				}
+			}
+			remove_ideas = {
+				popularity_15_20
+				popularity_35_40
+				popularity_55_60
+				very_high_popularity
+				very_low_popularity
+				popularity_5_10
+				popularity_10_15
+				low_popularity
+				popularity_25_30
+				popularity_30_35
+				medium_popularity
+				popularity_45_50
+				popularity_50_55
+				high_popularity
+				popularity_65_70
+				popularity_70_75
+				popularity_85_90
+				popularity_90_95
+				popularity_95_100
+			}
+			add_ideas = popularity_75_80
+		}
+		else_if = { #80<=x<85
+			limit = {
+				check_variable = {
+					total_party_pop > 79.99
+				}
+				check_variable = {
+					total_party_pop < 85
+				}
+				NOT = {
+					has_idea = very_high_popularity
+				}
+			}
+			remove_ideas = {
+				popularity_15_20
+				popularity_35_40
+				popularity_55_60
+				popularity_75_80
+				very_low_popularity
+				popularity_5_10
+				popularity_10_15
+				low_popularity
+				popularity_25_30
+				popularity_30_35
+				medium_popularity
+				popularity_45_50
+				popularity_50_55
+				high_popularity
+				popularity_65_70
+				popularity_70_75
+				popularity_85_90
+				popularity_90_95
+				popularity_95_100
+			}
+			add_ideas = very_high_popularity
+		}
+		else_if = { #85<=x<90
+			limit = {
+				check_variable = {
+					total_party_pop > 84.99
+				}
+				check_variable = {
+					total_party_pop < 90
+				}
+				NOT = {
+					has_idea = popularity_85_90
+				}
+			}
+			remove_ideas = {
+				popularity_15_20
+				popularity_35_40
+				popularity_55_60
+				popularity_75_80
+				very_low_popularity
+				popularity_5_10
+				popularity_10_15
+				low_popularity
+				popularity_25_30
+				popularity_30_35
+				medium_popularity
+				popularity_45_50
+				popularity_50_55
+				high_popularity
+				popularity_65_70
+				popularity_70_75
+				very_high_popularity
+				popularity_90_95
+				popularity_95_100
+			}
+			add_ideas = popularity_85_90
+		}
+		else_if = { #90<=x<95
+			limit = {
+				check_variable = {
+					total_party_pop > 89.99
+				}
+				check_variable = {
+					total_party_pop < 95
+				}
+				NOT = {
+					has_idea = popularity_90_95
+				}
+			}
+			remove_ideas = {
+				popularity_15_20
+				popularity_35_40
+				popularity_55_60
+				popularity_75_80
+				very_low_popularity
+				popularity_5_10
+				popularity_10_15
+				low_popularity
+				popularity_25_30
+				popularity_30_35
+				medium_popularity
+				popularity_45_50
+				popularity_50_55
+				high_popularity
+				popularity_65_70
+				popularity_70_75
+				very_high_popularity
+				popularity_85_90
+				popularity_95_100
+			}
+			add_ideas = popularity_90_95
+		}
+		else_if = { #95<=x<100
+			limit = {
+				check_variable = {
+					total_party_pop > 94.99
+				}
+				NOT = {
+					has_idea = popularity_95_100
+				}
+			}
+			remove_ideas = {
+				popularity_15_20
+				popularity_35_40
+				popularity_55_60
+				popularity_75_80
+				very_low_popularity
+				popularity_5_10
+				popularity_10_15
+				low_popularity
+				popularity_25_30
+				popularity_30_35
+				medium_popularity
+				popularity_45_50
+				popularity_50_55
+				high_popularity
+				popularity_65_70
+				popularity_70_75
+				very_high_popularity
+				popularity_85_90
+				popularity_90_95
+			}
+			add_ideas = popularity_95_100
+		}
+	}
+}

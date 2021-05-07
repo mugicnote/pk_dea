@@ -1,0 +1,238 @@
+scripted_gui = {
+	CBTS_popularity_gui = {
+		window_name = "CBTS_Popularity_Topbar"
+		context_type = player
+		parent_window_token = top_bar
+		visible = {
+			always = yes
+		}
+	}
+	CBTS_popularity_gui_com_icon = {
+		window_name = "popcommunism"
+		context_type = player
+		parent_window_token = top_bar
+		visible = {
+			has_government = communism
+		}
+	}
+	CBTS_popularity_gui_autsoc_icon = {
+		window_name = "popautsoc"
+		context_type = player
+		parent_window_token = top_bar
+		visible = {
+			has_government = auth_socialism
+		}
+	}
+	CBTS_popularity_gui_radsoc_icon = {
+		window_name = "popradsoc"
+		context_type = player
+		parent_window_token = top_bar
+		visible = {
+			has_government = radical_socialism
+		}
+	}
+	CBTS_popularity_gui_socdem_icon = {
+		window_name = "popsocdem"
+		context_type = player
+		parent_window_token = top_bar
+		visible = {
+			has_government = social_democracy
+		}
+	}
+	CBTS_popularity_gui_soclib_icon = {
+		window_name = "popsoclib"
+		context_type = player
+		parent_window_token = top_bar
+		visible = {
+			has_government = social_liberalism
+		}
+	}
+	CBTS_popularity_gui_natlib_icon = {
+		window_name = "popnatlib"
+		context_type = player
+		parent_window_token = top_bar
+		visible = {
+			has_government = national_liberalism
+		}
+	}
+	CBTS_popularity_gui_libcon_icon = {
+		window_name = "poplibcon"
+		context_type = player
+		parent_window_token = top_bar
+		visible = {
+			has_government = liberal_conservatism
+		}
+	}
+	CBTS_popularity_gui_soccon_icon = {
+		window_name = "popsoccon"
+		context_type = player
+		parent_window_token = top_bar
+		visible = {
+			has_government = democratic
+		}
+	}
+	CBTS_popularity_gui_natcon_icon = {
+		window_name = "popnatcon"
+		context_type = player
+		parent_window_token = top_bar
+		visible = {
+			has_government = national_conservatism
+		}
+	}
+	CBTS_popularity_gui_neu_icon = {
+		window_name = "popneu"
+		context_type = player
+		parent_window_token = top_bar
+		visible = {
+			has_government = neutrality
+		}
+	}
+	CBTS_popularity_gui_autdes_icon = {
+		window_name = "popautdes"
+		context_type = player
+		parent_window_token = top_bar
+		visible = {
+			has_government = auto_despotism
+		}
+	}
+	CBTS_popularity_gui_fascists_icon = {
+		window_name = "popfascism"
+		context_type = player
+		parent_window_token = top_bar
+		visible = {
+			has_government = fascism
+		}
+	}
+	CBTS_popularity_gui_communist_frame = {
+		window_name = "framecom"
+		context_type = player
+		parent_window_token = politics_tab
+		visible = {
+			is_in_array = {
+				array = coalition_party_list
+				value = 0
+			}
+		}
+	}
+	CBTS_popularity_gui_autsoc_frame = {
+		window_name = "frameautsoc"
+		context_type = player
+		parent_window_token = politics_tab
+		visible = {
+			is_in_array = {
+				array = coalition_party_list
+				value = 1
+			}
+		}
+	}
+	CBTS_popularity_gui_autsoc_frame = {
+		window_name = "frameradsoc"
+		context_type = player
+		parent_window_token = politics_tab
+		visible = {
+			is_in_array = {
+				array = coalition_party_list
+				value = 2
+			}
+		}
+	}
+	CBTS_popularity_gui_socdem_frame = {
+		window_name = "framesocdem"
+		context_type = player
+		parent_window_token = politics_tab
+		visible = {
+			is_in_array = {
+				array = coalition_party_list
+				value = 3
+			}
+		}
+	}
+	CBTS_popularity_gui_soclib_frame = {
+		window_name = "framesoclib"
+		context_type = player
+		parent_window_token = politics_tab
+		visible = {
+			is_in_array = {
+				array = coalition_party_list
+				value = 4
+			}
+		}
+	}
+	CBTS_popularity_gui_natlib_frame = {
+		window_name = "framenatlib"
+		context_type = player
+		parent_window_token = politics_tab
+		visible = {
+			is_in_array = {
+				array = coalition_party_list
+				value = 5
+			}
+		}
+	}
+	CBTS_popularity_gui_libcon_frame = {
+		window_name = "framelibcon"
+		context_type = player
+		parent_window_token = politics_tab
+		visible = {
+			is_in_array = {
+				array = coalition_party_list
+				value = 6
+			}
+		}
+	}
+	CBTS_popularity_gui_soccon_frame = {
+		window_name = "framesoccon"
+		context_type = player
+		parent_window_token = politics_tab
+		visible = {
+			is_in_array = {
+				array = coalition_party_list
+				value = 7
+			}
+		}
+	}
+	CBTS_popularity_gui_natcon_frame = {
+		window_name = "framenatcon"
+		context_type = player
+		parent_window_token = politics_tab
+		visible = {
+			is_in_array = {
+				array = coalition_party_list
+				value = 8
+			}
+		}
+	}
+	CBTS_popularity_gui_neu_frame = {
+		window_name = "frameneu"
+		context_type = player
+		parent_window_token = politics_tab
+		visible = {
+			is_in_array = {
+				array = coalition_party_list
+				value = 9
+			}
+		}
+	}
+	CBTS_popularity_gui_autdes_frame = {
+		window_name = "frameautdes"
+		context_type = player
+		parent_window_token = politics_tab
+		visible = {
+			is_in_array = {
+				array = coalition_party_list
+				value = 10
+			}
+		}
+	}
+	CBTS_popularity_gui_fascist_frame = {
+		window_name = "framefas"
+		context_type = player
+		parent_window_token = politics_tab
+		visible = {
+			is_in_array = {
+				array = coalition_party_list
+				value = 11
+			}
+		}
+	}
+}

@@ -56,7 +56,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_Portrait_Kim_Byung_ro"
-		texturefile = "gfx/interface/Portrait_Kim_Byung_ro.dds"
+		texturefile = "gfx/leaders/KOR/Portrait_Kim_Byung_ro.dds"
 	}
 	spriteType = {
 		name = "GFX_Leader_Portrait_Background"

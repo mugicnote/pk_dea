@@ -13,7 +13,9 @@ state={
 		add_core_of = CHI
 		add_core_of = GDC
 		buildings = {
-
+			infrastructure = 4
+			industrial_complex = 2
+			arms_factory = 2
 		}
 
 	}
@@ -21,7 +23,7 @@ state={
 	provinces={
 		1087 1131 1187 1202 4092 7039 7108 7152 9963 11938 11941 12077 12095 
 	}
-	manpower=12700000
+	manpower=16730000
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category=large_town
 }

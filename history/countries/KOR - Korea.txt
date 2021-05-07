@@ -188,6 +188,8 @@ set_popularities = {
 #	}
 #}
 
+COALITION_add_soccon = yes
+COALITION_add_neu = yes
 
 #정당별_리더
 create_country_leader = { #사진 작업 완료(DoS 도움 받음)

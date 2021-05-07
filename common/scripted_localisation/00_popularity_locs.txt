@@ -1,0 +1,508 @@
+defined_text = {
+	name = GetPopLoc
+	text = {
+		trigger = {
+			has_idea = very_low_popularity
+		}
+		localization_key = poploc_minus_50
+	}
+	text = {
+		trigger = {
+			has_idea = popularity_5_10
+		}
+		localization_key = poploc_minus_45
+	}
+	text = {
+		trigger = {
+			has_idea = popularity_10_15
+		}
+		localization_key = poploc_minus_40
+	}
+	text = {
+		trigger = {
+			has_idea = popularity_15_20
+		}
+		localization_key = poploc_minus_35
+	}
+	text = {
+		trigger = {
+			has_idea = low_popularity
+		}
+		localization_key = poploc_minus_30
+	}
+	text = {
+		trigger = {
+			has_idea = popularity_25_30
+		}
+		localization_key = poploc_minus_25
+	}
+	text = {
+		trigger = {
+			has_idea = popularity_30_35
+		}
+		localization_key = poploc_minus_20
+	}
+	text = {
+		trigger = {
+			has_idea = popularity_35_40
+		}
+		localization_key = poploc_minus_15
+	}
+	text = {
+		trigger = {
+			has_idea = medium_popularity
+		}
+		localization_key = poploc_minus_10
+	}
+	text = {
+		trigger = {
+			has_idea = popularity_45_50
+		}
+		localization_key = poploc_minus_5
+	}
+	text = {
+		trigger = {
+			has_idea = popularity_50_55
+		}
+		localization_key = poploc_0
+	}
+	text = {
+		trigger = {
+			has_idea = popularity_55_60
+		}
+		localization_key = poploc_5
+	}
+	text = {
+		trigger = {
+			has_idea = high_popularity
+		}
+		localization_key = poploc_10
+	}
+	text = {
+		trigger = {
+			has_idea = popularity_65_70
+		}
+		localization_key = poploc_15
+	}
+	text = {
+		trigger = {
+			has_idea = popularity_70_75
+		}
+		localization_key = poploc_20
+	}
+	text = {
+		trigger = {
+			has_idea = popularity_75_80
+		}
+		localization_key = poploc_25
+	}
+	text = {
+		trigger = {
+			has_idea = very_high_popularity
+		}
+		localization_key = poploc_30
+	}
+	text = {
+		trigger = {
+			has_idea = popularity_85_90
+		}
+		localization_key = poploc_30
+	}
+	text = {
+		trigger = {
+			has_idea = popularity_90_95
+		}
+		localization_key = poploc_40
+	}
+	text = {
+		trigger = {
+			has_idea = popularity_95_100
+		}
+		localization_key = poploc_50
+	}
+}
+defined_text = {
+	name = GetPopParty
+	text = {
+		trigger = {
+			has_government = communism
+		}
+		localization_key = PopCom
+	}
+	text = {
+		trigger = {
+			has_government = auth_socialism
+		}
+		localization_key = PopAutSoc
+	}
+	text = {
+		trigger = {
+			has_government = radical_socialism
+		}
+		localization_key = PopRadSoc
+	}
+	text = {
+		trigger = {
+			has_government = social_democracy
+		}
+		localization_key = PopSocDem
+	}
+	text = {
+		trigger = {
+			has_government = social_liberalism
+		}
+		localization_key = PopSocLib
+	}
+	text = {
+		trigger = {
+			has_government = national_liberalism
+		}
+		localization_key = PopNatLib
+	}
+	text = {
+		trigger = {
+			has_government = liberal_conservatism
+		}
+		localization_key = PopLibCon
+	}
+	text = {
+		trigger = {
+			has_government = democratic
+		}
+		localization_key = PopSocCon
+	}
+	text = {
+		trigger = {
+			has_government = national_conservatism
+		}
+		localization_key = PopNatCon
+	}
+	text = {
+		trigger = {
+			has_government = neutrality
+		}
+		localization_key = PopNeu
+	}
+	text = {
+		trigger = {
+			has_government = nationalism
+		}
+		localization_key = PopAutdes
+	}
+	text = {
+		trigger = {
+			has_government = fascism
+		}
+		localization_key = PopFas
+	}
+}
+defined_text = {
+	name = is_coalition_loc
+	text = {
+		trigger = {
+			count_triggers = {
+				amount = 2
+				is_in_array = {
+					array = coalition_party_list
+					value = 0
+				}
+				is_in_array = {
+					array = coalition_party_list
+					value = 1
+				}
+				is_in_array = {
+					array = coalition_party_list
+					value = 2
+				}
+				is_in_array = {
+					array = coalition_party_list
+					value = 3
+				}
+				is_in_array = {
+					array = coalition_party_list
+					value = 4
+				}
+				is_in_array = {
+					array = coalition_party_list
+					value = 5
+				}
+				is_in_array = {
+					array = coalition_party_list
+					value = 6
+				}
+				is_in_array = {
+					array = coalition_party_list
+					value = 7
+				}
+				is_in_array = {
+					array = coalition_party_list
+					value = 8
+				}
+				is_in_array = {
+					array = coalition_party_list
+					value = 9
+				}
+				is_in_array = {
+					array = coalition_party_list
+					value = 10
+				}
+				is_in_array = {
+					array = coalition_party_list
+					value = 11
+				}
+			}
+		}
+		localization_key = yes_coalition
+	}
+	text = {
+		localization_key = no_coalition
+	}
+}
+defined_text = {
+	name = is_com_coal
+	text = {
+		trigger = {
+			is_in_array = {
+				array = coalition_party_list
+				value = 0
+			}
+		}
+		localization_key = com_in_coalition
+	}
+	text = {
+		localization_key = not_in_coalition
+	}
+}
+defined_text = {
+	name = is_autsoc_coal
+	text = {
+		trigger = {
+			is_in_array = {
+				array = coalition_party_list
+				value = 1
+			}
+		}
+		localization_key = autsoc_in_coalition
+	}
+	text = {
+		localization_key = not_in_coalition
+	}
+}
+defined_text = {
+	name = is_radsoc_coal
+	text = {
+		trigger = {
+			is_in_array = {
+				array = coalition_party_list
+				value = 2
+			}
+		}
+		localization_key = radsoc_in_coalition
+	}
+	text = {
+		localization_key = not_in_coalition
+	}
+}
+defined_text = {
+	name = is_socdem_coal
+	text = {
+		trigger = {
+			is_in_array = {
+				array = coalition_party_list
+				value = 3
+			}
+		}
+		localization_key = socdem_in_coalition
+	}
+	text = {
+		localization_key = not_in_coalition
+	}
+}
+defined_text = {
+	name = is_soclib_coal
+	text = {
+		trigger = {
+			is_in_array = {
+				array = coalition_party_list
+				value = 4
+			}
+		}
+		localization_key = soclib_in_coalition
+	}
+	text = {
+		localization_key = not_in_coalition
+	}
+}
+defined_text = {
+	name = is_natlib_coal
+	text = {
+		trigger = {
+			is_in_array = {
+				array = coalition_party_list
+				value = 5
+			}
+		}
+		localization_key = natlib_in_coalition
+	}
+	text = {
+		localization_key = not_in_coalition
+	}
+}
+defined_text = {
+	name = is_libcon_coal
+	text = {
+		trigger = {
+			is_in_array = {
+				array = coalition_party_list
+				value = 6
+			}
+		}
+		localization_key = libsoccon_in_coalition
+	}
+	text = {
+		localization_key = not_in_coalition
+	}
+}
+defined_text = {
+	name = is_soccon_coal
+	text = {
+		trigger = {
+			is_in_array = {
+				array = coalition_party_list
+				value = 7
+			}
+		}
+		localization_key = soccon_in_coalition
+	}
+	text = {
+		localization_key = not_in_coalition
+	}
+}
+defined_text = {
+	name = is_natcon_coal
+	text = {
+		trigger = {
+			is_in_array = {
+				array = coalition_party_list
+				value = 8
+			}
+		}
+		localization_key = natcon_in_coalition
+	}
+	text = {
+		localization_key = not_in_coalition
+	}
+}
+defined_text = {
+	name = is_neu_coal
+	text = {
+		trigger = {
+			is_in_array = {
+				array = coalition_party_list
+				value = 9
+			}
+		}
+		localization_key = neu_in_coalition
+	}
+	text = {
+		localization_key = not_in_coalition
+	}
+}
+defined_text = {
+	name = is_autdes_coal
+	text = {
+		trigger = {
+			is_in_array = {
+				array = coalition_party_list
+				value = 10
+			}
+		}
+		localization_key = autdes_in_coalition
+	}
+	text = {
+		localization_key = not_in_coalition
+	}
+}
+defined_text = {
+	name = is_fas_coal
+	text = {
+		trigger = {
+			is_in_array = {
+				array = coalition_party_list
+				value = 11
+			}
+		}
+		localization_key = fas_in_coalition
+	}
+	text = {
+		localization_key = not_in_coalition
+	}
+}
+defined_text = {
+	name = partypoploc
+	text = {
+		localization_key = partypoploc_num
+	}
+}
+defined_text = {
+	name = partys
+	text = {
+		trigger = {
+			count_triggers = {
+				amount = 2
+				is_in_array = {
+					array = coalition_party_list
+					value = 0
+				}
+				is_in_array = {
+					array = coalition_party_list
+					value = 1
+				}
+				is_in_array = {
+					array = coalition_party_list
+					value = 2
+				}
+				is_in_array = {
+					array = coalition_party_list
+					value = 3
+				}
+				is_in_array = {
+					array = coalition_party_list
+					value = 4
+				}
+				is_in_array = {
+					array = coalition_party_list
+					value = 5
+				}
+				is_in_array = {
+					array = coalition_party_list
+					value = 6
+				}
+				is_in_array = {
+					array = coalition_party_list
+					value = 7
+				}
+				is_in_array = {
+					array = coalition_party_list
+					value = 8
+				}
+				is_in_array = {
+					array = coalition_party_list
+					value = 9
+				}
+				is_in_array = {
+					array = coalition_party_list
+					value = 10
+				}
+				is_in_array = {
+					array = coalition_party_list
+					value = 11
+				}
+			}
+		}
+		localization_key = multiple_parties
+	}
+	text = {
+		localization_key = one_party
+	}
+}

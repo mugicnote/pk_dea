@@ -1,0 +1,140 @@
+on_actions = {
+	#Not run on a specific country.
+	on_startup = {
+        effect = {
+			every_country = { COALITION_set_up_array = yes }
+        }
+	}
+	on_daily = {
+		effect = {
+			COALITION_POP_NUMBER = yes
+		}
+	}
+	on_monthly = {
+		effect = {
+			first_every_month_script = yes #Re-checks popularity and assigns idea accordingly. See common>scripted_effects>MtM_pulse_effects.txt
+		}
+	}
+	on_government_change = {
+		effect = {
+			THIS = {
+				first_every_month_script = yes
+				if = {
+					limit = {
+						OR = {
+							AND = {
+								has_government = communism
+								NOT = {
+									is_in_array = {
+										array = coalition_party_list
+										value = 0
+									}
+								}
+							}
+							AND = {
+								has_government = auth_socialism
+								NOT = {
+									is_in_array = {
+										array = coalition_party_list
+										value = 1
+									}
+								}
+							}
+							AND = {
+								has_government = radical_socialism
+								NOT = {
+									is_in_array = {
+										array = coalition_party_list
+										value = 2
+									}
+								}
+							}
+							AND = {
+								has_government = social_democracy
+								NOT = {
+									is_in_array = {
+										array = coalition_party_list
+										value = 3
+									}
+								}
+							}
+							AND = {
+								has_government = social_liberalism
+								NOT = {
+									is_in_array = {
+										array = coalition_party_list
+										value = 4
+									}
+								}
+							}
+							AND = {
+								has_government = national_liberalism
+								NOT = {
+									is_in_array = {
+										array = coalition_party_list
+										value = 5
+									}
+								}
+							}
+							AND = {
+								has_government = liberal_conservatism
+								NOT = {
+									is_in_array = {
+										array = coalition_party_list
+										value = 6
+									}
+								}
+							}
+							AND = {
+								has_government = democratic
+								NOT = {
+									is_in_array = {
+										array = coalition_party_list
+										value = 7
+									}
+								}
+							}
+							AND = {
+								has_government = national_conservatism
+								NOT = {
+									is_in_array = {
+										array = coalition_party_list
+										value = 8
+									}
+								}
+							}
+							AND = {
+								has_government = neutrality
+								NOT = {
+									is_in_array = {
+										array = coalition_party_list
+										value = 9
+									}
+								}
+							}
+							AND = {
+								has_government = auto_despotism
+								NOT = {
+									is_in_array = {
+										array = coalition_party_list
+										value = 10
+									}
+								}
+							}
+							AND = {
+								has_government = fascism
+								NOT = {
+									is_in_array = {
+										array = coalition_party_list
+										value = 11
+									}
+								}
+							}
+						}
+					}
+					COALITION_RESET = yes
+				}
+			}
+		}
+	}
+}

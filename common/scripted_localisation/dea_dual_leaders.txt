@@ -5,9 +5,30 @@ defined_text = {
 	text = {
 		trigger = {
 			tag = KOR
-			has_government = democratic
+			OR = { 
+				has_government = democratic
+				has_government = social_democracy
+			}
+			NOT = { has_country_flag = korea_has_no_president }
+			NOT = { has_country_flag = korea_kim_kyu_sik_acting_president }
 		}
 		localization_key = KOR_FIRST_TITLE
+	}
+	text = {
+		trigger = {
+			tag = KOR
+			has_government = democratic
+			has_country_flag = korea_has_no_president
+		}
+		localization_key = KOR_FIRST_TITLE_has_no_president
+	}
+	text = {
+		trigger = {
+			tag = KOR
+			has_government = democratic
+			has_country_flag = korea_kim_kyu_sik_acting_president
+		}
+		localization_key = KOR_FIRST_TITLE_kim_kyu_sik_acting_president
 	}
 	text = {
 		trigger = {
@@ -44,9 +65,21 @@ defined_text = {
 	text = {
 		trigger = {
 			tag = KOR
-			has_government = democratic
+			OR = { 
+				has_government = democratic
+				has_government = social_democracy
+			}
+			NOT = { has_country_flag = korea_kim_kyu_sik_acting_president }
 		}
 		localization_key = KOR_SECOND_TITLE
+	}
+	text = {
+		trigger = {
+			tag = KOR
+			has_government = democratic
+			has_country_flag = korea_kim_kyu_sik_acting_president
+		}
+		localization_key = KOR_SECOND_TITLE_kim_kyu_sik_acting_president
 	}
 	text = {
 		trigger = {
@@ -77,8 +110,25 @@ defined_text = {
 		trigger = {
 			tag = KOR
 			has_government = democratic
+			NOT = { has_country_flag = korea_kim_kyu_sik_acting_president }
 		}
 		localization_key = KOR_DUAL_NAME
+	}
+	text = {
+		trigger = {
+			tag = KOR
+			has_government = democratic
+			has_country_flag = korea_kim_kyu_sik_acting_president
+		}
+		localization_key = KOR_DUAL_NAME_kim_kyu_sik_acting_president
+	}
+	text = {
+		trigger = {
+			tag = KOR
+			has_government = social_democracy
+			has_country_flag = korea_lyuh_woon_hyung_president
+		}
+		localization_key = KOR_DUAL_NAME_An_Jae_hong_prime_minister
 	}
 	text = {
 		trigger = {
@@ -109,8 +159,25 @@ defined_text = {
 		trigger = {
 			tag = KOR
 			has_government = democratic
+			NOT = { has_country_flag = korea_kim_kyu_sik_acting_president }
 		}
 		localization_key = GFX_Portrait_Kim_Kyusik
+	}
+	text = {
+		trigger = {
+			tag = KOR
+			has_government = democratic
+			has_country_flag = korea_kim_kyu_sik_acting_president
+		}
+		localization_key = GFX_jomansik_portrait
+	}
+	text = {
+		trigger = {
+			tag = KOR
+			has_government = social_democracy
+			has_country_flag = korea_lyuh_woon_hyung_president
+		}
+		localization_key = GFX_Portrait_Ahn_Jaehong
 	}
 	text = {
 		trigger = {

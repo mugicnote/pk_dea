@@ -6,9 +6,11 @@
  export_incentive_policy:0 "수출 장려 정책"
  situation_we_are_in:0 "우리가 처한 상황"
  Introduction_Korean_style_job_security_measures:0 "한국식 일자리 안정책 도입"
- Korea_China_Japan_trilateral_meeting:0 "한중일 삼자 회담 개최"
- Protection_Democratic_Republic:0 "민주공화국 수호"
-
+ Korea_China_Japan_trilateral_meeting:0 "한미일 삼자 회담 개최"
+ KOR_Our_future:0 "우리의 미래"
+ KOR_Protecting_Democratic_Republic:0 "민주공화국 수호"
+ KOR_stand_in_the_middle:0 "중간선에 서다"
+ KOR_policy_of_deepening_oppression:0 "탄압 심화 고수"
 
  ###시작 결정###
  military_arrest:0 "암살의 성공"

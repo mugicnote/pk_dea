@@ -1,0 +1,289 @@
+guiTypes = {
+    containerWindowType = {
+        name = "CBTS_Popularity_Topbar"
+        position = { x = 173 y = 1 }
+        # s_team's popularity gui
+		iconType ={
+			name ="popularity_value_bg"
+			spriteType = "GFX_generic_box_smallest"
+			position = { x = 0 y = 4 }
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name ="popularity"
+			position = { x = 20 y = 8§§ }
+			font = "hoi_18mbs"
+			text = "[?total_party_pop|0]%"
+			format = center
+			maxWidth = 52
+			maxHeight = 24
+			fixedsize = yes
+			pdx_tooltip = "popularity_tooltip"
+		}
+	}
+	containerWindowType = {
+		name = "popcommunism"
+		position = { x = 175 y = 7}
+		iconType ={
+			name = "popcommunism_icon"
+			spriteType = "GFX_ideology_leninism"
+			position = { x= 2 y = 0 }
+			Orientation = "UPPER_LEFT"
+			scale = 0.35
+		}
+	}
+	containerWindowType = {
+		name = "popautsoc"
+		position = { x = 175 y = 7 }
+		iconType ={
+			name = "popautsoc_icon"
+			spriteType = "GFX_ideology_auth_socialism_group"
+			position = { x= 2 y = 0 }
+			Orientation = "UPPER_LEFT"
+			scale = 0.35
+		}
+	}
+	containerWindowType = {
+		name = "popradsoc"
+		position = { x = 175 y = 7 }
+		iconType ={
+			name = "popradsoc_icon"
+			spriteType = "GFX_ideology_radical_socialism_group"
+			position = { x= 2 y = 0 }
+			Orientation = "UPPER_LEFT"
+			scale = 0.35
+		}
+	}
+	containerWindowType = {
+		name = "popsocdem"
+		position = { x = 175 y = 7 }
+		iconType ={
+			name = "popsocdem_icon"
+			spriteType = "GFX_ideology_social_democracy_group"
+			position = { x= 2 y = 0 }
+			Orientation = "UPPER_LEFT"
+			scale = 0.35
+		}
+	}
+	containerWindowType = {
+		name = "popsoclib"
+		position = { x = 175 y = 7 }
+		iconType ={
+			name = "popsoclib_icon"
+			spriteType = "GFX_ideology_social_liberalism_group"
+			position = { x= 2 y = 0 }
+			Orientation = "UPPER_LEFT"
+			scale = 0.35
+		}
+	}
+	containerWindowType = {
+		name = "popnatlib"
+		position = { x = 175 y = 7 }
+		iconType ={
+			name = "popnatlib_icon"
+			spriteType = "GFX_ideology_national_liberalism_group"
+			position = { x= 2 y = 0 }
+			Orientation = "UPPER_LEFT"
+			scale = 0.35
+		}
+	}
+	containerWindowType = {
+		name = "poplibcon"
+		position = { x = 175 y = 7 }
+		iconType ={
+			name = "poplibcon_icon"
+			spriteType = "GFX_ideology_liberal_conservatism_group"
+			position = { x= 2 y = 0 }
+			Orientation = "UPPER_LEFT"
+			scale = 0.35
+		}
+	}
+	containerWindowType = {
+		name = "popsoccon"
+		position = { x = 175 y = 7 }
+		iconType ={
+			name = "popsoccon_icon"
+			spriteType = "GFX_ideology_democratic_group"
+			position = { x= 2 y = 0 }
+			Orientation = "UPPER_LEFT"
+			scale = 0.35
+		}
+	}
+	containerWindowType = {
+		name = "popnatcon"
+		position = { x = 175 y = 7 }
+		iconType ={
+			name = "popnatcon_icon"
+			spriteType = "GFX_ideology_national_conservatism_group"
+			position = { x= 2 y = 0 }
+			Orientation = "UPPER_LEFT"
+			scale = 0.35
+		}
+	}
+	containerWindowType = {
+		name = "popneu"
+		position = { x = 175 y = 7 }
+		iconType ={
+			name = "popneu_icon"
+			spriteType = "GFX_ideology_neutrality_group"
+			position = { x= 2 y = 0 }
+			Orientation = "UPPER_LEFT"
+			scale = 0.35
+		}
+	}
+	containerWindowType = {
+		name = "popautdes"
+		position = { x = 175 y = 7 }
+		iconType ={
+			name = "popautdes_icon"
+			spriteType = "GFX_ideology_auto_despotism_group"
+			position = { x= 2 y = 0 }
+			Orientation = "UPPER_LEFT"
+			scale = 0.35
+		}
+	}
+	containerWindowType = {
+		name = "popfascism"
+		position = { x = 175 y = 7 }
+		iconType ={
+			name = "popfascism_icon"
+			spriteType = "GFX_ideology_fascism_group"
+			position = { x= 2 y = 0 }
+			Orientation = "UPPER_LEFT"
+			scale = 0.35
+		}
+	}
+	#Frames in countrypoliticsview
+	containerWindowType = {
+		name = "framecom"
+		position = { x = 362 y = 178 }
+		iconType ={
+			name = "framecom_icon"
+			spriteType = "GFX_party_background"
+			position = { x= 0 y = 0 }
+			Orientation = "UPPER_LEFT"
+			scale = 1
+		}
+	}
+	containerWindowType = {
+		name = "frameautsoc"
+		position = { x = 362 y = 194 }
+		iconType ={
+			name = "frameautsoc_icon"
+			spriteType = "GFX_party_background"
+			position = { x= 0 y = 0 }
+			Orientation = "UPPER_LEFT"
+			scale = 1
+		}
+	}
+	containerWindowType = {
+		name = "frameradsoc"
+		position = { x = 362 y = 210 }
+		iconType ={
+			name = "frameradsoc_icon"
+			spriteType = "GFX_party_background"
+			position = { x= 0 y = 0 }
+			Orientation = "UPPER_LEFT"
+			scale = 1
+		}
+	}
+	containerWindowType = {
+		name = "framesocdem"
+		position = { x = 362 y = 226 }
+		iconType ={
+			name = "framesocdem_icon"
+			spriteType = "GFX_party_background"
+			position = { x= 0 y = 0 }
+			Orientation = "UPPER_LEFT"
+			scale = 1
+		}
+	}
+	containerWindowType = {
+		name = "framesoclib"
+		position = { x = 362 y = 242 }
+		iconType ={
+			name = "framesoclib_icon"
+			spriteType = "GFX_party_background"
+			position = { x= 0 y = 0 }
+			Orientation = "UPPER_LEFT"
+			scale = 1
+		}
+	}
+	containerWindowType = {
+		name = "framenatlib"
+		position = { x = 362 y = 258 }
+		iconType ={
+			name = "framenatlib_icon"
+			spriteType = "GFX_party_background"
+			position = { x= 0 y = 0 }
+			Orientation = "UPPER_LEFT"
+			scale = 1
+		}
+	}
+	containerWindowType = {
+		name = "framelibcon"
+		position = { x = 362 y = 274 }
+		iconType ={
+			name = "framelibcon_icon"
+			spriteType = "GFX_party_background"
+			position = { x= 0 y = 0 }
+			Orientation = "UPPER_LEFT"
+			scale = 1
+		}
+	}
+	containerWindowType = {
+		name = "framesoccon"
+		position = { x = 362 y = 290 }
+		iconType ={
+			name = "framesoccon_icon"
+			spriteType = "GFX_party_background"
+			position = { x= 0 y = 0 }
+			Orientation = "UPPER_LEFT"
+			scale = 1
+		}
+	}
+	containerWindowType = {
+		name = "framenatcon"
+		position = { x = 362 y = 306 }
+		iconType ={
+			name = "framenatcon_icon"
+			spriteType = "GFX_party_background"
+			position = { x= 0 y = 0 }
+			Orientation = "UPPER_LEFT"
+			scale = 1
+		}
+	}
+	containerWindowType = {
+		name = "frameneu"
+		position = { x = 362 y = 322 }
+		iconType ={
+			name = "frameneu_icon"
+			spriteType = "GFX_party_background"
+			position = { x= 0 y =0 }
+			Orientation = "UPPER_LEFT"
+			scale = 1
+		}
+	}
+	containerWindowType = {
+		name = "frameautdes"
+		position = { x = 362 y = 338 }
+		iconType ={
+			name = "frameautdes_icon"
+			spriteType = "GFX_party_background"
+			position = { x= 0 y = 0 }
+			Orientation = "UPPER_LEFT"
+			scale = 1
+		}
+	}
+	containerWindowType = {
+		name = "framefas"
+		position = { x = 362 y = 354 }
+		iconType ={
+			name = "framefas_icon"
+			spriteType = "GFX_party_background"
+			position = { x= 0 y = 0 }
+			Orientation = "UPPER_LEFT"
+			scale = 1
+		}
+	}
+}

@@ -1,0 +1,21 @@
+KR_NA_seats_Calculation = {
+	set_variable = {
+		seats_DP_all = 0
+	}
+	add_to_variable = {
+		var = seats_DP_all
+		value = seats_gyeonggi
+	}
+	add_to_variable = {
+		var = seats_DP_all
+		value = seats_gangwon
+	}
+	add_to_variable = {
+		var = seats_DP_all
+		value = seats_hwanghae
+	}
+	add_to_variable = {
+		var = seats_DP_all
+		value = seats_gyeongbuk
+	}
+}

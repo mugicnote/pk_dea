@@ -1,0 +1,1729 @@
+scripted_gui = {
+
+	TNO_US_Voting_Open = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "TNO_us_voting_menu_open"
+
+		visible = {
+			tag = KOR
+		}
+
+		effects = {
+			us_voting_menu_open_click = {
+				if = {
+					limit = { NOT = { has_country_flag = US_voting_gui_open } }
+					set_country_flag = US_voting_gui_open
+				}
+				else_if = {
+					limit = { has_country_flag = US_voting_gui_open }
+					clr_country_flag = US_voting_gui_open
+				}
+				clr_country_flag = gui_alert_visible
+
+				KR_NA_seats_Calculation = yes
+			}
+		}
+		
+		triggers = {
+			gui_alert_visible = {
+				has_country_flag = gui_alert_visible
+			}
+		}
+	}
+	
+	TNO_US_Voting_Open_Main = {
+		context_type = player_context
+		parent_window_token = "TNO_us_voting_menu_open"
+		window_name = "TNO_us_voting_menu_main"
+
+		visible = {
+			has_country_flag = US_voting_gui_open
+		}
+
+		triggers = {
+			# Alabama
+			KR_NA_gyeonggi_democratic_visible = {
+				seats_gyeonggi > 15
+			}
+			us_voting_alabama_npp_visible = {
+				always = no
+			}
+			us_voting_alabama_mixed_visible = {
+				always = no
+			}
+			KR_NA_gangwon_national_conservatism_visible = {
+				seats_gangwon_gu > 14
+			}
+			# Alaska
+			us_voting_alaska_with_islands_rd_visible = {
+				463 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_RD_senator_1 = yes has_RD_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+				772 = { is_owned_by = ROOT }
+			}
+			us_voting_alaska_with_islands_npp_visible = {
+				463 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_NPP_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_NPP_senator_2 = yes }
+					}
+				}
+				772 = { is_owned_by = ROOT }
+			}
+			us_voting_alaska_with_islands_mixed_visible = {
+				463 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_empty_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+				772 = { is_owned_by = ROOT }
+			}
+
+			us_voting_alaska_without_islands_rd_visible = {
+				463 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_RD_senator_1 = yes has_RD_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+				NOT = { 772 = { is_owned_by = ROOT } }
+			}
+			us_voting_alaska_without_islands_npp_visible = {
+				463 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_NPP_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_NPP_senator_2 = yes }
+					}
+				}
+				NOT = { 772 = { is_owned_by = ROOT } }
+			}
+			us_voting_alaska_without_islands_mixed_visible = {
+				463 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_empty_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+				NOT = { 772 = { is_owned_by = ROOT } }
+			}
+			# Arizona
+			us_voting_arizona_rd_visible = {
+				377 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_RD_senator_1 = yes has_RD_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_arizona_npp_visible = {
+				377 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_NPP_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_NPP_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_arizona_mixed_visible = {
+				377 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_empty_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			# Arkansas
+			us_voting_arkansas_rd_visible = {
+				372 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_RD_senator_1 = yes has_RD_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_arkansas_npp_visible = {
+				372 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_NPP_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_NPP_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_arkansas_mixed_visible = {
+				372 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_empty_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			# California
+			us_voting_california_no_ports_rd_visible = {
+				378 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_RD_senator_1 = yes has_RD_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+				NOT = {
+					768 = { is_owned_by = ROOT }
+					769 = { is_owned_by = ROOT }
+				}
+			}
+			us_voting_california_no_ports_npp_visible = {
+				378 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_NPP_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_NPP_senator_2 = yes }
+					}
+				}
+				NOT = {
+					768 = { is_owned_by = ROOT }
+					769 = { is_owned_by = ROOT }
+				}
+			}
+			us_voting_california_no_ports_mixed_visible = {
+				378 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_empty_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+				NOT = {
+					768 = { is_owned_by = ROOT }
+					769 = { is_owned_by = ROOT }
+				}
+			}
+
+			us_voting_california_with_ports_rd_visible = {
+				378 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_RD_senator_1 = yes has_RD_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+				768 = { is_owned_by = ROOT }
+				769 = { is_owned_by = ROOT }
+			}
+			us_voting_california_with_ports_npp_visible = {
+				378 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_NPP_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_NPP_senator_2 = yes }
+					}
+				}
+				768 = { is_owned_by = ROOT }
+				769 = { is_owned_by = ROOT }
+			}
+			us_voting_california_with_ports_mixed_visible = {
+				378 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_empty_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+				768 = { is_owned_by = ROOT }
+				769 = { is_owned_by = ROOT }
+			}
+			# Colorado
+			us_voting_colorado_rd_visible = {
+				382 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_RD_senator_1 = yes has_RD_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_colorado_npp_visible = {
+				382 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_NPP_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_NPP_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_colorado_mixed_visible = {
+				382 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_empty_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			# Connecticut
+			us_voting_connecticut_rd_visible = {
+				357 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_RD_senator_1 = yes has_RD_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_connecticut_npp_visible = {
+				357 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_NPP_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_NPP_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_connecticut_mixed_visible = {
+				357 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_empty_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			# Delaware
+			us_voting_delaware_rd_visible = {
+				954 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_RD_senator_1 = yes has_RD_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_delaware_npp_visible = {
+				954 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_NPP_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_NPP_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_delaware_mixed_visible = {
+				954 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_empty_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			# Florida
+			us_voting_florida_rd_visible = {
+				366 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_RD_senator_1 = yes has_RD_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_florida_npp_visible = {
+				366 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_NPP_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_NPP_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_florida_mixed_visible = {
+				366 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_empty_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			# Georgia
+			us_voting_georgia_rd_visible = {
+				365 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_RD_senator_1 = yes has_RD_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_georgia_npp_visible = {
+				365 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_NPP_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_NPP_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_georgia_mixed_visible = {
+				365 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_empty_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			# Hawaii
+			us_voting_hawaii_rd_visible = {
+				629 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_RD_senator_1 = yes has_RD_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_hawaii_npp_visible = {
+				629 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_NPP_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_NPP_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_hawaii_mixed_visible = {
+				629 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_empty_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			# Idaho
+			us_voting_idaho_rd_visible = {
+				387 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_RD_senator_1 = yes has_RD_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_idaho_npp_visible = {
+				387 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_NPP_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_NPP_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_idaho_mixed_visible = {
+				387 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_empty_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			# Illinois
+			us_voting_illinois_rd_visible = {
+				395 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_RD_senator_1 = yes has_RD_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_illinois_npp_visible = {
+				395 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_NPP_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_NPP_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_illinois_mixed_visible = {
+				395 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_empty_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			# Indiana
+			us_voting_indiana_rd_visible = {
+				396 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_RD_senator_1 = yes has_RD_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_indiana_npp_visible = {
+				396 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_NPP_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_NPP_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_indiana_mixed_visible = {
+				396 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_empty_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			# Iowa
+			us_voting_iowa_rd_visible = {
+				392 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_RD_senator_1 = yes has_RD_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_iowa_npp_visible = {
+				392 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_NPP_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_NPP_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_iowa_mixed_visible = {
+				392 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_empty_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			# Kansas
+			us_voting_kansas_rd_visible = {
+				383 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_RD_senator_1 = yes has_RD_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_kansas_npp_visible = {
+				383 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_NPP_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_NPP_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_kansas_mixed_visible = {
+				383 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_empty_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			# Kentucky
+			us_voting_kentucky_rd_visible = {
+				369 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_RD_senator_1 = yes has_RD_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_kentucky_npp_visible = {
+				369 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_NPP_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_NPP_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_kentucky_mixed_visible = {
+				369 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_empty_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			# Louisiana
+			us_voting_louisiana_rd_visible = {
+				371 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_RD_senator_1 = yes has_RD_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_louisiana_npp_visible = {
+				371 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_NPP_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_NPP_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_louisiana_mixed_visible = {
+				371 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_empty_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			# Maine
+			us_voting_maine_rd_visible = {
+				952 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_RD_senator_1 = yes has_RD_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_maine_npp_visible = {
+				952 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_NPP_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_NPP_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_maine_mixed_visible = {
+				952 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_empty_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			# Maryland
+			us_voting_maryland_rd_visible = {
+				361 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_RD_senator_1 = yes has_RD_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_maryland_npp_visible = {
+				361 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_NPP_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_NPP_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_maryland_mixed_visible = {
+				361 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_empty_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			# Vermont
+			us_voting_vermont_rd_visible = {
+				950 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_RD_senator_1 = yes has_RD_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_vermont_npp_visible = {
+				950 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_NPP_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_NPP_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_vermont_mixed_visible = {
+				950 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_empty_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			# Massachusetts
+			us_voting_massachusetts_rd_visible = {
+				949 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_RD_senator_1 = yes has_RD_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_massachusetts_npp_visible = {
+				949 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_NPP_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_NPP_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_massachusetts_mixed_visible = {
+				949 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_empty_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			# Michigan
+			us_voting_michigan_rd_visible = {
+				393 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_RD_senator_1 = yes has_RD_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_michigan_npp_visible = {
+				393 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_NPP_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_NPP_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_michigan_mixed_visible = {
+				393 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_empty_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			# Minnesota
+			us_voting_minnesota_rd_visible = {
+				391 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_RD_senator_1 = yes has_RD_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_minnesota_npp_visible = {
+				391 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_NPP_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_NPP_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_minnesota_mixed_visible = {
+				391 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_empty_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			# Mississippi
+			us_voting_mississippi_rd_visible = {
+				370 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_RD_senator_1 = yes has_RD_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_mississippi_npp_visible = {
+				370 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_NPP_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_NPP_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_mississippi_mixed_visible = {
+				370 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_empty_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			# Missouri
+			us_voting_missouri_rd_visible = {
+				373 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_RD_senator_1 = yes has_RD_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_missouri_npp_visible = {
+				373 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_NPP_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_NPP_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_missouri_mixed_visible = {
+				373 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_empty_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			# Montana
+			us_voting_montana_rd_visible = {
+				388 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_RD_senator_1 = yes has_RD_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_montana_npp_visible = {
+				388 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_NPP_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_NPP_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_montana_mixed_visible = {
+				388 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_empty_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			# Nebraska
+			us_voting_nebraska_rd_visible = {
+				384 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_RD_senator_1 = yes has_RD_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_nebraska_npp_visible = {
+				384 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_NPP_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_NPP_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_nebraska_mixed_visible = {
+				384 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_empty_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			# Nevada
+			us_voting_nevada_rd_visible = {
+				379 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_RD_senator_1 = yes has_RD_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_nevada_npp_visible = {
+				379 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_NPP_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_NPP_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_nevada_mixed_visible = {
+				379 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_empty_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			# New Hampshire
+			us_voting_new_hampshire_rd_visible = {
+				951 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_RD_senator_1 = yes has_RD_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_new_hampshire_npp_visible = {
+				951 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_NPP_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_NPP_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_new_hampshire_mixed_visible = {
+				951 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_empty_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			# New Jersey
+			us_voting_new_jersey_rd_visible = {
+				359 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_RD_senator_1 = yes has_RD_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_new_jersey_npp_visible = {
+				359 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_NPP_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_NPP_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_new_jersey_mixed_visible = {
+				359 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_empty_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			# New Mexico
+			us_voting_new_mexico_rd_visible = {
+				376 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_RD_senator_1 = yes has_RD_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_new_mexico_npp_visible = {
+				376 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_NPP_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_NPP_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_new_mexico_mixed_visible = {
+				376 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_empty_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			# New York
+			us_voting_new_york_rd_visible = {
+				358 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_RD_senator_1 = yes has_RD_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_new_york_npp_visible = {
+				358 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_NPP_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_NPP_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_new_york_mixed_visible = {
+				358 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_empty_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			# North Carolina
+			us_voting_north_carolina_rd_visible = {
+				363 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_RD_senator_1 = yes has_RD_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_north_carolina_npp_visible = {
+				363 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_NPP_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_NPP_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_north_carolina_mixed_visible = {
+				363 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_empty_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			# North Dakota
+			us_voting_north_dakota_rd_visible = {
+				389 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_RD_senator_1 = yes has_RD_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_north_dakota_npp_visible = {
+				389 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_NPP_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_NPP_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_north_dakota_mixed_visible = {
+				389 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_empty_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			# Ohio
+			us_voting_ohio_rd_visible = {
+				261 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_RD_senator_1 = yes has_RD_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_ohio_npp_visible = {
+				261 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_NPP_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_NPP_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_ohio_mixed_visible = {
+				261 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_empty_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			# Oklahoma
+			us_voting_oklahoma_rd_visible = {
+				374 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_RD_senator_1 = yes has_RD_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_oklahoma_npp_visible = {
+				374 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_NPP_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_NPP_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_oklahoma_mixed_visible = {
+				374 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_empty_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			# Oregon
+			us_voting_oregon_rd_visible = {
+				385 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_RD_senator_1 = yes has_RD_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_oregon_npp_visible = {
+				385 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_NPP_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_NPP_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_oregon_mixed_visible = {
+				385 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_empty_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			# Pennsylvania
+			us_voting_pennsylvania_rd_visible = {
+				360 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_RD_senator_1 = yes has_RD_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_pennsylvania_npp_visible = {
+				360 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_NPP_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_NPP_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_pennsylvania_mixed_visible = {
+				360 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_empty_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			# Rhode Island
+			us_voting_rhode_island_rd_visible = {
+				948 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_RD_senator_1 = yes has_RD_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_rhode_island_npp_visible = {
+				948 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_NPP_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_NPP_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_rhode_island_mixed_visible = {
+				948 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_empty_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			# South Carolina
+			us_voting_south_carolina_rd_visible = {
+				364 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_RD_senator_1 = yes has_RD_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_south_carolina_npp_visible = {
+				364 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_NPP_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_NPP_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_south_carolina_mixed_visible = {
+				364 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_empty_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			# South Dakota
+			us_voting_south_dakota_rd_visible = {
+				390 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_RD_senator_1 = yes has_RD_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_south_dakota_npp_visible = {
+				390 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_NPP_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_NPP_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_south_dakota_mixed_visible = {
+				390 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_empty_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			# Tennessee
+			us_voting_tennessee_rd_visible = {
+				368 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_RD_senator_1 = yes has_RD_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_tennessee_npp_visible = {
+				368 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_NPP_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_NPP_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_tennessee_mixed_visible = {
+				368 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_empty_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			# Texas
+			us_voting_texas_rd_visible = {
+				375 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_RD_senator_1 = yes has_RD_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_texas_npp_visible = {
+				375 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_NPP_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_NPP_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_texas_mixed_visible = {
+				375 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_empty_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			# Utah
+			us_voting_utah_rd_visible = {
+				380 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_RD_senator_1 = yes has_RD_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_utah_npp_visible = {
+				380 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_NPP_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_NPP_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_utah_mixed_visible = {
+				380 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_empty_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			# Vermont
+			us_voting_vermont_rd_visible = {
+				950 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_RD_senator_1 = yes has_RD_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_vermont_npp_visible = {
+				950 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_NPP_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_NPP_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_vermont_mixed_visible = {
+				950 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_empty_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			# Virginia
+			us_voting_virginia_rd_visible = {
+				362 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_RD_senator_1 = yes has_RD_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_virginia_npp_visible = {
+				362 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_NPP_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_NPP_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_virginia_mixed_visible = {
+				362 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_empty_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			# Washington
+			us_voting_washington_rd_visible = {
+				386 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_RD_senator_1 = yes has_RD_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_washington_npp_visible = {
+				386 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_NPP_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_NPP_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_washington_mixed_visible = {
+				386 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_empty_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			# West Virginia
+			us_voting_west_virginia_rd_visible = {
+				953 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_RD_senator_1 = yes has_RD_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_west_virginia_npp_visible = {
+				953 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_NPP_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_NPP_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_west_virginia_mixed_visible = {
+				953 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_empty_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			# Wisconsin
+			us_voting_wisconsin_rd_visible = {
+				394 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_RD_senator_1 = yes has_RD_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_wisconsin_npp_visible = {
+				394 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_NPP_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_NPP_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_wisconsin_mixed_visible = {
+				394 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_empty_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			# Wyoming
+			us_voting_wyoming_rd_visible = {
+				381 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_RD_senator_1 = yes has_RD_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_wyoming_npp_visible = {
+				381 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_NPP_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_empty_senator_1 = yes has_NPP_senator_2 = yes }
+					}
+				}
+			}
+			us_voting_wyoming_mixed_visible = {
+				381 = {
+					can_have_elections_in_state = yes
+					OR = {
+						AND = { has_empty_senator_1 = yes has_empty_senator_2 = yes }
+						AND = { has_RD_senator_1 = yes has_NPP_senator_2 = yes }
+						AND = { has_NPP_senator_1 = yes has_RD_senator_2 = yes }
+					}
+				}
+			}
+		}
+		# STATES END
+		
+		effects = {
+			USA_close_button_click = 
+			{
+				clr_country_flag = US_voting_gui_open
+			}
+		}
+	}
+
+	#Debug only, remove later
+	US_var_display = {
+		window_name = us_popularities_container
+		parent_window_token = selected_state_view
+		context_type = selected_state_context
+		visible = {
+			ROOT = {
+				original_tag = USA
+				NOT = { has_country_flag = USA_var_display_hidden }
+			}
+			THIS = {
+				AND = {
+					owner = { tag = USA }
+					can_have_elections_in_state = yes
+				}
+			}
+		}
+		#effects = {
+		#	USA_vardisp_close_button_right_click = {
+		#		set_country_flag = USA_var_display_hidden
+		#		add_political_power = 50
+		#	}
+		#}
+	}
+}
