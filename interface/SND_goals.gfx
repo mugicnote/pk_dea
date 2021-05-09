@@ -8,4 +8,24 @@ spriteTypes = {
 		name = "GFX_SND_political_reform"
 		texturefile = "gfx/interface/goals/SND/SND_political_reform.png"
 	}
+	SpriteType = {
+		name = "GFX_SND_construction_reform"
+		texturefile = "gfx/interface/goals/SND/SND_construction_reform.png"
+	}
+	SpriteType = {
+		name = "GFX_SND_diplomacy_reform"
+		texturefile = "gfx/interface/goals/SND/SND_diplomacy_reform.png"
+	}
+	SpriteType = {
+		name = "GFX_SND_tsingtao_reform"
+		texturefile = "gfx/interface/goals/SND/SND_tsingtao_reform.png"
+	}
+	SpriteType = {
+		name = "GFX_SND_tsinan_reform"
+		texturefile = "gfx/interface/goals/SND/SND_tsinan_reform.png"
+	}
+	SpriteType = {
+		name = "GFX_SND_weihai_reform"
+		texturefile = "gfx/interface/goals/SND/SND_weihai_reform.png"
+	}
 }
