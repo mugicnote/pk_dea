@@ -1,0 +1,11 @@
+spriteTypes = {
+
+	SpriteType = {
+		name = "GFX_SND_Hanfuju_Administration"
+		texturefile = "gfx/interface/goals/SND/SND_Hanfuju_Administration.png"
+	}
+	SpriteType = {
+		name = "GFX_SND_political_reform"
+		texturefile = "gfx/interface/goals/SND/SND_political_reform.png"
+	}
+}
