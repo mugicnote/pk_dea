@@ -307,7 +307,11 @@ focus_tree = {
 			factor = 90
 		}
 		completion_reward = {
-			add_political_power = 10
+			821 = {
+				add_extra_state_shared_building_slots = 3
+				add_offsite_building = { type = arms_factory level = 1 }
+				add_offsite_building = { type = industrial_complex level = 2 }
+			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
@@ -476,14 +480,15 @@ focus_tree = {
 			factor = 90
 		}
 		completion_reward = {
-			add_political_power = 10
+			822 = {
+				add_extra_state_shared_building_slots = 3
+				add_offsite_building = { type = arms_factory level = 2 }
+				add_offsite_building = { type = industrial_complex level = 1 }
+			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		ai_will_do = {
 			factor = 90
-		}
-		completion_reward = {
-			add_political_power = 10
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -561,7 +566,16 @@ focus_tree = {
 			factor = 90
 		}
 		completion_reward = {
-			add_political_power = 10
+			add_resource = {
+    			type = steel
+    			amount = 14
+    			state = 821
+			}
+			add_resource = {
+    			type = steel
+    			amount = 11
+    			state = 597
+			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
