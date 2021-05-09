@@ -197,3 +197,46 @@ ideas = {
             }
         }
     }
+    country = {
+        
+        SND_Construction_committee = { 
+
+            allowed = {
+                original_tag = SND
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = Construction_committee
+
+            removal_cost = -1
+            
+            modifier = {
+                production_speed_industrial_complex_factor = 0.15
+                production_speed_arms_factory_factor = 0.1
+            }
+        }
+    }
+    country = {
+        
+        Hanfuju_Doctrine = { 
+
+            allowed = {
+                original_tag = SND
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = Hanfuju_Doctrine
+
+            removal_cost = -1
+            
+            modifier = {
+                consumer_goods_factor = -0.1
+            }
+        }
+    }

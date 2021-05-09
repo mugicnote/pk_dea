@@ -217,7 +217,10 @@ focus_tree = {
 			factor = 90
 		}
 		completion_reward = {
-			add_political_power = 10
+			add_timed_idea = {
+    			idea = Hanfuju_Doctrine
+    			days = 180
+			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
@@ -526,7 +529,10 @@ focus_tree = {
 			factor = 90
 		}
 		completion_reward = {
-			add_political_power = 10
+			add_timed_idea = {
+    			idea = SND_Construction_committee
+    			days = 365
+			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}

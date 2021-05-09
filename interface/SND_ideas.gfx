@@ -16,4 +16,8 @@ spriteTypes = {
 		name = "GFX_idea_stable_land"
 		texturefile = "gfx/interface/ideas/SND/stable_land.png"
 	}
+	spriteType = {
+		name = "GFX_idea_Construction_committee"
+		texturefile = "gfx/interface/ideas/SND/Construction_committee.png"
+	}
 }
