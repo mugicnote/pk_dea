@@ -18,6 +18,8 @@ if = {
 		has_dlc = "Waking the Tiger"
 	}
 	add_ideas = {
+		A_divided_industry
+		Unstable_land_3
 		PRC_government_corruption
 		CHI_ineffective_bureaucracy_warlord
 	}

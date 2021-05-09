@@ -1,0 +1,19 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_idea_Unstable_land_3"
+		texturefile = "gfx/interface/ideas/SND/Unstable_land_3.png"
+	}
+	spriteType = {
+		name = "GFX_idea_Unstable_land_2"
+		texturefile = "gfx/interface/ideas/SND/Unstable_land_2.png"
+	}
+	spriteType = {
+		name = "GFX_idea_Unstable_land_1"
+		texturefile = "gfx/interface/ideas/SND/Unstable_land_1.png"
+	}
+	spriteType = {
+		name = "GFX_idea_stable_land"
+		texturefile = "gfx/interface/ideas/SND/stable_land.png"
+	}
+}

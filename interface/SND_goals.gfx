@@ -28,4 +28,44 @@ spriteTypes = {
 		name = "GFX_SND_weihai_reform"
 		texturefile = "gfx/interface/goals/SND/SND_weihai_reform.png"
 	}
+	SpriteType = {
+		name = "GFX_SND_Shandong_Infrastructure"
+		texturefile = "gfx/interface/goals/SND/SND_Shandong_Infrastructure.png"
+	}
+	SpriteType = {
+		name = "GFX_SND_shandong_arms_Factory"
+		texturefile = "gfx/interface/goals/SND/SND_shandong_arms_Factory.png"
+	}
+	SpriteType = {
+		name = "GFX_SND_Hanfuju_Doctrine"
+		texturefile = "gfx/interface/goals/SND/SND_Hanfuju_Doctrine.png"
+	}
+	SpriteType = {
+		name = "GFX_SND_Shandong_Army"
+		texturefile = "gfx/interface/goals/SND/SND_Shandong_Army.png"
+	}
+	SpriteType = {
+		name = "GFX_SND_beiyang_army"
+		texturefile = "gfx/interface/goals/SND/SND_beiyang_army.png"
+	}
+	SpriteType = {
+		name = "GFX_SND_kuomintang_Army"
+		texturefile = "gfx/interface/goals/SND/SND_kuomintang_Army.png"
+	}
+	SpriteType = {
+		name = "GFX_SND_Military_reform"
+		texturefile = "gfx/interface/goals/SND/SND_Military_reform.png"
+	}
+	SpriteType = {
+		name = "GFX_SND_Land_reform"
+		texturefile = "gfx/interface/goals/SND/SND_Land_reform.png"
+	}
+	SpriteType = {
+		name = "GFX_SND_Land_survey"
+		texturefile = "gfx/interface/goals/SND/SND_Land_survey.png"
+	}
+	SpriteType = {
+		name = "GFX_SND_Land_redistribution"
+		texturefile = "gfx/interface/goals/SND/SND_Land_redistribution.png"
+	}
 }

@@ -1,0 +1,199 @@
+ideas = {
+#토지개혁 - 시작
+    country = {
+        
+        Unstable_land_3 = { 
+
+            allowed = {
+                original_tag = SND
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = Unstable_land_3
+
+            removal_cost = -1
+            
+            modifier = {
+                consumer_goods_factor = 0.05
+                stability_factor = -0.25
+                production_factory_efficiency_gain_factor = -0.3
+            }
+        }
+    }
+
+    country = {
+        
+        Unstable_land_2 = { 
+
+            allowed = {
+                original_tag = SND
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = Unstable_land_2
+
+            removal_cost = -1
+            
+            modifier = {
+                consumer_goods_factor = 0.03
+                stability_factor = -0.15
+                production_factory_efficiency_gain_factor = -0.2
+            }
+        }
+    }
+
+    country = {
+        
+        Unstable_land_1 = { 
+
+            allowed = {
+                original_tag = SND
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = Unstable_land_1
+
+            removal_cost = -1
+            
+            modifier = {
+                consumer_goods_factor = 0.01
+                stability_factor = -0.05
+                production_factory_efficiency_gain_factor = -0.1
+            }
+        }
+    }
+
+    country = {
+        
+        stable_land = { 
+
+            allowed = {
+                original_tag = SND
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = stable_land
+
+            removal_cost = -1
+            
+            modifier = {
+                consumer_goods_factor = -0.01
+                stability_factor = 0.05
+            }
+        }
+    }
+#토지개혁 - 끝
+    country = {
+        
+        A_divided_industry = { 
+
+            allowed = {
+                original_tag = SND
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = A_divided_industry
+
+            removal_cost = -1
+            
+            modifier = {
+                consumer_goods_factor = 0.15
+                production_lack_of_resource_penalty_factor = 0.2
+                production_factory_start_efficiency_factor = -0.20
+                production_speed_industrial_complex_factor = -0.25
+                production_speed_arms_factory_factor = -0.25
+                industrial_capacity_factory = -0.2
+            }
+        }
+    }
+
+    country = {
+        
+        A_divided_industry_1 = { 
+
+            allowed = {
+                original_tag = SND
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = A_divided_industry_1
+
+            removal_cost = -1
+            
+            modifier = {
+                consumer_goods_factor = 0.1
+                production_lack_of_resource_penalty_factor = 0.12
+                production_factory_start_efficiency_factor = -0.12
+                production_speed_industrial_complex_factor = -0.17
+                production_speed_arms_factory_factor = -0.17
+                industrial_capacity_factory = -0.10
+            }
+        }
+    }
+    
+    country = {
+        
+        A_divided_industry_2 = { 
+
+            allowed = {
+                original_tag = SND
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = A_divided_industry_2
+
+            removal_cost = -1
+            
+            modifier = {
+                consumer_goods_factor = 0.05
+                production_lack_of_resource_penalty_factor = 0.06
+                production_factory_start_efficiency_factor = -0.06
+                production_speed_industrial_complex_factor = -0.085
+                production_speed_arms_factory_factor = -0.085
+            }
+        }
+    }
+
+    country = {
+        
+        A_divided_industry_3 = { 
+
+            allowed = {
+                original_tag = SND
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = A_divided_industry_3
+
+            removal_cost = -1
+            
+            modifier = {
+                production_speed_industrial_complex_factor = 0.02
+                production_speed_arms_factory_factor = 0.02
+            }
+        }
+    }
