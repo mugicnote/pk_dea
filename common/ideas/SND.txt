@@ -309,10 +309,33 @@ ideas = {
             removal_cost = -1
             
             modifier = {
-                army_defence_factor = -0.20
-                army_attack_factor = -0.20
+                army_defence_factor = -0.15
+                army_attack_factor = -0.15
                 army_speed_factor = -0.05
                 army_org_factor = -0.05
+            }
+        }
+    }
+#분열된 군대 - 3단계 하락
+    country = {
+        
+        Divided_army_3 = { 
+
+            allowed = {
+                original_tag = SND
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = Divided_army
+
+            removal_cost = -1
+            
+            modifier = {
+                army_defence_factor = -0.15
+                army_attack_factor = -0.15
             }
         }
     }

@@ -20,7 +20,7 @@
  SND_Shandong_Army:0 "산동의 군대"
  SND_Factory_in_Jinan:0 "지난 공장"
  SND_Linyi_in_Factory:0 "린이 공장"
-  SND_Land_reform:0 "토지개혁 실시"
+ SND_Land_reform:0 "토지개혁 실시"
  SND_Land_redistribution:0 "토지 재분배"
  SND_Hanpuji's_enterprise:0 "한푸쥐의 기업"
  SND_Land_survey:0 "토지조사"
@@ -50,6 +50,13 @@
  SND_Cavalry_tree:0 "기병전술"
  SND_infantry_tree:0 "보병전술"
  SND_Fire-breathing_dragon:0 "불을 뿜는 산동의 용"
+ SND_Gun_arsenal_kuomintang:0 "총기 조병창"
+ SND_Gun_arsenal_beiyang:0 "총기 조병창"
+ SND_fengtian_general:0 "북양정부 장교"
+ SND_kuomintang_general:0 "국민당 장교"
+ SND_Doctrine_Research_Institute:0 "교리 연구소 창설"
+ SND_Wenskys_Legacy:0 "위안스카이의 유산"
+ SND_The_lesson_of_the_northern_march:0 "북벌의 교훈"
 
  #국민정신
  Unstable_land_3:0 "감당못하는 토지"
@@ -67,6 +74,7 @@
  Divided_army:0 "분열된 군대"
  Divided_army_1:0 "분열된 군대"
  Divided_army_2:0 "분열된 군대"
+ Divided_army_3:0 "분열된 군대"
 
  SND_jinan_school:0 "지난 군관학교"
 

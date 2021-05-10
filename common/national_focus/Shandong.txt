@@ -500,7 +500,10 @@ focus_tree = {
 			factor = 90
 		}
 		completion_reward = {
-			add_political_power = 10
+			swap_ideas = {
+				remove_idea = Divided_army_1
+				add_idea = Divided_army_2
+			}
 		}
 	}
 	focus = {
@@ -673,6 +676,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			army_experience = 30
+			swap_ideas = {
+				remove_idea = Divided_army_2
+				add_idea = Divided_army_3
+			}
 		}
 	}
 	focus = {
@@ -802,7 +809,10 @@ focus_tree = {
 			factor = 90
 		}
 		completion_reward = {
-			add_political_power = 10
+			swap_ideas = {
+				remove_idea = Divided_army_1
+				add_idea = Divided_army_2
+			}
 		}
 	}
 	focus = {
@@ -972,6 +982,9 @@ focus_tree = {
 		prerequisite = {
 			focus = SND_Army_training_beiyang
 		}
+		prerequisite = {
+			focus = SND_Gun_arsenal_beiyang
+		}
 		x = 32
 		y = 7
 		ai_will_do = {
@@ -991,6 +1004,9 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = SND_Army_training_kuomintang
+		}
+		prerequisite = {
+			focus = SND_Gun_arsenal_kuomintang
 		}
 		x = 42
 		y = 7
@@ -1025,13 +1041,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = SND_Fire-breathing_dragon
+		id = SND_Doctrine_Research_Institute
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = SND_kuomintang_trading_Army
 			focus = SND_Artillery_division
-			focus = SND_Cavalry_division
 		}
 		x = 37
 		y = 9
@@ -1039,7 +1053,193 @@ focus_tree = {
 			factor = 90
 		}
 		completion_reward = {
-			add_ideas = SND_Fire_breathing_dragon
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = cat_superior_firepower
+			}
+		}
+	}
+	focus = {
+		id = SND_Fire-breathing_dragon
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SND_Doctrine_Research_Institute
+			focus = SND_The_lesson_of_the_northern_march
+			focus = SND_Wenskys_Legacy
+		}
+		x = 37
+		y = 10
+		ai_will_do = {
+			factor = 90
+		}
+		completion_reward = {
+
+			swap_ideas = {
+				remove_idea = Divided_army_3
+				add_idea = SND_Fire_breathing_dragon
+			}
+		}
+	}
+	focus = {
+		id = SND_Gun_arsenal_beiyang
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SND_Income_the_beiyang
+		}
+		x = 31
+		y = 6
+		ai_will_do = {
+			factor = 90
+		}
+		completion_reward = {
+			597 = {
+				add_extra_state_shared_building_slots = 1
+				add_offsite_building = {
+					type = arms_factory
+					level = 1
+				}
+			}
+			821 = {
+				add_extra_state_shared_building_slots = 1
+				add_offsite_building = {
+					type = arms_factory
+					level = 1
+				}
+			}
+			743 = {
+				add_extra_state_shared_building_slots = 1
+				add_offsite_building = {
+					type = arms_factory
+					level = 1
+				}
+			}
+			822 = {
+				add_extra_state_shared_building_slots = 1
+				add_offsite_building = {
+					type = arms_factory
+					level = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = SND_Gun_arsenal_kuomintang
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SND_Income_the_kuomintang
+		}
+		x = 43
+		y = 6
+		ai_will_do = {
+			factor = 90
+		}
+		completion_reward = {
+			597 = {
+				add_extra_state_shared_building_slots = 1
+				add_offsite_building = {
+					type = arms_factory
+					level = 1
+				}
+			}
+			743 = {
+				add_extra_state_shared_building_slots = 1
+				add_offsite_building = {
+					type = arms_factory
+					level = 1
+				}
+			}
+			822 = {
+				add_extra_state_shared_building_slots = 1
+				add_offsite_building = {
+					type = arms_factory
+					level = 1
+				}
+			}
+			821 = {
+				add_extra_state_shared_building_slots = 1
+				add_offsite_building = {
+					type = arms_factory
+					level = 1
+				}
+			}
+		}
+	}
+	focus = {
+		id = SND_fengtian_general
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SND_ambulance_bei
+		}
+		x = 32
+		y = 8
+		ai_will_do = {
+			factor = 90
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SND_kuomintang_general
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SND_ambulance_CHI
+		}
+		x = 42
+		y = 8
+		ai_will_do = {
+			factor = 90
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SND_The_lesson_of_the_northern_march
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SND_kuomintang_general
+		}
+		prerequisite = {
+			focus = SND_kuomintang_trading_Army
+		}
+		x = 41
+		y = 9
+		ai_will_do = {
+			factor = 90
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = Divided_army_2
+				add_idea = Divided_army_3
+			}
+		}
+	}
+	focus = {
+		id = SND_Wenskys_Legacy
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SND_fengtian_general
+		}
+		prerequisite = {
+			focus = SND_Cavalry_division
+		}
+		x = 33
+		y = 9
+		ai_will_do = {
+			factor = 90
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = Divided_army_2
+				add_idea = Divided_army_3
+			}
 		}
 	}
 }
