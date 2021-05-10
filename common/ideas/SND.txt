@@ -134,7 +134,7 @@ ideas = {
                 always = yes
             }
 
-            picture = A_divided_industry_1
+            picture = A_divided_industry
 
             removal_cost = -1
             
@@ -161,7 +161,7 @@ ideas = {
                 always = yes
             }
 
-            picture = A_divided_industry_2
+            picture = A_divided_industry
 
             removal_cost = -1
             

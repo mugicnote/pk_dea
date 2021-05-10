@@ -28,4 +28,12 @@ spriteTypes = {
 		name = "GFX_idea_Divided_army"
 		texturefile = "gfx/interface/ideas/SND/Divided_army.png"
 	}
+	spriteType = {
+		name = "GFX_idea_Divided_army"
+		texturefile = "gfx/interface/ideas/SND/Divided_army.png"
+	}
+	spriteType = {
+		name = "GFX_idea_A_divided_industry"
+		texturefile = "gfx/interface/ideas/SND/A_divided_industry.png"
+	}
 }
