@@ -1,8 +1,5 @@
-spriteTypes = {#기본
-	SpriteType = {
-		name = "GFX_based_SND"
-		texturefile = "gfx/interface/goals/SND/based_SND.png"
-	}
+spriteTypes = {
+
 	SpriteType = {
 		name = "GFX_SND_Hanfuju_Administration"
 		texturefile = "gfx/interface/goals/SND/SND_Hanfuju_Administration.png"
