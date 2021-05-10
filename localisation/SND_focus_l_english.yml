@@ -66,3 +66,14 @@
 
  Divided_army:0 "분열된 군대"
  Divided_army_1:0 "분열된 군대"
+ Divided_army_2:0 "분열된 군대"
+
+ SND_jinan_school:0 "지난 군관학교"
+
+ Military_Advisory_Group_beiyang:0 "북양정부 군사고문단"
+ Military_Advisory_Group_kuomintang:0 "국민당 군사고문단"
+
+ SND_Fire_breathing_dragon:0 "산동의 용"
+ #기타 
+ SND_artillery:0 "산둥의 포병"
+ Armament_increase:0 "군비예산 증가"

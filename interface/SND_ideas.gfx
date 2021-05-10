@@ -36,4 +36,20 @@ spriteTypes = {
 		name = "GFX_idea_A_divided_industry"
 		texturefile = "gfx/interface/ideas/SND/A_divided_industry.png"
 	}
+	spriteType = {
+		name = "GFX_idea_SND_jinan_school"
+		texturefile = "gfx/interface/ideas/SND/SND_jinan_school.png"
+	}
+	spriteType = {
+		name = "GFX_idea_Military_Advisory_Group_beiyang"
+		texturefile = "gfx/interface/ideas/SND/Military_Advisory_Group_beiyang.png"
+	}
+	spriteType = {
+		name = "GFX_idea_Military_Advisory_Group_kuomintang"
+		texturefile = "gfx/interface/ideas/SND/Military_Advisory_Group_kuomintang.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SND_Fire_breathing_dragon"
+		texturefile = "gfx/interface/ideas/SND/SND_Fire_breathing_dragon.png"
+	}
 }

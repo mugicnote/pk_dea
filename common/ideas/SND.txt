@@ -290,3 +290,150 @@ ideas = {
             }
         }
     }
+
+#분열된 군대 - 2단계 하락
+    country = {
+        
+        Divided_army_2 = { 
+
+            allowed = {
+                original_tag = SND
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = Divided_army
+
+            removal_cost = -1
+            
+            modifier = {
+                army_defence_factor = -0.20
+                army_attack_factor = -0.20
+                army_speed_factor = -0.05
+                army_org_factor = -0.05
+            }
+        }
+    }
+#지난 군관학교
+    country = {
+        
+        SND_jinan_school = { 
+
+            allowed = {
+                original_tag = SND
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = SND_jinan_school
+
+            removal_cost = -1
+            
+            modifier = {
+                army_leader_start_planning_level = 1
+                military_leader_cost_factor = -0.25
+                army_artillery_attack_factor = 0.05
+            }
+        }
+    }
+#군비증대
+    country = {
+        
+        Armament_increase = { 
+
+            allowed = {
+                original_tag = SND
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = Armament_increase
+
+            removal_cost = -1
+            
+            modifier = {
+                training_time_factor = -0.1
+                consumer_goods_factor = 0.005
+            }
+        }
+    }
+#군사고문 - 북양
+    country = {
+        
+        Military_Advisory_Group_beiyang = { 
+
+            allowed = {
+                original_tag = SND
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = Military_Advisory_Group_beiyang
+
+            removal_cost = -1
+            
+            modifier = {
+                training_time_factor = -0.07
+                consumer_goods_factor = 0.005
+                cavalry_attack_factor = 0.05
+            }
+        }
+    }
+#군사고문 - 국민당
+    country = {
+        
+        Military_Advisory_Group_kuomintang = { 
+
+            allowed = {
+                original_tag = SND
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = Military_Advisory_Group_kuomintang
+
+            removal_cost = -1
+            
+            modifier = {
+                training_time_factor = -0.07
+                consumer_goods_factor = 0.005
+                army_infantry_attack_factor = 0.05
+            }
+        }
+    }
+#불을 뿜는 산동의 용
+    country = {
+        
+        SND_Fire_breathing_dragon = { 
+
+            allowed = {
+                original_tag = SND
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = SND_Fire_breathing_dragon
+
+            removal_cost = -1
+            
+            modifier = {
+                training_time_factor = -0.1
+                army_defence_factor = 0.15
+                army_speed_factor = 0.1
+                army_attack_factor = 0.15
+                army_org_factor = 0.1
+            }
+        }
+    }

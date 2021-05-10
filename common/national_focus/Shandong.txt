@@ -481,7 +481,7 @@ focus_tree = {
 			factor = 90
 		}
 		completion_reward = {
-			add_political_power = 10
+			add_ideas = Military_Advisory_Group_beiyang
 		}
 	}
 	focus = {
@@ -576,7 +576,7 @@ focus_tree = {
 			factor = 90
 		}
 		completion_reward = {
-			add_political_power = 10
+			add_ideas = SND_jinan_school
 		}
 	}
 	focus = {
@@ -592,7 +592,7 @@ focus_tree = {
 			factor = 90
 		}
 		completion_reward = {
-			add_political_power = 10
+			add_ideas = Armament_increase
 		}
 	}
 	focus = {
@@ -608,7 +608,10 @@ focus_tree = {
 			factor = 90
 		}
 		completion_reward = {
-			add_political_power = 10
+			swap_ideas = {
+				remove_idea = Divided_army_1
+				add_idea = Divided_army_2
+			}
 		}
 	}
 	focus = {
@@ -643,7 +646,11 @@ focus_tree = {
 			factor = 90
 		}
 		completion_reward = {
-			add_political_power = 10
+			add_tech_bonus = {
+    			bonus = 1
+    			uses = 3
+    			category = Artillery
+			}
 		}
 	}
 	focus = {
@@ -665,7 +672,7 @@ focus_tree = {
 			factor = 90
 		}
 		completion_reward = {
-			add_political_power = 10
+			army_experience = 30
 		}
 	}
 	focus = {
@@ -687,7 +694,11 @@ focus_tree = {
 			factor = 90
 		}
 		completion_reward = {
-			add_political_power = 10
+			add_tech_bonus = {
+    			bonus = 3
+    			uses = 1
+    			category = hospital_tech
+			}
 		}
 	}
 	focus = {
@@ -706,7 +717,14 @@ focus_tree = {
 			factor = 90
 		}
 		completion_reward = {
-			add_political_power = 10
+			load_oob = "SND_artillery"
+			hidden_effect = {
+				add_equipment_to_stockpile = {
+    				type = artillery_equipment 
+    				amount = 300
+    				producer = SND
+				}
+			}
 		}
 	}
 	focus = {
@@ -749,7 +767,7 @@ focus_tree = {
 			factor = 90
 		}
 		completion_reward = {
-			add_political_power = 10
+			add_ideas = Military_Advisory_Group_kuomintang
 		}
 	}
 	focus = {
@@ -960,7 +978,11 @@ focus_tree = {
 			factor = 90
 		}
 		completion_reward = {
-			add_political_power = 10
+			add_tech_bonus = {
+    			bonus = 3
+    			uses = 1
+    			category = hospital_tech
+			}
 		}
 	}
 	focus = {
@@ -976,7 +998,11 @@ focus_tree = {
 			factor = 90
 		}
 		completion_reward = {
-			add_political_power = 10
+			add_tech_bonus = {
+    			bonus = 3
+    			uses = 1
+    			category = hospital_tech
+			}
 		}
 	}
 	focus = {
@@ -995,7 +1021,7 @@ focus_tree = {
 			factor = 90
 		}
 		completion_reward = {
-			add_political_power = 10
+			
 		}
 	}
 	focus = {
@@ -1013,7 +1039,7 @@ focus_tree = {
 			factor = 90
 		}
 		completion_reward = {
-			add_political_power = 10
+			add_ideas = SND_Fire_breathing_dragon
 		}
 	}
 }
