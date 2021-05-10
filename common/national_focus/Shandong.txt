@@ -1,5 +1,5 @@
 focus_tree = {
-	id = shandong_focus
+	id = shandong
 	country = {
 		factor = 0
 		modifier = {
@@ -10,7 +10,7 @@ focus_tree = {
 
 	default = no
 
-	continuous_focus_position = { x = 20 y = 1600 }
+	#continuous_focus_position = { x = 20 y = 1600 }
 
 	focus = {
 		id = SND_hanfuju_administration
@@ -24,7 +24,6 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 10
 		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
 		id = SND_diplomacy_reform
@@ -41,7 +40,6 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 10
 		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
 
 	}
 	focus = {
@@ -59,7 +57,6 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 10
 		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
 
 	}
 	focus = {
@@ -77,7 +74,6 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 10
 		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
 
 	}
 	focus = {
@@ -89,16 +85,18 @@ focus_tree = {
 		}
 		x = 25
 		y = 4
-		ai_will_do = {
-			factor = 90
-		}
-		completion_reward = {
-			597 = {
-				add_extra_state_shared_building_slots = 2
-				add_offsite_building = { type = industrial_complex level = 2 }
-			}
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
+			ai_will_do = {
+					factor = 90
+				}
+			completion_reward = {
+					597 = {
+							add_extra_state_shared_building_slots = 2
+							add_offsite_building = {
+									type = industrial_complex
+									level = 2
+								}
+						}
+				}
 
 	}
 	focus = {
@@ -110,16 +108,18 @@ focus_tree = {
 		}
 		x = 27
 		y = 4
-		ai_will_do = {
-			factor = 90
-		}
-		completion_reward = {
-			821 = {
-				add_extra_state_shared_building_slots = 2
-				add_offsite_building = { type = industrial_complex level = 2 }
-			}
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
+			ai_will_do = {
+					factor = 90
+				}
+			completion_reward = {
+					821 = {
+							add_extra_state_shared_building_slots = 2
+							add_offsite_building = {
+									type = industrial_complex
+									level = 2
+								}
+						}
+				}
 
 	}
 	focus = {
@@ -134,21 +134,29 @@ focus_tree = {
 		}
 		x = 26
 		y = 5
-		ai_will_do = {
-			factor = 90
-		}
-		completion_reward = {
-			743 = {
-				add_offsite_building = { type = infrastructure level = 3 }
-			}
-			821 = {
-				add_offsite_building = { type = infrastructure level = 3 }
-			}
-			597 = {
-				add_offsite_building = { type = infrastructure level = 3 }
-			}
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
+			ai_will_do = {
+					factor = 90
+				}
+			completion_reward = {
+					743 = {
+							add_offsite_building = {
+									type = infrastructure
+									level = 3
+								}
+						}
+					821 = {
+							add_offsite_building = {
+									type = infrastructure
+									level = 3
+								}
+						}
+					597 = {
+							add_offsite_building = {
+									type = infrastructure
+									level = 3
+								}
+						}
+				}
 
 	}
 	focus = {
@@ -160,16 +168,18 @@ focus_tree = {
 		}
 		x = 29
 		y = 4
-		ai_will_do = {
-			factor = 90
-		}
-		completion_reward = {
-			743 = {
-				add_extra_state_shared_building_slots = 2
-				add_offsite_building = { type = industrial_complex level = 2 }
-			}
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
+			ai_will_do = {
+					factor = 90
+				}
+			completion_reward = {
+					743 = {
+							add_extra_state_shared_building_slots = 2
+							add_offsite_building = {
+									type = industrial_complex
+									level = 2
+								}
+						}
+				}
 
 	}
 	focus = {
@@ -184,24 +194,32 @@ focus_tree = {
 		}
 		x = 28
 		y = 5
-		ai_will_do = {
-			factor = 90
-		}
-		completion_reward = {
-			743 = {
-				add_extra_state_shared_building_slots = 1
-				add_offsite_building = { type = arms_factory level = 1 }
-			}
-			821 = {
-				add_extra_state_shared_building_slots = 1
-				add_offsite_building = { type = arms_factory level = 1 }
-			}
-			597 = {
-				add_extra_state_shared_building_slots = 1
-				add_offsite_building = { type = arms_factory level = 1 }
-			}
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
+			ai_will_do = {
+					factor = 90
+				}
+			completion_reward = {
+					743 = {
+							add_extra_state_shared_building_slots = 1
+							add_offsite_building = {
+									type = arms_factory
+									level = 1
+								}
+						}
+					821 = {
+							add_extra_state_shared_building_slots = 1
+							add_offsite_building = {
+									type = arms_factory
+									level = 1
+								}
+						}
+					597 = {
+							add_extra_state_shared_building_slots = 1
+							add_offsite_building = {
+									type = arms_factory
+									level = 1
+								}
+						}
+				}
 
 	}
 	focus = {
@@ -216,16 +234,15 @@ focus_tree = {
 		}
 		x = 27
 		y = 6
-		ai_will_do = {
-			factor = 90
-		}
-		completion_reward = {
-			add_timed_idea = {
-    			idea = Hanfuju_Doctrine
-    			days = 180
-			}
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
+			ai_will_do = {
+					factor = 90
+				}
+			completion_reward = {
+					add_timed_idea = {
+							idea = Hanfuju_Doctrine
+							days = 180
+						}
+				}
 
 	}
 	focus = {
@@ -237,16 +254,16 @@ focus_tree = {
 		}
 		x = 24
 		y = 7
-		ai_will_do = {
-			factor = 90
-		}
-		completion_reward = {
-			swap_ideas = {
-    			remove_idea = A_divided_industry
-    			add_idea = A_divided_industry_1
-			}
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
+			ai_will_do = {
+					factor = 90
+				}
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = A_divided_industry
+							add_idea = A_divided_industry_1
+						}
+				}
+
 	}
 	focus = {
 		id = SND_Weihai_Shipyard
@@ -260,16 +277,18 @@ focus_tree = {
 		}
 		x = 26
 		y = 7
-		ai_will_do = {
-			factor = 90
-		}
-		completion_reward = {
-			597 = {
-				add_extra_state_shared_building_slots = 2
-				add_offsite_building = { type = dockyard level = 2 }
-			}
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
+			ai_will_do = {
+					factor = 90
+				}
+			completion_reward = {
+					597 = {
+							add_extra_state_shared_building_slots = 2
+							add_offsite_building = {
+									type = dockyard
+									level = 2
+								}
+						}
+				}
 
 	}
 	focus = {
@@ -284,16 +303,18 @@ focus_tree = {
 		}
 		x = 28
 		y = 7
-		ai_will_do = {
-			factor = 90
-		}
-		completion_reward = {
-			743 = {
-				add_extra_state_shared_building_slots = 2
-				add_offsite_building = { type = dockyard level = 2 }
-			}
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
+			ai_will_do = {
+					factor = 90
+				}
+			completion_reward = {
+					743 = {
+							add_extra_state_shared_building_slots = 2
+							add_offsite_building = {
+									type = dockyard
+									level = 2
+								}
+						}
+				}
 
 	}
 	focus = {
@@ -309,17 +330,22 @@ focus_tree = {
 		}
 		x = 28
 		y = 8
-		ai_will_do = {
-			factor = 90
-		}
-		completion_reward = {
-			821 = {
-				add_extra_state_shared_building_slots = 3
-				add_offsite_building = { type = arms_factory level = 1 }
-				add_offsite_building = { type = industrial_complex level = 2 }
-			}
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
+			ai_will_do = {
+					factor = 90
+				}
+			completion_reward = {
+					821 = {
+							add_extra_state_shared_building_slots = 3
+							add_offsite_building = {
+									type = arms_factory
+									level = 1
+								}
+							add_offsite_building = {
+									type = industrial_complex
+									level = 2
+								}
+						}
+				}
 
 	}
 	focus = {
@@ -331,16 +357,16 @@ focus_tree = {
 		}
 		x = 30
 		y = 7
-		ai_will_do = {
-			factor = 90
-		}
-		completion_reward = {
-			swap_ideas = {
-    			remove_idea = Unstable_land_3
-    			add_idea = Unstable_land_2
-			}
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
+			ai_will_do = {
+					factor = 90
+				}
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = Unstable_land_3
+							add_idea = Unstable_land_2
+						}
+				}
+
 	}
 	focus = {
 		id = SND_Land_survey
@@ -351,16 +377,16 @@ focus_tree = {
 		}
 		x = 30
 		y = 8
-		ai_will_do = {
-			factor = 90
-		}
-		completion_reward = {
-			swap_ideas = {
-    			remove_idea = Unstable_land_2
-    			add_idea = Unstable_land_1
-			}
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
+			ai_will_do = {
+					factor = 90
+				}
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = Unstable_land_2
+							add_idea = Unstable_land_1
+						}
+				}
+
 	}
 	focus = {
 		id = SND_Land_redistribution
@@ -371,16 +397,16 @@ focus_tree = {
 		}
 		x = 29
 		y = 9
-		ai_will_do = {
-			factor = 90
-		}
-		completion_reward = {
-			swap_ideas = {
-    			remove_idea = Unstable_land_1
-    			add_idea = stable_land
-			}
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
+			ai_will_do = {
+					factor = 90
+				}
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = Unstable_land_1
+							add_idea = stable_land
+						}
+				}
+
 	}
 	focus = {
 		id = SND_Military_reform
@@ -389,18 +415,17 @@ focus_tree = {
 		prerequisite = {
 			focus = SND_hanfuju_administration
 		}
-		x = 34
+		x = 37
 		y = 3
-		ai_will_do = {
-			factor = 90
-		}
-		completion_reward = {
-			swap_ideas = {
-    			remove_idea = Divided_army
-    			add_idea = Divided_army_1
-			}
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
+			ai_will_do = {
+					factor = 90
+				}
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = Divided_army
+							add_idea = Divided_army_1
+						}
+				}
 
 	}
 	focus = {
@@ -413,16 +438,105 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = SND_Shandong_Army
 		}
-		x = 32
+		x = 33
 		y = 4
+			ai_will_do = {
+					factor = 90
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							bonus = 0.5
+							uses = 2
+							category = cat_grand_battle_plan
+						}
+				}
+
+	}
+	focus = {
+		id = SND_Income_the_beiyang
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SND_beiyang_army
+		}
+		x = 32
+		y = 5
 		ai_will_do = {
 			factor = 90
 		}
 		completion_reward = {
 			add_political_power = 10
 		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
-
+	}
+	focus = {
+		id = SND_Request_for_advisors_the_beiyang
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SND_beiyang_army
+		}
+		x = 34
+		y = 5
+		ai_will_do = {
+			factor = 90
+		}
+		completion_reward = {
+			add_political_power = 10
+		}
+	}
+	focus = {
+		id = SND_Army_training_beiyang
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SND_Request_for_advisors_the_beiyang
+		}
+		prerequisite = {
+			focus = SND_Income_the_beiyang
+		}
+		x = 33
+		y = 6
+		ai_will_do = {
+			factor = 90
+		}
+		completion_reward = {
+			add_political_power = 10
+		}
+	}
+	focus = {
+		id = SND_Cavalry_tree
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SND_Army_training_beiyang
+		}
+		x = 34
+		y = 7
+		ai_will_do = {
+			factor = 90
+		}
+		completion_reward = {
+			add_political_power = 10
+		}
+	}
+	focus = {
+		id = SND_Cavalry_division
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SND_Army_training_beiyang
+		}
+		prerequisite = {
+			focus = SND_Cavalry_tree
+		}
+		x = 34
+		y = 8
+		ai_will_do = {
+			factor = 90
+		}
+		completion_reward = {
+			add_political_power = 10
+		}
 	}
 	focus = {
 		id = SND_Shandong_Army
@@ -435,15 +549,165 @@ focus_tree = {
 			focus = SND_beiyang_army
 			focus = SND_kuomintang_army
 		}
-		x = 34
+		x = 37
 		y = 4
+			ai_will_do = {
+					factor = 90
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							bonus = 0.5
+							uses = 2
+							category = cat_superior_firepower
+						}
+				}
+
+	}
+	focus = {
+		id = SND_jinan_school
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SND_Shandong_Army
+		}
+		x = 36
+		y = 5
 		ai_will_do = {
 			factor = 90
 		}
 		completion_reward = {
 			add_political_power = 10
 		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = SND_Increased_armament
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SND_jinan_school
+		}
+		x = 35
+		y = 6
+		ai_will_do = {
+			factor = 90
+		}
+		completion_reward = {
+			add_political_power = 10
+		}
+	}
+	focus = {
+		id = SND_New_officer
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SND_Shandong_Army
+		}
+		x = 38
+		y = 5
+		ai_will_do = {
+			factor = 90
+		}
+		completion_reward = {
+			add_political_power = 10
+		}
+	}
+	focus = {
+		id = SND_Total_purchase
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SND_jinan_school
+		}
+		prerequisite = {
+			focus = SND_New_officer
+		}
+		x = 37
+		y = 6
+		ai_will_do = {
+			factor = 90
+		}
+		completion_reward = {
+			add_political_power = 10
+		}
+	}
+	focus = {
+		id = SND_Canvas_research
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SND_New_officer
+		}
+		x = 39
+		y = 6
+		ai_will_do = {
+			factor = 90
+		}
+		completion_reward = {
+			add_political_power = 10
+		}
+	}
+	focus = {
+		id = SND_Army_training
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SND_Total_purchase
+		}
+		prerequisite = {
+			focus = SND_Canvas_research
+		}
+		prerequisite = {
+			focus = SND_Increased_armament
+		}
+		x = 38
+		y = 7
+		ai_will_do = {
+			factor = 90
+		}
+		completion_reward = {
+			add_political_power = 10
+		}
+	}
+	focus = {
+		id = SND_ambulance
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SND_Total_purchase
+		}
+		prerequisite = {
+			focus = SND_Increased_armament
+		}
+		prerequisite = {
+			focus = SND_Canvas_research
+		}
+		x = 36
+		y = 7
+		ai_will_do = {
+			factor = 90
+		}
+		completion_reward = {
+			add_political_power = 10
+		}
+	}
+	focus = {
+		id = SND_Artillery_division
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SND_ambulance
+		}
+		prerequisite = {
+			focus = SND_Army_training
+		}
+		x = 37
+		y = 8
+		ai_will_do = {
+			factor = 90
+		}
+		completion_reward = {
+			add_political_power = 10
+		}
 	}
 	focus = {
 		id = SND_kuomintang_army
@@ -455,22 +719,89 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = SND_Shandong_Army
 		}
-		x = 36
+		x = 41
 		y = 4
+			ai_will_do = {
+					factor = 90
+				}
+			ai_will_do = {
+					factor = 90
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							bonus = 0.5
+							uses = 2
+							category = cat_mass_assault
+						}
+				}
+
+	}
+	focus = {
+		id = SND_Request_for_advisors_from_the_kuomintang
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SND_kuomintang_army
+		}
+		x = 40
+		y = 5
 		ai_will_do = {
 			factor = 90
 		}
 		completion_reward = {
 			add_political_power = 10
 		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = SND_Income_the_kuomintang
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SND_kuomintang_army
+		}
+		x = 42
+		y = 5
 		ai_will_do = {
 			factor = 90
 		}
 		completion_reward = {
 			add_political_power = 10
 		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = SND_Army_training_kuomintang
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SND_Request_for_advisors_from_the_kuomintang
+		}
+		prerequisite = {
+			focus = SND_Income_the_kuomintang
+		}
+		x = 41
+		y = 6
+		ai_will_do = {
+			factor = 90
+		}
+		completion_reward = {
+			add_political_power = 10
+		}
+	}
+	focus = {
+		id = SND_infantry_tree
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SND_Army_training_kuomintang
+		}
+		x = 40
+		y = 7
+		ai_will_do = {
+			factor = 90
+		}
+		completion_reward = {
+			add_political_power = 10
+		}
 	}
 	focus = {
 		id = SND_Linyi_in_Factory
@@ -485,21 +816,26 @@ focus_tree = {
 		}
 		x = 26
 		y = 8
-		ai_will_do = {
-			factor = 90
-		}
-		completion_reward = {
-			822 = {
-				add_extra_state_shared_building_slots = 3
-				add_offsite_building = { type = arms_factory level = 2 }
-				add_offsite_building = { type = industrial_complex level = 1 }
-			}
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		ai_will_do = {
-			factor = 90
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
+			ai_will_do = {
+					factor = 90
+				}
+			completion_reward = {
+					822 = {
+							add_extra_state_shared_building_slots = 3
+							add_offsite_building = {
+									type = arms_factory
+									level = 2
+								}
+							add_offsite_building = {
+									type = industrial_complex
+									level = 1
+								}
+						}
+				}
+			ai_will_do = {
+					factor = 90
+				}
+
 	}
 	focus = {
 		id = SND_Nationalization_of_private_enterprises
@@ -510,16 +846,16 @@ focus_tree = {
 		}
 		x = 24
 		y = 8
-		ai_will_do = {
-			factor = 90
-		}
-		completion_reward = {
-			swap_ideas = {
-    			remove_idea = A_divided_industry_1
-    			add_idea = A_divided_industry_2
-			}
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
+			ai_will_do = {
+					factor = 90
+				}
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = A_divided_industry_1
+							add_idea = A_divided_industry_2
+						}
+				}
+
 	}
 	focus = {
 		id = SND_Construction_committee
@@ -531,16 +867,16 @@ focus_tree = {
 		}
 		x = 27
 		y = 9
-		ai_will_do = {
-			factor = 90
-		}
-		completion_reward = {
-			add_timed_idea = {
-    			idea = SND_Construction_committee
-    			days = 365
-			}
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
+			ai_will_do = {
+					factor = 90
+				}
+			completion_reward = {
+					add_timed_idea = {
+							idea = SND_Construction_committee
+							days = 365
+						}
+				}
+
 	}
 	focus = {
 		id = SND_Inviting_Investors
@@ -551,16 +887,16 @@ focus_tree = {
 		}
 		x = 25
 		y = 9
-		ai_will_do = {
-			factor = 90
-		}
-		completion_reward = {
-			swap_ideas = {
-    			remove_idea = A_divided_industry_2
-    			add_idea = A_divided_industry_3
-			}
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
+			ai_will_do = {
+					factor = 90
+				}
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = A_divided_industry_2
+							add_idea = A_divided_industry_3
+						}
+				}
+
 	}
 	focus = {
 		id = SND_Mine_development
@@ -574,22 +910,22 @@ focus_tree = {
 		}
 		x = 26
 		y = 10
-		ai_will_do = {
-			factor = 90
-		}
-		completion_reward = {
-			add_resource = {
-    			type = steel
-    			amount = 14
-    			state = 821
-			}
-			add_resource = {
-    			type = steel
-    			amount = 11
-    			state = 597
-			}
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
+			ai_will_do = {
+					factor = 90
+				}
+			completion_reward = {
+					add_resource = {
+							type = steel
+							amount = 14
+							state = 821
+						}
+					add_resource = {
+							type = steel
+							amount = 11
+							state = 597
+						}
+				}
+
 	}
 	focus = {
 		id = SND_New_city_construction
@@ -609,6 +945,75 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 10
 		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
+
+	}
+	focus = {
+		id = SND_ambulance_bei
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SND_Army_training_beiyang
+		}
+		x = 32
+		y = 7
+		ai_will_do = {
+			factor = 90
+		}
+		completion_reward = {
+			add_political_power = 10
+		}
+	}
+	focus = {
+		id = SND_ambulance_CHI
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SND_Army_training_kuomintang
+		}
+		x = 42
+		y = 7
+		ai_will_do = {
+			factor = 90
+		}
+		completion_reward = {
+			add_political_power = 10
+		}
+	}
+	focus = {
+		id = SND_kuomintang_trading_Army
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SND_Army_training_kuomintang
+		}
+		prerequisite = {
+			focus = SND_infantry_tree
+		}
+		x = 40
+		y = 8
+		ai_will_do = {
+			factor = 90
+		}
+		completion_reward = {
+			add_political_power = 10
+		}
+	}
+	focus = {
+		id = SND_Fire-breathing_dragon
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = SND_kuomintang_trading_Army
+			focus = SND_Artillery_division
+			focus = SND_Cavalry_division
+		}
+		x = 37
+		y = 9
+		ai_will_do = {
+			factor = 90
+		}
+		completion_reward = {
+			add_political_power = 10
+		}
 	}
 }
