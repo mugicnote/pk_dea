@@ -15,7 +15,7 @@ focus_tree = {
 	focus = {
 		id = SND_hanfuju_administration
 		icon = GFX_SND_Hanfuju_Administration
-		cost = 10.00
+		cost = 5.00
 		x = 20
 		y = 2
 		ai_will_do = {
@@ -28,7 +28,7 @@ focus_tree = {
 	focus = {
 		id = SND_diplomacy_reform
 		icon = GFX_SND_diplomacy_reform
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = SND_hanfuju_administration
 		}
@@ -45,7 +45,7 @@ focus_tree = {
 	focus = {
 		id = SND_political_reform
 		icon = GFX_SND_political_reform
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = SND_hanfuju_administration
 		}
@@ -62,7 +62,7 @@ focus_tree = {
 	focus = {
 		id = SND_construction_reform
 		icon = GFX_SND_construction_reform
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = SND_hanfuju_administration
 		}
@@ -79,7 +79,7 @@ focus_tree = {
 	focus = {
 		id = SND_weihai_reform
 		icon = GFX_SND_weihai_reform
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = SND_construction_reform
 		}
@@ -102,7 +102,7 @@ focus_tree = {
 	focus = {
 		id = SND_tsinan_reform
 		icon = GFX_SND_tsinan_reform
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = SND_construction_reform
 		}
@@ -125,7 +125,7 @@ focus_tree = {
 	focus = {
 		id = SND_Shandong_Infrastructure
 		icon = GFX_SND_Shandong_Infrastructure
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = SND_weihai_reform
 		}
@@ -162,7 +162,7 @@ focus_tree = {
 	focus = {
 		id = SND_tsingtao_reform
 		icon = GFX_SND_tsingtao_reform
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = SND_construction_reform
 		}
@@ -185,7 +185,7 @@ focus_tree = {
 	focus = {
 		id = SND_shandong_arms_Factory
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = SND_weihai_reform
 		}
@@ -225,7 +225,7 @@ focus_tree = {
 	focus = {
 		id = SND_Hanfuju_Doctrine
 		icon = GFX_SND_Hanfuju_Doctrine
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = SND_shandong_arms_Factory
 		}
@@ -248,7 +248,7 @@ focus_tree = {
 	focus = {
 		id = SND_Hanpuji's_enterprise
 		icon = GFX_SND_Hanpuji's_enterprise
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = SND_Hanfuju_Doctrine
 		}
@@ -268,7 +268,7 @@ focus_tree = {
 	focus = {
 		id = SND_Weihai_Shipyard
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = SND_Hanfuju_Doctrine
 		}
@@ -294,7 +294,7 @@ focus_tree = {
 	focus = {
 		id = Qingdao_Shipyard
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = SND_Hanfuju_Doctrine
 		}
@@ -320,7 +320,7 @@ focus_tree = {
 	focus = {
 		id = SND_Factory_in_Jinan
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = Qingdao_Shipyard
 			focus = SND_Weihai_Shipyard
@@ -351,7 +351,7 @@ focus_tree = {
 	focus = {
 		id = SND_Land_reform
 		icon = GFX_SND_Land_reform
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = SND_Hanfuju_Doctrine
 		}
@@ -371,7 +371,7 @@ focus_tree = {
 	focus = {
 		id = SND_Land_survey
 		icon = GFX_SND_Land_survey
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = SND_Land_reform
 		}
@@ -391,7 +391,7 @@ focus_tree = {
 	focus = {
 		id = SND_Land_redistribution
 		icon = GFX_SND_Land_redistribution
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = SND_Land_survey
 		}
@@ -411,7 +411,7 @@ focus_tree = {
 	focus = {
 		id = SND_Military_reform
 		icon = GFX_SND_Military_reform
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = SND_hanfuju_administration
 		}
@@ -431,7 +431,7 @@ focus_tree = {
 	focus = {
 		id = SND_beiyang_army
 		icon = GFX_SND_beiyang_army
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = SND_Military_reform
 		}
@@ -455,7 +455,7 @@ focus_tree = {
 	focus = {
 		id = SND_Income_the_beiyang
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = SND_beiyang_army
 		}
@@ -471,7 +471,7 @@ focus_tree = {
 	focus = {
 		id = SND_Request_for_advisors_the_beiyang
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = SND_beiyang_army
 		}
@@ -487,7 +487,7 @@ focus_tree = {
 	focus = {
 		id = SND_Army_training_beiyang
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = SND_Request_for_advisors_the_beiyang
 		}
@@ -509,7 +509,7 @@ focus_tree = {
 	focus = {
 		id = SND_Cavalry_tree
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = SND_Army_training_beiyang
 		}
@@ -529,7 +529,7 @@ focus_tree = {
 	focus = {
 		id = SND_Cavalry_division
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = SND_Army_training_beiyang
 		}
@@ -548,7 +548,7 @@ focus_tree = {
 	focus = {
 		id = SND_Shandong_Army
 		icon = GFX_SND_Shandong_Army
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = SND_Military_reform
 		}
@@ -573,7 +573,7 @@ focus_tree = {
 	focus = {
 		id = SND_jinan_school
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = SND_Shandong_Army
 		}
@@ -589,7 +589,7 @@ focus_tree = {
 	focus = {
 		id = SND_Increased_armament
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = SND_jinan_school
 		}
@@ -633,7 +633,7 @@ focus_tree = {
 	focus = {
 		id = SND_New_officer
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = SND_Shandong_Army
 		}
@@ -652,7 +652,7 @@ focus_tree = {
 	focus = {
 		id = SND_Total_purchase
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = SND_jinan_school
 		}
@@ -671,7 +671,7 @@ focus_tree = {
 	focus = {
 		id = SND_Canvas_research
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = SND_New_officer
 		}
@@ -691,7 +691,7 @@ focus_tree = {
 	focus = {
 		id = SND_Army_training
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = SND_Total_purchase
 		}
@@ -717,7 +717,7 @@ focus_tree = {
 	focus = {
 		id = SND_ambulance
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = SND_Total_purchase
 		}
@@ -743,7 +743,7 @@ focus_tree = {
 	focus = {
 		id = SND_Artillery_division
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = SND_ambulance
 		}
@@ -770,7 +770,7 @@ focus_tree = {
 	focus = {
 		id = SND_kuomintang_army
 		icon = GFX_SND_kuomintang_Army
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = SND_Military_reform
 		}
@@ -797,7 +797,7 @@ focus_tree = {
 	focus = {
 		id = SND_Request_for_advisors_from_the_kuomintang
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = SND_kuomintang_army
 		}
@@ -813,7 +813,7 @@ focus_tree = {
 	focus = {
 		id = SND_Income_the_kuomintang
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = SND_kuomintang_army
 		}
@@ -829,7 +829,7 @@ focus_tree = {
 	focus = {
 		id = SND_Army_training_kuomintang
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = SND_Request_for_advisors_from_the_kuomintang
 		}
@@ -851,7 +851,7 @@ focus_tree = {
 	focus = {
 		id = SND_infantry_tree
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = SND_Army_training_kuomintang
 		}
@@ -871,7 +871,7 @@ focus_tree = {
 	focus = {
 		id = SND_Linyi_in_Factory
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = Qingdao_Shipyard
 			focus = SND_Weihai_Shipyard
@@ -905,7 +905,7 @@ focus_tree = {
 	focus = {
 		id = SND_Nationalization_of_private_enterprises
 		icon = GFX_SND_Nationalization_of_private_enterprises
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = SND_Hanpuji's_enterprise
 		}
@@ -925,7 +925,7 @@ focus_tree = {
 	focus = {
 		id = SND_Construction_committee
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = SND_Factory_in_Jinan
 			focus = SND_Linyi_in_Factory
@@ -946,7 +946,7 @@ focus_tree = {
 	focus = {
 		id = SND_Inviting_Investors
 		icon = GFX_SND_Inviting_Investors
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = SND_Nationalization_of_private_enterprises
 		}
@@ -966,7 +966,7 @@ focus_tree = {
 	focus = {
 		id = SND_Mine_development
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = SND_Inviting_Investors
 		}
@@ -995,7 +995,7 @@ focus_tree = {
 	focus = {
 		id = SND_New_city_construction
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = SND_Construction_committee
 		}
@@ -1015,7 +1015,7 @@ focus_tree = {
 	focus = {
 		id = SND_ambulance_bei
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = SND_Army_training_beiyang
 		}
@@ -1038,7 +1038,7 @@ focus_tree = {
 	focus = {
 		id = SND_ambulance_CHI
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = SND_Army_training_kuomintang
 		}
@@ -1061,7 +1061,7 @@ focus_tree = {
 	focus = {
 		id = SND_kuomintang_trading_Army
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = SND_Army_training_kuomintang
 		}
@@ -1080,7 +1080,7 @@ focus_tree = {
 	focus = {
 		id = SND_Doctrine_Research_Institute
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = SND_Artillery_division
 		}
@@ -1100,7 +1100,7 @@ focus_tree = {
 	focus = {
 		id = SND_Fire-breathing_dragon
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = SND_Doctrine_Research_Institute
 			focus = SND_The_lesson_of_the_northern_march
@@ -1122,7 +1122,7 @@ focus_tree = {
 	focus = {
 		id = SND_Gun_arsenal_beiyang
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = SND_Income_the_beiyang
 		}
@@ -1165,7 +1165,7 @@ focus_tree = {
 	focus = {
 		id = SND_Gun_arsenal_kuomintang
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = SND_Income_the_kuomintang
 		}
@@ -1208,7 +1208,7 @@ focus_tree = {
 	focus = {
 		id = SND_fengtian_general
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = SND_ambulance_bei
 		}
@@ -1224,7 +1224,7 @@ focus_tree = {
 	focus = {
 		id = SND_kuomintang_general
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = SND_ambulance_CHI
 		}
@@ -1240,7 +1240,7 @@ focus_tree = {
 	focus = {
 		id = SND_The_lesson_of_the_northern_march
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = SND_kuomintang_general
 		}
@@ -1262,7 +1262,7 @@ focus_tree = {
 	focus = {
 		id = SND_Wenskys_Legacy
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
 			focus = SND_fengtian_general
 		}
