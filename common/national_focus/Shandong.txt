@@ -227,7 +227,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SND_Hanpuji's_enterprise
-		icon = GFX_goal_unknown
+		icon = GFX_SND_Hanpuji's_enterprise
 		cost = 10.00
 		prerequisite = {
 			focus = SND_Hanfuju_Doctrine
@@ -392,7 +392,10 @@ focus_tree = {
 			factor = 90
 		}
 		completion_reward = {
-			add_political_power = 10
+			swap_ideas = {
+    			remove_idea = Divided_army
+    			add_idea = Divided_army_1
+			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
@@ -497,7 +500,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SND_Nationalization_of_private_enterprises
-		icon = GFX_goal_unknown
+		icon = GFX_SND_Nationalization_of_private_enterprises
 		cost = 10.00
 		prerequisite = {
 			focus = SND_Hanpuji's_enterprise
@@ -538,7 +541,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SND_Inviting_Investors
-		icon = GFX_goal_unknown
+		icon = GFX_SND_Inviting_Investors
 		cost = 10.00
 		prerequisite = {
 			focus = SND_Nationalization_of_private_enterprises

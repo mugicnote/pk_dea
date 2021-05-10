@@ -240,3 +240,53 @@ ideas = {
             }
         }
     }
+#분열된 군대
+    country = {
+        
+        Divided_army = { 
+
+            allowed = {
+                original_tag = SND
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = Divided_army
+
+            removal_cost = -1
+            
+            modifier = {
+                army_defence_factor = -0.6
+                army_attack_factor = -0.6
+                army_speed_factor = -0.3
+                army_org_factor = -0.3
+            }
+        }
+    }
+#분열된 군대 - 1단계 하락
+    country = {
+        
+        Divided_army_1 = { 
+
+            allowed = {
+                original_tag = SND
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = Divided_army
+
+            removal_cost = -1
+            
+            modifier = {
+                army_defence_factor = -0.5
+                army_attack_factor = -0.5
+                army_speed_factor = -0.25
+                army_org_factor = -0.25
+            }
+        }
+    }

@@ -68,4 +68,16 @@ spriteTypes = {
 		name = "GFX_SND_Land_redistribution"
 		texturefile = "gfx/interface/goals/SND/SND_Land_redistribution.png"
 	}
+	SpriteType = {
+		name = "GFX_SND_Nationalization_of_private_enterprises"
+		texturefile = "gfx/interface/goals/SND/SND_Nationalization_of_private_enterprises.png"
+	}
+	SpriteType = {
+		name = "GFX_SND_Hanpuji's_enterprise"
+		texturefile = "gfx/interface/goals/SND/SND_Hanpuji's_enterprise.png"
+	}
+	SpriteType = {
+		name = "GFX_SND_Inviting_Investors"
+		texturefile = "gfx/interface/goals/SND/SND_Inviting_Investors.png"
+	}
 }

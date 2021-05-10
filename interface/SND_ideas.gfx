@@ -20,4 +20,12 @@ spriteTypes = {
 		name = "GFX_idea_Construction_committee"
 		texturefile = "gfx/interface/ideas/SND/Construction_committee.png"
 	}
+	spriteType = {
+		name = "GFX_idea_Hanfuju_Doctrine"
+		texturefile = "gfx/interface/ideas/SND/Hanfuju_Doctrine.png"
+	}
+	spriteType = {
+		name = "GFX_idea_Divided_army"
+		texturefile = "gfx/interface/ideas/SND/Divided_army.png"
+	}
 }
