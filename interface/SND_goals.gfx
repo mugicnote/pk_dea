@@ -80,4 +80,36 @@ spriteTypes = {
 		name = "GFX_SND_Inviting_Investors"
 		texturefile = "gfx/interface/goals/SND/SND_Inviting_Investors.png"
 	}
+	SpriteType = {
+		name = "GFX_SND_New_officer"
+		texturefile = "gfx/interface/goals/SND/SND_New_officer.png"
+	}
+	SpriteType = {
+		name = "GFX_SND_jinan_school"
+		texturefile = "gfx/interface/goals/SND/SND_jinan_school.png"
+	}
+	SpriteType = {
+		name = "GFX_SND_Canvas_research"
+		texturefile = "gfx/interface/goals/SND/SND_Canvas_research.png"
+	}
+	SpriteType = {
+		name = "GFX_SND_Increased_armament"
+		texturefile = "gfx/interface/goals/SND/SND_Increased_armament.png"
+	}
+	SpriteType = {
+		name = "GFX_SND_SND_Army_training"
+		texturefile = "gfx/interface/goals/SND/SND_Army_training.png"
+	}
+	SpriteType = {
+		name = "GFX_SND_ambulance"
+		texturefile = "gfx/interface/goals/SND/SND_ambulance.png"
+	}
+	SpriteType = {
+		name = "GFX_SND_Artillery_division"
+		texturefile = "gfx/interface/goals/SND/SND_Artillery_division.png"
+	}
+	SpriteType = {
+		name = "GFX_SND_Doctrine_Research_Institute"
+		texturefile = "gfx/interface/goals/SND/SND_Doctrine_Research_Institute.png"
+	}
 }

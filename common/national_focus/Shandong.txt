@@ -55,7 +55,7 @@ focus_tree = {
 			factor = 90
 		}
 		completion_reward = {
-			add_political_power = 10
+			remove_ideas = PRC_government_corruption
 		}
 
 	}
@@ -572,7 +572,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SND_jinan_school
-		icon = GFX_goal_unknown
+		icon = GFX_SND_jinan_school
 		cost = 5.00
 		prerequisite = {
 			focus = SND_Shandong_Army
@@ -588,7 +588,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SND_Increased_armament
-		icon = GFX_goal_unknown
+		icon = GFX_SND_Increased_armament
 		cost = 5.00
 		prerequisite = {
 			focus = SND_jinan_school
@@ -632,7 +632,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SND_New_officer
-		icon = GFX_goal_unknown
+		icon = GFX_SND_New_officer
 		cost = 5.00
 		prerequisite = {
 			focus = SND_Shandong_Army
@@ -670,7 +670,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SND_Canvas_research
-		icon = GFX_goal_unknown
+		icon = GFX_SND_Canvas_research
 		cost = 5.00
 		prerequisite = {
 			focus = SND_New_officer
@@ -690,7 +690,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SND_Army_training
-		icon = GFX_goal_unknown
+		icon = GFX_SND_Army_training
 		cost = 5.00
 		prerequisite = {
 			focus = SND_Total_purchase
@@ -716,7 +716,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SND_ambulance
-		icon = GFX_goal_unknown
+		icon = GFX_SND_ambulance
 		cost = 5.00
 		prerequisite = {
 			focus = SND_Total_purchase
@@ -742,7 +742,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SND_Artillery_division
-		icon = GFX_goal_unknown
+		icon = GFX_SND_Artillery_division
 		cost = 5.00
 		prerequisite = {
 			focus = SND_ambulance
@@ -1079,7 +1079,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SND_Doctrine_Research_Institute
-		icon = GFX_goal_unknown
+		icon = GFX_SND_Doctrine_Research_Institute
 		cost = 5.00
 		prerequisite = {
 			focus = SND_Artillery_division
