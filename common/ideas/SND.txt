@@ -389,7 +389,7 @@ ideas = {
 #군사고문 - 북양
     country = {
         
-        Military_Advisory_Group_beiyang = { 
+        Military_Advisory_Group_Zhili = { 
 
             allowed = {
                 original_tag = SND
@@ -399,7 +399,7 @@ ideas = {
                 always = yes
             }
 
-            picture = Military_Advisory_Group_beiyang
+            picture = Military_Advisory_Group_Zhili
 
             removal_cost = -1
             

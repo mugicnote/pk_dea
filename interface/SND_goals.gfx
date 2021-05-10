@@ -45,8 +45,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/SND/SND_Shandong_Army.png"
 	}
 	SpriteType = {
-		name = "GFX_SND_beiyang_army"
-		texturefile = "gfx/interface/goals/SND/SND_beiyang_army.png"
+		name = "GFX_SND_Zhili_army"
+		texturefile = "gfx/interface/goals/SND/SND_Zhili_army.png"
 	}
 	SpriteType = {
 		name = "GFX_SND_kuomintang_Army"

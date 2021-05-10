@@ -429,8 +429,8 @@ focus_tree = {
 
 	}
 	focus = {
-		id = SND_beiyang_army
-		icon = GFX_SND_beiyang_army
+		id = SND_Zhili_army
+		icon = GFX_SND_Zhili_army
 		cost = 5.00
 		prerequisite = {
 			focus = SND_Military_reform
@@ -453,11 +453,11 @@ focus_tree = {
 
 	}
 	focus = {
-		id = SND_Income_the_beiyang
+		id = SND_Income_the_Zhili
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = SND_beiyang_army
+			focus = SND_Zhili_army
 		}
 		x = 32
 		y = 5
@@ -469,11 +469,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = SND_Request_for_advisors_the_beiyang
+		id = SND_Request_for_advisors_the_Zhili
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = SND_beiyang_army
+			focus = SND_Zhili_army
 		}
 		x = 34
 		y = 5
@@ -481,18 +481,18 @@ focus_tree = {
 			factor = 90
 		}
 		completion_reward = {
-			add_ideas = Military_Advisory_Group_beiyang
+			add_ideas = Military_Advisory_Group_Zhili
 		}
 	}
 	focus = {
-		id = SND_Army_training_beiyang
+		id = SND_Army_training_Zhili
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = SND_Request_for_advisors_the_beiyang
+			focus = SND_Request_for_advisors_the_Zhili
 		}
 		prerequisite = {
-			focus = SND_Income_the_beiyang
+			focus = SND_Income_the_Zhili
 		}
 		x = 33
 		y = 6
@@ -511,7 +511,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = SND_Army_training_beiyang
+			focus = SND_Army_training_Zhili
 		}
 		x = 34
 		y = 7
@@ -531,7 +531,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = SND_Army_training_beiyang
+			focus = SND_Army_training_Zhili
 		}
 		prerequisite = {
 			focus = SND_Cavalry_tree
@@ -553,7 +553,7 @@ focus_tree = {
 			focus = SND_Military_reform
 		}
 		mutually_exclusive = {
-			focus = SND_beiyang_army
+			focus = SND_Zhili_army
 			focus = SND_kuomintang_army
 		}
 		x = 37
@@ -1013,14 +1013,14 @@ focus_tree = {
 
 	}
 	focus = {
-		id = SND_ambulance_bei
+		id = SND_ambulance_Zhili
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = SND_Army_training_beiyang
+			focus = SND_Army_training_Zhili
 		}
 		prerequisite = {
-			focus = SND_Gun_arsenal_beiyang
+			focus = SND_Gun_arsenal_Zhili
 		}
 		x = 32
 		y = 7
@@ -1120,11 +1120,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = SND_Gun_arsenal_beiyang
+		id = SND_Gun_arsenal_Zhili
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = SND_Income_the_beiyang
+			focus = SND_Income_the_Zhili
 		}
 		x = 31
 		y = 6
@@ -1206,11 +1206,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = SND_fengtian_general
+		id = SND_nanjing_general
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = SND_ambulance_bei
+			focus = SND_ambulance_Zhili
 		}
 		x = 32
 		y = 8
@@ -1264,7 +1264,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 5.00
 		prerequisite = {
-			focus = SND_fengtian_general
+			focus = SND_nanjing_general
 		}
 		prerequisite = {
 			focus = SND_Cavalry_division

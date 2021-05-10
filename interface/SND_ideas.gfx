@@ -41,8 +41,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/SND/SND_jinan_school.png"
 	}
 	spriteType = {
-		name = "GFX_idea_Military_Advisory_Group_beiyang"
-		texturefile = "gfx/interface/ideas/SND/Military_Advisory_Group_beiyang.png"
+		name = "GFX_idea_Military_Advisory_Group_Zhili"
+		texturefile = "gfx/interface/ideas/SND/Military_Advisory_Group_Zhili.png"
 	}
 	spriteType = {
 		name = "GFX_idea_Military_Advisory_Group_kuomintang"
