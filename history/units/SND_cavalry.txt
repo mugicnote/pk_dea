@@ -1,0 +1,71 @@
+﻿division_template = {
+	name = "cavalry Juntuán"				
+	division_names_group = ""
+									
+	regiments = {					
+		cavalry = { x = 0 y = 0 }	
+		cavalry = { x = 0 y = 1 }
+
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+	}
+
+	priority = 1
+}
+
+### OOB ###
+units = {
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location = 1069
+		division_template = "cavalry Juntuán"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location = 1069
+		division_template = "cavalry Juntuán"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location = 1069
+		division_template = "cavalry Juntuán"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location = 1069
+		division_template = "cavalry Juntuán"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location = 1069
+		division_template = "cavalry Juntuán"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+}
