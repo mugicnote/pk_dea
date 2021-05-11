@@ -79,7 +79,14 @@
  SND_Secure_trade_budget:0 "무역에산 확보"
  SND_touch_korea:0 "한국과의 접촉"
  SND_touch_italy:0 "이탈리아와 접촉"
-
+ SND_Connection_through_Germany:0 "독일을 통한 연줄"
+ SND_Consulate_visit:0 "영사관 방문"
+ SND_Meeting_in_Germany:0 "독일에서의 만남"
+ SND_Spy's_stopover:0 "스파이의 경유지"
+ SND_fengtain_military_information_sharing:0 "봉천의 군사정보 공유"
+ SND_Kuomintang_arms_smuggling:0 "국민당의 무기 밀수"
+ SND_An_escalating_crisis2:0 "고조되는 위기"
+ SND_Joining_the_Kuomintang:0 "국민당과의 합류"
 
  #국민정신
  Unstable_land_3:0 "감당못하는 토지"

@@ -12,7 +12,7 @@ focus_tree = {
 		id = SND_hanfuju_administration
 		icon = GFX_SND_Hanfuju_Administration
 		cost = 5.00
-		x = 18
+		x = 17
 		y = 2
 			ai_will_do = {
 					factor = 90
@@ -186,7 +186,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SND_hanfuju_administration
 		}
-		x = 18
+		x = 17
 		y = 3
 			ai_will_do = {
 					factor = 90
@@ -203,13 +203,14 @@ focus_tree = {
 		prerequisite = {
 			focus = SND_political_reform
 		}
-		x = 18
+		x = 17
 		y = 4
-		completion_reward = {
-			country_event = {
-				id = SND.0
-			}
-		}
+			completion_reward = {
+					country_event = {
+							id = SND.0
+						}
+				}
+
 	}
 	focus = {
 		id = SND_wu_feifu_handshake
@@ -221,13 +222,14 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = SND_zhang_kai_sheck_handshake
 		}
-		x = 14
+		x = 13
 		y = 5
-		completion_reward = {
-			country_event = {
-				id  = SND.1
-			}
-		}
+			completion_reward = {
+					country_event = {
+							id = SND.1
+						}
+				}
+
 	}
 	focus = {
 		id = SND_nanjing_visit
@@ -236,13 +238,14 @@ focus_tree = {
 		prerequisite = {
 			focus = SND_wu_feifu_handshake
 		}
-		x = 12
+		x = 11
 		y = 6
-		completion_reward = {
-			country_event = {
-				id  = SND.4
-			}
-		}
+			completion_reward = {
+					country_event = {
+							id = SND.4
+						}
+				}
+
 	}
 	focus = {
 		id = SND_Nanjing_Shandong_Union
@@ -251,13 +254,14 @@ focus_tree = {
 		prerequisite = {
 			focus = SND_nanjing_visit
 		}
-		x = 11
+		x = 10
 		y = 7
-		completion_reward = {
-			country_event = {
-				id = SND.5
-			}
-		}
+			completion_reward = {
+					country_event = {
+							id = SND.5
+						}
+				}
+
 	}
 	focus = {
 		id = SND_Nanjing_Jinan_Railway_Expansion
@@ -266,13 +270,14 @@ focus_tree = {
 		prerequisite = {
 			focus = SND_nanjing_visit
 		}
-		x = 13
+		x = 12
 		y = 7
-		completion_reward = {
-			country_event = {
-				id = SND.7
-			}
-		}
+			completion_reward = {
+					country_event = {
+							id = SND.7
+						}
+				}
+
 	}
 	focus = {
 		id = SND_wuhan_visit
@@ -281,13 +286,14 @@ focus_tree = {
 		prerequisite = {
 			focus = SND_wu_feifu_handshake
 		}
-		x = 16
+		x = 15
 		y = 6
-		completion_reward = {
-			country_event = {
-				id  = SND.3
-			}
-		}
+			completion_reward = {
+					country_event = {
+							id = SND.3
+						}
+				}
+
 	}
 	focus = {
 		id = SND_zhili_Exchange_reinforcement
@@ -296,13 +302,14 @@ focus_tree = {
 		prerequisite = {
 			focus = SND_wuhan_visit
 		}
-		x = 15
+		x = 14
 		y = 7
-		completion_reward = {
-			country_event = {
-				id = SND.11
-			}
-		}
+			completion_reward = {
+					country_event = {
+							id = SND.11
+						}
+				}
+
 	}
 	focus = {
 		id = SND_zhili_Mission_invitation
@@ -311,13 +318,14 @@ focus_tree = {
 		prerequisite = {
 			focus = SND_wuhan_visit
 		}
-		x = 17
+		x = 16
 		y = 7
-		completion_reward = {
-			country_event = {
-				id = SND.15
-			}
-		}
+			completion_reward = {
+					country_event = {
+							id = SND.15
+						}
+				}
+
 	}
 	focus = {
 		id = SND_zhang_kai_sheck_handshake
@@ -329,13 +337,100 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = SND_wu_feifu_handshake
 		}
-		x = 22
+		x = 21
 		y = 5
-		completion_reward = {
-			country_event = {
-				id = SND.2
-			}
-		}	
+			completion_reward = {
+					country_event = {
+							id = SND.2
+						}
+				}
+
+	}
+	focus = {
+		id = SND_Connection_through_Germany
+		icon = GFX_based_snd
+		cost = 5.00
+		prerequisite = {
+			focus = SND_zhang_kai_sheck_handshake
+		}
+		x = 19
+		y = 6
+
+	}
+	focus = {
+		id = SND_Consulate_visit
+		icon = GFX_based_snd
+		cost = 5.00
+		prerequisite = {
+			focus = SND_Connection_through_Germany
+		}
+		x = 18
+		y = 7
+
+	}
+	focus = {
+		id = SND_Meeting_in_Germany
+		icon = GFX_based_snd
+		cost = 5.00
+		prerequisite = {
+			focus = SND_Connection_through_Germany
+		}
+		x = 20
+		y = 7
+
+	}
+	focus = {
+		id = SND_Spy's_stopover
+		icon = GFX_based_snd
+		cost = 5.00
+		prerequisite = {
+			focus = SND_zhang_kai_sheck_handshake
+		}
+		x = 23
+		y = 6
+
+	}
+	focus = {
+		id = SND_fengtain_military_information_sharing
+		icon = GFX_based_snd
+		cost = 5.00
+		prerequisite = {
+			focus = SND_Spy's_stopover
+		}
+		x = 22
+		y = 7
+
+	}
+	focus = {
+		id = SND_Kuomintang_arms_smuggling
+		icon = GFX_based_snd
+		cost = 5.00
+		prerequisite = {
+			focus = SND_Spy's_stopover
+		}
+		x = 24
+		y = 7
+
+	}
+	focus = {
+		id = SND_An_escalating_crisis2
+		icon = GFX_based_snd
+		cost = 5.00
+		prerequisite = {
+			focus = SND_Meeting_in_Germany
+		}
+		prerequisite = {
+			focus = SND_Consulate_visit
+		}
+		prerequisite = {
+			focus = SND_fengtain_military_information_sharing
+		}
+		prerequisite = {
+			focus = SND_Kuomintang_arms_smuggling
+		}
+		x = 21
+		y = 8
+
 	}
 	focus = {
 		id = SND_construction_reform
@@ -1602,13 +1697,13 @@ focus_tree = {
 		prerequisite = {
 			focus = SND_Nanjing_Shandong_Union
 		}
-		completion_reward = {
-			country_event = {
-				id = SND.19
-			}
-		}
-		x = 14
+		x = 13
 		y = 8
+			completion_reward = {
+					country_event = {
+							id = SND.19
+						}
+				}
 
 	}
 	focus = {
@@ -1618,7 +1713,18 @@ focus_tree = {
 		prerequisite = {
 			focus = SND_An_escalating_crisis
 		}
-		x = 14
+		x = 13
+		y = 9
+
+	}
+	focus = {
+		id = SND_Joining_the_Kuomintang
+		icon = GFX_based_snd
+		cost = 5.00
+		prerequisite = {
+			focus = SND_An_escalating_crisis2
+		}
+		x = 21
 		y = 9
 
 	}
