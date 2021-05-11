@@ -57,6 +57,29 @@
  SND_Doctrine_Research_Institute:0 "교리 연구소 창설"
  SND_Wenskys_Legacy:0 "위안스카이의 유산"
  SND_The_lesson_of_the_northern_march:0 "북벌의 교훈"
+ SND_Zhang_Zulin_behind:0 "장쭤린의 등뒤에서"
+ SND_wu_feifu_handshake:0 "우페이푸와 손잡다"
+ SND_zhang_kai_sheck_handshake:0 "장제스와 손잡다"
+ SND_wuhan_visit:0 "우한 방문"
+ SND_zhili_Exchange_reinforcement:0 "직예와 교류 강화"
+ SND_zhili_Mission_invitation:0 "직예 사절단 초대"
+ SND_An_escalating_crisis:0 "고조되는 위기"
+ SND_Confluence_of_rebellion:0 "반란에 합류"
+ SND_nanjing_visit:0 "난징 방문"
+ SND_Nanjing_Jinan_Railway_Expansion:0 "난징-지난 철도 확장"
+ SND_Nanjing_Shandong_Union:0 "남경과의 협력 강화"
+ SND_germany_with_pull:0 "독일과의 연줄"
+ SNF_International_industrial_camouflage:0 "산동의 그림자속 산업"
+ SND_German_technology_introduction:0 "독일과의 기술협력"
+ SND_pull_with_the_United_States:0 "미국과의 연줄"
+ SND_US_port_investment:0 "미국의 항구 투자"
+ SNF_German_Consulate_in_Qingdao:0 "칭따오의 독일 영사관"
+ SND_Expansion_of_trade_with_the_US:0 "미국과의 무역 확대"
+ SND_Jinan_Qingdao_Railway_Expansion:0 "지난-칭따오 철도 확장"
+ SND_Secure_trade_budget:0 "무역에산 확보"
+ SND_touch_korea:0 "한국과의 접촉"
+ SND_touch_italy:0 "이탈리아와 접촉"
+
 
  #국민정신
  Unstable_land_3:0 "감당못하는 토지"
@@ -85,3 +108,85 @@
  #기타 
  SND_artillery:0 "산동의 포병"
  Armament_increase:0 "군비예산 증가"
+
+
+  ####정치이벤트####
+ SND.0.t:0 "음밀한 움직임"
+ SND.0.d:0 "음밀하게 위대하게"
+ SND.0.a:0 "음밀한 움직임"
+ SND.1.t:0 "직예와의 접촉"
+ SND.1.d:0 "ㅇ"
+ SND.1.a:0 "좋은 만남이 였다."
+ SND.2.t:0 "국민당과의 접촉"
+ SND.2.d:0 "ㅇ"
+ SND.2.a:0 "좋은 만남이 였다."
+
+ SND.3.t:0 "우한 방문"
+ SND.3.d:0 "ㅇ"
+ SND.3.a:0 "더욱 추진해 나가자"
+
+ SND.4.t:0 "난징 방문"
+ SND.4.d:0 "ㅇ"
+ SND.4.a:0 "더욱 추진해 나가자"
+
+ SND.5.t:0 "난징으로 떠나는 사절단"
+ SND.5.d:0 "ㅇ"
+ SND.5.a:0 "좋아"
+ SND.6.t:0 "산동에서 온 사절단"
+ SND.6.d:0 "ㅇ"
+ SND.6.a:0 "환대하여라"
+ SND.6.c:0 "봉천의 노예가 요기는 무슨일인가"
+ 
+ SND.7.t:0 "난징-지난 철도 제의안"
+ SND.7.d:0 "ㅇ"
+ SND.7.a:0 "좋아"
+ SND.7.c:0 "무슨 말도 안되는 소리"
+ 
+ SND.8.t:0 "산동의 협력 제의"
+ SND.8.d:0 "ㅇ"
+ SND.8.a:0 "환대하여라"
+ SND.8.c:0 "터무니 없구만"
+ SND.9.t:0 "승낙"
+ SND.9.d:0 "ㄴㅇㅅ"
+ SND.9.a:0 "믿고 있었어!"
+ SND.10.t:0 "거부"
+ SND.10.d:0 "흑ㄷ"
+ SND.10.a:0 "안타깝구만"
+
+ SND.11.t:0 "우한으로 떠나는 사절단"
+ SND.11.d:0 "흑ㄷ"
+ SND.11.a:0 "잘 다녀오시게"
+
+ SND.12.t:0 "산동에서 온 사절단"
+ SND.12.d:0 "흑ㄷ"
+ SND.12.a:0 "그들을 고이 대접해 드리게"
+ SND.12.c:0 "우리는 그들이 필요가 없다"
+
+ SND.13.t:0 "직예의 환영"
+ SND.13.d:0 "흑ㄷ"
+ SND.13.a:0 "감사한 일이구만"
+
+ SND.14.t:0 "직예의 거부"
+ SND.14.d:0 "흑ㄷ"
+ SND.14.a:0 "이제 어디로 가야할까"
+
+ SND.15.t:0 "직예의 장관들 초대"
+ SND.15.d:0 "흑ㄷ"
+ SND.15.a:0 "기다리고 있겠다."
+ 
+ SND.16.t:0 "산동에서의 초대장"
+ SND.16.d:0 "흑ㄷ"
+ SND.16.a:0 "동맹이 부르는데 가야지"
+ SND.16.c:0 "우리는 여유가 없어"
+
+ SND.17.a:0 "승낙"
+ SND.17.d:0 "산동에서의 초대장"
+ SND.17.t:0 "기다린다고 전해주게나"
+
+ SND.18.a:0 "거부"
+ SND.18.d:0 "산동에서의 초대장"
+ SND.18.t:0 "기대를 저버리는 군"
+
+ SND.19.a:0 "고조되는 위기"
+ SND.19.d:0 ""
+ SND.19.t:0 "드디어 때가 온건가"

@@ -131,4 +131,12 @@ spriteTypes = {#기본
 		name = "GFX_SND_Cavalry_tree"
 		texturefile = "gfx/interface/goals/SND/SND_Cavalry_tree.png"
 	}
+	SpriteType = {
+		name = "GFX_SND_nanjing_general"
+		texturefile = "gfx/interface/goals/SND/SND_nanjing_general.png"
+	}
+	SpriteType = {
+		name = "GFX_SND_kuomintang_general"
+		texturefile = "gfx/interface/goals/SND/SND_kuomintang_general.png"
+	}
 }

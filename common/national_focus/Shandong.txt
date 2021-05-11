@@ -7,23 +7,20 @@ focus_tree = {
 			tag = SND
 		}
 	}
-
 	default = no
-
-	#continuous_focus_position = { x = 20 y = 1600 }
-
 	focus = {
 		id = SND_hanfuju_administration
 		icon = GFX_SND_Hanfuju_Administration
 		cost = 5.00
-		x = 20
+		x = 18
 		y = 2
-		ai_will_do = {
-			factor = 90
-		}
-		completion_reward = {
-			add_political_power = 10
-		}
+			ai_will_do = {
+					factor = 90
+				}
+			completion_reward = {
+					add_political_power = 10
+				}
+
 	}
 	focus = {
 		id = SND_diplomacy_reform
@@ -32,14 +29,154 @@ focus_tree = {
 		prerequisite = {
 			focus = SND_hanfuju_administration
 		}
-		x = 15
+		x = 6
 		y = 3
-		ai_will_do = {
-			factor = 90
+			ai_will_do = {
+					factor = 90
+				}
+			completion_reward = {
+					add_political_power = 10
+				}
+
+	}
+	focus = {
+		id = SND_germany_with_pull
+		icon = GFX_based_SND
+		cost = 5.00
+		prerequisite = {
+			focus = SND_diplomacy_reform
 		}
-		completion_reward = {
-			add_political_power = 10
+		mutually_exclusive = {
+			focus = SND_pull_with_the_United_States
 		}
+		x = 4
+		y = 4
+
+	}
+	focus = {
+		id = SND_German_technology_introduction
+		icon = GFX_based_SND
+		cost = 5.00
+		prerequisite = {
+			focus = SND_germany_with_pull
+		}
+		x = 2
+		y = 5
+
+	}
+	focus = {
+		id = SNF_German_Consulate_in_Qingdao
+		icon = GFX_based_SND
+		cost = 5.00
+		prerequisite = {
+			focus = SND_germany_with_pull
+		}
+		x = 4
+		y = 5
+
+	}
+	focus = {
+		id = SND_touch_italy
+		icon = GFX_based_SND
+		cost = 5.00
+		prerequisite = {
+			focus = SNF_German_Consulate_in_Qingdao
+		}
+		prerequisite = {
+			focus = SND_German_technology_introduction
+		}
+		x = 3
+		y = 6
+
+	}
+	focus = {
+		id = SND_pull_with_the_United_States
+		icon = GFX_based_SND
+		cost = 5.00
+		prerequisite = {
+			focus = SND_diplomacy_reform
+		}
+		mutually_exclusive = {
+			focus = SND_germany_with_pull
+		}
+		x = 8
+		y = 4
+
+	}
+	focus = {
+		id = SNF_International_industrial_camouflage
+		icon = GFX_based_SND
+		cost = 5.00
+		prerequisite = {
+			focus = SND_germany_with_pull
+			focus = SND_pull_with_the_United_States
+		}
+		x = 6
+		y = 5
+
+	}
+	focus = {
+		id = SND_Jinan_Qingdao_Railway_Expansion
+		icon = GFX_based_SND
+		cost = 5.00
+		prerequisite = {
+			focus = SNF_German_Consulate_in_Qingdao
+		}
+		prerequisite = {
+			focus = SNF_International_industrial_camouflage
+		}
+		x = 5
+		y = 6
+
+	}
+	focus = {
+		id = SND_US_port_investment
+		icon = GFX_based_SND
+		cost = 5.00
+		prerequisite = {
+			focus = SND_pull_with_the_United_States
+		}
+		x = 8
+		y = 5
+
+	}
+	focus = {
+		id = SND_Secure_trade_budget
+		icon = GFX_based_SND
+		cost = 5.00
+		prerequisite = {
+			focus = SNF_International_industrial_camouflage
+		}
+		prerequisite = {
+			focus = SND_US_port_investment
+		}
+		x = 7
+		y = 6
+
+	}
+	focus = {
+		id = SND_Expansion_of_trade_with_the_US
+		icon = GFX_based_SND
+		cost = 5.00
+		prerequisite = {
+			focus = SND_pull_with_the_United_States
+		}
+		x = 10
+		y = 5
+
+	}
+	focus = {
+		id = SND_touch_korea
+		icon = GFX_based_SND
+		cost = 5.00
+		prerequisite = {
+			focus = SND_US_port_investment
+		}
+		prerequisite = {
+			focus = SND_Expansion_of_trade_with_the_US
+		}
+		x = 9
+		y = 6
 
 	}
 	focus = {
@@ -49,15 +186,156 @@ focus_tree = {
 		prerequisite = {
 			focus = SND_hanfuju_administration
 		}
-		x = 20
+		x = 18
 		y = 3
-		ai_will_do = {
-			factor = 90
-		}
-		completion_reward = {
-			remove_ideas = PRC_government_corruption
-		}
+			ai_will_do = {
+					factor = 90
+				}
+			completion_reward = {
+					remove_ideas = PRC_government_corruption
+				}
 
+	}
+	focus = {
+		id = SND_Zhang_Zulin_behind
+		icon = GFX_based_SND
+		cost = 5.00
+		prerequisite = {
+			focus = SND_political_reform
+		}
+		x = 18
+		y = 4
+		completion_reward = {
+			country_event = {
+				id = SND.0
+			}
+		}
+	}
+	focus = {
+		id = SND_wu_feifu_handshake
+		icon = GFX_based_SND
+		cost = 5.00
+		prerequisite = {
+			focus = SND_Zhang_Zulin_behind
+		}
+		mutually_exclusive = {
+			focus = SND_zhang_kai_sheck_handshake
+		}
+		x = 14
+		y = 5
+		completion_reward = {
+			country_event = {
+				id  = SND.1
+			}
+		}
+	}
+	focus = {
+		id = SND_nanjing_visit
+		icon = GFX_based_SND
+		cost = 5.00
+		prerequisite = {
+			focus = SND_wu_feifu_handshake
+		}
+		x = 12
+		y = 6
+		completion_reward = {
+			country_event = {
+				id  = SND.4
+			}
+		}
+	}
+	focus = {
+		id = SND_Nanjing_Shandong_Union
+		icon = GFX_based_SND
+		cost = 5.00
+		prerequisite = {
+			focus = SND_nanjing_visit
+		}
+		x = 11
+		y = 7
+		completion_reward = {
+			country_event = {
+				id = SND.5
+			}
+		}
+	}
+	focus = {
+		id = SND_Nanjing_Jinan_Railway_Expansion
+		icon = GFX_based_SND
+		cost = 5.00
+		prerequisite = {
+			focus = SND_nanjing_visit
+		}
+		x = 13
+		y = 7
+		completion_reward = {
+			country_event = {
+				id = SND.7
+			}
+		}
+	}
+	focus = {
+		id = SND_wuhan_visit
+		icon = GFX_based_SND
+		cost = 5.00
+		prerequisite = {
+			focus = SND_wu_feifu_handshake
+		}
+		x = 16
+		y = 6
+		completion_reward = {
+			country_event = {
+				id  = SND.3
+			}
+		}
+	}
+	focus = {
+		id = SND_zhili_Exchange_reinforcement
+		icon = GFX_based_SND
+		cost = 5.00
+		prerequisite = {
+			focus = SND_wuhan_visit
+		}
+		x = 15
+		y = 7
+		completion_reward = {
+			country_event = {
+				id = SND.11
+			}
+		}
+	}
+	focus = {
+		id = SND_zhili_Mission_invitation
+		icon = GFX_based_SND
+		cost = 5.00
+		prerequisite = {
+			focus = SND_wuhan_visit
+		}
+		x = 17
+		y = 7
+		completion_reward = {
+			country_event = {
+				id = SND.15
+			}
+		}
+	}
+	focus = {
+		id = SND_zhang_kai_sheck_handshake
+		icon = GFX_based_SND
+		cost = 5.00
+		prerequisite = {
+			focus = SND_Zhang_Zulin_behind
+		}
+		mutually_exclusive = {
+			focus = SND_wu_feifu_handshake
+		}
+		x = 22
+		y = 5
+		completion_reward = {
+			country_event = {
+				id = SND.2
+			}
+		}	
 	}
 	focus = {
 		id = SND_construction_reform
@@ -66,14 +344,14 @@ focus_tree = {
 		prerequisite = {
 			focus = SND_hanfuju_administration
 		}
-		x = 27
+		x = 29
 		y = 3
-		ai_will_do = {
-			factor = 90
-		}
-		completion_reward = {
-			add_political_power = 10
-		}
+			ai_will_do = {
+					factor = 90
+				}
+			completion_reward = {
+					add_political_power = 10
+				}
 
 	}
 	focus = {
@@ -83,7 +361,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SND_construction_reform
 		}
-		x = 25
+		x = 27
 		y = 4
 			ai_will_do = {
 					factor = 90
@@ -106,7 +384,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SND_construction_reform
 		}
-		x = 27
+		x = 29
 		y = 4
 			ai_will_do = {
 					factor = 90
@@ -132,7 +410,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SND_tsinan_reform
 		}
-		x = 26
+		x = 28
 		y = 5
 			ai_will_do = {
 					factor = 90
@@ -166,7 +444,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SND_construction_reform
 		}
-		x = 29
+		x = 31
 		y = 4
 			ai_will_do = {
 					factor = 90
@@ -192,7 +470,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SND_tsingtao_reform
 		}
-		x = 28
+		x = 30
 		y = 5
 			ai_will_do = {
 					factor = 90
@@ -232,7 +510,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SND_Shandong_Infrastructure
 		}
-		x = 27
+		x = 29
 		y = 6
 			ai_will_do = {
 					factor = 90
@@ -252,7 +530,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SND_Hanfuju_Doctrine
 		}
-		x = 24
+		x = 26
 		y = 7
 			ai_will_do = {
 					factor = 90
@@ -275,7 +553,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = Qingdao_Shipyard
 		}
-		x = 26
+		x = 28
 		y = 7
 			ai_will_do = {
 					factor = 90
@@ -301,7 +579,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = SND_Weihai_Shipyard
 		}
-		x = 28
+		x = 30
 		y = 7
 			ai_will_do = {
 					factor = 90
@@ -328,7 +606,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = SND_Linyi_in_Factory
 		}
-		x = 28
+		x = 30
 		y = 8
 			ai_will_do = {
 					factor = 90
@@ -355,7 +633,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SND_Hanfuju_Doctrine
 		}
-		x = 30
+		x = 32
 		y = 7
 			ai_will_do = {
 					factor = 90
@@ -375,7 +653,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SND_Land_reform
 		}
-		x = 30
+		x = 32
 		y = 8
 			ai_will_do = {
 					factor = 90
@@ -395,7 +673,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SND_Land_survey
 		}
-		x = 29
+		x = 31
 		y = 9
 			ai_will_do = {
 					factor = 90
@@ -415,7 +693,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SND_hanfuju_administration
 		}
-		x = 37
+		x = 39
 		y = 3
 			ai_will_do = {
 					factor = 90
@@ -438,7 +716,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = SND_Shandong_Army
 		}
-		x = 33
+		x = 35
 		y = 4
 			ai_will_do = {
 					factor = 90
@@ -459,14 +737,59 @@ focus_tree = {
 		prerequisite = {
 			focus = SND_Zhili_army
 		}
-		x = 32
+		x = 34
 		y = 5
-		ai_will_do = {
-			factor = 90
+			ai_will_do = {
+					factor = 90
+				}
+			completion_reward = {
+					add_political_power = 10
+				}
+
+	}
+	focus = {
+		id = SND_Gun_arsenal_Zhili
+		icon = GFX_based_SND
+		cost = 5.00
+		prerequisite = {
+			focus = SND_Income_the_Zhili
 		}
-		completion_reward = {
-			add_political_power = 10
-		}
+		x = 33
+		y = 6
+			ai_will_do = {
+					factor = 90
+				}
+			completion_reward = {
+					597 = {
+							add_extra_state_shared_building_slots = 1
+							add_offsite_building = {
+									type = arms_factory
+									level = 1
+								}
+						}
+					821 = {
+							add_extra_state_shared_building_slots = 1
+							add_offsite_building = {
+									type = arms_factory
+									level = 1
+								}
+						}
+					743 = {
+							add_extra_state_shared_building_slots = 1
+							add_offsite_building = {
+									type = arms_factory
+									level = 1
+								}
+						}
+					822 = {
+							add_extra_state_shared_building_slots = 1
+							add_offsite_building = {
+									type = arms_factory
+									level = 1
+								}
+						}
+				}
+
 	}
 	focus = {
 		id = SND_Request_for_advisors_the_Zhili
@@ -475,14 +798,15 @@ focus_tree = {
 		prerequisite = {
 			focus = SND_Zhili_army
 		}
-		x = 34
+		x = 36
 		y = 5
-		ai_will_do = {
-			factor = 90
-		}
-		completion_reward = {
-			add_ideas = Military_Advisory_Group_Zhili
-		}
+			ai_will_do = {
+					factor = 90
+				}
+			completion_reward = {
+					add_ideas = Military_Advisory_Group_Zhili
+				}
+
 	}
 	focus = {
 		id = SND_Army_training_Zhili
@@ -494,17 +818,18 @@ focus_tree = {
 		prerequisite = {
 			focus = SND_Income_the_Zhili
 		}
-		x = 33
+		x = 35
 		y = 6
-		ai_will_do = {
-			factor = 90
-		}
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = Divided_army_1
-				add_idea = Divided_army_2
-			}
-		}
+			ai_will_do = {
+					factor = 90
+				}
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = Divided_army_1
+							add_idea = Divided_army_2
+						}
+				}
+
 	}
 	focus = {
 		id = SND_Cavalry_tree
@@ -513,18 +838,19 @@ focus_tree = {
 		prerequisite = {
 			focus = SND_Army_training_Zhili
 		}
-		x = 34
+		x = 36
 		y = 7
-		ai_will_do = {
-			factor = 90
-		}
-		completion_reward = {
-			add_tech_bonus = {
-				bonus = 1
-				uses = 2
-				category = cat_grand_battle_plan
-			}
-		}
+			ai_will_do = {
+					factor = 90
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							bonus = 1
+							uses = 2
+							category = cat_grand_battle_plan
+						}
+				}
+
 	}
 	focus = {
 		id = SND_Cavalry_division
@@ -536,14 +862,15 @@ focus_tree = {
 		prerequisite = {
 			focus = SND_Cavalry_tree
 		}
-		x = 34
+		x = 36
 		y = 8
-		ai_will_do = {
-			factor = 90
-		}
-		completion_reward = {
-			load_oob = "SND_cavalry"
-		}
+			ai_will_do = {
+					factor = 90
+				}
+			completion_reward = {
+					load_oob = "SND_cavalry"
+				}
+
 	}
 	focus = {
 		id = SND_Shandong_Army
@@ -556,7 +883,7 @@ focus_tree = {
 			focus = SND_Zhili_army
 			focus = SND_kuomintang_army
 		}
-		x = 37
+		x = 39
 		y = 4
 			ai_will_do = {
 					factor = 90
@@ -577,14 +904,15 @@ focus_tree = {
 		prerequisite = {
 			focus = SND_Shandong_Army
 		}
-		x = 36
+		x = 38
 		y = 5
-		ai_will_do = {
-			factor = 90
-		}
-		completion_reward = {
-			add_ideas = SND_jinan_school
-		}
+			ai_will_do = {
+					factor = 90
+				}
+			completion_reward = {
+					add_ideas = SND_jinan_school
+				}
+
 	}
 	focus = {
 		id = SND_Increased_armament
@@ -593,42 +921,43 @@ focus_tree = {
 		prerequisite = {
 			focus = SND_jinan_school
 		}
-		x = 35
+		x = 37
 		y = 6
-		ai_will_do = {
-			factor = 90
-		}
-		completion_reward = {
-			add_ideas = Armament_increase
-			597 = {
-				add_extra_state_shared_building_slots = 1
-				add_offsite_building = {
-					type = arms_factory
-					level = 1
+			ai_will_do = {
+					factor = 90
 				}
-			}
-			821 = {
-				add_extra_state_shared_building_slots = 1
-				add_offsite_building = {
-					type = arms_factory
-					level = 1
+			completion_reward = {
+					add_ideas = Armament_increase
+					597 = {
+							add_extra_state_shared_building_slots = 1
+							add_offsite_building = {
+									type = arms_factory
+									level = 1
+								}
+						}
+					821 = {
+							add_extra_state_shared_building_slots = 1
+							add_offsite_building = {
+									type = arms_factory
+									level = 1
+								}
+						}
+					743 = {
+							add_extra_state_shared_building_slots = 1
+							add_offsite_building = {
+									type = arms_factory
+									level = 1
+								}
+						}
+					822 = {
+							add_extra_state_shared_building_slots = 1
+							add_offsite_building = {
+									type = arms_factory
+									level = 1
+								}
+						}
 				}
-			}
-			743 = {
-				add_extra_state_shared_building_slots = 1
-				add_offsite_building = {
-					type = arms_factory
-					level = 1
-				}
-			}
-			822 = {
-				add_extra_state_shared_building_slots = 1
-				add_offsite_building = {
-					type = arms_factory
-					level = 1
-				}
-			}
-		}
+
 	}
 	focus = {
 		id = SND_New_officer
@@ -637,17 +966,18 @@ focus_tree = {
 		prerequisite = {
 			focus = SND_Shandong_Army
 		}
-		x = 38
+		x = 40
 		y = 5
-		ai_will_do = {
-			factor = 90
-		}
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = Divided_army_1
-				add_idea = Divided_army_2
-			}
-		}
+			ai_will_do = {
+					factor = 90
+				}
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = Divided_army_1
+							add_idea = Divided_army_2
+						}
+				}
+
 	}
 	focus = {
 		id = SND_Total_purchase
@@ -659,14 +989,15 @@ focus_tree = {
 		prerequisite = {
 			focus = SND_New_officer
 		}
-		x = 37
+		x = 39
 		y = 6
-		ai_will_do = {
-			factor = 90
-		}
-		completion_reward = {
-			add_political_power = 10
-		}
+			ai_will_do = {
+					factor = 90
+				}
+			completion_reward = {
+					add_political_power = 10
+				}
+
 	}
 	focus = {
 		id = SND_Canvas_research
@@ -675,18 +1006,19 @@ focus_tree = {
 		prerequisite = {
 			focus = SND_New_officer
 		}
-		x = 39
+		x = 41
 		y = 6
-		ai_will_do = {
-			factor = 90
-		}
-		completion_reward = {
-			add_tech_bonus = {
-    			bonus = 1
-    			uses = 3
-    			category = Artillery
-			}
-		}
+			ai_will_do = {
+					factor = 90
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							bonus = 1
+							uses = 3
+							category = Artillery
+						}
+				}
+
 	}
 	focus = {
 		id = SND_Army_training
@@ -701,18 +1033,19 @@ focus_tree = {
 		prerequisite = {
 			focus = SND_Increased_armament
 		}
-		x = 38
+		x = 40
 		y = 7
-		ai_will_do = {
-			factor = 90
-		}
-		completion_reward = {
-			army_experience = 30
-			swap_ideas = {
-				remove_idea = Divided_army_2
-				add_idea = Divided_army_3
-			}
-		}
+			ai_will_do = {
+					factor = 90
+				}
+			completion_reward = {
+					army_experience = 30
+					swap_ideas = {
+							remove_idea = Divided_army_2
+							add_idea = Divided_army_3
+						}
+				}
+
 	}
 	focus = {
 		id = SND_ambulance
@@ -727,18 +1060,19 @@ focus_tree = {
 		prerequisite = {
 			focus = SND_Canvas_research
 		}
-		x = 36
+		x = 38
 		y = 7
-		ai_will_do = {
-			factor = 90
-		}
-		completion_reward = {
-			add_tech_bonus = {
-    			bonus = 3
-    			uses = 1
-    			category = hospital_tech
-			}
-		}
+			ai_will_do = {
+					factor = 90
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							bonus = 3
+							uses = 1
+							category = hospital_tech
+						}
+				}
+
 	}
 	focus = {
 		id = SND_Artillery_division
@@ -750,22 +1084,23 @@ focus_tree = {
 		prerequisite = {
 			focus = SND_Army_training
 		}
-		x = 37
+		x = 39
 		y = 8
-		ai_will_do = {
-			factor = 90
-		}
-		completion_reward = {
-			load_oob = "SND_artillery"
-			add_manpower = 10000
-			hidden_effect = {
-				add_equipment_to_stockpile = {
-    				type = artillery_equipment 
-    				amount = 300
-    				producer = SND
+			ai_will_do = {
+					factor = 90
 				}
-			}
-		}
+			completion_reward = {
+					load_oob = "SND_artillery"
+					add_manpower = 10000
+					hidden_effect = {
+							add_equipment_to_stockpile = {
+									type = artillery_equipment
+									amount = 300
+									producer = SND
+								}
+						}
+				}
+
 	}
 	focus = {
 		id = SND_kuomintang_army
@@ -777,7 +1112,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = SND_Shandong_Army
 		}
-		x = 41
+		x = 43
 		y = 4
 			ai_will_do = {
 					factor = 90
@@ -801,14 +1136,15 @@ focus_tree = {
 		prerequisite = {
 			focus = SND_kuomintang_army
 		}
-		x = 40
+		x = 42
 		y = 5
-		ai_will_do = {
-			factor = 90
-		}
-		completion_reward = {
-			add_ideas = Military_Advisory_Group_kuomintang
-		}
+			ai_will_do = {
+					factor = 90
+				}
+			completion_reward = {
+					add_ideas = Military_Advisory_Group_kuomintang
+				}
+
 	}
 	focus = {
 		id = SND_Income_the_kuomintang
@@ -817,14 +1153,15 @@ focus_tree = {
 		prerequisite = {
 			focus = SND_kuomintang_army
 		}
-		x = 42
+		x = 44
 		y = 5
-		ai_will_do = {
-			factor = 90
-		}
-		completion_reward = {
-			add_political_power = 10
-		}
+			ai_will_do = {
+					factor = 90
+				}
+			completion_reward = {
+					add_political_power = 10
+				}
+
 	}
 	focus = {
 		id = SND_Army_training_kuomintang
@@ -836,17 +1173,18 @@ focus_tree = {
 		prerequisite = {
 			focus = SND_Income_the_kuomintang
 		}
-		x = 41
+		x = 43
 		y = 6
-		ai_will_do = {
-			factor = 90
-		}
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = Divided_army_1
-				add_idea = Divided_army_2
-			}
-		}
+			ai_will_do = {
+					factor = 90
+				}
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = Divided_army_1
+							add_idea = Divided_army_2
+						}
+				}
+
 	}
 	focus = {
 		id = SND_infantry_tree
@@ -855,18 +1193,147 @@ focus_tree = {
 		prerequisite = {
 			focus = SND_Army_training_kuomintang
 		}
-		x = 40
+		x = 42
 		y = 7
-		ai_will_do = {
-			factor = 90
+			ai_will_do = {
+					factor = 90
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							bonus = 1
+							uses = 2
+							category = cat_mass_assault
+						}
+				}
+
+	}
+	focus = {
+		id = SND_kuomintang_trading_Army
+		icon = GFX_based_SND
+		cost = 5.00
+		prerequisite = {
+			focus = SND_Army_training_kuomintang
 		}
-		completion_reward = {
-			add_tech_bonus = {
-				bonus = 1
-				uses = 2
-				category = cat_mass_assault
-			}
+		prerequisite = {
+			focus = SND_infantry_tree
 		}
+		x = 42
+		y = 8
+			ai_will_do = {
+					factor = 90
+				}
+			completion_reward = {
+					load_oob = "SND_infantry"
+				}
+
+	}
+	focus = {
+		id = SND_Gun_arsenal_kuomintang
+		icon = GFX_based_SND
+		cost = 5.00
+		prerequisite = {
+			focus = SND_Income_the_kuomintang
+		}
+		x = 45
+		y = 6
+			ai_will_do = {
+					factor = 90
+				}
+			completion_reward = {
+					597 = {
+							add_extra_state_shared_building_slots = 1
+							add_offsite_building = {
+									type = arms_factory
+									level = 1
+								}
+						}
+					743 = {
+							add_extra_state_shared_building_slots = 1
+							add_offsite_building = {
+									type = arms_factory
+									level = 1
+								}
+						}
+					822 = {
+							add_extra_state_shared_building_slots = 1
+							add_offsite_building = {
+									type = arms_factory
+									level = 1
+								}
+						}
+					821 = {
+							add_extra_state_shared_building_slots = 1
+							add_offsite_building = {
+									type = arms_factory
+									level = 1
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = SND_ambulance_CHI
+		icon = GFX_based_SND
+		cost = 5.00
+		prerequisite = {
+			focus = SND_Army_training_kuomintang
+		}
+		prerequisite = {
+			focus = SND_Gun_arsenal_kuomintang
+		}
+		x = 44
+		y = 7
+			ai_will_do = {
+					factor = 90
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							bonus = 3
+							uses = 1
+							category = hospital_tech
+						}
+				}
+
+	}
+	focus = {
+		id = SND_kuomintang_general
+		icon = GFX_SND_kuomintang_general
+		cost = 5.00
+		prerequisite = {
+			focus = SND_ambulance_CHI
+		}
+		x = 44
+		y = 8
+			ai_will_do = {
+					factor = 90
+				}
+			completion_reward = {
+					add_manpower = 10000
+				}
+
+	}
+	focus = {
+		id = SND_The_lesson_of_the_northern_march
+		icon = GFX_based_SND
+		cost = 5.00
+		prerequisite = {
+			focus = SND_kuomintang_general
+		}
+		prerequisite = {
+			focus = SND_kuomintang_trading_Army
+		}
+		x = 43
+		y = 9
+			ai_will_do = {
+					factor = 90
+				}
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = Divided_army_2
+							add_idea = Divided_army_3
+						}
+				}
+
 	}
 	focus = {
 		id = SND_Linyi_in_Factory
@@ -879,7 +1346,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = SND_Factory_in_Jinan
 		}
-		x = 26
+		x = 28
 		y = 8
 			ai_will_do = {
 					factor = 90
@@ -909,7 +1376,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SND_Hanpuji's_enterprise
 		}
-		x = 24
+		x = 26
 		y = 8
 			ai_will_do = {
 					factor = 90
@@ -930,7 +1397,7 @@ focus_tree = {
 			focus = SND_Factory_in_Jinan
 			focus = SND_Linyi_in_Factory
 		}
-		x = 27
+		x = 29
 		y = 9
 			ai_will_do = {
 					factor = 90
@@ -950,7 +1417,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SND_Nationalization_of_private_enterprises
 		}
-		x = 25
+		x = 27
 		y = 9
 			ai_will_do = {
 					factor = 90
@@ -973,7 +1440,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SND_Construction_committee
 		}
-		x = 26
+		x = 28
 		y = 10
 			ai_will_do = {
 					factor = 90
@@ -1002,14 +1469,14 @@ focus_tree = {
 		prerequisite = {
 			focus = SND_Land_redistribution
 		}
-		x = 28
+		x = 30
 		y = 10
-		ai_will_do = {
-			factor = 90
-		}
-		completion_reward = {
-			add_political_power = 10
-		}
+			ai_will_do = {
+					factor = 90
+				}
+			completion_reward = {
+					add_political_power = 10
+				}
 
 	}
 	focus = {
@@ -1022,60 +1489,19 @@ focus_tree = {
 		prerequisite = {
 			focus = SND_Gun_arsenal_Zhili
 		}
-		x = 32
+		x = 34
 		y = 7
-		ai_will_do = {
-			factor = 90
-		}
-		completion_reward = {
-			add_tech_bonus = {
-    			bonus = 3
-    			uses = 1
-    			category = hospital_tech
-			}
-		}
-	}
-	focus = {
-		id = SND_ambulance_CHI
-		icon = GFX_based_SND
-		cost = 5.00
-		prerequisite = {
-			focus = SND_Army_training_kuomintang
-		}
-		prerequisite = {
-			focus = SND_Gun_arsenal_kuomintang
-		}
-		x = 42
-		y = 7
-		ai_will_do = {
-			factor = 90
-		}
-		completion_reward = {
-			add_tech_bonus = {
-    			bonus = 3
-    			uses = 1
-    			category = hospital_tech
-			}
-		}
-	}
-	focus = {
-		id = SND_kuomintang_trading_Army
-		icon = GFX_based_SND
-		cost = 5.00
-		prerequisite = {
-			focus = SND_Army_training_kuomintang
-		}
-		prerequisite = {
-			focus = SND_infantry_tree
-		}
-		x = 40
-		y = 8
-		ai_will_do = {
-			factor = 90
-		}
-		completion_reward = {
-			load_oob = "SND_infantry"
-		}
+			ai_will_do = {
+					factor = 90
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							bonus = 3
+							uses = 1
+							category = hospital_tech
+						}
+				}
+
 	}
 	focus = {
 		id = SND_Doctrine_Research_Institute
@@ -1084,18 +1510,19 @@ focus_tree = {
 		prerequisite = {
 			focus = SND_Artillery_division
 		}
-		x = 37
+		x = 39
 		y = 9
-		ai_will_do = {
-			factor = 90
-		}
-		completion_reward = {
-			add_tech_bonus = {
-				bonus = 1
-				uses = 2
-				category = cat_superior_firepower
-			}
-		}
+			ai_will_do = {
+					factor = 90
+				}
+			completion_reward = {
+					add_tech_bonus = {
+							bonus = 1
+							uses = 2
+							category = cat_superior_firepower
+						}
+				}
+
 	}
 	focus = {
 		id = SND_Fire-breathing_dragon
@@ -1106,158 +1533,35 @@ focus_tree = {
 			focus = SND_The_lesson_of_the_northern_march
 			focus = SND_Wenskys_Legacy
 		}
-		x = 37
+		x = 39
 		y = 10
-		ai_will_do = {
-			factor = 90
-		}
-		completion_reward = {
+			ai_will_do = {
+					factor = 90
+				}
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = Divided_army_3
+							add_idea = SND_Fire_breathing_dragon
+						}
+				}
 
-			swap_ideas = {
-				remove_idea = Divided_army_3
-				add_idea = SND_Fire_breathing_dragon
-			}
-		}
-	}
-	focus = {
-		id = SND_Gun_arsenal_Zhili
-		icon = GFX_based_SND
-		cost = 5.00
-		prerequisite = {
-			focus = SND_Income_the_Zhili
-		}
-		x = 31
-		y = 6
-		ai_will_do = {
-			factor = 90
-		}
-		completion_reward = {
-			597 = {
-				add_extra_state_shared_building_slots = 1
-				add_offsite_building = {
-					type = arms_factory
-					level = 1
-				}
-			}
-			821 = {
-				add_extra_state_shared_building_slots = 1
-				add_offsite_building = {
-					type = arms_factory
-					level = 1
-				}
-			}
-			743 = {
-				add_extra_state_shared_building_slots = 1
-				add_offsite_building = {
-					type = arms_factory
-					level = 1
-				}
-			}
-			822 = {
-				add_extra_state_shared_building_slots = 1
-				add_offsite_building = {
-					type = arms_factory
-					level = 1
-				}
-			}
-		}
-	}
-	focus = {
-		id = SND_Gun_arsenal_kuomintang
-		icon = GFX_based_SND
-		cost = 5.00
-		prerequisite = {
-			focus = SND_Income_the_kuomintang
-		}
-		x = 43
-		y = 6
-		ai_will_do = {
-			factor = 90
-		}
-		completion_reward = {
-			597 = {
-				add_extra_state_shared_building_slots = 1
-				add_offsite_building = {
-					type = arms_factory
-					level = 1
-				}
-			}
-			743 = {
-				add_extra_state_shared_building_slots = 1
-				add_offsite_building = {
-					type = arms_factory
-					level = 1
-				}
-			}
-			822 = {
-				add_extra_state_shared_building_slots = 1
-				add_offsite_building = {
-					type = arms_factory
-					level = 1
-				}
-			}
-			821 = {
-				add_extra_state_shared_building_slots = 1
-				add_offsite_building = {
-					type = arms_factory
-					level = 1
-				}
-			}
-		}
 	}
 	focus = {
 		id = SND_nanjing_general
-		icon = GFX_based_SND
+		icon = GFX_SND_nanjing_general
 		cost = 5.00
 		prerequisite = {
 			focus = SND_ambulance_Zhili
 		}
-		x = 32
+		x = 34
 		y = 8
-		ai_will_do = {
-			factor = 90
-		}
-		completion_reward = {
-			add_manpower = 10000
-		}
-	}
-	focus = {
-		id = SND_kuomintang_general
-		icon = GFX_based_SND
-		cost = 5.00
-		prerequisite = {
-			focus = SND_ambulance_CHI
-		}
-		x = 42
-		y = 8
-		ai_will_do = {
-			factor = 90
-		}
-		completion_reward = {
-			add_manpower = 10000
-		}
-	}
-	focus = {
-		id = SND_The_lesson_of_the_northern_march
-		icon = GFX_based_SND
-		cost = 5.00
-		prerequisite = {
-			focus = SND_kuomintang_general
-		}
-		prerequisite = {
-			focus = SND_kuomintang_trading_Army
-		}
-		x = 41
-		y = 9
-		ai_will_do = {
-			factor = 90
-		}
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = Divided_army_2
-				add_idea = Divided_army_3
-			}
-		}
+			ai_will_do = {
+					factor = 90
+				}
+			completion_reward = {
+					add_manpower = 10000
+				}
+
 	}
 	focus = {
 		id = SND_Wenskys_Legacy
@@ -1269,16 +1573,53 @@ focus_tree = {
 		prerequisite = {
 			focus = SND_Cavalry_division
 		}
-		x = 33
+		x = 35
 		y = 9
-		ai_will_do = {
-			factor = 90
+			ai_will_do = {
+					factor = 90
+				}
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = Divided_army_2
+							add_idea = Divided_army_3
+						}
+				}
+
+	}
+	focus = {
+		id = SND_An_escalating_crisis
+		icon = GFX_based_SND
+		cost = 5.00
+		prerequisite = {
+			focus = SND_zhili_Exchange_reinforcement
+		}
+		prerequisite = {
+			focus = SND_zhili_Mission_invitation
+		}
+		prerequisite = {
+			focus = SND_Nanjing_Jinan_Railway_Expansion
+		}
+		prerequisite = {
+			focus = SND_Nanjing_Shandong_Union
 		}
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = Divided_army_2
-				add_idea = Divided_army_3
+			country_event = {
+				id = SND.19
 			}
 		}
+		x = 14
+		y = 8
+
+	}
+	focus = {
+		id = SND_Confluence_of_rebellion
+		icon = GFX_based_SND
+		cost = 5.00
+		prerequisite = {
+			focus = SND_An_escalating_crisis
+		}
+		x = 14
+		y = 9
+
 	}
 }
