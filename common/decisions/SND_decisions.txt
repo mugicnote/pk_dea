@@ -67,17 +67,18 @@ china_Policy_decisions_SND = {
  	China_Army_training = {
 		icon = generic_prepare_civil_war
 		available = {
-			NOT = {
-				has_war = yes
-				has_civil_war = yes
-				has_decision = China_Army_training
-				has_decision = china_Military_plant
-				has_decision = china_Construction_plant
-				has_decision = china_Land_Corporation
-				has_decision = china_army_add_money
-				has_decision = china_army_down_money
-				has_decision = china_Construction_investment
-			
+			hidden_effect = {
+				not = {
+					has_war = yes
+					has_civil_war = yes
+					has_decision = China_Army_training
+					has_decision = china_Military_plant
+					has_decision = china_Construction_plant
+					has_decision = china_Land_Corporation
+					has_decision = china_army_add_money
+					has_decision = china_army_down_money
+					has_decision = china_Construction_investment
+				}
 			}
 		}
 
@@ -97,16 +98,17 @@ china_Policy_decisions_SND = {
 	}
  	china_Military_plant = {
 		icon = generic_prepare_civil_war
-		available = { not = {
-			has_war = yes
-			has_civil_war = yes
-			has_decision = China_Army_training
-			has_decision = china_Military_plant
-			has_decision = china_Construction_plant
-			has_decision = china_Land_Corporation
-			has_decision = china_army_add_money
-			has_decision = china_army_down_money
-			has_decision = china_Construction_investment
+		available = {
+			hidden_effect = {
+				not = {
+					has_decision = China_Army_training
+					has_decision = china_Military_plant
+					has_decision = china_Construction_plant
+					has_decision = china_Land_Corporation
+					has_decision = china_army_add_money
+					has_decision = china_army_down_money
+					has_decision = china_Construction_investment
+				}
 			}
 		}
 		ai_will_do = {
@@ -130,16 +132,19 @@ china_Policy_decisions_SND = {
 	}
 	china_Construction_plant = {
 		icon = generic_prepare_civil_war
-		available = { not = {
-			has_war = yes
-			has_civil_war = yes
-			has_decision = China_Army_training
-			has_decision = china_Military_plant
-			has_decision = china_Construction_plant
-			has_decision = china_Land_Corporation
-			has_decision = china_army_add_money
-			has_decision = china_army_down_money
-			has_decision = china_Construction_investment
+		available = {
+			hidden_effect = {
+				not = {
+					has_war = yes
+					has_civil_war = yes
+					has_decision = China_Army_training
+					has_decision = china_Military_plant
+					has_decision = china_Construction_plant
+					has_decision = china_Land_Corporation
+					has_decision = china_army_add_money
+					has_decision = china_army_down_money
+					has_decision = china_Construction_investment
+				}
 			}
 		}
 		ai_will_do = {
@@ -163,16 +168,19 @@ china_Policy_decisions_SND = {
 	}
 	china_Land_Corporation = {
 		icon = generic_prepare_civil_war
-		available = { not = {
-			has_war = yes
-			has_civil_war = yes
-			has_decision = China_Army_training
-			has_decision = china_Military_plant
-			has_decision = china_Construction_plant
-			has_decision = china_Land_Corporation
-			has_decision = china_army_add_money
-			has_decision = china_army_down_money
-			has_decision = china_Construction_investment
+		available = {
+			hidden_effect = {
+				not = {
+					has_war = yes
+					has_civil_war = yes
+					has_decision = China_Army_training
+					has_decision = china_Military_plant
+					has_decision = china_Construction_plant
+					has_decision = china_Land_Corporation
+					has_decision = china_army_add_money
+					has_decision = china_army_down_money
+					has_decision = china_Construction_investment
+				}
 			}
 		}
 		ai_will_do = {
@@ -196,16 +204,17 @@ china_Policy_decisions_SND = {
 	}
 	china_army_add_money = {
 		icon = generic_prepare_civil_war
-		available = { not = {
-			has_war = yes
-			has_civil_war = yes
-			has_decision = China_Army_training
-			has_decision = china_Military_plant
-			has_decision = china_Construction_plant
-			has_decision = china_Land_Corporation
-			has_decision = china_army_add_money
-			has_decision = china_army_down_money
-			has_decision = china_Construction_investment
+		available = {
+			hidden_effect = {
+				not = {
+					has_decision = China_Army_training
+					has_decision = china_Military_plant
+					has_decision = china_Construction_plant
+					has_decision = china_Land_Corporation
+					has_decision = china_army_add_money
+					has_decision = china_army_down_money
+					has_decision = china_Construction_investment
+				}
 			}
 		}
 		ai_will_do = {
@@ -231,16 +240,19 @@ china_Policy_decisions_SND = {
 	}
 	china_army_down_money = {
 		icon = generic_prepare_civil_war
-		available = { not = {
-			has_war = yes
-			has_civil_war = yes
-			has_decision = China_Army_training
-			has_decision = china_Military_plant
-			has_decision = china_Construction_plant
-			has_decision = china_Land_Corporation
-			has_decision = china_army_add_money
-			has_decision = china_army_down_money
-			has_decision = china_Construction_investment
+		available = {
+			hidden_effect = {
+				not = {
+					has_war = yes
+					has_civil_war = yes
+					has_decision = China_Army_training
+					has_decision = china_Military_plant
+					has_decision = china_Construction_plant
+					has_decision = china_Land_Corporation
+					has_decision = china_army_add_money
+					has_decision = china_army_down_money
+					has_decision = china_Construction_investment
+				}
 			}
 		}
 		ai_will_do = {
@@ -267,16 +279,19 @@ china_Policy_decisions_SND = {
 	}
 	china_Construction_investment = {
 		icon = generic_prepare_civil_war
-		available = { not = {
-			has_war = yes
-			has_civil_war = yes
-			has_decision = China_Army_training
-			has_decision = china_Military_plant
-			has_decision = china_Construction_plant
-			has_decision = china_Land_Corporation
-			has_decision = china_army_add_money
-			has_decision = china_army_down_money
-			has_decision = china_Construction_investment
+		available = {
+			hidden_effect = {
+				not = {
+					has_war = yes
+					has_civil_war = yes
+					has_decision = China_Army_training
+					has_decision = china_Military_plant
+					has_decision = china_Construction_plant
+					has_decision = china_Land_Corporation
+					has_decision = china_army_add_money
+					has_decision = china_army_down_money
+					has_decision = china_Construction_investment
+				}
 			}
 		}
 		ai_will_do = {
