@@ -1,4 +1,28 @@
 ideas = {
+
+#장제스 만남
+    country = {
+        
+        zhang_kai_sheck_meeting = { 
+
+            allowed = {
+                original_tag = SND
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = zhang_kai_sheck_meeting
+
+            removal_cost = -1
+            
+            modifier = {
+                stability_factor = 0.03
+            }
+        }
+    }
+
 #우페이푸 만남
     country = {
         
@@ -12,11 +36,12 @@ ideas = {
                 always = yes
             }
 
-            picture = Wufeipu_meeting 
+            picture = Wufeipu_meeting
 
             removal_cost = -1
             
             modifier = {
+                stability_factor = 0.03
             }
         }
     }

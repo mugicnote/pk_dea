@@ -89,6 +89,7 @@
  SND_Joining_the_Kuomintang:0 "국민당과의 합류"
 
  #국민정신
+ zhang_kai_sheck_meeting:0 "장제스와의 만남"
 
  Wufeipu_meeting:0 "우페이푸와의 만남"
 
@@ -127,9 +128,12 @@
  SND.0.d:0 "한푸쥐는 의자에 앉아 지도를 바라보며 생각에 잠겨있었습니다. 그는 장쭤린의 부하 노릇을 할 생각이 전혀 없었던 그에겐 두가지 선택지가 있습니다. 남쪽의 우페이푸에 붙느냐 아니면 더 남쪽에 있는 장제스에 붙느냐 두가지 모두 장단점이 있습니다. 우페이푸는 산동에 직접 군대를 보내 안전을 보장해줄수 있지만 거의 확실히 다가올 장제스의 북벌을 막아낼 능력이 있는것 같아보이지 않습니다. 반면에 장제스에 붙는다면 직예 봉천 사이에서 살아남기 위해 고군분투해야 되지만 거의 확실히 다가올 장제스의 북벌을 생각하면 좋은 선택지일지도 모릅니다. 어쨌든 한푸쥐는 결정을 내렸고 전화기를 들고 입을 열었습니다... "
  SND.0.a:0 ""우한에 연락해."" 
  SND.0.c:0 ""광저우에 연락해.""
+
+ 
  SND.1.t:0 "우페이푸와 회담"
  SND.1.d:0 "ㅇ"
  SND.1.a:0 "좋은 만남이 였다."
+
  SND.2.t:0 "장제스와의 접촉"
  SND.2.d:0 "ㅇ"
  SND.2.a:0 "좋은 만남이 였다."
@@ -206,9 +210,27 @@
 
  #디시전
  china_weapon_purchase_decisions:0 "무기 구매"
+ china_weapon_purchase_decisions_desc:0 "우리의 군대는 현재 무기가 부족한 상황입니다. 우리의 부를 이용하여 우리의 군대를 강화시킬 필요가 있습니다. 우리가 협력과 군사 관계를 강화하는 관계에 놓인 국가와의 무기교류를 통해서 그들과의 유대도 강화하고 우리의 군대도 강화하여야합니다."
  china_buy_from_zhili:0 "직예 군벌의 무기 구매"
  china_buy_from_foreign:0 "외국의 무기 구매"
  china_buy_from_kuomintang:0 "국민당의 무기 구매"
 
+ Meeting_with_zhang_kai_sheck:0 "징제스와의 만남"
+ Meeting_with_Wufeipu:0 "우페이푸와의 만남"
+ china_Maintain_zhi_relationship:0 "회담"
+ china_Maintain_zhi_relationship_desc:0 "야스각"
+
+ china_Policy_decisions_SND:0 "군벌 정책"
+ china_Policy_decisions_SND_desc:0 "야스각"
+ China_Army_training:0 "군대 훈련"
+ china_Military_plant:0 "군수공장 확대"
+ china_Construction_plant:0 "민간공장 확대"
+ china_Land_Corporation:0 "토지개혁"
+ china_army_add_money:0 "군대 예산 증가"
+ china_army_down_money:0 "민간 예산 증가"
+ china_Construction_investment:0 "건설 예산 증가"
+
  #모드피러
  SND_wuhan_visit_modifiers:0 "한푸쥐의 우한 방문"
+ SND_nanjing_visit_modifiers:0 "한푸쥐의 난징 방문"
+

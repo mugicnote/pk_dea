@@ -1,0 +1,20 @@
+spriteTypes = {
+
+	### SND ###
+
+	spriteType = {
+		name = "GFX_decision_china_weapon_purchase_decisions"
+		texturefile = "gfx/interface/decisions/china_weapon_purchase_decisions.png"
+	}
+
+	spriteType = {
+		name = "GFX_decision_CHI_Kuomintang_Congress_decisions"
+		texturefile = "gfx/interface/decisions/CHI_Kuomintang_Congress_decisions.png"
+	}
+
+	spriteType = {
+		name = "GFX_decision_CHI_Warlord_decisions"
+		texturefile = "gfx/interface/decisions/CHI_Warlord_decisions.png"
+	}
+
+}

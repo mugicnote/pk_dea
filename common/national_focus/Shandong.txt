@@ -41,7 +41,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SND_germany_with_pull
-		icon = GFX_based_SND
+		icon = GFX_based_snd
 		cost = 5.00
 		prerequisite = {
 			focus = SND_diplomacy_reform
@@ -55,7 +55,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SND_German_technology_introduction
-		icon = GFX_based_SND
+		icon = GFX_based_snd
 		cost = 5.00
 		prerequisite = {
 			focus = SND_germany_with_pull
@@ -66,7 +66,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SNF_German_Consulate_in_Qingdao
-		icon = GFX_based_SND
+		icon = GFX_based_snd
 		cost = 5.00
 		prerequisite = {
 			focus = SND_germany_with_pull
@@ -77,7 +77,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SND_touch_italy
-		icon = GFX_based_SND
+		icon = GFX_based_snd
 		cost = 5.00
 		prerequisite = {
 			focus = SNF_German_Consulate_in_Qingdao
@@ -91,7 +91,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SND_pull_with_the_United_States
-		icon = GFX_based_SND
+		icon = GFX_based_snd
 		cost = 5.00
 		prerequisite = {
 			focus = SND_diplomacy_reform
@@ -105,7 +105,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SNF_International_industrial_camouflage
-		icon = GFX_based_SND
+		icon = GFX_based_snd
 		cost = 5.00
 		prerequisite = {
 			focus = SND_germany_with_pull
@@ -117,7 +117,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SND_Jinan_Qingdao_Railway_Expansion
-		icon = GFX_based_SND
+		icon = GFX_based_snd
 		cost = 5.00
 		prerequisite = {
 			focus = SNF_German_Consulate_in_Qingdao
@@ -131,7 +131,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SND_US_port_investment
-		icon = GFX_based_SND
+		icon = GFX_based_snd
 		cost = 5.00
 		prerequisite = {
 			focus = SND_pull_with_the_United_States
@@ -142,7 +142,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SND_Secure_trade_budget
-		icon = GFX_based_SND
+		icon = GFX_based_snd
 		cost = 5.00
 		prerequisite = {
 			focus = SNF_International_industrial_camouflage
@@ -156,7 +156,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SND_Expansion_of_trade_with_the_US
-		icon = GFX_based_SND
+		icon = GFX_based_snd
 		cost = 5.00
 		prerequisite = {
 			focus = SND_pull_with_the_United_States
@@ -167,7 +167,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SND_touch_korea
-		icon = GFX_based_SND
+		icon = GFX_based_snd
 		cost = 5.00
 		prerequisite = {
 			focus = SND_US_port_investment
@@ -198,7 +198,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SND_Zhang_Zulin_behind
-		icon = GFX_based_SND
+		icon = GFX_based_snd
 		cost = 5.00
 		prerequisite = {
 			focus = SND_political_reform
@@ -215,7 +215,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SND_wu_feifu_handshake
-		icon = GFX_based_SND
+		icon = GFX_based_snd
 		cost = 5.00
 		prerequisite = {
 			focus = SND_Zhang_Zulin_behind
@@ -231,14 +231,14 @@ focus_tree = {
 		y = 5
 			completion_reward = {
 					country_event = {
-							id = SND.2
+							id = SND.1
 						}
 				}
 
 	}
 	focus = {
 		id = SND_nanjing_visit
-		icon = GFX_based_SND
+		icon = GFX_based_snd
 		cost = 5.00
 		prerequisite = {
 			focus = SND_wu_feifu_handshake
@@ -257,7 +257,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SND_Nanjing_Shandong_Union
-		icon = GFX_based_SND
+		icon = GFX_based_snd
 		cost = 5.00
 		prerequisite = {
 			focus = SND_nanjing_visit
@@ -276,7 +276,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SND_Nanjing_Jinan_Railway_Expansion
-		icon = GFX_based_SND
+		icon = GFX_based_snd
 		cost = 5.00
 		prerequisite = {
 			focus = SND_nanjing_visit
@@ -295,7 +295,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SND_wuhan_visit
-		icon = GFX_based_SND
+		icon = GFX_based_snd
 		cost = 5.00
 		prerequisite = {
 			focus = SND_wu_feifu_handshake
@@ -314,7 +314,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SND_zhili_Exchange_reinforcement
-		icon = GFX_based_SND
+		icon = GFX_based_snd
 		cost = 5.00
 		prerequisite = {
 			focus = SND_wuhan_visit
@@ -333,7 +333,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SND_zhili_Mission_invitation
-		icon = GFX_based_SND
+		icon = GFX_based_snd
 		cost = 5.00
 		prerequisite = {
 			focus = SND_wuhan_visit
@@ -352,7 +352,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SND_zhang_kai_sheck_handshake
-		icon = GFX_based_SND
+		icon = GFX_based_snd
 		cost = 5.00
 		available = {
 			has_country_flag =  gwangju_call_SND
@@ -376,6 +376,9 @@ focus_tree = {
 		id = SND_Connection_through_Germany
 		icon = GFX_based_snd
 		cost = 5.00
+		available = {
+			has_idea = zhang_kai_sheck_meeting
+		}
 		prerequisite = {
 			focus = SND_zhang_kai_sheck_handshake
 		}
@@ -387,6 +390,9 @@ focus_tree = {
 		id = SND_Consulate_visit
 		icon = GFX_based_snd
 		cost = 5.00
+		available = {
+			has_idea = zhang_kai_sheck_meeting
+		}
 		prerequisite = {
 			focus = SND_Connection_through_Germany
 		}
@@ -398,6 +404,9 @@ focus_tree = {
 		id = SND_Meeting_in_Germany
 		icon = GFX_based_snd
 		cost = 5.00
+		available = {
+			has_idea = zhang_kai_sheck_meeting
+		}
 		prerequisite = {
 			focus = SND_Connection_through_Germany
 		}
@@ -409,6 +418,9 @@ focus_tree = {
 		id = SND_Spy's_stopover
 		icon = GFX_based_snd
 		cost = 5.00
+		available = {
+			has_idea = zhang_kai_sheck_meeting
+		}
 		prerequisite = {
 			focus = SND_zhang_kai_sheck_handshake
 		}
@@ -420,6 +432,9 @@ focus_tree = {
 		id = SND_fengtain_military_information_sharing
 		icon = GFX_based_snd
 		cost = 5.00
+		available = {
+			has_idea = zhang_kai_sheck_meeting
+		}
 		prerequisite = {
 			focus = SND_Spy's_stopover
 		}
@@ -431,6 +446,9 @@ focus_tree = {
 		id = SND_Kuomintang_arms_smuggling
 		icon = GFX_based_snd
 		cost = 5.00
+		available = {
+			has_idea = zhang_kai_sheck_meeting
+		}
 		prerequisite = {
 			focus = SND_Spy's_stopover
 		}
@@ -442,6 +460,7 @@ focus_tree = {
 		id = SND_An_escalating_crisis2
 		icon = GFX_based_snd
 		cost = 5.00
+		
 		prerequisite = {
 			focus = SND_Meeting_in_Germany
 		}
@@ -583,7 +602,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SND_shandong_arms_Factory
-		icon = GFX_based_SND
+		icon = GFX_based_snd
 		cost = 5.00
 		prerequisite = {
 			focus = SND_weihai_reform
@@ -666,7 +685,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SND_Weihai_Shipyard
-		icon = GFX_based_SND
+		icon = GFX_based_snd
 		cost = 5.00
 		prerequisite = {
 			focus = SND_Hanfuju_Doctrine
@@ -692,7 +711,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Qingdao_Shipyard
-		icon = GFX_based_SND
+		icon = GFX_based_snd
 		cost = 5.00
 		prerequisite = {
 			focus = SND_Hanfuju_Doctrine
@@ -718,7 +737,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SND_Factory_in_Jinan
-		icon = GFX_based_SND
+		icon = GFX_based_snd
 		cost = 5.00
 		prerequisite = {
 			focus = Qingdao_Shipyard
@@ -853,7 +872,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SND_Income_the_Zhili
-		icon = GFX_based_SND
+		icon = GFX_based_snd
 		cost = 5.00
 		prerequisite = {
 			focus = SND_Zhili_army
@@ -870,7 +889,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SND_Gun_arsenal_Zhili
-		icon = GFX_based_SND
+		icon = GFX_based_snd
 		cost = 5.00
 		prerequisite = {
 			focus = SND_Income_the_Zhili
@@ -975,7 +994,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SND_Cavalry_division
-		icon = GFX_based_SND
+		icon = GFX_based_snd
 		cost = 5.00
 		prerequisite = {
 			focus = SND_Army_training_Zhili
@@ -1102,7 +1121,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SND_Total_purchase
-		icon = GFX_based_SND
+		icon = GFX_based_snd
 		cost = 5.00
 		prerequisite = {
 			focus = SND_jinan_school
@@ -1252,7 +1271,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SND_Request_for_advisors_from_the_kuomintang
-		icon = GFX_based_SND
+		icon = GFX_based_snd
 		cost = 5.00
 		prerequisite = {
 			focus = SND_kuomintang_army
@@ -1269,7 +1288,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SND_Income_the_kuomintang
-		icon = GFX_based_SND
+		icon = GFX_based_snd
 		cost = 5.00
 		prerequisite = {
 			focus = SND_kuomintang_army
@@ -1286,7 +1305,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SND_Army_training_kuomintang
-		icon = GFX_based_SND
+		icon = GFX_based_snd
 		cost = 5.00
 		prerequisite = {
 			focus = SND_Request_for_advisors_from_the_kuomintang
@@ -1309,7 +1328,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SND_infantry_tree
-		icon = GFX_based_SND
+		icon = GFX_based_snd
 		cost = 5.00
 		prerequisite = {
 			focus = SND_Army_training_kuomintang
@@ -1330,7 +1349,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SND_kuomintang_trading_Army
-		icon = GFX_based_SND
+		icon = GFX_based_snd
 		cost = 5.00
 		prerequisite = {
 			focus = SND_Army_training_kuomintang
@@ -1350,7 +1369,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SND_Gun_arsenal_kuomintang
-		icon = GFX_based_SND
+		icon = GFX_based_snd
 		cost = 5.00
 		prerequisite = {
 			focus = SND_Income_the_kuomintang
@@ -1394,7 +1413,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SND_ambulance_CHI
-		icon = GFX_based_SND
+		icon = GFX_based_snd
 		cost = 5.00
 		prerequisite = {
 			focus = SND_Army_training_kuomintang
@@ -1435,7 +1454,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SND_The_lesson_of_the_northern_march
-		icon = GFX_based_SND
+		icon = GFX_based_snd
 		cost = 5.00
 		prerequisite = {
 			focus = SND_kuomintang_general
@@ -1458,7 +1477,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SND_Linyi_in_Factory
-		icon = GFX_based_SND
+		icon = GFX_based_snd
 		cost = 5.00
 		prerequisite = {
 			focus = Qingdao_Shipyard
@@ -1512,7 +1531,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SND_Construction_committee
-		icon = GFX_based_SND
+		icon = GFX_based_snd
 		cost = 5.00
 		prerequisite = {
 			focus = SND_Factory_in_Jinan
@@ -1553,7 +1572,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SND_Mine_development
-		icon = GFX_based_SND
+		icon = GFX_based_snd
 		cost = 5.00
 		prerequisite = {
 			focus = SND_Inviting_Investors
@@ -1582,7 +1601,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SND_New_city_construction
-		icon = GFX_based_SND
+		icon = GFX_based_snd
 		cost = 5.00
 		prerequisite = {
 			focus = SND_Construction_committee
@@ -1647,7 +1666,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SND_Fire-breathing_dragon
-		icon = GFX_based_SND
+		icon = GFX_based_snd
 		cost = 5.00
 		prerequisite = {
 			focus = SND_Doctrine_Research_Institute
@@ -1686,7 +1705,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SND_Wenskys_Legacy
-		icon = GFX_based_SND
+		icon = GFX_based_snd
 		cost = 5.00
 		prerequisite = {
 			focus = SND_nanjing_general
@@ -1709,7 +1728,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SND_An_escalating_crisis
-		icon = GFX_based_SND
+		icon = GFX_based_snd
 		cost = 5.00
 		prerequisite = {
 			focus = SND_zhili_Exchange_reinforcement
@@ -1734,7 +1753,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SND_Confluence_of_rebellion
-		icon = GFX_based_SND
+		icon = GFX_based_snd
 		cost = 5.00
 		prerequisite = {
 			focus = SND_An_escalating_crisis

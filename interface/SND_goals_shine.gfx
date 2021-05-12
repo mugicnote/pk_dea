@@ -1025,7 +1025,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_based_SND_shine"
+		name = "GFX_based_snd_shine"
 		texturefile = "gfx/interface/goals/SND/based_SND.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {

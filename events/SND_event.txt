@@ -5,10 +5,10 @@ country_event = {
 	id = SND.0
 	title = SND.0.t
 	desc = SND.0.d
-	picture = gfx
+	picture = 
+	fire_only_once = yes
 
 	is_triggered_only = yes
-	fire_only_once = yes
 
 	option = { 
 		name = SND.0.a
@@ -29,15 +29,19 @@ country_event = {
 	id = SND.1
 	title = SND.1.t
 	desc = SND.1.d
-	picture = gfx
+	picture =  
+	fire_only_once = yes
 
 	is_triggered_only = yes
-	fire_only_once = yes
 
 	option = { 
 		name = SND.1.a
-		add_ideas = { idea = Wufeipu_meeting days = 30 }
-	} 
+		add_timed_idea = { 
+			idea = Wufeipu_meeting 
+			days = 30 
+		}
+	}
+	
 }
 
 country_event = {
@@ -45,10 +49,10 @@ country_event = {
 	id = SND.2
 	title = SND.2.t
 	desc = SND.2.d
-	picture = gfx
+	picture =  
+	fire_only_once = yes
 
 	is_triggered_only = yes
-	fire_only_once = yes
 
 	option = { 
 		name = SND.2.a
@@ -60,10 +64,10 @@ country_event = {
 	id = SND.3
 	title = SND.3.t
 	desc = SND.3.d
-	picture = gfx
+	picture =  
+	fire_only_once = yes
 
 	is_triggered_only = yes
-	fire_only_once = yes
 
 	option = { 
 		name = SND.3.a
@@ -79,10 +83,10 @@ country_event = {
 	id = SND.4
 	title = SND.4.t
 	desc = SND.4.d
-	picture = gfx
+	picture =  
+	fire_only_once = yes
 
 	is_triggered_only = yes
-	fire_only_once = yes
 
 	option = { 
 		name = SND.4.a
@@ -98,10 +102,10 @@ country_event = {
 	id = SND.5
 	title = SND.5.t
 	desc = SND.5.d
-	picture = gfx
+	picture =  
+	fire_only_once = yes
 
 	is_triggered_only = yes
-	fire_only_once = yes
 
 	option = { 
 		name = SND.5.a
@@ -121,10 +125,10 @@ country_event = {
 	id = SND.6
 	title = SND.6.t
 	desc = SND.6.d
-	picture = gfx
+	picture =  
+	fire_only_once = yes
 
 	is_triggered_only = yes
-	fire_only_once = yes
 
 	option = { 
 		name = SND.6.a
@@ -139,10 +143,10 @@ country_event = {
 	id = SND.7
 	title = SND.7.t
 	desc = SND.7.d
-	picture = gfx
+	picture =  
+	fire_only_once = yes
 
 	is_triggered_only = yes
-	fire_only_once = yes
 
 	option = { 
 		name = SND.7.a
@@ -165,10 +169,10 @@ country_event = {
 	id = SND.8
 	title = SND.8.t
 	desc = SND.8.d
-	picture = gfx
+	picture =  
+	fire_only_once = yes
 
 	is_triggered_only = yes
-	fire_only_once = yes
 
 	option = { 
 		name = SND.8.a
@@ -199,10 +203,10 @@ country_event = {
 	id = SND.9
 	title = SND.9.t
 	desc = SND.9.d
-	picture = gfx
+	picture =  
+	fire_only_once = yes
 
 	is_triggered_only = yes
-	fire_only_once = yes
 
 	option = { 
 		name = SND.9.a
@@ -232,10 +236,10 @@ country_event = {
 	id = SND.10
 	title = SND.10.t
 	desc = SND.10.d
-	picture = gfx
+	picture =  
+	fire_only_once = yes
 
 	is_triggered_only = yes
-	fire_only_once = yes
 
 	option = { 
 		name = SND.10.a
@@ -247,10 +251,10 @@ country_event = {
 	id = SND.11
 	title = SND.11.t
 	desc = SND.11.d
-	picture = gfx
+	picture =  
+	fire_only_once = yes
 
 	is_triggered_only = yes
-	fire_only_once = yes
 
 	option = { 
 		name = SND.11.a
@@ -269,10 +273,10 @@ country_event = {
 	id = SND.12
 	title = SND.12.t
 	desc = SND.12.d
-	picture = gfx
+	picture =  
+	fire_only_once = yes
 
 	is_triggered_only = yes
-	fire_only_once = yes
 
 	option = { 
 		name = SND.12.a
@@ -302,10 +306,10 @@ country_event = {
 	id = SND.13
 	title = SND.13.t
 	desc = SND.13.d
-	picture = gfx
+	picture =  
+	fire_only_once = yes
 
 	is_triggered_only = yes
-	fire_only_once = yes
 
 	option = { 
 		name = SND.11.a
@@ -316,10 +320,10 @@ country_event = {
 	id = SND.13
 	title = SND.13.t
 	desc = SND.13.d
-	picture = gfx
+	picture =  
+	fire_only_once = yes
 
 	is_triggered_only = yes
-	fire_only_once = yes
 
 	option = { 
 		name = SND.13.a
@@ -330,10 +334,10 @@ country_event = {
 	id = SND.15
 	title = SND.15.t
 	desc = SND.15.d
-	picture = gfx
+	picture =  
+	fire_only_once = yes
 
 	is_triggered_only = yes
-	fire_only_once = yes
 
 	option = { 
 		name = SND.15.a
@@ -353,10 +357,10 @@ country_event = {
 	id = SND.16
 	title = SND.16.t
 	desc = SND.16.d
-	picture = gfx
+	picture =  
+	fire_only_once = yes
 
 	is_triggered_only = yes
-	fire_only_once = yes
 
 	option = { 
 		name = SND.16.a
@@ -386,10 +390,10 @@ country_event = {
 	id = SND.17
 	title = SND.17.t
 	desc = SND.17.d
-	picture = gfx
+	picture =  
+	fire_only_once = yes
 
 	is_triggered_only = yes
-	fire_only_once = yes
 
 	option = { 
 		name = SND.17.a
@@ -400,10 +404,10 @@ country_event = {
 	id = SND.18
 	title = SND.18.t
 	desc = SND.18.d
-	picture = gfx
+	picture =  
+	fire_only_once = yes
 
 	is_triggered_only = yes
-	fire_only_once = yes
 
 	option = { 
 		name = SND.18.a
@@ -414,10 +418,10 @@ country_event = {
 	id = SND.19
 	title = SND.19.t
 	desc = SND.19.d
-	picture = gfx
+	picture =  
+	fire_only_once = yes
 
 	is_triggered_only = yes
-	fire_only_once = yes
 
 	option = { 
 		name = SND.19.a
