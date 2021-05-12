@@ -116,12 +116,6 @@ fallen_rural_society
 KOR_incompetent_goverment
 KOR_divided_army
 coup_crisis
-industrialization_experience
-experienced_army
-KOR_want_big
-social_repression
-Public_Security_Headquarter
-Anti_Communist_Office
 }
 
 #시작_정당
@@ -199,10 +193,6 @@ create_country_leader = { #사진 작업 완료(DoS 도움 받음)
   expire = "1949.6.26"
   ideology = Seo_Jae_Pil_conservatism
   traits = {
-	third_term_president
-	perfectionist_president
-	Seo_Jae_pil_Doctrine
-	Hitler_of_Korea
   }
 }
 

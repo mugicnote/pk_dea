@@ -7,3 +7,11 @@ soundeffect = {
 }
 
 ##USE SUPER_EVENT_MAKER_GUI IN USEFUL PYTHON PROGRAMS TO MAKE NEW SUPER EVENTS##
+
+soundeffect = {
+	name = tno_se_Remilitarization_Rhineland
+	sounds = {
+		sound = tno_se_Remilitarization_Rhineland
+	}
+	volume = 3
+}

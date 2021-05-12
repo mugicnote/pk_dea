@@ -4,3 +4,7 @@ BE_ASSASSIN_JAE_PIL_D:0 "수녀들이 나와서 앞에 설 것이고, 그 앞에
 BE_ASSASSIN_JAE_PIL_A:0 "드디어.."
 
 ##USE SUPER_EVENT_MAKER_GUI IN USEFUL PYTHON PROGRAMS TO MAKE NEW SUPER EVENTS##
+
+BE_REMILITARIZATION_RL_T:0 "라인란트 재무장"
+BE_REMILITARIZATION_RL_D:0 "우리는 우리 앞에 독일이 있음을 알고, 독일은 우리와 함께 행진하며, 독일은 우리를 따른다.\n- 아돌프 히틀러"
+BE_REMILITARIZATION_RL_A:0 "혼돈과 어둠"

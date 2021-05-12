@@ -197,3 +197,9 @@
  SND.19.a:0 "고조되는 위기"
  SND.19.d:0 ""
  SND.19.t:0 "드디어 때가 온건가"
+
+ #디시전
+ china_weapon_purchase_decisions:0 "무기 구매"
+ china_buy_from_zhili:0 "직예 군벌의 무기 구매"
+ china_buy_from_foreign:0 "외국의 무기 구매"
+ china_buy_from_kuomintang:0 "국민당의 무기 구매"

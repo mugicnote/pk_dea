@@ -8,117 +8,13 @@ china_army_decisions = {
 	scripted_gui = china_army_reform_tooltip
 }
 
-CHI_anti_imperialism = {
-	icon = generic_independence
+china_weapon_purchase_decisions = {
+	icon = generic_arms_trade
+	picture = GFX_decision_cat_picture_chinese_troops
+	priority = 200
 	allowed = {
-		is_literally_china = yes
+		tag = SND
 	}
 	visible = {
-		always = yes
 	}
-}
-
-CHI_integrate_the_warlords = {
-
-	allowed = {
-		OR = {
-			tag = CHI
-			tag = PRC
-			tag = GXC
-			tag = YUN
-			tag = SHX
-			tag = XSM
-			tag = SIK
-			tag = FNG
-			tag = SND
-			tag = SZC
-			tag = GDC
-			tag = SSK
-		}
-	}
-	icon = generic_political_actions
-	visible = {
-		has_completed_focus = CHI_subjugate_the_warlords
-		OR = {
-			any_of_scopes = {
-				array = subjects
-				OR = {
-					tag = GXC
-					tag = YUN
-					tag = SHX
-					tag = XSM
-					tag = SIK
-					tag = FNG
-				    tag = SND
-				    tag = SZC
-				    tag = GDC
-				    tag = SSK
-			}
-			}
-		}
-	}
-}
-
-CHI_industrial_evacuations = {
-	allowed = {
-		is_literally_china = yes
-	}
-	icon = generic_industry
-	visible = {
-		has_completed_focus = CHI_industrial_evacuations
-	}
-}
-
-CHI_xian_incident = {
-	icon = power_struggle
-	allowed = {
-		is_independent_china_or_warlord = yes
-		NOT = {
-			OR = {
-				tag = CHI
-				tag = PRC
-			}
-		}
-	}
-}
-
-PRC_provoke_japan = {
-	allowed = {
-		is_literally_china = yes
-	}
-	icon = revolt
-	visible = {
-		has_completed_focus = PRC_provoke_japan
-	}
-}
-
-CHI_seek_japanese_support = {
-	icon = jap_pacific_guardian
-	allowed = {
-		OR = {
-			tag = GXC
-			tag = YUN
-			tag = SHX
-			tag = XSM
-			tag = FNG
-			tag = SND
-			tag = SZC
-			tag = GDC
-			tag = SSK
-		}
-	}
-}
-
-CHI_border_clashes = {
-	picture = generic_border_conflicts
-	icon = border_conflicts
-	allowed = {
-		is_literally_china = yes
-	}	
-}
-
-CHI_warlord_in_opposition = {
-	allowed = {
-		is_literally_china = yes
-	}	
 }

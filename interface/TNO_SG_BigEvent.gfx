@@ -26,6 +26,10 @@ spriteTypes = {
 	}
 	
 	##USE SUPER_EVENT_MAKER_GUI IN USEFUL PYTHON PROGRAMS TO MAKE NEW SUPER EVENTS##
+	spriteType = {
+		name = "GFX_superevent_Remilitarization_Rhineland"
+		textureFile = "gfx//superevent_pictures//Remilitarization_Rhineland.dds"
+	}
 }
 
 	

@@ -5,6 +5,7 @@ category = {
 	soundeffects = {
 		####### Super Events
 		tno_se_assassination_Jae_pil
+		tno_se_Remilitarization_Rhineland
 	}
  	compressor = {
 		enabled = yes

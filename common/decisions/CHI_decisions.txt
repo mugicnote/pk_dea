@@ -242,3 +242,114 @@ china_army_decisions = {
 		}
 	}
 }
+
+china_weapon_purchase_decisions = {
+ 	china_buy_from_zhili = {
+		icon = generic_prepare_civil_war
+		available = {
+			controls_state = 821
+			controls_state = 743
+			has_completed_focus = SND_Income_the_Zhili
+		}
+		highlight_state_targets = {
+			state = 821
+		}
+		ai_will_do = {
+			factor = 100
+		}
+
+		fire_only_once = yes
+		cost = 40
+		days_remove = 15
+
+		remove_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 300
+				producer = LEP
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 50
+				producer = LEP
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 50
+				producer = LEP
+			}
+		}
+	}
+	china_buy_from_foreign = {
+		icon = generic_prepare_civil_war
+		available = {
+			controls_state = 821
+			controls_state = 743
+			has_completed_focus = SND_Total_purchase
+		}
+		highlight_state_targets = {
+			state = 821
+		}
+		ai_will_do = {
+			factor = 100
+		}
+
+		fire_only_once = yes
+		cost = 40
+		days_remove = 15
+
+		remove_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 300
+				producer = LEP
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 50
+				producer = LEP
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 50
+				producer = LEP
+			}
+		}
+	}
+	china_buy_from_kuomintang = {
+		icon = generic_prepare_civil_war
+		available = {
+			controls_state = 821
+			controls_state = 743
+			has_completed_focus = SND_Income_the_kuomintang
+		}
+		highlight_state_targets = {
+			state = 821
+		}
+		ai_will_do = {
+			factor = 100
+		}
+
+		fire_only_once = yes
+		cost = 40
+		days_remove = 15
+
+		remove_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 300
+				producer = LEP
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 50
+				producer = LEP
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 50
+				producer = LEP
+			}
+		}
+	}
+}
