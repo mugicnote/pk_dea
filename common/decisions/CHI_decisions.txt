@@ -266,17 +266,14 @@ china_weapon_purchase_decisions = {
 			add_equipment_to_stockpile = {
 				type = infantry_equipment_0
 				amount = 300
-				producer = LEP
 			}
 			add_equipment_to_stockpile = {
 				type = support_equipment
 				amount = 50
-				producer = LEP
 			}
 			add_equipment_to_stockpile = {
 				type = artillery_equipment
 				amount = 50
-				producer = LEP
 			}
 		}
 	}
@@ -302,17 +299,14 @@ china_weapon_purchase_decisions = {
 			add_equipment_to_stockpile = {
 				type = infantry_equipment_0
 				amount = 300
-				producer = LEP
 			}
 			add_equipment_to_stockpile = {
 				type = support_equipment
 				amount = 50
-				producer = LEP
 			}
 			add_equipment_to_stockpile = {
 				type = artillery_equipment
 				amount = 50
-				producer = LEP
 			}
 		}
 	}
@@ -338,17 +332,14 @@ china_weapon_purchase_decisions = {
 			add_equipment_to_stockpile = {
 				type = infantry_equipment_0
 				amount = 300
-				producer = LEP
 			}
 			add_equipment_to_stockpile = {
 				type = support_equipment
 				amount = 50
-				producer = LEP
 			}
 			add_equipment_to_stockpile = {
 				type = artillery_equipment
 				amount = 50
-				producer = LEP
 			}
 		}
 	}

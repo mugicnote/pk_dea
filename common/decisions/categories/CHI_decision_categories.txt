@@ -15,6 +15,4 @@ china_weapon_purchase_decisions = {
 	allowed = {
 		tag = SND
 	}
-	visible = {
-	}
 }
