@@ -208,6 +208,7 @@ focus_tree = {
 			completion_reward = {
 					country_event = {
 							id = SND.0
+							days = 3
 						}
 				}
 
@@ -222,11 +223,15 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = SND_zhang_kai_sheck_handshake
 		}
+		available = {
+			has_country_flag =  wuhan_call_SND
+		}
+
 		x = 13
 		y = 5
 			completion_reward = {
 					country_event = {
-							id = SND.1
+							id = SND.2
 						}
 				}
 
@@ -237,6 +242,9 @@ focus_tree = {
 		cost = 5.00
 		prerequisite = {
 			focus = SND_wu_feifu_handshake
+		}
+		available = {
+			has_idea = Wufeipu_meeting
 		}
 		x = 11
 		y = 6
@@ -254,6 +262,9 @@ focus_tree = {
 		prerequisite = {
 			focus = SND_nanjing_visit
 		}
+		available = {
+			has_idea = Wufeipu_meeting
+		}
 		x = 10
 		y = 7
 			completion_reward = {
@@ -269,6 +280,9 @@ focus_tree = {
 		cost = 5.00
 		prerequisite = {
 			focus = SND_nanjing_visit
+		}
+		available = {
+			has_idea = Wufeipu_meeting
 		}
 		x = 12
 		y = 7
@@ -286,6 +300,9 @@ focus_tree = {
 		prerequisite = {
 			focus = SND_wu_feifu_handshake
 		}
+		available = {
+			has_idea = Wufeipu_meeting
+		}
 		x = 15
 		y = 6
 			completion_reward = {
@@ -301,6 +318,9 @@ focus_tree = {
 		cost = 5.00
 		prerequisite = {
 			focus = SND_wuhan_visit
+		}
+		available = {
+			has_idea = Wufeipu_meeting
 		}
 		x = 14
 		y = 7
@@ -318,6 +338,9 @@ focus_tree = {
 		prerequisite = {
 			focus = SND_wuhan_visit
 		}
+		available = {
+			has_idea = Wufeipu_meeting
+		}
 		x = 16
 		y = 7
 			completion_reward = {
@@ -331,6 +354,9 @@ focus_tree = {
 		id = SND_zhang_kai_sheck_handshake
 		icon = GFX_based_SND
 		cost = 5.00
+		available = {
+			has_country_flag =  gwangju_call_SND
+		}
 		prerequisite = {
 			focus = SND_Zhang_Zulin_behind
 		}
@@ -341,7 +367,7 @@ focus_tree = {
 		y = 5
 			completion_reward = {
 					country_event = {
-							id = SND.2
+							id = SND.1
 						}
 				}
 

@@ -1,4 +1,26 @@
 ideas = {
+#우페이푸 만남
+    country = {
+        
+        Wufeipu_meeting = { 
+
+            allowed = {
+                original_tag = SND
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = Wufeipu_meeting 
+
+            removal_cost = -1
+            
+            modifier = {
+            }
+        }
+    }
+
 #토지개혁 - 시작
     country = {
         

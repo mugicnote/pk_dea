@@ -52,4 +52,8 @@ spriteTypes = {
 		name = "GFX_idea_SND_Fire_breathing_dragon"
 		texturefile = "gfx/interface/ideas/SND/SND_Fire_breathing_dragon.png"
 	}
+	spriteType = {
+		name = "GFX_idea_Wufeipu_meeting"
+		texturefile = "gfx/interface/ideas/SND/Wufeipu_meeting.png"
+	}
 }

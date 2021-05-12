@@ -5,12 +5,21 @@ country_event = {
 	id = SND.0
 	title = SND.0.t
 	desc = SND.0.d
-	picture = GFX_news_event_nuke
+	picture =  
 
 	is_triggered_only = yes
 
 	option = { 
 		name = SND.0.a
+		hidden_effect = {
+			set_country_flag =  wuhan_call_SND
+		}
+	}
+	option = { 
+		name = SND.0.c
+		hidden_effect = {
+			set_country_flag = gwangju_call_SND
+		}
 	} 
 }
 
@@ -19,12 +28,13 @@ country_event = {
 	id = SND.1
 	title = SND.1.t
 	desc = SND.1.d
-	picture = GFX_news_event_nuke
+	picture =  
 
 	is_triggered_only = yes
 
 	option = { 
 		name = SND.1.a
+		add_ideas = { idea = Wufeipu_meeting days = 30 }
 	} 
 }
 
@@ -33,7 +43,7 @@ country_event = {
 	id = SND.2
 	title = SND.2.t
 	desc = SND.2.d
-	picture = GFX_news_event_nuke
+	picture =  
 
 	is_triggered_only = yes
 
@@ -47,12 +57,16 @@ country_event = {
 	id = SND.3
 	title = SND.3.t
 	desc = SND.3.d
-	picture = GFX_news_event_nuke
+	picture =  
 
 	is_triggered_only = yes
 
 	option = { 
 		name = SND.3.a
+		add_opinion_modifier = {
+    		target = ZHI
+    		modifier = SND_wuhan_visit_modifiers
+		}
 	} 
 }
 
@@ -61,12 +75,16 @@ country_event = {
 	id = SND.4
 	title = SND.4.t
 	desc = SND.4.d
-	picture = GFX_news_event_nuke
+	picture =  
 
 	is_triggered_only = yes
 
 	option = { 
 		name = SND.4.a
+		add_opinion_modifier = {
+    		target = NAN
+    		modifier = SND_nanjing_visit_modifiers
+		}
 	} 
 }
 
@@ -75,7 +93,7 @@ country_event = {
 	id = SND.5
 	title = SND.5.t
 	desc = SND.5.d
-	picture = GFX_news_event_nuke
+	picture =  
 
 	is_triggered_only = yes
 
@@ -97,7 +115,7 @@ country_event = {
 	id = SND.6
 	title = SND.6.t
 	desc = SND.6.d
-	picture = GFX_news_event_nuke
+	picture =  
 
 	is_triggered_only = yes
 
@@ -114,7 +132,7 @@ country_event = {
 	id = SND.7
 	title = SND.7.t
 	desc = SND.7.d
-	picture = GFX_news_event_nuke
+	picture =  
 
 	is_triggered_only = yes
 
@@ -139,7 +157,7 @@ country_event = {
 	id = SND.8
 	title = SND.8.t
 	desc = SND.8.d
-	picture = GFX_news_event_nuke
+	picture =  
 
 	is_triggered_only = yes
 
@@ -172,12 +190,30 @@ country_event = {
 	id = SND.9
 	title = SND.9.t
 	desc = SND.9.d
-	picture = GFX_news_event_nuke
+	picture =  
 
 	is_triggered_only = yes
 
 	option = { 
 		name = SND.9.a
+		821 = {
+			add_offsite_building = {
+				type = infrastructure 
+				level = 3
+			}
+		}
+		823 = {
+			add_offsite_building = {
+				type = infrastructure 
+				level = 1
+			}
+		}
+		598 = {
+			add_offsite_building = {
+				type = infrastructure 
+				level = 1
+			}
+		}
 	}
 }
 #철도 거부
@@ -186,7 +222,7 @@ country_event = {
 	id = SND.10
 	title = SND.10.t
 	desc = SND.10.d
-	picture = GFX_news_event_nuke
+	picture =  
 
 	is_triggered_only = yes
 
@@ -200,7 +236,7 @@ country_event = {
 	id = SND.11
 	title = SND.11.t
 	desc = SND.11.d
-	picture = GFX_news_event_nuke
+	picture =  
 
 	is_triggered_only = yes
 
@@ -221,7 +257,7 @@ country_event = {
 	id = SND.12
 	title = SND.12.t
 	desc = SND.12.d
-	picture = GFX_news_event_nuke
+	picture =  
 
 	is_triggered_only = yes
 
@@ -253,7 +289,7 @@ country_event = {
 	id = SND.13
 	title = SND.13.t
 	desc = SND.13.d
-	picture = GFX_news_event_nuke
+	picture =  
 
 	is_triggered_only = yes
 
@@ -266,7 +302,7 @@ country_event = {
 	id = SND.13
 	title = SND.13.t
 	desc = SND.13.d
-	picture = GFX_news_event_nuke
+	picture =  
 
 	is_triggered_only = yes
 
@@ -279,7 +315,7 @@ country_event = {
 	id = SND.15
 	title = SND.15.t
 	desc = SND.15.d
-	picture = GFX_news_event_nuke
+	picture =  
 
 	is_triggered_only = yes
 
@@ -301,7 +337,7 @@ country_event = {
 	id = SND.16
 	title = SND.16.t
 	desc = SND.16.d
-	picture = GFX_news_event_nuke
+	picture =  
 
 	is_triggered_only = yes
 
@@ -333,7 +369,7 @@ country_event = {
 	id = SND.17
 	title = SND.17.t
 	desc = SND.17.d
-	picture = GFX_news_event_nuke
+	picture =  
 
 	is_triggered_only = yes
 
@@ -346,7 +382,7 @@ country_event = {
 	id = SND.18
 	title = SND.18.t
 	desc = SND.18.d
-	picture = GFX_news_event_nuke
+	picture =  
 
 	is_triggered_only = yes
 
@@ -359,7 +395,7 @@ country_event = {
 	id = SND.19
 	title = SND.19.t
 	desc = SND.19.d
-	picture = GFX_news_event_nuke
+	picture =  
 
 	is_triggered_only = yes
 
