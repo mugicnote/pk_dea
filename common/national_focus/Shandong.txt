@@ -1615,7 +1615,22 @@ focus_tree = {
 					factor = 90
 				}
 			completion_reward = {
-					add_political_power = 10
+					add_victory_points = {
+						province = 1069
+						value = 20
+					}
+					add_victory_points = {
+						province = 10000
+						value = 15
+					}
+					add_victory_points = {
+						province = 1124
+						value = 15
+					}
+					add_victory_points = {
+						province = 1104
+						value = 17
+					}
 				}
 
 	}
