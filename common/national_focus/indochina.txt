@@ -20,271 +20,640 @@ focus_tree = {
 		   add_political_power = 50
 			}	
 	}
-	focus = { #민생 안전 작전
-		id = ICU_future_2
+####독립 루트####
+	focus = { #독립 앞에서
+		id = ICU_IDP_1
 		icon = ""
 		cost = 3
 		prerequisite = {
 			focus = ICU_future_1
 		}
-		x = 18
+		mutually_exclusive = { 
+			focus = ICU_future_2
+			}		
+		x = 16
 		y = 2
 		completion_reward = {
-		   add_political_power = -80
-		   add_stability = 0.05
+
 			}		
 	}
-	focus = { #산업 회복
-		id = ICU_future_3
+	focus = { #하노이 광장
+		id = ICU_IDP_2
+		icon = ""
+		cost = 3
+		prerequisite = {
+			focus = ICU_IDP_1
+		}		
+		x = 15
+		y = 3
+		completion_reward = {
+			}		
+
+	}
+	focus = { #프랑스 언론 공작
+		id = ICU_IDP_3
+		icon = ""
+		cost = 3
+		prerequisite = {
+			focus = ICU_IDP_1
+		}		
+		x = 17
+		y = 3
+		completion_reward = {
+			}		
+
+	}
+	focus = { #무기고 습격
+		id = ICU_IDP_4
+		icon = ""
+		cost = 3
+		prerequisite = {
+			focus = ICU_IDP_2
+		}		
+		x = 15
+		y = 4
+		completion_reward = {
+			}		
+
+	}
+	focus = { #해외 지원 요청
+		id = ICU_IDP_5
+		icon = ""
+		cost = 3
+		prerequisite = {
+			focus = ICU_IDP_3
+		}		
+		x = 17
+		y = 4
+		completion_reward = {
+			}		
+
+	}
+	focus = { #방콕 비밀 협정
+		id = ICU_IDP_6
+		icon = ""
+		cost = 3
+		prerequisite = {
+			focus = ICU_IDP_4
+		}
+		prerequisite = {
+			focus = ICU_IDP_5
+		}		
+		x = 16
+		y = 5
+		completion_reward = {
+			}		
+
+	}
+	focus = { #제국의 몰락
+		id = ICU_IDP_7
+		icon = ""
+		cost = 3
+		prerequisite = {
+			focus = ICU_IDP_6
+		}		
+		x = 16
+		y = 6
+		completion_reward = {
+			}		
+
+	}	
+####연방 루트####	
+	focus = {#신연방 정책
+		id = ICU_future_2
+		icon = ""
+		cost = 5
+		prerequisite = {
+			focus = ICU_future_1
+		}
+		mutually_exclusive = { 
+			focus = ICU_IDP_1
+			}		
+		x = 28
+		y = 2
+		completion_reward = {
+		}
+	}
+##경제##	
+	focus = { #5개년 경제 계획
+		id = ICU_eco_1
 		icon = ""
 		cost = 3
 		prerequisite = {
 			focus = ICU_future_2
 		}		
-		x = 18
+		x = 23
 		y = 3
 		completion_reward = {
-			add_tech_bonus = {
-				name = industrial_bonus
-				bonus = 0.2
-				uses = 1
-				category = industry
-				}
-			}		
-
-	}
-	focus = {#베트남 시위
-		id = ICU_future_4
-		icon = ""
-		cost = 5
-		prerequisite = {
-			focus = ICU_future_3
-		}		
-		x = 18
-		y = 4
-		completion_reward = {
-			ICU = { country_event = ICU.1 }
 		}
-	}	
-	focus = { #본국 지원 요청
-		id = ICU_future_5
+	}
+	focus = { #민간기업 규제 철폐
+		id = ICU_eco_2
 		icon = ""
 		cost = 3
 		prerequisite = {
-			focus = ICU_future_4
+			focus = ICU_eco_1
 		}		
-		x = 18
+		x = 21
+		y = 4
+		completion_reward = {
+		}
+	}
+	focus = { #베트남 도시화 정책
+		id = ICU_eco_3
+		icon = ""
+		cost = 3
+		prerequisite = {
+			focus = ICU_eco_2
+		}		
+		x = 20
 		y = 5
 		completion_reward = {
-			FRA = { country_event = ICU.2 }
 		}
 	}
-	focus = {#사이공 요새화
-		id = ICU_future_6
+	focus = { #중공업 진흥 정책
+		id = ICU_eco_4
 		icon = ""
-		cost = 5
+		cost = 3
 		prerequisite = {
-			focus = ICU_future_5
+			focus = ICU_eco_2
 		}		
-		x = 18
-		y = 6
-
+		x = 22
+		y = 5
 		completion_reward = {
-			286 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = 4401
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = 13306
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = 13308
-						instant_build = yes
-					}
-				}
-			}
 		}
 	}
-	focus = {#하노이 요새화
-		id = ICU_future_7
+	focus = { #라오스 로드
+		id = ICU_eco_5
 		icon = ""
-		cost = 5
+		cost = 3
 		prerequisite = {
-			focus = ICU_future_5
-		}		
-		x = 16
-		y = 6
-
-		completion_reward = {
-			851 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = 4075
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = 13267
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = 10129
-						instant_build = yes
-					}
-				}
-			}
-		}
-	}
-	focus = {#프놈펜 요새화
-		id = ICU_future_8
-		icon = ""
-		cost = 5
-		prerequisite = {
-			focus = ICU_future_5
+			focus = ICU_eco_3
 		}		
 		x = 20
 		y = 6
-
 		completion_reward = {
-			741 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = 7376
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = 10317
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 2
-						province = 13315
-						instant_build = yes
-					}
-				}
-			}
-		}
-	}
-	focus = {#사이공 항구
-		id = ICU_future_9
-		icon = ""
-		cost = 5
-		prerequisite = {
-			focus = ICU_future_8
-		}
-		prerequisite = {
-			focus = ICU_future_7
-		}
-		prerequisite = {
-			focus = ICU_future_6
-		}		
-		x = 17
-		y = 7
-
-		completion_reward = {	
-			851 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = naval_base
-						level = 2
-						province = 13306
-						instant_build = yes
-					}
-				}
-			}
-		}
-		
-	}
-	focus = {#프놈펜 공항 건설
-		id = ICU_future_10
-		icon = ""
-		cost = 5
-		prerequisite = {
-			focus = ICU_future_8
-		}
-		prerequisite = {
-			focus = ICU_future_7
-		}
-		prerequisite = {
-			focus = ICU_future_6
-		}		
-		x = 19
-		y = 7
-
-		completion_reward = {	
-			741 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = air_base
-						level = 1
-						instant_build = yes
-					}
-				}
-			}
-		}
-	}
-	focus = {#폭격기 요청
-		id = ICU_future_11
-		icon = ""
-		cost = 5
-		prerequisite = {
-			focus = ICU_future_9
-		}		
-		prerequisite = {
-			focus = ICU_future_10
-		}		
-		x = 18
-		y = 8
-
-		completion_reward = {	
-			add_equipment_to_stockpile = {
-			type = tac_bomber_equipment
-			amount = 10
-			producer = FRA
-			}
-		}
-	}
-	focus = {#프랑스 군대 증원
-		id = ICU_future_12
-		icon = ""
-		cost = 5
-		prerequisite = {
-			focus = ICU_future_11
-		}
-		x = 18
-		y = 9
-
-		completion_reward = {	
-			741 = {
-				create_unit = {
-					division = "name = \"1 증원사단\" division_template = \"본토원정사단\" start_experience_factor = 0.1" 
-					owner = ICU
-					}			
-
 		}
 	}	
+	focus = { #캄보디아 공업 지대
+		id = ICU_eco_6
+		icon = ""
+		cost = 3
+		prerequisite = {
+			focus = ICU_eco_4
+		}		
+		x = 22
+		y = 6
+		completion_reward = {
+		}
+	}
+	focus = { #프놈펜 재개발
+		id = ICU_eco_7
+		icon = ""
+		cost = 3
+		prerequisite = {
+			focus = ICU_eco_5
+		}
+		prerequisite = {
+			focus = ICU_eco_6
+		}		
+		x = 21
+		y = 7
+		completion_reward = {
+		}
+	}
+	focus = { #하노이 고속도로
+		id = ICU_eco_8
+		icon = ""
+		cost = 3
+		prerequisite = {
+			focus = ICU_eco_1
+		}		
+		x = 24
+		y = 4
+		completion_reward = {
+		}
+	}
+	focus = { #서부로 연장
+		id = ICU_eco_9
+		icon = ""
+		cost = 3
+		prerequisite = {
+			focus = ICU_eco_8
+		}		
+		x = 24
+		y = 5
+		completion_reward = {
+		}
+	}
+	focus = { #항구 도시 건설
+		id = ICU_eco_10
+		icon = ""
+		cost = 3
+		prerequisite = {
+			focus = ICU_eco_9
+		}		
+		x = 24
+		y = 7
+		completion_reward = {
+		}
+	}
+	focus = { #고무 생산 증강 계획
+		id = ICU_eco_11
+		icon = ""
+		cost = 3
+		prerequisite = {
+			focus = ICU_eco_9
+		}		
+		x = 26
+		y = 7
+		completion_reward = {
+		}
+	}
+	focus = { #하노이 연방대학
+		id = ICU_eco_12
+		icon = ""
+		cost = 3
+		prerequisite = {
+			focus = ICU_eco_1
+		}		
+		x = 26
+		y = 4
+		completion_reward = {
+		}
+	}
+	focus = { #대학 증축 계획
+		id = ICU_eco_13
+		icon = ""
+		cost = 3
+		prerequisite = {
+			focus = ICU_eco_12
+		}		
+		x = 26
+		y = 5
+		completion_reward = {
+		}
+	}
+	focus = { #동남아의 봄
+		id = ICU_eco_14
+		icon = ""
+		cost = 3
+		prerequisite = {
+			focus = ICU_eco_7
+		}
+		prerequisite = {
+			focus = ICU_eco_10
+		}		
+		x = 23
+		y = 8
+		completion_reward = {
+		}
+	}
+	focus = { #해외 시장 개척
+		id = ICU_eco_15
+		icon = ""
+		cost = 3
+		prerequisite = {
+			focus = ICU_eco_14
+		}		
+		x = 23
+		y = 9
+		completion_reward = {
+		}
+	}
+	focus = { #프랑스 진출
+		id = ICU_eco_16
+		icon = ""
+		cost = 3
+		prerequisite = {
+			focus = ICU_eco_15
+		}		
+		x = 22
+		y = 10
+		completion_reward = {
+		}
+	}	
+	focus = { #중국 진출
+		id = ICU_eco_17
+		icon = ""
+		cost = 3
+		prerequisite = {
+			focus = ICU_eco_15
+		}		
+		x = 24
+		y = 10
+		completion_reward = {
+		}
+	}
+###군사###
+	focus = { #군사개혁
+		id = ICU_arm_1
+		icon = ""
+		cost = 3
+		prerequisite = {
+			focus = ICU_future_2
+		}		
+		x = 31
+		y = 3
+		completion_reward = {
+		}
+	}
+	focus = { #사관학교 증설
+		id = ICU_arm_2
+		icon = ""
+		cost = 3
+		prerequisite = {
+			focus = ICU_arm_1
+		}		
+		x = 31
+		y = 4
+		completion_reward = {
+		}
+	}
+##육군##
+	focus = { #육군 개혁
+		id = ICU_arm_3
+		icon = ""
+		cost = 3
+		prerequisite = {
+			focus = ICU_arm_2
+		}		
+		x = 28
+		y = 5
+		completion_reward = {
+		}
+	}	
+	focus = { #징병법 개정
+		id = ICU_arm_4
+		icon = ""
+		cost = 3
+		prerequisite = {
+			focus = ICU_arm_3
+		}		
+		x = 28
+		y = 6
+		completion_reward = {
+		}
+	}
+	focus = { #총기 개발
+		id = ICU_arm_5
+		icon = ""
+		cost = 3
+		prerequisite = {
+			focus = ICU_arm_4
+		}		
+		x = 28
+		y = 7
+		completion_reward = {
+		}
+	}
+	focus = { #전차 개발
+		id = ICU_arm_6
+		icon = ""
+		cost = 3
+		prerequisite = {
+			focus = ICU_arm_4
+		}		
+		x = 30
+		y = 7
+		completion_reward = {
+		}
+	}
+	focus = { #화포 개발
+		id = ICU_arm_7
+		icon = ""
+		cost = 3
+		prerequisite = {
+			focus = ICU_arm_5
+		}		
+		x = 28
+		y = 8
+		completion_reward = {
+		}
+	}
+	focus = { #교리 개발
+		id = ICU_arm_8
+		icon = ""
+		cost = 3
+		prerequisite = {
+			focus = ICU_arm_6
+		}		
+		x = 30
+		y = 8
+		completion_reward = {
+		}
+	}	
+	focus = { #화력제일주의
+		id = ICU_arm_9
+		icon = ""
+		cost = 3
+		prerequisite = {
+			focus = ICU_arm_7
+		}	
+		prerequisite = {
+			focus = ICU_arm_8
+		}		
+		x = 29
+		y = 9
+		completion_reward = {
+		}
+	}
+##해군##
+	focus = { #해군 창설
+		id = ICU_nav_1
+		icon = ""
+		cost = 3
+		prerequisite = {
+			focus = ICU_arm_2
+		}		
+		x = 32
+		y = 5
+		completion_reward = {
+		}
+	}
+	focus = { #조선소 증축
+		id = ICU_nav_2
+		icon = ""
+		cost = 3
+		prerequisite = {
+			focus = ICU_nav_1
+		}		
+		x = 32
+		y = 6
+		completion_reward = {
+		}
+	}
+	focus = { #프랑스 해군고문
+		id = ICU_nav_3
+		icon = ""
+		cost = 3
+		prerequisite = {
+			focus = ICU_nav_2
+		}	
+		x = 32
+		y = 7
+		completion_reward = {
+		}
+	}
+	focus = { #구축함 구매
+		id = ICU_nav_4
+		icon = ""
+		cost = 3
+		prerequisite = {
+			focus = ICU_nav_2
+		}	
+		x = 34
+		y = 7
+		completion_reward = {
+		}
+	}
+	focus = { #잠수함 개발
+		id = ICU_nav_5
+		icon = ""
+		cost = 3
+		prerequisite = {
+			focus = ICU_nav_4
+		}	
+		x = 32
+		y = 8
+		completion_reward = {
+		}
+	}
+	focus = { #수상함 개발
+		id = ICU_nav_6
+		icon = ""
+		cost = 3
+		prerequisite = {
+			focus = ICU_nav_4
+		}	
+		x = 34
+		y = 8
+		completion_reward = {
+		}
+	}
+	focus = { #해병대 창설
+		id = ICU_nav_7
+		icon = ""
+		cost = 3
+		prerequisite = {
+			focus = ICU_nav_5
+		}	
+		prerequisite = {
+			focus = ICU_nav_6
+		}		
+		x = 33
+		y = 9
+		completion_reward = {
+		}
+	}
+##공군##
+	focus = { #공군 창설
+		id = ICU_air_1
+		icon = ""
+		cost = 3
+		prerequisite = {
+			focus = ICU_arm_2
+		}		
+		x = 36
+		y = 5
+		completion_reward = {
+		}
+	}
+	focus = { #공항 건설
+		id = ICU_air_2
+		icon = ""
+		cost = 3
+		prerequisite = {
+			focus = ICU_air_1
+		}		
+		x = 36
+		y = 6
+		completion_reward = {
+		}
+	}
+	focus = { #전투기 구매
+		id = ICU_air_3
+		icon = ""
+		cost = 3
+		prerequisite = {
+			focus = ICU_air_2
+		}		
+		x = 36
+		y = 7
+		completion_reward = {
+		}
+	}
+	focus = { #전투기 개발
+		id = ICU_air_4
+		icon = ""
+		cost = 3
+		prerequisite = {
+			focus = ICU_air_3
+		}		
+		x = 36
+		y = 8
+		completion_reward = {
+		}
+	}
+	focus = { #폭격기 개발
+		id = ICU_air_5
+		icon = ""
+		cost = 3
+		prerequisite = {
+			focus = ICU_air_3
+		}		
+		x = 38
+		y = 8
+		completion_reward = {
+		}
+	}	
+	focus = { #대공망 구축
+		id = ICU_air_6
+		icon = ""
+		cost = 3
+		prerequisite = {
+			focus = ICU_air_3
+		}		
+		x = 40
+		y = 8
+		completion_reward = {
+		}
+	}
+	focus = { #공수부대 창설
+		id = ICU_air_7
+		icon = ""
+		cost = 3
+		prerequisite = {
+			focus = ICU_air_4
+		}	
+		prerequisite = {
+			focus = ICU_air_5
+		}			
+		prerequisite = {
+			focus = ICU_air_6
+		}			
+		x = 38
+		y = 9
+		completion_reward = {
+		}
+	}
+	focus = { #현대화 완료
+		id = ICU_mil_1
+		icon = ""
+		cost = 3
+		prerequisite = {
+			focus = ICU_arm_9
+		}	
+		prerequisite = {
+			focus = ICU_nav_7
+		}
+		prerequisite = {
+			focus = ICU_air_7
+		}		
+		x = 33
+		y = 10
+		completion_reward = {
+		}
+	}
+####외교 정책####	
 }
