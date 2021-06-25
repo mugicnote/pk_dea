@@ -54,14 +54,14 @@ add_ideas = {
 set_convoys = 40
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = national_conservatism
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	neutrality = 100
+	national_conservatism = 100
 }
 
 create_country_leader = {
@@ -69,7 +69,7 @@ create_country_leader = {
 	desc = "CHIANG_KAI_SHEK_DESC"
 	picture = "Portrait_CHI_Chiang_Kai_Shek.dds"
 	expire = "1999.1.1"
-	ideology = Peoples_Party_ideology
+	ideology = nat_conservatism
 	traits = {
 		generallissimo
 	}

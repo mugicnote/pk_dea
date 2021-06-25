@@ -47,7 +47,7 @@ defined_text = {
 	text = {
 		trigger = {
 			tag = CHI
-			has_government = neutrality
+			has_government = national_conservatism
 		}
 		localization_key = CHI_FIRST_TITLE
 	}
@@ -57,6 +57,13 @@ defined_text = {
 			has_government = social_liberalism
 		}
 		localization_key = USA_FIRST_TITLE
+	}
+	text = {
+		trigger = {
+			tag = RUS
+			has_government = neutrality
+		}
+		localization_key = RUS_FIRST_TITLE
 	}
 }
 
@@ -91,7 +98,7 @@ defined_text = {
 	text = {
 		trigger = {
 			tag = CHI
-			has_government = neutrality
+			has_government = national_conservatism
 		}
 		localization_key = CHI_SECOND_TITLE
 	}
@@ -140,7 +147,7 @@ defined_text = {
 	text = {
 		trigger = {
 			tag = CHI
-			has_government = neutrality
+			has_government = national_conservatism
 		}
 		localization_key = CHI_DUAL_NAME
 	}
@@ -189,7 +196,7 @@ defined_text = {
 	text = {
 		trigger = {
 			tag = CHI
-			has_government = neutrality
+			has_government = national_conservatism
 		}
 		localization_key = GFX_Portrait_CHI_Hu_Hanmin
 	}
@@ -203,7 +210,7 @@ defined_text = {
 }
 
 defined_text = {
-    name = leader2_desc
+    name = DUAL_DESC
     
     text = {
         trigger = {
@@ -212,10 +219,17 @@ defined_text = {
 		}
         localization_key = "KOREA_DUAL_DESC"
 	}
+	text = {
+        trigger = {
+			tag = CHI
+			has_government = national_conservatism
+		}
+        localization_key = "CHINA_DUAL_DESC"
+	}
 }
 
 defined_text = {
-    name = leader2_desc
+    name = DUAL_NAME
     
     text = {
         trigger = {

@@ -1,4 +1,13 @@
 ﻿l_english:
+ #기타 디시전임
+ upstate_category:0 "도시화 계획"
+ upstate_category_desc:0 "건설과 국가 산업 관리의 진전은 우리의 국가 잠재력을 향상시킬 것입니다."
+ urbanize_hide:0 "도시화 계획 숨기기"
+ urbanize_show:0 "도시화 계획 보이기"
+ urbanize_target5:0 "도시 개발 계획"
+ urbanize_target10:0 "도시 개발 계획"
+ urbanize_target15:0 "도시 개발 계획"
+ #한국 디시전
  KOR_congress:0 "중추원"
  KOR_congress_desc:0 "중추원은 대통령의 권한 남용을 막기 위해 있는 곳이면서 대통령의 판단이 옳은가, 그리고 시민들이 무엇을 필요로 하고 있는가 등을 살피고 그에 대한 마땅한 방식을 제안합니다, 즉 대통령과 같은 최고 결정권자는 정책을 실행하기 위해서는 반드시 그들과 함께 해야 할 것입니다."
 
@@ -278,3 +287,16 @@ KOR_national_assembly_unicameralism_decision:0 "대한민국 국회"
  KOR_Politician_Very_Low:0 ": 영향력 §R매우 낮음§!"
  KOR_Politician_Irrelevant:0 ": 영향력 §L거의 없음§!"
  KOR_Politician_Nonexistent:0 ": 영향력 §g존재하지않음§!"
+
+DEA_KOR_Military_factional_decisions:0 "군부 내의 파벌 경쟁"
+ENG_MAGGIE_MAGGIE_PER:0 "[?ENG_Populist_Lovers|%0]"
+ENG_MAGGIE_OG_PER:0 "[?ENG_Elite_Lovers|%0]"
+ENG_DEC_MAGGIE_TICK_TICK:0 "[ENG.ENG_MAGGIES_TICK]"
+ENG_Thatcher_Gain_Support:0 "§G대처가 지지를 얻을 것입니다§!!"
+ENG_Thatcher_Lose_Support:0 "§Y대처가 지지를 잃을 것입니다§!!"
+ENG_Thatcher_Something_Disastorous:0 "§R뭔가 끔찍한 일이 일어나고 있습니다...§!"
+ENG_THATCH_POP_LIKES:0 "+정부 지지도\n+약한 상류층\n+강한 군대"
+ENG_THATCH_POP_DISLIKES:0 "-Overfunded Military\n-Government ties to Elite\n-Weak Welfare\n-High Crime"
+ENG_THATCH_ELITIST_LIKES:0 "+Protected Interests\n+High Employment\n+Strong Trade"
+ENG_THATCH_ELITIST_DISLIKES:0 "-High Taxes\n-Government Intervention"
+ENG_THATCH_INFLUENCE:0 "Margaret Thatcher currently has [?ENG_Maggie_Party_Lead|%0] influence over the Royal Party\n Last month it changed by [?Thatcher_Influence_Monthly|%0]"

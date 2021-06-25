@@ -1,18 +1,18 @@
 leader_traits = {
 
 	## 내각 관료 직책 ##
-	hog = {} #대통령
-	secmin = {} #국무총리
-	frnmin =  {} #외무장관
-	ecomin = {} #재무장관
-	milmin = {} #군무장관
-	intmin = {} #정보장관
+	traits_interior_minister = {} #내무부장관
+	traits_foreign_minister = {} #외무부장관
+	traits_national_defense_minister =  {} #국방부장관
+	traits_finance_minister = {} #재무부장관
+	traits_justice_minister = {} #법무부장관
+	traits_education_minister = {} #문교부장관
+	traits_industry_commerce_minister = {} #상공부장관
+	traits_transportation_minister = {} #교통부장관
 
-	indmin = {}
-	labmin = {}
-	antmin = {}
-	defmin = {}
-	int2min = {}
+	traits_labor_minister = {} #노동부장관
+	traits_information_communication_minister = {} #체신부장관
+	int2min = {} #
 	polmin = {}
 	stamin = {}
 	hommin = {}
@@ -272,31 +272,13 @@ leader_traits = {
 		stability_factor = -0.05
 	}
 
-	third_term_president = {
+	President = {
 		random = no
-		political_power_factor = 0.15
+	}
+	Father_Democratic_Republic = {
+		random = no
 		stability_factor = 0.1
-		consumer_goods_factor = 0.05
-	}
-	perfectionist_president = {
-		random = no
-		max_planning = 0.1
-		planning_speed = 0.1
-		research_speed_factor = 0.05
-	}
-	Seo_Jae_pil_Doctrine = {
-		random = no
-		production_speed_buildings_factor = 0.10
-		production_speed_industrial_complex_factor = 0.35
-		production_speed_arms_factory_factor = -0.3
-		consumer_goods_factor = 0.05
-		war_support_factor = -0.10
-	}
-	Hitler_of_Korea = {
-		random = no
-		military_leader_cost_factor = -0.15
-		max_command_power = 50
-		stability_factor = -0.15
+		political_power_factor = 0.05
 	}
 	
 }

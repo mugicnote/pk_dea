@@ -108,7 +108,7 @@ guiTypes = {
 		instantTextBoxType = {
 			name = "TNO_OpeningScreen_Text"
 			position = { x = 14 y = 38 }
-			font = "aldrich_24_outline"
+			font = "aldrich_20_outline"
 			text = "[GET_CURRENT_INTRO_TEXT]"
 			maxWidth = 712
 			maxHeight = 410
@@ -119,7 +119,7 @@ guiTypes = {
 		instantTextBoxType = {
 			name = "TNO_OpeningScreen_Text_Small"
 			position = { x = 14 y = 38 }
-			font = "aldrich_24_outline"
+			font = "aldrich_22_outline"
 			text = "[GET_CURRENT_INTRO_TEXT]"
 			maxWidth = 712
 			maxHeight = 370

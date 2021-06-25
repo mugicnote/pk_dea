@@ -1,5 +1,20 @@
 ############################################
-# Leader Title
+# Not Cabinet
+############################################
+defined_text = {
+	name = rural_relief1_level
+
+	text = {
+		trigger = {
+			check_variable = { tech_self_sufficiency = 0 }
+		}
+		localization_key = rural_relief_level_1
+	}
+
+
+}
+############################################
+# Cabinet Front Name
 ############################################
 defined_text = {
 	name = FdS_front_name
@@ -26,6 +41,9 @@ defined_text = {
 	}
 
 }
+############################################
+# 대공처장
+############################################
 defined_text = {
 	name = FdS_rank2
 
@@ -35,17 +53,7 @@ defined_text = {
 		}
 		localization_key = POSITION_main_opposition_party_leader2
 	}
-	text = {
-		trigger = {
-			tag = JAP
-		}
-		localization_key = POSITION_main_opposition_EMP_JAP
-	}
 }
-
-############################################
-# Secondary Leader Title
-############################################
 
 defined_text = {
 	name = HoG_rank2
@@ -56,16 +64,8 @@ defined_text = {
 		}
 		localization_key = POSITION_main_opposition_party_leader2
 	}
-	text = {
-		trigger = {
-			tag = JAP
-		}
-		localization_key = POSITION_main_opposition_EMP_JAP
-	}
 }
-############################################
-# HoG Name
-############################################
+
 defined_text = {
 	name = FdS_name2
 
@@ -74,20 +74,6 @@ defined_text = {
 			has_country_flag = Jang_TaekSang
 		}
 		localization_key = Jang_TaekSang
-	}
-
-	text = {
-		trigger = {
-			has_country_flag = no_fd2
-		}
-		localization_key = no_fd2
-	}
-
-	text = {
-		trigger = {
-			has_country_flag = showa_tenno
-		}
-		localization_key = showa_tenno
 	}
 
 }
@@ -101,19 +87,6 @@ defined_text = {
 		}
 		localization_key = GFX_Portrait_Jang_TaekSang
 	}
-	text = {
-		trigger = {
-			has_country_flag = no_fd2
-		}
-		localization_key = GFX_Leader_Portrait_Background
-	}
-	text = {
-		trigger = {
-			has_country_flag = showa_tenno
-		}
-		localization_key = GFX_Portrait_showa_tenno
-	}
-
 }
 
 defined_text = {
@@ -282,9 +255,9 @@ defined_text = {
 
 	text = {
 		trigger = {
-			has_country_flag = Yoon_Bo_Sun
+			has_country_flag = Kang_In_taek
 		}
-		localization_key = Yoon_Bo_Sun
+		localization_key = Kang_In_taek
 	}
 }
 defined_text = {
@@ -292,9 +265,9 @@ defined_text = {
 	
 	text = {
 		trigger = {
-			has_country_flag = Yoon_Bo_Sun
+			has_country_flag = Kang_In_taek
 		}
-		localization_key = GFX_Portrait_Yoon_Bo_Sun
+		localization_key = GFX_Portrait_Kang_In_taek
 	}
 }
 defined_text = {
@@ -302,9 +275,9 @@ defined_text = {
 
 	text = {
 		trigger = { 
-			has_country_flag = Yoon_Bo_Sun
+			has_country_flag = Kang_In_taek
 		}
-		localization_key = Yoon_Bo_Sun_desc
+		localization_key = Kang_In_taek_desc
 	}
 }
 
@@ -968,9 +941,9 @@ defined_text = {
 	
 	text = {
 		trigger = {
-			has_country_flag = ji_chong_chen
+			has_country_flag = Lee_Soon_yong
 		}
-		localization_key = ji_chong_chen
+		localization_key = Lee_Soon_yong
 	}
 }
 defined_text = {
@@ -978,9 +951,9 @@ defined_text = {
 	
 	text = {
 		trigger = {
-			has_country_flag = ji_chong_chen
+			has_country_flag = Lee_Soon_yong
 		}
-		localization_key = GFX_Portrait_ji_chong_chen
+		localization_key = GFX_Portrait_Lee_Soon_yong
 	}
 }
 defined_text = {
@@ -988,9 +961,9 @@ defined_text = {
 
 	text = {
 		trigger = { 
-			has_country_flag = ji_chong_chen
+			has_country_flag = Lee_Soon_yong
 		}
-		localization_key = ji_chong_chen_desc
+		localization_key = Lee_Soon_yong_desc
 	}
 }
 
@@ -1023,9 +996,9 @@ defined_text = {
 	
 	text = {
 		trigger = {
-			has_country_flag = Il_han_New
+			has_country_flag = Kim_Hyun_cheol
 		}
-		localization_key = Il_han_New
+		localization_key = Kim_Hyun_cheol
 	}
 }
 defined_text = {
@@ -1033,9 +1006,9 @@ defined_text = {
 	
 	text = {
 		trigger = {
-			has_country_flag = Il_han_New
+			has_country_flag = Kim_Hyun_cheol
 		}
-		localization_key = GFX_Portrait_Il_han_New
+		localization_key = GFX_Portrait_Kim_Hyun_cheol
 	}
 }
 defined_text = {
@@ -1043,9 +1016,9 @@ defined_text = {
 
 	text = {
 		trigger = { 
-			has_country_flag = Il_han_New
+			has_country_flag = Kim_Hyun_cheol
 		}
-		localization_key = Il_han_New_desc
+		localization_key = Kim_Hyun_cheol_desc
 	}
 }
 
@@ -1078,9 +1051,9 @@ defined_text = {
 	
 	text = {
 		trigger = {
-			has_country_flag = Kim_Suk_Won
+			has_country_flag = Kim_Beop_rin
 		}
-		localization_key = Kim_Suk_Won
+		localization_key = Kim_Beop_rin
 	}
 }
 defined_text = {
@@ -1088,9 +1061,9 @@ defined_text = {
 	
 	text = {
 		trigger = {
-			has_country_flag = Kim_Suk_Won
+			has_country_flag = Kim_Beop_rin
 		}
-		localization_key = GFX_Portrait_Kim_Suk_Won
+		localization_key = GFX_Portrait_Kim_Beop_rin
 	}
 }
 defined_text = {
@@ -1098,9 +1071,9 @@ defined_text = {
 
 	text = {
 		trigger = { 
-			has_country_flag = Kim_Suk_Won
+			has_country_flag = Kim_Beop_rin
 		}
-		localization_key = Kim_Suk_Won_desc
+		localization_key = Kim_Beop_rin_desc
 	}
 }
 
@@ -1310,9 +1283,9 @@ defined_text = {
 	
 	text = {
 		trigger = {
-			has_country_flag = Ahn_Jaehong
+			has_country_flag = Yoon_Bo_Sun
 		}
-		localization_key = Ahn_Jaehong
+		localization_key = Yoon_Bo_Sun
 	}
 	text = {
 		trigger = {
@@ -1326,9 +1299,9 @@ defined_text = {
 	
 	text = {
 		trigger = {
-			has_country_flag = Ahn_Jaehong
+			has_country_flag = Yoon_Bo_Sun
 		}
-		localization_key = GFX_Portrait_Ahn_Jaehong
+		localization_key = GFX_Portrait_Yoon_Bo_Sun
 	}
 	text = {
 		trigger = {
@@ -1342,9 +1315,9 @@ defined_text = {
 
 	text = {
 		trigger = { 
-			has_country_flag = Ahn_Jaehong
+			has_country_flag = Yoon_Bo_Sun
 		}
-		localization_key = Ahn_Jaehong_desc
+		localization_key = Yoon_Bo_Sun_desc
 	}
 }
 
@@ -1431,15 +1404,62 @@ defined_text = {
 	}
 }
 
-defined_text = {
-	name = rural_relief1_level
 
+defined_text = {
+	name = FdS_rank18
+
+	
 	text = {
 		trigger = {
-			check_variable = { tech_self_sufficiency = 0 }
+			tag = KOR
 		}
-		localization_key = rural_relief_level_1
+		localization_key = POSITION_main_opposition_party_leader18
 	}
 
+}
+
+defined_text = {
+	name = HoG_rank18
+	
+	text = {
+		trigger = {
+			tag = KOR
+		}
+		localization_key = POSITION_main_opposition_party_leader18
+	}
 
 }
+
+defined_text = {
+	name = FdS_name18
+	
+	text = {
+		trigger = {
+			has_country_flag = Lee_In
+		}
+		localization_key = Lee_In
+	}
+
+}
+defined_text = {
+	name = leader_two_portrait18
+	
+	text = {
+		trigger = {
+			has_country_flag = Lee_In
+		}
+		localization_key = GFX_Portrait_Lee_In
+	}
+
+}
+defined_text = {
+	name = HoG18_desc
+
+	text = {
+		trigger = { 
+			has_country_flag = Lee_In
+		}
+		localization_key = Lee_In_desc
+	}
+}
+

@@ -29,33 +29,25 @@ idea_categories = {
 		slot = political_advisor
 		slot = political_advisor
 		slot = political_advisor
+		slot = political_advisor
+		slot = political_advisor
 		
 		cost = 150
 		removal_cost = 0
 
 		ledger = civilian
 	}
-	
-	government2 = {
-		slot = political_advisor
-		slot = political_advisor
-		slot = political_advisor
-		slot = political_advisor
-		slot = political_advisor
-		slot = political_advisor
 
-		cost = 150
-		removal_cost = 0
-	}
-	
 	cabinet = {
-		slot = head_of_gov
-		slot = security_minister
-		slot = economy_minister
-		slot = foreign_minister
-		slot = military_minister
-		slot = intel_minister
-		
+		slot = interior_minister #내무부장관
+		slot = foreign_minister #외무부장관
+		slot = national_defense_minister #국방부장관
+		slot = finance_minister #재무부장관
+		slot = justice_minister #법무부장관
+		slot = education_minister #문교부장관
+		slot = industry_commerce_minister #상공부장관
+		slot = transportation_minister #교통부장관
+
 		cost = 150
 		removal_cost = -1
 
@@ -63,24 +55,12 @@ idea_categories = {
 	}
 
 	cabinet2 = {
-		slot = Industry_minister
-		slot = Labor_minister
-		slot = anticom_minister
-		slot = defense_minister
-		slot = intel_minister2
-		slot = police_minister
-		
-		cost = 150
-		removal_cost = -1
-
-		ledger = civilian
-	}
-
-	cabinet3 = {
-		slot = Staff_minister
-		slot = Home_minister
-		slot = Dev_minister
-		slot = Defense2_minister
+		slot = labor_minister #노동부장관
+		slot = information_communication_minister #체신부장관
+		slot = national_assembly_speaker #국회의장
+		slot = chief_justice #대법원장
+		slot = national_police_agency_general #경찰청장
+		slot = national_intelligence_minister #정보부장관
 		
 		cost = 150
 		removal_cost = -1

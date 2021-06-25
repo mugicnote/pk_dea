@@ -3,9 +3,7 @@ state={
 	id=592
 	name="STATE_592"
 	resources={
-		tungsten=8.000
 		steel=15.000
-		chromium=3.000
 	}
 
 	history={
@@ -22,12 +20,11 @@ state={
 				naval_base = 5
 				coastal_bunker = 1
 				bunker = 1
-
 			}
 
 		}
 		victory_points = {
-			1047 5 
+			1047 30
 		}
 
 	}

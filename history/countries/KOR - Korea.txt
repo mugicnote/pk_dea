@@ -108,7 +108,6 @@ set_convoys = 30
 #국민정신
 add_ideas = {
 kor_conscription
-unstable_security
 KOR_great_depression
 huge_government_bond
 Kor_excessive_Inflation
@@ -193,6 +192,8 @@ create_country_leader = { #사진 작업 완료(DoS 도움 받음)
   expire = "1949.6.26"
   ideology = Seo_Jae_Pil_conservatism
   traits = {
+	President
+	Father_Democratic_Republic
   }
 }
 

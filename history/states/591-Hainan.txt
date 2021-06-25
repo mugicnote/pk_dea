@@ -7,20 +7,24 @@ state={
 		owner = CHI
 		add_core_of = CHI
 		add_core_of = GDC
-		set_province_name = {
-            id = 1070
-            name = "하이커우"
-        }
 		victory_points = {
-			1070 30 
+			1070 10 
 		}
 		victory_points = {
-			994 5
+			994 3
 		}
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
 			air_base = 1
-
+			dockyard = 1
+			1070 = {
+				naval_base = 2
+				coastal_bunker = 1
+				bunker = 1
+			}
+			994 = {
+				naval_base = 2
+			}
 		}
 
 	}
@@ -28,7 +32,7 @@ state={
 	provinces={
 		994 1038 1070 4160 7135 11963 11990 
 	}
-	manpower=4250000
+	manpower=4350000
 	buildings_max_level_factor=1.000
 	state_category = town
 }

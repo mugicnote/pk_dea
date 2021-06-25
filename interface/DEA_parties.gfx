@@ -1,0 +1,8 @@
+spriteTypes = {
+
+	### KOR ###
+	spriteType = {
+		name = "GFX_ideology_Seo_Jae_Pil_conservatism"
+		textureFile = "gfx/interface/ideologies/oligarchism.tga"
+	}
+}

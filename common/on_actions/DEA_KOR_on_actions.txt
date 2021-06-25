@@ -36,41 +36,31 @@ on_actions = {
 
 		set_country_flag = Jang_TaekSang
 		set_country_flag = Shin_Sung_mo
-		set_country_flag = Yoon_Bo_Sun
+		set_country_flag = Kang_In_taek
 		set_country_flag = Kim_Kyusik
 		set_country_flag = Chough_Pyung_ok
 		set_country_flag = Ahn_Chang_Ho
 		set_country_flag = jae_pil
 		set_country_flag = Kim_Byung_ro
 		set_country_flag = Lee_Beomseok
-		set_country_flag = ji_chong_chen
-		set_country_flag = Il_han_New
-		set_country_flag = Kim_Suk_Won
+		set_country_flag = Lee_Soon_yong
+		set_country_flag = Kim_Hyun_cheol
+		set_country_flag = Kim_Beop_rin
 		set_country_flag = jo_man_sik
 		set_country_flag = Ho_Jong
-		set_country_flag = Ahn_Jaehong
+		set_country_flag = Yoon_Bo_Sun
 		set_country_flag = Pak_Honyong
+		set_country_flag = Lee_In
 
 		set_country_flag = rural_relief_level_is_1
 
-		add_ideas = HG_Seo_Jae_Pil
-		add_ideas = SE_kim_kyusik
-		add_ideas = EM_Kim_Byung_ro
-		add_ideas = FM_Ahn_Chang_Ho
-		add_ideas = MM_Jang_TaekSang
-		add_ideas = IM_Shin_Sung_mo
-
-		add_ideas = INM_Yoon_Bo_Sun
-		add_ideas = LM_Chough_Pyung_ok
-		add_ideas = AM_jomansik
-		add_ideas = DM_Ho_Jong
-		add_ideas = I2M_Ahn_Jaehong
-		add_ideas = PM_Pak_Hon_yong
-
-		add_ideas = SM_lee_beomseok
-		add_ideas = HM_Ji_Cheong_cheon
-		add_ideas = DM_Ilhan_New
-		add_ideas = DM_Kim_Suk_won
+		add_ideas = idea_Lee_Soon_yong
+		add_ideas = idea_Ho_Jong
+		add_ideas = idea_Shin_Sung_mo
+		add_ideas = idea_Jo_Man_sik
+		add_ideas = idea_Lee_In
+		add_ideas = idea_Kim_Beop_rin
+		add_ideas = idea_Yoon_Bo_Sun
 		
 		country_lock_all_division_template = yes
 		create_intelligence_agency = yes

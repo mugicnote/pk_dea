@@ -9,13 +9,13 @@ guiTypes = {
 			position = { x = 17 y = 0 }
 			quadTextureSprite ="GFX_cabinet_button"
 			buttonFont = "hoi_16mbs"
-			buttonText = "야당 개요"
+			buttonText = "국가요인 개요"
 		}
 	}
 	containerWindowType = {
 		name = "double_leader_system_popup_ui_window"
 		position = { x = 550 y = 85 }
-		size = { width = 400 height = 620 }
+		size = { width = 400 height = 400 }
 		fade_time = 300
 		fade_type = linear
 		moveable = yes
@@ -31,64 +31,6 @@ guiTypes = {
 			name = "double_leader_system_popup_ui_window_test"
 			position = { x = -40 y = 0 }
 			
-			iconType = { #사진
-				name = "HoG"
-				position = { x = 158 y = 100 }
-				spriteType = "GFX_leader_unknown"
-				pdx_tooltip = "SECOND_LEADER_NAME"
-				pdx_tooltip_delayed = "SECOND_LEADER_DESC"
-			}
-			
-			iconType = { #사진 태두리
-				name = "leader_frame21"
-				spriteType = "GFX_pol_leader_frame"
-				position = { x = 150 y = 86 }		
-				allwaystransparent = yes
-				pdx_tooltip = "SECOND_LEADER_NAME"
-				pdx_tooltip_delayed = "SECOND_LEADER_DESC"
-			}
-					
-			iconType = { #제1 야당 지도자 아래 배경
-				name = "HoG_rank_frame2"
-				spriteType = "GFX_pol_leader_rank_frame"
-				position = { x = 150 y = 50 }		
-				allwaystransparent = yes
-			}
-					
-			instantTextboxType = { #큰 이름
-				name = "FdS_name"
-				position = { x = 158 y = 312 }
-				font = "hoi_18mbs"
-				text = "[This.FdS_name]"
-				maxWidth = 155
-				maxHeight = 20
-				format = center
-				vertical_alignment = center
-				pdx_tooltip = "SECOND_LEADER_NAME"
-			}
-			instantTextboxType = { #작은 이름
-				name = "FdS_small_name"
-				position = { x = 50 y = 465 }
-				font = "hoi_18mbs"
-				text = "[This.FdS_small_name]"
-				maxWidth = 370
-				maxHeight = 20
-				format = center
-				vertical_alignment = center
-			}
-					
-			instantTextboxType = { #제1_야당_지도자
-				name = "HoG_rank"
-				position = { x = 158 y = 60 }
-				font = "hoi_20b"
-				text = "[This.HoG_rank]"
-				maxWidth = 155
-				maxHeight = 20
-				format = center
-				vertical_alignment = center
-				pdx_tooltip = "SECOND_LEADER_NAME"
-				pdx_tooltip_delayed = "SECOND_LEADER_DESC"
-			}
 			buttonType = {
 				name = "close"
 				spriteType = "GFX_closebutton"
@@ -96,6 +38,56 @@ guiTypes = {
 				clicksound = click_close
 				pdx_tooltip = "닫기"
 				shortcut = "ESCAPE"
+			}
+
+			###국무총리###
+			iconType = { #사진
+				name = "HoG7"
+				position = { x = 65 y = 120 }
+				spriteType = "GFX_leader_unknown"
+				pdx_tooltip = "SECOND_LEADER_NAME7"
+				pdx_tooltip_delayed = "SECOND_LEADER_DESC7"
+			}
+			
+			iconType = { #사진 태두리
+				name = "leader_frame217"
+				spriteType = "GFX_pol_leader_frame_cab"
+				position = { x = 60 y = 106 }		
+				allwaystransparent = yes
+				pdx_tooltip = "SECOND_LEADER_NAME7"
+				pdx_tooltip_delayed = "SECOND_LEADER_DESC7"
+			}
+					
+			iconType = { #제1 야당 지도자 바탕 배경
+				name = "HoG_rank_frame7"
+				spriteType = "GFX_pol_leader_rank_frame"
+				position = { x = 62 y = 78 }		
+				allwaystransparent = yes
+			}
+					
+			instantTextboxType = { #이름
+				name = "FdS_name7"
+				position = { x = 68 y = 330 }
+				font = "hoi_18mbs"
+				text = "[This.FdS_name7]"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+				pdx_tooltip = "SECOND_LEADER_NAME7"
+			}
+					
+			instantTextboxType = { #제1_야당_지도자
+				name = "HoG_rank7"
+				position = { x = 70 y = 85 }
+				font = "hoi_20b"
+				text = "[This.HoG_rank7]"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+				pdx_tooltip = "SECOND_LEADER_NAME7"
+				pdx_tooltip_delayed = "SECOND_LEADER_DESC7"
 			}
 		}
 	}

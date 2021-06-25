@@ -4,8 +4,8 @@ state={
 	name="STATE_759"
 
 	history={
-		owner = TNG
-		add_core_of = TNG
+		owner = SIK
+		add_core_of = SIK
 		buildings = {
 			infrastructure = 1
 

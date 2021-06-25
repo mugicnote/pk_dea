@@ -8,7 +8,7 @@ guiTypes = {
 		buttonType = {
 			name = "Japan_Internal_GUI_Open_Button"
 			quadTextureSprite = "GFX_Japan_Internal_GUI_Open_Button"
-			position = { x = 263 y = 0 }
+			position = { x = 263 y = -50 }
 			pdx_tooltip = "scripted_gui_open_tt_jap_gov"
 			scale = 0.65
 		}

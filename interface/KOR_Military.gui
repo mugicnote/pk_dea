@@ -1,0 +1,152 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "ENG_GUI_Maggie_Decision_GUI"
+		size = { width = 525 height = 625 }
+		position = { x = 0 y = 0 }
+		
+		iconType = {
+			name = "ENG_GUI_Maggie_Decision_GUI_Portrait_1"
+			spriteType = "GFX_ENG_Portrait_Thatcher_Decision"
+			position = { x = 83 y = 25 }
+		}
+		
+		iconType = {
+			name = "ENG_GUI_Maggie_Decision_GUI_Portrait_2"
+			spriteType = "GFX_ENG_Portrait_Old_Guard_Decision"
+			position = { x = 283 y = 25 }
+		}
+		
+		iconType = {
+			name = "ENG_GUI_Maggie_Decision_GUI_ProgressBar"
+			spriteType = "GFX_ENG_GUI_Maggie_Decision_GUI_Bar"
+			position = { x = 37 y = 266 }
+		}
+		
+		iconType = {
+			name = "ENG_GUI_Maggie_Decision_GUI_ProgressBar_Frame"
+			spriteType = "GFX_ENG_GUI_Macmillan_Decision_GUI_Bar_Frame"
+			position = { x = 35 y = 265 }
+		}
+		
+		instantTextboxType = {
+			name = "ENG_GUI_Maggie_Decision_GUI_Maggie_Text"
+			position = { x = 34 y = 245 }
+			font = "aldrich_16_outline"
+			text = "군부의 지청천 지지도 및 쿠데타 반대 비율"
+			maxWidth = 300
+			format = left
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "ENG_GUI_Maggie_Decision_GUI_OG_Text"
+			position = { x = 267 y = 245 }
+			font = "aldrich_16_outline"
+			text = "군부의 이범석 지지도 및 쿠데타 찬성 비율"
+			maxWidth = 300
+			format = left
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "ENG_GUI_Maggie_Influence_Change"
+			position = { x = 18 y = 310 }
+			font = "aldrich_16_outline"
+			text = "ENG_THATCH_INFLUENCE"
+			maxWidth = 490
+			maxHeight = 125
+			format = center
+		}
+		
+		iconType = {
+			name = "ENG_GUI_Maggie_Decision_GUI_Box"
+			spriteType = "GFX_ENG_GUI_Maggie_Decision_GUI_Box"
+			position = { x = 19 y = 355 }
+		}
+		
+		instantTextboxType = {
+			name = "ENG_GUI_Maggie_Decision_GUI_Elitist_Support_Title"
+			position = { x = 36 y = 400 }
+			font = "aldrich_24_outline"
+			text = "지청천 지지율"
+			maxWidth = 200
+			format = center
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "ENG_GUI_Maggie_Decision_GUI_Elitist_Support_Number"
+			position = { x = 266 y = 460 }
+			font = "aldrich_48_outline"
+			text = "ENG_MAGGIE_OG_PER"
+			maxWidth = 200
+			format = center
+			alwaystransparent = yes
+		}
+
+		instantTextboxType = {
+			name = "ENG_GUI_Maggie_Decision_GUI_Populist_Support_Title"
+			position = { x = 266 y = 400 }
+			font = "aldrich_24_outline"
+			text = "이범석 지지율"
+			maxWidth = 200
+			format = center
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "ENG_GUI_Maggie_Decision_GUI_Populist_Support_Number"
+			position = { x = 36 y = 460 }
+			font = "aldrich_48_outline"
+			text = "ENG_MAGGIE_MAGGIE_PER"
+			maxWidth = 200
+			format = center
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "ENG_GUI_Maggie_Decision_GUI_Elitist_Likes"
+			position = { x = 190 y = 359 }
+			font = "aldrich_20_outline"
+			text = "ENG_THATCH_ELITIST_LIKES"
+			maxWidth = 150
+			maxHeight = 125
+			fixedsize = yes
+			format = left
+		}
+		
+		instantTextboxType = {
+			name = "ENG_GUI_Maggie_Decision_GUI_Elitist_Disikes"
+			position = { x = 348 y = 359 }
+			font = "aldrich_20_outline"
+			text = "ENG_THATCH_ELITIST_DISLIKES"
+			maxWidth = 150
+			maxHeight = 125
+			fixedsize = yes
+			format = left
+		}
+		
+		instantTextboxType = {
+			name = "ENG_GUI_Maggie_Decision_GUI_Populist_Likes"
+			position = { x = 190 y = 486 }
+			font = "aldrich_20_outline"
+			text = "ENG_THATCH_POP_LIKES"
+			maxWidth = 150
+			maxHeight = 125
+			fixedsize = yes
+			format = left
+		}
+
+		instantTextboxType = {
+			name = "ENG_GUI_Maggie_Decision_GUI_Populist_Disikes"
+			position = { x = 348 y = 486 }
+			font = "aldrich_20_outline"
+			text = "ENG_THATCH_POP_DISLIKES"
+			maxWidth = 150
+			maxHeight = 125
+			fixedsize = yes
+			format = left
+		}
+	}
+}

@@ -286,3 +286,32 @@ KOR_garrison_control_cost_calculation = {
 		set_variable = { var = KOR_garrison_control_cost value = 60 }
 	}
 }
+
+
+ENG_Thatcher_Tick = {
+		KOR = {
+			set_variable = {
+				MAGGIE_FOR_GUI = 50
+			}
+		}
+}
+
+ENG_SE_ThatcherSetVariables = {
+	if = {
+		limit = {
+			ENG = {
+				is_ai = yes
+			}
+		}
+		set_variable = { ENG_Maggie_Party_Lead = 0.30 }
+		set_variable = { ENG_OG_Party_Lead = 0.70 }
+		set_variable = { ENG_Elite_Lovers = 0.60 }
+		set_variable = { ENG_Populist_Lovers = 0.60 }
+	}
+	else = {
+		set_variable = { ENG_Maggie_Party_Lead = 0.25 }
+		set_variable = { ENG_OG_Party_Lead = 0.75 }
+		set_variable = { ENG_Elite_Lovers = 0.40 }
+		set_variable = { ENG_Populist_Lovers = 0.40 }
+	}
+}

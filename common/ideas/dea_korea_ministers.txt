@@ -1,11 +1,11 @@
 ideas = {
 
-	head_of_gov = {
-		HG_Seo_Jae_Pil = {
+	interior_minister = {
+		idea_Lee_Soon_yong = {
 
 			allowed = { original_tag = KOR }
 
-			picture = advisor_Seo_Jae_Pil
+			picture = advisor_Lee_Soon_yong
 
 			available = {
 				custom_trigger_tooltip = {
@@ -19,65 +19,16 @@ ideas = {
 			ai_will_do = { factor = 1 }
 
 			traits = {
-				hog
-				hog_Hitler_of_Korea
-			}
-		}
-	}
-	security_minister = {
-		SE_kim_kyusik = {
-
-			allowed = { original_tag = KOR }
-
-			picture = advisor_kim_kyusik
-
-			available = {
-				custom_trigger_tooltip = {
-    				tooltip = minister_tooltip
-					always = no
-				}
-			}
-
-			cancel_if_invalid = no
-			removal_cost = -1
-			ai_will_do = { factor = 1 }
-
-			traits = {
-				secmin
-				sec_hidden_main_character
-			}
-		}
-	}
-	economy_minister = {
-		EM_Kim_Byung_ro = {
-
-			allowed = { original_tag = KOR }
-
-			picture = advisor_Kim_Byung_ro
-
-			available = {
-				custom_trigger_tooltip = {
-    				tooltip = minister_tooltip
-					always = no
-				}
-			}
-
-			cancel_if_invalid = no
-			removal_cost = -1
-			ai_will_do = { factor = 1 }
-
-			traits = {
-				ecomin
-				frn_father_of_constitution
+				traits_interior_minister
 			}
 		}
 	}
 	foreign_minister = {
-		FM_Ahn_Chang_Ho = {
+		idea_Ho_Jong = {
 
 			allowed = { original_tag = KOR }
 
-			picture = advisor_Ahn_Chang_Ho
+			picture = advisor_Ho_Jong
 
 			available = {
 				custom_trigger_tooltip = {
@@ -91,37 +42,12 @@ ideas = {
 			ai_will_do = { factor = 1 }
 
 			traits = {
-				frnmin
+				traits_foreign_minister
 			}
 		}
 	}
-
-	military_minister = {
-		MM_Jang_TaekSang = {
-
-			allowed = { original_tag = KOR }
-
-			picture = advisor_Jang_TaekSang
-
-			available = {
-				custom_trigger_tooltip = {
-    				tooltip = minister_tooltip
-					always = no
-				}
-			}
-
-			cancel_if_invalid = no
-			removal_cost = -1
-			ai_will_do = { factor = 1 }
-
-			traits = {
-				milmin
-			}
-		}
-	}
-
-	intel_minister = {
-		IM_Shin_Sung_mo = {
+	national_defense_minister = {
+		idea_Shin_Sung_mo = {
 
 			allowed = { original_tag = KOR }
 
@@ -139,13 +65,85 @@ ideas = {
 			ai_will_do = { factor = 1 }
 
 			traits = {
-				intmin
+				traits_national_defense_minister
 			}
 		}
 	}
 
-	Industry_minister = {
-		INM_Yoon_Bo_Sun = {
+	finance_minister = {
+		idea_Jo_Man_sik = {
+
+			allowed = { original_tag = KOR }
+
+			picture = advisor_Jo_Man_sik
+
+			available = {
+				custom_trigger_tooltip = {
+    				tooltip = minister_tooltip
+					always = no
+				}
+			}
+
+			cancel_if_invalid = no
+			removal_cost = -1
+			ai_will_do = { factor = 1 }
+
+			traits = {
+				traits_finance_minister
+			}
+		}
+	}
+
+	justice_minister = {
+		idea_Lee_In = {
+
+			allowed = { original_tag = KOR }
+
+			picture = advisor_Lee_In
+
+			available = {
+				custom_trigger_tooltip = {
+    				tooltip = minister_tooltip
+					always = no
+				}
+			}
+
+			cancel_if_invalid = no
+			removal_cost = -1
+			ai_will_do = { factor = 1 }
+
+			traits = {
+				traits_justice_minister
+			}
+		}
+	}
+
+	education_minister = {
+		idea_Kim_Beop_rin = {
+
+			allowed = { original_tag = KOR }
+
+			picture = advisor_Kim_Beop_rin
+
+			available = {
+				custom_trigger_tooltip = {
+    				tooltip = minister_tooltip
+					always = no
+				}
+			}
+
+			cancel_if_invalid = no
+			removal_cost = -1
+			ai_will_do = { factor = 1 }
+
+			traits = {
+				traits_education_minister
+			}
+		}
+	}
+
+	industry_commerce_minister = { #여기까지
+		idea_Yoon_Bo_Sun = {
 
 			allowed = { original_tag = KOR }
 
@@ -163,31 +161,7 @@ ideas = {
 			ai_will_do = { factor = 1 }
 
 			traits = {
-				indmin
-			}
-		}
-	}
-
-	Labor_minister = {
-		LM_Chough_Pyung_ok = {
-
-			allowed = { original_tag = KOR }
-
-			picture = advisor_Chough_Pyung_ok
-
-			available = {
-				custom_trigger_tooltip = {
-    				tooltip = minister_tooltip
-					always = no
-				}
-			}
-
-			cancel_if_invalid = no
-			removal_cost = -1
-			ai_will_do = { factor = 1 }
-
-			traits = {
-				labmin
+				traits_industry_commerce_minister
 			}
 		}
 	}

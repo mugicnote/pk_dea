@@ -35,8 +35,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/Portrait_Shin_Sung_mo.dds"
 	}
 	spriteType = {
-		name = "GFX_Portrait_Yoon_Bo_Sun"
-		texturefile = "gfx/interface/Portrait_Yoon_Bo_Sun.dds"
+		name = "GFX_Portrait_Kang_In_taek"
+		texturefile = "gfx/leaders/KOR/Portrait_Kang_In_taek.dds"
 	}
 	spriteType = {
 		name = "GFX_Portrait_Kim_Kyusik"
@@ -48,7 +48,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_Portrait_Ahn_Chang_Ho"
-		texturefile = "gfx/interface/Portrait_Ahn_Chang_Ho.dds"
+		texturefile = "gfx/leaders/KOR/Portrait_Ahn_Chang_Ho.dds"
 	}
 	spriteType = {
 		name = "GFX_jae_pil"
@@ -67,12 +67,12 @@ spriteTypes = {
 		texturefile = "gfx/leaders/KOR/Portrait_Lee_Beomseok.dds"
 	}
 	spriteType = {
-		name = "GFX_Portrait_ji_chong_chen"
-		texturefile = "gfx/leaders/KOR/Portrait_ji_chong_chen.dds"
+		name = "GFX_Portrait_Lee_Soon_yong"
+		texturefile = "gfx/leaders/KOR/Portrait_Lee_Soon_yong.dds"
 	}
 	spriteType = {
-		name = "GFX_Portrait_Il_han_New"
-		texturefile = "gfx/leaders/KOR/Portrait_Il_han_New.dds"
+		name = "GFX_Portrait_Kim_Hyun_cheol"
+		texturefile = "gfx/leaders/KOR/Portrait_Kim_Hyun_cheol.dds"
 	}
 	spriteType = {
 		name = "GFX_jomansik_portrait"
@@ -81,10 +81,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_Portrait_Pak_Honyong"
 		texturefile = "gfx/leaders/KOR/Portrait_Pak_Honyong.dds"
-	}
-	spriteType = {
-		name = "GFX_Portrait_Kim_Suk_Won"
-		texturefile = "gfx/leaders/KOR/Portrait_Kim_Suk_Won.dds"
 	}
 	spriteType = {
 		name = "GFX_Portrait_Ahn_Jaehong"
@@ -97,6 +93,18 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_Portrait_Sohn_Won_yil"
 		texturefile = "gfx/leaders/KOR/Portrait_Sohn_Won_yil.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Kim_Beop_rin"
+		texturefile = "gfx/leaders/KOR/Portrait_Kim_Beop_rin.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Yoon_Bo_Sun"
+		texturefile = "gfx/leaders/KOR/Portrait_Yoon_Bo_Sun.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Lee_In"
+		texturefile = "gfx/leaders/KOR/Portrait_Lee_In.dds"
 	}
 
 	#일본

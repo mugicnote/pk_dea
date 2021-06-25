@@ -5,8 +5,8 @@ state={
 		1970 4973 5042 8112 
 	}
 	history={
-		owner = TNG
-		add_core_of = TNG
+		owner = SIK
+		add_core_of = SIK
 
 	}
 	manpower=0

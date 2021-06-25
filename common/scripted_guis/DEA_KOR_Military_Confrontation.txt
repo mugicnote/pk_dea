@@ -18,3 +18,28 @@ scripted_gui = {
 		}
 	}
 }
+
+scripted_gui = {
+	ENG_GUI_Maggie_Decision_GUI = {
+		context_type = decision_category
+		window_name = "ENG_GUI_Maggie_Decision_GUI"
+		
+		visible = {
+			always = yes
+		}
+		
+		effects = {
+			
+		}
+		
+		triggers = {
+			
+		}
+		
+		properties = {
+			ENG_GUI_Maggie_Decision_GUI_ProgressBar = {
+				frame = MAGGIE_FOR_GUI
+			}
+		}
+	}
+}

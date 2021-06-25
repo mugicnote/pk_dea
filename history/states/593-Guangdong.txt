@@ -4,8 +4,6 @@ state={
 	name="STATE_593"
 	resources={
 		tungsten=15.000
-		steel=15.000
-		chromium=3.000
 	}
 
 	history={
@@ -13,11 +11,13 @@ state={
 		add_core_of = CHI
 		add_core_of = GDC
 		buildings = {
-			infrastructure = 4
+			infrastructure = 5
 			industrial_complex = 2
 			arms_factory = 2
 		}
-
+		victory_points = {
+			7108 15
+		}
 	}
 
 	provinces={

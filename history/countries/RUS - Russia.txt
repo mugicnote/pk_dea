@@ -101,9 +101,9 @@ add_ideas = {
 create_country_leader = {
 	name = "알렉산드르 콜차크"
 	desc = ""
-	picture = ".dds"
+	picture = "Portrait_Aleksandr_Kolchak.dds"
 	expire = "1999.1.1"
-	ideology = military_gov
+	ideology = military_dic
 	traits = {
 		
 	}

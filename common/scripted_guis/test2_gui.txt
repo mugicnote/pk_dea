@@ -91,6 +91,9 @@ scripted_gui = {
 			HoG17 = {
 				image = "[This.leader_two_portrait17]"
 			}
+			HoG18 = {
+				image = "[This.leader_two_portrait18]"
+			}
 		}
 	}
 }
