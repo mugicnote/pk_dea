@@ -125,7 +125,7 @@ country_event = { #
 
 add_namespace = KOR
 
-country_event = { #연설
+country_event = {  
 	id = KOR.54
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.54"}
 	title = KOR.54.t
@@ -149,7 +149,7 @@ country_event = { #연설
 
 }
 
-country_event = { #연설
+country_event = {  
 	id = KOR.55
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.55"}
 	title = KOR.55.t
@@ -175,7 +175,7 @@ country_event = { #연설
 	}
 }
 
-country_event = { #연설
+country_event = {  
 	id = KOR.56
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.56"}
 	title = KOR.56.t
@@ -200,7 +200,7 @@ country_event = { #연설
 	}
 }
 
-country_event = { #연설
+country_event = {  
 	id = KOR.57
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.57"}
 	title = KOR.57.t
@@ -223,7 +223,7 @@ country_event = { #연설
 	}
 }
 
-country_event = { #연설
+country_event = {  
 	id = KOR.61
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.61"}
 	title = KOR.61.t
@@ -249,7 +249,7 @@ country_event = { #연설
 	}
 }
 
-country_event = { #연설
+country_event = {  
 	id = KOR.62
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.62"}
 	title = KOR.62.t
@@ -272,7 +272,7 @@ country_event = { #연설
 	}
 }
 
-country_event = { #연설
+country_event = {  
 	id = KOR.63
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.63"}
 	title = KOR.63.t
@@ -293,7 +293,7 @@ country_event = { #연설
 	}
 }
 
-country_event = { #연설
+country_event = {  
 	id = KOR.64
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.64"}
 	title = KOR.64.t
@@ -315,7 +315,7 @@ country_event = { #연설
 	}
 }
 
-country_event = { #연설
+country_event = {  
 	id = KOR.65
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.65"}
 	title = KOR.65.t
@@ -337,7 +337,7 @@ country_event = { #연설
 	}
 }
 
-country_event = { #연설
+country_event = {  
 	id = KOR.66
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.66"}
 	title = KOR.66.t
@@ -359,7 +359,7 @@ country_event = { #연설
 	}
 }
 
-country_event = { #연설
+country_event = {  
 	id = KOR.67
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.67"}
 	title = KOR.67.t
@@ -385,7 +385,7 @@ country_event = { #연설
 	}
 }
 
-country_event = { #연설
+country_event = {  
 	id = KOR.68
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.68"}
 	title = KOR.68.t
@@ -414,7 +414,7 @@ country_event = { #연설
 	}
 }
 
-country_event = { #연설
+country_event = {  
 	id = KOR.69
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.69"}
 	title = KOR.69.t
@@ -443,7 +443,7 @@ country_event = { #연설
 	}
 }
 
-country_event = { #연설
+country_event = {  
 	id = KOR.70
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.70"}
 	title = KOR.70.t
@@ -472,7 +472,7 @@ country_event = { #연설
 	}
 }
 
-country_event = { #연설
+country_event = {  
 	id = KOR.71
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.71"}
 	title = KOR.71.t
@@ -492,7 +492,7 @@ country_event = { #연설
 	}
 }
 
-country_event = { #연설
+country_event = {  
 	id = KOR.72
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.72"}
 	title = KOR.72.t
@@ -533,7 +533,7 @@ country_event = { #연설
 	}
 }
 
-country_event = { #연설
+country_event = {  
 	id = KOR.73
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.73"}
 	title = KOR.73.t
@@ -564,7 +564,7 @@ country_event = { #연설
 	}
 }
 
-country_event = { #연설
+country_event = {  
 	id = KOR.74
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.74"}
 	title = KOR.74.t
@@ -586,7 +586,7 @@ country_event = { #연설
 	}
 }
 
-country_event = { #연설
+country_event = {  
 	id = KOR.75
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.75"}
 	title = KOR.75.t
@@ -608,7 +608,7 @@ country_event = { #연설
 	}
 }
 
-country_event = { #연설
+country_event = {  
 	id = KOR.76
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.76"}
 	title = KOR.76.t
@@ -630,7 +630,7 @@ country_event = { #연설
 	}
 }
 
-country_event = { #연설
+country_event = {  
 	id = KOR.77
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.77"}
 	title = KOR.77.t
@@ -656,7 +656,7 @@ country_event = { #연설
 	}
 }
 
-country_event = { #연설
+country_event = { #서재필 사망
 	id = KOR.78
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.78"}
 	title = KOR.78.t
@@ -678,7 +678,7 @@ country_event = { #연설
 		kill_ideology_leader = democratic
 		set_country_flag = korea_has_no_president
 		create_country_leader = {
-			name = "대한민국 내각"
+			name = "대한민국 정부"
 			desc = ""
 			picture = "krGov.dds"
 			expire = "1999.1.1"
@@ -690,7 +690,7 @@ country_event = { #연설
 	}
 }
 
-country_event = { #연설
+country_event = {  
 	id = KOR.79
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.79"}
 	title = KOR.79.t
@@ -797,14 +797,12 @@ country_event = {
 	}
 }
 
-#----------------------------------
-
-country_event = { #경찰 확대
+country_event = { #서재필 -> 이범석으로 중점 변경
 	id = KOR.80
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.80"}
 	title = KOR.80.t
 	desc = KOR.80.desc
-	picture = GFX_police_up
+	picture = GFX_kor_military_coup_preparation
 	
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -812,14 +810,19 @@ country_event = { #경찰 확대
 	option = { #
 		name = KOR.80.a
 		ai_chance = { factor = 1 }
-		add_stability = 0.05
-	}
-	option = { #
-		name = KOR.80.b
-		ai_chance = { factor = 1 }
-		add_war_support = 0.05
+		
+		KOR = {
+			set_country_flag = lee_beom_seok_start
+			load_focus_tree = Kor_lee_beom_seok_focus
+			complete_national_focus = KOR_Way_of_Military_Revolution
+
+			clr_country_flag = korea_kim_kyu_sik_acting_president
+			set_country_flag = korea_kim_kyu_sik_president_lee_beom_seok
+		}
 	}
 }
+
+#----------------------------------
 
 country_event = { #
 	id = KOR.10

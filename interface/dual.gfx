@@ -32,7 +32,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_Portrait_Shin_Sung_mo"
-		texturefile = "gfx/interface/Portrait_Shin_Sung_mo.dds"
+		texturefile = "gfx/leaders/KOR/Portrait_Shin_Sung_mo.dds"
 	}
 	spriteType = {
 		name = "GFX_Portrait_Kang_In_taek"
@@ -105,6 +105,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_Portrait_Lee_In"
 		texturefile = "gfx/leaders/KOR/Portrait_Lee_In.dds"
+	}
+	spriteType = {
+		name = "GFX_krGov"
+		texturefile = "gfx/leaders/KOR/krGov.dds"
 	}
 
 	#일본

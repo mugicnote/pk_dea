@@ -67,7 +67,7 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "ENG_GUI_Maggie_Decision_GUI_Elitist_Support_Title"
-			position = { x = 36 y = 400 }
+			position = { x = 6 y = 362 }
 			font = "aldrich_24_outline"
 			text = "지청천 지지율"
 			maxWidth = 200
@@ -77,7 +77,7 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "ENG_GUI_Maggie_Decision_GUI_Elitist_Support_Number"
-			position = { x = 266 y = 460 }
+			position = { x = 6 y = 412 }
 			font = "aldrich_48_outline"
 			text = "ENG_MAGGIE_OG_PER"
 			maxWidth = 200
@@ -87,7 +87,7 @@ guiTypes = {
 
 		instantTextboxType = {
 			name = "ENG_GUI_Maggie_Decision_GUI_Populist_Support_Title"
-			position = { x = 266 y = 400 }
+			position = { x = 6 y = 489 }
 			font = "aldrich_24_outline"
 			text = "이범석 지지율"
 			maxWidth = 200
@@ -97,7 +97,7 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "ENG_GUI_Maggie_Decision_GUI_Populist_Support_Number"
-			position = { x = 36 y = 460 }
+			position = { x = 6 y = 539 }
 			font = "aldrich_48_outline"
 			text = "ENG_MAGGIE_MAGGIE_PER"
 			maxWidth = 200

@@ -12,6 +12,25 @@
  KOR_stand_in_the_middle:0 "중간선에 서다"
  KOR_policy_of_deepening_oppression:0 "탄압 심화 고수"
 
+ ###이범석 혁명 계획 중점###
+ KOR_Way_of_Military_Revolution:0 "혁명 준비"
+ KOR_Military_Revolutionary_Government:0 "군사혁명정부 설립"
+ KOR_Department_Defense_occupation_plan:0 "계획: 국방부 점거"
+ KOR_Central_Intelligence_Department_pressure:0 "중정 압박"
+ KOR_Establishment_Military_Intelligence_Organization:0 "군사정보기구 수립"
+ KOR_plan_take_over_station:0 "계획: 방송국 장악"
+ KOR_Forced_dissolution_National_Assembly:0 "계획: 국회 강제 해산"
+ KOR_Central_Intelligence_Agency_control:0 "계획: 중정 장악"
+ KOR_Pressure_investigate_lawmakers:0 "국회의원 수사 압박"
+ KOR_occupation_newspapers:0 "계획: 신문사 점거"
+ KOR_Army_Commando_Recruitment:0 "육군특공대 포섭"
+ KOR_Central_Committee_meeting_revolutionary_government:0 "혁명정부 중앙위원회 소집"
+ KOR_Move_Military_Equipment_Secret:0 "군장비 비밀 이동"
+ KOR_Creating_Revolutionary_Commitments:0 "혁명 공약 작성"
+ KOR_National_Assembly_Committee_conciliation:0 "국회의원 중앙위원회 회유"
+ KOR_Final_Preparation:0 "최종 준비"
+ KOR_beginning_revolution:0 "혁명 시작"
+
  ###시작 결정###
  military_arrest:0 "암살의 성공"
  military_arrest_tt:0 "§Y이 중점은 서재필의 암살 이후 자동으로 완료될 것입니다§!"

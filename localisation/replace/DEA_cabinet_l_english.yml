@@ -199,8 +199,11 @@ KOR_DUAL_NAME:0 "김규식"
 
 KOR_FIRST_TITLE_has_no_president:0 "행정부"
 KOR_FIRST_TITLE_kim_kyu_sik_acting_president:0 "대통령 권한대행"
-KOR_SECOND_TITLE_kim_kyu_sik_acting_president:0 "부총리 겸 재무부장"
-KOR_DUAL_NAME_kim_kyu_sik_acting_president:0 "조만식"
+KOR_SECOND_TITLE_kim_kyu_sik_acting_president:0 "내무부장관"
+KOR_DUAL_NAME_kim_kyu_sik_acting_president:0 "이순용"
+
+KOR_DUAL_NAME_korea_kim_kyu_sik_president_lee_beom_seok:0 "대한민국 정부"
+
 
 KOR_DUAL_NAME_An_Jae_hong_prime_minister:0 "안재홍"
 

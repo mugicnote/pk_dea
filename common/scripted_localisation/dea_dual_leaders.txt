@@ -77,6 +77,7 @@ defined_text = {
 				has_government = social_democracy
 			}
 			NOT = { has_country_flag = korea_kim_kyu_sik_acting_president }
+			NOT = { has_country_flag = korea_kim_kyu_sik_president_lee_beom_seok }
 		}
 		localization_key = KOR_SECOND_TITLE
 	}
@@ -87,6 +88,14 @@ defined_text = {
 			has_country_flag = korea_kim_kyu_sik_acting_president
 		}
 		localization_key = KOR_SECOND_TITLE_kim_kyu_sik_acting_president
+	}
+	text = {
+		trigger = {
+			tag = KOR
+			has_government = democratic
+			has_country_flag = korea_kim_kyu_sik_president_lee_beom_seok
+		}
+		localization_key = KOR_FIRST_TITLE_has_no_president
 	}
 	text = {
 		trigger = {
@@ -118,6 +127,7 @@ defined_text = {
 			tag = KOR
 			has_government = democratic
 			NOT = { has_country_flag = korea_kim_kyu_sik_acting_president }
+			NOT = { has_country_flag = korea_kim_kyu_sik_president_lee_beom_seok }
 		}
 		localization_key = KOR_DUAL_NAME
 	}
@@ -128,6 +138,14 @@ defined_text = {
 			has_country_flag = korea_kim_kyu_sik_acting_president
 		}
 		localization_key = KOR_DUAL_NAME_kim_kyu_sik_acting_president
+	}
+	text = {
+		trigger = {
+			tag = KOR
+			has_government = democratic
+			has_country_flag = korea_kim_kyu_sik_president_lee_beom_seok
+		}
+		localization_key = KOR_DUAL_NAME_korea_kim_kyu_sik_president_lee_beom_seok
 	}
 	text = {
 		trigger = {
@@ -167,6 +185,7 @@ defined_text = {
 			tag = KOR
 			has_government = democratic
 			NOT = { has_country_flag = korea_kim_kyu_sik_acting_president }
+			NOT = { has_country_flag = korea_kim_kyu_sik_president_lee_beom_seok }
 		}
 		localization_key = GFX_Portrait_Kim_Kyusik
 	}
@@ -176,7 +195,15 @@ defined_text = {
 			has_government = democratic
 			has_country_flag = korea_kim_kyu_sik_acting_president
 		}
-		localization_key = GFX_jomansik_portrait
+		localization_key = GFX_Portrait_Lee_Soon_yong
+	}
+	text = {
+		trigger = {
+			tag = KOR
+			has_government = democratic
+			has_country_flag = korea_kim_kyu_sik_president_lee_beom_seok
+		}
+		localization_key = GFX_krGov
 	}
 	text = {
 		trigger = {

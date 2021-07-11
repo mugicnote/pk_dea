@@ -1,9 +1,10 @@
 focus_tree = {
-	id = Rhee_Syng_man_focus
+	id = Seo_Jae_pil_focus_tree
 	country = {
 		factor = 0
+		
 		modifier = {
-			add = 100
+			add = 10
 			tag = KOR
 		}
 	}

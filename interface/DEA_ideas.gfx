@@ -246,6 +246,11 @@ spriteTypes = {
 		name = "GFX_idea_KOR_extreme_inflation"
 		texturefile = "gfx/interface/ideas/KOR_extreme_inflation.dds"
 	}
+	#한국 쿠데타
+	spriteType = {
+		name = "GFX_idea_KOR_Way_of_Military_Revolution"
+		texturefile = "gfx/interface/ideas/KOR_Way_of_Military_Revolution.dds"
+	}
 
 	#중국
 	spriteType = {

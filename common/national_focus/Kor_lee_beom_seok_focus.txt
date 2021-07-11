@@ -1,0 +1,345 @@
+focus_tree = {
+	id = Kor_lee_beom_seok_focus
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 20
+			tag = KOR
+			has_country_flag = lee_beom_seok_start
+		}
+	}
+	default = no
+
+	continuous_focus_position = { x = 20 y = 1600 }
+
+	#혁명 준비
+	focus = {
+		id = KOR_Way_of_Military_Revolution
+		icon = GFX_focus_military_coup
+		cost = 10.00
+
+		completion_reward = {
+			add_ideas = KOR_idea_Way_of_Military_Revolution
+		}
+		x = 7
+		y = 0
+
+	}
+
+	#군사혁명정부 설립
+	focus = {
+		id = KOR_Military_Revolutionary_Government
+		icon = GFX_focus_npsc
+		relative_position_id = KOR_Way_of_Military_Revolution
+		cost = 10.00
+
+		prerequisite = {
+			focus = KOR_Way_of_Military_Revolution
+		}
+		completion_reward = {
+			
+		}
+		x = 0
+		y = 1
+
+	}
+
+	#계획: 국방부 점거
+	focus = {
+		id = KOR_Department_Defense_occupation_plan
+		icon = GFX_focus_rok_armed_forces
+		relative_position_id = KOR_Military_Revolutionary_Government
+		cost = 10.00
+
+		prerequisite = {
+			focus = KOR_Military_Revolutionary_Government
+		}
+		completion_reward = {
+			
+		}
+		x = -6
+		y = 1
+
+	}
+
+	#중정 압박
+	focus = {
+		id = KOR_Central_Intelligence_Department_pressure
+		icon = GFX_focus_kcia
+		relative_position_id = KOR_Military_Revolutionary_Government
+		cost = 10.00
+
+		prerequisite = {
+			focus = KOR_Military_Revolutionary_Government
+		}
+		completion_reward = {
+			
+		}
+		x = -3
+		y = 1
+
+	}
+
+	#군사정보기구 수립
+	focus = {
+		id = KOR_Establishment_Military_Intelligence_Organization
+		icon = GFX_focus_secret_agents
+		relative_position_id = KOR_Department_Defense_occupation_plan
+		cost = 10.00
+
+		prerequisite = {
+			focus = KOR_Central_Intelligence_Department_pressure
+		}
+		prerequisite = {
+			focus = KOR_Department_Defense_occupation_plan
+		}
+		completion_reward = {
+			
+		}
+		x = 1
+		y = 1
+
+	}
+
+	#계획: 방송국 장악
+	focus = {
+		id = KOR_plan_take_over_station
+		icon = GFX_focus_wcp
+		relative_position_id = KOR_Military_Revolutionary_Government
+		cost = 10.00
+
+		prerequisite = {
+			focus = KOR_Military_Revolutionary_Government
+		}
+		completion_reward = {
+			
+		}
+		x = 6
+		y = 1
+
+	}
+
+	#계획: 국회강제 해산
+	focus = {
+		id = KOR_Forced_dissolution_National_Assembly
+		icon = GFX_focus_national_assembly_dominated
+		relative_position_id = KOR_Military_Revolutionary_Government
+		cost = 10.00
+
+		prerequisite = {
+			focus = KOR_Military_Revolutionary_Government
+		}
+		completion_reward = {
+			
+		}
+		x = 0
+		y = 1
+
+	}
+
+	#계획: 중정 장악
+	focus = {
+		id = KOR_Central_Intelligence_Agency_control
+		icon = GFX_focus_arrest_sicana
+		relative_position_id = KOR_Central_Intelligence_Department_pressure
+		cost = 10.00
+
+		prerequisite = {
+			focus = KOR_Central_Intelligence_Department_pressure
+		}
+		completion_reward = {
+			
+		}
+		x = 0
+		y = 1
+
+	}
+
+	#국회의원 수사 압박
+	focus = {
+		id = KOR_Pressure_investigate_lawmakers
+		icon = GFX_focus_arrest
+		relative_position_id = KOR_Central_Intelligence_Department_pressure
+		cost = 10.00
+
+		prerequisite = {
+			focus = KOR_Central_Intelligence_Department_pressure
+		}
+		prerequisite = {
+			focus = KOR_Forced_dissolution_National_Assembly
+		}
+		completion_reward = {
+			
+		}
+		x = 2
+		y = 1
+
+	}
+
+	#계획: 신문사 점거
+	focus = {
+		id = KOR_occupation_newspapers
+		icon = GFX_focus_nationality
+		relative_position_id = KOR_plan_take_over_station
+		cost = 10.00
+
+		prerequisite = {
+			focus = KOR_plan_take_over_station
+		}
+		completion_reward = {
+			
+		}
+		x = 1
+		y = 1
+
+	}
+
+	#육군특공대 포섭
+	focus = {
+		id = KOR_Army_Commando_Recruitment
+		icon = GFX_focus_sou
+		relative_position_id = KOR_Department_Defense_occupation_plan
+		cost = 10.00
+
+		prerequisite = {
+			focus = KOR_Department_Defense_occupation_plan
+		}
+		completion_reward = {
+			
+		}
+		x = -1
+		y = 1
+
+	}
+
+	#혁명정부 중앙위원회 소집
+	focus = {
+		id = KOR_Central_Committee_meeting_revolutionary_government
+		icon = GFX_focus_mpc
+		relative_position_id = KOR_Military_Revolutionary_Government
+		cost = 10.00
+
+		prerequisite = {
+			focus = KOR_Military_Revolutionary_Government
+		}
+		completion_reward = {
+			
+		}
+		x = 3
+		y = 1
+
+	}
+
+	#군장비 비밀 이동
+	focus = {
+		id = KOR_Move_Military_Equipment_Secret
+		icon = GFX_focus_guns
+		relative_position_id = KOR_Central_Committee_meeting_revolutionary_government
+		cost = 10.00
+
+		prerequisite = {
+			focus = KOR_Central_Committee_meeting_revolutionary_government
+		}
+		completion_reward = {
+			
+		}
+		x = 0
+		y = 1
+
+	}
+
+	#혁명 공약 작성
+	focus = {
+		id = KOR_Creating_Revolutionary_Commitments
+		icon = GFX_focus_soushikaimei
+		relative_position_id = KOR_Central_Committee_meeting_revolutionary_government
+		cost = 10.00
+
+		prerequisite = {
+			focus = KOR_Central_Committee_meeting_revolutionary_government
+		}
+		completion_reward = {
+			
+		}
+		x = 2
+		y = 1
+
+	}
+
+	#국회의원 중앙위원회 회유
+	focus = {
+		id = KOR_National_Assembly_Committee_conciliation
+		icon = GFX_focus_scnr
+		relative_position_id = KOR_Central_Committee_meeting_revolutionary_government
+		cost = 10.00
+
+		prerequisite = {
+			focus = KOR_Central_Committee_meeting_revolutionary_government
+		}
+		completion_reward = {
+			
+		}
+		x = -2
+		y = 1
+
+	}
+
+	#최종 준비
+	focus = {
+		id = KOR_Final_Preparation
+		icon = GFX_focus_hra
+		relative_position_id = KOR_Pressure_investigate_lawmakers
+		cost = 10.00
+
+		prerequisite = {
+			focus = KOR_Army_Commando_Recruitment
+		}
+		prerequisite = {
+			focus = KOR_Establishment_Military_Intelligence_Organization
+		}
+		prerequisite = {
+			focus = KOR_Central_Intelligence_Agency_control
+		}
+		prerequisite = {
+			focus = KOR_Pressure_investigate_lawmakers
+		}
+		prerequisite = {
+			focus = KOR_National_Assembly_Committee_conciliation
+		}
+		prerequisite = {
+			focus = KOR_Move_Military_Equipment_Secret
+		}
+		prerequisite = {
+			focus = KOR_Creating_Revolutionary_Commitments
+		}
+		prerequisite = {
+			focus = KOR_occupation_newspapers
+		}
+		completion_reward = {
+			
+		}
+		x = 1
+		y = 1
+
+	}
+
+	#혁명 시작
+	focus = {
+		id = KOR_beginning_revolution
+		icon = GFX_focus_operation_independence
+		relative_position_id = KOR_Final_Preparation
+		cost = 10.00
+
+		prerequisite = {
+			focus = KOR_Final_Preparation
+		}
+		completion_reward = {
+			
+		}
+		x = 0
+		y = 1
+
+	}
+
+}

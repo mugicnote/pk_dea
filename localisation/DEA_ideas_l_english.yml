@@ -36,6 +36,9 @@ Anti_Communist_Office:0 "대공처"
 social_repression:0 "사회 탄압"
 social_repression_2:0 "국민 탄압의 후유증"
 
+###쿠데타###
+KOR_idea_Way_of_Military_Revolution:0 "혁명 준비"
+
 ###이승만###
 Pater_Patriae_Lee_2:0 "중앙집권체제 강화"
 judicial_weakening_idea:0 "국토교통청"

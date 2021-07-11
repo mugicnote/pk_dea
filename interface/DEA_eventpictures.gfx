@@ -13,8 +13,8 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/assassination_prime_minister.dds"
 	}
 	spriteType = {
-		name = "GFX_military_coup"
-		texturefile = "gfx/event_pictures/military_coup.dds"
+		name = "GFX_kor_military_coup_preparation"
+		texturefile = "gfx/event_pictures/kor_military_coup_preparation.dds"
 	}
 	spriteType = {
 		name = "GFX_NAREISION"
