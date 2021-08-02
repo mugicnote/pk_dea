@@ -17,7 +17,7 @@ focus_tree = {
 		y = 1
 
 		completion_reward = {
-		   add_political_power = 120
+		   add_political_power = 50
 			}	
 	}
 ####독립 루트####
@@ -34,7 +34,8 @@ focus_tree = {
 		x = 16
 		y = 2
 		completion_reward = {
-
+		   add_political_power = 100	
+			add_stability = -0.10		   
 			}		
 	}
 	focus = { #하노이 광장
@@ -47,6 +48,7 @@ focus_tree = {
 		x = 15
 		y = 3
 		completion_reward = {
+			ICU = { country_event = ICU.1 }		
 			}		
 
 	}
@@ -60,6 +62,7 @@ focus_tree = {
 		x = 17
 		y = 3
 		completion_reward = {
+			ICU = { country_event = ICU.2 }
 			}		
 
 	}
@@ -73,8 +76,12 @@ focus_tree = {
 		x = 15
 		y = 4
 		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 1000
+				producer = ICU
+				}		
 			}		
-
 	}
 	focus = { #해외 지원 요청
 		id = ICU_IDP_5
@@ -86,35 +93,32 @@ focus_tree = {
 		x = 17
 		y = 4
 		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 1500
+				producer = GER
+				}				
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 1500
+				producer = SOV
+				}		
 			}		
-
 	}
-	focus = { #방콕 비밀 협정
+	focus = { #제국의 몰락
 		id = ICU_IDP_6
 		icon = ""
 		cost = 3
 		prerequisite = {
 			focus = ICU_IDP_4
-		}
+		}		
 		prerequisite = {
 			focus = ICU_IDP_5
-		}		
-		x = 16
-		y = 5
-		completion_reward = {
-			}		
-
-	}
-	focus = { #제국의 몰락
-		id = ICU_IDP_7
-		icon = ""
-		cost = 3
-		prerequisite = {
-			focus = ICU_IDP_6
-		}		
+		}			
 		x = 16
 		y = 6
 		completion_reward = {
+			ICU = { country_event = ICU.5 }		
 			}		
 
 	}	
@@ -132,6 +136,7 @@ focus_tree = {
 		x = 28
 		y = 2
 		completion_reward = {
+			ICU = { country_event = ICU.3 }		
 		}
 	}
 ##경제##	
@@ -145,6 +150,12 @@ focus_tree = {
 		x = 23
 		y = 3
 		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 2
+				category = industry
+			}		
 		}
 	}
 	focus = { #민간기업 규제 철폐
@@ -334,6 +345,9 @@ focus_tree = {
 		prerequisite = {
 			focus = ICU_eco_15
 		}		
+		mutually_exclusive = { 
+			focus = ICU_eco_17
+			}		
 		x = 22
 		y = 10
 		completion_reward = {
@@ -346,6 +360,9 @@ focus_tree = {
 		prerequisite = {
 			focus = ICU_eco_15
 		}		
+		mutually_exclusive = { 
+			focus = ICU_eco_16
+			}		
 		x = 24
 		y = 10
 		completion_reward = {
@@ -391,6 +408,7 @@ focus_tree = {
 		x = 28
 		y = 5
 		completion_reward = {
+		army_experience = 25
 		}
 	}	
 	focus = { #징병법 개정
@@ -485,6 +503,7 @@ focus_tree = {
 		x = 32
 		y = 5
 		completion_reward = {
+		navy_experience = 25
 		}
 	}
 	focus = { #조선소 증축
@@ -610,6 +629,7 @@ focus_tree = {
 		x = 36
 		y = 5
 		completion_reward = {
+		air_experience = 25
 		}
 	}
 	focus = { #공항 건설
@@ -662,6 +682,7 @@ focus_tree = {
 	}	
 	focus = { #대공망 구축
 		id = ICU_air_6
+		
 		icon = ""
 		cost = 3
 		prerequisite = {

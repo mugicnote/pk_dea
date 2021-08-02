@@ -1,6 +1,6 @@
 add_namespace = ICU
 
-country_event = { #베트남 자유화 운동
+country_event = { #하노이 광장
 	id = ICU.1
 	title = ICU.1.t
 	desc = ICU.1.d
@@ -9,16 +9,18 @@ country_event = { #베트남 자유화 운동
 	is_triggered_only = yes	
 	fire_only_once = yes
 	
-	option = { #당장 해결책을 찾아야 한다.
+	option = { #
 		name = ICU.1.a
+		hidden_effect = {		
 		ICU = {
-			add_ideas = ICU_freedom_hot	
-			set_country_flag = free_mov_civilwar	
+			add_manpower = -10000
+			add_stability = -0.30			
+			}
 		}
 	}	
 }
 
-country_event = { #본국 지원요청
+country_event = { #Le Monde
 	id = ICU.2
 	title = ICU.2.t
 	desc = ICU.2.d
@@ -27,25 +29,18 @@ country_event = { #본국 지원요청
 	is_triggered_only = yes	
 	fire_only_once = yes
 	
-	option = { #승낙
+	option = { #신은 전쟁을 원한다.
 		name = ICU.2.a
-		ai_chance = { factor = 1 }
+		hidden_effect = {
 		ICU = {
-			country_event = { id = ICU.3 }
+			add_stability = 0.05
+			add_war_support = 0.05
+			}
 		}
-	}
-	
-	option = { #거절
-		name = ICU.2.b
-		ai_chance = { factor = 99 }
-		ICU = {
-			country_event = { id = ICU.4 }
-		}
-
 	}	
 }
 
-country_event = { #프랑스의 승낙
+country_event = { #신연방 건설 계획
 	id = ICU.3
 	title = ICU.3.t
 	desc = ICU.3.d
@@ -54,20 +49,12 @@ country_event = { #프랑스의 승낙
 	is_triggered_only = yes
 	fire_only_once = yes
 	
-	option = { #프랑스 제3공화국 만세
-		name = ICU.3.a
-			add_manpower = 6000
-			add_equipment_to_stockpile = {
-			type = infantry_equipment
-			amount = 600
-			producer = FRA
-			}		
-		FRA = {
-			add_manpower = -6000
-			add_equipment_to_stockpile = {
-			type = infantry_equipment
-			amount = -600
-			producer = FRA
+	option = { #
+		name = ICU.3.a		
+		hidden_effect = {
+		ICU = {
+			add_manpower = -1000
+			add_political_power = 120
 			}
 		}
 	}
