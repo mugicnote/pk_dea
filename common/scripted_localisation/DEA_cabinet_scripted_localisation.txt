@@ -45,7 +45,7 @@ defined_text = {
 # 대공처장
 ############################################
 defined_text = {
-	name = FdS_rank2
+	name = FdS_rank13
 
 	text = {
 		trigger = {
@@ -56,7 +56,7 @@ defined_text = {
 }
 
 defined_text = {
-	name = HoG_rank2
+	name = HoG_rank13
 
 	text = {
 		trigger = {
@@ -67,7 +67,7 @@ defined_text = {
 }
 
 defined_text = {
-	name = FdS_name2
+	name = FdS_name13
 
 	text = {
 		trigger = {
@@ -79,7 +79,7 @@ defined_text = {
 }
 
 defined_text = {
-	name = leader_two_portrait2
+	name = leader_two_portrait13
 	
 	text = {
 		trigger = {
@@ -90,7 +90,7 @@ defined_text = {
 }
 
 defined_text = {
-	name = HoG2_desc
+	name = HoG13_desc
 
 	text = {
 		trigger = { 
@@ -286,7 +286,7 @@ defined_text = {
 # Leader Title
 ############################################
 defined_text = {
-	name = FdS_rank5
+	name = FdS_rank1
 
 	text = {
 		trigger = {
@@ -313,7 +313,7 @@ defined_text = {
 ############################################
 
 defined_text = {
-	name = HoG_rank5
+	name = HoG_rank1
 
 	text = {
 		trigger = {
@@ -338,7 +338,7 @@ defined_text = {
 # HoG Name
 ############################################
 defined_text = {
-	name = FdS_name5
+	name = FdS1_name
 
 	text = {
 		trigger = {
@@ -361,7 +361,7 @@ defined_text = {
 	}
 }
 defined_text = {
-	name = leader_two_portrait5
+	name = leader_two_portrait1
 	
 	text = {
 		trigger = {
@@ -383,7 +383,7 @@ defined_text = {
 	}
 }
 defined_text = {
-	name = HoG5_desc
+	name = HoG1_desc
 
 	text = {
 		trigger = { 
@@ -1024,7 +1024,7 @@ defined_text = {
 
 
 defined_text = {
-	name = FdS_rank13
+	name = FdS_rank2
 
 	
 	text = {
@@ -1036,7 +1036,7 @@ defined_text = {
 }
 
 defined_text = {
-	name = HoG_rank13
+	name = HoG_rank2
 	
 	text = {
 		trigger = {
@@ -1047,7 +1047,7 @@ defined_text = {
 }
 
 defined_text = {
-	name = FdS_name13
+	name = FdS2_name
 	
 	text = {
 		trigger = {
@@ -1057,7 +1057,7 @@ defined_text = {
 	}
 }
 defined_text = {
-	name = leader_two_portrait13
+	name = leader_two_portrait2
 	
 	text = {
 		trigger = {
@@ -1067,7 +1067,7 @@ defined_text = {
 	}
 }
 defined_text = {
-	name = HoG13_desc
+	name = HoG2_desc
 
 	text = {
 		trigger = { 

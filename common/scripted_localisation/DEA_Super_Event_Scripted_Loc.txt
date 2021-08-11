@@ -1,0 +1,35 @@
+#Titles
+defined_text = {
+    name = get_super_event_title
+	
+    text = {
+        trigger = {
+            has_global_flag = big_event_assassination_Jae_pil
+        }
+        localization_key = "sp_assassination_Jae_pil"
+    }
+}
+
+#Remarks
+defined_text = {
+    name = get_super_event_remark
+    
+    text = { 
+        trigger = {
+            has_global_flag = big_event_assassination_Jae_pil
+        }
+        localization_key = "sp_assassination_Jae_pil_REMARK"
+    }
+}
+
+#Quotes
+defined_text = {
+    name = get_super_event_quote
+    
+    text = {
+        trigger = {
+            has_global_flag = big_event_assassination_Jae_pil
+        }
+        localization_key = "sp_assassination_Jae_pil_QUOTE"
+    }
+}

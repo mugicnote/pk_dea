@@ -5,7 +5,7 @@ bitmapfonts = {
 	bitmapfont = {
 		name = "aldrich_48_outline"
 		path = "gfx/fonts/aldrich_48_outline"
-		color = 0xffc3c3c3
+		color = 0xffffffff
 		textcolors = {
 			M = { 35 206 255 }
 			L = { 195 176 145 }
@@ -60,7 +60,7 @@ bitmapfonts = {
 	bitmapfont = {
 		name = "aldrich_36_outline"
 		path = "gfx/fonts/aldrich_36_outline"
-		color = 0xffc3c3c3
+		color = 0xffffffff
 		textcolors = {
 			M = { 35 206 255 }
 			L = { 195 176 145 }
@@ -115,7 +115,7 @@ bitmapfonts = {
 	bitmapfont = {
 		name = "aldrich_32_outline"
 		path = "gfx/fonts/aldrich_32_outline"
-		color = 0xffc3c3c3
+		color = 0xffffffff
 		textcolors = {
 			M = { 35 206 255 }
 			L = { 195 176 145 }
@@ -170,7 +170,7 @@ bitmapfonts = {
 	bitmapfont = {
 		name = "aldrich_30_outline"
 		path = "gfx/fonts/aldrich_30_outline"
-		color = 0xffc3c3c3
+		color = 0xffffffff
 		textcolors = {
 			M = { 35 206 255 }
 			L = { 195 176 145 }
@@ -225,7 +225,7 @@ bitmapfonts = {
 	bitmapfont = {
 		name = "aldrich_24_outline"
 		path = "gfx/fonts/aldrich_24_outline"
-		color = 0xffc3c3c3
+		color = 0xffffffff
 		textcolors = {
 			M = { 35 206 255 }
 			L = { 195 176 145 }
@@ -280,7 +280,7 @@ bitmapfonts = {
 	bitmapfont = {
 		name = "aldrich_24_outline_closing"
 		path = "gfx/fonts/aldrich_24_outline"
-		color = 0xffc3c3c3
+		color = 0xffffffff
 		textcolors = {
 		
 			### Role Colors ###
@@ -317,7 +317,7 @@ bitmapfonts = {
 	bitmapfont = {
 		name = "aldrich_22_outline"
 		path = "gfx/fonts/aldrich_22_outline"
-		color = 0xffc3c3c3
+		color = 0xffffffff
 		textcolors = {
 			M = { 35 206 255 }
 			L = { 195 176 145 }
@@ -378,7 +378,7 @@ bitmapfonts = {
 	bitmapfont = {
 		name = "aldrich_20_outline"
 		path = "gfx/fonts/aldrich_20_outline"
-		color = 0xffc3c3c3
+		color = 0xffffffff
 		textcolors = {
 			M = { 35 206 255 }
 			L = { 195 176 145 }
@@ -437,7 +437,7 @@ bitmapfonts = {
 	bitmapfont = {
 		name = "aldrich_20_bookmark_outline"
 		path = "gfx/fonts/aldrich_20_bookmark_outline"
-		color = 0xffc3c3c3
+		color = 0xffffffff
 		textcolors = {
 			M = { 35 206 255 }
 			L = { 195 176 145 }
@@ -496,7 +496,7 @@ bitmapfonts = {
 	bitmapfont = {
 		name = "aldrich_18_outline"
 		path = "gfx/fonts/aldrich_18_outline"
-		color = 0xffc3c3c3
+		color = 0xffffffff
 		textcolors = {
 			M = { 35 206 255 }
 			L = { 195 176 145 }
@@ -549,9 +549,48 @@ bitmapfonts = {
 	}
 
 	bitmapfont = {
+		name = "hoi_16mbs"
+		fontfiles = { 
+			"gfx/fonts/hoi_16mbs"
+			"gfx/fonts/hoi_16mbs_cryllic"
+		}		
+		color = 0xffffffff
+		textcolors = {
+			M = { 35 206 255 } #하늘색
+			a = { 195 176 145 } #살색? 원 코드:l
+			b = { 255 255 255 } #하얀색 원 코드: W
+			A = { 47 138 135 } #청록색 B
+			c = { 133 234 142 } #연초록 G
+			d = { 224 130 130 } #연빨강 - 분홍 R
+			m = { 0 0 0 } #검정(잘 안보임 주의) b
+			o = { 176 176 176 } #회색(베이직 색 느낌) g
+			s = { 220 218 80 } #노랑 Y
+			h = { 220 218 80 } #둘 다 노랑 인데?? H
+			t = { 47 138 135 } #이놈도 청록인데?? T
+			f = { 234 161 14 } #오랜지 O
+			u = { 169 27 79 } #연한 빨강 P
+			r = { 132 50 0 } #진한 빨강보다 덜 빨강
+			w = { 211 201 0 } #조금 진한 노랑
+			e = { 146 0 0 } #어두운 빨강(눈 안아프고 좋음)
+			p = { 194 30 86 } #완전 핫핑크
+			j = { 153 102 51 } #갈색(똥색)
+			S = { 255 128 114 } #연빨강 - 분홍22
+			x = { 255 0 0 } #빨강
+			y = { 0 255 0} #눈 아픈 초록
+			z = { 0 0 255 } #uber-blu
+			l = { 147 112 219 } #Lavender, per Pacifica request
+			n = { 60 180 60 } #Dark Green
+			q = { 65 65 65 } #검정과 회색 사이
+			k = { 210 180 140 } #베이지색
+			D = { 101 235 246 } #Default color I think
+			Q = { 0 84 142 } #Prussian blue, for speer econ GUI
+		}
+	}
+
+	bitmapfont = {
 		name = "aldrich_16_outline"
 		path = "gfx/fonts/aldrich_16_outline"
-		color = 0xffc3c3c3
+		color = 0xffffffff
 		textcolors = {
 			M = { 35 206 255 }
 			L = { 195 176 145 }
@@ -606,7 +645,7 @@ bitmapfonts = {
 	bitmapfont = {
 		name = "aldrich_14_outline"
 		path = "gfx/fonts/aldrich_14_outline"
-		color = 0xffc3c3c3
+		color = 0xffffffff
 		textcolors = {
 			M = { 35 206 255 }
 			L = { 195 176 145 }
@@ -661,7 +700,7 @@ bitmapfonts = {
 	bitmapfont = {
 		name = "aldrich_12_outline"
 		path = "gfx/fonts/aldrich_12_outline"
-		color = 0xffc3c3c3
+		color = 0xffffffff
 		textcolors = {
 			M = { 35 206 255 }
 			L = { 195 176 145 }
@@ -711,5 +750,77 @@ bitmapfonts = {
 			N = { 152 40 92 }	# Goch, Magenta
 			o = { 129 88 56 }	# Movement, Brown
 		}
+	}
+
+	bitmapfont = {
+		name = "aldrich_48_outline_b"
+		path = "gfx/fonts/aldrich_48_outline"
+		color = 0xff000000
+	}
+
+	bitmapfont = {
+		name = "aldrich_36_outline_b"
+		path = "gfx/fonts/aldrich_36_outline"
+		color = 0xff000000
+	}
+
+	bitmapfont = {
+		name = "aldrich_32_outline_b"
+		path = "gfx/fonts/aldrich_32_outline"
+		color = 0xff000000
+	}
+
+	bitmapfont = {
+		name = "aldrich_30_outline_b"
+		path = "gfx/fonts/aldrich_30_outline"
+		color = 0xff000000
+	}
+
+	bitmapfont = {
+		name = "aldrich_24_outline_b"
+		path = "gfx/fonts/aldrich_24_outline"
+		color = 0xff000000
+	}
+
+	bitmapfont = {
+		name = "aldrich_24_outline_g"
+		path = "gfx/fonts/aldrich_24_outline"
+		color = 0xff606060
+	}
+
+	bitmapfont = {
+		name = "aldrich_22_outline_b"
+		path = "gfx/fonts/aldrich_22_outline"
+		color = 0xff000000
+	}
+
+	bitmapfont = {
+		name = "aldrich_20_outline_b"
+		path = "gfx/fonts/aldrich_20_outline"
+		color = 0xff000000
+	}
+
+	bitmapfont = {
+		name = "aldrich_18_outline_b"
+		path = "gfx/fonts/aldrich_18_outline"
+		color = 0xff000000
+	}
+
+	bitmapfont = {
+		name = "aldrich_16_outline_b"
+		path = "gfx/fonts/aldrich_16_outline"
+		color = 0xff000000
+	}
+	
+	bitmapfont = {
+		name = "aldrich_14_outline_b"
+		path = "gfx/fonts/aldrich_14_outline"
+		color = 0xff000000
+	}
+	
+	bitmapfont = {
+		name = "aldrich_12_outline_b"
+		path = "gfx/fonts/aldrich_12_outline"
+		color = 0xff000000
 	}
 }

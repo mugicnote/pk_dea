@@ -107,14 +107,13 @@ set_convoys = 30
 
 #국민정신
 add_ideas = {
-kor_conscription
+two_years_service
 KOR_great_depression
 huge_government_bond
 Kor_excessive_Inflation
 fallen_rural_society
 KOR_incompetent_goverment
 KOR_divided_army
-coup_crisis
 }
 
 #시작_정당

@@ -53,8 +53,8 @@ guiTypes = {
 			maxHeight = 20
 			format = center
 			vertical_alignment = center
-
-			pdx_tooltip = leader2_tt
+			pdx_tooltip = "DUAL_LEADER_NAME2"
+			pdx_tooltip_delayed = "DUAL_LEADER_DESC2"
 		}
 
 	}

@@ -646,7 +646,7 @@ country_event = {
 		custom_effect_tooltip = kor77_a_tt
 			country_event = {
 				id = KOR.78
-				days = 0
+				days = 3
 			}
 	}
 	option = { #
@@ -670,11 +670,29 @@ country_event = { #서재필 사망
 		name = KOR.78.a
 		ai_chance = { factor = 1 }
 		country_event = {
+			id = KOR.41
+			days = 0
+		}
+	}
+}
+
+country_event = { #시작3
+	id = KOR.41
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.41"}
+	title = KOR.41.t
+	desc = KOR.41.desc
+	picture = GFX_Its_a_mess
+	
+	is_triggered_only = yes
+	
+	option = { #
+		country_event = {
 			id = KOR.79
 			days = 5
 		}
-		set_country_flag = big_event_assassination_Jae_pil
+		set_global_flag = big_event_assassination_Jae_pil
 		set_country_flag = Seo_Jae_pil_died
+		sound_effect = "tno_se_assassination_Jae_pil"
 		kill_ideology_leader = democratic
 		set_country_flag = korea_has_no_president
 		create_country_leader = {
@@ -684,7 +702,7 @@ country_event = { #서재필 사망
 			expire = "1999.1.1"
 			ideology = conservatism
 			traits = {
-				
+			
 			}
 		}
 	}
@@ -1555,26 +1573,6 @@ country_event = { #
 
 add_namespace = KOR
 
-country_event = { #시작3
-	id = KOR.41
-	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.41"}
-	title = KOR.41.t
-	desc = KOR.41.desc
-	picture = GFX_NAREISION
-	
-	is_triggered_only = yes
-	
-	option = { #
-		name = KOR.41.a
-		ai_chance = { factor = 1 }
-		country_event = { id = KOR.42 }
-	}
-	option = { #
-		name = KOR.41.b
-		ai_chance = { factor = 1 }
-		country_event = { id = KOR.14 }
-	}
-}
 
 country_event = { #시작4
 	id = KOR.42

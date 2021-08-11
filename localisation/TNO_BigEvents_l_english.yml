@@ -1,7 +1,7 @@
 ﻿l_english:
-BE_ASSASSIN_JAE_PIL_T:0 "서재필 암살"
-BE_ASSASSIN_JAE_PIL_D:0 "수녀들이 나와서 앞에 설 것이고, 그 앞에는 또 신부들이 있을 것이고, 그리고 그 맨 앞에서 나를 보게 될 것이다. 그러니까 나를 밟고 신부들을 밟고 수녀들까지 밟아야 학생들과 만날 것이다.\n- 김수환 스테파노 추기경"
-BE_ASSASSIN_JAE_PIL_A:0 "드디어.."
+sp_assassination_Jae_pil:0 "서재필 암살"
+sp_assassination_Jae_pil_QUOTE:0 "진실은 반드시 따르는 자가 있고, 정의는 반드시\n이루는 날이 있다.\n- 안창호"
+sp_assassination_Jae_pil_REMARK:0 "민중의 승리, 국민의 승리."
 
 ##USE SUPER_EVENT_MAKER_GUI IN USEFUL PYTHON PROGRAMS TO MAKE NEW SUPER EVENTS##
 

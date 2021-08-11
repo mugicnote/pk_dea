@@ -12,6 +12,15 @@ spriteTypes = {
 		textureFile = "gfx/interface/us_voting_gui/us_voting_senate_controlled_by.dds"
 	}
 
+	corneredTileSpriteType = {
+		name = "GFX_tiled_window_1b_no_border"
+		size= { x=192 y=192 }
+		textureFile = "gfx/interface/tiles/tiled_bg2.dds"
+		borderSize = { x=64 y=64 }
+		tilingCenter = yes
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+
 	spriteType = {
 		name = "GFX_us_voting_background"
 		textureFile = "gfx/interface/us_voting_gui/us_voting_background.dds"

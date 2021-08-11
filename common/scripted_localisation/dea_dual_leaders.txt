@@ -244,14 +244,14 @@ defined_text = {
 			tag = KOR
 			has_government = democratic
 		}
-        localization_key = "KOREA_DUAL_DESC"
+        localization_key = KOREA_DUAL_DESC
 	}
 	text = {
         trigger = {
 			tag = CHI
 			has_government = national_conservatism
 		}
-        localization_key = "CHINA_DUAL_DESC"
+        localization_key = CHINA_DUAL_DESC
 	}
 }
 
@@ -263,7 +263,7 @@ defined_text = {
 			tag = KOR
 			has_government = democratic
 		}
-        localization_key = "KOREA_DUAL_NAME"
+        localization_key = KOREA_DUAL_NAME
 	}
 }
 
@@ -275,7 +275,7 @@ defined_text = {
 			tag = KOR
 			has_government = democratic
 		}
-        localization_key = "KOREA_DUAL_TRAIT"
+        localization_key = KOREA_DUAL_TRAIT
 	}
 }
 

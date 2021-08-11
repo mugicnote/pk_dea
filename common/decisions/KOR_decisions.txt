@@ -16,6 +16,249 @@ DEA_KOR_Military_factional_decisions = {
 	}
 }
 
+DEA_KOR_Military_Revolution_decisions_category = {
+
+	#중국에게 지원 요청
+    KOR_request_china_support_decisions = {
+
+		icon = generic_agreement
+
+		visible = {
+			original_tag = KOR
+		}
+
+		available = {
+			KOR = { exists = yes }
+			KOR = { is_subject = no }
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			
+		}
+	}
+
+	#반대파 장군 암살
+    KOR_assassination_opposition_general_decisions = {
+
+		icon = generic_assassination
+
+		visible = {
+			original_tag = KOR
+		}
+
+		available = {
+			KOR = { exists = yes }
+			KOR = { is_subject = no }
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			
+		}
+	}
+
+	#장군 회유탭 펼치기
+    KOR_general_conciliatory_decisions = {
+
+		icon = generic_police_action
+
+		visible = {
+			original_tag = KOR
+			NOT = { has_country_flag = general_conciliatory_open }
+		}
+
+		available = {
+			KOR = { exists = yes }
+			KOR = { is_subject = no }
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			set_country_flag = general_conciliatory_open
+		}
+	}
+
+	#혁명정부 중앙위원회 소집
+    KOR_revolutionary_government_decisions = {
+
+		icon = generic_military
+
+		visible = {
+			original_tag = KOR
+		}
+
+		available = {
+			KOR = { exists = yes }
+			KOR = { is_subject = no }
+			has_completed_focus = KOR_Central_Committee_meeting_revolutionary_government
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			
+		}
+	}
+
+	#국방부 점거 계획 수립
+    KOR_Department_Defense_occupation_plan_decisions = {
+
+		icon = generic_scorched_earth
+
+		visible = {
+			original_tag = KOR
+		}
+
+		available = {
+			KOR = { exists = yes }
+			KOR = { is_subject = no }
+			has_completed_focus = KOR_Department_Defense_occupation_plan
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			
+		}
+	}
+
+	#육군특공대 포섭
+    KOR_Army_Commando_Recruitment_decisions = {
+
+		icon = generic_intelligence_operation
+
+		visible = {
+			original_tag = KOR
+		}
+
+		available = {
+			KOR = { exists = yes }
+			KOR = { is_subject = no }
+			has_decision = KOR_Department_Defense_occupation_plan_decisions
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			
+		}
+	}
+
+	#중정 장악 계획 수립
+    KOR_Central_Intelligence_Agency_control_decisions = {
+
+		icon = GFX_decision_onmap_recruit_operative
+
+		visible = {
+			original_tag = KOR
+		}
+
+		available = {
+			KOR = { exists = yes }
+			KOR = { is_subject = no }
+			has_completed_focus = KOR_Central_Intelligence_Agency_control
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			
+		}
+	}
+
+	#국회강제 해산 계획 수립
+    KOR_Forced_dissolution_National_Assembly_decisions = {
+
+		icon = generic_arrest
+
+		visible = {
+			original_tag = KOR
+		}
+
+		available = {
+			KOR = { exists = yes }
+			KOR = { is_subject = no }
+			has_completed_focus = KOR_Forced_dissolution_National_Assembly
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			
+		}
+	}
+
+	#보도거점 점거 계획 수립
+    KOR_occupation_newspapers_decisions = {
+
+		icon = generic_speech
+
+		visible = {
+			original_tag = KOR
+		}
+
+		available = {
+			KOR = { exists = yes }
+			KOR = { is_subject = no }
+			has_completed_focus = KOR_occupation_newspapers
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			
+		}
+	}
+
+	#정부 전복 준비
+    KOR_Final_Preparation_decisions = {
+
+		icon = hol_draw_up_staff_plans
+
+		visible = {
+			original_tag = KOR
+		}
+
+		available = {
+			KOR = { exists = yes }
+			KOR = { is_subject = no }
+			has_completed_focus = KOR_Final_Preparation
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			
+		}
+	}
+
+	#군사혁명 계시
+    KOR_beginning_revolution_decisions = {
+
+		icon = GFX_decision_gre_faction_management
+
+		visible = {
+			original_tag = KOR
+		}
+
+		available = {
+			KOR = { exists = yes }
+			KOR = { is_subject = no }
+			has_completed_focus = KOR_beginning_revolution
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			
+		}
+	}
+}
+
 KOR_rural_relief_category = {
 	KOR_self_sufficiency_tick = {
 		allowed = {

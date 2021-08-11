@@ -55,7 +55,7 @@ bitmapfonts = {
 	bitmapfont = {
 		name = "Bomb_24"
 		path = "gfx/fonts/Bomb_24"
-		color = 0xffc3c3c3
+		color = 0xffffffff
 		textcolors = {
 			W = { 255 255 255 }
 			b = { 0 0 0 }
@@ -70,7 +70,7 @@ bitmapfonts = {
 			"gfx/fonts/cg_16b_kor"
 			"gfx/fonts/hoi_16tooltip3"		
 		}
-		color = 0xffc3c3c3
+		color = 0xffffffff
 		textcolors = {
 			M = { 35 206 255 } #하늘색
 			a = { 195 176 145 } #살색? 원 코드:l

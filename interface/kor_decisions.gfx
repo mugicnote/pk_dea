@@ -1,6 +1,16 @@
 spriteTypes = {
 
 	### KOR ###
+	### 쿠데타 ###
+	spriteType = {
+		name = "GFX_decision_cat_military_revolution"
+		texturefile = "gfx/interface/decisions/decision_cat_military_revolution.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_generic_agreement"
+		texturefile = "gfx/interface/decisions/decision_generic_agreement.tga"
+	}
+	
 
 	spriteType = {
 		name = "GFX_KOR_dae_sun1"

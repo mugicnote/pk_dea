@@ -8,14 +8,23 @@ ideas = {
 						
 			cost = 150
 			removal_cost = -1
-			level = 7
+			level = 10
 			
 			available = {
 				#has_manpower_for_recruit_change_to = { value = 0.005 group = mobilization_laws }
 			}
 
 			modifier = {
-				conscription = 0.01
+				custom_modifier_tooltip = mobilization_laws_tt
+				hidden_modifier = {
+					conscription = 0.005
+					stability_factor = 0.1
+					political_power_gain = 0.25
+					army_org_factor = -0.2
+					army_morale_factor = -0.2
+					industrial_capacity_factory = -0.15
+					industrial_capacity_dockyard = -0.15
+				}
 			}
 			
 			cancel_if_invalid = no
@@ -25,7 +34,7 @@ ideas = {
 						
 			cost = 150
 			removal_cost = -1
-			level = 6
+			level = 9
 			
 			available = {
 				#has_manpower_for_recruit_change_to =  { value = 0.015 group = mobilization_laws }
@@ -50,7 +59,14 @@ ideas = {
 			}
 
 			modifier = {
-				conscription = 0.015
+				custom_modifier_tooltip = volunteer_only_tt
+				hidden_modifier = {
+					conscription = 0.01
+					stability_factor = 0.05
+					political_power_gain = 0.1
+					army_org_factor = 0.1
+					army_morale_factor = 0.1
+				}
 			}
 			
 			default = yes
@@ -58,11 +74,11 @@ ideas = {
 			cancel_if_invalid = no
 		}
 		
-		limited_conscription = {
+		one_years_service = {
 					
 			cost = 150
 			removal_cost = -1
-			level = 5
+			level = 8
 
 			available = {
 				#has_manpower_for_recruit_change_to =  { value = 0.025 group = mobilization_laws }
@@ -123,7 +139,13 @@ ideas = {
 			}
 
 			modifier = {
-				conscription = 0.025
+				custom_modifier_tooltip = one_years_service_tt
+				hidden_modifier = {
+					conscription = 0.02
+					stability_factor = -0.05
+					war_support_factor = -0.05
+					political_power_gain = -0.05
+				}
 			}
 
 			ai_will_do = {
@@ -143,6 +165,292 @@ ideas = {
 			cancel_if_invalid = no
 		}
 		
+		one_year_and_half_service = {
+					
+			cost = 150
+			removal_cost = -1
+			level = 7
+
+			available = {
+				#has_manpower_for_recruit_change_to =  { value = 0.025 group = mobilization_laws }
+				has_war_support > 0.2
+				NOT = { has_idea = undisturbed_isolation }
+				NOT = { has_idea = isolation }
+				if = {
+					limit = {
+						original_tag = AST
+						has_dlc = "Together for Victory"
+					}
+					has_completed_focus = AST_citizen_military_forces
+				}
+				if = {
+					limit = {
+						original_tag = CAN
+						has_dlc = "Together for Victory"
+					}
+					has_completed_focus = CAN_commit_to_the_war
+				}
+				if = {
+					limit = {
+						original_tag = RAJ
+						has_dlc = "Together for Victory"
+					}
+					is_subject = no
+				}
+
+				if = {
+					limit = {
+						original_tag = HUN
+						has_dlc = "Death or Dishonor"
+					}
+					NOT = { has_idea = HUN_treaty_of_triannon }
+				}
+				if = {
+					limit = {
+						original_tag = ENG
+						has_dlc = "Man the Guns"
+						has_completed_focus = ENG_concessions_to_the_trade_unions
+					}
+					NOT = { has_country_flag = ENG_cannot_increase_conscription_law }
+				}
+				if = {
+					limit = {
+						original_tag = SPR
+						has_dlc = "La Resistance"
+					}
+					NOT = { has_completed_focus = SPR_all_must_bear_the_torch }
+				}
+				if = {
+					limit = {
+						original_tag = BUL
+						has_dlc = "Battle for the Bosporus"
+					}
+					NOT = { has_idea = BUL_army_restrictions }
+				}
+			}
+
+			modifier = {
+				custom_modifier_tooltip = one_year_and_half_service_tt
+				hidden_modifier = {
+					conscription = 0.0225
+					stability_factor = -0.075
+					war_support_factor = -0.075
+					political_power_gain = -0.07
+					training_time_factor = 0.05
+				}
+			}
+
+			ai_will_do = {
+   				factor = 1
+				modifier = {
+					#Prio if low on manpower
+					factor = 20
+					manpower_per_military_factory <  1000
+				}
+				modifier = {
+					tag = ENG
+					has_idea_with_trait = military_theorist
+					factor = 20
+				}
+			}
+			
+			cancel_if_invalid = no
+		}
+
+		two_years_service = {
+					
+			cost = 150
+			removal_cost = -1
+			level = 6
+
+			available = {
+				#has_manpower_for_recruit_change_to =  { value = 0.025 group = mobilization_laws }
+				has_war_support > 0.3
+				NOT = { has_idea = undisturbed_isolation }
+				NOT = { has_idea = isolation }
+				if = {
+					limit = {
+						original_tag = AST
+						has_dlc = "Together for Victory"
+					}
+					has_completed_focus = AST_citizen_military_forces
+				}
+				if = {
+					limit = {
+						original_tag = CAN
+						has_dlc = "Together for Victory"
+					}
+					has_completed_focus = CAN_commit_to_the_war
+				}
+				if = {
+					limit = {
+						original_tag = RAJ
+						has_dlc = "Together for Victory"
+					}
+					is_subject = no
+				}
+
+				if = {
+					limit = {
+						original_tag = HUN
+						has_dlc = "Death or Dishonor"
+					}
+					NOT = { has_idea = HUN_treaty_of_triannon }
+				}
+				if = {
+					limit = {
+						original_tag = ENG
+						has_dlc = "Man the Guns"
+						has_completed_focus = ENG_concessions_to_the_trade_unions
+					}
+					NOT = { has_country_flag = ENG_cannot_increase_conscription_law }
+				}
+				if = {
+					limit = {
+						original_tag = SPR
+						has_dlc = "La Resistance"
+					}
+					NOT = { has_completed_focus = SPR_all_must_bear_the_torch }
+				}
+				if = {
+					limit = {
+						original_tag = BUL
+						has_dlc = "Battle for the Bosporus"
+					}
+					NOT = { has_idea = BUL_army_restrictions }
+				}
+			}
+
+			modifier = {
+				custom_modifier_tooltip = two_years_service_tt
+				hidden_modifier = {
+					conscription = 0.025
+					stability_factor = -0.1
+					war_support_factor = -0.1
+					political_power_gain = -0.1
+					army_org_factor = -0.05
+					army_morale_factor = -0.05
+					industrial_capacity_factory = -0.1
+					industrial_capacity_dockyard = -0.1
+					production_speed_buildings_factor = -0.1
+					training_time_factor = 0.075
+				}
+			}
+
+			ai_will_do = {
+   				factor = 1
+				modifier = {
+					#Prio if low on manpower
+					factor = 20
+					manpower_per_military_factory <  1000
+				}
+				modifier = {
+					tag = ENG
+					has_idea_with_trait = military_theorist
+					factor = 20
+				}
+			}
+			
+			cancel_if_invalid = no
+		}
+
+		three_years_service = {
+					
+			cost = 150
+			removal_cost = -1
+			level = 5
+
+			available = {
+				#has_manpower_for_recruit_change_to =  { value = 0.025 group = mobilization_laws }
+				has_war_support > 0.4
+				NOT = { has_idea = undisturbed_isolation }
+				NOT = { has_idea = isolation }
+				if = {
+					limit = {
+						original_tag = AST
+						has_dlc = "Together for Victory"
+					}
+					has_completed_focus = AST_citizen_military_forces
+				}
+				if = {
+					limit = {
+						original_tag = CAN
+						has_dlc = "Together for Victory"
+					}
+					has_completed_focus = CAN_commit_to_the_war
+				}
+				if = {
+					limit = {
+						original_tag = RAJ
+						has_dlc = "Together for Victory"
+					}
+					is_subject = no
+				}
+
+				if = {
+					limit = {
+						original_tag = HUN
+						has_dlc = "Death or Dishonor"
+					}
+					NOT = { has_idea = HUN_treaty_of_triannon }
+				}
+				if = {
+					limit = {
+						original_tag = ENG
+						has_dlc = "Man the Guns"
+						has_completed_focus = ENG_concessions_to_the_trade_unions
+					}
+					NOT = { has_country_flag = ENG_cannot_increase_conscription_law }
+				}
+				if = {
+					limit = {
+						original_tag = SPR
+						has_dlc = "La Resistance"
+					}
+					NOT = { has_completed_focus = SPR_all_must_bear_the_torch }
+				}
+				if = {
+					limit = {
+						original_tag = BUL
+						has_dlc = "Battle for the Bosporus"
+					}
+					NOT = { has_idea = BUL_army_restrictions }
+				}
+			}
+
+			modifier = {
+				custom_modifier_tooltip = three_years_service_tt
+				hidden_modifier = {
+					conscription = 0.0275
+					stability_factor = -0.125
+					war_support_factor = -0.125
+					political_power_gain = -0.15
+					army_org_factor = -0.075
+					army_morale_factor = -0.075
+					industrial_capacity_factory = -0.15
+					industrial_capacity_dockyard = -0.15
+					production_speed_buildings_factor = -0.2
+					training_time_factor = 0.1
+				}
+			}
+
+			ai_will_do = {
+   				factor = 1
+				modifier = {
+					#Prio if low on manpower
+					factor = 20
+					manpower_per_military_factory <  1000
+				}
+				modifier = {
+					tag = ENG
+					has_idea_with_trait = military_theorist
+					factor = 20
+				}
+			}
+			
+			cancel_if_invalid = no
+		}
+
 		extensive_conscription = {
 			
 			available = {
@@ -161,7 +469,7 @@ ideas = {
 						#}
 					}					
 				}
-				has_war_support > 0.2
+				has_war_support > 0.5
 				#Special rules AST in TFV
 				if = {
 					limit = {
@@ -245,10 +553,20 @@ ideas = {
 			level = 4
 			
 			modifier = {
-				conscription = 0.05
-				#industrial_capacity_factory = -0.1
-				#production_speed_buildings_factor = -0.1
-				training_time_factor = 0.1
+				custom_modifier_tooltip = extensive_conscription_tt
+				hidden_modifier = {
+					conscription = 0.03
+					stability_factor = -0.15
+					war_support_factor = -0.15
+					political_power_gain = -0.2
+					research_speed_factor = -0.025
+					army_org_factor = -0.1
+					army_morale_factor = -0.1
+					industrial_capacity_factory = -0.2
+					industrial_capacity_dockyard = -0.2
+					production_speed_buildings_factor = -0.2
+					training_time_factor = 0.15
+				}
 			}
 			
 			cancel_if_invalid = no
@@ -382,11 +700,20 @@ ideas = {
 			level = 3
 
 			modifier = {
-				conscription = 0.1
-				industrial_capacity_factory = -0.1
-				industrial_capacity_dockyard = -0.1
-				production_speed_buildings_factor = -0.1
-				training_time_factor = 0.2
+				custom_modifier_tooltip = service_by_requirement_tt
+				hidden_modifier = {
+					conscription = 0.05
+					stability_factor = -0.2
+					war_support_factor = -0.2
+					political_power_gain = -0.5
+					research_speed_factor = -0.05
+					army_org_factor = -0.15
+					army_morale_factor = -0.15
+					industrial_capacity_factory = -0.3
+					industrial_capacity_dockyard = -0.3
+					production_speed_buildings_factor = -0.3
+					training_time_factor = 0.2
+				}
 			}
 			
 			cancel_if_invalid = no
@@ -506,12 +833,20 @@ ideas = {
 			level = 2
 			
 			modifier = {
-				conscription = 0.2
-				industrial_capacity_factory = -0.3
-				industrial_capacity_dockyard = -0.3
-				production_speed_buildings_factor = -0.3
-				#XP from reinforcement penalty (small)
-				training_time_factor = 0.3
+				custom_modifier_tooltip = all_adults_serve_tt
+				hidden_modifier = {
+					conscription = 0.1
+					stability_factor = -0.25
+					war_support_factor = -0.25
+					political_power_gain = -1.0
+					research_speed_factor = -0.075
+					army_org_factor = -0.25
+					army_morale_factor = -0.25
+					industrial_capacity_factory = -0.45
+					industrial_capacity_dockyard = -0.45
+					production_speed_buildings_factor = -0.45
+					training_time_factor = 0.3
+				}
 			}
 			
 			cancel_if_invalid = no
@@ -616,36 +951,20 @@ ideas = {
 			level = 1
 
 			modifier = {
-				conscription = 0.25
-				industrial_capacity_factory = -0.4
-				industrial_capacity_dockyard = -0.4
-				production_speed_buildings_factor = -0.4
-				training_time_factor = 0.5
-			}
-			
-			cancel_if_invalid = no
-		}
-
-		kor_conscription = {
-		
-			picture = kor_conscription
-			
-			allowed = {
-				original_tag = KOR
-			}
-			available = {
-				original_tag = KOR
-			}
-
-			ai_will_do = {
-			}
-
-			cost = 150
-			removal_cost = -1
-			level = 4
-
-			modifier = {
-				conscription = 0.035
+				custom_modifier_tooltip = scraping_the_barrel_tt
+				hidden_modifier = {
+					conscription = 0.2
+					stability_factor = -0.3
+					war_support_factor = -0.3
+					political_power_gain = -1.5
+					research_speed_factor = -0.1
+					army_org_factor = -0.4
+					army_morale_factor = -0.4
+					industrial_capacity_factory = -0.6
+					industrial_capacity_dockyard = -0.6
+					production_speed_buildings_factor = -0.6
+					training_time_factor = 0.4
+				}
 			}
 			
 			cancel_if_invalid = no

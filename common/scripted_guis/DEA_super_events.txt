@@ -1,0 +1,35 @@
+scripted_gui = {
+
+	sp_event_window = {
+		window_name = "sp_event_window"
+		context_type = player_context
+
+		visible = {
+			has_global_flag = big_event_assassination_Jae_pil
+		}
+		
+		triggers = {
+			superevent_assassination_Jae_pil_visible = {
+				has_global_flag = big_event_assassination_Jae_pil
+			}
+		}
+		
+		
+		############
+		###BUTTON###
+		############
+		
+		effects = {
+			sp_event_close_button_click = {
+				clr_global_flag = Super_Event_Visible
+				
+				if = {
+					limit = {
+						has_global_flag = big_event_assassination_Jae_pil
+					}
+					clr_global_flag = big_event_assassination_Jae_pil
+				}
+			}
+		}
+	}
+}

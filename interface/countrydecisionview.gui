@@ -97,9 +97,9 @@ guiTypes = {
 
 		instantTextboxType = {
 			name = "name_text"
-			position = { x = 74 y = 26 }
+			position = { x = 74 y = 27 }
 			textureFile = ""
-			font = "aldrich_24_outline"
+			font = "aldrich_22_outline"
 			borderSize = { x = 0 y = 0 }
 			text = ""
 			maxWidth = 365
@@ -393,9 +393,9 @@ guiTypes = {
 
 		instantTextboxType = {
 			name = "name_text"
-			position = { x = 63 y = 10 }
+			position = { x = 63 y = 11 }
 			textureFile = ""
-			font = "hoi_16mbs"
+			font = "aldrich_18_outline"
 			borderSize = { x = 0 y = 0 }
 			text = ""
 			maxWidth = 330

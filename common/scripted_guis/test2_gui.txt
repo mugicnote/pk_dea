@@ -43,6 +43,9 @@ scripted_gui = {
 		}
 		
 		properties = {
+			HoG1 = {
+				image = "[This.leader_two_portrait1]"
+			}
 			HoG2 = {
 				image = "[This.leader_two_portrait2]"
 			}

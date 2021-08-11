@@ -21,6 +21,11 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = KOR_idea_Way_of_Military_Revolution
+			hidden_effect = {
+				set_variable = {
+					rebellion_variable = 80
+				}
+			}
 		}
 		x = 7
 		y = 0
@@ -38,7 +43,15 @@ focus_tree = {
 			focus = KOR_Way_of_Military_Revolution
 		}
 		completion_reward = {
-			
+			hidden_effect = {
+				KOR = {
+					country_lock_all_division_template = no
+				}
+			}
+			swap_ideas = {
+				remove_idea = KOR_divided_army
+				add_idea = KOR_idea_Military_Revolutionary_Government
+			}
 		}
 		x = 0
 		y = 1
@@ -56,7 +69,8 @@ focus_tree = {
 			focus = KOR_Military_Revolutionary_Government
 		}
 		completion_reward = {
-			
+			custom_effect_tooltip = KOR_Department_Defense_occupation_plan_tt
+			custom_effect_tooltip = KOR_Department_Defense_occupation_plan_2_tt
 		}
 		x = -6
 		y = 1
@@ -95,14 +109,19 @@ focus_tree = {
 			focus = KOR_Department_Defense_occupation_plan
 		}
 		completion_reward = {
-			
+			hidden_effect = {
+				add_to_variable = {
+					var = rebellion_variable
+					value = -10
+				}
+			}
 		}
 		x = 1
 		y = 1
 
 	}
 
-	#계획: 방송국 장악
+	#보도지침 추가
 	focus = {
 		id = KOR_plan_take_over_station
 		icon = GFX_focus_wcp
@@ -149,7 +168,12 @@ focus_tree = {
 			focus = KOR_Central_Intelligence_Department_pressure
 		}
 		completion_reward = {
-			
+			hidden_effect = {
+				add_to_variable = {
+					var = rebellion_variable
+					value = -10
+				}
+			}
 		}
 		x = 0
 		y = 1
@@ -170,14 +194,19 @@ focus_tree = {
 			focus = KOR_Forced_dissolution_National_Assembly
 		}
 		completion_reward = {
-			
+			hidden_effect = {
+				add_to_variable = {
+					var = rebellion_variable
+					value = -10
+				}
+			}
 		}
 		x = 2
 		y = 1
 
 	}
 
-	#계획: 신문사 점거
+	#계획: 보도거점 점거
 	focus = {
 		id = KOR_occupation_newspapers
 		icon = GFX_focus_nationality
@@ -188,7 +217,12 @@ focus_tree = {
 			focus = KOR_plan_take_over_station
 		}
 		completion_reward = {
-			
+			hidden_effect = {
+				add_to_variable = {
+					var = rebellion_variable
+					value = -10
+				}
+			}
 		}
 		x = 1
 		y = 1
@@ -206,7 +240,12 @@ focus_tree = {
 			focus = KOR_Department_Defense_occupation_plan
 		}
 		completion_reward = {
-			
+			hidden_effect = {
+				add_to_variable = {
+					var = rebellion_variable
+					value = -10
+				}
+			}
 		}
 		x = -1
 		y = 1
@@ -242,7 +281,12 @@ focus_tree = {
 			focus = KOR_Central_Committee_meeting_revolutionary_government
 		}
 		completion_reward = {
-			
+			hidden_effect = {
+				add_to_variable = {
+					var = rebellion_variable
+					value = -10
+				}
+			}
 		}
 		x = 0
 		y = 1
@@ -260,7 +304,12 @@ focus_tree = {
 			focus = KOR_Central_Committee_meeting_revolutionary_government
 		}
 		completion_reward = {
-			
+			hidden_effect = {
+				add_to_variable = {
+					var = rebellion_variable
+					value = -10
+				}
+			}
 		}
 		x = 2
 		y = 1
@@ -278,7 +327,12 @@ focus_tree = {
 			focus = KOR_Central_Committee_meeting_revolutionary_government
 		}
 		completion_reward = {
-			
+			hidden_effect = {
+				add_to_variable = {
+					var = rebellion_variable
+					value = -10
+				}
+			}
 		}
 		x = -2
 		y = 1
@@ -294,26 +348,12 @@ focus_tree = {
 
 		prerequisite = {
 			focus = KOR_Army_Commando_Recruitment
-		}
-		prerequisite = {
 			focus = KOR_Establishment_Military_Intelligence_Organization
-		}
-		prerequisite = {
 			focus = KOR_Central_Intelligence_Agency_control
-		}
-		prerequisite = {
 			focus = KOR_Pressure_investigate_lawmakers
-		}
-		prerequisite = {
 			focus = KOR_National_Assembly_Committee_conciliation
-		}
-		prerequisite = {
 			focus = KOR_Move_Military_Equipment_Secret
-		}
-		prerequisite = {
 			focus = KOR_Creating_Revolutionary_Commitments
-		}
-		prerequisite = {
 			focus = KOR_occupation_newspapers
 		}
 		completion_reward = {
