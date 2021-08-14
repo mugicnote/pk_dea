@@ -218,13 +218,14 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "요시다 시게루"
+	name = "마츠다 주지"
 	desc = "#"
-	picture = "JAP_Yoshida_Shigeru.dds"
+	picture = "JAP_Machida_Chuji.dds"
 	expire = "1999.1.1"
 	ideology = conservatism
 	traits = {
-		#
+		jap_wonderful_banker
+        pro_american
 	}
 }
 

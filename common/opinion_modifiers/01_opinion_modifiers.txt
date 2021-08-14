@@ -18,6 +18,8 @@ opinion_modifiers = {
 
 	USA_opnion_JAP = { value = 100 }
 
+	JAP_opnion_pro_americans = { value = 25 }
+
 	Kor_Harbin_Talks_fail = { value = -40 }
 
 	SND_wuhan_visit_modifiers = { value = 25 }

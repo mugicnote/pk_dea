@@ -3,7 +3,8 @@ state={
 	name="STATE_839"
 
 	history={
-		owner = JAP
+		owner = UPN
+		add_core_of = UPN
 		add_core_of = JAP
 		buildings = {
 			9950 = {

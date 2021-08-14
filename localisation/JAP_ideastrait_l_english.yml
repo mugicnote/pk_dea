@@ -19,3 +19,7 @@
  JAP_stricke_to_eat_up_1level_desc:0 "이 슬로건은 노동자들이 파업과 시위를 하면서 내세운 슬로건입니다. 현재 파업의 심각성은 국가를 마비시키고 있습니다. 하루 빨리 이 사태를 해결해야할 방안이 필요합니다."
  JAP_not_allow_united_flag:0 "의회가 그들을 위협합니다"
  JAP_allow_united_flag:0 "의회가 그들에게 경청합니다."
+ 
+ ### 지도자 특성 ###
+ jap_wonderful_banker:0 "유능한 은행가"
+ pro_american:0 "친미주의자"
