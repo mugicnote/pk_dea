@@ -1,574 +1,94 @@
-ICU_the_inevitable_civil_war = {
+ICU_army_reform = {
 
-	ICU_military_plot_nationalists = {
+	ICU_army_reform = {
 
-		priority = 100
+		icon = generic_prepare_civil_war
 
-		icon = gfx
-		
 		available = {
-			always = no
+			has_army_experience > 99
+			has_completed_focus = ICU_arm_3
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 500
+		}
+		days_remove = 90
+
+		visible = {
+			OR = {
+				has_idea = ICU_broken_army_1
+				has_idea = ICU_broken_army_2
+				has_idea = ICU_broken_army_3
+			}
+		}
+		remove_effect = {
+			if = {
+				limit = { has_idea = ICU_broken_army_1 }
+				swap_ideas = {
+					remove_idea = ICU_broken_army_1
+					add_idea = ICU_broken_army_2
+				}
+			}
+			else_if = {
+				limit = { has_idea = ICU_broken_army_2 }
+				swap_ideas = {
+					remove_idea = ICU_broken_army_2
+					add_idea = ICU_broken_army_3
+				}
+			}
+			else_if = {
+				limit = { has_idea = ICU_broken_army_3 }
+				remove_ideas = ICU_broken_army_3
+			}
+		}
+		complete_effect = {
+			army_experience = -100						
 		}		
-
-		allowed = {
-			original_tag = ICU
-		}
-
-		days_mission_timeout = 278
-
-		fixed_random_seed = no
-
-		fire_only_once = yes
-        
-		
-		is_good = no
-		
-		activation = {
-			has_country_flag = free_mov_civilwar
-		}		
-
-		visible = {
-			tag = ICU
-		}
-
-		timeout_effect = {
-			country_event = ICU.5
-		}
 	}
-}
+}	
+ICU_economy_reform = {
 
-ICU_pay_back_debt_to_the_ifc_category = { 
+	ICU_economy_reform = {
 
-	ICU_small_installment_payment_ENG = {
-
-		icon = hol_attract_foreign_investors 
-
-		allowed = { 
-			original_tag = ICU
-		}
+		icon = generic_prepare_civil_war
 
 		available = {
-			has_completed_focus = ICU_future_2		
-			NOT = {
-				OR = {
-					has_country_flag = ICU_completely_debt_free
-					has_country_flag = ICU_defaulted_on_debt_flag
-				}
-			}
+			has_completed_focus = ICU_eco_2
 		}
 
-		target_trigger = {
-			FROM = {
-				tag = ENG
-			}
-		}
-
-		days_remove = 60
-
-		cost = 25
-
-		fire_only_once = no
-
+		cost = 120
 		ai_will_do = {
-			factor = 5
-			modifier = {
-				factor = 10
-				is_historical_focus_on = yes
-			}
-			modifier = {
-				factor = 5
-				date < 1938.01.01
-			}
-			modifier = {
-				factor = 15
-				date > 1938.01.01
-				NOT = { 
-					ENG = { has_government = communism }
-				}
-			}
+			factor = 500
 		}
+		days_remove = 120
 
 		visible = {
-			has_completed_focus = ICU_future_2
-			OR = { 
-				has_idea = ICU_debt_to_the_ifc
-				has_idea = ICU_debt_to_the_ifc_2
-				has_idea = ICU_debt_to_the_ifc_3
-			}
-			NOT = {
-				OR = {
-					has_country_flag = ICU_small_installment_payment_flag
-					has_country_flag = ICU_large_installment_payment_flag
-					check_variable = { var = ICU_debt_to_the_ifc_britain_var value = 0 compare = equals }
-				}
+			OR = {
+				has_idea = ICU_bad_economy_1
+				has_idea = ICU_bad_economy_2
+				has_idea = ICU_bad_economy_3
 			}
 		}
-
-		complete_effect = {
-			add_ideas = ICU_paying_off_debt_small
-			hidden_effect = { 
-				set_country_flag = { flag = ICU_small_installment_payment_flag value = 1 days = 60 }
-			}
-		}
-
 		remove_effect = {
-			remove_ideas = ICU_paying_off_debt_small
-			FROM = { add_political_power = 25 }
-			ICU_small_payment_to_british_debt_effect = yes
-		}
+			if = {
+				limit = { has_idea = ICU_bad_economy_1 }
+				swap_ideas = {
+					remove_idea = ICU_bad_economy_1
+					add_idea = ICU_bad_economy_2
+				}
+			}
+			else_if = {
+				limit = { has_idea = ICU_bad_economy_2 }
+				swap_ideas = {
+					remove_idea = ICU_bad_economy_2
+					add_idea = ICU_bad_economy_3
+				}
+			}
+			else_if = {
+				limit = { has_idea = ICU_bad_economy_3 }
+				remove_ideas = ICU_bad_economy_3
+			}
+		}			
 	}
-	ICU_small_installment_payment_FRA = {
-
-		icon = hol_attract_foreign_investors 
-
-		allowed = { 
-			original_tag = ICU
-		}
-
-		available = {
-			has_completed_focus = ICU_future_2		
-			NOT = {
-				OR = {
-					has_country_flag = ICU_completely_debt_free
-					has_country_flag = ICU_defaulted_on_debt_flag
-				}
-			}
-		}
-
-		target_trigger = {
-			FROM = {
-				tag = FRA
-			}
-		}
-
-		days_remove = 60
-
-		cost = 25
-
-		fire_only_once = no
-
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				factor = 5
-				is_historical_focus_on = yes
-			}
-			modifier = {
-				factor = 10
-				date > 1938.01.01
-				date < 1942.01.01
-			}
-			modifier = {
-				factor = 0
-				date > 1942.01.01
-			}
-			modifier = {
-				factor = 0
-				FRA = { has_capitulated = yes }
-			}
-		}
-
-		visible = {
-			has_completed_focus = ICU_future_2
-			OR = { 
-				has_idea = ICU_debt_to_the_ifc
-				has_idea = ICU_debt_to_the_ifc_2
-				has_idea = ICU_debt_to_the_ifc_3
-			}
-			NOT = {
-				OR = {
-					has_country_flag = ICU_small_installment_payment_flag
-					has_country_flag = ICU_large_installment_payment_flag
-					check_variable = { var = ICU_debt_to_the_ifc_france_var value = 0 compare = equals }
-				}
-			}
-		}
-
-		complete_effect = {
-			add_ideas = ICU_paying_off_debt_small
-			hidden_effect = { 
-				set_country_flag = { flag = ICU_small_installment_payment_flag value = 1 days = 60 }
-			}
-		}
-
-		remove_effect = {
-			remove_ideas = ICU_paying_off_debt_small
-			FROM = { add_political_power = 25 }
-			ICU_small_payment_to_french_debt_effect = yes
-		}
-	}
-	ICU_small_installment_payment_USA = {
-
-		icon = hol_attract_foreign_investors 
-
-		allowed = { 
-			original_tag = ICU
-		}
-
-		available = {
-			has_completed_focus = ICU_future_2		
-			NOT = {
-				OR = {
-					has_country_flag = ICU_completely_debt_free
-					has_country_flag = ICU_defaulted_on_debt_flag
-				}
-			}
-		}
-
-		target_trigger = {
-			FROM = {
-				tag = USA
-			}
-		}
-
-		days_remove = 60
-
-		cost = 25
-
-		fire_only_once = no
-
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				factor = 2
-				is_historical_focus_on = yes
-			}
-			modifier = {
-				factor = 10
-				date > 1938.01.01
-				date < 1940.01.01
-			}
-			modifier = {
-				factor = 0
-				date > 1940.01.01
-			}
-		}
-
-		visible = {
-			has_completed_focus = ICU_future_2
-			OR = { 
-				has_idea = ICU_debt_to_the_ifc
-				has_idea = ICU_debt_to_the_ifc_2
-				has_idea = ICU_debt_to_the_ifc_3
-			}
-			NOT = {
-				OR = {
-					has_country_flag = ICU_small_installment_payment_flag
-					has_country_flag = ICU_large_installment_payment_flag
-					check_variable = { var = ICU_debt_to_the_ifc_italy_var value = 0 compare = equals }
-				}
-			}
-		}
-
-		complete_effect = {
-			add_ideas = ICU_paying_off_debt_small
-			hidden_effect = { 
-				set_country_flag = { flag = ICU_small_installment_payment_flag value = 1 days = 60 }
-			}
-		}
-
-		remove_effect = {
-			remove_ideas = ICU_paying_off_debt_small
-			FROM = { add_political_power = 25 }
-			ICU_small_payment_to_italians_debt_effect = yes
-		}
-	}
-	ICU_large_installment_payment_ENG = {
-
-		icon = gre_investment_decisions
-
-		allowed = { 
-			original_tag = ICU
-		}
-
-		available = {
-			has_completed_focus = ICU_future_2		
-			NOT = {
-				OR = {
-					has_country_flag = ICU_completely_debt_free
-					has_country_flag = ICU_defaulted_on_debt_flag
-				}
-			}
-		}
-
-		target_trigger = {
-			FROM = {
-				tag = ICU
-			}
-		}
-
-		days_remove = 30
-
-		cost = 50
-
-		fire_only_once = no
-
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				factor = 5
-				is_historical_focus_on = yes
-			}
-			modifier = {
-				factor = 10
-				date > 1938.01.01
-				NOT = { 
-					ENG = { has_government = communism }
-				}
-			}
-			modifier = {
-				factor = 0
-				date < 1938.01.01
-			}
-		}
-
-		visible = {
-			has_completed_focus = ICU_future_2
-			OR = { 
-				has_idea = ICU_debt_to_the_ifc
-				has_idea = ICU_debt_to_the_ifc_2
-				has_idea = ICU_debt_to_the_ifc_3
-			}
-			NOT = {
-				OR = {
-					has_country_flag = ICU_small_installment_payment_flag
-					has_country_flag = ICU_large_installment_payment_flag
-					check_variable = { var = ICU_debt_to_the_ifc_britain_var value = 2.5 compare = less_than_or_equals }
-				}
-			}
-		}
-
-		complete_effect = {
-			add_ideas = ICU_paying_off_debt_large
-			hidden_effect = { 
-				set_country_flag = { flag = ICU_large_installment_payment_flag value = 1 days = 30 }
-			}
-		}
-
-		remove_effect = {
-			FROM = { add_political_power = 50 }
-			remove_ideas = ICU_paying_off_debt_large
-			ICU_large_payment_to_british_debt_effect = yes
-		}
-	}
-	
-	ICU_large_installment_payment_FRA = {
-
-		icon = gre_investment_decisions
-
-		allowed = { 
-			original_tag = ICU
-		}
-
-		available = {
-			has_completed_focus = ICU_future_2		
-			NOT = {
-				OR = {
-					has_country_flag = ICU_completely_debt_free
-					has_country_flag = ICU_defaulted_on_debt_flag
-				}
-			}
-		}
-
-		target_trigger = {
-			FROM = {
-				tag = FRA
-			}
-		}
-
-		days_remove = 30
-
-		cost = 50
-
-		fire_only_once = no
-
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				factor = 2
-				is_historical_focus_on = yes
-			}
-			modifier = {
-				factor = 10
-				date > 1938.01.01
-				date < 1942.01.01
-			}
-			modifier = {
-				factor = 0
-				date < 1938.01.01
-			}
-			modifier = {
-				factor = 0
-				FRA = { has_capitulated = yes }
-			}
-		}
-
-		visible = {
-			has_completed_focus = ICU_future_2
-			OR = { 
-				has_idea = ICU_debt_to_the_ifc
-				has_idea = ICU_debt_to_the_ifc_2
-				has_idea = ICU_debt_to_the_ifc_3
-			}
-			NOT = {
-				OR = {
-					has_country_flag = ICU_small_installment_payment_flag
-					has_country_flag = ICU_large_installment_payment_flag
-					check_variable = { var = ICU_debt_to_the_ifc_france_var value = 2.5 compare = less_than_or_equals }
-				}
-			}
-		}
-
-		complete_effect = {
-			add_ideas = ICU_paying_off_debt_large
-			hidden_effect = { 
-				set_country_flag = { flag = ICU_large_installment_payment_flag value = 1 days = 30 }
-			}
-		}
-
-		remove_effect = {
-			FROM = { add_political_power = 50 }
-			remove_ideas = ICU_paying_off_debt_large
-			ICU_large_payment_to_french_debt_effect = yes
-		}
-	}
-
-	ICU_large_installment_payment_USA = {
-
-		icon = gre_investment_decisions
-
-		allowed = { 
-			original_ICU = ICU
-		}
-
-		available = {
-			has_completed_focus = ICU_future_2		
-			NOT = {
-				OR = {
-					has_country_flag = ICU_completely_debt_free
-					has_country_flag = ICU_defaulted_on_debt_flag
-				}
-			}
-		}
-
-		target_trigger = {
-			FROM = {
-				tag = USA
-			}
-		}
-
-		days_remove = 30
-
-		cost = 50
-
-		fire_only_once = no
-
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
-			modifier = {
-				factor = 5
-				date > 1938.01.01
-				date < 1940.01.01
-			}
-			modifier = {
-				factor = 0
-				date > 1940.01.01
-			}
-		}
-
-		visible = {
-			has_completed_focus = ICU_future_2
-			OR = { 
-				has_idea = ICU_debt_to_the_ifc
-				has_idea = ICU_debt_to_the_ifc_2
-				has_idea = ICU_debt_to_the_ifc_3
-			}
-			NOT = {
-				OR = {
-					has_country_flag = ICU_small_installment_payment_flag
-					has_country_flag = ICU_large_installment_payment_flag
-					check_variable = { var = ICU_debt_to_the_ifc_italy_var value = 2.5 compare = less_than_or_equals }
-				}
-			}
-		}
-
-		complete_effect = {
-			add_ideas = ICU_paying_off_debt_large
-			hidden_effect = { 
-				set_country_flag = { flag = ICU_large_installment_payment_flag value = 1 days = 30 }
-			}
-		}
-
-		remove_effect = {
-			FROM = { add_political_power = 50 }
-			remove_ideas = ICU_paying_off_debt_large
-			ICU_large_payment_to_italians_debt_effect = yes
-		}
-	}
-
-	ICU_restructuring_our_debt = {
-
-		icon = gre_paying_ifc_debt
-
-		allowed = { 
-			original_tag = ICU
-		}
-
-		available = {
-			has_completed_focus = ICU_future_2		
-			NOT = {
-				OR = {
-					has_country_flag = ICU_completely_debt_free
-					has_country_flag = ICU_defaulted_on_debt_flag
-				}
-			}
-		}
-
-		cost = 200
-
-		fire_only_once = yes
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 3
-				is_historical_focus_on = yes
-			}
-			modifier = {
-				factor = 15
-				num_of_factories < 25
-			}
-			modifier = {
-				factor = 20
-				date > 1940.01.01
-			}
-		}
-
-		visible = {
-			date > 1939.01.01
-			AND = {
-				check_variable = { 
-					var = ICU_debt_to_the_ifc_paid_var
-					value = 15
-					compare = less_than
-				}
-				OR = {
-					has_idea = ICU_debt_to_the_ifc
-					has_idea = ICU_debt_to_the_ifc_2
-					has_idea = ICU_debt_to_the_ifc_3
-				}
-			}
-			NOT = {
-				has_country_flag = ICU_restructuring_our_debt_flag
-			}
-		}
-
-		complete_effect = {
-			ICU_debt_restructuring_effect = yes
-		}
-	}			
-}
+}	

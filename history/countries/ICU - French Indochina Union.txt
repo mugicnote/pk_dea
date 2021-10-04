@@ -12,14 +12,10 @@ set_technology = {
 
 add_ideas = {
 	ICU_independence_hot
-	ICU_bad_economy
-	ICU_debt_to_the_ifc
+	ICU_bad_economy_1
+	ICU_broken_army_1
 }
 
-	set_variable = { var = GRE_debt_to_the_ifc_britain_var value = 10 }
-	set_variable = { var = GRE_debt_to_the_ifc_france_var value = 10 }
-	set_variable = { var = GRE_debt_to_the_ifc_italy_var value = 10 }
-	set_variable = { var = GRE_debt_to_the_ifc_paid_var value = 0 }
 
 set_politics = {
 	ruling_party = neutrality

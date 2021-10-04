@@ -17,7 +17,7 @@ ideas = {
 			}
 		}
 
-		ICU_bad_economy = {
+		ICU_bad_economy_1 = {
 			allowed = {
 				original_tag = ICU
 			}	
@@ -25,13 +25,43 @@ ideas = {
 			picture = "KTG_Industrial_Crisis_Town"
 			
 			modifier = {
-				industrial_capacity_dockyard = -0.2	            
-				industrial_capacity_factory = -0.2
-				production_factory_efficiency_gain_factor = -0.2
-				production_factory_max_efficiency_factor = -0.2
-				consumer_goods_factor = 0.2				
+				industrial_capacity_dockyard = -0.5           
+				industrial_capacity_factory = -0.5
+				production_factory_efficiency_gain_factor = -0.4
+				production_factory_max_efficiency_factor = -0.4
+				consumer_goods_factor = 0.4				
 			}
 		}
+		ICU_bad_economy_2 = {
+			allowed = {
+				original_tag = ICU
+			}	
+			
+			picture = "KTG_Industrial_Crisis_Town"
+			
+			modifier = {
+				industrial_capacity_dockyard = -0.25	            
+				industrial_capacity_factory = -0.25
+				production_factory_efficiency_gain_factor = -0.3
+				production_factory_max_efficiency_factor = -0.3
+				consumer_goods_factor = 0.3			
+			}
+		}
+		ICU_bad_economy_3 = {
+			allowed = {
+				original_tag = ICU
+			}	
+			
+			picture = "KTG_Industrial_Crisis_Town"
+			
+			modifier = {
+				industrial_capacity_dockyard = -0.15            
+				industrial_capacity_factory = -0.15
+				production_factory_efficiency_gain_factor = -0.15
+				production_factory_max_efficiency_factor = -0.15
+				consumer_goods_factor = 0.15				
+			}
+		}		
 
 		ICU_freedom_hot = {
 			allowed = {
@@ -71,7 +101,7 @@ ideas = {
 			}
 		}
 	
-		ICU_broken_army = {
+		ICU_broken_army_1 = {
 			allowed = {
 				original_tag = ICU
 			}	
@@ -86,6 +116,38 @@ ideas = {
 			ground_attack_factor = -0.2		
 			}
 		}
+
+		ICU_broken_army_2 = {
+			allowed = {
+				original_tag = ICU
+			}	
+			
+			picture = "KTG_Industrial_Crisis_Town"
+			
+		modifier = {
+			army_attack_factor = -0.3
+			army_defence_factor = -0.3
+			army_speed_factor = -0.3
+			air_strategic_bomber_bombing_factor = -0.1
+			ground_attack_factor = -0.1		
+			}
+		}
+
+		ICU_broken_army_3 = {
+			allowed = {
+				original_tag = ICU
+			}	
+			
+			picture = "KTG_Industrial_Crisis_Town"
+			
+		modifier = {
+			army_attack_factor = -0.15
+			army_defence_factor = -0.15
+			army_speed_factor = -0.15
+			air_strategic_bomber_bombing_factor = -0.05
+			ground_attack_factor = -0.05
+			}
+		}		
 		
 		ICU_destroyed_economy = {
 			allowed = {
@@ -103,120 +165,5 @@ ideas = {
 				consumer_goods_factor = 0.5				
 			}
 		}
-		ICU_paying_off_debt_small = {
-				
-			allowed = {
-				original_tag = ICU
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			picture = generic_foreign_capital
-				
-			removal_cost = -1
-				
-			modifier = {
-				consumer_goods_factor = 0.05		
-				min_export = 0.1			
-			}
-		}
-
-		ICU_paying_off_debt_large = {
-				
-			allowed = {
-				original_tag = ICU
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			picture = SPR_relocate_the_gold_reserves
-				
-			removal_cost = -1
-				
-			modifier = {
-				consumer_goods_factor = 0.15		
-				min_export = 0.25			
-			}
-		}
-
-		ICU_debt_to_the_ifc = {
-				
-			allowed = {
-				original_tag = GRE
-			}
-
-			allowed_civil_war = {
-				NOT = {
-					OR = { 
-						has_government = communism
-						has_government = fascism 
-					}
-				}
-			}
-
-			picture = gre_debt_to_the_ifc
-				
-			removal_cost = -1
-				
-			modifier = {
-				stability_factor = -0.1	
-				consumer_goods_factor = 0.15	
-			}
-		}
-
-		ICU_debt_to_the_ifc_2 = {
-				
-			allowed = {
-				original_tag = GRE
-			}
-
-			allowed_civil_war = {
-				NOT = {
-					OR = { 
-						has_government = communism
-						has_government = fascism 
-					}
-				}
-			}
-
-			picture = gre_debt_to_the_ifc
-				
-			removal_cost = -1
-				
-			modifier = {
-				stability_factor = -0.1	
-				consumer_goods_factor = 0.1	
-			}
-		}
-
-		ICU_debt_to_the_ifc_3 = {
-				
-			allowed = {
-				original_tag = GRE
-			}
-
-			allowed_civil_war = {
-				NOT = {
-					OR = { 
-						has_government = communism
-						has_government = fascism 
-					}
-				}
-			}
-
-			picture = gre_debt_to_the_ifc
-				
-			removal_cost = -1
-				
-			modifier = {
-				stability_factor = -0.1	
-				consumer_goods_factor = 0.05	
-			}
-		}
-		
 	}	
 }

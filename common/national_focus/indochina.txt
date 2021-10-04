@@ -137,7 +137,7 @@ focus_tree = {
 		y = 2
 		search_filters = { FOCUS_FILTER_ICU_DEBT_TO_IFC FOCUS_FILTER_INDUSTRY }		
 		completion_reward = {
-			unlock_decision_category_tooltip = ICU_pay_back_debt_to_the_ifc_category	
+			ICU = { country_event = ICU.3 }			
 		}
 	}
 ##경제##	
@@ -169,6 +169,7 @@ focus_tree = {
 		x = 21
 		y = 4
 		completion_reward = {
+		unlock_decision_category_tooltip = ICU_economy_reform		
 		}
 	}
 	focus = { #베트남 도시화 정책
@@ -690,6 +691,7 @@ focus_tree = {
 		x = 28
 		y = 5
 		completion_reward = {
+		unlock_decision_category_tooltip = ICU_army_reform		
 		army_experience = 25
 		}
 	}	

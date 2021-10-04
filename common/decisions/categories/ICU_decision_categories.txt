@@ -1,26 +1,18 @@
-ICU_the_inevitable_civil_war = {
-	
-	icon = gfx
-	
-	picture = GFX
-
+ICU_army_reform = {
+	icon = army_reform
 	allowed = {
 		original_tag = ICU
 	}
+
 	visible = {
-		always = yes
-	}	
-
-	priority = 100
+	}
 }
-
-ICU_pay_back_debt_to_the_ifc_category = {
-	priority = 6
-	icon = gre_paying_ifc_debt
-
-	picture = GFX_decision_cat_generic_mefo_bills
-
+ICU_economy_reform = {
+	icon = army_reform
 	allowed = {
-		original_tag = ICU		
+		original_tag = ICU
+	}
+
+	visible = {
 	}
 }
