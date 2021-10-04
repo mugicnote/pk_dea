@@ -102,6 +102,121 @@ ideas = {
 				industry_repair_factor = -0.5    	
 				consumer_goods_factor = 0.5				
 			}
-		}		
+		}
+		ICU_paying_off_debt_small = {
+				
+			allowed = {
+				original_tag = ICU
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_foreign_capital
+				
+			removal_cost = -1
+				
+			modifier = {
+				consumer_goods_factor = 0.05		
+				min_export = 0.1			
+			}
+		}
+
+		ICU_paying_off_debt_large = {
+				
+			allowed = {
+				original_tag = ICU
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = SPR_relocate_the_gold_reserves
+				
+			removal_cost = -1
+				
+			modifier = {
+				consumer_goods_factor = 0.15		
+				min_export = 0.25			
+			}
+		}
+
+		ICU_debt_to_the_ifc = {
+				
+			allowed = {
+				original_tag = GRE
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					OR = { 
+						has_government = communism
+						has_government = fascism 
+					}
+				}
+			}
+
+			picture = gre_debt_to_the_ifc
+				
+			removal_cost = -1
+				
+			modifier = {
+				stability_factor = -0.1	
+				consumer_goods_factor = 0.15	
+			}
+		}
+
+		ICU_debt_to_the_ifc_2 = {
+				
+			allowed = {
+				original_tag = GRE
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					OR = { 
+						has_government = communism
+						has_government = fascism 
+					}
+				}
+			}
+
+			picture = gre_debt_to_the_ifc
+				
+			removal_cost = -1
+				
+			modifier = {
+				stability_factor = -0.1	
+				consumer_goods_factor = 0.1	
+			}
+		}
+
+		ICU_debt_to_the_ifc_3 = {
+				
+			allowed = {
+				original_tag = GRE
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					OR = { 
+						has_government = communism
+						has_government = fascism 
+					}
+				}
+			}
+
+			picture = gre_debt_to_the_ifc
+				
+			removal_cost = -1
+				
+			modifier = {
+				stability_factor = -0.1	
+				consumer_goods_factor = 0.05	
+			}
+		}
+		
 	}	
 }

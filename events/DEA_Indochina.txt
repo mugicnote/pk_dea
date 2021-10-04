@@ -55,6 +55,7 @@ country_event = { #신연방 건설 계획
 		ICU = {
 			add_manpower = -1000
 			add_political_power = 120
+			unlock_decision_category_tooltip = ICU_pay_back_debt_to_the_ifc_category						
 			}
 		}
 	}

@@ -135,8 +135,9 @@ focus_tree = {
 			}		
 		x = 28
 		y = 2
+		search_filters = { FOCUS_FILTER_ICU_DEBT_TO_IFC FOCUS_FILTER_INDUSTRY }		
 		completion_reward = {
-			ICU = { country_event = ICU.3 }		
+			unlock_decision_category_tooltip = ICU_pay_back_debt_to_the_ifc_category	
 		}
 	}
 ##경제##	
@@ -180,6 +181,51 @@ focus_tree = {
 		x = 20
 		y = 5
 		completion_reward = {
+		   	890 = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+						}
+					}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes	
+				}
+			}
+		   	876 = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+						}
+					}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes	
+				}
+			}
+		   	286 = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+						}
+					}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes	
+				}
+			}			
 		}
 	}
 	focus = { #중공업 진흥 정책
@@ -192,6 +238,37 @@ focus_tree = {
 		x = 22
 		y = 5
 		completion_reward = {
+		
+		   	893 = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}			
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes	
+				}
+			}
+		   	890 = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}			
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes	
+				}
+			}			
 		}
 	}
 	focus = { #라오스 로드
@@ -204,6 +281,32 @@ focus_tree = {
 		x = 20
 		y = 6
 		completion_reward = {
+		   	670 = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+				}			
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes	
+				}
+			}
+		   	883 = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+				}			
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes	
+				}
+			}			
 		}
 	}	
 	focus = { #캄보디아 공업 지대
@@ -216,6 +319,36 @@ focus_tree = {
 		x = 22
 		y = 6
 		completion_reward = {
+		   	741 = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}			
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes	
+				}
+			}
+		   	896 = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}			
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes	
+				}
+			}			
 		}
 	}
 	focus = { #프놈펜 재개발
@@ -231,19 +364,99 @@ focus_tree = {
 		x = 21
 		y = 7
 		completion_reward = {
+		   	896 = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+						}
+					}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes	
+				}
+			}
+		   	896 = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes	
+				}
+			}			
 		}
 	}
 	focus = { #하노이 고속도로
 		id = ICU_eco_8
 		icon = ""
-		cost = 3
+		cost = 5
 		prerequisite = {
 			focus = ICU_eco_1
 		}		
 		x = 24
 		y = 4
 		completion_reward = {
+		   	876 = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes	
+				}
+			}
+		   	875 = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes	
+				}
+			}
+		   	850 = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes	
+				}
+			}			
 		}
+		   	874 = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes	
+				}
+			}		
 	}
 	focus = { #서부로 연장
 		id = ICU_eco_9
@@ -255,6 +468,45 @@ focus_tree = {
 		x = 24
 		y = 5
 		completion_reward = {
+		   	851 = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes	
+				}
+			}
+		   	884 = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes	
+				}
+			}
+		   	882 = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes	
+				}
+			}			
 		}
 	}
 	focus = { #항구 도시 건설
@@ -267,6 +519,36 @@ focus_tree = {
 		x = 24
 		y = 7
 		completion_reward = {
+		   	890 = {
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}			
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes	
+				}
+			}
+		   	893 = {
+				limit = {
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}			
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes	
+				}
+			}					
 		}
 	}
 	focus = { #고무 생산 증강 계획
@@ -302,7 +584,7 @@ focus_tree = {
 			focus = ICU_eco_12
 		}		
 		available = {
-			num_of_factories > 40
+			num_of_factories > 35
 		}
 		
 		x = 26
