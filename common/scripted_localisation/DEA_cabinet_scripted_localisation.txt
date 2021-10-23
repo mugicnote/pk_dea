@@ -21,7 +21,7 @@ defined_text = {
 
 	text = {
 		trigger = {
-			has_country_flag = jae_pil
+			has_country_flag = Seo_jae_pil
 		}
 		localization_key = jae_pil_front
 	}
@@ -42,248 +42,7 @@ defined_text = {
 
 }
 ############################################
-# 대공처장
-############################################
-defined_text = {
-	name = FdS_rank13
-
-	text = {
-		trigger = {
-			tag = KOR
-		}
-		localization_key = POSITION_main_opposition_party_leader2
-	}
-}
-
-defined_text = {
-	name = HoG_rank13
-
-	text = {
-		trigger = {
-			tag = KOR
-		}
-		localization_key = POSITION_main_opposition_party_leader2
-	}
-}
-
-defined_text = {
-	name = FdS_name13
-
-	text = {
-		trigger = {
-			has_country_flag = Jang_TaekSang
-		}
-		localization_key = Jang_TaekSang
-	}
-
-}
-
-defined_text = {
-	name = leader_two_portrait13
-	
-	text = {
-		trigger = {
-			has_country_flag = Jang_TaekSang
-		}
-		localization_key = GFX_Portrait_Jang_TaekSang
-	}
-}
-
-defined_text = {
-	name = HoG13_desc
-
-	text = {
-		trigger = { 
-			has_country_flag = Jang_TaekSang 
-		}
-		localization_key = Jang_TaekSang_desc
-	}
-
-}
-
-
-############################################
-# Leader Title
-############################################
-defined_text = {
-	name = FdS_rank3
-
-	text = {
-		trigger = {
-			tag = KOR
-		}
-		localization_key = POSITION_main_opposition_party_leader3
-	}
-	text = {
-		trigger = {
-			tag = JAP
-		}
-		localization_key = POSITION_main_opposition_CBO_JAP
-	}
-}
-
-############################################
-# Secondary Leader Title
-############################################
-
-defined_text = {
-	name = HoG_rank3
-
-	text = {
-		trigger = {
-			tag = KOR
-		}
-		localization_key = POSITION_main_opposition_party_leader3
-	}
-	text = {
-		trigger = {
-			tag = JAP
-		}
-		localization_key = POSITION_main_opposition_CBO_JAP
-	}
-}
-############################################
-# HoG Name
-############################################
-defined_text = {
-	name = FdS_name3
-
-	text = {
-		trigger = {
-			has_country_flag = Shin_Sung_mo
-		}
-		localization_key = Shin_Sung_mo
-	}
-	text = {
-		trigger = {
-			has_country_flag = Sohn_Won_yil
-		}
-		localization_key = Sohn_Won_yil
-	}
-	text = {
-		trigger = {
-			has_country_flag = Lee_Beomseok
-		}
-		localization_key = Lee_Beomseok
-	}
-	text = {
-		trigger = {
-			has_country_flag = G_Macarthur
-		}
-		localization_key = G_Macarthur
-	}
-}
-defined_text = {
-	name = leader_two_portrait3
-	
-	text = {
-		trigger = {
-			has_country_flag = Shin_Sung_mo
-		}
-		localization_key = GFX_Portrait_Shin_Sung_mo
-	}
-	text = {
-		trigger = {
-			has_country_flag = Sohn_Won_yil
-		}
-		localization_key = GFX_Portrait_Sohn_Won_yil
-	}
-	text = {
-		trigger = {
-			has_country_flag = Lee_Beomseok
-		}
-		localization_key = GFX_Portrait_Lee_Beomseok
-	}
-	text = {
-		trigger = {
-			has_country_flag = G_Macarthur
-		}
-		localization_key = GFX_Portrait_USA_G_Macarthur
-	}
-}
-defined_text = {
-	name = HoG3_desc
-
-	text = {
-		trigger = { 
-			has_country_flag = Shin_Sung_mo
-		}
-		localization_key = Shin_Sung_mo_desc
-	}
-	text = {
-		trigger = { 
-			has_country_flag = Lee_Beomseok
-		}
-		localization_key = Lee_Beomseok_desc
-	}
-}
-
-
-############################################
-# Leader Title
-############################################
-defined_text = {
-	name = FdS_rank4
-
-	text = {
-		trigger = {
-			tag = KOR
-		}
-		localization_key = POSITION_main_opposition_party_leader4
-	}
-}
-
-############################################
-# Secondary Leader Title
-############################################
-
-defined_text = {
-	name = HoG_rank4
-
-	text = {
-		trigger = {
-			tag = KOR
-		}
-		localization_key = POSITION_main_opposition_party_leader4
-	}
-}
-############################################
-# HoG Name
-############################################
-defined_text = {
-	name = FdS_name4
-
-	text = {
-		trigger = {
-			has_country_flag = Kang_In_taek
-		}
-		localization_key = Kang_In_taek
-	}
-}
-defined_text = {
-	name = leader_two_portrait4
-	
-	text = {
-		trigger = {
-			has_country_flag = Kang_In_taek
-		}
-		localization_key = GFX_Portrait_Kang_In_taek
-	}
-}
-defined_text = {
-	name = HoG4_desc
-
-	text = {
-		trigger = { 
-			has_country_flag = Kang_In_taek
-		}
-		localization_key = Kang_In_taek_desc
-	}
-}
-
-
-############################################
-# Leader Title
+# 국무총리
 ############################################
 defined_text = {
 	name = FdS_rank1
@@ -308,10 +67,6 @@ defined_text = {
 	}
 }
 
-############################################
-# Secondary Leader Title
-############################################
-
 defined_text = {
 	name = HoG_rank1
 
@@ -334,9 +89,7 @@ defined_text = {
 		localization_key = POSITION_main_opposition_VHog_JAP
 	}
 }
-############################################
-# HoG Name
-############################################
+
 defined_text = {
 	name = FdS1_name
 
@@ -399,630 +152,9 @@ defined_text = {
 	}
 }
 
-
 ############################################
-# Leader Title
+# 문교부장관
 ############################################
-defined_text = {
-	name = FdS_rank6
-
-	text = {
-		trigger = {
-			tag = KOR
-		}
-		localization_key = POSITION_main_opposition_party_leader6
-	}
-}
-
-############################################
-# Secondary Leader Title
-############################################
-
-defined_text = {
-	name = HoG_rank6
-
-	text = {
-		trigger = {
-			tag = KOR
-		}
-		localization_key = POSITION_main_opposition_party_leader6
-	}
-}
-############################################
-# HoG Name
-############################################
-defined_text = {
-	name = FdS_name6
-	
-	text = {
-		trigger = {
-			has_country_flag = Chough_Pyung_ok
-		}
-		localization_key = Chough_Pyung_ok
-	}
-}
-defined_text = {
-	name = leader_two_portrait6
-	
-	text = {
-		trigger = {
-			has_country_flag = Chough_Pyung_ok
-		}
-		localization_key = GFX_Portrait_Chough_Pyung_ok
-	}
-}
-defined_text = {
-	name = HoG6_desc
-
-	text = {
-		trigger = { 
-			has_country_flag = Chough_Pyung_ok
-		}
-		localization_key = Chough_Pyung_ok_desc
-	}
-}
-
-
-############################################
-# Leader Title
-############################################
-defined_text = {
-	name = FdS_rank7
-
-	text = {
-		trigger = {
-			tag = KOR
-		}
-		localization_key = POSITION_main_opposition_party_leader7
-	}
-	text = {
-		trigger = {
-			tag = CHI
-		}
-		localization_key = POSITION_main_opposition_rank7_CHI
-	}
-	text = {
-		trigger = {
-			tag = JAP
-		}
-		localization_key = POSITION_main_opposition_MOJ_JAP
-	}
-}
-
-############################################
-# Secondary Leader Title
-############################################
-
-defined_text = {
-	name = HoG_rank7
-	
-	text = {
-		trigger = {
-			tag = KOR
-		}
-		localization_key = POSITION_main_opposition_party_leader7
-	}
-	text = {
-		trigger = {
-			tag = CHI
-		}
-		localization_key = POSITION_main_opposition_rank7_CHI
-	}
-	text = {
-		trigger = {
-			tag = JAP
-		}
-		localization_key = POSITION_main_opposition_MOJ_JAP
-	}
-}
-############################################
-# HoG Name
-############################################
-defined_text = {
-	name = FdS_name7
-	
-	text = {
-		trigger = {
-			has_country_flag = Ahn_Chang_Ho
-		}
-		localization_key = Ahn_Chang_Ho
-	}
-	text = {
-		trigger = {
-			has_country_flag = Li_Jishen
-		}
-		localization_key = Li_Jishen
-	}
-	text = {
-		trigger = {
-			has_country_flag = Kimura_Tokutaro
-		}
-		localization_key = Kimura_Tokutaro
-	}
-}
-defined_text = {
-	name = leader_two_portrait7
-	
-	text = {
-		trigger = {
-			has_country_flag = Ahn_Chang_Ho
-		}
-		localization_key = GFX_Portrait_Ahn_Chang_Ho
-	}
-	text = {
-		trigger = {
-			has_country_flag = Kimura_Tokutaro
-		}
-		localization_key = GFX_Portrait_Kimura_Tokutaro
-	}
-}
-defined_text = {
-	name = HoG7_desc
-
-	text = {
-		trigger = { 
-			has_country_flag = Ahn_Chang_Ho
-		}
-		localization_key = Ahn_Chang_Ho_desc
-	}
-	text = {
-		trigger = { 
-			has_country_flag = Li_Jishen
-		}
-		localization_key = Li_Jishen_desc
-	}
-}
-
-
-############################################
-# Leader Title
-############################################
-defined_text = {
-	name = FdS_rank8
-
-	
-	text = {
-		trigger = {
-			tag = KOR
-		}
-		localization_key = POSITION_main_opposition_party_leader8
-	}
-
-	text = {
-		trigger = {
-			tag = CHI
-		}
-		localization_key = POSITION_main_opposition_Hog_CHI
-	}
-
-	text = {
-		trigger = {
-			tag = JAP
-		}
-		localization_key = POSITION_main_opposition_Hog_JAP
-	}
-}
-
-############################################
-# Secondary Leader Title
-############################################
-
-defined_text = {
-	name = HoG_rank8
-	
-	text = {
-		trigger = {
-			tag = KOR
-		}
-		localization_key = POSITION_main_opposition_party_leader8
-	}
-
-	text = {
-		trigger = {
-			tag = CHI
-		}
-		localization_key = POSITION_main_opposition_Hog_CHI
-	}
-
-	text = {
-		trigger = {
-			tag = JAP
-		}
-		localization_key = POSITION_main_opposition_Hog_JAP
-	}
-}
-############################################
-# HoG Name
-############################################
-defined_text = {
-	name = FdS_name8
-	
-	text = {
-		trigger = {
-			has_country_flag = jae_pil
-		}
-		localization_key = jae_pil
-	}
-	text = {
-		trigger = {
-			has_country_flag = Syngman_Rhee_Pres
-		}
-		localization_key = Syngman_Rhee_Pres
-	}
-
-	text = {
-		trigger = {
-			has_country_flag = Chiang_Kai_Shek
-		}
-		localization_key = Chiang_Kai_Shek
-	}
-	text = {
-		trigger = {
-			has_country_flag = Wang_Jingwei_Pres
-		}
-		localization_key = Wang_Jingwei_Pres
-	}
-
-	text = {
-		trigger = {
-			has_country_flag = Yoshida_Shigeru
-		}
-		localization_key = Yoshida_Shigeru
-	}
-
-}
-defined_text = {
-	name = leader_two_portrait8
-	
-	text = {
-		trigger = {
-			has_country_flag = jae_pil
-		}
-		localization_key = GFX_jae_pil
-	}
-	text = {
-		trigger = {
-			has_country_flag = Syngman_Rhee_Pres
-		}
-		localization_key = GFX_Portrait_Syngman_Rhee
-	}
-
-	text = {
-		trigger = {
-			has_country_flag = Chiang_Kai_Shek
-		}
-		localization_key = GFX_Portrait_Chiang_Kai_Shek
-	}
-	text = {
-		trigger = {
-			has_country_flag = Wang_Jingwei_Pres
-		}
-		localization_key = GFX_Portrait_Wang_Jingwei
-	}
-
-	text = {
-		trigger = {
-			has_country_flag = Yoshida_Shigeru
-		}
-		localization_key = GFX_Portrait_Yoshida_Shigeru
-	}
-}
-
-defined_text = {
-	name = HoG8_desc
-
-	#공석
-	text = {
-		trigger = { 
-			has_country_flag = jae_pil 
-		}
-		localization_key = jae_pil_desc
-	}
-	text = {
-		trigger = { 
-			has_country_flag = Syngman_Rhee_Pres 
-		}
-		localization_key = Syngman_Rhee_Pres_desc
-	}
-
-	text = {
-		trigger = { 
-			has_country_flag = Chiang_Kai_Shek
-		}
-		localization_key = Chiang_Kai_Shek_desc
-	}
-	text = {
-		trigger = { 
-			has_country_flag = Wang_Jingwei_Pres 
-		}
-		localization_key = Wang_Jingwei_Pres_desc
-	}
-
-}
-
-############################################
-# Leader Title
-############################################
-defined_text = {
-	name = FdS_rank9
-
-	
-	text = {
-		trigger = {
-			tag = KOR
-		}
-		localization_key = POSITION_main_opposition_party_leader9
-	}
-	text = {
-		trigger = {
-			tag = CHI
-		}
-		localization_key = POSITION_main_opposition_MOF_CHI
-	}
-	text = {
-		trigger = {
-			tag = JAP
-		}
-		localization_key = POSITION_main_opposition_MIC_JAP
-	}
-}
-
-############################################
-# Secondary Leader Title
-############################################
-
-defined_text = {
-	name = HoG_rank9
-	
-	text = {
-		trigger = {
-			tag = KOR
-		}
-		localization_key = POSITION_main_opposition_party_leader9
-	}
-	text = {
-		trigger = {
-			tag = CHI
-		}
-		localization_key = POSITION_main_opposition_MOF_CHI
-	}
-	text = {
-		trigger = {
-			tag = JAP
-		}
-		localization_key = POSITION_main_opposition_MIC_JAP
-	}
-}
-############################################
-# HoG Name
-############################################
-defined_text = {
-	name = FdS_name9
-	
-	text = {
-		trigger = {
-			has_country_flag = Kim_Byung_ro
-		}
-		localization_key = Kim_Byung_ro
-	}
-	text = {
-		trigger = {
-			has_country_flag = Li_Zongren
-		}
-		localization_key = Li_Zongren
-	}
-	text = {
-		trigger = {
-			has_country_flag = Hitotsumatsu_Sadayoshi
-		}
-		localization_key = Hitotsumatsu_Sadayoshi
-	}
-}
-defined_text = {
-	name = leader_two_portrait9
-	
-	text = {
-		trigger = {
-			has_country_flag = Kim_Byung_ro
-		}
-		localization_key = GFX_Portrait_Kim_Byung_ro
-	}
-	text = {
-		trigger = {
-			has_country_flag = Li_Zongren
-		}
-		localization_key = GFX_Portrait_CHI_Li_Zongren
-	}
-	text = {
-		trigger = {
-			has_country_flag = Hitotsumatsu_Sadayoshi
-		}
-		localization_key = GFX_Portrait_Hitotsumatsu_Sadayoshi
-	}
-}
-defined_text = {
-	name = HoG9_desc
-
-	text = {
-		trigger = { 
-			has_country_flag = Kim_Byung_ro
-		}
-		localization_key = Kim_Byung_ro_desc
-	}
-	text = {
-		trigger = {
-			has_country_flag = Li_Zongren
-		}
-		localization_key = Li_Zongren_desc
-	}
-}
-
-
-defined_text = {
-	name = FdS_rank10
-
-	
-	text = {
-		trigger = {
-			tag = KOR
-		}
-		localization_key = POSITION_main_opposition_party_leader10
-	}
-}
-
-defined_text = {
-	name = HoG_rank10
-	
-	text = {
-		trigger = {
-			tag = KOR
-		}
-		localization_key = POSITION_main_opposition_party_leader10
-	}
-}
-
-defined_text = {
-	name = FdS_name10
-	
-	text = {
-		trigger = {
-			has_country_flag = Lee_Beomseok
-		}
-		localization_key = Lee_Beomseok
-	}
-}
-defined_text = {
-	name = leader_two_portrait10
-	
-	text = {
-		trigger = {
-			has_country_flag = Lee_Beomseok
-		}
-		localization_key = GFX_Portrait_Lee_Beomseok
-	}
-}
-defined_text = {
-	name = HoG10_desc
-
-	text = {
-		trigger = { 
-			has_country_flag = Lee_Beomseok
-		}
-		localization_key = Lee_Beomseok_desc
-	}
-}
-
-
-defined_text = {
-	name = FdS_rank11
-
-	
-	text = {
-		trigger = {
-			tag = KOR
-		}
-		localization_key = POSITION_main_opposition_party_leader11
-	}
-}
-
-defined_text = {
-	name = HoG_rank11
-	
-	text = {
-		trigger = {
-			tag = KOR
-		}
-		localization_key = POSITION_main_opposition_party_leader11
-	}
-}
-
-defined_text = {
-	name = FdS_name11
-	
-	text = {
-		trigger = {
-			has_country_flag = Lee_Soon_yong
-		}
-		localization_key = Lee_Soon_yong
-	}
-}
-defined_text = {
-	name = leader_two_portrait11
-	
-	text = {
-		trigger = {
-			has_country_flag = Lee_Soon_yong
-		}
-		localization_key = GFX_Portrait_Lee_Soon_yong
-	}
-}
-defined_text = {
-	name = HoG11_desc
-
-	text = {
-		trigger = { 
-			has_country_flag = Lee_Soon_yong
-		}
-		localization_key = Lee_Soon_yong_desc
-	}
-}
-
-
-defined_text = {
-	name = FdS_rank12
-
-	
-	text = {
-		trigger = {
-			tag = KOR
-		}
-		localization_key = POSITION_main_opposition_party_leader12
-	}
-}
-
-defined_text = {
-	name = HoG_rank12
-	
-	text = {
-		trigger = {
-			tag = KOR
-		}
-		localization_key = POSITION_main_opposition_party_leader12
-	}
-}
-
-defined_text = {
-	name = FdS_name12
-	
-	text = {
-		trigger = {
-			has_country_flag = Kim_Hyun_cheol
-		}
-		localization_key = Kim_Hyun_cheol
-	}
-}
-defined_text = {
-	name = leader_two_portrait12
-	
-	text = {
-		trigger = {
-			has_country_flag = Kim_Hyun_cheol
-		}
-		localization_key = GFX_Portrait_Kim_Hyun_cheol
-	}
-}
-defined_text = {
-	name = HoG12_desc
-
-	text = {
-		trigger = { 
-			has_country_flag = Kim_Hyun_cheol
-		}
-		localization_key = Kim_Hyun_cheol_desc
-	}
-}
-
-
 defined_text = {
 	name = FdS_rank2
 
@@ -1077,174 +209,97 @@ defined_text = {
 	}
 }
 
-
+############################################
+# 내무부장관
+############################################
 defined_text = {
-	name = FdS_rank14
-
+	name = FdS_rank3
 	
 	text = {
 		trigger = {
 			tag = KOR
 		}
-		localization_key = POSITION_main_opposition_party_leader14
+		localization_key = POSITION_main_opposition_party_leader11
 	}
-
 	text = {
 		trigger = {
-			tag = JAP
+			tag = CHI
 		}
-		localization_key = POSITION_main_opposition_FRM_JAP
+		localization_key = POSITION_main_opposition_MOF_CHI
 	}
 }
 
 defined_text = {
-	name = HoG_rank14
+	name = HoG_rank3
 	
 	text = {
 		trigger = {
 			tag = KOR
 		}
-		localization_key = POSITION_main_opposition_party_leader14
+		localization_key = POSITION_main_opposition_party_leader11
 	}
-
 	text = {
 		trigger = {
-			tag = JAP
+			tag = CHI
 		}
-		localization_key = POSITION_main_opposition_FRM_JAP
+		localization_key = POSITION_main_opposition_MOF_CHI
 	}
 }
 
 defined_text = {
-	name = FdS_name14
+	name = FdS3_name
 	
 	text = {
 		trigger = {
-			has_country_flag = jo_man_sik
+			has_country_flag = Lee_Soon_yong
 		}
-		localization_key = jo_man_sik
+		localization_key = Lee_Soon_yong
 	}
-
 	text = {
 		trigger = {
-			has_country_flag = Okazaki_Katsuo
+			has_country_flag = Li_Zongren
 		}
-		localization_key = Okazaki_Katsuo
+		localization_key = Li_Zongren
 	}
 }
 defined_text = {
-	name = leader_two_portrait14
+	name = leader_two_portrait3
 	
 	text = {
 		trigger = {
-			has_country_flag = jo_man_sik
+			has_country_flag = Lee_Soon_yong
 		}
-		localization_key = GFX_jomansik_portrait
+		localization_key = GFX_Portrait_Lee_Soon_yong
 	}
-
 	text = {
 		trigger = {
-			has_country_flag = Okazaki_Katsuo
+			has_country_flag = Li_Zongren
 		}
-		localization_key = GFX_Portrait_Okazaki_Katsuo
+		localization_key = GFX_Portrait_CHI_Li_Zongren
 	}
 }
 defined_text = {
-	name = HoG14_desc
+	name = HoG3_desc
 
 	text = {
 		trigger = { 
-			has_country_flag = jo_man_sik
+			has_country_flag = Lee_Soon_yong
 		}
-		localization_key = jo_man_sik_desc
+		localization_key = Lee_Soon_yong_desc
 	}
-}
-
-
-defined_text = {
-	name = FdS_rank15
-
-	text = {
-		trigger = {
-			tag = KOR
-		}
-		localization_key = POSITION_main_opposition_party_leader15
-	}
-
-	text = {
-		trigger = {
-			tag = JAP
-		}
-		localization_key = POSITION_main_opposition_MOF_JAP
-	}
-}
-
-defined_text = {
-	name = HoG_rank15
-	
-	text = {
-		trigger = {
-			tag = KOR
-		}
-		localization_key = POSITION_main_opposition_party_leader15
-	}
-
-	text = {
-		trigger = {
-			tag = JAP
-		}
-		localization_key = POSITION_main_opposition_MOF_JAP
-	}
-}
-
-defined_text = {
-	name = FdS_name15
-	
-	text = {
-		trigger = {
-			has_country_flag = Ho_Jong
-		}
-		localization_key = Ho_Jong
-	}
-
-	text = {
-		trigger = {
-			has_country_flag = Ishibashi_Danzan
-		}
-		localization_key = Ishibashi_Danzan
-	}
-}
-defined_text = {
-	name = leader_two_portrait15
-	
-	text = {
-		trigger = {
-			has_country_flag = Ho_Jong
-		}
-		localization_key = GFX_Portrait_Ho_Jong
-	}
-
-	text = {
-		trigger = {
-			has_country_flag = Ishibashi_Danzan
-		}
-		localization_key = GFX_Portrait_Ishibashi_Danzan
-	}
-}
-defined_text = {
-	name = HoG15_desc
-
 	text = {
 		trigger = { 
-			has_country_flag = Ho_Jong
+			has_country_flag = Li_Zongren
 		}
-		localization_key = Ho_Jong_desc
+		localization_key = Li_Zongren_desc
 	}
 }
 
-
+############################################
+# 상공부장관
+############################################
 defined_text = {
-	name = FdS_rank16
+	name = FdS_rank4
 
 	
 	text = {
@@ -1262,7 +317,7 @@ defined_text = {
 }
 
 defined_text = {
-	name = HoG_rank16
+	name = HoG_rank4
 	
 	text = {
 		trigger = {
@@ -1279,7 +334,7 @@ defined_text = {
 }
 
 defined_text = {
-	name = FdS_name16
+	name = FdS4_name
 	
 	text = {
 		trigger = {
@@ -1295,7 +350,7 @@ defined_text = {
 	}
 }
 defined_text = {
-	name = leader_two_portrait16
+	name = leader_two_portrait4
 	
 	text = {
 		trigger = {
@@ -1311,7 +366,7 @@ defined_text = {
 	}
 }
 defined_text = {
-	name = HoG16_desc
+	name = HoG4_desc
 
 	text = {
 		trigger = { 
@@ -1321,9 +376,287 @@ defined_text = {
 	}
 }
 
+############################################
+# 외무부장관
+############################################
+defined_text = {
+	name = FdS_rank5
+
+	text = {
+		trigger = {
+			tag = KOR
+		}
+		localization_key = POSITION_main_opposition_party_leader15
+	}
+
+	text = {
+		trigger = {
+			tag = JAP
+		}
+		localization_key = POSITION_main_opposition_MOF_JAP
+	}
+
+	text = {
+		trigger = {
+			tag = CHI
+		}
+		localization_key = POSITION_main_opposition_rank7_CHI
+	}
+}
 
 defined_text = {
-	name = FdS_rank17
+	name = HoG_rank5
+	
+	text = {
+		trigger = {
+			tag = KOR
+		}
+		localization_key = POSITION_main_opposition_party_leader15
+	}
+
+	text = {
+		trigger = {
+			tag = JAP
+		}
+		localization_key = POSITION_main_opposition_MOF_JAP
+	}
+
+	text = {
+		trigger = {
+			tag = CHI
+		}
+		localization_key = POSITION_main_opposition_rank7_CHI
+	}
+}
+
+defined_text = {
+	name = FdS5_name
+	
+	text = {
+		trigger = {
+			has_country_flag = Ho_Jong
+		}
+		localization_key = Ho_Jong
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = Ishibashi_Danzan
+		}
+		localization_key = Ishibashi_Danzan
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = Li_Jishen
+		}
+		localization_key = Li_Jishen
+	}
+}
+defined_text = {
+	name = leader_two_portrait5
+	
+	text = {
+		trigger = {
+			has_country_flag = Ho_Jong
+		}
+		localization_key = GFX_Portrait_Ho_Jong
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = Ishibashi_Danzan
+		}
+		localization_key = GFX_Portrait_Ishibashi_Danzan
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = Li_Jishen
+		}
+		localization_key = GFX_Portrait_CHI_Li_Jishen
+	}
+}
+defined_text = {
+	name = HoG5_desc
+
+	text = {
+		trigger = { 
+			has_country_flag = Ho_Jong
+		}
+		localization_key = Ho_Jong_desc
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = Li_Jishen
+		}
+		localization_key = Li_Jishen_desc
+	}
+}
+
+############################################
+# 교통부장관
+############################################
+defined_text = {
+	name = FdS_rank6
+
+	
+	text = {
+		trigger = {
+			tag = KOR
+		}
+		localization_key = POSITION_main_opposition_party_leader12
+	}
+}
+
+defined_text = {
+	name = HoG_rank6
+	
+	text = {
+		trigger = {
+			tag = KOR
+		}
+		localization_key = POSITION_main_opposition_party_leader12
+	}
+}
+
+defined_text = {
+	name = FdS6_name
+	
+	text = {
+		trigger = {
+			has_country_flag = Kim_Hyun_cheol
+		}
+		localization_key = Kim_Hyun_cheol
+	}
+}
+defined_text = {
+	name = leader_two_portrait6
+	
+	text = {
+		trigger = {
+			has_country_flag = Kim_Hyun_cheol
+		}
+		localization_key = GFX_Portrait_Kim_Hyun_cheol
+	}
+}
+defined_text = {
+	name = HoG6_desc
+
+	text = {
+		trigger = { 
+			has_country_flag = Kim_Hyun_cheol
+		}
+		localization_key = Kim_Hyun_cheol_desc
+	}
+}
+
+############################################
+# 국방부장관
+############################################
+defined_text = {
+	name = FdS_rank7
+
+	text = {
+		trigger = {
+			tag = KOR
+		}
+		localization_key = POSITION_main_opposition_party_leader3
+	}
+	text = {
+		trigger = {
+			tag = JAP
+		}
+		localization_key = POSITION_main_opposition_CBO_JAP
+	}
+}
+
+defined_text = {
+	name = HoG_rank7
+
+	text = {
+		trigger = {
+			tag = KOR
+		}
+		localization_key = POSITION_main_opposition_party_leader3
+	}
+	text = {
+		trigger = {
+			tag = JAP
+		}
+		localization_key = POSITION_main_opposition_CBO_JAP
+	}
+}
+
+defined_text = {
+	name = FdS7_name
+
+	text = {
+		trigger = {
+			has_country_flag = Shin_Sung_mo
+		}
+		localization_key = Shin_Sung_mo
+	}
+	text = {
+		trigger = {
+			has_country_flag = Lee_Beomseok
+		}
+		localization_key = Lee_Beomseok
+	}
+	text = {
+		trigger = {
+			has_country_flag = G_Macarthur
+		}
+		localization_key = G_Macarthur
+	}
+}
+
+defined_text = {
+	name = leader_two_portrait7
+	
+	text = {
+		trigger = {
+			has_country_flag = Shin_Sung_mo
+		}
+		localization_key = GFX_Portrait_Shin_Sung_mo
+	}
+	text = {
+		trigger = {
+			has_country_flag = Lee_Beomseok
+		}
+		localization_key = GFX_Portrait_Lee_Beomseok
+	}
+	text = {
+		trigger = {
+			has_country_flag = G_Macarthur
+		}
+		localization_key = GFX_Portrait_USA_G_Macarthur
+	}
+}
+
+defined_text = {
+	name = HoG7_desc
+
+	text = {
+		trigger = { 
+			has_country_flag = Shin_Sung_mo
+		}
+		localization_key = Shin_Sung_mo_desc
+	}
+	text = {
+		trigger = { 
+			has_country_flag = Lee_Beomseok
+		}
+		localization_key = Lee_Beomseok_desc
+	}
+}
+
+############################################
+# 노동부장관
+############################################
+defined_text = {
+	name = FdS_rank8
 
 	
 	text = {
@@ -1342,7 +675,7 @@ defined_text = {
 }
 
 defined_text = {
-	name = HoG_rank17
+	name = HoG_rank8
 	
 	text = {
 		trigger = {
@@ -1360,7 +693,7 @@ defined_text = {
 }
 
 defined_text = {
-	name = FdS_name17
+	name = FdS8_name
 	
 	text = {
 		trigger = {
@@ -1377,7 +710,7 @@ defined_text = {
 	}
 }
 defined_text = {
-	name = leader_two_portrait17
+	name = leader_two_portrait8
 	
 	text = {
 		trigger = {
@@ -1394,7 +727,7 @@ defined_text = {
 	}
 }
 defined_text = {
-	name = HoG17_desc
+	name = HoG8_desc
 
 	text = {
 		trigger = { 
@@ -1404,10 +737,152 @@ defined_text = {
 	}
 }
 
+############################################
+# 재무부장관
+############################################
+defined_text = {
+	name = FdS_rank9
+
+	
+	text = {
+		trigger = {
+			tag = KOR
+		}
+		localization_key = POSITION_main_opposition_party_leader14
+	}
+
+	text = {
+		trigger = {
+			tag = JAP
+		}
+		localization_key = POSITION_main_opposition_FRM_JAP
+	}
+}
 
 defined_text = {
-	name = FdS_rank18
+	name = HoG_rank9
+	
+	text = {
+		trigger = {
+			tag = KOR
+		}
+		localization_key = POSITION_main_opposition_party_leader14
+	}
 
+	text = {
+		trigger = {
+			tag = JAP
+		}
+		localization_key = POSITION_main_opposition_FRM_JAP
+	}
+}
+
+defined_text = {
+	name = FdS9_name
+	
+	text = {
+		trigger = {
+			has_country_flag = jo_man_sik
+		}
+		localization_key = jo_man_sik
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = Okazaki_Katsuo
+		}
+		localization_key = Okazaki_Katsuo
+	}
+}
+defined_text = {
+	name = leader_two_portrait9
+	
+	text = {
+		trigger = {
+			has_country_flag = jo_man_sik
+		}
+		localization_key = GFX_jomansik_portrait
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = Okazaki_Katsuo
+		}
+		localization_key = GFX_Portrait_Okazaki_Katsuo
+	}
+}
+defined_text = {
+	name = HoG9_desc
+
+	text = {
+		trigger = { 
+			has_country_flag = jo_man_sik
+		}
+		localization_key = jo_man_sik_desc
+	}
+}
+
+############################################
+# 체신부장관
+############################################
+defined_text = {
+	name = FdS_rank10
+
+	text = {
+		trigger = {
+			tag = KOR
+		}
+		localization_key = POSITION_main_opposition_party_leader4
+	}
+}
+
+defined_text = {
+	name = HoG_rank10
+
+	text = {
+		trigger = {
+			tag = KOR
+		}
+		localization_key = POSITION_main_opposition_party_leader4
+	}
+}
+
+defined_text = {
+	name = FdS10_name
+
+	text = {
+		trigger = {
+			has_country_flag = Kang_In_taek
+		}
+		localization_key = Kang_In_taek
+	}
+}
+defined_text = {
+	name = leader_two_portrait10
+	
+	text = {
+		trigger = {
+			has_country_flag = Kang_In_taek
+		}
+		localization_key = GFX_Portrait_Kang_In_taek
+	}
+}
+defined_text = {
+	name = HoG10_desc
+
+	text = {
+		trigger = { 
+			has_country_flag = Kang_In_taek
+		}
+		localization_key = Kang_In_taek_desc
+	}
+}
+
+############################################
+# 법무부장관
+############################################
+defined_text = {
+	name = FdS_rank11
 	
 	text = {
 		trigger = {
@@ -1419,7 +894,7 @@ defined_text = {
 }
 
 defined_text = {
-	name = HoG_rank18
+	name = HoG_rank11
 	
 	text = {
 		trigger = {
@@ -1431,7 +906,7 @@ defined_text = {
 }
 
 defined_text = {
-	name = FdS_name18
+	name = FdS11_name
 	
 	text = {
 		trigger = {
@@ -1442,7 +917,7 @@ defined_text = {
 
 }
 defined_text = {
-	name = leader_two_portrait18
+	name = leader_two_portrait11
 	
 	text = {
 		trigger = {
@@ -1453,7 +928,7 @@ defined_text = {
 
 }
 defined_text = {
-	name = HoG18_desc
+	name = HoG11_desc
 
 	text = {
 		trigger = { 
@@ -1463,3 +938,491 @@ defined_text = {
 	}
 }
 
+############################################
+# 국가요인
+############################################
+############################################
+# Cabinet Front Name2
+############################################
+defined_text = {
+	name = FdS2_front_name
+
+	text = {
+		trigger = {
+			tag = KOR
+		}
+		localization_key = KOR_FdS2_front_name
+	}
+
+}
+
+############################################
+# Cabinet mini Front Name
+############################################
+defined_text = {
+	name = FdS_front_mini_name
+
+	text = {
+		trigger = {
+			tag = KOR
+		}
+		localization_key = KOR_FdS_front_mini_name
+	}
+
+}
+defined_text = {
+	name = FdS_front_mini_name2
+
+	text = {
+		trigger = {
+			tag = KOR
+		}
+		localization_key = KOR_FdS_front_mini_name2
+	}
+
+}
+defined_text = {
+	name = FdS_front_mini_name3
+
+	text = {
+		trigger = {
+			tag = KOR
+		}
+		localization_key = KOR_FdS_front_mini_name3
+	}
+
+}
+############################################
+# 국회의장
+############################################
+defined_text = {
+	name = FdS_rank12
+
+	text = {
+		trigger = {
+			tag = KOR
+		}
+		localization_key = POSITION_main_opposition_party_leader7
+	}
+	text = {
+		trigger = {
+			tag = CHI
+		}
+		localization_key = POSITION_main_opposition_rank7_CHI
+	}
+	text = {
+		trigger = {
+			tag = JAP
+		}
+		localization_key = POSITION_main_opposition_MOJ_JAP
+	}
+}
+
+defined_text = {
+	name = HoG_rank12
+	
+	text = {
+		trigger = {
+			tag = KOR
+		}
+		localization_key = POSITION_main_opposition_party_leader7
+	}
+	text = {
+		trigger = {
+			tag = CHI
+		}
+		localization_key = POSITION_main_opposition_rank7_CHI
+	}
+	text = {
+		trigger = {
+			tag = JAP
+		}
+		localization_key = POSITION_main_opposition_MOJ_JAP
+	}
+}
+
+defined_text = {
+	name = FdS12_name
+	
+	text = {
+		trigger = {
+			has_country_flag = Ahn_Chang_Ho
+		}
+		localization_key = Ahn_Chang_Ho
+	}
+	text = {
+		trigger = {
+			has_country_flag = Li_Jishen
+		}
+		localization_key = Li_Jishen
+	}
+	text = {
+		trigger = {
+			has_country_flag = Kimura_Tokutaro
+		}
+		localization_key = Kimura_Tokutaro
+	}
+}
+defined_text = {
+	name = leader_two_portrait12
+	
+	text = {
+		trigger = {
+			has_country_flag = Ahn_Chang_Ho
+		}
+		localization_key = GFX_Portrait_Ahn_Chang_Ho
+	}
+	text = {
+		trigger = {
+			has_country_flag = Kimura_Tokutaro
+		}
+		localization_key = GFX_Portrait_Kimura_Tokutaro
+	}
+}
+defined_text = {
+	name = HoG12_desc
+
+	text = {
+		trigger = { 
+			has_country_flag = Ahn_Chang_Ho
+		}
+		localization_key = Ahn_Chang_Ho_desc
+	}
+	text = {
+		trigger = { 
+			has_country_flag = Li_Jishen
+		}
+		localization_key = Li_Jishen_desc
+	}
+}
+
+############################################
+# 대통령
+############################################
+defined_text = {
+	name = FdS_rank13
+
+	text = {
+		trigger = {
+			tag = KOR
+		}
+		localization_key = POSITION_main_opposition_party_leader8
+	}
+}
+
+defined_text = {
+	name = HoG_rank13
+	
+	text = {
+		trigger = {
+			tag = KOR
+		}
+		localization_key = POSITION_main_opposition_party_leader8
+	}
+}
+
+defined_text = {
+	name = FdS13_name
+	
+	text = {
+		trigger = {
+			has_country_flag = Seo_jae_pil
+		}
+		localization_key = Seo_jae_pil
+	}
+}
+defined_text = {
+	name = leader_two_portrait13
+	
+	text = {
+		trigger = {
+			has_country_flag = Seo_jae_pil
+		}
+		localization_key = GFX_Portrait_Seo_jae_pil
+	}
+}
+defined_text = {
+	name = HoG13_desc
+
+	text = {
+		trigger = { 
+			has_country_flag = Seo_jae_pil
+		}
+		localization_key = Seo_jae_pil_desc
+	}
+}
+
+############################################
+# 대법원장
+############################################
+defined_text = {
+	name = FdS_rank14
+
+	text = {
+		trigger = {
+			tag = KOR
+		}
+		localization_key = POSITION_main_opposition_party_leader9
+	}
+}
+
+defined_text = {
+	name = HoG_rank14
+	
+	text = {
+		trigger = {
+			tag = KOR
+		}
+		localization_key = POSITION_main_opposition_party_leader9
+	}
+}
+
+defined_text = {
+	name = FdS14_name
+	
+	text = {
+		trigger = {
+			has_country_flag = Kim_Byung_ro
+		}
+		localization_key = Kim_Byung_ro
+	}
+}
+defined_text = {
+	name = leader_two_portrait14
+	
+	text = {
+		trigger = {
+			has_country_flag = Kim_Byung_ro
+		}
+		localization_key = GFX_Portrait_Kim_Byung_ro
+	}
+}
+defined_text = {
+	name = HoG14_desc
+
+	text = {
+		trigger = { 
+			has_country_flag = Kim_Byung_ro
+		}
+		localization_key = Kim_Byung_ro_desc
+	}
+}
+
+############################################
+# 참모본부
+############################################
+############################################
+# Cabinet Front Name3
+############################################
+defined_text = {
+	name = FdS3_front_name
+
+	text = {
+		trigger = {
+			tag = KOR
+		}
+		localization_key = KOR_FdS3_front_name
+	}
+
+}
+############################################
+# Cabinet mini Front Name
+############################################
+defined_text = {
+	name = FdS3_front_mini_name
+
+	text = {
+		trigger = {
+			tag = KOR
+		}
+		localization_key = KOR_FdS3_front_mini_name
+	}
+
+}
+defined_text = {
+	name = FdS3_front_mini_name2
+
+	text = {
+		trigger = {
+			tag = KOR
+		}
+		localization_key = KOR_FdS3_front_mini_name2
+	}
+
+}
+defined_text = {
+	name = FdS3_front_mini_name3
+
+	text = {
+		trigger = {
+			tag = KOR
+		}
+		localization_key = KOR_FdS3_front_mini_name3
+	}
+
+}
+############################################
+# 육군참모총잠
+############################################
+defined_text = {
+	name = FdS_rank15
+
+	text = {
+		trigger = {
+			tag = KOR
+		}
+		localization_key = POSITION_main_opposition_party_leader10
+	}
+}
+
+defined_text = {
+	name = HoG_rank15
+	
+	text = {
+		trigger = {
+			tag = KOR
+		}
+		localization_key = POSITION_main_opposition_party_leader10
+	}
+}
+
+defined_text = {
+	name = FdS15_name
+	
+	text = {
+		trigger = {
+			has_country_flag = Lee_Beomseok
+		}
+		localization_key = Lee_Beomseok
+	}
+}
+defined_text = {
+	name = leader_two_portrait15
+	
+	text = {
+		trigger = {
+			has_country_flag = Lee_Beomseok
+		}
+		localization_key = GFX_Portrait_Lee_Beomseok
+	}
+}
+defined_text = {
+	name = HoG15_desc
+
+	text = {
+		trigger = { 
+			has_country_flag = Lee_Beomseok
+		}
+		localization_key = Lee_Beomseok_desc
+	}
+}
+############################################
+# 해군참모총잠
+############################################
+defined_text = {
+	name = FdS_rank16
+
+	text = {
+		trigger = {
+			tag = KOR
+		}
+		localization_key = POSITION_main_opposition_party_leader19
+	}
+}
+
+defined_text = {
+	name = HoG_rank16
+	
+	text = {
+		trigger = {
+			tag = KOR
+		}
+		localization_key = POSITION_main_opposition_party_leader19
+	}
+}
+
+defined_text = {
+	name = FdS16_name
+	
+	text = {
+		trigger = {
+			has_country_flag = Sohn_Won_yil
+		}
+		localization_key = Sohn_Won_yil
+	}
+}
+defined_text = {
+	name = leader_two_portrait16
+	
+	text = {
+		trigger = {
+			has_country_flag = Sohn_Won_yil
+		}
+		localization_key = GFX_Portrait_Sohn_Won_yil
+	}
+}
+defined_text = {
+	name = HoG16_desc
+
+	text = {
+		trigger = { 
+			has_country_flag = Sohn_Won_yil
+		}
+		localization_key = Sohn_Won_yil_desc
+	}
+}
+############################################
+# 공군참모총잠
+############################################
+defined_text = {
+	name = FdS_rank17
+
+	text = {
+		trigger = {
+			tag = KOR
+		}
+		localization_key = POSITION_main_opposition_party_leader20
+	}
+}
+
+defined_text = {
+	name = HoG_rank17
+	
+	text = {
+		trigger = {
+			tag = KOR
+		}
+		localization_key = POSITION_main_opposition_party_leader20
+	}
+}
+
+defined_text = {
+	name = FdS17_name
+	
+	text = {
+		trigger = {
+			has_country_flag = Choi_Yong_duk
+		}
+		localization_key = Choi_Yong_duk
+	}
+}
+defined_text = {
+	name = leader_two_portrait17
+	
+	text = {
+		trigger = {
+			has_country_flag = Choi_Yong_duk
+		}
+		localization_key = GFX_Portrait_Choi_Yong_duk
+	}
+}
+defined_text = {
+	name = HoG17_desc
+
+	text = {
+		trigger = { 
+			has_country_flag = Choi_Yong_duk
+		}
+		localization_key = Choi_Yong_duk_desc
+	}
+}

@@ -8,7 +8,7 @@ guiTypes = {
 		buttonType ={
 			name ="us_voting_menu_open"
 			spriteType = "GFX_us_vote_open_button"
-			position = { x=238 y=201 }
+			position = { x=238 y=501 }
 			pdx_tooltip = "scripted_gui_open_tt_usa_gov"
 			scale = 0.65
 		}

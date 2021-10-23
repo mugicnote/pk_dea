@@ -46,8 +46,14 @@ scripted_gui = {
 		}
 		
 		properties = {
-			HoG7 = {
-				image = "[This.leader_two_portrait7]"
+			HoG12 = {
+				image = "[This.leader_two_portrait12]"
+			}
+			HoG13 = {
+				image = "[This.leader_two_portrait13]"
+			}
+			HoG14 = {
+				image = "[This.leader_two_portrait14]"
 			}
 		}
 	}

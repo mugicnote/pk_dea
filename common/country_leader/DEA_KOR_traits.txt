@@ -28,31 +28,6 @@ leader_traits = {
 
 	partypopidea = {}
 
-	###내각 특성###
-	hog_Hitler_of_Korea = {
-		random = no
-		land_reinforce_rate = 0.1
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	sec_hidden_main_character = {
-		random = no
-		stability_factor = 0.05
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	frn_father_of_constitution = {
-		random = no
-		political_power_factor = 0.05
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
 	###지도자 특성###
 	kor_dictator = {
 		random = no
@@ -272,6 +247,7 @@ leader_traits = {
 		stability_factor = -0.05
 	}
 
+	###서재필###
 	President = {
 		random = no
 	}
@@ -279,6 +255,30 @@ leader_traits = {
 		random = no
 		stability_factor = 0.1
 		political_power_factor = 0.05
+	}
+
+	Traditional_Crown_Prince = {
+		random = no
+		auto_despotism_drift = 0.1
+		political_power_factor = 0.1
+	}
+
+	###서재필 내각 장관###
+	traits_opnion_pro_americans = {
+		random = no
+		custom_modifier_tooltip = traits_opnion_pro_americans_tt
+	}
+
+	traits_diplomacy_expert = {
+		random = no
+		opinion_gain_monthly_factor = 0.05
+		trade_opinion_factor = 0.05
+	}
+
+	traits_cabinet_personnel_injury = {
+		random = no
+		stability_factor = -0.05
+		political_power_factor = -0.05
 	}
 	
 }

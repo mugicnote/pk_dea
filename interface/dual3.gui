@@ -1,0 +1,232 @@
+guiTypes = {
+	containerWindowType = {
+		name = "double_leader_system_container3"
+		position = { x = 205 y = 8 }
+		orientation = upper_left
+		
+		buttonType = {
+			name = "double_open3"
+			position = { x = 17 y = -30 }
+			quadTextureSprite ="GFX_cabinet_button"
+			buttonFont = "hoi_16mbs"
+			buttonText = "참모본부 개요"
+		}
+	}
+	containerWindowType = {
+		name = "double_leader_system_popup_ui_window3"
+		position = { x = 550 y = 85 }
+		size = { width = 610 height = 400 }
+		fade_time = 300
+		fade_type = linear
+		moveable = yes
+		click_to_front = yes
+		show_sound = menu_open_window
+		
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_tiled_plain_bg"
+		}
+		
+		containerWindowType = {
+			name = "double_leader_system_popup_ui_window_test3"
+			position = { x = -40 y = 0 }
+			
+			instantTextboxType = { #개요
+				name = "FdS3_general_outline"
+				position = { x = 45 y = 40 }
+				font = "aldrich_36_outline"
+				text = "[This.FdS3_front_name]"
+				maxWidth = 600
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+
+			instantTextboxType = { #개요
+				name = "Fd3S_mini_general_outline"
+				position = { x = -138 y = 75 }
+				font = "aldrich_18_outline"
+				text = "[This.FdS3_front_mini_name]"
+				maxWidth = 600
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+
+			instantTextboxType = { #개요
+				name = "FdS3_mini_general_outline2"
+				position = { x = 43 y = 75 }
+				font = "aldrich_18_outline"
+				text = "[This.FdS3_front_mini_name2]"
+				maxWidth = 600
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+
+			instantTextboxType = { #개요
+				name = "FdS3_mini_general_outline3"
+				position = { x = 224 y = 75 }
+				font = "aldrich_18_outline"
+				text = "[This.FdS3_front_mini_name3]"
+				maxWidth = 600
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+
+			buttonType = {
+				name = "close"
+				spriteType = "GFX_closebutton"
+				position = { x = 600 y = 10 }
+				clicksound = click_close
+				pdx_tooltip = "닫기"
+				shortcut = "ESCAPE"
+			}
+
+			###육군참모총장##
+			iconType = { #직책명 배경
+				name = "HoG15_rank_frame"
+				spriteType = "GFX_pol_leader_rank_frame"
+				position = { x = 80 y = 92 }		
+				allwaystransparent = yes
+			}
+
+			instantTextboxType = { #직책명
+				name = "HoG_rank15"
+				position = { x = 87 y = 98 }
+				font = "hoi_20b"
+				text = "[This.HoG_rank15]"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+
+			iconType = { #초상화
+				name = "HoG15"
+				position = { x = 87 y = 130 }
+				spriteType = "GFX_leader_unknown"
+				pdx_tooltip = "SECOND_LEADER_NAME15"
+				pdx_tooltip_delayed = "SECOND_LEADER_DESC15"
+			}
+			
+			iconType = { #초상화 프레임
+				name = "leader_frame15"
+				spriteType = "GFX_pol_leader_frame"
+				position = { x = 79 y = 120 }		
+				allwaystransparent = yes
+				pdx_tooltip = "SECOND_LEADER_NAME15"
+				pdx_tooltip_delayed = "SECOND_LEADER_DESC15"
+			}
+					
+			instantTextboxType = { #인물명
+				name = "FdS15_name"
+				position = { x = 88 y = 346 }
+				font = "hoi_18mbs"
+				text = "[This.FdS15_name]"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+				pdx_tooltip = "SECOND_LEADER_NAME15"
+			}
+
+			###해군참모총장###
+			iconType = { #직책명 배경
+				name = "HoG16_rank_frame"
+				spriteType = "GFX_pol_leader_rank_frame"
+				position = { x = 260 y = 92 }	
+				allwaystransparent = yes
+			}
+
+			instantTextboxType = { #직책명
+				name = "HoG_rank16"
+				position = { x = 266 y = 98 }
+				font = "hoi_20b"
+				text = "[This.HoG_rank16]"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+
+			iconType = { #초상화
+				name = "HoG16"
+				position = { x = 267 y = 130 }
+				spriteType = "GFX_leader_unknown"
+				pdx_tooltip = "SECOND_LEADER_NAME16"
+				pdx_tooltip_delayed = "SECOND_LEADER_DESC16"
+			}
+			
+			iconType = { #초상화 프레임
+				name = "leader_frame16"
+				spriteType = "GFX_pol_leader_frame"
+				position = { x = 259 y = 120 }		
+				allwaystransparent = yes
+				pdx_tooltip = "SECOND_LEADER_NAME16"
+				pdx_tooltip_delayed = "SECOND_LEADER_DESC16"
+			}
+					
+			instantTextboxType = { #인물명
+				name = "FdS16_name"
+				position = { x = 268 y = 346 }
+				font = "hoi_18mbs"
+				text = "[This.FdS16_name]"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+				pdx_tooltip = "SECOND_LEADER_NAME16"
+			}
+
+			###공군참모총장##
+			iconType = { #직책명 배경
+				name = "HoG17_rank_frame"
+				spriteType = "GFX_pol_leader_rank_frame"
+				position = { x = 440 y = 92 }
+				allwaystransparent = yes
+			}
+
+			instantTextboxType = { #직책명
+				name = "HoG_rank17"
+				position = { x = 446 y = 98 }
+				font = "hoi_20b"
+				text = "[This.HoG_rank17]"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+
+			iconType = { #초상화
+				name = "HoG17"
+				position = { x = 447 y = 130 }
+				spriteType = "GFX_leader_unknown"
+				pdx_tooltip = "SECOND_LEADER_NAME17"
+				pdx_tooltip_delayed = "SECOND_LEADER_DESC17"
+			}
+			
+			iconType = { #초상화 프레임
+				name = "leader_frame17"
+				spriteType = "GFX_pol_leader_frame"
+				position = { x = 439 y = 120 }		
+				allwaystransparent = yes
+				pdx_tooltip = "SECOND_LEADER_NAME17"
+				pdx_tooltip_delayed = "SECOND_LEADER_DESC17"
+			}
+					
+			instantTextboxType = { #인물명
+				name = "FdS17_name"
+				position = { x = 448 y = 346 }
+				font = "hoi_18mbs"
+				text = "[This.FdS17_name]"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+				pdx_tooltip = "SECOND_LEADER_NAME17"
+			}
+		}
+	}
+}

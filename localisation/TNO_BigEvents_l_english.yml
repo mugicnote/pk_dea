@@ -3,6 +3,14 @@ sp_assassination_Jae_pil:0 "서재필 암살"
 sp_assassination_Jae_pil_QUOTE:0 "진실은 반드시 따르는 자가 있고, 정의는 반드시\n이루는 날이 있다.\n- 안창호"
 sp_assassination_Jae_pil_REMARK:0 "민중의 승리, 국민의 승리."
 
+sp_rhee_syng_man_president:0 "이승만 당선"
+sp_rhee_syng_man_president_QUOTE:0 "설령 당장은 뒤따르는 사람이 없을지라도 나중에는 뒤 따르는 사람이 반드시 나타날 것이다.\n- 이승만"
+sp_rhee_syng_man_president_REMARK:0 "새로운 시대의 시작."
+
+sp_explosion_three_way_talks:0 "나고야 폭탄 테러"
+sp_explosion_three_way_talks_QUOTE:0 "평화가 근본적으로 절망적인 순간이 될 때까지 결코 평화를 포기하지 않는다.\n- 장제스"
+sp_explosion_three_way_talks_REMARK:0 "이게 무슨 일인가!"
+
 ##USE SUPER_EVENT_MAKER_GUI IN USEFUL PYTHON PROGRAMS TO MAKE NEW SUPER EVENTS##
 
 BE_REMILITARIZATION_RL_T:0 "라인란트 재무장"

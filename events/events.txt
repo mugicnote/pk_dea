@@ -807,11 +807,130 @@ country_event = {
 		set_country_flag = korea_lyuh_woon_hyung_president
 		COALITION_clr_soccon = yes
 		COALITION_clr_neu = yes
-		COALITION_add_com = yes
 		COALITION_add_socdem = yes
 		COALITION_add_soclib = yes
 		COALITION_add_natlib = yes
 		COALITION_add_libcon = yes
+	}
+}
+
+country_event = {
+	id = KOR.18
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.18"}
+	title = KOR.18.t
+	desc = KOR.18.desc
+	picture = GFX
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = KOR.18.a
+		ai_chance = { factor = 1 }
+		set_party_name = { ideology = democratic long_name = Lee_Dem_2_long name = Lee_Dem_2 }
+		clr_country_flag = korea_kim_kyu_sik_acting_president
+		set_country_flag = korea_rhee_syng_man_president
+		retire_ideology_leader = democratic
+		create_country_leader = {
+			name = "이승만"
+			desc = ""
+			picture = "Portrait_Syngman_Rhee.dds"
+			expire = "1999.1.1"
+			ideology = conservatism
+			traits = {
+				
+			}
+		}
+		set_global_flag = big_event_rhee_syng_man_president
+	}
+}
+
+country_event = {
+	id = KOR.19
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.19"}
+	title = KOR.19.t
+	desc = KOR.19.desc
+	picture = GFX_Foreign_Minister_Huh_Jung_leaves_Japan_picture
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = KOR.19.a
+		ai_chance = { factor = 1 }
+		add_political_power = 75
+		hidden_effect = {
+			country_event = {
+				id = KOR.20
+				days = 1
+			}
+			news_event = {
+				id = KOR.21
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = KOR.20
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.20"}
+	title = KOR.20.t
+	desc = KOR.20.desc
+	picture = GFX
+	
+	immediate = { set_global_flag = big_event_explosion_three_way_talks }
+	immediate = {
+		set_country_flag = Ho_Jong_cabinet_personnel_injury
+	}
+	hidden = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+}
+
+news_event = {
+	id = KOR.21
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.21"}
+	title = KOR.21.t
+	desc = KOR.21.desc
+	picture = GFX_Nagoya_terrorist_occurred_picture
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = KOR.21.a
+		ai_chance = { factor = 1 }
+		trigger = { TAG = KOR }
+		hidden_effect = {
+			swap_ideas = {
+				remove_idea = idea_Ho_Jong
+				add_idea = idea_Ho_Jong_2
+			}
+		}
+		custom_effect_tooltip = KOR.21.a_tt
+	}
+	option = { #
+		name = KOR.21.b
+		ai_chance = { factor = 1 }
+		trigger = {
+			NOT = {
+				TAG = KOR
+				TAG = USA
+				TAG = JAP
+			}
+		}
+	}
+	option = { #
+		name = KOR.21.c
+		ai_chance = { factor = 1 }
+		trigger = { TAG = USA }
+	}
+	option = { #
+		name = KOR.21.d
+		ai_chance = { factor = 1 }
+		trigger = { TAG = JAP }
 	}
 }
 
@@ -836,6 +955,13 @@ country_event = { #서재필 -> 이범석으로 중점 변경
 
 			clr_country_flag = korea_kim_kyu_sik_acting_president
 			set_country_flag = korea_kim_kyu_sik_president_lee_beom_seok
+
+			set_variable = {
+				rebellion_variable = 80
+			}
+			set_variable = {
+				not_rebellion_variable = 100
+			}
 		}
 	}
 }
@@ -851,36 +977,27 @@ country_event = { #
 	
 	is_triggered_only = yes
 	fire_only_once = yes
-	
+
 	option = { #
 		name = KOR.10.a
 		ai_chance = { factor = 1 }
-		CKR = {
-			set_state_owner = 807
-			set_state_owner = 808
-			add_state_core = 807
-			add_state_core = 808
-			set_capital = 807
-			set_state_controller = 807
-			set_state_controller = 808
-
-			#대한민국 극좌파 사단 추가
-			#807 = {
-				#create_unit = {
-					#division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.1" 
-					#owner = CKR
-					#allow_spawning_on_enemy_provs = yes
-					#count = 3
-				#}
-			#}
-
+		random_list = {
+			rebellion_variable = {
+				country_event = {
+					id = KOR.11
+					days = 0
+				}
+			}
+			not_rebellion_variable2 = {
+				set_state_owner = 817
+			}
 		}
 	}
 }
 
 add_namespace = KOR
 
-country_event = { #
+country_event = { #반란
 	id = KOR.11
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.11"}
 	title = KOR.11.t
@@ -893,21 +1010,20 @@ country_event = { #
 	option = { #
 		name = KOR.11.a
 		ai_chance = { factor = 1 }
-		remove_unit_leader = 3005
-		LKR = {
-			set_state_owner = 817
-			set_state_owner = 816
-			set_state_owner = 812
-			set_state_owner = 813
-			add_state_core = 817
-			add_state_core = 816
-			add_state_core = 812
-			add_state_core = 813
-			set_capital = 817
-			set_state_controller = 817
-			set_state_controller = 816
-			set_state_controller = 812
-			set_state_controller = 813
+		
+		start_civil_war = {
+			ruling_party = fascism
+			ideology = neutrality
+			size = 0.5
+			only_own_territory = no
+			capital = 813
+			states = { 
+				812 813 816
+			}
+			keep_unit_leaders = {
+				
+			}
+			keep_political_leader = no
 		}
 	}
 }
@@ -927,12 +1043,11 @@ country_event = { #
 	option = { #
 		name = KOR.12.a
 		ai_chance = { factor = 1 }
-		CKR = {
-			declare_war_on = {
-				target = KOR
-				type = civil_war
-			}
-			add_civil_war_target = KOR
+		814 = {
+			set_demilitarized_zone = yes
+		}
+		815 = {
+			set_demilitarized_zone = yes
 		}
 	}
 }
@@ -941,210 +1056,65 @@ add_namespace = KOR
 
 add_namespace = KOR
 
-news_event = { #대한제국1
+country_event = { #
 	id = KOR.16
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.16"}
 	title = KOR.16.t
 	desc = KOR.16.desc
-	picture = GFX_emperor1
+	picture = GFX_
 	
 	is_triggered_only = yes
+	fire_only_once = yes
 	
 	option = { #
 		name = KOR.16.a
 		ai_chance = { factor = 1 }
+		create_country_leader = {
+			name = "이은"
+			desc = "POLITICS_LEE_SYNG_DESC"
+			picture = "Portrait_Syngman_Rhee.dds"
+			expire = "1947.7.19"
+			ideology = despotism
+			traits = {
+				Traditional_Crown_Prince
+			}
+	    }
+	}
+	option = { #
+		name = KOR.16.b
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { #
+		name = KOR.16.c
+		ai_chance = { factor = 1 }
+		
 	}
 }
 
-country_event = { #선거 유새 시작 이벤트
+country_event = { #
 	id = KOR.17
 	title = KOR.17.t
-	desc = KOR.17.d
-	picture = GFX_report_event_generic_rally
+	desc = KOR.17.desc
+	picture = GFX_
 
-	trigger = {
-		tag = KOR
-		date > 1936.1.6
-	}
-	
+	is_triggered_only = yes
 	fire_only_once = yes
 
-	mean_time_to_happen = { days = 1 }
-	
-	# Accept - Morganatic marriage
+	# 
 	option = {
 		name = KOR.17.a
-
-		custom_effect_tooltip = KOR.17.a.tt
-		activate_mission = KOR_abdication_crisis
-		hidden_effect = { 
-			country_event = { id = KOR.18 days = 10 }
-			country_event = { id = KOR.20 days = 15 random_days = 10 }
-		}
-		set_country_flag = KOR_abdication_crisis_morganatic_marriage
-		set_country_flag = KOR_edward_viii_refused_to_abdicate_flag
+		ai_chance = { factor = 1 }
 	}
-}
-
-country_event = { #여당 지지 여론
-	id = KOR.18
-	title = KOR.18.t
-	desc = KOR.18.d
-	picture = GFX_report_event_generic_rally
-
-	is_triggered_only = yes
-	
-	# Ok
-	option = {
-		name = KOR.18.a
-		add_political_power = 100
-		KOR_congress_medium_support = yes
-		custom_effect_tooltip = KOR.18_tt
+	option = { #
+		name = KOR.17.b
+		ai_chance = { factor = 1 }
+		
 	}
-}
-
-country_event = { #선거 끝
-	id = KOR.19
-	title = KOR.19.t
-	desc = KOR.19.d
-	picture = GFX_report_event_royal_parade
-
-	is_triggered_only = yes
-
-	trigger = { NOT = { has_country_flag = KOR_abdication_crisis_changed_mind } }
-
-	immediate = {
-		hidden_effect = {
-			set_country_flag = vote_2_is_end
-		}
-	}
-	
-	# Ok
-	option = {
-		name = KOR.19.a
-		add_political_power = 50
-	}
-}
-
-country_event = { #랜덤 이팩트
-	id = KOR.20
-	
-	is_triggered_only = yes
-
-	hidden = yes
-
-	immediate = {
-		random_list = {
-			20 = { # 결혼에 찬성하는 신문
-				modifier = {
-					factor = 1.5
-					has_country_flag = KOR_abdication_crisis_morganatic_marriage
-				}
-				modifier = {
-					factor = 0
-					has_country_flag = KOR_newspapers_in_favor
-				}
-				modifier = {
-					factor = 0
-					has_country_flag = KOR_newspapers_against
-				}
-				country_event = { id = KOR.21 }
-			}
-			20 = { # 결혼 반대 신문
-				country_event = { id = KOR.22 } 
-			}
-			20 = { # 연설을 못하게하는 야당
-				modifier = {
-					factor = 0
-					has_country_flag = KOR_abdication_crisis_government_fell
-				}
-				modifier = {
-					factor = 0
-					has_country_flag = KOR_newspapers_in_favor
-				}
-				modifier = {
-					factor = 0
-					has_country_flag = KOR_newspapers_against
-				}
-				modifier = {
-					factor = 0
-					has_country_flag = KOR_abdication_crisis_held_radio_speech
-				}
-				country_event = { id = KOR.23 } 
-			}
-			20 = { # 의회의 반대
-				modifier = {
-					factor = 0.8
-					has_idea = KOR_support_for_the_king_idea 
-				}
-				modifier = {
-					factor = 0
-					has_country_flag = KOR_abdication_crisis_government_fell
-				}
-				modifier = {
-					factor = 0
-					has_country_flag = KOR_parliament_opposition
-				}
-				country_event = { id = KOR.24 } 
-			}
-			20 = { # 결혼에 반대하는 상류층 계급
-				modifier = {
-					factor = 0
-					has_country_flag = KOR_upper_classes_oppose_marriage
-				}
-				country_event = { id = KOR.25 } 
-			}
-			20 = { # 결혼을 지지하는 노동자들
-				modifier = {
-					factor = 1.5
-					has_country_flag = KOR_abdication_crisis_morganatic_marriage
-				}
-				modifier = {
-					factor = 0
-					has_country_flag = KOR_upper_classes_support_marriage
-				}
-				country_event = { id = KOR.26 } 
-			}
-			200 = { # 정부 연설
-				modifier = {
-					factor = 0
-					has_country_flag = KOR_abdication_crisis_tight_leash 
-				}
-				modifier = {
-					factor = 0
-					has_country_flag = KOR_abdication_crisis_held_radio_speech
-				}
-				country_event = { id = KOR.27 }
-			}
-		}
-	}
-}
-
-# 지지 신문
-country_event = {
-	id = KOR.21
-	title = KOR.21.t
-	desc = KOR.21.d
-	picture = GFX_report_event_journalists_speech
-
-	is_triggered_only = yes
-
-	trigger = {
-		NOT = { has_country_flag = KOR_abdication_crisis_changed_mind }
-		NOT = { has_country_flag = vote_2_is_end }
-	}
-	
-	# Ok
-	option = {
-		name = KOR.21.a
-		KOR_congress_small_support = yes
-		hidden_effect = { country_event = { id = KOR.20 days = 20 random_days = 10 } }
-		clr_country_flag = KOR_newspapers_against
-		clr_country_flag = KOR_prime_minister_tight_leash
-		clr_country_flag = KOR_parliament_opposition
-		clr_country_flag = KOR_upper_classes_oppose_marriage
-		clr_country_flag = KOR_working_classes_support_marriage
-		set_country_flag = KOR_newspapers_in_favor
+	option = { #
+		name = KOR.17.c
+		ai_chance = { factor = 1 }
+		set_country_flag = Lee_Bum_seok_is_death
 	}
 }
 
@@ -1166,7 +1136,7 @@ country_event = {
 	option = {
 		name = KOR.22.a
 		KOR_congress_small_opposition = yes
-		hidden_effect = { country_event = { id = KOR.20 days = 20 random_days = 10 } }
+		 
 		clr_country_flag = KOR_newspapers_in_favor
 		clr_country_flag = KOR_prime_minister_tight_leash
 		clr_country_flag = KOR_parliament_opposition
@@ -1196,7 +1166,7 @@ country_event = {
 		name = KOR.23.a
 		KOR_congress_small_opposition = yes
 		set_country_flag = { flag = KOR_abdication_crisis_tight_leash value = 1 days = 31 }
-		hidden_effect = { country_event = { id = KOR.20 days = 20 random_days = 10 } }
+		 
 		clr_country_flag = KOR_newspapers_in_favor
 		clr_country_flag = KOR_newspapers_against
 		clr_country_flag = KOR_parliament_opposition
@@ -1223,7 +1193,7 @@ country_event = {
 	option = {
 		name = KOR.24.a
 		KOR_congress_small_opposition = yes
-		hidden_effect = { country_event = { id = KOR.20 days = 20 random_days = 10 } }
+		 
 		clr_country_flag = KOR_newspapers_in_favor
 		clr_country_flag = KOR_newspapers_against
 		clr_country_flag = KOR_prime_minister_tight_leash
@@ -1250,7 +1220,7 @@ country_event = {
 	option = {
 		name = KOR.25.a
 		KOR_congress_small_opposition = yes
-		hidden_effect = { country_event = { id = KOR.20 days = 20 random_days = 10 } }
+		 
 		clr_country_flag = KOR_newspapers_in_favor
 		clr_country_flag = KOR_newspapers_against
 		clr_country_flag = KOR_prime_minister_tight_leash
@@ -1277,7 +1247,7 @@ country_event = {
 	option = {
 		name = KOR.26.a
 		KOR_congress_small_support = yes
-		hidden_effect = { country_event = { id = KOR.20 days = 20 random_days = 10 } }
+		 
 		clr_country_flag = KOR_newspapers_in_favor
 		clr_country_flag = KOR_newspapers_against
 		clr_country_flag = KOR_prime_minister_tight_leash
@@ -1306,7 +1276,7 @@ country_event = {
 		name = KOR.27.a
 		KOR_congress_small_support = yes
 		set_country_flag = KOR_abdication_crisis_held_radio_speech
-		hidden_effect = { country_event = { id = KOR.20 days = 20 random_days = 10 } }
+		 
 	}
 }
 

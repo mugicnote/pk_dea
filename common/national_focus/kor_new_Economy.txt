@@ -1,0 +1,368 @@
+shared_focus = {
+	id = KOR_Treasury_Report_36
+		icon = GFX_
+		cost = 1
+
+		offset = {
+			x = 20
+			y = 0
+			trigger = {
+				tag = KOR
+			}
+		}
+		completion_reward = {
+
+		}
+		x = 0
+		y = 0
+	}
+
+	shared_focus = {
+		id = KOR_pay_attention_Germany
+		icon = GFX_
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_Treasury_Report_36
+		}
+		relative_position_id = KOR_Treasury_Report_36
+
+		completion_reward = {
+		}
+		x = -6
+		y = 1
+
+	}
+
+	shared_focus = {
+		id = KOR_step_up_on_our_own
+		icon = GFX_
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_Treasury_Report_36
+		}
+		relative_position_id = KOR_Treasury_Report_36
+
+		completion_reward = {
+		}
+		x = 0
+		y = 1
+
+	}
+
+	shared_focus = {
+		id = KOR_pay_attention_United_States
+		icon = GFX_
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_Treasury_Report_36
+		}
+		relative_position_id = KOR_Treasury_Report_36
+
+		completion_reward = {
+		}
+		x = 6
+		y = 1
+
+	}
+
+	shared_focus = {
+		id = KOR_abolition_economic_policies_First_Republic
+		icon = GFX_
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_step_up_on_our_own
+		}
+		relative_position_id = KOR_step_up_on_our_own
+
+		completion_reward = {
+		}
+		x = 0
+		y = 1
+
+	}
+
+	shared_focus = {
+		id = KOR_launch_Inflation_Cause_Investigation_Committee
+		icon = GFX_
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_pay_attention_Germany
+		}
+		relative_position_id = KOR_pay_attention_Germany
+
+		completion_reward = {
+		}
+		x = 0
+		y = 2
+
+	}
+
+	shared_focus = {
+		id = KOR_introduction_economic_firstism
+		icon = GFX_
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_step_up_on_our_own
+		}
+		relative_position_id = KOR_step_up_on_our_own
+
+		completion_reward = {
+		}
+		x = 0
+		y = 1
+
+	}
+
+	shared_focus = {
+		id = KOR_dissolution_tightening_funds
+		icon = GFX_
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_step_up_on_our_own
+		}
+		prerequisite = {
+			focus = KOR_pay_attention_Germany
+		}
+		relative_position_id = KOR_pay_attention_Germany
+
+		completion_reward = {
+		}
+		x = 1
+		y = 1
+
+	}
+
+	shared_focus = {
+		id = KOR_Request_moratorium_indemnity
+		icon = GFX_
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_launch_Inflation_Cause_Investigation_Committee
+		}
+		prerequisite = {
+			focus = KOR_Promotion_land_construction_project
+		}
+		relative_position_id = KOR_launch_Inflation_Cause_Investigation_Committee
+
+		completion_reward = {
+		}
+		x = 0
+		y = 1
+
+	}
+
+	shared_focus = {
+		id = KOR_Establishment_Industrial_Development_Committees
+		icon = GFX_
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_step_up_on_our_own
+		}
+		prerequisite = {
+			focus = KOR_pay_attention_Germany
+		}
+		relative_position_id = KOR_step_up_on_our_own
+
+		completion_reward = {
+		}
+		x = -2
+		y = 1
+
+	}
+
+	shared_focus = {
+		id = KOR_Promotion_first_five_year_economic_plan
+		icon = GFX_
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_introduction_economic_firstism
+		}
+		prerequisite = {
+			focus = KOR_Promotion_land_construction_project
+		}
+		prerequisite = {
+			focus = KOR_Emergency_Banking_Act
+		}
+		relative_position_id = KOR_introduction_economic_firstism
+
+		completion_reward = {
+		}
+		x = 0
+		y = 2
+
+	}
+
+	shared_focus = {
+		id = KOR_monetary_reform
+		icon = GFX_
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_launch_Inflation_Cause_Investigation_Committee
+		}
+		relative_position_id = KOR_launch_Inflation_Cause_Investigation_Committee
+
+		completion_reward = {
+		}
+		x = -2
+		y = 1
+
+	}
+
+	shared_focus = {
+		id = KOR_Promotion_land_construction_project
+		icon = GFX_
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_Establishment_Industrial_Development_Committees
+		}
+		relative_position_id = KOR_Establishment_Industrial_Development_Committees
+
+		completion_reward = {
+		}
+		x = 0
+		y = 1
+
+	}
+
+	shared_focus = {
+		id = KOR_Budgeting_additional_industries
+		icon = GFX_
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_Establishment_Industrial_Development_Committees
+		}
+		prerequisite = {
+			focus = KOR_dissolution_tightening_funds
+		}
+		relative_position_id = KOR_Establishment_Industrial_Development_Committees
+
+		completion_reward = {
+		}
+		x = -2
+		y = 1
+
+	}
+
+	shared_focus = {
+		id = KOR_Approving_bankruptcy_relief_plans
+		icon = GFX_
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_step_up_on_our_own
+		}
+		prerequisite = {
+			focus = KOR_pay_attention_United_States
+		}
+		relative_position_id = KOR_step_up_on_our_own
+
+		completion_reward = {
+		}
+		x = 2
+		y = 1
+
+	}
+
+	shared_focus = {
+		id = KOR_Implementation_Farmland_Reform_Act
+		icon = GFX_
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_step_up_on_our_own
+		}
+		prerequisite = {
+			focus = KOR_pay_attention_United_States
+		}
+		relative_position_id = KOR_step_up_on_our_own
+
+		completion_reward = {
+		}
+		x = 5
+		y = 1
+
+	}
+
+	shared_focus = {
+		id = KOR_Emergency_Banking_Act
+		icon = GFX_
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_Implementation_Farmland_Reform_Act
+		}
+		prerequisite = {
+			focus = KOR_Approving_bankruptcy_relief_plans
+		}
+		relative_position_id = KOR_Implementation_Farmland_Reform_Act
+
+		completion_reward = {
+		}
+		x = -3
+		y = 1
+
+	}
+
+	shared_focus = {
+		id = KOR_Establishment_Agricultural_Technology_Institute
+		icon = GFX_
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_Implementation_Farmland_Reform_Act
+		}
+		relative_position_id = KOR_Implementation_Farmland_Reform_Act
+
+		completion_reward = {
+		}
+		x = -1
+		y = 1
+
+	}
+
+	shared_focus = {
+		id = KOR_Establishment_Advisory_Committee_Entrepreneurship
+		icon = GFX_
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_pay_attention_United_States
+		}
+		relative_position_id = KOR_pay_attention_United_States
+
+		completion_reward = {
+		}
+		x = 0
+		y = 2
+
+	}
+
+	shared_focus = {
+		id = KOR_Dealing_with_Labor_Relations_Act
+		icon = GFX_
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_Establishment_Advisory_Committee_Entrepreneurship
+		}
+		relative_position_id = KOR_Establishment_Advisory_Committee_Entrepreneurship
+
+		completion_reward = {
+		}
+		x = 2
+		y = 1
+
+	}
+
+	shared_focus = {
+		id = KOR_Conducting_internal_investigation_Security_Bureau
+		icon = GFX_
+		cost = 10.00
+		prerequisite = {
+			focus = KOR_Establishment_Advisory_Committee_Entrepreneurship
+		}
+		prerequisite = {
+			focus = KOR_Emergency_Banking_Act
+		}
+		relative_position_id = KOR_Establishment_Advisory_Committee_Entrepreneurship
+
+		completion_reward = {
+		}
+		x = 0
+		y = 1
+
+	}

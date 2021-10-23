@@ -1,0 +1,83 @@
+ideas = {
+	
+	country = {
+	
+		YUN_long_yun_shadow = {
+			
+            picture = YUN_long_yun_shadow
+
+			allowed = {
+		        original_tag = YUN
+	        }
+
+			modifier = {
+				custom_modifier_tooltip = YUN_long_yun_shadow_tt
+		    }
+        }
+
+		YUN_fight_with_zhi_gong = {
+			
+            picture = YUN_fight_with_zhi_gong
+
+			allowed = {
+		        original_tag = YUN
+	        }
+
+			modifier = {
+				social_democracy_drift = 0.01
+				social_liberalism_drift = 0.01
+				national_liberalism_drift = 0.01
+				liberal_conservatism_drift = 0.01
+				political_power_factor = 0.05
+		    }
+        }
+
+		YUN_old_army = {
+			
+            picture = YUN_old_army
+
+			allowed = {
+		        original_tag = YUN
+	        }
+
+			modifier = {
+				training_time_factor = -0.2
+				army_org_factor = -0.15
+				army_attack_factor = -0.05
+				army_defence_factor = -0.05
+		    }
+        }
+
+		YUN_opium_problem = {
+			
+            picture = YUN_opium_problem
+
+			allowed = {
+		        original_tag = YUN
+	        }
+
+			modifier = {
+				stability_factor = -0.20
+				consumer_goods_factor = 0.1
+				production_factory_max_efficiency_factor = -0.1
+		    }
+        }
+
+		YUN_to_many_tax = {
+			
+            picture = YUN_to_many_tax
+
+			allowed = {
+		        original_tag = YUN
+	        }
+
+			modifier = {
+				conscription_factor = -0.2
+				political_power_factor = -0.1
+				stability_factor = -0.10
+				political_power_gain = 0.15
+		    }
+        }
+
+	}
+}

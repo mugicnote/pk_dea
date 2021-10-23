@@ -93,6 +93,95 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focus_operation_independence.dds"
 	}
 
+	#이범석 쿠데타 이후
+	SpriteType = {
+		name = "GFX_focus_disband_sicana"
+		texturefile = "gfx/interface/goals/focus_disband_sicana.dds"
+	}
+	SpriteType = {
+		name = "GFX_enormous_arrest"
+		texturefile = "gfx/interface/goals/enormous_arrest.dds"
+	}
+	SpriteType = {
+		name = "GFX_end_of_totalist"
+		texturefile = "gfx/interface/goals/end_of_totalist.dds"
+	}
+	SpriteType = {
+		name = "GFX_kor_constitutional_amendment"
+		texturefile = "gfx/interface/goals/kor_constitutional_amendment.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_Constitution_Reconstruction_Committee"
+		texturefile = "gfx/interface/goals/focus_Constitution_Reconstruction_Committee.dds"
+	}
+	#황실 복권
+	SpriteType = {
+		name = "GFX_focus_korean_empire"
+		texturefile = "gfx/interface/goals/focus_korean_empire.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_imperial_family"
+		texturefile = "gfx/interface/goals/focus_imperial_family.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_freedom_society"
+		texturefile = "gfx/interface/goals/focus_freedom_society.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_accept_the_return_of_imperial_family"
+		texturefile = "gfx/interface/goals/focus_accept_the_return_of_imperial_family.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_despotism_society"
+		texturefile = "gfx/interface/goals/focus_despotism_society.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_constitutional_amendment"
+		texturefile = "gfx/interface/goals/focus_constitutional_amendment.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_conference_of_chicago"
+		texturefile = "gfx/interface/goals/focus_conference_of_chicago.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_disloyal_com"
+		texturefile = "gfx/interface/goals/focus_disloyal_com.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_constitution"
+		texturefile = "gfx/interface/goals/focus_constitution.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_social_democracy"
+		texturefile = "gfx/interface/goals/focus_social_democracy.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_institution"
+		texturefile = "gfx/interface/goals/focus_institution.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_ncr"
+		texturefile = "gfx/interface/goals/focus_ncr.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_interim_government"
+		texturefile = "gfx/interface/goals/focus_interim_government.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_broken_red_star"
+		texturefile = "gfx/interface/goals/focus_broken_red_star.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_crush_extremism"
+		texturefile = "gfx/interface/goals/focus_crush_extremism.dds"
+	}
+	SpriteType = {
+		name = "GFX_Focus_national_emergency"
+		texturefile = "gfx/interface/goals/Focus_national_emergency.dds"
+	}
+
+
+
 
 	SpriteType = {
 		name = "GFX_focus_kim_koo"
@@ -143,11 +232,6 @@ spriteTypes = {
 		name = "GFX_focus_guardian_of_asia"
 		texturefile = "gfx/interface/goals/focus_guardian_of_asia.dds"
 	}
-	
-	SpriteType = {
-		name = "GFX_focus_accept_the_return_of_imperial_family"
-		texturefile = "gfx/interface/goals/focus_accept_the_return_of_imperial_family.dds"
-	}
 
 	SpriteType = {
 		name = "GFX_focus_chunggun_aeguk"
@@ -182,11 +266,6 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_focus_eok_armed_forces"
 		texturefile = "gfx/interface/goals/focus_eok_armed_forces.dds"
-	}
-
-	SpriteType = {
-		name = "GFX_focus_interim_government"
-		texturefile = "gfx/interface/goals/focus_interim_government.dds"
 	}
 
 	SpriteType = {
@@ -528,10 +607,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/goal_japanese_democracy.dds"
 	}
 	SpriteType = {
-		name = "GFX_focus_social_democracy"
-		texturefile = "gfx/interface/goals/focus_social_democracy.dds"
-	}
-	SpriteType = {
 		name = "GFX_kor_investigate_focus"
 		texturefile = "gfx/interface/goals/kor_investigate_focus.dds"
 	}
@@ -539,10 +614,7 @@ spriteTypes = {
 		name = "GFX_Corruption_investigate"
 		texturefile = "gfx/interface/goals/Corruption_investigate.dds"
 	}
-	SpriteType = {
-		name = "GFX_goal_split_helmet"
-		texturefile = "gfx/interface/goals/goal_split_helmet.dds"
-	}
+
 	SpriteType = {
 		name = "GFX_goal_generic_seize_press"
 		texturefile = "gfx/interface/goals/goal_generic_seize_press.dds"
@@ -584,20 +656,12 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/Womens_suffrage_Appointment.dds"
 	}
 	SpriteType = {
-		name = "GFX_enormous_arrest"
-		texturefile = "gfx/interface/goals/enormous_arrest.dds"
-	}
-	SpriteType = {
 		name = "GFX_CPUSA_Logo"
 		texturefile = "gfx/interface/goals/CPUSA_Logo.dds"
 	}
 	SpriteType = {
 		name = "GFX_goal_HOL_progressive_tax"
 		texturefile = "gfx/interface/goals/goal_HOL_progressive_tax.dds"
-	}
-	SpriteType = {
-		name = "GFX_focus_constitutional_amendment"
-		texturefile = "gfx/interface/goals/focus_constitutional_amendment.dds"
 	}
 	SpriteType = {
 		name = "GFX_goal_generic_government_deals"
@@ -624,24 +688,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focus_capitol.dds"
 	}
 	SpriteType = {
-		name = "GFX_conference_of_chicago"
-		texturefile = "gfx/interface/goals/conference_of_chicago.dds"
-	}
-	SpriteType = {
 		name = "GFX_focus_armed_police"
 		texturefile = "gfx/interface/goals/focus_armed_police.dds"
-	}
-	SpriteType = {
-		name = "GFX_focus_constitution"
-		texturefile = "gfx/interface/goals/focus_constitution.dds"
-	}
-	SpriteType = {
-		name = "GFX_focus_ncr"
-		texturefile = "gfx/interface/goals/focus_ncr.dds"
-	}
-	SpriteType = {
-		name = "GFX_freedom_society"
-		texturefile = "gfx/interface/goals/freedom_society.dds"
 	}
 	SpriteType = {
 		name = "GFX_focus_nationality"

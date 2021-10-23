@@ -8,6 +8,18 @@ defined_text = {
         }
         localization_key = "sp_assassination_Jae_pil"
     }
+    text = {
+        trigger = {
+            has_global_flag = big_event_rhee_syng_man_president
+        }
+        localization_key = "sp_rhee_syng_man_president"
+    }
+    text = {
+        trigger = {
+            has_global_flag = big_event_explosion_three_way_talks
+        }
+        localization_key = "sp_explosion_three_way_talks"
+    }
 }
 
 #Remarks
@@ -20,6 +32,18 @@ defined_text = {
         }
         localization_key = "sp_assassination_Jae_pil_REMARK"
     }
+    text = { 
+        trigger = {
+            has_global_flag = big_event_rhee_syng_man_president
+        }
+        localization_key = "sp_rhee_syng_man_president_REMARK"
+    }
+    text = { 
+        trigger = {
+            has_global_flag = big_event_explosion_three_way_talks
+        }
+        localization_key = "sp_explosion_three_way_talks_REMARK"
+    }
 }
 
 #Quotes
@@ -31,5 +55,17 @@ defined_text = {
             has_global_flag = big_event_assassination_Jae_pil
         }
         localization_key = "sp_assassination_Jae_pil_QUOTE"
+    }
+    text = {
+        trigger = {
+            has_global_flag = big_event_rhee_syng_man_president
+        }
+        localization_key = "sp_rhee_syng_man_president_QUOTE"
+    }
+    text = {
+        trigger = {
+            has_global_flag = big_event_explosion_three_way_talks
+        }
+        localization_key = "sp_explosion_three_way_talks_QUOTE"
     }
 }

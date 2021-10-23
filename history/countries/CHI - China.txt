@@ -43,12 +43,11 @@ if = {
 }
 
 add_ideas = {
-	National_Revolutionary_Army
-	china_inadequate_army_1
-	infantry_oriented_army
-	relaxed_army
-	threat_of_stable_left
-	disorderly_army
+	CHI_crowded_right_wing
+	CHI_split_joint_venture
+	CHI_Unstable_Light
+	CHI_National_Revolution_stake
+	CHI_last_bastion_national_revolution
 }
 
 set_convoys = 40

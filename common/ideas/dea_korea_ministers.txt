@@ -20,6 +20,7 @@ ideas = {
 
 			traits = {
 				traits_interior_minister
+				traits_opnion_pro_americans
 			}
 		}
 	}
@@ -30,6 +31,10 @@ ideas = {
 
 			picture = advisor_Ho_Jong
 
+			visible = {
+				NOT = { has_country_flag = Ho_Jong_cabinet_personnel_injury }
+			}
+
 			available = {
 				custom_trigger_tooltip = {
     				tooltip = minister_tooltip
@@ -37,12 +42,39 @@ ideas = {
 				}
 			}
 
-			cancel_if_invalid = no
+			cancel_if_invalid = yes
 			removal_cost = -1
 			ai_will_do = { factor = 1 }
 
 			traits = {
 				traits_foreign_minister
+				traits_diplomacy_expert
+			}
+		}
+		idea_Ho_Jong_2 = {
+
+			allowed = { original_tag = KOR }
+
+			picture = advisor_Ho_Jong
+
+			visible = {
+				has_country_flag = Ho_Jong_cabinet_personnel_injury
+			}
+
+			available = {
+				custom_trigger_tooltip = {
+    				tooltip = minister_tooltip
+					always = no
+				}
+			}
+
+			cancel_if_invalid = yes
+			removal_cost = -1
+			ai_will_do = { factor = 1 }
+
+			traits = {
+				traits_foreign_minister
+				traits_cabinet_personnel_injury
 			}
 		}
 	}

@@ -140,6 +140,15 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/Hu_Hanmin_event_picture.dds"
 	}
 
+	spriteType = {
+		name = "GFX_Foreign_Minister_Huh_Jung_leaves_Japan_picture"
+		texturefile = "gfx/event_pictures/Foreign_Minister_Huh_Jung_leaves_Japan_picture.dds"
+	}
+	spriteType = {
+		name = "GFX_Nagoya_terrorist_occurred_picture"
+		texturefile = "gfx/event_pictures/Nagoya_terrorist_occurred_picture.dds"
+	}
+
 }
 	
 	

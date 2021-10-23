@@ -13,7 +13,7 @@ set_research_slots = 4
 set_stability = 1.0 #(국민정신이 다 깎아먹어서)
 
 #시작시_전쟁지지도
-set_war_support = 0.6
+set_war_support = 1.0
 
 #연료_비율
 set_fuel_ratio = 1.0
@@ -107,13 +107,11 @@ set_convoys = 30
 
 #국민정신
 add_ideas = {
-two_years_service
-KOR_great_depression
-huge_government_bond
-Kor_excessive_Inflation
-fallen_rural_society
+KOR_economy_ruined
+KOR_huge_amount_government_bonds
+KOR_Collapsed_security
 KOR_incompetent_goverment
-KOR_divided_army
+KOR_Divided_military
 }
 
 #시작_정당
@@ -184,10 +182,10 @@ COALITION_add_soccon = yes
 COALITION_add_neu = yes
 
 #정당별_리더
-create_country_leader = { #사진 작업 완료(DoS 도움 받음)
+create_country_leader = { #사진 작업 완료(도움 받음)
   name = "서재필"
   desc = "POLITICS_JAE_PIL_DESC"
-  picture = "jae_pil.dds"
+  picture = "Portrait_Seo_jae_pil.dds"
   expire = "1949.6.26"
   ideology = Seo_Jae_Pil_conservatism
   traits = {
@@ -311,8 +309,8 @@ create_country_leader = { #사진 작업 완료
 
 create_country_leader = {
   name = "국군유신회 지도부"
-  desc = "POLITICS_AFRS_DESC"
-  picture = "#"
+  desc = "POLITICS_RAFS_DESC"
+  picture = "Portrait_rafs.dds"
   expire = "1947.7.19"
   ideology = despotism
   traits = {

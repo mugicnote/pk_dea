@@ -246,6 +246,14 @@ spriteTypes = {
 		name = "GFX_idea_KOR_extreme_inflation"
 		texturefile = "gfx/interface/ideas/KOR_extreme_inflation.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_KOR_broken_security"
+		texturefile = "gfx/interface/ideas/KOR_broken_security.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_divided_military"
+		texturefile = "gfx/interface/ideas/KOR_divided_military.dds"
+	}
 	#한국 쿠데타
 	spriteType = {
 		name = "GFX_idea_KOR_Way_of_Military_Revolution"
@@ -255,34 +263,48 @@ spriteTypes = {
 	#중국
 	spriteType = {
 		name = "GFX_idea_CHI_national_revolutionary_army"
-		texturefile = "gfx/interface/ideas/CHI_national_revolutionary_army.dds"
+		texturefile = "gfx/interface/ideas/CHI/CHI_national_revolutionary_army.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_CHI_progress_amry_1"
-		texturefile = "gfx/interface/ideas/CHI_progress_amry_1.dds"
+		texturefile = "gfx/interface/ideas/CHI/CHI_progress_amry_1.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_CHI_unmoterized_army"
-		texturefile = "gfx/interface/ideas/CHI_unmoterized_army.dds"
+		texturefile = "gfx/interface/ideas/CHI/CHI_unmoterized_army.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_CHI_low_tention_army"
-		texturefile = "gfx/interface/ideas/CHI_low_tention_army.dds"
+		texturefile = "gfx/interface/ideas/CHI/CHI_low_tention_army.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_CHI_warning_left_2"
-		texturefile = "gfx/interface/ideas/CHI_warning_left_2.dds"
+		texturefile = "gfx/interface/ideas/CHI/CHI_warning_left_2.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_CHI_messy_army"
-		texturefile = "gfx/interface/ideas/CHI_messy_army.dds"
+		texturefile = "gfx/interface/ideas/CHI/CHI_messy_army.dds"
+	}
+	
+	#운남
+	spriteType = {
+		name = "GFX_idea_YUN_long_yun_shadow"
+		texturefile = "gfx/interface/ideas/YUN/YUN_long_yun_shadow.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_Yan_Province_government_dream"
-		texturefile = "gfx/interface/ideas/idea_Yan_Province_government_dream.dds"
+		name = "GFX_idea_YUN_fight_with_zhi_gong"
+		texturefile = "gfx/interface/ideas/YUN/YUN_fight_with_zhi_gong.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_bandit_influence"
-		texturefile = "gfx/interface/ideas/idea_bandit_influence.tga"
+		name = "GFX_idea_YUN_old_army"
+		texturefile = "gfx/interface/ideas/YUN/YUN_old_army.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_YUN_opium_problem"
+		texturefile = "gfx/interface/ideas/YUN/YUN_opium_problem.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_YUN_to_many_tax"
+		texturefile = "gfx/interface/ideas/YUN/YUN_to_many_tax.dds"
 	}
 }

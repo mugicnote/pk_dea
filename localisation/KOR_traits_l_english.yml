@@ -41,7 +41,7 @@
  social_liberalism_drift:0 "일일 사회자유주의 지지"
  market_liberalism_drift:0 "일일 시장자유주의 지지"
  liberal_conservatism_drift:0 "일일 자유보수주의 지지"
- autocracy_drift:0 "일일 전제주의 지지"
+ auto_despotism_drift:0 "일일 전제주의 지지"
 
  kor_dictator2:0 "내부 불화"
  disdain_for_politicians_3:0 "정치인들과의 단절"
@@ -52,3 +52,22 @@
  ###서재필###
  President:0 "대통령"
  Father_Democratic_Republic:0 "민주공화국의 아버지"
+ 
+ Traditional_Crown_Prince:0 "황제가 된 황태자"
+
+ ###서재필 내각 장관###
+ traits_interior_minister:0 "내무부장관"
+ traits_foreign_minister:0 "외무부장관"
+ traits_national_defense_minister:0 "국방부장관"
+ traits_finance_minister:0 "재무부장관"
+ traits_justice_minister:0 "법무부장관"
+ traits_education_minister:0 "문교부장관"
+ traits_industry_commerce_minister:0 "상공부장관"
+ traits_transportation_minister:0 "교통부장관"
+
+ traits_opnion_pro_americans:0 "미국과의 연줄"
+ traits_opnion_pro_americans_tt:0 "@USA§Y미국§!에 대한 평판 §G+25§!"
+
+ traits_diplomacy_expert:0 "외교 전문가"
+ traits_cabinet_personnel_injury:0 "부상"
+ 

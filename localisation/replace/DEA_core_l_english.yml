@@ -16,3 +16,16 @@
  LOADING_MAP_SPRITES:0 "신문 1면의 제목을 정하는 중"
 
  TRIGGER_ALWAYS_FALSE:0 "이 중점은 향후 이벤트 혹은 결정으로 자동 완료됩니다."
+
+ #communism_acceptance:0 "공산주의 외교의 수용"
+ authoritarian_socialism_acceptance:0 "권위사회주의 외교의 수용"
+ radical_socialism_acceptance:0 "급진사회주의 외교의 수용"
+ social_democracy_acceptance:0 "사회민주주의 외교의 수용"
+ social_liberalism_acceptance:0 "사회자유주의 외교의 수용"
+ national_liberalism_acceptance:0 "국민자유주의 외교의 수용"
+ liberal_conservatism_acceptance:0 "자유보수주의 외교의 수용"
+ democratic_acceptance:0 "사회보수주의 외교의 수용"
+ national_conservatism_acceptance:0 "국민보수주의 외교의 수용"
+ neutrality_acceptance:0 "권위주의 외교의 수용"
+ auto_despotism_acceptance:0 "전제독재주의 외교의 수용"
+ #fascism_acceptance:0 "파시즘 외교의 수용"

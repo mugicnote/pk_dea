@@ -40,7 +40,7 @@ on_actions = {
 		set_country_flag = Kim_Kyusik
 		set_country_flag = Chough_Pyung_ok
 		set_country_flag = Ahn_Chang_Ho
-		set_country_flag = jae_pil
+		set_country_flag = Seo_jae_pil
 		set_country_flag = Kim_Byung_ro
 		set_country_flag = Lee_Beomseok
 		set_country_flag = Lee_Soon_yong
@@ -51,6 +51,9 @@ on_actions = {
 		set_country_flag = Yoon_Bo_Sun
 		set_country_flag = Pak_Honyong
 		set_country_flag = Lee_In
+		set_country_flag = Pak_Honyong
+		set_country_flag = Sohn_Won_yil
+		set_country_flag = Choi_Yong_duk
 
 		set_country_flag = rural_relief_level_is_1
 

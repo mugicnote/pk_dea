@@ -18,7 +18,7 @@ DEA_KOR_Military_factional_decisions = {
 
 DEA_KOR_Military_Revolution_decisions_category = {
 
-	#중국에게 지원 요청
+	#광동정부에게 지원 요청
     KOR_request_china_support_decisions = {
 
 		icon = generic_agreement
@@ -35,11 +35,16 @@ DEA_KOR_Military_Revolution_decisions_category = {
 		fire_only_once = yes
 
 		complete_effect = {
-			
+			custom_effect_tooltip = KOR_request_china_support_decisions_tt
+			#add_equipment_to_stockpile = {
+				#type = infantry_equipment
+				#amount = 1000
+				#producer = CHI
+			#}
 		}
 	}
 
-	#반대파 장군 암살
+	#반대파 장군 암살탭 펼치기
     KOR_assassination_opposition_general_decisions = {
 
 		icon = generic_assassination
@@ -56,7 +61,7 @@ DEA_KOR_Military_Revolution_decisions_category = {
 		fire_only_once = yes
 
 		complete_effect = {
-			
+			set_country_flag = assassination_opposition_general_open
 		}
 	}
 
@@ -254,11 +259,499 @@ DEA_KOR_Military_Revolution_decisions_category = {
 		fire_only_once = yes
 
 		complete_effect = {
-			
+			set_country_flag = KOR_beginning_revolution
+			clr_country_flag = lee_beom_seok_start
+			load_focus_tree = Kor_lee_beom_seok_2_focus
+		}
+	}
+
+	#테그 클리어
+    KOR_tag_clear_decisions = {
+
+		icon = generic_assassination
+
+		visible = {
+			original_tag = KOR
+		}
+
+		available = {
+			KOR = { exists = yes }
+			KOR = { is_subject = no }
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			clr_country_flag = lee_beom_seok_start
 		}
 	}
 }
 
+DEA_KOR_Completion_Continental_Revolutionary_War_decisions_category = {
+	KOR_Zhang_Jinghui_embraces = {
+		icon = GFX_decision_eng_trade_unions_support
+
+		visible = {
+			original_tag = KOR
+		}
+
+		available = {
+			KOR = { exists = yes }
+			KOR = { is_subject = no }
+			#has_completed_focus = KOR_Zhang_Jinghui_embraces
+		}
+
+		fire_only_once = yes
+	}
+
+	KOR_Yin_Rugeng_embraces = {
+		icon = GFX_decision_eng_trade_unions_support
+
+		visible = {
+			original_tag = KOR
+		}
+
+		available = {
+			KOR = { exists = yes }
+			KOR = { is_subject = no }
+			#has_completed_focus = KOR_Yin_Rugeng_embraces
+		}
+
+		fire_only_once = yes
+	}
+
+	KOR_Leung_Hung_chih_embraces = {
+		icon = GFX_decision_eng_trade_unions_support
+
+		visible = {
+			original_tag = KOR
+		}
+
+		available = {
+			KOR = { exists = yes }
+			KOR = { is_subject = no }
+			#has_completed_focus = KOR_Leung_Hung_chih_embraces
+		}
+
+		fire_only_once = yes
+	}
+
+	KOR_Maneuver_Wang_Jingwei = {
+		icon = GFX_decision_eng_puppet_usa
+
+		visible = {
+			original_tag = KOR
+		}
+
+		available = {
+			KOR = { exists = yes }
+			KOR = { is_subject = no }
+			#has_completed_focus = KOR_Maneuver_Wang_Jingwei
+		}
+
+		fire_only_once = yes
+	}
+
+	KOR_Maneuver_Qingdao = {
+		icon = GFX_decision_infiltrate_state
+
+		visible = {
+			original_tag = KOR
+		}
+
+		available = {
+			KOR = { exists = yes }
+			KOR = { is_subject = no }
+			#has_completed_focus = KOR_Maneuver_Wang_Jingwei
+		}
+
+		fire_only_once = yes
+	}
+
+	KOR_Maneuver_Shanghai = {
+		icon = GFX_decision_infiltrate_state
+
+		visible = {
+			original_tag = KOR
+		}
+
+		available = {
+			KOR = { exists = yes }
+			KOR = { is_subject = no }
+			#has_completed_focus = KOR_Maneuver_Wang_Jingwei
+		}
+
+		fire_only_once = yes
+	}
+
+	KOR_Maneuver_Taipei = {
+		icon = GFX_decision_infiltrate_state
+
+		visible = {
+			original_tag = KOR
+		}
+
+		available = {
+			KOR = { exists = yes }
+			KOR = { is_subject = no }
+			#has_completed_focus = KOR_Maneuver_Wang_Jingwei
+		}
+
+		fire_only_once = yes
+	}
+
+	KOR_capture_Harbin_mission = {
+		icon = GFX_decision_generic_operation
+
+		available = {
+			controls_province = 10433
+		}
+
+		fire_only_once = yes
+		is_good = no
+
+		days_mission_timeout = 150
+
+		cancel_if_not_visible = yes
+
+		activation = {
+			has_country_flag = Military_Revolution_Governments_China_War_Starts
+		}
+
+		visible = {
+			original_tag = KOR
+			has_country_flag = Military_Revolution_Governments_China_War_Starts
+		}
+
+		complete_effect = {
+		}
+	}
+
+	KOR_capture_beijing_mission = {
+		icon = GFX_decision_generic_civil_support
+
+		available = {
+			controls_province = 9843
+		}
+
+		fire_only_once = yes
+		is_good = no
+
+		days_mission_timeout = 150
+
+		cancel_if_not_visible = yes
+
+		activation = {
+			has_country_flag = Military_Revolution_Governments_China_War_Starts
+		}
+
+		visible = {
+			original_tag = KOR
+			has_country_flag = Military_Revolution_Governments_China_War_Starts
+		}
+
+		complete_effect = {
+		}
+	}
+
+	KOR_capture_Tianjin_mission = {
+		icon = GFX_decision_generic_operation
+
+		available = {
+			controls_province = 10068
+		}
+
+		fire_only_once = yes
+		is_good = no
+
+		days_mission_timeout = 150
+
+		cancel_if_not_visible = yes
+
+		activation = {
+			has_country_flag = Military_Revolution_Governments_China_War_Starts
+		}
+
+		visible = {
+			original_tag = KOR
+			has_country_flag = Military_Revolution_Governments_China_War_Starts
+		}
+
+		complete_effect = {
+		}
+	}
+
+	KOR_capture_Taiyuan_mission = {
+		icon = GFX_decision_generic_operation
+
+		available = {
+			controls_province = 12344
+		}
+
+		fire_only_once = yes
+		is_good = no
+
+		days_mission_timeout = 150
+
+		cancel_if_not_visible = yes
+
+		activation = {
+			has_country_flag = Military_Revolution_Governments_China_War_Starts
+		}
+
+		visible = {
+			original_tag = KOR
+			has_country_flag = Military_Revolution_Governments_China_War_Starts
+		}
+
+		complete_effect = {
+		}
+	}
+
+	KOR_capture_Xian_mission = {
+		icon = GFX_decision_generic_operation
+
+		available = {
+			controls_province = 12156
+		}
+
+		fire_only_once = yes
+		is_good = no
+
+		days_mission_timeout = 150
+
+		cancel_if_not_visible = yes
+
+		activation = {
+			has_country_flag = Military_Revolution_Governments_China_War_Starts
+		}
+
+		visible = {
+			original_tag = KOR
+			has_country_flag = Military_Revolution_Governments_China_War_Starts
+		}
+
+		complete_effect = {
+		}
+	}
+
+	KOR_capture_Suzhou_mission = {
+		icon = GFX_decision_generic_operation
+
+		available = {
+			controls_province = 10076
+		}
+
+		fire_only_once = yes
+		is_good = no
+
+		days_mission_timeout = 150
+
+		cancel_if_not_visible = yes
+
+		activation = {
+			has_country_flag = Military_Revolution_Governments_China_War_Starts
+		}
+
+		visible = {
+			original_tag = KOR
+			has_country_flag = Military_Revolution_Governments_China_War_Starts
+		}
+
+		complete_effect = {
+		}
+	}
+
+	KOR_capture_Nanjing_mission = {
+		icon = GFX_decision_generic_civil_support
+
+		available = {
+			controls_province = 11913
+		}
+
+		fire_only_once = yes
+		is_good = no
+
+		days_mission_timeout = 150
+
+		cancel_if_not_visible = yes
+
+		activation = {
+			has_country_flag = Military_Revolution_Governments_China_War_Starts
+		}
+
+		visible = {
+			original_tag = KOR
+			has_country_flag = Military_Revolution_Governments_China_War_Starts
+		}
+
+		complete_effect = {
+		}
+	}
+
+	KOR_capture_Hangzhou_mission = {
+		icon = GFX_decision_generic_operation
+
+		available = {
+			controls_province = 7191
+		}
+
+		fire_only_once = yes
+		is_good = no
+
+		days_mission_timeout = 150
+
+		cancel_if_not_visible = yes
+
+		activation = {
+			has_country_flag = Military_Revolution_Governments_China_War_Starts
+		}
+
+		visible = {
+			original_tag = KOR
+			has_country_flag = Military_Revolution_Governments_China_War_Starts
+		}
+
+		complete_effect = {
+		}
+	}
+
+	KOR_capture_Wuhan_mission = {
+		icon = GFX_decision_generic_operation
+
+		available = {
+			controls_province = 4619
+		}
+
+		fire_only_once = yes
+		is_good = no
+
+		days_mission_timeout = 150
+
+		cancel_if_not_visible = yes
+
+		activation = {
+			has_country_flag = Military_Revolution_Governments_China_War_Starts
+		}
+
+		visible = {
+			original_tag = KOR
+			has_country_flag = Military_Revolution_Governments_China_War_Starts
+		}
+
+		complete_effect = {
+		}
+	}
+
+	KOR_capture_Nanchang_mission = {
+		icon = GFX_decision_generic_operation
+
+		available = {
+			controls_province = 3992
+		}
+
+		fire_only_once = yes
+		is_good = no
+
+		days_mission_timeout = 150
+
+		cancel_if_not_visible = yes
+
+		activation = {
+			has_country_flag = Military_Revolution_Governments_China_War_Starts
+		}
+
+		visible = {
+			original_tag = KOR
+			has_country_flag = Military_Revolution_Governments_China_War_Starts
+		}
+
+		complete_effect = {
+		}
+	}
+
+	KOR_capture_changsa_mission = {
+		icon = GFX_decision_generic_operation
+
+		available = {
+			controls_province = 7097
+		}
+
+		fire_only_once = yes
+		is_good = no
+
+		days_mission_timeout = 150
+
+		cancel_if_not_visible = yes
+
+		activation = {
+			has_country_flag = Military_Revolution_Governments_China_War_Starts
+		}
+
+		visible = {
+			original_tag = KOR
+			has_country_flag = Military_Revolution_Governments_China_War_Starts
+		}
+
+		complete_effect = {
+		}
+	}
+
+	KOR_capture_Guangzhou_mission = {
+		icon = GFX_decision_generic_operation
+
+		available = {
+			controls_province = 1047
+		}
+
+		fire_only_once = yes
+		is_good = no
+
+		days_mission_timeout = 150
+
+		cancel_if_not_visible = yes
+
+		activation = {
+			has_country_flag = Military_Revolution_Governments_China_War_Starts
+		}
+
+		visible = {
+			original_tag = KOR
+			has_country_flag = Military_Revolution_Governments_China_War_Starts
+		}
+
+		complete_effect = {
+		}
+	}
+
+	KOR_capture_Nanning_mission = {
+		icon = GFX_decision_generic_operation
+
+		available = {
+			controls_province = 7137
+		}
+
+		fire_only_once = yes
+		is_good = no
+
+		days_mission_timeout = 150
+
+		cancel_if_not_visible = yes
+
+		activation = {
+			has_country_flag = Military_Revolution_Governments_China_War_Starts
+		}
+
+		visible = {
+			original_tag = KOR
+			has_country_flag = Military_Revolution_Governments_China_War_Starts
+		}
+
+		complete_effect = {
+		}
+	}
+
+}
 KOR_rural_relief_category = {
 	KOR_self_sufficiency_tick = {
 		allowed = {

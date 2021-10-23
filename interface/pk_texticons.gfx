@@ -261,4 +261,10 @@ spriteTypes = {
 		texturefile = "gfx/texticons/dollar_sign.dds"
 		legacy_lazy_load = no
 	}
+
+	spriteType = {
+		name = "GFX_decision_cat_completion_continental_revolutionary_war_decisions"
+		texturefile = "gfx/texticons/decision_cat_completion_continental_revolutionary_war_decisions.dds"
+		legacy_lazy_load = no
+	}
 }

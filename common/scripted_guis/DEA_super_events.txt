@@ -5,12 +5,22 @@ scripted_gui = {
 		context_type = player_context
 
 		visible = {
-			has_global_flag = big_event_assassination_Jae_pil
+			OR = {
+				has_global_flag = big_event_assassination_Jae_pil
+				has_global_flag = big_event_rhee_syng_man_president
+				has_global_flag = big_event_explosion_three_way_talks
+			}
 		}
 		
 		triggers = {
 			superevent_assassination_Jae_pil_visible = {
 				has_global_flag = big_event_assassination_Jae_pil
+			}
+			superevent_big_event_rhee_syng_man_president_visible = {
+				has_global_flag = big_event_rhee_syng_man_president
+			}
+			superevent_big_event_explosion_three_way_talks_visible = {
+				has_global_flag = big_event_explosion_three_way_talks
 			}
 		}
 		
@@ -28,6 +38,18 @@ scripted_gui = {
 						has_global_flag = big_event_assassination_Jae_pil
 					}
 					clr_global_flag = big_event_assassination_Jae_pil
+				}
+				if = {
+					limit = {
+						has_global_flag = big_event_rhee_syng_man_president
+					}
+					clr_global_flag = big_event_rhee_syng_man_president
+				}
+				if = {
+					limit = {
+						has_global_flag = big_event_explosion_three_way_talks
+					}
+					clr_global_flag = big_event_explosion_three_way_talks
 				}
 			}
 		}

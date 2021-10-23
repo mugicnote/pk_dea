@@ -49,7 +49,87 @@ ideas = {
 	country = {
 		###모드###
 		###광동 정부###
-		
+		CHI_crowded_right_wing = {
+			
+            picture = CHI_
+
+			allowed = {
+		        original_tag = CHI
+	        }
+
+			modifier = {
+            stability_factor = -0.15
+            war_support_factor = 0.1
+			subjects_autonomy_gain = -0.1
+			national_conservatism_drift = -0.01
+		    }
+        }
+
+		CHI_split_joint_venture = {
+			
+            picture = CHI_
+
+			allowed = {
+		        original_tag = CHI
+	        }
+
+			modifier = {
+				stability_factor = -0.15
+				political_power_factor = -0.1
+				political_advisor_cost_factor = 0.1
+				social_democracy_acceptance = -25
+				communism_acceptance = -50
+		    }
+        }
+
+		CHI_Unstable_Light = {
+			
+            picture = CHI_
+
+			allowed = {
+		        original_tag = CHI
+	        }
+
+			modifier = {
+				stability_factor = -0.05
+				consumer_goods_factor = 0.1
+				custom_modifier_tooltip = CHI_Unstable_Light_tt
+		    }
+        }
+
+		CHI_National_Revolution_stake = {
+			
+            picture = CHI_progress_amry_1
+
+			allowed = {
+		        original_tag = CHI
+	        }
+
+			modifier = {
+				army_org_factor = -0.1
+				army_morale_factor = -0.15
+				conscription_factor = -0.15
+				army_attack_factor = -0.1
+				army_defence_factor = -0.05
+		    }
+        }
+
+		CHI_last_bastion_national_revolution = {
+			
+            picture = CHI_national_revolutionary_army
+
+			allowed = {
+		        original_tag = CHI
+	        }
+
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = 0.15
+				surrender_limit = 0.1
+				drift_defence_factor = 0.5
+		    }
+        }
+
 		###바닐라###
 		german_advisors = {
 		

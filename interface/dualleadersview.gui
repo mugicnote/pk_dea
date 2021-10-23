@@ -5,7 +5,7 @@ guiTypes = {
 		
 		iconType = {
 			name = "leader2_poartrait"
-			position = { x = 188 y = 86 }
+			position = { x = 188 y = 88 }
 			spriteType = "GFX_leader_unknown"
 			pdx_tooltip = "DUAL_LEADER_NAME2"
 			pdx_tooltip_delayed = "DUAL_LEADER_DESC2"

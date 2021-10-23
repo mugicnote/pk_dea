@@ -5,14 +5,12 @@ set_technology = {
 	infantry_weapons = 1
 }
 
-if = {
-	limit = {
-		has_dlc = "Waking the Tiger"
-	}
-	add_ideas = {
-		PRC_government_corruption
-		CHI_ineffective_bureaucracy_warlord
-	}
+add_ideas = {
+	YUN_long_yun_shadow
+	YUN_fight_with_zhi_gong
+	YUN_old_army
+	YUN_opium_problem
+	YUN_to_many_tax
 }
 
 set_politics = {

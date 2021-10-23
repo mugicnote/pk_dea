@@ -241,8 +241,8 @@ SIK = {
 	color_ui = rgb { 222 247 198 }
 }
 TIB = {
-	color = rgb { 80 115 45}
-	color_ui = rgb { 222 247 198 }
+	color = rgb { 133  168  213 } 
+	color_ui = rgb { 133  168  213 } 
 }
 URG = {
 	color = rgb { 171 190 152 }
@@ -262,7 +262,7 @@ USA = {
 }
 MON = {
 	#color = HSV { 0.1 0.15 0.4 }
-	color = rgb { 154 16 30 }
+	color = rgb { 108 140 42 }
 	color_ui = rgb { 209 247 133 }
 }
 MEN = {

@@ -2,10 +2,8 @@
 #내각 시스템
  government1:0 "정치"
  government2:0 "정치"
- research_production1:0 "설계 및 연구"
- research_production2:0 "설계 및 연구"
- chief:0 "참모총장 및 참모차장, 총참모장"
- high_commands:0 "군 고위 지휘관"
+ research_production:0 "연구 업체"
+ chief:0 "군 참모"
  cabinet:0 "내각"
  cabinet2:0 "내각"
 
@@ -26,6 +24,7 @@
 
  idea_Lee_Soon_yong:0 "이순용"
  idea_Ho_Jong:0 "허정"
+ idea_Ho_Jong_2:0 "허정"
  idea_Shin_Sung_mo:0 "신성모"
  idea_Jo_Man_sik:0 "조만식"
  idea_Lee_In:0 "이인"
@@ -88,7 +87,7 @@ DUAL_LEADER_NAME2:0 "§Y[This.DUAL_NAME]§!\n[This.DUAL_TRAIT]"
 DUAL_LEADER_DESC2:0 "[This.DUAL_DESC]"
 KOREA_DUAL_NAME:0 "§Y김규식§!"
 KOREA_DUAL_TRAIT:0 "§Y국무총리§!\n§Y우익 3영수§!\n - 안정도: §G+5.00%§!"
-KOREA_DUAL_DESC:0 "§Y출생:§! 1881년 2월 28일, 경상남도 동래군\n\n§Y경력과 직책:§! 대한민국 초대 국무총리(1919~)\n\n§Y일생:§! 한국의 초대 국무총리이자, 제1공화국의 행정과 제도의 기틀을 마련했다고 할수 있는 김규식은 제1공화국의 수많은 일들을 처리하면서도 매우 냉소적인지라 공식석상에 잘 나타나지 않는 공화국의 그림자를 자처한 사람입니다.\n\n다섯 살이 되던 해, 아버지가 유배를 당하고 홀로남은 어머니마저 여의게된 김규식은 그랜트 언더우드 목사 보호 아래 유년 시절을 보냈습니다. 시간이 흘러, 언더우드 학당을 무사히 마친 김규식은 1894년 한성 관립영어학교에 입학하여 영어를 배웠습니다.\n\n1896년부터 그는 미국에 8년간 유학생활을 하며 영문학 박사학위를 취득했고, 1910년에는 일본어를 한 마디조차 할 줄 상황에서도 뛰어난 영어 실력을 바탕으로 도쿄외국어대학 영어교수로 영입되어 한국이 패망한 후 서재필의 권유로 귀국하는 1919년까지 일본에서 교수로 지냈습니다.\n\n이후 귀국한 김규식은 서재필과 민주국민당을 창당했고, 대한민국 초대 국무총리로 임명되었습니다. 그러나 서재필 정부는 서서히 권위적으로 변해가며 잘못된 길을 걷고 있고, 이를 깨닫기 까지는 시간이 얼마 남지 않았습니다."
+KOREA_DUAL_DESC:0 "§Y출생:§! §L1881년 2월 28일, 경상남도 동래군§!\n\n§Y경력과 직책:§! §L대한민국 초대 국무총리(1919~)§!\n\n§Y일생:§! §L한국의 초대 국무총리이자, 제1공화국의 행정과 제도의 기틀을 마련했다고 할수 있는 김규식은 제1공화국의 수많은 일들을 처리하면서도 매우 냉소적인지라 공식석상에 잘 나타나지 않는 공화국의 그림자를 자처한 사람입니다.\n\n다섯 살이 되던 해, 아버지가 유배를 당하고 홀로남은 어머니마저 여의게된 김규식은 그랜트 언더우드 목사 보호 아래 유년 시절을 보냈습니다. 시간이 흘러, 언더우드 학당을 무사히 마친 김규식은 1894년 한성 관립영어학교에 입학하여 영어를 배웠습니다.\n\n1896년부터 그는 미국에 8년간 유학생활을 하며 영문학 박사학위를 취득했고, 1910년에는 일본어를 한 마디조차 할 줄 상황에서도 뛰어난 영어 실력을 바탕으로 도쿄외국어대학 영어교수로 영입되어 한국이 패망한 후 서재필의 권유로 귀국하는 1919년까지 일본에서 교수로 지냈습니다.\n\n이후 귀국한 김규식은 서재필과 민주국민당을 창당했고, 대한민국 초대 국무총리로 임명되었습니다. 그러나 서재필 정부는 서서히 권위적으로 변해가며 잘못된 길을 걷고 있고, 이를 깨닫기 까지는 시간이 얼마 남지 않았습니다.§!"
 
 POLITICS_JAE_PIL_DESC:0 "§Y출생:§! 1864년 1월 7일, 전라남도 보성군 문덕면 용암리\n\n§Y경력과 직책:§! 대한민국 1~3대 대통령(1919~)\n\n§Y일생:§! 한국의 초대 대통령이자, 건국의 아버지인 서재필은 남들과는 조금 다른 독특한 행정 방식의 소유자입니다. 하지만 아무도 그의 방식에 의문을 제기하지 않습니다. 적어도 지금까지는 말입니다.\n\n그는 학창시절 전강에서 1위를 하며 성균관에 입학했고, 성균관이 대학이 된 지금 성균관 대학의 명예 학위를 보유하고 있습니다.\n\n조선에 개화의 바람이 불던 1884년, 그는 미국을 관찰하고 오라는 고종의 명에 의해 영어 한마디 조차 못하는 상황에서 샌프란시스코를 방문했고, 그곳에서 민주주의라는 사상에 빠져들게 되었습니다. 그러나 당시 조선에서 민주주의를 시행한다는 것은 시기상조였기에 적당한 시기가 오기 전까지 그는 민주주의에 대해 일체의 발언도 하지 않았습니다.\n\n시간이 흘러 1919년, 드디어 그에게 기회가 찾아왔습니다. 대한제국이 1차 세계대전에서 항복함에 따라 미국이 한반도에 미군정을 설치하고 미합중국 대통령 우드로 윌슨의 ‘민족자결주의’에 의거하여 한국에 민주 정부를 수립하기로 결정하였던 것이었습니다. 서재필은 이 기회를 놓치지 않았습니다.\n\n이후 그는 본격적으로 김규식과 같은 인사들을 자신의 편으로 합류시키며 미군정을 설득, 초대 대통령으로 당선되었고 지금까지도 대통령직을 유지하고 있습니다. 허나, 대한민국에는 서서히 어둠이 다가오고 있습니다."
 
@@ -107,6 +106,17 @@ POSITION_main_opposition_party_leader:0 "제1 야당 지도자"
 
 general_outline:0 "국무위원 개요"
 jae_pil_front:0 "제1공화국 국무위원 개요"
+KOR_FdS2_front_name:0 "대한민국 국가요인 개요"
+
+KOR_FdS_front_mini_name:0 "입법"
+KOR_FdS_front_mini_name2:0 "행정"
+KOR_FdS_front_mini_name3:0 "사법"
+
+KOR_FdS3_front_name:0 "대한민국 참모본부 개요"
+
+KOR_FdS3_front_mini_name:0 "육군"
+KOR_FdS3_front_mini_name2:0 "해군"
+KOR_FdS3_front_mini_name3:0 "공군"
 
 POSITION_main_opposition_party_leader2:0 "대공처장"
 POSITION_main_opposition_party_leader3:0 "국방부장관"
@@ -125,6 +135,8 @@ POSITION_main_opposition_party_leader15:0 "외무부장관"
 POSITION_main_opposition_party_leader16:0 "상공부장관"
 POSITION_main_opposition_party_leader17:0 "노동부장관"
 POSITION_main_opposition_party_leader18:0 "법무부장관"
+POSITION_main_opposition_party_leader19:0 "해군참모총장"
+POSITION_main_opposition_party_leader20:0 "공군참모총장"
 
 Jang_TaekSang:0 "장택상"
 Shin_Sung_mo:0 "신성모"
@@ -133,7 +145,7 @@ Kang_In_taek:0 "강인택"
 Kim_Kyusik:0 "김규식"
 Chough_Pyung_ok:0 "조병옥"
 Ahn_Chang_Ho:0 "안창호"
-jae_pil:0 "서재필"
+Seo_jae_pil:0 "서재필"
 Kim_Byung_ro:0 "김병로"
 Lee_Beomseok:0 "이범석"
 Lee_Soon_yong:0 "이순용"
@@ -144,6 +156,7 @@ Ho_Jong:0 "허정"
 Yoon_Bo_Sun:0 "윤보선"
 Pak_Honyong:0 "박헌영"
 Lee_In:0 "이인"
+Choi_Yong_duk:0 "최용덕"
 no_fd2:0 "폐지됨"
 no_fds:0 "공직"
 
@@ -204,8 +217,13 @@ KOR_DUAL_NAME_kim_kyu_sik_acting_president:0 "이순용"
 
 KOR_DUAL_NAME_korea_kim_kyu_sik_president_lee_beom_seok:0 "대한민국 정부"
 
+KOR_FIRST_TITLE_rafs_take_power:0 "지도부"
+KOR_SECOND_TITLE_rafs_take_power:0 "지도부 위원장"
+KOR_DUAL_NAME_rafs_take_power:0 "유동열"
 
 KOR_DUAL_NAME_An_Jae_hong_prime_minister:0 "안재홍"
+
+KOR_DUAL_NAME_Kim_Seong_su_prime_minister:0 "김성수"
 
 KOR_COM_FIRST_TITLE:0 "위원장"
 

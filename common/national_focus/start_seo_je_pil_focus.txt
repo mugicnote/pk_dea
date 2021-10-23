@@ -11,6 +11,7 @@ focus_tree = {
 	default = no
 
 	continuous_focus_position = { x = 20 y = 1600 }
+	shared_focus = KOR_Treasury_Report_36
 
 	focus = {
 		id = Seo_Jae_pil_administration
@@ -129,7 +130,11 @@ focus_tree = {
 		relative_position_id = situation_we_are_in
 
 		completion_reward = {
-			
+			country_event = {
+				id = KOR.19
+				days = 1
+			}
+			custom_effect_tooltip = Korea_China_Japan_trilateral_meeting_tt
 		}
 		x = 1
 		y = 1

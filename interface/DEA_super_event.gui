@@ -20,6 +20,16 @@ guiTypes = {
 			spriteType = "GFX_superevent_assassination_Jae_pil"
 			position = {x = 0 y = 0}
 		}
+		iconType = {
+			name = "superevent_big_event_rhee_syng_man_president"
+			spriteType = "GFX_superevent_big_event_rhee_syng_man_president"
+			position = {x = 0 y = 0}
+		}
+		iconType = {
+			name = "superevent_big_event_explosion_three_way_talks"
+			spriteType = "GFX_superevent_big_event_explosion_three_way_talks"
+			position = {x = 0 y = 0}
+		}
 		
 		#############
 		##INTERFACE##

@@ -5,8 +5,8 @@ state={
 		1990 4496 10371 
 	}
 	history={
-		owner = UAC
-		add_core_of = UAC
+		owner = SIA
+		add_core_of = SIA
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1

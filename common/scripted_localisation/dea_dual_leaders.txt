@@ -33,6 +33,14 @@ defined_text = {
 	text = {
 		trigger = {
 			tag = KOR
+			has_government = auto_despotism
+			has_country_flag = korea_rafs_take_power
+		}
+		localization_key = KOR_FIRST_TITLE_rafs_take_power
+	}
+	text = {
+		trigger = {
+			tag = KOR
 			has_government = communism
 		}
 		localization_key = KOR_COM_FIRST_TITLE
@@ -99,6 +107,14 @@ defined_text = {
 	}
 	text = {
 		trigger = {
+			tag = KOR
+			has_government = auto_despotism
+			has_country_flag = korea_rafs_take_power
+		}
+		localization_key = KOR_SECOND_TITLE_rafs_take_power
+	}
+	text = {
+		trigger = {
 			tag = JAP
 			has_government = democratic
 		}
@@ -128,6 +144,7 @@ defined_text = {
 			has_government = democratic
 			NOT = { has_country_flag = korea_kim_kyu_sik_acting_president }
 			NOT = { has_country_flag = korea_kim_kyu_sik_president_lee_beom_seok }
+			NOT = { has_country_flag = korea_rhee_syng_man_president }
 		}
 		localization_key = KOR_DUAL_NAME
 	}
@@ -154,6 +171,22 @@ defined_text = {
 			has_country_flag = korea_lyuh_woon_hyung_president
 		}
 		localization_key = KOR_DUAL_NAME_An_Jae_hong_prime_minister
+	}
+	text = {
+		trigger = {
+			tag = KOR
+			has_government = auto_despotism
+			has_country_flag = korea_rafs_take_power
+		}
+		localization_key = KOR_DUAL_NAME_rafs_take_power
+	}
+	text = {
+		trigger = {
+			tag = KOR
+			has_government = democratic
+			has_country_flag = korea_rhee_syng_man_president
+		}
+		localization_key = KOR_DUAL_NAME_Kim_Seong_su_prime_minister
 	}
 	text = {
 		trigger = {
@@ -186,6 +219,7 @@ defined_text = {
 			has_government = democratic
 			NOT = { has_country_flag = korea_kim_kyu_sik_acting_president }
 			NOT = { has_country_flag = korea_kim_kyu_sik_president_lee_beom_seok }
+			NOT = { has_country_flag = korea_rhee_syng_man_president }
 		}
 		localization_key = GFX_Portrait_Kim_Kyusik
 	}
@@ -212,6 +246,22 @@ defined_text = {
 			has_country_flag = korea_lyuh_woon_hyung_president
 		}
 		localization_key = GFX_Portrait_Ahn_Jaehong
+	}
+	text = {
+		trigger = {
+			tag = KOR
+			has_government = auto_despotism
+			has_country_flag = korea_rafs_take_power
+		}
+		localization_key = GFX_Portrait_Ryu_Dongyeol
+	}
+	text = {
+		trigger = {
+			tag = KOR
+			has_government = democratic
+			has_country_flag = korea_rhee_syng_man_president
+		}
+		localization_key = GFX_Portrait_Kim_Seongsu
 	}
 	text = {
 		trigger = {

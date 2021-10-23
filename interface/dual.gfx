@@ -51,8 +51,8 @@ spriteTypes = {
 		texturefile = "gfx/leaders/KOR/Portrait_Ahn_Chang_Ho.dds"
 	}
 	spriteType = {
-		name = "GFX_jae_pil"
-		texturefile = "gfx/interface/jae_pil.dds"
+		name = "GFX_Portrait_Seo_jae_pil"
+		texturefile = "gfx/leaders/KOR/Portrait_Seo_jae_pil.dds"
 	}
 	spriteType = {
 		name = "GFX_Portrait_Kim_Byung_ro"
@@ -110,6 +110,26 @@ spriteTypes = {
 		name = "GFX_krGov"
 		texturefile = "gfx/leaders/KOR/krGov.dds"
 	}
+	spriteType = {
+		name = "GFX_Portrait_Ryu_Dongyeol"
+		texturefile = "gfx/leaders/KOR/Portrait_Ryu_Dongyeol.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Kim_Seongsu"
+		texturefile = "gfx/leaders/KOR/Portrait_Kim_Seongsu.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Kim_Byung_ro"
+		texturefile = "gfx/leaders/KOR/Portrait_Kim_Byung_ro.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Sohn_Won_yil"
+		texturefile = "gfx/leaders/KOR/Portrait_Sohn_Won_yil.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Choi_Yong_duk"
+		texturefile = "gfx/leaders/KOR/Portrait_Choi_Yong_duk.dds"
+	}
 
 	#일본
 	spriteType = {
@@ -165,7 +185,11 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_Portrait_CHI_Li_Zongren"
-		texturefile = "gfx/leaders/CHI/GFX_Portrait_CHI_Li_Zongren.dds"
+		texturefile = "gfx/leaders/CHI/Portrait_CHI_Li_Zongren.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_CHI_Li_Jishen"
+		texturefile = "gfx/leaders/CHI/Portrait_CHI_Li_Jishen.dds"
 	}
 
 	spriteType = {
