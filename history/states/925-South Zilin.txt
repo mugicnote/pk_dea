@@ -1,0 +1,15 @@
+state={
+	id=925
+	name="STATE_925"
+	history={
+		owner = MAN
+		add_core_of = KOR
+		add_core_of = CHI
+		add_core_of = MAN
+	}
+	provinces={
+		887 927 946 1567 3913 3929 3932 3947 6947 7591 7663 9866 9883 9913 9928 11850 11862 11864 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,16 @@
+state={
+	id=882
+	name="STATE_882"
+
+	history={
+		owner = ZHI
+		add_core_of = ZHI
+
+	}
+	
+	provinces={
+		4041 5030 7948 10304 10757 12414 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

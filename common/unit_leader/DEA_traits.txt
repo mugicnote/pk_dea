@@ -75,4 +75,14 @@ leader_traits = {
 		}
 	}
 
+	airforce_background = { 
+		type = land
+		trait_type = personality_trait
+		
+		modifier = {
+			air_air_superiority_attack_factor = 0.05
+		}
+		enable_ability = air_barrage	
+	}
+
 }

@@ -1,0 +1,36 @@
+characters={
+	JAP_Machida_Chuji={
+		name=JAP_Machida_Chuji
+		portraits={
+			civilian={
+				large="gfx/leaders/JAP/JAP_Machida_Chuji.dds"
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			traits={
+				jap_wonderful_banker
+				pro_american
+			}
+			expire="2000.1.1.1"
+			id=-1
+		}
+	}
+
+	UPN_G_Macarthur={
+		name=UPN_G_Macarthur
+		portraits={
+			civilian={
+				large="gfx/leaders/UPN/Portrait_USA_G_Macarthur.dds"
+			}
+		}
+		country_leader={
+			ideology=military_dic
+			traits={
+			}
+			expire="2000.1.1.1"
+			id=-1
+		}
+	}
+
+}

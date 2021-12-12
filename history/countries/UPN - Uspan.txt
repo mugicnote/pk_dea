@@ -98,6 +98,8 @@ USA = {
 add_ideas = {
 }
 
+recruit_character = UPN_G_Macarthur
+
 #시작_정당
 set_politics = {
     ruling_party = neutrality
@@ -108,26 +110,4 @@ set_politics = {
 #시작시_정당들의_인기도
 set_popularities = {
   neutrality = 100
-}
-
-#정당별_리더
-create_country_leader = {
-  name = "더글러스 맥아더"
-  desc = "POLITICS_AHN_JAE_HONG_DESC"
-  picture = "Portrait_USA_G_Macarthur.dds"
-  expire = "1947.7.19"
-  ideology = liberalism
-  traits = {
-    #
-  }
-}
-create_country_leader = {
-  name = "더글러스 맥아더"
-  desc = "POLITICS_LEE_BEOM_DESC"
-  picture = "Portrait_USA_G_Macarthur.dds"
-  expire = "1947.7.19"
-  ideology = oligarchism
-  traits = {
-    #
-  }
 }

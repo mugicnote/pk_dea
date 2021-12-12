@@ -1,0 +1,18 @@
+characters={
+	ICU_Eugene_Robin={
+		name=ICU_Eugene_Robin
+		portraits={
+			civilian={
+				large="gfx/leaders/ICU/Portrait_ICU_Eugene_Robin.dds"
+			}
+		}
+		country_leader={
+			ideology=colonial_gov
+			traits={
+			}
+			expire="2000.1.1.1"
+			id=-1
+		}
+	}
+
+}

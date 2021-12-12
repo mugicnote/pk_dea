@@ -9,6 +9,8 @@ set_technology = {
 set_stability = 0.8
 set_war_support = 0.6
 
+recruit_character = NAN_Sun_Chuanfang
+
 set_popularities = {
 	neutrality = 100
 }
@@ -17,15 +19,4 @@ set_politics = {
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
-}
-
-create_country_leader = {
-	name = "쑨촨팡"
-	desc = "."
-	picture = "Portrait_Sun_Chuanfang.dds"
-	expire = "1965.1.1"
-	ideology = warloadism
-	traits = {
-	    #
-	}
 }

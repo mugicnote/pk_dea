@@ -1,139 +1,147 @@
 on_actions = {
 	on_startup = {
 		effect = {
-	every_country = {
-		limit = { is_ai = no }
-		set_variable = { TNO_Opening_Screen = 1 }
-	}
-	KOR = {
-		parliament_gui_initial = yes
-		JAP_diet_arrays_initialization = yes
-		country_event = { 
-			id = KOR.86
-			days = 5
-		}
-		country_event = { id = CULTURE.1 }
-		if = {
-			limit = { has_country_flag = Seung_man_Ele }
-			country_event = { 
-				id = KOR.82
-				days = 1800
+			every_country = {
+				limit = { is_ai = no }
+				set_variable = { TNO_Opening_Screen = 1 }
 			}
-		}
-		if = {
-			limit = { has_country_flag = forth_election }
-			set_cosmetic_tag = korea_is_second
-		}
-		if = {
-			limit = { has_country_flag = fifth_election }
-			set_cosmetic_tag = KOR_THIRD
-		}
-		set_country_flag = KOR_northern_bandits
-		set_country_flag = KOR_eastern_bandits
-		set_country_flag = KOR_western_bandits
-
-		set_country_flag = Syngman_Rhee2
-
-		set_country_flag = Jang_TaekSang
-		set_country_flag = Shin_Sung_mo
-		set_country_flag = Kang_In_taek
-		set_country_flag = Kim_Kyusik
-		set_country_flag = Chough_Pyung_ok
-		set_country_flag = Ahn_Chang_Ho
-		set_country_flag = Seo_jae_pil
-		set_country_flag = Kim_Byung_ro
-		set_country_flag = Lee_Beomseok
-		set_country_flag = Lee_Soon_yong
-		set_country_flag = Kim_Hyun_cheol
-		set_country_flag = Kim_Beop_rin
-		set_country_flag = jo_man_sik
-		set_country_flag = Ho_Jong
-		set_country_flag = Yoon_Bo_Sun
-		set_country_flag = Pak_Honyong
-		set_country_flag = Lee_In
-		set_country_flag = Pak_Honyong
-		set_country_flag = Sohn_Won_yil
-		set_country_flag = Choi_Yong_duk
-
-		set_country_flag = rural_relief_level_is_1
-
-		add_ideas = idea_Lee_Soon_yong
-		add_ideas = idea_Ho_Jong
-		add_ideas = idea_Shin_Sung_mo
-		add_ideas = idea_Jo_Man_sik
-		add_ideas = idea_Lee_In
-		add_ideas = idea_Kim_Beop_rin
-		add_ideas = idea_Yoon_Bo_Sun
-		
-		country_lock_all_division_template = yes
-		create_intelligence_agency = yes
-
-		set_division_template_lock = {
-			division_template = "청년단 산악병"
-			is_locked = yes
-		}
-		set_division_template_lock = {
-			division_template = "청년단 기계화보병"
-			is_locked = yes
-		}
-		every_owned_state = {
-			limit = {
-				check_variable = { var = KOR_garrison_control value = 0 compare = equals }
-					OR = {
-						state = 797
-						state = 798
-						state = 799
-						state = 527
-						state = 525
-						state = 800
-						state = 801
-						state = 802
-						state = 803
-						state = 804
-						state = 805
-						state = 806
-						state = 807
-						state = 808
-						state = 809
+			KOR = {
+				parliament_gui_initial = yes
+				JAP_diet_arrays_initialization = yes
+				country_event = { 
+					id = KOR.54
+					days = 5
+				}
+				country_event = { id = CULTURE.1 }
+				if = {
+					limit = { has_country_flag = Seung_man_Ele }
+					country_event = { 
+						id = KOR.82
+						days = 1800
 					}
 				}
-			add_to_variable = { var = KOR_garrison_control value = 1 }
-			KOR_garrison_control_cost_calculation = yes
-		}
-		set_variable = {
-			KORCenterPower = 54
-		}
-		set_variable = {
-			KORRightPower = 62
-		}
-		set_variable = {
-			KORLeftPower = 58
-		}
-		set_variable = {
-			KORPakhonyongInfluence = 62
-		}
-		set_variable = {
-			KORKimwonbongInfluence = 48
-		}
-		set_variable = {
-			KORKimilsungInfluence = 32
-		}
-		set_variable = {
-			KORLyuhwoonhyungInfluence = 71
-		}
-		set_variable = {
-			KORAnjaehongInfluence = 46
-		}
-		set_variable = {
-			KORSongjinwooInfluence = 52
-		}
-		set_variable = {
-			CURRENT_MILITARY_BAR = 245
-		}
-		set_variable = {
-			CURRENT_MILITARY_PROGRESS = 50
-		}
+				if = {
+					limit = { has_country_flag = forth_election }
+					set_cosmetic_tag = korea_is_second
+				}
+				if = {
+					limit = { has_country_flag = fifth_election }
+					set_cosmetic_tag = KOR_THIRD
+				}
+				set_country_flag = KOR_northern_bandits
+				set_country_flag = KOR_eastern_bandits
+				set_country_flag = KOR_western_bandits
+
+				set_country_flag = Syngman_Rhee2
+
+				set_country_flag = Jang_TaekSang
+				set_country_flag = Shin_Sung_mo
+				set_country_flag = Kang_In_taek
+				set_country_flag = Kim_Kyusik
+				set_country_flag = Chough_Pyung_ok
+				set_country_flag = Ahn_Chang_Ho
+				set_country_flag = Seo_jae_pil
+				set_country_flag = Kim_Byung_ro
+				set_country_flag = Lee_Beomseok
+				set_country_flag = Lee_Soon_yong
+				set_country_flag = Kim_Hyun_cheol
+				set_country_flag = Kim_Beop_rin
+				set_country_flag = jo_man_sik
+				set_country_flag = Ho_Jong
+				set_country_flag = Yoon_Bo_Sun
+				set_country_flag = Pak_Honyong
+				set_country_flag = Lee_In
+				set_country_flag = Pak_Honyong
+				set_country_flag = Sohn_Won_yil
+				set_country_flag = Choi_Yong_duk
+
+				set_country_flag = rural_relief_level_is_1
+		
+				country_lock_all_division_template = yes
+				create_intelligence_agency = yes
+
+				set_division_template_lock = {
+					division_template = "청년단 산악병"
+					is_locked = yes
+				}
+				set_division_template_lock = {
+					division_template = "청년단 기계화보병"
+					is_locked = yes
+				}
+				every_owned_state = {
+					limit = {
+						check_variable = { var = KOR_garrison_control value = 0 compare = equals }
+						OR = {
+							state = 797
+							state = 798
+							state = 799
+							state = 527
+							state = 525
+							state = 800
+							state = 801
+							state = 802
+							state = 803
+							state = 804
+							state = 805
+							state = 806
+							state = 807
+							state = 808
+							state = 809
+						}
+					}
+					add_to_variable = { var = KOR_garrison_control value = 1 }
+					KOR_garrison_control_cost_calculation = yes
+				}
+				set_variable = {
+					KORCenterPower = 54
+				}
+				set_variable = {
+					KORRightPower = 62
+				}
+				set_variable = {
+					KORLeftPower = 58
+				}
+				set_variable = {
+					KORPakhonyongInfluence = 62
+				}
+				set_variable = {
+					KORKimwonbongInfluence = 48
+				}
+				set_variable = {
+					KORKimilsungInfluence = 32
+				}
+				set_variable = {
+					KORLyuhwoonhyungInfluence = 71
+				}
+				set_variable = {
+					KORAnjaehongInfluence = 46
+				}
+				set_variable = {
+					KORSongjinwooInfluence = 52
+				}
+				set_variable = {
+					CURRENT_MILITARY_BAR = 245
+				}
+				set_variable = {
+					CURRENT_MILITARY_PROGRESS = 50
+				}
+			}
 		}
 	}
-}
+	#on_state_control_changed = {
+		#effect = {
+			#if = {
+				#limit = {
+					#608 = { is_controlled_by = KOR }
+					#608 = { is_owned_by = CHI }
+					#tag = KOR
+					#KOR = { has_war_with = CHI }
+					#divisions_in_state = { state = 608 size > 0 }
+				#}
+				#KOR = {
+					#news_event = { days = 1 id = worldnews.1303 }
+				#}
+			#}
+		#}
+	#}
 }

@@ -13,6 +13,8 @@ add_ideas = {
 	YUN_to_many_tax
 }
 
+recruit_character = YUN_tang_ji_ao
+
 set_politics = {
 	ruling_party = national_conservatism
 	last_election = "1936.1.1"
@@ -25,26 +27,4 @@ set_popularities = {
 	national_conservatism = 69
 	liberal_conservatism = 19
 	social_liberalism = 5
-}
-
-create_country_leader = {
-	name = "탕지야오"
-	desc = "POLITICS_LONG_YUN_DESC"
-	picture = "tang_jiao.dds"
-	expire = "1965.1.1"
-	ideology = samgyun
-	traits = {
-		#
-	}
-}
-
-create_corps_commander = {
-	name = "Lu Han"
-	portrait_path = "gfx/leaders/Asia/Portrait_Asia_Generic_land_3.dds"
-	traits = { }
-	skill = 3
-	attack_skill = 4
-	defense_skill = 2
-	planning_skill = 1
-	logistics_skill = 3
 }

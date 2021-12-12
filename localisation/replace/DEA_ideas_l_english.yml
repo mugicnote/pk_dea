@@ -12,9 +12,23 @@ KOR_incompetent_goverment:0 "무능한 정부"
 KOR_incompetent_goverment_desc:0 "영국이나 미국과 같이 민주적인 정부를 가진 나라와 지위를 나란히 하겠다고 한 정부의 구상과는 달리 설립된 지 15년을 겨우 넘은 한국의 정부는 현재 그 존망이 위협받고 있으며, 한때 민주공화국의 아버지로 추앙받았던 서재필 대통령은 의회에서 불안정한 행정적 방식을 고수하는 사람으로 낙인찍혀 수많은 비난을 받고 있습니다."
 KOR_Divided_military:0 "분열된 군부"
 KOR_Divided_military_desc:0 "무능한 정부의 추태와 붕괴한 치안이 군대에까지 그 영향을 미치게 하는 것은 시간의 문제였습니다. 제정에서 민정으로 급격히 바뀐 체제와 막대한 국채에서 비롯된 무리한 국방 예산 삭감은 많은 군인이 자신들의 존속 여부에 대한 의문을 품게 했습니다. 또한 불확실한 정보통에 따르면 몇몇 부대가 주둔지를 일시적으로 이탈하는 등의 수상쩍은 움직임을 보인다는 모양입니다."
+KOR_Chang_Taek_Sang:0 "장택상"
+KOR_Chang_Taek_Sang2:0 "장택상"
+KOR_Chang_Taek_Sang3:0 "장택상"
+KOR_Chang_Taek_Sang4:0 "장택상"
 
 social_repression:0 "사회 탄압"
 social_repression_2:0 "국민 탄압의 후유증"
+
+###서재필 정부 중점###
+KOR_idea_policy_encouraging_universities:0 "대학 장려 정책"
+KOR_idea_call_assistance_United_States:0 "적당한 대미 원조"
+KOR_idea_Introduction_Korean_style_job_security_measures:0 "한국식 일자리 안정책"
+
+###서재필 정부 이벤트###
+KOR_incompetent_goverment2:0 "야당 의원 총연행"
+KOR_incompetent_goverment3:0 "계엄령 선포"
+KOR_Demonstration_university_district:0 "대학가 시위"
 
 ###쿠데타###
 KOR_idea_Way_of_Military_Revolution:0 "혁명 준비"
@@ -132,13 +146,14 @@ YUN_opium_problem:0 "인도-운남 아편문제"
 YUN_to_many_tax:0 "너무 많은 세금"
 
 ###만주 - 변경 예정###
-Yan_Province_government_dream:0 "북양 정부의 꿈"
-Yan_Province_government_dream_tt:0 "§G봉천 군벌은 북양 정부를 반드시 재결성 하겠다는 의지를 가지고 있습니다.§!"
-bandit_influence:0 "폭력적인 마적들"
-MAN_fucking_bandit:0 "§R마적들을 대대적으로 소탕하기 전까지 국력과 국민들이 피해를 볼 것입니다."
-MAN_power_confrontation:0 "권력 대립"
-MAN_power_confrontation_tt:0 "§R장쭤린과 장쉐량의 권력 대립은 봉천 군벌의 정치를 약화시켰습니다.. 한쪽이 포기하지 않는 이상 대립은 멈추지 않을 것입니다.§!"
-MAN_severe_economic_crisis:0 "심각한 경제난"
+MAN_incomplete_national_cooperation:0 "미완의 국공합작"
+MAN_incomplete_national_cooperation_desc:0 "우리가 3차 직봉전쟁에서 지리멸렬한 전황으로 휘청거리던 동안 국민혁명군은 북벌의 실패와 한 차례의 거대한 축출에도 자신들이 건재함을 우리에게 다시금 상기시켰고, 이는 곧 우리에게 분명한 위기로써 다가왔습니다. 이를 타파하기 위해 우리는 청년당과 연대해 새로운 정부인 전민정부를 선포했습니다. 그러나 합작을 이끌었고 구 봉천 군벌의 시작과 끝을 모두 함께하신 장쭤린 대원수가 타국의 민족주의자에게 암살되는 사건이 벌어지고, 구파와 육대파의 지지로 장쉐량 선생이 집권한 만주의 합작은 도로 다섯 계파로 나뉠 위기에 처하고 말았습니다."
+MAN_republics_orthodox_government:0 "민국의 정통정부"
+MAN_republics_orthodox_government_desc:0 "지난 수십 년간의 대륙은 수도 없이 많은 이들에 의해 나뉘어있었습니다. 고관의 자리를 꿰찬 이들을 시작으로 이름조차 생소한 지역의 인물들이 제각각 군사를 일으켜 지역을 차지하는 시대에 각 군벌의 정통성, 나아가 대륙의 정통성은 그들에 의해 병들며 나날이 줄어만 갔습니다.\n\n그리고 지금, 베이징에 민국의 정통정부가 자리잡았습니다. 비록 지난 10년간 민국의 정통정부는 남쪽의 국민정부에 위협받아왔으나 그들이 몰락을 자초하게 되며 우리가 밟아 넘어갈 수 있는 길이 되어주고 있습니다. 국가주의, 삼애주의, 전민혁명! 중화민국 전민정부는 중화의 단결을 향해 나아갈 것입니다."
+MAN_foreign_pressure:0 "외세의 압박"
+MAN_foreign_pressure_desc:0 "우리가 현재 공고히 지배하고 있는 만주 일대가 썩 괜찮은 영토임은 분명한 사실입니다만, 동시에 넓고 여러 국가와 맞닿은 국경으로 만주 인근의 국가가 침략하는 것을 방어하기 힘든 것 또한 분명한 사실입니다. 우리는 이를 대비하기 위해 독자적인 방어 전략을 마련했으나 이러한 전략을 체계화하는 동안 공격 전략에 대한 논의가 현저히 줄어들며 우리의 확장성을 심각하게 감소시켰습니다."
+MAN_sleeping_dragon:0 "잠룡"
+MAN_sleeping_dragon_desc:0 "지금으로부터 한참 이전, 대한제국이 만주를 점령한 뒤 대외 확장 정책을 고수하기 시작한 때를 기점으로 약 30년간 이어진 대한제국의 만주 본국화는 우리 지역에 큰 혼돈을 남겼고, 이는 대한제국의 패전 이후 15년 정도가 지난 지금도 장쭤린 대원수의 암살로 그 존재를 우리에게 과시하고 있습니다.\n\n아이러니하게도 그들이 이 땅에 남긴 산업화한 시설과 공장은 만주를 가장 산업화가 많이 진행된 지역 중 하나로 만들어주었습니다. 우리는 이 산업적 자원을 바탕으로 반드시 대륙 통일을 이룰 것입니다."
 
 ###징병법###
 mobilization_laws_tt:0 "징병 가능 인구: §Y0.50%§!\n매일 정치력 획득: §G+0.25§!\n안정도: §G+10.00%§!\n사단 조직력: §R-20.0%§!\n사단 회복력: §R-20.0%§!\n공장 생산량: §R-15.00%§!\n조선소 생산량: §R-15.00%§!"

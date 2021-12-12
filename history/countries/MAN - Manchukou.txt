@@ -10,11 +10,14 @@ set_technology = {
 
 set_convoys = 5
 add_ideas = {
-	Yan_Province_government_dream
-	bandit_influence
-	MAN_power_confrontation
-	MAN_severe_economic_crisis
+	MAN_incomplete_national_cooperation
+	MAN_republics_orthodox_government
+	MAN_foreign_pressure
+	MAN_sleeping_dragon
 }
+
+recruit_character = MAN_Zhang_Xue_liang
+
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1936.1.1"
@@ -24,73 +27,4 @@ set_politics = {
 
 set_popularities = {
   neutrality = 100
-}
-
-create_country_leader = {
-	name = "장쭤린"
-	desc = ""
-	picture = "Portrait_MAN_Zhang_Zuolin.dds"
-	expire = "1960.1.1"
-	ideology = fascism_ideology
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "장쭤린"
-	desc = ""
-	picture = "Portrait_MAN_Zhang_Zuolin.dds"
-	expire = "1960.1.1"
-	ideology = warloadism
-	traits = {
-		
-	}
-}
-
-create_corps_commander = {
-	name = "Zhang Haipeng"
-	GFX = "GFX_portrait_man_zhang_haipeng"
-	traits = {  }
-	skill = 2
-	
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 1
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Zhang Jinghui"
-	GFX = "GFX_portrait_man_zhang_jinghui"
-	traits = { infantry_officer }
-	skill = 2
-	
-	attack_skill = 2
-	defense_skill = 1
-	planning_skill = 2
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Aisin Gioro Xiqia"
-	GFX = "GFX_portrait_man_aisin_gioro_xiqia"
-	traits = { career_officer }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Yoshiko Kawashima"
-	gfx = "GFX_portrait_man_yoshiko_kawashima"
-	traits = { cavalry_officer }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 2
-	female = yes
 }

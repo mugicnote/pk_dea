@@ -1,17 +1,55 @@
 guiTypes = {
 	containerWindowType = {
+		name = "parliament_button_ui"
+		position = { x = 100 y = 38 }
+		
+		buttonType = {
+			name = "parliament_button"
+			position = { x = 0 y = 0 }
+			spriteType = "GFX_cabinet_button"
+			pdx_tooltip = "parliament_button_tt"
+		}
+		
+		instantTextboxType = { #직책명
+			name = "parliament_button_text"
+			position = { x = -17 y = 8 }
+			font = "hoi_16mbs"
+			text = "국회"
+			maxWidth = 155
+			maxHeight = 20
+			format = center
+			vertical_alignment = center
+			allwaystransparent = yes
+		}
+	}
+
+	containerWindowType = {
         name = "parliament_gui_container"
-        position = { x = 0 y = 0 }
-		size = { width = 400 height = 330 }
+        position = { x = 0 y = 85 }
+		size = { width = 1398 height = 695 }
+		fade_time = 300
+		fade_type = linear
+		moveable = yes
+		click_to_front = yes
+		show_sound = menu_open_window
+
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_tiled_window_1b_no_border"
+		}
 
 		containerWindowType = {
 			name = "parliament_semicircle_main_container"
-			position = { x = 2 y = 15 }
-			size = { width = 490 height = 225 }
+			position = { x = 312 y = 15 }
+			size = { width = 770 height = 625 }
 
-			background = {
-				name = "Background"
-				quadTextureSprite = "GFX_tiled_window_thin_border2"
+			buttonType = {
+				name = "close"
+				spriteType = "GFX_closebutton"
+				position = { x = 690 y = 10 }
+				clicksound = click_close
+				pdx_tooltip = "닫기"
+				shortcut = "ESCAPE"
 			}
 
 			gridboxtype = {
@@ -22,21 +60,189 @@ guiTypes = {
 				max_slots_horizontal = 1
 				add_horizontal = no
 			}
+
+			instantTextboxType = {
+				name = "parliament_member_text"
+				position = { x = 295 y = 25 }
+				font = "aldrich_36_outline"
+				text = "대한민국 국회"
+				maxWidth = 200
+				maxHeight = 16
+				format = center
+				vertical_alignment = center
+			}
+
+			instantTextboxType = {
+				name = "parliament_member_text2"
+				position = { x = 100 y = 55 }
+				font = "aldrich_24_outline"
+				text = "National Assembly of the Republic of Korea"
+				maxWidth = 600
+				maxHeight = 16
+				format = center
+				vertical_alignment = center
+			}
+
+			iconType = {
+				name = "parliament_background"
+				spriteType = "GFX_parliament_background"
+				position = { x = 51 y = 80 }
+				allwaystransparent = yes
+			}
+
+			iconType = {
+				name = "parliament_background_line"
+				spriteType = "GFX_parliament_background_line"
+				position = { x = -261 y = 5 }
+				allwaystransparent = yes
+			}
+
+			instantTextboxType = {
+				name = "parliament_member_text3"
+				position = { x = 45 y = 448 }
+				font = "aldrich_30_outline"
+				text = "정당별 의석수"
+				maxWidth = 200
+				maxHeight = 16
+				format = center
+				vertical_alignment = center
+			}
+
+			instantTextboxType = {
+				name = "parliament_member_text4"
+				position = { x = 220 y = 453 }
+				font = "aldrich_24_outline"
+				text = "다음 선거: 36년 7월 10일"
+				maxWidth = 300
+				maxHeight = 16
+				format = center
+				vertical_alignment = center
+			}
+
+			instantTextboxType = {
+				name = "parliament_member_text5"
+				position = { x = 450 y = 453 }
+				font = "aldrich_24_outline"
+				text = "국회의장: 안창호"
+				maxWidth = 300
+				maxHeight = 16
+				format = center
+				vertical_alignment = center
+			}
+
+			instantTextboxType = {
+				name = "parliament_member_text6"
+				position = { x = 240 y = 383 }
+				font = "aldrich_48_outline"
+				text = "400"
+				maxWidth = 300
+				maxHeight = 16
+				format = center
+				vertical_alignment = center
+			}
+
+			instantTextboxType = {
+				name = "parliament_member_text7"
+				position = { x = 255 y = 490 }
+				font = "aldrich_18_outline"
+				text = "parliament_Background_explanation"
+				maxWidth = 455
+				maxHeight = 135
+				format = left
+				vertical_alignment = left
+				scrollbarType = standardtext_slider
+			}
+
+			instantTextboxType = {
+				name = "parliament_member_text8"
+				position = { x = -205 y = 35 }
+				font = "aldrich_36_outline"
+				text = "국가 법안 심사"
+				maxWidth = 200
+				maxHeight = 16
+				format = center
+				vertical_alignment = center
+			}
+
+			instantTextboxType = {
+				name = "parliament_member_text9"
+				position = { x = 785 y = 35 }
+				font = "aldrich_36_outline"
+				text = "야당 의원 영입"
+				maxWidth = 200
+				maxHeight = 16
+				format = center
+				vertical_alignment = center
+			}
+
+			instantTextboxType = {
+				name = "parliament_Legislative_review_desc"
+				position = { x = -257 y = 80 }
+				font = "aldrich_18_outline"
+				text = "parliament_Legislative_review_desc_explanation"
+				maxWidth = 300
+				format = left
+				alwaystransparent = yes
+			}
+
+			buttonType = {
+				name = "Legislative_review_button"
+				position = { x = -300 y = 390 }
+				spriteType = "GFX_Legislative_review_button"
+				pdx_tooltip = "parliament_button_tt"
+			}
 		}
 
-		gridboxtype = {
-			name = "parliament_member_grid"
-			position = { x = -150 y = 525 }
-			size = { width = 100%% height = 100%% }
-			slotsize = { width = 200 height = 18 }
-			max_slots_vertical = 8
-			add_horizontal = no
+		containerWindowType = {
+			name = "parliament_semicircle_main_container2"
+			position = { x = 360 y = 485 }
+			size = { width = 200 height = 155 }
+			verticalScrollbar = "right_vertical_slider"
+			margin = { top = 14 bottom = 0}
+
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_tiled_focus_bg"
+			}
+	
+			gridboxtype = {
+				name = "parliament_member_grid"
+				position = { x = 310 y = 30 }
+				size = { width = 100%% height = 100%% }
+				slotsize = { width = 200 height = 18 }
+				max_slots_vertical = 10
+				add_horizontal = no
+			}
+		}
+
+		containerWindowType = {
+			name = "parliament_Legislative_review_container"
+			position = { x = 53 y = 454 }
+			size = { width = 310 height = 188 }
+			verticalScrollbar = "right_vertical_slider"
+			margin = { top = 3 bottom = 0}
+	
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_tiled_focus_bg"
+			}
+	
+			buttonType = {
+				name = "parliament_Farmland_Reform_Act"
+				spriteType = "GFX_parliament_Farmland_Reform_Act"
+				position = { x = 1 y = -10 }
+			}
+			buttonType = {
+				name = "Temporary_Measures_Assembly_Act"
+				spriteType = "GFX_Temporary_Measures_Assembly_Act"
+				position = { x = 1 y = 35 }
+			}
 		}
     }
 
 	containerWindowType = {
         name = "parliament_semicircle_main_entry"
-        position = { x = 0 y = 0 }
+        position = { x = 0 y = 50 }
 
 		iconType = {
 			name = "parliament_semicircle_main_icon"
@@ -48,7 +254,7 @@ guiTypes = {
 
 	containerWindowType = {
         name = "parliament_member_entry"
-        position = { x = 0 y = -280 }
+        position = { x = -130 y = -30 }
 		size = { width = 200 height = 18 }
 
 		iconType = {
@@ -56,20 +262,23 @@ guiTypes = {
 			spriteType = "GFX_parliament_party_icon"
 			position = { x = -20 y = 0 }
 		}
-		buttonType = {
-			name = "parliament_modify_button"
-			spriteType = "GFX_parliament_empty_button"
-			position = { x = -20 y = 0 }
-			pdx_tooltip = "parliament_modify_button_tt"
-		}
 		instantTextboxType = {
 			name = "parliament_member_text"
-			position = { x = 0 y = 0 }
+			position = { x = 10 y = 0 }
 			font = "hoi_16mbs"
 			maxWidth = 200
 			maxHeight = 16
 			format = left
 			text = "parliament_member_text"
+		}
+		instantTextboxType = {
+			name = "parliament_member_text2"
+			position = { x = 110 y = 0 }
+			font = "hoi_16mbs"
+			maxWidth = 200
+			maxHeight = 16
+			format = left
+			text = "parliament_member_text2"
 		}
     }
 }

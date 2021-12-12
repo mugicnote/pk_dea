@@ -1,56 +1,64 @@
 spriteTypes = {
 
 	SpriteType = {
-		name = "GFX_CHI_Chenjitang"
-		texturefile = "gfx/interface/goals/CHI_chenjitang.dds"
+		name = "GFX_focus_chi_Meeting_with_Li_Zhong_Ren"
+		texturefile = "gfx/interface/goals/chi/focus_chi_Meeting_with_Li_Zhong_Ren.dds"
 	}
 	SpriteType = {
-		name = "GFX_CHI_Hanfuju"
-		texturefile = "gfx/interface/goals/CHI_hanfuju.dds"
+		name = "GFX_focus_chi_Hu_Hanmin_death"
+		texturefile = "gfx/interface/goals/chi/focus_chi_Hu_Hanmin_death.dds"
 	}
 	SpriteType = {
-		name = "GFX_CHI_Liuwenhui"
-		texturefile = "gfx/interface/goals/CHI_liuwenhui.dds"
+		name = "GFX_focus_chi_Meeting_plan_with_Li_Zhong_Ren"
+		texturefile = "gfx/interface/goals/chi/focus_chi_Meeting_plan_with_Li_Zhong_Ren.dds"
 	}
 	SpriteType = {
-		name = "GFX_CHI_six_fort_plan"
-		texturefile = "gfx/interface/goals/CHI_six_fort_plan.dds"
+		name = "GFX_focus_chi_Declaration_Completion_Legal_Waste_Reform"
+		texturefile = "gfx/interface/goals/chi/focus_chi_Declaration_Completion_Legal_Waste_Reform.dds"
 	}
 	SpriteType = {
-		name = "GFX_CHI_hongkong"
-		texturefile = "gfx/interface/goals/CHI_hongkong.dds"
+		name = "GFX_focus_chi_Heritage_Three_Democracy"
+		texturefile = "gfx/interface/goals/chi/focus_chi_Heritage_Three_Democracy.dds"
 	}
 	SpriteType = {
-		name = "GFX_CHI_tshingtao"
-		texturefile = "gfx/interface/goals/CHI_tshingtao.dds"
+		name = "GFX_focus_chi_Yanggwang_Incident"
+		texturefile = "gfx/interface/goals/chi/focus_chi_Yanggwang_Incident.dds"
 	}
 	SpriteType = {
-		name = "GFX_CHI_fujou"
-		texturefile = "gfx/interface/goals/CHI_fujou.dds"
+		name = "GFX_focus_chi_Nanchang_government_grasp_constant"
+		texturefile = "gfx/interface/goals/chi/focus_chi_Nanchang_government_grasp_constant.dds"
 	}
 	SpriteType = {
-		name = "GFX_CHI_nhingbo"
-		texturefile = "gfx/interface/goals/CHI_nhingbo.dds"
+		name = "GFX_focus_chi_Draft_constitution_Republic_China"
+		texturefile = "gfx/interface/goals/chi/focus_chi_Draft_constitution_Republic_China.dds"
 	}
 	SpriteType = {
-		name = "GFX_CHI_shanghai"
-		texturefile = "gfx/interface/goals/CHI_shanghai.dds"
+		name = "GFX_focus_chi_Maintaining_control_over_Taiwan"
+		texturefile = "gfx/interface/goals/chi/focus_chi_Maintaining_control_over_Taiwan.dds"
 	}
 	SpriteType = {
-		name = "GFX_CHI_shantou"
-		texturefile = "gfx/interface/goals/CHI_shantou.dds"
+		name = "GFX_focus_chi_Statistics_National_Revolution_Army"
+		texturefile = "gfx/interface/goals/chi/focus_chi_Statistics_National_Revolution_Army.dds"
 	}
 	SpriteType = {
-		name = "GFX_CHI_clame_guangzhou"
-		texturefile = "gfx/interface/goals/CHI_clame_guangzhou.dds"
+		name = "GFX_focus_chi_Expanding_diplomatic_relations_between_China_and_Japan"
+		texturefile = "gfx/interface/goals/chi/focus_chi_Expanding_diplomatic_relations_between_China_and_Japan.dds"
 	}
 	SpriteType = {
-		name = "GFX_CHI_clame_makao"
-		texturefile = "gfx/interface/goals/CHI_clame_makao.dds"
+		name = "GFX_focus_chi_Resume_new_life_exercise"
+		texturefile = "gfx/interface/goals/chi/focus_chi_Resume_new_life_exercise.dds"
 	}
 	SpriteType = {
-		name = "GFX_CHI_clame_hongkong"
-		texturefile = "gfx/interface/goals/CHI_clame_hongkong.dds"
+		name = "GFX_focus_chi_Longwins_shadow_support"
+		texturefile = "gfx/interface/goals/chi/focus_chi_Longwins_shadow_support.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_chi_correct_mistake_crisis"
+		texturefile = "gfx/interface/goals/chi/focus_chi_correct_mistake_crisis.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_chi_to_sa_gu_peng"
+		texturefile = "gfx/interface/goals/chi/focus_chi_to_sa_gu_peng.dds"
 	}
 	
 }

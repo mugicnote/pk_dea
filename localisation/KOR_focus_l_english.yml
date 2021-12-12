@@ -43,6 +43,14 @@
  KOR_back_to_back_dictatorship:0 "배후 독재"
  KOR_One_Fuhrer:0 "하나의 총통"
 
+ ###하나의 총통###
+ KOR_Right_wing_militia_united:0 "우익 민병대 통합"
+ KOR_speech_at_the_capitol:0 "의사당에서의 연설"
+ KOR_Oppression_left_wing_militias:0 "좌익 민병대 탄압"
+ KOR_Light_up_blue_darkness:0 "푸른 어둠을 밝혀라"
+ KOR_Burn_red_flag:0 "붉은 깃발을 태워라"
+ KOR_Dawn_when_darkness_is_cleared:0 "어둠이 걷힌 새벽"
+
  ###황실 복권###
  KOR_Imperial_reinstatement:0 "어두운 저녁"
  Lee_Bum_seok_is_death:0 "이범석이 국군유신회 수뇌부의 결정에 의해 암살당했습니다."
@@ -81,6 +89,7 @@
 
  ###전제군주제###
  KOR_Polar_night:0 "극야의 새벽"
+ #새로운 아침, 황제의 귀환, 황제의 연설
 
  ###경제 중점###
  KOR_Treasury_Report_36:0 "36년 재무부 보고서"

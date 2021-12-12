@@ -18,6 +18,8 @@ if = {
 	}
 }
 
+recruit_character = GMS_Ma_Hong_bin
+
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1936.1.1"
@@ -26,31 +28,4 @@ set_politics = {
 }
 set_popularities = {
 	neutrality = 100
-}
-
-create_country_leader = {
-	name = "마훙빈"
-	desc = ""
-	picture = "Portrait_GMS_Ma_Hongbin.tga"
-	expire = "1965.1.1"
-	ideology = warloadism
-	traits = {
-		#
-	}
-}
-
-create_field_marshal = {
-	name = "마훙빈"
-	portrait_path = "Portrait_GMS_Ma_Hongbin.tga"
-	traits = {
-    	brilliant_strategist
-		war_hero
-		old_guard
-	}
-	skill = 3
-	attack_skill = 2
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 2
-}
 }

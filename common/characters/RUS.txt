@@ -1,0 +1,18 @@
+characters={
+	RUS_Aleksandr_Kolchak={
+		name=RUS_Aleksandr_Kolchak
+		portraits={
+			civilian={
+				large="gfx/leaders/RUS/Portrait_Aleksandr_Kolchak.dds"
+			}
+		}
+		country_leader={
+			ideology=military_dic
+			traits={
+			}
+			expire="2000.1.1.1"
+			id=-1
+		}
+	}
+
+}

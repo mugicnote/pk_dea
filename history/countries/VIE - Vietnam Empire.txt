@@ -20,16 +20,16 @@ set_popularities = {
 	despotism = 100
 }
 
-create_country_leader = {
-	name = "Hoang de Bao Dai"
-	desc = ""
-	picture = "Portrait_ICU_Eugene_Robin.dds"
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-		#
-	}
-}
+# create_country_leader = {
+# 	name = "Hoang de Bao Dai"
+# 	desc = ""
+# 	picture = "Portrait_ICU_Eugene_Robin.dds"
+# 	expire = "1965.1.1"
+# 	ideology = despotism
+# 	traits = {
+# 		#
+# 	}
+# }
 
-create_corps_commander = {
-}
+# create_corps_commander = {
+# }

@@ -85,6 +85,8 @@ if = {
 
 set_convoys = 50
 
+recruit_character = RUS_Aleksandr_Kolchak
+
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1933.7.1"
@@ -96,17 +98,6 @@ set_popularities = {
 }
 
 add_ideas = {
-}
-
-create_country_leader = {
-	name = "알렉산드르 콜차크"
-	desc = ""
-	picture = "Portrait_Aleksandr_Kolchak.dds"
-	expire = "1999.1.1"
-	ideology = military_dic
-	traits = {
-		
-	}
 }
 
 if = {

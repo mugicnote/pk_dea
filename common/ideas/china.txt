@@ -130,6 +130,69 @@ ideas = {
 		    }
         }
 
+		###북경전민정부###
+		MAN_incomplete_national_cooperation = { #미완의 국공합작
+            picture = MAN_incomplete_national_cooperation
+            allowed = {
+                original_tag = MAN
+            }
+            modifier = {
+                political_power_factor = -0.15
+                social_democracy_acceptance = 25
+                social_liberalism_acceptance = 25
+                national_liberalism_acceptance = 25
+                democratic_acceptance = 25
+                national_conservatism_acceptance = 25
+            }        
+            
+        }
+        MAN_republics_orthodox_government = { #민국의 정통정부
+            picture = MAN_republics_orthodox_government
+            allowed = {
+                original_tag = MAN
+            }
+            modifier = {
+                stability_factor = 0.1
+                war_support_factor = 0.15
+                surrender_limit = 0.1
+                drift_defence_factor = 0.5
+            }        
+            
+        }
+        MAN_foreign_pressure = { #외세의 압박
+            picture = MAN_foreign_pressure
+            allowed = {
+                original_tag = MAN
+            }
+            modifier = {
+                war_support_factor = 0.15
+                army_core_attack_factor = -0.05
+                army_core_defence_factor = 0.05
+            }        
+            targeted_modifier = {
+                tag = RUS
+                defense_bonus_against = 0.1
+            }
+            targeted_modifier = {
+                tag = KOR
+                defense_bonus_against = 0.1
+            }
+            
+        }
+        MAN_sleeping_dragon = { #잠룡
+            picture = MAN_sleeping_dragon
+            allowed = {
+                original_tag = MAN
+            }
+            modifier = {
+                consumer_goods_factor = -0.05
+                production_speed_buildings_factor = 0.05
+                production_speed_industrial_complex_factor = 0.1
+                production_speed_infrastructure_factor = 0.15
+                
+            }        
+        }
+
 		###바닐라###
 		german_advisors = {
 		

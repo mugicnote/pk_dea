@@ -1,0 +1,933 @@
+characters={
+	KOR_Seo_jae_pil={
+		name=KOR_Seo_jae_pil
+		portraits={
+			civilian={
+				large="gfx/leaders/KOR/Portrait_Seo_jae_pil.dds"
+			}
+		}
+		country_leader={
+			ideology=Seo_Jae_Pil_conservatism
+			traits={
+				President
+				Father_Democratic_Republic
+			}
+			expire="1951.1.5.1"
+			id=-1
+		}
+	}
+
+	KOR_pak_hon_yong={
+		name=KOR_pak_hon_yong
+		portraits={
+			civilian={
+				large="gfx/leaders/KOR/Portrait_Pak_Honyong.dds"
+			}
+		}
+		country_leader={
+			ideology=leninism
+			traits={
+				#traits_Kim_Il1
+				#traits_Kim_Il2
+				#traits_Kim_Il3
+			}
+			expire="2000.1.1.1"
+			id=-1
+		}
+	}
+
+	KOR_Kim_Tu_bong={
+		name=KOR_Kim_Tu_bong
+		portraits={
+			civilian={
+				large="gfx/leaders/KOR/Portrait_Kim_Tu_bong.dds"
+			}
+		}
+		country_leader={
+			ideology=auth_socialism
+			traits={
+				
+			}
+			expire="2000.1.1.1"
+			id=-1
+		}
+	}
+
+	KOR_Kim_Won_bong={
+		name=KOR_Kim_Won_bong
+		portraits={
+			civilian={
+				large="gfx/leaders/KOR/Portrait_Kim_Wonbong.dds"
+			}
+		}
+		country_leader={
+			ideology=rad_socialism
+			traits={
+				
+			}
+			expire="2000.1.1.1"
+			id=-1
+		}
+
+		corps_commander={
+			traits={
+				commando
+				trickster
+				ranger
+			}
+			skill=4
+			attack_skill=5
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=0
+		}
+	}
+
+	KOR_Lyuh_Woon_hyung={
+		name=KOR_Lyuh_Woon_hyung
+		portraits={
+			civilian={
+				large="gfx/leaders/KOR/Portrait_Lyuh_Woonhyung.dds"
+			}
+		}
+		country_leader={
+			ideology=socialism
+			traits={
+				#traits_Yeo_Un2
+			}
+			expire="2000.1.1.1"
+			id=-1
+		}
+	}
+
+	KOR_Chang_Myon={
+		name=KOR_Chang_Myon
+		portraits={
+			civilian={
+				large="gfx/leaders/KOR/Portrait_Chang_Myon.dds"
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			traits={
+				
+			}
+			expire="2000.1.1.1"
+			id=-1
+		}
+	}
+
+	KOR_Ahn_Jae_hong={
+		name=KOR_Ahn_Jae_hong
+		portraits={
+			civilian={
+				large="gfx/leaders/KOR/Portrait_Ahn_Jaehong.dds"
+			}
+		}
+		country_leader={
+			ideology=nat_liberal
+			traits={
+				
+			}
+			expire="2000.1.1.1"
+			id=-1
+		}
+	}
+
+	KOR_kim_sung_soo={
+		name=KOR_kim_sung_soo
+		portraits={
+			civilian={
+				large="gfx/leaders/KOR/Portrait_kim_sungsoo.dds"
+			}
+		}
+		country_leader={
+			ideology=lib_conservatism
+			traits={
+				
+			}
+			expire="2000.1.1.1"
+			id=-1
+		}
+	}
+
+	KOR_Kim_Koo={
+		name=KOR_Kim_Koo
+		portraits={
+			civilian={
+				large="gfx/leaders/KOR/Portrait_Kim_Koo.dds"
+			}
+		}
+		country_leader={
+			ideology=korean_nationalism
+			traits={
+				#traits_kim_ku
+			}
+			expire="2000.1.1.1"
+			id=-1
+		}
+	}
+
+	KOR_ji_chong_chen={
+		name=KOR_ji_chong_chen
+		portraits={
+			civilian={
+				large="gfx/leaders/KOR/Portrait_ji_chong_chen.dds"
+			}
+			army={
+				large="gfx/leaders/KOR/Portrait_ji_chong_chen.dds"
+			}
+		}
+		country_leader={
+			ideology=military_dic
+			traits={
+				
+			}
+			expire="2000.1.1.1"
+			id=-1
+		}
+
+		corps_commander={
+			traits={
+				infantry_leader
+				defensive_doctrine
+				inflexible_strategist
+				trait_engineer
+			}
+			skill=5
+			attack_skill=3
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=3
+			legacy_id=0
+		}
+	}
+
+	KOR_rafs={
+		name=KOR_rafs
+		portraits={
+			civilian={
+				large="gfx/leaders/KOR/Portrait_rafs.dds"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={
+				
+			}
+			expire="2000.1.1.1"
+			id=-1
+		}
+	}
+
+	KOR_Lee_Beom_seok={
+		name=KOR_Lee_Beom_seok
+		portraits={
+			civilian={
+				large="gfx/leaders/KOR/Portrait_Lee_Beomseok.dds"
+			}
+			army={
+				large="gfx/leaders/KOR/Portrait_Lee_Beomseok.dds"
+			}
+		}
+		country_leader={
+			ideology=lee_fascism
+			traits={
+				#great_war_hero
+			}
+			expire="2000.1.1.1"
+			id=-1
+		}
+
+		corps_commander={
+			traits={
+				infantry_expert
+				offensive_doctrine
+				brilliant_strategist
+				panzer_leader
+			}
+			skill=5
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=3005
+		}
+	}
+
+	KOR_Hong_Bum_do={
+		name=KOR_Hong_Bum_do
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_Hong_Bum_do.dds"
+			}
+		}
+
+		field_marshal={
+			traits={
+				war_hero
+				old_guard
+				commando
+				trait_mountaineer
+				inspirational_leader
+			}
+			skill=5
+			attack_skill=5
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=0
+		}
+	}
+
+	KOR_an_jung_geun={
+		name=KOR_an_jung_geun
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_an_junggeun.dds"
+			}
+		}
+
+		field_marshal={
+			traits={
+				war_hero
+				inflexible_strategist
+				unyielding_defender
+				inspirational_leader
+			}
+			skill=4
+			attack_skill=3
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=3
+			legacy_id=0
+		}
+	}
+
+	KOR_Kim_Chwa_chin={
+		name=KOR_Kim_Chwa_chin
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_Kim_Chwa-chin.dds"
+			}
+		}
+
+		field_marshal={
+			traits={
+				war_hero
+				brilliant_strategist
+				offensive_doctrine
+				aggressive_assaulter
+			}
+			skill=4
+			attack_skill=2
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=0
+		}
+	}
+
+	KOR_Shin_Sung_mo={
+		name=KOR_Shin_Sung_mo
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_Shin_Sung_mo.dds"
+			}
+		}
+
+		field_marshal={
+			traits={
+				#MNDK - 국방부 장관
+				defensive_doctrine
+			}
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+
+	KOR_Kim_Hong_Il={
+		name=KOR_Kim_Hong_Il
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_Kim_Hong_Il.dds"
+			}
+		}
+
+		corps_commander={
+			traits={
+				skilled_staffer
+				trickster
+				urban_assault_specialist
+			}
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=3
+			legacy_id=0
+		}
+	}
+
+	KOR_Kim_Kyung_cheon={
+		name=KOR_Kim_Kyung_cheon
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_Kim_Kyung-cheon.dds"
+			}
+		}
+
+		corps_commander={
+			traits={
+				brilliant_strategist
+				infantry_leader
+				ambusher
+			}
+			skill=4
+			attack_skill=3
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=4
+			legacy_id=0
+		}
+	}
+
+	KOR_Ryu_Dong_yeol={
+		name=KOR_Ryu_Dong_yeol
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_Ryu_Dongyeol.dds"
+			}
+		}
+
+		corps_commander={
+			traits={
+				trait_cautious
+				cavalry_officer
+			}
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=0
+		}
+	}
+
+	KOR_Hong_Sa_ik={
+		name=KOR_Hong_Sa_ik
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_Hong_Sa-ik.dds"
+			}
+		}
+
+		corps_commander={
+			traits={
+				organizer
+				brilliant_strategist
+			}
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+
+	KOR_Hwang_Hak_Su={
+		name=KOR_Hwang_Hak_Su
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_Hwang_Hak_Su.dds" #추가 필요
+			}
+		}
+
+		corps_commander={
+			traits={
+				cavalry_officer
+			}
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+
+	KOR_Kim_Hak_kyu={
+		name=KOR_Kim_Hak_kyu
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_Kim_Hak_kyu.dds"
+			}
+		}
+
+		corps_commander={
+			traits={
+				commando
+				paratrooper
+			}
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+
+	KOR_Kim_Suk_Won={
+		name=KOR_Kim_Suk_Won
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_Kim_Suk_Won.dds"
+			}
+		}
+
+		corps_commander={
+			traits={
+				infantry_officer
+			}
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	KOR_Yoo_jin_dong={
+		name=KOR_Yoo_jin_dong
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_Yoo_jin_dong.dds" #추가 필요
+			}
+		}
+
+		corps_commander={
+			traits={
+				organizer
+			}
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+
+	KOR_song_ho_seong={
+		name=KOR_song_ho_seong
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_song_hoseong.dds"
+			}
+		}
+
+		corps_commander={
+			traits={
+				trickster
+			}
+			skill=2
+			attack_skill=1
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	KOR_park_keong_chor={
+		name=KOR_park_keong_chor
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_park_keong_chor.dds" #추가 필요
+			}
+		}
+
+		corps_commander={
+			traits={
+				winter_expert
+			}
+			skill=2
+			attack_skill=3
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+
+	KOR_Han_Hun={
+		name=KOR_Han_Hun
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_Han_Hun.dds" #추가 필요
+			}
+		}
+
+		corps_commander={
+			traits={
+				trait_mountaineer
+			}
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+
+	KOR_Choi_Yong_duk={
+		name=KOR_Choi_Yong_duk
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_Choi_Yong_duk.dds"
+			}
+		}
+
+		corps_commander={
+			traits={
+				airforce_background
+			}
+			skill=1
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	KOR_Jang_Duk_chang={
+		name=KOR_Jang_Duk_chang
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_Jang_Duk_chang.dds" #추가 필요
+			}
+		}
+
+		corps_commander={
+			traits={
+				airforce_background
+			}
+			skill=1
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	KOR_Ryu_ja_myeong={
+		name=KOR_Ryu_ja_myeong
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_Ryu_ja_myeong.dds"
+			}
+		}
+
+		corps_commander={
+			traits={
+				trait_cautious
+				guerilla_fighter
+				trait_mountaineer
+			}
+			skill=4
+			attack_skill=3
+			defense_skill=5
+			planning_skill=4
+			logistics_skill=3
+			legacy_id=0
+		}
+	}
+
+	KOR_Kwon_Jun={
+		name=KOR_Kwon_Jun
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_Kwon_Jun.dds" #추가 필요
+			}
+		}
+
+		corps_commander={
+			traits={
+				infantry_leader
+				infantry_expert
+			}
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	KOR_Kim_Sang_ok={
+		name=KOR_Kim_Sang_ok
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_Kim_Sang_ok.dds" #추가 필요
+			}
+		}
+
+		corps_commander={
+			traits={
+				commando
+				skirmisher
+			}
+			skill=3
+			attack_skill=3
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+
+	KOR_Kim_Ji_Sub={
+		name=KOR_Kim_Ji_Sub
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_Kim_Ji_Sub.dds" #추가 필요
+			}
+		}
+
+		corps_commander={
+			traits={
+				trickster
+				expert_improviser
+			}
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	KOR_Kim_Ik_Sang={
+		name=KOR_Kim_Ik_Sang
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_Kim_Ik_Sang.dds" #추가 필요
+			}
+		}
+
+		corps_commander={
+			traits={
+				brilliant_strategist
+			}
+			skill=1
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	KOR_Yun_Se_ju={
+		name=KOR_Yun_Se_ju
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_Yoon_Se_joo.dds"
+			}
+		}
+
+		corps_commander={
+			traits={
+				
+			}
+			skill=1
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	KOR_Kim_Si_Hyeon={
+		name=KOR_Kim_Si_Hyeon
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_Kim_Si_Hyeon.dds" #추가 필요
+			}
+		}
+
+		corps_commander={
+			traits={
+				
+			}
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+
+	KOR_Kim_chek={
+		name=KOR_Kim_chek
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_Kim_chek.dds" #추가 필요
+			}
+		}
+
+		corps_commander={
+			traits={
+				naval_invader
+				commando
+			}
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+
+	KOR_Park_Il_wu={
+		name=KOR_Park_Il_wu
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_Park_Il_wu.dds" #추가 필요
+			}
+		}
+
+		corps_commander={
+			traits={
+				trait_cautious
+				inflexible_strategist
+			}
+			skill=3
+			attack_skill=2
+			defense_skill=4
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	KOR_Kim_Mu_geong={
+		name=KOR_Kim_Mu_geong
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_Kim_Mu_geong.dds" #추가 필요
+			}
+		}
+
+		corps_commander={
+			traits={
+				
+			}
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	KOR_Choi_Yong_Gun={
+		name=KOR_Choi_Yong_Gun
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_Choi_Yong_Gun.dds" #추가 필요
+			}
+		}
+
+		corps_commander={
+			traits={
+				career_officer
+			}
+			skill=1
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+	
+	KOR_Lee_Gwan_Sool={
+		name=KOR_Lee_Gwan_Sool
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_Lee_Gwan_Sool.dds" #추가 필요
+			}
+		}
+
+		corps_commander={
+			traits={
+				
+			}
+			skill=1
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	KOR_Nam_Il={
+		name=KOR_Nam_Il
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_Nam_Il.dds" #추가 필요
+			}
+		}
+
+		corps_commander={
+			traits={
+				
+			}
+			skill=1
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	KOR_Son_Won_il={
+		name=KOR_Son_Won_il
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Portrait_admiral_son_wonil.dds"
+			}
+		}
+
+		navy_leader={
+			traits={}
+			skill=5
+			attack_skill=4
+			defense_skill=4
+			maneuvering_skill=3
+			coordination_skill=4
+			legacy_id=0
+		}
+	}
+
+}

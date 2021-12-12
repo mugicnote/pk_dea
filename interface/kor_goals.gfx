@@ -114,6 +114,31 @@ spriteTypes = {
 		name = "GFX_focus_Constitution_Reconstruction_Committee"
 		texturefile = "gfx/interface/goals/focus_Constitution_Reconstruction_Committee.dds"
 	}
+	#하나의 총통
+	SpriteType = {
+		name = "GFX_focus_kor_Right_wing_militia_united"
+		texturefile = "gfx/interface/goals/focus_kor_Right_wing_militia_united.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_kor_speech_at_the_capitol"
+		texturefile = "gfx/interface/goals/focus_kor_speech_at_the_capitol.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_kor_Oppression_left_wing_militias"
+		texturefile = "gfx/interface/goals/focus_kor_Oppression_left_wing_militias.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_kor_Light_up_blue_darkness"
+		texturefile = "gfx/interface/goals/focus_kor_Light_up_blue_darkness.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_kor_Burn_red_flag"
+		texturefile = "gfx/interface/goals/focus_kor_Burn_red_flag.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_kor_Dawn_when_darkness_is_cleared"
+		texturefile = "gfx/interface/goals/focus_kor_Dawn_when_darkness_is_cleared.dds"
+	}
 	#황실 복권
 	SpriteType = {
 		name = "GFX_focus_korean_empire"

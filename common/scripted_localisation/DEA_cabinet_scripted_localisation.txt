@@ -823,7 +823,7 @@ defined_text = {
 }
 
 ############################################
-# 체신부장관
+# 정보부/체신부장관
 ############################################
 defined_text = {
 	name = FdS_rank10
@@ -831,8 +831,16 @@ defined_text = {
 	text = {
 		trigger = {
 			tag = KOR
+			NOT = { has_country_flag = kor_10_is_Intelligence }
 		}
 		localization_key = POSITION_main_opposition_party_leader4
+	}
+	text = {
+		trigger = {
+			tag = KOR
+			has_country_flag = kor_10_is_Intelligence
+		}
+		localization_key = POSITION_main_opposition_party_leader4_2
 	}
 }
 
@@ -842,8 +850,16 @@ defined_text = {
 	text = {
 		trigger = {
 			tag = KOR
+			NOT = { has_country_flag = kor_10_is_Intelligence }
 		}
 		localization_key = POSITION_main_opposition_party_leader4
+	}
+	text = {
+		trigger = {
+			tag = KOR
+			has_country_flag = kor_10_is_Intelligence
+		}
+		localization_key = POSITION_main_opposition_party_leader4_2
 	}
 }
 
@@ -856,6 +872,12 @@ defined_text = {
 		}
 		localization_key = Kang_In_taek
 	}
+	text = {
+		trigger = {
+			has_country_flag = kor_10_is_Intelligence
+		}
+		localization_key = Chang_Taek_Sang
+	}
 }
 defined_text = {
 	name = leader_two_portrait10
@@ -866,6 +888,12 @@ defined_text = {
 		}
 		localization_key = GFX_Portrait_Kang_In_taek
 	}
+	text = {
+		trigger = {
+			has_country_flag = kor_10_is_Intelligence
+		}
+		localization_key = GFX_Portrait_Chang_Taek_Sang
+	}
 }
 defined_text = {
 	name = HoG10_desc
@@ -875,6 +903,12 @@ defined_text = {
 			has_country_flag = Kang_In_taek
 		}
 		localization_key = Kang_In_taek_desc
+	}
+	text = {
+		trigger = { 
+			has_country_flag = kor_10_is_Intelligence
+		}
+		localization_key = Chang_Taek_Sang_desc
 	}
 }
 

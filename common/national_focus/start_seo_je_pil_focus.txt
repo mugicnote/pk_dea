@@ -20,6 +20,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 100
+			add_stability = 0.05
 		}
 		x = 7
 		y = 0
@@ -36,7 +37,10 @@ focus_tree = {
 		relative_position_id = Seo_Jae_pil_administration
 
 		completion_reward = {
-			
+			add_timed_idea = {
+				idea = KOR_idea_policy_encouraging_universities
+				days = 365
+			}
 		}
 		x = -2
 		y = 1
@@ -53,7 +57,10 @@ focus_tree = {
 		relative_position_id = Seo_Jae_pil_administration
 
 		completion_reward = {
-			
+			add_timed_idea = {
+				idea = KOR_idea_call_assistance_United_States
+				days = 180
+			}
 		}
 		x = 0
 		y = 1
@@ -70,7 +77,17 @@ focus_tree = {
 		relative_position_id = Seo_Jae_pil_administration
 
 		completion_reward = {
-			
+			add_equipment_to_stockpile = {
+				type = convoy
+				amount = 20
+			}
+			815 = {
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 		x = 2
 		y = 1
@@ -90,7 +107,10 @@ focus_tree = {
 		relative_position_id = policy_encouraging_universities
 
 		completion_reward = {
-			
+			modify_timed_idea = {
+				idea = KOR_idea_policy_encouraging_universities
+				days = 180
+			}
 		}
 		x = 1
 		y = 1
@@ -110,7 +130,14 @@ focus_tree = {
 		relative_position_id = call_assistance_United_States
 
 		completion_reward = {
-			
+			modify_timed_idea = {
+				idea = KOR_idea_call_assistance_United_States
+				days = 180
+			}
+			swap_ideas = {
+				remove_idea = KOR_idea_call_assistance_United_States
+				add_idea = KOR_idea_Introduction_Korean_style_job_security_measures
+			}
 		}
 		x = 1
 		y = 1
@@ -153,7 +180,8 @@ focus_tree = {
 		relative_position_id = Korea_China_Japan_trilateral_meeting
 
 		completion_reward = {
-			
+			add_political_power = 125
+			add_stability = -0.05
 		}
 		x = 0
 		y = 1

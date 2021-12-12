@@ -1,0 +1,19 @@
+state={
+	id=866
+	name="STATE_866"
+	provinces={
+		4198 
+	}
+	
+	history={
+		owner = UPN
+		add_core_of = JAP
+		add_core_of = UPN
+		buildings = {
+		}
+
+	}
+
+	manpower=0
+	buildings_max_level_factor=1.000
+}

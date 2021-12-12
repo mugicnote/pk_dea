@@ -1,0 +1,37 @@
+state = {
+	id = 838
+	name = "STATE_838" #평안남도
+	manpower = 2870000
+
+	state_category = large_town
+	
+	history = {
+		owner = KOR
+		add_core_of = KOR
+		
+		buildings = {
+			industrial_complex = 2
+			air_base = 2
+			arms_factory = 2
+			dockyard = 1
+			infrastructure = 8
+			4052 = {
+				naval_base = 2
+			}
+		}
+		victory_points = {
+			13241 40 #평양(헤이죠)
+		}
+		victory_points = {
+			4052 10 #남포(진난포)
+		}
+	}
+
+	resources = {
+		
+	}
+
+	provinces = {
+		978 3912 4052 7171 9790 11770 13241
+	}	
+}

@@ -1,0 +1,16 @@
+state={
+	id=918
+	name="STATE_918"
+
+	history={
+		add_core_of = VIN
+		owner = ICU
+
+	}
+	
+	provinces={
+		1396 4401 7238 7347 10261 12232 13302 13306 13308 13310 13311 13313 13316 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

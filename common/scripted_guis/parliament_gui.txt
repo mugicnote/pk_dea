@@ -1,7 +1,71 @@
 scripted_gui = {
+
+	parliament_button = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "parliament_button_ui"
+		
+		ai_check = { always = no }
+		visible = {
+			tag = KOR
+		}
+		
+		triggers = {
+			parliament_button_click_enabled = {
+				NOT = { has_country_flag = show_parliament_button }
+			}
+		}
+
+		effects = { 
+			parliament_button_click = {
+				set_country_flag = show_parliament_button
+				reload_parliament_gui = yes
+			} 
+		}
+	}
+
 	parliament_gui = {
-		context_type = decision_category
+		context_type = player_context
+		context_type = politics_tab
 		window_name = "parliament_gui_container"
+		
+		ai_check = {
+			always = no
+		}
+		
+		visible = {
+			has_country_flag = show_parliament_button
+		}
+
+		triggers = {
+			parliament_Farmland_Reform_Act_visible = {
+				NOT = { has_country_flag = parliament_Farmland_Reform_Act_end }
+			}
+		}
+		
+		effects = {
+			close_click = {
+				clr_country_flag = show_parliament_button
+			}
+			parliament_Farmland_Reform_Act_click = {
+				set_country_flag = show_parliament_Farmland_Reform_Act
+				clr_country_flag = show_Temporary_Measures_Assembly_Act
+			}
+			Temporary_Measures_Assembly_Act_click = {
+				set_country_flag = show_Temporary_Measures_Assembly_Act
+				clr_country_flag = show_parliament_Farmland_Reform_Act
+			}
+			Legislative_review_button_click = {
+				if = {
+					limit = { has_country_flag = show_parliament_Farmland_Reform_Act }
+					set_country_flag = parliament_Farmland_Reform_Act_end
+				}
+				else_if = {
+					limit = { has_country_flag = show_Temporary_Measures_Assembly_Act }
+					set_country_flag = parliament_Temporary_Measures_Assembly_Act_end
+				}
+			}
+		}
 
 		dynamic_lists = {
 			parliament_semicircle_main_grid = {
@@ -15,19 +79,6 @@ scripted_gui = {
 				index = parliament_member_index
 				change_scope = no
 				entry_container = parliament_member_entry
-			}
-		}
-
-		effects = {
-			parliament_modify_button_control_click = {
-				set_temp_variable = { temp_member = v }
-				set_temp_variable = { temp_seats = 5 }
-				modify_parliament_seat = yes
-			}
-			parliament_modify_button_shift_click = {
-				set_temp_variable = { temp_member = v }
-				set_temp_variable = { temp_seats = -5 }
-				modify_parliament_seat = yes
 			}
 		}
 

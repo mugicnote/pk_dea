@@ -27,7 +27,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/Portrait_Kim_Koo.dds"
 	}
 	spriteType = {
-		name = "GFX_Portrait_Jang_TaekSang"
+		name = "GFX_Portrait_Chang_Taek_Sang"
 		texturefile = "gfx/leaders/KOR/Portrait_Chang_Taek_sang_2.dds"
 	}
 	spriteType = {

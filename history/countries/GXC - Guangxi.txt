@@ -22,6 +22,8 @@ if = {
 
 set_convoys = 5
 
+recruit_character = GXC_Li_Zong_ren
+
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1936.1.1"
@@ -30,27 +32,4 @@ set_politics = {
 }
 set_popularities = {
 	neutrality = 100
-}
-
-create_country_leader = {
-	name = "리쭝런"
-	desc = "POLITICS_LI_ZONGREN_DESC"
-	picture = "Portrait_Guanxi_Clique_Li_Zongren.dds"
-	expire = "1965.1.1"
-	ideology = warloadism
-	traits = {
-		#
-	}
-}
-
-create_corps_commander = {
-	name = "리쭝런"
-	desc = "GENERAL_LI_ZONGREN_DESC"
-	picture = "Portrait_Guanxi_Clique_Li_Zongren.dds"
-	traits = { }
-	skill = 3
-	attack_skill = 2
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 2
 }

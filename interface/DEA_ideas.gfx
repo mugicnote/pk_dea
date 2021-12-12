@@ -79,14 +79,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/advisor_Ahn_Chang_Ho.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_advisor_Yoon_Bo_Sun"
-		texturefile = "gfx/interface/ideas/advisor_Yoon_Bo_Sun.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_advisor_Shin_Sung_mo"
-		texturefile = "gfx/interface/ideas/advisor_Shin_Sung_mo.dds"
-	}
-	spriteType = {
 		name = "GFX_idea_advisor_Chough_Pyung_ok"
 		texturefile = "gfx/interface/ideas/advisor_Chough_Pyung_ok.dds"
 	}
@@ -145,6 +137,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/advisor_Ho_Jong.dds"
 	}
 	spriteType = {
+		name = "GFX_idea_advisor_Shin_Sung_mo"
+		texturefile = "gfx/interface/ideas/advisor_Shin_Sung_mo.dds"
+	}
+	spriteType = {
 		name = "GFX_idea_advisor_Jo_Man_sik"
 		texturefile = "gfx/interface/ideas/advisor_Jo_Man_sik.dds"
 	}
@@ -152,6 +148,23 @@ spriteTypes = {
 		name = "GFX_idea_advisor_Lee_In"
 		texturefile = "gfx/interface/ideas/advisor_Lee_In.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_advisor_Kim_Beop_rin"
+		texturefile = "gfx/interface/ideas/advisor_Kim_Beop_rin.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_advisor_Yoon_Bo_Sun"
+		texturefile = "gfx/interface/ideas/advisor_Yoon_Bo_Sun.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_advisor_Kang_In_taek"
+		texturefile = "gfx/interface/ideas/advisor_Kang_In_taek.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_advisor_Chang_Taek_Sang"
+		texturefile = "gfx/interface/ideas/advisor_Chang_Taek_Sang.dds"
+	}
+
 
 	spriteType = {
 		name = "GFX_idea_illiteracy"

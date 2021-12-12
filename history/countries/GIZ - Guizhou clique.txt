@@ -8,6 +8,9 @@ set_technology = {
 	mass_assault = 1
 }
 
+
+recruit_character = GIZ_He_Ying_qin
+
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1936.1.1"
@@ -16,61 +19,4 @@ set_politics = {
 }
 set_popularities = {
 	neutrality = 100
-}
-
-create_country_leader = {
-	name = "허잉친"
-	desc = ""
-	picture = "..dds"
-	expire = "1965.1.1"
-	ideology = warloadism
-	traits = {
-		#
-	}
-}
-
-create_field_marshal = {
-	name = "마훙쿠이"
-	portrait_path = "Portrait_NXM_Ma_Hongkui.dds"
-	traits = {
-    	brilliant_strategist
-		war_hero
-		old_guard
-	}
-	skill = 3
-	attack_skill = 2
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Ma Biao"
-	desc = "POLITICS_NXM_MA_BIAO_ARMY_DESC"
-	picture = "Portrait_NXM_Ma_Biao.tga"
-	traits = {
-		urban_assault_specialist
-		politically_connected
-	}
-	id = 2206
-	skill = 3
-	attack_skill = 2
-	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 3
-}
-
-create_corps_commander = {
-	name = "Ma Dunjing"
-	desc = "POLITICS_NXM_MA_DUNJING_ARMY_DESC"
-	picture = "Portrait_NXM_Ma_Dunjing.tga"
-	traits = {
-		urban_assault_specialist
-		politically_connected
-	}
-	skill = 1
-	attack_skill = 2
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
 }

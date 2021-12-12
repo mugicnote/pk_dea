@@ -1,3225 +1,3225 @@
-parliament_gui_decision_category = {
+# parliament_gui_decision_category = {
 
-	#소규모 지지도 확보
-	KOR_small_securement_of_support = {
-		icon = generic_political_discourse
-		available = {
-			check_variable = { parliament_seat_array^temp_array^v < parliament_main_array^num }
-			not = {
-				has_decision = KOR_medium_securement_of_support
-			}
-			OR = {
-				political_power_daily > 0.3
-				has_political_power > 10
-			}
-		}
-		cost = 0
-		ai_will_do = {
-			factor = 10
-		}
-		modifier = {
-			political_power_gain = -0.3
-		}
-		days_remove = 10
-		remove_effect = {
-			set_temp_variable = { temp_member = v }
-			set_temp_variable = { temp_seats = 5 }
-			modify_parliament_seat = yes
-		}
-	}
+# 	#소규모 지지도 확보
+# 	KOR_small_securement_of_support = {
+# 		icon = generic_political_discourse
+# 		available = {
+# 			check_variable = { parliament_seat_array^temp_array^v < parliament_main_array^num }
+# 			not = {
+# 				has_decision = KOR_medium_securement_of_support
+# 			}
+# 			OR = {
+# 				political_power_daily > 0.3
+# 				has_political_power > 10
+# 			}
+# 		}
+# 		cost = 0
+# 		ai_will_do = {
+# 			factor = 10
+# 		}
+# 		modifier = {
+# 			political_power_gain = -0.3
+# 		}
+# 		days_remove = 10
+# 		remove_effect = {
+# 			set_temp_variable = { temp_member = v }
+# 			set_temp_variable = { temp_seats = 5 }
+# 			modify_parliament_seat = yes
+# 		}
+# 	}
 
-	#중규모 지지도 확보
-	KOR_medium_securement_of_support = {
+# 	#중규모 지지도 확보
+# 	KOR_medium_securement_of_support = {
 
-		icon = generic_political_discourse
+# 		icon = generic_political_discourse
 
-		available = {
-			OR = {
-				check_variable = { senate_support < senate_total }
-				check_variable = { house_support < house_total }
-			}
-			not = {
-				has_decision = USA_small_lobby_effort
-			}
-			OR = {
-				political_power_daily > 0.75
-				has_political_power > 35
-			}
-		}
-		cost = 0
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				congress_medium_support_trigger = yes
-				factor = 0.5
-			}
-			modifier = {
-				congress_low_support_trigger = yes
-				factor = 0.5
-			}
-			modifier = {
-				congress_high_support_trigger = yes
-				factor = 0
-			}
-		}
-		days_remove = 45
-		modifier = {
-			political_power_gain = -0.75
-		}
-		remove_effect = {
-			KOR_congress_medium_support = yes
-		}
-	}
-	#농지개혁법
-	KOR_agricultural_land_reform_act = {
+# 		available = {
+# 			OR = {
+# 				check_variable = { senate_support < senate_total }
+# 				check_variable = { house_support < house_total }
+# 			}
+# 			not = {
+# 				has_decision = USA_small_lobby_effort
+# 			}
+# 			OR = {
+# 				political_power_daily > 0.75
+# 				has_political_power > 35
+# 			}
+# 		}
+# 		cost = 0
+# 		ai_will_do = {
+# 			factor = 10
+# 			modifier = {
+# 				congress_medium_support_trigger = yes
+# 				factor = 0.5
+# 			}
+# 			modifier = {
+# 				congress_low_support_trigger = yes
+# 				factor = 0.5
+# 			}
+# 			modifier = {
+# 				congress_high_support_trigger = yes
+# 				factor = 0
+# 			}
+# 		}
+# 		days_remove = 45
+# 		modifier = {
+# 			political_power_gain = -0.75
+# 		}
+# 		remove_effect = {
+# 			KOR_congress_medium_support = yes
+# 		}
+# 	}
+# 	#농지개혁법
+# 	KOR_agricultural_land_reform_act = {
 		
-		icon = eng_trade_unions_support
+# 		icon = eng_trade_unions_support
 
-		available = {
-			OR = {
-				check_variable = { senate_support < senate_total }
-				check_variable = { commons_support < commons_total }
-			}
-			OR = {
-				political_power_daily > 0.2
-				has_political_power > 10
-			}
-		}
-		visible = {
-			not = {
-			has_country_flag = KOR_agricultural_land_reform_act_yes
-			}
-		}
+# 		available = {
+# 			OR = {
+# 				check_variable = { senate_support < senate_total }
+# 				check_variable = { commons_support < commons_total }
+# 			}
+# 			OR = {
+# 				political_power_daily > 0.2
+# 				has_political_power > 10
+# 			}
+# 		}
+# 		visible = {
+# 			not = {
+# 			has_country_flag = KOR_agricultural_land_reform_act_yes
+# 			}
+# 		}
 
-		cost = 20
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				congress_medium_support_trigger = yes
-				factor = 0.5
-			}
-		}
-		days_remove = 90
-		modifier = { consumer_goods_factor = -0.05 }
-		remove_effect = {
-			KOR_congress_small_opposition = yes
-			set_country_flag = KOR_agricultural_land_reform_act_yes
-		}
-	}
-	#부정 청탁 금지법
-	KOR_anti_graft_act = {
+# 		cost = 20
+# 		ai_will_do = {
+# 			factor = 10
+# 			modifier = {
+# 				congress_medium_support_trigger = yes
+# 				factor = 0.5
+# 			}
+# 		}
+# 		days_remove = 90
+# 		modifier = { consumer_goods_factor = -0.05 }
+# 		remove_effect = {
+# 			KOR_congress_small_opposition = yes
+# 			set_country_flag = KOR_agricultural_land_reform_act_yes
+# 		}
+# 	}
+# 	#부정 청탁 금지법
+# 	KOR_anti_graft_act = {
 		
-		icon = eng_trade_unions_support
+# 		icon = eng_trade_unions_support
 
-		available = {
-			OR = {
-				check_variable = { senate_support < senate_total }
-				check_variable = { commons_support < commons_total }
-			}
-			OR = {
-				political_power_daily > 0.2
-				has_political_power > 10
-			}
-		}
-		visible = {
-			not = {
-			has_country_flag = KOR_anti_graft_act_yes
-			}
-		}
+# 		available = {
+# 			OR = {
+# 				check_variable = { senate_support < senate_total }
+# 				check_variable = { commons_support < commons_total }
+# 			}
+# 			OR = {
+# 				political_power_daily > 0.2
+# 				has_political_power > 10
+# 			}
+# 		}
+# 		visible = {
+# 			not = {
+# 			has_country_flag = KOR_anti_graft_act_yes
+# 			}
+# 		}
 
-		cost = 20
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				congress_medium_support_trigger = yes
-				factor = 0.5
-			}
-		}
-		days_remove = 90
-		modifier = { stability_factor = 0.05 }
-		remove_effect = {
-			set_country_flag = KOR_anti_graft_act_yes
-		}
-	}
-	#국회의원 영입
-	KOR_recruitment_of_members = {
+# 		cost = 20
+# 		ai_will_do = {
+# 			factor = 10
+# 			modifier = {
+# 				congress_medium_support_trigger = yes
+# 				factor = 0.5
+# 			}
+# 		}
+# 		days_remove = 90
+# 		modifier = { stability_factor = 0.05 }
+# 		remove_effect = {
+# 			set_country_flag = KOR_anti_graft_act_yes
+# 		}
+# 	}
+# 	#국회의원 영입
+# 	KOR_recruitment_of_members = {
 		
-		icon = eng_trade_unions_support
+# 		icon = eng_trade_unions_support
 
-		available = {
-			OR = {
-				check_variable = { senate_support < senate_total }
-				check_variable = { commons_support < commons_total }
-			}
-			OR = {
-				political_power_daily > 0.2
-				has_political_power > 10
-			}
-		}
-		visible = {
-			not = {
-			has_country_flag = KOR_recruitment_of_members_yes
-			}
-		}
+# 		available = {
+# 			OR = {
+# 				check_variable = { senate_support < senate_total }
+# 				check_variable = { commons_support < commons_total }
+# 			}
+# 			OR = {
+# 				political_power_daily > 0.2
+# 				has_political_power > 10
+# 			}
+# 		}
+# 		visible = {
+# 			not = {
+# 			has_country_flag = KOR_recruitment_of_members_yes
+# 			}
+# 		}
 
-		cost = 20
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				congress_medium_support_trigger = yes
-				factor = 0.5
-			}
-		}
-		days_remove = 90
-		modifier = { political_power_factor = 0.1 }
-		remove_effect = {
-			set_country_flag = KOR_recruitment_of_members_yes
-		}
-	}
-	#단결심 고조연설
-	KOR_special_measures = {
-		icon = eng_propaganda_campaigns
-		available = {
-			OR = {
-				check_variable = { senate_support < senate_total }
-				check_variable = { commons_support < commons_total }
-			}
-		}
-		cost = 50
-		ai_will_do = {
-			factor = 100
-			modifier = {
-				congress_low_support_trigger = yes
-				factor = 0
-			}
-		}
-		days_remove = 90
-		modifier = { war_support_factor = 0.05 }
-		complete_effect = {
-			USA_congress_small_support = yes
-		}
-	}
-	KOR_abdication_crisis = { 
+# 		cost = 20
+# 		ai_will_do = {
+# 			factor = 10
+# 			modifier = {
+# 				congress_medium_support_trigger = yes
+# 				factor = 0.5
+# 			}
+# 		}
+# 		days_remove = 90
+# 		modifier = { political_power_factor = 0.1 }
+# 		remove_effect = {
+# 			set_country_flag = KOR_recruitment_of_members_yes
+# 		}
+# 	}
+# 	#단결심 고조연설
+# 	KOR_special_measures = {
+# 		icon = eng_propaganda_campaigns
+# 		available = {
+# 			OR = {
+# 				check_variable = { senate_support < senate_total }
+# 				check_variable = { commons_support < commons_total }
+# 			}
+# 		}
+# 		cost = 50
+# 		ai_will_do = {
+# 			factor = 100
+# 			modifier = {
+# 				congress_low_support_trigger = yes
+# 				factor = 0
+# 			}
+# 		}
+# 		days_remove = 90
+# 		modifier = { war_support_factor = 0.05 }
+# 		complete_effect = {
+# 			USA_congress_small_support = yes
+# 		}
+# 	}
+# 	KOR_abdication_crisis = { 
 
-		priority = 10
+# 		priority = 10
 
-		icon = generic_nationalism
+# 		icon = generic_nationalism
 		
-		available = {
-			has_country_flag = KOR_abdication_crisis_changed_mind
-		}
+# 		available = {
+# 			has_country_flag = KOR_abdication_crisis_changed_mind
+# 		}
 
-		days_mission_timeout = 200
+# 		days_mission_timeout = 200
 
-		fire_only_once = yes
+# 		fire_only_once = yes
 
-		activation = {
-			tag = KOR
-			OR = {
-				has_country_flag = KOR_abdication_crisis_normal_marriage
-				has_country_flag = KOR_abdication_crisis_morganatic_marriage
-			}
-		}
+# 		activation = {
+# 			tag = KOR
+# 			OR = {
+# 				has_country_flag = KOR_abdication_crisis_normal_marriage
+# 				has_country_flag = KOR_abdication_crisis_morganatic_marriage
+# 			}
+# 		}
 
-		visible = {
-			tag = KOR
-			NOT = {
-				has_country_flag = KOR_edward_viii_abdicated
-				has_country_flag = vote_2_is_end
-			}
-		}
+# 		visible = {
+# 			tag = KOR
+# 			NOT = {
+# 				has_country_flag = KOR_edward_viii_abdicated
+# 				has_country_flag = vote_2_is_end
+# 			}
+# 		}
 
-		cancel_if_not_visible = yes
+# 		cancel_if_not_visible = yes
 
-		is_good = yes
+# 		is_good = yes
 
-		complete_effect = {
+# 		complete_effect = {
 			
-		}
+# 		}
 
-		timeout_effect = {
-			country_event = { id = KOR.19 }
-		}
-	}
-}
+# 		timeout_effect = {
+# 			country_event = { id = KOR.19 }
+# 		}
+# 	}
+# }
 
-KOR_training_of_officers_category = {
+# KOR_training_of_officers_category = {
 
-	KOR_appoint_Lee_Hyung_geun = {
-		icon = generic_army_support
+# 	KOR_appoint_Lee_Hyung_geun = {
+# 		icon = generic_army_support
 		
-		allowed = {
-		    original_tag = KOR
-		}
-		available = { 
-            date > 1940.01.01
-		}
+# 		allowed = {
+# 		    original_tag = KOR
+# 		}
+# 		available = { 
+#             date > 1940.01.01
+# 		}
 
-		fire_only_once = yes
+# 		fire_only_once = yes
 
-		cost = 30
+# 		cost = 30
 
-		remove_effect = {
-			set_country_flag = Youth_Lee_Hyung_geun
-			create_corps_commander = {
-				name = "이형근"
-				id = 3002
-				picture = ""
-				traits = { media_personality trait_KOR_Youth_Presbyterian_Church trait_KOR_young_general }
-				skill = 1
-				attack_skill = 1
-				defense_skill = 1
-				planning_skill = 1
-				logistics_skill = 1
-			}
-		}
-	}
+# 		remove_effect = {
+# 			set_country_flag = Youth_Lee_Hyung_geun
+# 			create_corps_commander = {
+# 				name = "이형근"
+# 				id = 3002
+# 				picture = ""
+# 				traits = { media_personality trait_KOR_Youth_Presbyterian_Church trait_KOR_young_general }
+# 				skill = 1
+# 				attack_skill = 1
+# 				defense_skill = 1
+# 				planning_skill = 1
+# 				logistics_skill = 1
+# 			}
+# 		}
+# 	}
 
-	KOR_Youth_Lee_Hyung_geun = {
-		icon = generic_army_support
+# 	KOR_Youth_Lee_Hyung_geun = {
+# 		icon = generic_army_support
 		
-		allowed = {
-		    original_tag = KOR
-		}
-		visible = { 
-            has_country_flag = Youth_Lee_Hyung_geun
-		}
-		available = { 
-            date > 1950.01.01
-		}
+# 		allowed = {
+# 		    original_tag = KOR
+# 		}
+# 		visible = { 
+#             has_country_flag = Youth_Lee_Hyung_geun
+# 		}
+# 		available = { 
+#             date > 1950.01.01
+# 		}
 
-		fire_only_once = yes
+# 		fire_only_once = yes
 
-		cost = 30
+# 		cost = 30
 
-		remove_effect = {
-			custom_effect_tooltip = KOR_Youth_Lee_Hyung_geun_tt
-			hidden_effect = {
-				clr_country_flag = Youth_Lee_Hyung_geun
-				remove_unit_leader = 3002
-				create_corps_commander = {
-					name = "이형근"
-					picture = ""
-					traits = {  }
-					skill = 2
-					attack_skill = 2
-					defense_skill = 2
-					planning_skill = 2
-					logistics_skill = 2
-				}
-			}
-		}
-	}
+# 		remove_effect = {
+# 			custom_effect_tooltip = KOR_Youth_Lee_Hyung_geun_tt
+# 			hidden_effect = {
+# 				clr_country_flag = Youth_Lee_Hyung_geun
+# 				remove_unit_leader = 3002
+# 				create_corps_commander = {
+# 					name = "이형근"
+# 					picture = ""
+# 					traits = {  }
+# 					skill = 2
+# 					attack_skill = 2
+# 					defense_skill = 2
+# 					planning_skill = 2
+# 					logistics_skill = 2
+# 				}
+# 			}
+# 		}
+# 	}
 
-	KOR_appoint_Won_Yong_Duk = {
-		icon = generic_army_support
+# 	KOR_appoint_Won_Yong_Duk = {
+# 		icon = generic_army_support
 		
-		allowed = {
-		    original_tag = KOR
-		}
-		available = { 
-            date > 1928.01.01
-		}
+# 		allowed = {
+# 		    original_tag = KOR
+# 		}
+# 		available = { 
+#             date > 1928.01.01
+# 		}
 
-		fire_only_once = yes
+# 		fire_only_once = yes
 
-		cost = 30
+# 		cost = 30
 
-		remove_effect = {
-			set_country_flag = Youth_Won_Yong_Duk
-			create_corps_commander = {
-				name = "원용덕"
-				id = 3003
-				picture = ""
-				traits = { media_personality trait_KOR_Youth_Presbyterian_Church trait_KOR_young_general }
-				skill = 1
-				attack_skill = 1
-				defense_skill = 1
-				planning_skill = 1
-				logistics_skill = 1
-			}
-		}
-	}
+# 		remove_effect = {
+# 			set_country_flag = Youth_Won_Yong_Duk
+# 			create_corps_commander = {
+# 				name = "원용덕"
+# 				id = 3003
+# 				picture = ""
+# 				traits = { media_personality trait_KOR_Youth_Presbyterian_Church trait_KOR_young_general }
+# 				skill = 1
+# 				attack_skill = 1
+# 				defense_skill = 1
+# 				planning_skill = 1
+# 				logistics_skill = 1
+# 			}
+# 		}
+# 	}
 
-	KOR_Youth_Won_Yong_Duk = {
-		icon = generic_army_support
+# 	KOR_Youth_Won_Yong_Duk = {
+# 		icon = generic_army_support
 		
-		allowed = {
-		    original_tag = KOR
-		}
-		visible = { 
-            has_country_flag = Youth_Won_Yong_Duk
-		}
-		available = { 
-            date > 1938.01.01
-		}
+# 		allowed = {
+# 		    original_tag = KOR
+# 		}
+# 		visible = { 
+#             has_country_flag = Youth_Won_Yong_Duk
+# 		}
+# 		available = { 
+#             date > 1938.01.01
+# 		}
 
-		fire_only_once = yes
+# 		fire_only_once = yes
 
-		cost = 30
+# 		cost = 30
 
-		remove_effect = {
-			custom_effect_tooltip = KOR_Youth_Won_Yong_Duk_tt
-			hidden_effect = {
-				clr_country_flag = Youth_Won_Yong_Duk
-				remove_unit_leader = 3003
-				create_corps_commander = {
-					name = "원용덕"
-					picture = ""
-					traits = {  }
-					skill = 2
-					attack_skill = 2
-					defense_skill = 2
-					planning_skill = 2
-					logistics_skill = 2
-				}
-			}
-		}
-	}
+# 		remove_effect = {
+# 			custom_effect_tooltip = KOR_Youth_Won_Yong_Duk_tt
+# 			hidden_effect = {
+# 				clr_country_flag = Youth_Won_Yong_Duk
+# 				remove_unit_leader = 3003
+# 				create_corps_commander = {
+# 					name = "원용덕"
+# 					picture = ""
+# 					traits = {  }
+# 					skill = 2
+# 					attack_skill = 2
+# 					defense_skill = 2
+# 					planning_skill = 2
+# 					logistics_skill = 2
+# 				}
+# 			}
+# 		}
+# 	}
 
-	KOR_appoint_Chae_Byung_Tuk = {
-		icon = generic_army_support
+# 	KOR_appoint_Chae_Byung_Tuk = {
+# 		icon = generic_army_support
 		
-		allowed = {
-		    original_tag = KOR
-		}
-		available = { 
-            date > 1935.01.01
-		}
+# 		allowed = {
+# 		    original_tag = KOR
+# 		}
+# 		available = { 
+#             date > 1935.01.01
+# 		}
 
-		fire_only_once = yes
+# 		fire_only_once = yes
 
-		cost = 30
+# 		cost = 30
 
-		remove_effect = {
-			set_country_flag = Youth_Chae_Byung_Tuk
-			create_corps_commander = {
-				name = "채병덕"
-				id = 3004
-				picture = "Portrait_Chae_Byung_Tuk.dds"
-				traits = { media_personality trait_KOR_Youth_Presbyterian_Church trait_KOR_young_general }
-				skill = 1
-				attack_skill = 1
-				defense_skill = 1
-				planning_skill = 1
-				logistics_skill = 1
-			}
-		}
-	}
+# 		remove_effect = {
+# 			set_country_flag = Youth_Chae_Byung_Tuk
+# 			create_corps_commander = {
+# 				name = "채병덕"
+# 				id = 3004
+# 				picture = "Portrait_Chae_Byung_Tuk.dds"
+# 				traits = { media_personality trait_KOR_Youth_Presbyterian_Church trait_KOR_young_general }
+# 				skill = 1
+# 				attack_skill = 1
+# 				defense_skill = 1
+# 				planning_skill = 1
+# 				logistics_skill = 1
+# 			}
+# 		}
+# 	}
 
-	KOR_Youth_Chae_Byung_Tuk = {
-		icon = generic_army_support
+# 	KOR_Youth_Chae_Byung_Tuk = {
+# 		icon = generic_army_support
 		
-		allowed = {
-		    original_tag = KOR
-		}
-		visible = { 
-            has_country_flag = Youth_Chae_Byung_Tuk
-		}
-		available = { 
-            date > 1945.01.01
-		}
+# 		allowed = {
+# 		    original_tag = KOR
+# 		}
+# 		visible = { 
+#             has_country_flag = Youth_Chae_Byung_Tuk
+# 		}
+# 		available = { 
+#             date > 1945.01.01
+# 		}
 
-		fire_only_once = yes
+# 		fire_only_once = yes
 
-		cost = 30
+# 		cost = 30
 
-		remove_effect = {
-			custom_effect_tooltip = KOR_Youth_Chae_Byung_Tuk_tt
-			hidden_effect = {
-				clr_country_flag = Youth_Chae_Byung_Tuk
-				remove_unit_leader = 3004
-				create_corps_commander = {
-					name = "채병덕"
-					picture = "Portrait_Chae_Byung_Tuk.dds"
-					traits = {  }
-					skill = 2
-					attack_skill = 2
-					defense_skill = 2
-					planning_skill = 2
-					logistics_skill = 2
-				}
-			}
-		}
-	}
+# 		remove_effect = {
+# 			custom_effect_tooltip = KOR_Youth_Chae_Byung_Tuk_tt
+# 			hidden_effect = {
+# 				clr_country_flag = Youth_Chae_Byung_Tuk
+# 				remove_unit_leader = 3004
+# 				create_corps_commander = {
+# 					name = "채병덕"
+# 					picture = "Portrait_Chae_Byung_Tuk.dds"
+# 					traits = {  }
+# 					skill = 2
+# 					attack_skill = 2
+# 					defense_skill = 2
+# 					planning_skill = 2
+# 					logistics_skill = 2
+# 				}
+# 			}
+# 		}
+# 	}
 	
-}
+# }
 
-@KOR_HUNT_BANDITS_EQUIPMENT_COST_TRIGGER = 499
-@KOR_HUNT_BANDITS_EQUIPMENT_COST_EFFECT = -500
+# @KOR_HUNT_BANDITS_EQUIPMENT_COST_TRIGGER = 499
+# @KOR_HUNT_BANDITS_EQUIPMENT_COST_EFFECT = -500
 
-KOR_banditry_category = {
+# KOR_banditry_category = {
 
-	KOR_pacify_bandits_in_the_northern_countryside = {
+# 	KOR_pacify_bandits_in_the_northern_countryside = {
 
-		icon = generic_oppression
+# 		icon = generic_oppression
 		
-		available = {
-			has_completed_focus = war_against_crime_start
-			has_country_flag = KOR_northern_bandits
-			divisions_in_state = {
-				state = 525	
-				size > 5
-			}
-		}
+# 		available = {
+# 			has_completed_focus = war_against_crime_start
+# 			has_country_flag = KOR_northern_bandits
+# 			divisions_in_state = {
+# 				state = 525	
+# 				size > 5
+# 			}
+# 		}
 
-		highlight_state_targets = {
-			state = 525
-		}
+# 		highlight_state_targets = {
+# 			state = 525
+# 		}
 
-		cost = 0
+# 		cost = 0
 
-		ai_will_do = {
-			factor = 0
-			modifier = {
-				add = 200
-				divisions_in_state = {
-					state = 525	
-					size > 5
-				}
-			}
-		}
+# 		ai_will_do = {
+# 			factor = 0
+# 			modifier = {
+# 				add = 200
+# 				divisions_in_state = {
+# 					state = 525	
+# 					size > 5
+# 				}
+# 			}
+# 		}
 
-		visible = {
-			NOT = { has_active_mission = KOR_maintain_northern_control }
-			has_completed_focus = snip_back_deal
-		}
+# 		visible = {
+# 			NOT = { has_active_mission = KOR_maintain_northern_control }
+# 			has_completed_focus = snip_back_deal
+# 		}
 
-		is_good = yes
+# 		is_good = yes
 
-		complete_effect = {
-			activate_mission = KOR_maintain_northern_control
-			custom_effect_tooltip = KOR_pacify_bandits_mission_explanation
-		}
-	}
+# 		complete_effect = {
+# 			activate_mission = KOR_maintain_northern_control
+# 			custom_effect_tooltip = KOR_pacify_bandits_mission_explanation
+# 		}
+# 	}
 
-KOR_hunt_down_northern_bandits = {
+# KOR_hunt_down_northern_bandits = {
 
-		icon = generic_oppression
+# 		icon = generic_oppression
 
-		available = {
-			has_completed_focus = war_against_crime_start
-			has_equipment = { infantry_equipment > @KOR_HUNT_BANDITS_EQUIPMENT_COST_TRIGGER }
-			has_country_flag = KOR_northern_bandits
-		}
+# 		available = {
+# 			has_completed_focus = war_against_crime_start
+# 			has_equipment = { infantry_equipment > @KOR_HUNT_BANDITS_EQUIPMENT_COST_TRIGGER }
+# 			has_country_flag = KOR_northern_bandits
+# 		}
 
-		cost = 0
+# 		cost = 0
 
-		highlight_state_targets = {
-			state = 525
-		}
-		visible = {
-			has_country_flag = KOR_northern_bandits
-			has_completed_focus = snip_back_deal
-		}
-		is_good = yes
+# 		highlight_state_targets = {
+# 			state = 525
+# 		}
+# 		visible = {
+# 			has_country_flag = KOR_northern_bandits
+# 			has_completed_focus = snip_back_deal
+# 		}
+# 		is_good = yes
 
-		fire_only_once = yes
+# 		fire_only_once = yes
 
-		ai_will_do = {
-			factor = 0
-			modifier = {
-				add = 200
-				divisions_in_state = {
-					state = 525	
-					size < 6
-				}
-			}
-		}
+# 		ai_will_do = {
+# 			factor = 0
+# 			modifier = {
+# 				add = 200
+# 				divisions_in_state = {
+# 					state = 525	
+# 					size < 6
+# 				}
+# 			}
+# 		}
 
-		complete_effect = {
-			custom_effect_tooltip = KOR_hunt_down_northern_bandits_tt
-			add_manpower = -1000
+# 		complete_effect = {
+# 			custom_effect_tooltip = KOR_hunt_down_northern_bandits_tt
+# 			add_manpower = -1000
 			
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = @KOR_HUNT_BANDITS_EQUIPMENT_COST_EFFECT
-			}
+# 			add_equipment_to_stockpile = {
+# 				type = infantry_equipment
+# 				amount = @KOR_HUNT_BANDITS_EQUIPMENT_COST_EFFECT
+# 			}
 
-			army_experience = 10
+# 			army_experience = 10
 
-			remove_mission = KOR_maintain_northern_control
-			clr_country_flag = KOR_northern_bandits
-			if = {
-				limit = {
-					NOT = { has_country_flag = KOR_eastern_bandits }
-					NOT = { has_country_flag = KOR_western_bandits }
-				}
-				remove_ideas = unstable_security
-			}
-		}
-	}
+# 			remove_mission = KOR_maintain_northern_control
+# 			clr_country_flag = KOR_northern_bandits
+# 			if = {
+# 				limit = {
+# 					NOT = { has_country_flag = KOR_eastern_bandits }
+# 					NOT = { has_country_flag = KOR_western_bandits }
+# 				}
+# 				remove_ideas = unstable_security
+# 			}
+# 		}
+# 	}
 
-	KOR_maintain_northern_control = {
+# 	KOR_maintain_northern_control = {
 
-		icon = generic_civil_support
+# 		icon = generic_civil_support
 
-		available = {
-			always = no
-		}
+# 		available = {
+# 			always = no
+# 		}
 
-		days_mission_timeout = KOR_main_control_timer?180
+# 		days_mission_timeout = KOR_main_control_timer?180
 
-		activation = {
-			always = no #Triggered from effect
-		}
+# 		activation = {
+# 			always = no #Triggered from effect
+# 		}
 
-		cancel_trigger = {
-			divisions_in_state = {
-				state = 525	
-				size < 6
-			}
-		}
+# 		cancel_trigger = {
+# 			divisions_in_state = {
+# 				state = 525	
+# 				size < 6
+# 			}
+# 		}
 
-		highlight_state_targets = {
-			state = 525
-		}
+# 		highlight_state_targets = {
+# 			state = 525
+# 		}
 
-		visible = {
+# 		visible = {
 			
-		}
+# 		}
 
-		is_good = yes
+# 		is_good = yes
 
-		timeout_effect = {
-			custom_effect_tooltip = KOR_hunt_down_northern_bandits_tt
-			army_experience = 10
-			clr_country_flag = KOR_northern_bandits
-			if = {
-				limit = {
-					NOT = { has_country_flag = KOR_eastern_bandits }
-					NOT = { has_country_flag = KOR_western_bandits }
-				}
-				remove_ideas = unstable_security
-			}
-		}
-	}
+# 		timeout_effect = {
+# 			custom_effect_tooltip = KOR_hunt_down_northern_bandits_tt
+# 			army_experience = 10
+# 			clr_country_flag = KOR_northern_bandits
+# 			if = {
+# 				limit = {
+# 					NOT = { has_country_flag = KOR_eastern_bandits }
+# 					NOT = { has_country_flag = KOR_western_bandits }
+# 				}
+# 				remove_ideas = unstable_security
+# 			}
+# 		}
+# 	}
 
-	KOR_pacify_bandits_in_the_eastern_countryside = {
+# 	KOR_pacify_bandits_in_the_eastern_countryside = {
 
-		icon = generic_oppression
+# 		icon = generic_oppression
 		
-		available = {
-			has_completed_focus = war_against_crime_start
-			has_country_flag = KOR_eastern_bandits
-			divisions_in_state = {
-				state = 798
-				size > 5
-			}
-		}
+# 		available = {
+# 			has_completed_focus = war_against_crime_start
+# 			has_country_flag = KOR_eastern_bandits
+# 			divisions_in_state = {
+# 				state = 798
+# 				size > 5
+# 			}
+# 		}
 
-		highlight_state_targets = {
-			state = 798
-		}
+# 		highlight_state_targets = {
+# 			state = 798
+# 		}
 
-		cost = 0
+# 		cost = 0
 
-		ai_will_do = {
-			factor = 0
-			modifier = {
-				add = 200
-				divisions_in_state = {
-					state = 798	
-					size > 5
-				}
-			}
-		}
+# 		ai_will_do = {
+# 			factor = 0
+# 			modifier = {
+# 				add = 200
+# 				divisions_in_state = {
+# 					state = 798	
+# 					size > 5
+# 				}
+# 			}
+# 		}
 
-		visible = {
-			NOT = { has_active_mission = KOR_maintain_eastern_control }
-			has_country_flag = KOR_eastern_bandits
-			has_completed_focus = snip_back_deal
-		}
+# 		visible = {
+# 			NOT = { has_active_mission = KOR_maintain_eastern_control }
+# 			has_country_flag = KOR_eastern_bandits
+# 			has_completed_focus = snip_back_deal
+# 		}
 
-		is_good = yes
+# 		is_good = yes
 
-		complete_effect = {
-			activate_mission = KOR_maintain_eastern_control
-			custom_effect_tooltip = KOR_pacify_bandits_mission_explanation
-		}
-	}
+# 		complete_effect = {
+# 			activate_mission = KOR_maintain_eastern_control
+# 			custom_effect_tooltip = KOR_pacify_bandits_mission_explanation
+# 		}
+# 	}
 
-	KOR_hunt_down_eastern_bandits = {
+# 	KOR_hunt_down_eastern_bandits = {
 
-		icon = generic_oppression
+# 		icon = generic_oppression
 
-		available = {
-			has_completed_focus = war_against_crime_start
-			has_equipment = { infantry_equipment > @KOR_HUNT_BANDITS_EQUIPMENT_COST_TRIGGER }
-			has_country_flag = KOR_eastern_bandits
-		}
+# 		available = {
+# 			has_completed_focus = war_against_crime_start
+# 			has_equipment = { infantry_equipment > @KOR_HUNT_BANDITS_EQUIPMENT_COST_TRIGGER }
+# 			has_country_flag = KOR_eastern_bandits
+# 		}
 
-		visible = {
-			has_completed_focus = snip_back_deal
-			has_country_flag = KOR_eastern_bandits
-		}
+# 		visible = {
+# 			has_completed_focus = snip_back_deal
+# 			has_country_flag = KOR_eastern_bandits
+# 		}
 
-		cost = 0
+# 		cost = 0
 
-		highlight_state_targets = {
-			state = 798
-		}
+# 		highlight_state_targets = {
+# 			state = 798
+# 		}
 
-		is_good = yes
+# 		is_good = yes
 
-		fire_only_once = yes
+# 		fire_only_once = yes
 
-		ai_will_do = {
-			factor = 0
-			modifier = {
-				add = 200
-				divisions_in_state = {
-					state = 798	
-					size < 6
-				}
-			}
-		}
+# 		ai_will_do = {
+# 			factor = 0
+# 			modifier = {
+# 				add = 200
+# 				divisions_in_state = {
+# 					state = 798	
+# 					size < 6
+# 				}
+# 			}
+# 		}
 
-		complete_effect = {
-			custom_effect_tooltip = KOR_hunt_down_eastern_bandits_tt
-			add_manpower = -1000
+# 		complete_effect = {
+# 			custom_effect_tooltip = KOR_hunt_down_eastern_bandits_tt
+# 			add_manpower = -1000
 			
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = @KOR_HUNT_BANDITS_EQUIPMENT_COST_EFFECT
-			}
+# 			add_equipment_to_stockpile = {
+# 				type = infantry_equipment
+# 				amount = @KOR_HUNT_BANDITS_EQUIPMENT_COST_EFFECT
+# 			}
 
-			army_experience = 10
+# 			army_experience = 10
 
-			remove_mission = KOR_maintain_eastern_control
-			clr_country_flag = KOR_eastern_bandits
-			if = {
-				limit = {
-					NOT = { has_country_flag = KOR_northern_bandits }
-					NOT = { has_country_flag = KOR_western_bandits }
-				}
-				remove_ideas = unstable_security
-			}
-		}
-	}
+# 			remove_mission = KOR_maintain_eastern_control
+# 			clr_country_flag = KOR_eastern_bandits
+# 			if = {
+# 				limit = {
+# 					NOT = { has_country_flag = KOR_northern_bandits }
+# 					NOT = { has_country_flag = KOR_western_bandits }
+# 				}
+# 				remove_ideas = unstable_security
+# 			}
+# 		}
+# 	}
 
-	KOR_maintain_eastern_control = {
+# 	KOR_maintain_eastern_control = {
 
-		icon = generic_civil_support
+# 		icon = generic_civil_support
 
-		available = {			
-			always = no
-		}
+# 		available = {			
+# 			always = no
+# 		}
 
-		days_mission_timeout = KOR_main_control_timer?180
+# 		days_mission_timeout = KOR_main_control_timer?180
 
-		activation = {
-			always = no #Triggered from effect
-		}
+# 		activation = {
+# 			always = no #Triggered from effect
+# 		}
 
-		cancel_trigger = {
-			divisions_in_state = {
-				state = 798	
-				size < 6
-			}
-		}
+# 		cancel_trigger = {
+# 			divisions_in_state = {
+# 				state = 798	
+# 				size < 6
+# 			}
+# 		}
 
-		highlight_state_targets = {
-			state = 798
-		}
+# 		highlight_state_targets = {
+# 			state = 798
+# 		}
 
-		visible = {
+# 		visible = {
 			
-		}
+# 		}
 
-		is_good = yes
+# 		is_good = yes
 
-		timeout_effect = {
-			custom_effect_tooltip = KOR_hunt_down_eastern_bandits_tt
-			army_experience = 10
-			clr_country_flag = KOR_eastern_bandits
-			if = {
-				limit = {
-					NOT = { has_country_flag = KOR_northern_bandits }
-					NOT = { has_country_flag = KOR_western_bandits }
-				}
-				remove_ideas = unstable_security
-			}
-		}
-	}
+# 		timeout_effect = {
+# 			custom_effect_tooltip = KOR_hunt_down_eastern_bandits_tt
+# 			army_experience = 10
+# 			clr_country_flag = KOR_eastern_bandits
+# 			if = {
+# 				limit = {
+# 					NOT = { has_country_flag = KOR_northern_bandits }
+# 					NOT = { has_country_flag = KOR_western_bandits }
+# 				}
+# 				remove_ideas = unstable_security
+# 			}
+# 		}
+# 	}
 
-	KOR_pacify_bandits_in_the_western_countryside = {
+# 	KOR_pacify_bandits_in_the_western_countryside = {
 
-		icon = generic_oppression
+# 		icon = generic_oppression
 		
-		available = {
-			has_completed_focus = war_against_crime_start
-			has_country_flag = KOR_western_bandits
-			divisions_in_state = {
-				state = 801	
-				size > 5
-			}
-		}
+# 		available = {
+# 			has_completed_focus = war_against_crime_start
+# 			has_country_flag = KOR_western_bandits
+# 			divisions_in_state = {
+# 				state = 801	
+# 				size > 5
+# 			}
+# 		}
 
-		highlight_state_targets = {
-			state = 801
-		}
+# 		highlight_state_targets = {
+# 			state = 801
+# 		}
 
-		cost = 0
+# 		cost = 0
 
-		ai_will_do = {
-			factor = 0
-			modifier = {
-				add = 200
-				divisions_in_state = {
-					state = 801	
-					size > 5
-				}
-			}
-		}
+# 		ai_will_do = {
+# 			factor = 0
+# 			modifier = {
+# 				add = 200
+# 				divisions_in_state = {
+# 					state = 801	
+# 					size > 5
+# 				}
+# 			}
+# 		}
 
-		visible = {
-			NOT = { has_active_mission = KOR_maintain_western_control }
-			has_country_flag = KOR_western_bandits
-			has_completed_focus = snip_back_deal
-		}
+# 		visible = {
+# 			NOT = { has_active_mission = KOR_maintain_western_control }
+# 			has_country_flag = KOR_western_bandits
+# 			has_completed_focus = snip_back_deal
+# 		}
 
-		is_good = yes
+# 		is_good = yes
 
-		complete_effect = {
-			activate_mission = KOR_maintain_western_control
-			custom_effect_tooltip = KOR_pacify_bandits_mission_explanation
-		}
-	}
+# 		complete_effect = {
+# 			activate_mission = KOR_maintain_western_control
+# 			custom_effect_tooltip = KOR_pacify_bandits_mission_explanation
+# 		}
+# 	}
 
-	KOR_hunt_down_western_bandits = {
+# 	KOR_hunt_down_western_bandits = {
 
-		icon = generic_oppression
+# 		icon = generic_oppression
 
-		available = {
-			has_completed_focus = war_against_crime_start
-			has_equipment = { infantry_equipment > @KOR_HUNT_BANDITS_EQUIPMENT_COST_TRIGGER }
-			has_country_flag = KOR_western_bandits
-		}
+# 		available = {
+# 			has_completed_focus = war_against_crime_start
+# 			has_equipment = { infantry_equipment > @KOR_HUNT_BANDITS_EQUIPMENT_COST_TRIGGER }
+# 			has_country_flag = KOR_western_bandits
+# 		}
 
-		cost = 0
+# 		cost = 0
 
-		highlight_state_targets = {
-			state = 801
-		}
+# 		highlight_state_targets = {
+# 			state = 801
+# 		}
 
-		visible = {
-			has_country_flag = KOR_western_bandits
-			has_completed_focus = snip_back_deal
-		}
+# 		visible = {
+# 			has_country_flag = KOR_western_bandits
+# 			has_completed_focus = snip_back_deal
+# 		}
 
-		is_good = yes
+# 		is_good = yes
 
-		fire_only_once = yes
+# 		fire_only_once = yes
 
-		ai_will_do = {
-			factor = 0
-			modifier = {
-				add = 200
-				divisions_in_state = {
-					state = 801	
-					size < 6
-				}
-			}
-		}
+# 		ai_will_do = {
+# 			factor = 0
+# 			modifier = {
+# 				add = 200
+# 				divisions_in_state = {
+# 					state = 801	
+# 					size < 6
+# 				}
+# 			}
+# 		}
 
-		complete_effect = {
-			custom_effect_tooltip = KOR_hunt_down_western_bandits_tt
-			add_manpower = -1000
+# 		complete_effect = {
+# 			custom_effect_tooltip = KOR_hunt_down_western_bandits_tt
+# 			add_manpower = -1000
 			
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = @KOR_HUNT_BANDITS_EQUIPMENT_COST_EFFECT
-			}
+# 			add_equipment_to_stockpile = {
+# 				type = infantry_equipment
+# 				amount = @KOR_HUNT_BANDITS_EQUIPMENT_COST_EFFECT
+# 			}
 
-			army_experience = 10
+# 			army_experience = 10
 
-			remove_mission = KOR_maintain_western_control
-			clr_country_flag = KOR_western_bandits
-			if = {
-				limit = {
-					NOT = { has_country_flag = KOR_eastern_bandits }
-					NOT = { has_country_flag = KOR_northern_bandits }
-				}
-				remove_ideas = unstable_security
-			}
-		}
-	}
+# 			remove_mission = KOR_maintain_western_control
+# 			clr_country_flag = KOR_western_bandits
+# 			if = {
+# 				limit = {
+# 					NOT = { has_country_flag = KOR_eastern_bandits }
+# 					NOT = { has_country_flag = KOR_northern_bandits }
+# 				}
+# 				remove_ideas = unstable_security
+# 			}
+# 		}
+# 	}
 
-	KOR_maintain_western_control = {
+# 	KOR_maintain_western_control = {
 
-		icon = generic_civil_support
+# 		icon = generic_civil_support
 
-		available = {			
-			always = no
-		}
+# 		available = {			
+# 			always = no
+# 		}
 
-		days_mission_timeout = KOR_main_control_timer?180
+# 		days_mission_timeout = KOR_main_control_timer?180
 
-		activation = {
-			always = no #Triggered from effect
-		}
+# 		activation = {
+# 			always = no #Triggered from effect
+# 		}
 
-		cancel_trigger = {
-			divisions_in_state = {
-				state = 801	
-				size < 6
-			}
-		}
+# 		cancel_trigger = {
+# 			divisions_in_state = {
+# 				state = 801	
+# 				size < 6
+# 			}
+# 		}
 
-		highlight_state_targets = {
-			state = 801
-		}
+# 		highlight_state_targets = {
+# 			state = 801
+# 		}
 
-		visible = {
+# 		visible = {
 			
-		}
+# 		}
 
-		is_good = yes
+# 		is_good = yes
 
-		timeout_effect = {
-			custom_effect_tooltip = KOR_hunt_down_western_bandits_tt
-			army_experience = 10
-			clr_country_flag = KOR_western_bandits
-			if = {
-				limit = {
-					NOT = { has_country_flag = KOR_eastern_bandits }
-					NOT = { has_country_flag = KOR_northern_bandits }
-				}
-				remove_ideas = unstable_security
-			}
-		}
-	}
+# 		timeout_effect = {
+# 			custom_effect_tooltip = KOR_hunt_down_western_bandits_tt
+# 			army_experience = 10
+# 			clr_country_flag = KOR_western_bandits
+# 			if = {
+# 				limit = {
+# 					NOT = { has_country_flag = KOR_eastern_bandits }
+# 					NOT = { has_country_flag = KOR_northern_bandits }
+# 				}
+# 				remove_ideas = unstable_security
+# 			}
+# 		}
+# 	}
 
-	KOR_bandit_raids = {
+# 	KOR_bandit_raids = {
 
-		icon = generic_civil_support
+# 		icon = generic_civil_support
 
-		available = {
-			NOT = { has_idea = unstable_security }
-			has_completed_focus = war_against_crime_start
-		}
+# 		available = {
+# 			NOT = { has_idea = unstable_security }
+# 			has_completed_focus = war_against_crime_start
+# 		}
 
-		days_mission_timeout = 180
+# 		days_mission_timeout = 180
 
-		activation = {
-			has_idea = unstable_security
-		}
+# 		activation = {
+# 			has_idea = unstable_security
+# 		}
 
-		visible = {
-			has_completed_focus = snip_back_deal
-		}		
+# 		visible = {
+# 			has_completed_focus = snip_back_deal
+# 		}		
 
-		fixed_random_seed = no
+# 		fixed_random_seed = no
 
-		fire_only_once = no
+# 		fire_only_once = no
 
-		is_good = no
+# 		is_good = no
 
-		timeout_effect = {
-			random_list = {
-				25 = {
-					country_event = KOR.28
-				}
-				25 = {
-					country_event = KOR.29
-				}
-				25 = {
-					country_event = KOR.30
-				}
-				25 = {
+# 		timeout_effect = {
+# 			random_list = {
+# 				25 = {
+# 					country_event = KOR.28
+# 				}
+# 				25 = {
+# 					country_event = KOR.29
+# 				}
+# 				25 = {
+# 					country_event = KOR.30
+# 				}
+# 				25 = {
 					
-				}
-			}
-		}
-	}
-}
+# 				}
+# 			}
+# 		}
+# 	}
+# }
 
-KOR_spanish_intervention_category = {
-	KOR_invite_FROM_to_non_intervention = {
-		available = {
-			has_country_flag = KOR_non_intervention
-		}
-		target_array = global.majors
+# KOR_spanish_intervention_category = {
+# 	KOR_invite_FROM_to_non_intervention = {
+# 		available = {
+# 			has_country_flag = KOR_non_intervention
+# 		}
+# 		target_array = global.majors
 
-		target_trigger = {
-			FROM = {
-				exists = yes
-				NOT = { 
-					has_country_flag = KOR_non_intervention_agreed 
-					has_country_flag = KOR_non_intervention_refused
-				}
-				capital_scope = {
-					is_on_continent = europe
-				}
-			}
-		}
-		visible = {
-			has_country_flag = KOR_non_intervention
-		}
-		target_root_trigger = {
-			has_country_flag = KOR_non_intervention	
-		}
-		cost = 25
-		fire_only_once = yes
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				not = { has_government = democratic }
-				factor = 0
-			}
-			modifier = {
-				has_stability < 0.3
-				factor = 5
-			}
-		}
-		complete_effect = {
-			FROM = {
-				country_event = lar_non_intervention.1
-			}
-		}
-	}
+# 		target_trigger = {
+# 			FROM = {
+# 				exists = yes
+# 				NOT = { 
+# 					has_country_flag = KOR_non_intervention_agreed 
+# 					has_country_flag = KOR_non_intervention_refused
+# 				}
+# 				capital_scope = {
+# 					is_on_continent = europe
+# 				}
+# 			}
+# 		}
+# 		visible = {
+# 			has_country_flag = KOR_non_intervention
+# 		}
+# 		target_root_trigger = {
+# 			has_country_flag = KOR_non_intervention	
+# 		}
+# 		cost = 25
+# 		fire_only_once = yes
+# 		ai_will_do = {
+# 			factor = 1
+# 			modifier = {
+# 				not = { has_government = democratic }
+# 				factor = 0
+# 			}
+# 			modifier = {
+# 				has_stability < 0.3
+# 				factor = 5
+# 			}
+# 		}
+# 		complete_effect = {
+# 			FROM = {
+# 				country_event = lar_non_intervention.1
+# 			}
+# 		}
+# 	}
 
-	KOR_allow_non_military_aid = {
-		available = { has_completed_focus = support_national_front }
+# 	KOR_allow_non_military_aid = {
+# 		available = { has_completed_focus = support_national_front }
 
-		visible = { not = { has_country_flag = KOR_non_military_aid_allowed } }
+# 		visible = { not = { has_country_flag = KOR_non_military_aid_allowed } }
 
-		cancel_trigger = {
-			OR = {
-				has_global_flag = scw_over
-				not = { has_country_flag = KOR_non_military_aid_allowed }
-			}
-		}
+# 		cancel_trigger = {
+# 			OR = {
+# 				has_global_flag = scw_over
+# 				not = { has_country_flag = KOR_non_military_aid_allowed }
+# 			}
+# 		}
 
-		complete_effect = { 
-			set_country_flag = KOR_non_military_aid_allowed 
-			clr_country_flag = KOR_non_intervention
-			unlock_decision_tooltip = { decision = KOR_send_non_military_aid_to_FROM show_effect_tooltip = yes }
-			unlock_decision_tooltip = KOR_ban_non_military_aid
-		}
+# 		complete_effect = { 
+# 			set_country_flag = KOR_non_military_aid_allowed 
+# 			clr_country_flag = KOR_non_intervention
+# 			unlock_decision_tooltip = { decision = KOR_send_non_military_aid_to_FROM show_effect_tooltip = yes }
+# 			unlock_decision_tooltip = KOR_ban_non_military_aid
+# 		}
 
-		cost = 25
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				has_stability < 0.3
-				factor = 0
-			}
-		}
-		days_remove = -1
-		modifier = {
-			stability_factor = -0.05
-		}
-	}
+# 		cost = 25
+# 		ai_will_do = {
+# 			factor = 1
+# 			modifier = {
+# 				has_stability < 0.3
+# 				factor = 0
+# 			}
+# 		}
+# 		days_remove = -1
+# 		modifier = {
+# 			stability_factor = -0.05
+# 		}
+# 	}
 
-	KOR_ban_non_military_aid = {
-		available = {  }
+# 	KOR_ban_non_military_aid = {
+# 		available = {  }
 
-		visible = { has_country_flag = KOR_non_military_aid_allowed }
+# 		visible = { has_country_flag = KOR_non_military_aid_allowed }
 
-		complete_effect = { 
-			clr_country_flag = KOR_non_military_aid_allowed 
-			set_country_flag = KOR_non_intervention
-		}
+# 		complete_effect = { 
+# 			clr_country_flag = KOR_non_military_aid_allowed 
+# 			set_country_flag = KOR_non_intervention
+# 		}
 
-		cost = 0
-		ai_will_do = {
-			factor = 0
-			modifier = {
-				has_stability < 0.3
-				add = 5
-			}
-		}
-	}
+# 		cost = 0
+# 		ai_will_do = {
+# 			factor = 0
+# 			modifier = {
+# 				has_stability < 0.3
+# 				add = 5
+# 			}
+# 		}
+# 	}
 
-	KOR_send_non_military_aid_to_FROM = {
-		available = { 
-			has_equipment = {
-				support_equipment > 99
-			} 
-		}
+# 	KOR_send_non_military_aid_to_FROM = {
+# 		available = { 
+# 			has_equipment = {
+# 				support_equipment > 99
+# 			} 
+# 		}
 
-		visible = { has_country_flag = KOR_non_military_aid_allowed }
-		target_root_trigger = { has_country_flag = KOR_non_military_aid_allowed }
+# 		visible = { has_country_flag = KOR_non_military_aid_allowed }
+# 		target_root_trigger = { has_country_flag = KOR_non_military_aid_allowed }
 
-		targets = { SPA SPR SPB SPC SPD }
+# 		targets = { SPA SPR SPB SPC SPD }
 
-		target_trigger = {
-			FROM = {
-				exists = yes
-				has_war = yes
-				NOT = { has_war_with = ROOT }
-			}
-		}
-		days_re_enable = 30
-		complete_effect = { 
-			send_equipment = {
-				type = support_equipment
-				amount = 100
-				target = FROM
-			}
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				FROM = { has_government = ROOT }
-				factor = 5
-			}
-		}
-		cost = 0
-	}
-	KOR_allow_arms_purchases = {
-		available = { has_completed_focus = iberian_fascism }
+# 		target_trigger = {
+# 			FROM = {
+# 				exists = yes
+# 				has_war = yes
+# 				NOT = { has_war_with = ROOT }
+# 			}
+# 		}
+# 		days_re_enable = 30
+# 		complete_effect = { 
+# 			send_equipment = {
+# 				type = support_equipment
+# 				amount = 100
+# 				target = FROM
+# 			}
+# 		}
+# 		ai_will_do = {
+# 			factor = 1
+# 			modifier = {
+# 				FROM = { has_government = ROOT }
+# 				factor = 5
+# 			}
+# 		}
+# 		cost = 0
+# 	}
+# 	KOR_allow_arms_purchases = {
+# 		available = { has_completed_focus = iberian_fascism }
 
-		visible = { not = { has_country_flag = KOR_arms_purchases_allowed } }
+# 		visible = { not = { has_country_flag = KOR_arms_purchases_allowed } }
 
-		cancel_trigger = {
-			OR = {
-				has_global_flag = scw_over
-				not = { has_country_flag = KOR_arms_purchases_allowed }
-			}
-		}
+# 		cancel_trigger = {
+# 			OR = {
+# 				has_global_flag = scw_over
+# 				not = { has_country_flag = KOR_arms_purchases_allowed }
+# 			}
+# 		}
 
-		complete_effect = { 
-			set_country_flag = KOR_arms_purchases_allowed 
-			clr_country_flag = KOR_non_intervention
-			custom_effect_tooltip = KOR_allow_arms_purchases_tt
-			unlock_decision_tooltip = KOR_ban_arms_purchases
-		}
+# 		complete_effect = { 
+# 			set_country_flag = KOR_arms_purchases_allowed 
+# 			clr_country_flag = KOR_non_intervention
+# 			custom_effect_tooltip = KOR_allow_arms_purchases_tt
+# 			unlock_decision_tooltip = KOR_ban_arms_purchases
+# 		}
 
-		cost = 25
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				has_stability < 0.4
-				factor = 0
-			}
-		}
-		days_remove = -1
-		modifier = {
-			stability_factor = -0.1
-			war_support_factor = 0.05
-		}
+# 		cost = 25
+# 		ai_will_do = {
+# 			factor = 1
+# 			modifier = {
+# 				has_stability < 0.4
+# 				factor = 0
+# 			}
+# 		}
+# 		days_remove = -1
+# 		modifier = {
+# 			stability_factor = -0.1
+# 			war_support_factor = 0.05
+# 		}
 
-	}
+# 	}
 
-	KOR_ban_arms_purchases = {
-		available = {  }
+# 	KOR_ban_arms_purchases = {
+# 		available = {  }
 
-		visible = { has_country_flag = KOR_arms_purchases_allowed }
+# 		visible = { has_country_flag = KOR_arms_purchases_allowed }
 
-		complete_effect = { 
-			clr_country_flag = KOR_arms_purchases_allowed 
-			set_country_flag = KOR_non_intervention
-		}
+# 		complete_effect = { 
+# 			clr_country_flag = KOR_arms_purchases_allowed 
+# 			set_country_flag = KOR_non_intervention
+# 		}
 
-		cost = 0
-		ai_will_do = {
-			factor = 0
-			modifier = {
-				has_stability < 0.4
-				add = 5
-			}
-		}
-	}
+# 		cost = 0
+# 		ai_will_do = {
+# 			factor = 0
+# 			modifier = {
+# 				has_stability < 0.4
+# 				add = 5
+# 			}
+# 		}
+# 	}
 
-	KOR_allow_sending_weapons = {
-		available = { has_completed_focus = iberian_fascism }
+# 	KOR_allow_sending_weapons = {
+# 		available = { has_completed_focus = iberian_fascism }
 
-		visible = { not = { has_country_flag = KOR_sending_weapons_allowed } }
+# 		visible = { not = { has_country_flag = KOR_sending_weapons_allowed } }
 
-		cancel_trigger = {
-			OR = {
-				has_global_flag = scw_over
-				not = { has_country_flag = KOR_sending_weapons_allowed }
-			}
-		}
+# 		cancel_trigger = {
+# 			OR = {
+# 				has_global_flag = scw_over
+# 				not = { has_country_flag = KOR_sending_weapons_allowed }
+# 			}
+# 		}
 
-		complete_effect = { 
-			set_country_flag = KOR_sending_weapons_allowed 
-			clr_country_flag = KOR_non_intervention
-			unlock_decision_tooltip = KOR_ban_sending_weapons
-		}
+# 		complete_effect = { 
+# 			set_country_flag = KOR_sending_weapons_allowed 
+# 			clr_country_flag = KOR_non_intervention
+# 			unlock_decision_tooltip = KOR_ban_sending_weapons
+# 		}
 
-		cost = 25
-		days_remove = -1
-		modifier = {
-			stability_factor = -0.15
-			war_support_factor = 0.075
-			lend_lease_tension = -1
-			request_lease_tension = -1
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				has_stability < 0.45
-				factor = 0
-			}
-		}
-	}
+# 		cost = 25
+# 		days_remove = -1
+# 		modifier = {
+# 			stability_factor = -0.15
+# 			war_support_factor = 0.075
+# 			lend_lease_tension = -1
+# 			request_lease_tension = -1
+# 		}
+# 		ai_will_do = {
+# 			factor = 1
+# 			modifier = {
+# 				has_stability < 0.45
+# 				factor = 0
+# 			}
+# 		}
+# 	}
 
-	KOR_ban_sending_weapons = {
-		available = {  }
+# 	KOR_ban_sending_weapons = {
+# 		available = {  }
 
-		visible = { has_country_flag = KOR_sending_weapons_allowed }
+# 		visible = { has_country_flag = KOR_sending_weapons_allowed }
 
-		complete_effect = { 
-			clr_country_flag = KOR_sending_weapons_allowed 
-		}
+# 		complete_effect = { 
+# 			clr_country_flag = KOR_sending_weapons_allowed 
+# 		}
 
-		cost = 0
-		ai_will_do = {
-			factor = 0
-			modifier = {
-				has_stability < 0.45
-				add = 5
-			}
-		}
-	}
-	KOR_allow_volunteer_work = {
-		available = { has_completed_focus = support_everything }
+# 		cost = 0
+# 		ai_will_do = {
+# 			factor = 0
+# 			modifier = {
+# 				has_stability < 0.45
+# 				add = 5
+# 			}
+# 		}
+# 	}
+# 	KOR_allow_volunteer_work = {
+# 		available = { has_completed_focus = support_everything }
 
-		visible = { not = { has_country_flag = KOR_volunteer_work_allowed } }
+# 		visible = { not = { has_country_flag = KOR_volunteer_work_allowed } }
 
-		cancel_trigger = {
-			OR = {
-				has_global_flag = scw_over
-				not = { has_country_flag = KOR_volunteer_work_allowed }
-			}
-		}
+# 		cancel_trigger = {
+# 			OR = {
+# 				has_global_flag = scw_over
+# 				not = { has_country_flag = KOR_volunteer_work_allowed }
+# 			}
+# 		}
 
-		complete_effect = { 
-			set_country_flag = KOR_volunteer_work_allowed 
-			clr_country_flag = KOR_non_intervention
-			unlock_decision_tooltip = KOR_ban_volunteer_work
-			every_country = {
-				limit = {
-					OR = {
-						tag = SPA
-						tag = SPD
-						tag = SPB
-						tag = SPC
-					}
-					exists = yes
-					NOT = { has_country_flag = KOR_has_received_volunteers }
-				}
-				country_event = lar_france_volunteers.1
-			}
-			custom_effect_tooltip = KOR_allow_volunteer_work_tt
-		}
+# 		complete_effect = { 
+# 			set_country_flag = KOR_volunteer_work_allowed 
+# 			clr_country_flag = KOR_non_intervention
+# 			unlock_decision_tooltip = KOR_ban_volunteer_work
+# 			every_country = {
+# 				limit = {
+# 					OR = {
+# 						tag = SPA
+# 						tag = SPD
+# 						tag = SPB
+# 						tag = SPC
+# 					}
+# 					exists = yes
+# 					NOT = { has_country_flag = KOR_has_received_volunteers }
+# 				}
+# 				country_event = lar_france_volunteers.1
+# 			}
+# 			custom_effect_tooltip = KOR_allow_volunteer_work_tt
+# 		}
 
-		cost = 25
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				has_stability < 0.5
-				factor = 0
-			}
-		}
-		days_remove = -1
-		modifier = {
-			stability_factor = -0.2
-			war_support_factor = 0.1
-		}
-	}
+# 		cost = 25
+# 		ai_will_do = {
+# 			factor = 1
+# 			modifier = {
+# 				has_stability < 0.5
+# 				factor = 0
+# 			}
+# 		}
+# 		days_remove = -1
+# 		modifier = {
+# 			stability_factor = -0.2
+# 			war_support_factor = 0.1
+# 		}
+# 	}
 
-	KOR_ban_volunteer_work = {
-		available = {  }
+# 	KOR_ban_volunteer_work = {
+# 		available = {  }
 
-		visible = { has_country_flag = KOR_volunteer_work_allowed }
+# 		visible = { has_country_flag = KOR_volunteer_work_allowed }
 
-		complete_effect = { 
-			clr_country_flag = KOR_volunteer_work_allowed 
-		}
-		ai_will_do = {
-			factor = 0
-			modifier = {
-				has_stability < 0.5
-				add = 5
-			}
-		}
-		cost = 0
-	}
-	KOR_allow_covert_intervention = {
-		available = { has_completed_focus = win_civil_war }
+# 		complete_effect = { 
+# 			clr_country_flag = KOR_volunteer_work_allowed 
+# 		}
+# 		ai_will_do = {
+# 			factor = 0
+# 			modifier = {
+# 				has_stability < 0.5
+# 				add = 5
+# 			}
+# 		}
+# 		cost = 0
+# 	}
+# 	KOR_allow_covert_intervention = {
+# 		available = { has_completed_focus = win_civil_war }
 
-		visible = { not = { has_country_flag = KOR_covert_intervention_allowed } }
+# 		visible = { not = { has_country_flag = KOR_covert_intervention_allowed } }
 
-		cancel_trigger = {
-			OR = {
-				has_global_flag = scw_over
-				not = { has_country_flag = KOR_covert_intervention_allowed }
-			}
-		}
+# 		cancel_trigger = {
+# 			OR = {
+# 				has_global_flag = scw_over
+# 				not = { has_country_flag = KOR_covert_intervention_allowed }
+# 			}
+# 		}
 
-		complete_effect = { 
-			set_country_flag = KOR_covert_intervention_allowed 
-			clr_country_flag = KOR_non_intervention
-			set_rule = { can_send_volunteers = yes }
-		}
+# 		complete_effect = { 
+# 			set_country_flag = KOR_covert_intervention_allowed 
+# 			clr_country_flag = KOR_non_intervention
+# 			set_rule = { can_send_volunteers = yes }
+# 		}
 
-		cost = 25
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				has_stability < 0.55
-				factor = 0
-			}
-			modifier = {
-				has_stability < 0.8
-				factor = 0.5
-			}
-		}
-		days_remove = -1
-		modifier = {
-			stability_factor = -0.25
-			war_support_factor = 0.125
-			send_volunteers_tension = -0.9
-		}
-	}
+# 		cost = 25
+# 		ai_will_do = {
+# 			factor = 1
+# 			modifier = {
+# 				has_stability < 0.55
+# 				factor = 0
+# 			}
+# 			modifier = {
+# 				has_stability < 0.8
+# 				factor = 0.5
+# 			}
+# 		}
+# 		days_remove = -1
+# 		modifier = {
+# 			stability_factor = -0.25
+# 			war_support_factor = 0.125
+# 			send_volunteers_tension = -0.9
+# 		}
+# 	}
 
-	KOR_ban_covert_intervention = {
-		available = { 
-			NOT = {
-				any_other_country = {
-					has_volunteers_amount_from = {
-						tag = ROOT
-						count > 0
-					}
-				}
-			}
-		}
+# 	KOR_ban_covert_intervention = {
+# 		available = { 
+# 			NOT = {
+# 				any_other_country = {
+# 					has_volunteers_amount_from = {
+# 						tag = ROOT
+# 						count > 0
+# 					}
+# 				}
+# 			}
+# 		}
 
-		visible = { has_country_flag = KOR_covert_intervention_allowed }
+# 		visible = { has_country_flag = KOR_covert_intervention_allowed }
 
-		complete_effect = { 
-			clr_country_flag = KOR_covert_intervention_allowed 
-			#recall_volunteers_from = SPR
-		}
+# 		complete_effect = { 
+# 			clr_country_flag = KOR_covert_intervention_allowed 
+# 			#recall_volunteers_from = SPR
+# 		}
 
-		cost = 0
-		ai_will_do = {
-			factor = 0
-			modifier = {
-				has_stability < 0.55
-				add = 5
-			}
-		}
-	}
+# 		cost = 0
+# 		ai_will_do = {
+# 			factor = 0
+# 			modifier = {
+# 				has_stability < 0.55
+# 				add = 5
+# 			}
+# 		}
+# 	}
 
-	KOR_intervene_on_side_of_FROM = {
-		available = { has_war_support > 0.25 }
+# 	KOR_intervene_on_side_of_FROM = {
+# 		available = { has_war_support > 0.25 }
 
-		visible = { has_war = no }
+# 		visible = { has_war = no }
 
-		targets = { SPD SPA SPB SPR }
+# 		targets = { SPD SPA SPB SPR }
 
-		target_trigger = { 
-			FROM = {
-				original_tag = SPR
-				has_government = ROOT
-			}
-		}
+# 		target_trigger = { 
+# 			FROM = {
+# 				original_tag = SPR
+# 				has_government = ROOT
+# 			}
+# 		}
 
-		complete_effect = {
-			#This is not optimal, but it generates a beautiful tooltip
-			if = {
-				limit = { FROM = { tag = SPD } }
-				set_country_flag = supports_SPD_flag
-				if = {
-					limit = { country_exists = SPA }
-					add_to_war = { targeted_alliance = SPD enemy = SPA hostility_reason = asked_to_join }
-				}
-				if = {
-					limit = { country_exists = SPC }
-					add_to_war = { targeted_alliance = SPD enemy = SPC hostility_reason = asked_to_join }
-				}
-				if = {
-					limit = { country_exists = SPB }
-					add_to_war = { targeted_alliance = SPD enemy = SPB hostility_reason = asked_to_join }
-				}
-			}
-			else_if = {
-				limit = { FROM = { tag = SPA } }
-				set_country_flag = supports_SPA_flag
-				if = {
-					limit = { country_exists = SPD }
-					add_to_war = { targeted_alliance = SPA enemy = SPD hostility_reason = asked_to_join }
-				}
-				if = {
-					limit = { country_exists = SPC }
-					add_to_war = { targeted_alliance = SPA enemy = SPC hostility_reason = asked_to_join }
-				}
-				if = {
-					limit = { country_exists = SPB }
-					add_to_war = { targeted_alliance = SPA enemy = SPB hostility_reason = asked_to_join }
-				}
-			}
-			else_if = {
-				limit = { FROM = { tag = SPB } }
-				set_country_flag = supports_SPB_flag
-				if = {
-					limit = { country_exists = SPD }
-					add_to_war = { targeted_alliance = SPB enemy = SPD hostility_reason = asked_to_join }
-				}
-				if = {
-					limit = { country_exists = SPC }
-					add_to_war = { targeted_alliance = SPB enemy = SPC hostility_reason = asked_to_join }
-				}
-				if = {
-					limit = { country_exists = SPA }
-					add_to_war = { targeted_alliance = SPB enemy = SPA hostility_reason = asked_to_join }
-				}
-			}
+# 		complete_effect = {
+# 			#This is not optimal, but it generates a beautiful tooltip
+# 			if = {
+# 				limit = { FROM = { tag = SPD } }
+# 				set_country_flag = supports_SPD_flag
+# 				if = {
+# 					limit = { country_exists = SPA }
+# 					add_to_war = { targeted_alliance = SPD enemy = SPA hostility_reason = asked_to_join }
+# 				}
+# 				if = {
+# 					limit = { country_exists = SPC }
+# 					add_to_war = { targeted_alliance = SPD enemy = SPC hostility_reason = asked_to_join }
+# 				}
+# 				if = {
+# 					limit = { country_exists = SPB }
+# 					add_to_war = { targeted_alliance = SPD enemy = SPB hostility_reason = asked_to_join }
+# 				}
+# 			}
+# 			else_if = {
+# 				limit = { FROM = { tag = SPA } }
+# 				set_country_flag = supports_SPA_flag
+# 				if = {
+# 					limit = { country_exists = SPD }
+# 					add_to_war = { targeted_alliance = SPA enemy = SPD hostility_reason = asked_to_join }
+# 				}
+# 				if = {
+# 					limit = { country_exists = SPC }
+# 					add_to_war = { targeted_alliance = SPA enemy = SPC hostility_reason = asked_to_join }
+# 				}
+# 				if = {
+# 					limit = { country_exists = SPB }
+# 					add_to_war = { targeted_alliance = SPA enemy = SPB hostility_reason = asked_to_join }
+# 				}
+# 			}
+# 			else_if = {
+# 				limit = { FROM = { tag = SPB } }
+# 				set_country_flag = supports_SPB_flag
+# 				if = {
+# 					limit = { country_exists = SPD }
+# 					add_to_war = { targeted_alliance = SPB enemy = SPD hostility_reason = asked_to_join }
+# 				}
+# 				if = {
+# 					limit = { country_exists = SPC }
+# 					add_to_war = { targeted_alliance = SPB enemy = SPC hostility_reason = asked_to_join }
+# 				}
+# 				if = {
+# 					limit = { country_exists = SPA }
+# 					add_to_war = { targeted_alliance = SPB enemy = SPA hostility_reason = asked_to_join }
+# 				}
+# 			}
 
-			effect_tooltip = {
-				give_military_access = FROM
-				FROM = { give_military_access = ROOT }
-			}
-			hidden_effect = {
-				diplomatic_relation = {
-					country = FROM
-					relation = military_access
-					active = yes
-				}
-				FROM = {
-					diplomatic_relation = {
-						country = ROOT
-						relation = military_access
-						active = yes
-					}
-				}
-			}
-			if = {
-				limit = {
-					is_faction_leader = yes
-				}
-				add_to_faction = FROM
-			}
-			clr_country_flag = KOR_non_intervention
-			if = {
-				limit = {
-					has_country_flag = KOR_covert_intervention_allowed
-				}
-				clr_country_flag = KOR_covert_intervention_allowed 
-			}
-			if = {
-				limit = {
-					has_country_flag = KOR_volunteer_work_allowed
-				}
-				clr_country_flag = KOR_volunteer_work_allowed 
-			}
-			if = {
-				limit = {
-					has_country_flag = KOR_sending_weapons_allowed
-				}
-				clr_country_flag = KOR_sending_weapons_allowed 
-			}
-			if = { 
-				limit = { has_country_flag = KOR_non_military_aid_allowed }
-				clr_country_flag = KOR_non_military_aid_allowed
-			}
-			if = { 
-				limit = { has_country_flag = KOR_arms_purchases_allowed }
-				clr_country_flag = KOR_arms_purchases_allowed
-			}
+# 			effect_tooltip = {
+# 				give_military_access = FROM
+# 				FROM = { give_military_access = ROOT }
+# 			}
+# 			hidden_effect = {
+# 				diplomatic_relation = {
+# 					country = FROM
+# 					relation = military_access
+# 					active = yes
+# 				}
+# 				FROM = {
+# 					diplomatic_relation = {
+# 						country = ROOT
+# 						relation = military_access
+# 						active = yes
+# 					}
+# 				}
+# 			}
+# 			if = {
+# 				limit = {
+# 					is_faction_leader = yes
+# 				}
+# 				add_to_faction = FROM
+# 			}
+# 			clr_country_flag = KOR_non_intervention
+# 			if = {
+# 				limit = {
+# 					has_country_flag = KOR_covert_intervention_allowed
+# 				}
+# 				clr_country_flag = KOR_covert_intervention_allowed 
+# 			}
+# 			if = {
+# 				limit = {
+# 					has_country_flag = KOR_volunteer_work_allowed
+# 				}
+# 				clr_country_flag = KOR_volunteer_work_allowed 
+# 			}
+# 			if = {
+# 				limit = {
+# 					has_country_flag = KOR_sending_weapons_allowed
+# 				}
+# 				clr_country_flag = KOR_sending_weapons_allowed 
+# 			}
+# 			if = { 
+# 				limit = { has_country_flag = KOR_non_military_aid_allowed }
+# 				clr_country_flag = KOR_non_military_aid_allowed
+# 			}
+# 			if = { 
+# 				limit = { has_country_flag = KOR_arms_purchases_allowed }
+# 				clr_country_flag = KOR_arms_purchases_allowed
+# 			}
 			
-		}
+# 		}
 
-		cost = 25
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				has_war = yes
-				factor = 0
-			}
-			modifier = {
-				is_historical_focus_on = yes
-				factor = 0
-			}
-		}
+# 		cost = 25
+# 		ai_will_do = {
+# 			factor = 1
+# 			modifier = {
+# 				has_war = yes
+# 				factor = 0
+# 			}
+# 			modifier = {
+# 				is_historical_focus_on = yes
+# 				factor = 0
+# 			}
+# 		}
 		
-	}
-}
+# 	}
+# }
 
-KOR_the_inevitable_civil_war = {
+# KOR_the_inevitable_civil_war = {
 	
-	KOR_military_plot_nationalists = {
+# 	KOR_military_plot_nationalists = {
 
-		priority = 10
+# 		priority = 10
 
-		icon = generic_ignite_civil_war
+# 		icon = generic_ignite_civil_war
 
-		available = {
-			hidden_trigger = { always = no }
-		}
+# 		available = {
+# 			hidden_trigger = { always = no }
+# 		}
 
-		days_mission_timeout = 2
+# 		days_mission_timeout = 2
 
-		fire_only_once = yes
+# 		fire_only_once = yes
 
-		activation = {
-			NOT = { has_global_flag = kor_civil_war }
-			has_completed_focus = Yeo_Un_hyung_Elected
-		}
+# 		activation = {
+# 			NOT = { has_global_flag = kor_civil_war }
+# 			has_completed_focus = Yeo_Un_hyung_Elected
+# 		}
 
-		visible = {
-			tag = KOR
-			NOT = { has_global_flag = kor_civil_war }
-			has_completed_focus = Yeo_Un_hyung_Elected
-		}
+# 		visible = {
+# 			tag = KOR
+# 			NOT = { has_global_flag = kor_civil_war }
+# 			has_completed_focus = Yeo_Un_hyung_Elected
+# 		}
 
-		cancel_if_not_visible = yes
+# 		cancel_if_not_visible = yes
 
-		is_good = yes
+# 		is_good = yes
 
-		timeout_effect = {
-			country_event = { id = KOR.53 }
-		}
-	}
+# 		timeout_effect = {
+# 			country_event = { id = KOR.53 }
+# 		}
+# 	}
 
-	KOR_primo_de_rivera_speech = {
+# 	KOR_primo_de_rivera_speech = {
 
-		icon = eng_propaganda_campaigns
+# 		icon = eng_propaganda_campaigns
 
-		allowed = {
-			tag = KOR
-		}
+# 		allowed = {
+# 			tag = KOR
+# 		}
 
-		available = {
-			NOT = {
-				has_country_flag = KOR_primo_de_rivera_imprisoned
-				has_country_flag = KOR_inevitable_civil_war_in_progress_flag
-			}
-		}
+# 		available = {
+# 			NOT = {
+# 				has_country_flag = KOR_primo_de_rivera_imprisoned
+# 				has_country_flag = KOR_inevitable_civil_war_in_progress_flag
+# 			}
+# 		}
 
-		cost = 30
+# 		cost = 30
 
-		fire_only_once = no
+# 		fire_only_once = no
 
-		ai_will_do = {
-			base = 200
-		}
+# 		ai_will_do = {
+# 			base = 200
+# 		}
 
-		days_remove = 37
+# 		days_remove = 37
 
-		modifier = {
+# 		modifier = {
 			
-		}
+# 		}
 		
-		visible = {
-			tag = KOR
-			has_completed_focus = Yeo_Un_hyung_Elected
-		}
+# 		visible = {
+# 			tag = KOR
+# 			has_completed_focus = Yeo_Un_hyung_Elected
+# 		}
 
-		complete_effect = {
-			set_country_flag = KOR_inevitable_civil_war_in_progress_flag
-		}
+# 		complete_effect = {
+# 			set_country_flag = KOR_inevitable_civil_war_in_progress_flag
+# 		}
 
-		remove_effect = {
-			add_popularity = {
-			    ideology = social_democracy
-			    popularity = 0.05
-			}
-			add_days_mission_timeout = {
-				mission = KOR_military_plot_nationalists
-				days = -36
-			}
-			clr_country_flag = KOR_inevitable_civil_war_in_progress_flag
-			if = {
-				limit = {
-					NOT = { has_country_flag = KOR_primo_de_rivera_first_speech }
-				}
-				set_country_flag = KOR_primo_de_rivera_first_speech
-			}
-		}
+# 		remove_effect = {
+# 			add_popularity = {
+# 			    ideology = social_democracy
+# 			    popularity = 0.05
+# 			}
+# 			add_days_mission_timeout = {
+# 				mission = KOR_military_plot_nationalists
+# 				days = -36
+# 			}
+# 			clr_country_flag = KOR_inevitable_civil_war_in_progress_flag
+# 			if = {
+# 				limit = {
+# 					NOT = { has_country_flag = KOR_primo_de_rivera_first_speech }
+# 				}
+# 				set_country_flag = KOR_primo_de_rivera_first_speech
+# 			}
+# 		}
 
-	}
+# 	}
 
-	KOR_political_assassination = {
+# 	KOR_political_assassination = {
 
-		icon = spr_political_assassination
+# 		icon = spr_political_assassination
 
-		allowed = {
-			tag = KOR
-		}
+# 		allowed = {
+# 			tag = KOR
+# 		}
 
-		available = {
-			NOT = {
-				has_country_flag = KOR_inevitable_civil_war_in_progress_flag
-			}
-		}
+# 		available = {
+# 			NOT = {
+# 				has_country_flag = KOR_inevitable_civil_war_in_progress_flag
+# 			}
+# 		}
 
-		cost = 30
+# 		cost = 30
 
-		fire_only_once = no
+# 		fire_only_once = no
 
-		ai_will_do = {
-			base = 200
-		}
+# 		ai_will_do = {
+# 			base = 200
+# 		}
 
-		days_remove = 37
+# 		days_remove = 37
 
-		modifier = {
+# 		modifier = {
 			
-		}
+# 		}
 
-		visible = {
-			tag = KOR
-			NOT = { has_global_flag = KOR_civil_war }
-			has_completed_focus = Yeo_Un_hyung_Elected
-		}
+# 		visible = {
+# 			tag = KOR
+# 			NOT = { has_global_flag = KOR_civil_war }
+# 			has_completed_focus = Yeo_Un_hyung_Elected
+# 		}
 
-		complete_effect = {
-			set_country_flag = KOR_inevitable_civil_war_in_progress_flag
-		}
+# 		complete_effect = {
+# 			set_country_flag = KOR_inevitable_civil_war_in_progress_flag
+# 		}
 
-		remove_effect = {
-			add_stability = -0.05
-			add_war_support = 0.1
-			add_days_mission_timeout = {
-				mission = KOR_military_plot_nationalists
-				days = -36
-			}
-			clr_country_flag = KOR_inevitable_civil_war_in_progress_flag
-			set_country_flag = KOR_political_assassination_flag
-		}
+# 		remove_effect = {
+# 			add_stability = -0.05
+# 			add_war_support = 0.1
+# 			add_days_mission_timeout = {
+# 				mission = KOR_military_plot_nationalists
+# 				days = -36
+# 			}
+# 			clr_country_flag = KOR_inevitable_civil_war_in_progress_flag
+# 			set_country_flag = KOR_political_assassination_flag
+# 		}
 
-	}
+# 	}
 
-	Securing_Seoul_Influence = {
+# 	Securing_Seoul_Influence = {
 
-		icon = {
-			key = kor_garrison_control_none
-			trigger = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				525 = { check_variable = { var = KOR_garrison_control value = 1 compare = equals } }
-			}
-		}
-		icon = {
-			key = kor_garrison_control_weak
-			trigger = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				525 = { check_variable = { var = KOR_garrison_control value = 2 compare = equals } }
-			}
-		}
-		icon = {
-			key = kor_garrison_control_strong
-			trigger = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				525 = { check_variable = { var = KOR_garrison_control value = 3 compare = equals } }
-			}
-		}
-		icon = {
-			key = kor_garrison_control_total
-			trigger = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				525 = { check_variable = { var = KOR_garrison_control value = 4 compare = greater_than_or_equals } }
-			}
-		} 
+# 		icon = {
+# 			key = kor_garrison_control_none
+# 			trigger = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				525 = { check_variable = { var = KOR_garrison_control value = 1 compare = equals } }
+# 			}
+# 		}
+# 		icon = {
+# 			key = kor_garrison_control_weak
+# 			trigger = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				525 = { check_variable = { var = KOR_garrison_control value = 2 compare = equals } }
+# 			}
+# 		}
+# 		icon = {
+# 			key = kor_garrison_control_strong
+# 			trigger = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				525 = { check_variable = { var = KOR_garrison_control value = 3 compare = equals } }
+# 			}
+# 		}
+# 		icon = {
+# 			key = kor_garrison_control_total
+# 			trigger = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				525 = { check_variable = { var = KOR_garrison_control value = 4 compare = greater_than_or_equals } }
+# 			}
+# 		} 
 
-		available = {
-			has_full_control_of_state = 525
-			if = {
-				limit = {
-					has_completed_focus = Yeo_Un_hyung_Elected
-				}
-				custom_trigger_tooltip = {
-					tooltip = SPA_expand_influence_nationalists_trigger_tt
-					525 = { check_variable = { var = KOR_garrison_control value = 4 compare = less_than } }
-				}
-			}
-			NOT = {
-				has_country_flag = KOR_already_expanding_influence_flag
-			}
-		}
+# 		available = {
+# 			has_full_control_of_state = 525
+# 			if = {
+# 				limit = {
+# 					has_completed_focus = Yeo_Un_hyung_Elected
+# 				}
+# 				custom_trigger_tooltip = {
+# 					tooltip = SPA_expand_influence_nationalists_trigger_tt
+# 					525 = { check_variable = { var = KOR_garrison_control value = 4 compare = less_than } }
+# 				}
+# 			}
+# 			NOT = {
+# 				has_country_flag = KOR_already_expanding_influence_flag
+# 			}
+# 		}
 
-		highlight_state_targets = { state = 525 }
+# 		highlight_state_targets = { state = 525 }
 
-		on_map_mode = map_only
+# 		on_map_mode = map_only
 
-		cost = 525.KOR_garrison_control_cost?10
+# 		cost = 525.KOR_garrison_control_cost?10
 
-		fire_only_once = no
+# 		fire_only_once = no
 
-		days_remove = 1
+# 		days_remove = 1
 
-		visible = {
-			NOT = { has_global_flag = KOR_civil_war }
-			has_completed_focus = Yeo_Un_hyung_Elected
-		}
+# 		visible = {
+# 			NOT = { has_global_flag = KOR_civil_war }
+# 			has_completed_focus = Yeo_Un_hyung_Elected
+# 		}
 
-		cancel_if_not_visible = yes
+# 		cancel_if_not_visible = yes
 
-		complete_effect = {
-			set_country_flag = KOR_already_expanding_influence_flag
-		}
+# 		complete_effect = {
+# 			set_country_flag = KOR_already_expanding_influence_flag
+# 		}
 
-		remove_effect = {
-			if = {
-				limit = {
-					has_completed_focus = Yeo_Un_hyung_Elected
-				}
-				525 = {
-					custom_effect_tooltip = SPA_expand_influence_nationalists_tt
-					set_state_flag = { flag = KOR_recently_expanded_influence_flag value = 1 days = 15 }
-					hidden_effect = {
-						if = {
-							limit = { check_variable = { KOR_garrison_control < 4 } }
+# 		remove_effect = {
+# 			if = {
+# 				limit = {
+# 					has_completed_focus = Yeo_Un_hyung_Elected
+# 				}
+# 				525 = {
+# 					custom_effect_tooltip = SPA_expand_influence_nationalists_tt
+# 					set_state_flag = { flag = KOR_recently_expanded_influence_flag value = 1 days = 15 }
+# 					hidden_effect = {
+# 						if = {
+# 							limit = { check_variable = { KOR_garrison_control < 4 } }
 							
-							add_to_variable = { var = KOR_garrison_control value = 1 }
-							KOR = { add_to_variable = { var = ko_civil_war_divisions_counter_var value = 1 } }
-							KOR = { subtract_from_variable = { var = kor_civil_war_divisions_counter_var value = 1 } }
-						}
-					}
-					KOR_garrison_control_tooltip = yes
-					KOR_garrison_control_cost_calculation = yes
-				}
-			}
-			clr_country_flag = KOR_already_expanding_influence_flag
-		}
+# 							add_to_variable = { var = KOR_garrison_control value = 1 }
+# 							KOR = { add_to_variable = { var = ko_civil_war_divisions_counter_var value = 1 } }
+# 							KOR = { subtract_from_variable = { var = kor_civil_war_divisions_counter_var value = 1 } }
+# 						}
+# 					}
+# 					KOR_garrison_control_tooltip = yes
+# 					KOR_garrison_control_cost_calculation = yes
+# 				}
+# 			}
+# 			clr_country_flag = KOR_already_expanding_influence_flag
+# 		}
 
-		ai_will_do = {
-			base = 110
-			modifier = {
-				525 = { has_state_flag = KOR_recently_expanded_influence_flag }
-				factor = 10
-			}
-			modifier = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				525 = { check_variable = { var = KOR_garrison_control value = 2 compare = greater_than_or_equals } }
-				factor = 5
-			}
-			modifier = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				525 = { check_variable = { var = KOR_garrison_control value = 3 compare = greater_than_or_equals } }
-				factor = 5
-			}
-			modifier = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				is_historical_focus_on = yes
-				factor = 0
-			}
-		}
-	}
-	Securing_Pyeongando_Influence = {
+# 		ai_will_do = {
+# 			base = 110
+# 			modifier = {
+# 				525 = { has_state_flag = KOR_recently_expanded_influence_flag }
+# 				factor = 10
+# 			}
+# 			modifier = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				525 = { check_variable = { var = KOR_garrison_control value = 2 compare = greater_than_or_equals } }
+# 				factor = 5
+# 			}
+# 			modifier = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				525 = { check_variable = { var = KOR_garrison_control value = 3 compare = greater_than_or_equals } }
+# 				factor = 5
+# 			}
+# 			modifier = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				is_historical_focus_on = yes
+# 				factor = 0
+# 			}
+# 		}
+# 	}
+# 	Securing_Pyeongando_Influence = {
 
-		icon = {
-			key = kor_garrison_control_none
-			trigger = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				798 = { check_variable = { var = KOR_garrison_control value = 1 compare = equals } }
-			}
-		}
-		icon = {
-			key = kor_garrison_control_weak
-			trigger = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				798 = {
-					check_variable = { var = KOR_garrison_control value = 2 compare = equals }
-					NOT = { has_state_flag = KOR_northern_garrisons_state_flag }
-				}
-			}
-		}
-		icon = {
-			key = kor_garrison_control_weak2
-			trigger = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				798 = {
-					check_variable = { var = KOR_garrison_control value = 2 compare = equals }
-					has_state_flag = KOR_northern_garrisons_state_flag
-				}
-			}
-		}
-		icon = {
-			key = kor_garrison_control_strong
-			trigger = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				798 = {
-					check_variable = { var = KOR_garrison_control value = 3 compare = equals }
-					NOT = { has_state_flag = KOR_northern_garrisons_state_flag }
-				}
-			}
-		}
-		icon = {
-			key = kor_garrison_control_strong2
-			trigger = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				798 = {
-					check_variable = { var = KOR_garrison_control value = 3 compare = equals }
-					has_state_flag = KOR_northern_garrisons_state_flag
-				}
-			}
-		}
-		icon = {
-			key = kor_garrison_control_total
-			trigger = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				798 = { 
-				 	check_variable = { var = KOR_garrison_control value = 4 compare = greater_than_or_equals } 
-				}
-			}
-		}
+# 		icon = {
+# 			key = kor_garrison_control_none
+# 			trigger = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				798 = { check_variable = { var = KOR_garrison_control value = 1 compare = equals } }
+# 			}
+# 		}
+# 		icon = {
+# 			key = kor_garrison_control_weak
+# 			trigger = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				798 = {
+# 					check_variable = { var = KOR_garrison_control value = 2 compare = equals }
+# 					NOT = { has_state_flag = KOR_northern_garrisons_state_flag }
+# 				}
+# 			}
+# 		}
+# 		icon = {
+# 			key = kor_garrison_control_weak2
+# 			trigger = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				798 = {
+# 					check_variable = { var = KOR_garrison_control value = 2 compare = equals }
+# 					has_state_flag = KOR_northern_garrisons_state_flag
+# 				}
+# 			}
+# 		}
+# 		icon = {
+# 			key = kor_garrison_control_strong
+# 			trigger = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				798 = {
+# 					check_variable = { var = KOR_garrison_control value = 3 compare = equals }
+# 					NOT = { has_state_flag = KOR_northern_garrisons_state_flag }
+# 				}
+# 			}
+# 		}
+# 		icon = {
+# 			key = kor_garrison_control_strong2
+# 			trigger = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				798 = {
+# 					check_variable = { var = KOR_garrison_control value = 3 compare = equals }
+# 					has_state_flag = KOR_northern_garrisons_state_flag
+# 				}
+# 			}
+# 		}
+# 		icon = {
+# 			key = kor_garrison_control_total
+# 			trigger = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				798 = { 
+# 				 	check_variable = { var = KOR_garrison_control value = 4 compare = greater_than_or_equals } 
+# 				}
+# 			}
+# 		}
 
-		available = {
-			has_full_control_of_state = 798
-			if = {
-				limit = {
-					has_completed_focus = Yeo_Un_hyung_Elected
-				}
-				custom_trigger_tooltip = {
-					tooltip = SPA_expand_influence_nationalists_trigger_tt
-					798 = { check_variable = { var = KOR_garrison_control value = 4 compare = less_than } }
-				}
-			}
-			NOT = {
-				has_country_flag = KOR_already_expanding_influence_flag
-			}
-		}
+# 		available = {
+# 			has_full_control_of_state = 798
+# 			if = {
+# 				limit = {
+# 					has_completed_focus = Yeo_Un_hyung_Elected
+# 				}
+# 				custom_trigger_tooltip = {
+# 					tooltip = SPA_expand_influence_nationalists_trigger_tt
+# 					798 = { check_variable = { var = KOR_garrison_control value = 4 compare = less_than } }
+# 				}
+# 			}
+# 			NOT = {
+# 				has_country_flag = KOR_already_expanding_influence_flag
+# 			}
+# 		}
 
-		highlight_state_targets = { state = 798 }
+# 		highlight_state_targets = { state = 798 }
 
-		on_map_mode = map_only
+# 		on_map_mode = map_only
 
-		cost = 798.SPR_garrison_control_cost?10
+# 		cost = 798.SPR_garrison_control_cost?10
 
-		fire_only_once = no
+# 		fire_only_once = no
 
-		days_remove = 1
+# 		days_remove = 1
 
-		visible = {
-			NOT = { has_global_flag = KOR_civil_war }
-			has_completed_focus = Yeo_Un_hyung_Elected
-		}
+# 		visible = {
+# 			NOT = { has_global_flag = KOR_civil_war }
+# 			has_completed_focus = Yeo_Un_hyung_Elected
+# 		}
 
-		cancel_if_not_visible = yes
+# 		cancel_if_not_visible = yes
 
-		complete_effect = {
-			set_country_flag = KOR_already_expanding_influence_flag
-		}
+# 		complete_effect = {
+# 			set_country_flag = KOR_already_expanding_influence_flag
+# 		}
 
-		remove_effect = {
-			if = {
-				limit = {
-					has_completed_focus = Yeo_Un_hyung_Elected
-				}
-				798 = {
-					custom_effect_tooltip = SPA_expand_influence_nationalists_tt
-					hidden_effect = {
-						if = {
-							limit = { check_variable = { KOR_garrison_control < 4 } }
+# 		remove_effect = {
+# 			if = {
+# 				limit = {
+# 					has_completed_focus = Yeo_Un_hyung_Elected
+# 				}
+# 				798 = {
+# 					custom_effect_tooltip = SPA_expand_influence_nationalists_tt
+# 					hidden_effect = {
+# 						if = {
+# 							limit = { check_variable = { KOR_garrison_control < 4 } }
 							
-							add_to_variable = { var = KOR_garrison_control value = 1 }
-							KOR = { add_to_variable = { var = ko_civil_war_divisions_counter_var value = 1 } }
-							KOR = { subtract_from_variable = { var = KOR_civil_war_divisions_counter_var value = 1 } }
-						}
-					}
-					KOR_garrison_control_tooltip = yes
-					KOR_garrison_control_cost_calculation = yes
-				}
-			}
-			clr_country_flag = KOR_already_expanding_influence_flag
-		}
+# 							add_to_variable = { var = KOR_garrison_control value = 1 }
+# 							KOR = { add_to_variable = { var = ko_civil_war_divisions_counter_var value = 1 } }
+# 							KOR = { subtract_from_variable = { var = KOR_civil_war_divisions_counter_var value = 1 } }
+# 						}
+# 					}
+# 					KOR_garrison_control_tooltip = yes
+# 					KOR_garrison_control_cost_calculation = yes
+# 				}
+# 			}
+# 			clr_country_flag = KOR_already_expanding_influence_flag
+# 		}
 
-		ai_will_do = {
-			base = 110
-			modifier = {
-				798 = { has_state_flag = KOR_recently_expanded_influence_flag }
-				factor = 10
-			}
-			modifier = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				NOT = { has_completed_focus = KOR_secure_the_northern_garrisons }
-				factor = 0
-			}
-			modifier = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				798 = { check_variable = { var = KOR_garrison_control value = 2 compare = greater_than_or_equals } }
-				factor = 5
-			}
-			modifier = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				798 = { check_variable = { var = KOR_garrison_control value = 3 compare = greater_than_or_equals } }
-				factor = 5
-			}
-			modifier = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				is_historical_focus_on = yes
-				factor = 10
-			}
-		}
-	}
-	Securing_Hamgyeongdo_Influence = {
+# 		ai_will_do = {
+# 			base = 110
+# 			modifier = {
+# 				798 = { has_state_flag = KOR_recently_expanded_influence_flag }
+# 				factor = 10
+# 			}
+# 			modifier = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				NOT = { has_completed_focus = KOR_secure_the_northern_garrisons }
+# 				factor = 0
+# 			}
+# 			modifier = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				798 = { check_variable = { var = KOR_garrison_control value = 2 compare = greater_than_or_equals } }
+# 				factor = 5
+# 			}
+# 			modifier = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				798 = { check_variable = { var = KOR_garrison_control value = 3 compare = greater_than_or_equals } }
+# 				factor = 5
+# 			}
+# 			modifier = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				is_historical_focus_on = yes
+# 				factor = 10
+# 			}
+# 		}
+# 	}
+# 	Securing_Hamgyeongdo_Influence = {
 
-		icon = {
-			key = kor_garrison_control_none
-			trigger = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				797 = { check_variable = { var = KOR_garrison_control value = 1 compare = equals } }
-			}
-		}
-		icon = {
-			key = kor_garrison_control_weak
-			trigger = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				797 = {
-					check_variable = { var = KOR_garrison_control value = 2 compare = equals }
-					NOT = { has_state_flag = KOR_northern_garrisons_state_flag }
-				}
-			}
-		}
-		icon = {
-			key = kor_garrison_control_weak2
-			trigger = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				797 = {
-					check_variable = { var = KOR_garrison_control value = 2 compare = equals }
-					has_state_flag = KOR_northern_garrisons_state_flag
-				}
-			}
-		}
-		icon = {
-			key = kor_garrison_control_strong
-			trigger = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				797 = {
-					check_variable = { var = KOR_garrison_control value = 3 compare = equals }
-					NOT = { has_state_flag = KOR_northern_garrisons_state_flag }
-				}
-			}
-		}
-		icon = {
-			key = kor_garrison_control_strong2
-			trigger = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				797 = {
-					check_variable = { var = KOR_garrison_control value = 3 compare = equals }
-					has_state_flag = KOR_northern_garrisons_state_flag
-				}
-			}
-		}
-		icon = {
-			key = kor_garrison_control_total
-			trigger = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				797 = { 
-				 	check_variable = { var = KOR_garrison_control value = 4 compare = greater_than_or_equals } 
-				}
-			}
-		}
+# 		icon = {
+# 			key = kor_garrison_control_none
+# 			trigger = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				797 = { check_variable = { var = KOR_garrison_control value = 1 compare = equals } }
+# 			}
+# 		}
+# 		icon = {
+# 			key = kor_garrison_control_weak
+# 			trigger = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				797 = {
+# 					check_variable = { var = KOR_garrison_control value = 2 compare = equals }
+# 					NOT = { has_state_flag = KOR_northern_garrisons_state_flag }
+# 				}
+# 			}
+# 		}
+# 		icon = {
+# 			key = kor_garrison_control_weak2
+# 			trigger = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				797 = {
+# 					check_variable = { var = KOR_garrison_control value = 2 compare = equals }
+# 					has_state_flag = KOR_northern_garrisons_state_flag
+# 				}
+# 			}
+# 		}
+# 		icon = {
+# 			key = kor_garrison_control_strong
+# 			trigger = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				797 = {
+# 					check_variable = { var = KOR_garrison_control value = 3 compare = equals }
+# 					NOT = { has_state_flag = KOR_northern_garrisons_state_flag }
+# 				}
+# 			}
+# 		}
+# 		icon = {
+# 			key = kor_garrison_control_strong2
+# 			trigger = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				797 = {
+# 					check_variable = { var = KOR_garrison_control value = 3 compare = equals }
+# 					has_state_flag = KOR_northern_garrisons_state_flag
+# 				}
+# 			}
+# 		}
+# 		icon = {
+# 			key = kor_garrison_control_total
+# 			trigger = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				797 = { 
+# 				 	check_variable = { var = KOR_garrison_control value = 4 compare = greater_than_or_equals } 
+# 				}
+# 			}
+# 		}
 
-		available = {
-			has_full_control_of_state = 797
-			if = {
-				limit = {
-					has_completed_focus = Yeo_Un_hyung_Elected
-				}
-				custom_trigger_tooltip = {
-					tooltip = SPA_expand_influence_nationalists_trigger_tt
-					797 = { check_variable = { var = KOR_garrison_control value = 4 compare = less_than } }
-				}
-			}
-			NOT = {
-				has_country_flag = KOR_already_expanding_influence_flag
-			}
-		}
+# 		available = {
+# 			has_full_control_of_state = 797
+# 			if = {
+# 				limit = {
+# 					has_completed_focus = Yeo_Un_hyung_Elected
+# 				}
+# 				custom_trigger_tooltip = {
+# 					tooltip = SPA_expand_influence_nationalists_trigger_tt
+# 					797 = { check_variable = { var = KOR_garrison_control value = 4 compare = less_than } }
+# 				}
+# 			}
+# 			NOT = {
+# 				has_country_flag = KOR_already_expanding_influence_flag
+# 			}
+# 		}
 
-		highlight_state_targets = { state = 797 }
+# 		highlight_state_targets = { state = 797 }
 
-		on_map_mode = map_only
+# 		on_map_mode = map_only
 
-		cost = 797.KOR_garrison_control_cost?10
+# 		cost = 797.KOR_garrison_control_cost?10
 
-		fire_only_once = no
+# 		fire_only_once = no
 
-		days_remove = 1
+# 		days_remove = 1
 
-		visible = {
-			NOT = { has_global_flag = KOR_civil_war }
-			has_completed_focus = Yeo_Un_hyung_Elected
-		}
+# 		visible = {
+# 			NOT = { has_global_flag = KOR_civil_war }
+# 			has_completed_focus = Yeo_Un_hyung_Elected
+# 		}
 
-		cancel_if_not_visible = yes
+# 		cancel_if_not_visible = yes
 
-		complete_effect = {
-			set_country_flag = KOR_already_expanding_influence_flag
-		}
+# 		complete_effect = {
+# 			set_country_flag = KOR_already_expanding_influence_flag
+# 		}
 
-		remove_effect = {
-			if = {
-				limit = {
-					has_completed_focus = Yeo_Un_hyung_Elected
-				}
-				797 = {
-					custom_effect_tooltip = SPA_expand_influence_nationalists_tt
-					hidden_effect = {
-						if = {
-							limit = { check_variable = { KOR_garrison_control < 4 } }
+# 		remove_effect = {
+# 			if = {
+# 				limit = {
+# 					has_completed_focus = Yeo_Un_hyung_Elected
+# 				}
+# 				797 = {
+# 					custom_effect_tooltip = SPA_expand_influence_nationalists_tt
+# 					hidden_effect = {
+# 						if = {
+# 							limit = { check_variable = { KOR_garrison_control < 4 } }
 							
-							add_to_variable = { var = KOR_garrison_control value = 1 }
-							KOR = { add_to_variable = { var = ko_civil_war_divisions_counter_var value = 1 } }
-							KOR = { subtract_from_variable = { var = KOR_civil_war_divisions_counter_var value = 1 } }
-						}
-					}
-					KOR_garrison_control_tooltip = yes
-					KOR_garrison_control_cost_calculation = yes
-				}
-			}
-			clr_country_flag = KOR_already_expanding_influence_flag
-		}
+# 							add_to_variable = { var = KOR_garrison_control value = 1 }
+# 							KOR = { add_to_variable = { var = ko_civil_war_divisions_counter_var value = 1 } }
+# 							KOR = { subtract_from_variable = { var = KOR_civil_war_divisions_counter_var value = 1 } }
+# 						}
+# 					}
+# 					KOR_garrison_control_tooltip = yes
+# 					KOR_garrison_control_cost_calculation = yes
+# 				}
+# 			}
+# 			clr_country_flag = KOR_already_expanding_influence_flag
+# 		}
 
-		ai_will_do = {
-			base = 110
-			modifier = {
-				797 = { has_state_flag = KOR_recently_expanded_influence_flag }
-				factor = 10
-			}
-			modifier = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				NOT = { has_completed_focus = KOR_secure_the_northern_garrisons }
-				factor = 0
-			}
-			modifier = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				797 = { check_variable = { var = KOR_garrison_control value = 2 compare = greater_than_or_equals } }
-				factor = 5
-			}
-			modifier = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				797 = { check_variable = { var = KOR_garrison_control value = 3 compare = greater_than_or_equals } }
-				factor = 5
-			}
-			modifier = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				is_historical_focus_on = yes
-				factor = 10
-			}
-		}
-	}
-	Securing_Hwanghaedo_Influence = {
+# 		ai_will_do = {
+# 			base = 110
+# 			modifier = {
+# 				797 = { has_state_flag = KOR_recently_expanded_influence_flag }
+# 				factor = 10
+# 			}
+# 			modifier = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				NOT = { has_completed_focus = KOR_secure_the_northern_garrisons }
+# 				factor = 0
+# 			}
+# 			modifier = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				797 = { check_variable = { var = KOR_garrison_control value = 2 compare = greater_than_or_equals } }
+# 				factor = 5
+# 			}
+# 			modifier = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				797 = { check_variable = { var = KOR_garrison_control value = 3 compare = greater_than_or_equals } }
+# 				factor = 5
+# 			}
+# 			modifier = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				is_historical_focus_on = yes
+# 				factor = 10
+# 			}
+# 		}
+# 	}
+# 	Securing_Hwanghaedo_Influence = {
 
-		icon = {
-			key = kor_garrison_control_none
-			trigger = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				799 = { check_variable = { var = KOR_garrison_control value = 1 compare = equals } }
-			}
-		}
-		icon = {
-			key = kor_garrison_control_weak
-			trigger = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				799 = {
-					check_variable = { var = KOR_garrison_control value = 2 compare = equals }
-					NOT = { has_state_flag = KOR_northern_garrisons_state_flag }
-				}
-			}
-		}
-		icon = {
-			key = kor_garrison_control_weak2
-			trigger = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				799 = {
-					check_variable = { var = KOR_garrison_control value = 2 compare = equals }
-					has_state_flag = KOR_northern_garrisons_state_flag
-				}
-			}
-		}
-		icon = {
-			key = kor_garrison_control_strong
-			trigger = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				799 = {
-					check_variable = { var = KOR_garrison_control value = 3 compare = equals }
-					NOT = { has_state_flag = KOR_northern_garrisons_state_flag }
-				}
-			}
-		}
-		icon = {
-			key = kor_garrison_control_strong2
-			trigger = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				799 = {
-					check_variable = { var = KOR_garrison_control value = 3 compare = equals }
-					has_state_flag = KOR_northern_garrisons_state_flag
-				}
-			}
-		}
-		icon = {
-			key = kor_garrison_control_total
-			trigger = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				799 = { 
-				 	check_variable = { var = KOR_garrison_control value = 4 compare = greater_than_or_equals } 
-				}
-			}
-		}
+# 		icon = {
+# 			key = kor_garrison_control_none
+# 			trigger = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				799 = { check_variable = { var = KOR_garrison_control value = 1 compare = equals } }
+# 			}
+# 		}
+# 		icon = {
+# 			key = kor_garrison_control_weak
+# 			trigger = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				799 = {
+# 					check_variable = { var = KOR_garrison_control value = 2 compare = equals }
+# 					NOT = { has_state_flag = KOR_northern_garrisons_state_flag }
+# 				}
+# 			}
+# 		}
+# 		icon = {
+# 			key = kor_garrison_control_weak2
+# 			trigger = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				799 = {
+# 					check_variable = { var = KOR_garrison_control value = 2 compare = equals }
+# 					has_state_flag = KOR_northern_garrisons_state_flag
+# 				}
+# 			}
+# 		}
+# 		icon = {
+# 			key = kor_garrison_control_strong
+# 			trigger = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				799 = {
+# 					check_variable = { var = KOR_garrison_control value = 3 compare = equals }
+# 					NOT = { has_state_flag = KOR_northern_garrisons_state_flag }
+# 				}
+# 			}
+# 		}
+# 		icon = {
+# 			key = kor_garrison_control_strong2
+# 			trigger = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				799 = {
+# 					check_variable = { var = KOR_garrison_control value = 3 compare = equals }
+# 					has_state_flag = KOR_northern_garrisons_state_flag
+# 				}
+# 			}
+# 		}
+# 		icon = {
+# 			key = kor_garrison_control_total
+# 			trigger = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				799 = { 
+# 				 	check_variable = { var = KOR_garrison_control value = 4 compare = greater_than_or_equals } 
+# 				}
+# 			}
+# 		}
 
-		available = {
-			has_full_control_of_state = 799
-			if = {
-				limit = {
-					has_completed_focus = Yeo_Un_hyung_Elected
-				}
-				custom_trigger_tooltip = {
-					tooltip = SPA_expand_influence_nationalists_trigger_tt
-					799 = { check_variable = { var = KOR_garrison_control value = 4 compare = less_than } }
-				}
-			}
-			NOT = {
-				has_country_flag = KOR_already_expanding_influence_flag
-			}
-		}
+# 		available = {
+# 			has_full_control_of_state = 799
+# 			if = {
+# 				limit = {
+# 					has_completed_focus = Yeo_Un_hyung_Elected
+# 				}
+# 				custom_trigger_tooltip = {
+# 					tooltip = SPA_expand_influence_nationalists_trigger_tt
+# 					799 = { check_variable = { var = KOR_garrison_control value = 4 compare = less_than } }
+# 				}
+# 			}
+# 			NOT = {
+# 				has_country_flag = KOR_already_expanding_influence_flag
+# 			}
+# 		}
 
-		highlight_state_targets = { state = 799 }
+# 		highlight_state_targets = { state = 799 }
 
-		on_map_mode = map_only
+# 		on_map_mode = map_only
 
-		cost = 799.KOR_garrison_control_cost?10
+# 		cost = 799.KOR_garrison_control_cost?10
 
-		fire_only_once = no
+# 		fire_only_once = no
 
-		days_remove = 1
+# 		days_remove = 1
 
-		visible = {
-			NOT = { has_global_flag = KOR_civil_war }
-			has_completed_focus = Yeo_Un_hyung_Elected
-		}
+# 		visible = {
+# 			NOT = { has_global_flag = KOR_civil_war }
+# 			has_completed_focus = Yeo_Un_hyung_Elected
+# 		}
 
-		cancel_if_not_visible = yes
+# 		cancel_if_not_visible = yes
 
-		complete_effect = {
-			set_country_flag = KOR_already_expanding_influence_flag
-		}
+# 		complete_effect = {
+# 			set_country_flag = KOR_already_expanding_influence_flag
+# 		}
 
-		remove_effect = {
-			if = {
-				limit = {
-					has_completed_focus = Yeo_Un_hyung_Elected
-				}
-				799 = {
-					custom_effect_tooltip = SPA_expand_influence_nationalists_tt
-					hidden_effect = {
-						if = {
-							limit = { check_variable = { KOR_garrison_control < 4 } }
+# 		remove_effect = {
+# 			if = {
+# 				limit = {
+# 					has_completed_focus = Yeo_Un_hyung_Elected
+# 				}
+# 				799 = {
+# 					custom_effect_tooltip = SPA_expand_influence_nationalists_tt
+# 					hidden_effect = {
+# 						if = {
+# 							limit = { check_variable = { KOR_garrison_control < 4 } }
 							
-							add_to_variable = { var = KOR_garrison_control value = 1 }
-							KOR = { add_to_variable = { var = ko_civil_war_divisions_counter_var value = 1 } }
-							KOR = { subtract_from_variable = { var = KOR_civil_war_divisions_counter_var value = 1 } }
-						}
-					}
-					KOR_garrison_control_tooltip = yes
-					KOR_garrison_control_cost_calculation = yes
-				}
-			}
-			clr_country_flag = KOR_already_expanding_influence_flag
-		}
+# 							add_to_variable = { var = KOR_garrison_control value = 1 }
+# 							KOR = { add_to_variable = { var = ko_civil_war_divisions_counter_var value = 1 } }
+# 							KOR = { subtract_from_variable = { var = KOR_civil_war_divisions_counter_var value = 1 } }
+# 						}
+# 					}
+# 					KOR_garrison_control_tooltip = yes
+# 					KOR_garrison_control_cost_calculation = yes
+# 				}
+# 			}
+# 			clr_country_flag = KOR_already_expanding_influence_flag
+# 		}
 
-		ai_will_do = {
-			base = 110
-			modifier = {
-				799 = { has_state_flag = KOR_recently_expanded_influence_flag }
-				factor = 10
-			}
-			modifier = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				NOT = { has_completed_focus = KOR_secure_the_northern_garrisons }
-				factor = 0
-			}
-			modifier = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				799 = { check_variable = { var = KOR_garrison_control value = 2 compare = greater_than_or_equals } }
-				factor = 5
-			}
-			modifier = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				799 = { check_variable = { var = KOR_garrison_control value = 3 compare = greater_than_or_equals } }
-				factor = 5
-			}
-			modifier = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				is_historical_focus_on = yes
-				factor = 10
-			}
-		}
-	}
-	Securing_Gangwondo_Influence = {
+# 		ai_will_do = {
+# 			base = 110
+# 			modifier = {
+# 				799 = { has_state_flag = KOR_recently_expanded_influence_flag }
+# 				factor = 10
+# 			}
+# 			modifier = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				NOT = { has_completed_focus = KOR_secure_the_northern_garrisons }
+# 				factor = 0
+# 			}
+# 			modifier = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				799 = { check_variable = { var = KOR_garrison_control value = 2 compare = greater_than_or_equals } }
+# 				factor = 5
+# 			}
+# 			modifier = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				799 = { check_variable = { var = KOR_garrison_control value = 3 compare = greater_than_or_equals } }
+# 				factor = 5
+# 			}
+# 			modifier = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				is_historical_focus_on = yes
+# 				factor = 10
+# 			}
+# 		}
+# 	}
+# 	Securing_Gangwondo_Influence = {
 
-		icon = {
-			key = kor_garrison_control_none
-			trigger = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				527 = { check_variable = { var = KOR_garrison_control value = 1 compare = equals } }
-			}
-		}
-		icon = {
-			key = kor_garrison_control_weak
-			trigger = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				527 = { check_variable = { var = KOR_garrison_control value = 2 compare = equals } }
-			}
-		}
-		icon = {
-			key = kor_garrison_control_strong
-			trigger = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				527 = { check_variable = { var = KOR_garrison_control value = 3 compare = equals } }
-			}
-		}
-		icon = {
-			key = kor_garrison_control_total
-			trigger = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				527 = { check_variable = { var = KOR_garrison_control value = 4 compare = greater_than_or_equals } }
-			}
-		} 
+# 		icon = {
+# 			key = kor_garrison_control_none
+# 			trigger = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				527 = { check_variable = { var = KOR_garrison_control value = 1 compare = equals } }
+# 			}
+# 		}
+# 		icon = {
+# 			key = kor_garrison_control_weak
+# 			trigger = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				527 = { check_variable = { var = KOR_garrison_control value = 2 compare = equals } }
+# 			}
+# 		}
+# 		icon = {
+# 			key = kor_garrison_control_strong
+# 			trigger = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				527 = { check_variable = { var = KOR_garrison_control value = 3 compare = equals } }
+# 			}
+# 		}
+# 		icon = {
+# 			key = kor_garrison_control_total
+# 			trigger = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				527 = { check_variable = { var = KOR_garrison_control value = 4 compare = greater_than_or_equals } }
+# 			}
+# 		} 
 
-		available = {
-			has_full_control_of_state = 527
-			if = {
-				limit = {
-					has_completed_focus = Yeo_Un_hyung_Elected
-				}
-				custom_trigger_tooltip = {
-					tooltip = SPA_expand_influence_nationalists_trigger_tt
-					527 = { check_variable = { var = KOR_garrison_control value = 4 compare = less_than } }
-				}
-			}
-			NOT = {
-				has_country_flag = KOR_already_expanding_influence_flag
-			}
-		}
+# 		available = {
+# 			has_full_control_of_state = 527
+# 			if = {
+# 				limit = {
+# 					has_completed_focus = Yeo_Un_hyung_Elected
+# 				}
+# 				custom_trigger_tooltip = {
+# 					tooltip = SPA_expand_influence_nationalists_trigger_tt
+# 					527 = { check_variable = { var = KOR_garrison_control value = 4 compare = less_than } }
+# 				}
+# 			}
+# 			NOT = {
+# 				has_country_flag = KOR_already_expanding_influence_flag
+# 			}
+# 		}
 
-		highlight_state_targets = { state = 527 }
+# 		highlight_state_targets = { state = 527 }
 
-		on_map_mode = map_only
+# 		on_map_mode = map_only
 
-		cost = 527.KOR_garrison_control_cost?10
+# 		cost = 527.KOR_garrison_control_cost?10
 
-		fire_only_once = no
+# 		fire_only_once = no
 
-		days_remove = 1
+# 		days_remove = 1
 
-		visible = {
-			NOT = { has_global_flag = KOR_civil_war }
-			has_completed_focus = Yeo_Un_hyung_Elected
-		}
+# 		visible = {
+# 			NOT = { has_global_flag = KOR_civil_war }
+# 			has_completed_focus = Yeo_Un_hyung_Elected
+# 		}
 
-		cancel_if_not_visible = yes
+# 		cancel_if_not_visible = yes
 
-		complete_effect = {
-			set_country_flag = KOR_already_expanding_influence_flag
-		}
+# 		complete_effect = {
+# 			set_country_flag = KOR_already_expanding_influence_flag
+# 		}
 
-		remove_effect = {
-			if = {
-				limit = {
-					has_completed_focus = Yeo_Un_hyung_Elected
-				}
-				527 = {
-					custom_effect_tooltip = SPA_expand_influence_nationalists_tt
-					set_state_flag = { flag = KOR_recently_expanded_influence_flag value = 1 days = 15 }
-					hidden_effect = {
-						if = {
-							limit = { check_variable = { KOR_garrison_control < 4 } }
+# 		remove_effect = {
+# 			if = {
+# 				limit = {
+# 					has_completed_focus = Yeo_Un_hyung_Elected
+# 				}
+# 				527 = {
+# 					custom_effect_tooltip = SPA_expand_influence_nationalists_tt
+# 					set_state_flag = { flag = KOR_recently_expanded_influence_flag value = 1 days = 15 }
+# 					hidden_effect = {
+# 						if = {
+# 							limit = { check_variable = { KOR_garrison_control < 4 } }
 							
-							add_to_variable = { var = KOR_garrison_control value = 1 }
-							KOR = { add_to_variable = { var = ko_civil_war_divisions_counter_var value = 1 } }
-							KOR = { subtract_from_variable = { var = kor_civil_war_divisions_counter_var value = 1 } }
-						}
-					}
-					KOR_garrison_control_tooltip = yes
-					KOR_garrison_control_cost_calculation = yes
-				}
-			}
-			clr_country_flag = KOR_already_expanding_influence_flag
-		}
+# 							add_to_variable = { var = KOR_garrison_control value = 1 }
+# 							KOR = { add_to_variable = { var = ko_civil_war_divisions_counter_var value = 1 } }
+# 							KOR = { subtract_from_variable = { var = kor_civil_war_divisions_counter_var value = 1 } }
+# 						}
+# 					}
+# 					KOR_garrison_control_tooltip = yes
+# 					KOR_garrison_control_cost_calculation = yes
+# 				}
+# 			}
+# 			clr_country_flag = KOR_already_expanding_influence_flag
+# 		}
 
-		ai_will_do = {
-			base = 110
-			modifier = {
-				527 = { has_state_flag = KOR_recently_expanded_influence_flag }
-				factor = 10
-			}
-			modifier = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				527 = { check_variable = { var = KOR_garrison_control value = 2 compare = greater_than_or_equals } }
-				factor = 5
-			}
-			modifier = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				527 = { check_variable = { var = KOR_garrison_control value = 3 compare = greater_than_or_equals } }
-				factor = 5
-			}
-			modifier = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				is_historical_focus_on = yes
-				factor = 0
-			}
-		}
-	}
-	Securing_Chungcheongdo_Influence = {
+# 		ai_will_do = {
+# 			base = 110
+# 			modifier = {
+# 				527 = { has_state_flag = KOR_recently_expanded_influence_flag }
+# 				factor = 10
+# 			}
+# 			modifier = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				527 = { check_variable = { var = KOR_garrison_control value = 2 compare = greater_than_or_equals } }
+# 				factor = 5
+# 			}
+# 			modifier = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				527 = { check_variable = { var = KOR_garrison_control value = 3 compare = greater_than_or_equals } }
+# 				factor = 5
+# 			}
+# 			modifier = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				is_historical_focus_on = yes
+# 				factor = 0
+# 			}
+# 		}
+# 	}
+# 	Securing_Chungcheongdo_Influence = {
 
-		icon = {
-			key = kor_garrison_control_none
-			trigger = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				800 = { check_variable = { var = KOR_garrison_control value = 1 compare = equals } }
-			}
-		}
-		icon = {
-			key = kor_garrison_control_weak
-			trigger = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				800 = { check_variable = { var = KOR_garrison_control value = 2 compare = equals } }
-			}
-		}
-		icon = {
-			key = kor_garrison_control_strong
-			trigger = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				800 = { check_variable = { var = KOR_garrison_control value = 3 compare = equals } }
-			}
-		}
-		icon = {
-			key = kor_garrison_control_total
-			trigger = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				800 = { check_variable = { var = KOR_garrison_control value = 4 compare = greater_than_or_equals } }
-			}
-		} 
+# 		icon = {
+# 			key = kor_garrison_control_none
+# 			trigger = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				800 = { check_variable = { var = KOR_garrison_control value = 1 compare = equals } }
+# 			}
+# 		}
+# 		icon = {
+# 			key = kor_garrison_control_weak
+# 			trigger = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				800 = { check_variable = { var = KOR_garrison_control value = 2 compare = equals } }
+# 			}
+# 		}
+# 		icon = {
+# 			key = kor_garrison_control_strong
+# 			trigger = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				800 = { check_variable = { var = KOR_garrison_control value = 3 compare = equals } }
+# 			}
+# 		}
+# 		icon = {
+# 			key = kor_garrison_control_total
+# 			trigger = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				800 = { check_variable = { var = KOR_garrison_control value = 4 compare = greater_than_or_equals } }
+# 			}
+# 		} 
 
-		available = {
-			has_full_control_of_state = 800
-			if = {
-				limit = {
-					has_completed_focus = Yeo_Un_hyung_Elected
-				}
-				custom_trigger_tooltip = {
-					tooltip = SPA_expand_influence_nationalists_trigger_tt
-					800 = { check_variable = { var = KOR_garrison_control value = 4 compare = less_than } }
-				}
-			}
-			NOT = {
-				has_country_flag = KOR_already_expanding_influence_flag
-			}
-		}
+# 		available = {
+# 			has_full_control_of_state = 800
+# 			if = {
+# 				limit = {
+# 					has_completed_focus = Yeo_Un_hyung_Elected
+# 				}
+# 				custom_trigger_tooltip = {
+# 					tooltip = SPA_expand_influence_nationalists_trigger_tt
+# 					800 = { check_variable = { var = KOR_garrison_control value = 4 compare = less_than } }
+# 				}
+# 			}
+# 			NOT = {
+# 				has_country_flag = KOR_already_expanding_influence_flag
+# 			}
+# 		}
 
-		highlight_state_targets = { state = 800 }
+# 		highlight_state_targets = { state = 800 }
 
-		on_map_mode = map_only
+# 		on_map_mode = map_only
 
-		cost = 800.KOR_garrison_control_cost?10
+# 		cost = 800.KOR_garrison_control_cost?10
 
-		fire_only_once = no
+# 		fire_only_once = no
 
-		days_remove = 1
+# 		days_remove = 1
 
-		visible = {
-			NOT = { has_global_flag = KOR_civil_war }
-			has_completed_focus = Yeo_Un_hyung_Elected
-		}
+# 		visible = {
+# 			NOT = { has_global_flag = KOR_civil_war }
+# 			has_completed_focus = Yeo_Un_hyung_Elected
+# 		}
 
-		cancel_if_not_visible = yes
+# 		cancel_if_not_visible = yes
 
-		complete_effect = {
-			set_country_flag = KOR_already_expanding_influence_flag
-		}
+# 		complete_effect = {
+# 			set_country_flag = KOR_already_expanding_influence_flag
+# 		}
 
-		remove_effect = {
-			if = {
-				limit = {
-					has_completed_focus = Yeo_Un_hyung_Elected
-				}
-				800 = {
-					custom_effect_tooltip = SPA_expand_influence_nationalists_tt
-					set_state_flag = { flag = KOR_recently_expanded_influence_flag value = 1 days = 15 }
-					hidden_effect = {
-						if = {
-							limit = { check_variable = { KOR_garrison_control < 4 } }
+# 		remove_effect = {
+# 			if = {
+# 				limit = {
+# 					has_completed_focus = Yeo_Un_hyung_Elected
+# 				}
+# 				800 = {
+# 					custom_effect_tooltip = SPA_expand_influence_nationalists_tt
+# 					set_state_flag = { flag = KOR_recently_expanded_influence_flag value = 1 days = 15 }
+# 					hidden_effect = {
+# 						if = {
+# 							limit = { check_variable = { KOR_garrison_control < 4 } }
 							
-							add_to_variable = { var = KOR_garrison_control value = 1 }
-							KOR = { add_to_variable = { var = ko_civil_war_divisions_counter_var value = 1 } }
-							KOR = { subtract_from_variable = { var = kor_civil_war_divisions_counter_var value = 1 } }
-						}
-					}
-					KOR_garrison_control_tooltip = yes
-					KOR_garrison_control_cost_calculation = yes
-				}
-			}
-			clr_country_flag = KOR_already_expanding_influence_flag
-		}
+# 							add_to_variable = { var = KOR_garrison_control value = 1 }
+# 							KOR = { add_to_variable = { var = ko_civil_war_divisions_counter_var value = 1 } }
+# 							KOR = { subtract_from_variable = { var = kor_civil_war_divisions_counter_var value = 1 } }
+# 						}
+# 					}
+# 					KOR_garrison_control_tooltip = yes
+# 					KOR_garrison_control_cost_calculation = yes
+# 				}
+# 			}
+# 			clr_country_flag = KOR_already_expanding_influence_flag
+# 		}
 
-		ai_will_do = {
-			base = 110
-			modifier = {
-				800 = { has_state_flag = KOR_recently_expanded_influence_flag }
-				factor = 10
-			}
-			modifier = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				800 = { check_variable = { var = KOR_garrison_control value = 2 compare = greater_than_or_equals } }
-				factor = 5
-			}
-			modifier = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				800 = { check_variable = { var = KOR_garrison_control value = 3 compare = greater_than_or_equals } }
-				factor = 5
-			}
-			modifier = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				is_historical_focus_on = yes
-				factor = 0
-			}
-		}
-	}
-	Securing_Gyeongsangdo_Influence = {
+# 		ai_will_do = {
+# 			base = 110
+# 			modifier = {
+# 				800 = { has_state_flag = KOR_recently_expanded_influence_flag }
+# 				factor = 10
+# 			}
+# 			modifier = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				800 = { check_variable = { var = KOR_garrison_control value = 2 compare = greater_than_or_equals } }
+# 				factor = 5
+# 			}
+# 			modifier = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				800 = { check_variable = { var = KOR_garrison_control value = 3 compare = greater_than_or_equals } }
+# 				factor = 5
+# 			}
+# 			modifier = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				is_historical_focus_on = yes
+# 				factor = 0
+# 			}
+# 		}
+# 	}
+# 	Securing_Gyeongsangdo_Influence = {
 
-		icon = {
-			key = kor_garrison_control_none
-			trigger = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				801 = { check_variable = { var = KOR_garrison_control value = 1 compare = equals } }
-			}
-		}
-		icon = {
-			key = kor_garrison_control_weak
-			trigger = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				801 = { check_variable = { var = KOR_garrison_control value = 2 compare = equals } }
-			}
-		}
-		icon = {
-			key = kor_garrison_control_strong
-			trigger = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				801 = { check_variable = { var = KOR_garrison_control value = 3 compare = equals } }
-			}
-		}
-		icon = {
-			key = kor_garrison_control_total
-			trigger = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				801 = { check_variable = { var = KOR_garrison_control value = 4 compare = greater_than_or_equals } }
-			}
-		} 
+# 		icon = {
+# 			key = kor_garrison_control_none
+# 			trigger = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				801 = { check_variable = { var = KOR_garrison_control value = 1 compare = equals } }
+# 			}
+# 		}
+# 		icon = {
+# 			key = kor_garrison_control_weak
+# 			trigger = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				801 = { check_variable = { var = KOR_garrison_control value = 2 compare = equals } }
+# 			}
+# 		}
+# 		icon = {
+# 			key = kor_garrison_control_strong
+# 			trigger = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				801 = { check_variable = { var = KOR_garrison_control value = 3 compare = equals } }
+# 			}
+# 		}
+# 		icon = {
+# 			key = kor_garrison_control_total
+# 			trigger = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				801 = { check_variable = { var = KOR_garrison_control value = 4 compare = greater_than_or_equals } }
+# 			}
+# 		} 
 
-		available = {
-			has_full_control_of_state = 801
-			if = {
-				limit = {
-					has_completed_focus = Yeo_Un_hyung_Elected
-				}
-				custom_trigger_tooltip = {
-					tooltip = SPA_expand_influence_nationalists_trigger_tt
-					801 = { check_variable = { var = KOR_garrison_control value = 4 compare = less_than } }
-				}
-			}
-			NOT = {
-				has_country_flag = KOR_already_expanding_influence_flag
-			}
-		}
+# 		available = {
+# 			has_full_control_of_state = 801
+# 			if = {
+# 				limit = {
+# 					has_completed_focus = Yeo_Un_hyung_Elected
+# 				}
+# 				custom_trigger_tooltip = {
+# 					tooltip = SPA_expand_influence_nationalists_trigger_tt
+# 					801 = { check_variable = { var = KOR_garrison_control value = 4 compare = less_than } }
+# 				}
+# 			}
+# 			NOT = {
+# 				has_country_flag = KOR_already_expanding_influence_flag
+# 			}
+# 		}
 
-		highlight_state_targets = { state = 801 }
+# 		highlight_state_targets = { state = 801 }
 
-		on_map_mode = map_only
+# 		on_map_mode = map_only
 
-		cost = 801.KOR_garrison_control_cost?10
+# 		cost = 801.KOR_garrison_control_cost?10
 
-		fire_only_once = no
+# 		fire_only_once = no
 
-		days_remove = 1
+# 		days_remove = 1
 
-		visible = {
-			NOT = { has_global_flag = KOR_civil_war }
-			has_completed_focus = Yeo_Un_hyung_Elected
-		}
+# 		visible = {
+# 			NOT = { has_global_flag = KOR_civil_war }
+# 			has_completed_focus = Yeo_Un_hyung_Elected
+# 		}
 
-		cancel_if_not_visible = yes
+# 		cancel_if_not_visible = yes
 
-		complete_effect = {
-			set_country_flag = KOR_already_expanding_influence_flag
-		}
+# 		complete_effect = {
+# 			set_country_flag = KOR_already_expanding_influence_flag
+# 		}
 
-		remove_effect = {
-			if = {
-				limit = {
-					has_completed_focus = Yeo_Un_hyung_Elected
-				}
-				801 = {
-					custom_effect_tooltip = SPA_expand_influence_nationalists_tt
-					set_state_flag = { flag = KOR_recently_expanded_influence_flag value = 1 days = 15 }
-					hidden_effect = {
-						if = {
-							limit = { check_variable = { KOR_garrison_control < 4 } }
+# 		remove_effect = {
+# 			if = {
+# 				limit = {
+# 					has_completed_focus = Yeo_Un_hyung_Elected
+# 				}
+# 				801 = {
+# 					custom_effect_tooltip = SPA_expand_influence_nationalists_tt
+# 					set_state_flag = { flag = KOR_recently_expanded_influence_flag value = 1 days = 15 }
+# 					hidden_effect = {
+# 						if = {
+# 							limit = { check_variable = { KOR_garrison_control < 4 } }
 							
-							add_to_variable = { var = KOR_garrison_control value = 1 }
-							KOR = { add_to_variable = { var = ko_civil_war_divisions_counter_var value = 1 } }
-							KOR = { subtract_from_variable = { var = kor_civil_war_divisions_counter_var value = 1 } }
-						}
-					}
-					KOR_garrison_control_tooltip = yes
-					KOR_garrison_control_cost_calculation = yes
-				}
-			}
-			clr_country_flag = KOR_already_expanding_influence_flag
-		}
+# 							add_to_variable = { var = KOR_garrison_control value = 1 }
+# 							KOR = { add_to_variable = { var = ko_civil_war_divisions_counter_var value = 1 } }
+# 							KOR = { subtract_from_variable = { var = kor_civil_war_divisions_counter_var value = 1 } }
+# 						}
+# 					}
+# 					KOR_garrison_control_tooltip = yes
+# 					KOR_garrison_control_cost_calculation = yes
+# 				}
+# 			}
+# 			clr_country_flag = KOR_already_expanding_influence_flag
+# 		}
 
-		ai_will_do = {
-			base = 110
-			modifier = {
-				801 = { has_state_flag = KOR_recently_expanded_influence_flag }
-				factor = 10
-			}
-			modifier = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				801 = { check_variable = { var = KOR_garrison_control value = 2 compare = greater_than_or_equals } }
-				factor = 5
-			}
-			modifier = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				801 = { check_variable = { var = KOR_garrison_control value = 3 compare = greater_than_or_equals } }
-				factor = 5
-			}
-			modifier = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				is_historical_focus_on = yes
-				factor = 0
-			}
-		}
-	}
-	Securing_Jeollado_Influence = {
+# 		ai_will_do = {
+# 			base = 110
+# 			modifier = {
+# 				801 = { has_state_flag = KOR_recently_expanded_influence_flag }
+# 				factor = 10
+# 			}
+# 			modifier = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				801 = { check_variable = { var = KOR_garrison_control value = 2 compare = greater_than_or_equals } }
+# 				factor = 5
+# 			}
+# 			modifier = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				801 = { check_variable = { var = KOR_garrison_control value = 3 compare = greater_than_or_equals } }
+# 				factor = 5
+# 			}
+# 			modifier = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				is_historical_focus_on = yes
+# 				factor = 0
+# 			}
+# 		}
+# 	}
+# 	Securing_Jeollado_Influence = {
 
-		icon = {
-			key = kor_garrison_control_none
-			trigger = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				802 = { check_variable = { var = KOR_garrison_control value = 1 compare = equals } }
-			}
-		}
-		icon = {
-			key = kor_garrison_control_weak
-			trigger = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				802 = { check_variable = { var = KOR_garrison_control value = 2 compare = equals } }
-			}
-		}
-		icon = {
-			key = kor_garrison_control_strong
-			trigger = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				802 = { check_variable = { var = KOR_garrison_control value = 3 compare = equals } }
-			}
-		}
-		icon = {
-			key = kor_garrison_control_total
-			trigger = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				802 = { check_variable = { var = KOR_garrison_control value = 4 compare = greater_than_or_equals } }
-			}
-		} 
+# 		icon = {
+# 			key = kor_garrison_control_none
+# 			trigger = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				802 = { check_variable = { var = KOR_garrison_control value = 1 compare = equals } }
+# 			}
+# 		}
+# 		icon = {
+# 			key = kor_garrison_control_weak
+# 			trigger = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				802 = { check_variable = { var = KOR_garrison_control value = 2 compare = equals } }
+# 			}
+# 		}
+# 		icon = {
+# 			key = kor_garrison_control_strong
+# 			trigger = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				802 = { check_variable = { var = KOR_garrison_control value = 3 compare = equals } }
+# 			}
+# 		}
+# 		icon = {
+# 			key = kor_garrison_control_total
+# 			trigger = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				802 = { check_variable = { var = KOR_garrison_control value = 4 compare = greater_than_or_equals } }
+# 			}
+# 		} 
 
-		available = {
-			has_full_control_of_state = 802
-			if = {
-				limit = {
-					has_completed_focus = Yeo_Un_hyung_Elected
-				}
-				custom_trigger_tooltip = {
-					tooltip = SPA_expand_influence_nationalists_trigger_tt
-					802 = { check_variable = { var = KOR_garrison_control value = 4 compare = less_than } }
-				}
-			}
-			NOT = {
-				has_country_flag = KOR_already_expanding_influence_flag
-			}
-		}
+# 		available = {
+# 			has_full_control_of_state = 802
+# 			if = {
+# 				limit = {
+# 					has_completed_focus = Yeo_Un_hyung_Elected
+# 				}
+# 				custom_trigger_tooltip = {
+# 					tooltip = SPA_expand_influence_nationalists_trigger_tt
+# 					802 = { check_variable = { var = KOR_garrison_control value = 4 compare = less_than } }
+# 				}
+# 			}
+# 			NOT = {
+# 				has_country_flag = KOR_already_expanding_influence_flag
+# 			}
+# 		}
 
-		highlight_state_targets = { state = 802 }
+# 		highlight_state_targets = { state = 802 }
 
-		on_map_mode = map_only
+# 		on_map_mode = map_only
 
-		cost = 802.KOR_garrison_control_cost?10
+# 		cost = 802.KOR_garrison_control_cost?10
 
-		fire_only_once = no
+# 		fire_only_once = no
 
-		days_remove = 1
+# 		days_remove = 1
 
-		visible = {
-			NOT = { has_global_flag = KOR_civil_war }
-			has_completed_focus = Yeo_Un_hyung_Elected
-		}
+# 		visible = {
+# 			NOT = { has_global_flag = KOR_civil_war }
+# 			has_completed_focus = Yeo_Un_hyung_Elected
+# 		}
 
-		cancel_if_not_visible = yes
+# 		cancel_if_not_visible = yes
 
-		complete_effect = {
-			set_country_flag = KOR_already_expanding_influence_flag
-		}
+# 		complete_effect = {
+# 			set_country_flag = KOR_already_expanding_influence_flag
+# 		}
 
-		remove_effect = {
-			if = {
-				limit = {
-					has_completed_focus = Yeo_Un_hyung_Elected
-				}
-				802 = {
-					custom_effect_tooltip = SPA_expand_influence_nationalists_tt
-					set_state_flag = { flag = KOR_recently_expanded_influence_flag value = 1 days = 15 }
-					hidden_effect = {
-						if = {
-							limit = { check_variable = { KOR_garrison_control < 4 } }
+# 		remove_effect = {
+# 			if = {
+# 				limit = {
+# 					has_completed_focus = Yeo_Un_hyung_Elected
+# 				}
+# 				802 = {
+# 					custom_effect_tooltip = SPA_expand_influence_nationalists_tt
+# 					set_state_flag = { flag = KOR_recently_expanded_influence_flag value = 1 days = 15 }
+# 					hidden_effect = {
+# 						if = {
+# 							limit = { check_variable = { KOR_garrison_control < 4 } }
 							
-							add_to_variable = { var = KOR_garrison_control value = 1 }
-							KOR = { add_to_variable = { var = ko_civil_war_divisions_counter_var value = 1 } }
-							KOR = { subtract_from_variable = { var = kor_civil_war_divisions_counter_var value = 1 } }
-						}
-					}
-					KOR_garrison_control_tooltip = yes
-					KOR_garrison_control_cost_calculation = yes
-				}
-			}
-			clr_country_flag = KOR_already_expanding_influence_flag
-		}
+# 							add_to_variable = { var = KOR_garrison_control value = 1 }
+# 							KOR = { add_to_variable = { var = ko_civil_war_divisions_counter_var value = 1 } }
+# 							KOR = { subtract_from_variable = { var = kor_civil_war_divisions_counter_var value = 1 } }
+# 						}
+# 					}
+# 					KOR_garrison_control_tooltip = yes
+# 					KOR_garrison_control_cost_calculation = yes
+# 				}
+# 			}
+# 			clr_country_flag = KOR_already_expanding_influence_flag
+# 		}
 
-		ai_will_do = {
-			base = 110
-			modifier = {
-				802 = { has_state_flag = KOR_recently_expanded_influence_flag }
-				factor = 10
-			}
-			modifier = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				802 = { check_variable = { var = KOR_garrison_control value = 2 compare = greater_than_or_equals } }
-				factor = 5
-			}
-			modifier = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				802 = { check_variable = { var = KOR_garrison_control value = 3 compare = greater_than_or_equals } }
-				factor = 5
-			}
-			modifier = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				is_historical_focus_on = yes
-				factor = 0
-			}
-		}
-	}
-	Securing_Jeju_Influence = {
+# 		ai_will_do = {
+# 			base = 110
+# 			modifier = {
+# 				802 = { has_state_flag = KOR_recently_expanded_influence_flag }
+# 				factor = 10
+# 			}
+# 			modifier = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				802 = { check_variable = { var = KOR_garrison_control value = 2 compare = greater_than_or_equals } }
+# 				factor = 5
+# 			}
+# 			modifier = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				802 = { check_variable = { var = KOR_garrison_control value = 3 compare = greater_than_or_equals } }
+# 				factor = 5
+# 			}
+# 			modifier = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				is_historical_focus_on = yes
+# 				factor = 0
+# 			}
+# 		}
+# 	}
+# 	Securing_Jeju_Influence = {
 
-		icon = {
-			key = kor_garrison_control_none
-			trigger = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				803 = { check_variable = { var = KOR_garrison_control value = 1 compare = equals } }
-			}
-		}
-		icon = {
-			key = kor_garrison_control_weak
-			trigger = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				803 = { check_variable = { var = KOR_garrison_control value = 2 compare = equals } }
-			}
-		}
-		icon = {
-			key = kor_garrison_control_strong
-			trigger = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				803 = { check_variable = { var = KOR_garrison_control value = 3 compare = equals } }
-			}
-		}
-		icon = {
-			key = kor_garrison_control_total
-			trigger = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				803 = { check_variable = { var = KOR_garrison_control value = 4 compare = greater_than_or_equals } }
-			}
-		} 
+# 		icon = {
+# 			key = kor_garrison_control_none
+# 			trigger = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				803 = { check_variable = { var = KOR_garrison_control value = 1 compare = equals } }
+# 			}
+# 		}
+# 		icon = {
+# 			key = kor_garrison_control_weak
+# 			trigger = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				803 = { check_variable = { var = KOR_garrison_control value = 2 compare = equals } }
+# 			}
+# 		}
+# 		icon = {
+# 			key = kor_garrison_control_strong
+# 			trigger = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				803 = { check_variable = { var = KOR_garrison_control value = 3 compare = equals } }
+# 			}
+# 		}
+# 		icon = {
+# 			key = kor_garrison_control_total
+# 			trigger = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				803 = { check_variable = { var = KOR_garrison_control value = 4 compare = greater_than_or_equals } }
+# 			}
+# 		} 
 
-		available = {
-			has_full_control_of_state = 803
-			if = {
-				limit = {
-					has_completed_focus = Yeo_Un_hyung_Elected
-				}
-				custom_trigger_tooltip = {
-					tooltip = SPA_expand_influence_nationalists_trigger_tt
-					803 = { check_variable = { var = KOR_garrison_control value = 4 compare = less_than } }
-				}
-			}
-			NOT = {
-				has_country_flag = KOR_already_expanding_influence_flag
-			}
-		}
+# 		available = {
+# 			has_full_control_of_state = 803
+# 			if = {
+# 				limit = {
+# 					has_completed_focus = Yeo_Un_hyung_Elected
+# 				}
+# 				custom_trigger_tooltip = {
+# 					tooltip = SPA_expand_influence_nationalists_trigger_tt
+# 					803 = { check_variable = { var = KOR_garrison_control value = 4 compare = less_than } }
+# 				}
+# 			}
+# 			NOT = {
+# 				has_country_flag = KOR_already_expanding_influence_flag
+# 			}
+# 		}
 
-		highlight_state_targets = { state = 803 }
+# 		highlight_state_targets = { state = 803 }
 
-		on_map_mode = map_only
+# 		on_map_mode = map_only
 
-		cost = 803.KOR_garrison_control_cost?10
+# 		cost = 803.KOR_garrison_control_cost?10
 
-		fire_only_once = no
+# 		fire_only_once = no
 
-		days_remove = 1
+# 		days_remove = 1
 
-		visible = {
-			NOT = { has_global_flag = KOR_civil_war }
-			has_completed_focus = Yeo_Un_hyung_Elected
-		}
+# 		visible = {
+# 			NOT = { has_global_flag = KOR_civil_war }
+# 			has_completed_focus = Yeo_Un_hyung_Elected
+# 		}
 
-		cancel_if_not_visible = yes
+# 		cancel_if_not_visible = yes
 
-		complete_effect = {
-			set_country_flag = KOR_already_expanding_influence_flag
-		}
+# 		complete_effect = {
+# 			set_country_flag = KOR_already_expanding_influence_flag
+# 		}
 
-		remove_effect = {
-			if = {
-				limit = {
-					has_completed_focus = Yeo_Un_hyung_Elected
-				}
-				803 = {
-					custom_effect_tooltip = SPA_expand_influence_nationalists_tt
-					set_state_flag = { flag = KOR_recently_expanded_influence_flag value = 1 days = 15 }
-					hidden_effect = {
-						if = {
-							limit = { check_variable = { KOR_garrison_control < 4 } }
+# 		remove_effect = {
+# 			if = {
+# 				limit = {
+# 					has_completed_focus = Yeo_Un_hyung_Elected
+# 				}
+# 				803 = {
+# 					custom_effect_tooltip = SPA_expand_influence_nationalists_tt
+# 					set_state_flag = { flag = KOR_recently_expanded_influence_flag value = 1 days = 15 }
+# 					hidden_effect = {
+# 						if = {
+# 							limit = { check_variable = { KOR_garrison_control < 4 } }
 							
-							add_to_variable = { var = KOR_garrison_control value = 1 }
-							KOR = { add_to_variable = { var = ko_civil_war_divisions_counter_var value = 1 } }
-							KOR = { subtract_from_variable = { var = kor_civil_war_divisions_counter_var value = 1 } }
-						}
-					}
-					KOR_garrison_control_tooltip = yes
-					KOR_garrison_control_cost_calculation = yes
-				}
-			}
-			clr_country_flag = KOR_already_expanding_influence_flag
-		}
+# 							add_to_variable = { var = KOR_garrison_control value = 1 }
+# 							KOR = { add_to_variable = { var = ko_civil_war_divisions_counter_var value = 1 } }
+# 							KOR = { subtract_from_variable = { var = kor_civil_war_divisions_counter_var value = 1 } }
+# 						}
+# 					}
+# 					KOR_garrison_control_tooltip = yes
+# 					KOR_garrison_control_cost_calculation = yes
+# 				}
+# 			}
+# 			clr_country_flag = KOR_already_expanding_influence_flag
+# 		}
 
-		ai_will_do = {
-			base = 110
-			modifier = {
-				803 = { has_state_flag = KOR_recently_expanded_influence_flag }
-				factor = 10
-			}
-			modifier = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				803 = { check_variable = { var = KOR_garrison_control value = 2 compare = greater_than_or_equals } }
-				factor = 5
-			}
-			modifier = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				803 = { check_variable = { var = KOR_garrison_control value = 3 compare = greater_than_or_equals } }
-				factor = 5
-			}
-			modifier = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				is_historical_focus_on = yes
-				factor = 0
-			}
-		}
-	}
-	Securing_Ulleungdo_Influence = {
+# 		ai_will_do = {
+# 			base = 110
+# 			modifier = {
+# 				803 = { has_state_flag = KOR_recently_expanded_influence_flag }
+# 				factor = 10
+# 			}
+# 			modifier = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				803 = { check_variable = { var = KOR_garrison_control value = 2 compare = greater_than_or_equals } }
+# 				factor = 5
+# 			}
+# 			modifier = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				803 = { check_variable = { var = KOR_garrison_control value = 3 compare = greater_than_or_equals } }
+# 				factor = 5
+# 			}
+# 			modifier = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				is_historical_focus_on = yes
+# 				factor = 0
+# 			}
+# 		}
+# 	}
+# 	Securing_Ulleungdo_Influence = {
 
-		icon = {
-			key = kor_garrison_control_none
-			trigger = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				804 = { check_variable = { var = KOR_garrison_control value = 1 compare = equals } }
-			}
-		}
-		icon = {
-			key = kor_garrison_control_weak
-			trigger = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				804 = { check_variable = { var = KOR_garrison_control value = 2 compare = equals } }
-			}
-		}
-		icon = {
-			key = kor_garrison_control_strong
-			trigger = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				804 = { check_variable = { var = KOR_garrison_control value = 3 compare = equals } }
-			}
-		}
-		icon = {
-			key = kor_garrison_control_total
-			trigger = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				804 = { check_variable = { var = KOR_garrison_control value = 4 compare = greater_than_or_equals } }
-			}
-		} 
+# 		icon = {
+# 			key = kor_garrison_control_none
+# 			trigger = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				804 = { check_variable = { var = KOR_garrison_control value = 1 compare = equals } }
+# 			}
+# 		}
+# 		icon = {
+# 			key = kor_garrison_control_weak
+# 			trigger = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				804 = { check_variable = { var = KOR_garrison_control value = 2 compare = equals } }
+# 			}
+# 		}
+# 		icon = {
+# 			key = kor_garrison_control_strong
+# 			trigger = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				804 = { check_variable = { var = KOR_garrison_control value = 3 compare = equals } }
+# 			}
+# 		}
+# 		icon = {
+# 			key = kor_garrison_control_total
+# 			trigger = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				804 = { check_variable = { var = KOR_garrison_control value = 4 compare = greater_than_or_equals } }
+# 			}
+# 		} 
 
-		available = {
-			has_full_control_of_state = 804
-			if = {
-				limit = {
-					has_completed_focus = Yeo_Un_hyung_Elected
-				}
-				custom_trigger_tooltip = {
-					tooltip = SPA_expand_influence_nationalists_trigger_tt
-					804 = { check_variable = { var = KOR_garrison_control value = 4 compare = less_than } }
-				}
-			}
-			NOT = {
-				has_country_flag = KOR_already_expanding_influence_flag
-			}
-		}
+# 		available = {
+# 			has_full_control_of_state = 804
+# 			if = {
+# 				limit = {
+# 					has_completed_focus = Yeo_Un_hyung_Elected
+# 				}
+# 				custom_trigger_tooltip = {
+# 					tooltip = SPA_expand_influence_nationalists_trigger_tt
+# 					804 = { check_variable = { var = KOR_garrison_control value = 4 compare = less_than } }
+# 				}
+# 			}
+# 			NOT = {
+# 				has_country_flag = KOR_already_expanding_influence_flag
+# 			}
+# 		}
 
-		highlight_state_targets = { state = 804 }
+# 		highlight_state_targets = { state = 804 }
 
-		on_map_mode = map_only
+# 		on_map_mode = map_only
 
-		cost = 804.KOR_garrison_control_cost?10
+# 		cost = 804.KOR_garrison_control_cost?10
 
-		fire_only_once = no
+# 		fire_only_once = no
 
-		days_remove = 1
+# 		days_remove = 1
 
-		visible = {
-			NOT = { has_global_flag = KOR_civil_war }
-			has_completed_focus = Yeo_Un_hyung_Elected
-		}
+# 		visible = {
+# 			NOT = { has_global_flag = KOR_civil_war }
+# 			has_completed_focus = Yeo_Un_hyung_Elected
+# 		}
 
-		cancel_if_not_visible = yes
+# 		cancel_if_not_visible = yes
 
-		complete_effect = {
-			set_country_flag = KOR_already_expanding_influence_flag
-		}
+# 		complete_effect = {
+# 			set_country_flag = KOR_already_expanding_influence_flag
+# 		}
 
-		remove_effect = {
-			if = {
-				limit = {
-					has_completed_focus = Yeo_Un_hyung_Elected
-				}
-				804 = {
-					custom_effect_tooltip = SPA_expand_influence_nationalists_tt
-					set_state_flag = { flag = KOR_recently_expanded_influence_flag value = 1 days = 15 }
-					hidden_effect = {
-						if = {
-							limit = { check_variable = { KOR_garrison_control < 4 } }
+# 		remove_effect = {
+# 			if = {
+# 				limit = {
+# 					has_completed_focus = Yeo_Un_hyung_Elected
+# 				}
+# 				804 = {
+# 					custom_effect_tooltip = SPA_expand_influence_nationalists_tt
+# 					set_state_flag = { flag = KOR_recently_expanded_influence_flag value = 1 days = 15 }
+# 					hidden_effect = {
+# 						if = {
+# 							limit = { check_variable = { KOR_garrison_control < 4 } }
 							
-							add_to_variable = { var = KOR_garrison_control value = 1 }
-							KOR = { add_to_variable = { var = ko_civil_war_divisions_counter_var value = 1 } }
-							KOR = { subtract_from_variable = { var = kor_civil_war_divisions_counter_var value = 1 } }
-						}
-					}
-					KOR_garrison_control_tooltip = yes
-					KOR_garrison_control_cost_calculation = yes
-				}
-			}
-			clr_country_flag = KOR_already_expanding_influence_flag
-		}
+# 							add_to_variable = { var = KOR_garrison_control value = 1 }
+# 							KOR = { add_to_variable = { var = ko_civil_war_divisions_counter_var value = 1 } }
+# 							KOR = { subtract_from_variable = { var = kor_civil_war_divisions_counter_var value = 1 } }
+# 						}
+# 					}
+# 					KOR_garrison_control_tooltip = yes
+# 					KOR_garrison_control_cost_calculation = yes
+# 				}
+# 			}
+# 			clr_country_flag = KOR_already_expanding_influence_flag
+# 		}
 
-		ai_will_do = {
-			base = 110
-			modifier = {
-				804 = { has_state_flag = KOR_recently_expanded_influence_flag }
-				factor = 10
-			}
-			modifier = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				804 = { check_variable = { var = KOR_garrison_control value = 2 compare = greater_than_or_equals } }
-				factor = 5
-			}
-			modifier = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				804 = { check_variable = { var = KOR_garrison_control value = 3 compare = greater_than_or_equals } }
-				factor = 5
-			}
-			modifier = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				is_historical_focus_on = yes
-				factor = 0
-			}
-		}
-	}
-	Securing_Jeollabukdo_Influence = {
+# 		ai_will_do = {
+# 			base = 110
+# 			modifier = {
+# 				804 = { has_state_flag = KOR_recently_expanded_influence_flag }
+# 				factor = 10
+# 			}
+# 			modifier = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				804 = { check_variable = { var = KOR_garrison_control value = 2 compare = greater_than_or_equals } }
+# 				factor = 5
+# 			}
+# 			modifier = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				804 = { check_variable = { var = KOR_garrison_control value = 3 compare = greater_than_or_equals } }
+# 				factor = 5
+# 			}
+# 			modifier = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				is_historical_focus_on = yes
+# 				factor = 0
+# 			}
+# 		}
+# 	}
+# 	Securing_Jeollabukdo_Influence = {
 
-		icon = {
-			key = kor_garrison_control_none
-			trigger = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				806 = { check_variable = { var = KOR_garrison_control value = 1 compare = equals } }
-			}
-		}
-		icon = {
-			key = kor_garrison_control_weak
-			trigger = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				806 = { check_variable = { var = KOR_garrison_control value = 2 compare = equals } }
-			}
-		}
-		icon = {
-			key = kor_garrison_control_strong
-			trigger = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				806 = { check_variable = { var = KOR_garrison_control value = 3 compare = equals } }
-			}
-		}
-		icon = {
-			key = kor_garrison_control_total
-			trigger = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				806 = { check_variable = { var = KOR_garrison_control value = 4 compare = greater_than_or_equals } }
-			}
-		} 
+# 		icon = {
+# 			key = kor_garrison_control_none
+# 			trigger = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				806 = { check_variable = { var = KOR_garrison_control value = 1 compare = equals } }
+# 			}
+# 		}
+# 		icon = {
+# 			key = kor_garrison_control_weak
+# 			trigger = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				806 = { check_variable = { var = KOR_garrison_control value = 2 compare = equals } }
+# 			}
+# 		}
+# 		icon = {
+# 			key = kor_garrison_control_strong
+# 			trigger = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				806 = { check_variable = { var = KOR_garrison_control value = 3 compare = equals } }
+# 			}
+# 		}
+# 		icon = {
+# 			key = kor_garrison_control_total
+# 			trigger = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				806 = { check_variable = { var = KOR_garrison_control value = 4 compare = greater_than_or_equals } }
+# 			}
+# 		} 
 
-		available = {
-			has_full_control_of_state = 806
-			if = {
-				limit = {
-					has_completed_focus = Yeo_Un_hyung_Elected
-				}
-				custom_trigger_tooltip = {
-					tooltip = SPA_expand_influence_nationalists_trigger_tt
-					806 = { check_variable = { var = KOR_garrison_control value = 4 compare = less_than } }
-				}
-			}
-			NOT = {
-				has_country_flag = KOR_already_expanding_influence_flag
-			}
-		}
+# 		available = {
+# 			has_full_control_of_state = 806
+# 			if = {
+# 				limit = {
+# 					has_completed_focus = Yeo_Un_hyung_Elected
+# 				}
+# 				custom_trigger_tooltip = {
+# 					tooltip = SPA_expand_influence_nationalists_trigger_tt
+# 					806 = { check_variable = { var = KOR_garrison_control value = 4 compare = less_than } }
+# 				}
+# 			}
+# 			NOT = {
+# 				has_country_flag = KOR_already_expanding_influence_flag
+# 			}
+# 		}
 
-		highlight_state_targets = { state = 806 }
+# 		highlight_state_targets = { state = 806 }
 
-		on_map_mode = map_only
+# 		on_map_mode = map_only
 
-		cost = 806.KOR_garrison_control_cost?10
+# 		cost = 806.KOR_garrison_control_cost?10
 
-		fire_only_once = no
+# 		fire_only_once = no
 
-		days_remove = 1
+# 		days_remove = 1
 
-		visible = {
-			NOT = { has_global_flag = KOR_civil_war }
-			has_completed_focus = Yeo_Un_hyung_Elected
-		}
+# 		visible = {
+# 			NOT = { has_global_flag = KOR_civil_war }
+# 			has_completed_focus = Yeo_Un_hyung_Elected
+# 		}
 
-		cancel_if_not_visible = yes
+# 		cancel_if_not_visible = yes
 
-		complete_effect = {
-			set_country_flag = KOR_already_expanding_influence_flag
-		}
+# 		complete_effect = {
+# 			set_country_flag = KOR_already_expanding_influence_flag
+# 		}
 
-		remove_effect = {
-			if = {
-				limit = {
-					has_completed_focus = Yeo_Un_hyung_Elected
-				}
-				806 = {
-					custom_effect_tooltip = SPA_expand_influence_nationalists_tt
-					set_state_flag = { flag = KOR_recently_expanded_influence_flag value = 1 days = 15 }
-					hidden_effect = {
-						if = {
-							limit = { check_variable = { KOR_garrison_control < 4 } }
+# 		remove_effect = {
+# 			if = {
+# 				limit = {
+# 					has_completed_focus = Yeo_Un_hyung_Elected
+# 				}
+# 				806 = {
+# 					custom_effect_tooltip = SPA_expand_influence_nationalists_tt
+# 					set_state_flag = { flag = KOR_recently_expanded_influence_flag value = 1 days = 15 }
+# 					hidden_effect = {
+# 						if = {
+# 							limit = { check_variable = { KOR_garrison_control < 4 } }
 							
-							add_to_variable = { var = KOR_garrison_control value = 1 }
-							KOR = { add_to_variable = { var = ko_civil_war_divisions_counter_var value = 1 } }
-							KOR = { subtract_from_variable = { var = kor_civil_war_divisions_counter_var value = 1 } }
-						}
-					}
-					KOR_garrison_control_tooltip = yes
-					KOR_garrison_control_cost_calculation = yes
-				}
-			}
-			clr_country_flag = KOR_already_expanding_influence_flag
-		}
+# 							add_to_variable = { var = KOR_garrison_control value = 1 }
+# 							KOR = { add_to_variable = { var = ko_civil_war_divisions_counter_var value = 1 } }
+# 							KOR = { subtract_from_variable = { var = kor_civil_war_divisions_counter_var value = 1 } }
+# 						}
+# 					}
+# 					KOR_garrison_control_tooltip = yes
+# 					KOR_garrison_control_cost_calculation = yes
+# 				}
+# 			}
+# 			clr_country_flag = KOR_already_expanding_influence_flag
+# 		}
 
-		ai_will_do = {
-			base = 110
-			modifier = {
-				806 = { has_state_flag = KOR_recently_expanded_influence_flag }
-				factor = 10
-			}
-			modifier = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				806 = { check_variable = { var = KOR_garrison_control value = 2 compare = greater_than_or_equals } }
-				factor = 5
-			}
-			modifier = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				806 = { check_variable = { var = KOR_garrison_control value = 3 compare = greater_than_or_equals } }
-				factor = 5
-			}
-			modifier = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				is_historical_focus_on = yes
-				factor = 0
-			}
-		}
-	}
-	Securing_Jeollanamdo_Influence = {
+# 		ai_will_do = {
+# 			base = 110
+# 			modifier = {
+# 				806 = { has_state_flag = KOR_recently_expanded_influence_flag }
+# 				factor = 10
+# 			}
+# 			modifier = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				806 = { check_variable = { var = KOR_garrison_control value = 2 compare = greater_than_or_equals } }
+# 				factor = 5
+# 			}
+# 			modifier = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				806 = { check_variable = { var = KOR_garrison_control value = 3 compare = greater_than_or_equals } }
+# 				factor = 5
+# 			}
+# 			modifier = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				is_historical_focus_on = yes
+# 				factor = 0
+# 			}
+# 		}
+# 	}
+# 	Securing_Jeollanamdo_Influence = {
 
-		icon = {
-			key = kor_garrison_control_none
-			trigger = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				807 = { check_variable = { var = KOR_garrison_control value = 1 compare = equals } }
-			}
-		}
-		icon = {
-			key = kor_garrison_control_weak
-			trigger = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				807 = { check_variable = { var = KOR_garrison_control value = 2 compare = equals } }
-			}
-		}
-		icon = {
-			key = kor_garrison_control_strong
-			trigger = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				807 = { check_variable = { var = KOR_garrison_control value = 3 compare = equals } }
-			}
-		}
-		icon = {
-			key = kor_garrison_control_total
-			trigger = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				807 = { check_variable = { var = KOR_garrison_control value = 4 compare = greater_than_or_equals } }
-			}
-		} 
+# 		icon = {
+# 			key = kor_garrison_control_none
+# 			trigger = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				807 = { check_variable = { var = KOR_garrison_control value = 1 compare = equals } }
+# 			}
+# 		}
+# 		icon = {
+# 			key = kor_garrison_control_weak
+# 			trigger = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				807 = { check_variable = { var = KOR_garrison_control value = 2 compare = equals } }
+# 			}
+# 		}
+# 		icon = {
+# 			key = kor_garrison_control_strong
+# 			trigger = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				807 = { check_variable = { var = KOR_garrison_control value = 3 compare = equals } }
+# 			}
+# 		}
+# 		icon = {
+# 			key = kor_garrison_control_total
+# 			trigger = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				807 = { check_variable = { var = KOR_garrison_control value = 4 compare = greater_than_or_equals } }
+# 			}
+# 		} 
 
-		available = {
-			has_full_control_of_state = 807
-			if = {
-				limit = {
-					has_completed_focus = Yeo_Un_hyung_Elected
-				}
-				custom_trigger_tooltip = {
-					tooltip = SPA_expand_influence_nationalists_trigger_tt
-					807 = { check_variable = { var = KOR_garrison_control value = 4 compare = less_than } }
-				}
-			}
-			NOT = {
-				has_country_flag = KOR_already_expanding_influence_flag
-			}
-		}
+# 		available = {
+# 			has_full_control_of_state = 807
+# 			if = {
+# 				limit = {
+# 					has_completed_focus = Yeo_Un_hyung_Elected
+# 				}
+# 				custom_trigger_tooltip = {
+# 					tooltip = SPA_expand_influence_nationalists_trigger_tt
+# 					807 = { check_variable = { var = KOR_garrison_control value = 4 compare = less_than } }
+# 				}
+# 			}
+# 			NOT = {
+# 				has_country_flag = KOR_already_expanding_influence_flag
+# 			}
+# 		}
 
-		highlight_state_targets = { state = 807 }
+# 		highlight_state_targets = { state = 807 }
 
-		on_map_mode = map_only
+# 		on_map_mode = map_only
 
-		cost = 807.KOR_garrison_control_cost?10
+# 		cost = 807.KOR_garrison_control_cost?10
 
-		fire_only_once = no
+# 		fire_only_once = no
 
-		days_remove = 1
+# 		days_remove = 1
 
-		visible = {
-			NOT = { has_global_flag = KOR_civil_war }
-			has_completed_focus = Yeo_Un_hyung_Elected
-		}
+# 		visible = {
+# 			NOT = { has_global_flag = KOR_civil_war }
+# 			has_completed_focus = Yeo_Un_hyung_Elected
+# 		}
 
-		cancel_if_not_visible = yes
+# 		cancel_if_not_visible = yes
 
-		complete_effect = {
-			set_country_flag = KOR_already_expanding_influence_flag
-		}
+# 		complete_effect = {
+# 			set_country_flag = KOR_already_expanding_influence_flag
+# 		}
 
-		remove_effect = {
-			if = {
-				limit = {
-					has_completed_focus = Yeo_Un_hyung_Elected
-				}
-				807 = {
-					custom_effect_tooltip = SPA_expand_influence_nationalists_tt
-					set_state_flag = { flag = KOR_recently_expanded_influence_flag value = 1 days = 15 }
-					hidden_effect = {
-						if = {
-							limit = { check_variable = { KOR_garrison_control < 4 } }
+# 		remove_effect = {
+# 			if = {
+# 				limit = {
+# 					has_completed_focus = Yeo_Un_hyung_Elected
+# 				}
+# 				807 = {
+# 					custom_effect_tooltip = SPA_expand_influence_nationalists_tt
+# 					set_state_flag = { flag = KOR_recently_expanded_influence_flag value = 1 days = 15 }
+# 					hidden_effect = {
+# 						if = {
+# 							limit = { check_variable = { KOR_garrison_control < 4 } }
 							
-							add_to_variable = { var = KOR_garrison_control value = 1 }
-							KOR = { add_to_variable = { var = ko_civil_war_divisions_counter_var value = 1 } }
-							KOR = { subtract_from_variable = { var = kor_civil_war_divisions_counter_var value = 1 } }
-						}
-					}
-					KOR_garrison_control_tooltip = yes
-					KOR_garrison_control_cost_calculation = yes
-				}
-			}
-			clr_country_flag = KOR_already_expanding_influence_flag
-		}
+# 							add_to_variable = { var = KOR_garrison_control value = 1 }
+# 							KOR = { add_to_variable = { var = ko_civil_war_divisions_counter_var value = 1 } }
+# 							KOR = { subtract_from_variable = { var = kor_civil_war_divisions_counter_var value = 1 } }
+# 						}
+# 					}
+# 					KOR_garrison_control_tooltip = yes
+# 					KOR_garrison_control_cost_calculation = yes
+# 				}
+# 			}
+# 			clr_country_flag = KOR_already_expanding_influence_flag
+# 		}
 
-		ai_will_do = {
-			base = 110
-			modifier = {
-				807 = { has_state_flag = KOR_recently_expanded_influence_flag }
-				factor = 10
-			}
-			modifier = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				807 = { check_variable = { var = KOR_garrison_control value = 2 compare = greater_than_or_equals } }
-				factor = 5
-			}
-			modifier = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				807 = { check_variable = { var = KOR_garrison_control value = 3 compare = greater_than_or_equals } }
-				factor = 5
-			}
-			modifier = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				is_historical_focus_on = yes
-				factor = 0
-			}
-		}
-	}
-	Securing_Gyeongsangnamdo_Influence = {
+# 		ai_will_do = {
+# 			base = 110
+# 			modifier = {
+# 				807 = { has_state_flag = KOR_recently_expanded_influence_flag }
+# 				factor = 10
+# 			}
+# 			modifier = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				807 = { check_variable = { var = KOR_garrison_control value = 2 compare = greater_than_or_equals } }
+# 				factor = 5
+# 			}
+# 			modifier = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				807 = { check_variable = { var = KOR_garrison_control value = 3 compare = greater_than_or_equals } }
+# 				factor = 5
+# 			}
+# 			modifier = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				is_historical_focus_on = yes
+# 				factor = 0
+# 			}
+# 		}
+# 	}
+# 	Securing_Gyeongsangnamdo_Influence = {
 
-		icon = {
-			key = kor_garrison_control_none
-			trigger = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				805 = { check_variable = { var = KOR_garrison_control value = 1 compare = equals } }
-			}
-		}
-		icon = {
-			key = kor_garrison_control_weak
-			trigger = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				805 = { check_variable = { var = KOR_garrison_control value = 2 compare = equals } }
-			}
-		}
-		icon = {
-			key = kor_garrison_control_strong
-			trigger = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				805 = { check_variable = { var = KOR_garrison_control value = 3 compare = equals } }
-			}
-		}
-		icon = {
-			key = kor_garrison_control_total
-			trigger = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				805 = { check_variable = { var = KOR_garrison_control value = 4 compare = greater_than_or_equals } }
-			}
-		} 
+# 		icon = {
+# 			key = kor_garrison_control_none
+# 			trigger = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				805 = { check_variable = { var = KOR_garrison_control value = 1 compare = equals } }
+# 			}
+# 		}
+# 		icon = {
+# 			key = kor_garrison_control_weak
+# 			trigger = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				805 = { check_variable = { var = KOR_garrison_control value = 2 compare = equals } }
+# 			}
+# 		}
+# 		icon = {
+# 			key = kor_garrison_control_strong
+# 			trigger = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				805 = { check_variable = { var = KOR_garrison_control value = 3 compare = equals } }
+# 			}
+# 		}
+# 		icon = {
+# 			key = kor_garrison_control_total
+# 			trigger = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				805 = { check_variable = { var = KOR_garrison_control value = 4 compare = greater_than_or_equals } }
+# 			}
+# 		} 
 
-		available = {
-			has_full_control_of_state = 805
-			if = {
-				limit = {
-					has_completed_focus = Yeo_Un_hyung_Elected
-				}
-				custom_trigger_tooltip = {
-					tooltip = SPA_expand_influence_nationalists_trigger_tt
-					805 = { check_variable = { var = KOR_garrison_control value = 4 compare = less_than } }
-				}
-			}
-			NOT = {
-				has_country_flag = KOR_already_expanding_influence_flag
-			}
-		}
+# 		available = {
+# 			has_full_control_of_state = 805
+# 			if = {
+# 				limit = {
+# 					has_completed_focus = Yeo_Un_hyung_Elected
+# 				}
+# 				custom_trigger_tooltip = {
+# 					tooltip = SPA_expand_influence_nationalists_trigger_tt
+# 					805 = { check_variable = { var = KOR_garrison_control value = 4 compare = less_than } }
+# 				}
+# 			}
+# 			NOT = {
+# 				has_country_flag = KOR_already_expanding_influence_flag
+# 			}
+# 		}
 
-		highlight_state_targets = { state = 805 }
+# 		highlight_state_targets = { state = 805 }
 
-		on_map_mode = map_only
+# 		on_map_mode = map_only
 
-		cost = 805.KOR_garrison_control_cost?10
+# 		cost = 805.KOR_garrison_control_cost?10
 
-		fire_only_once = no
+# 		fire_only_once = no
 
-		days_remove = 1
+# 		days_remove = 1
 
-		visible = {
-			NOT = { has_global_flag = KOR_civil_war }
-			has_completed_focus = Yeo_Un_hyung_Elected
-		}
+# 		visible = {
+# 			NOT = { has_global_flag = KOR_civil_war }
+# 			has_completed_focus = Yeo_Un_hyung_Elected
+# 		}
 
-		cancel_if_not_visible = yes
+# 		cancel_if_not_visible = yes
 
-		complete_effect = {
-			set_country_flag = KOR_already_expanding_influence_flag
-		}
+# 		complete_effect = {
+# 			set_country_flag = KOR_already_expanding_influence_flag
+# 		}
 
-		remove_effect = {
-			if = {
-				limit = {
-					has_completed_focus = Yeo_Un_hyung_Elected
-				}
-				805 = {
-					custom_effect_tooltip = SPA_expand_influence_nationalists_tt
-					set_state_flag = { flag = KOR_recently_expanded_influence_flag value = 1 days = 15 }
-					hidden_effect = {
-						if = {
-							limit = { check_variable = { KOR_garrison_control < 4 } }
+# 		remove_effect = {
+# 			if = {
+# 				limit = {
+# 					has_completed_focus = Yeo_Un_hyung_Elected
+# 				}
+# 				805 = {
+# 					custom_effect_tooltip = SPA_expand_influence_nationalists_tt
+# 					set_state_flag = { flag = KOR_recently_expanded_influence_flag value = 1 days = 15 }
+# 					hidden_effect = {
+# 						if = {
+# 							limit = { check_variable = { KOR_garrison_control < 4 } }
 							
-							add_to_variable = { var = KOR_garrison_control value = 1 }
-							KOR = { add_to_variable = { var = ko_civil_war_divisions_counter_var value = 1 } }
-							KOR = { subtract_from_variable = { var = kor_civil_war_divisions_counter_var value = 1 } }
-						}
-					}
-					KOR_garrison_control_tooltip = yes
-					KOR_garrison_control_cost_calculation = yes
-				}
-			}
-			clr_country_flag = KOR_already_expanding_influence_flag
-		}
+# 							add_to_variable = { var = KOR_garrison_control value = 1 }
+# 							KOR = { add_to_variable = { var = ko_civil_war_divisions_counter_var value = 1 } }
+# 							KOR = { subtract_from_variable = { var = kor_civil_war_divisions_counter_var value = 1 } }
+# 						}
+# 					}
+# 					KOR_garrison_control_tooltip = yes
+# 					KOR_garrison_control_cost_calculation = yes
+# 				}
+# 			}
+# 			clr_country_flag = KOR_already_expanding_influence_flag
+# 		}
 
-		ai_will_do = {
-			base = 110
-			modifier = {
-				805 = { has_state_flag = KOR_recently_expanded_influence_flag }
-				factor = 10
-			}
-			modifier = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				805 = { check_variable = { var = KOR_garrison_control value = 2 compare = greater_than_or_equals } }
-				factor = 5
-			}
-			modifier = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				805 = { check_variable = { var = KOR_garrison_control value = 3 compare = greater_than_or_equals } }
-				factor = 5
-			}
-			modifier = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-				is_historical_focus_on = yes
-				factor = 0
-			}
-		}
-	}
-}
+# 		ai_will_do = {
+# 			base = 110
+# 			modifier = {
+# 				805 = { has_state_flag = KOR_recently_expanded_influence_flag }
+# 				factor = 10
+# 			}
+# 			modifier = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				805 = { check_variable = { var = KOR_garrison_control value = 2 compare = greater_than_or_equals } }
+# 				factor = 5
+# 			}
+# 			modifier = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				805 = { check_variable = { var = KOR_garrison_control value = 3 compare = greater_than_or_equals } }
+# 				factor = 5
+# 			}
+# 			modifier = {
+# 				has_completed_focus = Yeo_Un_hyung_Elected
+# 				is_historical_focus_on = yes
+# 				factor = 0
+# 			}
+# 		}
+# 	}
+# }
 
-KOR_opposition_civil_war_preparations = {
+# KOR_opposition_civil_war_preparations = {
 
-	###  ##   ##  #  #  ##     #  #  ##  ### ### ### ###  ##   ##  ### ###  ##  #  #     #   # ###  ##  ## ###  ##  #  #  ## 
-	#   #  # #  # #  # #       ## # #  #  #   #  #    #  #  # #  #  #   #  #  # ## #     ## ##  #  #   #    #  #  # ## # #   
-	##  #  # #    #  #  #      # ## #  #  #   #  ##   #  #    ####  #   #  #  # # ##     # # #  #   #   #   #  #  # # ##  #  
-	#   #  # #  # #  #   #     #  # #  #  #   #  #    #  #  # #  #  #   #  #  # #  #     #   #  #    #   #  #  #  # #  #   # 
-	#    ##   ##   ##  ##      #  #  ##   #  ### #   ###  ##  #  #  #  ###  ##  #  #     #   # ### ##  ##  ###  ##  #  # ##  
+# 	###  ##   ##  #  #  ##     #  #  ##  ### ### ### ###  ##   ##  ### ###  ##  #  #     #   # ###  ##  ## ###  ##  #  #  ## 
+# 	#   #  # #  # #  # #       ## # #  #  #   #  #    #  #  # #  #  #   #  #  # ## #     ## ##  #  #   #    #  #  # ## # #   
+# 	##  #  # #    #  #  #      # ## #  #  #   #  ##   #  #    ####  #   #  #  # # ##     # # #  #   #   #   #  #  # # ##  #  
+# 	#   #  # #  # #  #   #     #  # #  #  #   #  #    #  #  # #  #  #   #  #  # #  #     #   #  #    #   #  #  #  # #  #   # 
+# 	#    ##   ##   ##  ##      #  #  ##   #  ### #   ###  ##  #  #  #  ###  ##  #  #     #   # ### ##  ##  ###  ##  #  # ##  
 	
-		KOR_hand_over_the_ceda_campaign_chest_mission = {
+# 		KOR_hand_over_the_ceda_campaign_chest_mission = {
 	
-			priority = 10
+# 			priority = 10
 	
-			name = SPA_hand_over_the_ceda_campaign_chest
+# 			name = SPA_hand_over_the_ceda_campaign_chest
 	
-			icon = eng_trade_unions_support
+# 			icon = eng_trade_unions_support
 	
-			available = {
-				hidden_trigger = { always = no }
-			}
+# 			available = {
+# 				hidden_trigger = { always = no }
+# 			}
 	
-			days_mission_timeout = 23
+# 			days_mission_timeout = 23
 	
-			fire_only_once = yes
+# 			fire_only_once = yes
 	
-			activation = {
-				always = yes
-			}
+# 			activation = {
+# 				always = yes
+# 			}
 	
-			visible = {
-				tag = KOR
-				NOT = { has_global_flag = kor_civil_war }
-			}
+# 			visible = {
+# 				tag = KOR
+# 				NOT = { has_global_flag = kor_civil_war }
+# 			}
 	
-			cancel_if_not_visible = yes
+# 			cancel_if_not_visible = yes
 	
-			is_good = yes
+# 			is_good = yes
 	
-			timeout_effect = {
-				set_country_flag = SPA_hand_over_the_ceda_campaign_chest_flag
-			}
-		}
-	}
+# 			timeout_effect = {
+# 				set_country_flag = SPA_hand_over_the_ceda_campaign_chest_flag
+# 			}
+# 		}
+# 	}

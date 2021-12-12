@@ -1,0 +1,22 @@
+state={
+	id=855
+	name="STATE_855"
+
+	history={
+		owner = NAN
+		add_core_of = NAN
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 2
+
+		}
+
+	}
+
+	provinces={
+		1096 1168 7058 10058 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	state_category=town
+}

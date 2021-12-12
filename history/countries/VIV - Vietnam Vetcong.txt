@@ -20,24 +20,24 @@ set_popularities = {
 	rad_socialism = 100
 }
 
-create_country_leader = {
-	name = "Nguyen Huu Tho"
-	desc = ""
-	picture = "nguyen_huu_tho.dds"
-	expire = "1965.1.1"
-	ideology = rad_socialism
-	traits = {
-		#
-	}
-}
+# create_country_leader = {
+# 	name = "Nguyen Huu Tho"
+# 	desc = ""
+# 	picture = "nguyen_huu_tho.dds"
+# 	expire = "1965.1.1"
+# 	ideology = rad_socialism
+# 	traits = {
+# 		#
+# 	}
+# }
 
-create_corps_commander = {
-        name = "Nguyen Thi Dinh"
-		picture = "Nguyen_Dinh.dds"
-        traits = {  }
-        skill = 2
-        attack_skill = 1
-        defense_skill = 2
-        planning_skill = 2
-        logistics_skill = 3
-}
+# create_corps_commander = {
+#         name = "Nguyen Thi Dinh"
+# 		picture = "Nguyen_Dinh.dds"
+#         traits = {  }
+#         skill = 2
+#         attack_skill = 1
+#         defense_skill = 2
+#         planning_skill = 2
+#         logistics_skill = 3
+# }

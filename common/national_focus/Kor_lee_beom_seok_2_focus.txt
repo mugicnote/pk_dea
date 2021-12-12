@@ -116,9 +116,6 @@ focus_tree = {
 		relative_position_id = KOR_Resolving_issue_Armed_Forces_Restoration_Society
 		cost = 3.00
 
-		mutually_exclusive = {
-			focus = KOR_One_Fuhrer
-		}
 		prerequisite = {
 			focus = KOR_Resolving_issue_Armed_Forces_Restoration_Society
 		}
@@ -126,7 +123,7 @@ focus_tree = {
 		completion_reward = {
 
 		}
-		x = -7
+		x = -17
 		y = 1
 
 	}
@@ -138,9 +135,6 @@ focus_tree = {
 		relative_position_id = KOR_Resolving_issue_Armed_Forces_Restoration_Society
 		cost = 2.00
 
-		mutually_exclusive = {
-			focus = KOR_back_to_back_dictatorship
-		}
 		prerequisite = {
 			focus = KOR_Resolving_issue_Armed_Forces_Restoration_Society
 		}
@@ -148,7 +142,130 @@ focus_tree = {
 		completion_reward = {
 
 		}
-		x = -5
+		x = -9
+		y = 1
+
+	}
+
+	#우익 민병대 통합
+	focus = {
+		id = KOR_Right_wing_militia_united
+		icon = GFX_focus_kor_Right_wing_militia_united
+		relative_position_id = KOR_One_Fuhrer
+		cost = 2.00
+
+		prerequisite = {
+			focus = KOR_One_Fuhrer
+		}
+
+		completion_reward = {
+
+		}
+		x = -2
+		y = 1
+
+	}
+
+	#의사당에서의 연설
+	focus = {
+		id = KOR_speech_at_the_capitol
+		icon = GFX_focus_kor_speech_at_the_capitol
+		relative_position_id = KOR_One_Fuhrer
+		cost = 2.00
+
+		prerequisite = {
+			focus = KOR_One_Fuhrer
+		}
+
+		completion_reward = {
+
+		}
+		x = 0
+		y = 1
+
+	}
+
+	#좌익 민병대 탄압
+	focus = {
+		id = KOR_Oppression_left_wing_militias
+		icon = GFX_focus_kor_Oppression_left_wing_militias
+		relative_position_id = KOR_One_Fuhrer
+		cost = 2.00
+
+		prerequisite = {
+			focus = KOR_One_Fuhrer
+		}
+
+		completion_reward = {
+
+		}
+		x = 2
+		y = 1
+
+	}
+
+	#푸른 어둠을 밝혀라
+	focus = {
+		id = KOR_Light_up_blue_darkness
+		icon = GFX_focus_kor_Light_up_blue_darkness
+		relative_position_id = KOR_speech_at_the_capitol
+		cost = 2.00
+
+		prerequisite = {
+			focus = KOR_speech_at_the_capitol
+		}
+		prerequisite = {
+			focus = KOR_Right_wing_militia_united
+		}
+
+		completion_reward = {
+
+		}
+		x = -1
+		y = 1
+
+	}
+
+	#붉은 깃발을 태워라
+	focus = {
+		id = KOR_Burn_red_flag
+		icon = GFX_focus_kor_Burn_red_flag
+		relative_position_id = KOR_speech_at_the_capitol
+		cost = 2.00
+
+		prerequisite = {
+			focus = KOR_speech_at_the_capitol
+		}
+		prerequisite = {
+			focus = KOR_Oppression_left_wing_militias
+		}
+
+		completion_reward = {
+
+		}
+		x = 1
+		y = 1
+
+	}
+
+	#어둠이 걷힌 새벽
+	focus = {
+		id = KOR_Dawn_when_darkness_is_cleared
+		icon = GFX_focus_kor_Dawn_when_darkness_is_cleared
+		relative_position_id = KOR_Light_up_blue_darkness
+		cost = 2.00
+
+		prerequisite = {
+			focus = KOR_Light_up_blue_darkness
+		}
+		prerequisite = {
+			focus = KOR_Burn_red_flag
+		}
+
+		completion_reward = {
+
+		}
+		x = 1
 		y = 1
 
 	}

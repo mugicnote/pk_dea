@@ -112,6 +112,17 @@ KOR_huge_amount_government_bonds
 KOR_Collapsed_security
 KOR_incompetent_goverment
 KOR_Divided_military
+KOR_Chang_Taek_Sang
+three_years_service
+
+idea_Lee_Soon_yong
+idea_Ho_Jong
+idea_Shin_Sung_mo
+idea_Jo_Man_sik
+idea_Lee_In
+idea_Kim_Beop_rin
+idea_Yoon_Bo_Sun
+idea_Kang_In_taek
 }
 
 #시작_정당
@@ -181,621 +192,58 @@ set_popularities = {
 COALITION_add_soccon = yes
 COALITION_add_neu = yes
 
-#정당별_리더
-create_country_leader = { #사진 작업 완료(도움 받음)
-  name = "서재필"
-  desc = "POLITICS_JAE_PIL_DESC"
-  picture = "Portrait_Seo_jae_pil.dds"
-  expire = "1949.6.26"
-  ideology = Seo_Jae_Pil_conservatism
-  traits = {
-	President
-	Father_Democratic_Republic
-  }
-}
+#common/characters 파일 참고
+recruit_character = KOR_Seo_jae_pil
+recruit_character = KOR_pak_hon_yong
+recruit_character = KOR_pak_hon_yong
+recruit_character = KOR_Kim_Tu_bong
+recruit_character = KOR_Kim_Won_bong
+recruit_character = KOR_Lyuh_Woon_hyung
+recruit_character = KOR_Chang_Myon
+recruit_character = KOR_Ahn_Jae_hong
+recruit_character = KOR_kim_sung_soo
+recruit_character = KOR_Kim_Koo
+recruit_character = KOR_ji_chong_chen
+recruit_character = KOR_rafs
+recruit_character = KOR_Lee_Beom_seok
 
-#create_country_leader = {
-#  name = "김일성"
-#  desc = "POLITICS_KIM_IL_SUNG_DESC"
-#  picture = "Kim_portrait.dds"
-#  expire = "1947.7.19"
-#  ideology = leninism
-#  traits = {
-#    traits_Kim_Il1
-#    traits_Kim_Il2
-#  }
-#}
+recruit_character = KOR_Hong_Bum_do
+recruit_character = KOR_an_jung_geun
+recruit_character = KOR_Kim_Chwa_chin
+recruit_character = KOR_Shin_Sung_mo
 
-create_country_leader = { #사진 작업 완료
-	name = "박헌영"
-	desc = "POLITICS_PAK_HON_YONG_DESC"
-	picture = "Portrait_Pak_Honyong.dds"
-	expire = "1947.7.19"
-	ideology = leninism
-	traits = {
-		#traits_Kim_Il1
-		#traits_Kim_Il2
-		#traits_Kim_Il3
-	}
-}
+recruit_character = KOR_Kim_Hong_Il
+recruit_character = KOR_Kim_Kyung_cheon
+recruit_character = KOR_Ryu_Dong_yeol
+recruit_character = KOR_Hong_Sa_ik
+recruit_character = KOR_Hwang_Hak_Su
+recruit_character = KOR_Kim_Hak_kyu
+recruit_character = KOR_Kim_Suk_Won
+recruit_character = KOR_Yoo_jin_dong
+recruit_character = KOR_song_ho_seong
+recruit_character = KOR_park_keong_chor
+recruit_character = KOR_Han_Hun
 
-create_country_leader = { #사진 작업 완료(DoS 도움 받음)
-  name = "김두봉"
-  desc = "POLITICS_KIM_TU_BONG_DESC"
-  picture = "Portrait_Kim_Tu_bong.dds"
-  expire = "1947.7.19"
-  ideology = auth_socialism
-  traits = {
-    #
-  }
-}
+recruit_character = KOR_Choi_Yong_duk
+recruit_character = KOR_Jang_Duk_chang
 
-create_country_leader = { #사진 작업 완료
-  name = "김원봉"
-  desc = "POLITICS_KIM_WON_BONG_DESC"
-  picture = "Portrait_Kim_Wonbong.dds"
-  expire = "1947.7.19"
-  ideology = rad_socialism
-  traits = {
-    #
-  }
-}
+recruit_character = KOR_Kim_Won_bong
+recruit_character = KOR_Ryu_ja_myeong
+recruit_character = KOR_Kwon_Jun
+recruit_character = KOR_Kim_Sang_ok
+recruit_character = KOR_Kim_Ji_Sub
+recruit_character = KOR_Kim_Ik_Sang
+recruit_character = KOR_Yun_Se_ju
+recruit_character = KOR_Kim_Si_Hyeon
 
-create_country_leader = { #사진 작업 완료
-  name = "여운형"
-  desc = "POLITICS_LYUH_WOON_HYUNG_DESC"
-  picture = "Portrait_Lyuh_Woonhyung.dds"
-  expire = "1947.7.19"
-  ideology = socialism
-  traits = {
-		traits_Yeo_Un2
-  }
-}
+recruit_character = KOR_Kim_chek
+recruit_character = KOR_Park_Il_wu
+recruit_character = KOR_Kim_Mu_geong
+recruit_character = KOR_Choi_Yong_Gun
+recruit_character = KOR_Lee_Gwan_Sool
+recruit_character = KOR_Nam_Il
 
-create_country_leader = { #사진 작업 완료
-  name = "장면"
-  desc = "POLITICS_CHANG_MYON_DESC"
-  picture = "Portrait_Chang_Myon.dds"
-  expire = "1947.7.19"
-  ideology = liberalism
-  traits = {
-    #
-  }
-}
-
-create_country_leader = { #사진 작업 완료
-  name = "안재홍"
-  desc = "POLITICS_AHN_JAE_HONG_DESC"
-  picture = "Portrait_Ahn_Jaehong.dds"
-  expire = "1947.7.19"
-  ideology = nat_liberal
-  traits = {
-    #
-  }
-}
-
-create_country_leader = { #사진 작업 완료
-  name = "송진우"
-  desc = "POLITICS_KIM_SUNG_SOO_DESC"
-  picture = "Portrait_Shin_Ik_Hee.dds"
-  expire = "1947.7.19"
-  ideology = lib_conservatism
-  traits = {
-    #
-  }
-}
-
-create_country_leader = {
-  	name = "김구"
-  	desc = "POLITICS_KIM_KOO_DESC"
-  	picture = "Portrait_Kim_Koo.dds"
-	expire = "1947.7.19"
-	ideology = korean_nationalism
-  	traits = {
-    	traits_kim_ku
-  	}
-}
-
-create_country_leader = { #사진 작업 완료
-  name = "지청천"
-  desc = "POLITICS_JI_CHONG_CHEN_DESC"
-  picture = "Portrait_ji_chong_chen.dds"
-  expire = "1947.7.19"
-  ideology = military_dic
-  traits = {
-    #
-  }
-}
-
-create_country_leader = {
-  name = "국군유신회 지도부"
-  desc = "POLITICS_RAFS_DESC"
-  picture = "Portrait_rafs.dds"
-  expire = "1947.7.19"
-  ideology = despotism
-  traits = {
-    #
-  }
-}
-
-create_country_leader = { #사진 작업 완료
-  name = "이범석"
-  desc = "POLITICS_LEE_BEOM_DESC"
-  picture = "Portrait_Lee_Beomseok.dds"
-  expire = "1972.5.11"
-  ideology = lee_fascism
-  traits = {
-    great_war_hero
-  }
-}
-
-#####육군 원수#####
-
-create_field_marshal = { #사진 작업 완료
-	name = "홍범도"
-	picture = "Portrait_Hong_Bum_do.dds"
-	traits = { 
-		#카리스마
-		inspirational_leader
-		#산악병        
-		trait_mountaineer
-		#매복가
-		ambusher
-		old_guard
-		war_hero
-		skilled_staffer
-		infantry_leader
-		}
-  
-	skill = 6
-	attack_skill = 5
-	defense_skill = 5
-	planning_skill = 6
-	logistics_skill = 5
-}
-
-create_field_marshal = { #사진 작업 완료(Dos 도움)
-	name = "안중근"
-	picture = "Portrait_an_junggeun.dds"
-	traits = { 
-		old_guard
-		war_hero
-		media_personality
-		skilled_staffer
-		}
-	
-	skill = 5
-	attack_skill = 5
-	defense_skill = 4
-	planning_skill = 6
-	logistics_skill = 4
-}
-
-create_field_marshal = { #사진 작업 완료(Dos 도움) + dea 추가 작업
-	name = "김좌진"
-	picture = "Portrait_Kim_Chwa-chin.dds"
-	traits = {
-		brilliant_strategist
-		offensive_doctrine
-		war_hero
-		media_personality
-		career_officer
-		skilled_staffer
-		old_guard
-		}
-		
-	skill = 5
-	attack_skill = 4
-	defense_skill = 5
-	planning_skill = 4
-	logistics_skill = 4
-}
-
-create_field_marshal = { #사진 작업 완료
-	name = "지청천"
-	picture = "Portrait_ji_chong_chen.dds"
-	traits = {
-		inflexible_strategist
-		infantry_officer
-		logistics_wizard
-		defensive_doctrine
-		inspirational_leader
-		adaptable
-		skilled_staffer
-		}
-		
-	skill = 4
-	attack_skill = 5
-	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 5
-}
-
-create_field_marshal = { #사진 작업 완료 (리메이크 하고 싶음)
-	name = "송호성"
-	picture = "Portrait_song_hoseong.dds"
-	traits = {
-		politically_connected
-		old_guard
-		bad_staffer
-		}
-		
-	skill = 4
-	attack_skill = 3
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 2
-}
-
-create_field_marshal = { #사진 작업 완료(Dos 도움) + dea 추가 작업
-	name = "김석원"
-	portrait_path = "gfx/leaders/KOR/Portrait_Kim_Suk_Won.dds"
-	traits = {
-		infantry_officer
-		cavalry officer
-		brilliant_strategist
-		career_officer
-		infantry_leader
-		cavalry_leader
-		charismatic
-		adaptable
-		caring_leader
-		}
-		
-	skill = 4
-    attack_skill = 3
-    defense_skill = 3
-    planning_skill = 2
-    logistics_skill = 2
-}
-
-#####육군 장군#####
-
-create_corps_commander = { #사진 작업 완료
-	name = "이범석"
-	id = 3005
-	picture = "Portrait_Lee_Beomseok.dds"
-	traits = {
-		armor_officer
-		infantry_officer
-		fast_planner
-		brilliant_strategist
-		offensive_doctrine
-		adaptable
-		skilled_staffer
-		}
-	
-	skill = 4
-	attack_skill = 4
-	defense_skill = 3
-	planning_skill = 4
-	logistics_skill = 4
-}
-
-create_corps_commander = {
-	name = "박경철"
-	picture = "keong_chor.dds"
-	traits = {
-		infantry_officer
-		winter_specialist
-		winter_expert
-		adaptable
-		old_guard
-		}
-		
-	skill = 3
-	attack_skill = 3
-	defense_skill = 4
-	planning_skill = 2
-	logistics_skill = 3
-}
-
-create_corps_commander = { #사진 작업 완료
-	name = "김홍일"
-	picture = "Portrait_Kim_Hong_Il.dds"
-	traits = {
-		logistics_wizard
-		inspirational_leader
-		adaptable
-		caring_leader
-		}
-	skill = 4
-	attack_skill = 4
-	defense_skill = 5
-	planning_skill = 5
-	logistics_skill = 4
-}
-
-create_corps_commander = { #사진 작업 완료
-	name = "김경천"
-	picture = "Portrait_Kim_Kyung-cheon.dds"
-	traits = { 
-		#명석한 전략가
-		brilliant_strategist
-		infantry_leader
-		ambusher
-		old_guard
-		}
-	skill = 4
-	attack_skill = 5
-	defense_skill = 4
-	planning_skill = 5
-	logistics_skill = 3
-}
-
-create_corps_commander = { #사진 작업 완료
-	name = "김학규"
-	picture = "Portrait_Kim_Hak_kyu.dds"
-	traits = {
-		scavenger
-		commando
-		}
-	skill = 3
-	attack_skill = 2
-	defense_skill = 4
-	planning_skill = 3
-	logistics_skill = 3
-}
-
-create_corps_commander = { #사진 작업 완료
-	name = "유동열"
-	portrait_path = "gfx/leaders/KOR/Portrait_Ryu_Dongyeol.dds"
-	traits = {
-		cavalry_officer
-		old_guard
-		war_hero
-		politically_connected
-		}
-		
-	skill = 4
-    attack_skill = 3
-    defense_skill = 2
-    planning_skill = 2
-    logistics_skill = 3
-}
-
-create_corps_commander = { #사진 작업 완료(Dos 도움)
-	name = "홍사익"
-	portrait_path = "gfx/leaders/KOR/Portrait_Hong_Sa-ik.dds"
-	traits = {
-		organizer
-		career_officer
-		trait_cautious
-		skilled_staffer
-		}
-		
-	skill = 3
-    attack_skill = 2
-    defense_skill = 2
-    planning_skill = 2
-    logistics_skill = 3
-}
-
-###공산주의자###
-
-create_corps_commander = { #사진 작업 완료
-	name = "김일성"
-  	id = 3001
-	picture = "Kim_portrait.dds"
-	traits = {
-		trait_KOR_communism
-		politically_connected
-		trait_KOR_young_general
-		}
-		
-	skill = 1
-    attack_skill = 2
-    defense_skill = 2
-    planning_skill = 2
-    logistics_skill = 2
-}
-
-create_corps_commander = { #사진 작업 완료
-	name = "김원봉"
-	picture = "Portrait_Kim_Wonbong.dds"
-	traits = { 
-		#정계와의 연줄
-		politically_connected
-		#특공대
-		commando
-		infantry_leader
-		trait_KOR_communism
-	}
-	
-	skill = 3
-	attack_skill = 4
-	defense_skill = 2
-	planning_skill = 3
-	logistics_skill = 3
-}
-
-create_corps_commander = {
-	name = "김책"
-	picture = "kim_chek.dds"
-	traits = {
-		trait_KOR_communism
-		trickster
-		}
-		
-	skill = 3
-    attack_skill = 3
-    defense_skill = 3
-    planning_skill = 2
-    logistics_skill = 4
-}
-
-create_corps_commander = { #사진 작업 완료
-	name = "최용건"
-	picture = "Choi_Yong_Gun.dds"
-	traits = {
-		trait_KOR_communism
-		trait_cautious
-		trickster
-		skilled_staffer
-		}
-		
-	skill = 4
-    attack_skill = 4
-    defense_skill = 3
-    planning_skill = 2
-    logistics_skill = 3
-}
-
-create_corps_commander = {
-	name = "남일"
-	picture = "Portrait_KOR_Nam_Il.dds"
-	traits = {
-		trait_KOR_communism
-		trait_KOR_young_general
-		}
-		
-	skill = 1
-    attack_skill = 2
-    defense_skill = 3
-    planning_skill = 2
-    logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "김무정"
-	picture = "kim_mu_jong.dds"
-	traits = {
-		trait_KOR_communism
-		}
-	skill = 3
-    attack_skill = 2
-    defense_skill = 2
-    planning_skill = 2
-    logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "박일우"
-	picture = "park_il_wu.dds"
-	traits = {
-		trait_KOR_communism
-		}
-	skill = 3
-    attack_skill = 3
-    defense_skill = 2
-    planning_skill = 1
-    logistics_skill = 2
-}
-
-###황족###
-
-create_field_marshal = { #사진 작업 완료
-	name = "이강"
-	portrait_path = "gfx/leaders/KOR/Portrait_Yi_Kang.dds"
-	traits = {
-		politically_connected
-		old_guard
-		media_personality
-		}
-	skill = 3
-    attack_skill = 2
-    defense_skill = 4
-    planning_skill = 3
-    logistics_skill = 2
-}
-
-create_corps_commander = { #사진 작업 완료(Dos 도움)
-	name = "이우"
-	portrait_path = "gfx/leaders/KOR/Portrait_Yi_Wu.dds"
-	traits = {
-		politically_connected
-		old_guard
-		media_personality
-		caring_leader
-		}
-	skill = 3
-    attack_skill = 2
-    defense_skill = 3
-    planning_skill = 2
-    logistics_skill = 3
-}
-
-###제독###
-
-create_navy_leader = { #사진 작업 완료
-	name = "손원일"
-	picture = "Portrait_admiral_son_wonil.dds"
-	traits = {
-		air_controller
-		ironside
-		superior_tactician
-		}
-		
-	skill = 5
-	attack_skill = 6
-	defense_skill = 4
-	maneuvering_skill = 5
-	coordination_skill = 5
-}
-
-create_navy_leader = {
-	name = "함명수"
-	picture = "Portrait_admiral_ham_myungsoo.dds"
-	traits = { air_controller ironside }
-	skill = 5
-	attack_skill = 2
-	defense_skill = 3
-	maneuvering_skill = 3
-	coordination_skill = 3
-}
-
-create_navy_leader = {
-	name = "정긍모"
-	picture = "Portrait_admiral_jung_keungmo.dds"
-	traits = { air_controller superior_tactician }
-	skill = 5
-	attack_skill = 4
-	defense_skill = 2
-	maneuvering_skill = 1
-	coordination_skill = 1
-}
-
-###스파이###
-
-#create_operative_leader = {
-	#name = "염동진"
-	#desc = "SPY_Yeom_Dong_Jin_DESC"
-	#picture = "Portrait_Yeom_Dong_Jin.dds"
-	#traits = { }
-	#bypass_recruitment = no
-	#available_to_spy_master = yes
-	#nationalities = { KOR CHI MAN }
-#}
-
-create_operative_leader = {
-	name = "유자명"
-	desc = ""
-	picture = "Portrait_Ryu_ja_myeong.dds"
-	traits = { }
-	bypass_recruitment = no
-	available_to_spy_master = yes
-	nationalities = { KOR CHI JAP }
-}
-
-create_operative_leader = {
-	name = "윤세주"
-	desc = ""
-	picture = "Portrait_Yoon_Se_joo.dds"
-	traits = { }
-	bypass_recruitment = no
-	available_to_spy_master = yes
-	nationalities = { KOR CHI JAP }
-}
-
-create_operative_leader = {
-	name = "안봉순"
-	desc = ""
-	picture = "Portrait_Ahn_Bong_Soon.dds"
-	traits = { }
-	bypass_recruitment = no
-	available_to_spy_master = yes
-	nationalities = { KOR CHI JAP }
-}
+recruit_character = KOR_Son_Won_il
 
 ###맨 더 건###
   if = {

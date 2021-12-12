@@ -16,6 +16,7 @@ add_ideas = {
 	ICU_broken_army_1
 }
 
+recruit_character = ICU_Eugene_Robin
 
 set_politics = {
 	ruling_party = neutrality
@@ -25,18 +26,4 @@ set_politics = {
 }
 set_popularities = {
 	neutrality = 100
-}
-
-create_country_leader = {
-	name = "Eugène Jean Louis René Robin"
-	desc = ""
-	picture = "Portrait_ICU_Eugene_Robin.dds"
-	expire = "1965.1.1"
-	ideology = warloadism
-	traits = {
-		#
-	}
-}
-
-create_corps_commander = {
 }

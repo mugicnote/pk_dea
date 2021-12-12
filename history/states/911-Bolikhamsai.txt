@@ -1,0 +1,16 @@
+state={
+	id=911
+	name="STATE_911"
+
+	history={
+		owner = ICU
+		add_core_of = LAO
+
+	}
+	
+	provinces={
+		1362 1390 1520 4260 4539 10195 10326 12332 13275 13277 13278 13323 13324 13325 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

@@ -20,16 +20,16 @@ set_popularities = {
 	stalinism = 100
 }
 
-create_country_leader = {
-	name = "Ho Chi Minh"
-	desc = ""
-	picture = "Portrait_ICU_Eugene_Robin.dds"
-	expire = "1965.1.1"
-	ideology = stalinism
-	traits = {
-		#
-	}
-}
+# create_country_leader = {
+# 	name = "Ho Chi Minh"
+# 	desc = ""
+# 	picture = "Portrait_ICU_Eugene_Robin.dds"
+# 	expire = "1965.1.1"
+# 	ideology = stalinism
+# 	traits = {
+# 		#
+# 	}
+# }
 
-create_corps_commander = {
-}
+# create_corps_commander = {
+# }

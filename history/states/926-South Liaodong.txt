@@ -1,0 +1,16 @@
+state={
+	id=926
+	name="STATE_926"
+	history={
+		owner = MAN
+		add_core_of = KOR
+		add_core_of = CHI
+		add_core_of = MAN
+
+	}
+	provinces={
+		846 6951 9788 9835 11815 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

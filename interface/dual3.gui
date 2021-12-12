@@ -1,12 +1,12 @@
 guiTypes = {
 	containerWindowType = {
 		name = "double_leader_system_container3"
-		position = { x = 205 y = 8 }
+		position = { x = 405 y = 25 }
 		orientation = upper_left
 		
 		buttonType = {
 			name = "double_open3"
-			position = { x = 17 y = -30 }
+			position = { x = 0 y = 0 }
 			quadTextureSprite ="GFX_cabinet_button"
 			buttonFont = "hoi_16mbs"
 			buttonText = "참모본부 개요"

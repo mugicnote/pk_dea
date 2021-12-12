@@ -13,1732 +13,322 @@
 
 	default = no
 
-	continuous_focus_position = { x = 20 y = 1000 }
+	continuous_focus_position = { x = 20 y = 1500 }
 
+	#광저우에서의 신년
 	focus = {
-		id = General_Kai_Shek								#내정의 지속
-		icon = GFX_CHI_General_Kai_Shek
+		id = CHI_New_Year_Day_in_Guangzhou
+		icon = GFX_focus_chi_legislative_yuan
 		cost = 2.00
 
-		available = {
-			has_army_manpower = {
-				size > 150000
-			}
-		}
-
 		completion_reward = {
-			add_political_power = 150
+			
 		}
-		x = 33
+		x = 7
 		y = 0
 	}
 
+	#신생활운동 재개
 	focus = {
-		id = right_for_warlord								#군벌 자치권 보장
-		icon = GFX_CHI_Status_Quo
-		cost = 2.00
+		id = CHI_Resume_new_life_exercise
+		icon = GFX_focus_chi_Resume_new_life_exercise
+		relative_position_id = CHI_New_Year_Day_in_Guangzhou
+		cost = 3.00
 
-		relative_position_id = General_Kai_Shek
-
-		available = {
-			NOT = { 
-				CHI = {
-					has_war_with = SND
-					has_war_with = HBC
-					has_war_with = SHX
-					has_war_with = SHA
-					has_war_with = NXM
-					has_war_with = GMS
-					has_war_with = SZC
-					has_war_with = XKC
-					has_war_with = XSM
-					has_war_with = YUN
-					has_war_with = SIK
-					has_war_with = GXC
-					has_war_with = GDC
-					has_war_with = KMK
-					has_war_with = TNG
-					has_war_with = UAC
-				}
-			}
-		}
-
-		completion_reward = {
-			add_political_power = 50
-		}
 		prerequisite = {
-			focus = General_Kai_Shek
-		}
-		mutually_exclusive = {
-			focus = warlord_Censorship
+			focus = CHI_New_Year_Day_in_Guangzhou
 		}
 		completion_reward = {
+
+		}
+		x = -3
+		y = 1
+
+	}
+
+	#삼민주의의 유산
+	focus = {
+		id = CHI_Heritage_Three_Democracy
+		icon = GFX_focus_chi_Heritage_Three_Democracy
+		relative_position_id = CHI_New_Year_Day_in_Guangzhou
+		cost = 3.00
+
+		prerequisite = {
+			focus = CHI_New_Year_Day_in_Guangzhou
+		}
+		completion_reward = {
+
+		}
+		x = 3
+		y = 1
+
+	}
+
+	#난창정부 동향파악
+	focus = {
+		id = CHI_Nanchang_government_grasp_constant
+		icon = GFX_focus_chi_Nanchang_government_grasp_constant
+		relative_position_id = CHI_Heritage_Three_Democracy
+		cost = 3.00
+
+		prerequisite = {
+			focus = CHI_Heritage_Three_Democracy
+		}
+		completion_reward = {
+
 		}
 		x = -2
 		y = 1
+
 	}
 
+	#오권분립 제도정리 실시
 	focus = {
-		id = sourceful_treaty_with_warlords				#군벌과의 효과적 관계 개선 정책
-		icon = GFX_CHI_Status_Quo
-		cost = 5.00
-
-		relative_position_id = General_Kai_Shek
+		id = CHI_Organizing_separation_five_powers
+		icon = GFX_focus_chi_examination_yuan
+		relative_position_id = CHI_Resume_new_life_exercise
+		cost = 3.00
 
 		prerequisite = {
-			focus = right_for_warlord
-			focus = warlord_Censorship
+			focus = CHI_Resume_new_life_exercise
 		}
 		completion_reward = {
-			add_opinion_modifier = {
-				target = SND
-				modifier = small_increase
-			}
-			add_opinion_modifier = {
-				target = HBC
-				modifier = small_increase
-			}
-			add_opinion_modifier = {
-				target = SHX
-				modifier = small_increase
-			}
-			add_opinion_modifier = {
-				target = SHA
-				modifier = small_increase
-			}
-			add_opinion_modifier = {
-				target = NXM
-				modifier = small_increase
-			}
-			add_opinion_modifier = {
-				target = GMS
-				modifier = small_increase
-			}
-			add_opinion_modifier = {
-				target = SZC
-				modifier = small_increase
-			}
-			add_opinion_modifier = {
-				target = XKC
-				modifier = small_increase
-			}
-			add_opinion_modifier = {
-				target = YUN
-				modifier = small_increase
-			}
-			add_opinion_modifier = {
-				target = SIK
-				modifier = small_increase
-			}
-			add_opinion_modifier = {
-				target = GXC
-				modifier = small_increase
-			}
-			add_opinion_modifier = {
-				target = GDC
-				modifier = small_increase
-			}
-			add_opinion_modifier = {
-				target = GXC
-				modifier = small_increase
-			}
-			add_opinion_modifier = {
-				target = KMK
-				modifier = small_increase
-			}
-			add_opinion_modifier = {
-				target = TNG
-				modifier = small_increase
-			}
-			add_opinion_modifier = {
-				target = UAC
-				modifier = small_increase
-			}
-			add_timed_idea = { idea = policy_warlord_relate  days = 150 }
-		}
-		x = 0
-		y = 2
-	}
 
-	focus = {
-		id = Censorship_with_ma
-		icon = GFX_CHI_Send_Mas_Away
-		cost = 2.00
-
-		relative_position_id = right_for_warlord
-
-		available = {
-			NOT = {
-				CHI = {
-					has_war_with = XSM
-					has_war_with = SIK
-				}
-			}
 		}
-
-		prerequisite = {
-			focus = right_for_warlord
-		}
-		completion_reward = {
-			add_political_power = 100
-		}
-		x = -12
+		x = 2
 		y = 1
+
 	}
 
+	#1936 광저우 헌법 개정
 	focus = {
-		id = Censorship_with_ch
-		icon = GFX_CHI_KMT_Propaganda
-		cost = 1.00
-
-		relative_position_id = Censorship_with_ma
+		id = CHI_Draft_constitution_Republic_China
+		icon = GFX_focus_chi_Draft_constitution_Republic_China
+		relative_position_id = CHI_Organizing_separation_five_powers
+		cost = 3.00
 
 		prerequisite = {
-			focus = Censorship_with_ma
+			focus = CHI_Organizing_separation_five_powers
 		}
-		completion_reward = {
-			XSM = { country_event = { id = DEA_china.1 } }
-		}
-		x = -1
-		y = 1
-	}
-
-	focus = {
-		id = Censorship_with_gs
-		icon = GFX_CHI_KMT_Propaganda
-		cost = 1.00
-
-		relative_position_id = Censorship_with_ch
-
 		prerequisite = {
-			focus = Censorship_with_ch
+			focus = CHI_Nanchang_government_grasp_constant
 		}
 		completion_reward = {
-			GMS = { country_event = { id = DEA_china.2 } }
-		}
-		x = 0
-		y = 1
-	}
 
-	focus = {
-		id = Censorship_with_yh
-		icon = GFX_CHI_KMT_Propaganda
-		cost = 1.00
-
-		relative_position_id = Censorship_with_ma
-
-		prerequisite = {
-			focus = Censorship_with_ma
-		}
-		completion_reward = {
-			NXM = { country_event = { id = DEA_china.3 } }
 		}
 		x = 1
 		y = 1
+
 	}
 
+	#대만 통제력 유지
 	focus = {
-		id = Censorship_with_tn
-		icon = GFX_CHI_KMT_Propaganda
-		cost = 1.00
-
-		relative_position_id = Censorship_with_yh
+		id = CHI_Maintaining_control_over_Taiwan
+		icon = GFX_focus_chi_Maintaining_control_over_Taiwan
+		relative_position_id = CHI_Resume_new_life_exercise
+		cost = 3.00
 
 		prerequisite = {
-			focus = Censorship_with_yh
+			focus = CHI_Resume_new_life_exercise
 		}
 		completion_reward = {
-			TNG = { country_event = { id = DEA_china.4 } }
-		}
-		x = 0
-		y = 1
-	}
 
-	focus = {
-		id = Censorship_with_sw
-		icon = GFX_CHI_KMT_Propaganda
-		cost = 1.00
-
-		relative_position_id = Censorship_with_tn
-
-		prerequisite = {
-			focus = Censorship_with_tn
-		}
-		prerequisite = {
-			focus = Censorship_with_gs
-		}
-		completion_reward = {
-			add_political_power = 100
 		}
 		x = -1
 		y = 1
+
 	}
 
+	#국민혁명군 통계 재조사
 	focus = {
-		id = Censorship_with_sg
-		icon = GFX_CHI_KMT_Propaganda
-		cost = 1.00
-
-		relative_position_id = Censorship_with_sw
+		id = CHI_Statistics_National_Revolution_Army
+		icon = GFX_focus_chi_Statistics_National_Revolution_Army
+		relative_position_id = CHI_Heritage_Three_Democracy
+		cost = 3.00
 
 		prerequisite = {
-			focus = Censorship_with_sw
+			focus = CHI_Heritage_Three_Democracy
 		}
 		completion_reward = {
-			SIK = { country_event = { id = DEA_china.5 } }
-		}
-		x = -1
-		y = 1
-	}
 
-	focus = {
-		id = Censorship_with_km
-		icon = GFX_CHI_KMT_Propaganda
-		cost = 1.00
-
-		relative_position_id = Censorship_with_sw
-
-		prerequisite = {
-			focus = Censorship_with_sw
-		}
-		completion_reward = {
-			KMK = { country_event = { id = DEA_china.6 } }
 		}
 		x = 1
 		y = 1
+
 	}
 
+	#법폐개혁 완료선언
 	focus = {
-		id = Censorship_with_sa
-		icon = GFX_CHI_military_affairs
-		cost = 2.00
-
-		relative_position_id = right_for_warlord
+		id = CHI_Declaration_Completion_Legal_Waste_Reform
+		icon = GFX_focus_chi_Declaration_Completion_Legal_Waste_Reform
+		relative_position_id = CHI_Maintaining_control_over_Taiwan
+		cost = 3.00
 
 		prerequisite = {
-			focus = right_for_warlord
+			focus = CHI_Maintaining_control_over_Taiwan
 		}
 		completion_reward = {
-			add_political_power = 100
-		}
-		x = -8
-		y = 1
-	}
 
-	focus = {
-		id = Censorship_with_sc
-		icon = GFX_CHI_military_affairs
-		cost = 1.00
-
-		relative_position_id = Censorship_with_sa
-
-		prerequisite = {
-			focus = Censorship_with_sa
-		}
-		completion_reward = {
-			SZC = { country_event = { id = DEA_china.7 } }
 		}
 		x = -1
-		y = 2
+		y = 1
+
 	}
 
+	#대독 협력관계 강화
 	focus = {
-		id = Censorship_with_sk
-		icon = GFX_CHI_Liuwenhui
-		cost = 1.00
-
-		relative_position_id = Censorship_with_sa
+		id = CHI_Expanding_diplomatic_relations_between_China_and_Japan
+		icon = GFX_focus_chi_Expanding_diplomatic_relations_between_China_and_Japan
+		relative_position_id = CHI_Maintaining_control_over_Taiwan
+		cost = 3.00
 
 		prerequisite = {
-			focus = Censorship_with_sa
+			focus = CHI_Maintaining_control_over_Taiwan
 		}
 		completion_reward = {
-			XKC = { country_event = { id = DEA_china.8 } }
+
 		}
 		x = 1
-		y = 2
-	}
-
-	focus = {
-		id = Censorship_with_south
-		icon = GFX_CHI_KMT_Propaganda
-		cost = 2.00
-
-		relative_position_id = right_for_warlord
-
-		prerequisite = {
-			focus = right_for_warlord
-		}
-		completion_reward = {
-			add_political_power = 100
-		}
-		x = -4
 		y = 1
+
 	}
 
+	#리쭝런과의 회담 계획
 	focus = {
-		id = Censorship_with_yn
-		icon = GFX_CHI_KMT_Propaganda
-		cost = 1.00
-
-		relative_position_id = Censorship_with_south
+		id = CHI_Meeting_plan_with_Li_Zhong_Ren
+		icon = GFX_focus_chi_Meeting_plan_with_Li_Zhong_Ren
+		relative_position_id = CHI_Statistics_National_Revolution_Army
+		cost = 3.00
 
 		prerequisite = {
-			focus = Censorship_with_south
+			focus = CHI_Statistics_National_Revolution_Army
 		}
 		completion_reward = {
-			YUN = { country_event = { id = DEA_china.9 } }
+
 		}
 		x = -1
-		y = 2
+		y = 1
+
 	}
 
+	#룽윈의 그림자 지원
 	focus = {
-		id = Censorship_with_un
-		icon = GFX_CHI_KMT_Propaganda
-		cost = 1.00
-
-		relative_position_id = Censorship_with_yn
+		id = CHI_Longwins_shadow_support
+		icon = GFX_focus_chi_Longwins_shadow_support
+		relative_position_id = CHI_Statistics_National_Revolution_Army
+		cost = 3.00
 
 		prerequisite = {
-			focus = Censorship_with_yn
+			focus = CHI_Statistics_National_Revolution_Army
 		}
 		completion_reward = {
-			UAC = { country_event = { id = DEA_china.10 } }
-		}
-		x = 0
-		y = 2
-	}
-	
-	focus = {
-		id = Censorship_with_gd
-		icon = GFX_CHI_Chenjitang
-		cost = 1.00
 
-		relative_position_id = Censorship_with_south
-
-		prerequisite = {
-			focus = Censorship_with_south
-		}
-		completion_reward = {
-			GXC = { country_event = { id = DEA_china.11 } }
 		}
 		x = 1
-		y = 2
+		y = 1
+
 	}
 
+	#후한민 선생 서거
 	focus = {
-		id = Censorship_with_gx
-		icon = GFX_CHI_KMT_Propaganda
-		cost = 1.00
-
-		relative_position_id = Censorship_with_gd
+		id = CHI_Hu_Hanmin_death
+		icon = GFX_focus_chi_Hu_Hanmin_death
+		relative_position_id = CHI_Draft_constitution_Republic_China
+		cost = 3.00
 
 		prerequisite = {
-			focus = Censorship_with_gd
+			focus = CHI_Draft_constitution_Republic_China
 		}
-		completion_reward = {
-			GDC = { country_event = { id = DEA_china.12 } }
-		}
-		x = 0
-		y = 2
-	}
-
-	focus = {
-		id = Censorship_with_north
-		icon = GFX_CHI_KMT_Propaganda
-		cost = 2.00
-
-		relative_position_id = right_for_warlord
-
 		prerequisite = {
-			focus = right_for_warlord
+			focus = CHI_Declaration_Completion_Legal_Waste_Reform
+			focus = CHI_Expanding_diplomatic_relations_between_China_and_Japan
+			focus = CHI_Meeting_plan_with_Li_Zhong_Ren
+			focus = CHI_Longwins_shadow_support
 		}
 		completion_reward = {
-			add_political_power = 100
+
 		}
 		x = 0
 		y = 1
+
 	}
 
+	#리쭝런과의 회담진행
 	focus = {
-		id = Censorship_with_sx
-		icon = GFX_CHI_KMT_Propaganda
-		cost = 1.00
-
-		relative_position_id = Censorship_with_north
+		id = CHI_Meeting_with_Li_Zhong_Ren
+		icon = GFX_focus_chi_Meeting_with_Li_Zhong_Ren
+		relative_position_id = CHI_Hu_Hanmin_death
+		cost = 3.00
 
 		prerequisite = {
-			focus = Censorship_with_north
+			focus = CHI_Hu_Hanmin_death
 		}
 		completion_reward = {
-			SHX = { country_event = { id = DEA_china.13 } }
-		}
-		x = -1
-		y = 2
-	}
 
-	focus = {
-		id = Censorship_with_sh
-		icon = GFX_CHI_KMT_Propaganda
-		cost = 1.00
-
-		relative_position_id = Censorship_with_sx
-
-		prerequisite = {
-			focus = Censorship_with_sx
-		}
-		completion_reward = {
-			SHA = { country_event = { id = DEA_china.14 } }
-		}
-		x = 0
-		y = 2
-	}
-
-	focus = {
-		id = Censorship_with_sd
-		icon = GFX_CHI_Hanfuju
-		cost = 1.00
-
-		relative_position_id = Censorship_with_north
-
-		prerequisite = {
-			focus = Censorship_with_north
-		}
-		completion_reward = {
-			SND = { country_event = { id = DEA_china.15 } }
-		}
-		x = 1
-		y = 2
-	}
-
-	focus = {
-		id = Censorship_with_hb
-		icon = GFX_CHI_KMT_Propaganda
-		cost = 1.00
-
-		relative_position_id = Censorship_with_sd
-
-		prerequisite = {
-			focus = Censorship_with_sd
-		}
-		completion_reward = {
-			HBC = { country_event = { id = DEA_china.16 } }
-		}
-		x = 0
-		y = 2
-	}
-
-	focus = {
-		id = End_of_the_censorship
-		icon = GFX_CHI_KMT_Propaganda
-		cost = 2.00
-
-		relative_position_id = Censorship_with_km
-
-		prerequisite = {
-			focus = Censorship_with_sg
-		}
-		prerequisite = {
-			focus = Censorship_with_km
-		}
-		prerequisite = {
-			focus = Censorship_with_sc
-		}
-		prerequisite = {
-			focus = Censorship_with_sk
-		}
-		prerequisite = {
-			focus = Censorship_with_un
-		}
-		prerequisite = {
-			focus = Censorship_with_gx
-		}
-		prerequisite = {
-			focus = Censorship_with_sh
-		}
-		prerequisite = {
-			focus = Censorship_with_hb
-		}
-		completion_reward = {
-		}
-		x = 5
-		y = 1
-	}
-
-	focus = {
-		id = Its_time
-		icon = GFX_CHI_KMT_Propaganda
-		cost = 5.00
-
-		relative_position_id = End_of_the_censorship
-
-		prerequisite = {
-			focus = End_of_the_censorship
-		}
-		completion_reward = {
 		}
 		x = 0
 		y = 1
+
 	}
 
+	#양광사변
 	focus = {
-		id = warlord_Censorship								#군벌 규합 정책
-		icon = GFX_CHI_stabilize_the_KMT
-		cost = 1.00
-
-		relative_position_id = General_Kai_Shek
+		id = CHI_Yanggwang_Incident
+		icon = GFX_focus_chi_Yanggwang_Incident
+		relative_position_id = CHI_Meeting_with_Li_Zhong_Ren
+		cost = 3.00
 
 		prerequisite = {
-			focus = General_Kai_Shek
+			focus = CHI_Meeting_with_Li_Zhong_Ren
+		}
+		completion_reward = {
+
+		}
+		x = 0
+		y = 1
+
+	}
+
+	#부위정경
+	focus = {
+		id = CHI_correct_mistake_crisis
+		icon = GFX_focus_chi_correct_mistake_crisis
+		relative_position_id = CHI_Yanggwang_Incident
+		cost = 3.00
+
+		prerequisite = {
+			focus = CHI_Yanggwang_Incident
 		}
 		mutually_exclusive = {
-			focus = right_warlord
+			focus = CHI_to_sa_gu_peng
 		}
 		completion_reward = {
-			add_political_power = 150
-		}
-	
-		x = 2
-		y = 1
-	}
 
-	focus = {
-		id = start_of_the_Censorship
-		icon = GFX_CHI_stabilize_the_KMT
-		cost = 1.00
-
-		relative_position_id = warlord_Censorship
-
-		prerequisite = {
-			focus = warlord_Censorship
-		}
-		completion_reward = {
-			add_political_power = 100
-		}
-		x = 0
-		y = 1
-	}
-
-	focus = {
-		id = keep_soft
-		icon = GFX_CHI_stabilize_the_KMT
-		cost = 1.00
-
-		relative_position_id = start_of_the_Censorship
-
-		prerequisite = {
-			focus = start_of_the_Censorship
-		}
-		completion_reward = {
-		}
-		x = 0
-		y = 1
-	}
-
-	focus = {
-		id = push_the_ma
-		icon = GFX_CHI_stabilize_the_KMT
-		cost = 1.00
-
-		relative_position_id = keep_soft
-
-		prerequisite = {
-			focus = keep_soft
-		}
-		completion_reward = {
 		}
 		x = -1
 		y = 1
+
 	}
 
+	#토사구팽
 	focus = {
-		id = push_the_sa
-		icon = GFX_CHI_stabilize_the_KMT
-		cost = 1.00
-
-		relative_position_id = keep_soft
+		id = CHI_to_sa_gu_peng
+		icon = GFX_focus_chi_to_sa_gu_peng
+		relative_position_id = CHI_Yanggwang_Incident
+		cost = 3.00
 
 		prerequisite = {
-			focus = keep_soft
+			focus = CHI_Yanggwang_Incident
+		}
+		mutually_exclusive = {
+			focus = CHI_correct_mistake_crisis
 		}
 		completion_reward = {
+
 		}
 		x = 1
 		y = 1
+
 	}
 
-	focus = {
-		id = push_the_south
-		icon = GFX_CHI_stabilize_the_KMT
-		cost = 1.00
-
-		relative_position_id = keep_soft
-
-		prerequisite = {
-			focus = keep_soft
-		}
-		completion_reward = {
-		}
-		x = 3
-		y = 1
-	}
-
-	focus = {
-		id = push_the_north
-		icon = GFX_CHI_stabilize_the_KMT
-		cost = 1.00
-
-		relative_position_id = keep_soft
-
-		prerequisite = {
-			focus = keep_soft
-		}
-		completion_reward = {
-		}
-		x = 5
-		y = 1
-	}
-
-	focus = {
-		id = CHI_clame_land					#본토 영유권 주장
-		icon = GFX_CHI_clame_land
-		cost = 10.00
-
-		relative_position_id = General_Kai_Shek
-
-		prerequisite = {
-			focus = CHI_General_Kai_Shek
-			focus = New_National_Revolutionary_Army
-		}
-		completion_reward = {
-			add_political_power = 50
-		}
-		x = 14
-		y = 1
-	}
-
-	focus = {
-		id = CHI_clame_guangzhou
-		icon = GFX_CHI_clame_guangzhou
-		cost = 10.00
-
-		relative_position_id = CHI_clame_land
-		available = {
-			any_country = {
-				original_tag = FRA
-				owns_state = 728
-			}
-		}
-		prerequisite = {
-			focus = CHI_clame_land
-		}
-		completion_reward = {
-		}
-		x = -2
-		y = 1
-	}
-
-	focus = {
-		id = CHI_clame_makao
-		icon = GFX_CHI_clame_makao
-		cost = 10.00
-
-		relative_position_id = CHI_clame_guangzhou
-
-		prerequisite = {
-			focus = CHI_clame_land
-		}
-		available = {
-			any_country = {
-				original_tag = POR
-				owns_state = 729
-			}
-		}
-		completion_reward = {
-		}
-		x = 2
-		y = 0
-	}
-
-	focus = {
-		id = CHI_clame_hongkong
-		icon = GFX_CHI_clame_hongkong
-		cost = 10.00
-
-		relative_position_id = CHI_clame_guangzhou
-		available = {
-			any_country = {
-				original_tag = ENG
-				owns_state = 326
-			}
-		}
-		prerequisite = {
-			focus = CHI_clame_land
-		}
-		completion_reward = {
-		}
-		x = 4
-		y = 0
-	}
-
-	focus = {
-		id = CHI_six_fort_plan
-		icon = GFX_CHI_six_fort_plan
-		cost = 10.00
-
-		relative_position_id = CHI_clame_makao
-
-		prerequisite = {
-			focus = CHI_clame_guangzhou
-		}
-		prerequisite = {
-			focus = CHI_clame_makao
-		}
-		prerequisite = {
-			focus = CHI_clame_hongkong
-		}
-		completion_reward = {
-			add_political_power = 50
-		}
-		x = 0
-		y = 1
-	}
-
-	focus = {
-		id = CHI_shanghai
-		icon = GFX_CHI_shanghai
-		cost = 10.00
-		available = {
-			CHI = {
-				owns_state = 820
-			}
-		}
-		relative_position_id = CHI_six_fort_plan
-
-		prerequisite = {
-			focus = CHI_six_fort_plan
-		}
-		completion_reward = {
-			820 = {
-				add_building_construction = {
-					type = naval_base province = 7014 level = 4 instant_build = yes
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 5
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = dockyard
-					level = 3
-					instant_build = yes
-				}
-			}
-		}
-		x = -5
-		y = 1
-	}
-
-	focus = {
-		id = CHI_hongkong
-		icon = GFX_CHI_hongkong
-		cost = 10.00
-		available = {
-			CHI = {
-				owns_state = 326
-			}
-		}
-		relative_position_id = CHI_six_fort_plan
-
-		prerequisite = {
-			focus = CHI_six_fort_plan
-		}
-		completion_reward = {
-			326 = {
-				add_building_construction = {
-					type = naval_base province = 10062 level = 4 instant_build = yes
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 5
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = dockyard
-					level = 3
-					instant_build = yes
-				}
-			}
-		}
-		x = -3
-		y = 1
-	}
-
-	focus = {
-		id = CHI_tshingtao
-		icon = GFX_CHI_tshingtao
-		cost = 10.00
-		available = {
-			CHI = {
-				owns_state = 743
-			}
-		}
-		relative_position_id = CHI_six_fort_plan
-
-		prerequisite = {
-			focus = CHI_six_fort_plan
-		}
-		completion_reward = {
-			743 = {
-				add_building_construction = {
-					type = naval_base province = 10000 level = 5 instant_build = yes
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 5
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = dockyard
-					level = 3
-					instant_build = yes
-				}
-			}
-		}
-		x = -1
-		y = 1
-	}
-
-	focus = {
-		id = CHI_shantou
-		icon = GFX_CHI_shantou
-		cost = 10.00
-		available = {
-			CHI = {
-				owns_state = 842
-			}
-		}
-		relative_position_id = CHI_six_fort_plan
-
-		prerequisite = {
-			focus = CHI_six_fort_plan
-		}
-		completion_reward = {
-			842 = {
-				add_building_construction = {
-					type = naval_base province = 9938 level = 9 instant_build = yes
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 10
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = dockyard
-					level = 3
-					instant_build = yes
-				}
-			}
-		}
-		x = 1
-		y = 1
-	}
-
-	focus = {
-		id = CHI_fujou
-		icon = GFX_CHI_fujou
-		cost = 10.00
-		available = {
-			CHI = {
-				owns_state = 833
-			}
-		}
-		relative_position_id = CHI_six_fort_plan
-
-		prerequisite = {
-			focus = CHI_six_fort_plan
-		}
-		completion_reward = {
-			833 = {
-				add_building_construction = {
-					type = naval_base province = 4196 level = 10 instant_build = yes
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 7
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = dockyard
-					level = 3
-					instant_build = yes
-				}
-			}
-		}
-		x = 3
-		y = 1
-	}
-
-	focus = {
-		id = CHI_nhingbo
-		icon = GFX_CHI_nhingbo
-		cost = 10.00
-		available = {
-			CHI = {
-				owns_state = 826
-			}
-		}
-		relative_position_id = CHI_six_fort_plan
-
-		prerequisite = {
-			focus = CHI_six_fort_plan
-		}
-		completion_reward = {
-			826 = {
-				add_building_construction = {
-					type = naval_base province = 9974 level = 10 instant_build = yes
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 7
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = dockyard
-					level = 3
-					instant_build = yes
-				}
-			}
-		}
-		x = 5
-		y = 1
-	}
-
-	focus = {
-		id = CHI_end_of_the_six_fort_plan
-		icon = GFX_CHI_six_fort_plan_end
-		cost = 5.00
-		available = {
-			CHI = {
-				owns_state = 820
-				owns_state = 326
-				owns_state = 743
-				owns_state = 842
-				owns_state = 833
-				owns_state = 826
-			}
-		}
-		relative_position_id = CHI_six_fort_plan
-
-		prerequisite = {
-			focus = CHI_shanghai
-		}
-		prerequisite = {
-			focus = CHI_hongkong
-		}
-		prerequisite = {
-			focus = CHI_tshingtao
-		}
-		prerequisite = {
-			focus = CHI_shantou
-		}
-		prerequisite = {
-			focus = CHI_fujou
-		}
-		prerequisite = {
-			focus = CHI_nhingbo
-		}
-		completion_reward = {
-			add_stability = 0.3
-		}
-		x = 0
-		y = 2
-	}
-
-	focus = {												#새로운 국민혁명군
-		id = New_National_Revolutionary_Army
-		icon = GFX_CHI_Our_Crusade
-		cost = 10.00
-
-		completion_reward = {
-			army_experience = 100
-		}
-		x = 60
-		y = 0
-	}
-
-	focus = {
-		id = integration_municipal_police
-		icon = GFX_CHI_Police
-		cost = 5.00
-
-		relative_position_id = New_National_Revolutionary_Army
-
-		prerequisite = {
-			focus = New_National_Revolutionary_Army
-			focus = General_Kai_Shek
-		}
-		completion_reward = {
-		}
-		x = -5
-		y = 1
-	}
-
-	focus = {
-		id = integration_militia
-		icon = GFX_CHI_Police
-		cost = 5.00
-
-		relative_position_id = New_National_Revolutionary_Army
-
-		prerequisite = {
-			focus = New_National_Revolutionary_Army
-			focus = General_Kai_Shek
-		}
-		completion_reward = {
-		}
-		x = -7
-		y = 1
-	}
-
-	focus = {
-		id = organised_shock_troops
-		icon = GFX_CHI_Police
-		cost = 5.00
-
-		relative_position_id = integration_militia
-
-		prerequisite = {
-			focus = integration_militia
-			focus = integration_municipal_police
-		}
-		completion_reward = {
-		}
-		x = -1
-		y = 1
-	}
-	
-	focus = {
-		id = integrated_peoples_mil
-		icon = GFX_CHI_Police
-		cost = 5.00
-
-		relative_position_id = integration_militia
-
-		prerequisite = {
-			focus = integration_militia
-			focus = integration_municipal_police
-		}
-		completion_reward = {
-		}
-		x = 1
-		y = 1
-	}
-
-	focus = {
-		id = guns_for_people
-		icon = GFX_CHI_Police
-		cost = 5.00
-
-		relative_position_id = integration_militia
-
-		prerequisite = {
-			focus = integration_militia
-			focus = integration_municipal_police
-		}
-		completion_reward = {
-		}
-		x = 3
-		y = 1
-	}
-
-	focus = {
-		id = light_republic_of_army
-		icon = GFX_CHI_Police
-		cost = 5.00
-
-		relative_position_id = organised_shock_troops
-
-		prerequisite = {
-			focus = organised_shock_troops
-		}
-		prerequisite = {
-			focus = integrated_peoples_mil
-		}
-		prerequisite = {
-			focus = guns_for_people
-		}
-		completion_reward = {
-		}
-		x = 1
-		y = 1
-	}
-
-	focus = {
-		id = light_division_design
-		icon = GFX_CHI_Police
-		cost = 5.00
-
-		relative_position_id = organised_shock_troops
-
-		prerequisite = {
-			focus = organised_shock_troops
-		}
-		prerequisite = {
-			focus = integrated_peoples_mil
-		}
-		prerequisite = {
-			focus = guns_for_people
-		}
-		completion_reward = {
-		}
-		x = 3
-		y = 1
-	}
-
-	focus = {
-		id = light_army_special_army
-		icon = GFX_CHI_Police
-		cost = 5.00
-
-		relative_position_id = light_republic_of_army
-
-		prerequisite = {
-			focus = light_republic_of_army
-		}
-		prerequisite = {
-			focus = light_division_design
-		}
-		completion_reward = {
-		}
-		x = 1
-		y = 1
-	}
-
-	focus = {
-		id = personal_weapon_research
-		icon = GFX_CHI_Police
-		cost = 5.00
-
-		relative_position_id = light_republic_of_army
-
-		prerequisite = {
-			focus = light_division_design
-		}
-		completion_reward = {
-		}
-		x = 3
-		y = 1
-	}
-
-	focus = {
-		id = Regional_Minutemen_Division		#범지역 민병 사단
-		icon = GFX_CHI_New_Life_Movement_Fascist
-		cost = 5.00
-
-		relative_position_id = New_National_Revolutionary_Army
-
-		prerequisite = {
-			focus = New_National_Revolutionary_Army
-		}
-		
-		completion_reward = {
-		}
-		x = -3
-		y = 1
-	}
-
-	focus = {
-		id = special_duty_elite		#특무 정예병 노선
-		icon = GFX_CHI_Volunteers
-		cost = 5.00
-
-		relative_position_id = New_National_Revolutionary_Army
-
-		prerequisite = {
-			focus = New_National_Revolutionary_Army
-		}
-		
-		completion_reward = {
-		}
-		x = -1
-		y = 1
-	}
-
-	focus = {
-		id = ready_for_special_force		#특수부대 계획
-		icon = GFX_CHI_Sinkiang_Oil
-		cost = 5.00
-
-		relative_position_id = special_duty_elite
-
-		prerequisite = {
-			focus = special_duty_elite
-		}
-		completion_reward = {
-		}
-		x = 1
-		y = 1
-	}
-
-	focus = {
-		id = steel_fuel_development
-		icon = GFX_CHI_Sinkiang_Oil
-		cost = 5.00
-
-		relative_position_id = Regional_Minutemen_Division
-
-		prerequisite = {
-			focus = Regional_Minutemen_Division
-			focus = special_duty_elite
-		}
-		available = {
-			CHI = {
-				owns_state = 867
-			}
-			CHI = {
-				owns_state = 617
-			}
-			CHI = {
-				owns_state = 869
-			}
-			CHI = {
-				owns_state = 619
-			}
-			CHI = {
-				owns_state = 870
-			}
-			CHI = {
-				owns_state = 618
-			}
-			CHI = {
-				owns_state = 871
-			}
-			CHI = {
-				owns_state = 868
-			}
-		}
-		completion_reward = {
-			add_resource = {
-				type = oil
-				amount = 2
-				state = 867
-			}
-			add_resource = {
-				type = oil
-				amount = 3
-				state = 617
-			}
-			add_resource = {
-				type = oil
-				amount = 3
-				state = 869
-			}
-			add_resource = {
-				type = oil
-				amount = 2
-				state = 619
-			}
-			add_resource = {
-				type = oil
-				amount = 2
-				state = 870
-			}
-			add_resource = {
-				type = oil
-				amount = 3
-				state = 618
-			}
-			add_resource = {
-				type = oil
-				amount = 3
-				state = 871
-			}
-			add_resource = {
-				type = oil
-				amount = 2
-				state = 868
-			}
-		}
-		x = 1
-		y = 1
-	}
-
-	focus = {
-		id = securing_national_livelihood
-		icon = GFX_CHI_Land_Reform
-		cost = 5.00
-
-		relative_position_id = Regional_Minutemen_Division
-
-		prerequisite = {
-			focus = Regional_Minutemen_Division
-			focus = special_duty_elite
-		}
-		
-		completion_reward = {
-		}
-		x = 0
-		y = 2
-	}
-
-	focus = {
-		id = securing_national_income
-		icon = GFX_CHI_Factory_of_Asia
-		cost = 5.00
-
-		relative_position_id = Regional_Minutemen_Division
-
-		prerequisite = {
-			focus = Regional_Minutemen_Division
-			focus = special_duty_elite
-		}
-		
-		completion_reward = {
-		}
-		x = 2
-		y = 2
-	}
-
-	focus = {
-		id = General_Sun_Li_Jen
-		icon = GFX_CHI_Generalissimo_Sun_Li_Jen
-		cost = 5.00
-
-		relative_position_id = securing_national_livelihood
-
-		prerequisite = {
-			focus = securing_national_livelihood
-		}
-		prerequisite = {
-			focus = securing_national_income
-		}
-		completion_reward = {
-			set_country_flag = Sun_Lijen
-			add_ideas = MOF_Sun_Lijen
-		}
-		x = 1
-		y = 1
-	}
-
-	focus = {
-		id = army_reform_ongoing
-		icon = GFX_CHI_Factory_of_Asia
-		cost = 5.00
-
-		relative_position_id = light_army_special_army
-
-		prerequisite = {
-			focus = light_army_special_army
-		}
-		prerequisite = {
-			focus = General_Sun_Li_Jen
-		}
-		completion_reward = {
-		}
-		x = 2
-		y = 1
-	}
-
-	focus = {
-		id = call_all_army		#전군 집산
-		icon = GFX_CHI_New_Life_Movement_Fascist
-		cost = 5.00
-
-		relative_position_id = New_National_Revolutionary_Army
-
-		prerequisite = {
-			focus = New_National_Revolutionary_Army
-		}
-		
-		completion_reward = {
-		}
-		x = 1
-		y = 1
-	}
-
-	focus = {
-		id = ready_for_rightless_defense_force	#권력 없는 친위대 계획
-		icon = GFX_CHI_Sinkiang_Oil
-		cost = 5.00
-
-		relative_position_id = New_National_Revolutionary_Army
-
-		prerequisite = {
-			focus = New_National_Revolutionary_Army
-		}
-		completion_reward = {
-		}
-		x = 3
-		y = 1
-	}
-
-	focus = {
-		id = CHI_Military_Commission		#국부군 군사 위원회
-		icon = GFX_CHI_Military_Junta
-		cost = 5.00
-
-		relative_position_id = New_National_Revolutionary_Army
-
-		prerequisite = {
-			focus = New_National_Revolutionary_Army
-		}
-		completion_reward = {
-		}
-		x = 5
-		y = 1
-	}
-
-	focus = {
-		id = Purchase_Decomposition		#외국산 비행기 구매
-		icon = GFX_CHI_Planes
-		cost = 5.00
-
-		relative_position_id = CHI_Military_Commission
-
-		prerequisite = {
-			focus = CHI_Military_Commission
-		}
-		completion_reward = {
-		}
-		x = -3
-		y = 1
-	}
-
-	focus = {
-		id = copy_plane_design
-		icon = GFX_GER_bussiness_as_usual
-		cost = 5.00
-
-		relative_position_id = Purchase_Decomposition
-
-		prerequisite = {
-			focus = Purchase_Decomposition
-		}
-		completion_reward = {
-		}
-		x = -1
-		y = 1
-	}
-
-	focus = {
-		id = Securing_design_funding
-		icon = GFX_GER_bussiness_as_usual
-		cost = 5.00
-
-		relative_position_id = Purchase_Decomposition
-
-		prerequisite = {
-			focus = Purchase_Decomposition
-		}
-		completion_reward = {
-		}
-		x = 1
-		y = 1
-	}
-
-	focus = {
-		id = army_flying_wing
-		icon = GFX_GER_bussiness_as_usual
-		cost = 5.00
-
-		relative_position_id = copy_plane_design
-
-		prerequisite = {
-			focus = copy_plane_design
-		}
-		prerequisite = {
-			focus = Securing_design_funding
-		}
-		completion_reward = {
-		}
-		x = -1
-		y = 1
-	}
-
-	focus = {
-		id = early_idea_for_airforce
-		icon = GFX_GER_bussiness_as_usual
-		cost = 5.00
-
-		relative_position_id = copy_plane_design
-
-		prerequisite = {
-			focus = copy_plane_design
-		}
-		prerequisite = {
-			focus = Securing_design_funding
-		}
-		completion_reward = {
-		}
-		x = 1
-		y = 1
-	}
-
-	focus = {
-		id = plan_for_secure_sky
-		icon = GFX_GER_bussiness_as_usual
-		cost = 5.00
-
-		relative_position_id = army_flying_wing
-
-		prerequisite = {
-			focus = army_flying_wing
-		}
-		prerequisite = {
-			focus = early_idea_for_airforce
-		}
-		completion_reward = {
-		}
-		x = 1
-		y = 1
-	}
-
-	focus = {
-		id = Invitation_Korean_Military_Advisor
-		icon = GFX_KOR_air_force
-		cost = 10.00
-
-		relative_position_id = CHI_Military_Commission
-
-		prerequisite = {
-			focus = CHI_Military_Commission
-		}
-		completion_reward = {
-		}
-		x = 3
-		y = 1
-	}
-
-	focus = {
-		id = national_railway_rearrangement
-		icon = GFX_CHI_Longhai_Railway
-		cost = 10.00
-
-		relative_position_id = Invitation_Korean_Military_Advisor
-
-		prerequisite = {
-			focus = Invitation_Korean_Military_Advisor
-		}
-		completion_reward = {
-		}
-		x = 0
-		y = 1
-	}
-
-	focus = {
-		id = enlargement_namysa
-		icon = GFX_CHI_The_Night
-		cost = 10.00
-
-		relative_position_id = national_railway_rearrangement
-
-		prerequisite = {
-			focus = national_railway_rearrangement
-		}
-		completion_reward = {
-		}
-		x = 0
-		y = 1
-	}
-
-	focus = {
-		id = Kaohsiung_Base_Reorganization
-		icon = GFX_CHI_Formosan_Problem
-		cost = 10.00
-
-		relative_position_id = enlargement_namysa
-
-		prerequisite = {
-			focus = enlargement_namysa
-		}
-		prerequisite = {
-			focus = Defending_South_China_Sea
-		}
-		completion_reward = {
-		}
-		x = 0
-		y = 1
-	}
-	
-	focus = {
-		id = establishment_Shanghai_Base
-		icon = GFX_CHI_Ships
-		cost = 10.00
-
-		relative_position_id = CHI_Military_Commission
-
-		prerequisite = {
-			focus = CHI_Military_Commission
-		}
-		completion_reward = {
-		}
-		x = 0
-		y = 1
-	}
-
-	focus = {
-		id = special_fund_expansion
-		icon = GFX_CHI_Currency_Issue
-		cost = 10.00
-
-		relative_position_id = establishment_Shanghai_Base
-
-		prerequisite = {
-			focus = establishment_Shanghai_Base
-		}
-		completion_reward = {
-		}
-		x = 0
-		y = 1
-	}
-
-	focus = {
-		id = Defending_South_China_Sea
-		icon = GFX_GENERIC_big_ship
-		cost = 10.00
-
-		relative_position_id = special_fund_expansion
-
-		prerequisite = {
-			focus = special_fund_expansion
-		}
-		completion_reward = {
-		}
-		x = 1
-		y = 1
-	}
-
-	focus = {
-		id = Defending_yellow_Sea
-		icon = GFX_KOR_sailors
-		cost = 10.00
-
-		relative_position_id = special_fund_expansion
-
-		prerequisite = {
-			focus = special_fund_expansion
-		}
-		completion_reward = {
-		}
-		x = -1
-		y = 1
-	}
-
-	focus = {
-		id = CHI_sea_dragon
-		icon = GFX_CHI_Chinese_Dream
-		cost = 10.00
-
-		relative_position_id = special_fund_expansion
-
-		prerequisite = {
-			focus = special_fund_expansion
-		}
-		completion_reward = {
-		}
-		x = 0
-		y = 2
-	}
 }

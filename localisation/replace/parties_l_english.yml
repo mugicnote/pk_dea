@@ -35,12 +35,12 @@
  national_conservatism_noun:0 "국민보수주의"
  national_conservatism_desc:0 "민주주의 정권"
 
- neutrality:0 "권위주의"
- neutrality_noun:0 "권위주의"
- neutrality_desc:0 "권위주의 정권"
+ neutrality:0 "권위민주주의"
+ neutrality_noun:0 "권위민주주의"
+ neutrality_desc:0 "민주주의 정권"
 
- auto_despotism:0 "전제독재주의"
- auto_despotism_noun:0 "전제독재주의"
+ auto_despotism:0 "전제주의"
+ auto_despotism_noun:0 "전제주의"
  auto_despotism_desc:0 "전제주의 정권"
 
  fascism:0 "파시즘"

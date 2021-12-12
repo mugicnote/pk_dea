@@ -19,6 +19,8 @@ if = {
 	}
 }
 
+recruit_character = SHX_yan_xi_shan
+
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1936.1.1"
@@ -27,26 +29,4 @@ set_politics = {
 }
 set_popularities = {
 	neutrality = 100
-}
-
-create_country_leader = {
-	name = "옌시산"
-	desc = "POLITICS_YAN XISHAN_DESC"
-	picture = "GFX_portrait_shanxi_portrait_yan_xishan"
-	expire = "1965.1.1"
-	ideology = warloadism
-	traits = {
-		#
-	}
-}
-
-create_corps_commander = {
-	name = "왕징궈"
-	portrait_path = "gfx/leaders/Asia/Portrait_Asia_Generic_land_2.dds"
-	traits = { politically_connected }
-	skill = 3
-	attack_skill = 2
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 2
 }

@@ -23,6 +23,28 @@ ideas = {
 				traits_opnion_pro_americans
 			}
 		}
+		idea_Lee_Soon_yong2 = {
+
+			allowed = { original_tag = KOR }
+
+			picture = advisor_Lee_Soon_yong
+
+			available = {
+				custom_trigger_tooltip = {
+    				tooltip = minister_tooltip
+					always = no
+				}
+			}
+
+			cancel_if_invalid = no
+			removal_cost = -1
+			ai_will_do = { factor = 1 }
+
+			traits = {
+				traits_interior_minister
+				traits_Against_government
+			}
+		}
 	}
 	foreign_minister = {
 		idea_Ho_Jong = {
@@ -30,10 +52,6 @@ ideas = {
 			allowed = { original_tag = KOR }
 
 			picture = advisor_Ho_Jong
-
-			visible = {
-				NOT = { has_country_flag = Ho_Jong_cabinet_personnel_injury }
-			}
 
 			available = {
 				custom_trigger_tooltip = {
@@ -75,6 +93,29 @@ ideas = {
 			traits = {
 				traits_foreign_minister
 				traits_cabinet_personnel_injury
+			}
+		}
+
+		idea_Ho_Jong3 = {
+
+			allowed = { original_tag = KOR }
+
+			picture = advisor_Ho_Jong
+
+			available = {
+				custom_trigger_tooltip = {
+    				tooltip = minister_tooltip
+					always = no
+				}
+			}
+
+			cancel_if_invalid = yes
+			removal_cost = -1
+			ai_will_do = { factor = 1 }
+
+			traits = {
+				traits_foreign_minister
+				traits_Against_government
 			}
 		}
 	}
@@ -124,6 +165,28 @@ ideas = {
 				traits_finance_minister
 			}
 		}
+		idea_Jo_Man_sik2 = {
+
+			allowed = { original_tag = KOR }
+
+			picture = advisor_Jo_Man_sik
+
+			available = {
+				custom_trigger_tooltip = {
+    				tooltip = minister_tooltip
+					always = no
+				}
+			}
+
+			cancel_if_invalid = no
+			removal_cost = -1
+			ai_will_do = { factor = 1 }
+
+			traits = {
+				traits_finance_minister
+				traits_Against_government
+			}
+		}
 	}
 
 	justice_minister = {
@@ -146,6 +209,28 @@ ideas = {
 
 			traits = {
 				traits_justice_minister
+			}
+		}
+		idea_Lee_In2 = {
+
+			allowed = { original_tag = KOR }
+
+			picture = advisor_Lee_In
+
+			available = {
+				custom_trigger_tooltip = {
+    				tooltip = minister_tooltip
+					always = no
+				}
+			}
+
+			cancel_if_invalid = no
+			removal_cost = -1
+			ai_will_do = { factor = 1 }
+
+			traits = {
+				traits_justice_minister
+				traits_Against_government
 			}
 		}
 	}
@@ -172,9 +257,31 @@ ideas = {
 				traits_education_minister
 			}
 		}
+		idea_Kim_Beop_rin2 = {
+
+			allowed = { original_tag = KOR }
+
+			picture = advisor_Kim_Beop_rin
+
+			available = {
+				custom_trigger_tooltip = {
+    				tooltip = minister_tooltip
+					always = no
+				}
+			}
+
+			cancel_if_invalid = no
+			removal_cost = -1
+			ai_will_do = { factor = 1 }
+
+			traits = {
+				traits_education_minister
+				traits_Against_government
+			}
+		}
 	}
 
-	industry_commerce_minister = { #여기까지
+	industry_commerce_minister = {
 		idea_Yoon_Bo_Sun = {
 
 			allowed = { original_tag = KOR }
@@ -194,6 +301,74 @@ ideas = {
 
 			traits = {
 				traits_industry_commerce_minister
+			}
+		}
+		idea_Yoon_Bo_Sun2 = {
+
+			allowed = { original_tag = KOR }
+
+			picture = advisor_Yoon_Bo_Sun
+
+			available = {
+				custom_trigger_tooltip = {
+    				tooltip = minister_tooltip
+					always = no
+				}
+			}
+
+			cancel_if_invalid = no
+			removal_cost = -1
+			ai_will_do = { factor = 1 }
+
+			traits = {
+				traits_industry_commerce_minister
+				traits_Against_government
+			}
+		}
+	}
+
+	information_communication_minister = {
+		idea_Kang_In_taek = {
+
+			allowed = { original_tag = KOR }
+
+			picture = advisor_Kang_In_taek
+
+			available = {
+				custom_trigger_tooltip = {
+    				tooltip = minister_tooltip
+					always = no
+				}
+			}
+
+			cancel_if_invalid = no
+			removal_cost = -1
+			ai_will_do = { factor = 1 }
+
+			traits = {
+				traits_information_communication_minister
+			}
+		}
+		idea_Kang_In_taek2 = {
+
+			allowed = { original_tag = KOR }
+
+			picture = advisor_Kang_In_taek
+
+			available = {
+				custom_trigger_tooltip = {
+    				tooltip = minister_tooltip
+					always = no
+				}
+			}
+
+			cancel_if_invalid = no
+			removal_cost = -1
+			ai_will_do = { factor = 1 }
+
+			traits = {
+				traits_information_communication_minister
+				traits_Against_government
 			}
 		}
 	}

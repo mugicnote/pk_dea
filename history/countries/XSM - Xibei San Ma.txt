@@ -18,6 +18,8 @@ if = {
 	}
 }
 
+recruit_character = XSM_ma_bu_fang
+
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1936.1.1"
@@ -26,26 +28,4 @@ set_politics = {
 }
 set_popularities = {
 	neutrality = 100
-}
-
-create_country_leader = {
-	name = "마부팡"
-	desc = ""
-	picture = "GFX_portrait_xsm_ma_bufang"
-	expire = "1965.1.1"
-	ideology = warloadism
-	traits = {
-		#
-	}
-}
-
-create_corps_commander = {
-	name = "마부팡"
-	picture = "GFX_portrait_xsm_ma_bufang"
-	traits = { }
-	skill = 3
-	attack_skill = 2
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 2
 }

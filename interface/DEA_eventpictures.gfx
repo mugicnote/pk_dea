@@ -149,6 +149,19 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/Nagoya_terrorist_occurred_picture.dds"
 	}
 
+	spriteType = {
+		name = "GFX_Attempted_assassinate_acting_Kim_Gyu_Sik"
+		texturefile = "gfx/event_pictures/KOR/Attempted_assassinate_acting_Kim_Gyu_Sik.dds"
+	}
+	spriteType = {
+		name = "GFX_Syngman_Rhee_announces_candidacy_Korea_Promotion_Association"
+		texturefile = "gfx/event_pictures/KOR/Syngman_Rhee_announces_candidacy_Korea_Promotion_Association.dds"
+	}
+	spriteType = {
+		name = "GFX_Attempted_assassinate_acting_Kim_Gyu_Sik2"
+		texturefile = "gfx/event_pictures/KOR/Attempted_assassinate_acting_Kim_Gyu_Sik2.dds"
+	}
+
 }
 	
 	

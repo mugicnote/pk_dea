@@ -8,10 +8,8 @@ leader_traits = {
 	traits_justice_minister = {} #법무부장관
 	traits_education_minister = {} #문교부장관
 	traits_industry_commerce_minister = {} #상공부장관
-	traits_transportation_minister = {} #교통부장관
-
-	traits_labor_minister = {} #노동부장관
 	traits_information_communication_minister = {} #체신부장관
+
 	int2min = {} #
 	polmin = {}
 	stamin = {}
@@ -280,5 +278,29 @@ leader_traits = {
 		stability_factor = -0.05
 		political_power_factor = -0.05
 	}
+
+	KOR_Chang_Taek_Sang_traits1 = {
+		random = no
+		drift_defence_factor = 0.15
+        stability_factor = -0.05
+	}
+
+	KOR_Chang_Taek_Sang_traits2 = {
+		random = no
+		political_power_factor = -0.05
+        stability_factor = -0.05
+	}
+
+	traits_Against_government = {
+		random = no
+		stability_factor = -0.05
+		political_power_factor = -0.05
+	}
 	
+	KOR_Chang_Taek_Sang_traits3 = {
+		random = no
+		political_power_factor = -0.05
+        stability_factor = -0.1
+	}
+
 }

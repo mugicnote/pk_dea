@@ -26,10 +26,71 @@ defined_text = {
 		localization_key = party_4_text
 	}
 	text = {
+		trigger = {
+			check_variable = { v = 5 }
+		}
+		localization_key = party_5_text
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 6 }
+		}
+		localization_key = party_6_text
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 7 }
+		}
+		localization_key = party_7_text
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 8 }
+		}
+		localization_key = party_8_text
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 9 }
+		}
+		localization_key = party_9_text
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 10 }
+		}
+		localization_key = party_10_text
+	}
+	text = {
 		localization_key = "Error"
 	}
 }
 
+defined_text = {
+	name = GetKorparliament_Background_explanation
+	text = {
+		# trigger = {
+		# 	check_variable = { v = 1 }
+		# }
+		localization_key = Kor_seo_parliament_Background_explanation
+	}
+}
+
+defined_text = {
+	name = GetKorparliament_Legislative_review_explanation
+	text = {
+		trigger = {
+			has_country_flag = show_parliament_Farmland_Reform_Act
+		}
+		localization_key = Kor_parliament_Farmland_Reform_Act_Legislative_review
+	}
+	text = {
+		trigger = {
+			has_country_flag = show_Temporary_Measures_Assembly_Act
+		}
+		localization_key = Kor_parliament_Temporary_Measures_Assembly_Act_Legislative_review
+	}
+}
 # Since index starts as 0, i can get the current seat number by jut adding it by one and then displaying it.
 defined_text = {
 	name = GetParliamentSeatName
