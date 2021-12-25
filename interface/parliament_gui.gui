@@ -175,21 +175,51 @@ guiTypes = {
 				vertical_alignment = center
 			}
 
+			# instantTextboxType = {
+			# 	name = "parliament_member_text10"
+			# 	position = { x = 755 y = 235 }
+			# 	font = "aldrich_30_outline"
+			# 	text = "야당 비리 고발"
+			# 	maxWidth = 220
+			# 	maxHeight = 16
+			# 	format = center
+			# 	vertical_alignment = center
+			# }
+
 			instantTextboxType = {
 				name = "parliament_Legislative_review_desc"
 				position = { x = -257 y = 80 }
 				font = "aldrich_18_outline"
 				text = "parliament_Legislative_review_desc_explanation"
-				maxWidth = 300
+				maxWidth = 290
+				maxHeight = 306
 				format = left
-				alwaystransparent = yes
+				scrollbarType = standardtext_slider
 			}
 
 			buttonType = {
 				name = "Legislative_review_button"
 				position = { x = -300 y = 390 }
 				spriteType = "GFX_Legislative_review_button"
-				pdx_tooltip = "parliament_button_tt"
+				pdx_tooltip = "Legislative_review_button_tt"
+			}
+
+			instantTextboxType = {
+				name = "parliament_Recruiting_National_Assembly_member_desc"
+				position = { x = 732 y = 440 }
+				font = "aldrich_18_outline"
+				text = "parliament_Recruiting_National_Assembly_member_desc_explanation"
+				maxWidth = 283
+				maxHeight = 138
+				format = left
+				scrollbarType = standardtext_slider
+			}
+
+			buttonType = {
+				name = "Recruiting_National_Assembly_member_button"
+				position = { x = 810 y = 580 }
+				spriteType = "GFX_Recruiting_National_Assembly_member_button"
+				pdx_tooltip = "Recruiting_National_Assembly_member_button_tt"
 			}
 		}
 
@@ -230,12 +260,41 @@ guiTypes = {
 			buttonType = {
 				name = "parliament_Farmland_Reform_Act"
 				spriteType = "GFX_parliament_Farmland_Reform_Act"
-				position = { x = 1 y = -10 }
+				position = { x = 2 y = -10 }
 			}
 			buttonType = {
 				name = "Temporary_Measures_Assembly_Act"
 				spriteType = "GFX_Temporary_Measures_Assembly_Act"
-				position = { x = 1 y = 35 }
+				position = { x = 2 y = 35 }
+			}
+			buttonType = {
+				name = "National_Security_Law_Democratic_Peoples_Party"
+				spriteType = "GFX_National_Security_Law_Democratic_Peoples_Party"
+				position = { x = 2 y = 80 }
+			}
+			buttonType = {
+				name = "National_Security_Law_Social_Labor_Party"
+				spriteType = "GFX_National_Security_Law_Social_Labor_Party"
+				position = { x = 2 y = 125 }
+			}
+		}
+
+		containerWindowType = {
+			name = "parliament_Recruiting_National_Assembly_member_container"
+			position = { x = 1039 y = 95 }
+			size = { width = 310 height = 353 }
+			verticalScrollbar = "right_vertical_slider"
+			margin = { top = 3 bottom = 0}
+	
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_tiled_focus_bg"
+			}
+	
+			buttonType = {
+				name = "Report_corruption_opposition_party"
+				spriteType = "GFX_Report_corruption_opposition_party"
+				position = { x = 2 y = -10 }
 			}
 		}
     }

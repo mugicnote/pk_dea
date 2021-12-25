@@ -139,6 +139,10 @@ spriteTypes = {
 		name = "GFX_focus_kor_Dawn_when_darkness_is_cleared"
 		texturefile = "gfx/interface/goals/focus_kor_Dawn_when_darkness_is_cleared.dds"
 	}
+	SpriteType = {
+		name = "GFX_focus_remove_chabeol"
+		texturefile = "gfx/interface/goals/focus_remove_chabeol.dds"
+	}
 	#황실 복권
 	SpriteType = {
 		name = "GFX_focus_korean_empire"

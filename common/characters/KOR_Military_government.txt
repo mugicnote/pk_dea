@@ -1,0 +1,20 @@
+characters={
+	KNM_Kim_Hong_Il={
+		name=KNM_Kim_Hong_Il
+		portraits={
+			civilian={
+				large="gfx/leaders/KOR/Portrait_Kim_Hong_Il.dds"
+			}
+		}
+
+		country_leader={
+			ideology=military_dic
+			traits={
+
+			}
+			expire="2000.1.1.1"
+			id=-1
+		}
+	}
+
+}

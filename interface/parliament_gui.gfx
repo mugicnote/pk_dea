@@ -28,4 +28,20 @@ spriteTypes = {
 		name = "GFX_Temporary_Measures_Assembly_Act"
 		texturefile = "gfx/interface/parliament/Temporary_Measures_Assembly_Act.dds"
 	}
+	spriteType = {
+		name = "GFX_National_Security_Law_Democratic_Peoples_Party"
+		texturefile = "gfx/interface/parliament/National_Security_Law_Democratic_Peoples_Party.dds"
+	}
+	spriteType = {
+		name = "GFX_National_Security_Law_Social_Labor_Party"
+		texturefile = "gfx/interface/parliament/National_Security_Law_Social_Labor_Party.dds"
+	}
+	spriteType = {
+		name = "GFX_Recruiting_National_Assembly_member_button"
+		texturefile = "gfx/interface/parliament/Recruiting_National_Assembly_member_button.dds"
+	}
+	spriteType = {
+		name = "GFX_Report_corruption_opposition_party"
+		texturefile = "gfx/interface/parliament/Report_corruption_opposition_party.dds"
+	}
 }

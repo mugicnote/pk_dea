@@ -1,0 +1,75 @@
+capital = 328
+
+oob = KNM
+
+#시작시_연구가능_칸
+set_research_slots = 2
+
+#시작시_안정도
+set_stability = 0.6 #(국민정신이 다 깎아먹어서)
+
+#시작시_전쟁지지도
+set_war_support = 0.7
+
+#연료_비율
+set_fuel_ratio = 0.7
+
+#시작시_연구된_장비
+set_technology = {
+    infantry_weapons = 1
+    infantry_weapons1 = 1
+    support_weapons = 1
+    motorised_infantry = 1
+    paratroopers = 1
+    marines = 1
+    tech_support = 1
+    tech_recon = 1
+    tech_engineers = 1
+    gwtank = 1
+    basic_light_tank = 1
+    gw_artillery = 1
+    interwar_artillery = 1
+    interwar_antiair = 1
+	early_fighter = 1
+	cv_early_fighter = 1
+	cv_naval_bomber1 = 1	
+	naval_bomber1 = 1
+	CAS1 = 1
+	early_bomber = 1	
+    superior_firepower = 1
+    sup_delay = 1
+}
+
+#수송선
+set_convoys = 10
+
+#국민정신
+add_ideas = {
+
+}
+
+#common/characters 파일 참고
+recruit_character = KNM_Kim_Hong_Il
+
+#시작_정당
+set_politics = {
+    ruling_party = fascism
+    last_election = "1936.1.1"
+    election_frequency = 48
+    elections_allowed = no
+}
+#시작시_정당들의_인기도
+set_popularities = {
+  communism = 0
+  authoritarian_socialism = 0
+  radical_socialism = 0
+  social_democracy = 0
+  social_liberalism = 0
+  national_liberalism = 0
+  liberal_conservatism = 0
+  democratic = 0
+  national_conservatism = 5
+  neutrality = 15
+  auto_despotism = 20
+  fascism = 60
+}

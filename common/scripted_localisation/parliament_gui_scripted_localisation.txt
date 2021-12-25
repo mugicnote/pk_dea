@@ -91,6 +91,16 @@ defined_text = {
 		localization_key = Kor_parliament_Temporary_Measures_Assembly_Act_Legislative_review
 	}
 }
+
+defined_text = {
+	name = GetKorparliament_Recruiting_National_Assembly_member_explanation
+	text = {
+		trigger = {
+			has_country_flag = show_Report_corruption_opposition_party_click
+		}
+		localization_key = Kor_Report_corruption_opposition_party_na_mb
+	}
+}
 # Since index starts as 0, i can get the current seat number by jut adding it by one and then displaying it.
 defined_text = {
 	name = GetParliamentSeatName

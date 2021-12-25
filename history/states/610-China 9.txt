@@ -1,10 +1,7 @@
 
 state={
 	id=610
-	name="STATE_610" # Jehol
-	manpower = 1975377
-	
-	state_category = pastoral
+	name="STATE_610"
 
 	history={
 		owner = MAN
@@ -13,19 +10,25 @@ state={
 		add_core_of = PRC
 		buildings = {
 			infrastructure = 4
+
 		}
 		victory_points = {
-			934 3
+			934 3 
 		}
 		victory_points = {
-			11886 3
+			11886 3 
 		}
 		victory_points = {
-			9873 3
+			9873 3 
 		}
+
 	}
 
 	provinces={
-		814 934 972 3814 3828 3881 3934 4514 6837 6852 6898 6937 6988 7575 7633 9873 9905 9927 10331 10426 10499 11801 11855 11886 
+		814 881 952 972 3814 3828 3881 3955 6898 6937 6969 7633 9768 9776 9873 9905 10331 10426 11801 11855 
 	}
+	manpower=1975377
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
 }

@@ -288,6 +288,57 @@ DEA_KOR_Military_Revolution_decisions_category = {
 }
 
 DEA_KOR_Completion_Continental_Revolutionary_War_decisions_category = {
+	KOR_Provisional_military_government_North_Manchuria = {
+		icon = GFX_decision_eng_trade_unions_support
+
+		visible = {
+			original_tag = KOR
+		}
+
+		available = {
+			KOR = { exists = yes }
+			KOR = { is_subject = no }
+			#has_completed_focus = KOR_Zhang_Jinghui_embraces
+			controls_state = 328
+			controls_state = 610
+			controls_state = 714
+			controls_state = 715
+			controls_state = 761
+			controls_state = 926
+			controls_state = 928
+			controls_state = 929
+			controls_state = 930
+			controls_state = 931
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			KNM = {
+				transfer_state = 328
+				transfer_state = 610
+				transfer_state = 714
+				transfer_state = 715
+				transfer_state = 761
+				transfer_state = 926
+				transfer_state = 928
+				transfer_state = 929
+				transfer_state = 930
+				transfer_state = 931
+				create_country_leader = {
+					name = "김홍일"
+					desc = ""
+					picture = "gfx/leaders/KOR/Portrait_Kim_Hong_Il.dds"
+					expire = "1965.1.1"
+					ideology = lee_fascism
+					traits = {
+					}
+				}
+			}
+			set_autonomy = { target = KNM autonomy_state = autonomy_puppet }
+		}
+	}
+
 	KOR_Zhang_Jinghui_embraces = {
 		icon = GFX_decision_eng_trade_unions_support
 

@@ -65,6 +65,10 @@ scripted_gui = {
 					set_country_flag = parliament_Temporary_Measures_Assembly_Act_end
 				}
 			}
+
+			Report_corruption_opposition_party_click = {
+				set_country_flag = show_Report_corruption_opposition_party_click
+			}
 		}
 
 		dynamic_lists = {

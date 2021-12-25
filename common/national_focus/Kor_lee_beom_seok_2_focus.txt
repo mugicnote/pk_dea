@@ -140,7 +140,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-
+			set_cosmetic_tag = KOR_One_Fuhrer
 		}
 		x = -9
 		y = 1
@@ -207,7 +207,7 @@ focus_tree = {
 	#푸른 어둠을 밝혀라
 	focus = {
 		id = KOR_Light_up_blue_darkness
-		icon = GFX_focus_kor_Light_up_blue_darkness
+		icon = GFX_focus_remove_chabeol
 		relative_position_id = KOR_speech_at_the_capitol
 		cost = 2.00
 
@@ -251,7 +251,7 @@ focus_tree = {
 	#어둠이 걷힌 새벽
 	focus = {
 		id = KOR_Dawn_when_darkness_is_cleared
-		icon = GFX_focus_kor_Dawn_when_darkness_is_cleared
+		icon = GFX_focus_disloyal_com
 		relative_position_id = KOR_Light_up_blue_darkness
 		cost = 2.00
 
@@ -266,6 +266,25 @@ focus_tree = {
 
 		}
 		x = 1
+		y = 1
+
+	}
+
+	#폭풍후의 고요
+	focus = {
+		id = KOR_Silence_after_storm
+		icon = GFX_focus_kor_Dawn_when_darkness_is_cleared
+		relative_position_id = KOR_Dawn_when_darkness_is_cleared
+		cost = 2.00
+
+		prerequisite = {
+			focus = KOR_Dawn_when_darkness_is_cleared
+		}
+
+		completion_reward = {
+
+		}
+		x = 0
 		y = 1
 
 	}

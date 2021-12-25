@@ -9,5 +9,8 @@
  KOR_THIRD_democratic:0 "대한민국 제3공화국"
  KOR_THIRD_democratic_DEF:0 "대한민국 제3공화국"
 
- MAN_KOR_neutrality_autonomy_puppet:0 "북만주 국민정부"
- MAN_KOR_neutrality_autonomy_puppet_DEF:0 "북만주 국민정부"
+ KNM_KOR_fascism_autonomy_puppet:0 "북만주 임시 군사정부"
+ KNM_KOR_fascism_autonomy_puppet_DEF:0 "북만주 임시 군사정부"
+
+ KOR_One_Fuhrer_fascism:0 "대한국 군사혁명정부"
+ KOR_One_Fuhrer_fascism_DEF:0 "대한국 군사혁명정부"
