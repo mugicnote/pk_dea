@@ -73,6 +73,13 @@ defined_text = {
 		}
 		localization_key = RUS_FIRST_TITLE
 	}
+	text = {
+		trigger = {
+			tag = KNM
+			has_government = fascism
+		}
+		localization_key = KNM_FIRST_TITLE
+	}
 }
 
 defined_text = {
@@ -133,6 +140,13 @@ defined_text = {
 			has_government = social_liberalism
 		}
 		localization_key = USA_SECOND_TITLE
+	}
+	text = {
+		trigger = {
+			tag = KNM
+			has_government = fascism
+		}
+		localization_key = KNM_SECOND_TITLE
 	}
 }
 
@@ -209,6 +223,13 @@ defined_text = {
 		}
 		localization_key = USA_DUAL_NAME
 	}
+	text = {
+		trigger = {
+			tag = KNM
+			has_government = fascism
+		}
+		localization_key = KNM_DUAL_NAME
+	}
 }
 
 defined_text = {
@@ -283,6 +304,13 @@ defined_text = {
 			has_government = social_liberalism
 		}
 		localization_key = GFX_Portrait_USA_John_Nance_Garner
+	}
+	text = {
+		trigger = {
+			tag = KNM
+			has_government = fascism
+		}
+		localization_key = GFX_Portrait_Kim_Chwa_chin
 	}
 }
 

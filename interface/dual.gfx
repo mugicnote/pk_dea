@@ -127,9 +127,10 @@ spriteTypes = {
 		texturefile = "gfx/leaders/KOR/Portrait_Sohn_Won_yil.dds"
 	}
 	spriteType = {
-		name = "GFX_Portrait_Choi_Yong_duk"
-		texturefile = "gfx/leaders/KOR/Portrait_Choi_Yong_duk.dds"
+		name = "GFX_Portrait_Kim_Chwa_chin"
+		texturefile = "gfx/leaders/KOR/Portrait_Kim_Chwa-chin.dds"
 	}
+
 
 	#일본
 	spriteType = {

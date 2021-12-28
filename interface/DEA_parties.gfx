@@ -5,4 +5,8 @@ spriteTypes = {
 		name = "GFX_ideology_Seo_Jae_Pil_conservatism"
 		textureFile = "gfx/interface/ideologies/oligarchism.tga"
 	}
+	spriteType = {
+		name = "GFX_ideology_lee_fascism"
+		textureFile = "gfx/interface/ideologies/aut_despotism.dds"
+	}
 }
