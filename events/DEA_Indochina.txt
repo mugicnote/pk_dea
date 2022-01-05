@@ -33,8 +33,8 @@ country_event = { #Le Monde
 		name = ICU.2.a
 		hidden_effect = {
 		ICU = {
-			add_stability = 0.05
-			add_war_support = 0.05
+			add_stability = -0.1
+			add_war_support = -0.1
 			}
 		}
 	}	
@@ -80,181 +80,128 @@ country_event = { #인도차이나 내전
 	desc = ICU.5.d
 	picture = GFX_news_event_056
 
+	is_triggered_only = yes
 	fire_only_once = yes
-
-	trigger = {
-		tag = ICU
-		has_defensive_war = no
-		NOT = { has_government = fascism }
-		date > 1937.1.13		
-	}
 	
 	option = {
 		name = ICU.5.a	
-		ai_chance = { factor = 100 }
 		set_country_flag = first_ICU_civilwar							
 		hidden_effect = { 
-			remove_ideas = ICU_freedom_hot
-			add_ideas = ICU_Indochinese_war
-			VIE = {
-			add_ideas = ICU_Indochinese_war
-			}
-			VIS = {
-			add_ideas = ICU_Indochinese_war
-			}	
-			LAO = {
-			add_ideas = ICU_Indochinese_war
-			}			
-        if = {	
-			name = ICU.5.a			
-			VIE = {
-				transfer_state = 286
-				transfer_state = 885
-				transfer_state = 887
-				transfer_state = 888
-				transfer_state = 889
-				transfer_state = 890
-				transfer_state = 891
-				transfer_state = 892
-				transfer_state = 893				
-			    set_state_owner  = 286
-			    set_state_owner  = 885
-			    set_state_owner  = 887	
-			    set_state_owner  = 888
-			    set_state_owner  = 889
-			    set_state_owner  = 890
-			    set_state_owner  = 891
-			    set_state_owner  = 892
-			    set_state_owner  = 893					
-			}	
-			VIS = {
-				transfer_state = 671
-				transfer_state = 850
-				transfer_state = 851
-				transfer_state = 874
-				transfer_state = 875
-				transfer_state = 876	
-				set_state_owner  = 671
-			    set_state_owner  = 850
-			    set_state_owner  = 851
-			    set_state_owner  = 874
-			    set_state_owner  = 875
-			    set_state_owner  = 876			
-			}
-			LAO = {
-				transfer_state = 670
-				transfer_state = 877
-				transfer_state = 881
-				transfer_state = 882
-				transfer_state = 884				
-				set_state_owner  = 670
-			    set_state_owner  = 877
-			    set_state_owner  = 881
-			    set_state_owner  = 882
-			    set_state_owner  = 884				
-			}
-        }
-            delete_unit_template_and_units = {
-                division_template = "베트남 식민지 사단" #베트남 식민지 사단 제거
+			ICU = {
+			load_focus_tree = generic_focus			
+			remove_ideas = ICU_independence_hot
+			add_ideas = ICU_Indochinese_war			
+			delete_unit_template_and_units = {
+                division_template = "베트남 징집군" #베트남 징집군 제거
             }
             delete_unit_template_and_units = {
-                division_template = "라오스 식민지 사단" #라오스 식민지 사단 제거
+                division_template = "라오스 징집군" #라오스 징집군 제거
             }
             delete_unit_template_and_units = {
-                division_template = "캄보디아 식민지 사단" #캄보디아 식민지 사단 제거
+                division_template = "캄보디아 징집군" #캄보디아 징집군 제거
             }
-			division_template = {
-				name = "연방진압군"
-				template_counter = 5
-				division_names_group = ICU_INF_01
-				is_locked = yes
-				regiments = {
-					infantry = { x = 0 y = 0 }
-					infantry = { x = 0 y = 1 }
-					infantry = { x = 1 y = 0 }
-					infantry = { x = 1 y = 1 }
-					}
-				}
-			886 = {
+			670 = {
 				create_unit = {
-					division = "division_template = \"연방진압군\" start_experience_factor = 0.1" 
+					division = "division_template = \"연방군\" start_experience_factor = 0.1" 
 					owner = ICU
 				}
 				create_unit = {
-					division = "division_template = \"연방진압군\" start_experience_factor = 0.1" 
+					division = "division_template = \"연방군\" start_experience_factor = 0.1" 
 					owner = ICU
 				}
 				create_unit = {
-					division = "division_template = \"연방진압군\" start_experience_factor = 0.1" 
+					division = "division_template = \"연방군\" start_experience_factor = 0.1" 
+					owner = ICU
+				}	
+				create_unit = {
+					division = "division_template = \"연방군\" start_experience_factor = 0.1" 
 					owner = ICU
 				}				
 			}
-			894 = {
+			924 = {
 				create_unit = {
-					division = "division_template = \"연방진압군\" start_experience_factor = 0.1" 
+					division = "division_template = \"연방군\" start_experience_factor = 0.1" 
 					owner = ICU
 				}
 				create_unit = {
-					division = "division_template = \"연방진압군\" start_experience_factor = 0.1" 
-					owner = ICU
-				}
-			}
-			883 = {
-				create_unit = {
-					division = "division_template = \"연방진압군\" start_experience_factor = 0.1" 
+					division = "division_template = \"연방군\" start_experience_factor = 0.1" 
 					owner = ICU
 				}
 				create_unit = {
-					division = "division_template = \"연방진압군\" start_experience_factor = 0.1" 
+					division = "division_template = \"연방군\" start_experience_factor = 0.1" 
+					owner = ICU
+				}	
+				create_unit = {
+					division = "division_template = \"연방군\" start_experience_factor = 0.1" 
+					owner = ICU
+				}
+				create_unit = {
+					division = "division_template = \"연방군\" start_experience_factor = 0.1" 
 					owner = ICU
 				}				
-			}			
+			}
+			914 = {
+				create_unit = {
+					division = "division_template = \"연방군\" start_experience_factor = 0.1" 
+					owner = ICU
+				}
+				create_unit = {
+					division = "division_template = \"연방군\" start_experience_factor = 0.1" 
+					owner = ICU
+				}
+				create_unit = {
+					division = "division_template = \"연방군\" start_experience_factor = 0.1" 
+					owner = ICU
+				}			
+				create_unit = {
+					division = "division_template = \"연방군\" start_experience_factor = 0.1" 
+					owner = ICU
+				}
+				create_unit = {
+					division = "division_template = \"연방군\" start_experience_factor = 0.1" 
+					owner = ICU
+				}				
+			}
+		}		
+		VIE = {
+			set_country_flag = ic_cw
+			change_tag_from = ROOT
+		}
+			VIE = {
+			add_ideas = ICU_Indochinese_war
+			}
+			VIE = {
+			add_ideas = ICU_bad_economy_1
+			}						
+			VIE = {
+				transfer_state = 902
+				transfer_state = 878
+				transfer_state = 903
+				transfer_state = 879
+				transfer_state = 904					
+			    set_state_owner  = 902
+			    set_state_owner  = 878
+			    set_state_owner  = 903	
+			    set_state_owner  = 879
+			    set_state_owner  = 904				
+			}	
 		VIE = {
             delete_unit_template_and_units = {
-                division_template = "베트남 식민지 사단" #베트남 식민지 사단 제거
+                division_template = "연방군" #연방군 제거
             }
             delete_unit_template_and_units = {
-                division_template = "라오스 식민지 사단" #라오스 식민지 사단 제거
-            }
-            delete_unit_template_and_units = {
-                division_template = "캄보디아 식민지 사단" #캄보디아 식민지 사단 제거
-            }
-            delete_unit_template_and_units = {
-                division_template = "본토원정사단" #본토원정사단 제거
+                division_template = "연방진압군" #연방진압군 제거
             }			
-		}
-		VIS = {
             delete_unit_template_and_units = {
-                division_template = "베트남 식민지 사단" #베트남 식민지 사단 제거
+                division_template = "라오스 징집군" #라오스 징집군 제거
             }
             delete_unit_template_and_units = {
-                division_template = "라오스 식민지 사단" #라오스 식민지 사단 제거
+                division_template = "캄보디아 징집군" #캄보디아 징집군 제거
             }
             delete_unit_template_and_units = {
-                division_template = "캄보디아 식민지 사단" #캄보디아 식민지 사단 제거
-            }
-            delete_unit_template_and_units = {
-                division_template = "본토원정사단" #본토원정사단 제거
+                division_template = "베트남 징집군" #캄보디아 징집군 제거
             }			
-		}
-		LAO = {
-            delete_unit_template_and_units = {
-                division_template = "베트남 식민지 사단" #베트남 식민지 사단 제거
-            }
-            delete_unit_template_and_units = {
-                division_template = "라오스 식민지 사단" #라오스 식민지 사단 제거
-            }
-            delete_unit_template_and_units = {
-                division_template = "캄보디아 식민지 사단" #캄보디아 식민지 사단 제거
-            }
-            delete_unit_template_and_units = {
-                division_template = "본토원정사단" #본토원정사단 제거
-            }			
-		}		
-			     LAO = {
-                     load_oob = LAO_civilwar
-                     LAO_create_units = yes
-				}	 
+		} 
 			     VIE = {
                      load_oob = VIE_civilwar
                      VIE_create_units = yes
@@ -280,343 +227,61 @@ country_event = { #인도차이나 내전
 				         name = "베트남 독립당"
 			         }
 				 }	 
-			     VIS = {
-                     load_oob = VIS_civilwar
-                     VIS_create_units = yes
-		set_country_flag = first_ICU_civilwar
-					 set_party_name = {
-				         ideology = democratic
-				         long_name = "베트남 독립당"
-				         name = "베트남 독립당"
-			         }
-					 set_party_name = {
-				         ideology = fascism
-				         long_name = "베트남 독립당"
-				         name = "베트남 독립당"
-			         }
-					 set_party_name = {
-				         ideology = communism
-				         long_name = "베트남 독립당"
-				         name = "베트남 독립당"
-			         }
-					 set_party_name = {
-				         ideology = neutrality
-				         long_name = "베트남 독립당"
-				         name = "베트남 독립당"
-			         }
-				 }	
 				 VIE = {
                     declare_war_on = {
                         target = ICU
                         type = annex_everything
-                    }
-                    declare_war_on = {
-                        target = VIS
-                        type = annex_everything
                     }					
                  }				 
-				 VIS = {
-                    declare_war_on = {
-                        target = ICU
-                        type = annex_everything
-                    }
-                    declare_war_on = {
-                        target = VIE
-                        type = annex_everything
-                    }					
-                 }
-				LAO = {
-                    declare_war_on = {
-                        target = ICU
-                        type = annex_everything
-                    }					
-                 }				
                  
+				902 = {
+					add_core_of = VIE
+				}
+				878 = {
+					add_core_of = VIE
+				}
+				903 = {
+					add_core_of = VIE
+				}
+				904 = {
+					add_core_of = VIE
+				}
+				879 = {
+					add_core_of = VIE
+				}
 				671 = {
 					add_core_of = VIE
-					add_core_of = VIS
+				}
+				913 = {
+					add_core_of = VIE
+				}
+				919 = {
+					add_core_of = VIE
 				}
 				286 = {
 					add_core_of = VIE
-					add_core_of = VIS
 				}
-				850 = {
+				920 = {
 					add_core_of = VIE
-					add_core_of = VIS
 				}
-				851 = {
+				921 = {
 					add_core_of = VIE
-					add_core_of = VIS
 				}
-				874 = {
+				918 = {
 					add_core_of = VIE
-					add_core_of = VIS
 				}
-				875 = {
+				915 = {
 					add_core_of = VIE
-					add_core_of = VIS
 				}
-				876 = {
+				917 = {
 					add_core_of = VIE
-					add_core_of = VIS
 				}
-				885 = {
+				916 = {
 					add_core_of = VIE
-					add_core_of = VIS
-				}
-				887 = {
-					add_core_of = VIE
-					add_core_of = VIS
-				}
-				888 = {
-					add_core_of = VIE
-					add_core_of = VIS
-				}
-				889 = {
-					add_core_of = VIE
-					add_core_of = VIS
-				}
-				890 = {
-					add_core_of = VIE
-					add_core_of = VIS
-				}
-				891 = {
-					add_core_of = VIE
-					add_core_of = VIS
-				}
-				892 = {
-					add_core_of = VIE
-					add_core_of = VIS
-				}
-				893 = {
-					add_core_of = VIE
-					add_core_of = VIS
 				}				
 			}
 	}
 }		
-country_event = {
-	id = ICU.6
-	title = ICU.6.t
-	desc = ICU.6.d
-	picture = GFX_news_event_soviet_soldiers_ruins
-	
-	fire_only_once = yes
-	
-	trigger = {
-		tag = ICU
-		has_country_flag = first_ICU_civilwar
-		date > 1937.5.29		
-	}
-
-	option = {
-		name = ICU.6.a	
-		ai_chance = { factor = 100 }	
-		set_country_flag = second_ICU_civilwar						
-		hidden_effect = {
-			ICU = {
-				load_focus_tree = indochina_two
-			}
-			VIR = {
-			add_ideas = ICU_Indochinese_war
-			}
-			VIV = {
-			add_ideas = ICU_Indochinese_war
-			}		
-	    if = {	
-			name = ICU.6.a			
-			VIV = {
-				transfer_state = 887
-			    set_state_owner  = 887
-			}	
-			VIR = {
-				transfer_state = 888
-				transfer_state = 889
-				transfer_state = 890				
-			    set_state_owner  = 888
-			    set_state_owner  = 889
-			    set_state_owner  = 890			
-			}
-		}
-		VIV = {
-            delete_unit_template_and_units = {
-                division_template = "베트남 식민지 사단" #베트남 식민지 사단 제거
-            }
-            delete_unit_template_and_units = {
-                division_template = "라오스 식민지 사단" #라오스 식민지 사단 제거
-            }
-            delete_unit_template_and_units = {
-                division_template = "캄보디아 식민지 사단" #캄보디아 식민지 사단 제거
-            }
-            delete_unit_template_and_units = {
-                division_template = "본토원정사단" #본토원정사단 제거
-            }			
-		}
-		VIR = {
-            delete_unit_template_and_units = {
-                division_template = "베트남 식민지 사단" #베트남 식민지 사단 제거
-            }
-            delete_unit_template_and_units = {
-                division_template = "라오스 식민지 사단" #라오스 식민지 사단 제거
-            }
-            delete_unit_template_and_units = {
-                division_template = "캄보디아 식민지 사단" #캄보디아 식민지 사단 제거
-            }
-            delete_unit_template_and_units = {
-                division_template = "본토원정사단" #본토원정사단 제거
-            }			
-		}		
-			set_global_flag = ICU_civilwar 
-			    VIR = {
-                    load_oob = VIR_civilwar
-                    VIR_create_units = yes
-					set_country_flag = second_ICU_civilwar				 
-					set_party_name = {
-				        ideology = fascism
-				        long_name = "베트남 독립당"
-				        name = "베트남 독립당"
-			        }
-					set_party_name = {
-				        ideology = neutrality
-				        long_name = "베트남 독립당"
-				        name = "베트남 독립당"
-			        }
-					set_party_name = {
-				        ideology = communism
-				        long_name = "베트남 독립당"
-				        name = "베트남 독립당"
-			        }
-					 set_party_name = {
-				         ideology = democratic
-				         long_name = "베트남 독립당"
-				         name = "베트남 독립당"
-			         }
-				 }	 
-			     VIV = {
-                     load_oob = VIV_civilwar
-                     VIV_create_units = yes
-		set_country_flag = second_ICU_civilwar
-					 set_party_name = {
-				         ideology = democratic
-				         long_name = "베트남 독립당"
-				         name = "베트남 독립당"
-			         }
-					 set_party_name = {
-				         ideology = fascism
-				         long_name = "베트남 독립당"
-				         name = "베트남 독립당"
-			         }
-					 set_party_name = {
-				         ideology = communism
-				         long_name = "베트남 독립당"
-				         name = "베트남 독립당"
-			         }
-					 set_party_name = {
-				         ideology = neutrality
-				         long_name = "베트남 독립당"
-				         name = "베트남 독립당"
-			         }
-				 }	
-				 VIR = {
-                    declare_war_on = {
-                        target = ICU
-                        type = annex_everything
-                    }
-                    declare_war_on = {
-                        target = VIS
-                        type = annex_everything
-                    }
-                   declare_war_on = {
-                        target = VIE
-                        type = annex_everything
-                    }
-                    declare_war_on = {
-                        target = VIV
-                        type = annex_everything
-                    }					
-                 }				 
-				 VIV = {
-                    declare_war_on = {
-                        target = ICU
-                        type = annex_everything
-                    }
-                    declare_war_on = {
-                        target = VIS
-                        type = annex_everything
-                    }
-                   declare_war_on = {
-                        target = VIE
-                        type = annex_everything
-                    }
-                    declare_war_on = {
-                        target = VIR
-                        type = annex_everything
-                    }					
-                 }	  
-                 
-				671 = {
-					add_core_of = VIV
-					add_core_of = VIR
-				}
-				286 = {
-					add_core_of = VIV
-					add_core_of = VIR
-				}
-				850 = {
-					add_core_of = VIV
-					add_core_of = VIR
-				}
-				851 = {
-					add_core_of = VIV
-					add_core_of = VIR
-				}
-				874 = {
-					add_core_of = VIV
-					add_core_of = VIR
-				}
-				875 = {
-					add_core_of = VIV
-					add_core_of = VIR
-				}
-				876 = {
-					add_core_of = VIV
-					add_core_of = VIR
-				}				
-				885 = {
-					add_core_of = VIV
-					add_core_of = VIR
-				}
-				887 = {
-					add_core_of = VIV
-					add_core_of = VIR
-				}
-				888 = {
-					add_core_of = VIV
-					add_core_of = VIR
-				}
-				889 = {
-					add_core_of = VIV
-					add_core_of = VIR
-				}
-				890 = {
-					add_core_of = VIV
-					add_core_of = VIR
-				}
-				891 = {
-					add_core_of = VIV
-					add_core_of = VIR
-				}
-				892 = {
-					add_core_of = VIV
-					add_core_of = VIR
-				}
-				893 = {
-					add_core_of = VIV
-					add_core_of = VIR
-				}				
-			}
-	}
-}
 
 country_event = { #침로 선택
 	id = ICU.7

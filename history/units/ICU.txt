@@ -1,5 +1,5 @@
 ﻿division_template = {
-	name = "본토원정사단"
+	name = "연방군"
 	division_names_group = ICU_NOM_1
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -14,7 +14,7 @@
 	}
 }
 division_template = {
-	name = "베트남 식민지 사단"
+	name = "베트남 징집군"
 	division_names_group = ICU_NOM_1
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -26,7 +26,7 @@ division_template = {
 	}
 }
 division_template = {
-	name = "라오스 식민지 사단"
+	name = "라오스 징집군"
 	division_names_group = ICU_NOM_1
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -36,7 +36,7 @@ division_template = {
 	}
 }
 division_template = {
-	name = "캄보디아 식민지 사단"
+	name = "캄보디아 징집군"
 	division_names_group = ICU_NOM_1
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -49,69 +49,69 @@ division_template = {
 units = {
 
 	division = {
-		name = "1 연방 방위 사단"
+		name = "3 연방군"
 		location = 11936
-		division_template = "본토원정사단"
+		division_template = "연방군"
 		start_experience_factor = 0.1
 	}
 		division = {
-		name = "2 연방 방위 사단"
+		name = "2 연방군"
 		location = 12204
-		division_template = "본토원정사단"
+		division_template = "연방군"
 		start_experience_factor = 0.1
 	}
 	division = {
-		name = "프놈펜 방위 사단"
+		name = "1 연방군"
 		location = 7376
-		division_template = "본토원정사단"
+		division_template = "연방군"
 		start_experience_factor = 0.1
 	}	
 	division = {
-		name = "1 베트남 방위사단"
+		name = "1 베트남 징집군"
 		location = 4223
-		division_template = "베트남 식민지 사단"
+		division_template = "베트남 징집군"
 		start_experience_factor = 0.1
 	}
 	division = {
-		name = "2 베트남 방위사단"
+		name = "2 베트남 징집군"
 		location = 4401
-		division_template = "베트남 식민지 사단"
+		division_template = "베트남 징집군"
 		start_experience_factor = 0.1
 	}
 	division = {
-		name = "3 베트남 방위사단"
+		name = "3 베트남 징집군"
 		location = 10309
-		division_template = "베트남 식민지 사단"
+		division_template = "베트남 징집군"
 		start_experience_factor = 0.1
 	}	
 	division = {
-		name = "4 베트남 방위사단"
+		name = "4 베트남 징집군"
 		location = 4075
-		division_template = "베트남 식민지 사단"
+		division_template = "베트남 징집군"
 		start_experience_factor = 0.1
 	}
 	division = {
-		name = "5 베트남 방위사단"
+		name = "5 베트남 징집군"
 		location = 9948
-		division_template = "베트남 식민지 사단"
+		division_template = "베트남 징집군"
 		start_experience_factor = 0.1
 	}
 	division = {
-		name = "6 베트남 방위사단"
+		name = "6 베트남 징집군"
 		location = 12319
-		division_template = "베트남 식민지 사단"
+		division_template = "베트남 징집군"
 		start_experience_factor = 0.1
 	}
 	division = {
-		name = "1 캄보디아 방위사단"
+		name = "1 캄보디아 징집군"
 		location = 1324
-		division_template = "캄보디아 식민지 사단"
+		division_template = "캄보디아 징집군"
 		start_experience_factor = 0.1
 	}
 	division = {
-		name = "1 라오스 방위사단"
+		name = "1 라오스 징집군"
 		location = 1464
-		division_template = "라오스 식민지 사단"
+		division_template = "라오스 징집군"
 		start_experience_factor = 0.1
 	}	
 }

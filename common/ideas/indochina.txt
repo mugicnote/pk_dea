@@ -13,7 +13,6 @@ ideas = {
 				stability_factor = -0.3
 				war_support_factor = -0.3
 				resistance_growth = 0.3
-				custom_modifier_tooltip = SPR_military_disloyalty_tt
 			}
 		}
 
@@ -86,18 +85,17 @@ ideas = {
 		modifier = {
 			industry_repair_factor = -0.5          
 			political_power_factor = -0.5
-			army_attack_factor = -0.5
-			army_defence_factor = 0.5
-			army_speed_factor = -0.5
+			army_attack_factor = -0.90
+			army_defence_factor = -0.90
+			army_speed_factor = -0.90
 			generate_wargoal_tension = 10
 			research_speed_factor = -0.5
-			air_strategic_bomber_bombing_factor = 0.5
-			ground_attack_factor = 0.5
+			air_strategic_bomber_bombing_factor = -0.5
+			ground_attack_factor = -0.5
 			can_puppet = no
 			can_create_factions = no
 			can_join_factions = no	
 			can_create_collaboration_government = no
-			custom_modifier_tooltip = SPR_military_disloyalty_tt			
 			}
 		}
 	

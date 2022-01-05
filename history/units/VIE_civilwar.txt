@@ -25,31 +25,43 @@ units = {
 	
 	division = {
 		name = "1 베트남 제국독립사단"
-		location = 13308
+		location = 4075
 		division_template = "베트남 제국독립군"
 		start_experience_factor = 0.1
 	}
 	division = {
 		name = "2 베트남 제국독립사단"
-		location = 1302
+		location = 10103
 		division_template ="베트남 제국독립군"
 		start_experience_factor = 0.1
 	}
 	division = {
 		name = "3 베트남 제국독립사단"
-		location = 1328
+		location = 12048
 		division_template = "베트남 제국독립군"
 		start_experience_factor = 0.1
 	}		
 	division = {
 		name = "1 베트남 제국국민사단"
-		location = 4401
+		location = 7518
 		division_template = "베트남 제국국민사단"
 		start_experience_factor = 0.1
 	}
 	division = {
 		name = "2 베트남 제국국민사단"
-		location = 4401
+		location = 7093
+		division_template = "베트남 제국국민사단"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "3 베트남 제국국민사단"
+		location = 4119
+		division_template = "베트남 제국국민사단"
+		start_experience_factor = 0.1
+	}	
+	division = {
+		name = "4 베트남 제국국민사단"
+		location = 12008
 		division_template = "베트남 제국국민사단"
 		start_experience_factor = 0.1
 	}	

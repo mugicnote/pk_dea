@@ -75,13 +75,8 @@ focus_tree = {
 		}		
 		x = 15
 		y = 4
-		completion_reward = {
-			add_equipment_to_stockpile = {
-				type = infantry_equipment_0
-				amount = 1000
-				producer = ICU
-				}		
-			}		
+		completion_reward = {		
+		}
 	}
 	focus = { #해외 지원 요청
 		id = ICU_IDP_5
@@ -93,17 +88,7 @@ focus_tree = {
 		x = 17
 		y = 4
 		completion_reward = {
-			add_equipment_to_stockpile = {
-				type = infantry_equipment_0
-				amount = 1500
-				producer = GER
-				}				
-			add_equipment_to_stockpile = {
-				type = infantry_equipment_0
-				amount = 1500
-				producer = SOV
-				}		
-			}		
+		}
 	}
 	focus = { #제국의 몰락
 		id = ICU_IDP_6
