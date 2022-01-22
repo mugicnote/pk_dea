@@ -134,12 +134,13 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/law_passed_is_the_law.dds"
 	}
 
-
+	###광동정부
 	spriteType = {
 		name = "GFX_Hu_Hanmin_event_picture"
 		texturefile = "gfx/event_pictures/Hu_Hanmin_event_picture.dds"
 	}
 
+	###나고야 회담
 	spriteType = {
 		name = "GFX_Foreign_Minister_Huh_Jung_leaves_Japan_picture"
 		texturefile = "gfx/event_pictures/Foreign_Minister_Huh_Jung_leaves_Japan_picture.dds"
@@ -148,7 +149,7 @@ spriteTypes = {
 		name = "GFX_Nagoya_terrorist_occurred_picture"
 		texturefile = "gfx/event_pictures/Nagoya_terrorist_occurred_picture.dds"
 	}
-
+	###서재필 사망 이후
 	spriteType = {
 		name = "GFX_Attempted_assassinate_acting_Kim_Gyu_Sik"
 		texturefile = "gfx/event_pictures/KOR/Attempted_assassinate_acting_Kim_Gyu_Sik.dds"
@@ -161,7 +162,11 @@ spriteTypes = {
 		name = "GFX_Attempted_assassinate_acting_Kim_Gyu_Sik2"
 		texturefile = "gfx/event_pictures/KOR/Attempted_assassinate_acting_Kim_Gyu_Sik2.dds"
 	}
-
+	###여운형
+	spriteType = {
+		name = "GFX_lyuh_woon_hyung_elected"
+		texturefile = "gfx/event_pictures/KOR/lyuh_woon_hyung_elected.dds"
+	}
 }
 	
 	

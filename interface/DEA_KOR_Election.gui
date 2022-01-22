@@ -1,0 +1,184 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "KOR_GUI_Election_Decision_GUI"
+		size = { width = 525 height = 560 }
+		position = { x = -5 y = 0 }
+
+		instantTextboxType = {
+			name = "KOR_GUI_Election_Decision_GUI_main_text"
+			position = { x = 30 y = -5 }
+			font = "aldrich_36_outline"
+			text = "제5대 대한민국 대통령 선거 여론조사"
+			maxWidth = 525
+			format = left
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "KOR_GUI_Election_Decision_GUI_main_sub_text"
+			position = { x = 400 y = 30 }
+			font = "aldrich_18_outline"
+			text = "선거일 - 5월 9일"
+			maxWidth = 525
+			format = left
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KOR_GUI_Election_Decision_GUI_ProgressBar1"
+			spriteType = "GFX_KOR_GUI_Election_Decision_GUI_Bar"
+			position = { x = 90 y = 62 }
+		}
+		instantTextboxType = {
+			name = "KOR_GUI_Election_Decision_GUI_Bar1_text"
+			position = { x = -10 y = 69 }
+			font = "aldrich_16_outline"
+			text = "이승만 - [?KOR_Election_FOR_GUI1]%"
+			maxWidth = 100
+			format = right
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KOR_GUI_Election_Decision_GUI_ProgressBar2"
+			spriteType = "GFX_KOR_GUI_Election_Decision_GUI_Bar"
+			position = { x = 90 y = 114 }
+		}
+		instantTextboxType = {
+			name = "KOR_GUI_Election_Decision_GUI_Bar2_text"
+			position = { x = -10 y = 121 }
+			font = "aldrich_16_outline"
+			text = "여운형 - [?KOR_Election_FOR_GUI2]%"
+			maxWidth = 100
+			format = right
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KOR_GUI_Election_Decision_GUI_ProgressBar3"
+			spriteType = "GFX_KOR_GUI_Election_Decision_GUI_Bar"
+			position = { x = 90 y = 165 }
+		}
+		instantTextboxType = {
+			name = "KOR_GUI_Election_Decision_GUI_Bar3_text"
+			position = { x = -10 y = 172 }
+			font = "aldrich_16_outline"
+			text = "김구 - [?KOR_Election_FOR_GUI3]%"
+			maxWidth = 100
+			format = right
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KOR_GUI_Election_Decision_GUI_ProgressBar4"
+			spriteType = "GFX_KOR_GUI_Election_Decision_GUI_Bar"
+			position = { x = 90 y = 216 }
+		}
+		instantTextboxType = {
+			name = "KOR_GUI_Election_Decision_GUI_Bar4_text"
+			position = { x = -10 y = 223 }
+			font = "aldrich_16_outline"
+			text = "박헌영 - [?KOR_Election_FOR_GUI4]%"
+			maxWidth = 100
+			format = right
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KOR_GUI_Election_Decision_GUI_ProgressBar5"
+			spriteType = "GFX_KOR_GUI_Election_Decision_GUI_Bar"
+			position = { x = 90 y = 267 }
+		}
+		instantTextboxType = {
+			name = "KOR_GUI_Election_Decision_GUI_Bar5_text"
+			position = { x = -10 y = 274 }
+			font = "aldrich_16_outline"
+			text = "김규식 - [?KOR_Election_FOR_GUI5]%"
+			maxWidth = 100
+			format = right
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KOR_GUI_Election_Decision_GUI_ProgressBar6"
+			spriteType = "GFX_KOR_GUI_Election_Decision_GUI_Bar"
+			position = { x = 90 y = 318 }
+		}
+		instantTextboxType = {
+			name = "KOR_GUI_Election_Decision_GUI_Bar6_text"
+			position = { x = -10 y = 325 }
+			font = "aldrich_16_outline"
+			text = "김성수 - [?KOR_Election_FOR_GUI6]%"
+			maxWidth = 100
+			format = right
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KOR_GUI_Election_Decision_GUI_ProgressBar7"
+			spriteType = "GFX_KOR_GUI_Election_Decision_GUI_Bar"
+			position = { x = 90 y = 369 }
+		}
+		instantTextboxType = {
+			name = "KOR_GUI_Election_Decision_GUI_Bar7_text"
+			position = { x = -10 y = 376 }
+			font = "aldrich_16_outline"
+			text = "안재홍 - [?KOR_Election_FOR_GUI7]%"
+			maxWidth = 100
+			format = right
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KOR_GUI_Election_Decision_GUI_ProgressBar8"
+			spriteType = "GFX_KOR_GUI_Election_Decision_GUI_Bar"
+			position = { x = 90 y = 420 }
+		}
+		instantTextboxType = {
+			name = "KOR_GUI_Election_Decision_GUI_Bar8_text"
+			position = { x = -10 y = 427 }
+			font = "aldrich_16_outline"
+			text = "장면 - [?KOR_Election_FOR_GUI8]%"
+			maxWidth = 100
+			format = right
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KOR_GUI_Election_Decision_GUI_ProgressBar9"
+			spriteType = "GFX_KOR_GUI_Election_Decision_GUI_Bar"
+			position = { x = 90 y = 469 }
+		}
+		instantTextboxType = {
+			name = "KOR_GUI_Election_Decision_GUI_Bar9_text"
+			position = { x = -10 y = 476 }
+			font = "aldrich_16_outline"
+			text = "김원봉 - [?KOR_Election_FOR_GUI9]%"
+			maxWidth = 100
+			format = right
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KOR_GUI_Election_Decision_GUI_ProgressBar10"
+			spriteType = "GFX_KOR_GUI_Election_Decision_GUI_Bar"
+			position = { x = 90 y = 520 }
+		}
+		instantTextboxType = {
+			name = "KOR_GUI_Election_Decision_GUI_Bar10_text"
+			position = { x = -10 y = 527 }
+			font = "aldrich_16_outline"
+			text = "김두봉 - [?KOR_Election_FOR_GUI10]%"
+			maxWidth = 100
+			format = right
+			alwaystransparent = yes
+		}
+
+
+		iconType = {
+			name = "ENG_GUI_Maggie_Decision_GUI_Box"
+			spriteType = "GFX_ENG_GUI_Maggie_Decision_GUI_Box"
+			position = { x = 15 y = 0 }
+		}
+	}
+}

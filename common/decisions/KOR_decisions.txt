@@ -16,6 +16,52 @@ DEA_KOR_Military_factional_decisions = {
 	}
 }
 
+DEA_KOR_Election_Decision = {
+	DEA_KOR_Election_Decision_setup = {
+		allowed = {
+			tag = KOR 
+		}
+		activation = {
+			tag = KOR 
+		}
+		available = {
+		}
+		cost = 1
+		complete_effect = {
+			set_variable = {
+				KOR_Election_FOR_GUI1 = 19
+			}
+			set_variable = {
+				KOR_Election_FOR_GUI2 = 17
+			}
+			set_variable = {
+				KOR_Election_FOR_GUI3 = 15
+			}
+			set_variable = {
+				KOR_Election_FOR_GUI4 = 14
+			}
+			set_variable = {
+				KOR_Election_FOR_GUI5 = 12
+			}
+			set_variable = {
+				KOR_Election_FOR_GUI6 = 8
+			}
+			set_variable = {
+				KOR_Election_FOR_GUI7 = 6
+			}
+			set_variable = {
+				KOR_Election_FOR_GUI8 = 4
+			}
+			set_variable = {
+				KOR_Election_FOR_GUI9 = 3
+			}
+			set_variable = {
+				KOR_Election_FOR_GUI10 = 2
+			}
+		}
+	}
+}
+
 DEA_KOR_Military_Revolution_decisions_category = {
 
 	#광동정부에게 지원 요청

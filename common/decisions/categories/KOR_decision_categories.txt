@@ -7,7 +7,21 @@ DEA_KOR_Military_factional_decisions = {
 		tag = KOR
 	}
 	visible = {
-		always = yes
+		has_country_flag = DEA_KOR_Military_factional_decisions_start
+	}
+	visible_when_empty = yes #for debug
+}
+
+#대한민국 5대 대통령 선거
+DEA_KOR_Election_Decision = {
+	icon = generic_propaganda
+	priority = 10050
+	scripted_gui = KOR_GUI_Election_Decision_GUI
+	allowed = {
+		tag = KOR
+	}
+	visible = {
+		has_country_flag = DEA_KOR_Election_decisions_start
 	}
 	visible_when_empty = yes #for debug
 }

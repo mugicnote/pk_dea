@@ -297,13 +297,13 @@ guiTypes = {
 				clicksound = click_default
 			}
 
-			iconType = {
-				name = "nat_spirit_glow_overlay"
-				position = { x = 102 y = 10 }
-				spriteType = "GFX_nat_spirit_glow_overlay"
-				scale = 0.95
-				alwaystransparent = yes
-			}			
+			# iconType = {
+			# 	name = "nat_spirit_glow_overlay"
+			# 	position = { x = 107 y = 10 }
+			# 	spriteType = "GFX_nat_spirit_glow_overlay"
+			# 	scale = 0.95
+			# 	alwaystransparent = yes
+			# }			
 			
 			iconType = {
 				name = "pol_power_icon"

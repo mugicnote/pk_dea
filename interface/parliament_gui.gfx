@@ -44,4 +44,32 @@ spriteTypes = {
 		name = "GFX_Report_corruption_opposition_party"
 		texturefile = "gfx/interface/parliament/Report_corruption_opposition_party.dds"
 	}
+	spriteType = {
+		name = "GFX_Investigation_corruption_opposition_party"
+		texturefile = "gfx/interface/parliament/Investigation_corruption_opposition_party.dds"
+	}
+	spriteType = {
+		name = "GFX_Recruitment_personnel_political_party_close"
+		texturefile = "gfx/interface/parliament/Recruitment_personnel_political_party_close.dds"
+	}
+	spriteType = {
+		name = "GFX_Recruitment_personnel_Korea_Promotion_Association"
+		texturefile = "gfx/interface/parliament/Recruitment_personnel_Korea_Promotion_Association.dds"
+	}
+	spriteType = {
+		name = "GFX_Recruitment_personnel_Korea_National_Party"
+		texturefile = "gfx/interface/parliament/Recruitment_personnel_Korea_National_Party.dds"
+	}
+	spriteType = {
+		name = "GFX_Recruitment_personnel_Democratic_Party"
+		texturefile = "gfx/interface/parliament/Recruitment_personnel_Democratic_Party.dds"
+	}
+	spriteType = {
+		name = "GFX_Firming_core_region_close"
+		texturefile = "gfx/interface/parliament/Firming_core_region_close.dds"
+	}
+	spriteType = {
+		name = "GFX_Strengthen_region_Gyeonggi"
+		texturefile = "gfx/interface/parliament/Strengthen_region_Gyeonggi.dds"
+	}
 }

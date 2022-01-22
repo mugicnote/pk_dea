@@ -30,7 +30,7 @@ focus_tree = {
 	focus = {
 		id = policy_encouraging_universities
 		icon = GFX_KOR_univercity_support
-		cost = 10.00
+		cost = 6.00
 		prerequisite = {
 			focus = Seo_Jae_pil_administration
 		}
@@ -147,7 +147,7 @@ focus_tree = {
 	focus = {
 		id = Korea_China_Japan_trilateral_meeting
 		icon = GFX_KOR_triple_meeting_1
-		cost = 10.00
+		cost = 4.00
 		prerequisite = {
 			focus = situation_we_are_in
 		}

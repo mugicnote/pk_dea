@@ -13,6 +13,24 @@
  KOR_stand_in_the_middle:0 "중간선에 서다"
  KOR_policy_of_deepening_oppression:0 "탄압 심화 고수"
 
+ ###여운형 당선
+ KOR_lyuh_woon_hyung_elected:0 "여운형 당선"
+ KOR_beginning_new_era:0 "새시대의 시작"
+ KOR_legacy_March_Struggle:0 "3월 항쟁의 유산"
+ KOR_formation_lar_cabinet:0 "좌우합작 내각 구성"
+ KOR_security_martial_lift:0 "경비계엄 해제"
+ KOR_Thanks_to_students:0 "학생권에게 감사"
+ KOR_Thanks_to_worker:0 "노동권에게 감사"
+ KOR_Large_scale_Coalition_Government_organization:0 "대규모 연정 구성"
+ KOR_Meeting_with_Kim_Kyusik:0 "김규식과의 회담"
+ KOR_Meeting_with_Pak_Honyong:0 "박헌영과의 회담"
+ KOR_commemorate_death_March_Struggle:0 "3월 항쟁 사망자 추모"
+ KOR_for_ten_Case_trial:0 "4.10 사건 재판"
+ KOR_public_order_secure:0 "치안 확보 작업"
+ KOR_Dismissal_NYCP_dismissal:0 "민족청년단 인사 해임"
+ KOR_Punishment_NYCP_treason:0 "민족청년단 반역죄 처별"
+ KOR_establish_large_coalition_government:0 "대규모 연립정부 출범"
+
  ###이범석 혁명 계획 중점###
  KOR_Way_of_Military_Revolution:0 "혁명 준비"
  KOR_Military_Revolutionary_Government:0 "군사혁명정부 설립"

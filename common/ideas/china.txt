@@ -84,7 +84,7 @@ ideas = {
 
 		CHI_Unstable_Light = {
 			
-            picture = CHI_
+            picture = CHI_unstable_liangguang_3
 
 			allowed = {
 		        original_tag = CHI

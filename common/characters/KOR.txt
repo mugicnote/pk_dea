@@ -14,6 +14,7 @@ characters={
 			}
 			expire="1951.1.5.1"
 			id=-1
+			desc="POLITICS_JAE_PIL_DESC"
 		}
 	}
 

@@ -1,12 +1,12 @@
 guiTypes = {
 	containerWindowType = {
 		name = "double_leader_system_container"
-		position = { x = 205 y = 8 }
+		position = { x = 360 y = 410 }
 		orientation = upper_left
 		
 		buttonType = {
 			name = "double_open"
-			position = { x = 17 y = 0 }
+			position = { x = 0 y = 0 }
 			quadTextureSprite ="GFX_cabinet_button"
 			buttonFont = "hoi_16mbs"
 			buttonText = "국가요인 개요"

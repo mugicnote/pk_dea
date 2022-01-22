@@ -1,5 +1,32 @@
 bitmapfonts = {
 
+	# PK 폰트 (자체제작)
+	bitmapfont = {
+		name = "pk_18"
+		path = "gfx/fonts/pk_18"
+		color = 0xffffffff
+	}
+	bitmapfont = {
+		name = "pk_20"
+		# fontfiles = {
+		# 	"gfx/fonts/aldrich_20"
+		# 	"gfx/fonts/gm_16_105"
+		# }
+		path = "gfx/fonts/pk_20"
+		color = 0xffffffff
+	}
+	bitmapfont = {
+		name = "pk_20b"
+		path = "gfx/fonts/pk_20"
+		color = 0xff000000
+	}
+	bitmapfont = {
+		name = "pk_36"
+		path = "gfx/fonts/pk_36"
+		color = 0xffffffff
+	}
+	#
+
 	bitmapfont = {
 		name = "nnmj_16"
 		path = "gfx/fonts/nnmj_16"

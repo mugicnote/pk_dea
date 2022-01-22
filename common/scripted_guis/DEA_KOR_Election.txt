@@ -1,0 +1,54 @@
+scripted_gui = {
+	KOR_GUI_Election_Decision_GUI = {
+		context_type = decision_category
+		window_name = "KOR_GUI_Election_Decision_GUI"
+		
+		visible = {
+			always = yes
+		}
+		
+		effects = {
+			
+		}
+		
+		triggers = {
+			
+		}
+		
+		properties = {
+			KOR_GUI_Election_Decision_GUI_ProgressBar1 = {
+				frame = KOR_Election_FOR_GUI1
+			}
+			KOR_GUI_Election_Decision_GUI_ProgressBar2 = {
+				frame = KOR_Election_FOR_GUI2
+			}
+			KOR_GUI_Election_Decision_GUI_ProgressBar3 = {
+				frame = KOR_Election_FOR_GUI3
+			}
+			KOR_GUI_Election_Decision_GUI_ProgressBar4 = {
+				frame = KOR_Election_FOR_GUI4
+			}
+			KOR_GUI_Election_Decision_GUI_ProgressBar4 = {
+				frame = KOR_Election_FOR_GUI4
+			}
+			KOR_GUI_Election_Decision_GUI_ProgressBar5 = {
+				frame = KOR_Election_FOR_GUI5
+			}
+			KOR_GUI_Election_Decision_GUI_ProgressBar6 = {
+				frame = KOR_Election_FOR_GUI6
+			}
+			KOR_GUI_Election_Decision_GUI_ProgressBar7 = {
+				frame = KOR_Election_FOR_GUI7
+			}
+			KOR_GUI_Election_Decision_GUI_ProgressBar8 = {
+				frame = KOR_Election_FOR_GUI8
+			}
+			KOR_GUI_Election_Decision_GUI_ProgressBar9 = {
+				frame = KOR_Election_FOR_GUI9
+			}
+			KOR_GUI_Election_Decision_GUI_ProgressBar10 = {
+				frame = KOR_Election_FOR_GUI10
+			}
+		}
+	}
+}

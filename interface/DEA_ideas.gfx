@@ -298,6 +298,10 @@ spriteTypes = {
 		name = "GFX_idea_CHI_messy_army"
 		texturefile = "gfx/interface/ideas/CHI/CHI_messy_army.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_CHI_unstable_liangguang_3"
+		texturefile = "gfx/interface/ideas/CHI/CHI_unstable_liangguang_3.dds"
+	}
 	
 	#운남
 	spriteType = {

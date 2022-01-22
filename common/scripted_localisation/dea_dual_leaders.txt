@@ -41,6 +41,23 @@ defined_text = {
 	text = {
 		trigger = {
 			tag = KOR
+			has_government = fascism
+			has_country_flag = KOR_beginning_revolution
+			NOT = { has_cosmetic_tag = KOR_One_Fuhrer }
+		}
+		localization_key = KOR_FIRST_TITLE_fascism
+	}
+	text = {
+		trigger = {
+			tag = KOR
+			has_government = fascism
+			has_cosmetic_tag = KOR_One_Fuhrer
+		}
+		localization_key = KOR_FIRST_TITLE_Fuhrer
+	}
+	text = {
+		trigger = {
+			tag = KOR
 			has_government = communism
 		}
 		localization_key = KOR_COM_FIRST_TITLE
@@ -119,6 +136,23 @@ defined_text = {
 			has_country_flag = korea_rafs_take_power
 		}
 		localization_key = KOR_SECOND_TITLE_rafs_take_power
+	}
+	text = {
+		trigger = {
+			tag = KOR
+			has_government = fascism
+			has_country_flag = KOR_beginning_revolution
+			NOT = { has_cosmetic_tag = KOR_One_Fuhrer }
+		}
+		localization_key = KOR_SECOND_TITLE_fascism
+	}
+	text = {
+		trigger = {
+			tag = KOR
+			has_government = fascism
+			has_cosmetic_tag = KOR_One_Fuhrer
+		}
+		localization_key = KOR_SECOND_TITLE_Fuhrer
 	}
 	text = {
 		trigger = {
@@ -204,6 +238,23 @@ defined_text = {
 	}
 	text = {
 		trigger = {
+			tag = KOR
+			has_government = fascism
+			has_country_flag = KOR_beginning_revolution
+			NOT = { has_cosmetic_tag = KOR_One_Fuhrer }
+		}
+		localization_key = KOR_DUAL_NAME_fascism
+	}
+	text = {
+		trigger = {
+			tag = KOR
+			has_government = fascism
+			has_cosmetic_tag = KOR_One_Fuhrer
+		}
+		localization_key = KOR_DUAL_NAME_Fuhrer
+	}
+	text = {
+		trigger = {
 			tag = JAP
 			has_government = democratic
 		}
@@ -283,6 +334,23 @@ defined_text = {
 			has_country_flag = korea_rhee_syng_man_president
 		}
 		localization_key = GFX_Portrait_Kim_Seongsu
+	}
+	text = {
+		trigger = {
+			tag = KOR
+			has_government = fascism
+			has_country_flag = KOR_beginning_revolution
+			NOT = { has_cosmetic_tag = KOR_One_Fuhrer }
+		}
+		localization_key = GFX_Portrait_Ryu_Dongyeol
+	}
+	text = {
+		trigger = {
+			tag = KOR
+			has_government = fascism
+			has_cosmetic_tag = KOR_One_Fuhrer
+		}
+		localization_key = GFX_Portrait_Hong_Sa-ik
 	}
 	text = {
 		trigger = {

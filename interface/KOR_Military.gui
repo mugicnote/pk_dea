@@ -2,7 +2,7 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "ENG_GUI_Maggie_Decision_GUI"
-		size = { width = 525 height = 425 }
+		size = { width = 525 height = 450 }
 		position = { x = 0 y = 0 }
 		
 		iconType = {
@@ -48,7 +48,6 @@ guiTypes = {
 			format = left
 			alwaystransparent = yes
 		}
-		
 		instantTextboxType = {
 			name = "ENG_GUI_Maggie_Influence_Change"
 			position = { x = 8 y = 310 }

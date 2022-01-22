@@ -139,6 +139,7 @@ ideas = {
 
 			traits = {
 				traits_national_defense_minister
+				traits_Shin_Sung_mo
 			}
 		}
 	}
@@ -163,6 +164,7 @@ ideas = {
 
 			traits = {
 				traits_finance_minister
+				traits_Jo_Man_sik
 			}
 		}
 		idea_Jo_Man_sik2 = {
@@ -209,6 +211,7 @@ ideas = {
 
 			traits = {
 				traits_justice_minister
+				traits_Lee_In
 			}
 		}
 		idea_Lee_In2 = {
@@ -253,8 +256,13 @@ ideas = {
 			removal_cost = -1
 			ai_will_do = { factor = 1 }
 
+			research_bonus = {
+				electronics = 0.03
+			}
+
 			traits = {
 				traits_education_minister
+				traits_Kim_Beop_rin
 			}
 		}
 		idea_Kim_Beop_rin2 = {
@@ -301,6 +309,7 @@ ideas = {
 
 			traits = {
 				traits_industry_commerce_minister
+				traits_Yoon_Bo_Sun
 			}
 		}
 		idea_Yoon_Bo_Sun2 = {
@@ -347,6 +356,7 @@ ideas = {
 
 			traits = {
 				traits_information_communication_minister
+				traits_Kang_In_taek
 			}
 		}
 		idea_Kang_In_taek2 = {

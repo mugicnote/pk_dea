@@ -51,6 +51,9 @@
  President:0 "대통령"
  Father_Democratic_Republic:0 "민주공화국의 아버지"
  
+ ###서재필 사망###
+ Seo_Jae_pil_over:0 "국가 위기"
+
  Traditional_Crown_Prince:0 "황제가 된 황태자"
 
  ###서재필 내각 장관###
@@ -75,3 +78,10 @@
  KOR_Chang_Taek_Sang_traits3:0 "토사구팽"
 
  traits_Against_government:0 "정부에 반대함"
+
+ traits_Shin_Sung_mo:0 "정치계를 넘보는 군인"
+ traits_Jo_Man_sik:0 "한국의 간디"
+ traits_Lee_In:0 "변호사 출신 인사"
+ traits_Kim_Beop_rin:0 "신뢰받는 어학계 전문가"
+ traits_Yoon_Bo_Sun:0 "영국 신사"
+ traits_Kang_In_taek:0 "언론운동계 인사"

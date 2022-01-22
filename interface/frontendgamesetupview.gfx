@@ -333,12 +333,6 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_country_selection_minor_entry_cover"
-		texturefile = "gfx/interface/country_selection_minor_entry_cover.dds"
-		allwaystransparent = yes
-	}
-
-	spriteType = {
 		name = "GFX_tno_diplo_screen_flag_overlay"
 		texturefile = "gfx/interface/tno_diplo_screen_flag_overlay.dds"
 		allwaystransparent = yes

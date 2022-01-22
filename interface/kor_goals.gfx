@@ -55,6 +55,25 @@ spriteTypes = {
 	}
 
 
+	###여운형 당선
+	SpriteType = {
+		name = "GFX_focus_lyuh_woon_hyung_elected"
+		texturefile = "gfx/interface/goals/KOR/lyuh/focus_lyuh_woon_hyung_elected.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_beginning_new_era"
+		texturefile = "gfx/interface/goals/KOR/lyuh/focus_beginning_new_era.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_formation_lar_cabinet"
+		texturefile = "gfx/interface/goals/KOR/lyuh/focus_formation_lar_cabinet.dds"
+	}
+	##임시 아이콘
+	SpriteType = {
+		name = "GFX_focus_cpki"
+		texturefile = "gfx/interface/goals/focus_cpki.dds"
+	}
+	
 	#이범석 쿠데타
 	SpriteType = {
 		name = "GFX_focus_national_assembly_dominated"

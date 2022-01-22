@@ -1,0 +1,356 @@
+focus_tree = {
+	id = kor_lyuh_woon_hyung_focus
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 25
+			tag = KOR
+			has_country_flag = kor_lyuh_woon_hyung_elected
+		}
+	}
+	default = no
+
+	continuous_focus_position = { x = 20 y = 1600 }
+
+	#여운형 당선
+	focus = {
+		id = KOR_lyuh_woon_hyung_elected
+		icon = GFX_focus_lyuh_woon_hyung_elected
+		cost = 10.00
+
+		completion_reward = {
+			
+		}
+		x = 7
+		y = 0
+
+	}
+
+	#새시대의 시작
+	focus = {
+		id = KOR_beginning_new_era
+		icon = GFX_focus_beginning_new_era
+		cost = 10.00
+
+		relative_position_id = KOR_lyuh_woon_hyung_elected
+
+		prerequisite = {
+			focus = KOR_lyuh_woon_hyung_elected
+		}
+
+		completion_reward = {
+			
+		}
+		x = 0
+		y = 1
+
+	}
+
+	#3월 항쟁의 유산
+	focus = {
+		id = KOR_legacy_March_Struggle
+		icon = GFX_focus_cpki
+		cost = 10.00
+
+		relative_position_id = KOR_beginning_new_era
+
+		prerequisite = {
+			focus = KOR_beginning_new_era
+		}
+
+		completion_reward = {
+			
+		}
+		x = 0
+		y = 1
+
+	}
+
+	#좌우합작 내각 구성
+	focus = {
+		id = KOR_formation_lar_cabinet
+		icon = GFX_focus_formation_lar_cabinet
+		cost = 10.00
+
+		relative_position_id = KOR_beginning_new_era
+
+		prerequisite = {
+			focus = KOR_beginning_new_era
+		}
+
+		completion_reward = {
+			
+		}
+		x = -5
+		y = 1
+
+	}
+
+	#경비계엄 해제
+	focus = {
+		id = KOR_security_martial_lift
+		icon = GFX_focus_cpki
+		cost = 10.00
+
+		relative_position_id = KOR_beginning_new_era
+
+		prerequisite = {
+			focus = KOR_beginning_new_era
+		}
+
+		completion_reward = {
+			
+		}
+		x = 5
+		y = 1
+
+	}
+
+	#학생권에게 감사
+	focus = {
+		id = KOR_Thanks_to_students
+		icon = GFX_focus_cpki
+		cost = 10.00
+
+		relative_position_id = KOR_formation_lar_cabinet
+
+		mutually_exclusive = {
+			focus = KOR_Thanks_to_worker
+		}
+		prerequisite = {
+			focus = KOR_formation_lar_cabinet
+		}
+
+		completion_reward = {
+			
+		}
+		x = 4
+		y = 1
+
+	}
+
+	#노동권에게 감사
+	focus = {
+		id = KOR_Thanks_to_worker
+		icon = GFX_focus_cpki
+		cost = 10.00
+
+		relative_position_id = KOR_security_martial_lift
+
+		mutually_exclusive = {
+			focus = KOR_Thanks_to_students
+		}
+		prerequisite = {
+			focus = KOR_security_martial_lift
+		}
+
+		completion_reward = {
+			
+		}
+		x = -4
+		y = 1
+
+	}
+
+	#대규모 연정 구성
+	focus = {
+		id = KOR_Large_scale_Coalition_Government_organization
+		icon = GFX_focus_cpki
+		cost = 10.00
+
+		relative_position_id = KOR_formation_lar_cabinet
+
+		prerequisite = {
+			focus = KOR_formation_lar_cabinet
+		}
+
+		completion_reward = {
+			
+		}
+		x = 0
+		y = 2
+
+	}
+
+	#김규식과의 회담
+	focus = {
+		id = KOR_Meeting_with_Kim_Kyusik
+		icon = GFX_focus_cpki
+		cost = 10.00
+
+		relative_position_id = KOR_Large_scale_Coalition_Government_organization
+
+		prerequisite = {
+			focus = KOR_Large_scale_Coalition_Government_organization
+		}
+
+		completion_reward = {
+			COALITION_add_soccon = yes
+		}
+		x = 0
+		y = 1
+
+	}
+
+	#박헌영과의 회담
+	focus = {
+		id = KOR_Meeting_with_Pak_Honyong
+		icon = GFX_focus_cpki
+		cost = 10.00
+
+		relative_position_id = KOR_Large_scale_Coalition_Government_organization
+
+		prerequisite = {
+			focus = KOR_Large_scale_Coalition_Government_organization
+		}
+
+		completion_reward = {
+			COALITION_add_com = yes
+		}
+		x = 2
+		y = 1
+
+	}
+
+	#3월 항쟁 사망자 추모
+	focus = {
+		id = KOR_commemorate_death_March_Struggle
+		icon = GFX_focus_cpki
+		cost = 10.00
+
+		relative_position_id = KOR_legacy_March_Struggle
+
+		prerequisite = {
+			focus = KOR_legacy_March_Struggle
+		}
+		prerequisite = {
+			focus = KOR_Thanks_to_students
+			focus = KOR_Thanks_to_worker
+		}
+
+		completion_reward = {
+			
+		}
+		x = 0
+		y = 2
+
+	}
+
+	#4.10 사건 재판
+	focus = {
+		id = KOR_for_ten_Case_trial
+		icon = GFX_focus_cpki
+		cost = 10.00
+
+		relative_position_id = KOR_commemorate_death_March_Struggle
+
+		prerequisite = {
+			focus = KOR_commemorate_death_March_Struggle
+		}
+
+		completion_reward = {
+			
+		}
+		x = 0
+		y = 1
+
+	}
+
+	#치안 확보 작업
+	focus = {
+		id = KOR_public_order_secure
+		icon = GFX_focus_cpki
+		cost = 10.00
+
+		relative_position_id = KOR_security_martial_lift
+
+		prerequisite = {
+			focus = KOR_security_martial_lift
+		}
+
+		completion_reward = {
+			
+		}
+		x = 0
+		y = 1
+
+	}
+
+	#민족청년단 인사 해임
+	focus = {
+		id = KOR_Dismissal_NYCP_dismissal
+		icon = GFX_focus_cpki
+		cost = 10.00
+
+		relative_position_id = KOR_public_order_secure
+
+		mutually_exclusive = {
+			focus = KOR_Punishment_NYCP_treason
+		}
+		prerequisite = {
+			focus = KOR_public_order_secure
+		}
+
+		completion_reward = {
+			
+		}
+		x = -2
+		y = 2
+
+	}
+
+	#민족청년단 반역죄 처별
+	focus = {
+		id = KOR_Punishment_NYCP_treason
+		icon = GFX_focus_cpki
+		cost = 10.00
+
+		relative_position_id = KOR_public_order_secure
+
+		mutually_exclusive = {
+			focus = KOR_Dismissal_NYCP_dismissal
+		}
+		prerequisite = {
+			focus = KOR_public_order_secure
+		}
+
+		completion_reward = {
+			
+		}
+		x = 0
+		y = 2
+
+	}
+
+	#대규모 연립정부 출범
+	focus = {
+		id = KOR_establish_large_coalition_government
+		icon = GFX_focus_cpki
+		cost = 10.00
+
+		relative_position_id = KOR_for_ten_Case_trial
+
+		prerequisite = {
+			focus = KOR_Meeting_with_Kim_Kyusik
+		}
+		prerequisite = {
+			focus = KOR_Meeting_with_Pak_Honyong
+		}
+		prerequisite = {
+			focus = KOR_for_ten_Case_trial
+		}
+		prerequisite = {
+			focus = KOR_Dismissal_NYCP_dismissal
+			focus = KOR_Punishment_NYCP_treason
+		}
+
+		completion_reward = {
+			
+		}
+		x = 0
+		y = 1
+
+	}
+
+}

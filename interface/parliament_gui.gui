@@ -1,7 +1,7 @@
 guiTypes = {
 	containerWindowType = {
 		name = "parliament_button_ui"
-		position = { x = 100 y = 38 }
+		position = { x = 360 y = 470 }
 		
 		buttonType = {
 			name = "parliament_button"
@@ -25,7 +25,7 @@ guiTypes = {
 
 	containerWindowType = {
         name = "parliament_gui_container"
-        position = { x = 0 y = 85 }
+        position = { x = 90 y = 125 }
 		size = { width = 1398 height = 695 }
 		fade_time = 300
 		fade_type = linear
@@ -86,7 +86,7 @@ guiTypes = {
 			iconType = {
 				name = "parliament_background"
 				spriteType = "GFX_parliament_background"
-				position = { x = 51 y = 80 }
+				position = { x = -260 y = 80 }
 				allwaystransparent = yes
 			}
 
@@ -295,6 +295,41 @@ guiTypes = {
 				name = "Report_corruption_opposition_party"
 				spriteType = "GFX_Report_corruption_opposition_party"
 				position = { x = 2 y = -10 }
+			}
+			buttonType = {
+				name = "Investigation_corruption_opposition_party"
+				spriteType = "GFX_Investigation_corruption_opposition_party"
+				position = { x = 2 y = 35 }
+			}
+			buttonType = {
+				name = "Recruitment_personnel_political_party_close"
+				spriteType = "GFX_Recruitment_personnel_political_party_close"
+				position = { x = 2 y = 80 }
+			}
+			buttonType = {
+				name = "Recruitment_personnel_Korea_Promotion_Association"
+				spriteType = "GFX_Recruitment_personnel_Korea_Promotion_Association"
+				position = { x = 2 y = 125 }
+			}
+			buttonType = {
+				name = "Recruitment_personnel_Korea_National_Party"
+				spriteType = "GFX_Recruitment_personnel_Korea_National_Party"
+				position = { x = 2 y = 170 }
+			}
+			buttonType = {
+				name = "Recruitment_personnel_Democratic_Party"
+				spriteType = "GFX_Recruitment_personnel_Democratic_Party"
+				position = { x = 2 y = 215 }
+			}
+			buttonType = {
+				name = "Firming_core_region_close"
+				spriteType = "GFX_Firming_core_region_close"
+				position = { x = 2 y = 260 }
+			}
+			buttonType = {
+				name = "Strengthen_region_Gyeonggi"
+				spriteType = "GFX_Strengthen_region_Gyeonggi"
+				position = { x = 2 y = 305 }
 			}
 		}
     }
