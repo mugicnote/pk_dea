@@ -16,3 +16,12 @@ ICU_economy_reform = {
 	visible = {
 	}
 }
+ICU_arcademy_reform = {
+	icon = army_reform
+	allowed = {
+		original_tag = ICU
+	}
+
+	visible = {
+	}
+}

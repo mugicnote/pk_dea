@@ -21,3 +21,7 @@
  ICU_broken_army_3_desc:0 "내전으로 인해 연방의 군대는 많은 피해를 입었습니다. 연방군은 치안 유지 임무도 불가능한 상태입니다." 
  ICU_destroyed_economy:0 "붕괴된 경제"
  ICU_destroyed_economy_desc:0 "경제는 붕괴되었습니다. 내전 전의 경제도 파산 직전에 있었지만 재기할 수는 있었습니다. 이제 연방의 경제는 부활하기 힘들어 보입니다." 
+ ICU_build_arcademy:0 "사관학교 재건축"
+ ICU_build_arcademy_desc:0 "현재의 사관학교는 매우 낙후되었기에 재건축 중입니다."
+ ICU_finish_building:0 "새로운 사관학교"
+ ICU_finish_building_desc:0 ""

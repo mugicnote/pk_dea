@@ -1,8 +1,8 @@
-﻿capital = 741
+﻿capital = 924
 
 oob = "ICU"
 
-set_research_slots = 2
+set_research_slots = 3
 
 # Starting tech
 set_technology = {
