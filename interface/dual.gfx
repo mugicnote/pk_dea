@@ -138,6 +138,10 @@ spriteTypes = {
 		name = "GFX_Portrait_Hong_Sa-ik"
 		texturefile = "gfx/leaders/KOR/Portrait_Hong_Sa-ik.dds"
 	}
+	spriteType = {
+		name = "GFX_Portrait_Uhm_Hang_Seop"
+		texturefile = "gfx/leaders/KOR/Portrait_Uhm_Hang_Seop.dds"
+	}
 
 
 	#일본
@@ -186,6 +190,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_Portrait_USA_John_Nance_Garner"
 		texturefile = "gfx/leaders/USA/Portrait_USA_John_Nance_Garner.dds"
+	}
+	#러시아
+	spriteType = {
+		name = "GFX_Portrait_Pyotre_Brangel"
+		texturefile = "gfx/leaders/RUS/Portrait_Pyotre_Brangel.dds"
 	}
 	#중국
 	spriteType = {

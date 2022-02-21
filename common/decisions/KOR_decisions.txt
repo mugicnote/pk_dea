@@ -60,6 +60,34 @@ DEA_KOR_Election_Decision = {
 			}
 		}
 	}
+	DEA_KOR_Election_Decision_test = {
+		allowed = {
+			tag = KOR 
+		}
+		activation = {
+			tag = KOR 
+		}
+		available = {
+		}
+		cost = 1
+		complete_effect = {
+			KOR_Election_chek_Variables = yes
+		}
+	}
+	DEA_KOR_Election_Decision_test_2 = {
+		allowed = {
+			tag = KOR 
+		}
+		activation = {
+			tag = KOR 
+		}
+		available = {
+		}
+		cost = 1
+		complete_effect = {
+			KOR_Election_Syngman_Rhee_plus_5 = yes
+		}
+	}
 }
 
 DEA_KOR_Military_Revolution_decisions_category = {

@@ -136,11 +136,11 @@ characters={
 		}
 	}
 
-	KOR_kim_sung_soo={
-		name=KOR_kim_sung_soo
+	KOR_Song_Jin_woo={
+		name=KOR_Song_Jin_woo
 		portraits={
 			civilian={
-				large="gfx/leaders/KOR/Portrait_kim_sungsoo.dds"
+				large="gfx/leaders/KOR/Portrait_Song_Jin_woo.dds"
 			}
 		}
 		country_leader={

@@ -108,7 +108,7 @@ guiTypes = {
 			name = "KOR_GUI_Election_Decision_GUI_Bar6_text"
 			position = { x = -10 y = 325 }
 			font = "aldrich_16_outline"
-			text = "김성수 - [?KOR_Election_FOR_GUI6]%"
+			text = "송진우 - [?KOR_Election_FOR_GUI6]%"
 			maxWidth = 100
 			format = right
 			alwaystransparent = yes

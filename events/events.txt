@@ -1,111 +1,5 @@
 add_namespace = KOR
 
-country_event = { #
-	id = KOR.1
-	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.1"}
-	picture = GFX_report_event_election_vote
-	
-	is_triggered_only = yes
-
-	title = {
-		text = KOR.1.t.4th_election
-		trigger = {
-			has_country_flag = forth_election_start
-		}
-	}
-	desc = {
-		text = KOR.1.desc.4th_election
-		trigger = {
-			has_country_flag = forth_election_start
-		}
-	}
-
-	title = {
-		text = KOR.1.t.5th_election
-		trigger = {
-			has_country_flag = forth_election
-		}
-	}
-	desc = {
-		text = KOR.1.desc.5th_election
-		trigger = {
-			has_country_flag = forth_election
-		}
-	}
-
-	title = {
-		text = KOR.1.t.6th_election
-		trigger = {
-			has_country_flag = fifth_election
-		}
-	}
-	desc = {
-		text = KOR.1.desc.6th_election
-		trigger = {
-			has_country_flag = fifth_election
-		}
-	}
-	
-	option = { #여운형
-		name = KOR.1.a
-		ai_chance = { factor = 1 }
-		complete_national_focus = Yeo_Un_hyung_Elected
-		if = {
-			limit = { has_country_flag = forth_election }
-			set_cosmetic_tag = korea_is_second
-		}
-		if = { 
-			limit = { 
-				has_country_flag = forth_election
-			}
-		set_country_flag = fifth_election
-		clr_country_flag = forth_election
-		}
-	}
-	option = { #김구
-		name = KOR.1.b
-		ai_chance = { factor = 1 }
-		complete_national_focus = Kim_Gu_Elected
-		if = {
-			limit = { has_country_flag = forth_election }
-			set_cosmetic_tag = korea_is_second
-		}
-		if = { 
-			limit = { 
-				has_country_flag = forth_election
-			}
-		set_country_flag = fifth_election
-		clr_country_flag = forth_election
-		}
-	}
-	option = { #이승만
-		name = KOR.1.c
-		ai_chance = { factor = 1 }
-		complete_national_focus = Lee_Seung_man_Elected
-		trigger = {
-			NOT = { has_country_flag = Seung_man_end }
-		}
-		if = {
-			limit = { has_country_flag = forth_election }
-			set_cosmetic_tag = korea_is_second
-		}
-		if = { 
-			limit = { 
-				has_country_flag = forth_election
-			}
-		set_country_flag = fifth_election
-		clr_country_flag = forth_election
-		}
-	}
-	option = { #제 4의 인물
-		name = KOR.1.d
-		ai_chance = { factor = 1 }
-		country_event = { id = KOR.34 }
-	}
-}
-
-add_namespace = KOR
-
 country_event = {  
 	id = KOR.54
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.54"}
@@ -717,7 +611,7 @@ country_event = { #서재필 사망
 		ai_chance = { factor = 1 }
 		country_event = {
 			id = KOR.41
-			days = 0
+			days = 1
 		}
 	}
 }
@@ -735,7 +629,7 @@ country_event = { #시작3
 		name = KOR.41.a
 		country_event = {
 			id = KOR.79
-			days = 5
+			days = 1
 		}
 		set_global_flag = big_event_assassination_Jae_pil
 		set_country_flag = Seo_Jae_pil_died
@@ -775,7 +669,7 @@ country_event = {
 		name = KOR.79.a
 		ai_chance = { factor = 1 }
 		country_event = {
-			id = KOR.13
+			id = KOR.1
 			days = 1
 		}
 		retire_ideology_leader = democratic
@@ -794,6 +688,26 @@ country_event = {
 	}
 }
 
+country_event = {  
+	id = KOR.1
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.1"}
+	title = KOR.1.t
+	desc = KOR.1.desc
+	picture = GFX_
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = KOR.1.a
+		ai_chance = { factor = 1 }
+		country_event = {
+			id = KOR.13
+			days = 2
+		}
+	}
+}
+
 country_event = {
 	id = KOR.13
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.13"}
@@ -808,8 +722,8 @@ country_event = {
 		name = KOR.13.a
 		ai_chance = { factor = 1 }
 		country_event = {
-			id = KOR.14
-			days = 0
+			id = KOR.7
+			days = 2
 		}
 		set_country_flag = DEA_KOR_Military_factional_decisions_start
 		ENG_Thatcher_Tick = yes
@@ -823,8 +737,8 @@ country_event = {
 		name = KOR.13.b
 		ai_chance = { factor = 1 }
 		country_event = {
-			id = KOR.14
-			days = 0
+			id = KOR.7
+			days = 2
 		}
 		set_country_flag = DEA_KOR_Military_factional_decisions_start
 		ENG_Thatcher_Tick = yes
@@ -835,26 +749,23 @@ country_event = {
 	}
 }
 
-country_event = {
-	id = KOR.14
-	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.14"}
-	title = KOR.14.t
-	desc = KOR.14.desc
-	picture = GFX_law_passed_is_the_law
+country_event = {  
+	id = KOR.7
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.7"}
+	title = KOR.7.t
+	desc = KOR.7.desc
+	picture = GFX_
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #
-		name = KOR.14.a
+		name = KOR.7.a
 		ai_chance = { factor = 1 }
 		country_event = {
 			id = KOR.2
-			days = 4
+			days = 1
 		}
-		custom_effect_tooltip = kor14_tt
-		set_country_flag = DEA_KOR_Election_decisions_start
-		KOR_Election_SetVariables = yes
 	}
 }
 
@@ -872,7 +783,7 @@ country_event = { #
 		name = KOR.2.a
 		ai_chance = { factor = 1 }
 		country_event = {
-			id = KOR.3
+			id = KOR.8
 			days = 3
 		}
 		country_event = {
@@ -884,7 +795,7 @@ country_event = { #
 		name = KOR.2.b
 		ai_chance = { factor = 1 }
 		country_event = {
-			id = KOR.3
+			id = KOR.8
 			days = 3
 		}
 		country_event = {
@@ -894,31 +805,22 @@ country_event = { #
 	}
 }
 
-country_event = { #
-	id = KOR.3
-	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.3"}
-	title = KOR.3.t
-	desc = KOR.3.desc
-	picture = GFX_Syngman_Rhee_announces_candidacy_Korea_Promotion_Association
+country_event = {  
+	id = KOR.8
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.8"}
+	title = KOR.8.t
+	desc = KOR.8.desc
+	picture = GFX_
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = { #
-		name = KOR.3.a
+		name = KOR.8.a
 		ai_chance = { factor = 1 }
 		country_event = {
-			id = KOR.6
-			days = 7
-		}
-		KOR_Election_Syngman_Rhee_plus_5 = yes
-	}
-	option = { #
-		name = KOR.3.b
-		ai_chance = { factor = 1 }
-		country_event = {
-			id = KOR.6
-			days = 7
+			id = KOR.9
+			days = 4
 		}
 	}
 }
@@ -963,6 +865,158 @@ country_event = { #
 	}
 }
 
+country_event = {  
+	id = KOR.9
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.9"}
+	title = KOR.9.t
+	desc = KOR.9.desc
+	picture = GFX_
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = KOR.9.a
+		ai_chance = { factor = 1 }
+		country_event = {
+			id = KOR.14
+			days = 1
+		}
+	}
+}
+
+country_event = {
+	id = KOR.14
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.14"}
+	title = KOR.14.t
+	desc = KOR.14.desc
+	picture = GFX_law_passed_is_the_law
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = KOR.14.a
+		ai_chance = { factor = 1 }
+		country_event = {
+			id = KOR.23
+			days = 3
+		}
+		custom_effect_tooltip = kor14_tt
+		set_country_flag = DEA_KOR_Election_decisions_start
+		KOR_Election_SetVariables = yes
+	}
+}
+
+country_event = {  
+	id = KOR.23
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.23"}
+	title = KOR.23.t
+	desc = KOR.23.desc
+	picture = GFX_
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = KOR.23.a
+		ai_chance = { factor = 1 }
+		country_event = {
+			id = KOR.24
+			days = 2
+		}
+	}
+}
+
+country_event = {  
+	id = KOR.24
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.24"}
+	title = KOR.24.t
+	desc = KOR.24.desc
+	picture = GFX_
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = KOR.24.a
+		ai_chance = { factor = 1 }
+		country_event = {
+			id = KOR.25
+			days = 2
+		}
+	}
+}
+
+country_event = {  
+	id = KOR.25
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.25"}
+	title = KOR.25.t
+	desc = KOR.25.desc
+	picture = GFX_
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = KOR.25.a
+		ai_chance = { factor = 1 }
+		country_event = {
+			id = KOR.3
+			days = 1
+		}
+	}
+}
+
+country_event = { #
+	id = KOR.3
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.3"}
+	title = KOR.3.t
+	desc = KOR.3.desc
+	picture = GFX_Syngman_Rhee_announces_candidacy_Korea_Promotion_Association
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = KOR.3.a
+		ai_chance = { factor = 1 }
+		country_event = {
+			id = KOR.26
+			days = 2
+		}
+		KOR_Election_Syngman_Rhee_plus_5 = yes
+	}
+	option = { #
+		name = KOR.3.b
+		ai_chance = { factor = 1 }
+		country_event = {
+			id = KOR.26
+			days = 2
+		}
+	}
+}
+
+country_event = {  
+	id = KOR.26
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.26"}
+	title = KOR.26.t
+	desc = KOR.26.desc
+	picture = GFX_
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = KOR.26.a
+		ai_chance = { factor = 1 }
+		country_event = {
+			id = KOR.6
+			days = 3
+		}
+	}
+}
+
 country_event = { #
 	id = KOR.6
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.6"}
@@ -976,10 +1030,198 @@ country_event = { #
 	option = { #
 		name = KOR.6.a
 		ai_chance = { factor = 1 }
+		country_event = {
+			id = KOR.27
+			days = 1
+		}
 	}
 	option = { #
 		name = KOR.6.b
 		ai_chance = { factor = 1 }
+		country_event = {
+			id = KOR.27
+			days = 1
+		}
+	}
+}
+
+country_event = {  
+	id = KOR.27
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.27"}
+	title = KOR.27.t
+	desc = KOR.27.desc
+	picture = GFX_
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = KOR.27.a
+		ai_chance = { factor = 1 }
+		country_event = {
+			id = KOR.28
+			days = 3
+		}
+	}
+}
+
+country_event = {  
+	id = KOR.28
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.28"}
+	title = KOR.28.t
+	desc = KOR.28.desc
+	picture = GFX_
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = KOR.28.a
+		ai_chance = { factor = 1 }
+		country_event = {
+			id = KOR.29
+			days = 2
+		}
+	}
+}
+
+country_event = {  
+	id = KOR.29
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.29"}
+	title = KOR.29.t
+	desc = KOR.29.desc
+	picture = GFX_
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = KOR.29.a
+		ai_chance = { factor = 1 }
+		country_event = {
+			id = KOR.30
+			days = 1
+		}
+	}
+}
+
+country_event = {  
+	id = KOR.30
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.30"}
+	title = KOR.30.t
+	desc = KOR.30.desc
+	picture = GFX_
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = KOR.30.a
+		ai_chance = { factor = 1 }
+		country_event = {
+			id = KOR.34
+			days = 3
+		}
+	}
+}
+
+country_event = {  
+	id = KOR.34
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.34"}
+	title = KOR.34.t
+	desc = KOR.34.desc
+	picture = GFX_
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = KOR.34.a
+		ai_chance = { factor = 1 }
+		country_event = {
+			id = KOR.35
+			days = 4
+		}
+	}
+}
+
+country_event = {  
+	id = KOR.35
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.35"}
+	title = KOR.35.t
+	desc = KOR.35.desc
+	picture = GFX_
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = KOR.35.a
+		ai_chance = { factor = 1 }
+		country_event = {
+			id = KOR.36
+			days = 1
+		}
+	}
+}
+
+country_event = {  
+	id = KOR.36
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.36"}
+	title = KOR.36.t
+	desc = KOR.36.desc
+	picture = GFX_
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = KOR.36.a
+		ai_chance = { factor = 1 }
+		country_event = {
+			id = KOR.37
+			days = 2
+		}
+	}
+}
+
+country_event = {  
+	id = KOR.37
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.37"}
+	title = KOR.37.t
+	desc = KOR.37.desc
+	picture = GFX_
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = KOR.37.a
+		ai_chance = { factor = 1 }
+		country_event = {
+			id = KOR.38
+			days = 3
+		}
+	}
+}
+
+country_event = {  
+	id = KOR.38
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.38"}
+	title = KOR.38.t
+	desc = KOR.38.desc
+	picture = GFX_
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = KOR.38.a
+		ai_chance = { factor = 1 }
+		# country_event = {
+		# 	id = KOR.39
+		# 	days = 0
+		# }
 	}
 }
 
@@ -1045,6 +1287,36 @@ country_event = {
 			}
 		}
 		set_global_flag = big_event_rhee_syng_man_president
+	}
+}
+
+country_event = {
+	id = KOR.22
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.22"}
+	title = KOR.22.t
+	desc = KOR.22.desc
+	picture = GFX
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = KOR.22.a
+		ai_chance = { factor = 1 }
+		set_politics = {
+			ruling_party = national_conservatism
+			elections_allowed = yes
+		}
+		clr_country_flag = korea_kim_kyu_sik_acting_president
+		set_country_flag = korea_kim_koo_president
+		COALITION_clr_soccon = yes
+		COALITION_add_natcon = yes
+		#load_focus_tree = kor_lyuh_woon_hyung_focus
+		#set_country_flag = kor_lyuh_woon_hyung_elected
+		add_popularity = {
+			ideology = national_conservatism
+			popularity = 0.025
+		}
 	}
 }
 
@@ -1192,13 +1464,11 @@ country_event = { #
 				}
 			}
 			not_rebellion_variable2 = {
-				set_state_owner = 817
+				# set_state_owner = 817
 			}
 		}
 	}
 }
-
-add_namespace = KOR
 
 country_event = { #반란
 	id = KOR.11
@@ -1231,8 +1501,6 @@ country_event = { #반란
 	}
 }
 
-add_namespace = KOR
-
 country_event = { #
 	id = KOR.12
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.12"}
@@ -1254,10 +1522,6 @@ country_event = { #
 		}
 	}
 }
-
-add_namespace = KOR
-
-add_namespace = KOR
 
 country_event = { #
 	id = KOR.16
@@ -1321,239 +1585,6 @@ country_event = { #
 	}
 }
 
-# 반대 신문
-country_event = {
-	id = KOR.22
-	title = KOR.22.t
-	desc = KOR.22.d
-	picture = GFX_report_event_journalists_speech
-
-	is_triggered_only = yes
-
-	trigger = {
-		NOT = { has_country_flag = KOR_abdication_crisis_changed_mind }
-		NOT = { has_country_flag = vote_2_is_end }
-	}
-	
-	# Ok
-	option = {
-		name = KOR.22.a
-		KOR_congress_small_opposition = yes
-		 
-		clr_country_flag = KOR_newspapers_in_favor
-		clr_country_flag = KOR_prime_minister_tight_leash
-		clr_country_flag = KOR_parliament_opposition
-		clr_country_flag = KOR_upper_classes_oppose_marriage
-		clr_country_flag = KOR_working_classes_support_marriage
-		set_country_flag = KOR_newspapers_against
-	}
-}
-
-# 연설을 막는 야당
-country_event = {
-	id = KOR.23
-	title = KOR.23.t
-	desc = KOR.23.d
-	picture = GFX_report_event_generic_sign_treaty1
-
-	is_triggered_only = yes
-
-	trigger = {
-		NOT = { has_country_flag = KOR_abdication_crisis_changed_mind }
-		NOT = { has_country_flag = KOR_abdication_crisis_government_fell }
-		NOT = { has_country_flag = vote_2_is_end }
-	}
-	
-	# Ok
-	option = {
-		name = KOR.23.a
-		KOR_congress_small_opposition = yes
-		set_country_flag = { flag = KOR_abdication_crisis_tight_leash value = 1 days = 31 }
-		 
-		clr_country_flag = KOR_newspapers_in_favor
-		clr_country_flag = KOR_newspapers_against
-		clr_country_flag = KOR_parliament_opposition
-		clr_country_flag = KOR_upper_classes_oppose_marriage
-		clr_country_flag = KOR_working_classes_support_marriage
-		set_country_flag = KOR_prime_minister_tight_leash
-	}
-}
-
-# 야당 지지 작가
-country_event = {
-	id = KOR.24
-	title = KOR.24.t
-	desc = KOR.24.d
-	picture = GFX_report_event_generic_parliament
-
-	is_triggered_only = yes
-
-	trigger = {
-		NOT = { has_country_flag = KOR_abdication_crisis_changed_mind }
-		NOT = { has_country_flag = vote_2_is_end }
-	}	
-	# Ok
-	option = {
-		name = KOR.24.a
-		KOR_congress_small_opposition = yes
-		 
-		clr_country_flag = KOR_newspapers_in_favor
-		clr_country_flag = KOR_newspapers_against
-		clr_country_flag = KOR_prime_minister_tight_leash
-		clr_country_flag = KOR_upper_classes_oppose_marriage
-		clr_country_flag = KOR_working_classes_support_marriage
-		set_country_flag = KOR_parliament_opposition
-	}
-}
-
-# 상인들의 반대?
-country_event = {
-	id = KOR.25
-	title = KOR.25.t
-	desc = KOR.25.d
-	picture = GFX_report_event_generic_rally_3
-
-	is_triggered_only = yes
-
-	trigger = {
-		NOT = { has_country_flag = KOR_abdication_crisis_changed_mind }
-		NOT = { has_country_flag = vote_2_is_end }
-	}	
-	# Ok
-	option = {
-		name = KOR.25.a
-		KOR_congress_small_opposition = yes
-		 
-		clr_country_flag = KOR_newspapers_in_favor
-		clr_country_flag = KOR_newspapers_against
-		clr_country_flag = KOR_prime_minister_tight_leash
-		clr_country_flag = KOR_parliament_opposition
-		clr_country_flag = KOR_working_classes_support_marriage
-		set_country_flag = KOR_upper_classes_oppose_marriage
-	}
-}
-
-# 노동자들의 지지
-country_event = {
-	id = KOR.26
-	title = KOR.26.t
-	desc = KOR.26.d
-	picture = GFX_report_event_generic_rally
-
-	is_triggered_only = yes
-
-	trigger = {
-		NOT = { has_country_flag = KOR_abdication_crisis_changed_mind }
-		NOT = { has_country_flag = vote_2_is_end }
-	}	
-	# Ok
-	option = {
-		name = KOR.26.a
-		KOR_congress_small_support = yes
-		 
-		clr_country_flag = KOR_newspapers_in_favor
-		clr_country_flag = KOR_newspapers_against
-		clr_country_flag = KOR_prime_minister_tight_leash
-		clr_country_flag = KOR_parliament_opposition
-		clr_country_flag = KOR_upper_classes_oppose_marriage
-		set_country_flag = KOR_working_classes_support_marriage
-	}
-}
-
-# 정부 연설
-country_event = {
-	id = KOR.27
-	title = KOR.27.t
-	desc = KOR.27.d
-	picture = GFX_report_event_journalists_speech
-
-	is_triggered_only = yes
-
-	trigger = {
-		NOT = { has_country_flag = KOR_abdication_crisis_changed_mind }
-		NOT = { has_country_flag = vote_2_is_end }
-	}
-	
-	# Ok
-	option = {
-		name = KOR.27.a
-		KOR_congress_small_support = yes
-		set_country_flag = KOR_abdication_crisis_held_radio_speech
-		 
-	}
-}
-
-country_event = { #군수 공장
-	id = KOR.28
-	title = KOR.28.t
-	desc = KOR.28.desc
-	picture = GFX_report_event_generic_ruins
-
-	is_triggered_only = yes
-	
-	option = {
-		name = KOR.28.a #okay
-		random_owned_state = {
-			limit = {
-				is_fully_controlled_by = ROOT
-				arms_factory > 0
-			}
-			damage_building = {
-				type = arms_factory
-				damage = 0.6
-			}
-		}
-	}
-}
-
-#Bandit sabotage - civilian factory sabotaged
-country_event = {
-	id = KOR.29
-	title = KOR.29.t
-	desc = KOR.29.desc
-	picture = GFX_report_event_generic_ruins
-
-	is_triggered_only = yes
-	
-	option = {
-		name = KOR.28.a #okay
-		random_owned_state = {
-			limit = {
-				is_fully_controlled_by = ROOT
-				industrial_complex > 0
-			}
-			damage_building = {
-				type = industrial_complex
-				damage = 0.6
-			}
-		}
-	}
-}
-
-#Bandit sabotage - bridge blown
-country_event = {
-	id = KOR.30
-	title = KOR.30.t
-	desc = KOR.30.desc
-	picture = GFX_report_event_generic_train
-
-	is_triggered_only = yes
-	
-	option = {
-		name = KOR.28.a #okay
-		random_owned_state = {
-			limit = {
-				is_fully_controlled_by = ROOT
-				infrastructure > 0
-			}
-			damage_building = {
-				type = infrastructure
-				damage = 1
-			}
-		}
-	}
-}
-
 country_event = { #범죄와의 전쟁 선포
 	id = KOR.31
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.31"}
@@ -1604,129 +1635,6 @@ country_event = { #대한적십자사 조직
 }
 
 country_event = { #
-	id = KOR.34
-	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.34"}
-	title = KOR.34.t
-	desc = KOR.34.desc
-	picture = GFX_report_event_election_vote
-	
-	is_triggered_only = yes
-	fire_only_once = yes
-	
-	option = { #김원봉
-		name = KOR.34.a
-		ai_chance = { factor = 1 }
-		complete_national_focus = Kim_Won_Bong_Elected
-	}
-	option = { #안재홍
-		name = KOR.34.b
-		ai_chance = { factor = 1 }
-		complete_national_focus = Ahn_Jae_Hong_Elected
-	}
-	option = { #조만식
-		name = KOR.34.c
-		ai_chance = { factor = 1 }
-		complete_national_focus = Cho_Man_Sik_Elected
-	}
-	option = { #김성수
-		name = KOR.34.d
-		ai_chance = { factor = 1 }
-		complete_national_focus = Kim_Sung_Soo_Elected
-	}
-}
-
-country_event = { #
-	id = KOR.35
-	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.35"}
-	title = KOR.35.t
-	desc = KOR.35.desc
-	picture = GFX_victory_Trade_Unions
-	
-	is_triggered_only = yes
-	fire_only_once = yes
-	
-	option = { #김원봉
-		name = KOR.35.a
-		ai_chance = { factor = 1 }
-
-	}
-	option = { #조노연
-		name = KOR.35.b
-		ai_chance = { factor = 1 }
-		country_event = { id = KOR.36 days = 10 }
-		custom_effect_tooltip = KOR.35.b_tt
-	}
-}
-
-country_event = { #
-	id = KOR.36
-	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.36"}
-	title = KOR.36.t
-	desc = KOR.36.desc
-	picture = GFX_worker_persuasion
-	
-	is_triggered_only = yes
-	fire_only_once = yes
-	
-	option = { #조노연
-		name = KOR.36.a
-		ai_chance = { factor = 1 }
-		country_event = { id = KOR.37 days = 10 }
-	}
-}
-
-country_event = { #
-	id = KOR.37
-	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.37"}
-	title = KOR.37.t
-	desc = KOR.37.desc
-	picture = GFX_expansion_political_sphere
-	
-	is_triggered_only = yes
-	fire_only_once = yes
-	
-	option = { #조노연
-		name = KOR.37.a
-		ai_chance = { factor = 1 }
-		country_event = { id = KOR.38 days = 10 }
-	}
-}
-
-country_event = { #
-	id = KOR.38
-	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.38"}
-	title = KOR.38.t
-	desc = KOR.38.desc
-	picture = GFX_military_persuasion
-	
-	is_triggered_only = yes
-	fire_only_once = yes
-	
-	option = { #조노연
-		name = KOR.38.a
-		ai_chance = { factor = 1 }
-		country_event = { id = KOR.39 days = 10 }
-	}
-}
-
-country_event = { #
-	id = KOR.39
-	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.39"}
-	title = KOR.39.t
-	desc = KOR.39.desc
-	picture = GFX_Securing_Weapons_and_Funds
-	
-	is_triggered_only = yes
-	fire_only_once = yes
-	
-	option = { #조노연
-		name = KOR.39.a
-		ai_chance = { factor = 1 }
-		country_event = { id = KOR.40 days = 10 }
-	}
-}
-
-country_event = { #
 	id = KOR.40
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.40"}
 	title = KOR.40.t
@@ -1743,9 +1651,6 @@ country_event = { #
 		set_country_flag = Trade_Unions_is_victory
 	}
 }
-
-add_namespace = KOR
-
 
 country_event = { #시작4
 	id = KOR.42
@@ -4110,8 +4015,6 @@ country_event = {
 
 }
 
-add_namespace = KOR
-
 country_event = { #
 	id = KOR.82
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.82"}
@@ -4186,52 +4089,6 @@ country_event = { #
 		name = KOR.85.a
 		ai_chance = { factor = 1 }
 
-	}
-}
-
-country_event = { #
-	id = KOR.86
-	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.86"}
-	title = KOR.86.t
-	desc = KOR.86.desc
-	picture = GFX_NAREISION
-	
-	is_triggered_only = yes
-	fire_only_once = yes
-	
-	option = { #건너뛰기
-		name = KOR.86.a
-		ai_chance = { factor = 1 }
-		custom_effect_tooltip = kor_86_a_tt
-		hidden_effect = {
-			country_event = {
-				id = KOR.77
-				days = 105
-			}
-		}
-	}
-	option = { #요약문
-		name = KOR.86.b
-		ai_chance = { factor = 1 }
-		custom_effect_tooltip = kor_86_b_tt
-		set_country_flag = yo_yak
-		hidden_effect = {
-			country_event = {
-				id = KOR.54
-				days = 5
-			}
-		}
-	}
-	option = { #전문
-		name = KOR.86.c
-		ai_chance = { factor = 1 }
-		custom_effect_tooltip = kor_86_c_tt
-		hidden_effect = {
-			country_event = {
-				id = KOR.54
-				days = 5
-			}
-		}
 	}
 }
 

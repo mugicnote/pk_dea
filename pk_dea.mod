@@ -5,10 +5,10 @@ tags={
 	"National Focuses"
 }
 dependencies={
-	"Korean Language (Europa)"
+	"Korean Language"
 }
 picture="thumbnail.png"
-supported_version="1.10.*"
-path="mod/pk_dea"
-remote_file_id="2298789924"
 version="ALPHA"
+supported_version="1.11.7"
+path="C:/Users/mom/Documents/Paradox Interactive/Hearts of Iron IV/mod/pk_dea"
+remote_file_id="2298789924"

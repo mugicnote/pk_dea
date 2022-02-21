@@ -8,6 +8,7 @@ defined_text = {
 			OR = { 
 				has_government = democratic
 				has_government = social_democracy
+				has_government = national_conservatism
 			}
 			NOT = { has_country_flag = korea_has_no_president }
 			NOT = { has_country_flag = korea_kim_kyu_sik_acting_president }
@@ -107,6 +108,7 @@ defined_text = {
 			OR = { 
 				has_government = democratic
 				has_government = social_democracy
+				has_government = national_conservatism
 			}
 			NOT = { has_country_flag = korea_kim_kyu_sik_acting_president }
 			NOT = { has_country_flag = korea_kim_kyu_sik_president_lee_beom_seok }
@@ -174,6 +176,13 @@ defined_text = {
 			has_government = social_liberalism
 		}
 		localization_key = USA_SECOND_TITLE
+	}
+	text = {
+		trigger = {
+			tag = RUS
+			has_government = neutrality
+		}
+		localization_key = RUS_SECOND_TITLE
 	}
 	text = {
 		trigger = {
@@ -255,6 +264,14 @@ defined_text = {
 	}
 	text = {
 		trigger = {
+			tag = KOR
+			has_government = national_conservatism
+			has_country_flag = korea_kim_koo_president
+		}
+		localization_key = KOR_DUAL_NAME_Uhm_Hang_Seop_prime_minister
+	}
+	text = {
+		trigger = {
 			tag = JAP
 			has_government = democratic
 		}
@@ -273,6 +290,13 @@ defined_text = {
 			has_government = social_liberalism
 		}
 		localization_key = USA_DUAL_NAME
+	}
+	text = {
+		trigger = {
+			tag = RUS
+			has_government = neutrality
+		}
+		localization_key = RUS_DUAL_NAME
 	}
 	text = {
 		trigger = {
@@ -354,6 +378,14 @@ defined_text = {
 	}
 	text = {
 		trigger = {
+			tag = KOR
+			has_government = national_conservatism
+			has_country_flag = korea_kim_koo_president
+		}
+		localization_key = GFX_Portrait_Uhm_Hang_Seop
+	}
+	text = {
+		trigger = {
 			tag = JAP
 			has_government = democratic
 		}
@@ -372,6 +404,13 @@ defined_text = {
 			has_government = social_liberalism
 		}
 		localization_key = GFX_Portrait_USA_John_Nance_Garner
+	}
+	text = {
+		trigger = {
+			tag = RUS
+			has_government = neutrality
+		}
+		localization_key = GFX_Portrait_Pyotre_Brangel
 	}
 	text = {
 		trigger = {
