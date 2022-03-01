@@ -1,0 +1,37 @@
+spriteTypes = {
+
+	SpriteType = {
+		name = "GFX_YUN_controlled_1936_power"
+		texturefile = "gfx/interface/goals/YUN_controlled_1936_power.png"
+	}
+    
+    SpriteType = {
+		name = "GFX_YUN_check_militarypower"
+		texturefile = "gfx/interface/goals/YUN_check_militarypower.png"
+	}
+    
+    SpriteType = {
+		name = "GFX_YUN_hanoi_equipment"
+		texturefile = "gfx/interface/goals/YUN_hanoi_equipment.png"
+	}
+    
+    SpriteType = {
+		name = "GFX_YUN_keep_watching"
+		texturefile = "gfx/interface/goals/YUN_keep_watching.png"
+	}
+    
+    SpriteType = {
+		name = "GFX_YUN_kunming_mordernize"
+		texturefile = "gfx/interface/goals/YUN_kunming_mordernize.png"
+	}
+    
+    SpriteType = {
+		name = "GFX_YUN_yun_milaca_problem"
+		texturefile = "gfx/interface/goals/YUN_yun_milaca_problem.png"
+	}
+    
+    SpriteType = {
+		name = "GFX_YUN_uk_amry_theory"
+		texturefile = "gfx/interface/goals/YUN_uk_amry_theory.png"
+	}
+}

@@ -9,6 +9,6 @@ dependencies={
 }
 picture="thumbnail.png"
 version="ALPHA"
-supported_version="1.11.7"
+supported_version="1.11.8"
 path="mod/pk_dea"
 remote_file_id="2298789924"

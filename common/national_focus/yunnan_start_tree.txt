@@ -1,0 +1,136 @@
+focus_tree = {
+	id = yunnan_start_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 30
+			tag = YUN
+		}
+	}
+	default = no
+
+	continuous_focus_position = { x = 20 y = 1600 }
+
+	focus = {
+		id = YUN_keep_watching
+		icon = GFX_YUN_keep_watching
+		cost = 2
+		x = 7
+		y = 3
+		completion_reward = {
+            add_war_support = 0.03
+            add_political_power	= 25
+            country_event = { id = YUNNAN_EARLY_FOCUS.1 }
+		}
+	}
+	focus = {
+		id = YUN_hanoi_equipment
+		icon = GFX_YUN_hanoi_equipment
+		cost = 2
+		prerequisite = {
+			focus = YUN_keep_watching
+		}
+		x = 5
+		y = 4
+		completion_reward = {
+        send_equipment = {
+			equipment = support_equipment
+			amount = 120
+			target = YUN
+		}
+
+		send_equipment = {
+			equipment = infantry_equipment
+			amount = 350
+			target = YUN
+		}
+	}
+    }
+    focus = {
+		id = YUN_uk_amry_theory
+		icon = GFX_YUN_uk_amry_theory
+		cost = 2
+		prerequisite = {
+			focus = YUN_keep_watching
+		}
+		x = 7
+		y = 4
+
+		completion_reward = {
+            army_experience = 10
+            add_doctrine_cost_reduction = {
+			         name = land_doc_bonus
+			         cost_reduction = 0.5
+			         uses = 2
+			         category = land_doctrine
+		          }
+		}
+	}
+    focus = {
+		id = YUN_kunming_mordernize
+		icon = GFX_YUN_kunming_mordernize
+		cost = 2
+		prerequisite = {
+			focus = YUN_keep_watching
+		}
+		x = 9
+		y = 4
+
+		completion_reward = {
+            603 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+            add_stability = 0.05
+		}
+	}
+    focus = {
+		id = YUN_yun_milaca_problem
+		icon = GFX_YUN_yun_milaca_problem
+		cost = 2
+		prerequisite = {
+			focus = YUN_kunming_mordernize
+		}
+        prerequisite = {
+            focus = YUN_uk_amry_theory
+		}
+        prerequisite = {
+            focus = YUN_hanoi_equipment
+		}
+		x = 7
+		y = 5
+		completion_reward = {
+            country_event = { id = YUNNAN_EARLY_FOCUS.2 }
+		}
+	}
+    focus = {
+		id = YUN_check_militarypower
+		icon = GFX_YUN_check_militarypower
+		cost = 2
+		prerequisite = {
+            focus = YUN_yun_milaca_problem
+		}
+		x = 7
+		y = 6
+
+		completion_reward = {
+		}
+	}
+    focus = {
+		id = YUN_controlled_1936_power
+		icon = GFX_YUN_controlled_1936_power
+		cost = 2
+		prerequisite = {
+            focus = YUN_check_militarypower
+		}
+		x = 7
+		y = 7
+
+		completion_reward = {
+		}
+	}
+}

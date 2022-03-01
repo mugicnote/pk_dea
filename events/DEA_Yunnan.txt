@@ -1,0 +1,43 @@
+﻿###########################
+# 운남 이벤트
+###########################
+
+add_namespace = DEA_Yunnan
+
+country_event = {
+	id = YUNNAN_EARLY_FOCUS.1
+	title = YUNNAN_EARLY_FOCUS.1.t
+	desc = YUNNAN_EARLY_FOCUS.1.d
+	picture = GFX_Hu_Hanmin_event_picture
+	
+	is_triggered_only = yes
+	fire_oniy_once = yes
+	
+	option = { 
+		name = YUNNAN_EARLY_FOCUS.1.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = YUNNAN_EARLY_FOCUS.2
+	title = YUNNAN_EARLY_FOCUS.2.t
+	desc = YUNNAN_EARLY_FOCUS.2.d
+	picture = GFX_Hu_Hanmin_event_picture
+	
+	is_triggered_only = yes
+	fire_oniy_once = yes
+	
+	option = { 
+		name = YUNNAN_EARLY_FOCUS.2.a
+		ai_chance = { factor = 1 }
+	}
+    option = { 
+		name = YUNNAN_EARLY_FOCUS.2.b
+		ai_chance = { factor = 3 }
+	}
+    option = { 
+		name = YUNNAN_EARLY_FOCUS.2.c
+		ai_chance = { factor = 1 }
+	}
+}

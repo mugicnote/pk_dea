@@ -7,7 +7,6 @@
 		modifier = {
 			add = 10
 			OR = {
-				tag = YUN
 				tag = SIK
 				tag = GXC
 				tag = SHX
