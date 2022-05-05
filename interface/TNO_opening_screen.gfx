@@ -113,6 +113,16 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_DEA_Encyclopedia_thumbnail"
+		textureFile = "gfx/texticons/opening_icons/KOR/DEA_Encyclopedia_thumbnail.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_DEA_kor_wiki_flag"
+		textureFile = "gfx/texticons/opening_icons/KOR/DEA_kor_wiki_flag.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_Korean_Democratic_Congress"
 		textureFile = "gfx/interface/Korean_Democratic_Congress.dds"
 		legacy_lazy_load = no

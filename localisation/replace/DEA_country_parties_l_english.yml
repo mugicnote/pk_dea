@@ -26,7 +26,12 @@
  JAP_fascism_party:0 "대정익찬회 - 육군(불법)"
 
  CHI_national_conservatism_party:0 "중국 국민당"
- CHI_national_conservatism_party_long:0 "중국공산당"
+ CHI_national_conservatism_party_long:0 "중국국민당"
+
+ KOR_Military_Revolution_long_party:0 "대한민국 군사혁명정부 수뇌부"
+ KOR_Military_Revolution_party:0 "군사혁명정부"
+ KOR_dictatorship_long_party:0 "대한제국 중앙위원회"
+ KOR_dictatorship_party:0 "대한제국 중앙위원회"
 
  Lee_Dem_long:0 "대한촉성회"
  Lee_Dem:0 "대한촉성회"

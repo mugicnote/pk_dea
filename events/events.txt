@@ -1437,6 +1437,7 @@ country_event = { #서재필 -> 이범석으로 중점 변경
 			set_variable = {
 				not_rebellion_variable = 100
 			}
+			set_party_name = { ideology = fascism long_name = KOR_Military_Revolution_long_party name = KOR_Military_Revolution_party }
 		}
 	}
 }

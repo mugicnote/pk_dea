@@ -336,6 +336,15 @@ DEA_KOR_Military_Revolution_decisions_category = {
 			set_country_flag = KOR_beginning_revolution
 			clr_country_flag = lee_beom_seok_start
 			load_focus_tree = Kor_lee_beom_seok_2_focus
+			set_cosmetic_tag = KOR_brd
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
 		}
 	}
 

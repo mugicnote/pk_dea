@@ -133,6 +133,35 @@ spriteTypes = {
 		name = "GFX_focus_Constitution_Reconstruction_Committee"
 		texturefile = "gfx/interface/goals/focus_Constitution_Reconstruction_Committee.dds"
 	}
+	#최후의 제국을 위해
+	SpriteType = {
+		name = "GFX_focus_cle"
+		texturefile = "gfx/interface/goals/focus_cle.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_kor_catch_fire_again"
+		texturefile = "gfx/interface/goals/KOR/lee_1/focus_kor_catch_fire_again.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_kor_securing_political_security"
+		texturefile = "gfx/interface/goals/KOR/lee_1/focus_kor_securing_political_security.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_kor_protection_rule_law"
+		texturefile = "gfx/interface/goals/KOR/lee_1/focus_kor_protection_rule_law.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_kor_sa_so_chwi_de"
+		texturefile = "gfx/interface/goals/KOR/lee_1/focus_kor_sa_so_chwi_de.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_kor_reinstatement"
+		texturefile = "gfx/interface/goals/KOR/lee_1/focus_kor_reinstatement.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_kor_return_of_empire"
+		texturefile = "gfx/interface/goals/KOR/lee_1/focus_kor_return_of_empire.dds"
+	}
 	#하나의 총통
 	SpriteType = {
 		name = "GFX_focus_kor_Right_wing_militia_united"

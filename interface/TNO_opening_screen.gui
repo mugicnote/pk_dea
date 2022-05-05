@@ -13,13 +13,106 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "TNO_OpeningScreen_Main"
-		size = { width = 945 height = 466 }
-		position = { x = 155 y = 155 }
+		size = { width = 940 height = 885 }
+		position = { x = 155 y = 175 }
 		moveable = yes
 		
 		background = {
-			name = "TNO_OpeningScreen_BG_real"
-			spriteType = "GFX_tiled_window_transparent"
+			name = "Background"
+			spriteType = "GFX_tiled_bg"
+		}
+
+		containerWindowType = {
+			name = "OpeningScreen_side"
+			size = { width = 318 height = 855 }
+			position = { x = 0 y = 30 }
+			verticalScrollbar = "right_vertical_slider"
+			margin = { top = 14 bottom = 0}
+
+			background = {
+				name = "Background"
+				spriteType = "GFX_tiled_bg"
+			}
+
+			buttonType = {
+				name = "Mod_explanation_Button"
+				quadTextureSprite = "GFX_main_lobby_button" 
+				buttonFont = "Bomb_16"
+				buttonText = "  모드 설명                                               +"
+				pdx_tooltip = "TNO_OPENING_SCREEN_BUTTON_TT"
+				position = { x = 15 y = 5 }
+				shortcut = "ESCAPE"
+			}
+
+			buttonType = {
+				name = "Mod_explanation_middle_1_Button"
+				quadTextureSprite = "GFX_button_261x34" 
+				buttonFont = "Bomb_16"
+				buttonText = "설명                                             "
+				pdx_tooltip = "TNO_OPENING_SCREEN_BUTTON_TT"
+				position = { x = 40 y = 41 }
+				shortcut = "ESCAPE"
+			}
+
+			buttonType = {
+				name = "Mod_explanation_middle_2_Button"
+				quadTextureSprite = "GFX_button_261x34" 
+				buttonFont = "Bomb_16"
+				buttonText = "제작진                                            "
+				pdx_tooltip = "TNO_OPENING_SCREEN_BUTTON_TT"
+				position = { x = 40 y = 77 }
+				shortcut = "ESCAPE"
+			}
+
+			buttonType = {
+				name = "Country_explanation_Button"
+				quadTextureSprite = "GFX_main_lobby_button" 
+				buttonFont = "Bomb_16"
+				buttonText = "  국가 설명                                               +"
+				pdx_tooltip = "TNO_OPENING_SCREEN_BUTTON_TT"
+				position = { x = 15 y = 41 }
+				shortcut = "ESCAPE"
+			}
+
+			buttonType = {
+				name = "Country_explanation_Button_middle_1_Button"
+				quadTextureSprite = "GFX_button_261x34" 
+				buttonFont = "Bomb_16"
+				buttonText = "국가                                             "
+				pdx_tooltip = "TNO_OPENING_SCREEN_BUTTON_TT"
+				position = { x = 40 y = 77 }
+				shortcut = "ESCAPE"
+			}
+
+			buttonType = {
+				name = "Country_explanation_Button_middle_2_Button"
+				quadTextureSprite = "GFX_button_261x34" 
+				buttonFont = "Bomb_16"
+				buttonText = "역사                                             "
+				pdx_tooltip = "TNO_OPENING_SCREEN_BUTTON_TT"
+				position = { x = 40 y = 113 }
+				shortcut = "ESCAPE"
+			}
+
+			buttonType = {
+				name = "Country_explanation_Button_middle_3_Button"
+				quadTextureSprite = "GFX_button_261x34" 
+				buttonFont = "Bomb_16"
+				buttonText = "목표                                             "
+				pdx_tooltip = "TNO_OPENING_SCREEN_BUTTON_TT"
+				position = { x = 40 y = 149 }
+				shortcut = "ESCAPE"
+			}
+
+			buttonType = {
+				name = "political_situation_Button"
+				quadTextureSprite = "GFX_main_lobby_button" 
+				buttonFont = "Bomb_16"
+				buttonText = "  정치 상황 설명                                         +"
+				pdx_tooltip = "TNO_OPENING_SCREEN_BUTTON_TT"
+				position = { x = 15 y = 77 }
+				shortcut = "ESCAPE"
+			}
 		}
 
 		containerWindowType = {
@@ -82,47 +175,40 @@ guiTypes = {
 			}
 		}
 		
-		iconType = {
-			name = "TNO_OpeningScreen_Poster"
-			spriteType = "GFX_TNO_OpeningScreen_Poster_Korea"
-			position = { x = 748 y = 33 }
-		}
-		
-		iconType = {
-			name = "TNO_OpeningScreen_BG"
-			position = { x = 0 y = 0 }
-			spriteType = "GFX_TNO_Intro_BG"
-			alwaystransparent = yes
-		}
+		# iconType = {
+		# 	name = "TNO_OpeningScreen_Poster"
+		# 	spriteType = "GFX_TNO_OpeningScreen_Poster_Korea"
+		# 	position = { x = 748 y = 33 }
+		# }
 
 		buttonType = {
 			name = "TNO_OpeningScreen_CloseButton"
 			quadTextureSprite = "GFX_button_123x34" 
 			buttonFont = "Bomb_16"
-			buttonText = "[GET_CLOSEBUTTON_TEXT]"
+			buttonText = "나가기"
 			pdx_tooltip = "TNO_OPENING_SCREEN_BUTTON_TT"
-			position = { x = 782 y = 420 }
+			position = { x = 797 y = 28 }
 			shortcut = "ESCAPE"
 		}
 		
 		instantTextBoxType = {
 			name = "TNO_OpeningScreen_Text"
-			position = { x = 14 y = 38 }
+			position = { x = 323 y = 65 }
 			font = "aldrich_20_outline"
 			text = "[GET_CURRENT_INTRO_TEXT]"
-			maxWidth = 712
-			maxHeight = 410
+			maxWidth = 585
+			maxHeight = 740
 			alwaystransparent = yes
 			scrollbarType = standardtext_slider
 		}
 		
 		instantTextBoxType = {
 			name = "TNO_OpeningScreen_Text_Small"
-			position = { x = 14 y = 38 }
+			position = { x = 323 y = 65 }
 			font = "aldrich_22_outline"
 			text = "[GET_CURRENT_INTRO_TEXT]"
-			maxWidth = 712
-			maxHeight = 370
+			maxWidth = 585
+			maxHeight = 740
 			alwaystransparent = yes
 			scrollbarType = standardtext_slider
 		}
@@ -130,12 +216,12 @@ guiTypes = {
 		buttonType = {
 			name = "opening_button_next_page"
 			quadTextureSprite = "GFX_opening_button_next_page"
-			position = { x = 578 y = 414 }
+			position = { x = 718 y = 824 }
 		}
 		buttonType = {
 			name = "opening_button_prev_page"
 			quadTextureSprite = "GFX_opening_button_prev_page"
-			position = { x = 14 y = 414 }
+			position = { x = 14 y = 824 }
 		}
 		
 		instantTextBoxType = {

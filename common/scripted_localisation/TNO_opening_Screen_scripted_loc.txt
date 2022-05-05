@@ -21,12 +21,12 @@ defined_text = {
 
 	text = {
 		trigger = { check_variable = { TNO_Opening_Screen = 1 } }
-		localization_key = "[GET_COUNTRY_INFO]"
+		localization_key = MOD_INFO_TEXT
 	}
 
 	text = {
 		trigger = { check_variable = { TNO_Opening_Screen = 2 } }
-		localization_key = "[GET_REGIONAL_INFO]"
+		localization_key = "[GET_COUNTRY_INFO]"
 	}
 
 	text = {
@@ -36,7 +36,12 @@ defined_text = {
 
 	text = {
 		trigger = { check_variable = { TNO_Opening_Screen = 4 } }
-		localization_key = MOD_INFO_TEXT
+		localization_key = "[GET_REGIONAL_INFO]"
+	}
+
+	text = {
+		trigger = { check_variable = { TNO_Opening_Screen = 5 } }
+		localization_key = PRODUCTION_CREW_TEXT
 	}
 }
 
@@ -132,8 +137,9 @@ defined_text = {
 	text = {
 		trigger = {
 			OR = {
-				tag = KOR
-				tag = CHI
+				original_tag = KOR
+				original_tag = CHI
+				original_tag = JAP
 			}
 		}
 		localization_key = "GFX_TNO_OpeningScreen_Region_EASTERN_ASIA"
@@ -141,7 +147,7 @@ defined_text = {
 
 	## Default
 	text = {
-		localization_key = "GFX_TNO_OpeningScreen_Region_EUROPE"
+		localization_key = "GFX_TNO_OpeningScreen_Region_EASTERN_ASIA"
 	}
 }
 
