@@ -326,7 +326,7 @@ COALITION_add_autdes = {
 			array = coalition_party_list
 			value = 10
 		}
-		custom_effect_tooltip = join_coal_loc_neudes
+		custom_effect_tooltip = join_coal_loc_autdes
 	}
 	COALITION_POP_NUMBER = yes
 }

@@ -1438,6 +1438,148 @@ country_event = { #서재필 -> 이범석으로 중점 변경
 				not_rebellion_variable = 100
 			}
 			set_party_name = { ideology = fascism long_name = KOR_Military_Revolution_long_party name = KOR_Military_Revolution_party }
+
+			COALITION_clr_soccon = yes
+			COALITION_add_autdes = yes
+
+			# retire_character = KOR_pak_hon_yong
+			# retire_character = KOR_Kim_Tu_bong
+			# retire_character = KOR_Kim_Won_bong
+			# retire_character = KOR_Lyuh_Woon_hyung
+			# retire_character = KOR_Chang_Myon
+			# retire_character = KOR_Ahn_Jae_hong
+			# retire_character = KOR_Song_Jin_woo
+			# retire_character = KOR_Kim_Koo
+			# retire_character = KOR_ji_chong_chen
+
+			# retire_character = KOR_an_jung_geun
+
+			# retire_character = KOR_Kim_Won_bong
+			# retire_character = KOR_Ryu_ja_myeong
+			# retire_character = KOR_Kwon_Jun
+			# retire_character = KOR_Kim_Sang_ok
+			# retire_character = KOR_Kim_Ji_Sub
+			# retire_character = KOR_Kim_Ik_Sang
+			# retire_character = KOR_Yun_Se_ju
+			# retire_character = KOR_Kim_Si_Hyeon
+
+			# retire_character = KOR_Kim_chek
+			# retire_character = KOR_Park_Il_wu
+			# retire_character = KOR_Kim_Mu_geong
+			# retire_character = KOR_Choi_Yong_Gun
+			# retire_character = KOR_Lee_Gwan_Sool
+			# retire_character = KOR_Nam_Il
+
+			# retire_character = KOR_Son_Won_il
+		}
+	}
+}
+
+country_event = {
+	id = KOR.86
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.86"}
+	title = KOR.86.t
+	desc = KOR.86.desc
+	picture = GFX_
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = KOR.86.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = KOR.93
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.93"}
+	title = KOR.93.t
+	desc = KOR.93.desc
+	picture = GFX_
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = KOR.93.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = KOR.94
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.94"}
+	title = KOR.94.t
+	desc = KOR.94.desc
+	picture = GFX_
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = KOR.94.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = KOR.95
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.95"}
+	title = KOR.95.t
+	desc = KOR.95.desc
+	picture = GFX_
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = KOR.95.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = KOR.96
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.96"}
+	title = KOR.96.t
+	desc = KOR.96.desc
+	picture = GFX_
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = KOR.96.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = KOR.97
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.97"}
+	title = KOR.97.t
+	desc = KOR.97.desc
+	picture = GFX_
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = KOR.97.a
+		ai_chance = { factor = 1 }
+		clr_country_flag = KOR_beginning_revolution
+		set_country_flag = KOR_Min_Chanho_Temporary_pre
+		retire_ideology_leader = fascism
+		create_country_leader = {
+			name = "민찬호"
+			desc = "POLITICS_MIN_CHANHO_DESC"
+			picture = "Portrait_Min_Chanho.dds"
+			expire = "1954.2.5"
+			ideology = lee_fascism
+			traits = {
+				
+			}
 		}
 	}
 }

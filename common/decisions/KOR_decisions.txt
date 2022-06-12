@@ -335,8 +335,15 @@ DEA_KOR_Military_Revolution_decisions_category = {
 		complete_effect = {
 			set_country_flag = KOR_beginning_revolution
 			clr_country_flag = lee_beom_seok_start
+			clr_country_flag = korea_kim_kyu_sik_president_lee_beom_seok
 			load_focus_tree = Kor_lee_beom_seok_2_focus
 			set_cosmetic_tag = KOR_brd
+
+			country_event = {
+				id = KOR.97
+				days = 5
+			}
+			
 			set_politics = {
 				ruling_party = fascism
 				elections_allowed = no
@@ -344,6 +351,45 @@ DEA_KOR_Military_Revolution_decisions_category = {
 			add_popularity = {
 				ideology = fascism
 				popularity = 0.05
+			}
+
+			remove_state_core = 835
+			remove_state_core = 836
+			remove_state_core = 840
+			remove_state_core = 841
+
+			835 = {
+				add_dynamic_modifier = {
+					modifier = kor_insurgent_resistance
+				}
+			}
+			836 = {
+				add_dynamic_modifier = {
+					modifier = kor_insurgent_resistance
+				}
+			}
+			840 = {
+				add_dynamic_modifier = {
+					modifier = kor_insurgent_resistance
+				}
+			}
+			841 = {
+				add_dynamic_modifier = {
+					modifier = kor_insurgent_resistance
+				}
+			}
+			
+			835 = {
+				set_demilitarized_zone = yes
+			}
+			836 = {
+				set_demilitarized_zone = yes
+			}
+			842 = {
+				set_demilitarized_zone = yes
+			}
+			843 = {
+				set_demilitarized_zone = yes
 			}
 		}
 	}
@@ -885,6 +931,87 @@ DEA_KOR_Completion_Continental_Revolutionary_War_decisions_category = {
 		}
 	}
 
+}
+
+DEA_KOR_scenario_debug_decisions_category = {
+	KOR_coup_end = {
+		icon = GFX_decision_infiltrate_state
+
+		visible = {
+			original_tag = KOR
+		}
+
+		available = {
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			set_country_flag = KOR_beginning_revolution
+			clr_country_flag = lee_beom_seok_start
+			clr_country_flag = korea_kim_kyu_sik_president_lee_beom_seok
+			set_party_name = { ideology = fascism long_name = KOR_Military_Revolution_long_party name = KOR_Military_Revolution_party }
+
+			set_country_flag = KOR_beginning_revolution
+			load_focus_tree = Kor_lee_beom_seok_2_focus
+			set_cosmetic_tag = KOR_brd
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+			
+			country_event = {
+				id = KOR.97
+				days = 5
+			}
+
+			COALITION_clr_soccon = yes
+			COALITION_add_autdes = yes
+
+			remove_state_core = 835
+			remove_state_core = 836
+			remove_state_core = 840
+			remove_state_core = 841
+
+			835 = {
+				add_dynamic_modifier = {
+					modifier = kor_insurgent_resistance
+				}
+			}
+			836 = {
+				add_dynamic_modifier = {
+					modifier = kor_insurgent_resistance
+				}
+			}
+			840 = {
+				add_dynamic_modifier = {
+					modifier = kor_insurgent_resistance
+				}
+			}
+			841 = {
+				add_dynamic_modifier = {
+					modifier = kor_insurgent_resistance
+				}
+			}
+
+			835 = {
+				set_demilitarized_zone = yes
+			}
+			836 = {
+				set_demilitarized_zone = yes
+			}
+			842 = {
+				set_demilitarized_zone = yes
+			}
+			843 = {
+				set_demilitarized_zone = yes
+			}
+		}
+	}
 }
 KOR_rural_relief_category = {
 	KOR_self_sufficiency_tick = {

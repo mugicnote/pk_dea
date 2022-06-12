@@ -96,7 +96,7 @@
  join_coal_loc_soccon:0 "§Y사회보수주의§! 정당이 §G연정에 참여합니다.§!\n"
  join_coal_loc_natcon:0 "§Y국민보수주의§! 정당이 §G연정에 참여합니다.§!\n"
  join_coal_loc_neu:0 "§Y권위주의§! 정당이 §G연정에 참여합니다.§!\n"
- join_coal_loc_autodes:0 "§Y전제독재주의§! 정당이 §G연정에 참여합니다.§!\n"
+ join_coal_loc_autdes:0 "§Y전제독재주의§! 정당이 §G연정에 참여합니다.§!\n"
  join_coal_loc_fas:0 "§Y파시즘§! 정당이 §G연정에 참여합니다.§!\n" 
  clr_coal_loc_com:0 "§Y공산주의§! 정당이 §R연정에서 탈퇴합니다.§!\n"
  clr_coal_loc_autsoc:0 "§Y권위사회주의§! 정당이 §R연정에서 탈퇴합니다.§!\n"

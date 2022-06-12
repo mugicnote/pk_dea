@@ -28,11 +28,8 @@
  KOR_fascism:0 "대한민국 군사혁명정부"
  KOR_fascism_DEF:0 "대한민국 군사혁명정부"
 
- CKR_communism:0 "대한민국 극좌파"
- CKR_communism_DEF:0 "대한민국 극좌파"
-
- LKR_fascism:0 "대한민국 극우파"
- LKR_fascism_DEF:0 "대한민국 극우파"
+ YKR_social_democracy:0 "대한민국 영남정부"
+ YKR_social_democracy_DEF:0 "대한민국 영남정부"
 
  KOR_fascism_ADJ:0 "조선"
  KOR_democratic_ADJ:0 "조선"

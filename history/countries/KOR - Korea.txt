@@ -245,278 +245,115 @@ recruit_character = KOR_Nam_Il
 
 recruit_character = KOR_Son_Won_il
 
-###맨 더 건###
-  if = {
+###맨더건###
+if = {
 	limit = { has_dlc = "Man the Guns"}
-		### 개장 전함
-		create_equipment_variant = {
-		name = "울릉급"
-		type = ship_hull_carrier_conversion_bb
-		name_group = KOR_CV_HISTORICAL
-		parent_version = 0
-		modules = {
-				fixed_ship_deck_slot_1 = ship_deck_space
-				fixed_ship_deck_slot_2 = ship_deck_space
-				fixed_ship_anti_air_slot = ship_anti_air_2
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = heavy_ship_engine_2
-				fixed_ship_secondaries_slot = ship_secondaries_2
-				mid_1_custom_slot = ship_armor_carrier_deck
-			}
-		}
-		### 개장 순양함
-		create_equipment_variant = {
-		name = "독도급"
-		type = ship_hull_carrier_conversion_ca
-		name_group = KOR_CV_HISTORICAL
-		parent_version = 0
-		modules = {
-				fixed_ship_deck_slot_1 = ship_deck_space
-				fixed_ship_deck_slot_2 = ship_armor_carrier_deck
-				fixed_ship_anti_air_slot = ship_anti_air_2
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = cruiser_ship_engine_2
-				fixed_ship_secondaries_slot = ship_secondaries_2
-			}
-		}
 		### 항공모함
-		create_equipment_variant = {
-			name = "1936년식 제주급"
-			type = ship_hull_carrier_1
-			name_group = KOR_CV_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_deck_slot_1 = ship_deck_space
-				fixed_ship_deck_slot_2 = ship_deck_space
-				fixed_ship_anti_air_slot = ship_anti_air_1
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = carrier_ship_engine_2
-				fixed_ship_secondaries_slot = ship_secondaries_2
-				front_1_custom_slot = ship_deck_space
-			}
-		}
 		### 전함
 		create_equipment_variant = {
-			name = "초기식 강감찬급"
+			name = "충무공 이순신급"
 			name_group = KOR_BB_HISTORICAL
 			type = ship_hull_heavy_1
 			parent_version = 0
 			modules = {
-				fixed_ship_battery_slot = ship_heavy_battery_1
+				fixed_ship_battery_slot = ship_heavy_battery_2
 				fixed_ship_anti_air_slot = ship_anti_air_1
 				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 				fixed_ship_radar_slot = empty
 				fixed_ship_engine_slot = heavy_ship_engine_1
 				fixed_ship_secondaries_slot = ship_secondaries_1
 				fixed_ship_armor_slot = ship_armor_bb_1
-				front_1_custom_slot = ship_heavy_battery_1
+				front_1_custom_slot = empty
 				mid_1_custom_slot = ship_secondaries_1
 				mid_2_custom_slot = ship_airplane_launcher_1
-				rear_1_custom_slot = ship_anti_air_1
+				rear_1_custom_slot = ship_heavy_battery_2
 			}
 		}
-		create_equipment_variant = {
-			name = "1936년식 강감찬급"
+    create_equipment_variant = {
+			name = "세종대왕급"
 			name_group = KOR_BB_HISTORICAL
-			type = ship_hull_heavy_2
-			parent_version = 0
-			modules = {
-				fixed_ship_battery_slot = ship_heavy_battery_2
-				fixed_ship_anti_air_slot = ship_anti_air_2
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_1
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = heavy_ship_engine_2
-				fixed_ship_secondaries_slot = ship_secondaries_2
-				fixed_ship_armor_slot = ship_armor_bb_2
-				front_1_custom_slot = ship_heavy_battery_2
-				mid_1_custom_slot = ship_secondaries_2
-				mid_2_custom_slot = ship_airplane_launcher_2
-				rear_1_custom_slot = ship_anti_air_2
-			}
-		}
-		# 순양전함 #
-		create_equipment_variant = {
-			name = "초기식 충무공 이순신급"
-			name_group = KOR_BC_HISTORICAL
 			type = ship_hull_heavy_1
 			parent_version = 0
 			modules = {
 				fixed_ship_battery_slot = ship_heavy_battery_2
-				fixed_ship_anti_air_slot = ship_anti_air_2
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+				fixed_ship_anti_air_slot = ship_anti_air_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = heavy_ship_engine_2
-				fixed_ship_secondaries_slot = ship_secondaries_2
-				fixed_ship_armor_slot = ship_armor_bc_2
-				front_1_custom_slot = ship_anti_air_2
-				mid_1_custom_slot = ship_airplane_launcher_2
-				mid_2_custom_slot = ship_airplane_launcher_2
-				rear_1_custom_slot = ship_anti_air_2
-			}
-		}
-		create_equipment_variant = {
-			name = "1936년식 충무공 이순신급"
-			name_group = KOR_BC_HISTORICAL
-			type = ship_hull_heavy_2
-			parent_version = 0
-			modules = {
-				fixed_ship_battery_slot = ship_heavy_battery_2
-				fixed_ship_anti_air_slot = ship_anti_air_2
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_1
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = heavy_ship_engine_2
-				fixed_ship_secondaries_slot = ship_secondaries_2
-				fixed_ship_armor_slot = ship_armor_bc_2
-				front_1_custom_slot = ship_anti_air_2
-				mid_1_custom_slot = ship_airplane_launcher_2
-				mid_2_custom_slot = ship_airplane_launcher_2
-				rear_1_custom_slot = ship_anti_air_2
+				fixed_ship_engine_slot = heavy_ship_engine_1
+				fixed_ship_secondaries_slot = ship_secondaries_1
+				fixed_ship_armor_slot = ship_armor_bb_1
+				front_1_custom_slot = empty
+				mid_1_custom_slot = ship_secondaries_1
+				mid_2_custom_slot = ship_airplane_launcher_1
+				rear_1_custom_slot = ship_heavy_battery_2
 			}
 		}
 		### 중순양함	
 		create_equipment_variant = {
-			name = "초기식 동해급"
-			type = ship_hull_cruiser_1
-			name_group = KOR_CA_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_battery_slot = ship_medium_battery_1
-				fixed_ship_anti_air_slot = ship_anti_air_1
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-				fixed_ship_radar_slot = ship_sonar_1
-				fixed_ship_engine_slot = cruiser_ship_engine_1
-				fixed_ship_armor_slot = ship_armor_cruiser_1
-				fixed_ship_secondaries_slot = ship_secondaries_1
-				front_1_custom_slot = ship_medium_battery_1
-				mid_1_custom_slot = ship_medium_battery_1
-				mid_2_custom_slot = ship_medium_battery_1
-				rear_1_custom_slot = ship_airplane_launcher_1
-			}
-		}
-		create_equipment_variant = {
-			name = "1936년식 동해급"
+			name = "동해급"
 			type = ship_hull_cruiser_2
 			name_group = KOR_CA_HISTORICAL
 			parent_version = 0
 			modules = {
 				fixed_ship_battery_slot = ship_medium_battery_2
-				fixed_ship_anti_air_slot = ship_anti_air_2
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_1
-				fixed_ship_radar_slot = ship_sonar_2
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
 				fixed_ship_engine_slot = cruiser_ship_engine_2
 				fixed_ship_armor_slot = ship_armor_cruiser_2
-				fixed_ship_secondaries_slot = ship_secondaries_2
+				fixed_ship_secondaries_slot = ship_secondaries_1
 				front_1_custom_slot = ship_medium_battery_2
-				mid_1_custom_slot = ship_medium_battery_2
-				mid_2_custom_slot = ship_medium_battery_2
-				rear_1_custom_slot = ship_airplane_launcher_2
+				mid_1_custom_slot = ship_torpedo_1
+				mid_2_custom_slot = ship_torpedo_1
+				rear_1_custom_slot = ship_airplane_launcher_1
 			}
 		}
 		### 경순양함
 		create_equipment_variant = {
-			name = "초기식 포항급"
+			name = "포항급"
 			type = ship_hull_cruiser_1
 			name_group = KOR_CL_HISTORICAL
 			parent_version = 0
 			modules = {
-				fixed_ship_battery_slot = ship_light_medium_battery_1
-				fixed_ship_anti_air_slot = ship_anti_air_1
+				fixed_ship_battery_slot = ship_medium_battery_1
+				fixed_ship_anti_air_slot = empty
 				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-				fixed_ship_radar_slot = ship_sonar_1
+				fixed_ship_radar_slot = empty
 				fixed_ship_engine_slot = cruiser_ship_engine_1
 				fixed_ship_armor_slot = ship_armor_cruiser_1
 				fixed_ship_secondaries_slot = ship_secondaries_1
-				mid_1_custom_slot = ship_torpedo_1
-				mid_2_custom_slot = ship_light_medium_battery_1
-				rear_1_custom_slot = ship_depth_charge_1
-			}
-		}
-		create_equipment_variant = {
-			name = "1936년식 포항급"
-			type = ship_hull_cruiser_2
-			name_group = KOR_CL_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_battery_slot = ship_light_medium_battery_2
-				fixed_ship_anti_air_slot = ship_anti_air_2
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_1
-				fixed_ship_radar_slot = ship_sonar_2
-				fixed_ship_engine_slot = cruiser_ship_engine_2
-				fixed_ship_armor_slot = ship_armor_cruiser_2
-				fixed_ship_secondaries_slot = ship_secondaries_2
-				mid_1_custom_slot = ship_torpedo_2
-				mid_2_custom_slot = ship_light_medium_battery_2
-				rear_1_custom_slot = ship_depth_charge_2
+				mid_1_custom_slot = empty
+				mid_2_custom_slot = ship_torpedo_2
+				rear_1_custom_slot = empty
 			}
 		}
 		### 구축함
 		create_equipment_variant = {
-			name = "초기식 대구급" #collection of various WWI and early interwar ships with similiar capabilities
+			name = "대구급" #collection of various WWI and early interwar ships with similiar capabilities
 			type = ship_hull_light_1
 			name_group = KOR_DD_HISTORICAL
 			parent_version = 0
 			modules = {
 				fixed_ship_battery_slot = ship_light_battery_1
-				fixed_ship_anti_air_slot = ship_anti_air_1
+				fixed_ship_anti_air_slot = empty
 				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-				fixed_ship_radar_slot = ship_sonar_1
+				fixed_ship_radar_slot = empty
 				fixed_ship_engine_slot = light_ship_engine_1
 				fixed_ship_torpedo_slot = ship_torpedo_1
-				mid_1_custom_slot = ship_anti_air_1
+				mid_1_custom_slot = ship_torpedo_1
 				rear_1_custom_slot = ship_depth_charge_1
-			}
-		}
-		create_equipment_variant = {
-			name = "1936년식 대구급" #collection of various WWI and early interwar ships with similiar capabilities
-			type = ship_hull_light_2
-			name_group = KOR_DD_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_battery_slot = ship_light_battery_2
-				fixed_ship_anti_air_slot = ship_anti_air_2
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_1
-				fixed_ship_radar_slot = ship_sonar_2
-				fixed_ship_engine_slot = light_ship_engine_2
-				fixed_ship_torpedo_slot = ship_torpedo_2
-				mid_1_custom_slot = ship_anti_air_2
-				rear_1_custom_slot = ship_depth_charge_2
 			}
 		}
 		### 잠수함
 		create_equipment_variant = {
-			name = "초기식 장보고급"
+			name = "장보고급"
 			type = ship_hull_submarine_1
 			name_group = KOR_SS_HISTORICAL
 			parent_version = 0
 			modules = {
 				fixed_ship_torpedo_slot = ship_torpedo_sub_1
 				fixed_ship_engine_slot = sub_ship_engine_1
-				rear_1_custom_slot = ship_torpedo_sub_1
-			}
-		}
-		create_equipment_variant = {
-			name = "1936년식 장보고급"
-			type = ship_hull_submarine_2
-			name_group = KOR_SS_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_torpedo_slot = ship_torpedo_sub_2
-				fixed_ship_engine_slot = sub_ship_engine_2
-				rear_1_custom_slot = ship_torpedo_sub_2
-			}
-		}
-		### 순양잠수함
-		create_equipment_variant = {
-			name = "손원일급"
-			type = ship_hull_cruiser_submarine
-			name_group = KOR_SS_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_torpedo_slot = ship_torpedo_sub_2
-				fixed_ship_engine_slot = sub_ship_engine_2
-				front_1_custom_slot = ship_extra_fuel_tank
-				mid_1_custom_slot = empty
-				rear_1_custom_slot = ship_airplane_launcher_2
+				rear_1_custom_slot = ship_mine_layer_sub
 			}
 		}
 }

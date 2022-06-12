@@ -244,6 +244,10 @@ KOR_FIRST_TITLE_fascism:0 "중앙위원회 위원장"
 KOR_SECOND_TITLE_fascism:0 "중앙위원회 부위원장"
 KOR_DUAL_NAME_fascism:0 "유동열"
 
+KOR_FIRST_TITLE_Min_Chanho_Temporary_pre:0 "대통령"
+KOR_SECOND_TITLE_Min_Chanho_Temporary_pre:0 "중앙위원회 위원장"
+KOR_DUAL_NAME_Min_Chanho_Temporary_pre:0 "이범석"
+
 KOR_FIRST_TITLE_Fuhrer:0 "총통"
 KOR_SECOND_TITLE_Fuhrer:0 "부총통"
 KOR_DUAL_NAME_Fuhrer:0 "홍사익"

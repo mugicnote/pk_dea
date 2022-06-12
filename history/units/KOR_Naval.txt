@@ -1,122 +1,78 @@
 ﻿units = {
 	fleet = {
-		name = "대한민국 제1함대"			
+		name = "대한민국 해상 제1함대"			
 		naval_base = 7221
 		task_force = {
-			name = "제1전단"
+			name = "제1함대 제1해상전투단"
 			location = 7221
-			ship = { name = "ROKN 거제함" definition = carrier start_experience_factor = 1 equipment = { ship_hull_carrier_conversion_bb = { amount = 1 owner = KOR version_name = "울릉급" } }
-				air_wings = {
-					cv_fighter_equipment_0 =  { owner = "KOR" amount = 20 }
-					cv_nav_bomber_equipment_1 =  { owner = "KOR" amount = 20 }
-				}
-			}
-			ship = { name = "ROKN 백령함" definition = carrier start_experience_factor = 1 equipment = { ship_hull_carrier_conversion_bb = { amount = 1 owner = KOR version_name = "울릉급" } } 
-				air_wings = {
-					cv_fighter_equipment_0 =  { owner = "KOR" amount = 20 }
-					cv_nav_bomber_equipment_1 =  { owner = "KOR" amount = 20 }
-				}			
-			}
+        	ship = { name = "ROKN 충무공 이순신함" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = KOR version_name = "충무공 이순신급" } } }
+			ship = { name = "ROKN 고종대왕함" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = KOR version_name = "충무공 이순신급" } } }
+        	ship = { name = "ROKN 정조대왕함" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = KOR version_name = "충무공 이순신급" } } }
+        	ship = { name = "ROKN 장보고함" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = KOR version_name = "충무공 이순신급" } } }
 			
-			ship = { name = "ROKN 마라함" definition = carrier start_experience_factor = 1 equipment = { ship_hull_carrier_conversion_ca = { amount = 1 owner = KOR version_name = "독도급" } }
-				air_wings = {
-					cv_fighter_equipment_0 =  { owner = "KOR" amount = 10 }
-					cv_nav_bomber_equipment_1 =  { owner = "KOR" amount = 10 }
-				}
-			}
-			ship = { name = "ROKN 대마함" definition = carrier start_experience_factor = 1 equipment = { ship_hull_carrier_conversion_ca = { amount = 1 owner = KOR version_name = "독도급" } }
-				air_wings = {
-					cv_fighter_equipment_0 =  { owner = "KOR" amount = 10 }
-					cv_nav_bomber_equipment_1 =  { owner = "KOR" amount = 10 }
-				}
-			}
-			
-        	ship = { name = "ROKN 강감찬함" definition = battleship start_experience_factor = 1 equipment = { ship_hull_heavy_1 = { amount = 1 owner = KOR version_name = "초기식 강감찬급" } } }
-			ship = { name = "ROKN 고종함" definition = battleship start_experience_factor = 1 equipment = { ship_hull_heavy_1 = { amount = 1 owner = KOR version_name = "초기식 강감찬급" } } }
-        	ship = { name = "ROKN 정조함" definition = battleship start_experience_factor = 0.3 equipment = { ship_hull_heavy_2 = { amount = 1 owner = KOR version_name = "1936년식 강감찬급" } } }
-        	ship = { name = "ROKN 장보고함" definition = battleship start_experience_factor = 0.3 equipment = { ship_hull_heavy_2 = { amount = 1 owner = KOR version_name = "1936년식 강감찬급" } } }
-			
-			ship = { name = "ROKN 세종함" definition = battle_cruiser start_experience_factor = 1 equipment = { ship_hull_heavy_1 = { amount = 1 owner = KOR version_name = "초기식 충무공 이순신급" } } }
-			ship = { name = "ROKN 김시민함" definition = battle_cruiser start_experience_factor = 0.3 equipment = { ship_hull_heavy_2 = { amount = 1 owner = KOR version_name = "1936년식 충무공 이순신급" } } }
-			
-			ship = { name = "ROKN 동해함" definition = heavy_cruiser start_experience_factor = 1 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = KOR version_name = "초기식 동해급" } } }
-			ship = { name = "ROKN 낙동강함" definition = heavy_cruiser start_experience_factor = 1 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = KOR version_name = "초기식 동해급" } } }
-			ship = { name = "ROKN 권율함" definition = heavy_cruiser start_experience_factor = 1 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = KOR version_name = "초기식 동해급" } } }
-			ship = { name = "ROKN 무의공 이순신함" definition = heavy_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KOR version_name = "1936년식 동해급" } } }
+			ship = { name = "ROKN 동해급함" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KOR version_name = "동해급" } } }
+			ship = { name = "ROKN 낙동강함" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KOR version_name = "동해급" } } }
 
-			ship = { name = "ROKN 포항함" definition = light_cruiser start_experience_factor = 1 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = KOR version_name = "초기식 포항급" } } }
-			ship = { name = "ROKN 서울함" definition = light_cruiser start_experience_factor = 1 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = KOR version_name = "초기식 포항급" } } }
-			ship = { name = "ROKN 부산함" definition = light_cruiser start_experience_factor = 0.5 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = KOR version_name = "초기식 포항급" } } }
-			ship = { name = "ROKN 대구함" definition = light_cruiser start_experience_factor = 0.5 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = KOR version_name = "초기식 포항급" } } }
-			ship = { name = "ROKN 대전함" definition = light_cruiser start_experience_factor = 0.5 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = KOR version_name = "초기식 포항급" } } }
-			ship = { name = "ROKN 울산함" definition = light_cruiser start_experience_factor = 0.5 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = KOR version_name = "초기식 포항급" } } }
-			ship = { name = "ROKN 경기함" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KOR version_name = "1936년식 포항급" } } }
-			ship = { name = "ROKN 원산함" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KOR version_name = "1936년식 포항급" } } }
-			ship = { name = "ROKN 인천함" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KOR version_name = "1936년식 포항급" } } }
-			ship = { name = "ROKN 전주함" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KOR version_name = "1936년식 포항급" } } }
-			
-			ship = { name = "ROKN 대구-001" definition = destroyer start_experience_factor = 1 equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "초기식 대구급" } } }
-			ship = { name = "ROKN 대구-002" definition = destroyer start_experience_factor = 1 equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "초기식 대구급" } } }
-			ship = { name = "ROKN 대구-003" definition = destroyer start_experience_factor = 1 equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "초기식 대구급" } } }
-			ship = { name = "ROKN 대구-004" definition = destroyer start_experience_factor = 1 equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "초기식 대구급" } } }
-			ship = { name = "ROKN 대구-005" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "초기식 대구급" } } }
-			ship = { name = "ROKN 대구-006" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "초기식 대구급" } } }
-			ship = { name = "ROKN 대구-007" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "초기식 대구급" } } }
-			ship = { name = "ROKN 대구-008" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "초기식 대구급" } } }
-			ship = { name = "ROKN 대구-009" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "초기식 대구급" } } }
-			ship = { name = "ROKN 대구-010" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "초기식 대구급" } } }
-			ship = { name = "ROKN 대구-011" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "초기식 대구급" } } }
-			ship = { name = "ROKN 대구-012" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "초기식 대구급" } } }
-			ship = { name = "ROKN 대구-013" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "초기식 대구급" } } }
-			ship = { name = "ROKN 대구-014" definition = destroyer start_experience_factor = 0.5 equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "초기식 대구급" } } }
-			ship = { name = "ROKN 대구-015" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_light_2 = { amount = 1 owner = KOR version_name = "1936년식 대구급" } } }
-			ship = { name = "ROKN 대구-016" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_light_2 = { amount = 1 owner = KOR version_name = "1936년식 대구급" } } }
-			ship = { name = "ROKN 대구-017" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_light_2 = { amount = 1 owner = KOR version_name = "1936년식 대구급" } } }
-			ship = { name = "ROKN 대구-018" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_light_2 = { amount = 1 owner = KOR version_name = "1936년식 대구급" } } }
-			ship = { name = "ROKN 대구-019" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_light_2 = { amount = 1 owner = KOR version_name = "1936년식 대구급" } } }
-			ship = { name = "ROKN 대구-020" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_light_2 = { amount = 1 owner = KOR version_name = "1936년식 대구급" } } }
-			ship = { name = "ROKN 대구-021" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_light_2 = { amount = 1 owner = KOR version_name = "1936년식 대구급" } } }
-			ship = { name = "ROKN 대구-022" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_light_2 = { amount = 1 owner = KOR version_name = "1936년식 대구급" } } }
-			ship = { name = "ROKN 대구-023" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_light_2 = { amount = 1 owner = KOR version_name = "1936년식 대구급" } } }
-			ship = { name = "ROKN 대구-024" definition = destroyer start_experience_factor = 0.3 equipment = { ship_hull_light_2 = { amount = 1 owner = KOR version_name = "1936년식 대구급" } } }
-			
-			ship = { name = "ROKN 장보고-001" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KOR version_name = "초기식 장보고급" } } }
-			ship = { name = "ROKN 장보고-002" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KOR version_name = "초기식 장보고급" } } }
-			ship = { name = "ROKN 장보고-003" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KOR version_name = "초기식 장보고급" } } }
-			ship = { name = "ROKN 장보고-004" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KOR version_name = "초기식 장보고급" } } }
-			ship = { name = "ROKN 장보고-005" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KOR version_name = "초기식 장보고급" } } }
-			ship = { name = "ROKN 장보고-006" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KOR version_name = "초기식 장보고급" } } }
-			ship = { name = "ROKN 장보고-007" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KOR version_name = "초기식 장보고급" } } }
-			ship = { name = "ROKN 장보고-008" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KOR version_name = "초기식 장보고급" } } }
-			ship = { name = "ROKN 장보고-009" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KOR version_name = "초기식 장보고급" } } }
-			ship = { name = "ROKN 장보고-0010" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KOR version_name = "초기식 장보고급" } } }
-			ship = { name = "ROKN 장보고-0011" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KOR version_name = "초기식 장보고급" } } }
-			ship = { name = "ROKN 장보고-0012" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KOR version_name = "초기식 장보고급" } } }
-			ship = { name = "ROKN 장보고-0013" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KOR version_name = "초기식 장보고급" } } }
-			ship = { name = "ROKN 장보고-0014" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KOR version_name = "초기식 장보고급" } } }
-			ship = { name = "ROKN 장보고-0015" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = KOR version_name = "1936년식 장보고급" } } }
-			ship = { name = "ROKN 장보고-0016" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = KOR version_name = "1936년식 장보고급" } } }
-			ship = { name = "ROKN 장보고-0017" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = KOR version_name = "1936년식 장보고급" } } }
-			ship = { name = "ROKN 장보고-0018" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = KOR version_name = "1936년식 장보고급" } } }
-			ship = { name = "ROKN 장보고-0019" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = KOR version_name = "1936년식 장보고급" } } }
-			ship = { name = "ROKN 장보고-0020" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = KOR version_name = "1936년식 장보고급" } } }
-			ship = { name = "ROKN 장보고-0021" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = KOR version_name = "1936년식 장보고급" } } }
-			ship = { name = "ROKN 장보고-0022" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = KOR version_name = "1936년식 장보고급" } } }
-			ship = { name = "ROKN 장보고-0023" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = KOR version_name = "1936년식 장보고급" } } }
-			ship = { name = "ROKN 장보고-0024" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = KOR version_name = "1936년식 장보고급" } } }
-			ship = { name = "ROKN 장보고-0025" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = KOR version_name = "1936년식 장보고급" } } }
-			ship = { name = "ROKN 장보고-0026" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = KOR version_name = "1936년식 장보고급" } } }
-			ship = { name = "ROKN 장보고-0027" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = KOR version_name = "1936년식 장보고급" } } }
-			
-			ship = { name = "ROKN 손원일-001" definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = KOR version_name = "손원일급" } } }
-			ship = { name = "ROKN 손원일-002" definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = KOR version_name = "손원일급" } } }
-			ship = { name = "ROKN 손원일-003" definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = KOR version_name = "손원일급" } } }
-			ship = { name = "ROKN 손원일-004" definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = KOR version_name = "손원일급" } } }
-			ship = { name = "ROKN 손원일-005" definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = KOR version_name = "손원일급" } } }
-			ship = { name = "ROKN 손원일-006" definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = KOR version_name = "손원일급" } } }
-			ship = { name = "ROKN 손원일-007" definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = KOR version_name = "손원일급" } } }
-			ship = { name = "ROKN 손원일-008" definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = KOR version_name = "손원일급" } } }
-			ship = { name = "ROKN 손원일-009" definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = KOR version_name = "손원일급" } } }
+			ship = { name = "ROKN 포항함" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = KOR version_name = "포항급" } } }
+			ship = { name = "ROKN 서울함" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = KOR version_name = "포항급" } } }
+			ship = { name = "ROKN 부산함" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = KOR version_name = "포항급" } } }
+			ship = { name = "ROKN 대전함" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = KOR version_name = "포항급" } } }
+			ship = { name = "ROKN 전주함" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = KOR version_name = "포항급" } } }
+
+			ship = { name = "ROKN 대구함" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "대구급" } } }
+			ship = { name = "ROKN 지리산함" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "대구급" } } }
+			ship = { name = "ROKN 설악산함" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "대구급" } } }
+			ship = { name = "ROKN 소백산함" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "대구급" } } }
+			ship = { name = "ROKN 덕유산함" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "대구급" } } }
+			ship = { name = "ROKN 오대산함" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "대구급" } } }
+			ship = { name = "ROKN 한라산함" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "대구급" } } }
+			ship = { name = "ROKN 북한산함" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "대구급" } } }
+			ship = { name = "ROKN 계방산함" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "대구급" } } }
+			ship = { name = "ROKN 함백산함" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "대구급" } } }
+		}	
+		task_force = {
+			name = "제1함대 제1잠수전투단"
+			location = 7221
+			ship = { name = "ROKN 장보고-001" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KOR version_name = "장보고급" } } }
+			ship = { name = "ROKN 장보고-002" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KOR version_name = "장보고급" } } }
+			ship = { name = "ROKN 장보고-003" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KOR version_name = "장보고급" } } }
+			ship = { name = "ROKN 장보고-004" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KOR version_name = "장보고급" } } }
+			ship = { name = "ROKN 장보고-005" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KOR version_name = "장보고급" } } }
+			ship = { name = "ROKN 장보고-006" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KOR version_name = "장보고급" } } }
+			ship = { name = "ROKN 장보고-007" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KOR version_name = "장보고급" } } }
 		}
+	}
+		
+	fleet = {
+		name = "대한민국 해상 제2함대"			
+		naval_base = 4056
+		task_force = {
+			name = "제2함대 제1해상전투단"
+			location = 4056
+            ship = { name = "ROKN 세종대왕함" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = KOR version_name = "충무공 이순신급" } } }
+			ship = { name = "ROKN 김시민함" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = KOR version_name = "충무공 이순신급" } } }
+			
+			ship = { name = "ROKN 인천함" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = KOR version_name = "포항급" } } }
+			ship = { name = "ROKN 광주함" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = KOR version_name = "포항급" } } }
+			ship = { name = "ROKN 함흥함" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = KOR version_name = "포항급" } } }
+			
+			ship = { name = "ROKN 울산함" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "대구급" } } }
+			ship = { name = "ROKN 해상구축함-001" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "대구급" } } }
+			ship = { name = "ROKN 해상구축함-002" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "대구급" } } }
+			ship = { name = "ROKN 해상구축함-003" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "대구급" } } }
+			ship = { name = "ROKN 해상구축함-004" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "대구급" } } }
+			ship = { name = "ROKN 해상구축함-005" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "대구급" } } }
+			ship = { name = "ROKN 해상구축함-006" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "대구급" } } }
+			ship = { name = "ROKN 해상구축함-007" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "대구급" } } }
+			ship = { name = "ROKN 해상구축함-008" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "대구급" } } }
+			ship = { name = "ROKN 해상구축함-009" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = KOR version_name = "대구급" } } }
+		}	
+		task_force = {
+			name = "제2함대 제1잠수전투단"
+			location = 4056
+		    ship = { name = "ROKN 장보고-008" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KOR version_name = "장보고급" } } }
+			ship = { name = "ROKN 장보고-009" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KOR version_name = "장보고급" } } }
+			ship = { name = "ROKN 장보고-010" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = KOR version_name = "장보고급" } } }
+	    }
 	}
 }

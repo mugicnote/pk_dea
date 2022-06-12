@@ -48,6 +48,16 @@ defined_text = {
 		}
 		localization_key = KOR_FIRST_TITLE_fascism
 	}
+	###민찬호 임시 대통령
+	text = {
+		trigger = {
+			tag = KOR
+			has_government = fascism
+			has_country_flag = KOR_Min_Chanho_Temporary_pre
+			NOT = { has_cosmetic_tag = KOR_One_Fuhrer }
+		}
+		localization_key = KOR_FIRST_TITLE_Min_Chanho_Temporary_pre
+	}
 	text = {
 		trigger = {
 			tag = KOR
@@ -147,6 +157,16 @@ defined_text = {
 			NOT = { has_cosmetic_tag = KOR_One_Fuhrer }
 		}
 		localization_key = KOR_SECOND_TITLE_fascism
+	}
+	###민찬호 임시 대통령
+	text = {
+		trigger = {
+			tag = KOR
+			has_government = fascism
+			has_country_flag = KOR_Min_Chanho_Temporary_pre
+			NOT = { has_cosmetic_tag = KOR_One_Fuhrer }
+		}
+		localization_key = KOR_SECOND_TITLE_Min_Chanho_Temporary_pre
 	}
 	text = {
 		trigger = {
@@ -253,6 +273,16 @@ defined_text = {
 			NOT = { has_cosmetic_tag = KOR_One_Fuhrer }
 		}
 		localization_key = KOR_DUAL_NAME_fascism
+	}
+	###민찬호 임시 대통령
+	text = {
+		trigger = {
+			tag = KOR
+			has_government = fascism
+			has_country_flag = KOR_Min_Chanho_Temporary_pre
+			NOT = { has_cosmetic_tag = KOR_One_Fuhrer }
+		}
+		localization_key = KOR_DUAL_NAME_Min_Chanho_Temporary_pre
 	}
 	text = {
 		trigger = {
@@ -367,6 +397,16 @@ defined_text = {
 			NOT = { has_cosmetic_tag = KOR_One_Fuhrer }
 		}
 		localization_key = GFX_Portrait_Ryu_Dongyeol
+	}
+	###민찬호 임시 대통령
+	text = {
+		trigger = {
+			tag = KOR
+			has_government = fascism
+			has_country_flag = KOR_Min_Chanho_Temporary_pre
+			NOT = { has_cosmetic_tag = KOR_One_Fuhrer }
+		}
+		localization_key = GFX_Portrait_Lee_Beomseok
 	}
 	text = {
 		trigger = {

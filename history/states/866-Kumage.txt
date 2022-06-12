@@ -6,9 +6,8 @@ state={
 	}
 	
 	history={
-		owner = UPN
+		owner = JAP
 		add_core_of = JAP
-		add_core_of = UPN
 		buildings = {
 		}
 

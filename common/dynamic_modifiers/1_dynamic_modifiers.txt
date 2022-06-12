@@ -1,0 +1,11 @@
+kor_insurgent_resistance = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_kor_insurgent_resistance
+	
+	recruitable_population_factor = -0.15
+	state_resources_factor = -0.15
+	army_speed_factor = -0.25
+	resistance_target = 0.10
+	resistance_growth = 0.05
+}
