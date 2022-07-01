@@ -165,35 +165,35 @@ COALITION_add_natlib = yes
 COALITION_add_libcon = yes
 
 #common/characters 파일 참고
-recruit_character = KOR_pak_hon_yong
-recruit_character = KOR_Kim_Tu_bong
-recruit_character = KOR_Kim_Won_bong
-recruit_character = KOR_Lyuh_Woon_hyung
-recruit_character = KOR_Chang_Myon
-recruit_character = KOR_Ahn_Jae_hong
-recruit_character = KOR_Song_Jin_woo
-recruit_character = KOR_Kim_Koo
-recruit_character = KOR_ji_chong_chen
+recruit_character = YKR_pak_hon_yong
+recruit_character = YKR_Kim_Tu_bong
+recruit_character = YKR_Kim_Won_bong
+recruit_character = YKR_Lyuh_Woon_hyung
+# recruit_character = KOR_Chang_Myon
+recruit_character = YKR_Ahn_Jae_hong
+recruit_character = YKR_Song_Jin_woo
+recruit_character = YKR_Kim_Koo
+recruit_character = YKR_ji_chong_chen
 
-recruit_character = KOR_an_jung_geun
+# recruit_character = KOR_an_jung_geun
 
-recruit_character = KOR_Kim_Won_bong
-recruit_character = KOR_Ryu_ja_myeong
-recruit_character = KOR_Kwon_Jun
-recruit_character = KOR_Kim_Sang_ok
-recruit_character = KOR_Kim_Ji_Sub
-recruit_character = KOR_Kim_Ik_Sang
-recruit_character = KOR_Yun_Se_ju
-recruit_character = KOR_Kim_Si_Hyeon
+# recruit_character = KOR_Kim_Won_bong
+# recruit_character = KOR_Ryu_ja_myeong
+# recruit_character = KOR_Kwon_Jun
+# recruit_character = KOR_Kim_Sang_ok
+# recruit_character = KOR_Kim_Ji_Sub
+# recruit_character = KOR_Kim_Ik_Sang
+# recruit_character = KOR_Yun_Se_ju
+# recruit_character = KOR_Kim_Si_Hyeon
 
-recruit_character = KOR_Kim_chek
-recruit_character = KOR_Park_Il_wu
-recruit_character = KOR_Kim_Mu_geong
-recruit_character = KOR_Choi_Yong_Gun
-recruit_character = KOR_Lee_Gwan_Sool
-recruit_character = KOR_Nam_Il
+# recruit_character = KOR_Kim_chek
+# recruit_character = KOR_Park_Il_wu
+# recruit_character = KOR_Kim_Mu_geong
+# recruit_character = KOR_Choi_Yong_Gun
+# recruit_character = KOR_Lee_Gwan_Sool
+# recruit_character = KOR_Nam_Il
 
-recruit_character = KOR_Son_Won_il
+# recruit_character = KOR_Son_Won_il
 
 ###맨더건###
 if = {

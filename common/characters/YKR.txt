@@ -1,0 +1,189 @@
+characters={
+	RKR_pak_hon_yong={
+		name=RKR_pak_hon_yong
+		portraits={
+			civilian={
+				large="gfx/leaders/KOR/Portrait_Pak_Honyong.dds"
+			}
+		}
+		country_leader={
+			ideology=leninism
+			traits={
+				#traits_Kim_Il1
+				#traits_Kim_Il2
+				#traits_Kim_Il3
+			}
+			expire="2000.1.1.1"
+			id=-1
+		}
+	}
+
+	RKR_Kim_Tu_bong={
+		name=RKR_Kim_Tu_bong
+		portraits={
+			civilian={
+				large="gfx/leaders/KOR/Portrait_Kim_Tu_bong.dds"
+			}
+		}
+		country_leader={
+			ideology=auth_socialism
+			traits={
+				
+			}
+			expire="2000.1.1.1"
+			id=-1
+		}
+	}
+
+	RKR_Kim_Won_bong={
+		name=YKR_Kim_Won_bong
+		portraits={
+			civilian={
+				large="gfx/leaders/KOR/Portrait_Kim_Wonbong.dds"
+			}
+		}
+		country_leader={
+			ideology=rad_socialism
+			traits={
+				
+			}
+			expire="2000.1.1.1"
+			id=-1
+		}
+
+		corps_commander={
+			traits={
+				commando
+				trickster
+				ranger
+			}
+			skill=4
+			attack_skill=5
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=0
+		}
+	}
+
+	YKR_Lyuh_Woon_hyung={
+		name=YKR_Lyuh_Woon_hyung
+		portraits={
+			civilian={
+				large="gfx/leaders/KOR/Portrait_Lyuh_Woonhyung.dds"
+			}
+		}
+		country_leader={
+			ideology=socialism
+			traits={
+				#traits_Yeo_Un2
+			}
+			expire="2000.1.1.1"
+			id=-1
+		}
+	}
+
+	# YKR_Chang_Myon={
+	# 	name=YKR_Chang_Myon
+	# 	portraits={
+	# 		civilian={
+	# 			large="gfx/leaders/KOR/Portrait_Chang_Myon.dds"
+	# 		}
+	# 	}
+	# 	country_leader={
+	# 		ideology=liberalism
+	# 		traits={
+				
+	# 		}
+	# 		expire="2000.1.1.1"
+	# 		id=-1
+	# 	}
+	# }
+
+	YKR_Ahn_Jae_hong={
+		name=YKR_Ahn_Jae_hong
+		portraits={
+			civilian={
+				large="gfx/leaders/KOR/Portrait_Ahn_Jaehong.dds"
+			}
+		}
+		country_leader={
+			ideology=nat_liberal
+			traits={
+				
+			}
+			expire="2000.1.1.1"
+			id=-1
+		}
+	}
+
+	YKR_Song_Jin_woo={
+		name=YKR_Song_Jin_woo
+		portraits={
+			civilian={
+				large="gfx/leaders/KOR/Portrait_Song_Jin_woo.dds"
+			}
+		}
+		country_leader={
+			ideology=lib_conservatism
+			traits={
+				
+			}
+			expire="2000.1.1.1"
+			id=-1
+		}
+	}
+
+	YKR_Kim_Koo={
+		name=YKR_Kim_Koo
+		portraits={
+			civilian={
+				large="gfx/leaders/KOR/Portrait_Kim_Koo.dds"
+			}
+		}
+		country_leader={
+			ideology=YKRean_nationalism
+			traits={
+				#traits_kim_ku
+			}
+			expire="2000.1.1.1"
+			id=-1
+		}
+	}
+
+	YKR_ji_chong_chen={
+		name=YKR_ji_chong_chen
+		portraits={
+			civilian={
+				large="gfx/leaders/KOR/Portrait_ji_chong_chen.dds"
+			}
+			army={
+				large="gfx/leaders/KOR/Portrait_ji_chong_chen.dds"
+			}
+		}
+		country_leader={
+			ideology=military_dic
+			traits={
+				
+			}
+			expire="2000.1.1.1"
+			id=-1
+		}
+
+		corps_commander={
+			traits={
+				infantry_leader
+				defensive_doctrine
+				inflexible_strategist
+				trait_engineer
+			}
+			skill=5
+			attack_skill=3
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=3
+			legacy_id=0
+		}
+	}
+
+}

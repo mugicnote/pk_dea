@@ -972,6 +972,36 @@ DEA_KOR_scenario_debug_decisions_category = {
 			COALITION_clr_soccon = yes
 			COALITION_add_autdes = yes
 
+			retire_character = KOR_pak_hon_yong
+			retire_character = KOR_Kim_Tu_bong
+			retire_character = KOR_Kim_Won_bong
+			retire_character = KOR_Lyuh_Woon_hyung
+			# retire_character = KOR_Chang_Myon
+			retire_character = KOR_Ahn_Jae_hong
+			retire_character = KOR_Song_Jin_woo
+			retire_character = KOR_Kim_Koo
+			retire_character = KOR_ji_chong_chen
+
+			# retire_character = KOR_an_jung_geun
+
+			# retire_character = KOR_Kim_Won_bong
+			# retire_character = KOR_Ryu_ja_myeong
+			# retire_character = KOR_Kwon_Jun
+			# retire_character = KOR_Kim_Sang_ok
+			# retire_character = KOR_Kim_Ji_Sub
+			# retire_character = KOR_Kim_Ik_Sang
+			# retire_character = KOR_Yun_Se_ju
+			# retire_character = KOR_Kim_Si_Hyeon
+
+			# retire_character = KOR_Kim_chek
+			# retire_character = KOR_Park_Il_wu
+			# retire_character = KOR_Kim_Mu_geong
+			# retire_character = KOR_Choi_Yong_Gun
+			# retire_character = KOR_Lee_Gwan_Sool
+			# retire_character = KOR_Nam_Il
+
+			# retire_character = KOR_Son_Won_il
+
 			remove_state_core = 835
 			remove_state_core = 836
 			remove_state_core = 840

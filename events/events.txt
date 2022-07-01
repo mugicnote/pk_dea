@@ -1442,15 +1442,15 @@ country_event = { #서재필 -> 이범석으로 중점 변경
 			COALITION_clr_soccon = yes
 			COALITION_add_autdes = yes
 
-			# retire_character = KOR_pak_hon_yong
-			# retire_character = KOR_Kim_Tu_bong
-			# retire_character = KOR_Kim_Won_bong
-			# retire_character = KOR_Lyuh_Woon_hyung
+			retire_character = KOR_pak_hon_yong
+			retire_character = KOR_Kim_Tu_bong
+			retire_character = KOR_Kim_Won_bong
+			retire_character = KOR_Lyuh_Woon_hyung
 			# retire_character = KOR_Chang_Myon
-			# retire_character = KOR_Ahn_Jae_hong
-			# retire_character = KOR_Song_Jin_woo
-			# retire_character = KOR_Kim_Koo
-			# retire_character = KOR_ji_chong_chen
+			retire_character = KOR_Ahn_Jae_hong
+			retire_character = KOR_Song_Jin_woo
+			retire_character = KOR_Kim_Koo
+			retire_character = KOR_ji_chong_chen
 
 			# retire_character = KOR_an_jung_geun
 
@@ -1471,6 +1471,45 @@ country_event = { #서재필 -> 이범석으로 중점 변경
 			# retire_character = KOR_Nam_Il
 
 			# retire_character = KOR_Son_Won_il
+
+			remove_state_core = 835
+			remove_state_core = 836
+			remove_state_core = 840
+			remove_state_core = 841
+
+			835 = {
+				add_dynamic_modifier = {
+					modifier = kor_insurgent_resistance
+				}
+			}
+			836 = {
+				add_dynamic_modifier = {
+					modifier = kor_insurgent_resistance
+				}
+			}
+			840 = {
+				add_dynamic_modifier = {
+					modifier = kor_insurgent_resistance
+				}
+			}
+			841 = {
+				add_dynamic_modifier = {
+					modifier = kor_insurgent_resistance
+				}
+			}
+
+			835 = {
+				set_demilitarized_zone = yes
+			}
+			836 = {
+				set_demilitarized_zone = yes
+			}
+			842 = {
+				set_demilitarized_zone = yes
+			}
+			843 = {
+				set_demilitarized_zone = yes
+			}
 		}
 	}
 }

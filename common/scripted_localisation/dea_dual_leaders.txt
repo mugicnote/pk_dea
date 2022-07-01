@@ -473,6 +473,15 @@ defined_text = {
 	}
 	text = {
         trigger = {
+			tag = KOR
+			has_government = fascism
+			has_country_flag = KOR_Min_Chanho_Temporary_pre
+			NOT = { has_cosmetic_tag = KOR_One_Fuhrer }
+		}
+        localization_key = KOREA_DUAL_DESC_Min_Chanho_Temporary_pre
+	}
+	text = {
+        trigger = {
 			tag = CHI
 			has_government = national_conservatism
 		}
@@ -489,6 +498,15 @@ defined_text = {
 			has_government = democratic
 		}
         localization_key = KOREA_DUAL_NAME
+	}
+	text = {
+        trigger = {
+			tag = KOR
+			has_government = fascism
+			has_country_flag = KOR_Min_Chanho_Temporary_pre
+			NOT = { has_cosmetic_tag = KOR_One_Fuhrer }
+		}
+        localization_key = KOREA_DUAL_NAME_Min_Chanho_Temporary_pre
 	}
 }
 

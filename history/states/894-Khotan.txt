@@ -1,14 +1,18 @@
+
 state={
 	id=894
 	name="STATE_894"
-	provinces={
-		1970 4973 5042 8112 
-	}
+
 	history={
 		owner = SIK
 		add_core_of = SIK
 
 	}
+
+	provinces={
+		1970 4973 5042 8112 
+	}
 	manpower=0
 	buildings_max_level_factor=1.000
+	local_supplies=0.000
 }
