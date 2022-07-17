@@ -113,6 +113,26 @@ guiTypes = {
 				position = { x = 15 y = 77 }
 				shortcut = "ESCAPE"
 			}
+
+			buttonType = {
+				name = "Country_explanation_Button_middle_4_Button"
+				quadTextureSprite = "GFX_button_261x34" 
+				buttonFont = "Bomb_16"
+				buttonText = "정부 요인                                          "
+				pdx_tooltip = "TNO_OPENING_SCREEN_BUTTON_TT"
+				position = { x = 40 y = 113 }
+				shortcut = "ESCAPE"
+			}
+
+			buttonType = {
+				name = "Country_explanation_Button_middle_5_Button"
+				quadTextureSprite = "GFX_button_261x34" 
+				buttonFont = "Bomb_16"
+				buttonText = "집권당                                            "
+				pdx_tooltip = "TNO_OPENING_SCREEN_BUTTON_TT"
+				position = { x = 40 y = 149 }
+				shortcut = "ESCAPE"
+			}
 		}
 
 		containerWindowType = {

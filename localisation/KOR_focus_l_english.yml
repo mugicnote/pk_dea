@@ -56,7 +56,9 @@
  Kor_lee_beom_seok_2_focus:0 "혁명 이후의 어둠"
  KOR_Revolution_accomplished:0 "혁명 완수"
  KOR_Central_Committee_control_legislature:0 "중앙위원회의 입법부 장악"
+ KOR_Central_Committee_control_legislature_tt:0 "헌법 명시에 따라 국회의 공식적 해산을 실시하며 §Y국회 시스템§!이 비활성화 됩니다."
  KOR_Rebellion_Remaining_Processed:0 "반란 잔당 처리"
+ KOR_Rebellion_Remaining_Processed_tt:0 "함경, 충청 지역 일대에서 범죄 행위를 지속하는 §Y반란군을 소탕§!할 수 있는 결정을 해금합니다."
  KOR_Start_discussing_civil_army_issues:0 "시민군 문제 논의 시작"
  KOR_Start_discussing_civil_army_issues_1_tt:0 "영남 지역의 비무장화가 해제되며 §Y대한민국 영남정부§!가 시민군을 결성합니다.\n§Y여운형§! 사회노동당 대표와 §Y박헌영§! 대한공산당 대표가 영남정부를 이끌게 될 것이며 §Y민주 진영 인사들§!이 대거 영남정부로 집결할 것입니다."
  KOR_Resolving_issue_Armed_Forces_Restoration_Society:0 "국군유신회 문제 해결"
@@ -71,7 +73,6 @@
 
  ###제국의 귀환 - 정설
  KOR_catch_fire_again:0 "다 탄 재에 불을 붙이다"
- KOR_catch_fire_again_tt:0 "헌법 명시에 따라 국회의 공식적 해산을 실시하며 §Y국회 시스템§!이 비활성화 됩니다."
  KOR_securing_political_security:0 "정치 안전성 확보"
  KOR_protection_rule_law:0 "법치주의 수호"
  KOR_Throw_away_eggs:0 "계륵을 버려라"

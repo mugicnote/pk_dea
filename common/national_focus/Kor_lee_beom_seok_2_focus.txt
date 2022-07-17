@@ -6,7 +6,10 @@ focus_tree = {
 		modifier = {
 			add = 20
 			tag = KOR
-			has_country_flag = KOR_beginning_revolution
+			OR = {
+				has_country_flag = KOR_beginning_revolution
+				has_country_flag = KOR_Min_Chanho_Temporary_pre
+			}
 		}
 	}
 	default = no
@@ -43,7 +46,13 @@ focus_tree = {
 		}
 
 		completion_reward = {
-
+			add_stability = -0.1
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.05
+			}
+			add_political_power = 50
+			custom_effect_tooltip = KOR_Central_Committee_control_legislature_tt
 		}
 		x = 0
 		y = 1
@@ -62,7 +71,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-
+			custom_effect_tooltip = KOR_Rebellion_Remaining_Processed_tt
 		}
 		x = -2
 		y = 1

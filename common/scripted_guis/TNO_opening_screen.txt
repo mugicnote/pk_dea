@@ -25,6 +25,8 @@ scripted_gui = {
 				set_variable = { Country_explanation_Button_middle_2_Button_y = 113 }
 				set_variable = { Country_explanation_Button_middle_3_Button_y = 149 }
 				set_variable = { political_situation_Button_y = 77 }
+				set_variable = { Country_explanation_Button_middle_4_Button_y = 113 }
+				set_variable = { Country_explanation_Button_middle_5_Button_y = 149 }
 			}
 		}
 	}
@@ -73,6 +75,12 @@ scripted_gui = {
 			}
 			Country_explanation_Button_middle_3_Button = {
 				y = Country_explanation_Button_middle_3_Button_y
+			}
+			Country_explanation_Button_middle_4_Button = {
+				y = Country_explanation_Button_middle_4_Button_y
+			}
+			Country_explanation_Button_middle_5_Button = {
+				y = Country_explanation_Button_middle_5_Button_y
 			}
 		}
 
