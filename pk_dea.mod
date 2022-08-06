@@ -1,4 +1,4 @@
-name="PROJECT KOREA: DAWN OF EAST ASIA"
+name="DAWN OF EAST ASIA"
 tags={
 	"Alternative History"
 	"Events"
