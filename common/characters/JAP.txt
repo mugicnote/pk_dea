@@ -1,9 +1,9 @@
 characters={
-	JAP_Machida_Chuji={
-		name=JAP_Machida_Chuji
+	JAP_tokugawa_Iesato={
+		name=JAP_tokugawa_Iesato
 		portraits={
 			civilian={
-				large="gfx/leaders/JAP/JAP_Machida_Chuji.dds"
+				large="gfx/leaders/JAP/tokugawa_Iesato.png"
 			}
 		}
 		country_leader={

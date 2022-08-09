@@ -119,7 +119,7 @@ USA = {
 
 give_military_access = UPN
 
-recruit_character = JAP_Machida_Chuji
+recruit_character = JAP_tokugawa_Iesato
 
 set_politics = {
 	ruling_party = democratic
@@ -213,6 +213,8 @@ auto_despotism = 5
 # 		#
 # 	}
 # }
+
+#tokugawa_Iesato
 
 # create_country_leader = {
 # 	name = "마츠다 주지"
