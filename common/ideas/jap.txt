@@ -2,85 +2,88 @@ ideas = {
 
     country = {
         
-        Declaration_Emperor = {
+        JAP_shoku_gun = {
 
             allowed = {
                 original_tag = JAP
             }
-
-            allowed_civil_war = {
-                always = yes
-            }
-
-            picture = GFX_Declaration_Emperor
+            picture = GFX_JAP_shoku_gun
 
             removal_cost = -1
             
             modifier = {
+                hidden_modifier = {
+                    land_doctrine_cost_factor = 2.00
+                    naval_doctrine_cost_factor = 2.00
+                    air_doctrine_cost_factor = 2.00
+                    experience_gain_army_factor = -0.20
+                    experience_gain_navy_factor = -0.20
+                    experience_gain_air_factor = -0.20
+                                }
                 stability_factor = 0.05
+                political_power_cost = 0.1
+                custom_modifier_tooltip = jap_all_doctrine_up_tt
+                custom_modifier_tooltip = jap_all_gain_exp_down_tt
                 war_support_factor = -0.15
+                command_power_gain_mult = -0.20
             }
         }
 
-        Yoshida_Doctrine = {
+        JAP_non_yasoku = {
 
             allowed = {
                 original_tag = JAP
             }
 
-            allowed_civil_war = {
-                always = yes
-            }
-
-            picture = GFX_Yoshida_Doctrine
+            picture = GFX_JAP_non_yasoku
 
             removal_cost = -1
             
             modifier = {
-                production_speed_industrial_complex_factor = 0.3
-                consumer_goods_factor = 0.1
+                war_support_factor = -0.5
+                stability_factor = -0.5
+                custom_modifier_tooltip = jap_all_law_cost_tt
+                hidden_modifier = {
+                    mobilization_laws_cost_factor = -0.2
+                    trade_laws_cost_factor = -0.2
+                    economy_cost_factor = -0.2
+                                }
+                                
             }
         }
 
-        constitution_of_japanese = {
+        JAP_dai_gokou = {
 
             allowed = {
                 original_tag = JAP
             }
 
-            allowed_civil_war = {
-                always = yes
-            }
-
-            picture = GFX_constitution_of_japanese
+            picture = GFX_JAP_dai_gokou
 
             removal_cost = -1
             
             modifier = {
-                justify_war_goal_time = 10.0
-                stability_factor = 0.10
-                war_support_factor = -0.15
-                custom_modifier_tooltip = SPR_military_disloyalty_tt
+                production_speed_buildings_factor = -0.3
+                consumer_goods_factor = 0.3
+                political_power_factor = -0.3
             }
         }
 
-        far_right_party_military = {
+        JAP_po_donggu = {
 
             allowed = {
                 original_tag = JAP
             }
 
-            allowed_civil_war = {
-                always = yes
-            }
-
-            picture = GFX_far_right_party_military
+            picture = GFX_JAP_po_donggu
 
             removal_cost = -1
             
             modifier = {
-                fascism_drift = 0.01
-                stability_factor = -0.1
+                war_support_factor = -0.40
+                stability_factor = -0.25
+                consumer_goods_factor = 0.15
+                
             }
         }
         

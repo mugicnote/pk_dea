@@ -9,15 +9,10 @@ set_research_slots = 4
 set_fuel_ratio = 1.0
 
 add_ideas = {
-Declaration_Emperor
-aftermath_of_defeat
-Yoshida_Doctrine
-constitution_of_japanese
-far_right_party_military
-EROA
-Depression_of_USA
-political_confrontation
-Communist_leadership_strike
+    JAP_shoku_gun
+    JAP_dai_gokou
+    JAP_non_yasoku
+    JAP_po_donggu
 }
 
 set_technology = {

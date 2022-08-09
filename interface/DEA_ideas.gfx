@@ -206,40 +206,20 @@ spriteTypes = {
 
 	#일본
 	spriteType = {
-		name = "GFX_idea_Declaration_Emperor"
-		texturefile = "gfx/interface/ideas/Declaration_Emperor.dds"
+		name = "GFX_idea_JAP_shoku_gun"
+		texturefile = "gfx/interface/ideas/JAP_shoku_gun.png"
 	}
 	spriteType = {
-		name = "GFX_idea_Yoshida_Doctrine"
-		texturefile = "gfx/interface/ideas/Yoshida_Doctrine.dds"
+		name = "GFX_idea_JAP_non_yasoku"
+		texturefile = "gfx/interface/ideas/JAP_non_yasoku.png"
 	}
 	spriteType = {
-		name = "GFX_idea_aftermath_of_defeat"
-		texturefile = "gfx/interface/ideas/aftermath_of_defeat.dds"
+		name = "GFX_idea_JAP_po_donggu"
+		texturefile = "gfx/interface/ideas/JAP_po_donggu.png"
 	}
 	spriteType = {
-		name = "GFX_idea_constitution_of_japanese"
-		texturefile = "gfx/interface/ideas/constitution_of_japanese.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_far_right_party_military"
-		texturefile = "gfx/interface/ideas/far_right_party_military.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_EROA"
-		texturefile = "gfx/interface/ideas/EROA.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_Depression_of_USA"
-		texturefile = "gfx/interface/ideas/Depression_of_USA.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_political_confrontation"
-		texturefile = "gfx/interface/ideas/political_confrontation.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_Communist_leadership_strike"
-		texturefile = "gfx/interface/ideas/Communist_leadership_strike.dds"
+		name = "GFX_idea_JAP_dai_gokou"
+		texturefile = "gfx/interface/ideas/JAP_dai_gokou.png"
 	}
 
 	#한국
