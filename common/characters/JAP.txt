@@ -9,8 +9,7 @@ characters={
 		country_leader={
 			ideology=conservatism
 			traits={
-				jap_wonderful_banker
-				pro_american
+				dotage_of_tokugawa
 			}
 			expire="2000.1.1.1"
 			id=-1

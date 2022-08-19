@@ -20,4 +20,10 @@ leader_traits = {
 			factor = 1
 		}
 	}
+    
+    dotage_of_tokugawa = {
+        random = no
+        political_power_factor = 0.15
+        stability_factor = 0.05
+    }
 }
