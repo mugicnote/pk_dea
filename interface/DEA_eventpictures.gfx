@@ -162,6 +162,11 @@ spriteTypes = {
 		name = "GFX_Attempted_assassinate_acting_Kim_Gyu_Sik2"
 		texturefile = "gfx/event_pictures/KOR/Attempted_assassinate_acting_Kim_Gyu_Sik2.dds"
 	}
+	###이범석
+	spriteType = {
+		name = "GFX_Min_Chanho_temporary_presidential_appointment"
+		texturefile = "gfx/event_pictures/KOR/Min_Chanho_temporary_presidential_appointment.dds"
+	}
 	###여운형
 	spriteType = {
 		name = "GFX_lyuh_woon_hyung_elected"

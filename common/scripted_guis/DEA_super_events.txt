@@ -1,5 +1,59 @@
 scripted_gui = {
 
+	DEA_superevent_big_event_explosion_three_way_talks_1 = {
+		window_name = "DEA_superevent_big_event_explosion_three_way_talks_1"
+		context_type = player_context
+
+		visible = {
+			has_global_flag = big_event_explosion_three_way_talks
+		}
+	}
+
+	DEA_superevent_big_event_explosion_three_way_talks_2 = {
+		window_name = "DEA_superevent_big_event_explosion_three_way_talks_2"
+		context_type = player_context
+
+		visible = {
+			has_global_flag = big_event_explosion_three_way_talks
+		}
+	}
+
+	DEA_superevent_big_event_explosion_three_way_talks_3 = {
+		window_name = "DEA_superevent_big_event_explosion_three_way_talks_3"
+		context_type = player_context
+
+		visible = {
+			has_global_flag = big_event_explosion_three_way_talks
+		}
+	}
+
+	DEA_superevent_big_event_explosion_three_way_talks_4 = {
+		window_name = "DEA_superevent_big_event_explosion_three_way_talks_4"
+		context_type = player_context
+
+		visible = {
+			has_global_flag = big_event_explosion_three_way_talks
+		}
+	}
+
+	DEA_superevent_big_event_explosion_three_way_talks_5 = {
+		window_name = "DEA_superevent_big_event_explosion_three_way_talks_5"
+		context_type = player_context
+
+		visible = {
+			has_global_flag = big_event_explosion_three_way_talks
+		}
+	}
+
+	DEA_superevent_big_event_explosion_three_way_talks_6 = {
+		window_name = "DEA_superevent_big_event_explosion_three_way_talks_6"
+		context_type = player_context
+
+		visible = {
+			has_global_flag = big_event_explosion_three_way_talks
+		}
+	}
+	
 	sp_event_window = {
 		window_name = "sp_event_window"
 		context_type = player_context
@@ -13,6 +67,9 @@ scripted_gui = {
 		}
 		
 		triggers = {
+			Super_Event_Base_visible = {
+				has_global_flag = big_event_explosion_three_way_talks
+			}
 			superevent_assassination_Jae_pil_visible = {
 				has_global_flag = big_event_assassination_Jae_pil
 			}

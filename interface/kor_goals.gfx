@@ -162,6 +162,71 @@ spriteTypes = {
 		name = "GFX_focus_kor_return_of_empire"
 		texturefile = "gfx/interface/goals/KOR/lee_1/focus_kor_return_of_empire.dds"
 	}
+	#최후제국 - 1페이즈
+	SpriteType = {
+		name = "GFX_focus_kor_internal_politics"
+		texturefile = "gfx/interface/goals/KOR/lee_2/focus_kor_internal_politics.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_ncr"
+		texturefile = "gfx/interface/goals/KOR/lee_2/focus_ncr.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_kor_external_politics"
+		texturefile = "gfx/interface/goals/KOR/lee_2/focus_kor_external_politics.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_kor_Fight_corruption"
+		texturefile = "gfx/interface/goals/KOR/lee_2/focus_kor_Fight_corruption.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_nationality"
+		texturefile = "gfx/interface/goals/KOR/lee_2/focus_nationality.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_despotism_society"
+		texturefile = "gfx/interface/goals/KOR/lee_2/focus_despotism_society.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_kor_the_torch_of_red_hunt"
+		texturefile = "gfx/interface/goals/KOR/lee_2/focus_kor_the_torch_of_red_hunt.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_kor_unification_of_national_foreign_policy"
+		texturefile = "gfx/interface/goals/KOR/lee_2/focus_kor_unification_of_national_foreign_policy.dds"
+	}
+
+
+	SpriteType = {
+		name = "GFX_focus_kor_recruit_talent"
+		texturefile = "gfx/interface/goals/KOR/lee_2/focus_kor_recruit_talent.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_disloyal_com"
+		texturefile = "gfx/interface/goals/KOR/lee_2/focus_disloyal_com.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_kip"
+		texturefile = "gfx/interface/goals/KOR/lee_2/focus_kip.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_kor_Restoration_Constitution"
+		texturefile = "gfx/interface/goals/KOR/lee_2/focus_kor_Restoration_Constitution.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_cabinet_meeting"
+		texturefile = "gfx/interface/goals/KOR/lee_2/focus_cabinet_meeting.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_kor_Nationalize_railroad"
+		texturefile = "gfx/interface/goals/KOR/lee_2/focus_kor_Nationalize_railroad.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_kyc"
+		texturefile = "gfx/interface/goals/KOR/lee_2/focus_kyc.dds"
+	}
 	#하나의 총통
 	SpriteType = {
 		name = "GFX_focus_kor_Right_wing_militia_united"
@@ -209,20 +274,12 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focus_accept_the_return_of_imperial_family.dds"
 	}
 	SpriteType = {
-		name = "GFX_focus_despotism_society"
-		texturefile = "gfx/interface/goals/focus_despotism_society.dds"
-	}
-	SpriteType = {
 		name = "GFX_focus_constitutional_amendment"
 		texturefile = "gfx/interface/goals/focus_constitutional_amendment.dds"
 	}
 	SpriteType = {
 		name = "GFX_focus_conference_of_chicago"
 		texturefile = "gfx/interface/goals/focus_conference_of_chicago.dds"
-	}
-	SpriteType = {
-		name = "GFX_focus_disloyal_com"
-		texturefile = "gfx/interface/goals/focus_disloyal_com.dds"
 	}
 	SpriteType = {
 		name = "GFX_focus_constitution"
@@ -235,10 +292,6 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_focus_institution"
 		texturefile = "gfx/interface/goals/focus_institution.dds"
-	}
-	SpriteType = {
-		name = "GFX_focus_ncr"
-		texturefile = "gfx/interface/goals/focus_ncr.dds"
 	}
 	SpriteType = {
 		name = "GFX_focus_interim_government"
@@ -620,10 +673,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focus_syngman_rhee_2.dds"
 	}
 	SpriteType = {
-		name = "GFX_focus_kyc"
-		texturefile = "gfx/interface/goals/focus_kyc.dds"
-	}
-	SpriteType = {
 		name = "GFX_focus_secret_agents"
 		texturefile = "gfx/interface/goals/focus_secret_agents.dds"
 	}
@@ -767,10 +816,6 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_focus_armed_police"
 		texturefile = "gfx/interface/goals/focus_armed_police.dds"
-	}
-	SpriteType = {
-		name = "GFX_focus_nationality"
-		texturefile = "gfx/interface/goals/focus_nationality.dds"
 	}
 	SpriteType = {
 		name = "GFX_Returning_JTS"

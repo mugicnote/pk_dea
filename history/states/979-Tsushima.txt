@@ -1,0 +1,19 @@
+state={
+	id=979
+	name="STATE_979"
+
+	history={
+		owner = JAP
+		add_core_of = JAP
+		buildings = {
+		}
+
+	}
+
+	provinces={
+		10011 
+	}
+
+	manpower=0
+	buildings_max_level_factor=1.000
+}

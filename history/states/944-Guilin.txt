@@ -1,0 +1,23 @@
+state={
+	id=944
+	name="STATE_944"
+
+	history={
+		owner = GXC
+		add_core_of = GXC
+		add_core_of = CHI
+		buildings = {
+			
+		}
+		victory_points = {
+			10404 5 
+		}
+
+	}
+
+	provinces={
+		1023 4152 7128 7168 7210 10404 12407 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

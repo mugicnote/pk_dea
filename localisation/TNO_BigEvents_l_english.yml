@@ -7,9 +7,9 @@ sp_rhee_syng_man_president:0 "이승만 당선"
 sp_rhee_syng_man_president_QUOTE:0 "설령 당장은 뒤따르는 사람이 없을지라도 나중에는 뒤 따르는 사람이 반드시 나타날 것이다.\n- 이승만"
 sp_rhee_syng_man_president_REMARK:0 "새로운 시대의 시작."
 
-sp_explosion_three_way_talks:0 "나고야 폭탄 테러"
-sp_explosion_three_way_talks_QUOTE:0 "악인의 무관심은 선행이 되지만 선인의\n무관심은 악행이 된다.\n- 이오시프 스탈린"
-sp_explosion_three_way_talks_REMARK:0 "이게 무슨 일인가!"
+sp_explosion_three_way_talks:0 "교토 폭탄 테러"
+sp_explosion_three_way_talks_QUOTE:0 "평화가 근본적으로 절망적인 순간이 될 때까지 결코 평화를 포기하지 않는다.\n- 장제스"
+sp_explosion_three_way_talks_REMARK:0 "평화로운 풍경은 무너져간다."
 
 ##USE SUPER_EVENT_MAKER_GUI IN USEFUL PYTHON PROGRAMS TO MAKE NEW SUPER EVENTS##
 

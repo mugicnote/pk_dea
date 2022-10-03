@@ -1,0 +1,21 @@
+state={
+	id=935
+	name="STATE_935"
+
+	history={
+		owner = NAC
+		add_core_of = NAC
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+
+		}
+
+	}
+	
+	provinces={
+		4196 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

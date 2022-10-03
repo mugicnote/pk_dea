@@ -1,16 +1,13 @@
 state={
 	id=753
 	name="STATE_753"
-	provinces={
-		1257 2045 4403 5193 9966 10787 10903 
-	}
 	manpower=3000000
 	buildings_max_level_factor=1.000
 	state_category = rural
+
 	history={
 		owner = SZC
 		add_core_of = SZC
-		add_core_of = CHI
 		victory_points = {
 			2045 1 
 		}
@@ -18,5 +15,9 @@ state={
 			infrastructure = 3
 
 		}
+	}
+
+	provinces={
+		1257 2045 4403 5193 9966 10787 10903 
 	}
 }

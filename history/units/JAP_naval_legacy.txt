@@ -1,134 +1,134 @@
-﻿units = {
-	fleet = {
-		name = "Dai 1 Kantai"			
-		naval_base = 9998  
-		task_force = {
-			name = "1 Kantai"
-			location = 9998  
-			ship = { name = "Hosho" definition = carrier equipment = { carrier_1 = {amount = 1 owner = JAP} } 
-				air_wings = {
-					cv_fighter_equipment_0 =  { owner = "JAP" amount = 10 }
-					cv_nav_bomber_equipment_1 =  { owner = "JAP" amount = 10 }
-				}			
-			}
-			ship = { name = "Zuiho" definition = carrier equipment = { carrier_1 = {amount = 1 owner = JAP} } 
-				air_wings = {
-					cv_fighter_equipment_0 =  { owner = "JAP" amount = 20 }
-					cv_nav_bomber_equipment_1 =  { owner = "JAP" amount = 20 }
-				}
-			}
-			ship = { name = "Kawachi" definition = battleship equipment = { battleship_1 = {amount = 1 owner = JAP} } }
-			ship = { name = "Kako" definition = heavy_cruiser equipment = { heavy_cruiser_1 = {amount = 1 owner = JAP} } }
-			ship = { name = "Myoko" definition = heavy_cruiser equipment = { heavy_cruiser_1 = {amount = 1 owner = JAP} } }		
-			ship = { name = "Nagara" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = JAP} } }	
-			ship = { name = "Kinu" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = JAP} } }	
-			ship = { name = "Isuzu" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = JAP} } }	
-			ship = { name = "Sendai" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = JAP} } }		
-			ship = { name = "Enoki" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }
-			ship = { name = "Maki" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }
-			ship = { name = "Keyaki" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }	
-			ship = { name = "Kuwa" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }
-			ship = { name = "Tsubaki" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }		
-			ship = { name = "Kaki" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }		
-			ship = { name = "Tsuga" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }	
-			ship = { name = "Wakatake" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }
-			ship = { name = "Kuretake" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }	
-			ship = { name = "Minekaze" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }
-			ship = { name = "Sawakaze" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }
-			ship = { name = "Nadakaze" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }
-			ship = { name = "Kamikaze" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }
-			ship = { name = "Asakaze" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }			
-		}
-		task_force = {	
-			name = "1 Sensui Sentai" 
-			location = 9998  
-			ship = { name = "Ro-26" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP} } }	
-			ship = { name = "Ro-27" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP} } }		
-			ship = { name = "Ro-28" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP} } }	
-			ship = { name = "I-1" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP} } }		
-			ship = { name = "I-2" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP} } }	
-		}		
-	}
-	fleet = {
-		name = "Dai 2 Kantai"			
-		naval_base = 9950  	
-		task_force = {
-			name = "2 Kantai"
-			location = 9950 
-			ship = { name = "Ryujo"definition = carrier equipment = { carrier_1 = {amount = 1 owner = JAP} }
-				air_wings = {
-					cv_fighter_equipment_0 =  { owner = "JAP" amount = 20 }
-					cv_nav_bomber_equipment_1 =  { owner = "JAP" amount = 20 }
-				}			
-			}
-			ship = { name = "Settsu" definition = battleship equipment = { battleship_1 = {amount = 1 owner = JAP} } }
-			ship = { name = "Hiei" definition = battle_cruiser equipment = { battle_cruiser_1 = { amount = 1 owner = JAP } } }			
-			ship = { name = "Haguro" definition = heavy_cruiser equipment = { heavy_cruiser_1 = {amount = 1 owner = JAP} } }	
-			ship = { name = "Natori" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = JAP} } }	
-			ship = { name = "Yura" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = JAP} } }	
-			ship = { name = "Abukuma" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = JAP} } }	
-			ship = { name = "Naka" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = JAP} } }		
-			ship = { name = "Momi" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }
-			ship = { name = "Kaya" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }
-			ship = { name = "Nashi" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }
-			ship = { name = "Take" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }
-			ship = { name = "Kiku" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }			
-			ship = { name = "Aoi" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }
-			ship = { name = "Susuki" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }
-			ship = { name = "Sanae" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }
-			ship = { name = "Asagao" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }	
-			ship = { name = "Yugao" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }			
-			ship = { name = "Okikaze" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }
-			ship = { name = "Shimakaze" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }
-			ship = { name = "Harukaze" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }	
-			ship = { name = "Matsukaze" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }				
-		}
-		task_force = {	
-			name = "2 Sensui Sentai" 
-			location = 9950  
-			ship = { name = "Ro-29" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP} } }	
-			ship = { name = "Ro-30" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP} } }		
-			ship = { name = "Ro-31" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP} } }	
-			ship = { name = "I-3" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP} } }		
-			ship = { name = "I-4" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP} } }	
-		}		
-	}
-	fleet = {
-		name = "Dai 3 Kantai"			
-		naval_base = 7072  	
-		task_force = {
-			name = "3 Kantai"
-			location = 7072
-			ship = { name = "Nagato" definition = battleship equipment = { battleship_1 = {amount = 1 owner = JAP} } }
-			ship = { name = "Ibuki" definition = battle_cruiser equipment = { battle_cruiser_1 = { amount = 1 owner = JAP } } }		
-			ship = { name = "Kongo" definition = battle_cruiser equipment = { battle_cruiser_1 = { amount = 1 owner = JAP } } }			
-			ship = { name = "Furutaka" definition = heavy_cruiser equipment = { heavy_cruiser_1 = {amount = 1 owner = JAP} } }			
-			ship = { name = "Tenryu" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = JAP} } }	
-			ship = { name = "Tatsuta" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = JAP} } }	
-			ship = { name = "Kuma" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = JAP} } }	
-			ship = { name = "Kitakami" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = JAP} } }	
-			ship = { name = "Momo" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }
-			ship = { name = "Kashi" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }
-			ship = { name = "Hinoki" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }
-			ship = { name = "Yanagi" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }	
-			ship = { name = "Nire" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }			
-			ship = { name = "Kuri" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }		
-			ship = { name = "Hagi" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }	
-			ship = { name = "Sawarabi" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }	
-			ship = { name = "Fuyo" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }	
-			ship = { name = "Karukaya" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }			
-			ship = { name = "Yakaze" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }	
-			ship = { name = "Hakaze" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }
-			ship = { name = "Hatakaze" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }
-			ship = { name = "Oite" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }				
-		}
-		task_force = {	
-			name = "3 Sensui Sentai" 
-			location = 7072  
-			ship = { name = "Ro-32" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP} } }	
-			ship = { name = "Ro-33" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP} } }		
-			ship = { name = "Ro-34" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP} } }	
-			ship = { name = "I-5" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP} } }		
-			ship = { name = "I-6" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP} } }	
-		}		
-	}
+﻿# units = {
+# 	fleet = {
+# 		name = "Dai 1 Kantai"			
+# 		naval_base = 9998  
+# 		task_force = {
+# 			name = "1 Kantai"
+# 			location = 9998  
+# 			ship = { name = "Hosho" definition = carrier equipment = { carrier_1 = {amount = 1 owner = JAP} } 
+# 				air_wings = {
+# 					cv_fighter_equipment_0 =  { owner = "JAP" amount = 10 }
+# 					cv_nav_bomber_equipment_1 =  { owner = "JAP" amount = 10 }
+# 				}			
+# 			}
+# 			ship = { name = "Zuiho" definition = carrier equipment = { carrier_1 = {amount = 1 owner = JAP} } 
+# 				air_wings = {
+# 					cv_fighter_equipment_0 =  { owner = "JAP" amount = 20 }
+# 					cv_nav_bomber_equipment_1 =  { owner = "JAP" amount = 20 }
+# 				}
+# 			}
+# 			ship = { name = "Kawachi" definition = battleship equipment = { battleship_1 = {amount = 1 owner = JAP} } }
+# 			ship = { name = "Kako" definition = heavy_cruiser equipment = { heavy_cruiser_1 = {amount = 1 owner = JAP} } }
+# 			ship = { name = "Myoko" definition = heavy_cruiser equipment = { heavy_cruiser_1 = {amount = 1 owner = JAP} } }		
+# 			ship = { name = "Nagara" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = JAP} } }	
+# 			ship = { name = "Kinu" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = JAP} } }	
+# 			ship = { name = "Isuzu" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = JAP} } }	
+# 			ship = { name = "Sendai" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = JAP} } }		
+# 			ship = { name = "Enoki" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }
+# 			ship = { name = "Maki" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }
+# 			ship = { name = "Keyaki" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }	
+# 			ship = { name = "Kuwa" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }
+# 			ship = { name = "Tsubaki" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }		
+# 			ship = { name = "Kaki" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }		
+# 			ship = { name = "Tsuga" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }	
+# 			ship = { name = "Wakatake" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }
+# 			ship = { name = "Kuretake" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }	
+# 			ship = { name = "Minekaze" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }
+# 			ship = { name = "Sawakaze" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }
+# 			ship = { name = "Nadakaze" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }
+# 			ship = { name = "Kamikaze" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }
+# 			ship = { name = "Asakaze" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }			
+# 		}
+# 		task_force = {	
+# 			name = "1 Sensui Sentai" 
+# 			location = 9998  
+# 			ship = { name = "Ro-26" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP} } }	
+# 			ship = { name = "Ro-27" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP} } }		
+# 			ship = { name = "Ro-28" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP} } }	
+# 			ship = { name = "I-1" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP} } }		
+# 			ship = { name = "I-2" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP} } }	
+# 		}		
+# 	}
+# 	fleet = {
+# 		name = "Dai 2 Kantai"			
+# 		naval_base = 9950  	
+# 		task_force = {
+# 			name = "2 Kantai"
+# 			location = 9950 
+# 			ship = { name = "Ryujo"definition = carrier equipment = { carrier_1 = {amount = 1 owner = JAP} }
+# 				air_wings = {
+# 					cv_fighter_equipment_0 =  { owner = "JAP" amount = 20 }
+# 					cv_nav_bomber_equipment_1 =  { owner = "JAP" amount = 20 }
+# 				}			
+# 			}
+# 			ship = { name = "Settsu" definition = battleship equipment = { battleship_1 = {amount = 1 owner = JAP} } }
+# 			ship = { name = "Hiei" definition = battle_cruiser equipment = { battle_cruiser_1 = { amount = 1 owner = JAP } } }			
+# 			ship = { name = "Haguro" definition = heavy_cruiser equipment = { heavy_cruiser_1 = {amount = 1 owner = JAP} } }	
+# 			ship = { name = "Natori" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = JAP} } }	
+# 			ship = { name = "Yura" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = JAP} } }	
+# 			ship = { name = "Abukuma" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = JAP} } }	
+# 			ship = { name = "Naka" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = JAP} } }		
+# 			ship = { name = "Momi" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }
+# 			ship = { name = "Kaya" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }
+# 			ship = { name = "Nashi" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }
+# 			ship = { name = "Take" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }
+# 			ship = { name = "Kiku" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }			
+# 			ship = { name = "Aoi" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }
+# 			ship = { name = "Susuki" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }
+# 			ship = { name = "Sanae" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }
+# 			ship = { name = "Asagao" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }	
+# 			ship = { name = "Yugao" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }			
+# 			ship = { name = "Okikaze" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }
+# 			ship = { name = "Shimakaze" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }
+# 			ship = { name = "Harukaze" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }	
+# 			ship = { name = "Matsukaze" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }				
+# 		}
+# 		task_force = {	
+# 			name = "2 Sensui Sentai" 
+# 			location = 9950  
+# 			ship = { name = "Ro-29" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP} } }	
+# 			ship = { name = "Ro-30" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP} } }		
+# 			ship = { name = "Ro-31" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP} } }	
+# 			ship = { name = "I-3" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP} } }		
+# 			ship = { name = "I-4" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP} } }	
+# 		}		
+# 	}
+# 	fleet = {
+# 		name = "Dai 3 Kantai"			
+# 		naval_base = 7072  	
+# 		task_force = {
+# 			name = "3 Kantai"
+# 			location = 7072
+# 			ship = { name = "Nagato" definition = battleship equipment = { battleship_1 = {amount = 1 owner = JAP} } }
+# 			ship = { name = "Ibuki" definition = battle_cruiser equipment = { battle_cruiser_1 = { amount = 1 owner = JAP } } }		
+# 			ship = { name = "Kongo" definition = battle_cruiser equipment = { battle_cruiser_1 = { amount = 1 owner = JAP } } }			
+# 			ship = { name = "Furutaka" definition = heavy_cruiser equipment = { heavy_cruiser_1 = {amount = 1 owner = JAP} } }			
+# 			ship = { name = "Tenryu" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = JAP} } }	
+# 			ship = { name = "Tatsuta" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = JAP} } }	
+# 			ship = { name = "Kuma" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = JAP} } }	
+# 			ship = { name = "Kitakami" definition = light_cruiser equipment = { light_cruiser_1 = {amount = 1 owner = JAP} } }	
+# 			ship = { name = "Momo" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }
+# 			ship = { name = "Kashi" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }
+# 			ship = { name = "Hinoki" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }
+# 			ship = { name = "Yanagi" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }	
+# 			ship = { name = "Nire" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }			
+# 			ship = { name = "Kuri" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }		
+# 			ship = { name = "Hagi" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }	
+# 			ship = { name = "Sawarabi" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }	
+# 			ship = { name = "Fuyo" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }	
+# 			ship = { name = "Karukaya" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }			
+# 			ship = { name = "Yakaze" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }	
+# 			ship = { name = "Hakaze" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }
+# 			ship = { name = "Hatakaze" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }
+# 			ship = { name = "Oite" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }				
+# 		}
+# 		task_force = {	
+# 			name = "3 Sensui Sentai" 
+# 			location = 7072  
+# 			ship = { name = "Ro-32" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP} } }	
+# 			ship = { name = "Ro-33" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP} } }		
+# 			ship = { name = "Ro-34" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP} } }	
+# 			ship = { name = "I-5" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP} } }		
+# 			ship = { name = "I-6" definition = submarine equipment = { submarine_1 = {amount = 1 owner = JAP} } }	
+# 		}		
+# 	}

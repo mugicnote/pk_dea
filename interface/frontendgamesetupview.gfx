@@ -138,19 +138,24 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_load_save_top_screen"
-		texturefile = "gfx/interface/load_save_top_screen.dds"
-	}
+        name = "GFX_frontend_task_force_composition_editor_upper_bar"
+        texturefile = "gfx/interface/frontend_task_force_composition_editor_upper_bar.dds"
+    }
 
 	spriteType = {
-		name = "GFX_load_save_bottom"
-		texturefile = "gfx/interface/load_save_bottom.dds"
-	}
+        name = "GFX_load_save_top_screen"
+        texturefile = "gfx/interface/load_save_top_screen.dds"
+    }
 
-	spriteType = {
-		name = "GFX_load_save_bottom_screen"
-		texturefile = "gfx/interface/load_save_bottom_screen.dds"
-	}
+     spriteType = {
+        name = "GFX_load_save_bottom"
+        texturefile = "gfx/interface/load_save_bottom.dds"
+    }		
+		
+    spriteType = {
+        name = "GFX_load_save_bottom_screen"
+        texturefile = "gfx/interface/load_save_bottom_screen.dds"
+    }
 
 	spriteType = {
 		name = "GFX_load_save_entry2"

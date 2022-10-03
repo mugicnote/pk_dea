@@ -52,11 +52,37 @@ defined_text = {
 	text = {
 		trigger = {
 			tag = KOR
-			has_government = fascism
+			OR = {
+				has_government = fascism
+				has_government = auto_despotism
+			}
 			has_country_flag = KOR_Min_Chanho_Temporary_pre
 			NOT = { has_cosmetic_tag = KOR_One_Fuhrer }
 		}
 		localization_key = KOR_FIRST_TITLE_Min_Chanho_Temporary_pre
+	}
+	###이준식 권한대행
+	text = {
+		trigger = {
+			tag = KOR
+			OR = {
+				has_government = fascism
+				has_government = auto_despotism
+			}
+			has_country_flag = KOR_Acting_President_Lee_Junsik
+			NOT = { has_cosmetic_tag = KOR_One_Fuhrer }
+		}
+		localization_key = KOR_FIRST_TITLE_Acting_President_Lee_Junsik
+	}
+	###이범석 - 이강
+	text = {
+		trigger = {
+			tag = KOR
+			has_government = auto_despotism
+			has_country_flag = KOR_reinstatement
+			NOT = { has_cosmetic_tag = KOR_One_Fuhrer }
+		}
+		localization_key = KOR_FIRST_TITLE_reinstatement
 	}
 	text = {
 		trigger = {
@@ -162,11 +188,37 @@ defined_text = {
 	text = {
 		trigger = {
 			tag = KOR
-			has_government = fascism
+			OR = {
+				has_government = fascism
+				has_government = auto_despotism
+			}
 			has_country_flag = KOR_Min_Chanho_Temporary_pre
 			NOT = { has_cosmetic_tag = KOR_One_Fuhrer }
 		}
 		localization_key = KOR_SECOND_TITLE_Min_Chanho_Temporary_pre
+	}
+	###이준식 권한대행
+	text = {
+		trigger = {
+			tag = KOR
+			OR = {
+				has_government = fascism
+				has_government = auto_despotism
+			}
+			has_country_flag = KOR_Acting_President_Lee_Junsik
+			NOT = { has_cosmetic_tag = KOR_One_Fuhrer }
+		}
+		localization_key = KOR_SECOND_TITLE_Acting_President_Lee_Junsik
+	}
+	###이범석 - 이강
+	text = {
+		trigger = {
+			tag = KOR
+			has_government = auto_despotism
+			has_country_flag = KOR_reinstatement
+			NOT = { has_cosmetic_tag = KOR_One_Fuhrer }
+		}
+		localization_key = KOR_SECOND_TITLE_reinstatement
 	}
 	text = {
 		trigger = {
@@ -278,11 +330,37 @@ defined_text = {
 	text = {
 		trigger = {
 			tag = KOR
-			has_government = fascism
+			OR = {
+				has_government = fascism
+				has_government = auto_despotism
+			}
 			has_country_flag = KOR_Min_Chanho_Temporary_pre
 			NOT = { has_cosmetic_tag = KOR_One_Fuhrer }
 		}
 		localization_key = KOR_DUAL_NAME_Min_Chanho_Temporary_pre
+	}
+	###이준식 권한대행
+	text = {
+		trigger = {
+			tag = KOR
+			OR = {
+				has_government = fascism
+				has_government = auto_despotism
+			}
+			has_country_flag = KOR_Acting_President_Lee_Junsik
+			NOT = { has_cosmetic_tag = KOR_One_Fuhrer }
+		}
+		localization_key = KOR_DUAL_NAME_Acting_President_Lee_Junsik
+	}
+	###이범석 - 이강
+	text = {
+		trigger = {
+			tag = KOR
+			has_government = auto_despotism
+			has_country_flag = KOR_reinstatement
+			NOT = { has_cosmetic_tag = KOR_One_Fuhrer }
+		}
+		localization_key = KOR_DUAL_NAME_reinstatement
 	}
 	text = {
 		trigger = {
@@ -402,11 +480,37 @@ defined_text = {
 	text = {
 		trigger = {
 			tag = KOR
-			has_government = fascism
+			OR = {
+				has_government = fascism
+				has_government = auto_despotism
+			}
 			has_country_flag = KOR_Min_Chanho_Temporary_pre
 			NOT = { has_cosmetic_tag = KOR_One_Fuhrer }
 		}
 		localization_key = GFX_Portrait_Lee_Beomseok
+	}
+	###이준식 권한대행
+	text = {
+		trigger = {
+			tag = KOR
+			OR = {
+				has_government = fascism
+				has_government = auto_despotism
+			}
+			has_country_flag = KOR_Acting_President_Lee_Junsik
+			NOT = { has_cosmetic_tag = KOR_One_Fuhrer }
+		}
+		localization_key = GFX_Portrait_Lee_Junsik
+	}
+	###이범석 - 이강
+	text = {
+		trigger = {
+			tag = KOR
+			has_government = auto_despotism
+			has_country_flag = KOR_reinstatement
+			NOT = { has_cosmetic_tag = KOR_One_Fuhrer }
+		}
+		localization_key = GFX_Portrait_Yi_Kang
 	}
 	text = {
 		trigger = {
@@ -474,7 +578,10 @@ defined_text = {
 	text = {
         trigger = {
 			tag = KOR
-			has_government = fascism
+			OR = {
+				has_government = fascism
+				has_government = auto_despotism
+			}
 			has_country_flag = KOR_Min_Chanho_Temporary_pre
 			NOT = { has_cosmetic_tag = KOR_One_Fuhrer }
 		}
@@ -502,11 +609,37 @@ defined_text = {
 	text = {
         trigger = {
 			tag = KOR
-			has_government = fascism
+			OR = {
+				has_government = fascism
+				has_government = auto_despotism
+			}
 			has_country_flag = KOR_Min_Chanho_Temporary_pre
 			NOT = { has_cosmetic_tag = KOR_One_Fuhrer }
 		}
         localization_key = KOREA_DUAL_NAME_Min_Chanho_Temporary_pre
+	}
+	###이준식 권한대행
+	text = {
+		trigger = {
+			tag = KOR
+			OR = {
+				has_government = fascism
+				has_government = auto_despotism
+			}
+			has_country_flag = KOR_Acting_President_Lee_Junsik
+			NOT = { has_cosmetic_tag = KOR_One_Fuhrer }
+		}
+		localization_key = KOREA_DUAL_NAME_Acting_President_Lee_Junsik
+	}
+	###이범석 - 이강
+	text = {
+		trigger = {
+			tag = KOR
+			has_government = auto_despotism
+			has_country_flag = KOR_reinstatement
+			NOT = { has_cosmetic_tag = KOR_One_Fuhrer }
+		}
+		localization_key = KOREA_DUAL_NAME_reinstatement
 	}
 }
 

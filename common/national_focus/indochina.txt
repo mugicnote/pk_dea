@@ -1,1002 +1,1002 @@
-focus_tree = {
-	id = dea_ICU
-	country = {
-		factor = 0
-		modifier = {
-			add = 10
-			tag = ICU
-		}
-	}
-	default = no
+# focus_tree = {
+# 	id = dea_ICU
+# 	country = {
+# 		factor = 0
+# 		modifier = {
+# 			add = 10
+# 			tag = ICU
+# 		}
+# 	}
+# 	default = no
 
-	focus = { #현실 직시
-		id = ICU_future_1
-		icon = ""
-		cost = 3
-		x = 18
-		y = 1
+# 	focus = { #현실 직시
+# 		id = ICU_future_1
+# 		icon = ""
+# 		cost = 3
+# 		x = 18
+# 		y = 1
 
-		completion_reward = {
-		   add_political_power = 50
-			}	
-	}
-####독립 루트####
-	focus = { #독립 앞에서
-		id = ICU_IDP_1
-		icon = ""
-		cost = 3
-		prerequisite = {
-			focus = ICU_future_1
-		}
-		mutually_exclusive = { 
-			focus = ICU_future_2
-			}		
-		x = 16
-		y = 2
-		completion_reward = {
-		   add_political_power = 100	
-			add_stability = -0.10		   
-			}		
-	}
-	focus = { #하노이 광장
-		id = ICU_IDP_2
-		icon = ""
-		cost = 3
-		prerequisite = {
-			focus = ICU_IDP_1
-		}		
-		x = 15
-		y = 3
-		completion_reward = {
-			ICU = { country_event = ICU.1 }		
-			}		
+# 		completion_reward = {
+# 		   add_political_power = 50
+# 			}	
+# 	}
+# ####독립 루트####
+# 	focus = { #독립 앞에서
+# 		id = ICU_IDP_1
+# 		icon = ""
+# 		cost = 3
+# 		prerequisite = {
+# 			focus = ICU_future_1
+# 		}
+# 		mutually_exclusive = { 
+# 			focus = ICU_future_2
+# 			}		
+# 		x = 16
+# 		y = 2
+# 		completion_reward = {
+# 		   add_political_power = 100	
+# 			add_stability = -0.10		   
+# 			}		
+# 	}
+# 	focus = { #하노이 광장
+# 		id = ICU_IDP_2
+# 		icon = ""
+# 		cost = 3
+# 		prerequisite = {
+# 			focus = ICU_IDP_1
+# 		}		
+# 		x = 15
+# 		y = 3
+# 		completion_reward = {
+# 			ICU = { country_event = ICU.1 }		
+# 			}		
 
-	}
-	focus = { #프랑스 언론 공작
-		id = ICU_IDP_3
-		icon = ""
-		cost = 3
-		prerequisite = {
-			focus = ICU_IDP_1
-		}		
-		x = 17
-		y = 3
-		completion_reward = {
-			ICU = { country_event = ICU.2 }
-			}		
+# 	}
+# 	focus = { #프랑스 언론 공작
+# 		id = ICU_IDP_3
+# 		icon = ""
+# 		cost = 3
+# 		prerequisite = {
+# 			focus = ICU_IDP_1
+# 		}		
+# 		x = 17
+# 		y = 3
+# 		completion_reward = {
+# 			ICU = { country_event = ICU.2 }
+# 			}		
 
-	}
-	focus = { #무기고 습격
-		id = ICU_IDP_4
-		icon = ""
-		cost = 3
-		prerequisite = {
-			focus = ICU_IDP_2
-		}		
-		x = 15
-		y = 4
-		completion_reward = {		
-		}
-	}
-	focus = { #해외 지원 요청
-		id = ICU_IDP_5
-		icon = ""
-		cost = 3
-		prerequisite = {
-			focus = ICU_IDP_3
-		}		
-		x = 17
-		y = 4
-		completion_reward = {
-		}
-	}
-	focus = { #제국의 몰락
-		id = ICU_IDP_6
-		icon = ""
-		cost = 3
-		prerequisite = {
-			focus = ICU_IDP_4
-		}		
-		prerequisite = {
-			focus = ICU_IDP_5
-		}			
-		x = 16
-		y = 6
-		completion_reward = {
-			ICU = { country_event = ICU.5 }		
-			}		
+# 	}
+# 	focus = { #무기고 습격
+# 		id = ICU_IDP_4
+# 		icon = ""
+# 		cost = 3
+# 		prerequisite = {
+# 			focus = ICU_IDP_2
+# 		}		
+# 		x = 15
+# 		y = 4
+# 		completion_reward = {		
+# 		}
+# 	}
+# 	focus = { #해외 지원 요청
+# 		id = ICU_IDP_5
+# 		icon = ""
+# 		cost = 3
+# 		prerequisite = {
+# 			focus = ICU_IDP_3
+# 		}		
+# 		x = 17
+# 		y = 4
+# 		completion_reward = {
+# 		}
+# 	}
+# 	focus = { #제국의 몰락
+# 		id = ICU_IDP_6
+# 		icon = ""
+# 		cost = 3
+# 		prerequisite = {
+# 			focus = ICU_IDP_4
+# 		}		
+# 		prerequisite = {
+# 			focus = ICU_IDP_5
+# 		}			
+# 		x = 16
+# 		y = 6
+# 		completion_reward = {
+# 			ICU = { country_event = ICU.5 }		
+# 			}		
 
-	}	
-####연방 루트####	
-	focus = {#신연방 정책
-		id = ICU_future_2
-		icon = ""
-		cost = 5
-		prerequisite = {
-			focus = ICU_future_1
-		}
-		mutually_exclusive = { 
-			focus = ICU_IDP_1
-			}		
-		x = 28
-		y = 2
-		search_filters = { FOCUS_FILTER_ICU_DEBT_TO_IFC FOCUS_FILTER_INDUSTRY }		
-		completion_reward = {
-			ICU = { country_event = ICU.3 }			
-		}
-	}
-##경제##	
-	focus = { #5개년 경제 계획
-		id = ICU_eco_1
-		icon = ""
-		cost = 3
-		prerequisite = {
-			focus = ICU_future_2
-		}		
-		x = 23
-		y = 3
-		completion_reward = {
-			add_tech_bonus = {
-				name = industrial_bonus
-				bonus = 1.0
-				uses = 2
-				category = industry
-			}		
-		}
-	}
-	focus = { #민간기업 규제 철폐
-		id = ICU_eco_2
-		icon = ""
-		cost = 3
-		prerequisite = {
-			focus = ICU_eco_1
-		}		
-		x = 21
-		y = 4
-		completion_reward = {
-		unlock_decision_category_tooltip = ICU_economy_reform		
-		}
-	}
-	focus = { #베트남 도시화 정책
-		id = ICU_eco_3
-		icon = ""
-		cost = 3
-		prerequisite = {
-			focus = ICU_eco_2
-		}		
-		x = 20
-		y = 5
-		completion_reward = {
-		   	918 = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-						}
-					}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes	
-				}
-			}
-		   	921 = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-						}
-					}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes	
-				}
-			}
-		   	286 = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-						}
-					}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes	
-				}
-			}			
-		}
-	}
-	focus = { #중공업 진흥 정책
-		id = ICU_eco_4
-		icon = ""
-		cost = 3
-		prerequisite = {
-			focus = ICU_eco_2
-		}		
-		x = 22
-		y = 5
-		completion_reward = {
+# 	}	
+# ####연방 루트####	
+# 	focus = {#신연방 정책
+# 		id = ICU_future_2
+# 		icon = ""
+# 		cost = 5
+# 		prerequisite = {
+# 			focus = ICU_future_1
+# 		}
+# 		mutually_exclusive = { 
+# 			focus = ICU_IDP_1
+# 			}		
+# 		x = 28
+# 		y = 2
+# 		search_filters = { FOCUS_FILTER_ICU_DEBT_TO_IFC FOCUS_FILTER_INDUSTRY }		
+# 		completion_reward = {
+# 			ICU = { country_event = ICU.3 }			
+# 		}
+# 	}
+# ##경제##	
+# 	focus = { #5개년 경제 계획
+# 		id = ICU_eco_1
+# 		icon = ""
+# 		cost = 3
+# 		prerequisite = {
+# 			focus = ICU_future_2
+# 		}		
+# 		x = 23
+# 		y = 3
+# 		completion_reward = {
+# 			add_tech_bonus = {
+# 				name = industrial_bonus
+# 				bonus = 1.0
+# 				uses = 2
+# 				category = industry
+# 			}		
+# 		}
+# 	}
+# 	focus = { #민간기업 규제 철폐
+# 		id = ICU_eco_2
+# 		icon = ""
+# 		cost = 3
+# 		prerequisite = {
+# 			focus = ICU_eco_1
+# 		}		
+# 		x = 21
+# 		y = 4
+# 		completion_reward = {
+# 		unlock_decision_category_tooltip = ICU_economy_reform		
+# 		}
+# 	}
+# 	focus = { #베트남 도시화 정책
+# 		id = ICU_eco_3
+# 		icon = ""
+# 		cost = 3
+# 		prerequisite = {
+# 			focus = ICU_eco_2
+# 		}		
+# 		x = 20
+# 		y = 5
+# 		completion_reward = {
+# 		   	918 = {
+# 				limit = {
+# 					free_building_slots = {
+# 						building = industrial_complex
+# 						size > 0
+# 						include_locked = yes
+# 						}
+# 					}
+# 				add_extra_state_shared_building_slots = 2
+# 				add_building_construction = {
+# 					type = industrial_complex
+# 					level = 1
+# 					instant_build = yes	
+# 				}
+# 			}
+# 		   	921 = {
+# 				limit = {
+# 					free_building_slots = {
+# 						building = industrial_complex
+# 						size > 0
+# 						include_locked = yes
+# 						}
+# 					}
+# 				add_extra_state_shared_building_slots = 2
+# 				add_building_construction = {
+# 					type = industrial_complex
+# 					level = 1
+# 					instant_build = yes	
+# 				}
+# 			}
+# 		   	286 = {
+# 				limit = {
+# 					free_building_slots = {
+# 						building = industrial_complex
+# 						size > 0
+# 						include_locked = yes
+# 						}
+# 					}
+# 				add_extra_state_shared_building_slots = 2
+# 				add_building_construction = {
+# 					type = industrial_complex
+# 					level = 1
+# 					instant_build = yes	
+# 				}
+# 			}			
+# 		}
+# 	}
+# 	focus = { #중공업 진흥 정책
+# 		id = ICU_eco_4
+# 		icon = ""
+# 		cost = 3
+# 		prerequisite = {
+# 			focus = ICU_eco_2
+# 		}		
+# 		x = 22
+# 		y = 5
+# 		completion_reward = {
 		
-		   	903 = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-						include_locked = yes
-					}
-				}			
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes	
-				}
-			}
-		   	904 = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-						include_locked = yes
-					}
-				}			
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes	
-				}
-			}			
-		}
-	}
-	focus = { #라오스 로드
-		id = ICU_eco_5
-		icon = ""
-		cost = 3
-		prerequisite = {
-			focus = ICU_eco_3
-		}		
-		x = 20
-		y = 6
-		completion_reward = {
-		   	670 = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-					}
-				}			
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes	
-				}
-			}
-		   	910 = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-					}
-				}			
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes	
-				}
-			}			
-		}
-	}	
-	focus = { #캄보디아 공업 지대
-		id = ICU_eco_6
-		icon = ""
-		cost = 3
-		prerequisite = {
-			focus = ICU_eco_4
-		}		
-		x = 22
-		y = 6
-		completion_reward = {
-		   	741 = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-						include_locked = yes
-					}
-				}			
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes	
-				}
-			}
-		   	924 = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-						include_locked = yes
-					}
-				}			
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes	
-				}
-			}			
-		}
-	}
-	focus = { #프놈펜 재개발
-		id = ICU_eco_7
-		icon = ""
-		cost = 3
-		prerequisite = {
-			focus = ICU_eco_5
-		}
-		prerequisite = {
-			focus = ICU_eco_6
-		}		
-		x = 21
-		y = 7
-		completion_reward = {
-		   	924 = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-						}
-					}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes	
-				}
-			}
-		   	924 = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes	
-				}
-			}			
-		}
-	}
-	focus = { #하노이 고속도로
-		id = ICU_eco_8
-		icon = ""
-		cost = 5
-		prerequisite = {
-			focus = ICU_eco_1
-		}		
-		x = 24
-		y = 4
-		completion_reward = {
-		   	903 = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes	
-				}
-			}
-		   	904 = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes	
-				}
-			}
-		   	671 = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes	
-				}
-			}			
-		}
-		   	902 = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes	
-				}
-			}		
-	}
-	focus = { #남부로 연장
-		id = ICU_eco_9
-		icon = ""
-		cost = 3
-		prerequisite = {
-			focus = ICU_eco_8
-		}		
-		x = 24
-		y = 5
-		completion_reward = {
-		   	671 = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes	
-				}
-			}
-		   	913 = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes	
-				}
-			}
-		   	919 = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes	
-				}
-			}			
-		}
-	}
-	focus = { #항구 도시 건설
-		id = ICU_eco_10
-		icon = ""
-		cost = 3
-		prerequisite = {
-			focus = ICU_eco_9
-		}		
-		x = 24
-		y = 7
-		completion_reward = {
-		   	918 = {
-				limit = {
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}			
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes	
-				}
-			}
-		   	921 = {
-				limit = {
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}			
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes	
-				}
-			}					
-		}
-	}
-	focus = { #고무 생산 증강 계획
-		id = ICU_eco_11
-		icon = ""
-		cost = 3
-		prerequisite = {
-			focus = ICU_eco_9
-		}		
-		x = 26
-		y = 7
-		completion_reward = {
-		}
-	}
-	focus = { #하노이 연방대학
-		id = ICU_eco_12
-		icon = ""
-		cost = 3
-		prerequisite = {
-			focus = ICU_eco_1
-		}		
-		x = 26
-		y = 4
-		completion_reward = {
-			add_research_slot = 1
-		}
-	}
-	focus = { #대학 증축 계획
-		id = ICU_eco_13
-		icon = ""
-		cost = 3
-		prerequisite = {
-			focus = ICU_eco_12
-		}		
-		available = {
-			num_of_factories > 35
-		}
+# 		   	903 = {
+# 				limit = {
+# 					free_building_slots = {
+# 						building = arms_factory
+# 						size > 1
+# 						include_locked = yes
+# 					}
+# 				}			
+# 				add_extra_state_shared_building_slots = 1
+# 				add_building_construction = {
+# 					type = arms_factory
+# 					level = 1
+# 					instant_build = yes	
+# 				}
+# 			}
+# 		   	904 = {
+# 				limit = {
+# 					free_building_slots = {
+# 						building = arms_factory
+# 						size > 1
+# 						include_locked = yes
+# 					}
+# 				}			
+# 				add_extra_state_shared_building_slots = 1
+# 				add_building_construction = {
+# 					type = arms_factory
+# 					level = 1
+# 					instant_build = yes	
+# 				}
+# 			}			
+# 		}
+# 	}
+# 	focus = { #라오스 로드
+# 		id = ICU_eco_5
+# 		icon = ""
+# 		cost = 3
+# 		prerequisite = {
+# 			focus = ICU_eco_3
+# 		}		
+# 		x = 20
+# 		y = 6
+# 		completion_reward = {
+# 		   	670 = {
+# 				limit = {
+# 					free_building_slots = {
+# 						building = infrastructure
+# 						size > 0
+# 					}
+# 				}			
+# 				add_building_construction = {
+# 					type = infrastructure
+# 					level = 1
+# 					instant_build = yes	
+# 				}
+# 			}
+# 		   	910 = {
+# 				limit = {
+# 					free_building_slots = {
+# 						building = infrastructure
+# 						size > 0
+# 					}
+# 				}			
+# 				add_building_construction = {
+# 					type = infrastructure
+# 					level = 1
+# 					instant_build = yes	
+# 				}
+# 			}			
+# 		}
+# 	}	
+# 	focus = { #캄보디아 공업 지대
+# 		id = ICU_eco_6
+# 		icon = ""
+# 		cost = 3
+# 		prerequisite = {
+# 			focus = ICU_eco_4
+# 		}		
+# 		x = 22
+# 		y = 6
+# 		completion_reward = {
+# 		   	741 = {
+# 				limit = {
+# 					free_building_slots = {
+# 						building = arms_factory
+# 						size > 1
+# 						include_locked = yes
+# 					}
+# 				}			
+# 				add_extra_state_shared_building_slots = 1
+# 				add_building_construction = {
+# 					type = arms_factory
+# 					level = 1
+# 					instant_build = yes	
+# 				}
+# 			}
+# 		   	924 = {
+# 				limit = {
+# 					free_building_slots = {
+# 						building = arms_factory
+# 						size > 1
+# 						include_locked = yes
+# 					}
+# 				}			
+# 				add_extra_state_shared_building_slots = 1
+# 				add_building_construction = {
+# 					type = arms_factory
+# 					level = 1
+# 					instant_build = yes	
+# 				}
+# 			}			
+# 		}
+# 	}
+# 	focus = { #프놈펜 재개발
+# 		id = ICU_eco_7
+# 		icon = ""
+# 		cost = 3
+# 		prerequisite = {
+# 			focus = ICU_eco_5
+# 		}
+# 		prerequisite = {
+# 			focus = ICU_eco_6
+# 		}		
+# 		x = 21
+# 		y = 7
+# 		completion_reward = {
+# 		   	924 = {
+# 				limit = {
+# 					free_building_slots = {
+# 						building = industrial_complex
+# 						size > 0
+# 						include_locked = yes
+# 						}
+# 					}
+# 				add_extra_state_shared_building_slots = 1
+# 				add_building_construction = {
+# 					type = industrial_complex
+# 					level = 1
+# 					instant_build = yes	
+# 				}
+# 			}
+# 		   	924 = {
+# 				limit = {
+# 					free_building_slots = {
+# 						building = infrastructure
+# 						size > 0
+# 					}
+# 				}
+# 				add_building_construction = {
+# 					type = infrastructure
+# 					level = 1
+# 					instant_build = yes	
+# 				}
+# 			}			
+# 		}
+# 	}
+# 	focus = { #하노이 고속도로
+# 		id = ICU_eco_8
+# 		icon = ""
+# 		cost = 5
+# 		prerequisite = {
+# 			focus = ICU_eco_1
+# 		}		
+# 		x = 24
+# 		y = 4
+# 		completion_reward = {
+# 		   	903 = {
+# 				limit = {
+# 					free_building_slots = {
+# 						building = infrastructure
+# 						size > 0
+# 					}
+# 				}
+# 				add_building_construction = {
+# 					type = infrastructure
+# 					level = 1
+# 					instant_build = yes	
+# 				}
+# 			}
+# 		   	904 = {
+# 				limit = {
+# 					free_building_slots = {
+# 						building = infrastructure
+# 						size > 0
+# 					}
+# 				}
+# 				add_building_construction = {
+# 					type = infrastructure
+# 					level = 1
+# 					instant_build = yes	
+# 				}
+# 			}
+# 		   	671 = {
+# 				limit = {
+# 					free_building_slots = {
+# 						building = infrastructure
+# 						size > 0
+# 					}
+# 				}
+# 				add_building_construction = {
+# 					type = infrastructure
+# 					level = 1
+# 					instant_build = yes	
+# 				}
+# 			}			
+# 		}
+# 		   	902 = {
+# 				limit = {
+# 					free_building_slots = {
+# 						building = infrastructure
+# 						size > 0
+# 					}
+# 				}
+# 				add_building_construction = {
+# 					type = infrastructure
+# 					level = 1
+# 					instant_build = yes	
+# 				}
+# 			}		
+# 	}
+# 	focus = { #남부로 연장
+# 		id = ICU_eco_9
+# 		icon = ""
+# 		cost = 3
+# 		prerequisite = {
+# 			focus = ICU_eco_8
+# 		}		
+# 		x = 24
+# 		y = 5
+# 		completion_reward = {
+# 		   	671 = {
+# 				limit = {
+# 					free_building_slots = {
+# 						building = infrastructure
+# 						size > 0
+# 					}
+# 				}
+# 				add_building_construction = {
+# 					type = infrastructure
+# 					level = 1
+# 					instant_build = yes	
+# 				}
+# 			}
+# 		   	913 = {
+# 				limit = {
+# 					free_building_slots = {
+# 						building = infrastructure
+# 						size > 0
+# 					}
+# 				}
+# 				add_building_construction = {
+# 					type = infrastructure
+# 					level = 1
+# 					instant_build = yes	
+# 				}
+# 			}
+# 		   	919 = {
+# 				limit = {
+# 					free_building_slots = {
+# 						building = infrastructure
+# 						size > 0
+# 					}
+# 				}
+# 				add_building_construction = {
+# 					type = infrastructure
+# 					level = 1
+# 					instant_build = yes	
+# 				}
+# 			}			
+# 		}
+# 	}
+# 	focus = { #항구 도시 건설
+# 		id = ICU_eco_10
+# 		icon = ""
+# 		cost = 3
+# 		prerequisite = {
+# 			focus = ICU_eco_9
+# 		}		
+# 		x = 24
+# 		y = 7
+# 		completion_reward = {
+# 		   	918 = {
+# 				limit = {
+# 					free_building_slots = {
+# 						building = dockyard
+# 						size > 1
+# 						include_locked = yes
+# 					}
+# 				}			
+# 				add_extra_state_shared_building_slots = 2
+# 				add_building_construction = {
+# 					type = dockyard
+# 					level = 2
+# 					instant_build = yes	
+# 				}
+# 			}
+# 		   	921 = {
+# 				limit = {
+# 					free_building_slots = {
+# 						building = dockyard
+# 						size > 1
+# 						include_locked = yes
+# 					}
+# 				}			
+# 				add_extra_state_shared_building_slots = 1
+# 				add_building_construction = {
+# 					type = dockyard
+# 					level = 1
+# 					instant_build = yes	
+# 				}
+# 			}					
+# 		}
+# 	}
+# 	focus = { #고무 생산 증강 계획
+# 		id = ICU_eco_11
+# 		icon = ""
+# 		cost = 3
+# 		prerequisite = {
+# 			focus = ICU_eco_9
+# 		}		
+# 		x = 26
+# 		y = 7
+# 		completion_reward = {
+# 		}
+# 	}
+# 	focus = { #하노이 연방대학
+# 		id = ICU_eco_12
+# 		icon = ""
+# 		cost = 3
+# 		prerequisite = {
+# 			focus = ICU_eco_1
+# 		}		
+# 		x = 26
+# 		y = 4
+# 		completion_reward = {
+# 			add_research_slot = 1
+# 		}
+# 	}
+# 	focus = { #대학 증축 계획
+# 		id = ICU_eco_13
+# 		icon = ""
+# 		cost = 3
+# 		prerequisite = {
+# 			focus = ICU_eco_12
+# 		}		
+# 		available = {
+# 			num_of_factories > 35
+# 		}
 		
-		x = 26
-		y = 5
-		completion_reward = {
-			add_research_slot = 1
-		}
-	}
-	focus = { #동남아의 봄
-		id = ICU_eco_14
-		icon = ""
-		cost = 3
-		prerequisite = {
-			focus = ICU_eco_7
-		}
-		prerequisite = {
-			focus = ICU_eco_10
-		}		
-		x = 23
-		y = 8
-		completion_reward = {
-		}
-	}
-	focus = { #해외 시장 개척
-		id = ICU_eco_15
-		icon = ""
-		cost = 3
-		prerequisite = {
-			focus = ICU_eco_14
-		}		
-		x = 23
-		y = 9
-		completion_reward = {
-		}
-	}
-	focus = { #프랑스 진출
-		id = ICU_eco_16
-		icon = ""
-		cost = 3
-		prerequisite = {
-			focus = ICU_eco_15
-		}		
-		mutually_exclusive = { 
-			focus = ICU_eco_17
-			}		
-		x = 22
-		y = 10
-		completion_reward = {
-		}
-	}	
-	focus = { #중국 진출
-		id = ICU_eco_17
-		icon = ""
-		cost = 3
-		prerequisite = {
-			focus = ICU_eco_15
-		}		
-		mutually_exclusive = { 
-			focus = ICU_eco_16
-			}		
-		x = 24
-		y = 10
-		completion_reward = {
-		}
-	}
-###군사###
-	focus = { #군사개혁
-		id = ICU_arm_1
-		icon = ""
-		cost = 3
-		prerequisite = {
-			focus = ICU_future_2
-		}		
-		x = 31
-		y = 3
-		completion_reward = {
-			army_experience = 15		
-			navy_experience = 15		
-			air_experience = 15
-		}
-	}
-	focus = { #사관학교 증설
-		id = ICU_arm_2
-		icon = ""
-		cost = 3
-		prerequisite = {
-			focus = ICU_arm_1
-		}		
-		x = 31
-		y = 4
-		completion_reward = {	
-		unlock_decision_category_tooltip = ICU_arcademy_reform	
-		}
-	}
-##육군##
-	focus = { #육군 개혁
-		id = ICU_arm_3
-		icon = ""
-		cost = 3
-		prerequisite = {
-			focus = ICU_arm_2
-		}		
-		x = 28
-		y = 5
-		completion_reward = {
-		unlock_decision_category_tooltip = ICU_army_reform		
-		army_experience = 25
-		}
-	}	
-	focus = { #징병법 개정
-		id = ICU_arm_4
-		icon = ""
-		cost = 3
-		prerequisite = {
-			focus = ICU_arm_3
-		}		
-		x = 28
-		y = 6
-		completion_reward = {
-		}
-	}
-	focus = { #총기 개발
-		id = ICU_arm_5
-		icon = ""
-		cost = 3
-		prerequisite = {
-			focus = ICU_arm_4
-		}		
-		x = 28
-		y = 7
-		completion_reward = {
-		}
-	}
-	focus = { #전차 개발
-		id = ICU_arm_6
-		icon = ""
-		cost = 3
-		prerequisite = {
-			focus = ICU_arm_4
-		}		
-		x = 30
-		y = 7
-		completion_reward = {
-			add_tech_bonus = {
-				name = armor_bonus
-				bonus = 1.0
-				uses = 2
-				category = armor
-			}		
-		}
-	}
-	focus = { #화포 개발
-		id = ICU_arm_7
-		icon = ""
-		cost = 3
-		prerequisite = {
-			focus = ICU_arm_5
-		}		
-		x = 28
-		y = 8
-		completion_reward = {
-		}
-	}
-	focus = { #교리 개발
-		id = ICU_arm_8
-		icon = ""
-		cost = 3
-		prerequisite = {
-			focus = ICU_arm_6
-		}		
-		x = 30
-		y = 8
-		completion_reward = {
-		}
-	}	
-	focus = { #화력제일주의
-		id = ICU_arm_9
-		icon = ""
-		cost = 3
-		prerequisite = {
-			focus = ICU_arm_7
-		}	
-		prerequisite = {
-			focus = ICU_arm_8
-		}		
-		x = 29
-		y = 9
-		completion_reward = {
-		}
-	}
-##해군##
-	focus = { #해군 창설
-		id = ICU_nav_1
-		icon = ""
-		cost = 3
-		prerequisite = {
-			focus = ICU_arm_2
-		}		
-		x = 32
-		y = 5
-		completion_reward = {
-		navy_experience = 25
-		}
-	}
-	focus = { #조선소 증축
-		id = ICU_nav_2
-		icon = ""
-		cost = 3
-		prerequisite = {
-			focus = ICU_nav_1
-		}		
-		x = 32
-		y = 6
-		completion_reward = {
-		}
-	}
-	focus = { #프랑스 해군고문
-		id = ICU_nav_3
-		icon = ""
-		cost = 3
-		prerequisite = {
-			focus = ICU_nav_2
-		}	
-		x = 32
-		y = 7
-		completion_reward = {
-		}
-	}
-	focus = { #구축함 구매
-		id = ICU_nav_4
-		icon = ""
-		cost = 3
-		prerequisite = {
-			focus = ICU_nav_2
-		}	
-		x = 34
-		y = 7
-		completion_reward = {
-				if = {
-					limit = {
-						not = { has_tech = ship_hull_light_1 }
-					}
-					set_technology = {
-						ship_hull_light = 1
-					}
-				}		
-				create_equipment_variant = {
-					name = "I Class"
-					type = ship_hull_light_1
-					parent_version = 0
-					modules = {
-						fixed_ship_battery_slot = ship_light_battery_1
-						fixed_ship_anti_air_slot = ship_anti_air_1
-						fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-						fixed_ship_radar_slot = empty
-						fixed_ship_engine_slot = light_ship_engine_1
-						fixed_ship_torpedo_slot = ship_torpedo_1
-						mid_1_custom_slot = empty
-						rear_1_custom_slot = empty
-					}
-				}
-		hidden_effect = {
-			if = {
-				limit = {
-					has_dlc = "Man the Guns"
-				}
-					ICU = { load_oob = ICU_ENG_support_mtg }
-				}
-			if = {
-				limit = {
-					not = { has_dlc = "Man the Guns" }
-				}
-					ICU = { load_oob = ICU_ENG_support }
-				}
-			}		
-		}		
-	}
-	focus = { #잠수함 개발
-		id = ICU_nav_5
-		icon = ""
-		cost = 3
-		prerequisite = {
-			focus = ICU_nav_4
-		}	
-		x = 32
-		y = 8
-		completion_reward = {
-		}
-	}
-	focus = { #수상함 개발
-		id = ICU_nav_6
-		icon = ""
-		cost = 3
-		prerequisite = {
-			focus = ICU_nav_4
-		}	
-		x = 34
-		y = 8
-		completion_reward = {
-		}
-	}
-	focus = { #해병대 창설
-		id = ICU_nav_7
-		icon = ""
-		cost = 3
-		prerequisite = {
-			focus = ICU_nav_5
-		}	
-		prerequisite = {
-			focus = ICU_nav_6
-		}		
-		x = 33
-		y = 9
-		completion_reward = {
-		}
-	}
-##공군##
-	focus = { #공군 창설
-		id = ICU_air_1
-		icon = ""
-		cost = 3
-		prerequisite = {
-			focus = ICU_arm_2
-		}		
-		x = 36
-		y = 5
-		completion_reward = {
-		air_experience = 25
-		}
-	}
-	focus = { #공항 건설
-		id = ICU_air_2
-		icon = ""
-		cost = 3
-		prerequisite = {
-			focus = ICU_air_1
-		}		
-		x = 36
-		y = 6
-		completion_reward = {
-		}
-	}
-	focus = { #전투기 구매
-		id = ICU_air_3
-		icon = ""
-		cost = 3
-		prerequisite = {
-			focus = ICU_air_2
-		}		
-		x = 36
-		y = 7
-		completion_reward = {
-		}
-	}
-	focus = { #전투기 개발
-		id = ICU_air_4
-		icon = ""
-		cost = 3
-		prerequisite = {
-			focus = ICU_air_3
-		}		
-		x = 36
-		y = 8
-		completion_reward = {
-		}
-	}
-	focus = { #폭격기 개발
-		id = ICU_air_5
-		icon = ""
-		cost = 3
-		prerequisite = {
-			focus = ICU_air_3
-		}		
-		x = 38
-		y = 8
-		completion_reward = {
-		}
-	}	
-	focus = { #대공망 구축
-		id = ICU_air_6
+# 		x = 26
+# 		y = 5
+# 		completion_reward = {
+# 			add_research_slot = 1
+# 		}
+# 	}
+# 	focus = { #동남아의 봄
+# 		id = ICU_eco_14
+# 		icon = ""
+# 		cost = 3
+# 		prerequisite = {
+# 			focus = ICU_eco_7
+# 		}
+# 		prerequisite = {
+# 			focus = ICU_eco_10
+# 		}		
+# 		x = 23
+# 		y = 8
+# 		completion_reward = {
+# 		}
+# 	}
+# 	focus = { #해외 시장 개척
+# 		id = ICU_eco_15
+# 		icon = ""
+# 		cost = 3
+# 		prerequisite = {
+# 			focus = ICU_eco_14
+# 		}		
+# 		x = 23
+# 		y = 9
+# 		completion_reward = {
+# 		}
+# 	}
+# 	focus = { #프랑스 진출
+# 		id = ICU_eco_16
+# 		icon = ""
+# 		cost = 3
+# 		prerequisite = {
+# 			focus = ICU_eco_15
+# 		}		
+# 		mutually_exclusive = { 
+# 			focus = ICU_eco_17
+# 			}		
+# 		x = 22
+# 		y = 10
+# 		completion_reward = {
+# 		}
+# 	}	
+# 	focus = { #중국 진출
+# 		id = ICU_eco_17
+# 		icon = ""
+# 		cost = 3
+# 		prerequisite = {
+# 			focus = ICU_eco_15
+# 		}		
+# 		mutually_exclusive = { 
+# 			focus = ICU_eco_16
+# 			}		
+# 		x = 24
+# 		y = 10
+# 		completion_reward = {
+# 		}
+# 	}
+# ###군사###
+# 	focus = { #군사개혁
+# 		id = ICU_arm_1
+# 		icon = ""
+# 		cost = 3
+# 		prerequisite = {
+# 			focus = ICU_future_2
+# 		}		
+# 		x = 31
+# 		y = 3
+# 		completion_reward = {
+# 			army_experience = 15		
+# 			navy_experience = 15		
+# 			air_experience = 15
+# 		}
+# 	}
+# 	focus = { #사관학교 증설
+# 		id = ICU_arm_2
+# 		icon = ""
+# 		cost = 3
+# 		prerequisite = {
+# 			focus = ICU_arm_1
+# 		}		
+# 		x = 31
+# 		y = 4
+# 		completion_reward = {	
+# 		unlock_decision_category_tooltip = ICU_arcademy_reform	
+# 		}
+# 	}
+# ##육군##
+# 	focus = { #육군 개혁
+# 		id = ICU_arm_3
+# 		icon = ""
+# 		cost = 3
+# 		prerequisite = {
+# 			focus = ICU_arm_2
+# 		}		
+# 		x = 28
+# 		y = 5
+# 		completion_reward = {
+# 		unlock_decision_category_tooltip = ICU_army_reform		
+# 		army_experience = 25
+# 		}
+# 	}	
+# 	focus = { #징병법 개정
+# 		id = ICU_arm_4
+# 		icon = ""
+# 		cost = 3
+# 		prerequisite = {
+# 			focus = ICU_arm_3
+# 		}		
+# 		x = 28
+# 		y = 6
+# 		completion_reward = {
+# 		}
+# 	}
+# 	focus = { #총기 개발
+# 		id = ICU_arm_5
+# 		icon = ""
+# 		cost = 3
+# 		prerequisite = {
+# 			focus = ICU_arm_4
+# 		}		
+# 		x = 28
+# 		y = 7
+# 		completion_reward = {
+# 		}
+# 	}
+# 	focus = { #전차 개발
+# 		id = ICU_arm_6
+# 		icon = ""
+# 		cost = 3
+# 		prerequisite = {
+# 			focus = ICU_arm_4
+# 		}		
+# 		x = 30
+# 		y = 7
+# 		completion_reward = {
+# 			add_tech_bonus = {
+# 				name = armor_bonus
+# 				bonus = 1.0
+# 				uses = 2
+# 				category = armor
+# 			}		
+# 		}
+# 	}
+# 	focus = { #화포 개발
+# 		id = ICU_arm_7
+# 		icon = ""
+# 		cost = 3
+# 		prerequisite = {
+# 			focus = ICU_arm_5
+# 		}		
+# 		x = 28
+# 		y = 8
+# 		completion_reward = {
+# 		}
+# 	}
+# 	focus = { #교리 개발
+# 		id = ICU_arm_8
+# 		icon = ""
+# 		cost = 3
+# 		prerequisite = {
+# 			focus = ICU_arm_6
+# 		}		
+# 		x = 30
+# 		y = 8
+# 		completion_reward = {
+# 		}
+# 	}	
+# 	focus = { #화력제일주의
+# 		id = ICU_arm_9
+# 		icon = ""
+# 		cost = 3
+# 		prerequisite = {
+# 			focus = ICU_arm_7
+# 		}	
+# 		prerequisite = {
+# 			focus = ICU_arm_8
+# 		}		
+# 		x = 29
+# 		y = 9
+# 		completion_reward = {
+# 		}
+# 	}
+# ##해군##
+# 	focus = { #해군 창설
+# 		id = ICU_nav_1
+# 		icon = ""
+# 		cost = 3
+# 		prerequisite = {
+# 			focus = ICU_arm_2
+# 		}		
+# 		x = 32
+# 		y = 5
+# 		completion_reward = {
+# 		navy_experience = 25
+# 		}
+# 	}
+# 	focus = { #조선소 증축
+# 		id = ICU_nav_2
+# 		icon = ""
+# 		cost = 3
+# 		prerequisite = {
+# 			focus = ICU_nav_1
+# 		}		
+# 		x = 32
+# 		y = 6
+# 		completion_reward = {
+# 		}
+# 	}
+# 	focus = { #프랑스 해군고문
+# 		id = ICU_nav_3
+# 		icon = ""
+# 		cost = 3
+# 		prerequisite = {
+# 			focus = ICU_nav_2
+# 		}	
+# 		x = 32
+# 		y = 7
+# 		completion_reward = {
+# 		}
+# 	}
+# 	focus = { #구축함 구매
+# 		id = ICU_nav_4
+# 		icon = ""
+# 		cost = 3
+# 		prerequisite = {
+# 			focus = ICU_nav_2
+# 		}	
+# 		x = 34
+# 		y = 7
+# 		completion_reward = {
+# 				if = {
+# 					limit = {
+# 						not = { has_tech = ship_hull_light_1 }
+# 					}
+# 					set_technology = {
+# 						ship_hull_light = 1
+# 					}
+# 				}		
+# 				create_equipment_variant = {
+# 					name = "I Class"
+# 					type = ship_hull_light_1
+# 					parent_version = 0
+# 					modules = {
+# 						fixed_ship_battery_slot = ship_light_battery_1
+# 						fixed_ship_anti_air_slot = ship_anti_air_1
+# 						fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+# 						fixed_ship_radar_slot = empty
+# 						fixed_ship_engine_slot = light_ship_engine_1
+# 						fixed_ship_torpedo_slot = ship_torpedo_1
+# 						mid_1_custom_slot = empty
+# 						rear_1_custom_slot = empty
+# 					}
+# 				}
+# 		hidden_effect = {
+# 			if = {
+# 				limit = {
+# 					has_dlc = "Man the Guns"
+# 				}
+# 					ICU = { load_oob = ICU_ENG_support_mtg }
+# 				}
+# 			if = {
+# 				limit = {
+# 					not = { has_dlc = "Man the Guns" }
+# 				}
+# 					ICU = { load_oob = ICU_ENG_support }
+# 				}
+# 			}		
+# 		}		
+# 	}
+# 	focus = { #잠수함 개발
+# 		id = ICU_nav_5
+# 		icon = ""
+# 		cost = 3
+# 		prerequisite = {
+# 			focus = ICU_nav_4
+# 		}	
+# 		x = 32
+# 		y = 8
+# 		completion_reward = {
+# 		}
+# 	}
+# 	focus = { #수상함 개발
+# 		id = ICU_nav_6
+# 		icon = ""
+# 		cost = 3
+# 		prerequisite = {
+# 			focus = ICU_nav_4
+# 		}	
+# 		x = 34
+# 		y = 8
+# 		completion_reward = {
+# 		}
+# 	}
+# 	focus = { #해병대 창설
+# 		id = ICU_nav_7
+# 		icon = ""
+# 		cost = 3
+# 		prerequisite = {
+# 			focus = ICU_nav_5
+# 		}	
+# 		prerequisite = {
+# 			focus = ICU_nav_6
+# 		}		
+# 		x = 33
+# 		y = 9
+# 		completion_reward = {
+# 		}
+# 	}
+# ##공군##
+# 	focus = { #공군 창설
+# 		id = ICU_air_1
+# 		icon = ""
+# 		cost = 3
+# 		prerequisite = {
+# 			focus = ICU_arm_2
+# 		}		
+# 		x = 36
+# 		y = 5
+# 		completion_reward = {
+# 		air_experience = 25
+# 		}
+# 	}
+# 	focus = { #공항 건설
+# 		id = ICU_air_2
+# 		icon = ""
+# 		cost = 3
+# 		prerequisite = {
+# 			focus = ICU_air_1
+# 		}		
+# 		x = 36
+# 		y = 6
+# 		completion_reward = {
+# 		}
+# 	}
+# 	focus = { #전투기 구매
+# 		id = ICU_air_3
+# 		icon = ""
+# 		cost = 3
+# 		prerequisite = {
+# 			focus = ICU_air_2
+# 		}		
+# 		x = 36
+# 		y = 7
+# 		completion_reward = {
+# 		}
+# 	}
+# 	focus = { #전투기 개발
+# 		id = ICU_air_4
+# 		icon = ""
+# 		cost = 3
+# 		prerequisite = {
+# 			focus = ICU_air_3
+# 		}		
+# 		x = 36
+# 		y = 8
+# 		completion_reward = {
+# 		}
+# 	}
+# 	focus = { #폭격기 개발
+# 		id = ICU_air_5
+# 		icon = ""
+# 		cost = 3
+# 		prerequisite = {
+# 			focus = ICU_air_3
+# 		}		
+# 		x = 38
+# 		y = 8
+# 		completion_reward = {
+# 		}
+# 	}	
+# 	focus = { #대공망 구축
+# 		id = ICU_air_6
 		
-		icon = ""
-		cost = 3
-		prerequisite = {
-			focus = ICU_air_3
-		}		
-		x = 40
-		y = 8
-		completion_reward = {
-		}
-	}
-	focus = { #공수부대 창설
-		id = ICU_air_7
-		icon = ""
-		cost = 3
-		prerequisite = {
-			focus = ICU_air_4
-		}	
-		prerequisite = {
-			focus = ICU_air_5
-		}			
-		prerequisite = {
-			focus = ICU_air_6
-		}			
-		x = 38
-		y = 9
-		completion_reward = {
-		}
-	}
-	focus = { #현대화 완료
-		id = ICU_mil_1
-		icon = ""
-		cost = 3
-		prerequisite = {
-			focus = ICU_arm_9
-		}	
-		prerequisite = {
-			focus = ICU_nav_7
-		}
-		prerequisite = {
-			focus = ICU_air_7
-		}		
-		x = 33
-		y = 10
-		completion_reward = {
-		}
-	}
-####외교 정책####	
-}
+# 		icon = ""
+# 		cost = 3
+# 		prerequisite = {
+# 			focus = ICU_air_3
+# 		}		
+# 		x = 40
+# 		y = 8
+# 		completion_reward = {
+# 		}
+# 	}
+# 	focus = { #공수부대 창설
+# 		id = ICU_air_7
+# 		icon = ""
+# 		cost = 3
+# 		prerequisite = {
+# 			focus = ICU_air_4
+# 		}	
+# 		prerequisite = {
+# 			focus = ICU_air_5
+# 		}			
+# 		prerequisite = {
+# 			focus = ICU_air_6
+# 		}			
+# 		x = 38
+# 		y = 9
+# 		completion_reward = {
+# 		}
+# 	}
+# 	focus = { #현대화 완료
+# 		id = ICU_mil_1
+# 		icon = ""
+# 		cost = 3
+# 		prerequisite = {
+# 			focus = ICU_arm_9
+# 		}	
+# 		prerequisite = {
+# 			focus = ICU_nav_7
+# 		}
+# 		prerequisite = {
+# 			focus = ICU_air_7
+# 		}		
+# 		x = 33
+# 		y = 10
+# 		completion_reward = {
+# 		}
+# 	}
+# ####외교 정책####	
+# }

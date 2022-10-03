@@ -90,6 +90,16 @@ bitmapfonts = {
 	}
 
 	bitmapfont = {
+		name = "hoi_korea_dea_22"
+		path = "gfx/fonts/hoi_korea_dea_22"
+		color = 0xffffffff
+		textcolors = {
+			W = { 255 255 255 }
+			b = { 0 0 0 }
+		}
+	}
+
+	bitmapfont = {
 		name = "cg_16b"
 		#path = "gfx/fonts/cg_16b"
 		fontfiles = { 

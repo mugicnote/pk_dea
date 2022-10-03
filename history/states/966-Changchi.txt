@@ -1,0 +1,14 @@
+state={
+	id=966
+	name="STATE_966"
+	provinces={
+		10674 10691 
+	}
+	history={
+		owner = SIK
+		add_core_of = SIK
+
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

@@ -5,8 +5,6 @@ state={
 	history={
 		owner = NXM
 		add_core_of = NXM
-		add_core_of = CHI
-		add_core_of = SHX
 		buildings = {
 			infrastructure = 2
 

@@ -6,7 +6,6 @@ state={
 	history={
 		owner = SZC
 		add_core_of = SZC
-		add_core_of = CHI
 		buildings = {
 			infrastructure = 2
 

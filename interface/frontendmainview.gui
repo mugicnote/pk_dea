@@ -263,6 +263,16 @@ guiTypes = {
 		}
 
 		######################################### Buttons at the bottom
+		positionType = {
+			name = "subscription_size"
+			position = { x = 320 y = 563 }
+		}
+
+		positionType = {
+			name = "version_label_subscription_position"
+			position = { x = 35 y = 524 }
+		}
+		
 		ButtonType = {
 			name = "single_player_button"
 			position = { x = 96 y = 377 }
@@ -384,6 +394,16 @@ guiTypes = {
 			position = { x = 0 y = 155 }
 		}
 		
+		positionType = {
+			name = "subscription_position"
+			position = { x = -50 y = 109 }
+		}
+
+		positionType = {
+			name = "subscription_position_without_social_gui"
+			position = { x = 0 y = 239 }
+		}
+
 		containerWindowType = {
 			name = "social_view_interface_window"
 			position = { x = 250 y = 0  }

@@ -26,23 +26,33 @@ defined_text = {
 
 	text = {
 		trigger = { check_variable = { TNO_Opening_Screen = 2 } }
-		localization_key = "[GET_COUNTRY_INFO]"
+		localization_key = PRODUCTION_CREW_TEXT
 	}
 
 	text = {
 		trigger = { check_variable = { TNO_Opening_Screen = 3 } }
-		localization_key = "[GET_MOD_FEATURES_PAGE_TEXT]"
+		localization_key = "[GET_COUNTRY_INFO]"
 	}
 
 	text = {
 		trigger = { check_variable = { TNO_Opening_Screen = 4 } }
-		localization_key = "[GET_REGIONAL_INFO]"
+		localization_key = "[GET_COUNTRY_HISTORY_INFO]"
 	}
 
 	text = {
 		trigger = { check_variable = { TNO_Opening_Screen = 5 } }
-		localization_key = PRODUCTION_CREW_TEXT
+		localization_key = "[GET_COUNTRY_GOALS_INFO]"
 	}
+
+	# text = {
+	# 	trigger = { check_variable = { TNO_Opening_Screen = 5 } }
+	# 	localization_key = "[GET_MOD_FEATURES_PAGE_TEXT]"
+	# }
+
+	# text = {
+	# 	trigger = { check_variable = { TNO_Opening_Screen = 6 } }
+	# 	localization_key = "[GET_REGIONAL_INFO]"
+	# }
 }
 
 defined_text = {
@@ -50,7 +60,7 @@ defined_text = {
 	## Countries with Opening pages
 	text = {
 		trigger = { tag = KOR }
-		localization_key = "[GET_COUNTRY_INFO_PAGE_TEXT_KOR]"
+		localization_key = "COUNTRY_INFO_1_KOR"
 	}
 	text = {
 		trigger = { tag = CHI }
@@ -59,22 +69,6 @@ defined_text = {
 	text = {
 		trigger = { tag = ICU }
 		localization_key = "[GET_COUNTRY_INFO_PAGE_TEXT_ICU]"
-	}
-}
-
-defined_text = {
-	name = GET_COUNTRY_INFO_PAGE_TEXT_KOR
-	text = {
-		trigger = { check_variable = { COUNTRY_INFO_PAGE = 0 } }
-		localization_key = COUNTRY_INFO_1_KOR
-	}
-	text = {
-		trigger = { check_variable = { COUNTRY_INFO_PAGE = 1 } }
-		localization_key = COUNTRY_INFO_2_KOR
-	}
-	text = {
-		trigger = { check_variable = { COUNTRY_INFO_PAGE = 2 } }
-		localization_key = COUNTRY_INFO_3_KOR
 	}
 }
 
@@ -107,6 +101,56 @@ defined_text = {
 	text = {
 		trigger = { check_variable = { COUNTRY_INFO_PAGE = 2 } }
 		localization_key = COUNTRY_INFO_3_ICU
+	}
+}
+
+defined_text = {
+	name = GET_COUNTRY_HISTORY_INFO
+	## Countries with Opening pages
+	text = {
+		trigger = { tag = KOR }
+		localization_key = "[GET_COUNTRY_HISTORY_INFO_PAGE_TEXT_KOR]"
+	}
+}
+
+defined_text = {
+	name = GET_COUNTRY_HISTORY_INFO_PAGE_TEXT_KOR
+	text = {
+		trigger = { check_variable = { COUNTRY_HISTORY_INFO_PAGE = 0 } }
+		localization_key = COUNTRY_HISTORY_INFO_1_KOR
+	}
+	text = {
+		trigger = { check_variable = { COUNTRY_HISTORY_INFO_PAGE = 1 } }
+		localization_key = COUNTRY_HISTORY_INFO_2_KOR
+	}
+	text = {
+		trigger = { check_variable = { COUNTRY_HISTORY_INFO_PAGE = 2 } }
+		localization_key = COUNTRY_HISTORY_INFO_3_KOR
+	}
+}
+
+defined_text = {
+	name = GET_COUNTRY_GOALS_INFO
+	## Countries with Opening pages
+	text = {
+		trigger = { tag = KOR }
+		localization_key = "[GET_COUNTRY_GOALS_INFO_PAGE_TEXT_KOR]"
+	}
+}
+
+defined_text = {
+	name = GET_COUNTRY_GOALS_INFO_PAGE_TEXT_KOR
+	text = {
+		trigger = { check_variable = { COUNTRY_GOALS_INFO_PAGE = 0 } }
+		localization_key = COUNTRY_GOALS_INFO_1_KOR
+	}
+	text = {
+		trigger = { check_variable = { COUNTRY_GOALS_INFO_PAGE = 1 } }
+		localization_key = COUNTRY_GOALS_INFO_2_KOR
+	}
+	text = {
+		trigger = { check_variable = { COUNTRY_GOALS_INFO_PAGE = 2 } }
+		localization_key = COUNTRY_GOALS_INFO_3_KOR
 	}
 }
 

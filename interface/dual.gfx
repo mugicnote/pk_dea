@@ -134,6 +134,14 @@ spriteTypes = {
 		name = "GFX_Portrait_Uhm_Hang_Seop"
 		texturefile = "gfx/leaders/KOR/Portrait_Uhm_Hang_Seop.dds"
 	}
+	spriteType = {
+		name = "GFX_Portrait_Lee_Junsik"
+		texturefile = "gfx/leaders/KOR/Portrait_Lee_Junsik.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Yi_Kang"
+		texturefile = "gfx/leaders/KOR/Portrait_Yi_Kang.dds"
+	}
 
 
 	#일본

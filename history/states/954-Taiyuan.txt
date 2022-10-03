@@ -1,0 +1,16 @@
+state={
+	id=954
+	name="STATE_954"
+
+	history={
+		owner = SHX
+		add_core_of = SHX
+
+	}
+	
+	provinces={
+		12344 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

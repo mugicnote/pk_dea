@@ -1,0 +1,18 @@
+state={
+	id=955
+	name="STATE_955"
+	manpower = 5964950
+	state_category = town
+	history = {
+		owner = MAN
+		add_core_of = MAN
+		buildings = {
+			infrastructure = 3
+		}
+		victory_points = { 1188 1 }
+	}
+
+	provinces={
+		1169 1188 4058 7092 12062 
+	}
+}

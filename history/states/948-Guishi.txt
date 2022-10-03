@@ -1,0 +1,16 @@
+state={
+	id=948
+	name="STATE_948"
+
+	history={
+		owner = GIZ
+		add_core_of = GIZ
+
+	}
+
+	provinces={
+		1884 4192 4504 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

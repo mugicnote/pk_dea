@@ -1,15 +1,12 @@
 state={
 	id=751
 	name="STATE_751"
-	provinces={
-		1367 1395 4375 4925 7240 8026 10132 12141 12705 12767 12819 
-	}
 	manpower=300000
 	buildings_max_level_factor=1.000
 	state_category=pastoral
+
 	history={
 		owner = SZC
-		add_core_of = CHI
 		add_core_of = SZC
 		buildings = {
 			infrastructure = 1
@@ -22,5 +19,9 @@ state={
 			7294 1
 		}
 
+	}
+
+	provinces={
+		1367 1395 4375 4925 7240 8026 10132 12141 12705 12767 12819 
 	}
 }

@@ -1,0 +1,28 @@
+state = {
+	id = 915
+	name = "STATE_915" #충청님도
+	manpower = 2966000
+
+	state_category = large_town
+	
+	history = {
+		owner = KOR
+		add_core_of = KOR
+		
+		buildings = {
+			industrial_complex = 2
+			infrastructure = 6
+		}
+		victory_points = {
+			13270 15 #대전(타이덴)
+		}
+	}
+
+	resources = {
+		
+	}
+
+	provinces = {
+		7204 11992 13269 13270
+	}
+}

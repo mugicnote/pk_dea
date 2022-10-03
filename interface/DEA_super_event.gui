@@ -1,6 +1,102 @@
 guiTypes = {
 
 	containerWindowType = {
+		name = "DEA_superevent_big_event_explosion_three_way_talks_1"
+		size = { width = 100 height = 400 }
+		position = { x = -248 y = 15 }
+		Orientation = center
+		Origo = center
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="superevent_big_event_explosion_three_way_talks_1"
+            alwaystransparent = yes
+		}
+
+	}
+
+	containerWindowType = {
+		name = "DEA_superevent_big_event_explosion_three_way_talks_2"
+		size = { width = 100 height = 400 }
+		position = { x = -149 y = 15 }
+		Orientation = center
+		Origo = center
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="superevent_big_event_explosion_three_way_talks_2"
+            alwaystransparent = yes
+		}
+
+	}
+
+	containerWindowType = {
+		name = "DEA_superevent_big_event_explosion_three_way_talks_3"
+		size = { width = 100 height = 400 }
+		position = { x = -51 y = 15 }
+		Orientation = center
+		Origo = center
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="superevent_big_event_explosion_three_way_talks_3"
+            alwaystransparent = yes
+		}
+
+	}
+
+	containerWindowType = {
+		name = "DEA_superevent_big_event_explosion_three_way_talks_4"
+		size = { width = 100 height = 400 }
+		position = { x = 47 y = 15 }
+		Orientation = center
+		Origo = center
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="superevent_big_event_explosion_three_way_talks_4"
+            alwaystransparent = yes
+		}
+
+	}
+
+	containerWindowType = {
+		name = "DEA_superevent_big_event_explosion_three_way_talks_5"
+		size = { width = 100 height = 400 }
+		position = { x = 147 y = 15 }
+		Orientation = center
+		Origo = center
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="superevent_big_event_explosion_three_way_talks_5"
+            alwaystransparent = yes
+		}
+
+	}
+
+	containerWindowType = {
+		name = "DEA_superevent_big_event_explosion_three_way_talks_6"
+		size = { width = 100 height = 400 }
+		position = { x = 247 y = 15 }
+		Orientation = center
+		Origo = center
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="superevent_big_event_explosion_three_way_talks_6"
+            alwaystransparent = yes
+		}
+
+	}
+
+	containerWindowType = {
 		name = "sp_event_window"	
 		position = { x = 0 y = 0 }	
 		size = { width = 600 height = 510 }
@@ -16,6 +112,11 @@ guiTypes = {
 		}
 		
 		iconType = {
+			name = "Super_Event_Base"
+			spriteType = "GFX_Super_Event_Base"
+			position = {x = 0 y = 0}
+		}
+		iconType = {
 			name = "superevent_assassination_Jae_pil"
 			spriteType = "GFX_superevent_assassination_Jae_pil"
 			position = {x = 0 y = 0}
@@ -23,11 +124,6 @@ guiTypes = {
 		iconType = {
 			name = "superevent_big_event_rhee_syng_man_president"
 			spriteType = "GFX_superevent_big_event_rhee_syng_man_president"
-			position = {x = 0 y = 0}
-		}
-		iconType = {
-			name = "superevent_big_event_explosion_three_way_talks"
-			spriteType = "GFX_superevent_big_event_explosion_three_way_talks"
 			position = {x = 0 y = 0}
 		}
 		
@@ -71,7 +167,7 @@ guiTypes = {
 			position = { x = 187 y = 475 }
 			clicksound = click_close
 			buttonText = "[get_super_event_remark]"
-			buttonFont = "hoi_20b"
+			buttonFont = "hoi_18b"
 		}
 	}
 }

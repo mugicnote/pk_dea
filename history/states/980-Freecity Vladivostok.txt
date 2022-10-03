@@ -1,0 +1,20 @@
+state={
+	id=980
+	name="STATE_980"
+
+	history={
+		owner = RUS
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = RUS
+
+	}
+
+	provinces={
+		957 3977 6838 6961 6989 11879 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

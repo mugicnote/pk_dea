@@ -13,6 +13,8 @@ scripted_gui = {
 					clear_variable = TNO_Opening_Screen
 					set_variable = { FEATURES_INFO_PAGE = 0 }
 					set_variable = { COUNTRY_INFO_PAGE = 0 }
+					set_variable = { COUNTRY_HISTORY_INFO_PAGE = 0 }
+					set_variable = { COUNTRY_GOALS_INFO_PAGE = 0 }
 				}
 				else = {
 					set_variable = { TNO_Opening_Screen = 1 }
@@ -20,13 +22,15 @@ scripted_gui = {
 				
 				clr_country_flag = Mod_explanation_Button_open
 				clr_country_flag = Country_explanation_Button_open
+				clr_country_flag = political_situation_Button_open
 				set_variable = { Country_explanation_Button_y = 41 }
 				set_variable = { Country_explanation_Button_middle_1_Button_y = 77 }
 				set_variable = { Country_explanation_Button_middle_2_Button_y = 113 }
 				set_variable = { Country_explanation_Button_middle_3_Button_y = 149 }
 				set_variable = { political_situation_Button_y = 77 }
-				set_variable = { Country_explanation_Button_middle_4_Button_y = 113 }
-				set_variable = { Country_explanation_Button_middle_5_Button_y = 149 }
+				set_variable = { political_situation_Button_middle_1_Button_y = 113 }
+				set_variable = { political_situation_Button_middle_2_Button_y = 149 }
+				set_variable = { political_situation_Button_middle_3_Button_y = 185 }
 			}
 		}
 	}
@@ -56,6 +60,15 @@ scripted_gui = {
 			Country_explanation_Button_middle_3_Button_visible = {
 				has_country_flag = Country_explanation_Button_open
 			}
+			political_situation_Button_middle_1_Button_visible = {
+				has_country_flag = political_situation_Button_open
+			}
+			political_situation_Button_middle_2_Button_visible = {
+				has_country_flag = political_situation_Button_open
+			}
+			political_situation_Button_middle_3_Button_visible = {
+				has_country_flag = political_situation_Button_open
+			}
 		}
 
 		properties = {
@@ -76,11 +89,14 @@ scripted_gui = {
 			Country_explanation_Button_middle_3_Button = {
 				y = Country_explanation_Button_middle_3_Button_y
 			}
-			Country_explanation_Button_middle_4_Button = {
-				y = Country_explanation_Button_middle_4_Button_y
+			political_situation_Button_middle_1_Button = {
+				y = political_situation_Button_middle_1_Button_y
 			}
-			Country_explanation_Button_middle_5_Button = {
-				y = Country_explanation_Button_middle_5_Button_y
+			political_situation_Button_middle_2_Button = {
+				y = political_situation_Button_middle_2_Button_y
+			}
+			political_situation_Button_middle_3_Button = {
+				y = political_situation_Button_middle_3_Button_y
 			}
 		}
 
@@ -113,6 +129,18 @@ scripted_gui = {
 						var = political_situation_Button_y
 						value = 72
 					}
+					add_to_variable = {
+						var = political_situation_Button_middle_1_Button_y
+						value = 72
+					}
+					add_to_variable = {
+						var = political_situation_Button_middle_2_Button_y
+						value = 72
+					}
+					add_to_variable = {
+						var = political_situation_Button_middle_3_Button_y
+						value = 72
+					}
 				}
 				else_if = {
 					limit = {
@@ -140,6 +168,18 @@ scripted_gui = {
 						var = political_situation_Button_y
 						value = 72
 					}
+					subtract_from_variable = {
+						var = political_situation_Button_middle_1_Button_y
+						value = 72
+					}
+					subtract_from_variable = {
+						var = political_situation_Button_middle_2_Button_y
+						value = 72
+					}
+					subtract_from_variable = {
+						var = political_situation_Button_middle_3_Button_y
+						value = 72
+					}
 				}
 			}
 			Country_explanation_Button_click = {
@@ -153,6 +193,18 @@ scripted_gui = {
 						var = political_situation_Button_y
 						value = 108
 					}
+					add_to_variable = {
+						var = political_situation_Button_middle_1_Button_y
+						value = 108
+					}
+					add_to_variable = {
+						var = political_situation_Button_middle_2_Button_y
+						value = 108
+					}
+					add_to_variable = {
+						var = political_situation_Button_middle_3_Button_y
+						value = 108
+					}
 				}
 				else_if = {
 					limit = {
@@ -164,14 +216,50 @@ scripted_gui = {
 						var = political_situation_Button_y
 						value = 108
 					}
+					subtract_from_variable = {
+						var = political_situation_Button_middle_1_Button_y
+						value = 108
+					}
+					subtract_from_variable = {
+						var = political_situation_Button_middle_2_Button_y
+						value = 108
+					}
+					subtract_from_variable = {
+						var = political_situation_Button_middle_3_Button_y
+						value = 108
+					}
+				}
+			}
+			political_situation_Button_click = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = political_situation_Button_open }
+					}
+					set_country_flag = political_situation_Button_open
+				}
+				else_if = {
+					limit = {
+						has_country_flag = political_situation_Button_open
+					}
+					clr_country_flag = political_situation_Button_open
 				}
 			}
 			Mod_explanation_middle_1_Button_click = {
 				set_variable = { TNO_Opening_Screen = 1 }
 			}
 			Mod_explanation_middle_2_Button_click = {
+				set_variable = { TNO_Opening_Screen = 2 }
+			}
+			Country_explanation_Button_middle_1_Button_click = {
+				set_variable = { TNO_Opening_Screen = 3 }
+			}
+			Country_explanation_Button_middle_2_Button_click = {
+				set_variable = { TNO_Opening_Screen = 4 }
+			}
+			Country_explanation_Button_middle_3_Button_click = {
 				set_variable = { TNO_Opening_Screen = 5 }
 			}
+
 			###뜨노 이펙트 - 수정
 			TNO_OpeningScreen_CloseButton_click = {
 				clear_variable = TNO_Opening_Screen
@@ -183,15 +271,15 @@ scripted_gui = {
 			#Mod Info = 4
 			
 			TNO_OpeningScreen_Buttons_CountryView_click = {
-				set_variable = { TNO_Opening_Screen = 2 }
+				set_variable = { TNO_Opening_Screen = 3 }
 			}
 
 			TNO_OpeningScreen_Buttons_RegionView_click = {
-				set_variable = { TNO_Opening_Screen = 4 }
+				set_variable = { TNO_Opening_Screen = 6 }
 			}
 			
 			TNO_OpeningScreen_Buttons_FeatureView_click = {
-				set_variable = { TNO_Opening_Screen = 3 }
+				set_variable = { TNO_Opening_Screen = 5 }
 			}
 
 			TNO_OpeningScreen_Buttons_ModView_click = {
@@ -222,6 +310,18 @@ scripted_gui = {
 						var = political_situation_Button_y
 						value = 72
 					}
+					add_to_variable = {
+						var = political_situation_Button_middle_1_Button_y
+						value = 72
+					}
+					add_to_variable = {
+						var = political_situation_Button_middle_2_Button_y
+						value = 72
+					}
+					add_to_variable = {
+						var = political_situation_Button_middle_3_Button_y
+						value = 72
+					}
 				}
 				else_if = {
 					limit = {
@@ -249,36 +349,48 @@ scripted_gui = {
 						var = political_situation_Button_y
 						value = 72
 					}
+					add_to_variable = {
+						var = political_situation_Button_middle_1_Button_y
+						value = 72
+					}
+					add_to_variable = {
+						var = political_situation_Button_middle_2_Button_y
+						value = 72
+					}
+					add_to_variable = {
+						var = political_situation_Button_middle_3_Button_y
+						value = 72
+					}
 				}
 			}
 			
 			opening_button_next_page_click = {
 				if = {
 					limit = {
-						check_variable = { TNO_Opening_Screen = 2 }
+						check_variable = { TNO_Opening_Screen = 4 }
 					}
-					add_to_variable = { COUNTRY_INFO_PAGE = 1 }
+					add_to_variable = { COUNTRY_HISTORY_INFO_PAGE = 1 }
 				}
 				else_if = {
 					limit = {
-						check_variable = { TNO_Opening_Screen = 3 }
+						check_variable = { TNO_Opening_Screen = 5 }
 					}
-					add_to_variable = { FEATURES_INFO_PAGE = 1 }
+					add_to_variable = { COUNTRY_GOALS_INFO_PAGE = 1 }
 				}
 			}
 			
 			opening_button_prev_page_click = {
 				if = {
 					limit = {
-						check_variable = { TNO_Opening_Screen = 2 }
+						check_variable = { TNO_Opening_Screen = 4 }
 					}
-					add_to_variable = { COUNTRY_INFO_PAGE = -1 }
+					add_to_variable = { COUNTRY_HISTORY_INFO_PAGE = -1 }
 				}
 				else_if = {
 					limit = {
-						check_variable = { TNO_Opening_Screen = 3 }
+						check_variable = { TNO_Opening_Screen = 5 }
 					}
-					add_to_variable = { FEATURES_INFO_PAGE = -1 }
+					add_to_variable = { COUNTRY_GOALS_INFO_PAGE = -1 }
 				}
 			}
 		}
@@ -299,40 +411,40 @@ scripted_gui = {
 			opening_button_next_page_visible = {
 				OR = {
 					AND = {
-						check_variable = { TNO_Opening_Screen = 2 }
-						check_variable = { COUNTRY_INFO_PAGE < 1.99 }
+						check_variable = { TNO_Opening_Screen = 4 }
+						check_variable = { COUNTRY_HISTORY_INFO_PAGE < 1.99 }
 					}
 					AND = {
-						check_variable = { TNO_Opening_Screen = 3 }
-						check_variable = { FEATURES_INFO_PAGE < 0.99 }
+						check_variable = { TNO_Opening_Screen = 5 }
+						check_variable = { COUNTRY_GOALS_INFO_PAGE < 1.99 }
 					}
 				}
 			}
 			opening_button_prev_page_visible = {
 				OR = {
 					AND = {
-						check_variable = { TNO_Opening_Screen = 2 }
-						check_variable = { COUNTRY_INFO_PAGE > 0.01 }
+						check_variable = { TNO_Opening_Screen = 4 }
+						check_variable = { COUNTRY_HISTORY_INFO_PAGE > 0.01 }
 					}
 					AND = {
-						check_variable = { TNO_Opening_Screen = 3 }
-						check_variable = { FEATURES_INFO_PAGE > 0.01 }
+						check_variable = { TNO_Opening_Screen = 5 }
+						check_variable = { COUNTRY_GOALS_INFO_PAGE > 0.01 }
 					}
 				}
 			}
 			
 			TNO_OpeningScreen_Text_Small_visible = {
 				OR = {
+					check_variable = { TNO_Opening_Screen = 1 }
 					check_variable = { TNO_Opening_Screen = 2 }
 					check_variable = { TNO_Opening_Screen = 3 }
+					check_variable = { TNO_Opening_Screen = 4 }
+					check_variable = { TNO_Opening_Screen = 5 }
 				}
 			}
 			
 			TNO_OpeningScreen_Text_visible = {
 				OR = {
-					check_variable = { TNO_Opening_Screen = 1 }
-					check_variable = { TNO_Opening_Screen = 4 }
-					check_variable = { TNO_Opening_Screen = 5 }
 				}
 			}
 		}
@@ -344,37 +456,37 @@ scripted_gui = {
 		}
 	}
 	
-	TNO_closing_screen_main = {
-		context_type = player_context
-		parent_window_token = top_bar
-		window_name = "TNO_ClosingScreen_Main"
+	# TNO_closing_screen_main = {
+	# 	context_type = player_context
+	# 	parent_window_token = top_bar
+	# 	window_name = "TNO_ClosingScreen_Main"
 
-		visible = {
-			AND = {
-				is_ai = no
-				has_country_flag = TNO_closing_screen_show
-			}
-		}
+	# 	visible = {
+	# 		AND = {
+	# 			is_ai = no
+	# 			has_country_flag = TNO_closing_screen_show
+	# 		}
+	# 	}
 		
-		effects = {
-			TNO_ClosingScreen_CloseButton_click = {
-				clr_country_flag = TNO_closing_screen_show
-			}
-			closing_button_next_page_click = {
-				add_to_variable = { ENDING_INFO_PAGE = 1 }
-			}
-			closing_button_prev_page_click = {
-				add_to_variable = { ENDING_INFO_PAGE = -1 }
-			}
-		}
+	# 	effects = {
+	# 		TNO_ClosingScreen_CloseButton_click = {
+	# 			clr_country_flag = TNO_closing_screen_show
+	# 		}
+	# 		closing_button_next_page_click = {
+	# 			add_to_variable = { ENDING_INFO_PAGE = 1 }
+	# 		}
+	# 		closing_button_prev_page_click = {
+	# 			add_to_variable = { ENDING_INFO_PAGE = -1 }
+	# 		}
+	# 	}
 		
-		triggers = {
-			closing_button_next_page_visible = {
-				check_variable = { ENDING_INFO_PAGE < 0.99 }
-			}
-			closing_button_prev_page_visible = {
-				check_variable = { ENDING_INFO_PAGE > 0.01 }
-			}
-		}
-	}
+	# 	triggers = {
+	# 		closing_button_next_page_visible = {
+	# 			check_variable = { ENDING_INFO_PAGE < 0.99 }
+	# 		}
+	# 		closing_button_prev_page_visible = {
+	# 			check_variable = { ENDING_INFO_PAGE > 0.01 }
+	# 		}
+	# 	}
+	# }
 }

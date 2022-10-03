@@ -123,13 +123,13 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
-		name = "GFX_Korean_Democratic_Congress"
-		textureFile = "gfx/interface/Korean_Democratic_Congress.dds"
+		name = "GFX_DEA_kor_wiki_goal_1"
+		textureFile = "gfx/texticons/opening_icons/KOR/DEA_kor_wiki_goal_1.dds"
 		legacy_lazy_load = no
 	}
 	spriteType = {
-		name = "GFX_leaders_Justice_Democratic_Party"
-		textureFile = "gfx/interface/leaders_Justice_Democratic_Party.dds"
+		name = "GFX_DEA_kor_wiki_goal_2"
+		textureFile = "gfx/texticons/opening_icons/KOR/DEA_kor_wiki_goal_2.dds"
 		legacy_lazy_load = no
 	}
 }

@@ -1,0 +1,25 @@
+state={
+	id=977
+	name="STATE_977"
+	provinces={
+		7072 
+	}
+	manpower=2453573
+	buildings_max_level_factor=1.000
+	state_category = city
+	history={
+		owner = JAP
+		add_core_of = JAP
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 2
+			dockyard = 3
+			7072 = {
+				naval_base = 10
+			}
+		}
+		victory_points = {
+			7072 40 
+		}
+	}
+}

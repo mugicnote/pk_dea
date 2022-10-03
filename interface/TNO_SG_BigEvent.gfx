@@ -16,6 +16,10 @@ spriteTypes = {
 	
 	##USE SUPER_EVENT_MAKER_GUI IN USEFUL PYTHON PROGRAMS TO MAKE NEW SUPER EVENTS##
 	spriteType = {
+		name = "GFX_Super_Event_Base"
+		textureFile = "gfx//superevent_pictures//Super_Event_Base.dds"
+	}
+	spriteType = {
 		name = "GFX_superevent_assassination_Jae_pil"
 		textureFile = "gfx//superevent_pictures//assassination_Jae_pil.dds"
 	}
@@ -23,10 +27,78 @@ spriteTypes = {
 		name = "GFX_superevent_big_event_rhee_syng_man_president"
 		textureFile = "gfx//superevent_pictures//superevent_big_event_rhee_syng_man_president.dds"
 	}
-	spriteType = {
-		name = "GFX_superevent_big_event_explosion_three_way_talks"
-		textureFile = "gfx//superevent_pictures//superevent_big_event_explosion_three_way_talks.dds"
-	}
+	
+	frameAnimatedSpriteType = {
+        name = "superevent_big_event_explosion_three_way_talks_1"
+        texturefile = "gfx//superevent_pictures//superevent_big_event_explosion_three_way_talks_1.dds"
+        noOfFrames = 122
+        loadType = "INGAME"
+        animation_rate_fps = 8
+        looping = yes
+        play_on_show = yes
+        pause_on_loop = 0.0
+        alwaystransparent = yes
+    }
+
+	frameAnimatedSpriteType = {
+        name = "superevent_big_event_explosion_three_way_talks_2"
+        texturefile = "gfx//superevent_pictures//superevent_big_event_explosion_three_way_talks_2.dds"
+        noOfFrames = 122
+        loadType = "INGAME"
+        animation_rate_fps = 8
+        looping = yes
+        play_on_show = yes
+        pause_on_loop = 0.0
+        alwaystransparent = yes
+    }
+
+	frameAnimatedSpriteType = {
+        name = "superevent_big_event_explosion_three_way_talks_3"
+        texturefile = "gfx//superevent_pictures//superevent_big_event_explosion_three_way_talks_3.dds"
+        noOfFrames = 122
+        loadType = "INGAME"
+        animation_rate_fps = 8
+        looping = yes
+        play_on_show = yes
+        pause_on_loop = 0.0
+        alwaystransparent = yes
+    }
+
+	frameAnimatedSpriteType = {
+        name = "superevent_big_event_explosion_three_way_talks_4"
+        texturefile = "gfx//superevent_pictures//superevent_big_event_explosion_three_way_talks_4.dds"
+        noOfFrames = 122
+        loadType = "INGAME"
+        animation_rate_fps = 8
+        looping = yes
+        play_on_show = yes
+        pause_on_loop = 0.0
+        alwaystransparent = yes
+    }
+
+	frameAnimatedSpriteType = {
+        name = "superevent_big_event_explosion_three_way_talks_5"
+        texturefile = "gfx//superevent_pictures//superevent_big_event_explosion_three_way_talks_5.dds"
+        noOfFrames = 122
+        loadType = "INGAME"
+        animation_rate_fps = 8
+        looping = yes
+        play_on_show = yes
+        pause_on_loop = 0.0
+        alwaystransparent = yes
+    }
+
+	frameAnimatedSpriteType = {
+        name = "superevent_big_event_explosion_three_way_talks_6"
+        texturefile = "gfx//superevent_pictures//superevent_big_event_explosion_three_way_talks_6.dds"
+        noOfFrames = 122
+        loadType = "INGAME"
+        animation_rate_fps = 8
+        looping = yes
+        play_on_show = yes
+        pause_on_loop = 0.0
+        alwaystransparent = yes
+    }
 
 
 	spriteType = {
