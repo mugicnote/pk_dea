@@ -1,130 +1,130 @@
-ICU_army_reform = {
+# ICU_army_reform = {
 
-	ICU_army_reform = {
+# 	ICU_army_reform = {
 
-		icon = generic_prepare_civil_war
+# 		icon = generic_prepare_civil_war
 
-		available = {
-			has_army_experience > 99
-			has_completed_focus = ICU_arm_3
-		}
+# 		available = {
+# 			has_army_experience > 99
+# 			has_completed_focus = ICU_arm_3
+# 		}
 
-		cost = 0
-		ai_will_do = {
-			factor = 500
-		}
-		days_remove = 90
+# 		cost = 0
+# 		ai_will_do = {
+# 			factor = 500
+# 		}
+# 		days_remove = 90
 
-		visible = {
-			OR = {
-				has_idea = ICU_broken_army_1
-				has_idea = ICU_broken_army_2
-				has_idea = ICU_broken_army_3
-			}
-		}
-		remove_effect = {
-			if = {
-				limit = { has_idea = ICU_broken_army_1 }
-				swap_ideas = {
-					remove_idea = ICU_broken_army_1
-					add_idea = ICU_broken_army_2
-				}
-			}
-			else_if = {
-				limit = { has_idea = ICU_broken_army_2 }
-				swap_ideas = {
-					remove_idea = ICU_broken_army_2
-					add_idea = ICU_broken_army_3
-				}
-			}
-			else_if = {
-				limit = { has_idea = ICU_broken_army_3 }
-				remove_ideas = ICU_broken_army_3
-			}
-		}
-		complete_effect = {
-			army_experience = -100						
-		}		
-	}
-}	
-ICU_economy_reform = {
+# 		visible = {
+# 			OR = {
+# 				has_idea = ICU_broken_army_1
+# 				has_idea = ICU_broken_army_2
+# 				has_idea = ICU_broken_army_3
+# 			}
+# 		}
+# 		remove_effect = {
+# 			if = {
+# 				limit = { has_idea = ICU_broken_army_1 }
+# 				swap_ideas = {
+# 					remove_idea = ICU_broken_army_1
+# 					add_idea = ICU_broken_army_2
+# 				}
+# 			}
+# 			else_if = {
+# 				limit = { has_idea = ICU_broken_army_2 }
+# 				swap_ideas = {
+# 					remove_idea = ICU_broken_army_2
+# 					add_idea = ICU_broken_army_3
+# 				}
+# 			}
+# 			else_if = {
+# 				limit = { has_idea = ICU_broken_army_3 }
+# 				remove_ideas = ICU_broken_army_3
+# 			}
+# 		}
+# 		complete_effect = {
+# 			army_experience = -100						
+# 		}		
+# 	}
+# }	
+# ICU_economy_reform = {
 
-	ICU_economy_reform = {
+# 	ICU_economy_reform = {
 
-		icon = generic_prepare_civil_war
+# 		icon = generic_prepare_civil_war
 
-		available = {
-			has_completed_focus = ICU_eco_2
-		}
+# 		available = {
+# 			has_completed_focus = ICU_eco_2
+# 		}
 
-		cost = 120
-		ai_will_do = {
-			factor = 500
-		}
-		days_remove = 120
+# 		cost = 120
+# 		ai_will_do = {
+# 			factor = 500
+# 		}
+# 		days_remove = 120
 
-		visible = {
-			OR = {
-				has_idea = ICU_bad_economy_1
-				has_idea = ICU_bad_economy_2
-				has_idea = ICU_bad_economy_3
-			}
-		}
-		remove_effect = {
-			if = {
-				limit = { has_idea = ICU_bad_economy_1 }
-				swap_ideas = {
-					remove_idea = ICU_bad_economy_1
-					add_idea = ICU_bad_economy_2
-				}
-			}
-			else_if = {
-				limit = { has_idea = ICU_bad_economy_2 }
-				swap_ideas = {
-					remove_idea = ICU_bad_economy_2
-					add_idea = ICU_bad_economy_3
-				}
-			}
-			else_if = {
-				limit = { has_idea = ICU_bad_economy_3 }
-				remove_ideas = ICU_bad_economy_3
-			}
-		}			
-	}
-}
-ICU_arcademy_reform = {
+# 		visible = {
+# 			OR = {
+# 				has_idea = ICU_bad_economy_1
+# 				has_idea = ICU_bad_economy_2
+# 				has_idea = ICU_bad_economy_3
+# 			}
+# 		}
+# 		remove_effect = {
+# 			if = {
+# 				limit = { has_idea = ICU_bad_economy_1 }
+# 				swap_ideas = {
+# 					remove_idea = ICU_bad_economy_1
+# 					add_idea = ICU_bad_economy_2
+# 				}
+# 			}
+# 			else_if = {
+# 				limit = { has_idea = ICU_bad_economy_2 }
+# 				swap_ideas = {
+# 					remove_idea = ICU_bad_economy_2
+# 					add_idea = ICU_bad_economy_3
+# 				}
+# 			}
+# 			else_if = {
+# 				limit = { has_idea = ICU_bad_economy_3 }
+# 				remove_ideas = ICU_bad_economy_3
+# 			}
+# 		}			
+# 	}
+# }
+# ICU_arcademy_reform = {
 
-	ICU_arcademy_reform = {
+# 	ICU_arcademy_reform = {
 
-		icon = generic_prepare_civil_war
+# 		icon = generic_prepare_civil_war
 
-		available = {
-			has_army_experience > 49
-			has_air_experience > 49			
-			has_completed_focus = ICU_arm_2
-		}
+# 		available = {
+# 			has_army_experience > 49
+# 			has_air_experience > 49			
+# 			has_completed_focus = ICU_arm_2
+# 		}
 
-		fire_only_once = yes
+# 		fire_only_once = yes
 
-		cost = 100
-		ai_will_do = {
-			factor = 500
-		}
-		days_remove = 90
+# 		cost = 100
+# 		ai_will_do = {
+# 			factor = 500
+# 		}
+# 		days_remove = 90
 
-		visible = {
-			has_completed_focus = ICU_future_2	
-		}
+# 		visible = {
+# 			has_completed_focus = ICU_future_2	
+# 		}
 
-		remove_effect = {
-					remove_ideas = ICU_build_arcademy
-					add_ideas = ICU_finish_building
-			}
+# 		remove_effect = {
+# 					remove_ideas = ICU_build_arcademy
+# 					add_ideas = ICU_finish_building
+# 			}
 
-		complete_effect = {
-			army_experience = -50
-			air_experience = -50	
-			add_ideas = ICU_build_arcademy
-		}		
-	}
-}		
+# 		complete_effect = {
+# 			army_experience = -50
+# 			air_experience = -50	
+# 			add_ideas = ICU_build_arcademy
+# 		}		
+# 	}
+# }		
