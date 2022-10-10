@@ -596,7 +596,7 @@ spriteTypes = {
 	
 	pieChartType = {
 		name = "GFX_political_chart"
-		size = 27
+		size = 32
 	}
 	
 	pieChartType = {
@@ -624,9 +624,25 @@ spriteTypes = {
 		colortwo = { 1.0 0.0 0.0 }
 		textureFile1 = "gfx//interface//pol_goal_progress.dds"
 		textureFile2 = "gfx//interface//pol_goal_progress_bg.dds"
-		size = { x = 237 y = 6 }
+		size = { x = 173 y = 6 }
 		effectFile = "gfx/FX/progress_startend.lua"
 		horizontal = yes
+	}
+
+	progressbartype = {
+		name = "GFX_activegoal_diplo_view_progress"
+		color = { 0.0 0.5 0.0 }
+		colortwo = { 1.0 0.0 0.0 }
+		textureFile1 = "gfx//interface//pol_goal_progress.dds"
+		textureFile2 = "gfx//interface//pol_goal_progress_bg.dds"
+		size = { x = 152 y = 6 }
+		effectFile = "gfx/FX/progress_startend.lua"
+		horizontal = yes
+	}
+
+	spriteType = {
+		name = "GFX_diplo_view_goal_progress_frame"
+		textureFile = "gfx//interface//diplo_view_goal_progress_frame.dds"
 	}
 	
 	spriteType = {
@@ -652,6 +668,12 @@ spriteTypes = {
 		textureFile = "gfx//interface//occupation_policy_button_selected.dds"
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
 	}	
+
+	spriteType = {
+		name = "GFX_occupation_policy_icon_strip"
+		textureFile = "gfx/interface/occupation_policy_icon_strip.dds"
+		noOfFrames = 4
+	}
 	
 	frameAnimatedSpriteType = {
 		name = "GFX_tutorial_politics_icon_glow"
@@ -663,6 +685,11 @@ spriteTypes = {
 		pause_on_loop = 0.0
 		alwaystransparent = yes
 		effectFile = "gfx/FX/buttonstate_blendframes.lua"
+	}
+
+	textSpriteType = {
+		name = "GFX_government_circle_button"
+		texturefile = "gfx/interface/governement_circle_button.dds"
 	}
 	
 }
