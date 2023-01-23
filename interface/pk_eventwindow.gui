@@ -293,7 +293,7 @@ guiTypes = {
    containerWindowType = {
 	   name = "EventWindow_News"
 	   position = { x=-282 y=-310 }	
-	   size = { width = 620 height = 675 }
+	   size = { width = 720 height = 875 }
 	   moveable = yes
 	   Orientation = CENTER
 	   show_sound = world_news_effect
@@ -312,7 +312,7 @@ guiTypes = {
 		   iconType = {
 			   name ="event_picture"
 			   spriteType = "GFX_news_event_001"
-			   position = { x = 46 y = 172 }#x = 90 y = 90
+			   position = { x = 149 y = 50 }#x = 90 y = 90
 			   Orientation = "UPPER_LEFT"
 			   allwaystransparent = yes
 		   }
@@ -320,23 +320,23 @@ guiTypes = {
 		   iconType = {
 			   name ="event_picture_overlay"
 			   spriteType = "GFX_event_news_pic_overlay"
-			   position = { x = 46 y = 172 }
+			   position = { x = 149 y = 50 }
 			   Orientation = "UPPER_LEFT"
 			   allwaystransparent = yes
 		   }			
 		   
 		   instantTextBoxType = {
 			   name = "Title"
-			   position = { x = -257 y = 34 }
+			   position = { x = 13 y = 245 }
 			   #font = "hoi4_typewriter22"
 			   #font = "franklin_gothic_34"
-			   font = "nnmj_i_27"
+			   font = "aldrich_24_outline_b"
 			   borderSize = {x = 0 y = 0}
 			   text = "Title text here!"	
-			   maxWidth = 420
+			   maxWidth = 581
 			   maxHeight = 120
-			   format = centre
-			   Orientation = CENTER
+			   format = left
+			   Orientation = "UPPER_LEFT"
 		   }
 		   
 		   buttonType = {
@@ -351,16 +351,16 @@ guiTypes = {
 	   containerWindowType = {
 		   name = "midsection"
 		   position = { x=0 y=106 }	
-		   size = { width = 581 height = 390 }
+		   size = { width = 601 height = 390 }
 		   Orientation = UPPER_LEFT
 	   
 		   instantTextBoxType = {
 			   name = "Description"
-			   position = { x = 42 y = 44	 }
+			   position = { x = 13 y = 169	 }
 			   font = "hoi4_typewriter16"
 			   borderSize = {x = 0 y = 0}
 			   text = "Long text here!"	
-			   maxWidth = 530
+			   maxWidth = 645
 			   maxHeight = 304
 			   format = left
 			   
@@ -375,7 +375,7 @@ guiTypes = {
 
 		   gridBoxType = {
 			   name = "options_grid"
-			   position = { x = 75 y = -355 }
+			   position = { x = 45 y = -215 }
 			   size = { width = 350 height = 30 }
 			   slotsize = { width = 350 height = 47 }
 			   max_slots_horizontal = 1

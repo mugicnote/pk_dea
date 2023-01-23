@@ -345,5 +345,10 @@ KOR_capture_Nanning_mission:0 "난닝 함락"
 
 DEA_KOR_Election_Decision:0 "대한민국 5대 대통령 선거"
 
-
+KOR_Rebellion_Remaining_Processed_decisions_category:0 "반란 잔당 소탕"
+KOR_Rebellion_Remaining_Processed_decisions_category_desc:0 "정당한 법치적 절차에 의거하여 실행된 군의 부패한 신정부 해산은 합법적으로 이루어진 민주적 의사 반영이었으나, 이에 불복하며 전국에서 산발적으로 반란을 일으켜 국가의 혼란을 야기하는 반란군들은 반드시 소탕해야 마땅합니다."
+KOR_Breaking_down_Rebellion_Remaining_mission:0 "반란군 잔당 와해"
+KOR_strengthening_of_local_security:0 "지역 치안 강화"
+KOR_attack_on_the_remnants_of_the_rebels:0 "반란군 잔당 습격"
+KOR_Continuing_Rebels_Concession:0 "온건파 회유 지속"
 kor_insurgent_resistance:1 "반란군의 저항"

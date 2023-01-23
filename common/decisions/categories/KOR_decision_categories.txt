@@ -72,6 +72,20 @@ DEA_KOR_Completion_Continental_Revolutionary_War_decisions_category = {
 	visible_when_empty = yes #for debug
 }
 
+#반란 잔당 소탕
+KOR_Rebellion_Remaining_Processed_decisions_category = {
+	icon = border_conflicts
+	
+	priority = 10001
+	allowed = {
+		tag = KOR
+	}
+	visible = {
+		has_completed_focus = KOR_Rebellion_Remaining_Processed
+	}
+	visible_when_empty = yes #for debug
+}
+
 #대륙 혁명 전쟁의 완수
 DEA_KOR_scenario_debug_decisions_category = {
 	icon = jap_intervene_in_china

@@ -27,7 +27,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-
+			custom_effect_tooltip = KOR_Revolution_accomplished_tt
 		}
 		x = 7
 		y = 0
@@ -71,6 +71,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_war_support = 0.05
 			custom_effect_tooltip = KOR_Rebellion_Remaining_Processed_tt
 		}
 		x = -2
@@ -392,7 +393,7 @@ focus_tree = {
 	#민정체제 보수
 	focus = {
 		id = KOR_maintenance_of_the_civil_service_system
-		icon = GFX_focus_
+		icon = GFX_focus_kor_maintenance_of_the_civil_service_system
 		relative_position_id = KOR_internal_politics
 		cost = 3.00
 
@@ -509,7 +510,7 @@ focus_tree = {
 
 	}
 
-	#중앙정보부 권력 분리
+	#중앙정보부장 임명
 	focus = {
 		id = KOR_separation_of_power_from_KCIA
 		icon = GFX_focus_
@@ -528,7 +529,7 @@ focus_tree = {
 
 	}
 
-	#의회법 신설
+	#국회조직법 개정
 	focus = {
 		id = KOR_establishment_of_a_parliamentary_law
 		icon = GFX_focus_
@@ -1564,7 +1565,7 @@ focus_tree = {
 	#일본과의 밀약
 	focus = {
 		id = KOR_secret_agreement_with_Japan
-		icon = GFX_focus_
+		icon = GFX_focus_secret_agreement_with_Japan
 		relative_position_id = KOR_strengthening_of_emergency_mobilization
 		cost = 3.00
 
@@ -1602,7 +1603,7 @@ focus_tree = {
 	#미국과의 협상
 	focus = {
 		id = KOR_negotiations_with_the_United_States
-		icon = GFX_focus_
+		icon = GFX_focus_negotiations_with_the_United_States
 		relative_position_id = KOR_secret_agreement_with_Japan
 		cost = 3.00
 
@@ -1624,7 +1625,7 @@ focus_tree = {
 	#약간의 자본
 	focus = {
 		id = KOR_a_little_capital
-		icon = GFX_focus_
+		icon = GFX_focus_a_little_capital
 		relative_position_id = KOR_secret_agreement_with_Japan
 		cost = 3.00
 
@@ -2104,6 +2105,44 @@ focus_tree = {
 
 	}
 
+	#외교 노선 재수립
+	focus = {
+		id = KOR_reestablishment_of_diplomatic_lines
+		icon = GFX_focus_kor_
+		relative_position_id = KOR_dawn_of_early_light
+		cost = 3.00
+
+		prerequisite = {
+			focus = KOR_dawn_of_early_light
+		}
+
+		completion_reward = {
+			
+		}
+		x = -10
+		y = 1
+
+	}
+
+	#중앙정보부 활용
+	focus = {
+		id = KOR_Utilization_of_Central_Intelligence_Agency
+		icon = GFX_focus_kor_
+		relative_position_id = KOR_dawn_of_early_light
+		cost = 3.00
+
+		prerequisite = {
+			focus = KOR_dawn_of_early_light
+		}
+
+		completion_reward = {
+			
+		}
+		x = -4
+		y = 1
+
+	}
+
 	#전쟁 의지 확립
 	focus = {
 		id = KOR_establishment_of_a_will_to_war
@@ -2113,6 +2152,78 @@ focus_tree = {
 
 		prerequisite = {
 			focus = KOR_dawn_of_early_light
+		}
+
+		completion_reward = {
+			
+		}
+		x = 0
+		y = 1
+
+	}
+
+	#형식적 중립 유지
+	focus = {
+		id = KOR_Maintaining_Formal_Neutral
+		icon = GFX_focus_kor_
+		relative_position_id = KOR_reestablishment_of_diplomatic_lines
+		cost = 3.00
+
+		prerequisite = {
+			focus = KOR_reestablishment_of_diplomatic_lines
+		}
+
+		completion_reward = {
+			
+		}
+		x = -6
+		y = 1
+
+	}
+
+	#범추축 외교정책 구사
+	focus = {
+		id = KOR_use_of_Axis_powers_foreign_policy
+		icon = GFX_focus_kor_
+		relative_position_id = KOR_reestablishment_of_diplomatic_lines
+		cost = 3.00
+
+		prerequisite = {
+			focus = KOR_reestablishment_of_diplomatic_lines
+		}
+
+		completion_reward = {
+			
+		}
+		x = 0
+		y = 1
+
+	}
+
+	#방공 협정 조인
+	focus = {
+		id = KOR_signing_of_an_anti_communist_agreement
+		icon = GFX_focus_kor_
+		relative_position_id = KOR_Utilization_of_Central_Intelligence_Agency
+		cost = 3.00
+
+		completion_reward = {
+			
+		}
+		x = -2
+		y = 1
+
+	}
+
+	#대공처 재설립
+	focus = {
+		id = KOR_Reestablishment_of_the_Anti_Communist_Department
+		icon = GFX_focus_kor_
+		relative_position_id = KOR_Utilization_of_Central_Intelligence_Agency
+		cost = 3.00
+
+		prerequisite = {
+			focus = KOR_Utilization_of_Central_Intelligence_Agency
 		}
 
 		completion_reward = {
@@ -2137,7 +2248,7 @@ focus_tree = {
 		completion_reward = {
 			create_faction = "동아 신질서"
 		}
-		x = -3
+		x = 10
 		y = 1
 
 	}
@@ -2156,20 +2267,81 @@ focus_tree = {
 		completion_reward = {
 			
 		}
-		x = 6
+		x = 16
 		y = 1
 
 	}
 
-	#범아시아주의 제창
+	#방공 협정 조인
 	focus = {
-		id = KOR_proponent_of_Asianism
+		id = KOR_March_Uprising_Downgrade
+		icon = GFX_focus_kor_
+		relative_position_id = KOR_signing_of_an_anti_communist_agreement
+		cost = 3.00
+
+		prerequisite = {
+			focus = KOR_signing_of_an_anti_communist_agreement
+			focus = KOR_Reestablishment_of_the_Anti_Communist_Department
+		}
+
+		completion_reward = {
+			
+		}
+		x = 1
+		y = 1
+
+	}
+
+	#대중사변론 채택
+	focus = {
+		id = KOR_Adoption_of_China_incident
 		icon = GFX_focus_kor_
 		relative_position_id = KOR_East_Asia_New_Order
 		cost = 3.00
 
 		prerequisite = {
 			focus = KOR_East_Asia_New_Order
+		}
+
+		completion_reward = {
+			
+		}
+		x = -5
+		y = 1
+
+	}
+
+	#천명 주장
+	focus = {
+		id = KOR_insistence_of_heaven
+		icon = GFX_focus_kor_
+		relative_position_id = KOR_East_Asia_New_Order
+		cost = 3.00
+
+		prerequisite = {
+			focus = KOR_East_Asia_New_Order
+		}
+		prerequisite = {
+			focus = KOR_world_of_light
+		}
+
+		completion_reward = {
+			
+		}
+		x = 2
+		y = 1
+
+	}
+
+	#민족 정신 고취
+	focus = {
+		id = KOR_promotion_of_national_spirit
+		icon = GFX_focus_kor_
+		relative_position_id = KOR_world_of_light
+		cost = 3.00
+
+		prerequisite = {
+			focus = KOR_world_of_light
 		}
 
 		completion_reward = {
@@ -2180,15 +2352,173 @@ focus_tree = {
 
 	}
 
-	#대일 협력강화 모색
+	#러시아와의 동맹 추진
 	focus = {
-		id = KOR_Seeking_to_strengthen_cooperation_with_Japan
+		id = KOR_promotion_of_an_alliance_with_Russia
 		icon = GFX_focus_kor_
-		relative_position_id = KOR_East_Asia_New_Order
+		relative_position_id = KOR_world_of_light
 		cost = 3.00
 
 		prerequisite = {
-			focus = KOR_East_Asia_New_Order
+			focus = KOR_world_of_light
+		}
+
+		completion_reward = {
+			
+		}
+		x = 3
+		y = 1
+
+	}
+
+	#제1차 상하이 사변
+	focus = {
+		id = KOR_First_Shanghai_Incident
+		icon = GFX_focus_kor_
+		relative_position_id = KOR_Adoption_of_China_incident
+		cost = 3.00
+
+		prerequisite = {
+			focus = KOR_Adoption_of_China_incident
+		}
+
+		completion_reward = {
+			
+		}
+		x = -5
+		y = 1
+
+	}
+
+	#내지 영토 수복
+	focus = {
+		id = KOR_restoration_of_territory
+		icon = GFX_focus_kor_
+		relative_position_id = KOR_Adoption_of_China_incident
+		cost = 3.00
+
+		prerequisite = {
+			focus = KOR_Adoption_of_China_incident
+		}
+
+		completion_reward = {
+			
+		}
+		x = 1
+		y = 1
+
+	}
+
+	#남만주 내지 동화
+	focus = {
+		id = KOR_South_Manchuria_Homeland_assimilation
+		icon = GFX_focus_kor_
+		relative_position_id = KOR_insistence_of_heaven
+		cost = 3.00
+
+		prerequisite = {
+			focus = KOR_insistence_of_heaven
+		}
+
+		completion_reward = {
+			
+		}
+		x = -1
+		y = 1
+
+	}
+
+	#도명 개정 사업
+	focus = {
+		id = KOR_city_name_revision_project
+		icon = GFX_focus_kor_
+		relative_position_id = KOR_insistence_of_heaven
+		cost = 3.00
+
+		prerequisite = {
+			focus = KOR_insistence_of_heaven
+		}
+		prerequisite = {
+			focus = KOR_promotion_of_national_spirit
+		}
+
+		completion_reward = {
+			
+		}
+		x = 1
+		y = 1
+
+	}
+
+	#혁명정부주의 보급
+	focus = {
+		id = KOR_spread_of_revolutionary_governmentism
+		icon = GFX_focus_kor_
+		relative_position_id = KOR_March_Uprising_Downgrade
+		cost = 3.00
+
+		prerequisite = {
+			focus = KOR_March_Uprising_Downgrade
+		}
+
+		completion_reward = {
+			
+		}
+		x = 0
+		y = 2
+
+	}
+
+	#대중 요원 모집
+	focus = {
+		id = KOR_Recruitment_of_Chinese_agents
+		icon = GFX_focus_kor_
+		relative_position_id = KOR_First_Shanghai_Incident
+		cost = 3.00
+
+		prerequisite = {
+			focus = KOR_First_Shanghai_Incident
+		}
+		prerequisite = {
+			focus = KOR_Reestablishment_of_the_Anti_Communist_Department
+		}
+
+		completion_reward = {
+			
+		}
+		x = -3
+		y = 1
+
+	}
+
+	#송호 정전 협정 채결
+	focus = {
+		id = KOR_Forced_Demilitarization_in_Shanghai
+		icon = GFX_focus_kor_
+		relative_position_id = KOR_First_Shanghai_Incident
+		cost = 3.00
+
+		prerequisite = {
+			focus = KOR_First_Shanghai_Incident
+		}
+
+		completion_reward = {
+			
+		}
+		x = -1
+		y = 1
+
+	}
+
+	#교주 사변
+	focus = {
+		id = KOR_gyogu_incident
+		icon = GFX_focus_kor_
+		relative_position_id = KOR_First_Shanghai_Incident
+		cost = 3.00
+
+		prerequisite = {
+			focus = KOR_First_Shanghai_Incident
 		}
 
 		completion_reward = {
@@ -2198,6 +2528,463 @@ focus_tree = {
 		y = 1
 
 	}
+
+	#수동 사변
+	focus = {
+		id = KOR_sudong_incident
+		icon = GFX_focus_kor_
+		relative_position_id = KOR_restoration_of_territory
+		cost = 3.00
+
+		prerequisite = {
+			focus = KOR_restoration_of_territory
+		}
+
+		completion_reward = {
+			
+		}
+		x = 0
+		y = 1
+
+	}
+
+	#북만주 군사자치위원회 수립
+	focus = {
+		id = KOR_Establishment_of_the_Military_Self_Governing_Council_of_North_Manchuria
+		icon = GFX_focus_kor_
+		relative_position_id = KOR_restoration_of_territory
+		cost = 3.00
+
+		prerequisite = {
+			focus = KOR_restoration_of_territory
+		}
+		prerequisite = {
+			focus = KOR_South_Manchuria_Homeland_assimilation
+		}
+
+		completion_reward = {
+			
+		}
+		x = 3
+		y = 1
+
+	}
+
+	#대전쟁의 유산
+	focus = {
+		id = KOR_legacy_of_the_Great_War
+		icon = GFX_focus_kor_
+		relative_position_id = KOR_South_Manchuria_Homeland_assimilation
+		cost = 3.00
+
+		prerequisite = {
+			focus = KOR_South_Manchuria_Homeland_assimilation
+		}
+		prerequisite = {
+			focus = KOR_city_name_revision_project
+		}
+
+		completion_reward = {
+			
+		}
+		x = 1
+		y = 1
+
+	}
+
+	#대아시아주의 제창
+	focus = {
+		id = KOR_Propagation_of_Great_Asianism
+		icon = GFX_focus_kor_
+		relative_position_id = KOR_promotion_of_national_spirit
+		cost = 3.00
+
+		prerequisite = {
+			focus = KOR_promotion_of_national_spirit
+		}
+
+		completion_reward = {
+			
+		}
+		x = 0
+		y = 2
+
+	}
+
+	#협력정부 준비
+	focus = {
+		id = KOR_Cooperative_Government_Preparation
+		icon = GFX_focus_kor_
+		relative_position_id = KOR_spread_of_revolutionary_governmentism
+		cost = 3.00
+
+		prerequisite = {
+			focus = KOR_spread_of_revolutionary_governmentism
+		}
+		prerequisite = {
+			focus = KOR_Recruitment_of_Chinese_agents
+		}
+
+		completion_reward = {
+			
+		}
+		x = 1
+		y = 2
+
+	}
+
+	#난징 압박
+	focus = {
+		id = KOR_Nanjing_pressure
+		icon = GFX_focus_kor_
+		relative_position_id = KOR_Recruitment_of_Chinese_agents
+		cost = 3.00
+
+		prerequisite = {
+			focus = KOR_Recruitment_of_Chinese_agents
+		}
+		prerequisite = {
+			focus = KOR_Forced_Demilitarization_in_Shanghai
+		}
+
+		completion_reward = {
+			
+		}
+		x = 1
+		y = 1
+
+	}
+
+	#화북분리공작 실행
+	focus = {
+		id = KOR_North_China_Buffer_State_Strategy
+		icon = GFX_focus_kor_
+		relative_position_id = KOR_sudong_incident
+		cost = 3.00
+
+		prerequisite = {
+			focus = KOR_gyogu_incident
+		}
+		prerequisite = {
+			focus = KOR_sudong_incident
+		}
+
+		completion_reward = {
+			
+		}
+		x = -2
+		y = 1
+
+	}
+
+	#몽강연합자치정부 설립
+	focus = {
+		id = KOR_establishment_Mengjiang
+		icon = GFX_focus_kor_
+		relative_position_id = KOR_sudong_incident
+		cost = 3.00
+
+		prerequisite = {
+			focus = KOR_sudong_incident
+		}
+
+		completion_reward = {
+			
+		}
+		x = 1
+		y = 1
+
+	}
+
+	#대소 방어선 구축
+	focus = {
+		id = KOR_Building_Soviet_Line_of_Defense
+		icon = GFX_focus_kor_
+		relative_position_id = KOR_Establishment_of_the_Military_Self_Governing_Council_of_North_Manchuria
+		cost = 3.00
+
+		prerequisite = {
+			focus = KOR_Establishment_of_the_Military_Self_Governing_Council_of_North_Manchuria
+		}
+		prerequisite = {
+			focus = KOR_legacy_of_the_Great_War
+		}
+
+		completion_reward = {
+			
+		}
+		x = 1
+		y = 1
+
+	}
+
+	#제2차 상하이 사변
+	focus = {
+		id = KOR_Second_Shanghai_Incident
+		icon = GFX_focus_kor_
+		relative_position_id = KOR_Nanjing_pressure
+		cost = 3.00
+
+		prerequisite = {
+			focus = KOR_Nanjing_pressure
+		}
+
+		completion_reward = {
+			
+		}
+		x = 1
+		y = 1
+
+	}
+
+	#중국군 해상 압박
+	focus = {
+		id = KOR_Chinese_military_pressure_on_the_sea
+		icon = GFX_focus_kor_
+		relative_position_id = KOR_Forced_Demilitarization_in_Shanghai
+		cost = 3.00
+
+		prerequisite = {
+			focus = KOR_Forced_Demilitarization_in_Shanghai
+		}
+
+		completion_reward = {
+			
+		}
+		x = 2
+		y = 2
+
+	}
+
+	#기동 사변
+	focus = {
+		id = KOR_gidong_incident
+		icon = GFX_focus_kor_
+		relative_position_id = KOR_North_China_Buffer_State_Strategy
+		cost = 3.00
+
+		prerequisite = {
+			focus = KOR_North_China_Buffer_State_Strategy
+		}
+
+		completion_reward = {
+			
+		}
+		x = 2
+		y = 1
+
+	}
+
+	#베이징 압박
+	focus = {
+		id = KOR_Beijing_pressure
+		icon = GFX_focus_kor_
+		relative_position_id = KOR_establishment_Mengjiang
+		cost = 3.00
+
+		prerequisite = {
+			focus = KOR_establishment_Mengjiang
+		}
+		prerequisite = {
+			focus = KOR_Establishment_of_the_Military_Self_Governing_Council_of_North_Manchuria
+		}
+
+		completion_reward = {
+			
+		}
+		x = 1
+		y = 1
+
+	}
+
+	#배후중상 포착
+	focus = {
+		id = KOR_capture_serious_injury_behind
+		icon = GFX_focus_kor_
+		relative_position_id = KOR_legacy_of_the_Great_War
+		cost = 3.00
+
+		prerequisite = {
+			focus = KOR_legacy_of_the_Great_War
+		}
+
+		completion_reward = {
+			
+		}
+		x = -1
+		y = 2
+
+	}
+
+	#산둥 공작 실행
+	focus = {
+		id = KOR_Execution_of_maneuver_Shandong
+		icon = GFX_focus_kor_
+		relative_position_id = KOR_Cooperative_Government_Preparation
+		cost = 3.00
+
+		prerequisite = {
+			focus = KOR_Cooperative_Government_Preparation
+		}
+		prerequisite = {
+			focus = KOR_Second_Shanghai_Incident
+		}
+
+		completion_reward = {
+			
+		}
+		x = 2
+		y = 1
+
+	}
+
+	#상해 대도정부 수립
+	focus = {
+		id = KOR_Establishment_of_Greater_Shanghai_Government
+		icon = GFX_focus_kor_
+		relative_position_id = KOR_Chinese_military_pressure_on_the_sea
+		cost = 3.00
+
+		prerequisite = {
+			focus = KOR_Chinese_military_pressure_on_the_sea
+		}
+		prerequisite = {
+			focus = KOR_Second_Shanghai_Incident
+		}
+
+		completion_reward = {
+			
+		}
+		x = 1
+		y = 1
+
+	}
+
+	#지둥방공자치정부 수립
+	focus = {
+		id = KOR_Establishment_of_Jidong_Self_Government
+		icon = GFX_focus_kor_
+		relative_position_id = KOR_gidong_incident
+		cost = 3.00
+
+		prerequisite = {
+			focus = KOR_gidong_incident
+		}
+
+		completion_reward = {
+			
+		}
+		x = -2
+		y = 1
+
+	}
+
+	#산서 교섭 실행
+	focus = {
+		id = KOR_Execution_of_negotiation_Shanxi
+		icon = GFX_focus_kor_
+		relative_position_id = KOR_gidong_incident
+		cost = 3.00
+
+		prerequisite = {
+			focus = KOR_gidong_incident
+		}
+		prerequisite = {
+			focus = KOR_Beijing_pressure
+		}
+
+		completion_reward = {
+			
+		}
+		x = 1
+		y = 1
+
+	}
+
+	#중국군 해상보급 차단
+	focus = {
+		id = KOR_Blocking_the_distribution_of_Chinese_troops_at_sea
+		icon = GFX_focus_kor_
+		relative_position_id = KOR_Second_Shanghai_Incident
+		cost = 3.00
+
+		prerequisite = {
+			focus = KOR_Second_Shanghai_Incident
+		}
+		prerequisite = {
+			focus = KOR_Establishment_of_Greater_Shanghai_Government
+		}
+
+		completion_reward = {
+			
+		}
+		x = 1
+		y = 2
+
+	}
+
+	#중국과의 전쟁
+	focus = {
+		id = KOR_War_with_China
+		icon = GFX_focus_kor_
+		relative_position_id = KOR_Establishment_of_Greater_Shanghai_Government
+		cost = 3.00
+
+		prerequisite = {
+			focus = KOR_Establishment_of_Greater_Shanghai_Government
+		}
+		prerequisite = {
+			focus = KOR_Establishment_of_Jidong_Self_Government
+		}
+		prerequisite = {
+			focus = KOR_Execution_of_negotiation_Shanxi
+		}
+
+		completion_reward = {
+			
+		}
+		x = 2
+		y = 1
+
+	}
+
+	# #범아시아주의 제창
+	# focus = {
+	# 	id = KOR_proponent_of_Asianism
+	# 	icon = GFX_focus_kor_
+	# 	relative_position_id = KOR_East_Asia_New_Order
+	# 	cost = 3.00
+
+	# 	prerequisite = {
+	# 		focus = KOR_East_Asia_New_Order
+	# 	}
+
+	# 	completion_reward = {
+			
+	# 	}
+	# 	x = -1
+	# 	y = 1
+
+	# }
+
+	# #대일 협력강화 모색
+	# focus = {
+	# 	id = KOR_Seeking_to_strengthen_cooperation_with_Japan
+	# 	icon = GFX_focus_kor_
+	# 	relative_position_id = KOR_East_Asia_New_Order
+	# 	cost = 3.00
+
+	# 	prerequisite = {
+	# 		focus = KOR_East_Asia_New_Order
+	# 	}
+
+	# 	completion_reward = {
+			
+	# 	}
+	# 	x = 2
+	# 	y = 1
+
+	# }
 
 	#하나의 총통
 	focus = {

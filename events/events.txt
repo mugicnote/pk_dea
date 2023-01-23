@@ -266,7 +266,7 @@ country_event = {
 				id = KOR.68
 				days = 5
 			}
-			843 = {
+			917 = {
 				set_demilitarized_zone = yes
 			}
 		}
@@ -292,7 +292,7 @@ country_event = {
 				id = KOR.69
 				days = 5
 			}
-			842 = {
+			916 = {
 				set_demilitarized_zone = yes
 			}
 		}
@@ -318,10 +318,10 @@ country_event = {
 				id = KOR.70
 				days = 5
 			}
-			838 = {
+			912 = {
 				set_demilitarized_zone = yes
 			}
-			841 = {
+			915 = {
 				set_demilitarized_zone = yes
 			}
 		}
@@ -347,10 +347,10 @@ country_event = {
 				id = KOR.71
 				days = 5
 			}
-			836 = {
+			919 = {
 				set_demilitarized_zone = yes
 			}
-			845 = {
+			910 = {
 				set_demilitarized_zone = yes
 			}
 			set_country_flag = kor_10_is_Intelligence
@@ -399,22 +399,22 @@ country_event = {
 				id = KOR.73
 				days = 5
 			}
-			835 = {
+			909 = {
 				set_demilitarized_zone = yes
 			}
-			837 = {
+			911 = {
 				set_demilitarized_zone = yes
 			}
-			840 = {
+			918 = {
 				set_demilitarized_zone = yes
 			}
-			844 = {
+			914 = {
 				set_demilitarized_zone = yes
 			}
-			846 = {
+			920 = {
 				set_demilitarized_zone = yes
 			}
-			847 = {
+			921 = {
 				set_demilitarized_zone = yes
 			}
 		}
@@ -443,7 +443,7 @@ country_event = {
 			527 = {
 				set_demilitarized_zone = yes
 			}
-			839 = {
+			913 = {
 				set_demilitarized_zone = yes
 			}
 			swap_ideas = {
@@ -488,10 +488,9 @@ country_event = {
 				remove_idea = idea_Lee_Soon_yong
 				add_idea = idea_Lee_Soon_yong2
 			}
-			swap_ideas = {
-				remove_idea = idea_Ho_Jong_2
-				add_idea = idea_Ho_Jong3
-			}
+			remove_ideas = idea_Ho_Jong
+			remove_ideas = idea_Ho_Jong_2
+			add_ideas = idea_Ho_Jong3
 			swap_ideas = {
 				remove_idea = idea_Lee_In
 				add_idea = idea_Lee_In2
@@ -627,6 +626,7 @@ country_event = { #시작3
 	
 	option = { #
 		name = KOR.41.a
+		custom_effect_tooltip = KOR.41_tt
 		country_event = {
 			id = KOR.79
 			days = 1
@@ -637,6 +637,10 @@ country_event = { #시작3
 			sound_effect = "tno_se_assassination_Jae_pil"
 		}
 		kill_ideology_leader = democratic
+		hidden_effect = {
+			remove_ideas = idea_Shin_Sung_mo
+		}
+		custom_effect_tooltip = KOR.41_2_tt
 		set_country_flag = korea_has_no_president
 		create_country_leader = {
 			name = "대한민국 정부"
@@ -651,6 +655,32 @@ country_event = { #시작3
 		add_popularity = {
 			ideology = democratic
 			popularity = -0.075
+		}
+	}
+}
+
+news_event = {
+	id = KOR.99
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.99"}
+	title = KOR.99.t
+	desc = KOR.99.desc
+	picture = GFX_March_Democratic_Uprising
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = KOR.99.a
+		ai_chance = { factor = 1 }
+		trigger = { TAG = KOR }
+	}
+	option = { #
+		name = KOR.99.b
+		ai_chance = { factor = 1 }
+		trigger = {
+			NOT = {
+				TAG = KOR
+			}
 		}
 	}
 }
@@ -672,6 +702,10 @@ country_event = {
 			id = KOR.1
 			days = 1
 		}
+		country_event = {
+			id = KOR.13
+			days = 3
+		}
 		retire_ideology_leader = democratic
 		clr_country_flag = korea_has_no_president
 		set_country_flag = korea_kim_kyu_sik_acting_president
@@ -685,15 +719,97 @@ country_event = {
 				
 			}
 		}
+		hidden_effect = {
+			remove_ideas = KOR_Chang_Taek_Sang4
+			remove_ideas = KOR_Demonstration_university_district
+			remove_ideas = KOR_incompetent_goverment3
+			swap_ideas = {
+				remove_idea = idea_Kim_Beop_rin2
+				add_idea = idea_Kim_Beop_rin
+			}
+			swap_ideas = {
+				remove_idea = idea_Jo_Man_sik2
+				add_idea = idea_Jo_Man_sik
+			}
+			swap_ideas = {
+				remove_idea = idea_Yoon_Bo_Sun2
+				add_idea = idea_Yoon_Bo_Sun
+			}
+			swap_ideas = {
+				remove_idea = idea_Kang_In_taek2
+				add_idea = idea_Kang_In_taek
+			}
+			swap_ideas = {
+				remove_idea = idea_Lee_Soon_yong2
+				add_idea = idea_Lee_Soon_yong
+			}
+			swap_ideas = {
+				remove_idea = idea_Ho_Jong3
+				add_idea = idea_Ho_Jong
+			}
+			swap_ideas = {
+				remove_idea = idea_Lee_In2
+				add_idea = idea_Lee_In
+			}
+		}
+		custom_effect_tooltip = KOR.79_2_tt
+		custom_effect_tooltip = KOR.79_3_tt
+		custom_effect_tooltip = KOR.79_4_tt
+		custom_effect_tooltip = KOR.79_tt
+		add_ideas = KOR_idea_lost_way_democracy
+		hidden_effect = {
+			917 = {
+				set_demilitarized_zone = no
+			}
+			916 = {
+				set_demilitarized_zone = no
+			}
+			912 = {
+				set_demilitarized_zone = no
+			}
+			915 = {
+				set_demilitarized_zone = no
+			}
+			919 = {
+				set_demilitarized_zone = no
+			}
+			910 = {
+				set_demilitarized_zone = no
+			}
+			909 = {
+				set_demilitarized_zone = no
+			}
+			911 = {
+				set_demilitarized_zone = no
+			}
+			918 = {
+				set_demilitarized_zone = no
+			}
+			914 = {
+				set_demilitarized_zone = no
+			}
+			920 = {
+				set_demilitarized_zone = no
+			}
+			921 = {
+				set_demilitarized_zone = no
+			}
+			527 = {
+				set_demilitarized_zone = no
+			}
+			913 = {
+				set_demilitarized_zone = no
+			}
+		}
 	}
 }
 
-country_event = {  
+country_event = {
 	id = KOR.1
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.1"}
 	title = KOR.1.t
 	desc = KOR.1.desc
-	picture = GFX_
+	picture = GFX_Cho_Byung_ok_public_statement
 	
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -701,10 +817,12 @@ country_event = {
 	option = { #
 		name = KOR.1.a
 		ai_chance = { factor = 1 }
+		add_political_power = 25
 		country_event = {
-			id = KOR.13
-			days = 2
+			id = KOR.7
+			days = 4
 		}
+		custom_effect_tooltip = KOR.1_tt
 	}
 }
 
@@ -721,10 +839,6 @@ country_event = {
 	option = { #
 		name = KOR.13.a
 		ai_chance = { factor = 1 }
-		country_event = {
-			id = KOR.7
-			days = 2
-		}
 		set_country_flag = DEA_KOR_Military_factional_decisions_start
 		ENG_Thatcher_Tick = yes
 		ENG_SE_ThatcherSetVariables = yes
@@ -736,10 +850,6 @@ country_event = {
 	option = { #
 		name = KOR.13.b
 		ai_chance = { factor = 1 }
-		country_event = {
-			id = KOR.7
-			days = 2
-		}
 		set_country_flag = DEA_KOR_Military_factional_decisions_start
 		ENG_Thatcher_Tick = yes
 		ENG_SE_ThatcherSetVariables = yes
@@ -754,7 +864,7 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.7"}
 	title = KOR.7.t
 	desc = KOR.7.desc
-	picture = GFX_
+	picture = GFX_inauguration_Constitutional_Committee
 	
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -762,10 +872,17 @@ country_event = {
 	option = { #
 		name = KOR.7.a
 		ai_chance = { factor = 1 }
-		country_event = {
-			id = KOR.2
-			days = 1
+		hidden_effect = {
+			country_event = {
+				id = KOR.2
+				days = 1
+			}
+			country_event = {
+				id = KOR.8
+				days = 4
+			}
 		}
+		custom_effect_tooltip = kor7_tt
 	}
 }
 
@@ -783,25 +900,23 @@ country_event = { #
 		name = KOR.2.a
 		ai_chance = { factor = 1 }
 		country_event = {
-			id = KOR.8
-			days = 3
-		}
-		country_event = {
 			id = KOR.4
 			days = 6
 		}
+		ENG_Thatcher_Tick_plus_5 = yes
+		custom_effect_tooltip = kor13_b_tt
+		add_stability = -0.05
 	}
 	option = { #
 		name = KOR.2.b
 		ai_chance = { factor = 1 }
 		country_event = {
-			id = KOR.8
-			days = 3
-		}
-		country_event = {
 			id = KOR.5
 			days = 6
 		}
+		ENG_Thatcher_Tick_minus_5 = yes
+		custom_effect_tooltip = kor13_a_tt
+		add_stability = -0.05
 	}
 }
 
@@ -810,7 +925,7 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.8"}
 	title = KOR.8.t
 	desc = KOR.8.desc
-	picture = GFX_
+	picture = GFX_unconstitutional_Constitutional_Committee
 	
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -838,10 +953,14 @@ country_event = { #
 	option = { #
 		name = KOR.4.a
 		ai_chance = { factor = 1 }
+		ENG_Thatcher_Tick_plus_5 = yes
+		custom_effect_tooltip = kor13_b_tt
 	}
 	option = { #
 		name = KOR.4.b
 		ai_chance = { factor = 1 }
+		ENG_Thatcher_Tick_minus_5 = yes
+		custom_effect_tooltip = kor13_a_tt
 	}
 }
 
@@ -870,7 +989,7 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.9"}
 	title = KOR.9.t
 	desc = KOR.9.desc
-	picture = GFX_
+	picture = GFX_National_Assembly_decision_constitutional_amendment
 	
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -890,7 +1009,7 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.14"}
 	title = KOR.14.t
 	desc = KOR.14.desc
-	picture = GFX_law_passed_is_the_law
+	picture = GFX_promulgation_constitutional_amendment
 	
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -946,6 +1065,15 @@ country_event = {
 			days = 2
 		}
 	}
+
+	option = { #
+		name = KOR.24.b
+		ai_chance = { factor = 1 }
+		country_event = {
+			id = KOR.25
+			days = 2
+		}
+	}
 }
 
 country_event = {  
@@ -953,7 +1081,7 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.25"}
 	title = KOR.25.t
 	desc = KOR.25.desc
-	picture = GFX_
+	picture = GFX_failure_reach_unification_agreement
 	
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -985,7 +1113,10 @@ country_event = { #
 			id = KOR.26
 			days = 2
 		}
-		KOR_Election_Syngman_Rhee_plus_5 = yes
+		add_to_variable = {
+			var = KOR_Election_FOR_GUI1
+			value = 5
+		}
 	}
 	option = { #
 		name = KOR.3.b
@@ -1002,7 +1133,7 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.26"}
 	title = KOR.26.t
 	desc = KOR.26.desc
-	picture = GFX_
+	picture = GFX_enforcement_demonstrations_Seoul
 	
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -1022,7 +1153,7 @@ country_event = { #
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.6"}
 	title = KOR.6.t
 	desc = KOR.6.desc
-	picture = GFX_Attempted_assassinate_acting_Kim_Gyu_Sik2
+	picture = GFX_
 	
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -1063,6 +1194,14 @@ country_event = {
 			days = 3
 		}
 	}
+	option = { #
+		name = KOR.27.b
+		ai_chance = { factor = 1 }
+		country_event = {
+			id = KOR.28
+			days = 3
+		}
+	}
 }
 
 country_event = {  
@@ -1070,7 +1209,7 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.28"}
 	title = KOR.28.t
 	desc = KOR.28.desc
-	picture = GFX_
+	picture = GFX_controversy_over_recommendation_hard_line_crackdown
 	
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -1097,6 +1236,14 @@ country_event = {
 	
 	option = { #
 		name = KOR.29.a
+		ai_chance = { factor = 1 }
+		country_event = {
+			id = KOR.30
+			days = 1
+		}
+	}
+	option = { #
+		name = KOR.29.b
 		ai_chance = { factor = 1 }
 		country_event = {
 			id = KOR.30

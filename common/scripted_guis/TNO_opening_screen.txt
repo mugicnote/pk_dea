@@ -20,17 +20,6 @@ scripted_gui = {
 					set_variable = { TNO_Opening_Screen = 1 }
 				}
 				
-				clr_country_flag = Mod_explanation_Button_open
-				clr_country_flag = Country_explanation_Button_open
-				clr_country_flag = political_situation_Button_open
-				set_variable = { Country_explanation_Button_y = 41 }
-				set_variable = { Country_explanation_Button_middle_1_Button_y = 77 }
-				set_variable = { Country_explanation_Button_middle_2_Button_y = 113 }
-				set_variable = { Country_explanation_Button_middle_3_Button_y = 149 }
-				set_variable = { political_situation_Button_y = 77 }
-				set_variable = { political_situation_Button_middle_1_Button_y = 113 }
-				set_variable = { political_situation_Button_middle_2_Button_y = 149 }
-				set_variable = { political_situation_Button_middle_3_Button_y = 185 }
 			}
 		}
 	}
@@ -45,205 +34,13 @@ scripted_gui = {
 		}
 
 		triggers = {
-			Mod_explanation_middle_1_Button_visible = {
-				has_country_flag = Mod_explanation_Button_open
-			}
-			Mod_explanation_middle_2_Button_visible = {
-				has_country_flag = Mod_explanation_Button_open
-			}
-			Country_explanation_Button_middle_1_Button_visible = {
-				has_country_flag = Country_explanation_Button_open
-			}
-			Country_explanation_Button_middle_2_Button_visible = {
-				has_country_flag = Country_explanation_Button_open
-			}
-			Country_explanation_Button_middle_3_Button_visible = {
-				has_country_flag = Country_explanation_Button_open
-			}
-			political_situation_Button_middle_1_Button_visible = {
-				has_country_flag = political_situation_Button_open
-			}
-			political_situation_Button_middle_2_Button_visible = {
-				has_country_flag = political_situation_Button_open
-			}
-			political_situation_Button_middle_3_Button_visible = {
-				has_country_flag = political_situation_Button_open
-			}
 		}
 
 		properties = {
-			###큰 구역
-			Country_explanation_Button = {
-				y = Country_explanation_Button_y
-			}
-			political_situation_Button = {
-				y = political_situation_Button_y
-			}
-			###작은 구역
-			Country_explanation_Button_middle_1_Button = {
-				y = Country_explanation_Button_middle_1_Button_y
-			}
-			Country_explanation_Button_middle_2_Button = {
-				y = Country_explanation_Button_middle_2_Button_y
-			}
-			Country_explanation_Button_middle_3_Button = {
-				y = Country_explanation_Button_middle_3_Button_y
-			}
-			political_situation_Button_middle_1_Button = {
-				y = political_situation_Button_middle_1_Button_y
-			}
-			political_situation_Button_middle_2_Button = {
-				y = political_situation_Button_middle_2_Button_y
-			}
-			political_situation_Button_middle_3_Button = {
-				y = political_situation_Button_middle_3_Button_y
-			}
 		}
 
 		effects = {
 			###DEA 이펙트 - 제작
-			Mod_explanation_Button_click = {
-				if = {
-					limit = {
-						NOT = { has_country_flag = Mod_explanation_Button_open }
-					}
-					set_country_flag = Mod_explanation_Button_open
-
-					add_to_variable = {
-						var = Country_explanation_Button_y
-						value = 72
-					}
-					add_to_variable = {
-						var = Country_explanation_Button_middle_1_Button_y
-						value = 72
-					}
-					add_to_variable = {
-						var = Country_explanation_Button_middle_2_Button_y
-						value = 72
-					}
-					add_to_variable = {
-						var = Country_explanation_Button_middle_3_Button_y
-						value = 72
-					}
-					add_to_variable = {
-						var = political_situation_Button_y
-						value = 72
-					}
-					add_to_variable = {
-						var = political_situation_Button_middle_1_Button_y
-						value = 72
-					}
-					add_to_variable = {
-						var = political_situation_Button_middle_2_Button_y
-						value = 72
-					}
-					add_to_variable = {
-						var = political_situation_Button_middle_3_Button_y
-						value = 72
-					}
-				}
-				else_if = {
-					limit = {
-						has_country_flag = Mod_explanation_Button_open
-					}
-					clr_country_flag = Mod_explanation_Button_open
-
-					subtract_from_variable = {
-						var = Country_explanation_Button_y
-						value = 72
-					}
-					subtract_from_variable = {
-						var = Country_explanation_Button_middle_1_Button_y
-						value = 72
-					}
-					subtract_from_variable = {
-						var = Country_explanation_Button_middle_2_Button_y
-						value = 72
-					}
-					subtract_from_variable = {
-						var = Country_explanation_Button_middle_3_Button_y
-						value = 72
-					}
-					subtract_from_variable = {
-						var = political_situation_Button_y
-						value = 72
-					}
-					subtract_from_variable = {
-						var = political_situation_Button_middle_1_Button_y
-						value = 72
-					}
-					subtract_from_variable = {
-						var = political_situation_Button_middle_2_Button_y
-						value = 72
-					}
-					subtract_from_variable = {
-						var = political_situation_Button_middle_3_Button_y
-						value = 72
-					}
-				}
-			}
-			Country_explanation_Button_click = {
-				if = {
-					limit = {
-						NOT = { has_country_flag = Country_explanation_Button_open }
-					}
-					set_country_flag = Country_explanation_Button_open
-
-					add_to_variable = {
-						var = political_situation_Button_y
-						value = 108
-					}
-					add_to_variable = {
-						var = political_situation_Button_middle_1_Button_y
-						value = 108
-					}
-					add_to_variable = {
-						var = political_situation_Button_middle_2_Button_y
-						value = 108
-					}
-					add_to_variable = {
-						var = political_situation_Button_middle_3_Button_y
-						value = 108
-					}
-				}
-				else_if = {
-					limit = {
-						has_country_flag = Country_explanation_Button_open
-					}
-					clr_country_flag = Country_explanation_Button_open
-
-					subtract_from_variable = {
-						var = political_situation_Button_y
-						value = 108
-					}
-					subtract_from_variable = {
-						var = political_situation_Button_middle_1_Button_y
-						value = 108
-					}
-					subtract_from_variable = {
-						var = political_situation_Button_middle_2_Button_y
-						value = 108
-					}
-					subtract_from_variable = {
-						var = political_situation_Button_middle_3_Button_y
-						value = 108
-					}
-				}
-			}
-			political_situation_Button_click = {
-				if = {
-					limit = {
-						NOT = { has_country_flag = political_situation_Button_open }
-					}
-					set_country_flag = political_situation_Button_open
-				}
-				else_if = {
-					limit = {
-						has_country_flag = political_situation_Button_open
-					}
-					clr_country_flag = political_situation_Button_open
-				}
-			}
 			Mod_explanation_middle_1_Button_click = {
 				set_variable = { TNO_Opening_Screen = 1 }
 			}
@@ -289,78 +86,12 @@ scripted_gui = {
 						NOT = { has_country_flag = Mod_explanation_Button_open }
 					}
 					set_country_flag = Mod_explanation_Button_open
-
-					add_to_variable = {
-						var = Country_explanation_Button_y
-						value = 72
-					}
-					add_to_variable = {
-						var = Country_explanation_Button_middle_1_Button_y
-						value = 72
-					}
-					add_to_variable = {
-						var = Country_explanation_Button_middle_2_Button_y
-						value = 72
-					}
-					add_to_variable = {
-						var = Country_explanation_Button_middle_3_Button_y
-						value = 72
-					}
-					add_to_variable = {
-						var = political_situation_Button_y
-						value = 72
-					}
-					add_to_variable = {
-						var = political_situation_Button_middle_1_Button_y
-						value = 72
-					}
-					add_to_variable = {
-						var = political_situation_Button_middle_2_Button_y
-						value = 72
-					}
-					add_to_variable = {
-						var = political_situation_Button_middle_3_Button_y
-						value = 72
-					}
 				}
 				else_if = {
 					limit = {
 						has_country_flag = Mod_explanation_Button_open
 					}
 					clr_country_flag = Mod_explanation_Button_open
-
-					subtract_from_variable = {
-						var = Country_explanation_Button_y
-						value = 72
-					}
-					subtract_from_variable = {
-						var = Country_explanation_Button_middle_1_Button_y
-						value = 72
-					}
-					subtract_from_variable = {
-						var = Country_explanation_Button_middle_2_Button_y
-						value = 72
-					}
-					subtract_from_variable = {
-						var = Country_explanation_Button_middle_3_Button_y
-						value = 72
-					}
-					subtract_from_variable = {
-						var = political_situation_Button_y
-						value = 72
-					}
-					add_to_variable = {
-						var = political_situation_Button_middle_1_Button_y
-						value = 72
-					}
-					add_to_variable = {
-						var = political_situation_Button_middle_2_Button_y
-						value = 72
-					}
-					add_to_variable = {
-						var = political_situation_Button_middle_3_Button_y
-						value = 72
-					}
 				}
 			}
 			

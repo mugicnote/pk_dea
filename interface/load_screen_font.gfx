@@ -25,7 +25,7 @@ bitmapfonts = {
 		#path = "gfx/fonts/hoi_24header"
 		
 		fontfiles = {
-			"gfx/fonts/aldrich_24_outline"
+			"gfx/fonts/aldrich_22_outline"
 		}
 		
 		cursor_offset = { 0 4 }

@@ -30,6 +30,9 @@ KOR_incompetent_goverment2:0 "야당 의원 총연행"
 KOR_incompetent_goverment3:0 "계엄령 선포"
 KOR_Demonstration_university_district:0 "대학가 시위"
 
+###김규식 권한대행###
+KOR_idea_lost_way_democracy:0 "길 잃은 민주주의"
+
 ###쿠데타###
 KOR_idea_Way_of_Military_Revolution:0 "혁명 준비"
 KOR_idea_Military_Revolutionary_Government:0 "군사혁명정부"

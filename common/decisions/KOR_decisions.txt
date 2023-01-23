@@ -28,64 +28,7 @@ DEA_KOR_Election_Decision = {
 		}
 		cost = 1
 		complete_effect = {
-			set_variable = {
-				KOR_Election_FOR_GUI1 = 19
-			}
-			set_variable = {
-				KOR_Election_FOR_GUI2 = 17
-			}
-			set_variable = {
-				KOR_Election_FOR_GUI3 = 15
-			}
-			set_variable = {
-				KOR_Election_FOR_GUI4 = 14
-			}
-			set_variable = {
-				KOR_Election_FOR_GUI5 = 12
-			}
-			set_variable = {
-				KOR_Election_FOR_GUI6 = 8
-			}
-			set_variable = {
-				KOR_Election_FOR_GUI7 = 6
-			}
-			set_variable = {
-				KOR_Election_FOR_GUI8 = 4
-			}
-			set_variable = {
-				KOR_Election_FOR_GUI9 = 3
-			}
-			set_variable = {
-				KOR_Election_FOR_GUI10 = 2
-			}
-		}
-	}
-	DEA_KOR_Election_Decision_test = {
-		allowed = {
-			tag = KOR 
-		}
-		activation = {
-			tag = KOR 
-		}
-		available = {
-		}
-		cost = 1
-		complete_effect = {
-			KOR_Election_chek_Variables = yes
-		}
-	}
-	DEA_KOR_Election_Decision_test_2 = {
-		allowed = {
-			tag = KOR 
-		}
-		activation = {
-			tag = KOR 
-		}
-		available = {
-		}
-		cost = 1
-		complete_effect = {
-			KOR_Election_Syngman_Rhee_plus_5 = yes
+			KOR_Election_SetVariables = yes
 		}
 	}
 }
@@ -1002,47 +945,149 @@ DEA_KOR_scenario_debug_decisions_category = {
 
 			# retire_character = KOR_Son_Won_il
 
-			remove_state_core = 835
-			remove_state_core = 836
-			remove_state_core = 840
-			remove_state_core = 841
+			remove_state_core = 909
+			remove_state_core = 910
+			remove_state_core = 914
+			remove_state_core = 915
 
-			835 = {
+			909 = {
 				add_dynamic_modifier = {
 					modifier = kor_insurgent_resistance
 				}
 			}
-			836 = {
+			910 = {
 				add_dynamic_modifier = {
 					modifier = kor_insurgent_resistance
 				}
 			}
-			840 = {
+			914 = {
 				add_dynamic_modifier = {
 					modifier = kor_insurgent_resistance
 				}
 			}
-			841 = {
+			915 = {
 				add_dynamic_modifier = {
 					modifier = kor_insurgent_resistance
 				}
 			}
 
-			835 = {
+			909 = {
 				set_demilitarized_zone = yes
 			}
-			836 = {
+			910 = {
 				set_demilitarized_zone = yes
 			}
-			842 = {
+			914 = {
 				set_demilitarized_zone = yes
 			}
-			843 = {
+			915 = {
 				set_demilitarized_zone = yes
 			}
 		}
 	}
 }
+KOR_Rebellion_Remaining_Processed_decisions_category = {
+	KOR_Breaking_down_Rebellion_Remaining_mission = {
+		icon = GFX_decision_generic_operation
+
+		available = {
+			controls_province = 7137
+		}
+
+		fire_only_once = yes
+		is_good = no
+
+		days_mission_timeout = 365
+
+		cancel_if_not_visible = yes
+
+		activation = {
+			has_completed_focus = KOR_Rebellion_Remaining_Processed
+		}
+
+		visible = {
+			original_tag = KOR
+		}
+
+		complete_effect = {
+			909 = {
+				remove_dynamic_modifier = {
+					modifier = kor_insurgent_resistance
+				}
+			}
+			910 = {
+				remove_dynamic_modifier = {
+					modifier = kor_insurgent_resistance
+				}
+			}
+			914 = {
+				remove_dynamic_modifier = {
+					modifier = kor_insurgent_resistance
+				}
+			}
+			915 = {
+				remove_dynamic_modifier = {
+					modifier = kor_insurgent_resistance
+				}
+			}
+		}
+	}
+
+	#인력 사용
+	KOR_strengthening_of_local_security = {
+		icon = GFX_decision_generic_police_action
+
+		visible = {
+			original_tag = KOR
+		}
+
+		available = {
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			
+		}
+	}
+
+	#인정도, 전쟁 지지도 사용
+	KOR_attack_on_the_remnants_of_the_rebels = {
+		icon = GFX_decision_generic_ignite_civil_war
+
+		visible = {
+			original_tag = KOR
+		}
+
+		available = {
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			
+		}
+	}
+
+	#정치력 사용
+	KOR_Continuing_Rebels_Concession = {
+		icon = GFX_decision_eng_trade_unions_support
+
+		visible = {
+			original_tag = KOR
+		}
+
+		available = {
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			
+		}
+	}
+}
+
 KOR_rural_relief_category = {
 	KOR_self_sufficiency_tick = {
 		allowed = {

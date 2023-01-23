@@ -3,6 +3,10 @@ spriteTypes = {
 		name = "GFX_ENG_GUI_Maggie_Decision_GUI_Box"
 		texturefile = "gfx/interface/england_gui/Decision_GUIs/ENG_GUI_Maggie_Decision_GUI_Box.dds"
 	}
+	spriteType = {
+		name = "GFX_ENG_GUI_Maggie_Decision_GUI_Box_2"
+		texturefile = "gfx/interface/england_gui/Decision_GUIs/ENG_GUI_Maggie_Decision_GUI_Box_2.dds"
+	}
 	progressbartype = {
 		name = "GFX_KOR_GUI_Election_Decision_GUI_Bar"
 		textureFile1 = "gfx/interface/england_gui/Decision_GUIs/KOR_GUI_Election_Decision_GUI_Bar.dds"

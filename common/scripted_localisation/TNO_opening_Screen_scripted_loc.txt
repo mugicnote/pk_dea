@@ -17,6 +17,72 @@ defined_text = {
 }
 
 defined_text = {
+	name = GET_SPECIAL_CIRCUMSTANCES_COUNTRY_1_TT
+	#Iberia
+	text = {
+		trigger = { tag = KOR }
+		localization_key = Special_circumstances_country_1_tt_kor
+	}
+	## Default
+	text = {
+		localization_key = Special_circumstances_country_1_tt_kor
+	}
+}
+
+defined_text = {
+	name = GET_SPECIAL_CIRCUMSTANCES_COUNTRY_2_TT
+	#Iberia
+	text = {
+		trigger = { tag = KOR }
+		localization_key = Special_circumstances_country_2_tt_kor
+	}
+	## Default
+	text = {
+		localization_key = Special_circumstances_country_2_tt_kor
+	}
+}
+
+defined_text = {
+	name = GET_SPECIAL_CIRCUMSTANCES_COUNTRY_3_TT
+	#Iberia
+	text = {
+		trigger = { tag = KOR }
+		localization_key = Special_circumstances_country_3_tt_kor
+	}
+	## Default
+	text = {
+		localization_key = Special_circumstances_country_3_tt_kor
+	}
+}
+
+defined_text = {
+	name = GET_DECISIONS_AND_DEDICATED_INTERFACSE_1_TT
+	#Iberia
+	text = {
+		trigger = { tag = KOR }
+		localization_key = Decisions_and_dedicated_interfaces_1_tt_kor
+	}
+	## Default
+	text = {
+		localization_key = Decisions_and_dedicated_interfaces_1_tt_kor
+	}
+}
+
+defined_text = {
+	name = GET_DECISIONS_AND_DEDICATED_INTERFACSE_2_TT
+	#Iberia
+	text = {
+		trigger = { tag = KOR }
+		localization_key = Decisions_and_dedicated_interfaces_2_tt_kor
+	}
+	## Default
+	text = {
+		localization_key = Decisions_and_dedicated_interfaces_2_tt_kor
+	}
+}
+
+
+defined_text = {
 	name = GET_CURRENT_INTRO_TEXT
 
 	text = {

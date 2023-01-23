@@ -149,7 +149,23 @@ spriteTypes = {
 		name = "GFX_Nagoya_terrorist_occurred_picture"
 		texturefile = "gfx/event_pictures/Nagoya_terrorist_occurred_picture.dds"
 	}
+	###서재필 사망 까지의 이벤트
+	## 뉴스 이벤트
+	spriteType = {
+		name = "GFX_March_Democratic_Uprising"
+		texturefile = "gfx/event_pictures/KOR/news/March_Democratic_Uprising.dds"
+	}
+	##기사 제목
+	spriteType = {
+		name = "GFX_kyoto_news_event"
+		texturefile = "gfx/texticons/event_title/kyoto_news_event.dds"
+		legacy_lazy_load = no
+	}
 	###서재필 사망 이후
+	spriteType = {
+		name = "GFX_Cho_Byung_ok_public_statement"
+		texturefile = "gfx/event_pictures/KOR/Cho_Byung_ok_public_statement.dds"
+	}
 	spriteType = {
 		name = "GFX_Attempted_assassinate_acting_Kim_Gyu_Sik"
 		texturefile = "gfx/event_pictures/KOR/Attempted_assassinate_acting_Kim_Gyu_Sik.dds"
@@ -161,6 +177,34 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_Attempted_assassinate_acting_Kim_Gyu_Sik2"
 		texturefile = "gfx/event_pictures/KOR/Attempted_assassinate_acting_Kim_Gyu_Sik2.dds"
+	}
+	spriteType = {
+		name = "GFX_inauguration_Constitutional_Committee"
+		texturefile = "gfx/event_pictures/KOR/inauguration_Constitutional_Committee.dds"
+	}
+	spriteType = {
+		name = "GFX_unconstitutional_Constitutional_Committee"
+		texturefile = "gfx/event_pictures/KOR/unconstitutional_Constitutional_Committee.dds"
+	}
+	spriteType = {
+		name = "GFX_National_Assembly_decision_constitutional_amendment"
+		texturefile = "gfx/event_pictures/KOR/National_Assembly_decision_constitutional_amendment.dds"
+	}
+	spriteType = {
+		name = "GFX_failure_reach_unification_agreement"
+		texturefile = "gfx/event_pictures/KOR/failure_reach_unification_agreement.dds"
+	}
+	spriteType = {
+		name = "GFX_promulgation_constitutional_amendment"
+		texturefile = "gfx/event_pictures/KOR/promulgation_constitutional_amendment.dds"
+	}
+	spriteType = {
+		name = "GFX_enforcement_demonstrations_Seoul"
+		texturefile = "gfx/event_pictures/KOR/enforcement_demonstrations_Seoul.dds"
+	}
+	spriteType = {
+		name = "GFX_controversy_over_recommendation_hard_line_crackdown"
+		texturefile = "gfx/event_pictures/KOR/controversy_over_recommendation_hard_line_crackdown.dds"
 	}
 	###이범석
 	spriteType = {

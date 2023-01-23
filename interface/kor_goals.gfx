@@ -175,7 +175,10 @@ spriteTypes = {
 		name = "GFX_focus_kor_external_politics"
 		texturefile = "gfx/interface/goals/KOR/lee_2/focus_kor_external_politics.dds"
 	}
-
+	SpriteType = {
+		name = "GFX_focus_kor_maintenance_of_the_civil_service_system"
+		texturefile = "gfx/interface/goals/KOR/lee_2/focus_kor_maintenance_of_the_civil_service_system.dds"
+	}
 	SpriteType = {
 		name = "GFX_focus_kor_Fight_corruption"
 		texturefile = "gfx/interface/goals/KOR/lee_2/focus_kor_Fight_corruption.dds"
@@ -226,6 +229,19 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_focus_kyc"
 		texturefile = "gfx/interface/goals/KOR/lee_2/focus_kyc.dds"
+	}
+	#2페이즈 숙청
+	SpriteType = {
+		name = "GFX_focus_secret_agreement_with_Japan"
+		texturefile = "gfx/interface/goals/KOR/lee_3/focus_secret_agreement_with_Japan.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_negotiations_with_the_United_States"
+		texturefile = "gfx/interface/goals/KOR/lee_3/focus_negotiations_with_the_United_States.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_a_little_capital"
+		texturefile = "gfx/interface/goals/KOR/lee_3/focus_a_little_capital.dds"
 	}
 	#하나의 총통
 	SpriteType = {

@@ -132,4 +132,13 @@ spriteTypes = {
 		textureFile = "gfx/texticons/opening_icons/KOR/DEA_kor_wiki_goal_2.dds"
 		legacy_lazy_load = no
 	}
+
+	corneredTileSpriteType = {
+		name = "GFX_marble_tiled_bg_edges"
+		size= { x=192 y=192 }
+		textureFile = "gfx//interface//tiles//marble_tiled_bg_edges.dds"
+		borderSize = { x=64 y=64 }
+		tilingCenter = yes
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
 }
