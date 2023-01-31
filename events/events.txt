@@ -218,6 +218,9 @@ country_event = {
 				id = KOR.66
 				days = 5
 			}
+
+			set_country_flag = water_torture_news
+			set_country_flag = Dea_News_event_show
 		}
 	}
 }
@@ -1511,7 +1514,7 @@ country_event = {
 	
 }
 
-news_event = {
+country_event = {
 	id = KOR.21
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.21"}
 	title = KOR.21.t
@@ -1521,39 +1524,50 @@ news_event = {
 	is_triggered_only = yes
 	fire_only_once = yes
 	
-	option = { #
-		name = KOR.21.a
-		ai_chance = { factor = 1 }
-		trigger = { TAG = KOR }
-		hidden_effect = {
-			swap_ideas = {
-				remove_idea = idea_Ho_Jong
-				add_idea = idea_Ho_Jong_2
-			}
-		}
-		custom_effect_tooltip = KOR.21.a_tt
-	}
-	option = { #
-		name = KOR.21.b
-		ai_chance = { factor = 1 }
-		trigger = {
-			NOT = {
-				TAG = KOR
-				TAG = USA
-				TAG = JAP
-			}
+	hidden = yes
+
+	immediate = {
+		set_country_flag = kyoto_news
+		set_country_flag = Dea_News_event_show
+
+		swap_ideas = {
+	 		remove_idea = idea_Ho_Jong
+	 		add_idea = idea_Ho_Jong_2
 		}
 	}
-	option = { #
-		name = KOR.21.c
-		ai_chance = { factor = 1 }
-		trigger = { TAG = USA }
-	}
-	option = { #
-		name = KOR.21.d
-		ai_chance = { factor = 1 }
-		trigger = { TAG = JAP }
-	}
+	# option = { #
+	# 	name = KOR.21.a
+	# 	ai_chance = { factor = 1 }
+	# 	trigger = { TAG = KOR }
+	# 	hidden_effect = {
+	# 		swap_ideas = {
+	# 			remove_idea = idea_Ho_Jong
+	# 			add_idea = idea_Ho_Jong_2
+	# 		}
+	# 	}
+	# 	custom_effect_tooltip = KOR.21.a_tt
+	# }
+	# option = { #
+	# 	name = KOR.21.b
+	# 	ai_chance = { factor = 1 }
+	# 	trigger = {
+	# 		NOT = {
+	# 			TAG = KOR
+	# 			TAG = USA
+	# 			TAG = JAP
+	# 		}
+	# 	}
+	# }
+	# option = { #
+	# 	name = KOR.21.c
+	# 	ai_chance = { factor = 1 }
+	# 	trigger = { TAG = USA }
+	# }
+	# option = { #
+	# 	name = KOR.21.d
+	# 	ai_chance = { factor = 1 }
+	# 	trigger = { TAG = JAP }
+	# }
 }
 
 country_event = { #서재필 -> 이범석으로 중점 변경

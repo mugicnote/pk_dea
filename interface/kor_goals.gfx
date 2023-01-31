@@ -243,6 +243,10 @@ spriteTypes = {
 		name = "GFX_focus_a_little_capital"
 		texturefile = "gfx/interface/goals/KOR/lee_3/focus_a_little_capital.dds"
 	}
+	SpriteType = {
+		name = "GFX_focus_silence_beyond_the_sea"
+		texturefile = "gfx/interface/goals/KOR/lee_3/focus_silence_beyond_the_sea.dds"
+	}
 	#하나의 총통
 	SpriteType = {
 		name = "GFX_focus_kor_Right_wing_militia_united"

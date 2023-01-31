@@ -1,0 +1,39 @@
+scripted_gui = {
+
+	Dea_News_event_window_popup = {
+		context_type = player_context
+		context_type = politics_tab
+		window_name = "Dea_News_event_window"
+		
+		ai_check = {
+			always = no
+		}
+		
+		visible = {
+			has_country_flag = Dea_News_event_show
+		}
+		
+		effects = {
+			options_click = {
+				clr_country_flag = Dea_News_event_show
+				clr_country_flag = kyoto_news
+				clr_country_flag = water_torture_news
+			}
+			btn_minimize_click = {
+				clr_country_flag = Dea_News_event_show
+				clr_country_flag = kyoto_news
+				clr_country_flag = water_torture_news
+			}
+		}
+		
+		properties = {
+			Dea_news_tap = {
+				image = "[This.Dea_news_tap_img]"
+			}
+			Dea_event_picture = {
+				image = "[This.Dea_event_picture_img]"
+			}
+		}
+	}
+}
+

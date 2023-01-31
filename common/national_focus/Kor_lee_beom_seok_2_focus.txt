@@ -1685,7 +1685,7 @@ focus_tree = {
 	#바다 너머의 고요
 	focus = {
 		id = KOR_silence_beyond_the_sea
-		icon = GFX_focus_
+		icon = GFX_focus_silence_beyond_the_sea
 		relative_position_id = KOR_negotiations_with_the_United_States
 		cost = 3.00
 

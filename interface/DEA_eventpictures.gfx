@@ -152,14 +152,12 @@ spriteTypes = {
 	###서재필 사망 까지의 이벤트
 	## 뉴스 이벤트
 	spriteType = {
+		name = "GFX_Water_torture_incident_picture"
+		texturefile = "gfx/event_pictures/KOR/news/Water_torture_incident_picture.dds"
+	}
+	spriteType = {
 		name = "GFX_March_Democratic_Uprising"
 		texturefile = "gfx/event_pictures/KOR/news/March_Democratic_Uprising.dds"
-	}
-	##기사 제목
-	spriteType = {
-		name = "GFX_kyoto_news_event"
-		texturefile = "gfx/texticons/event_title/kyoto_news_event.dds"
-		legacy_lazy_load = no
 	}
 	###서재필 사망 이후
 	spriteType = {

@@ -1,0 +1,182 @@
+guiTypes = {
+
+#  # ### #   #  ##     ### #   # ### #  # ###  ## 
+## # #   #   # #       #   #   # #   ## #  #  #   
+# ## ##  # # #  #      ##   # #  ##  # ##  #   #  
+#  # #   # # #   #     #    # #  #   #  #  #    # 
+#  # ###  # #  ##      ###   #   ### #  #  #  ##  
+
+   containerWindowType = {
+	   name = "Dea_News_event_window"
+	   position = { x=-282 y=-310 }	
+	   size = { width = 720 height = 875 }
+	   moveable = yes
+	   Orientation = CENTER
+	   show_sound = world_news_effect
+	   hide_sound = menu_close_window
+	   
+	   background = {
+		   name = "Background"	
+		   spriteType ="GFX_event_news_bg"
+	   }
+	   containerWindowType = {
+		   name = "top_Window"
+		   position = { x=0 y=0 }	
+		   size = { width = 581 height =121 }
+		   Orientation = UPPER_LEFT
+
+		   iconType = {
+			   name ="Dea_news_tap"
+			   spriteType = "GFX_korean_news"
+			   position = { x = 13 y = 5 }#x = 90 y = 90
+			   Orientation = "UPPER_LEFT"
+			   allwaystransparent = yes
+		   }
+
+		   iconType = {
+			   name ="Dea_event_picture"
+			   spriteType = "GFX_news_event_001"
+			   position = { x = 149 y = 50 }#x = 90 y = 90
+			   Orientation = "UPPER_LEFT"
+			   allwaystransparent = yes
+		   }
+		   
+		   iconType = {
+			   name ="event_picture_overlay"
+			   spriteType = "GFX_event_news_pic_overlay"
+			   position = { x = 149 y = 50 }
+			   Orientation = "UPPER_LEFT"
+			   allwaystransparent = yes
+		   }			
+		   
+		   instantTextBoxType = {
+			   name = "Title"
+			   position = { x = 145 y = 218 }
+			   #font = "hoi4_typewriter22"
+			   #font = "franklin_gothic_34"
+			   font = "aldrich_30_outline_b"
+			   borderSize = {x = 0 y = 0}
+			   text = "[Dea_event_title]"	
+			   maxWidth = 581
+			   maxHeight = 120
+			   format = left
+			   Orientation = "UPPER_LEFT"
+		   }
+
+		   instantTextBoxType = {
+			name = "Title_small"
+			position = { x = 145 y = 249 }
+			#font = "hoi4_typewriter22"
+			#font = "franklin_gothic_34"
+			font = "aldrich_22_outline_b"
+			borderSize = {x = 0 y = 0}
+			text = "[Dea_event_title_small]"	
+			maxWidth = 581
+			maxHeight = 120
+			format = left
+			Orientation = "UPPER_LEFT"
+		}
+
+		   instantTextBoxType = {
+			   name = "Title_2"
+			   position = { x = 20 y = 581 }
+			   #font = "hoi4_typewriter22"
+			   #font = "franklin_gothic_34"
+			   font = "aldrich_24_outline_b"
+			   borderSize = {x = 0 y = 0}
+			   text = "[Dea_event_title_2]"	
+			   maxWidth = 581
+			   maxHeight = 120
+			   format = left
+			   Orientation = "UPPER_LEFT"
+		   }
+
+		   instantTextBoxType = {
+			   name = "Title_3"
+			   position = { x = 352 y = 581 }
+			   #font = "hoi4_typewriter22"
+			   #font = "franklin_gothic_34"
+			   font = "aldrich_24_outline_b"
+			   borderSize = {x = 0 y = 0}
+			   text = "[Dea_event_title_3]"	
+			   maxWidth = 581
+			   maxHeight = 120
+			   format = left
+			   Orientation = "UPPER_LEFT"
+		   }
+		   
+		   buttonType = {
+			   name = "btn_minimize"
+			   position = {x=10 y=10}
+			   scale = 0.75
+			   spriteType = "GFX_event_button_minimize"
+			   clicksound = click_default
+		   }
+	   }
+
+	   containerWindowType = {
+		   name = "midsection"
+		   position = { x=0 y=106 }	
+		   size = { width = 720 height = 790 }
+		   Orientation = UPPER_LEFT
+	   
+		   instantTextBoxType = {
+			   name = "Description"
+			   position = { x = 17 y = 199	 }
+			   font = "hoi4_typewriter16"
+			   borderSize = {x = 0 y = 0}
+			   text = "[Dea_event_desc]"	
+			   maxWidth = 545
+			   maxHeight = 304
+			   format = left	   
+		   }
+
+		   instantTextBoxType = {
+			   name = "Description_2"
+			   position = { x = 15 y = 505	 }
+			   font = "hoi4_typewriter16"
+			   borderSize = {x = 0 y = 0}
+			   text = "[Dea_event_desc_2]"	
+			   maxWidth = 325
+			   maxHeight = 304
+			   format = left
+		   }
+
+		   instantTextBoxType = {
+			   name = "Description_3"
+			   position = { x = 349 y = 505	 }
+			   font = "hoi4_typewriter16"
+			   borderSize = {x = 0 y = 0}
+			   text = "[Dea_event_desc_3]"	
+			   maxWidth = 300
+			   maxHeight = 304
+			   format = left
+		   }
+
+		   buttonType = {
+			   name = "options"
+			   position = { x = 55 y = 597	 }
+			   font = "aldrich_24_outline_b"
+			   borderSize = {x = 0 y = 0}
+			   text = "[Dea_event_options]"	
+			   maxWidth = 845
+			   maxHeight = 304
+			   format = left
+			   
+		   }
+
+		   instantTextBoxType = {
+			   name = "options_2"
+			   position = { x = 55 y = 684	 }
+			   font = "aldrich_24_outline_b"
+			   borderSize = {x = 0 y = 0}
+			   text = "[Dea_event_options_2]"	
+			   maxWidth = 845
+			   maxHeight = 304
+			   format = left
+			   
+		   }
+	   }
+   }
+
+}

@@ -1,0 +1,192 @@
+### Don't touch!!!
+
+defined_text = {
+	name = Dea_news_tap_img
+	text = {
+		trigger = {
+			tag = KOR
+			NOT = { has_country_flag = water_torture_news }
+		}
+		localization_key = GFX_korean_news
+	}
+	text = {
+		trigger = {
+			tag = KOR
+			has_country_flag = water_torture_news
+		}
+		localization_key = GFX_korean_news_dong_A
+	}
+}
+
+defined_text = {
+	name = Dea_event_picture_img
+	text = {
+		trigger = {
+			tag = KOR
+			has_country_flag = kyoto_news
+		}
+		localization_key = GFX_Nagoya_terrorist_occurred_picture
+	}
+	text = {
+		trigger = {
+			tag = KOR
+			has_country_flag = water_torture_news
+		}
+		localization_key = GFX_Water_torture_incident_picture
+	}
+}
+
+defined_text = {
+	name = Dea_event_title
+	text = {
+		trigger = {
+			tag = KOR
+			has_country_flag = kyoto_news
+		}
+		localization_key = Dea_event_title_kyoto_news
+	}
+	text = {
+		trigger = {
+			tag = KOR
+			has_country_flag = water_torture_news
+		}
+		localization_key = Dea_event_title_water_torture_news
+	}
+}
+
+defined_text = {
+	name = Dea_event_title_small
+	text = {
+		trigger = {
+			tag = KOR
+			has_country_flag = kyoto_news
+		}
+		localization_key = Dea_event_title_kyoto_small_news
+	}
+	text = {
+		trigger = {
+			tag = KOR
+			has_country_flag = water_torture_news
+		}
+		localization_key = Dea_event_title_water_torture_small_news
+	}
+}
+
+defined_text = {
+	name = Dea_event_title_2
+	text = {
+		trigger = {
+			tag = KOR
+			has_country_flag = kyoto_news
+		}
+		localization_key = Dea_event_title_2_kyoto_news
+	}
+	text = {
+		trigger = {
+			tag = KOR
+			has_country_flag = water_torture_news
+		}
+		localization_key = Dea_event_title_2_water_torture_news
+	}
+}
+
+defined_text = {
+	name = Dea_event_title_3
+	text = {
+		trigger = {
+			tag = KOR
+			has_country_flag = kyoto_news
+		}
+		localization_key = Dea_event_title_3_kyoto_news
+	}
+	text = {
+		trigger = {
+			tag = KOR
+			has_country_flag = water_torture_news
+		}
+		localization_key = Dea_event_title_3_water_torture_news
+	}
+}
+
+defined_text = {
+	name = Dea_event_desc
+	text = {
+		trigger = {
+			tag = KOR
+			has_country_flag = kyoto_news
+		}
+		localization_key = Dea_event_desc_kyoto_news
+	}
+	text = {
+		trigger = {
+			tag = KOR
+			has_country_flag = water_torture_news
+		}
+		localization_key = Dea_event_desc_water_torture_news
+	}
+}
+
+defined_text = {
+	name = Dea_event_desc_2
+	text = {
+		trigger = {
+			tag = KOR
+			has_country_flag = kyoto_news
+		}
+		localization_key = Dea_event_desc_2_kyoto_news
+	}
+	text = {
+		trigger = {
+			tag = KOR
+			has_country_flag = water_torture_news
+		}
+		localization_key = Dea_event_desc_2_water_torture_news
+	}
+}
+
+defined_text = {
+	name = Dea_event_desc_3
+	text = {
+		trigger = {
+			tag = KOR
+			has_country_flag = kyoto_news
+		}
+		localization_key = Dea_event_desc_3_kyoto_news
+	}
+	text = {
+		trigger = {
+			tag = KOR
+			has_country_flag = water_torture_news
+		}
+		localization_key = Dea_event_desc_3_water_torture_news
+	}
+}
+
+defined_text = {
+	name = Dea_event_options_2
+	text = {
+		trigger = {
+			tag = KOR
+			has_country_flag = kyoto_news
+		}
+		localization_key = Dea_event_options_kyoto_news
+	}
+	text = {
+		trigger = {
+			tag = KOR
+			has_country_flag = water_torture_news
+		}
+		localization_key = Dea_event_options_water_torture_news
+	}
+}
+
+#버튼 사용용(건드리기 X)
+defined_text = {
+	name = Dea_event_options
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = Dea_event_options
+	}
+}

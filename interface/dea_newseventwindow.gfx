@@ -1,0 +1,11 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_korean_news"
+		texturefile = "gfx/interface/news_event_tap/korean_news.dds"
+	}
+	spriteType = {
+		name = "GFX_korean_news_dong_A"
+		texturefile = "gfx/interface/news_event_tap/korean_news_dong_A.dds"
+	}
+}
