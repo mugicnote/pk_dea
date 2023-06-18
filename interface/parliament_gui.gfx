@@ -14,15 +14,27 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_parliament_background_line"
-		texturefile = "gfx/interface/parliament_background_line.dds"
-	}
-	spriteType = {
-		name = "GFX_parliament_Farmland_Reform_Act"
-		texturefile = "gfx/interface/parliament/parliament_Farmland_Reform_Act.dds"
+		texturefile = "gfx/interface/parliament/parliament_background_line.dds"
 	}
 	spriteType = {
 		name = "GFX_Legislative_review_button"
 		texturefile = "gfx/interface/parliament/Legislative_review_button.dds"
+	}
+
+	spriteType = {
+		name = GFX_KOR_LegCo_Ordinance_History_Background
+		texturefile = "gfx/interface/parliament/ordinance_history_bg.dds"
+	}
+	spriteType = {
+		name = GFX_legco_ordinance_effect
+		textureFile = "gfx/interface/parliament/legco_ordinance_effect.dds"
+	}
+
+
+
+	spriteType = {
+		name = "GFX_parliament_Farmland_Reform_Act"
+		texturefile = "gfx/interface/parliament/parliament_Farmland_Reform_Act.dds"
 	}
 	spriteType = {
 		name = "GFX_Temporary_Measures_Assembly_Act"

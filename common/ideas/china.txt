@@ -130,7 +130,7 @@ ideas = {
 		    }
         }
 
-		###북경전민정부###
+		###북경정부###
 		MAN_incomplete_national_cooperation = { #미완의 국공합작
             picture = MAN_incomplete_national_cooperation
             allowed = {

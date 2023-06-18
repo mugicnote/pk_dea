@@ -518,6 +518,12 @@ spriteTypes = {
 		textureFile = "gfx//interface//pol_piechart_overlay_63x63.dds"
 		alwaystransparent = yes			
 	}
+
+	spriteType = {
+		name = "GFX_pol_piechart_overlay_new"
+		textureFile = "gfx//interface//pol_piechart_overlay_new.dds"
+		alwaystransparent = yes			
+	}
 	
 	spriteType = {
 		name = "GFX_pol_piechart_overlay"

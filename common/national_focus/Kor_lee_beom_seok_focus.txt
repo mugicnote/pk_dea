@@ -20,7 +20,15 @@ focus_tree = {
 		cost = 10.00
 
 		completion_reward = {
-			add_ideas = KOR_idea_Way_of_Military_Revolution
+			swap_ideas = {
+				remove_idea = KOR_Divided_military
+				add_idea = KOR_idea_Way_of_Military_Revolution
+			}
+			hidden_effect = {
+				KOR = {
+					country_lock_all_division_template = no
+				}
+			}
 			hidden_effect = {
 				set_temp_variable = { temp1 = rebellion_variable }
 				set_temp_variable = { temp2 = not_rebellion_variable }
@@ -44,15 +52,7 @@ focus_tree = {
 			focus = KOR_Way_of_Military_Revolution
 		}
 		completion_reward = {
-			hidden_effect = {
-				KOR = {
-					country_lock_all_division_template = no
-				}
-			}
-			swap_ideas = {
-				remove_idea = KOR_divided_army
-				add_idea = KOR_idea_Military_Revolutionary_Government
-			}
+			add_ideas = KOR_idea_Military_Revolutionary_Government
 		}
 		x = 0
 		y = 1

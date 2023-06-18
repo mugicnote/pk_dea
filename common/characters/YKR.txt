@@ -1,6 +1,6 @@
 characters={
-	RKR_pak_hon_yong={
-		name=RKR_pak_hon_yong
+	YKR_pak_hon_yong={
+		name=YKR_pak_hon_yong
 		portraits={
 			civilian={
 				large="gfx/leaders/KOR/Portrait_Pak_Honyong.dds"
@@ -18,8 +18,8 @@ characters={
 		}
 	}
 
-	RKR_Kim_Tu_bong={
-		name=RKR_Kim_Tu_bong
+	YKR_Kim_Tu_bong={
+		name=YKR_Kim_Tu_bong
 		portraits={
 			civilian={
 				large="gfx/leaders/KOR/Portrait_Kim_Tu_bong.dds"
@@ -35,7 +35,7 @@ characters={
 		}
 	}
 
-	RKR_Kim_Won_bong={
+	YKR_Kim_Won_bong={
 		name=YKR_Kim_Won_bong
 		portraits={
 			civilian={

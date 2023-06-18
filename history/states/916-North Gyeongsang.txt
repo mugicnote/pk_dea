@@ -21,6 +21,9 @@ state = {
 		victory_points = {
 			4086 40 #대구(타이큐)
 		}
+		victory_points = {
+			13271 15 #포항
+		}
 	}
 
 	resources = {

@@ -38,8 +38,16 @@ scripted_gui = {
 		}
 
 		triggers = {
-			parliament_Farmland_Reform_Act_visible = {
-				NOT = { has_country_flag = parliament_Farmland_Reform_Act_end }
+			# parliament_Farmland_Reform_Act_visible = {
+			# 	NOT = { has_country_flag = parliament_Farmland_Reform_Act_end }
+			# }
+
+			legco_ordinance_bg_visible = {
+				check_variable = { KOR_legco_current_ordinance_id > 0 }
+			}
+			legco_ordinance_effect_visible = {
+				check_variable = { KOR_legco_current_ordinance_id > 0 }
+				has_country_flag = KOR_show_effects_for_ordinance
 			}
 		}
 		
@@ -47,27 +55,35 @@ scripted_gui = {
 			close_click = {
 				clr_country_flag = show_parliament_button
 			}
-			parliament_Farmland_Reform_Act_click = {
-				set_country_flag = show_parliament_Farmland_Reform_Act
-				clr_country_flag = show_Temporary_Measures_Assembly_Act
-			}
-			Temporary_Measures_Assembly_Act_click = {
-				set_country_flag = show_Temporary_Measures_Assembly_Act
-				clr_country_flag = show_parliament_Farmland_Reform_Act
-			}
-			Legislative_review_button_click = {
-				if = {
-					limit = { has_country_flag = show_parliament_Farmland_Reform_Act }
-					set_country_flag = parliament_Farmland_Reform_Act_end
-				}
-				else_if = {
-					limit = { has_country_flag = show_Temporary_Measures_Assembly_Act }
-					set_country_flag = parliament_Temporary_Measures_Assembly_Act_end
-				}
-			}
+			# parliament_Farmland_Reform_Act_click = {
+			# 	set_country_flag = show_parliament_Farmland_Reform_Act
+			# 	clr_country_flag = show_Temporary_Measures_Assembly_Act
+			# }
+			# Temporary_Measures_Assembly_Act_click = {
+			# 	set_country_flag = show_Temporary_Measures_Assembly_Act
+			# 	clr_country_flag = show_parliament_Farmland_Reform_Act
+			# }
+			# Legislative_review_button_click = {
+			# 	if = {
+			# 		limit = { has_country_flag = show_parliament_Farmland_Reform_Act }
+			# 		set_country_flag = parliament_Farmland_Reform_Act_end
+			# 	}
+			# 	else_if = {
+			# 		limit = { has_country_flag = show_Temporary_Measures_Assembly_Act }
+			# 		set_country_flag = parliament_Temporary_Measures_Assembly_Act_end
+			# 	}
+			# }
 
-			Report_corruption_opposition_party_click = {
-				set_country_flag = show_Report_corruption_opposition_party_click
+			# Report_corruption_opposition_party_click = {
+			# 	set_country_flag = show_Report_corruption_opposition_party_click
+			# }
+			legco_ordinance_bg_click = {
+				set_country_flag = KOR_show_effects_for_ordinance
+			}
+			legco_ordinance_effect_click = {
+				KOR_show_effects_for_ordinance = yes
+				custom_effect_tooltip = KOR_clear_show_effects_for_ordinances_tt
+				clr_country_flag = KOR_show_effects_for_ordinance
 			}
 		}
 
@@ -97,6 +113,15 @@ scripted_gui = {
 			}
 			parliament_member_icon = {
 				frame = v
+			}
+		}
+
+		dynamic_lists = {
+			past_ordinance_list = {
+				array = KOR_legco_history
+				index = KOR_legco_history_i
+				entry_container = KOR_legco_ord
+				value = KOR_legco_current_ordinance_id
 			}
 		}
 	}

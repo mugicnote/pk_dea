@@ -1,10 +1,11 @@
+
 state={
 	id=946
 	name="STATE_946"
 
 	history={
-		owner = GIZ
-		add_core_of = GIZ
+		owner = SZC
+		add_core_of = SZC
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
@@ -15,8 +16,9 @@ state={
 	}
 
 	provinces={
-		1474 7521 7549 7577 
+		2067 7294 10726 
 	}
 	manpower=0
 	buildings_max_level_factor=1.000
+	local_supplies=0.000
 }

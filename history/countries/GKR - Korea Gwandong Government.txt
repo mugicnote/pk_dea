@@ -1,0 +1,265 @@
+capital = 527
+
+oob = GKR
+
+#시작시_연구가능_칸
+set_research_slots = 4
+
+#시작시_안정도
+set_stability = 0.75
+
+#시작시_전쟁지지도
+set_war_support = 0.5
+
+#연료_비율
+set_fuel_ratio = 1.0
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	gw_artillery = 1
+	superior_firepower = 1
+	base_strike = 1
+
+}
+
+if = {
+	limit = {
+		NOT = { has_dlc = "By Blood Alone" }
+	}
+	set_technology = {
+		early_fighter = 1
+		cv_early_fighter = 1
+		cv_naval_bomber1 = 1
+		cv_CAS1 = 1
+		naval_bomber1 = 1
+		CAS1 = 1
+		early_bomber = 1
+		
+	}
+}
+
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+	}
+}
+
+#수송선
+set_convoys = 30
+
+#국민정신
+add_ideas = {
+three_years_service
+# KOR_economy_ruined
+# KOR_huge_amount_government_bonds
+# KOR_Collapsed_security
+# KOR_incompetent_goverment
+# KOR_Divided_military
+# KOR_Chang_Taek_Sang
+# three_years_service
+
+# idea_Lee_Soon_yong
+# idea_Ho_Jong
+# idea_Shin_Sung_mo
+# idea_Jo_Man_sik
+# idea_Lee_In
+# idea_Kim_Beop_rin
+# idea_Yoon_Bo_Sun
+# idea_Kang_In_taek
+}
+
+#시작_정당
+set_politics = {
+    ruling_party = neutrality
+    last_election = "1936.1.1"
+    election_frequency = 48
+    elections_allowed = no
+}
+#시작시_정당들의_인기도
+set_popularities = {
+  communism = 0
+  authoritarian_socialism = 0
+  radical_socialism = 0
+  social_democracy = 0
+  social_liberalism = 0
+  national_liberalism = 0
+  liberal_conservatism = 0
+  democratic = 0
+  national_conservatism = 0
+  neutrality = 100
+  auto_despotism = 0
+  fascism = 0
+
+#   communism = 10
+#   authoritarian_socialism = 4
+#   radical_socialism = 9
+#   social_democracy = 12
+#   social_liberalism = 4
+#   national_liberalism = 3
+#   liberal_conservatism = 4
+#   democratic = 20
+#   national_conservatism = 12
+#   neutrality = 6
+#   auto_despotism = 5
+#   fascism = 11
+}
+
+#common/characters 파일 참고
+# recruit_character = YKR_pak_hon_yong
+# recruit_character = YKR_Kim_Tu_bong
+# recruit_character = YKR_Kim_Won_bong
+# recruit_character = YKR_Lyuh_Woon_hyung
+# recruit_character = KOR_Chang_Myon
+# recruit_character = YKR_Ahn_Jae_hong
+# recruit_character = YKR_Song_Jin_woo
+# recruit_character = YKR_Kim_Koo
+# recruit_character = YKR_ji_chong_chen
+
+# recruit_character = KOR_an_jung_geun
+
+# recruit_character = KOR_Kim_Won_bong
+# recruit_character = KOR_Ryu_ja_myeong
+# recruit_character = KOR_Kwon_Jun
+# recruit_character = KOR_Kim_Sang_ok
+# recruit_character = KOR_Kim_Ji_Sub
+# recruit_character = KOR_Kim_Ik_Sang
+# recruit_character = KOR_Yun_Se_ju
+# recruit_character = KOR_Kim_Si_Hyeon
+
+# recruit_character = KOR_Kim_chek
+# recruit_character = KOR_Park_Il_wu
+# recruit_character = KOR_Kim_Mu_geong
+# recruit_character = KOR_Choi_Yong_Gun
+# recruit_character = KOR_Lee_Gwan_Sool
+# recruit_character = KOR_Nam_Il
+
+# recruit_character = KOR_Son_Won_il
+
+###맨더건###
+# if = {
+# 	limit = { has_dlc = "Man the Guns"}
+# 		### 항공모함
+# 		### 전함
+# 		create_equipment_variant = {
+# 			name = "충무공 이순신급"
+# 			name_group = KOR_BB_HISTORICAL
+# 			type = ship_hull_heavy_1
+# 			parent_version = 0
+# 			modules = {
+# 				fixed_ship_battery_slot = ship_heavy_battery_2
+# 				fixed_ship_anti_air_slot = ship_anti_air_1
+# 				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+# 				fixed_ship_radar_slot = empty
+# 				fixed_ship_engine_slot = heavy_ship_engine_1
+# 				fixed_ship_secondaries_slot = ship_secondaries_1
+# 				fixed_ship_armor_slot = ship_armor_bb_1
+# 				front_1_custom_slot = empty
+# 				mid_1_custom_slot = ship_secondaries_1
+# 				mid_2_custom_slot = ship_airplane_launcher_1
+# 				rear_1_custom_slot = ship_heavy_battery_2
+# 			}
+# 		}
+#     create_equipment_variant = {
+# 			name = "세종대왕급"
+# 			name_group = KOR_BB_HISTORICAL
+# 			type = ship_hull_heavy_1
+# 			parent_version = 0
+# 			modules = {
+# 				fixed_ship_battery_slot = ship_heavy_battery_2
+# 				fixed_ship_anti_air_slot = ship_anti_air_1
+# 				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+# 				fixed_ship_radar_slot = empty
+# 				fixed_ship_engine_slot = heavy_ship_engine_1
+# 				fixed_ship_secondaries_slot = ship_secondaries_1
+# 				fixed_ship_armor_slot = ship_armor_bb_1
+# 				front_1_custom_slot = empty
+# 				mid_1_custom_slot = ship_secondaries_1
+# 				mid_2_custom_slot = ship_airplane_launcher_1
+# 				rear_1_custom_slot = ship_heavy_battery_2
+# 			}
+# 		}
+# 		### 중순양함	
+# 		create_equipment_variant = {
+# 			name = "동해급"
+# 			type = ship_hull_cruiser_2
+# 			name_group = KOR_CA_HISTORICAL
+# 			parent_version = 0
+# 			modules = {
+# 				fixed_ship_battery_slot = ship_medium_battery_2
+# 				fixed_ship_anti_air_slot = empty
+# 				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+# 				fixed_ship_radar_slot = empty
+# 				fixed_ship_engine_slot = cruiser_ship_engine_2
+# 				fixed_ship_armor_slot = ship_armor_cruiser_2
+# 				fixed_ship_secondaries_slot = ship_secondaries_1
+# 				front_1_custom_slot = ship_medium_battery_2
+# 				mid_1_custom_slot = ship_torpedo_1
+# 				mid_2_custom_slot = ship_torpedo_1
+# 				rear_1_custom_slot = ship_airplane_launcher_1
+# 			}
+# 		}
+# 		### 경순양함
+# 		create_equipment_variant = {
+# 			name = "포항급"
+# 			type = ship_hull_cruiser_1
+# 			name_group = KOR_CL_HISTORICAL
+# 			parent_version = 0
+# 			modules = {
+# 				fixed_ship_battery_slot = ship_medium_battery_1
+# 				fixed_ship_anti_air_slot = empty
+# 				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+# 				fixed_ship_radar_slot = empty
+# 				fixed_ship_engine_slot = cruiser_ship_engine_1
+# 				fixed_ship_armor_slot = ship_armor_cruiser_1
+# 				fixed_ship_secondaries_slot = ship_secondaries_1
+# 				mid_1_custom_slot = empty
+# 				mid_2_custom_slot = ship_torpedo_2
+# 				rear_1_custom_slot = empty
+# 			}
+# 		}
+# 		### 구축함
+# 		create_equipment_variant = {
+# 			name = "대구급" #collection of various WWI and early interwar ships with similiar capabilities
+# 			type = ship_hull_light_1
+# 			name_group = KOR_DD_HISTORICAL
+# 			parent_version = 0
+# 			modules = {
+# 				fixed_ship_battery_slot = ship_light_battery_1
+# 				fixed_ship_anti_air_slot = empty
+# 				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+# 				fixed_ship_radar_slot = empty
+# 				fixed_ship_engine_slot = light_ship_engine_1
+# 				fixed_ship_torpedo_slot = ship_torpedo_1
+# 				mid_1_custom_slot = ship_torpedo_1
+# 				rear_1_custom_slot = ship_depth_charge_1
+# 			}
+# 		}
+# 		### 잠수함
+# 		create_equipment_variant = {
+# 			name = "장보고급"
+# 			type = ship_hull_submarine_1
+# 			name_group = KOR_SS_HISTORICAL
+# 			parent_version = 0
+# 			modules = {
+# 				fixed_ship_torpedo_slot = ship_torpedo_sub_1
+# 				fixed_ship_engine_slot = sub_ship_engine_1
+# 				rear_1_custom_slot = ship_mine_layer_sub
+# 			}
+# 		}
+# }

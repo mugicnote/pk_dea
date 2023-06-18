@@ -4,8 +4,8 @@ state={
 	name="STATE_287"
 
 	history={
-		owner = SIK
-		add_core_of = SIK
+		owner = GMS
+		add_core_of = GMS
 		buildings = {
 			infrastructure = 1
 
@@ -14,9 +14,10 @@ state={
 	}
 
 	provinces={
-		1838 
+		1630 1933 12797 
 	}
 	manpower=408000
 	buildings_max_level_factor=1.000
 	state_category=wasteland
+	local_supplies=0.000
 }

@@ -74,7 +74,7 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "political_pie_chart"
-			position = { x= 438 y = 60 }
+			position = { x= 438 y = 62 }
 			size = { width=100 height=100 }
 			clipping = no
 
@@ -86,8 +86,8 @@ guiTypes = {
 
 			iconType ={
 				name ="pol_view_bg"
-				spriteType = "GFX_pol_piechart_overlay_63x63"
-				position = { x= 13 y = 6 }
+				spriteType = "GFX_pol_piechart_overlay_new"
+				position = { x= 9 y = 6 }
 				scale = 1.05
 			}
 		}
@@ -958,7 +958,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "name"
 			position = { x = 82 y = 4 }
-			font = "hoi_16mbs"
+			font = "cg_16b"
 			text = "party name"
 			fixedsize = yes
 			maxWidth = 170

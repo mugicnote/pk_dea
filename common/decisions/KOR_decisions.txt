@@ -1,3 +1,25 @@
+DEA_KOR_introduction_bill_National_Assembly_decisions = {
+	KOR_temp_legco_id_1_vote = {
+
+		icon = eng_trade_unions_support
+		visible = {
+			original_tag = KOR
+		}
+
+		available = {
+			KOR = { exists = yes }
+			KOR = { is_subject = no }
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			legco_ordinance_vote_start = yes
+			custom_effect_tooltip = KOR_legco_resolution_1_days
+		}
+	}
+}
+
 DEA_KOR_Military_factional_decisions = {
 	ENG_DEC_MAGGIE_TICK_TICK = {
 		allowed = {
@@ -281,11 +303,6 @@ DEA_KOR_Military_Revolution_decisions_category = {
 			clr_country_flag = korea_kim_kyu_sik_president_lee_beom_seok
 			load_focus_tree = Kor_lee_beom_seok_2_focus
 			set_cosmetic_tag = KOR_brd
-
-			country_event = {
-				id = KOR.97
-				days = 5
-			}
 			
 			set_politics = {
 				ruling_party = fascism
@@ -895,6 +912,24 @@ DEA_KOR_scenario_debug_decisions_category = {
 			clr_country_flag = korea_kim_kyu_sik_president_lee_beom_seok
 			set_party_name = { ideology = fascism long_name = KOR_Military_Revolution_long_party name = KOR_Military_Revolution_party }
 
+			add_ideas = KOR_idea_lost_way_democracy
+
+			# remove_ideas = KOR_Chang_Taek_Sang4
+			# remove_ideas = KOR_Demonstration_university_district
+			# remove_ideas = KOR_incompetent_goverment3
+
+			# ->
+
+			remove_ideas = KOR_Chang_Taek_Sang
+			remove_ideas = KOR_incompetent_goverment
+
+			swap_ideas = {
+				remove_idea = KOR_Divided_military
+				add_idea = KOR_idea_Way_of_Military_Revolution
+			}
+
+			add_ideas = KOR_idea_Military_Revolutionary_Government
+
 			set_country_flag = KOR_beginning_revolution
 			load_focus_tree = Kor_lee_beom_seok_2_focus
 			set_cosmetic_tag = KOR_brd
@@ -906,24 +941,30 @@ DEA_KOR_scenario_debug_decisions_category = {
 				ideology = fascism
 				popularity = 0.05
 			}
-			
-			country_event = {
-				id = KOR.97
-				days = 5
-			}
 
 			COALITION_clr_soccon = yes
 			COALITION_add_autdes = yes
 
-			retire_character = KOR_pak_hon_yong
-			retire_character = KOR_Kim_Tu_bong
-			retire_character = KOR_Kim_Won_bong
-			retire_character = KOR_Lyuh_Woon_hyung
+			retire_character = KOR_Seo_jae_pil
+			create_country_leader = {
+				name = "김규식"
+				desc = ""
+				picture = "Portrait_Kim_Kyusik.dds"
+				expire = "1999.1.1"
+				ideology = conservatism
+				traits = {
+					
+				}
+			}
+			# retire_character = KOR_pak_hon_yong
+			# retire_character = KOR_Kim_Tu_bong
+			# retire_character = KOR_Kim_Won_bong
+			# retire_character = KOR_Lyuh_Woon_hyung
 			# retire_character = KOR_Chang_Myon
-			retire_character = KOR_Ahn_Jae_hong
-			retire_character = KOR_Song_Jin_woo
-			retire_character = KOR_Kim_Koo
-			retire_character = KOR_ji_chong_chen
+			# retire_character = KOR_Ahn_Jae_hong
+			# retire_character = KOR_Song_Jin_woo
+			# retire_character = KOR_Kim_Koo
+			# retire_character = KOR_ji_chong_chen
 
 			# retire_character = KOR_an_jung_geun
 
@@ -991,7 +1032,12 @@ KOR_Rebellion_Remaining_Processed_decisions_category = {
 		icon = GFX_decision_generic_operation
 
 		available = {
-			controls_province = 7137
+			hidden_trigger = {
+				always = no
+			}
+			custom_trigger_tooltip = {
+				tooltip = KOR_Breaking_down_Rebellion_Remaining_mission_tt
+			}
 		}
 
 		fire_only_once = yes
@@ -1009,7 +1055,7 @@ KOR_Rebellion_Remaining_Processed_decisions_category = {
 			original_tag = KOR
 		}
 
-		complete_effect = {
+		timeout_effect = {
 			909 = {
 				remove_dynamic_modifier = {
 					modifier = kor_insurgent_resistance

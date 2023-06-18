@@ -34,6 +34,13 @@ defined_text = {
 		}
 		localization_key = GFX_Water_torture_incident_picture
 	}
+	text = {
+		trigger = {
+			tag = KOR
+			has_country_flag = party_headquarters_attack_news
+		}
+		localization_key = GFX_party_headquarters_attack_picture
+	}
 }
 
 defined_text = {
@@ -51,6 +58,13 @@ defined_text = {
 			has_country_flag = water_torture_news
 		}
 		localization_key = Dea_event_title_water_torture_news
+	}
+	text = {
+		trigger = {
+			tag = KOR
+			has_country_flag = party_headquarters_attack_news
+		}
+		localization_key = Dea_event_title_party_headquarters_attack_news
 	}
 }
 
@@ -70,6 +84,13 @@ defined_text = {
 		}
 		localization_key = Dea_event_title_water_torture_small_news
 	}
+	text = {
+		trigger = {
+			tag = KOR
+			has_country_flag = party_headquarters_attack_news
+		}
+		localization_key = Dea_event_title_party_headquarters_attack_small_news
+	}
 }
 
 defined_text = {
@@ -87,6 +108,13 @@ defined_text = {
 			has_country_flag = water_torture_news
 		}
 		localization_key = Dea_event_title_2_water_torture_news
+	}
+	text = {
+		trigger = {
+			tag = KOR
+			has_country_flag = party_headquarters_attack_news
+		}
+		localization_key = Dea_event_title_2_party_headquarters_attack_news
 	}
 }
 
@@ -106,6 +134,13 @@ defined_text = {
 		}
 		localization_key = Dea_event_title_3_water_torture_news
 	}
+	text = {
+		trigger = {
+			tag = KOR
+			has_country_flag = party_headquarters_attack_news
+		}
+		localization_key = Dea_event_title_3_party_headquarters_attack_news
+	}
 }
 
 defined_text = {
@@ -123,6 +158,13 @@ defined_text = {
 			has_country_flag = water_torture_news
 		}
 		localization_key = Dea_event_desc_water_torture_news
+	}
+	text = {
+		trigger = {
+			tag = KOR
+			has_country_flag = party_headquarters_attack_news
+		}
+		localization_key = Dea_event_desc_party_headquarters_attack_news
 	}
 }
 
@@ -142,6 +184,13 @@ defined_text = {
 		}
 		localization_key = Dea_event_desc_2_water_torture_news
 	}
+	text = {
+		trigger = {
+			tag = KOR
+			has_country_flag = party_headquarters_attack_news
+		}
+		localization_key = Dea_event_desc_2_party_headquarters_attack_news
+	}
 }
 
 defined_text = {
@@ -160,6 +209,13 @@ defined_text = {
 		}
 		localization_key = Dea_event_desc_3_water_torture_news
 	}
+	text = {
+		trigger = {
+			tag = KOR
+			has_country_flag = party_headquarters_attack_news
+		}
+		localization_key = Dea_event_desc_3_party_headquarters_attack_news
+	}
 }
 
 defined_text = {
@@ -177,6 +233,13 @@ defined_text = {
 			has_country_flag = water_torture_news
 		}
 		localization_key = Dea_event_options_water_torture_news
+	}
+	text = {
+		trigger = {
+			tag = KOR
+			has_country_flag = party_headquarters_attack_news
+		}
+		localization_key = Dea_event_options_party_headquarters_attack_news
 	}
 }
 

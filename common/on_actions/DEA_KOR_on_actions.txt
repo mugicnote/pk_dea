@@ -7,28 +7,103 @@ on_actions = {
 				set_variable = { Country_explanation_Button_y = 41 }
 			}
 			KOR = {
+				set_variable = { KOR_legco_first_seats = 105 }
+				set_variable = { KOR_legco_second_seats = 80 }
+				set_variable = { KOR_legco_third_seats = 69 }
+				set_variable = { KOR_legco_forth_seats = 57 }
+				set_variable = { KOR_legco_fifth_seats = 47 }
+				set_variable = { KOR_legco_sixth_seats = 13 }
+				set_variable = { KOR_legco_seventh_seats = 11 }
+				set_variable = { KOR_legco_eighth_seats = 9 }
+				set_variable = { KOR_legco_nineth_seats = 7 }
+				set_variable = { KOR_legco_tenth_seats = 2 }
+
+				clear_array = KOR_legco_faction_support
+				resize_array = {
+					array = KOR_legco_faction_support
+					size = 11
+				}
 				parliament_gui_initial = yes
+				
+
+				set_variable = { KOR_legco_current_ordinance_id = 0 }
+				clear_array = KOR_legco_history
+				add_to_array = { KOR_legco_history = 2 }
+				add_to_array = { KOR_legco_history = 3 }
+				add_to_array = { KOR_legco_history = 4 }
+				add_to_array = { KOR_legco_history = 5 }
+				add_to_array = { KOR_legco_history = 6 }
+				add_to_array = { KOR_legco_history = 7 }
+				add_to_array = { KOR_legco_history = 8 }
+				add_to_array = { KOR_legco_history = 9 }
+				add_to_array = { KOR_legco_history = 10 }
+				add_to_array = { KOR_legco_history = 11 }
+				add_to_array = { KOR_legco_history = 12 }
+				add_to_array = { KOR_legco_history = 13 }
+				add_to_array = { KOR_legco_history = 14 }
+				add_to_array = { KOR_legco_history = 15 }
+				add_to_array = { KOR_legco_history = 16 }
+				add_to_array = { KOR_legco_history = 17 }
+				add_to_array = { KOR_legco_history = 18 }
+				add_to_array = { KOR_legco_history = 19 }
+				add_to_array = { KOR_legco_history = 20 }
+				add_to_array = { KOR_legco_history = 21 }
+				add_to_array = { KOR_legco_history = 22 }
+				add_to_array = { KOR_legco_history = 23 }
+				add_to_array = { KOR_legco_history = 24 }
+				add_to_array = { KOR_legco_history = 25 }
+				add_to_array = { KOR_legco_history = 26 }
+				add_to_array = { KOR_legco_history = 27 }
+				add_to_array = { KOR_legco_history = 28 }
+				add_to_array = { KOR_legco_history = 29 }
+				add_to_array = { KOR_legco_history = 30 }
+
+				clear_array = KOR_legco_passage
+				add_to_array = { KOR_legco_passage = 1 }
+				add_to_array = { KOR_legco_passage = 1 }
+				add_to_array = { KOR_legco_passage = -1 }
+				add_to_array = { KOR_legco_passage = 1 }
+				add_to_array = { KOR_legco_passage = 1 }
+				add_to_array = { KOR_legco_passage = 1 }
+				add_to_array = { KOR_legco_passage = 1 }
+				add_to_array = { KOR_legco_passage = 1 }
+				add_to_array = { KOR_legco_passage = 1 }
+				add_to_array = { KOR_legco_passage = 1 }
+				add_to_array = { KOR_legco_passage = 1 }
+				add_to_array = { KOR_legco_passage = 1 }
+				add_to_array = { KOR_legco_passage = 1 }
+				add_to_array = { KOR_legco_passage = 1 }
+				add_to_array = { KOR_legco_passage = 1 }
+				add_to_array = { KOR_legco_passage = 1 }
+				add_to_array = { KOR_legco_passage = 1 }
+				add_to_array = { KOR_legco_passage = -1 }
+				add_to_array = { KOR_legco_passage = 1 }
+				add_to_array = { KOR_legco_passage = 1 }
+				add_to_array = { KOR_legco_passage = 1 }
+				add_to_array = { KOR_legco_passage = 1 }
+				add_to_array = { KOR_legco_passage = 1 }
+				add_to_array = { KOR_legco_passage = 1 }
+				add_to_array = { KOR_legco_passage = 1 }
+				add_to_array = { KOR_legco_passage = 1 }
+				add_to_array = { KOR_legco_passage = 1 }
+				add_to_array = { KOR_legco_passage = 1 }
+				add_to_array = { KOR_legco_passage = 1 }
+
 				JAP_diet_arrays_initialization = yes
 				country_event = { 
-					id = KOR.54
+					id = KOR.56
 					days = 5
 				}
 				country_event = { id = CULTURE.1 }
-				if = {
-					limit = { has_country_flag = Seung_man_Ele }
-					country_event = { 
-						id = KOR.82
-						days = 1800
-					}
-				}
-				if = {
-					limit = { has_country_flag = forth_election }
-					set_cosmetic_tag = korea_is_second
-				}
-				if = {
-					limit = { has_country_flag = fifth_election }
-					set_cosmetic_tag = KOR_THIRD
-				}
+
+				# if = {
+				# 	limit = { has_country_flag = forth_election }
+				# 	set_cosmetic_tag = korea_is_second
+				# }
+				# if = {
+				# 	limit = { has_country_flag = fifth_election }
+				# 	set_cosmetic_tag = KOR_THIRD
+				# }
 				set_country_flag = KOR_northern_bandits
 				set_country_flag = KOR_eastern_bandits
 				set_country_flag = KOR_western_bandits

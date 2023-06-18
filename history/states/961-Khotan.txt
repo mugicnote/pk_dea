@@ -4,13 +4,13 @@ state={
 	name="STATE_961"
 
 	history={
-		owner = SIK
-		add_core_of = SIK
+		owner = GMS
+		add_core_of = GMS
 
 	}
 
 	provinces={
-		1970 4973 5042 8112 
+		556 3742 6638 
 	}
 	manpower=0
 	buildings_max_level_factor=1.000

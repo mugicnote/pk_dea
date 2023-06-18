@@ -1,3 +1,4 @@
+
 state={
 	id=605
 	name="STATE_605"
@@ -13,6 +14,7 @@ state={
 			arms_factory = 3
 			industrial_complex = 2
 			air_base = 2
+
 		}
 		victory_points = {
 			4925 5 
@@ -21,9 +23,10 @@ state={
 	}
 
 	provinces={
-		2030 2091 5048 7256 10144 11865 12274
+		1257 1367 2030 2045 2091 4375 4403 4925 5193 7256 8026 9966 10132 10787 10903 12274 12767 
 	}
 	manpower=52963300
 	buildings_max_level_factor=1.000
 	state_category=city
+	local_supplies=0.000
 }

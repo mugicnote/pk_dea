@@ -288,6 +288,14 @@ KOR_national_assembly_unicameralism_decision:0 "대한민국 국회"
  KOR_Politician_Irrelevant:0 ": 영향력 §L거의 없음§!"
  KOR_Politician_Nonexistent:0 ": 영향력 §g존재하지않음§!"
 
+
+
+DEA_KOR_introduction_bill_National_Assembly_decisions:0 "대한민국 국회"
+DEA_KOR_introduction_bill_National_Assembly_decisions_desc:0 "\n£decision_cat_introduction_bill_National_Assembly_decisions\n\n\n\n§L대전쟁이 참호전으로 인해 진전이 없는 와중에 치머만 전보 사건이 발생함에 따라, 미합중국은 1917년 4월 6일 협상국의 위치에서 대전쟁의 참전을 결정하였고, 이 때문에 대한제국의 민주계 인사들은 신속한 결정을 강요받았습니다.\n\n이에 민주계 대표 33인은 비인륜적 전쟁 행위에 대해 반대하는 민주정권결의선언을 발표하기로 합의했습니다. 이를 위해 임시의정원 회의를 개최한 것이 현 대한민국 국회의 시초라고 볼 수 있습니다.\n\n1919년 3월 1일, 3.1 민주 혁명의 발생으로 대한제국이 몰락하고 기존 민주계 인사들을 중심으로 대한민국이 수립되자, 임시의정원은 비상국민회의로 전환되어 헌법기초안 및 정부조직법안등을 발의하였습니다.\n\n이후, 공식적으로 대한민국 헌법이 공포됨에 따라, 비상국민회의가 폐회되고 기존의 민주계 인사들을 주축으로 한 400명의 국회 의원들이 초대 국회의원 선거를 통해 당선되었습니다.\n\n--------------------------------------------------------------------------------------------§!\n\n역대 국회별 주요 법안 상정 기록 및 현 국회의 정당별 의석수와 법안 심사 지지율, 교섭 현황 등은 정치탭(q)의 '국회' ui를 참고해 주세요.\n\n결정을 통해, 법안 상정, 상정된 법안의 투표 시작, 위원회 및 정당 교섭 등을 진행할 수 있습니다.\n\n현재 상정 중인 법안은 '[KOR_legco_current_ordinance_title_decision]'입니다.\n또한, 지지 의석수는 '[Legco_Current_Ordinance_Support]'입니다." #현직 의원들은 3대 국회의원 선거를 통해 직무수행을 진행중입니다.
+
+KOR_legco_ord_0_title_decision:0 "§L법안 상정 대기중§!"
+KOR_temp_legco_id_1_vote:0 "법안 투표 시작"
+
 DEA_KOR_Military_factional_decisions:0 "군부 내의 파벌 경쟁"
 ENG_MAGGIE_MAGGIE_PER:0 "[?ENG_Populist_Lovers|%0]"
 ENG_MAGGIE_OG_PER:0 "[?ENG_Elite_Lovers|%0]"
@@ -352,3 +360,4 @@ KOR_strengthening_of_local_security:0 "지역 치안 강화"
 KOR_attack_on_the_remnants_of_the_rebels:0 "반란군 잔당 습격"
 KOR_Continuing_Rebels_Concession:0 "온건파 회유 지속"
 kor_insurgent_resistance:1 "반란군의 저항"
+KOR_Breaking_down_Rebellion_Remaining_mission_tt:0 "기한이 지나면 반란군 잔당이 와해되며, 자동으로 지역의 §Y비무장§! 및 §Y반란군의 저항§!이 §Y제거§!됩니다."

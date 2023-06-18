@@ -1,3 +1,4 @@
+
 state={
 	id=954
 	name="STATE_954"
@@ -7,10 +8,11 @@ state={
 		add_core_of = SHX
 
 	}
-	
+
 	provinces={
-		12344 
+		7158 10480 12432 
 	}
 	manpower=0
 	buildings_max_level_factor=1.000
+	local_supplies=0.000
 }

@@ -1,3 +1,4 @@
+
 state={
 	id=597
 	name="STATE_597"
@@ -13,20 +14,26 @@ state={
 				naval_base = 5
 				coastal_bunker = 1
 				bunker = 1
+
 			}
+
 		}
 		victory_points = {
-			4205 10
+			4205 10 
 		}
 		set_province_name = {
-            id = 4205
-            name = "웨이하이"
-        }
+			id = 4205
+			name = 웨이하이
+
+		}
+
 	}
+
 	provinces={
-		1104 1184 1200 4071 4186 4205 7089 7105 10018 12074 
+		1104 1184 1200 4071 4186 7089 7105 10018 12074 
 	}
-	manpower = 8364821
+	manpower=8364821
 	buildings_max_level_factor=1.000
 	state_category=town
+	local_supplies=0.000
 }

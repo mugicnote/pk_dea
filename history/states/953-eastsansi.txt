@@ -1,22 +1,26 @@
+
 state={
 	id=953
 	name="STATE_953"
-	manpower = 5480000
-
-	state_category = rural
-	resources = {
-		steel = 6
+	resources={
+		steel=6.000
 	}
 
-	history = {
+	history={
 		owner = SHX
 		add_core_of = SHX
 		buildings = {
 			infrastructure = 2
+
 		}
+
 	}
 
 	provinces={
-		1027 1180 1203 1438 1519 4469 4538 10421 10480 12078 
+		1027 1203 1438 1519 4174 4469 4538 12078 12344 
 	}
+	manpower=5480000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
 }

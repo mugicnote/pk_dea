@@ -1,3 +1,12 @@
+DEA_KOR_introduction_bill_National_Assembly_decisions = {
+	icon = national_assembly
+	priority = 10000
+	allowed = {
+		tag = KOR
+	}
+	visible_when_empty = yes #for debug
+}
+
 #군부 내의 파벌 경쟁
 DEA_KOR_Military_factional_decisions = {
 	icon = army_reform

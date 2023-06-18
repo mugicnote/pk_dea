@@ -18,11 +18,13 @@ scripted_gui = {
 				clr_country_flag = Dea_News_event_show
 				clr_country_flag = kyoto_news
 				clr_country_flag = water_torture_news
+				clr_country_flag = party_headquarters_attack_news
 			}
 			btn_minimize_click = {
 				clr_country_flag = Dea_News_event_show
 				clr_country_flag = kyoto_news
 				clr_country_flag = water_torture_news
+				clr_country_flag = party_headquarters_attack_news
 			}
 		}
 		

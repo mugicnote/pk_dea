@@ -104,13 +104,37 @@ focus_tree = {
 		prerequisite = {
 			focus = call_assistance_United_States
 		}
+		available = {
+			KOR_no_ordinance_in_legco = yes
+		}
 		relative_position_id = policy_encouraging_universities
 
 		completion_reward = {
-			modify_timed_idea = {
-				idea = KOR_idea_policy_encouraging_universities
-				days = 180
-			}
+			set_country_flag = this_is_resolution
+			set_temp_variable = { KOR_temp_legco_id = 1 }
+			set_temp_variable = { KOR_legco_current_ordinance_id = 1 }
+			set_temp_variable = { KOR_legco_first_temp_support = 0.91 }
+			set_temp_variable = { KOR_legco_second_temp_support = 0.55 }
+			set_temp_variable = { KOR_legco_third_temp_support = 0.35 }
+			set_temp_variable = { KOR_legco_forth_temp_support = 0.40 }
+			set_temp_variable = { KOR_legco_fifth_temp_support = 0.05 }
+			set_temp_variable = { KOR_legco_sixth_temp_support = 0.65 }
+			set_temp_variable = { KOR_legco_seventh_temp_support = 0.45 }
+			set_temp_variable = { KOR_legco_eighth_temp_support = 0.45 }
+			set_temp_variable = { KOR_legco_nineth_temp_support = 0.00 }
+			set_temp_variable = { KOR_legco_tenth_temp_support = 0.00 }
+
+			set_variable = { KOR_legco_first_temp_support = 0.91 }
+			set_variable = { KOR_legco_second_temp_support = 0.55 }
+			set_variable = { KOR_legco_third_temp_support = 0.35 }
+			set_variable = { KOR_legco_forth_temp_support = 0.40 }
+			set_variable = { KOR_legco_fifth_temp_support = 0.05 }
+			set_variable = { KOR_legco_sixth_temp_support = 0.65 }
+			set_variable = { KOR_legco_seventh_temp_support = 0.45 }
+			set_variable = { KOR_legco_eighth_temp_support = 0.45 }
+			set_variable = { KOR_legco_nineth_temp_support = 0.00 }
+			set_variable = { KOR_legco_tenth_temp_support = 0.00 }
+			legco_introduce_ordinance = yes
 		}
 		x = 1
 		y = 1

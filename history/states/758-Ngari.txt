@@ -1,20 +1,23 @@
+
 state={
 	id=758
 	name="STATE_758"
-	manpower=1000000
-	buildings_max_level_factor=1.000
-	state_category = pastoral
 
 	history={
 		owner = TIB
 		buildings = {
 			infrastructure = 1
+
 		}
 		add_core_of = TIB
 
 	}
 
 	provinces={
-		2010 5011 8037 8068 10755 10918
+		2010 5011 8068 10755 10918 
 	}
+	manpower=1000000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
 }

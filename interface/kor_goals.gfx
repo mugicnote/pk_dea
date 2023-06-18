@@ -230,10 +230,128 @@ spriteTypes = {
 		name = "GFX_focus_kyc"
 		texturefile = "gfx/interface/goals/KOR/lee_2/focus_kyc.dds"
 	}
+	#1-5페이즈 동향 살피기
+	SpriteType = {
+		name = "GFX_focus_look_after_the_army"
+		texturefile = "gfx/interface/goals/KOR/lee_2_5/focus_look_after_the_army.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_look_at_the_trend"
+		texturefile = "gfx/interface/goals/KOR/lee_2_5/focus_look_at_the_trend.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_pay_attention_to_the_press"
+		texturefile = "gfx/interface/goals/KOR/lee_2_5/focus_pay_attention_to_the_press.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_The_night_begins"
+		texturefile = "gfx/interface/goals/KOR/lee_2_5/focus_The_night_begins.dds"
+	}
 	#2페이즈 숙청
+	SpriteType = {
+		name = "GFX_focus_presidents_plan"
+		texturefile = "gfx/interface/goals/KOR/lee_3/focus_presidents_plan.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_lifting_of_guard_duty"
+		texturefile = "gfx/interface/goals/KOR/lee_3/focus_lifting_of_guard_duty.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_Abolition_of_Martial_Law_Command"
+		texturefile = "gfx/interface/goals/KOR/lee_3/focus_Abolition_of_Martial_Law_Command.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_Contact_with_the_Yeongnam_Government"
+		texturefile = "gfx/interface/goals/KOR/lee_3/focus_Contact_with_the_Yeongnam_Government.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_Japans_arbitration"
+		texturefile = "gfx/interface/goals/KOR/lee_3/focus_Japans_arbitration.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_Securing_National_Support"
+		texturefile = "gfx/interface/goals/KOR/lee_3/focus_Securing_National_Support.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_split_public_opinion_South_Gyeongsang_Province"
+		texturefile = "gfx/interface/goals/KOR/lee_3/focus_split_public_opinion_South_Gyeongsang_Province.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_beginning_of_a_meeting"
+		texturefile = "gfx/interface/goals/KOR/lee_3/focus_beginning_of_a_meeting.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_social_division_of_Cabinet"
+		texturefile = "gfx/interface/goals/KOR/lee_3/focus_social_division_of_Cabinet.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_Security_Consultations_for_Resistance_Forces"
+		texturefile = "gfx/interface/goals/KOR/lee_3/focus_Security_Consultations_for_Resistance_Forces.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_humanitarian_asylum_agreement"
+		texturefile = "gfx/interface/goals/KOR/lee_3/focus_humanitarian_asylum_agreement.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_Disintegration_of_Civil_Army_begins"
+		texturefile = "gfx/interface/goals/KOR/lee_3/focus_Disintegration_of_Civil_Army_begins.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_crushing_of_conservative_camp"
+		texturefile = "gfx/interface/goals/KOR/lee_3/focus_crushing_of_conservative_camp.dds"
+	}
+	SpriteType = {
+		name = "GFX_kor_good_chance"
+		texturefile = "gfx/interface/goals/KOR/lee_3/kor_good_chance.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_friction_with_the_committee"
+		texturefile = "gfx/interface/goals/KOR/lee_3/focus_friction_with_the_committee.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_Proceeding_with_the_dissolution_of_the_committee"
+		texturefile = "gfx/interface/goals/KOR/lee_3/focus_Proceeding_with_the_dissolution_of_the_committee.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_vice_presidents_plan"
+		texturefile = "gfx/interface/goals/KOR/lee_3/focus_vice_presidents_plan.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_Securing_the_Stability_of_Fatherland"
+		texturefile = "gfx/interface/goals/KOR/lee_3/focus_Securing_the_Stability_of_Fatherland.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_declaration_of_emergency_martial_law"
+		texturefile = "gfx/interface/goals/KOR/lee_3/focus_declaration_of_emergency_martial_law.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_to_the_South"
+		texturefile = "gfx/interface/goals/KOR/lee_3/focus_to_the_South.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_to_the_north"
+		texturefile = "gfx/interface/goals/KOR/lee_3/focus_to_the_north.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_Seoul_Central_Defense_Initiative"
+		texturefile = "gfx/interface/goals/KOR/lee_3/focus_Seoul_Central_Defense_Initiative.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_strengthening_of_emergency_mobilization"
+		texturefile = "gfx/interface/goals/KOR/lee_3/focus_strengthening_of_emergency_mobilization.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_There_is_no_compromise"
+		texturefile = "gfx/interface/goals/KOR/lee_3/focus_There_is_no_compromise.dds"
+	}
 	SpriteType = {
 		name = "GFX_focus_secret_agreement_with_Japan"
 		texturefile = "gfx/interface/goals/KOR/lee_3/focus_secret_agreement_with_Japan.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_Expansion_of_martial_law_in_Honam"
+		texturefile = "gfx/interface/goals/KOR/lee_3/focus_Expansion_of_martial_law_in_Honam.dds"
 	}
 	SpriteType = {
 		name = "GFX_focus_negotiations_with_the_United_States"
@@ -244,8 +362,28 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/KOR/lee_3/focus_a_little_capital.dds"
 	}
 	SpriteType = {
+		name = "GFX_focus_Expansion_of_martial_law_in_Gwandong"
+		texturefile = "gfx/interface/goals/KOR/lee_3/focus_Expansion_of_martial_law_in_Gwandong.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_preparations_for_operations_red_rose"
+		texturefile = "gfx/interface/goals/KOR/lee_3/focus_preparations_for_operations_red_rose.dds"
+	}
+	SpriteType = {
 		name = "GFX_focus_silence_beyond_the_sea"
 		texturefile = "gfx/interface/goals/KOR/lee_3/focus_silence_beyond_the_sea.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_Restoration_of_Yeongnam_Control"
+		texturefile = "gfx/interface/goals/KOR/lee_3/focus_Restoration_of_Yeongnam_Control.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_an_anti_state_trial"
+		texturefile = "gfx/interface/goals/KOR/lee_3/focus_an_anti_state_trial.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_KOR_the_new_order"
+		texturefile = "gfx/interface/goals/KOR/lee_3/focus_KOR_the_new_order.dds"
 	}
 	#하나의 총통
 	SpriteType = {

@@ -1,20 +1,4 @@
 characters={
-	CHI_Chiang_Kai_Shek={
-		name=CHI_Chiang_Kai_Shek
-		portraits={
-			civilian={
-				large="gfx/leaders/CHI/Portrait_CHI_Chiang_Kai_Shek.dds"
-			}
-		}
-		country_leader={
-			ideology=nat_conservatism
-			traits={
-			}
-			expire="2000.1.1.1"
-			id=-1
-		}
-	}
-
 	GIZ_He_Ying_qin={
 		name=GIZ_He_Ying_qin
 		portraits={

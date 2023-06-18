@@ -24,9 +24,42 @@ guiTypes = {
 	}
 
 	containerWindowType = {
+		name = "KOR_legco_ord"
+		position = { x = -8 y = 0 }
+		size = { width = 216 height = 62 }
+
+		instantTextboxType = {
+			name = "ordinance_name"
+			position = { x = 5 y = 9 }
+			font = "aldrich_18_outline"
+			text = "KOR_legco_historic_ordinance_title"
+			maxWidth = 264
+			format = center
+			alwaystransparent = yes
+			multiline = yes
+
+			maxHeight = 40
+			vertical_alignment = center
+		}
+
+		# iconType = {
+		# 	name = "history_letterhead"
+		# 	quadTextureSprite = "GFX_GNG_LegCo_Ordinance_History_Letterhead"
+		# 	position = { x = 0 y = 0}
+		# }
+
+		iconType = {
+			name = "history_bg"
+			spriteType = "GFX_KOR_LegCo_Ordinance_History_Background"
+			position = { x = 0 y = 0 }
+			pdx_tooltip = "KOR_legco_historic_ordinance_tt"
+		}
+	}
+
+	containerWindowType = {
         name = "parliament_gui_container"
-        position = { x = 90 y = 125 }
-		size = { width = 1398 height = 695 }
+        position = { x = 590 y = 325 }
+		size = { width = 1398 height = 725 }
 		fade_time = 300
 		fade_type = linear
 		moveable = yes
@@ -86,7 +119,7 @@ guiTypes = {
 			iconType = {
 				name = "parliament_background"
 				spriteType = "GFX_parliament_background"
-				position = { x = -260 y = 80 }
+				position = { x = -261 y = 5 }
 				allwaystransparent = yes
 			}
 
@@ -100,7 +133,7 @@ guiTypes = {
 			instantTextboxType = {
 				name = "parliament_member_text3"
 				position = { x = 45 y = 448 }
-				font = "aldrich_30_outline"
+				font = "aldrich_22_outline"
 				text = "정당별 의석수"
 				maxWidth = 200
 				maxHeight = 16
@@ -111,7 +144,7 @@ guiTypes = {
 			instantTextboxType = {
 				name = "parliament_member_text4"
 				position = { x = 220 y = 453 }
-				font = "aldrich_24_outline"
+				font = "aldrich_22_outline"
 				text = "다음 선거: 36년 7월 10일"
 				maxWidth = 300
 				maxHeight = 16
@@ -122,7 +155,7 @@ guiTypes = {
 			instantTextboxType = {
 				name = "parliament_member_text5"
 				position = { x = 450 y = 453 }
-				font = "aldrich_24_outline"
+				font = "aldrich_22_outline"
 				text = "국회의장: 안창호"
 				maxWidth = 300
 				maxHeight = 16
@@ -145,9 +178,9 @@ guiTypes = {
 				name = "parliament_member_text7"
 				position = { x = 255 y = 490 }
 				font = "aldrich_18_outline"
-				text = "parliament_Background_explanation"
+				text = "Kor_seo_parliament_Background_explanation"
 				maxWidth = 455
-				maxHeight = 135
+				maxHeight = 185
 				format = left
 				vertical_alignment = left
 				scrollbarType = standardtext_slider
@@ -166,10 +199,10 @@ guiTypes = {
 
 			instantTextboxType = {
 				name = "parliament_member_text9"
-				position = { x = 785 y = 35 }
+				position = { x = 730 y = 35 }
 				font = "aldrich_36_outline"
-				text = "위원회 포섭"
-				maxWidth = 200
+				text = "위원회 및 정당 교섭"
+				maxWidth = 300
 				maxHeight = 16
 				format = center
 				vertical_alignment = center
@@ -186,24 +219,104 @@ guiTypes = {
 			# 	vertical_alignment = center
 			# }
 
+			# instantTextboxType = {
+			# 	name = "parliament_Legislative_review_desc"
+			# 	position = { x = -257 y = 80 }
+			# 	font = "aldrich_18_outline"
+			# 	text = "parliament_Legislative_review_desc_explanation"
+			# 	maxWidth = 290
+			# 	maxHeight = 306
+			# 	format = left
+			# 	scrollbarType = standardtext_slider
+			# }
+
+			# buttonType = {
+			# 	name = "Legislative_review_button"
+			# 	position = { x = -300 y = 390 }
+			# 	spriteType = "GFX_Legislative_review_button"
+			# 	pdx_tooltip = "Legislative_review_button_tt"
+			# }
+
 			instantTextboxType = {
-				name = "parliament_Legislative_review_desc"
-				position = { x = -257 y = 80 }
-				font = "aldrich_18_outline"
-				text = "parliament_Legislative_review_desc_explanation"
-				maxWidth = 290
-				maxHeight = 306
-				format = left
-				scrollbarType = standardtext_slider
+				name = "current_ordinance_support"
+				position = { x = -238 y = 378 }
+				font = "aldrich_22_outline"
+				text = KOR_legco_current_ordinance_support
+				maxWidth = 263
+				format = center
+				alwaystransparent = yes
+				pdx_tooltip = KOR_current_ordinance_support_tt
 			}
 
-			buttonType = {
-				name = "Legislative_review_button"
-				position = { x = -300 y = 390 }
-				spriteType = "GFX_Legislative_review_button"
-				pdx_tooltip = "Legislative_review_button_tt"
-			}
+			containerWindowType = {
+				name = "ordinance"
+				position = { x = -235 y = 90 }
 
+				instantTextboxType = {
+					name = "current_ordinance_name"
+					position = { x = -64 y = 10 }
+					font = "aldrich_24_outline"
+					text = "KOR_legco_current_ordinance_title"
+					maxWidth = 390
+					format = center
+					alwaystransparent = yes
+				}
+
+				instantTextboxType = {
+					name = "amendments_title"
+					position = { x = -15 y = 62 }
+					font = "aldrich_18_outline"
+					text = "KOR_legco_amendments_title"
+					maxWidth = 186
+					format = left
+					alwaystransparent = yes
+				}
+
+				instantTextboxType = {
+					name = "amendments_info"
+					position = { x = -16 y = 85 }
+					font = "aldrich_16_outline"
+					text = "KOR_legco_amendments_text"
+					maxWidth = 290
+					format = left
+					alwaystransparent = yes
+				}
+
+				instantTextboxType = {
+					name = "effects_title"
+					position = { x = -15 y = 180 }
+					font = "aldrich_18_outline"
+					text = "KOR_legco_effects_title"
+					maxWidth = 186
+					format = left
+					alwaystransparent = yes
+				}
+
+				instantTextboxType = {
+					name = "effects_info"
+					position = { x = -16 y = 205 }
+					font = "aldrich_16_outline"
+					text = "KOR_legco_effects_text"
+					maxWidth = 290
+					format = left
+					alwaystransparent = yes
+				}
+
+				iconType = {
+					name = "legco_ordinance_bg"
+					position = { x = -25 y = -13 }
+					spriteType = "GFX_legco_ordinance_effect"
+					pdx_tooltip = KOR_legco_current_ordinance_tt
+				}
+
+				iconType = {
+					name = "legco_ordinance_effect"
+					position = { x = -25 y = -13 }
+					spriteType = "GFX_legco_ordinance_effect"
+					pdx_tooltip = KOR_legco_ordinance_effect_tt
+				}
+			}
+			
 			instantTextboxType = {
 				name = "parliament_Recruiting_National_Assembly_member_desc"
 				position = { x = 732 y = 440 }
@@ -215,18 +328,50 @@ guiTypes = {
 				scrollbarType = standardtext_slider
 			}
 
-			buttonType = {
-				name = "Recruiting_National_Assembly_member_button"
-				position = { x = 810 y = 580 }
-				spriteType = "GFX_Recruiting_National_Assembly_member_button"
-				pdx_tooltip = "Recruiting_National_Assembly_member_button_tt"
-			}
+			# buttonType = {
+			# 	name = "Recruiting_National_Assembly_member_button"
+			# 	position = { x = 810 y = 580 }
+			# 	spriteType = "GFX_Recruiting_National_Assembly_member_button"
+			# 	pdx_tooltip = "Recruiting_National_Assembly_member_button_tt"
+			# }
+		}
+		
+		instantTextboxType = {
+			name = "past_ordinance_header"
+			position = { x = 76 y = 462 }
+			font = "aldrich_24_outline"
+			text = KOR_legco_past_ordinance
+			maxWidth = 263
+			format = center
+			alwaystransparent = yes
 		}
 
 		containerWindowType = {
+			name = "past_ordinance_list_container"
+			size = { width = 310 height = 200 }
+
+			verticalScrollbar = "right_vertical_slider"
+			position = { x = 53 y = 490 }
+
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window_transparent"
+			}
+
+			gridboxtype = {
+				name = "past_ordinance_list"
+				position = { x = 18 y = 0 }
+				size = { width = 216 height = 240 }
+				slotsize = { width = 216 height = 62 }
+				max_slots_horizontal = 1
+				add_horizontal = no
+			}
+		}
+		
+		containerWindowType = {
 			name = "parliament_semicircle_main_container2"
 			position = { x = 360 y = 485 }
-			size = { width = 200 height = 155 }
+			size = { width = 200 height = 205 }
 			verticalScrollbar = "right_vertical_slider"
 			margin = { top = 14 bottom = 0}
 
@@ -245,39 +390,39 @@ guiTypes = {
 			}
 		}
 
-		containerWindowType = {
-			name = "parliament_Legislative_review_container"
-			position = { x = 53 y = 454 }
-			size = { width = 310 height = 188 }
-			verticalScrollbar = "right_vertical_slider"
-			margin = { top = 3 bottom = 0}
+		# containerWindowType = {
+		# 	name = "parliament_Legislative_review_container"
+		# 	position = { x = 53 y = 454 }
+		# 	size = { width = 310 height = 188 }
+		# 	verticalScrollbar = "right_vertical_slider"
+		# 	margin = { top = 3 bottom = 0}
 	
-			background = {
-				name = "Background"
-				quadTextureSprite = "GFX_tiled_focus_bg"
-			}
+		# 	background = {
+		# 		name = "Background"
+		# 		quadTextureSprite = "GFX_tiled_focus_bg"
+		# 	}
 	
-			buttonType = {
-				name = "parliament_Farmland_Reform_Act"
-				spriteType = "GFX_parliament_Farmland_Reform_Act"
-				position = { x = 2 y = -10 }
-			}
-			buttonType = {
-				name = "Temporary_Measures_Assembly_Act"
-				spriteType = "GFX_Temporary_Measures_Assembly_Act"
-				position = { x = 2 y = 35 }
-			}
-			buttonType = {
-				name = "National_Security_Law_Democratic_Peoples_Party"
-				spriteType = "GFX_National_Security_Law_Democratic_Peoples_Party"
-				position = { x = 2 y = 80 }
-			}
-			buttonType = {
-				name = "National_Security_Law_Social_Labor_Party"
-				spriteType = "GFX_National_Security_Law_Social_Labor_Party"
-				position = { x = 2 y = 125 }
-			}
-		}
+		# 	buttonType = {
+		# 		name = "parliament_Farmland_Reform_Act"
+		# 		spriteType = "GFX_parliament_Farmland_Reform_Act"
+		# 		position = { x = 2 y = -10 }
+		# 	}
+		# 	buttonType = {
+		# 		name = "Temporary_Measures_Assembly_Act"
+		# 		spriteType = "GFX_Temporary_Measures_Assembly_Act"
+		# 		position = { x = 2 y = 35 }
+		# 	}
+		# 	buttonType = {
+		# 		name = "National_Security_Law_Democratic_Peoples_Party"
+		# 		spriteType = "GFX_National_Security_Law_Democratic_Peoples_Party"
+		# 		position = { x = 2 y = 80 }
+		# 	}
+		# 	buttonType = {
+		# 		name = "National_Security_Law_Social_Labor_Party"
+		# 		spriteType = "GFX_National_Security_Law_Social_Labor_Party"
+		# 		position = { x = 2 y = 125 }
+		# 	}
+		# }
 
 		containerWindowType = {
 			name = "parliament_Recruiting_National_Assembly_member_container"

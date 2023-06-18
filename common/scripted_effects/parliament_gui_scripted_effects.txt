@@ -3,16 +3,16 @@ parliament_gui_initial = {
 	# Put simply an array stores a list of things, used here to store the list of parties and list of seats.
 
 	# parliament_seat_array stores the list of seat numbers for each party
-	add_to_array = { parliament_seat_array = 105 } # Party A
-	add_to_array = { parliament_seat_array = 80 } # Party B
-	add_to_array = { parliament_seat_array = 69 } # Party C
-	add_to_array = { parliament_seat_array = 57 } # Party D
-	add_to_array = { parliament_seat_array = 47 }
-	add_to_array = { parliament_seat_array = 13 }
-	add_to_array = { parliament_seat_array = 11 }
-	add_to_array = { parliament_seat_array = 9 }
-	add_to_array = { parliament_seat_array = 7 }
-	add_to_array = { parliament_seat_array = 2 }
+	add_to_array = { parliament_seat_array = KOR_legco_first_seats } # Party A
+	add_to_array = { parliament_seat_array = KOR_legco_second_seats } # Party B
+	add_to_array = { parliament_seat_array = KOR_legco_third_seats } # Party C
+	add_to_array = { parliament_seat_array = KOR_legco_forth_seats } # Party D
+	add_to_array = { parliament_seat_array = KOR_legco_fifth_seats }
+	add_to_array = { parliament_seat_array = KOR_legco_sixth_seats }
+	add_to_array = { parliament_seat_array = KOR_legco_seventh_seats }
+	add_to_array = { parliament_seat_array = KOR_legco_eighth_seats }
+	add_to_array = { parliament_seat_array = KOR_legco_nineth_seats }
+	add_to_array = { parliament_seat_array = KOR_legco_tenth_seats }
 
 	# parliament_member_array stores the list of parties
 	# This basically assigns an id for each party, so Party A = 1, Party B = 2, etc. (must start from 1 and is in order)

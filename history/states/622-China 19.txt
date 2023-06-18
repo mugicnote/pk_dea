@@ -1,3 +1,4 @@
+
 state={
 	id=622
 	name="STATE_622"
@@ -13,12 +14,13 @@ state={
 			8049 3 
 		}
 		victory_points = {
-			12156 5
+			12156 5 
 		}
 		set_province_name = {
-            id = 12156
-            name = "시안"
-        }
+			id = 12156
+			name = 시안
+
+		}
 		buildings = {
 			infrastructure = 2
 			arms_factory = 3
@@ -41,9 +43,10 @@ state={
 	}
 
 	provinces={
-		517 1458 1647 1933 4939 5007 7208 7314 7659 8049 10733 10880 12156 12356 
+		5007 7208 8049 12156 12356 
 	}
 	manpower=7006200
 	buildings_max_level_factor=1.000
 	state_category=city
+	local_supplies=0.000
 }

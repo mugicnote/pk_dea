@@ -1,14 +1,18 @@
+
 state={
 	id=966
 	name="STATE_966"
-	provinces={
-		10674 10691 
-	}
-	history={
-		owner = SIK
-		add_core_of = SIK
 
+	history={
+		owner = SHX
+		add_core_of = SHX
+
+	}
+
+	provinces={
+		1180 1575 4634 7571 10421 
 	}
 	manpower=0
 	buildings_max_level_factor=1.000
+	local_supplies=0.000
 }

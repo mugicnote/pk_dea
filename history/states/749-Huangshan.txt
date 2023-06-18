@@ -4,25 +4,26 @@ state={
 	name="STATE_749"
 
 	history={
-		owner = NAN
-		add_core_of = NAN
+		owner = MAN
+		add_core_of = MAN
 		buildings = {
 			infrastructure = 6
 
 		}
 		victory_points = {
-			1099 15
+			1099 15 
 		}
 		victory_points = {
-			1125 5
+			1125 5 
 		}
 
 	}
 
 	provinces={
-		1099 1125 1171 4105 4173 7104 10044 11937 12019 
+		1099 1125 1171 4105 4173 7104 11937 12019 
 	}
 	manpower=5000000
 	buildings_max_level_factor=1.000
 	state_category=town
+	local_supplies=0.000
 }

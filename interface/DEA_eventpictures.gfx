@@ -142,6 +142,10 @@ spriteTypes = {
 
 	###나고야 회담
 	spriteType = {
+		name = "GFX_passage_resolution_talks_picture"
+		texturefile = "gfx/event_pictures/KOR/passage_resolution_talks_picture.dds"
+	}
+	spriteType = {
 		name = "GFX_Foreign_Minister_Huh_Jung_leaves_Japan_picture"
 		texturefile = "gfx/event_pictures/Foreign_Minister_Huh_Jung_leaves_Japan_picture.dds"
 	}
@@ -154,6 +158,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_Water_torture_incident_picture"
 		texturefile = "gfx/event_pictures/KOR/news/Water_torture_incident_picture.dds"
+	}
+	spriteType = {
+		name = "GFX_party_headquarters_attack_picture"
+		texturefile = "gfx/event_pictures/KOR/news/party_headquarters_attack_picture.dds"
 	}
 	spriteType = {
 		name = "GFX_March_Democratic_Uprising"

@@ -1,9 +1,7 @@
+
 state={
 	id=756
 	name="STATE_756"
-	manpower=1000000
-	buildings_max_level_factor=1.000
-	state_category = wasteland
 
 	history={
 		owner = NXM
@@ -16,6 +14,10 @@ state={
 	}
 
 	provinces={
-		1778 12820 12596 5076 7971 2028 5100 12327 12776
+		1778 2028 5057 5100 7727 7971 8102 12327 12596 12820 13277 
 	}
+	manpower=1000000
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
 }

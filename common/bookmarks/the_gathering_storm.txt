@@ -69,13 +69,16 @@ bookmarks = {
 
 		"JAP"={
 			history = "JAP_GATHERING_STORM_DESC"
-			ideology = democratic
+			ideology = neutrality
 			ideas = {
-				aftermath_of_defeat
-				constitution_of_japanese
-				Communist_leadership_strike
+				JAP_dai_gokou
+				JAP_shoku_gun
+				JAP_non_yasoku
 			}
 			focuses = {
+				JAP_call_of_New_Years_meeting
+				JAP_new_train_of_talks
+				JAP_follow_ones_footsteps
 			}
 		}
 

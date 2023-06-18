@@ -1,11 +1,10 @@
+
 state={
 	id=940
 	name="STATE_940"
-	manpower = 9313200
-	state_category = town
-	resources = {
-		tungsten = 10
-		steel = 4
+	resources={
+		tungsten=10.000
+		steel=4.000
 	}
 
 	history={
@@ -15,14 +14,19 @@ state={
 		buildings = {
 			infrastructure = 5
 			industrial_complex = 2
+
 		}
 		victory_points = {
-			7067 10
+			7067 10 
 		}
+
 	}
 
 	provinces={
-		1078 1162 4050 4165 4207 7067 7141 7182 9978 
+		1078 1162 1202 4050 4165 4207 7067 7108 7141 7182 9978 
 	}
+	manpower=9313200
 	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
 }

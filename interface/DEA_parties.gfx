@@ -14,4 +14,8 @@ spriteTypes = {
 		name = "GFX_ideology_nat_conservatism"
 		textureFile = "gfx/interface/ideologies/Seo_Jae_Pil_conservatism.dds"
 	}
+	spriteType = {
+		name = "GFX_ideology_Jap_authoritarian"
+		textureFile = "gfx/interface/ideologies/nat_liberalism.dds"
+	}
 }

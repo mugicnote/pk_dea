@@ -121,7 +121,7 @@ set_convoys = 30
 #국민정신
 add_ideas = {
 KOR_economy_ruined
-KOR_huge_amount_government_bonds
+#KOR_huge_amount_government_bonds # 설정 변경에 따른 반려
 KOR_Collapsed_security
 KOR_incompetent_goverment
 KOR_Divided_military

@@ -450,6 +450,7 @@ ideologies = {
 			moderatism = {} #온건주의
 			warloadism = {} #군벌
 			Peoples_Party_ideology = {} #국민당
+			Jap_authoritarian = {} #시작 일본
 		}
 
 		dynamic_faction_names = {
@@ -492,7 +493,7 @@ ideologies = {
 		ai_neutral = yes
 	}
 
-	#전제독재주의
+	#전제주의
 	auto_despotism = {
 	
 		types = {

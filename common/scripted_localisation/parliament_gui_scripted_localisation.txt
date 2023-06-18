@@ -66,41 +66,7 @@ defined_text = {
 	}
 }
 
-defined_text = {
-	name = GetKorparliament_Background_explanation
-	text = {
-		# trigger = {
-		# 	check_variable = { v = 1 }
-		# }
-		localization_key = Kor_seo_parliament_Background_explanation
-	}
-}
 
-defined_text = {
-	name = GetKorparliament_Legislative_review_explanation
-	text = {
-		trigger = {
-			has_country_flag = show_parliament_Farmland_Reform_Act
-		}
-		localization_key = Kor_parliament_Farmland_Reform_Act_Legislative_review
-	}
-	text = {
-		trigger = {
-			has_country_flag = show_Temporary_Measures_Assembly_Act
-		}
-		localization_key = Kor_parliament_Temporary_Measures_Assembly_Act_Legislative_review
-	}
-}
-
-defined_text = {
-	name = GetKorparliament_Recruiting_National_Assembly_member_explanation
-	text = {
-		trigger = {
-			has_country_flag = show_Report_corruption_opposition_party_click
-		}
-		localization_key = Kor_Report_corruption_opposition_party_na_mb
-	}
-}
 # Since index starts as 0, i can get the current seat number by jut adding it by one and then displaying it.
 defined_text = {
 	name = GetParliamentSeatName
@@ -111,5 +77,325 @@ defined_text = {
 			check_variable = { temp_seat > 0 }
 		}
 		localization_key = parliament_seat_text
+	}
+}
+
+#tno 수정
+defined_text = {
+	name = Legco_Current_Ordinance_Support
+	text = {
+		trigger = {
+			check_variable = { KOR_legco_current_ordinance_id = 0 }
+		}
+		localization_key = KOR_no_ordinance_votes
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_Current_Ordinance_Votes < 200 }
+		}
+		localization_key = KOR_ordinance_under_200_votes
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_Current_Ordinance_Votes > 199 }
+		}
+		localization_key = KOR_ordinance_over_200_votes
+	}
+}
+
+#디시전
+defined_text = {
+	name = Legco_Current_Ordinance_Support_decision
+	text = {
+		trigger = {
+			check_variable = { KOR_legco_current_ordinance_id = 0 }
+		}
+		localization_key = KOR_no_ordinance_votes_decision
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_Current_Ordinance_Votes < 200 }
+		}
+		localization_key = KOR_ordinance_under_200_votes_decision
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_Current_Ordinance_Votes > 199 }
+		}
+		localization_key = KOR_ordinance_over_200_votes_decision
+	}
+}
+
+defined_text = {
+	name = Legco_Pass_Check
+	text = {
+		trigger = {
+			check_variable = { KOR_Current_Ordinance_Votes < 200 }
+		}
+		localization_key = KOR_ordinance_not_enough_to_pass
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_Current_Ordinance_Votes > 200 }
+		}
+		localization_key = KOR_ordinance_enough_to_pass
+	}
+}
+
+defined_text = {
+	name = Legco_Vote_time_check
+	text = {
+		trigger = {
+			check_variable = { KOR_legco_current_voting = 1 }
+		}
+		localization_key = KOR_legco_voting_time
+	}
+	text = {
+		localization_key = ""
+	}
+}
+
+defined_text = {
+	name = KOR_check_legco_stage_for_votes_initialize
+	# text = {
+	# 	trigger = {
+	# 		has_country_flag = GNG_legco_stage_2
+	# 	}
+	# 	localization_key = GNG_votes_initialize_percentages_stage_2
+	# }
+	text = {
+		localization_key = KOR_votes_initialize_percentages_stage_1
+	}
+}
+
+defined_text = {
+	name = Legco_Votes_Current_Parties
+	# text = {
+	# 	trigger = {
+	# 		has_country_flag = GNG_legco_stage_2
+	# 	}
+	# 	localization_key = GNG_votes_initialize_percentages_stage_2
+	# }
+	text = {
+		localization_key = KOR_votes_initialize_percentages_stage_1
+	}
+}
+
+
+defined_text = {
+	name = KOR_get_dynamic_color_temp_support
+	text = {
+		trigger = {
+			check_variable = { KOR_Current_Ordinance_Votes_temp < 200 }
+		}
+		localization_key = KOR_temp_votes_red
+	}
+	text = {
+		localization_key = KOR_temp_votes_green
+	}
+}
+
+defined_text = {
+	name = KOR_legco_ordinance_history_status
+	text = {
+		trigger = {
+			check_variable = { KOR_legco_passage^KOR_legco_history_i = 1 }
+		}
+		localization_key = KOR_legco_passage_success
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_legco_passage^KOR_legco_history_i = -1 }
+		}
+		localization_key = KOR_legco_passage_fail
+	}
+	# text = {
+	# 	trigger = {
+	# 		check_variable = { KOR_legco_passage^KOR_legco_history_i = 0 }
+	# 	}
+	# 	localization_key = KOR_legco_passage_stalled
+	# }
+}
+
+defined_text = {
+	name = KOR_legco_current_ordinance_title
+	text = {
+		trigger = { check_variable = { KOR_legco_current_ordinance_id = 0 } }
+		localization_key = KOR_legco_ord_0_title
+	}
+	text = {
+		trigger = { check_variable = { KOR_legco_current_ordinance_id = 1 } }
+		localization_key = KOR_legco_ord_1_title
+	}
+}
+
+#디시전
+defined_text = {
+	name = KOR_legco_current_ordinance_title_decision
+	text = {
+		trigger = { check_variable = { KOR_legco_current_ordinance_id = 0 } }
+		localization_key = KOR_legco_ord_0_title_decision
+	}
+	text = {
+		trigger = { check_variable = { KOR_legco_current_ordinance_id = 1 } }
+		localization_key = KOR_legco_ord_1_title
+	}
+}
+
+defined_text = {
+	name = KOR_legco_current_ordinance_amendments
+	text = {
+		trigger = { check_variable = { KOR_legco_current_ordinance_id = 0 } }
+		localization_key = "KOR_legco_0_amendments"
+	}
+	text = {
+		trigger = { check_variable = { KOR_legco_current_ordinance_id = 1 } }
+		localization_key = KOR_legco_1_amendments
+	}
+	text = {
+		trigger = { check_variable = { KOR_legco_current_ordinance_id = 2 } }
+		localization_key = KOR_legco_2_amendments
+	}
+}
+
+defined_text = {
+	name = KOR_legco_current_ordinance_effect
+	text = {
+		trigger = { check_variable = { KOR_legco_current_ordinance_id = 0 } }
+		localization_key = KOR_legco_ord_0_effect
+	}
+	text = {
+		trigger = { check_variable = { KOR_legco_current_ordinance_id = 1 } }
+		localization_key = KOR_legco_ord_1_effect
+	}
+	text = {
+		trigger = { check_variable = { KOR_legco_current_ordinance_id = 2 } }
+		localization_key = KOR_legco_ord_2_effect
+	}
+}
+
+defined_text = {
+	name = KOR_legco_ordinance_title_dynamic
+	text = {
+		trigger = { check_variable = { KOR_legco_current_ordinance_id = 2 } }
+		localization_key = KOR_legco_ord_2_title
+	}
+	text = {
+		trigger = { check_variable = { KOR_legco_current_ordinance_id = 3 } }
+		localization_key = KOR_legco_ord_3_title
+	}
+	text = {
+		trigger = { check_variable = { KOR_legco_current_ordinance_id = 4 } }
+		localization_key = KOR_legco_ord_4_title
+	}
+	text = {
+		trigger = { check_variable = { KOR_legco_current_ordinance_id = 5 } }
+		localization_key = KOR_legco_ord_5_title
+	}
+	text = {
+		trigger = { check_variable = { KOR_legco_current_ordinance_id = 6 } }
+		localization_key = KOR_legco_ord_6_title
+	}
+	text = {
+		trigger = { check_variable = { KOR_legco_current_ordinance_id = 7 } }
+		localization_key = KOR_legco_ord_7_title
+	}
+	text = {
+		trigger = { check_variable = { KOR_legco_current_ordinance_id = 8 } }
+		localization_key = KOR_legco_ord_8_title
+	}
+	text = {
+		trigger = { check_variable = { KOR_legco_current_ordinance_id = 9 } }
+		localization_key = KOR_legco_ord_9_title
+	}
+	text = {
+		trigger = { check_variable = { KOR_legco_current_ordinance_id = 10 } }
+		localization_key = KOR_legco_ord_10_title
+	}
+	text = {
+		trigger = { check_variable = { KOR_legco_current_ordinance_id = 11 } }
+		localization_key = KOR_legco_ord_11_title
+	}
+	text = {
+		trigger = { check_variable = { KOR_legco_current_ordinance_id = 12 } }
+		localization_key = KOR_legco_ord_12_title
+	}
+	text = {
+		trigger = { check_variable = { KOR_legco_current_ordinance_id = 13 } }
+		localization_key = KOR_legco_ord_13_title
+	}
+	text = {
+		trigger = { check_variable = { KOR_legco_current_ordinance_id = 14 } }
+		localization_key = KOR_legco_ord_14_title
+	}
+	text = {
+		trigger = { check_variable = { KOR_legco_current_ordinance_id = 15 } }
+		localization_key = KOR_legco_ord_15_title
+	}
+	text = {
+		trigger = { check_variable = { KOR_legco_current_ordinance_id = 16 } }
+		localization_key = KOR_legco_ord_16_title
+	}
+	text = {
+		trigger = { check_variable = { KOR_legco_current_ordinance_id = 17 } }
+		localization_key = KOR_legco_ord_17_title
+	}
+	text = {
+		trigger = { check_variable = { KOR_legco_current_ordinance_id = 18 } }
+		localization_key = KOR_legco_ord_18_title
+	}
+	text = {
+		trigger = { check_variable = { KOR_legco_current_ordinance_id = 19 } }
+		localization_key = KOR_legco_ord_19_title
+	}
+	text = {
+		trigger = { check_variable = { KOR_legco_current_ordinance_id = 20 } }
+		localization_key = KOR_legco_ord_20_title
+	}
+	text = {
+		trigger = { check_variable = { KOR_legco_current_ordinance_id = 21 } }
+		localization_key = KOR_legco_ord_21_title
+	}
+	text = {
+		trigger = { check_variable = { KOR_legco_current_ordinance_id = 22 } }
+		localization_key = KOR_legco_ord_22_title
+	}
+	text = {
+		trigger = { check_variable = { KOR_legco_current_ordinance_id = 23 } }
+		localization_key = KOR_legco_ord_23_title
+	}
+	text = {
+		trigger = { check_variable = { KOR_legco_current_ordinance_id = 24 } }
+		localization_key = KOR_legco_ord_24_title
+	}
+	text = {
+		trigger = { check_variable = { KOR_legco_current_ordinance_id = 25 } }
+		localization_key = KOR_legco_ord_25_title
+	}
+	text = {
+		trigger = { check_variable = { KOR_legco_current_ordinance_id = 26 } }
+		localization_key = KOR_legco_ord_26_title
+	}
+	text = {
+		trigger = { check_variable = { KOR_legco_current_ordinance_id = 27 } }
+		localization_key = KOR_legco_ord_27_title
+	}
+	text = {
+		trigger = { check_variable = { KOR_legco_current_ordinance_id = 28 } }
+		localization_key = KOR_legco_ord_28_title
+	}
+	text = {
+		trigger = { check_variable = { KOR_legco_current_ordinance_id = 29 } }
+		localization_key = KOR_legco_ord_29_title
+	}
+	text = {
+		trigger = { check_variable = { KOR_legco_current_ordinance_id = 30 } }
+		localization_key = KOR_legco_ord_30_title
+	}
+
+	#시작 후
+	text = {
+		trigger = { check_variable = { KOR_legco_current_ordinance_id = 1 } }
+		localization_key = KOR_legco_ord_1_title
 	}
 }

@@ -34,9 +34,17 @@ KOR_Demonstration_university_district:0 "대학가 시위"
 KOR_idea_lost_way_democracy:0 "길 잃은 민주주의"
 
 ###쿠데타###
-KOR_idea_Way_of_Military_Revolution:0 "혁명 준비"
+KOR_idea_Way_of_Military_Revolution:0 "혁명의 준비"
 KOR_idea_Military_Revolutionary_Government:0 "군사혁명정부"
 
+###쿠데타 이후###
+KOR_idea_lost_way_democracy_2:0 "반혁명"
+KOR_idea_Military_Revolutionary_Government_2:0 "중앙위원회의 수읽기"
+KOR_idea_Armed_Forces_Restoration_Society_problem:0 "국군유신회 문제"
+KOR_idea_lost_way_democracy_3:0 "혁명의 반동성"
+KOR_Collapsed_security_2:0 "제국의 불안"
+
+#이새끼들 하나도 안씀 ~~
 ###이승만###
 Pater_Patriae_Lee_2:0 "중앙집권체제 강화"
 judicial_weakening_idea:0 "국토교통청"
@@ -119,6 +127,8 @@ KOR_Daewoo_Heavy_Industries:0 "대우 중공업 주식회사"
 KOR_HYUNDAI:0 "현대그룹 중공업 공장"
 KOR_SAMSUNG:0 "삼성 중공업"
 
+
+# 여기부터 다시 씀 ~~
 ###일본###
 JAP_shoku_gun:0 "숙군"
 JAP_shoku_gun_desc:0 "몇 년전 일어난 군 내의 극단주의자들의 쿠데타가 원인이 되어 육, 해군 가릴 것 없이 숙군이 단행되었습니다. 이는 정치적으로는 어느정도의 안정을 가져왔을지언정 군대의 질을 심각하게 저해시켰습니다."

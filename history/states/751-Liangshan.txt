@@ -1,9 +1,7 @@
+
 state={
 	id=751
 	name="STATE_751"
-	manpower=300000
-	buildings_max_level_factor=1.000
-	state_category=pastoral
 
 	history={
 		owner = SZC
@@ -13,15 +11,19 @@ state={
 
 		}
 		victory_points = {
-			12141 3
+			12141 3 
 		}
 		victory_points = {
-			7294 1
+			7294 1 
 		}
 
 	}
 
 	provinces={
-		1367 1395 4375 4925 7240 8026 10132 12141 12705 12767 12819 
+		1395 7240 11972 12141 12705 12819 
 	}
+	manpower=300000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
 }

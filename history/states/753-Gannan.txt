@@ -1,9 +1,7 @@
+
 state={
 	id=753
 	name="STATE_753"
-	manpower=3000000
-	buildings_max_level_factor=1.000
-	state_category = rural
 
 	history={
 		owner = SZC
@@ -15,9 +13,14 @@ state={
 			infrastructure = 3
 
 		}
+
 	}
 
 	provinces={
-		1257 2045 4403 5193 9966 10787 10903 
+		1918 4999 7988 10841 
 	}
+	manpower=3000000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
 }

@@ -1,0 +1,224 @@
+focus_tree = {
+	id = Jap_fisrt_focus
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 20
+			tag = JAP
+		}
+	}
+	default = no
+
+	continuous_focus_position = { x = 20 y = 1600 }
+
+	#신년 회의 소집
+	focus = {
+		id = JAP_call_of_New_Years_meeting
+		icon = GFX_focus_first_congress
+		cost = 10.00
+
+		completion_reward = {
+
+		}
+		x = 7
+		y = 0
+
+	}
+
+	#발자취를 따라가다
+	focus = {
+		id = JAP_follow_ones_footsteps
+		icon = GFX_focus_follow_by_footstep_1
+		relative_position_id = JAP_call_of_New_Years_meeting
+		cost = 10.00
+
+		prerequisite = {
+			focus = JAP_call_of_New_Years_meeting
+		}
+
+		completion_reward = {
+
+		}
+		x = -2
+		y = 1
+
+	}
+
+	#미국의 감독 지원
+	focus = {
+		id = JAP_US_supervision_support
+		icon = GFX_focus_usa_watching_jap
+		relative_position_id = JAP_call_of_New_Years_meeting
+		cost = 10.00
+
+		prerequisite = {
+			focus = JAP_call_of_New_Years_meeting
+		}
+
+		completion_reward = {
+
+		}
+		x = 0
+		y = 1
+
+	}
+
+	#사소한 개혁안들
+	focus = {
+		id = JAP_minor_reform_proposals
+		icon = GFX_focus_something_tiny_progress
+		relative_position_id = JAP_call_of_New_Years_meeting
+		cost = 10.00
+
+		prerequisite = {
+			focus = JAP_call_of_New_Years_meeting
+		}
+
+		completion_reward = {
+
+		}
+		x = 2
+		y = 1
+
+	}
+
+	#충성파 지원 유지
+	focus = {
+		id = JAP_Maintaining_Loyalist_Support
+		icon = GFX_focus_stop_fighting_navarm
+		relative_position_id = JAP_follow_ones_footsteps
+		cost = 10.00
+
+		prerequisite = {
+			focus = JAP_follow_ones_footsteps
+		}
+
+		completion_reward = {
+
+		}
+		x = 0
+		y = 1
+
+	}
+
+	#갈등 진정시키기
+	focus = {
+		id = JAP_calming_the_conflict
+		icon = GFX_focus_anit_usa_cut
+		relative_position_id = JAP_US_supervision_support
+		cost = 10.00
+
+		prerequisite = {
+			focus = JAP_US_supervision_support
+			focus = JAP_minor_reform_proposals
+		}
+
+		completion_reward = {
+
+		}
+		x = 1
+		y = 1
+
+	}
+
+	#회담의 새 열차
+	focus = {
+		id = JAP_new_train_of_talks
+		icon = GFX_focus_triple_talks_train_re
+		relative_position_id = JAP_Maintaining_Loyalist_Support
+		cost = 10.00
+
+		prerequisite = {
+			focus = JAP_Maintaining_Loyalist_Support
+			focus = JAP_calming_the_conflict
+		}
+
+		completion_reward = {
+
+		}
+		x = 2
+		y = 1
+
+	}
+
+	#강경 시위 진정
+	focus = {
+		id = JAP_Calm_down_the_hardline_protests
+		icon = GFX_focus_pls_stop_it
+		relative_position_id = JAP_new_train_of_talks
+		cost = 10.00
+
+		prerequisite = {
+			focus = JAP_new_train_of_talks
+		}
+
+		completion_reward = {
+
+		}
+		x = -1
+		y = 1
+
+	}
+
+	#금일봉 문제 해결
+	focus = {
+		id = JAP_Solving_todays_salary_problem
+		icon = GFX_focus_police_subjugation_bonus
+		relative_position_id = JAP_new_train_of_talks
+		cost = 10.00
+
+		prerequisite = {
+			focus = JAP_new_train_of_talks
+		}
+
+		completion_reward = {
+
+		}
+		x = 1
+		y = 1
+
+	}
+
+	#회담의 시작
+	focus = {
+		id = JAP_beginning_of_a_meeting
+		icon = GFX_focus_come_up_with_them_firming
+		relative_position_id = JAP_Calm_down_the_hardline_protests
+		cost = 10.00
+
+		prerequisite = {
+			focus = JAP_Calm_down_the_hardline_protests
+		}
+		prerequisite = {
+			focus = JAP_Solving_todays_salary_problem
+		}
+
+		completion_reward = {
+
+		}
+		x = 1
+		y = 1
+
+	}
+
+	#비상시국 수습
+	focus = {
+		id = JAP_handling_emergency_situations
+		icon = GFX_focus_
+		relative_position_id = JAP_beginning_of_a_meeting
+		cost = 10.00
+
+		prerequisite = {
+			focus = JAP_beginning_of_a_meeting
+		}
+
+		completion_reward = {
+
+		}
+		x = 0
+		y = 2
+
+	}
+
+}

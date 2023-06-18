@@ -18,6 +18,88 @@
   
   Kor_seo_parliament_Background_explanation:0 "현재 국회의장은 안창호 이며 친야당 인사입니다.\n\n현재 여당은 민주국민당 으로 연립정부를 구성하고 있지 않기에 민주국민당의 좌석만 계산하여 105석을 가지고 있습니다.\n\n제1 야당은 대한촉성회-한국국민당 으로 80석 + 57석, 총 137석입니다.\n\n제2 야당은 사회노동당-한국민주당-대한국민당 으로 69석 + 13석 + 11석, 총 93석입니다.\n\n제3 야당은 대한공산당 으로 타정당과 연합 하고 있지 않기에 대한공산당의 좌석만 계산하여 47석 입니다.\n\n외 민주당 9석 및 인민공화당-대한신민당 7석 + 2석, 총 9석입니다.\n\n-----------------------------------------------\n\n국회 상임위원회는 총 13개의 위원회로 구성되어 있습니다.\n(법제사법위원회, 내무위원회, 외무위원회, 국방위원회, 예산결산위원회, 재정경제위원회, 농림위원회, 상공위원회, 문교위원회, 사회보건위원회, 교통체신위원회, 징계자격위원회, 국회운영위원회)\n\n이중 현재 여당은 4개의 상임위원회를 주도 중입니다. (외무위원회, 예산결산위원회, 재정경제위원회, 상공위원회)\n\n제1 야당은 4개의 상임위원회를 주도 중입니다. (법제사법위원회, 국방위원회, 문교위원회, 국회운영위원회)\n\n제2 야당은 3개의 상임위원회를 주도 중입니다. (농림위원회, 사회보건위원회, 교통체신위원회)\n\n제3 야당은 2개의 상임위원회를 주도 중입니다. (내무위원회, 징계자격위원회)"
 
+  KOR_legco_current_ordinance_support:0 "가결 대비 지지 의석수:\n[Legco_Current_Ordinance_Support]"
+  KOR_ordinance_under_200_votes: "§R[?KOR_Current_Ordinance_Votes|0]/200§!"
+  KOR_ordinance_over_200_votes: "§G[?KOR_Current_Ordinance_Votes|0]/200§!"
+  KOR_no_ordinance_votes: "§L현 법안 상정 없음§!"
+
+  KOR_legco_current_ordinance_title: "[KOR_legco_current_ordinance_title]"
+  KOR_legco_ord_0_title:0 "법안 상정 대기중.."
+
+  KOR_legco_amendments_title:0 "주요 개정 요약"
+  KOR_legco_amendments_text: "[KOR_legco_current_ordinance_amendments]"
+  KOR_legco_0_amendments:0 "현재 법안 상정이 진행되고 있지 않습니다. 법안 상정 방법을 모르신다면, 결정 탭으로 들어가 '대한민국 국회' 탭의 도움말을 확인해 주세요."
+  KOR_legco_1_amendments:0 "·  한·미·일 3국의 회의 장소로 일본의 안건을 지지함으로서, 일본과의 긍정적 외교 노선 유지\n·  일본과의 협력 및 미국에 대한 지원 요청을 통해 경제적 이익 극대화\n·  태평양 민주 국가 간의 안보·외교 협력 증대"
+  KOR_legco_2_amendments:0 "·  제1차 경제 개발 5개년 계획에 이은 경제 개발 계획 수립\n·  국토 건설 사업 지속 및 산업 육성 자금 유지\n·  정부의 산업중심주의 노선 유지등"
+
+  KOR_legco_effects_title:0 "효과"
+  KOR_legco_effects_text: "[KOR_legco_current_ordinance_effect]"
+  KOR_legco_ord_0_effect:0 "400명의 국회 구성원은 각 위원회와 정치적 협의 등을 통해 지속적으로 법안 상정을 구상합니다. 지체 없는 법안 가결을 위해서는 위원회 포섭과 야당과의 교섭을 균형 있게 활용해야 합니다."
+  KOR_legco_ord_1_effect:0 "교토에서 한·미·일 삼자회담을 개최하는 일본의 안건을 지지하며, 삼국의 외교적 합의와 경제적 지원 및 협력 기반을 마련합니다."
+  KOR_legco_ord_2_effect:0 "대한민국의 경제적 성장 이점을 지속시켜, 대공황의 후폭풍을 겪고 있는 세계의 상황과는 다른 긍정적 상태를 유지합니다."
+
+  KOR_legco_passage_success: "§G법안이 가결됨§!"
+  KOR_legco_passage_fail: "§R법안이 부결됨§!"
+  # KOR_legco_passage_stalled: "§f무기한 보류됨§!"
+
+  KOR_legco_bill_introduce_tooltip:0 "[KOR_legco_ordinance_title_dynamic]이 §Y국회 본회의§!에 제출할 것입니다."
+  KOR_votes_initialize_percentages_tt: "\n§Y법안§!은 각 정당별로 다음의 §Y지지 의석수§!를 얻고 시작할 것입니다:\n\n[KOR_check_legco_stage_for_votes_initialize]\n\n총 [KOR_get_dynamic_color_temp_support][?KOR_Current_Ordinance_Votes_temp|0]/200§!석이 법안 상정시 법안을 §Y지지§!할 것입니다.§!"
+
+  KOR_votes_initialize_percentages_stage_1: "§3민주국민당§!의 지지: §3[?KOR_legco_first_temp_support|2%] ([?KOR_first_support|0]/[?KOR_legco_first_seats|0])§!\n§2대한촉성회§!의 지지: §2[?KOR_legco_second_temp_support|2%] ([?KOR_second_support|0]/[?KOR_legco_second_seats|0])§!\n§t사회노동당§!의 지지: §t[?KOR_legco_third_temp_support|2%] ([?KOR_third_support|0]/[?KOR_legco_third_seats|0])§!\n§2한국국민당§!의 지지: §2[?KOR_legco_forth_temp_support|2%] ([?KOR_forth_support|0]/[?KOR_legco_forth_seats|0])§!\n§R대한공산당§!의 지지: §R[?KOR_legco_fifth_temp_support|2%] ([?KOR_fifth_support|0]/[?KOR_legco_fifth_seats|0])§!\n§4한국민주당§!의 지지: §4[?KOR_legco_sixth_temp_support|2%] ([?KOR_sixth_support|0]/[?KOR_legco_sixth_seats|0])§!\n§H대한국민당§!의 지지: §H[?KOR_legco_seventh_temp_support|2%] ([?KOR_seventh_support|0]/[?KOR_legco_seventh_seats|0])§!\n§9민주당§!의 지지: §9[?KOR_legco_eighth_temp_support|2%] ([?KOR_eighth_support|0]/[?KOR_legco_eighth_seats|0])§!\n§t인민공화당§!의 지지: §t[?KOR_legco_nineth_temp_support|2%] ([?KOR_nineth_support|0]/[?KOR_legco_nineth_seats|0])§!\n§t대한신민당§!의 지지: §t[?KOR_legco_tenth_temp_support|2%] ([?KOR_tenth_support|0]/[?KOR_legco_tenth_seats|0])§!"
+
+  KOR_temp_votes_green: "§G"
+  KOR_temp_votes_red: "§R"
+
+  KOR_legco_current_ordinance_tt: "§L[KOR_legco_ordinance_title_dynamic]\n--------------\n§Y주요 개정 요약:§!\n[KOR_legco_current_ordinance_amendments]\n\n§Y효과:§!\n[KOR_legco_current_ordinance_effect]§!§!\n\n§Y현재 투표:§!\n[Legco_Votes_Current_Parties]\n\n총 [Legco_Current_Ordinance_Support]석의 의원이 이 법안을 지지하며, [Legco_Pass_Check][Legco_Vote_time_check]§!\n\n§Y게임 내 효과§!를 확인하려면 법안을 §G클릭§!하세요."
+
+  KOR_ordinance_not_enough_to_pass: "§R법안이 통과되기에 충분하지 않은 지지입니다.§!"
+  KOR_ordinance_enough_to_pass: "§G법안이 통과되기에 충분한 지지입니다.§!"
+  KOR_legco_voting_time: "\n\n투표가 실시될 때 까지는 §Y[?GNG_legco_vote_days] 일§! 남았습니다."
+
+  KOR_legco_ordinance_effect_tt: "[!legco_ordinance_effect_click]"
+  KOR_clear_show_effects_for_ordinances_tt: "\n§Y세부사항§!을 확인하려면 법안을 §G클릭§!하세요."
+  KOR_show_effects_for_ordinance_tt: "§F[KOR_legco_ordinance_title_dynamic][GNG_get_legco_bill_tooltip]이(가) 통과되면§! 다음과 같은 효과를 얻습니다:§!"
+
+  KOR_legco_past_ordinance:0 "역대 법안 상정 기록"
+  KOR_legco_historic_ordinance_title: "[KOR_legco_ordinance_title_dynamic]"
+  KOR_legco_historic_ordinance_tt: "§L[KOR_legco_ordinance_title_dynamic]\n--------------\n§Y주요 개정 요약:§!\n[KOR_legco_current_ordinance_amendments]\n\n§Y법안 의결 결과:§!\n[KOR_legco_ordinance_history_status]\n\n§Y효과:§!\n[KOR_legco_current_ordinance_effect]§!§!"
+  KOR_legco_ord_2_title:0 "§3제2차 경제 개발 5개년 계획 예산안§!"
+  KOR_legco_ord_3_title:0 "§t근로기준법§!"
+  KOR_legco_ord_4_title:0 "§2집회에 관한 법률§!" #부결
+  KOR_legco_ord_5_title:0 "§R노동조합법§!"
+  KOR_legco_ord_6_title:0 "§t국민의료법§!"
+  KOR_legco_ord_7_title:0 "§3제2차 헌법개정안§!"
+  KOR_legco_ord_8_title:0 "§2국민방위군설치법§!"
+  KOR_legco_ord_9_title:0 "§31929년 미국발 경제위기 후속 조치를 위한 결의안§!"
+  KOR_legco_ord_10_title:0 "§t국민의료법안 개정안§!"
+  KOR_legco_ord_11_title:0 "§3관세법 개정안§!"
+  KOR_legco_ord_12_title:0 "§3소득세법 개정안§!"
+  KOR_legco_ord_13_title:0 "§3국채금특별회계법§!"
+  KOR_legco_ord_14_title:0 "§31929년 미국발 경제위기 대처를 위한 긴급 의회 결의안§!"
+  KOR_legco_ord_15_title:0 "§3제1차 헌법개정안§!"
+  KOR_legco_ord_16_title:0 "§2국군재조직법안§!"
+  KOR_legco_ord_17_title:0 "§2국민안보법§!"
+  KOR_legco_ord_18_title:0 "§3제1차 경제 개발 5개년 계획 예산안§!"
+  KOR_legco_ord_19_title:0 "§2국가보안법§!" #부결
+  KOR_legco_ord_20_title:0 "§t지방행정안§!"
+  KOR_legco_ord_21_title:0 "§3국제연맹참여 결의안§!"
+  KOR_legco_ord_22_title:0 "§L대한민국정부 수립 선언§!"
+  KOR_legco_ord_23_title:0 "§L비상국민회의 폐회§!"
+  KOR_legco_ord_24_title:0 "§L한성 조약 체결안 확정§!"
+  KOR_legco_ord_25_title:0 "§L대한민국 헌법 공포§!"
+  KOR_legco_ord_26_title:0 "§L국회법안§!"
+  KOR_legco_ord_27_title:0 "§L헌법기초안 · 정부조직법안§!"
+  KOR_legco_ord_28_title:0 "§L비상국민회의 전환§!"
+  KOR_legco_ord_29_title:0 "§L임시의정원 회의 개회§!"
+  KOR_legco_ord_30_title:0 "§L민주정권결의선언 발표§!"
+  #효과 툴팁
+  KOR_no_ordinance_in_legco_tt:0 "현재 §Y국회 본회의§!에 상정된 법안이 없습니다."
+  KOR_legco_resolution_1_days:0 "신속한 외교적 합의를 위해, §Y결의안의 투표는 즉시 이루어질 것§!입니다."
+  KOR_legco_bill_voting_tooltip:0 "[KOR_legco_ordinance_title_dynamic]에 대한 투표가 §Y국회 본회의§!에서 실시될 것입니다."
+  #시작 후
+  KOR_legco_ord_1_title:0 "§3교토 회담 개최 지지를 위한 결의안§!"
+
+
   Kor_parliament_Farmland_Reform_Act_Legislative_review:0 "농지개혁법은 현재 일부 대지주들이 좌지우지 하고 있는 농지들을 정부에서 사들여 농민들에게 값싼 값에 팖으로서, 농민들의 불만을 잠재움과 동시에 대규모 토목공사를 진행할수 있다는 장점을 가진 법안입니다.\n\n이 법안에 대해서 사회주의 진영이 찬성할 것입니다.\n허나 보수주의 진영은 강력히 반대할 것입니다.\n\n이 법안이 통과되기 위해서는 240명의 찬성이 필요합니다.\n\n---------------------\n\n법안이 통과될 시 365일 간 "농지개혁법" 국민정신을 얻고, (소비재: -5.0%, 기반시설 건설 속도: +10.0%, 공장 생산량: +5.0%) 효과를 얻습니다."
   Kor_parliament_Temporary_Measures_Assembly_Act_Legislative_review:0 "집회에 관한 임시 조치법은 적법한 집회 및 시위를 보장하고 공공의 질서가 조화를 이루도록 하는 법으로서, 사회 안정과 함께 불법적인 반정부 행위를 금지시키기 위해 심사에 올라온 법안입니다.\n\n이 법안은 과거, 2대 악법으로 불리며 강력한 반발을 산 법안입니다.\n모든 진영이 극심하게 반발할 것입니다.\n\n이 법안이 통과되기 위해서는 320명의 찬성이 필요합니다.\n\n---------------------\n\n법안이 통과될 시 365일 간 "집회에 관한 임시 조치법" 국민정신을 얻고, (안정도: -10.0%, 전쟁 지지도: +5.0%, 정치력 획득: +5.0%, 이념 변화 방어: +25.0%) 효과를 얻습니다.\n\n또한 10명의 여당 소속이 야당 소속으로 전환됩니다."
   Kor_Report_corruption_opposition_party_na_mb:0 "이미 어느정도 의혹이 있던 의원의 비리 증거를 모아서 공개합니다. 이를 통해 야당의 추악한 비리 실태와 함께 여당과 정부의 청렴결백함을 강조하여 야당 의원들을 여댱으로 끌어드릴수 있습니다.\n\n---------------------\n\n정치력 15를 사용함으로서 야당 의원 5명이 여당 의원으로 전환됩니다."

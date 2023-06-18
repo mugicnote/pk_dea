@@ -37,6 +37,7 @@
 
  #경상북도
  VICTORY_POINTS_4086:0 "대구" #대구
+ VICTORY_POINTS_13271:0 "포항" #포항
 
  #경상남도
  VICTORY_POINTS_4056:0 "부산"    #부산
@@ -44,10 +45,11 @@
 
  #전라북도
  VICTORY_POINTS_7175:0 "군산"    #군산
- VICTORY_POINTS_13273:0 "전주"   #전주
+ VICTORY_POINTS_11977:0 "전주"   #전주
 
  #전라남도
- VICTORY_POINTS_10110:0 "광주"   #광주
+ VICTORY_POINTS_10110:0 "목포"   #목포
+ VICTORY_POINTS_12085:0 "광주"   #광주
 
  #제주도
  VICTORY_POINTS_1177:0 "제주" #제주

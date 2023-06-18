@@ -1,0 +1,53 @@
+spriteTypes = {
+
+	SpriteType = {
+		name = "GFX_focus_first_congress"
+		texturefile = "gfx/interface/goals/JAP/focus_first_congress.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_follow_by_footstep_1"
+		texturefile = "gfx/interface/goals/JAP/focus_follow_by_footstep_1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_usa_watching_jap"
+		texturefile = "gfx/interface/goals/JAP/focus_usa_watching_jap.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_something_tiny_progress"
+		texturefile = "gfx/interface/goals/JAP/focus_something_tiny_progress.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_stop_fighting_navarm"
+		texturefile = "gfx/interface/goals/JAP/focus_stop_fighting_navarm.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_anit_usa_cut"
+		texturefile = "gfx/interface/goals/JAP/focus_anit_usa_cut.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_triple_talks_train_re"
+		texturefile = "gfx/interface/goals/JAP/focus_triple_talks_train_re.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_pls_stop_it"
+		texturefile = "gfx/interface/goals/JAP/focus_pls_stop_it.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_police_subjugation_bonus"
+		texturefile = "gfx/interface/goals/JAP/focus_police_subjugation_bonus.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_come_up_with_them_firming"
+		texturefile = "gfx/interface/goals/JAP/focus_come_up_with_them_firming.dds"
+	}
+
+}
