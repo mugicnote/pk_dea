@@ -1,0 +1,12 @@
+scripted_gui = {
+	KOR_seoul_metro_gui = {
+		context_type = decision_category
+		window_name = "KOR_seoul_metro_window"
+
+		visible = {
+			always = yes
+		}
+		effects = {
+		}
+	}
+}

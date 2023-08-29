@@ -1,0 +1,22 @@
+spriteTypes = {
+	spritetype = {
+		name = "GFX_KOR_seoul_metro_logo"
+		texturefile = "gfx/interface/seoul_metro/seoul_metro_logo.dds"
+		legacy_lazy_load = no
+	}
+	spritetype = {
+		name = "GFX_KOR_seoul_metro_station"
+		texturefile = "gfx/interface/seoul_metro/seoul_metro_station.dds"
+		legacy_lazy_load = no
+	}
+	spritetype = {
+		name = "GFX_KOR_seoul_metro_station_line_1"
+		texturefile = "gfx/interface/seoul_metro/seoul_metro_station_line_1.dds"
+		legacy_lazy_load = no
+	}
+	spritetype = {
+		name = "GFX_KOR_seoul_metro_bg"
+		texturefile = "gfx/interface/seoul_metro/seoul_metro_bg.dds"
+		legacy_lazy_load = no
+	}
+}

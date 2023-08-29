@@ -1,0 +1,48 @@
+guiTypes = {
+	containerWindowType = {
+		name = "KOR_seoul_metro_window"
+		size = { width = 500 height = 500 }
+		position = { x = 0 y = 0 }
+
+		containerWindowType = {
+			name = "KOR_seoul_metro_window_Assets"
+			size = { width = 0 height = 0 }
+			position = { x = 0 y = 0 }
+			iconType = {
+				name = "KOR_seoul_metro_bg" # 배경
+				quadTextureSprite = "GFX_KOR_seoul_metro_bg"
+				position = { x = 20 y = 20 }
+				alwaystransparent = yes
+				scale = 0.35
+			}
+			buttonType = {
+				name = "KOR_seoul_metro_station_3" # 동대문역
+				quadTextureSprite = "GFX_KOR_seoul_metro_station"
+				position = { x = 325 y = 113 }
+				scale = 0.7
+			}
+			buttonType = {
+				name = "KOR_seoul_metro_station" # 신설동역
+				quadTextureSprite = "GFX_KOR_seoul_metro_station"
+				position = { x = 370 y = 93 }
+				scale = 0.7
+			}
+			buttonType = {
+				name = "KOR_seoul_metro_station_2" # 제기동역
+				quadTextureSprite = "GFX_KOR_seoul_metro_station"
+				position = { x = 420 y = 73 }
+				scale = 0.7
+			}
+			instantTextboxType = {
+				name = "KOR_seoul_metro_line_1_text"
+				position = { x = 25 y = 435 }
+				font = "hoi_18"
+				borderSize = {x = 0 y = 0}
+				text = "KOR_seoul_metro_line_1_text_desc"
+				maxWidth = 310
+				maxHeight = 100
+				fixedsize = yes
+			}
+		}
+	}
+}

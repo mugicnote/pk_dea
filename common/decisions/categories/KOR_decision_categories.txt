@@ -368,3 +368,21 @@ RUS_Zemstvo_Funding_decisions = {
 		has_completed_focus = economic_development_approval
 	}
 }
+KOR_seoul_metro_show_hide = {
+	icon = GFX_
+	priority = 1500
+	allowed = {
+		original_tag = KOR
+	}
+	visible_when_empty = yes
+}
+KOR_seoul_metro_decisions = {
+	icon = GFX_
+	priority = 1500
+	allowed = {
+		original_tag = KOR
+		has_country_flag = KOR_seoul_metro_visible
+	}
+	scripted_gui = KOR_seoul_metro_gui
+	visible_when_empty = yes
+}

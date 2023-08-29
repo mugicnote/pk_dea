@@ -283,4 +283,9 @@ spriteTypes = {
 		texturefile = "gfx/texticons/jap_start_view.dds"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_seoul_metro"
+		texturefile = "gfx/texticons/decision_seoul_metro.dds"
+		legacy_lazy_load = no
+	}
 }
