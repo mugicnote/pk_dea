@@ -16,7 +16,7 @@ focus_tree = {
 	focus = {
 		id = Seo_Jae_pil_administration
 		icon = GFX_Seo_Jae_pil_administration
-		cost = 10.00
+		cost = 1.00
 
 		completion_reward = {
 			add_political_power = 100
@@ -30,7 +30,7 @@ focus_tree = {
 	focus = {
 		id = policy_encouraging_universities
 		icon = GFX_KOR_univercity_support
-		cost = 6.00
+		cost = 1.00
 		prerequisite = {
 			focus = Seo_Jae_pil_administration
 		}
@@ -50,7 +50,7 @@ focus_tree = {
 	focus = {
 		id = call_assistance_United_States
 		icon = GFX_KOR_fund_from_usa_3
-		cost = 10.00
+		cost = 1.00
 		prerequisite = {
 			focus = Seo_Jae_pil_administration
 		}
@@ -70,9 +70,15 @@ focus_tree = {
 	focus = {
 		id = export_incentive_policy
 		icon = GFX_KOR_improve_trade
-		cost = 10.00
+		cost = 1.00
 		prerequisite = {
 			focus = Seo_Jae_pil_administration
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = KOR_Kyoto_Resolution_Passed_trigger_tt
+				has_country_flag = Kyoto_Resolution_Passed
+			}
 		}
 		relative_position_id = Seo_Jae_pil_administration
 
@@ -81,7 +87,7 @@ focus_tree = {
 				type = convoy
 				amount = 20
 			}
-			815 = {
+			917 = {
 				add_building_construction = {
 					type = dockyard
 					level = 1
@@ -97,7 +103,7 @@ focus_tree = {
 	focus = {
 		id = situation_we_are_in
 		icon = GFX_KOR_our_big_problem
-		cost = 10.00
+		cost = 1.00
 		prerequisite = {
 			focus = policy_encouraging_universities
 		}
@@ -144,7 +150,7 @@ focus_tree = {
 	focus = {
 		id = Introduction_Korean_style_job_security_measures
 		icon = GFX_KOR_new_deal
-		cost = 10.00
+		cost = 1.00
 		prerequisite = {
 			focus = call_assistance_United_States
 		}
@@ -171,12 +177,18 @@ focus_tree = {
 	focus = {
 		id = Korea_China_Japan_trilateral_meeting
 		icon = GFX_KOR_triple_meeting_1
-		cost = 4.00
+		cost = 1.00
 		prerequisite = {
 			focus = situation_we_are_in
 		}
 		prerequisite = {
 			focus = Introduction_Korean_style_job_security_measures
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = KOR_Kyoto_Resolution_Passed_trigger_tt
+				has_country_flag = Kyoto_Resolution_Passed
+			}
 		}
 		relative_position_id = situation_we_are_in
 

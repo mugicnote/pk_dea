@@ -6,7 +6,6 @@ state={
 	history={
 		owner = GXC
 		add_core_of = GXC
-		add_core_of = CHI
 		buildings = {
 
 		}

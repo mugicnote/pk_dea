@@ -1,0 +1,684 @@
+#
+@X_ICON = 20
+@X_NAME = 42
+@X_POP = 210
+
+@Y_COM = 50
+@Y_COM1 = 48
+@Y_AUTSOC = 72
+@Y_AUTSOC1 = 70
+@Y_RADSOC = 94
+@Y_RADSOC1 = 92
+@Y_SOCDEM = 116
+@Y_SOCDEM1 = 114
+@Y_SOCLIB = 138
+@Y_SOCLIB1 = 136
+@Y_NATLIB = 160
+@Y_NATLIB1 = 158
+@Y_LIBCON = 182
+@Y_LIBCON1 = 180
+@Y_SOCCON = 204
+@Y_SOCCON1 = 202
+@Y_NATCON = 226
+@Y_NATCON1 = 224
+@Y_AUTDEM = 248
+@Y_AUTDEM1 = 246
+@Y_AUTDES = 270
+@Y_AUTDES1 = 268
+@Y_FAS = 292
+@Y_FAS1 = 290
+
+@X_FRAME = 559
+@Y_COM2 = 169
+@Y_AUTSOC2 = 185
+@Y_RADSOC2 = 201
+@Y_SOCDEM2 = 217
+@Y_SOCLIB2 = 233
+@Y_NATLIB2 = 249
+@Y_LIBCON2 = 265
+@Y_SOCCON2 = 281
+@Y_NATCON2 = 297
+@Y_AUTDEM2 = 313
+@Y_AUTDES2 = 329
+@Y_FAS2 = 345
+#
+
+guiTypes = {
+
+#정당명
+containerWindowType = {
+	name = "current_ruling_party_ui"
+	position = { x = 0 y = 0 }
+		
+	instantTextboxType = {
+		name = "party_name"
+		position = { x = 9999 y = 92 }
+		font = "pk_18"
+		text = "[ROOT.GetRulingParty]"
+		fixedsize = yes
+		maxWidth = 145
+		maxHeight = 20
+	}
+
+	iconType = {
+			name = "pop_bg"
+			position = { x = 365 y = 213 }
+			spriteType = "GFX_pop_bg"
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "popularity"
+			position = { x = 365 y = 189 }
+			font = "hoi_18mbs"
+			text = "현재 여당 지지:  [?total_party_pop|0]%"
+			fixedsize = yes
+			maxWidth = 150
+			maxHeight = 20
+			format = left
+		}
+
+		instantTextboxType = {
+			name = "text"
+			position = { x = 408 y = 209 }
+			font = "hoi_18mbs"
+			text = "정당 목록 보기"
+			fixedsize = yes
+			maxWidth = 150
+			maxHeight = 20
+			format = left
+		}
+}
+
+
+### 버튼 ###
+	containerWindowType = {
+		name = "party_list_button_ui"
+		position = { x = 100 y = 117 }
+		
+		buttonType = {
+			name = "party_list_button"
+			position = { x = 395 y = 80 }
+			spriteType = "GFX_button_right"
+			pdx_tooltip = "party_list_button_tooltip"
+			scale = 1
+		}
+		
+		# instantTextboxType = { #직책명
+		# 	name = "cabinet_button_text"
+		# 	position = { x = -17 y = 9 }
+		# 	font = "hoi_18mbs"
+		# 	text = "내각 개요"
+		# 	maxWidth = 155
+		# 	maxHeight = 20
+		# 	format = center
+		# 	vertical_alignment = center
+		# 	allwaystransparent = yes
+		# }
+	}
+
+	###  ###
+	containerWindowType = {
+		name = "party_list_bg_ui"
+		position = { x = 538 y = 175 }
+		size = { width = 300 height = 330 }
+		fade_time = 50
+		fade_type = linear
+		click_to_front = no
+		show_sound = menu_open_window
+		
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_tiled_plain_bg"
+		}
+		
+		instantTextboxType = {
+			name = "title"
+			position = { x = 25 y = 20 }
+			font = "pk_22"
+			text = "정당 목록"
+			format = left
+			fixedsize = yes
+			maxWidth = 180
+		}
+					
+		buttonType = {
+			name = "close"
+			spriteType = "GFX_closebutton"
+			position = { x = 264 y = 7 }
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+			shortcut = "ESCAPE"
+			scale = 0.9
+		}
+
+		### 공산주의 ###
+		iconType = {
+			name = "color_com"
+			position = { x = @X_ICON y = @Y_COM1 }
+			spriteType = "GFX_party_color_com"
+			pdx_tooltip = "com_desc"
+		}
+			
+		instantTextboxType = {
+			name = "name_com"
+			position = { x = @X_NAME y = @Y_COM }
+			font = "hoi_18mbs"
+			text = "[This.GetComIcon] [This.GetCommunistParty]"
+			fixedsize = yes
+			maxWidth = 170
+			maxHeight = 18
+			pdx_tooltip = "com_desc"
+		}
+			
+		instantTextboxType = {
+			name = "pop_com"
+			position = { x = @X_POP y = @Y_COM }
+			font = "hoi_18mbs"
+			text = "[?party_popularity@communism|%1]"
+			format = right
+			fixedsize = yes
+			maxWidth = 60
+			maxHeight = 18
+			pdx_tooltip = "com_desc"
+		}
+
+
+		# ### 권위사회주의 ###
+		iconType = {
+			name = "color_autsoc"
+			position = { x = @X_ICON y = @Y_AUTSOC1 }
+			spriteType = "GFX_party_color_autsoc"
+			pdx_tooltip = "autsoc_desc"
+		}
+
+		instantTextboxType = {
+			name = "name_autsoc"
+			position = { x = @X_NAME y = @Y_AUTSOC }
+			font = "hoi_18mbs"
+			text = "[This.GetAutsocIcon] [ROOT.GetAutsocParty]"
+			fixedsize = yes
+			maxWidth = 170
+			maxHeight = 18
+			pdx_tooltip = "autsoc_desc"
+		}
+			
+		instantTextboxType = {
+			name = "pop_autsoc"
+			position = { x = @X_POP y = @Y_AUTSOC }
+			font = "hoi_18mbs"
+			text = "[?party_popularity@authoritarian_socialism|%1]"
+			format = right
+			fixedsize = yes
+			maxWidth = 60
+			maxHeight = 18
+			pdx_tooltip = "autsoc_desc"
+		}
+
+
+		# ### 급진사회주의 ###
+		iconType = {
+			name = "color_radsoc"
+			position = { x = @X_ICON y = @Y_RADSOC1 }
+			spriteType = "GFX_party_color_radsoc"
+			pdx_tooltip = "radsoc_desc"
+		}
+
+		instantTextboxType = {
+			name = "name_radsoc"
+			position = { x = @X_NAME y = @Y_RADSOC }
+			font = "hoi_18mbs"
+			text = "[This.GetRadsocIcon] [ROOT.GetRadsocParty]"
+			fixedsize = yes
+			maxWidth = 170
+			maxHeight = 18
+			pdx_tooltip = "radsoc_desc"
+		}
+			
+		instantTextboxType = {
+			name = "pop_radsoc"
+			position = { x = @X_POP y = @Y_RADSOC }
+			font = "hoi_18mbs"
+			text = "[?party_popularity@radical_socialism|%1]"
+			format = right
+			fixedsize = yes
+			maxWidth = 60
+			maxHeight = 18
+			pdx_tooltip = "radsoc_desc"
+		}
+
+
+		# ### 사회민주주의 ###
+		iconType = {
+			name = "color_socdem"
+			position = { x = @X_ICON y = @Y_SOCDEM1 }
+			spriteType = "GFX_party_color_socdem"
+			pdx_tooltip = "socdem_desc"
+		}
+		
+		instantTextboxType = {
+			name = "name_socdem"
+			position = { x = @X_NAME y = @Y_SOCDEM }
+			font = "hoi_18mbs"
+			text = "[This.GetSocdemIcon] [ROOT.GetSocdemParty]"
+			fixedsize = yes
+			maxWidth = 170
+			maxHeight = 18
+			pdx_tooltip = "socdem_desc"
+		}
+			
+		instantTextboxType = {
+			name = "pop_socdem"
+			position = { x = @X_POP y = @Y_SOCDEM }
+			font = "hoi_18mbs"
+			text = "[?party_popularity@social_democracy|%1]"
+			format = right
+			fixedsize = yes
+			maxWidth = 60
+			maxHeight = 18
+			pdx_tooltip = "socdem_desc"
+		}
+
+
+		# ### 사회자유주의 ###
+		iconType = {
+			name = "color_soclib"
+			position = { x = @X_ICON y = @Y_SOCLIB1 }
+			spriteType = "GFX_party_color_soclib"
+			pdx_tooltip = "soclib_desc"
+		}
+
+		instantTextboxType = {
+			name = "name_soclib"
+			position = { x = @X_NAME y = @Y_SOCLIB }
+			font = "hoi_18mbs"
+			text = "[This.GetSoclibIcon] [ROOT.GetSoclibParty]"
+			fixedsize = yes
+			maxWidth = 170
+			maxHeight = 18
+			pdx_tooltip = "soclib_desc"
+		}
+			
+		instantTextboxType = {
+			name = "pop_soclib"
+			position = { x = @X_POP y = @Y_SOCLIB }
+			font = "hoi_18mbs"
+			text = "[?party_popularity@social_liberalism|%1]"
+			format = right
+			fixedsize = yes
+			maxWidth = 60
+			maxHeight = 18
+			pdx_tooltip = "soclib_desc"
+		}
+
+
+		# ### 국민자유주의 ###
+		iconType = {
+			name = "color_natlib"
+			position = { x = @X_ICON y = @Y_NATLIB1 }
+			spriteType = "GFX_party_color_natlib"
+			pdx_tooltip = "natlib_desc"
+		}
+
+		instantTextboxType = {
+			name = "name_natlib"
+			position = { x = @X_NAME y = @Y_NATLIB }
+			font = "hoi_18mbs"
+			text = "[This.GetNatlibIcon] [ROOT.GetNatlibParty]"
+			fixedsize = yes
+			maxWidth = 170
+			maxHeight = 18
+			pdx_tooltip = "natlib_desc"
+		}
+			
+		instantTextboxType = {
+			name = "pop_natlib"
+			position = { x = @X_POP y = @Y_NATLIB }
+			font = "hoi_18mbs"
+			text = "[?party_popularity@national_liberalism|%1]"
+			format = right
+			fixedsize = yes
+			maxWidth = 60
+			maxHeight = 18
+			pdx_tooltip = "natlib_desc"
+		}
+
+
+		# ### 자유보수주의 ###
+		iconType = {
+			name = "color_libcon"
+			position = { x = @X_ICON y = @Y_LIBCON1 }
+			spriteType = "GFX_party_color_libcon"
+			pdx_tooltip = "libcon_desc"
+		}
+
+		instantTextboxType = {
+			name = "name_libcon"
+			position = { x = @X_NAME y = @Y_LIBCON }
+			font = "hoi_18mbs"
+			text = "[This.GetLibconIcon] [ROOT.GetLibconParty]"
+			fixedsize = yes
+			maxWidth = 170
+			maxHeight = 18
+			pdx_tooltip = "libcon_desc"
+		}
+			
+		instantTextboxType = {
+			name = "pop_libcon"
+			position = { x = @X_POP y = @Y_LIBCON }
+			font = "hoi_18mbs"
+			text = "[?party_popularity@liberal_conservatism|%1]"
+			format = right
+			fixedsize = yes
+			maxWidth = 60
+			maxHeight = 18
+			pdx_tooltip = "libcon_desc"
+		}
+
+
+		# ### 사회보수주의 ###
+		iconType = {
+			name = "color_soccon"
+			position = { x = @X_ICON y = @Y_SOCCON1 }
+			spriteType = "GFX_party_color_soccon"
+			pdx_tooltip = "soccon_desc"
+		}
+
+		instantTextboxType = {
+			name = "name_soccon"
+			position = { x = @X_NAME y = @Y_SOCCON }
+			font = "hoi_18mbs"
+			text = "[This.GetSocconIcon] [This.GetDemocraticParty]"
+			fixedsize = yes
+			maxWidth = 170
+			maxHeight = 18
+			pdx_tooltip = "soccon_desc"
+		}
+			
+		instantTextboxType = {
+			name = "pop_soccon"
+			position = { x = @X_POP y = @Y_SOCCON }
+			font = "hoi_18mbs"
+			text = "[?party_popularity@democratic|%1]"
+			format = right
+			fixedsize = yes
+			maxWidth = 60
+			maxHeight = 18
+			pdx_tooltip = "soccon_desc"
+		}
+
+
+		# ### 국민보수주의 ###
+		iconType = {
+			name = "color_natcon"
+			position = { x = @X_ICON y = @Y_NATCON1 }
+			spriteType = "GFX_party_color_natcon"
+			pdx_tooltip = "natcon_desc"
+		}
+
+		instantTextboxType = {
+			name = "name_natcon"
+			position = { x = @X_NAME y = @Y_NATCON }
+			font = "hoi_18mbs"
+			text = "[This.GetNatconIcon] [ROOT.GetNatconParty]"
+			fixedsize = yes
+			maxWidth = 170
+			maxHeight = 18
+			pdx_tooltip = "natcon_desc"
+		}
+			
+		instantTextboxType = {
+			name = "pop_natcon"
+			position = { x = @X_POP y = @Y_NATCON }
+			font = "hoi_18mbs"
+			text = "[?party_popularity@national_conservatism|%1]"
+			format = right
+			fixedsize = yes
+			maxWidth = 60
+			maxHeight = 18
+			pdx_tooltip = "natcon_desc"
+		}
+
+
+		# ### 권위민주주의 ###
+		iconType = {
+			name = "color_autdem"
+			position = { x = @X_ICON y = @Y_AUTDEM1 }
+			spriteType = "GFX_party_color_autdem"
+			pdx_tooltip = "autdem_desc"
+		}
+
+		instantTextboxType = {
+			name = "name_autdem"
+			position = { x = @X_NAME y = @Y_AUTDEM }
+			font = "hoi_18mbs"
+			text = "[This.GetAutdemIcon] [ROOT.GetNeutralParty]"
+			fixedsize = yes
+			maxWidth = 170
+			maxHeight = 18
+			pdx_tooltip = "autdem_desc"
+		}
+			
+		instantTextboxType = {
+			name = "pop_autdem"
+			position = { x = @X_POP y = @Y_AUTDEM }
+			font = "hoi_18mbs"
+			text = "[?party_popularity@neutrality|%1]"
+			format = right
+			fixedsize = yes
+			maxWidth = 60
+			maxHeight = 18
+			pdx_tooltip = "autdem_desc"
+		}
+
+
+		# ### 전제독재주의 ###
+		iconType = {
+			name = "color_autdes"
+			position = { x = @X_ICON y = @Y_AUTDES1 }
+			spriteType = "GFX_party_color_autdes"
+			pdx_tooltip = "autdes_desc"
+		}
+
+		instantTextboxType = {
+			name = "name_autdes"
+			position = { x = @X_NAME y = @Y_AUTDES }
+			font = "hoi_18mbs"
+			text = "[This.GetAutdesIcon] [ROOT.GetAutdesParty]"
+			fixedsize = yes
+			maxWidth = 170
+			maxHeight = 18
+			pdx_tooltip = "autdes_desc"
+		}
+			
+		instantTextboxType = {
+			name = "pop_autdes"
+			position = { x = @X_POP y = @Y_AUTDES }
+			font = "hoi_18mbs"
+			text = "[?party_popularity@auto_despotism|%1]"
+			format = right
+			fixedsize = yes
+			maxWidth = 60
+			maxHeight = 18
+			pdx_tooltip = "autdes_desc"
+		}
+
+
+		# ### 파시즘 ###
+		iconType = {
+			name = "color_fas"
+			position = { x = @X_ICON y = @Y_FAS1 }
+			spriteType = "GFX_party_color_fas"
+			pdx_tooltip = "fas_desc"
+		}
+
+		instantTextboxType = {
+			name = "name_fas"
+			position = { x = @X_NAME y = @Y_FAS }
+			font = "hoi_18mbs"
+			text = "[This.GetFastismIcon] [ROOT.GetFascistParty]"
+			fixedsize = yes
+			maxWidth = 170
+			maxHeight = 18
+			pdx_tooltip = "fas_desc"
+		}
+			
+		instantTextboxType = {
+			name = "pop_fas"
+			position = { x = @X_POP y = @Y_FAS }
+			font = "hoi_18mbs"
+			text = "[?party_popularity@fascism|%1]"
+			format = right
+			fixedsize = yes
+			maxWidth = 60
+			maxHeight = 18
+			pdx_tooltip = "fas_desc"
+		}
+	}
+
+	# #Frames in countrypoliticsview
+	# containerWindowType = {
+	# 	name = "framecom"
+	# 	position = { x = @X_FRAME y = @Y_COM2 }
+	# 	iconType ={
+	# 		name = "framecom_icon"
+	# 		spriteType = "GFX_party_background"
+	# 		position = { x= 0 y = 0 }
+	# 		Orientation = "UPPER_LEFT"
+	# 		pdx_tooltip = "framecom_tooltip"
+	# 		scale = 1
+	# 	}
+	# }
+	# containerWindowType = {
+	# 	name = "frameautsoc"
+	# 	position = { x = @X_FRAME y = @Y_AUTSOC2 }
+	# 	iconType ={
+	# 		name = "frameautsoc_icon"
+	# 		spriteType = "GFX_party_background"
+	# 		position = { x= 0 y = 0 }
+	# 		Orientation = "UPPER_LEFT"
+	# 		pdx_tooltip = "frameautsoc_tooltip"
+	# 		scale = 1
+	# 	}
+	# }
+	# containerWindowType = {
+	# 	name = "frameradsoc"
+	# 	position = { x = @X_FRAME y = @Y_RADSOC2 }
+	# 	iconType ={
+	# 		name = "frameradsoc_icon"
+	# 		spriteType = "GFX_party_background"
+	# 		position = { x= 0 y = 0 }
+	# 		Orientation = "UPPER_LEFT"
+	# 		pdx_tooltip = "frameradsoc_tooltip"
+	# 		scale = 1
+	# 	}
+	# }
+	# containerWindowType = {
+	# 	name = "framesocdem"
+	# 	position = { x = @X_FRAME y = @Y_SOCDEM2 }
+	# 	iconType ={
+	# 		name = "framesocdem_icon"
+	# 		spriteType = "GFX_party_background"
+	# 		position = { x= 0 y = 0 }
+	# 		Orientation = "UPPER_LEFT"
+	# 		pdx_tooltip = "framesocdem_tooltip"
+	# 		scale = 1
+	# 	}
+	# }
+	# containerWindowType = {
+	# 	name = "framesoclib"
+	# 	position = { x = @X_FRAME y = @Y_SOCLIB2 }
+	# 	iconType ={
+	# 		name = "framesoclib_icon"
+	# 		spriteType = "GFX_party_background"
+	# 		position = { x= 0 y = 0 }
+	# 		Orientation = "UPPER_LEFT"
+	# 		pdx_tooltip = "framesoclib_tooltip"
+	# 		scale = 1
+	# 	}
+	# }
+	# containerWindowType = {
+	# 	name = "framenatlib"
+	# 	position = { x = @X_FRAME y = @Y_NATLIB2 }
+	# 	iconType ={
+	# 		name = "framenatlib_icon"
+	# 		spriteType = "GFX_party_background"
+	# 		position = { x= 0 y = 0 }
+	# 		Orientation = "UPPER_LEFT"
+	# 		pdx_tooltip = "framenatlib_tooltip"
+	# 		scale = 1
+	# 	}
+	# }
+	# containerWindowType = {
+	# 	name = "framelibcon"
+	# 	position = { x = @X_FRAME y = @Y_LIBCON2 }
+	# 	iconType ={
+	# 		name = "framelibcon_icon"
+	# 		spriteType = "GFX_party_background"
+	# 		position = { x= 0 y = 0 }
+	# 		Orientation = "UPPER_LEFT"
+	# 		pdx_tooltip = "framelibcon_tooltip"
+	# 		scale = 1
+	# 	}
+	# }
+	# containerWindowType = {
+	# 	name = "framesoccon"
+	# 	position = { x = @X_FRAME y = @Y_SOCCON2 }
+	# 	iconType ={
+	# 		name = "framesoccon_icon"
+	# 		spriteType = "GFX_party_background"
+	# 		position = { x= 0 y = 0 }
+	# 		Orientation = "UPPER_LEFT"
+	# 		pdx_tooltip = "framesoccon_tooltip"
+	# 		scale = 1
+	# 	}
+	# }
+	# containerWindowType = {
+	# 	name = "framenatcon"
+	# 	position = { x = @X_FRAME y = @Y_NATCON2 }
+	# 	iconType ={
+	# 		name = "framenatcon_icon"
+	# 		spriteType = "GFX_party_background"
+	# 		position = { x= 0 y = 0 }
+	# 		Orientation = "UPPER_LEFT"
+	# 		pdx_tooltip = "framenatcon_tooltip"
+	# 		scale = 1
+	# 	}
+	# }
+	# containerWindowType = {
+	# 	name = "frameneu"
+	# 	position = { x = @X_FRAME y = @Y_AUTDEM2 }
+	# 	iconType ={
+	# 		name = "frameneu_icon"
+	# 		spriteType = "GFX_party_background"
+	# 		position = { x= 0 y =0 }
+	# 		Orientation = "UPPER_LEFT"
+	# 		pdx_tooltip = "frameautdem_tooltip"
+	# 		scale = 1
+	# 	}
+	# }
+	# containerWindowType = {
+	# 	name = "frameautdes"
+	# 	position = { x = @X_FRAME y = @Y_AUTDES2 }
+	# 	iconType ={
+	# 		name = "frameautdes_icon"
+	# 		spriteType = "GFX_party_background"
+	# 		position = { x= 0 y = 0 }
+	# 		Orientation = "UPPER_LEFT"
+	# 		pdx_tooltip = "frameautdes_tooltip"
+	# 		scale = 1
+	# 	}
+	# }
+	# containerWindowType = {
+	# 	name = "framefas"
+	# 	position = { x = @X_FRAME y = @Y_FAS2 }
+	# 	iconType ={
+	# 		name = "framefas_icon"
+	# 		spriteType = "GFX_party_background"
+	# 		position = { x= 0 y = 0 }
+	# 		Orientation = "UPPER_LEFT"
+	# 		pdx_tooltip = "framefas_tooltip"
+	# 		scale = 1
+	# 	}
+	# }
+}

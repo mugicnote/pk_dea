@@ -267,6 +267,16 @@ spriteTypes = {
 		texturefile = "gfx/texticons/decision_cat_introduction_bill_National_Assembly_decisions.dds"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_decision_cat_Manchurian_Incident"
+		texturefile = "gfx/texticons/decision_cat_Manchurian_Incident.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_decision_cat_factional_rivalry"
+		texturefile = "gfx/texticons/decision_cat_factional_rivalry.dds"
+		legacy_lazy_load = no
+	}
 
 	spriteType = {
 		name = "GFX_kor_start_view"
@@ -286,6 +296,40 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_seoul_metro"
 		texturefile = "gfx/texticons/decision_seoul_metro.dds"
+
+	spriteType = {
+		name = "GFX_construction_speed_texticon"
+		texturefile = "gfx/texticons/mini_icon/construction_speed_texticon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_factory_output_texticon"
+		texturefile = "gfx/texticons/mini_icon/factory_output_texticon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_consumer_goods_texticon"
+		texturefile = "gfx/texticons/mini_icon/consumer_goods_texticon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_political_advisor_cost_texticon"
+		texturefile = "gfx/texticons/mini_icon/political_advisor_cost_texticon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_research_speed_texticon"
+		texturefile = "gfx/texticons/mini_icon/research_speed_texticon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_attack_core_texticon"
+		texturefile = "gfx/texticons/mini_icon/attack_core_texticon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_attack_texticon"
+		texturefile = "gfx/texticons/mini_icon/attack_texticon.dds"
 		legacy_lazy_load = no
 	}
 }

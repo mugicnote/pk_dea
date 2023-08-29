@@ -921,50 +921,50 @@ guiTypes = {
 		}
 	}
 	
-	containerWindowType = {
-		name = "political_party_info_entry"
-		size = { width = 330 height = 18 }
-		position = { x = 9 y = 132 }
-		clipping = no
+	# containerWindowType = {
+	# 	name = "political_party_info_entry"
+	# 	size = { width = 330 height = 18 }
+	# 	position = { x = 9 y = 132 }
+	# 	clipping = no
 
-		iconType = {
-			name = "leading_pol_party_bg"
-			position = { x = 57 y = 6 }
-			spriteType = "GFX_leading_pol_party_bg"
-			scale = 0.85
-		}
+	# 	iconType = {
+	# 		name = "leading_pol_party_bg"
+	# 		position = { x = 57 y = 6 }
+	# 		spriteType = "GFX_leading_pol_party_bg"
+	# 		scale = 0.85
+	# 	}
 
-		iconType = {
-			name = "color_block_bg"
-			position = { x = 60 y = 2 }
-			spriteType = "GFX_pol_party_colour_bg"
-		}
+	# 	iconType = {
+	# 		name = "color_block_bg"
+	# 		position = { x = 60 y = 2 }
+	# 		spriteType = "GFX_pol_party_colour_bg"
+	# 	}
 
-		iconType = {
-			name = "color_block"
-			position = { x = 64 y = 6 }
-			spriteType = "GFX_pol_party_colour"
-		}
+	# 	iconType = {
+	# 		name = "color_block"
+	# 		position = { x = 64 y = 6 }
+	# 		spriteType = "GFX_pol_party_colour"
+	# 	}
 
-		#instantTextboxType = {
-		#	name = "score"
-		#	position = { x = 160 y = 4 }
-		#	font = "hoi_16mbs"
-		#	text = "score"
-		#	maxWidth = 60
-		#	maxHeight = 18
-		#}
+	# 	#instantTextboxType = {
+	# 	#	name = "score"
+	# 	#	position = { x = 160 y = 4 }
+	# 	#	font = "hoi_16mbs"
+	# 	#	text = "score"
+	# 	#	maxWidth = 60
+	# 	#	maxHeight = 18
+	# 	#}
 
-		instantTextboxType = {
-			name = "name"
-			position = { x = 82 y = 4 }
-			font = "cg_16b"
-			text = "party name"
-			fixedsize = yes
-			maxWidth = 170
-			maxHeight = 18
-		}
-	}
+	# 	instantTextboxType = {
+	# 		name = "name"
+	# 		position = { x = 82 y = 4 }
+	# 		font = "cg_16b"
+	# 		text = "party name"
+	# 		fixedsize = yes
+	# 		maxWidth = 170
+	# 		maxHeight = 18
+	# 	}
+	# }
 	
 	containerWindowType = {
 		name = "manage_subjects_window"

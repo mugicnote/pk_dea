@@ -1,0 +1,187 @@
+# scripted_gui = {
+# 	Militrary_progress_bar_gui = {
+# 		context_type = decision_category
+		
+# 		window_name = "Militrary_progress_bar_gui"
+
+# 		visible = {
+# 			always = yes
+# 		}
+		
+# 		properties = {
+# 			military_progress = {
+# 				frame = CURRENT_MILITARY_PROGRESS
+# 			}
+# 			military_bar = {
+# 				x = CURRENT_MILITARY_BAR
+# 			}
+# 		}
+# 	}
+# }
+
+scripted_gui = {
+	KOR_GUI_Manchurian_Incident_Decision_GUI = {
+		context_type = decision_category
+		window_name = "KOR_GUI_Manchurian_Incident_Decision_GUI"
+		
+		visible = {
+			always = yes
+		}
+		
+		effects = {
+			ENG_GUI_Harbin_map_click = {
+				Manchurian_Incident_flag_reset = yes
+				set_country_flag = KOR_show_Harbin
+				set_variable = {
+					Local_status = Harbin_Local_status
+				}
+				Manchurian_Incident_Calculation = yes
+			}
+			ENG_GUI_Andong_map_click = {
+				Manchurian_Incident_flag_reset = yes
+				set_country_flag = KOR_show_Andong
+				set_variable = {
+					Local_status = Andong_Local_status
+				}
+				Manchurian_Incident_Calculation = yes
+			}
+			ENG_GUI_Fengtian_map_click = {
+				Manchurian_Incident_flag_reset = yes
+				set_country_flag = KOR_show_Fengtian
+				set_variable = {
+					Local_status = Fengtian_Local_status
+				}
+				Manchurian_Incident_Calculation = yes
+			}
+			ENG_GUI_Gilljiang_map_click = {
+				Manchurian_Incident_flag_reset = yes
+				set_country_flag = KOR_show_Gilljiang
+				set_variable = {
+					Local_status = Gilljiang_Local_status
+				}
+				Manchurian_Incident_Calculation = yes
+			}
+			ENG_GUI_Dalian_map_click = {
+				Manchurian_Incident_flag_reset = yes
+				set_country_flag = KOR_show_Dalian
+				set_variable = {
+					Local_status = Dalian_Local_status
+				}
+				Manchurian_Incident_Calculation = yes
+			}
+			ENG_GUI_Songjiang_map_click = {
+				Manchurian_Incident_flag_reset = yes
+				set_country_flag = KOR_show_Songjiang
+				set_variable = {
+					Local_status = Songjiang_Local_status
+				}
+				Manchurian_Incident_Calculation = yes
+			}
+			ENG_GUI_Heejang_map_click = {
+				Manchurian_Incident_flag_reset = yes
+				set_country_flag = KOR_show_Heejang
+				set_variable = {
+					Local_status = Heejang_Local_status
+				}
+				Manchurian_Incident_Calculation = yes
+			}
+			ENG_GUI_Jinzhou_map_click = {
+				Manchurian_Incident_flag_reset = yes
+				set_country_flag = KOR_show_Jinzhou
+				set_variable = {
+					Local_status = Jinzhou_Local_status
+				}
+				Manchurian_Incident_Calculation = yes
+			}
+			ENG_GUI_Xuilan_map_click = {
+				Manchurian_Incident_flag_reset = yes
+				set_country_flag = KOR_show_Xuilan
+				set_variable = {
+					Local_status = Xuilan_Local_status
+				}
+				Manchurian_Incident_Calculation = yes
+			}
+			ENG_GUI_Liaobei_map_click = {
+				Manchurian_Incident_flag_reset = yes
+				set_country_flag = KOR_show_Liaobei
+				set_variable = {
+					Local_status = Liaobei_Local_status
+				}
+				Manchurian_Incident_Calculation = yes
+			}
+			ENG_GUI_Longjiang_map_click = {
+				Manchurian_Incident_flag_reset = yes
+				set_country_flag = KOR_show_Longjiang
+				set_variable = {
+					Local_status = Longjiang_Local_status
+				}
+				Manchurian_Incident_Calculation = yes
+			}
+			ENG_GUI_Xingan_map_click = {
+				Manchurian_Incident_flag_reset = yes
+				set_country_flag = KOR_show_Xingan
+				set_variable = {
+					Local_status = Xingan_Local_status
+				}
+				Manchurian_Incident_Calculation = yes
+			}
+			ENG_GUI_Hehe_map_click = {
+				Manchurian_Incident_flag_reset = yes
+				set_country_flag = KOR_show_Hehe
+				set_variable = {
+					Local_status = Hehe_Local_status
+				}
+				Manchurian_Incident_Calculation = yes
+			}
+			ENG_GUI_Haiman_map_click = {
+				Manchurian_Incident_flag_reset = yes
+				set_country_flag = KOR_show_Haiman
+				set_variable = {
+					Local_status = Haiman_Local_status
+				}
+				Manchurian_Incident_Calculation = yes
+			}
+			ENG_GUI_Ruhr_map_click = {
+				Manchurian_Incident_flag_reset = yes
+				set_country_flag = KOR_show_Ruhr
+				set_variable = {
+					Local_status = Ruhr_Local_status
+				}
+				Manchurian_Incident_Calculation = yes
+			}
+			ENG_GUI_NorthRuhr_map_click = {
+				Manchurian_Incident_flag_reset = yes
+				set_country_flag = KOR_show_NorthRuhr
+				set_variable = {
+					Local_status = NorthRuhr_Local_status
+				}
+				Manchurian_Incident_Calculation = yes
+			}
+				# clr_country_flag = KOR_show_Andong
+				# clr_country_flag = KOR_show_Fengtian
+				# clr_country_flag = KOR_show_Harbin
+				# clr_country_flag = KOR_show_Dalian
+				# clr_country_flag = KOR_show_Songjiang
+				# clr_country_flag = KOR_show_Gilljiang
+				# clr_country_flag = KOR_show_Heejang
+				# clr_country_flag = KOR_show_Hehe
+				# clr_country_flag = KOR_show_Xuilan
+				# clr_country_flag = KOR_show_Longjiang
+				# clr_country_flag = KOR_show_Xingan
+				# clr_country_flag = KOR_show_Haiman
+				# clr_country_flag = KOR_show_Liaobei
+				# clr_country_flag = KOR_show_Jinzhou
+				# clr_country_flag = KOR_show_NorthRuhr
+				# clr_country_flag = KOR_show_Ruhr
+		}
+		
+		triggers = {
+		}
+		
+		properties = {
+			KOR_GUI_Manchurian_Incident_Local_status = {
+				image = "[Manchurian_Incident_Local_status_GUI_IMG]"
+			}
+		}
+	}
+}

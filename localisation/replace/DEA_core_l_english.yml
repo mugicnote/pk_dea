@@ -18,7 +18,7 @@
  TRIGGER_ALWAYS_FALSE:0 "이 중점은 향후 이벤트 혹은 결정으로 자동 완료됩니다."
 
  communism_acceptance:0 "공산주의 외교의 수용"
- authoritarian_socialism_acceptance:0 "급진사회주의 외교의 수용"
+ authoritarian_socialism_acceptance:0 "권위사회주의 외교의 수용"
  radical_socialism_acceptance:0 "급진사회주의 외교의 수용"
  social_democracy_acceptance:0 "사회민주주의 외교의 수용"
  social_liberalism_acceptance:0 "사회자유주의 외교의 수용"
@@ -31,7 +31,7 @@
  fascism_acceptance:0 "파시즘 외교의 수용"
 
  communism_drift:0 "일일 공산주의 지지"
- authoritarian_socialism_drift:0 "일일 급진사회주의 지지"
+ authoritarian_socialism_drift:0 "일일 권위사회주의 지지"
  radical_socialism_drift:0 "일일 급진사회주의 지지"
  social_democracy_drift:0 "일일 사회민주주의 지지"
  social_liberalism_drift:0 "일일 사회자유주의 지지"

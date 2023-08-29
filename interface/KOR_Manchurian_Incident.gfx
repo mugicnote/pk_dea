@@ -1,0 +1,110 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_Manchuria_map"
+		texturefile = "gfx/interface/Manchurian_Incident/Manchuria_map.dds"
+	}
+	spriteType = {
+		name = "GFX_Harbin_map"
+		texturefile = "gfx/interface/Manchurian_Incident/Harbin_map.dds"
+	}
+	spriteType = {
+		name = "GFX_Andong_map"
+		texturefile = "gfx/interface/Manchurian_Incident/Andong_map.dds"
+	}
+	spriteType = {
+		name = "GFX_Fengtian_map"
+		texturefile = "gfx/interface/Manchurian_Incident/Fengtian_map.dds"
+	}
+	spriteType = {
+		name = "GFX_Gilljiang_map"
+		texturefile = "gfx/interface/Manchurian_Incident/Gilljiang_map.dds"
+	}
+	spriteType = {
+		name = "GFX_Dalian_map"
+		texturefile = "gfx/interface/Manchurian_Incident/Dalian_map.dds"
+	}
+	spriteType = {
+		name = "GFX_Songjiang_map"
+		texturefile = "gfx/interface/Manchurian_Incident/Songjiang_map.dds"
+	}
+	spriteType = {
+		name = "GFX_Heejang_map"
+		texturefile = "gfx/interface/Manchurian_Incident/Heejang_map.dds"
+	}
+	spriteType = {
+		name = "GFX_Jinzhou_map"
+		texturefile = "gfx/interface/Manchurian_Incident/Jinzhou_map.dds"
+	}
+	spriteType = {
+		name = "GFX_Xuilan_map"
+		texturefile = "gfx/interface/Manchurian_Incident/Xuilan_map.dds"
+	}
+	spriteType = {
+		name = "GFX_Liaobei_map"
+		texturefile = "gfx/interface/Manchurian_Incident/Liaobei_map.dds"
+	}
+	spriteType = {
+		name = "GFX_Longjiang_map"
+		texturefile = "gfx/interface/Manchurian_Incident/Longjiang_map.dds"
+	}
+	spriteType = {
+		name = "GFX_Xingan_map"
+		texturefile = "gfx/interface/Manchurian_Incident/Xingan_map.dds"
+	}
+	spriteType = {
+		name = "GFX_Hehe_map"
+		texturefile = "gfx/interface/Manchurian_Incident/Hehe_map.dds"
+	}
+	spriteType = {
+		name = "GFX_Haiman_map"
+		texturefile = "gfx/interface/Manchurian_Incident/Haiman_map.dds"
+	}
+	spriteType = {
+		name = "GFX_Ruhr_map"
+		texturefile = "gfx/interface/Manchurian_Incident/Ruhr_map.dds"
+	}
+	spriteType = {
+		name = "GFX_NorthRuhr_map"
+		texturefile = "gfx/interface/Manchurian_Incident/NorthRuhr_map.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Local_status_KOR"
+		texturefile = "gfx/interface/Manchurian_Incident/Local_status_KOR.dds"
+	}
+	spriteType = {
+		name = "GFX_Local_status_CHI"
+		texturefile = "gfx/interface/Manchurian_Incident/Local_status_CHI.dds"
+	}
+	spriteType = {
+		name = "GFX_Local_status_HALF"
+		texturefile = "gfx/interface/Manchurian_Incident/Local_status_HALF.dds"
+	}
+
+	progressbartype = {
+		name = "GFX_ENG_GUI_Maggie_Decision_GUI_Bar"
+		textureFile1 = "gfx/interface/england_gui/Decision_GUIs/ENG_GUI_Maggie_Decision_GUI_Bar.dds"
+		textureFile2 = "gfx/interface/england_gui/Decision_GUIs/ENG_GUI_Maggie_Decision_GUI_Bar_bg.dds"
+		color = { 0.0 0.0 0.0 }
+		colortwo = { 0.0 0.0 0.0 }
+		size = { 
+			x = 448
+			y = 27
+		}
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = yes
+	}
+	spriteType = {
+		name = "GFX_ENG_GUI_Macmillan_Decision_GUI_Bar_Frame"
+		texturefile = "gfx/interface/england_gui/Decision_GUIs/ENG_GUI_Macmillan_Decision_GUI_Bar_Frame.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_Portrait_Thatcher_Decision"
+		texturefile = "gfx/interface/england_gui/Decision_GUIs/Thatcher_Decision.dds"
+	}
+	spriteType = {
+		name = "GFX_ENG_Portrait_Old_Guard_Decision"
+		texturefile = "gfx/interface/england_gui/Decision_GUIs/Old_Guard_Decision.dds"
+	}
+}

@@ -274,3 +274,4 @@ NAC = "countries/Nanchang clique.txt"
 HNC = "countries/Hunan clique.txt" #HUN은 헝가리가 있음으로 HNC로 대체
 GIZ = "countries/Guizhou clique.txt"
 KNM = "countries/North Manchukou government.txt" #북만주 임시 군사정부 - 북만주 국민정부
+TAI = "countries/Taiwan"

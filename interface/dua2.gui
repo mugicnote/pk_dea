@@ -1,18 +1,67 @@
+@rank_frame_1_Y = 92
+@rank_1_Y = 100
+@portrait_1_Y = 130
+@leader_frame_1_Y = 120
+@name_frame_1_Y = 345
+
+@rank_frame_2_Y = 442
+@rank_2_Y = 450
+@portrait_2_Y = 480
+@leader_frame_2_Y = 470
+@name_frame_2_Y = 695
+
+@rank_frame_1_X = 82
+@rank_1_X = 90
+@portrait_1_X = 88
+@leader_frame_1_X = 80
+@name_1_X = 90
+
+@rank_frame_2_X = 262
+@rank_2_X = 270
+@portrait_2_X = 268
+@leader_frame_2_X = 260
+@name_2_X = 270
+
+@rank_frame_3_X = 442
+@rank_3_X = 450
+@portrait_3_X = 448
+@leader_frame_3_X = 440
+@name_3_X = 450
+
+@rank_frame_4_X = 622
+@rank_4_X = 630
+@portrait_4_X = 628
+@leader_frame_4_X = 620
+@name_4_X = 630
+
+@rank_frame_5_X = 802
+@rank_5_X = 810
+@portrait_5_X = 808
+@leader_frame_5_X = 800
+@name_5_X = 810
+
+@rank_frame_6_X = 982
+@rank_6_X = 990
+@portrait_6_X = 988
+@leader_frame_6_X = 980
+@name_6_X = 990
+
+
 guiTypes = {
 	containerWindowType = {
 		name = "cabinet_button_ui"
-		position = { x = 360 y = 380 }
+		position = { x = 365 y = 240 }
 		
 		buttonType = {
 			name = "cabinet_button"
-			position = { x = 0 y = 0 }
-			spriteType = "GFX_cabinet_button"
+			position = { x = 130 y = 10 }
+			spriteType = "GFX_button_right"
 			pdx_tooltip = "cabinet_button_tt"
 		}
 		
 		instantTextboxType = { #직책명
 			name = "cabinet_button_text"
-			position = { x = -17 y = 8 }
+			position = { x = -41 y = 12 }
 			font = "hoi_16mbs"
 			text = "국무위원 개요"
 			maxWidth = 155
@@ -25,7 +74,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "double_leader_system_popup_ui_window2"
 		position = { x = 0 y = 85 }
-		size = { width = 1145 height = 730 }
+		size = { width = 1145 height = 760 }
 		fade_time = 300
 		fade_type = linear
 		moveable = yes
@@ -52,26 +101,48 @@ guiTypes = {
 
 			instantTextboxType = { #개요
 				name = "FdS_general_outline"
-				position = { x = -30 y = 30 }
+				position = { x = 90 y = 30 }
 				font = "aldrich_36_outline"
 				text = "[This.FdS_front_name]"
 				maxWidth = 600
 				maxHeight = 20
-				format = center
-				vertical_alignment = center
+				format = left
+				vertical_alignment = left
+			}
+
+			instantTextboxType = { #개요
+				name = "FdS2_general_outline"
+				position = { x = 625 y = 388 }
+				font = "aldrich_24_outline"
+				text = "[This.FdS2_front_name]"
+				maxWidth = 600
+				maxHeight = 20
+				format = left
+				vertical_alignment = left
+			}
+
+			instantTextboxType = { #개요
+				name = "FdS3_semi_general_outline"
+				position = { x = 625 y = 417 }
+				font = "aldrich_20_outline"
+				text = "[This.FdS3_semi_front_name]"
+				maxWidth = 600
+				maxHeight = 20
+				format = left
+				vertical_alignment = left
 			}
 
 			###국무총리##
 			iconType = { #직책명 배경
 				name = "HoG1_rank_frame"
 				spriteType = "GFX_pol_leader_rank_frame"
-				position = { x = 80 y = 92 }		
+				position = { x = @rank_frame_1_X y = @rank_frame_1_Y }		
 				allwaystransparent = yes
 			}
 
 			instantTextboxType = { #직책명
 				name = "HoG_rank1"
-				position = { x = 87 y = 98 }
+				position = { x = @rank_1_X y = @rank_1_Y }
 				font = "hoi_20b"
 				text = "[This.HoG_rank1]"
 				maxWidth = 155
@@ -82,7 +153,7 @@ guiTypes = {
 
 			iconType = { #초상화
 				name = "HoG1"
-				position = { x = 87 y = 130 }
+				position = { x = @portrait_1_X y = @portrait_1_Y }
 				spriteType = "GFX_leader_unknown"
 				pdx_tooltip = "SECOND_LEADER_NAME1"
 				pdx_tooltip_delayed = "SECOND_LEADER_DESC1"
@@ -91,7 +162,7 @@ guiTypes = {
 			iconType = { #초상화 프레임
 				name = "leader_frame1"
 				spriteType = "GFX_pol_leader_frame"
-				position = { x = 79 y = 120 }		
+				position = { x = @leader_frame_1_X y = @leader_frame_1_Y }		
 				allwaystransparent = yes
 				pdx_tooltip = "SECOND_LEADER_NAME1"
 				pdx_tooltip_delayed = "SECOND_LEADER_DESC1"
@@ -99,7 +170,7 @@ guiTypes = {
 					
 			instantTextboxType = { #인물명
 				name = "FdS1_name"
-				position = { x = 88 y = 346 }
+				position = { x = @name_1_X y = @name_frame_1_Y }
 				font = "hoi_18mbs"
 				text = "[This.FdS1_name]"
 				maxWidth = 155
@@ -114,13 +185,13 @@ guiTypes = {
 			iconType = { #직책명 배경
 				name = "HoG2_rank_frame"
 				spriteType = "GFX_pol_leader_rank_frame"
-				position = { x = 80 y = 402 }	
+				position = { x = @rank_frame_1_X y = @rank_frame_2_Y }	
 				allwaystransparent = yes
 			}
 
 			instantTextboxType = { #직책명
 				name = "HoG_rank2"
-				position = { x = 87 y = 408 }
+				position = { x = @rank_1_X y = @rank_2_Y }
 				font = "hoi_20b"
 				text = "[This.HoG_rank2]"
 				maxWidth = 155
@@ -131,7 +202,7 @@ guiTypes = {
 
 			iconType = { #초상화
 				name = "HoG2"
-				position = { x = 87 y = 440 }
+				position = { x = @portrait_1_X y = @portrait_2_Y }
 				spriteType = "GFX_leader_unknown"
 				pdx_tooltip = "SECOND_LEADER_NAME2"
 				pdx_tooltip_delayed = "SECOND_LEADER_DESC2"
@@ -140,7 +211,7 @@ guiTypes = {
 			iconType = { #초상화 프레임
 				name = "leader_frame2"
 				spriteType = "GFX_pol_leader_frame"
-				position = { x = 79 y = 430 }		
+				position = { x = @leader_frame_1_X y = @leader_frame_2_Y }		
 				allwaystransparent = yes
 				pdx_tooltip = "SECOND_LEADER_NAME2"
 				pdx_tooltip_delayed = "SECOND_LEADER_DESC2"
@@ -148,7 +219,7 @@ guiTypes = {
 					
 			instantTextboxType = { #인물명
 				name = "FdS2_name"
-				position = { x = 88 y = 656 }
+				position = { x = @name_1_X y = @name_frame_2_Y }
 				font = "hoi_18mbs"
 				text = "[This.FdS2_name]"
 				maxWidth = 155
@@ -163,13 +234,13 @@ guiTypes = {
 			iconType = { #직책명 배경
 				name = "HoG3_rank_frame"
 				spriteType = "GFX_pol_leader_rank_frame"
-				position = { x = 260 y = 92 }	
+				position = { x = @rank_frame_2_X y = @rank_frame_1_Y }	
 				allwaystransparent = yes
 			}
 
 			instantTextboxType = { #직책명
 				name = "HoG_rank3"
-				position = { x = 266 y = 98 }
+				position = { x = @rank_2_X y = @rank_1_Y }
 				font = "hoi_20b"
 				text = "[This.HoG_rank3]"
 				maxWidth = 155
@@ -180,7 +251,7 @@ guiTypes = {
 
 			iconType = { #초상화
 				name = "HoG3"
-				position = { x = 267 y = 130 }
+				position = { x = @portrait_2_X y = @portrait_1_Y }
 				spriteType = "GFX_leader_unknown"
 				pdx_tooltip = "SECOND_LEADER_NAME3"
 				pdx_tooltip_delayed = "SECOND_LEADER_DESC3"
@@ -189,7 +260,7 @@ guiTypes = {
 			iconType = { #초상화 프레임
 				name = "leader_frame3"
 				spriteType = "GFX_pol_leader_frame"
-				position = { x = 259 y = 120 }		
+				position = { x = @leader_frame_2_X y = @leader_frame_1_Y }		
 				allwaystransparent = yes
 				pdx_tooltip = "SECOND_LEADER_NAME3"
 				pdx_tooltip_delayed = "SECOND_LEADER_DESC3"
@@ -197,7 +268,7 @@ guiTypes = {
 					
 			instantTextboxType = { #인물명
 				name = "FdS3_name"
-				position = { x = 268 y = 346 }
+				position = { x = @name_2_X y = @name_frame_1_Y }
 				font = "hoi_18mbs"
 				text = "[This.FdS3_name]"
 				maxWidth = 155
@@ -212,13 +283,13 @@ guiTypes = {
 			iconType = { #직책명 배경
 				name = "HoG4_rank_frame"
 				spriteType = "GFX_pol_leader_rank_frame"
-				position = { x = 260 y = 402 }	
+				position = { x = @rank_frame_2_X y = @rank_frame_2_Y }	
 				allwaystransparent = yes
 			}
 
 			instantTextboxType = { #직책명
 				name = "HoG_rank4"
-				position = { x = 266 y = 408 }
+				position = { x = @rank_2_X y = @rank_2_Y }
 				font = "hoi_20b"
 				text = "[This.HoG_rank4]"
 				maxWidth = 155
@@ -229,7 +300,7 @@ guiTypes = {
 
 			iconType = { #초상화
 				name = "HoG4"
-				position = { x = 267 y = 440 }
+				position = { x = @portrait_2_X y = @portrait_2_Y }
 				spriteType = "GFX_leader_unknown"
 				pdx_tooltip = "SECOND_LEADER_NAME4"
 				pdx_tooltip_delayed = "SECOND_LEADER_DESC4"
@@ -238,7 +309,7 @@ guiTypes = {
 			iconType = { #초상화 프레임
 				name = "leader_frame4"
 				spriteType = "GFX_pol_leader_frame"
-				position = { x = 259 y = 430 }		
+				position = { x = @leader_frame_2_X y = @leader_frame_2_Y }		
 				allwaystransparent = yes
 				pdx_tooltip = "SECOND_LEADER_NAME4"
 				pdx_tooltip_delayed = "SECOND_LEADER_DESC4"
@@ -246,7 +317,7 @@ guiTypes = {
 					
 			instantTextboxType = { #인물명
 				name = "FdS4_name"
-				position = { x = 268 y = 656 }
+				position = { x = @name_2_X y = @name_frame_2_Y }
 				font = "hoi_18mbs"
 				text = "[This.FdS4_name]"
 				maxWidth = 155
@@ -261,13 +332,13 @@ guiTypes = {
 			iconType = { #직책명 배경
 				name = "HoG5_rank_frame"
 				spriteType = "GFX_pol_leader_rank_frame"
-				position = { x = 440 y = 92 }
+				position = { x = @rank_frame_3_X y = @rank_frame_1_Y }
 				allwaystransparent = yes
 			}
 
 			instantTextboxType = { #직책명
 				name = "HoG_rank5"
-				position = { x = 446 y = 98 }
+				position = { x = @rank_3_X y = @rank_1_Y }
 				font = "hoi_20b"
 				text = "[This.HoG_rank5]"
 				maxWidth = 155
@@ -278,7 +349,7 @@ guiTypes = {
 
 			iconType = { #초상화
 				name = "HoG5"
-				position = { x = 447 y = 130 }
+				position = { x = @portrait_3_X y = @portrait_1_Y }
 				spriteType = "GFX_leader_unknown"
 				pdx_tooltip = "SECOND_LEADER_NAME5"
 				pdx_tooltip_delayed = "SECOND_LEADER_DESC5"
@@ -287,7 +358,7 @@ guiTypes = {
 			iconType = { #초상화 프레임
 				name = "leader_frame5"
 				spriteType = "GFX_pol_leader_frame"
-				position = { x = 439 y = 120 }		
+				position = { x = @leader_frame_3_X y = @leader_frame_1_Y }		
 				allwaystransparent = yes
 				pdx_tooltip = "SECOND_LEADER_NAME5"
 				pdx_tooltip_delayed = "SECOND_LEADER_DESC5"
@@ -295,7 +366,7 @@ guiTypes = {
 					
 			instantTextboxType = { #인물명
 				name = "FdS5_name"
-				position = { x = 448 y = 346 }
+				position = { x = @name_3_X y = @name_frame_1_Y }
 				font = "hoi_18mbs"
 				text = "[This.FdS5_name]"
 				maxWidth = 155
@@ -306,66 +377,17 @@ guiTypes = {
 			}
 
 
-			###교통부장관###
-			iconType = { #직책명 배경
-				name = "HoG6_rank_frame"
-				spriteType = "GFX_pol_leader_rank_frame"
-				position = { x = 440 y = 402 }
-				allwaystransparent = yes
-			}
-
-			instantTextboxType = { #직책명
-				name = "HoG_rank6"
-				position = { x = 446 y = 408 }
-				font = "hoi_20b"
-				text = "[This.HoG_rank6]"
-				maxWidth = 155
-				maxHeight = 20
-				format = center
-				vertical_alignment = center
-			}
-
-			iconType = { #초상화
-				name = "HoG6"
-				position = { x = 447 y = 440 }
-				spriteType = "GFX_leader_unknown"
-				pdx_tooltip = "SECOND_LEADER_NAME6"
-				pdx_tooltip_delayed = "SECOND_LEADER_DESC6"
-			}
-			
-			iconType = { #초상화 프레임
-				name = "leader_frame6"
-				spriteType = "GFX_pol_leader_frame"
-				position = { x = 439 y = 430 }		
-				allwaystransparent = yes
-				pdx_tooltip = "SECOND_LEADER_NAME6"
-				pdx_tooltip_delayed = "SECOND_LEADER_DESC6"
-			}
-					
-			instantTextboxType = { #인물명
-				name = "FdS6_name"
-				position = { x = 448 y = 656 }
-				font = "hoi_18mbs"
-				text = "[This.FdS6_name]"
-				maxWidth = 155
-				maxHeight = 20
-				format = center
-				vertical_alignment = center
-				pdx_tooltip = "SECOND_LEADER_NAME6"
-			}
-
-
 			###국방부장관###
 			iconType = { #직책명 배경
 				name = "HoG7_rank_frame"
 				spriteType = "GFX_pol_leader_rank_frame"
-				position = { x = 620 y = 92 }
+				position = { x = @rank_frame_4_X y = @rank_frame_1_Y }
 				allwaystransparent = yes
 			}
 
 			instantTextboxType = { #직책명
 				name = "HoG_rank7"
-				position = { x = 626 y = 98 }
+				position = { x = @rank_4_X y = @rank_1_Y }
 				font = "hoi_20b"
 				text = "[This.HoG_rank7]"
 				maxWidth = 155
@@ -376,7 +398,7 @@ guiTypes = {
 
 			iconType = { #초상화
 				name = "HoG7"
-				position = { x = 627 y = 130 }
+				position = { x = @portrait_4_X y = @portrait_1_Y }
 				spriteType = "GFX_leader_unknown"
 				pdx_tooltip = "SECOND_LEADER_NAME7"
 				pdx_tooltip_delayed = "SECOND_LEADER_DESC7"
@@ -385,7 +407,7 @@ guiTypes = {
 			iconType = { #초상화 프레임
 				name = "leader_frame7"
 				spriteType = "GFX_pol_leader_frame"
-				position = { x = 619 y = 120 }		
+				position = { x = @leader_frame_4_X y = @leader_frame_1_Y }		
 				allwaystransparent = yes
 				pdx_tooltip = "SECOND_LEADER_NAME7"
 				pdx_tooltip_delayed = "SECOND_LEADER_DESC7"
@@ -393,7 +415,7 @@ guiTypes = {
 					
 			instantTextboxType = { #인물명
 				name = "FdS7_name"
-				position = { x = 628 y = 346 }
+				position = { x = @name_4_X y = @name_frame_1_Y }
 				font = "hoi_18mbs"
 				text = "[This.FdS7_name]"
 				maxWidth = 155
@@ -404,19 +426,19 @@ guiTypes = {
 			}
 
 
-			###노동부장관###
+			###교통부장관###
 			iconType = { #직책명 배경
-				name = "HoG8_rank_frame"
+				name = "HoG6_rank_frame"
 				spriteType = "GFX_pol_leader_rank_frame"
-				position = { x = 620 y = 402 }
+				position = { x = @rank_frame_4_X y = @rank_frame_2_Y }
 				allwaystransparent = yes
 			}
 
 			instantTextboxType = { #직책명
-				name = "HoG_rank8"
-				position = { x = 626 y = 408 }
+				name = "HoG_rank6"
+				position = { x = @rank_4_X y = @rank_2_Y }
 				font = "hoi_20b"
-				text = "[This.HoG_rank8]"
+				text = "[This.HoG_rank6]"
 				maxWidth = 155
 				maxHeight = 20
 				format = center
@@ -424,32 +446,32 @@ guiTypes = {
 			}
 
 			iconType = { #초상화
-				name = "HoG8"
-				position = { x = 627 y = 440 }
+				name = "HoG6"
+				position = { x = @portrait_4_X y = @portrait_2_Y }
 				spriteType = "GFX_leader_unknown"
-				pdx_tooltip = "SECOND_LEADER_NAME8"
-				pdx_tooltip_delayed = "SECOND_LEADER_DESC8"
+				pdx_tooltip = "SECOND_LEADER_NAME6"
+				pdx_tooltip_delayed = "SECOND_LEADER_DESC6"
 			}
 			
 			iconType = { #초상화 프레임
-				name = "leader_frame8"
+				name = "leader_frame6"
 				spriteType = "GFX_pol_leader_frame"
-				position = { x = 619 y = 430 }		
+				position = { x = @leader_frame_4_X y = @leader_frame_2_Y }		
 				allwaystransparent = yes
-				pdx_tooltip = "SECOND_LEADER_NAME8"
-				pdx_tooltip_delayed = "SECOND_LEADER_DESC8"
+				pdx_tooltip = "SECOND_LEADER_NAME6"
+				pdx_tooltip_delayed = "SECOND_LEADER_DESC6"
 			}
 					
 			instantTextboxType = { #인물명
-				name = "FdS8_name"
-				position = { x = 628 y = 656 }
+				name = "FdS6_name"
+				position = { x = @name_4_X y = @name_frame_2_Y }
 				font = "hoi_18mbs"
-				text = "[This.FdS8_name]"
+				text = "[This.FdS6_name]"
 				maxWidth = 155
 				maxHeight = 20
 				format = center
 				vertical_alignment = center
-				pdx_tooltip = "SECOND_LEADER_NAME8"
+				pdx_tooltip = "SECOND_LEADER_NAME6"
 			}
 
 
@@ -457,13 +479,13 @@ guiTypes = {
 			iconType = { #직책명 배경
 				name = "HoG9_rank_frame"
 				spriteType = "GFX_pol_leader_rank_frame"
-				position = { x = 800 y = 92 }
+				position = { x = @rank_frame_5_X y = @rank_frame_1_Y }
 				allwaystransparent = yes
 			}
 
 			instantTextboxType = { #직책명
 				name = "HoG_rank9"
-				position = { x = 806 y = 98 }
+				position = { x = @rank_5_X y = @rank_1_Y }
 				font = "hoi_20b"
 				text = "[This.HoG_rank9]"
 				maxWidth = 155
@@ -474,7 +496,7 @@ guiTypes = {
 
 			iconType = { #초상화
 				name = "HoG9"
-				position = { x = 807 y = 130 }
+				position = { x = @portrait_5_X y = @portrait_1_Y }
 				spriteType = "GFX_leader_unknown"
 				pdx_tooltip = "SECOND_LEADER_NAME9"
 				pdx_tooltip_delayed = "SECOND_LEADER_DESC9"
@@ -483,7 +505,7 @@ guiTypes = {
 			iconType = { #초상화 프레임
 				name = "leader_frame9"
 				spriteType = "GFX_pol_leader_frame"
-				position = { x = 799 y = 120 }		
+				position = { x = @leader_frame_5_X y = @leader_frame_1_Y }		
 				allwaystransparent = yes
 				pdx_tooltip = "SECOND_LEADER_NAME9"
 				pdx_tooltip_delayed = "SECOND_LEADER_DESC9"
@@ -491,7 +513,7 @@ guiTypes = {
 					
 			instantTextboxType = { #인물명
 				name = "FdS9_name"
-				position = { x = 808 y = 346 }
+				position = { x = @name_5_X y = @name_frame_1_Y }
 				font = "hoi_18mbs"
 				text = "[This.FdS9_name]"
 				maxWidth = 155
@@ -502,19 +524,19 @@ guiTypes = {
 			}
 
 
-			###채신부장관###
+			###노동부장관###
 			iconType = { #직책명 배경
-				name = "HoG10_rank_frame"
+				name = "HoG8_rank_frame"
 				spriteType = "GFX_pol_leader_rank_frame"
-				position = { x = 800 y = 402 }
+				position = { x = @rank_frame_5_X y = @rank_frame_2_Y }
 				allwaystransparent = yes
 			}
 
 			instantTextboxType = { #직책명
-				name = "HoG_rank10"
-				position = { x = 806 y = 408 }
+				name = "HoG_rank8"
+				position = { x = @rank_5_X y = @rank_2_Y }
 				font = "hoi_20b"
-				text = "[This.HoG_rank10]"
+				text = "[This.HoG_rank8]"
 				maxWidth = 155
 				maxHeight = 20
 				format = center
@@ -522,32 +544,32 @@ guiTypes = {
 			}
 
 			iconType = { #초상화
-				name = "HoG10"
-				position = { x = 807 y = 440 }
+				name = "HoG8"
+				position = { x = @portrait_5_X y = @portrait_2_Y }
 				spriteType = "GFX_leader_unknown"
-				pdx_tooltip = "SECOND_LEADER_NAME10"
-				pdx_tooltip_delayed = "SECOND_LEADER_DESC10"
+				pdx_tooltip = "SECOND_LEADER_NAME8"
+				pdx_tooltip_delayed = "SECOND_LEADER_DESC8"
 			}
 			
 			iconType = { #초상화 프레임
-				name = "leader_frame10"
+				name = "leader_frame8"
 				spriteType = "GFX_pol_leader_frame"
-				position = { x = 799 y = 430 }		
+				position = { x = @leader_frame_5_X y = @leader_frame_2_Y }		
 				allwaystransparent = yes
-				pdx_tooltip = "SECOND_LEADER_NAME10"
-				pdx_tooltip_delayed = "SECOND_LEADER_DESC10"
+				pdx_tooltip = "SECOND_LEADER_NAME8"
+				pdx_tooltip_delayed = "SECOND_LEADER_DESC8"
 			}
 					
 			instantTextboxType = { #인물명
-				name = "FdS10_name"
-				position = { x = 808 y = 656 }
+				name = "FdS8_name"
+				position = { x = @name_5_X y = @name_frame_2_Y }
 				font = "hoi_18mbs"
-				text = "[This.FdS10_name]"
+				text = "[This.FdS8_name]"
 				maxWidth = 155
 				maxHeight = 20
 				format = center
 				vertical_alignment = center
-				pdx_tooltip = "SECOND_LEADER_NAME10"
+				pdx_tooltip = "SECOND_LEADER_NAME8"
 			}
 
 
@@ -555,13 +577,13 @@ guiTypes = {
 			iconType = { #직책명 배경
 				name = "HoG11_rank_frame"
 				spriteType = "GFX_pol_leader_rank_frame"
-				position = { x = 980 y = 92 }
+				position = { x = @rank_frame_6_X y = @rank_frame_1_Y }
 				allwaystransparent = yes
 			}
 
 			instantTextboxType = { #직책명
 				name = "HoG_rank11"
-				position = { x = 986 y = 98 }
+				position = { x = @rank_6_X y = @rank_1_Y }
 				font = "hoi_20b"
 				text = "[This.HoG_rank11]"
 				maxWidth = 155
@@ -572,7 +594,7 @@ guiTypes = {
 
 			iconType = { #초상화
 				name = "HoG11"
-				position = { x = 987 y = 130 }
+				position = { x = @portrait_6_X y = @portrait_1_Y }
 				spriteType = "GFX_leader_unknown"
 				pdx_tooltip = "SECOND_LEADER_NAME11"
 				pdx_tooltip_delayed = "SECOND_LEADER_DESC11"
@@ -581,7 +603,7 @@ guiTypes = {
 			iconType = { #초상화 프레임
 				name = "leader_frame11"
 				spriteType = "GFX_pol_leader_frame"
-				position = { x = 979 y = 120 }		
+				position = { x = @leader_frame_6_X y = @leader_frame_1_Y }	
 				allwaystransparent = yes
 				pdx_tooltip = "SECOND_LEADER_NAME11"
 				pdx_tooltip_delayed = "SECOND_LEADER_DESC11"
@@ -589,7 +611,7 @@ guiTypes = {
 					
 			instantTextboxType = { #인물명
 				name = "FdS11_name"
-				position = { x = 988 y = 346 }
+				position = { x = @name_6_X y = @name_frame_1_Y }
 				font = "hoi_18mbs"
 				text = "[This.FdS11_name]"
 				maxWidth = 155
@@ -597,6 +619,55 @@ guiTypes = {
 				format = center
 				vertical_alignment = center
 				pdx_tooltip = "SECOND_LEADER_NAME11"
+			}
+
+
+			###채신부장관###
+			iconType = { #직책명 배경
+				name = "HoG10_rank_frame"
+				spriteType = "GFX_pol_leader_rank_frame"
+				position = { x = @rank_frame_6_X y = @rank_frame_2_Y }
+				allwaystransparent = yes
+			}
+
+			instantTextboxType = { #직책명
+				name = "HoG_rank10"
+				position = { x = @rank_6_X y = @rank_2_Y }
+				font = "hoi_20b"
+				text = "[This.HoG_rank10]"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+
+			iconType = { #초상화
+				name = "HoG10"
+				position = { x = @portrait_6_X y = @portrait_2_Y }
+				spriteType = "GFX_leader_unknown"
+				pdx_tooltip = "SECOND_LEADER_NAME10"
+				pdx_tooltip_delayed = "SECOND_LEADER_DESC10"
+			}
+			
+			iconType = { #초상화 프레임
+				name = "leader_frame10"
+				spriteType = "GFX_pol_leader_frame"
+				position = { x = @leader_frame_6_X y = @leader_frame_2_Y }	
+				allwaystransparent = yes
+				pdx_tooltip = "SECOND_LEADER_NAME10"
+				pdx_tooltip_delayed = "SECOND_LEADER_DESC10"
+			}
+					
+			instantTextboxType = { #인물명
+				name = "FdS10_name"
+				position = { x = @name_6_X y = @name_frame_2_Y }
+				font = "hoi_18mbs"
+				text = "[This.FdS10_name]"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+				pdx_tooltip = "SECOND_LEADER_NAME10"
 			}
 		}
 	}

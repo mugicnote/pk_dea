@@ -399,3 +399,54 @@ defined_text = {
 		localization_key = KOR_legco_ord_1_title
 	}
 }
+
+#의원 포섭
+defined_text = {
+	name = KOR_legco_current_negotiation_title
+	text = {
+		trigger = { check_variable = { KOR_legco_current_negotiation_id = 0 } }
+		localization_key = KOR_legco_neg_0_title
+	}
+}
+
+defined_text = {
+	name = KOR_legco_current_ordinance_negotiation
+	text = {
+		trigger = { check_variable = { KOR_legco_current_negotiation_id = 0 } }
+		localization_key = "KOR_legco_0_negotiation"
+	}
+
+}
+
+defined_text = {
+	name = KOR_legco_current_negotiation_effect
+	text = {
+		trigger = { check_variable = { KOR_legco_current_negotiation_id = 0 } }
+		localization_key = KOR_legco_ord_0_negotiation_effect
+	}
+
+}
+
+#tno 수정
+defined_text = {
+	name = Legco_Current_negotiation_Support
+	text = {
+		trigger = {
+			check_variable = { KOR_legco_current_negotiation_id = 0 }
+		}
+		localization_key = KOR_no_Legco_Current_negotiation_Support_votes
+	}
+	#flag상황에 따른 일 수 크기를 바꿀 예정 / +1일씩은 투표 이벤트 형식 채택
+	# text = {
+	# 	trigger = {
+	# 		check_variable = { KOR_Current_Ordinance_Votes < 200 }
+	# 	}
+	# 	localization_key = KOR_ordinance_under_200_votes
+	# }
+	# text = {
+	# 	trigger = {
+	# 		check_variable = { KOR_Current_Ordinance_Votes > 199 }
+	# 	}
+	# 	localization_key = KOR_ordinance_over_200_votes
+	# }
+}

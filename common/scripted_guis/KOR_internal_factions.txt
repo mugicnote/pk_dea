@@ -1,0 +1,9 @@
+scripted_gui = {
+
+	KOR_internal_factions_ui = {
+		context_type = decision_category
+		window_name = "KOR_internal_factions_ui_window"
+	}
+	
+}
+

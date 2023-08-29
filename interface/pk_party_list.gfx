@@ -1,0 +1,58 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_pop_bg"
+		texturefile = "gfx/interface/pop_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_party_color_com"
+		texturefile = "gfx/interface/party_list/party_color_com.dds"
+	}
+	spriteType = {
+		name = "GFX_party_color_autsoc"
+		texturefile = "gfx/interface/party_list/party_color_autsoc.dds"
+	}
+	spriteType = {
+		name = "GFX_party_color_radsoc"
+		texturefile = "gfx/interface/party_list/party_color_radsoc.dds"
+	}
+	spriteType = {
+		name = "GFX_party_color_socdem"
+		texturefile = "gfx/interface/party_list/party_color_socdem.dds"
+	}
+	spriteType = {
+		name = "GFX_party_color_soclib"
+		texturefile = "gfx/interface/party_list/party_color_soclib.dds"
+	}
+	spriteType = {
+		name = "GFX_party_color_natlib"
+		texturefile = "gfx/interface/party_list/party_color_natlib.dds"
+	}
+	spriteType = {
+		name = "GFX_party_color_libcon"
+		texturefile = "gfx/interface/party_list/party_color_libcon.dds"
+	}
+	spriteType = {
+		name = "GFX_party_color_soccon"
+		texturefile = "gfx/interface/party_list/party_color_soccon.dds"
+	}
+	spriteType = {
+		name = "GFX_party_color_natcon"
+		texturefile = "gfx/interface/party_list/party_color_natcon.dds"
+	}
+	spriteType = {
+		name = "GFX_party_color_autdem"
+		texturefile = "gfx/interface/party_list/party_color_autdem.dds"
+	}
+	spriteType = {
+		name = "GFX_party_color_autdes"
+		texturefile = "gfx/interface/party_list/party_color_autdes.dds"
+	}
+	spriteType = {
+		name = "GFX_party_color_fas"
+		texturefile = "gfx/interface/party_list/party_color_fas.dds"
+	}
+	spriteType = {
+		name = "GFX_button_right"
+		texturefile = "gfx/interface/button_right.dds"
+	}
+}

@@ -51,7 +51,7 @@ defined_text = {
 		trigger = {
 			tag = KOR
 		}
-		localization_key = POSITION_main_opposition_party_leader5
+		localization_key = POSITION_main_opposition_party_leader1
 	}
 	text = {
 		trigger = {
@@ -74,7 +74,7 @@ defined_text = {
 		trigger = {
 			tag = KOR
 		}
-		localization_key = POSITION_main_opposition_party_leader5
+		localization_key = POSITION_main_opposition_party_leader1
 	}
 	text = {
 		trigger = {
@@ -163,7 +163,7 @@ defined_text = {
 		trigger = {
 			tag = KOR
 		}
-		localization_key = POSITION_main_opposition_party_leader13
+		localization_key = POSITION_main_opposition_party_leader2
 	}
 }
 
@@ -174,7 +174,7 @@ defined_text = {
 		trigger = {
 			tag = KOR
 		}
-		localization_key = POSITION_main_opposition_party_leader13
+		localization_key = POSITION_main_opposition_party_leader2
 	}
 }
 
@@ -183,9 +183,9 @@ defined_text = {
 	
 	text = {
 		trigger = {
-			has_country_flag = Kim_Beop_rin
+			has_country_flag = Kim_Seongsoo
 		}
-		localization_key = Kim_Beop_rin
+		localization_key = Kim_Seongsoo
 	}
 }
 defined_text = {
@@ -193,9 +193,9 @@ defined_text = {
 	
 	text = {
 		trigger = {
-			has_country_flag = Kim_Beop_rin
+			has_country_flag = Kim_Seongsoo
 		}
-		localization_key = GFX_Portrait_Kim_Beop_rin
+		localization_key = GFX_Portrait_Kim_Seongsoo
 	}
 }
 defined_text = {
@@ -203,9 +203,9 @@ defined_text = {
 
 	text = {
 		trigger = { 
-			has_country_flag = Kim_Beop_rin
+			has_country_flag = Kim_Seongsoo
 		}
-		localization_key = Kim_Beop_rin_desc
+		localization_key = Kim_Seongsoo_desc
 	}
 }
 
@@ -219,7 +219,7 @@ defined_text = {
 		trigger = {
 			tag = KOR
 		}
-		localization_key = POSITION_main_opposition_party_leader11
+		localization_key = POSITION_main_opposition_party_leader3
 	}
 	text = {
 		trigger = {
@@ -236,7 +236,7 @@ defined_text = {
 		trigger = {
 			tag = KOR
 		}
-		localization_key = POSITION_main_opposition_party_leader11
+		localization_key = POSITION_main_opposition_party_leader3
 	}
 	text = {
 		trigger = {
@@ -251,9 +251,9 @@ defined_text = {
 	
 	text = {
 		trigger = {
-			has_country_flag = Lee_Soon_yong
+			has_country_flag = Ham_TaeYoung
 		}
-		localization_key = Lee_Soon_yong
+		localization_key = Ham_TaeYoung
 	}
 	text = {
 		trigger = {
@@ -267,9 +267,9 @@ defined_text = {
 	
 	text = {
 		trigger = {
-			has_country_flag = Lee_Soon_yong
+			has_country_flag = Ham_TaeYoung
 		}
-		localization_key = GFX_Portrait_Lee_Soon_yong
+		localization_key = GFX_Portrait_Ham_TaeYoung
 	}
 	text = {
 		trigger = {
@@ -283,9 +283,9 @@ defined_text = {
 
 	text = {
 		trigger = { 
-			has_country_flag = Lee_Soon_yong
+			has_country_flag = Ham_TaeYoung
 		}
-		localization_key = Lee_Soon_yong_desc
+		localization_key = Ham_TaeYoung_desc
 	}
 	text = {
 		trigger = { 
@@ -306,7 +306,7 @@ defined_text = {
 		trigger = {
 			tag = KOR
 		}
-		localization_key = POSITION_main_opposition_party_leader16
+		localization_key = POSITION_main_opposition_party_leader4
 	}
 	text = {
 		trigger = {
@@ -323,7 +323,7 @@ defined_text = {
 		trigger = {
 			tag = KOR
 		}
-		localization_key = POSITION_main_opposition_party_leader16
+		localization_key = POSITION_main_opposition_party_leader4
 	}
 	text = {
 		trigger = {
@@ -338,9 +338,9 @@ defined_text = {
 	
 	text = {
 		trigger = {
-			has_country_flag = Yoon_Bo_Sun
+			has_country_flag = Kim_Hyun_cheol
 		}
-		localization_key = Yoon_Bo_Sun
+		localization_key = Kim_Hyun_cheol
 	}
 	text = {
 		trigger = {
@@ -354,9 +354,9 @@ defined_text = {
 	
 	text = {
 		trigger = {
-			has_country_flag = Yoon_Bo_Sun
+			has_country_flag = Kim_Hyun_cheol
 		}
-		localization_key = GFX_Portrait_Yoon_Bo_Sun
+		localization_key = GFX_Portrait_Kim_Hyun_cheol
 	}
 	text = {
 		trigger = {
@@ -370,9 +370,9 @@ defined_text = {
 
 	text = {
 		trigger = { 
-			has_country_flag = Yoon_Bo_Sun
+			has_country_flag = Kim_Hyun_cheol
 		}
-		localization_key = Yoon_Bo_Sun_desc
+		localization_key = Kim_Hyun_cheol_desc
 	}
 }
 
@@ -386,7 +386,7 @@ defined_text = {
 		trigger = {
 			tag = KOR
 		}
-		localization_key = POSITION_main_opposition_party_leader15
+		localization_key = POSITION_main_opposition_party_leader5
 	}
 
 	text = {
@@ -411,7 +411,7 @@ defined_text = {
 		trigger = {
 			tag = KOR
 		}
-		localization_key = POSITION_main_opposition_party_leader15
+		localization_key = POSITION_main_opposition_party_leader5
 	}
 
 	text = {
@@ -506,7 +506,7 @@ defined_text = {
 		trigger = {
 			tag = KOR
 		}
-		localization_key = POSITION_main_opposition_party_leader12
+		localization_key = POSITION_main_opposition_party_leader6
 	}
 }
 
@@ -517,7 +517,7 @@ defined_text = {
 		trigger = {
 			tag = KOR
 		}
-		localization_key = POSITION_main_opposition_party_leader12
+		localization_key = POSITION_main_opposition_party_leader6
 	}
 }
 
@@ -526,9 +526,9 @@ defined_text = {
 	
 	text = {
 		trigger = {
-			has_country_flag = Kim_Hyun_cheol
+			has_country_flag = Lee_Beomseung
 		}
-		localization_key = Kim_Hyun_cheol
+		localization_key = Lee_Beomseung
 	}
 }
 defined_text = {
@@ -536,9 +536,9 @@ defined_text = {
 	
 	text = {
 		trigger = {
-			has_country_flag = Kim_Hyun_cheol
+			has_country_flag = Lee_Beomseung
 		}
-		localization_key = GFX_Portrait_Kim_Hyun_cheol
+		localization_key = GFX_Portrait_Lee_Beomseung
 	}
 }
 defined_text = {
@@ -546,9 +546,9 @@ defined_text = {
 
 	text = {
 		trigger = { 
-			has_country_flag = Kim_Hyun_cheol
+			has_country_flag = Lee_Beomseung
 		}
-		localization_key = Kim_Hyun_cheol_desc
+		localization_key = Lee_Beomseung_desc
 	}
 }
 
@@ -562,7 +562,7 @@ defined_text = {
 		trigger = {
 			tag = KOR
 		}
-		localization_key = POSITION_main_opposition_party_leader3
+		localization_key = POSITION_main_opposition_party_leader7
 	}
 	text = {
 		trigger = {
@@ -579,7 +579,7 @@ defined_text = {
 		trigger = {
 			tag = KOR
 		}
-		localization_key = POSITION_main_opposition_party_leader3
+		localization_key = POSITION_main_opposition_party_leader7
 	}
 	text = {
 		trigger = {
@@ -663,7 +663,7 @@ defined_text = {
 		trigger = {
 			tag = KOR
 		}
-		localization_key = POSITION_main_opposition_party_leader17
+		localization_key = POSITION_main_opposition_party_leader8
 	}
 
 	text = {
@@ -681,7 +681,7 @@ defined_text = {
 		trigger = {
 			tag = KOR
 		}
-		localization_key = POSITION_main_opposition_party_leader17
+		localization_key = POSITION_main_opposition_party_leader8
 	}
 
 	text = {
@@ -697,9 +697,9 @@ defined_text = {
 	
 	text = {
 		trigger = {
-			has_country_flag = Pak_Honyong
+			has_country_flag = Jang_TaekSang
 		}
-		localization_key = Pak_Honyong
+		localization_key = Jang_TaekSang
 	}
 
 	text = {
@@ -714,9 +714,9 @@ defined_text = {
 	
 	text = {
 		trigger = {
-			has_country_flag = Pak_Honyong
+			has_country_flag = Jang_TaekSang
 		}
-		localization_key = GFX_Portrait_Pak_Honyong
+		localization_key = GFX_Portrait_Jang_TaekSang
 	}
 
 	text = {
@@ -731,9 +731,9 @@ defined_text = {
 
 	text = {
 		trigger = { 
-			has_country_flag = Pak_Honyong
+			has_country_flag = Jang_TaekSang
 		}
-		localization_key = Pak_Honyong_desc
+		localization_key = Jang_TaekSang_desc
 	}
 }
 
@@ -748,7 +748,7 @@ defined_text = {
 		trigger = {
 			tag = KOR
 		}
-		localization_key = POSITION_main_opposition_party_leader14
+		localization_key = POSITION_main_opposition_party_leader9
 	}
 
 	text = {
@@ -766,7 +766,7 @@ defined_text = {
 		trigger = {
 			tag = KOR
 		}
-		localization_key = POSITION_main_opposition_party_leader14
+		localization_key = POSITION_main_opposition_party_leader9
 	}
 
 	text = {
@@ -801,7 +801,7 @@ defined_text = {
 		trigger = {
 			has_country_flag = jo_man_sik
 		}
-		localization_key = GFX_jomansik_portrait
+		localization_key = GFX_Portrait_jo_man_sik
 	}
 
 	text = {
@@ -833,14 +833,14 @@ defined_text = {
 			tag = KOR
 			NOT = { has_country_flag = kor_10_is_Intelligence }
 		}
-		localization_key = POSITION_main_opposition_party_leader4
+		localization_key = POSITION_main_opposition_party_leader10
 	}
 	text = {
 		trigger = {
 			tag = KOR
 			has_country_flag = kor_10_is_Intelligence
 		}
-		localization_key = POSITION_main_opposition_party_leader4_2
+		localization_key = POSITION_main_opposition_party_leader10
 	}
 }
 
@@ -852,14 +852,14 @@ defined_text = {
 			tag = KOR
 			NOT = { has_country_flag = kor_10_is_Intelligence }
 		}
-		localization_key = POSITION_main_opposition_party_leader4
+		localization_key = POSITION_main_opposition_party_leader10
 	}
 	text = {
 		trigger = {
 			tag = KOR
 			has_country_flag = kor_10_is_Intelligence
 		}
-		localization_key = POSITION_main_opposition_party_leader4_2
+		localization_key = POSITION_main_opposition_party_leader10
 	}
 }
 
@@ -868,15 +868,15 @@ defined_text = {
 
 	text = {
 		trigger = {
-			has_country_flag = Kang_In_taek
+			has_country_flag = Chough_Pyung_ok
 		}
-		localization_key = Kang_In_taek
+		localization_key = Chough_Pyung_ok
 	}
 	text = {
 		trigger = {
 			has_country_flag = kor_10_is_Intelligence
 		}
-		localization_key = Chang_Taek_Sang
+		localization_key = Chough_Pyung_ok
 	}
 }
 defined_text = {
@@ -884,15 +884,9 @@ defined_text = {
 	
 	text = {
 		trigger = {
-			has_country_flag = Kang_In_taek
+			has_country_flag = Chough_Pyung_ok
 		}
-		localization_key = GFX_Portrait_Kang_In_taek
-	}
-	text = {
-		trigger = {
-			has_country_flag = kor_10_is_Intelligence
-		}
-		localization_key = GFX_Portrait_Chang_Taek_Sang
+		localization_key = GFX_Portrait_Chough_Pyung_ok
 	}
 }
 defined_text = {
@@ -900,9 +894,9 @@ defined_text = {
 
 	text = {
 		trigger = { 
-			has_country_flag = Kang_In_taek
+			has_country_flag = Chough_Pyung_ok
 		}
-		localization_key = Kang_In_taek_desc
+		localization_key = Chough_Pyung_ok_desc
 	}
 	text = {
 		trigger = { 
@@ -922,7 +916,7 @@ defined_text = {
 		trigger = {
 			tag = KOR
 		}
-		localization_key = POSITION_main_opposition_party_leader18
+		localization_key = POSITION_main_opposition_party_leader11
 	}
 
 }
@@ -934,7 +928,7 @@ defined_text = {
 		trigger = {
 			tag = KOR
 		}
-		localization_key = POSITION_main_opposition_party_leader18
+		localization_key = POSITION_main_opposition_party_leader11
 	}
 
 }
@@ -944,9 +938,9 @@ defined_text = {
 	
 	text = {
 		trigger = {
-			has_country_flag = Lee_In
+			has_country_flag = He_Hun
 		}
-		localization_key = Lee_In
+		localization_key = He_Hun
 	}
 
 }
@@ -955,9 +949,9 @@ defined_text = {
 	
 	text = {
 		trigger = {
-			has_country_flag = Lee_In
+			has_country_flag = He_Hun
 		}
-		localization_key = GFX_Portrait_Lee_In
+		localization_key = GFX_Portrait_He_Hun
 	}
 
 }
@@ -966,9 +960,9 @@ defined_text = {
 
 	text = {
 		trigger = { 
-			has_country_flag = Lee_In
+			has_country_flag = He_Hun
 		}
-		localization_key = Lee_In_desc
+		localization_key = He_Hun_desc
 	}
 }
 
@@ -986,6 +980,18 @@ defined_text = {
 			tag = KOR
 		}
 		localization_key = KOR_FdS2_front_name
+	}
+
+}
+
+defined_text = {
+	name = FdS3_semi_front_name
+
+	text = {
+		trigger = {
+			tag = KOR
+		}
+		localization_key = KOR_FdS3_semi_front_name
 	}
 
 }
@@ -1036,7 +1042,7 @@ defined_text = {
 		trigger = {
 			tag = KOR
 		}
-		localization_key = POSITION_main_opposition_party_leader7
+		localization_key = POSITION_main_opposition_party_leader12
 	}
 	text = {
 		trigger = {
@@ -1059,7 +1065,7 @@ defined_text = {
 		trigger = {
 			tag = KOR
 		}
-		localization_key = POSITION_main_opposition_party_leader7
+		localization_key = POSITION_main_opposition_party_leader12
 	}
 	text = {
 		trigger = {
@@ -1140,7 +1146,7 @@ defined_text = {
 		trigger = {
 			tag = KOR
 		}
-		localization_key = POSITION_main_opposition_party_leader8
+		localization_key = POSITION_main_opposition_party_leader13
 	}
 }
 
@@ -1151,7 +1157,7 @@ defined_text = {
 		trigger = {
 			tag = KOR
 		}
-		localization_key = POSITION_main_opposition_party_leader8
+		localization_key = POSITION_main_opposition_party_leader13
 	}
 }
 
@@ -1196,7 +1202,7 @@ defined_text = {
 		trigger = {
 			tag = KOR
 		}
-		localization_key = POSITION_main_opposition_party_leader9
+		localization_key = POSITION_main_opposition_party_leader14
 	}
 }
 
@@ -1207,7 +1213,7 @@ defined_text = {
 		trigger = {
 			tag = KOR
 		}
-		localization_key = POSITION_main_opposition_party_leader9
+		localization_key = POSITION_main_opposition_party_leader14
 	}
 }
 
@@ -1305,7 +1311,7 @@ defined_text = {
 		trigger = {
 			tag = KOR
 		}
-		localization_key = POSITION_main_opposition_party_leader10
+		localization_key = POSITION_main_opposition_party_leader15
 	}
 }
 
@@ -1316,7 +1322,7 @@ defined_text = {
 		trigger = {
 			tag = KOR
 		}
-		localization_key = POSITION_main_opposition_party_leader10
+		localization_key = POSITION_main_opposition_party_leader15
 	}
 }
 
@@ -1360,7 +1366,7 @@ defined_text = {
 		trigger = {
 			tag = KOR
 		}
-		localization_key = POSITION_main_opposition_party_leader19
+		localization_key = POSITION_main_opposition_party_leader16
 	}
 }
 
@@ -1371,7 +1377,7 @@ defined_text = {
 		trigger = {
 			tag = KOR
 		}
-		localization_key = POSITION_main_opposition_party_leader19
+		localization_key = POSITION_main_opposition_party_leader16
 	}
 }
 
@@ -1415,7 +1421,7 @@ defined_text = {
 		trigger = {
 			tag = KOR
 		}
-		localization_key = POSITION_main_opposition_party_leader20
+		localization_key = POSITION_main_opposition_party_leader17
 	}
 }
 
@@ -1426,7 +1432,7 @@ defined_text = {
 		trigger = {
 			tag = KOR
 		}
-		localization_key = POSITION_main_opposition_party_leader20
+		localization_key = POSITION_main_opposition_party_leader17
 	}
 }
 

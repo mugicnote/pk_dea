@@ -1,0 +1,1069 @@
+# 조선공산당 #
+	defined_text = {
+		name = GetComAti
+		text = {
+			trigger = { has_idea = KOR_idea_faction_com_royal }
+			localization_key = r_royal
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_com_friendly }
+			localization_key = r_friendly
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_com_normal }
+			localization_key = r_normal
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_com_notgood }
+			localization_key = r_notgood
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_com_hostile }
+			localization_key = r_hostile
+		}
+	}
+	defined_text = {
+		name = GetComPol
+		text = {
+			trigger = { has_idea = KOR_idea_faction_com_royal }
+			localization_key = bonus_10
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_com_friendly }
+			localization_key = bonus_5
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_com_normal }
+			localization_key = no_bonus
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_com_notgood }
+			localization_key = bonus_n5
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_com_hostile }
+			localization_key = bonus_n10
+		}
+	}
+	defined_text = {
+		name = GetComSta
+		text = {
+			trigger = { has_idea = KOR_idea_faction_com_royal }
+			localization_key = bonus_10
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_com_friendly }
+			localization_key = bonus_5
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_com_normal }
+			localization_key = no_bonus
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_com_notgood }
+			localization_key = bonus_n5
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_com_hostile }
+			localization_key = bonus_n10
+		}
+	}
+	defined_text = {
+		name = GetComMan
+		text = {
+			trigger = { has_idea = KOR_idea_faction_com_royal }
+			localization_key = bonus_10
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_com_friendly }
+			localization_key = bonus_5
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_com_normal }
+			localization_key = no_bonus
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_com_notgood }
+			localization_key = bonus_n5
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_com_hostile }
+			localization_key = bonus_n10
+		}
+	}
+#
+
+# 조선민족혁명당 #
+defined_text = {
+	name = GetAutSocAti
+	text = {
+		trigger = { has_idea = KOR_idea_faction_autsoc_royal }
+		localization_key = r_royal
+	}
+	text = {
+		trigger = { has_idea = KOR_idea_faction_autsoc_friendly }
+		localization_key = r_friendly
+	}
+	text = {
+		trigger = { has_idea = KOR_idea_faction_autsoc_normal }
+		localization_key = r_normal
+	}
+	text = {
+		trigger = { has_idea = KOR_idea_faction_autsoc_notgood }
+		localization_key = r_notgood
+	}
+	text = {
+		trigger = { has_idea = KOR_idea_faction_autsoc_hostile }
+		localization_key = r_hostile
+	}
+}
+defined_text = {
+	name = GetAutSocPol
+	text = {
+		trigger = { has_idea = KOR_idea_faction_autsoc_royal }
+		localization_key = bonus_10
+	}
+	text = {
+		trigger = { has_idea = KOR_idea_faction_autsoc_friendly }
+		localization_key = bonus_5
+	}
+	text = {
+		trigger = { has_idea = KOR_idea_faction_autsoc_normal }
+		localization_key = no_bonus
+	}
+	text = {
+		trigger = { has_idea = KOR_idea_faction_autsoc_notgood }
+		localization_key = bonus_n5
+	}
+	text = {
+		trigger = { has_idea = KOR_idea_faction_autsoc_hostile }
+		localization_key = bonus_n10
+	}
+}
+defined_text = {
+	name = GetAutSocSta
+	text = {
+		trigger = { has_idea = KOR_idea_faction_autsoc_royal }
+		localization_key = bonus_10
+	}
+	text = {
+		trigger = { has_idea = KOR_idea_faction_autsoc_friendly }
+		localization_key = bonus_5
+	}
+	text = {
+		trigger = { has_idea = KOR_idea_faction_autsoc_normal }
+		localization_key = no_bonus
+	}
+	text = {
+		trigger = {
+			has_idea = KOR_idea_faction_autsoc_notgood
+		}
+		localization_key = bonus_n5
+	}
+	text = {
+		trigger = { has_idea = KOR_idea_faction_autsoc_hostile }
+		localization_key = bonus_n10
+	}
+}
+defined_text = {
+	name = GetAutSocMan
+	text = {
+		trigger = { has_idea = KOR_idea_faction_autsoc_royal }
+		localization_key = bonus_10
+	}
+	text = {
+		trigger = { has_idea = KOR_idea_faction_autsoc_friendly }
+		localization_key = bonus_5
+	}
+	text = {
+		trigger = { has_idea = KOR_idea_faction_autsoc_normal }
+		localization_key = no_bonus
+	}
+	text = {
+		trigger = {
+			has_idea = KOR_idea_faction_autsoc_notgood
+		}
+		localization_key = bonus_n5
+	}
+	text = {
+		trigger = { has_idea = KOR_idea_faction_autsoc_hostile }
+		localization_key = bonus_n10
+	}
+}
+#
+
+# 조선민족혁명당 #
+	defined_text = {
+		name = GetRadSocAti
+		text = {
+			trigger = { has_idea = KOR_idea_faction_radsoc_royal }
+			localization_key = r_royal
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_radsoc_friendly }
+			localization_key = r_friendly
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_radsoc_normal }
+			localization_key = r_normal
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_radsoc_notgood }
+			localization_key = r_notgood
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_radsoc_hostile }
+			localization_key = r_hostile
+		}
+	}
+	defined_text = {
+		name = GetRadSocPol
+		text = {
+			trigger = { has_idea = KOR_idea_faction_radsoc_royal }
+			localization_key = bonus_10
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_radsoc_friendly }
+			localization_key = bonus_5
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_radsoc_normal }
+			localization_key = no_bonus
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_radsoc_notgood }
+			localization_key = bonus_n5
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_radsoc_hostile }
+			localization_key = bonus_n10
+		}
+	}
+	defined_text = {
+		name = GetRadSocSta
+		text = {
+			trigger = { has_idea = KOR_idea_faction_radsoc_royal }
+			localization_key = bonus_5
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_radsoc_friendly }
+			localization_key = bonus_2_5
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_radsoc_normal }
+			localization_key = no_bonus
+		}
+		text = {
+			trigger = {
+				has_idea = KOR_idea_faction_radsoc_notgood
+			}
+			localization_key = bonus_n2_5
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_radsoc_hostile }
+			localization_key = bonus_n5
+		}
+	}
+	defined_text = {
+		name = GetRadSocMan
+		text = {
+			trigger = { has_idea = KOR_idea_faction_radsoc_royal }
+			localization_key = bonus_10
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_radsoc_friendly }
+			localization_key = bonus_5
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_radsoc_normal }
+			localization_key = no_bonus
+		}
+		text = {
+			trigger = {
+				has_idea = KOR_idea_faction_radsoc_notgood
+			}
+			localization_key = bonus_n5
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_radsoc_hostile }
+			localization_key = bonus_n10
+		}
+	}
+#
+
+# 조선인민당 #
+	defined_text = {
+		name = GetSocDemAti
+		text = {
+			trigger = { has_idea = KOR_idea_faction_socdem_royal }
+			localization_key = r_royal
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_socdem_friendly }
+			localization_key = r_friendly
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_socdem_normal }
+			localization_key = r_normal
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_socdem_notgood }
+			localization_key = r_notgood
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_socdem_hostile }
+			localization_key = r_hostile
+		}
+	}
+	defined_text = {
+		name = GetSocDemPol
+		text = {
+			trigger = { has_idea = KOR_idea_faction_socdem_royal }
+			localization_key = bonus_5
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_socdem_friendly }
+			localization_key = bonus_2_5
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_socdem_normal }
+			localization_key = no_bonus
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_socdem_notgood }
+			localization_key = bonus_n2_5
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_socdem_hostile }
+			localization_key = bonus_n5
+		}
+	}
+	defined_text = {
+		name = GetSocDemSta
+		text = {
+			trigger = { has_idea = KOR_idea_faction_socdem_royal }
+			localization_key = bonus_5
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_socdem_friendly }
+			localization_key = bonus_2_5
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_socdem_normal }
+			localization_key = no_bonus
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_socdem_notgood }
+			localization_key = bonus_n2_5
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_socdem_hostile }
+			localization_key = bonus_n5
+		}
+	}
+	defined_text = {
+		name = GetSocDemMan
+		text = {
+			trigger = { has_idea = KOR_idea_faction_socdem_royal }
+			localization_key = bonus_10
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_socdem_friendly }
+			localization_key = bonus_5
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_socdem_normal }
+			localization_key = no_bonus
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_socdem_notgood }
+			localization_key = bonus_n5
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_socdem_hostile }
+			localization_key = bonus_n10
+		}
+	}
+#
+
+# 국민당 #
+	defined_text = {
+		name = GetSocLibAti
+		text = {
+			trigger = { has_idea = KOR_idea_faction_soclib_royal }
+			localization_key = r_royal
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_soclib_friendly }
+			localization_key = r_friendly
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_soclib_normal }
+			localization_key = r_normal
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_soclib_notgood }
+			localization_key = r_notgood
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_soclib_hostile }
+			localization_key = r_hostile
+		}
+	}
+	defined_text = {
+		name = GetSocLibPol
+		text = {
+			trigger = { has_idea = KOR_idea_faction_soclib_royal }
+			localization_key = bonus_5
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_soclib_friendly }
+			localization_key = bonus_2_5
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_soclib_normal }
+			localization_key = no_bonus
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_soclib_notgood }
+			localization_key = bonus_n2_5
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_soclib_hostile }
+			localization_key = bonus_n5
+		}
+	}
+	defined_text = {
+		name = GetSocLibSta
+		text = {
+			trigger = { has_idea = KOR_idea_faction_soclib_royal }
+			localization_key = bonus_5
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_soclib_friendly }
+			localization_key = bonus_2_5
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_soclib_normal }
+			localization_key = no_bonus
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_soclib_notgood }
+			localization_key = bonus_n2_5
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_soclib_hostile }
+			localization_key = bonus_n5
+		}
+	}
+	defined_text = {
+		name = GetSocLibMan
+		text = {
+			trigger = { has_idea = KOR_idea_faction_soclib_royal }
+			localization_key = bonus_10
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_soclib_friendly }
+			localization_key = bonus_5
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_soclib_normal }
+			localization_key = no_bonus
+		}
+		text = {
+			trigger = {
+				has_idea = KOR_idea_faction_soclib_notgood
+			}
+			localization_key = bonus_n5
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_soclib_hostile }
+			localization_key = bonus_n10
+		}
+	}
+#
+
+# 조선민주당 #
+	defined_text = {
+		name = GetNatLibAti
+		text = {
+			trigger = { has_idea = KOR_idea_faction_natlib_royal }
+			localization_key = r_royal
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_natlib_friendly }
+			localization_key = r_friendly
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_natlib_normal }
+			localization_key = r_normal
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_natlib_notgood }
+			localization_key = r_notgood
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_natlib_hostile }
+			localization_key = r_hostile
+		}
+	}
+	defined_text = {
+		name = GetNatLibPol
+		text = {
+			trigger = { has_idea = KOR_idea_faction_natlib_royal }
+			localization_key = bonus_5
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_natlib_friendly }
+			localization_key = bonus_2_5
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_natlib_normal }
+			localization_key = no_bonus
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_natlib_notgood }
+			localization_key = bonus_n2_5
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_natlib_hostile }
+			localization_key = bonus_n5
+		}
+	}
+	defined_text = {
+		name = GetNatLibSta
+		text = {
+			trigger = { has_idea = KOR_idea_faction_natlib_royal }
+			localization_key = bonus_5
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_natlib_friendly }
+			localization_key = bonus_2_5
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_natlib_normal }
+			localization_key = no_bonus
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_natlib_notgood }
+			localization_key = bonus_n2_5
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_natlib_hostile }
+			localization_key = bonus_n5
+		}
+	}
+	defined_text = {
+		name = GetNatLibMan
+		text = {
+			trigger = { has_idea = KOR_idea_faction_natlib_royal }
+			localization_key = bonus_10
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_natlib_friendly }
+			localization_key = bonus_5
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_natlib_normal }
+			localization_key = no_bonus
+		}
+		text = {
+			trigger = {
+				has_idea = KOR_idea_faction_natlib_notgood
+			}
+			localization_key = bonus_n5
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_natlib_hostile }
+			localization_key = bonus_n10
+		}
+	}
+#
+
+# 한국민주당 #
+	defined_text = {
+		name = GetLibConAti
+		text = {
+			trigger = { has_idea = KOR_idea_faction_libcon_royal }
+			localization_key = r_royal
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_libcon_friendly }
+			localization_key = r_friendly
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_libcon_normal }
+			localization_key = r_normal
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_libcon_notgood }
+			localization_key = r_notgood
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_libcon_hostile }
+			localization_key = r_hostile
+		}
+	}
+	defined_text = {
+		name = GetLibConPol
+		text = {
+			trigger = { has_idea = KOR_idea_faction_libcon_royal }
+			localization_key = bonus_5
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_libcon_friendly }
+			localization_key = bonus_2_5
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_libcon_normal }
+			localization_key = no_bonus
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_libcon_notgood }
+			localization_key = bonus_n2_5
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_libcon_hostile }
+			localization_key = bonus_n5
+		}
+	}
+	defined_text = {
+		name = GetLibConSta
+		text = {
+			trigger = { has_idea = KOR_idea_faction_libcon_royal }
+			localization_key = bonus_5
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_libcon_friendly }
+			localization_key = bonus_2_5
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_libcon_normal }
+			localization_key = no_bonus
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_libcon_notgood }
+			localization_key = bonus_n2_5
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_libcon_hostile }
+			localization_key = bonus_n5
+		}
+	}
+	defined_text = {
+		name = GetLibConMan
+		text = {
+			trigger = { has_idea = KOR_idea_faction_libcon_royal }
+			localization_key = bonus_10
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_libcon_friendly }
+			localization_key = bonus_5
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_libcon_normal }
+			localization_key = no_bonus
+		}
+		text = {
+			trigger = {
+				has_idea = KOR_idea_faction_libcon_notgood
+			}
+			localization_key = bonus_n5
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_libcon_hostile }
+			localization_key = bonus_n10
+		}
+	}
+#
+
+# 공화민정회 #
+	defined_text = {
+		name = GetSocConAti
+		text = {
+			trigger = { has_idea = KOR_idea_faction_soccon_royal }
+			localization_key = r_royal
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_soccon_friendly }
+			localization_key = r_friendly
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_soccon_normal }
+			localization_key = r_normal
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_soccon_notgood }
+			localization_key = r_notgood
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_soccon_hostile }
+			localization_key = r_hostile
+		}
+	}
+	defined_text = {
+		name = GetSocConPol
+		text = {
+			trigger = { has_idea = KOR_idea_faction_soccon_royal }
+			localization_key = bonus_10
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_soccon_friendly }
+			localization_key = bonus_5
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_soccon_normal }
+			localization_key = no_bonus
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_soccon_notgood }
+			localization_key = bonus_n5
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_soccon_hostile }
+			localization_key = bonus_n10
+		}
+	}
+	defined_text = {
+		name = GetSocConSta
+		text = {
+			trigger = { has_idea = KOR_idea_faction_soccon_royal }
+			localization_key = bonus_5
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_soccon_friendly }
+			localization_key = bonus_2_5
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_soccon_normal }
+			localization_key = no_bonus
+		}
+		text = {
+			trigger = {
+				has_idea = KOR_idea_faction_soccon_notgood
+			}
+			localization_key = bonus_n2_5
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_soccon_hostile }
+			localization_key = bonus_n5
+		}
+	}
+	defined_text = {
+		name = GetSocConMan
+		text = {
+			trigger = { has_idea = KOR_idea_faction_soccon_royal }
+			localization_key = bonus_10
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_soccon_friendly }
+			localization_key = bonus_5
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_soccon_normal }
+			localization_key = no_bonus
+		}
+		text = {
+			trigger = {
+				has_idea = KOR_idea_faction_soccon_notgood
+			}
+			localization_key = bonus_n5
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_soccon_hostile }
+			localization_key = bonus_n10
+		}
+	}
+#
+
+# 한국독립당 #
+	defined_text = {
+		name = GetNatConAti
+		text = {
+			trigger = { has_idea = KOR_idea_faction_natcon_royal }
+			localization_key = r_royal
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_natcon_friendly }
+			localization_key = r_friendly
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_natcon_normal }
+			localization_key = r_normal
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_natcon_notgood }
+			localization_key = r_notgood
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_natcon_hostile }
+			localization_key = r_hostile
+		}
+	}
+	defined_text = {
+		name = GetNatConPol
+		text = {
+			trigger = { has_idea = KOR_idea_faction_natcon_royal }
+			localization_key = bonus_5
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_natcon_friendly }
+			localization_key = bonus_2_5
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_natcon_normal }
+			localization_key = no_bonus
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_natcon_notgood }
+			localization_key = bonus_n2_5
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_natcon_hostile }
+			localization_key = bonus_n5
+		}
+	}
+	defined_text = {
+		name = GetNatConSta
+		text = {
+			trigger = { has_idea = KOR_idea_faction_natcon_royal }
+			localization_key = bonus_5
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_natcon_friendly }
+			localization_key = bonus_2_5
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_natcon_normal }
+			localization_key = no_bonus
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_natcon_notgood }
+			localization_key = bonus_n2_5
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_natcon_hostile }
+			localization_key = bonus_n5
+		}
+	}
+	defined_text = {
+		name = GetNatConMan
+		text = {
+			trigger = { has_idea = KOR_idea_faction_natcon_royal }
+			localization_key = bonus_10
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_natcon_friendly }
+			localization_key = bonus_5
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_natcon_normal }
+			localization_key = no_bonus
+		}
+		text = {
+			trigger = {
+				has_idea = KOR_idea_faction_natcon_notgood
+			}
+			localization_key = bonus_n5
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_natcon_hostile }
+			localization_key = bonus_n10
+		}
+	}
+#
+
+# 파시스트 #
+	defined_text = {
+		name = GetFasAti
+		text = {
+			trigger = { has_idea = KOR_idea_faction_fas_royal }
+			localization_key = r_royal
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_fas_friendly }
+			localization_key = r_friendly
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_fas_normal }
+			localization_key = r_normal
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_fas_notgood }
+			localization_key = r_notgood
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_fas_hostile }
+			localization_key = r_hostile
+		}
+	}
+	defined_text = {
+		name = GetFasPol
+		text = {
+			trigger = { has_idea = KOR_idea_faction_fas_royal }
+			localization_key = bonus_25
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_fas_friendly }
+			localization_key = bonus_10_only
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_fas_normal }
+			localization_key = no_bonus
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_fas_notgood }
+			localization_key = bonus_n10_only
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_fas_hostile }
+			localization_key = bonus_n25
+		}
+	}
+	defined_text = {
+		name = GetFasSta
+		text = {
+			trigger = { has_idea = KOR_idea_faction_fas_royal }
+			localization_key = bonus_10
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_fas_friendly }
+			localization_key = bonus_5
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_fas_normal }
+			localization_key = no_bonus
+		}
+		text = {
+			trigger = {
+				has_idea = KOR_idea_faction_fas_notgood
+			}
+			localization_key = bonus_n5
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_fas_hostile }
+			localization_key = bonus_n10
+		}
+	}
+	defined_text = {
+		name = GetFasMan
+		text = {
+			trigger = { has_idea = KOR_idea_faction_fas_royal }
+			localization_key = bonus_10
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_fas_friendly }
+			localization_key = bonus_5
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_fas_normal }
+			localization_key = no_bonus
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_fas_notgood }
+			localization_key = bonus_n5
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_fas_hostile }
+			localization_key = bonus_n10
+		}
+	}
+
+# 전제주의 #
+	defined_text = {
+		name = GetDesAti
+		text = {
+			trigger = { has_idea = KOR_idea_faction_Des_royal }
+			localization_key = r_royal
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_Des_friendly }
+			localization_key = r_friendly
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_Des_normal }
+			localization_key = r_normal
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_Des_notgood }
+			localization_key = r_notgood
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_Des_hostile }
+			localization_key = r_hostile
+		}
+	}
+	defined_text = {
+		name = GetDesPol
+		text = {
+			trigger = { has_idea = KOR_idea_faction_Des_royal }
+			localization_key = bonus_25
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_Des_friendly }
+			localization_key = bonus_10_only
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_Des_normal }
+			localization_key = no_bonus
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_Des_notgood }
+			localization_key = bonus_n10_only
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_Des_hostile }
+			localization_key = bonus_n25
+		}
+	}
+	defined_text = {
+		name = GetDesSta
+		text = {
+			trigger = { has_idea = KOR_idea_faction_Des_royal }
+			localization_key = bonus_10
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_Des_friendly }
+			localization_key = bonus_5
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_Des_normal }
+			localization_key = no_bonus
+		}
+		text = {
+			trigger = {
+				has_idea = KOR_idea_faction_Des_notgood
+			}
+			localization_key = bonus_n5
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_Des_hostile }
+			localization_key = bonus_n10
+		}
+	}
+	defined_text = {
+		name = GetDesMan
+		text = {
+			trigger = { has_idea = KOR_idea_faction_Des_royal }
+			localization_key = bonus_10
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_Des_friendly }
+			localization_key = bonus_5
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_Des_normal }
+			localization_key = no_bonus
+		}
+		text = {
+			trigger = {
+				has_idea = KOR_idea_faction_Des_notgood
+			}
+			localization_key = bonus_n5
+		}
+		text = {
+			trigger = { has_idea = KOR_idea_faction_Des_hostile }
+			localization_key = bonus_n10
+		}
+	}
+#

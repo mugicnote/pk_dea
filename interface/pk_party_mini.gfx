@@ -1,0 +1,62 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_communism_mini"
+		texturefile = "gfx/texticons/party/communism_mini.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_aut_socialism_mini"
+		texturefile = "gfx/texticons/party/aut_socialism_mini.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_radical_socialism_mini"
+		texturefile = "gfx/texticons/party/radical_socialism_mini.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_social_democracy_mini"
+		texturefile = "gfx/texticons/party/social_democracy_mini.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_social_liberalism_mini"
+		texturefile = "gfx/texticons/party/social_liberalism_mini.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_national_liberalism_mini"
+		texturefile = "gfx/texticons/party/national_liberalism_mini.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_liberal_conservatism_mini"
+		texturefile = "gfx/texticons/party/liberal_conservatism_mini.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_social_conservatism_mini"
+		texturefile = "gfx/texticons/party/social_conservatism_mini.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_national_conservatism_mini"
+		texturefile = "gfx/texticons/party/national_conservatism_mini.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_neutrality_mini"
+		texturefile = "gfx/texticons/party/neutrality_mini.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_aut_despotism_mini"
+		texturefile = "gfx/texticons/party/aut_despotism_mini.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_fascism_mini"
+		texturefile = "gfx/texticons/party/fascism_mini.dds"
+		legacy_lazy_load = no
+	}
+}

@@ -210,7 +210,8 @@ char id=8249 x=502   y=122   width=8     height=14    xoffset=1     yoffset=13  
 char id=8250 x=83    y=149   width=8     height=14    xoffset=1     yoffset=13    xadvance=10    page=0  chnl=15
 char id=8260 x=291   y=105   width=17    height=21    xoffset=0     yoffset=6     xadvance=16    page=0  chnl=15
 char id=8364 x=157   y=83    width=21    height=21    xoffset=0     yoffset=6     xadvance=23    page=0  chnl=15
-char id=8482 x=127   y=149   width=23    height=11    xoffset=1     yoffset=6     xadvance=26    page=0  chnl=15char id=12289 x=1910  y=925    width=8     height=9     xoffset=0     yoffset=24    xadvance=20    page=0  chnl=15
+char id=8482 x=127   y=149   width=23    height=11    xoffset=1     yoffset=6     xadvance=26    page=0  chnl=15
+char id=12289 x=1910  y=925    width=8     height=9     xoffset=0     yoffset=24    xadvance=20    page=0  chnl=15
 char id=12290 x=1429  y=1153   width=9     height=10    xoffset=0     yoffset=23    xadvance=22    page=0  chnl=15
 char id=12291 x=1415  y=1153   width=12    height=10    xoffset=7     yoffset=14    xadvance=25    page=0  chnl=15
 char id=12296 x=1662  y=200    width=12    height=28    xoffset=0     yoffset=4     xadvance=13    page=0  chnl=15

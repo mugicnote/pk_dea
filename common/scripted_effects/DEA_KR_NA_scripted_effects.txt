@@ -14,6 +14,7 @@ legco_introduce_ordinance = {
 	log = "Guangdong ID [?GNG_temp_legco_id] Bill Initialize"
 	custom_effect_tooltip = KOR_legco_bill_introduce_tooltip
 	KOR_legco_votes_initialize = yes
+	set_country_flag = legco_introduce_ordinance_ready
 }
 
 KOR_legco_votes_initialize = {
@@ -296,6 +297,7 @@ KOR_check_votes_legco = {
 
 #개표
 legco_ordinance_vote_start = {
+	clr_country_flag = legco_introduce_ordinance_ready
 	if = {
 		limit = {
 			NOT = {

@@ -1,15 +1,25 @@
 guiTypes = {
 	containerWindowType = {
 		name = "double_leader_system_container3"
-		position = { x = 360 y = 440 }
-		orientation = upper_left
+		position = { x = 365 y = 240 }
 		
 		buttonType = {
 			name = "double_open3"
-			position = { x = 0 y = 0 }
-			quadTextureSprite ="GFX_cabinet_button"
-			buttonFont = "hoi_16mbs"
-			buttonText = "참모본부 개요"
+			position = { x = 130 y = 70 }
+			spriteType = "GFX_button_right"
+			pdx_tooltip = "cabinet_button_tt"
+		}
+		
+		instantTextboxType = { #직책명
+			name = "cabinet_button_text"
+			position = { x = -41 y = 70 }
+			font = "hoi_16mbs"
+			text = "국무위원 개요"
+			maxWidth = 155
+			maxHeight = 20
+			format = center
+			vertical_alignment = center
+			allwaystransparent = yes
 		}
 	}
 	containerWindowType = {

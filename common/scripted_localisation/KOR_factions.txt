@@ -1,0 +1,100 @@
+defined_text = { #대한공산당
+	name = GetComFaction
+	### 체인 이후에도 사용하는 루트일 경우 대비###
+    # text = {
+    #     trigger = { has_country_flag = KOR_flag_wpk }
+    #     localization_key = KOR_COM_faction_wpk
+    # }
+	text = { localization_key = KOR_communism_party_long }
+}
+defined_text = { #대한신민당-인민공화당
+	name = GetAutSocFaction
+    # text = {
+    #     trigger = { has_country_flag = KOR_flag_wpk }
+    #     localization_key = KOR_RADSOC_faction_wpk
+    # }
+	text = { localization_key = KOR_authoritarian_socialism_party_uni }
+}
+defined_text = { #사회노동당
+	name = GetSocDemFaction
+    # text = {
+    #     trigger = { has_country_flag = KOR_flag_wpk_split }
+    #     localization_key = KOR_n_socialism_party_swp
+    # }
+    # text = {
+    #     trigger = { has_country_flag = KOR_flag_wpk }
+    #     localization_key = KOR_SOCDEM_faction_wpk
+    # }
+	text = { localization_key = KOR_social_democracy_party }
+}
+defined_text = { #민주당
+	name = GetSocLibFaction
+    # text = {
+    #     trigger = { has_country_flag = KOR_flag_kip_np }
+    #     localization_key = KOR_SOCLIB_faction_kip
+    # }
+	text = { localization_key = KOR_social_liberalism_party }
+}
+defined_text = { #대한국민당
+	name = GetNatLibFaction
+    # text = {
+    #     trigger = { has_country_flag = KOR_flag_party_allowed }
+    #     localization_key = KOR_lib_faciton_dpk
+    # }
+	text = { localization_key = KOR_national_liberalism_party }
+}
+defined_text = { #대한촉성회
+	name = GetLibConFaction
+    # text = {
+    	# trigger = { has_country_flag = KOR_flag_party_allowed }
+    # }
+	text = { localization_key = KOR_LIBCON_faction_short }
+}
+defined_text = { #민주국민당
+	name = GetSocConFaction
+	# text = {
+	# 	trigger = { always = no }
+    # 	localization_key = KOR_democratic_party_rnc
+	# }
+	text = { localization_key = KOR_democratic_party }
+}
+defined_text = { #대한민국 국군
+	name = GetRadSocFaction
+    # text = {
+    #     trigger = { has_country_flag = KOR_flag_wpk }
+    #     localization_key = KOR_RADSOC_faction_wpk
+    # }
+	text = { localization_key = KOR_neutrality_party }
+}
+defined_text = { #한국국민당
+	name = GetNatConFaction
+    # text = {
+    #     trigger = { has_country_flag = KOR_flag_kip_np }
+    #     localization_key = KOR_NATCON_faction_kip_n
+    # }
+	text = { localization_key = KOR_national_conservatism_party }
+}
+defined_text = {
+	name = GetDesFaction
+    # text = {
+    #     trigger = { has_country_flag = KOR_flag_kip_np }
+    #     localization_key = KOR_NATCON_faction_kip_n
+    # }
+	text = { localization_key = KOR_auto_despotism_party }
+}
+defined_text = {
+	name = GetFascistFaction
+    # text = {
+    #     trigger = { has_country_flag = KOR_flag_kip_np }
+    #     localization_key = KOR_NATCON_faction_kip_n
+    # }
+	text = { localization_key = KOR_fascism_party_long }
+}
+# defined_text = {
+# 	name = GetMorFaction
+#     # text = {
+#     #     trigger = { has_country_flag = KOR_flag_party_allowed }
+#     #     localization_key = KOR_democratic_party_rnc
+#     # }
+# 	text = { localization_key = KOR_mor_faciton_gen }
+# }

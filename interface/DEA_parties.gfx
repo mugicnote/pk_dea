@@ -9,13 +9,85 @@ spriteTypes = {
 		name = "GFX_ideology_lee_fascism"
 		textureFile = "gfx/interface/ideologies/aut_despotism.dds"
 	}
-
 	spriteType = {
-		name = "GFX_ideology_nat_conservatism"
-		textureFile = "gfx/interface/ideologies/Seo_Jae_Pil_conservatism.dds"
+		name = "GFX_ideology_soc_conservatism"
+		textureFile = "gfx/interface/ideologies/soc_conservatism.dds"
 	}
+
 	spriteType = {
 		name = "GFX_ideology_Jap_authoritarian"
 		textureFile = "gfx/interface/ideologies/nat_liberalism.dds"
+	}
+
+	#공산주의
+	spriteType = {
+		name = "GFX_ideology_communism_group"
+		texturefile = "gfx/interface/ideologies/communism.dds"
+	}
+
+	#사회주의
+	spriteType = {
+		name = "GFX_ideology_n_socialism_group"
+		texturefile = "gfx/interface/ideologies/rad_socialism.dds"
+	}
+
+	#민주주의
+	spriteType = {
+		name = "GFX_ideology_democratic_group"
+		texturefile = "gfx/interface/ideologies/soc_liberalism.dds"
+	}
+
+	#권위주의
+	spriteType = {
+		name = "GFX_ideology_neutrality_group"
+		texturefile = "gfx/interface/ideologies/aut_democracy.dds"
+	}
+
+	#파시즘
+	spriteType = {
+		name = "GFX_ideology_fascism_group"
+		texturefile = "gfx/interface/ideologies/fascism_icon.dds"
+	}
+
+	#권위사회주의
+	spriteType = {
+		name = "GFX_ideology_auth_socialism_group"
+		texturefile = "gfx/interface/ideologies/aut_socialism.dds"
+	}
+
+	#사회민주주의
+	spriteType = {
+		name = "GFX_ideology_social_democracy_group"
+		texturefile = "gfx/interface/ideologies/soc_democracy.dds"
+	}
+
+	#사회자유주의
+	spriteType = {
+		name = "GFX_ideology_social_liberalism_group"
+		texturefile = "gfx/interface/ideologies/soc_liberalism.dds"
+	}
+
+	#국민자유주의
+	spriteType = {
+		name = "GFX_ideology_national_liberalism_group"
+		texturefile = "gfx/interface/ideologies/nat_liberalism.dds"
+	}
+
+	#자유보수주의
+	spriteType = {
+		name = "GFX_ideology_liberal_conservatism_group"
+		texturefile = "gfx/interface/ideologies/lib_conservatism.dds"
+	}
+
+	#국민보수주의
+	spriteType = {
+		name = "GFX_ideology_national_conservatism_group"
+		texturefile = "gfx/interface/ideologies/nat_conservatism.dds"
+	}
+
+	#전제독재주의
+	spriteType = {
+		name = "GFX_ideology_neutrality_group"
+		texturefile = "gfx/interface/ideologies/despotism.dds"
 	}
 }

@@ -1,20 +1,20 @@
 guiTypes = {
 	containerWindowType = {
 		name = "parliament_button_ui"
-		position = { x = 360 y = 470 }
+		position = { x = 365 y = 240 }
 		
 		buttonType = {
 			name = "parliament_button"
-			position = { x = 0 y = 0 }
-			spriteType = "GFX_cabinet_button"
-			pdx_tooltip = "parliament_button_tt"
+			position = { x = 130 y = 100 }
+			spriteType = "GFX_button_right"
+			pdx_tooltip = "cabinet_button_tt"
 		}
 		
 		instantTextboxType = { #직책명
 			name = "parliament_button_text"
-			position = { x = -17 y = 8 }
+			position = { x = -39 y = 100 }
 			font = "hoi_16mbs"
-			text = "국회"
+			text = "국회 현황 개요"
 			maxWidth = 155
 			maxHeight = 20
 			format = center
@@ -316,6 +316,72 @@ guiTypes = {
 					pdx_tooltip = KOR_legco_ordinance_effect_tt
 				}
 			}
+
+			instantTextboxType = {
+				name = "current_negotiation_support"
+				position = { x = 752 y = 378 }
+				font = "aldrich_22_outline"
+				text = KOR_legco_current_negotiation_support
+				maxWidth = 263
+				format = center
+				alwaystransparent = yes
+				pdx_tooltip = KOR_current_negotiation_support_tt
+			}
+
+			containerWindowType = {
+				name = "negotiation"
+				position = { x = 755 y = 90 }
+
+				instantTextboxType = {
+					name = "current_negotiation_name"
+					position = { x = -64 y = 10 }
+					font = "aldrich_24_outline"
+					text = "KOR_legco_current_negotiation_title"
+					maxWidth = 390
+					format = center
+					alwaystransparent = yes
+				}
+
+				instantTextboxType = {
+					name = "negotiation_title"
+					position = { x = -15 y = 62 }
+					font = "aldrich_18_outline"
+					text = "KOR_legco_negotiation_title"
+					maxWidth = 186
+					format = left
+					alwaystransparent = yes
+				}
+
+				instantTextboxType = {
+					name = "negotiation_info"
+					position = { x = -16 y = 85 }
+					font = "aldrich_16_outline"
+					text = "KOR_legco_negotiation_text"
+					maxWidth = 290
+					format = left
+					alwaystransparent = yes
+				}
+
+				instantTextboxType = {
+					name = "negotiation_effects_title"
+					position = { x = -15 y = 180 }
+					font = "aldrich_18_outline"
+					text = "KOR_legco_negotiation_effects_title"
+					maxWidth = 186
+					format = left
+					alwaystransparent = yes
+				}
+
+				instantTextboxType = {
+					name = "negotiation_effects_info"
+					position = { x = -16 y = 205 }
+					font = "aldrich_16_outline"
+					text = "KOR_legco_negotiation_effects_text"
+					maxWidth = 290
+					format = left
+					alwaystransparent = yes
+				}
+			}
 			
 			instantTextboxType = {
 				name = "parliament_Recruiting_National_Assembly_member_desc"
@@ -366,6 +432,16 @@ guiTypes = {
 				max_slots_horizontal = 1
 				add_horizontal = no
 			}
+		}
+
+		instantTextboxType = {
+			name = "past_negotiation_header"
+			position = { x = 1066 y = 462 }
+			font = "aldrich_24_outline"
+			text = KOR_legco_past_negotiation
+			maxWidth = 263
+			format = center
+			alwaystransparent = yes
 		}
 		
 		containerWindowType = {

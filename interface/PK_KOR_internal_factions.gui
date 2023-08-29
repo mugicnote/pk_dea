@@ -1,0 +1,1391 @@
+@FACTION_TEXT_X = 50
+@SUPPORT_TEXT_X = 160
+@PP_ICON_X = 262
+@PP_TT_X = 235
+@STABILITY_ICON_X = 337
+@STABILITY_TT_X = 310
+@MANPOWER_ICON_X = 417
+@MANPOWER_TT_X = 385
+@HEADERS_TEXT_Y = 20
+@HEADERS_Y = 15
+
+@FACTION_GROUP_X = 70
+@FACTION_ICONS_X = 18
+@FACTION_NAMES_X = 73
+
+@ATTITUDE_TEXT_X = 195
+@PP_TEXT_X = 275
+@STABILITY_TEXT_X = 350
+@MANPOWER_TEXT_X = 425
+
+@COMMUNISM_ICON_Y = 18
+@COMMUNISM_TEXT_Y = 30
+@COM_TEXT_Y = 50
+@AUTSOC_Y = 70
+
+# @SOCIALISM_ICON_Y = 68
+# @SOCIALISM_TEXT_Y = 80
+
+@DEMOCRATIC_ICON_Y = 98
+@DEMOCRATIC_TEXT_Y = 110
+@SOCDEM_Y = 130
+@SOCLIB_Y = 150
+@NATLIB_Y = 170
+@LIBCON_Y = 190
+@NATCON_Y = 210
+
+@NEUTRALITY_ICON_Y = 238
+@NEUTRALITY_TEXT_Y = 250
+@SOCCON_Y = 270
+@RADSOC_Y = 290
+
+@FASCISM_ICON_Y = 318
+@FASCISM_TEXT_Y = 330
+@DES_Y = 350
+@FAS_Y = 370
+
+
+guiTypes = {
+
+	containerWindowType = {
+		name = "KOR_internal_factions_ui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height= 400 }
+
+		instantTextBoxType = {
+			name = "ati_icon"
+			position = { x = @ATTITUDE_TEXT_X y = @COMMUNISM_ICON_Y }
+			font = "pk_18"
+			text = "태도"
+			format = center
+			maxwidth = 70
+			pdx_tooltip = ATTITUDE_TOOLTIP
+		}
+
+		instantTextBoxType = {
+			name = "efc_icon"
+			position = { x = @PP_TEXT_X y = @COMMUNISM_ICON_Y }
+			font = "pk_18"
+			text = "efc_icon"
+			format = center
+			maxwidth = 70
+		}
+		instantTextBoxType = {
+			name = "con_icon"
+			position = { x = @STABILITY_TEXT_X y = @COMMUNISM_ICON_Y }
+			font = "pk_18"
+			text = "con_icon"
+			format = center
+			maxwidth = 70
+		}
+		instantTextBoxType = {
+			name = "fao_icon"
+			position = { x = @MANPOWER_TEXT_X y = @COMMUNISM_ICON_Y }
+			font = "pk_18"
+			text = "fao_icon"
+			format = center
+			maxwidth = 70
+		}
+
+		instantTextBoxType = {
+			name = "pol_icon"
+			position = { x = @PP_TEXT_X y = @DEMOCRATIC_ICON_Y }
+			font = "pk_18"
+			text = "pol_icon"
+			format = center
+			maxwidth = 70
+		}
+		instantTextBoxType = {
+			name = "cos_icon"
+			position = { x = @STABILITY_TEXT_X y = @DEMOCRATIC_ICON_Y }
+			font = "pk_18"
+			text = "cos_icon"
+			format = center
+			maxwidth = 70
+		}
+		instantTextBoxType = {
+			name = "poa_icon"
+			position = { x = @MANPOWER_TEXT_X y = @DEMOCRATIC_ICON_Y }
+			font = "pk_18"
+			text = "poa_icon"
+			format = center
+			maxwidth = 70
+		}
+
+		instantTextBoxType = {
+			name = "sta_icon"
+			position = { x = @PP_TEXT_X y = @NEUTRALITY_ICON_Y }
+			font = "pk_18"
+			text = "sta_icon"
+			format = center
+			maxwidth = 70
+		}
+		instantTextBoxType = {
+			name = "res_icon"
+			position = { x = @STABILITY_TEXT_X y = @NEUTRALITY_ICON_Y }
+			font = "pk_18"
+			text = "res_icon"
+			format = center
+			maxwidth = 70
+		}
+		instantTextBoxType = {
+			name = "man_icon"
+			position = { x = @MANPOWER_TEXT_X y = @NEUTRALITY_ICON_Y }
+			font = "pk_18"
+			text = "man_icon"
+			format = center
+			maxwidth = 70
+		}
+
+		instantTextBoxType = {
+			name = "att_icon"
+			position = { x = @PP_TEXT_X y = @FASCISM_ICON_Y }
+			font = "pk_18"
+			text = "att_icon"
+			format = center
+			maxwidth = 70
+		}
+		instantTextBoxType = {
+			name = "fam_icon"
+			position = { x = @STABILITY_TEXT_X y = @FASCISM_ICON_Y }
+			font = "pk_18"
+			text = "fam_icon"
+			format = center
+			maxwidth = 70
+		}
+		instantTextBoxType = {
+			name = "wrs_icon"
+			position = { x = @MANPOWER_TEXT_X y = @FASCISM_ICON_Y }
+			font = "pk_18"
+			text = "wrs_icon"
+			format = center
+			maxwidth = 70
+		}
+
+		## 공산주의 정당 ##
+			iconType = {
+				name = "communists_icon"
+				spriteType = "GFX_ideology_n_socialism_group"
+				position = { x = @FACTION_ICONS_X y = @COMMUNISM_ICON_Y }
+				scale = 0.65
+			}
+			instantTextBoxType = {
+				name = "communists_text"
+				position = { x = @FACTION_GROUP_X y = @COMMUNISM_TEXT_Y }
+				font = "pk_18"
+				text = "communists_text"
+				format = left
+			}
+
+			# 공산주의 #
+				instantTextBoxType = {
+					name = "COM_name_text"
+					position = { x = @FACTION_NAMES_X y = @COM_TEXT_Y }
+					font = "pk_18"
+					text = "KOR_COM_name_text"
+					format = left
+					maxwidth = 120
+					pdx_tooltip = KOR_COM_TOOLTIP
+					pdx_tooltip_delayed = KOR_COM_TOOLTIP_D
+				}
+				instantTextBoxType = {
+					name = "COM_ati_text"
+					position = { x = @ATTITUDE_TEXT_X y = @COM_TEXT_Y }
+					font = "pk_18"
+					text = "KOR_COM_ati_text"
+					format = center
+					maxwidth = 70
+				}
+				instantTextBoxType = {
+					name = "COM_pol_text"
+					position = { x = @PP_TEXT_X y = @COM_TEXT_Y }
+					font = "pk_18"
+					text = "KOR_COM_pol_text"
+					format = center
+					maxwidth = 70
+				}
+				instantTextBoxType = {
+					name = "COM_sta_text"
+					position = { x = @STABILITY_TEXT_X y = @COM_TEXT_Y }
+					font = "pk_18"
+					text = "KOR_COM_sta_text"
+					format = center
+					maxwidth = 70
+				}
+				instantTextBoxType = {
+					name = "COM_man_text"
+					position = { x = @MANPOWER_TEXT_X y = @COM_TEXT_Y }
+					font = "pk_18"
+					text = "KOR_COM_man_text"
+					format = center
+					maxwidth = 70
+				}
+			
+			
+			# 권위사회주의 #
+				instantTextBoxType = {
+					name = "AUTSOC_name_text"
+					position = { x = @FACTION_NAMES_X y = @AUTSOC_Y }
+					font = "hoi_18mbs"
+					text = "KOR_AUTSOC_name_text"
+					format = left
+					maxwidth = 120
+					pdx_tooltip = KOR_AUTSOC_TOOLTIP
+					pdx_tooltip_delayed = KOR_AUTSOC_TOOLTIP_D
+				}
+				instantTextBoxType = {
+					name = "AUTSOC_ati_text"
+					position = { x = @ATTITUDE_TEXT_X y = @AUTSOC_Y }
+					font = "pk_18"
+					text = "KOR_AUTSOC_ati_text"
+					format = center
+					maxwidth = 70
+				}
+				instantTextBoxType = {
+					name = "AUTSOC_pol_text"
+					position = { x = @PP_TEXT_X y = @AUTSOC_Y }
+					font = "pk_18"
+					text = "KOR_AUTSOC_pol_text"
+					format = center
+					maxwidth = 70
+				}
+				instantTextBoxType = {
+					name = "AUTSOC_sta_text"
+					position = { x = @STABILITY_TEXT_X y = @AUTSOC_Y }
+					font = "pk_18"
+					text = "KOR_AUTSOC_sta_text"
+					format = center
+					maxwidth = 70
+				}
+				instantTextBoxType = {
+					name = "AUTSOC_man_text"
+					position = { x = @MANPOWER_TEXT_X y = @AUTSOC_Y }
+					font = "pk_18"
+					text = "KOR_AUTSOC_man_text"
+					format = center
+					maxwidth = 70
+				}
+			#
+		
+
+		## 사회주의 정당 ##
+			# iconType = {
+			# 	name = "socialists_icon"
+			# 	spriteType = "GFX_ideology_n_socialism_group"
+			# 	position = { x = @FACTION_ICONS_X y = @SOCIALISM_ICON_Y }
+			# 	scale = 0.65
+			# }
+			# instantTextBoxType = {
+			# 	name = "socialists_text"
+			# 	position = { x = @FACTION_GROUP_X y = @SOCIALISM_TEXT_Y }
+			# 	font = "pk_18"
+			# 	text = "socialists_text"
+			# 	format = left
+			# }
+
+		#
+
+		## 민주주의 정당 ##
+			iconType = {
+				name = "democratic_icon"
+				spriteType = "GFX_ideology_social_liberalism_group"
+				position = { x = @FACTION_ICONS_X y = @DEMOCRATIC_ICON_Y }
+				scale = 0.65
+			}
+			instantTextBoxType = {
+				name = "democrats_text"
+				position = { x = @FACTION_GROUP_X y = @DEMOCRATIC_TEXT_Y }
+				font = "pk_18"
+				text = "democrats_text"
+				format = left
+			}
+
+				# 사회민주주의 #
+				instantTextBoxType = {
+					name = "SOCDEM_name_text"
+					position = { x = @FACTION_NAMES_X y = @SOCDEM_Y }
+					font = "hoi_18mbs"
+					text = "KOR_SOCDEM_name_text"
+					format = left
+					maxwidth = 120
+					pdx_tooltip = KOR_SOCDEM_TOOLTIP
+					pdx_tooltip_delayed = KOR_SOCDEM_TOOLTIP_D
+				}
+				instantTextBoxType = {
+					name = "SOCDEM_ati_text"
+					position = { x = @ATTITUDE_TEXT_X y = @SOCDEM_Y }
+					font = "pk_18"
+					text = "KOR_SOCDEM_ati_text"
+					format = center
+					maxwidth = 70
+				}
+				instantTextBoxType = {
+					name = "SOCDEM_pol_text"
+					position = { x = @PP_TEXT_X y = @SOCDEM_Y }
+					font = "pk_18"
+					text = "KOR_SOCDEM_pol_text"
+					format = center
+					maxwidth = 70
+				}
+				instantTextBoxType = {
+					name = "SOCDEM_sta_text"
+					position = { x = @STABILITY_TEXT_X y = @SOCDEM_Y }
+					font = "pk_18"
+					text = "KOR_SOCDEM_sta_text"
+					format = center
+					maxwidth = 70
+				}
+				instantTextBoxType = {
+					name = "SOCDEM_man_text"
+					position = { x = @MANPOWER_TEXT_X y = @SOCDEM_Y }
+					font = "pk_18"
+					text = "KOR_SOCDEM_man_text"
+					format = center
+					maxwidth = 70
+				}
+			#
+
+			# 사회자유주의 #
+				instantTextBoxType = {
+					name = "SOCLIB_name_text"
+					position = { x = @FACTION_NAMES_X y = @SOCLIB_Y }
+					font = "hoi_18mbs"
+					text = "KOR_SOCLIB_name_text"
+					format = left
+					maxwidth = 120
+					pdx_tooltip = KOR_SOCLIB_TOOLTIP
+					pdx_tooltip_delayed = KOR_SOCLIB_TOOLTIP_D
+				}
+				instantTextBoxType = {
+					name = "SOCLIB_ati_text"
+					position = { x = @ATTITUDE_TEXT_X y = @SOCLIB_Y }
+					font = "pk_18"
+					text = "KOR_SOCLIB_ati_text"
+					format = center
+					maxwidth = 70
+				}
+				instantTextBoxType = {
+					name = "SOCLIB_pol_text"
+					position = { x = @PP_TEXT_X y = @SOCLIB_Y }
+					font = "pk_18"
+					text = "KOR_SOCLIB_pol_text"
+					format = center
+					maxwidth = 70
+				}
+				instantTextBoxType = {
+					name = "SOCLIB_sta_text"
+					position = { x = @STABILITY_TEXT_X y = @SOCLIB_Y }
+					font = "pk_18"
+					text = "KOR_SOCLIB_sta_text"
+					format = center
+					maxwidth = 70
+				}
+				instantTextBoxType = {
+					name = "SOCLIB_man_text"
+					position = { x = @MANPOWER_TEXT_X y = @SOCLIB_Y }
+					font = "pk_18"
+					text = "KOR_SOCLIB_man_text"
+					format = center
+					maxwidth = 70
+				}
+			#
+
+			# 국민자유주의 #
+				instantTextBoxType = {
+					name = "NATLIB_name_text"
+					position = { x = @FACTION_NAMES_X y = @NATLIB_Y }
+					font = "hoi_18mbs"
+					text = "KOR_NATLIB_name_text"
+					format = left
+					maxwidth = 120
+					pdx_tooltip = KOR_NATLIB_TOOLTIP
+					pdx_tooltip_delayed = KOR_NATLIB_TOOLTIP_D
+				}
+				instantTextBoxType = {
+					name = "NATLIB_ati_text"
+					position = { x = @ATTITUDE_TEXT_X y = @NATLIB_Y }
+					font = "pk_18"
+					text = "KOR_NATLIB_ati_text"
+					format = center
+					maxwidth = 70
+				}
+				instantTextBoxType = {
+					name = "NATLIB_pol_text"
+					position = { x = @PP_TEXT_X y = @NATLIB_Y }
+					font = "pk_18"
+					text = "KOR_NATLIB_pol_text"
+					format = center
+					maxwidth = 70
+				}
+				instantTextBoxType = {
+					name = "NATLIB_sta_text"
+					position = { x = @STABILITY_TEXT_X y = @NATLIB_Y }
+					font = "pk_18"
+					text = "KOR_NATLIB_sta_text"
+					format = center
+					maxwidth = 70
+				}
+				instantTextBoxType = {
+					name = "NATLIB_man_text"
+					position = { x = @MANPOWER_TEXT_X y = @NATLIB_Y }
+					font = "pk_18"
+					text = "KOR_NATLIB_man_text"
+					format = center
+					maxwidth = 70
+				}
+			#
+
+			# 자유보수주의 #
+				instantTextBoxType = {
+					name = "LIBCON_name_text"
+					position = { x = @FACTION_NAMES_X y = @LIBCON_Y }
+					font = "hoi_18mbs"
+					text = "KOR_LIBCON_name_text"
+					format = left
+					maxwidth = 120
+					pdx_tooltip = KOR_LIBCON_TOOLTIP
+					pdx_tooltip_delayed = KOR_LIBCON_TOOLTIP_D
+				}
+				instantTextBoxType = {
+					name = "LIBCON_ati_text"
+					position = { x = @ATTITUDE_TEXT_X y = @LIBCON_Y }
+					font = "pk_18"
+					text = "KOR_LIBCON_ati_text"
+					format = center
+					maxwidth = 70
+				}
+				instantTextBoxType = {
+					name = "LIBCON_pol_text"
+					position = { x = @PP_TEXT_X y = @LIBCON_Y }
+					font = "pk_18"
+					text = "KOR_LIBCON_pol_text"
+					format = center
+					maxwidth = 70
+				}
+				instantTextBoxType = {
+					name = "LIBCON_sta_text"
+					position = { x = @STABILITY_TEXT_X y = @LIBCON_Y }
+					font = "pk_18"
+					text = "KOR_LIBCON_sta_text"
+					format = center
+					maxwidth = 70
+				}
+				instantTextBoxType = {
+					name = "LIBCON_man_text"
+					position = { x = @MANPOWER_TEXT_X y = @LIBCON_Y }
+					font = "pk_18"
+					text = "KOR_LIBCON_man_text"
+					format = center
+					maxwidth = 70
+				}
+			#
+
+			# 국민보수주의 #
+				instantTextBoxType = {
+					name = "NATCON_name_text"
+					position = { x = @FACTION_NAMES_X y = @NATCON_Y }
+					font = "hoi_18mbs"
+					text = "KOR_NATCON_name_text"
+					format = left
+					maxwidth = 120
+					pdx_tooltip = KOR_NATCON_TOOLTIP
+					pdx_tooltip_delayed = KOR_NATCON_TOOLTIP_D
+				}
+				instantTextBoxType = {
+					name = "NATCON_ati_text"
+					position = { x = @ATTITUDE_TEXT_X y = @NATCON_Y }
+					font = "pk_18"
+					text = "KOR_NATCON_ati_text"
+					format = center
+					maxwidth = 70
+				}
+				instantTextBoxType = {
+					name = "NATCON_pol_text"
+					position = { x = @PP_TEXT_X y = @NATCON_Y }
+					font = "pk_18"
+					text = "KOR_NATCON_pol_text"
+					format = center
+					maxwidth = 70
+				}
+				instantTextBoxType = {
+					name = "NATCON_sta_text"
+					position = { x = @STABILITY_TEXT_X y = @NATCON_Y }
+					font = "pk_18"
+					text = "KOR_NATCON_sta_text"
+					format = center
+					maxwidth = 70
+				}
+				instantTextBoxType = {
+					name = "NATCON_man_text"
+					position = { x = @MANPOWER_TEXT_X y = @NATCON_Y }
+					font = "pk_18"
+					text = "KOR_NATCON_man_text"
+					format = center
+					maxwidth = 70
+				}
+			#
+
+		#
+
+		# 권위주의 정당 #
+			iconType = {
+				name = "neutrality_icon"
+				spriteType = "GFX_ideology_soc_conservatism"
+				position = { x = @FACTION_ICONS_X y = @NEUTRALITY_ICON_Y }
+				scale = 0.65
+			}
+			instantTextBoxType = {
+				name = "neutrality_text"
+				position = { x = @FACTION_GROUP_X y = @NEUTRALITY_TEXT_Y }
+				font = "pk_18"
+				text = "neutrality_text"
+				format = left
+			}
+
+		#
+
+		# 사회보수주의 #
+			instantTextBoxType = {
+				name = "SOCCON_name_text"
+				position = { x = @FACTION_NAMES_X y = @SOCCON_Y }
+				font = "hoi_18mbs"
+				text = "KOR_SOCCON_name_text"
+				format = left
+				maxwidth = 120
+				pdx_tooltip = KOR_SOCCON_TOOLTIP
+				pdx_tooltip_delayed = KOR_SOCCON_TOOLTIP_D
+			}
+			instantTextBoxType = {
+				name = "SOCCON_ati_text"
+				position = { x = @ATTITUDE_TEXT_X y = @SOCCON_Y }
+				font = "pk_18"
+				text = "KOR_SOCCON_ati_text"
+				format = center
+				maxwidth = 70
+			}
+			instantTextBoxType = {
+				name = "SOCCON_pol_text"
+				position = { x = @PP_TEXT_X y = @SOCCON_Y }
+				font = "pk_18"
+				text = "KOR_SOCCON_pol_text"
+				format = center
+				maxwidth = 70
+			}
+			instantTextBoxType = {
+				name = "SOCCON_sta_text"
+				position = { x = @STABILITY_TEXT_X y = @SOCCON_Y }
+				font = "pk_18"
+				text = "KOR_SOCCON_sta_text"
+				format = center
+				maxwidth = 70
+			}
+			instantTextBoxType = {
+				name = "SOCCON_man_text"
+				position = { x = @MANPOWER_TEXT_X y = @SOCCON_Y }
+				font = "pk_18"
+				text = "KOR_SOCCON_man_text"
+				format = center
+				maxwidth = 70
+			}
+		#
+
+		# 급진사회주의 #
+			instantTextBoxType = {
+				name = "RADSOC_name_text"
+				position = { x = @FACTION_NAMES_X y = @RADSOC_Y }
+				font = "hoi_18mbs"
+				text = "KOR_RADSOC_name_text"
+				format = left
+				maxwidth = 120
+				pdx_tooltip = KOR_RADSOC_TOOLTIP
+				pdx_tooltip_delayed = KOR_RADSOC_TOOLTIP_D
+			}
+			instantTextBoxType = {
+				name = "RADSOC_ati_text"
+				position = { x = @ATTITUDE_TEXT_X y = @RADSOC_Y }
+				font = "pk_18"
+				text = "KOR_RADSOC_ati_text"
+				format = center
+				maxwidth = 70
+			}
+			instantTextBoxType = {
+				name = "RADSOC_pol_text"
+				position = { x = @PP_TEXT_X y = @RADSOC_Y }
+				font = "pk_18"
+				text = "KOR_RADSOC_pol_text"
+				format = center
+				maxwidth = 70
+			}
+			instantTextBoxType = {
+				name = "RADSOC_sta_text"
+				position = { x = @STABILITY_TEXT_X y = @RADSOC_Y }
+				font = "pk_18"
+				text = "KOR_RADSOC_sta_text"
+				format = center
+				maxwidth = 70
+			}
+			instantTextBoxType = {
+				name = "RADSOC_man_text"
+				position = { x = @MANPOWER_TEXT_X y = @RADSOC_Y }
+				font = "pk_18"
+				text = "KOR_RADSOC_man_text"
+				format = center
+				maxwidth = 70
+			}
+		#
+
+		# 파시즘 정당 #
+			iconType = {
+				name = "fascists_icon"
+				spriteType = "GFX_ideology_fascism_group"
+				position = { x = @FACTION_ICONS_X y = @FASCISM_ICON_Y }
+				scale = 0.65
+			}
+			instantTextBoxType = {
+				name = "fascists_text"
+				position = { x = @FACTION_GROUP_X y = @FASCISM_TEXT_Y }
+				font = "pk_18"
+				text = "fascists_text"
+				format = left
+			}
+
+			# 전제주의 #
+				instantTextBoxType = {
+					name = "DES_name_text"
+					position = { x = @FACTION_NAMES_X y = @DES_Y }
+					font = "hoi_18mbs"
+					text = "KOR_DES_name_text"
+					format = left
+					maxwidth = 120
+					pdx_tooltip = KOR_DES_TOOLTIP
+					pdx_tooltip_delayed = KOR_DES_TOOLTIP_D
+				}
+				instantTextBoxType = {
+					name = "DES_ati_text"
+					position = { x = @ATTITUDE_TEXT_X y = @DES_Y }
+					font = "pk_18"
+					text = "KOR_DES_ati_text"
+					format = center
+					maxwidth = 70
+				}
+				instantTextBoxType = {
+					name = "DES_pol_text"
+					position = { x = @PP_TEXT_X y = @DES_Y }
+					font = "pk_18"
+					text = "KOR_DES_pol_text"
+					format = center
+					maxwidth = 70
+				}
+				instantTextBoxType = {
+					name = "DES_sta_text"
+					position = { x = @STABILITY_TEXT_X y = @DES_Y }
+					font = "pk_18"
+					text = "KOR_DES_sta_text"
+					format = center
+					maxwidth = 70
+				}
+				instantTextBoxType = {
+					name = "DES_man_text"
+					position = { x = @MANPOWER_TEXT_X y = @DES_Y }
+					font = "pk_18"
+					text = "KOR_DES_man_text"
+					format = center
+					maxwidth = 70
+				}
+			#
+
+			# 파시즘 #
+				instantTextBoxType = {
+					name = "FAS_name_text"
+					position = { x = @FACTION_NAMES_X y = @FAS_Y }
+					font = "hoi_18mbs"
+					text = "KOR_FAS_name_text"
+					format = left
+					maxwidth = 120
+					pdx_tooltip = KOR_FAS_TOOLTIP
+					pdx_tooltip_delayed = KOR_FAS_TOOLTIP_D
+				}
+				instantTextBoxType = {
+					name = "FAS_ati_text"
+					position = { x = @ATTITUDE_TEXT_X y = @FAS_Y }
+					font = "pk_18"
+					text = "KOR_FAS_ati_text"
+					format = center
+					maxwidth = 70
+				}
+				instantTextBoxType = {
+					name = "FAS_pol_text"
+					position = { x = @PP_TEXT_X y = @FAS_Y }
+					font = "pk_18"
+					text = "KOR_FAS_pol_text"
+					format = center
+					maxwidth = 70
+				}
+				instantTextBoxType = {
+					name = "FAS_sta_text"
+					position = { x = @STABILITY_TEXT_X y = @FAS_Y }
+					font = "pk_18"
+					text = "KOR_FAS_sta_text"
+					format = center
+					maxwidth = 70
+				}
+				instantTextBoxType = {
+					name = "FAS_man_text"
+					position = { x = @MANPOWER_TEXT_X y = @FAS_Y }
+					font = "pk_18"
+					text = "KOR_FAS_man_text"
+					format = center
+					maxwidth = 70
+				}
+			#
+		#
+
+		# 파벌명 #
+			# instantTextBoxType = {
+			# 	name = "communist_name_text"
+			# 	position = { x = @FACTION_NAMES_X y = @COM_TEXT_Y }
+			# 	font = "hoi_18mbs"
+			# 	text = "KOR_com_name_text"
+			# 	format = left
+			# 	maxHeight = 24
+			# }
+			# instantTextBoxType = {
+			# 	name = "socialist_name_text"
+			# 	position = { x = @FACTION_NAMES_X y = @SOC_Y }
+			# 	font = "hoi_18mbs"
+			# 	text = "KOR_soc_name_text"
+			# 	format = left
+			# 	maxHeight = 24
+			# }
+			# instantTextBoxType = {
+			# 	name = "centrist_name_text"
+			# 	position = { x = @FACTION_NAMES_X y = @CEN_Y }
+			# 	font = "hoi_18mbs"
+			# 	text = "KOR_cen_name_text"
+			# 	format = left
+			# 	maxHeight = 24
+			# }
+			# instantTextBoxType = {
+			# 	name = "kdp_name_text"
+			# 	position = { x = @FACTION_NAMES_X y = @KDP_Y }
+			# 	font = "hoi_18mbs"
+			# 	text = "KOR_kdp_name_text"
+			# 	format = left
+			# 	maxHeight = 24
+			# }
+			# instantTextBoxType = {
+			# 	name = "liberalist_name_text"
+			# 	position = { x = @FACTION_NAMES_X y = @LIB_Y }
+			# 	font = "hoi_18mbs"
+			# 	text = "KOR_lib_name_text"
+			# 	format = left
+			# 	maxHeight = 24
+			# }
+			# instantTextBoxType = {
+			# 	name = "conservative_name_text"
+			# 	position = { x = @FACTION_NAMES_X y = @CON_Y }
+			# 	font = "hoi_18mbs"
+			# 	text = "KOR_con_name_text"
+			# 	format = left
+			# 	maxHeight = 24
+			# }
+			# instantTextBoxType = {
+			# 	name = "nationalist_name_text"
+			# 	position = { x = @FACTION_NAMES_X y = @NAT_Y }
+			# 	font = "hoi_18mbs"
+			# 	text = "KOR_nat_name_text"
+			# 	format = left
+			# 	maxHeight = 24
+			# }
+			# instantTextBoxType = {
+			# 	name = "monarchist_name_text"
+			# 	position = { x = @FACTION_NAMES_X y = @MON_Y }
+			# 	font = "hoi_18mbs"
+			# 	text = "KOR_mor_name_text"
+			# 	format = left
+			# 	maxHeight = 24
+			# }
+			# instantTextBoxType = {
+			# 	name = "fasict_name_text"
+			# 	position = { x = @FACTION_NAMES_X y = @FAS_Y }
+			# 	font = "hoi_18mbs"
+			# 	text = "KOR_fas_name_text"
+			# 	format = left
+			# 	maxHeight = 24
+			# }
+		#
+
+		#ICONS
+		# 	# iconType = {
+		# 	# 	name = "monarchists_icon"
+		# 	# 	spriteType = "GFX_decision_faction_gre_monarchist"
+		# 	# 	position = { x = @FACTION_ICONS_X y = 45 }
+		# 	# }
+
+		# 	# instantTextBoxType = {
+		# 	# 	name = "monarchists_name_text"
+		# 	# 	position = { x = @FACTION_NAMES_X y = 55 }
+		# 	# 	font = "hoi_18mbs"
+		# 	# 	text = "GRE_monarchists_name_text"
+		# 	# 	format = left
+		# 	# 	maxHeight = 24
+		# 	# }
+
+		# 	# iconType = {
+		# 	# 	name = "republicans_icon"
+		# 	# 	spriteType = "GFX_decision_faction_gre_venezelist"
+		# 	# 	position = { x = @FACTION_ICONS_X y = 90 }
+		# 	# }
+
+		# 	# instantTextBoxType = {
+		# 	# 	name = "republicans_name_text"
+		# 	# 	position = { x = @FACTION_NAMES_X y = 100 }
+		# 	# 	font = "hoi_18mbs"
+		# 	# 	text = "GRE_republicans_name_text"
+		# 	# 	format = left
+		# 	# 	maxHeight = 24
+		# 	# }
+
+		# 	# iconType = {
+		# 	# 	name = "communists_icon"
+		# 	# 	spriteType = "GFX_decision_faction_gre_communist"
+		# 	# 	position = { x = @FACTION_ICONS_X y = 135 }
+		# 	# }
+
+		# 	# instantTextBoxType = {
+		# 	# 	name = "communists_name_text"
+		# 	# 	position = { x = @FACTION_NAMES_X y = 145 }
+		# 	# 	font = "hoi_18mbs"
+		# 	# 	text = "GRE_communists_name_text"
+		# 	# 	format = left
+		# 	# 	maxHeight = 24
+		# 	# }
+
+		# 	# iconType = {
+		# 	# 	name = "fascists_icon"
+		# 	# 	spriteType = "GFX_decision_faction_gre_fascist"
+		# 	# 	position = { x = @FACTION_ICONS_X y = 180 }
+		# 	# }
+
+		# 	# instantTextBoxType = {
+		# 	# 	name = "fascists_name_text"
+		# 	# 	position = { x = @FACTION_NAMES_X y = 190 }
+		# 	# 	font = "hoi_18mbs"
+		# 	# 	text = "GRE_fascists_name_text"
+		# 	# 	format = left
+		# 	# 	maxHeight = 24
+		# 	# }
+		# #
+
+		#태도
+			# instantTextBoxType = {
+			# 	name = "attitude_header"
+			# 	position = { x = @ATTITUDE_TEXT_X y = @HEADERS_TEXT_Y }
+			# 	font = "hoi_18mbs"
+			# 	text = "GRE_ui_attitude_header"
+			# 	format = center
+			# 	maxHeight = 24
+			# 	maxwidth = 110
+			# }
+			# instantTextBoxType = {
+			# 	name = "COM_attitude_status"
+			# 	position = { x = @ATTITUDE_TEXT_X y = @COM_TEXT_Y }
+			# 	font = "hoi_18mbs"
+			# 	text = "r_normal"
+			# 	format = center
+			# 	maxwidth = 110
+			# }
+			# instantTextBoxType = {
+			# 	name = "SOC_attitude_status"
+			# 	position = { x = @ATTITUDE_TEXT_X y = @SOC_Y }
+			# 	font = "hoi_18mbs"
+			# 	text = "r_normal"
+			# 	format = center
+			# 	maxwidth = 110
+			# }
+			# instantTextBoxType = {
+			# 	name = "CEN_attitude_status"
+			# 	position = { x = @ATTITUDE_TEXT_X y = @CEN_Y }
+			# 	font = "hoi_18mbs"
+			# 	text = "r_normal"
+			# 	format = center
+			# 	maxwidth = 110
+			# }
+			# instantTextBoxType = {
+			# 	name = "KDP_attitude_status"
+			# 	position = { x = @ATTITUDE_TEXT_X y = @KDP_Y }
+			# 	font = "hoi_18mbs"
+			# 	text = "r_normal"
+			# 	format = center
+			# 	maxwidth = 110
+			# }
+			# instantTextBoxType = {
+			# 	name = "LIB_attitude_status"
+			# 	position = { x = @ATTITUDE_TEXT_X y = @LIB_Y }
+			# 	font = "hoi_18mbs"
+			# 	text = "r_normal"
+			# 	format = center
+			# 	maxwidth = 110
+			# }
+			# instantTextBoxType = {
+			# 	name = "CON_attitude_status"
+			# 	position = { x = @ATTITUDE_TEXT_X y = @CON_Y }
+			# 	font = "hoi_18mbs"
+			# 	text = "r_normal"
+			# 	format = center
+			# 	maxwidth = 110
+			# }
+			# instantTextBoxType = {
+			# 	name = "NAT_attitude_status"
+			# 	position = { x = @ATTITUDE_TEXT_X y = @NAT_Y }
+			# 	font = "hoi_18mbs"
+			# 	text = "r_normal"
+			# 	format = center
+			# 	maxwidth = 110
+			# }
+			# instantTextBoxType = {
+			# 	name = "MON_attitude_status"
+			# 	position = { x = @ATTITUDE_TEXT_X y = @MON_Y }
+			# 	font = "hoi_18mbs"
+			# 	text = "r_normal"
+			# 	format = center
+			# 	maxwidth = 110
+			# }
+			# instantTextBoxType = {
+			# 	name = "FAS_attitude_status"
+			# 	position = { x = @ATTITUDE_TEXT_X y = @FAS_Y }
+			# 	font = "hoi_18mbs"
+			# 	text = "r_normal"
+			# 	format = center
+			# 	maxwidth = 110
+			# }
+			# #Tooltip
+			# instantTextBoxType = {
+			# 	name = "attitude_tooltip_fake"
+			# 	position = { x = @ATTITUDE_TEXT_X y = @HEADERS_Y }
+			# 	format = center
+			# 	maxwidth = 110
+			# 	maxHeight = 48
+			# 	pdx_tooltip = GRE_ATTITUDE_TOOLTIP
+			# }
+		#
+
+		#대중 지지도
+			# instantTextBoxType = {
+			# 	name = "support_header"
+			# 	position = { x = @SUPPORT_TEXT_X y = @HEADERS_TEXT_Y }
+			# 	font = "hoi_18mbs"
+			# 	text = "대중 지지도"
+			# 	format = center
+			# 	maxHeight = 24
+			# 	maxwidth = 110
+			# }
+			# instantTextBoxType = {
+			# 	name = "GRE_monarchists_support_status"
+			# 	position = { x = @SUPPORT_TEXT_X y = 55 }
+			# 	font = "hoi_18mbs"
+			# 	text = "높음"
+			# 	format = center
+			# 	maxwidth = 110
+			# }
+			# #Tooltip
+			# instantTextBoxType = {
+			# 	name = "support_tooltip_fake"
+			# 	position = { x = @SUPPORT_TEXT_X y = @HEADERS_Y }
+			# 	format = center
+			# 	maxwidth = 110
+			# 	maxHeight = 205
+			# 	pdx_tooltip = GRE_ATTITUDE_TOOLTIP
+		# }
+
+		#ATTITUDE
+			# instantTextBoxType = {
+			# 	name = "attitude_header"
+			# 	position = { x = @ATTITUDE_TEXT_X y = @HEADERS_Y }
+			# 	font = "hoi_18mbs"
+			# 	text = "GRE_ui_attitude_header"
+			# 	format = center
+			# 	maxHeight = 24
+			# 	maxwidth = 110
+			# }
+			# instantTextBoxType = {
+			# 	name = "GRE_monarchists_attitude_status"
+			# 	position = { x = @ATTITUDE_TEXT_X y = 55 }
+			# 	font = "hoi_18mbs"
+			# 	text = "GRE_monarchists_attitude_status_amount"
+			# 	format = center
+			# 	maxwidth = 110
+			# }
+
+			# instantTextBoxType = {
+			# 	name = "GRE_republicans_attitude_status"
+			# 	position = { x = @ATTITUDE_TEXT_X y = 100 }
+			# 	font = "hoi_18mbs"
+			# 	text = "GRE_republicans_attitude_status_amount"
+			# 	format = center
+			# 	maxwidth = 110
+			# }
+
+			# instantTextBoxType = {
+			# 	name = "GRE_communists_attitude_status"
+			# 	position = { x = @ATTITUDE_TEXT_X y = 145 }
+			# 	font = "hoi_18mbs"
+			# 	text = "GRE_communists_attitude_status_amount"
+			# 	format = center
+			# 	maxwidth = 110
+			# }
+
+			# instantTextBoxType = {
+			# 	name = "GRE_fascists_attitude_status"
+			# 	position = { x = @ATTITUDE_TEXT_X y = 190 }
+			# 	font = "hoi_18mbs"
+			# 	text = "GRE_fascists_attitude_status_amount"
+			# 	format = center
+			# 	maxwidth = 110
+			# }
+		#
+
+		#정치력
+			# iconType = {
+			# 	name = "pp_header"
+			# 	spriteType = "GFX_pol_power_icon"
+			# 	position = { x = @PP_ICON_X y = @HEADERS_Y }
+			# }
+			# instantTextBoxType = {
+			# 	name = "COM_pp_status"
+			# 	position = { x = @PP_TEXT_X y = @COM_TEXT_Y }
+			# 	font = "hoi_18mbs"
+			# 	text = "5%"
+			# 	format = center
+			# 	maxwidth = 110
+			# }
+			# instantTextBoxType = {
+			# 	name = "SOC_pp_status"
+			# 	position = { x = @PP_TEXT_X y = @SOC_Y }
+			# 	font = "hoi_18mbs"
+			# 	text = "5%"
+			# 	format = center
+			# 	maxwidth = 110
+			# }
+			# instantTextBoxType = {
+			# 	name = "CEN_pp_status"
+			# 	position = { x = @PP_TEXT_X y = @CEN_Y }
+			# 	font = "hoi_18mbs"
+			# 	text = "5%"
+			# 	format = center
+			# 	maxwidth = 110
+			# }
+			# instantTextBoxType = {
+			# 	name = "KDP_pp_status"
+			# 	position = { x = @PP_TEXT_X y = @KDP_Y }
+			# 	font = "hoi_18mbs"
+			# 	text = "5%"
+			# 	format = center
+			# 	maxwidth = 110
+			# }
+			# instantTextBoxType = {
+			# 	name = "LIB_pp_status"
+			# 	position = { x = @PP_TEXT_X y = @LIB_Y }
+			# 	font = "hoi_18mbs"
+			# 	text = "5%"
+			# 	format = center
+			# 	maxwidth = 110
+			# }
+			# instantTextBoxType = {
+			# 	name = "CON_pp_status"
+			# 	position = { x = @PP_TEXT_X y = @CON_Y }
+			# 	font = "hoi_18mbs"
+			# 	text = "5%"
+			# 	format = center
+			# 	maxwidth = 110
+			# }
+			# instantTextBoxType = {
+			# 	name = "NAT_pp_status"
+			# 	position = { x = @PP_TEXT_X y = @NAT_Y }
+			# 	font = "hoi_18mbs"
+			# 	text = "5%"
+			# 	format = center
+			# 	maxwidth = 110
+			# }
+			# instantTextBoxType = {
+			# 	name = "MON_pp_status"
+			# 	position = { x = @PP_TEXT_X y = @MON_Y }
+			# 	font = "hoi_18mbs"
+			# 	text = "5%"
+			# 	format = center
+			# 	maxwidth = 110
+			# }
+			# instantTextBoxType = {
+			# 	name = "FAS_pp_status"
+			# 	position = { x = @PP_TEXT_X y = @FAS_Y }
+			# 	font = "hoi_18mbs"
+			# 	text = "5%"
+			# 	format = center
+			# 	maxwidth = 110
+			# }
+			# #Tooltip
+			# instantTextBoxType = {
+			# 	name = "pp_tooltip_fake"
+			# 	position = { x = @PP_TT_X y = @HEADERS_Y }
+			# 	format = center
+			# 	maxwidth = 100
+			# 	maxHeight = 205
+			# 	pdx_tooltip = "POL_POWER_TOOLTIP"
+			# }
+		#
+
+		#안정도
+			# iconType = {
+			# 	name = "stability_header"
+			# 	spriteType = "GFX_stability_icon"
+			# 	position = { x = @STABILITY_ICON_X y = @HEADERS_Y }
+			# }
+			# instantTextBoxType = {
+			# 	name = "COM_stability_status"
+			# 	position = { x = @STABILITY_TEXT_X y = @COM_TEXT_Y }
+			# 	font = "hoi_18mbs"
+			# 	text = "5%"
+			# 	format = center
+			# 	maxwidth = 110
+			# }
+			# instantTextBoxType = {
+			# 	name = "COM_stability_status"
+			# 	position = { x = @STABILITY_TEXT_X y = @COM_TEXT_Y }
+			# 	font = "hoi_18mbs"
+			# 	text = "5%"
+			# 	format = center
+			# 	maxwidth = 110
+			# }
+			# instantTextBoxType = {
+			# 	name = "SOC_stability_status"
+			# 	position = { x = @STABILITY_TEXT_X y = @SOC_Y }
+			# 	font = "hoi_18mbs"
+			# 	text = "5%"
+			# 	format = center
+			# 	maxwidth = 110
+			# }
+			# instantTextBoxType = {
+			# 	name = "CEN_stability_status"
+			# 	position = { x = @STABILITY_TEXT_X y = @CEN_Y }
+			# 	font = "hoi_18mbs"
+			# 	text = "5%"
+			# 	format = center
+			# 	maxwidth = 110
+			# }
+			# instantTextBoxType = {
+			# 	name = "KDP_stability_status"
+			# 	position = { x = @STABILITY_TEXT_X y = @KDP_Y }
+			# 	font = "hoi_18mbs"
+			# 	text = "5%"
+			# 	format = center
+			# 	maxwidth = 110
+			# }
+			# instantTextBoxType = {
+			# 	name = "LIB_stability_status"
+			# 	position = { x = @STABILITY_TEXT_X y = @LIB_Y }
+			# 	font = "hoi_18mbs"
+			# 	text = "5%"
+			# 	format = center
+			# 	maxwidth = 110
+			# }
+			# instantTextBoxType = {
+			# 	name = "CON_stability_status"
+			# 	position = { x = @STABILITY_TEXT_X y = @CON_Y }
+			# 	font = "hoi_18mbs"
+			# 	text = "5%"
+			# 	format = center
+			# 	maxwidth = 110
+			# }
+			# instantTextBoxType = {
+			# 	name = "NAT_stability_status"
+			# 	position = { x = @STABILITY_TEXT_X y = @NAT_Y }
+			# 	font = "hoi_18mbs"
+			# 	text = "5%"
+			# 	format = center
+			# 	maxwidth = 110
+			# }
+			# instantTextBoxType = {
+			# 	name = "MON_stability_status"
+			# 	position = { x = @STABILITY_TEXT_X y = @MON_Y }
+			# 	font = "hoi_18mbs"
+			# 	text = "5%"
+			# 	format = center
+			# 	maxwidth = 110
+			# }
+			# instantTextBoxType = {
+			# 	name = "FAS_stability_status"
+			# 	position = { x = @STABILITY_TEXT_X y = @FAS_Y }
+			# 	font = "hoi_18mbs"
+			# 	text = "5%"
+			# 	format = center
+			# 	maxwidth = 110
+			# }
+			# #Tooltip
+			# instantTextBoxType = {
+			# 	name = "stability_tooltip_fake"
+			# 	position = { x = @STABILITY_TT_X y = @HEADERS_Y }
+			# 	format = center
+			# 	maxwidth = 100
+			# 	maxHeight = 205
+			# 	pdx_tooltip = GRE_STABILITY_TOOLTIP
+			# }
+		#
+
+		#STABILITY
+		# 	# instantTextBoxType = {
+		# 	# 	name = "GRE_monarchists_stability_status"
+		# 	# 	position = { x = @STABILITY_TEXT_X y = 55 }
+		# 	# 	font = "hoi_18mbs"
+		# 	# 	text = "GRE_monarchists_stability_status_amount"
+		# 	# 	format = center
+		# 	# 	maxwidth = 110
+		# 	# }
+
+		# 	# instantTextBoxType = {
+		# 	# 	name = "GRE_republicans_stability_status"
+		# 	# 	position = { x = @STABILITY_TEXT_X y = 100 }
+		# 	# 	font = "hoi_18mbs"
+		# 	# 	text = "GRE_republicans_stability_status_amount"
+		# 	# 	format = center
+		# 	# 	maxwidth = 110
+		# 	# }
+
+		# 	# instantTextBoxType = {
+		# 	# 	name = "GRE_communists_stability_status"
+		# 	# 	position = { x = @STABILITY_TEXT_X y = 145 }
+		# 	# 	font = "hoi_18mbs"
+		# 	# 	text = "GRE_communists_stability_status_amount"
+		# 	# 	format = center
+		# 	# 	maxwidth = 110
+		# 	# }
+
+		# 	# instantTextBoxType = {
+		# 	# 	name = "GRE_fascists_stability_status"
+		# 	# 	position = { x = @STABILITY_TEXT_X y = 190 }
+		# 	# 	font = "hoi_18mbs"
+		# 	# 	text = "GRE_fascists_stability_status_amount"
+		# 	# 	format = center
+		# 	# 	maxwidth = 110
+		# 	# }
+		# #
+
+		#인력
+			# iconType = {
+			# 	name = "manpower_header"
+			# 	spriteType = "GFX_manpower_icon"
+			# 	position = { x = @MANPOWER_ICON_X y = @HEADERS_Y }
+			# }
+			# instantTextBoxType = {
+			# 	name = "COM_manpower_status"
+			# 	position = { x = @MANPOWER_TEXT_X y = @COM_TEXT_Y }
+			# 	font = "hoi_18mbs"
+			# 	text = "20%"
+			# 	format = center
+			# 	maxwidth = 120
+			# }
+			# instantTextBoxType = {
+			# 	name = "SOC_manpower_status"
+			# 	position = { x = @MANPOWER_TEXT_X y = @SOC_Y }
+			# 	font = "hoi_18mbs"
+			# 	text = "20%"
+			# 	format = center
+			# 	maxwidth = 120
+			# }
+			# instantTextBoxType = {
+			# 	name = "CEN_manpower_status"
+			# 	position = { x = @MANPOWER_TEXT_X y = @CEN_Y }
+			# 	font = "hoi_18mbs"
+			# 	text = "20%"
+			# 	format = center
+			# 	maxwidth = 120
+			# }
+			# instantTextBoxType = {
+			# 	name = "KDP_manpower_status"
+			# 	position = { x = @MANPOWER_TEXT_X y = @KDP_Y }
+			# 	font = "hoi_18mbs"
+			# 	text = "20%"
+			# 	format = center
+			# 	maxwidth = 120
+			# }
+			# instantTextBoxType = {
+			# 	name = "LIB_manpower_status"
+			# 	position = { x = @MANPOWER_TEXT_X y = @LIB_Y }
+			# 	font = "hoi_18mbs"
+			# 	text = "20%"
+			# 	format = center
+			# 	maxwidth = 120
+			# }
+			# instantTextBoxType = {
+			# 	name = "CON_manpower_status"
+			# 	position = { x = @MANPOWER_TEXT_X y = @CON_Y }
+			# 	font = "hoi_18mbs"
+			# 	text = "20%"
+			# 	format = center
+			# 	maxwidth = 120
+			# }
+			# instantTextBoxType = {
+			# 	name = "NAT_manpower_status"
+			# 	position = { x = @MANPOWER_TEXT_X y = @NAT_Y }
+			# 	font = "hoi_18mbs"
+			# 	text = "20%"
+			# 	format = center
+			# 	maxwidth = 120
+			# }
+			# instantTextBoxType = {
+			# 	name = "MON_manpower_status"
+			# 	position = { x = @MANPOWER_TEXT_X y = @MON_Y }
+			# 	font = "hoi_18mbs"
+			# 	text = "20%"
+			# 	format = center
+			# 	maxwidth = 120
+			# }
+			# instantTextBoxType = {
+			# 	name = "FAS_manpower_status"
+			# 	position = { x = @MANPOWER_TEXT_X y = @FAS_Y }
+			# 	font = "hoi_18mbs"
+			# 	text = "20%"
+			# 	format = center
+			# 	maxwidth = 120
+			# }
+		#
+
+		#MANPOWER
+		# 	# instantTextBoxType = {
+		# 	# 	name = "GRE_republicans_manpower_status"
+		# 	# 	position = { x = @MANPOWER_TEXT_X y = 100 }
+		# 	# 	font = "hoi_18mbs"
+		# 	# 	text = "GRE_republicans_manpower_status_amount"
+		# 	# 	format = center
+		# 	# 	maxwidth = 120
+		# 	# }
+
+		# 	# instantTextBoxType = {
+		# 	# 	name = "GRE_communists_manpower_status"
+		# 	# 	position = { x = @MANPOWER_TEXT_X y = 145 }
+		# 	# 	font = "hoi_18mbs"
+		# 	# 	text = "GRE_communists_manpower_status_amount"
+		# 	# 	format = center
+		# 	# 	maxwidth = 120
+		# 	# }
+
+		# 	# instantTextBoxType = {
+		# 	# 	name = "GRE_fascists_manpower_status"
+		# 	# 	position = { x = @MANPOWER_TEXT_X y = 190 }
+		# 	# 	font = "hoi_18mbs"
+		# 	# 	text = "GRE_fascists_manpower_status_amount"
+		# 	# 	format = center
+		# 	# 	maxwidth = 120
+		# 	# }
+		# #
+
+		# #Tooltip
+		# instantTextBoxType = {
+		# 	name = "manpower_tooltip_fake"
+		# 	position = { x = @MANPOWER_TT_X y = @HEADERS_Y }
+		# 	format = center
+		# 	maxwidth = 100
+		# 	maxHeight = 205
+		# 	pdx_tooltip = GRE_MANPOWER_TOOLTIP
+		# }
+	}
+}

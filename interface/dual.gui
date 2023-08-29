@@ -1,15 +1,25 @@
 guiTypes = {
 	containerWindowType = {
 		name = "double_leader_system_container"
-		position = { x = 360 y = 410 }
-		orientation = upper_left
+		position = { x = 365 y = 240 }
 		
 		buttonType = {
 			name = "double_open"
-			position = { x = 0 y = 0 }
-			quadTextureSprite ="GFX_cabinet_button"
-			buttonFont = "hoi_16mbs"
-			buttonText = "국가요인 개요"
+			position = { x = 130 y = 40 }
+			spriteType = "GFX_button_right"
+			pdx_tooltip = "cabinet_button_tt"
+		}
+		
+		instantTextboxType = { #직책명
+			name = "cabinet_button_text"
+			position = { x = -41 y = 40 }
+			font = "hoi_16mbs"
+			text = "국가요인 개요"
+			maxWidth = 155
+			maxHeight = 20
+			format = center
+			vertical_alignment = center
+			allwaystransparent = yes
 		}
 	}
 	containerWindowType = {

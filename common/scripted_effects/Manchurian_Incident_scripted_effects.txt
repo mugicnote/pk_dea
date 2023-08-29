@@ -1,0 +1,30 @@
+Manchurian_Incident_flag_reset = {
+	KOR = {
+		clr_country_flag = KOR_show_Andong
+		clr_country_flag = KOR_show_Fengtian
+		clr_country_flag = KOR_show_Harbin
+		clr_country_flag = KOR_show_Dalian
+		clr_country_flag = KOR_show_Songjiang
+		clr_country_flag = KOR_show_Gilljiang
+		clr_country_flag = KOR_show_Heejang
+		clr_country_flag = KOR_show_Hehe
+		clr_country_flag = KOR_show_Xuilan
+		clr_country_flag = KOR_show_Longjiang
+		clr_country_flag = KOR_show_Xingan
+		clr_country_flag = KOR_show_Haiman
+		clr_country_flag = KOR_show_Liaobei
+		clr_country_flag = KOR_show_Jinzhou
+		clr_country_flag = KOR_show_NorthRuhr
+		clr_country_flag = KOR_show_Ruhr
+	}
+}
+
+Manchurian_Incident_Calculation = {
+	set_variable = {
+		inversely_Local_status = 100
+	}
+	subtract_from_variable = {
+		var = inversely_Local_status
+		value = Local_status
+	}
+}

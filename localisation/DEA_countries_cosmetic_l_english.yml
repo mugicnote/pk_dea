@@ -1,16 +1,20 @@
 ﻿l_english:
- korea_is_second:0 "대한민국 제2공화국"
- korea_is_second_DEF:0 "대한민국 제2공화국"
+  korea_is_second:0 "대한민국 제2공화국"
+  korea_is_second_DEF:0 "대한민국 제2공화국"
 
- KOR_THIRD_social_liberalism:0 "대한민국 제3공화국"
- KOR_THIRD_social_liberalism_DEF:0 "대한민국 제3공화국"
- KOR_THIRD_liberal_conservatism:0 "대한민국 제3공화국"
- KOR_THIRD_liberal_conservatism_DEF:0 "대한민국 제3공화국"
- KOR_THIRD_democratic:0 "대한민국 제3공화국"
- KOR_THIRD_democratic_DEF:0 "대한민국 제3공화국"
+  KOR_THIRD_social_liberalism:0 "대한민국 제3공화국"
+  KOR_THIRD_social_liberalism_DEF:0 "대한민국 제3공화국"
+  KOR_THIRD_liberal_conservatism:0 "대한민국 제3공화국"
+  KOR_THIRD_liberal_conservatism_DEF:0 "대한민국 제3공화국"
+  KOR_THIRD_democratic:0 "대한민국 제3공화국"
+  KOR_THIRD_democratic_DEF:0 "대한민국 제3공화국"
 
- KNM_KOR_fascism_autonomy_puppet:0 "북만주 임시 군사정부"
- KNM_KOR_fascism_autonomy_puppet_DEF:0 "북만주 임시 군사정부"
+  KNM_KOR_auto_despotism_autonomy_puppet:0 "대한제국령 북만주"
+  KNM_KOR_fascism_autonomy_puppet_DEF:0 "대한제국령 북만주"
+  KNM_KOR_auto_despotism_autonomy_puppet:0 "대한제국령 북만주"
+  KNM_KOR_auto_despotism_autonomy_puppet_DEF:0 "대한제국령 북만주"
 
- KOR_One_Fuhrer_fascism:0 "대한국 군사혁명정부"
- KOR_One_Fuhrer_fascism_DEF:0 "대한국 군사혁명정부"
+  KOR_One_Fuhrer_fascism:0 "대한국 군사혁명정부"
+  KOR_One_Fuhrer_fascism_DEF:0 "대한국 군사혁명정부"
+
+  CHI_Republic_of_China:0 "중화민국 국민정부"

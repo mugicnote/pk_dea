@@ -1,0 +1,210 @@
+defined_text = {
+	name = Manchurian_Incident_Local_status_GUI_IMG
+	text = {
+		trigger = {
+			OR = {
+				check_variable = {
+					Local_status = 100
+				}
+				check_variable = {
+					Local_status > 100
+				}
+			}
+		}
+		localization_key = "GFX_Local_status_KOR"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				Local_status = 0
+			}
+		}
+		localization_key = "GFX_Local_status_CHI"
+	}
+	text = {
+		trigger = {
+			AND = {
+				NOT = {
+					check_variable = {
+						Local_status = 100
+					}
+				}
+				NOT = {
+					check_variable = {
+						Local_status = 0
+					}
+				}
+			}
+		}
+		localization_key = "GFX_Local_status_HALF"
+	}
+}
+
+# 지역 마다 임시 변수를 저장하고 주 변경시 해당 임시 변수를 최종 변수로 변경해 수치를 나타냄
+
+defined_text = {
+	name = KOR_GUI_Manchurian_Incident_Local_status_Text
+	text = {
+		trigger = {
+			OR = {
+				check_variable = {
+					Local_status = 100
+				}
+				check_variable = {
+					Local_status > 100
+				}
+			}
+		}
+		localization_key = "Local_status_Text_KOR"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				Local_status = 0
+			}
+		}
+		localization_key = "Local_status_Text_CHI"
+	}
+	text = {
+		trigger = {
+			AND = {
+				NOT = {
+					check_variable = {
+						Local_status = 100
+					}
+				}
+				NOT = {
+					check_variable = {
+						Local_status > 100
+					}
+				}
+				NOT = {
+					check_variable = {
+						Local_status = 0
+					}
+				}
+			}
+		}
+		localization_key = "Local_status_Text_HALF"
+	}
+}
+
+defined_text = {
+	name = Manchurian_Incident_State_Name
+	text = {
+		trigger = {
+			has_country_flag = KOR_show_Harbin
+		}
+		localization_key = "KOR_show_Harbin_State_Name"
+	}
+	text = {
+		trigger = {
+			has_country_flag = KOR_show_Andong
+		}
+		localization_key = "KOR_show_Andong_State_Name"
+	}
+	text = {
+		trigger = {
+			has_country_flag = KOR_show_Fengtian
+		}
+		localization_key = "KOR_show_Fengtian_State_Name"
+	}
+	text = {
+		trigger = {
+			has_country_flag = KOR_show_Gilljiang
+		}
+		localization_key = "KOR_show_Gilljiang_State_Name"
+	}
+	text = {
+		trigger = {
+			has_country_flag = KOR_show_Dalian
+		}
+		localization_key = "KOR_show_Dalian_State_Name"
+	}
+	text = {
+		trigger = {
+			has_country_flag = KOR_show_Songjiang
+		}
+		localization_key = "KOR_show_Songjiang_State_Name"
+	}
+	text = {
+		trigger = {
+			has_country_flag = KOR_show_Heejang
+		}
+		localization_key = "KOR_show_Heejang_State_Name"
+	}
+	text = {
+		trigger = {
+			has_country_flag = KOR_show_Jinzhou
+		}
+		localization_key = "KOR_show_Jinzhou_State_Name"
+	}
+	text = {
+		trigger = {
+			has_country_flag = KOR_show_Xuilan
+		}
+		localization_key = "KOR_show_Xuilan_State_Name"
+	}
+	text = {
+		trigger = {
+			has_country_flag = KOR_show_Liaobei
+		}
+		localization_key = "KOR_show_Liaobei_State_Name"
+	}
+	text = {
+		trigger = {
+			has_country_flag = KOR_show_Longjiang
+		}
+		localization_key = "KOR_show_Longjiang_State_Name"
+	}
+	text = {
+		trigger = {
+			has_country_flag = KOR_show_Xingan
+		}
+		localization_key = "KOR_show_Xingan_State_Name"
+	}
+	text = {
+		trigger = {
+			has_country_flag = KOR_show_Hehe
+		}
+		localization_key = "KOR_show_Hehe_State_Name"
+	}
+	text = {
+		trigger = {
+			has_country_flag = KOR_show_Haiman
+		}
+		localization_key = "KOR_show_Haiman_State_Name"
+	}
+	text = {
+		trigger = {
+			has_country_flag = KOR_show_Ruhr
+		}
+		localization_key = "KOR_show_Ruhr_State_Name"
+	}
+	text = {
+		trigger = {
+			has_country_flag = KOR_show_NorthRuhr
+		}
+		localization_key = "KOR_show_NorthRuhr_State_Name"
+	}
+}
+
+defined_text = {
+	name = KOR_GUI_Local_status_intro_Text
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = "KOR_GUI_Local_status_intro_Text"
+	}
+}
+
+defined_text = {
+	name = KOR_GUI_Manchurian_Incident_Desc_Text
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = "KOR_GUI_Manchurian_Incident_Desc_Text"
+	}
+}

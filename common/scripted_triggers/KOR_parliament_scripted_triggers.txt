@@ -5,3 +5,11 @@ KOR_no_ordinance_in_legco = {
 		tooltip = KOR_no_ordinance_in_legco_tt
 	}
 }
+
+KOR_legco_introduce_ordinance_ready = {
+	custom_trigger_tooltip = {
+		has_country_flag = legco_introduce_ordinance_ready
+		# NOT = { has_country_flag = GNG_ordinance_event_blocker }
+		tooltip = KOR_legco_introduce_ordinance_ready_tt
+	}
+}

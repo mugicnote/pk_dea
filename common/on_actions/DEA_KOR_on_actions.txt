@@ -7,6 +7,17 @@ on_actions = {
 				set_variable = { Country_explanation_Button_y = 41 }
 			}
 			KOR = {
+				FAC_set_com_notgood = yes
+				FAC_set_autsoc_hostile = yes
+				FAC_set_socdem_normal = yes
+				FAC_set_soclib_normal = yes
+				FAC_set_natlib_normal = yes
+				FAC_set_libcon_normal = yes
+				FAC_set_soccon_royal = yes
+				FAC_set_natcon_normal = yes
+				FAC_set_radsoc_friendly = yes
+				FAC_set_des_notgood = yes
+				FAC_set_fas_notgood = yes
 				set_variable = { KOR_legco_first_seats = 105 }
 				set_variable = { KOR_legco_second_seats = 80 }
 				set_variable = { KOR_legco_third_seats = 69 }
@@ -27,6 +38,7 @@ on_actions = {
 				
 
 				set_variable = { KOR_legco_current_ordinance_id = 0 }
+				set_variable = { KOR_legco_current_negotiation_id = 0 }
 				clear_array = KOR_legco_history
 				add_to_array = { KOR_legco_history = 2 }
 				add_to_array = { KOR_legco_history = 3 }
@@ -89,10 +101,28 @@ on_actions = {
 				add_to_array = { KOR_legco_passage = 1 }
 				add_to_array = { KOR_legco_passage = 1 }
 
+				set_country_flag = KOR_show_Harbin
+				set_variable = { Andong_Local_status = 100 }
+				set_variable = { Dalian_Local_status = 100 }
+				set_variable = { Songjiang_Local_status = 90 }
+				set_variable = { Gilljiang_Local_status = 85 }
+				set_variable = { Heejang_Local_status = 75 }
+				set_variable = { Fengtian_Local_status = 70 }
+				set_variable = { Harbin_Local_status = 60 }
+				set_variable = { Hehe_Local_status = 50 }
+				set_variable = { Xuilan_Local_status = 50 }
+				set_variable = { Longjiang_Local_status = 40 }
+				set_variable = { Xingan_Local_status = 40 }
+				set_variable = { Haiman_Local_status = 30 }
+				set_variable = { Liaobei_Local_status = 25 }
+				set_variable = { Jinzhou_Local_status = 25 }
+				set_variable = { NorthRuhr_Local_status = 0 }
+				set_variable = { Ruhr_Local_status = 0 }
+
 				JAP_diet_arrays_initialization = yes
 				country_event = { 
 					id = KOR.56
-					days = 5
+					days = 3
 				}
 				country_event = { id = CULTURE.1 }
 
@@ -104,34 +134,28 @@ on_actions = {
 				# 	limit = { has_country_flag = fifth_election }
 				# 	set_cosmetic_tag = KOR_THIRD
 				# }
-				set_country_flag = KOR_northern_bandits
-				set_country_flag = KOR_eastern_bandits
-				set_country_flag = KOR_western_bandits
 
-				set_country_flag = Syngman_Rhee2
-
-				set_country_flag = Jang_TaekSang
-				set_country_flag = Shin_Sung_mo
-				set_country_flag = Kang_In_taek
 				set_country_flag = Kim_Kyusik
+				set_country_flag = Kim_Seongsoo
+				set_country_flag = Ham_TaeYoung
+				set_country_flag = Kim_Hyun_cheol
+				set_country_flag = Ho_Jong
+				set_country_flag = Lee_Beomseung
+				set_country_flag = Shin_Sung_mo
+				set_country_flag = Jang_TaekSang
+				set_country_flag = jo_man_sik
 				set_country_flag = Chough_Pyung_ok
+				set_country_flag = He_Hun
+
 				set_country_flag = Ahn_Chang_Ho
 				set_country_flag = Seo_jae_pil
 				set_country_flag = Kim_Byung_ro
+
 				set_country_flag = Lee_Beomseok
-				set_country_flag = Lee_Soon_yong
-				set_country_flag = Kim_Hyun_cheol
-				set_country_flag = Kim_Beop_rin
-				set_country_flag = jo_man_sik
-				set_country_flag = Ho_Jong
-				set_country_flag = Yoon_Bo_Sun
-				set_country_flag = Pak_Honyong
-				set_country_flag = Lee_In
-				set_country_flag = Pak_Honyong
 				set_country_flag = Sohn_Won_yil
 				set_country_flag = Choi_Yong_duk
 
-				set_country_flag = rural_relief_level_is_1
+				#set_country_flag = rural_relief_level_is_1
 		
 				country_lock_all_division_template = yes
 				create_intelligence_agency = yes

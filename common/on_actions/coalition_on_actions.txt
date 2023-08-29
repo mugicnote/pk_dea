@@ -3,11 +3,15 @@ on_actions = {
 	on_startup = {
         effect = {
 			every_country = { COALITION_set_up_array = yes }
+			every_country = { set_pop_variable = yes }
         }
 	}
 	on_daily = {
 		effect = {
 			COALITION_POP_NUMBER = yes
+		}
+		effect = {
+			set_pop_variable = yes
 		}
 	}
 	on_monthly = {

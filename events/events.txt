@@ -44,6 +44,11 @@ country_event = { #
 		name = KOR_parliament.2.a
 		ai_chance = { factor = 1 }
 		GNG_ordinances_effects = yes
+		set_country_flag = Kyoto_Resolution_Passed
+
+		com_down_variable = yes
+		socdem_down_variable = yes
+		libcon_up_variable = yes
 	}
 }
 
@@ -54,7 +59,7 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.56"}
 	title = KOR.56.t
 	desc = KOR.56.desc
-	picture = GFX_parliamentary_barricade
+	picture = GFX_Chang_Taek_sang_event_picture
 	
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -62,9 +67,7 @@ country_event = {
 	option = { #
 		name = KOR.56.a
 		ai_chance = { factor = 1 }
-		add_manpower = -1
-		add_political_power = -25
-		custom_effect_tooltip = KOR.56_tt
+		add_ideas = { KOR_Chang_Taek_Sang }
 		hidden_effect = {
 			country_event = {
 				id = KOR.57
@@ -79,7 +82,7 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.57"}
 	title = KOR.57.t
 	desc = KOR.57.desc
-	picture = GFX_parliamentary_barricade
+	picture = GFX_Kim_Kyu_sik_event_picture
 	
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -87,17 +90,37 @@ country_event = {
 	option = { #
 		name = KOR.57.a
 		ai_chance = { factor = 1 }
-		custom_effect_tooltip = KOR.57_tt
+		add_ideas = { KOR_incompetent_goverment }
 		hidden_effect = {
-			swap_ideas = {
-				remove_idea = KOR_Chang_Taek_Sang
-				add_idea = KOR_Chang_Taek_Sang2
-			}
 			country_event = {
 				id = KOR.61
-				days = 5
+				days = 3
 			}
 		}
+	}
+	option = { #
+		name = KOR.57.b
+		ai_chance = { factor = 1 }
+		add_ideas = { KOR_incompetent_goverment }
+		hidden_effect = {
+			country_event = {
+				id = KOR.61
+				days = 3
+			}
+		}
+	}
+	option = { #
+		name = KOR.57.c
+		ai_chance = { factor = 1 }
+		add_ideas = { KOR_incompetent_goverment }
+		hidden_effect = {
+			country_event = {
+				id = KOR.61
+				days = 3
+			}
+		}
+		soccon_down_variable = yes
+		des_up_variable = yes
 	}
 }
 
@@ -120,7 +143,6 @@ country_event = {
 				days = 5
 			}
 		}
-		add_political_power = -25
 	}
 }
 
@@ -138,13 +160,66 @@ country_event = {
 		ai_chance = { factor = 1 }
 		hidden_effect = {
 			country_event = {
-				id = KOR.63
+				id = KOR.64
 				days = 5
 			}
 		}
 		swap_ideas = {
 			remove_idea = KOR_incompetent_goverment
     		add_idea = KOR_incompetent_goverment2
+		}
+	}
+}
+
+country_event = {
+	id = KOR.64
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.64"}
+	title = KOR.64.t
+	desc = KOR.64.desc
+	picture = GFX_Choi_Hwans_Suspicion
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = KOR.64.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = KOR.64_tt
+		hidden_effect = {
+			swap_ideas = {
+				remove_idea = idea_Kim_Beop_rin
+				add_idea = idea_Kim_Beop_rin2
+			}
+			country_event = {
+				id = KOR.65
+				days = 5
+			}
+		}
+	}
+}
+
+country_event = {  
+	id = KOR.65
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.65"}
+	title = KOR.65.t
+	desc = KOR.65.desc
+	picture = GFX_prove_incentive_Article
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = KOR.65.a
+		ai_chance = { factor = 1 }
+		add_political_power = -25
+		hidden_effect = {
+			country_event = {
+				id = KOR.54
+				days = 5
+			}
+
+			set_country_flag = water_torture_news
+			set_country_flag = Dea_News_event_show
 		}
 	}
 }
@@ -188,7 +263,7 @@ country_event = {
 		ai_chance = { factor = 1 }
 		hidden_effect = {
 			country_event = {
-				id = KOR.56
+				id = KOR.63
 				days = 5
 			}
 		}
@@ -217,59 +292,6 @@ country_event = {
 				id = KOR.64
 				days = 5
 			}
-		}
-	}
-}
-
-country_event = {  
-	id = KOR.64
-	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.64"}
-	title = KOR.64.t
-	desc = KOR.64.desc
-	picture = GFX_Choi_Hwans_Suspicion
-	
-	is_triggered_only = yes
-	fire_only_once = yes
-	
-	option = { #
-		name = KOR.64.a
-		ai_chance = { factor = 1 }
-		custom_effect_tooltip = KOR.64_tt
-		hidden_effect = {
-			swap_ideas = {
-				remove_idea = idea_Kim_Beop_rin
-				add_idea = idea_Kim_Beop_rin2
-			}
-			country_event = {
-				id = KOR.65
-				days = 5
-			}
-		}
-	}
-}
-
-country_event = {  
-	id = KOR.65
-	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.65"}
-	title = KOR.65.t
-	desc = KOR.65.desc
-	picture = GFX_prove_incentive_Article
-	
-	is_triggered_only = yes
-	fire_only_once = yes
-	
-	option = { #
-		name = KOR.65.a
-		ai_chance = { factor = 1 }
-		add_political_power = -25
-		hidden_effect = {
-			country_event = {
-				id = KOR.66
-				days = 5
-			}
-
-			set_country_flag = water_torture_news
-			set_country_flag = Dea_News_event_show
 		}
 	}
 }

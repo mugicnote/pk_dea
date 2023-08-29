@@ -1,0 +1,170 @@
+### 이념 텍스트 아이콘 ###
+defined_text = {
+	name = GetComIcon
+	text = { localization_key = GEN_mini_com }
+}
+
+defined_text = {
+	name = GetAutsocIcon
+	text = { localization_key = GEN_mini_autsoc }
+}
+
+defined_text = {
+	name = GetRadsocIcon
+	text = { localization_key = GEN_mini_radsoc }
+}
+
+defined_text = {
+	name = GetSocdemIcon
+	text = { localization_key = GEN_mini_socdem }
+}
+
+defined_text = {
+	name = GetSoclibIcon
+	text = { localization_key = GEN_mini_soclib }
+}
+
+defined_text = {
+	name = GetNatlibIcon
+	text = { localization_key = GEN_mini_natlib }
+}
+
+defined_text = {
+	name = GetLibconIcon
+	text = { localization_key = GEN_mini_libcon }
+}
+
+defined_text = {
+	name = GetSocconIcon
+	text = { localization_key = GEN_mini_soccon }
+}
+
+defined_text = {
+	name = GetNatconIcon
+	text = { localization_key = GEN_mini_natcon }
+}
+
+defined_text = {
+	name = GetAutdemIcon
+	text = { localization_key = GEN_mini_autdem }
+}
+
+defined_text = {
+	name = GetAutdesIcon
+	text = { localization_key = GEN_mini_autdes }
+}
+
+defined_text = {
+	name = GetFastismIcon
+	text = { localization_key = GEN_mini_fascism }
+}
+
+
+### 연정 여부 ###
+defined_text = {
+	name = GetComCoal
+	text = {
+		trigger = { has_government = communism }
+		localization_key = com_is_ruling
+	}
+	text = { localization_key = com_in_coal }
+}
+
+defined_text = {
+	name = GetAutsocCoal
+	text = {
+		trigger = { has_government = auth_socialism }
+		localization_key = autsoc_is_ruling
+	}
+	text = { localization_key = autsoc_in_coal }
+}
+
+defined_text = {
+	name = GetRadsocCoal
+	text = {
+		trigger = { has_government = radical_socialism }
+		localization_key = radsoc_is_ruling
+	}
+	text = { localization_key = radsoc_in_coal }
+}
+
+defined_text = {
+	name = GetSocdemCoal
+	text = {
+		trigger = { has_government = social_democracy }
+		localization_key = socdem_is_ruling
+	}
+	text = { localization_key = socdem_in_coal }
+}
+
+defined_text = {
+	name = GetSoclibCoal
+	text = {
+		trigger = { has_government = social_liberalism }
+		localization_key = soclib_is_ruling
+	}
+	text = { localization_key = soclib_in_coal }
+}
+
+defined_text = {
+	name = GetNatlibCoal
+	text = {
+		trigger = { has_government = national_liberalism }
+		localization_key = natlib_is_ruling
+	}
+	text = { localization_key = natlib_in_coal }
+}
+
+defined_text = {
+	name = GetLibconCoal
+	text = {
+		trigger = { has_government = liberal_conservatism }
+		localization_key = libcon_is_ruling
+	}
+	text = { localization_key = libcon_in_coal }
+}
+
+defined_text = {
+	name = GetSocconCoal
+	text = {
+		trigger = { has_government = democratic }
+		localization_key = soccon_is_ruling
+	}
+	text = { localization_key = soccon_in_coal }
+}
+
+defined_text = {
+	name = GetNatconCoal
+	text = {
+		trigger = { has_government = national_conservatism }
+		localization_key = natcon_is_ruling
+	}
+	text = { localization_key = natcon_in_coal }
+}
+
+defined_text = {
+	name = GetAutdemCoal
+	text = {
+		trigger = { has_government = neutrality }
+		localization_key = autdem_is_ruling
+	}
+	text = { localization_key = autdem_in_coal }
+}
+
+defined_text = {
+	name = GetAutdesCoal
+	text = {
+		trigger = { has_government = auto_despotism }
+		localization_key = autdes_is_ruling
+	}
+	text = { localization_key = autdes_in_coal }
+}
+
+defined_text = {
+	name = GetFasCoal
+	text = {
+		trigger = { has_government = fascism }
+		localization_key = fas_is_ruling
+	}
+	text = { localization_key = fas_in_coal }
+}

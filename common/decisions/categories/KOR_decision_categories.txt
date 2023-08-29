@@ -1,3 +1,38 @@
+DEA_KOR_scenario_debug_decisions_category = {
+	icon = jap_intervene_in_china
+	
+	priority = 10050
+	allowed = {
+		tag = KOR
+	}
+	visible = {
+		is_debug = yes
+	}
+	visible_when_empty = yes #for debug
+}
+DEA_KOR_Manchurian_Incident_decisions_category = {
+	icon = jap_intervene_in_china
+	
+	priority = 10002
+	scripted_gui = KOR_GUI_Manchurian_Incident_Decision_GUI
+	allowed = {
+		tag = KOR
+	}
+	visible = {
+		is_debug = yes
+	}
+	visible_when_empty = yes #for debug
+}
+DEA_KOR_factional_rivalry_decisions_category = {
+	icon = power_struggle
+	
+	priority = 10001
+	scripted_gui = KOR_internal_factions_ui
+	allowed = {
+		tag = KOR
+	}
+	visible_when_empty = yes #for debug
+}
 DEA_KOR_introduction_bill_National_Assembly_decisions = {
 	icon = national_assembly
 	priority = 10000
@@ -10,7 +45,7 @@ DEA_KOR_introduction_bill_National_Assembly_decisions = {
 #군부 내의 파벌 경쟁
 DEA_KOR_Military_factional_decisions = {
 	icon = army_reform
-	priority = 10000
+	priority = 10001
 	scripted_gui = ENG_GUI_Maggie_Decision_GUI
 	allowed = {
 		tag = KOR
@@ -41,7 +76,7 @@ DEA_KOR_Military_Revolution_decisions_category = {
 
 	picture = GFX_decision_cat_military_revolution
 	
-	priority = 10001
+	priority = 10002
 	allowed = {
 		tag = KOR
 	}
@@ -71,7 +106,7 @@ DEA_KOR_assassination_opposition_general_decisions_category = {
 DEA_KOR_Completion_Continental_Revolutionary_War_decisions_category = {
 	icon = jap_intervene_in_china
 	
-	priority = 10000
+	priority = 10001
 	allowed = {
 		tag = KOR
 	}
@@ -85,7 +120,7 @@ DEA_KOR_Completion_Continental_Revolutionary_War_decisions_category = {
 KOR_Rebellion_Remaining_Processed_decisions_category = {
 	icon = border_conflicts
 	
-	priority = 10001
+	priority = 9999
 	allowed = {
 		tag = KOR
 	}
@@ -95,40 +130,26 @@ KOR_Rebellion_Remaining_Processed_decisions_category = {
 	visible_when_empty = yes #for debug
 }
 
-#대륙 혁명 전쟁의 완수
-DEA_KOR_scenario_debug_decisions_category = {
-	icon = jap_intervene_in_china
-	
-	priority = 9999
-	allowed = {
-		tag = KOR
-	}
-	visible = {
-		is_debug = yes
-	}
-	visible_when_empty = yes #for debug
-}
+# KOR_Election_politics_category = {
+# 	icon = GFX_decision_category_generic_political_actions
 
-KOR_Election_politics_category = {
-	icon = GFX_decision_category_generic_political_actions
+# 	picture = GFX_VTY_political_fighting
 
-	picture = GFX_VTY_political_fighting
+# 	allowed = {
+# 		original_tag = KOR
+# 	}
+# 	visible = {
+# 		#NOT = {
+# 			#has_country_flag = KOR_Finish_ELECTION
+# 		#}
+# 		#NOT = {
+# 			#has_country_flag = Seo_Jae_pil_died #event KOR.78
+# 		#}
+# 	}
+# 	visible_when_empty = yes
 
-	allowed = {
-		original_tag = KOR
-	}
-	visible = {
-		#NOT = {
-			#has_country_flag = KOR_Finish_ELECTION
-		#}
-		#NOT = {
-			#has_country_flag = Seo_Jae_pil_died #event KOR.78
-		#}
-	}
-	visible_when_empty = yes
-
-	priority = 1000
-}
+# 	priority = 1000
+# }
 
 KOR_rural_relief_category = {
 	

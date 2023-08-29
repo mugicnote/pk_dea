@@ -1,0 +1,315 @@
+leader_traits = {
+	faction_com_r_royal = {
+		random = no
+		production_factory_max_efficiency_factor = 0.1 #생산 효율성 한도
+        production_speed_industrial_complex_factor = 0.1 #민간공장 건설 속도
+        industrial_capacity_factory = 0.1 #공장 생산량
+	}
+	faction_autsoc_r_royal = {
+		random = no
+		production_factory_max_efficiency_factor = 0.1 #생산 효율성 한도
+        production_speed_industrial_complex_factor = 0.1 #민간공장 건설 속도
+        industrial_capacity_factory = 0.1 #공장 생산량
+	}
+	faction_socdem_r_royal = {
+		random = no
+		political_power_factor = 0.05 #정치력 획득
+        consumer_goods_factor = 0.05 #소비재
+        political_advisor_cost_factor = 0.1 #정치 고문 비용
+	}
+	faction_soclib_r_royal = {
+		random = no
+		political_power_factor = 0.05 #정치력 획득
+        consumer_goods_factor = 0.05 #소비재
+        political_advisor_cost_factor = 0.1 #정치 고문 비용
+	}
+	faction_natlib_r_royal = {
+		random = no
+		political_power_factor = 0.05 #정치력 획득
+        consumer_goods_factor = 0.05 #소비재
+        political_advisor_cost_factor = 0.1 #정치 고문 비용
+	}
+	faction_libcon_r_royal = {
+		random = no
+		political_power_factor = 0.05 #정치력 획득
+        consumer_goods_factor = 0.05 #소비재
+        political_advisor_cost_factor = 0.1 #정치 고문 비용
+	}
+	faction_natcon_r_royal = {
+		random = no
+		political_power_factor = 0.05 #정치력 획득
+        consumer_goods_factor = 0.05 #소비재
+        political_advisor_cost_factor = 0.1 #정치 고문 비용
+	}
+	faction_soccon_r_royal = {
+		random = no
+		stability_factor = 0.1 #안정도
+        research_speed_factor = 0.05 #연구속도
+        conscription_factor = 0.1 #인력
+	}
+	faction_radsoc_r_royal = {
+		random = no
+		stability_factor = 0.1 #안정도
+        research_speed_factor = 0.05 #연구속도
+        conscription_factor = 0.1 #인력
+	}
+	faction_des_r_royal = {
+		random = no
+		max_command_power = 25 #지휘력 최대치
+        war_support_factor = 0.1 #전쟁 지지도
+        production_speed_arms_factory_factor = 0.1 #군수공장 건설 속도
+	}
+	faction_fas_r_royal = {
+		random = no
+		max_command_power = 25 #지휘력 최대치
+        war_support_factor = 0.1 #전쟁 지지도
+        production_speed_arms_factory_factor = 0.1 #군수공장 건설 속도
+	}
+
+	faction_com_r_friendly = {
+		random = no
+		production_factory_max_efficiency_factor = 0.05 #생산 효율성 한도
+        production_speed_industrial_complex_factor = 0.05 #민간공장 건설 속도
+        industrial_capacity_factory = 0.05 #공장 생산량
+	}
+	faction_autsoc_r_friendly = {
+		random = no
+		production_factory_max_efficiency_factor = 0.05 #생산 효율성 한도
+        production_speed_industrial_complex_factor = 0.05 #민간공장 건설 속도
+        industrial_capacity_factory = 0.05 #공장 생산량
+	}
+	faction_socdem_r_friendly = {
+		random = no
+		political_power_factor = 0.025 #정치력 획득
+        consumer_goods_factor = 0.025 #소비재
+        political_advisor_cost_factor = 0.05 #정치 고문 비용
+	}
+	faction_soclib_r_friendly = {
+		random = no
+		political_power_factor = 0.025 #정치력 획득
+        consumer_goods_factor = 0.025 #소비재
+        political_advisor_cost_factor = 0.05 #정치 고문 비용
+	}
+	faction_natlib_r_friendly = {
+		random = no
+		political_power_factor = 0.025 #정치력 획득
+        consumer_goods_factor = 0.025 #소비재
+        political_advisor_cost_factor = 0.05 #정치 고문 비용
+	}
+	faction_libcon_r_friendly = {
+		random = no
+		political_power_factor = 0.025 #정치력 획득
+        consumer_goods_factor = 0.025 #소비재
+        political_advisor_cost_factor = 0.05 #정치 고문 비용
+	}
+	faction_natcon_r_friendly = {
+		random = no
+		political_power_factor = 0.025 #정치력 획득
+        consumer_goods_factor = 0.025 #소비재
+        political_advisor_cost_factor = 0.05 #정치 고문 비용
+	}
+	faction_soccon_r_friendly = {
+		random = no
+		stability_factor = 0.05 #안정도
+        research_speed_factor = 0.025 #연구속도
+        conscription_factor = 0.05 #인력
+	}
+	faction_radsoc_r_friendly = {
+		random = no
+		stability_factor = 0.05 #안정도
+        research_speed_factor = 0.025 #연구속도
+        conscription_factor = 0.05 #인력
+	}
+	faction_des_r_friendly = {
+		random = no
+		max_command_power = 10 #지휘력 최대치
+        war_support_factor = 0.05 #전쟁 지지도
+        production_speed_arms_factory_factor = 0.05 #군수공장 건설 속도
+	}
+	faction_fas_r_friendly = {
+		random = no
+		max_command_power = 10 #지휘력 최대치
+        war_support_factor = 0.05 #전쟁 지지도
+        production_speed_arms_factory_factor = 0.05 #군수공장 건설 속도
+	}
+	
+	faction_com_r_normal = {
+		random = no
+	}
+	faction_autsoc_r_normal = {
+		random = no
+	}
+	faction_socdem_r_normal = {
+		random = no
+	}
+	faction_soclib_r_normal = {
+		random = no
+	}
+	faction_natlib_r_normal = {
+		random = no
+	}
+	faction_libcon_r_normal = {
+		random = no
+	}
+	faction_natcon_r_normal = {
+		random = no
+	}
+	faction_soccon_r_normal = {
+		random = no
+	}
+	faction_radsoc_r_normal = {
+		random = no
+	}
+	faction_des_r_normal = {
+		random = no
+	}
+	faction_fas_r_normal = {
+		random = no
+	}
+
+	faction_com_r_notgood = {
+		random = no
+		production_factory_max_efficiency_factor = -0.05 #생산 효율성 한도
+        production_speed_industrial_complex_factor = -0.05 #민간공장 건설 속도
+        industrial_capacity_factory = -0.05 #공장 생산량
+	}
+	faction_autsoc_r_notgood = {
+		random = no
+		production_factory_max_efficiency_factor = -0.05 #생산 효율성 한도
+        production_speed_industrial_complex_factor = -0.05 #민간공장 건설 속도
+        industrial_capacity_factory = -0.05 #공장 생산량
+	}
+	faction_socdem_r_notgood = {
+		random = no
+		political_power_factor = -0.025 #정치력 획득
+        consumer_goods_factor = -0.025 #소비재
+        political_advisor_cost_factor = -0.05 #정치 고문 비용
+	}
+	faction_soclib_r_notgood = {
+		random = no
+		political_power_factor = -0.025 #정치력 획득
+        consumer_goods_factor = -0.025 #소비재
+        political_advisor_cost_factor = -0.05 #정치 고문 비용
+	}
+	faction_natlib_r_notgood = {
+		random = no
+		political_power_factor = -0.025 #정치력 획득
+        consumer_goods_factor = -0.025 #소비재
+        political_advisor_cost_factor = -0.05 #정치 고문 비용
+	}
+	faction_libcon_r_notgood = {
+		random = no
+		political_power_factor = -0.025 #정치력 획득
+        consumer_goods_factor = -0.025 #소비재
+        political_advisor_cost_factor = -0.05 #정치 고문 비용
+	}
+	faction_natcon_r_notgood = {
+		random = no
+		political_power_factor = -0.025 #정치력 획득
+        consumer_goods_factor = -0.025 #소비재
+        political_advisor_cost_factor = -0.05 #정치 고문 비용
+	}
+	faction_soccon_r_notgood = {
+		random = no
+		stability_factor = -0.05 #안정도
+        research_speed_factor = -0.025 #연구속도
+        conscription_factor = -0.05 #인력
+	}
+	faction_radsoc_r_notgood = {
+		random = no
+		stability_factor = -0.05 #안정도
+        research_speed_factor = -0.025 #연구속도
+        conscription_factor = -0.05 #인력
+	}
+	faction_des_r_notgood = {
+		random = no
+		max_command_power = -10 #지휘력 최대치
+        war_support_factor = -0.05 #전쟁 지지도
+        production_speed_arms_factory_factor = -0.05 #군수공장 건설 속도
+	}
+	faction_fas_r_notgood = {
+		random = no
+		max_command_power = -10 #지휘력 최대치
+        war_support_factor = -0.05 #전쟁 지지도
+        production_speed_arms_factory_factor = -0.05 #군수공장 건설 속도
+	}
+
+	faction_com_r_hostile = {
+		random = no
+		production_factory_max_efficiency_factor = -0.1 #생산 효율성 한도
+        production_speed_industrial_complex_factor = -0.1 #민간공장 건설 속도
+        industrial_capacity_factory = -0.1 #공장 생산량
+	}
+	faction_autsoc_r_hostile = {
+		random = no
+		production_factory_max_efficiency_factor = -0.1 #생산 효율성 한도
+        production_speed_industrial_complex_factor = -0.1 #민간공장 건설 속도
+        industrial_capacity_factory = -0.1 #공장 생산량
+	}
+	faction_socdem_r_hostile = {
+		random = no
+		political_power_factor = -0.05 #정치력 획득
+        consumer_goods_factor = -0.05 #소비재
+        political_advisor_cost_factor = -0.1 #정치 고문 비용
+	}
+	faction_soclib_r_hostile = {
+		random = no
+		political_power_factor = -0.05 #정치력 획득
+        consumer_goods_factor = -0.05 #소비재
+        political_advisor_cost_factor = -0.1 #정치 고문 비용
+	}
+	faction_natlib_r_hostile = {
+		random = no
+		political_power_factor = -0.05 #정치력 획득
+        consumer_goods_factor = -0.05 #소비재
+        political_advisor_cost_factor = -0.1 #정치 고문 비용
+	}
+	faction_libcon_r_hostile = {
+		random = no
+		political_power_factor = -0.05 #정치력 획득
+        consumer_goods_factor = -0.05 #소비재
+        political_advisor_cost_factor = -0.1 #정치 고문 비용
+	}
+	faction_natcon_r_hostile = {
+		random = no
+		political_power_factor = -0.05 #정치력 획득
+        consumer_goods_factor = -0.05 #소비재
+        political_advisor_cost_factor = -0.1 #정치 고문 비용
+	}
+	faction_soccon_r_hostile = {
+		random = no
+		stability_factor = -0.1 #안정도
+        research_speed_factor = -0.05 #연구속도
+        conscription_factor = -0.1 #인력
+	}
+	faction_radsoc_r_hostile = {
+		random = no
+		stability_factor = -0.1 #안정도
+        research_speed_factor = -0.05 #연구속도
+        conscription_factor = -0.1 #인력
+	}
+	faction_des_r_hostile = {
+		random = no
+		max_command_power = -25 #지휘력 최대치
+        war_support_factor = -0.1 #전쟁 지지도
+        production_speed_arms_factory_factor = -0.1 #군수공장 건설 속도
+	}
+	faction_fas_r_hostile = {
+		random = no
+		max_command_power = -25 #지휘력 최대치
+        war_support_factor = -0.1 #전쟁 지지도
+        production_speed_arms_factory_factor = -0.1 #군수공장 건설 속도
+	}
+
+	faction_com = { random = no }
+	faction_autsoc = { random = no }
+	faction_radsoc = { random = no }
+	faction_socdem = { random = no }
+	faction_soclib = { random = no }
+	faction_natlib = { random = no }
+	faction_libcon = { random = no }
+	faction_soccon = { random = no }
+	faction_natcon = { random = no }
+	faction_des = { random = no }
+	faction_fas = { random = no }
+}

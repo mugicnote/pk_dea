@@ -1,4 +1,41 @@
 DEA_KOR_introduction_bill_National_Assembly_decisions = {
+	KOR_compulsory_introduction_resolution = {
+		icon = generic_political_rally
+		allowed = {
+			always = yes
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+			has_country_flag = Kyoto_Resolution_Passed
+		}
+		visible = {
+			KOR = {
+				NOT = { has_country_flag = Kyoto_Resolution_Passed }
+			}
+		} 
+		activation = {
+			KOR = {
+				NOT = { has_country_flag = Kyoto_Resolution_Passed }
+			}
+		}
+		days_mission_timeout = 36
+		
+		fixed_random_seed = no
+
+		fire_only_once = yes
+		is_good = no
+		timeout_effect = {
+			add_political_power = -75
+			add_stability = -0.05
+			country_event = {
+				id = KOR_parliament.2
+				days = 0
+			}
+			custom_effect_tooltip = Kyoto_Resolution_Passed_Failed
+		}
+	}
 	KOR_temp_legco_id_1_vote = {
 
 		icon = eng_trade_unions_support
@@ -7,6 +44,7 @@ DEA_KOR_introduction_bill_National_Assembly_decisions = {
 		}
 
 		available = {
+			KOR_legco_introduce_ordinance_ready = yes
 			KOR = { exists = yes }
 			KOR = { is_subject = no }
 		}
@@ -15,7 +53,12 @@ DEA_KOR_introduction_bill_National_Assembly_decisions = {
 
 		complete_effect = {
 			legco_ordinance_vote_start = yes
-			custom_effect_tooltip = KOR_legco_resolution_1_days
+			if = {
+				limit = {
+					has_country_flag = this_is_resolution
+				}
+				custom_effect_tooltip = KOR_legco_resolution_1_days
+			}
 		}
 	}
 }
@@ -54,7 +97,75 @@ DEA_KOR_Election_Decision = {
 		}
 	}
 }
+DEA_KOR_Manchurian_Incident_decisions_category = {
+	DEA_KOR_Manchurian_Incident_test = {
 
+		available = {
+			original_tag = KOR
+		}
+		visible = {
+			AND = {
+				NOT = {
+					check_variable = {
+						Local_status = 100
+					}
+				}
+				NOT = {
+					check_variable = {
+						Local_status > 100
+					}
+				}
+				NOT = {
+					check_variable = {
+						Local_status = 0
+					}
+				}
+			}
+		}
+
+		cost = 1
+		complete_effect = {
+			set_variable = {
+				Local_status = 50
+			}
+		}
+	}
+}
+DEA_KOR_factional_rivalry_decisions_category = {
+	DEA_KOR_factional_rivalry_test = {
+		available = {
+			original_tag = KOR
+		}
+
+		cost = 1
+
+		complete_effect = {
+			com_up_variable = yes
+			autsoc_up_variable = yes
+			radsoc_up_variable = yes
+			socdem_up_variable = yes
+			soclib_up_variable = yes
+			natlib_up_variable = yes
+			libcon_up_variable = yes
+			soccon_up_variable = yes
+			natcon_up_variable = yes
+			fas_up_variable = yes
+			des_up_variable = yes
+
+			# com_down_variable = yes
+			# autsoc_down_variable = yes
+			# radsoc_down_variable = yes
+			# socdem_down_variable = yes
+			# soclib_down_variable = yes
+			# natlib_down_variable = yes
+			# libcon_down_variable = yes
+			# soccon_down_variable = yes
+			# natcon_down_variable = yes
+			# fas_down_variable = yes
+			# des_down_variable = yes
+		}
+	}
+}
 DEA_KOR_Military_Revolution_decisions_category = {
 
 	#광동정부에게 지원 요청
@@ -404,22 +515,41 @@ DEA_KOR_Completion_Continental_Revolutionary_War_decisions_category = {
 
 		complete_effect = {
 			KNM = {
-				transfer_state = 328
-				transfer_state = 610
+				add_state_core = 714
+				add_state_core = 715
+				add_state_core = 761
+				add_state_core = 971
+				add_state_core = 972
+				add_state_core = 973
+
 				transfer_state = 714
 				transfer_state = 715
 				transfer_state = 761
-				transfer_state = 926
-				transfer_state = 928
-				transfer_state = 929
-				transfer_state = 930
-				transfer_state = 931
+				transfer_state = 971
+				transfer_state = 972
+				transfer_state = 973
+
+				set_popularities = {
+					communism = 0
+					authoritarian_socialism = 0
+					radical_socialism = 0
+					social_democracy = 0
+					social_liberalism = 0
+					national_liberalism = 0
+					liberal_conservatism = 0
+					democratic = 0
+					national_conservatism = 5
+					neutrality = 15
+					auto_despotism = 60
+					fascism = 20
+				  }
+
 				create_country_leader = {
 					name = "김홍일"
 					desc = ""
 					picture = "gfx/leaders/KOR/Portrait_Kim_Hong_Il.dds"
 					expire = "1965.1.1"
-					ideology = lee_fascism
+					ideology = statism
 					traits = {
 					}
 				}
@@ -986,11 +1116,6 @@ DEA_KOR_scenario_debug_decisions_category = {
 
 			# retire_character = KOR_Son_Won_il
 
-			remove_state_core = 909
-			remove_state_core = 910
-			remove_state_core = 914
-			remove_state_core = 915
-
 			909 = {
 				add_dynamic_modifier = {
 					modifier = kor_insurgent_resistance
@@ -1023,6 +1148,33 @@ DEA_KOR_scenario_debug_decisions_category = {
 			}
 			915 = {
 				set_demilitarized_zone = yes
+			}
+		}
+	}
+	KOR_demilitarized_no = {
+		icon = GFX_decision_infiltrate_state
+
+		visible = {
+			original_tag = KOR
+		}
+
+		available = {
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			909 = {
+				set_demilitarized_zone = no
+			}
+			910 = {
+				set_demilitarized_zone = no
+			}
+			914 = {
+				set_demilitarized_zone = no
+			}
+			915 = {
+				set_demilitarized_zone = no
 			}
 		}
 	}

@@ -806,6 +806,6 @@ KOR_brd = {
 	color_ui = rgb { 75 75 75 }
 }
 KOR_btbd = {
-	color = rgb { 65 65 103 }
-	color_ui = rgb { 65 65 103 }
+	color = rgb { 27 57 117 }
+	color_ui = rgb { 27 57 117 }
 }

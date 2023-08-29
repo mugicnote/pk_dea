@@ -18,3 +18,141 @@ country_event = {
 		ai_chance = { factor = 1 }
 	}
 }
+
+country_event = {
+	id = DEA_china.2
+	title = DEA_china.2.t
+	desc = DEA_china.2.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	fire_oniy_once = yes
+	
+	option = { #
+		name = DEA_china.2.a
+		ai_chance = { factor = 1 }
+		CHI = {
+			add_state_core = 594
+			add_state_core = 599
+			add_state_core = 943
+			add_state_core = 945
+
+			transfer_state = 594
+			transfer_state = 599
+			transfer_state = 943
+			transfer_state = 945
+		}
+	}
+}
+
+country_event = {
+	id = DEA_china.3
+	title = DEA_china.3.t
+	desc = DEA_china.3.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	fire_oniy_once = yes
+	
+	option = { #
+		name = DEA_china.3.a
+		ai_chance = { factor = 1 }
+		CHI = {
+			add_state_core = 947
+			add_state_core = 948
+
+			transfer_state = 947
+			transfer_state = 948
+		}
+	}
+}
+
+country_event = {
+	id = DEA_china.4
+	title = DEA_china.4.t
+	desc = DEA_china.4.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	fire_oniy_once = yes
+	
+	option = { #
+		name = DEA_china.4.a
+		ai_chance = { factor = 1 }
+		CHI = {
+			add_state_core = 602
+			add_state_core = 750
+			add_state_core = 942
+
+			transfer_state = 602
+			transfer_state = 750
+			transfer_state = 942
+		}
+	}
+}
+
+country_event = {
+	id = DEA_china.5
+	title = DEA_china.5.t
+	desc = DEA_china.5.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	fire_oniy_once = yes
+	
+	option = { #
+		name = DEA_china.5.a
+		ai_chance = { factor = 1 }
+		CHI = {
+			add_state_core = 595
+			add_state_core = 600
+			add_state_core = 933
+			add_state_core = 934
+			add_state_core = 935
+			add_state_core = 936
+			add_state_core = 937
+			add_state_core = 938
+
+			transfer_state = 595
+			transfer_state = 600
+			transfer_state = 933
+			transfer_state = 934
+			transfer_state = 935
+			transfer_state = 936
+			transfer_state = 937
+			transfer_state = 938
+
+			set_cosmetic_tag = CHI_Republic_of_China
+		}
+	}
+}
+
+country_event = {
+	id = DEA_china.6
+	title = DEA_china.6.t
+	desc = DEA_china.6.d
+	picture = GFX_
+	
+	is_triggered_only = yes
+	fire_oniy_once = yes
+	
+	option = { #
+		name = DEA_china.6.a
+		ai_chance = { factor = 1 }
+		CHI = {
+			add_state_core = 596
+			add_state_core = 927
+			add_state_core = 928
+			add_state_core = 929
+			add_state_core = 930
+			add_state_core = 931
+
+			transfer_state = 596
+			transfer_state = 927
+			transfer_state = 928
+			transfer_state = 929
+			transfer_state = 930
+			transfer_state = 931
+		}
+	}
+}

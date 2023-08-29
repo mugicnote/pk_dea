@@ -4,8 +4,8 @@ state={
 	name="STATE_944"
 
 	history={
-		owner = GMS
-		add_core_of = GMS
+		owner = NXM
+		add_core_of = NXM
 		buildings = {
 
 		}

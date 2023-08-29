@@ -294,6 +294,10 @@ DEA_KOR_introduction_bill_National_Assembly_decisions:0 "대한민국 국회"
 DEA_KOR_introduction_bill_National_Assembly_decisions_desc:0 "\n£decision_cat_introduction_bill_National_Assembly_decisions\n\n\n\n§L대전쟁이 참호전으로 인해 진전이 없는 와중에 치머만 전보 사건이 발생함에 따라, 미합중국은 1917년 4월 6일 협상국의 위치에서 대전쟁의 참전을 결정하였고, 이 때문에 대한제국의 민주계 인사들은 신속한 결정을 강요받았습니다.\n\n이에 민주계 대표 33인은 비인륜적 전쟁 행위에 대해 반대하는 민주정권결의선언을 발표하기로 합의했습니다. 이를 위해 임시의정원 회의를 개최한 것이 현 대한민국 국회의 시초라고 볼 수 있습니다.\n\n1919년 3월 1일, 3.1 민주 혁명의 발생으로 대한제국이 몰락하고 기존 민주계 인사들을 중심으로 대한민국이 수립되자, 임시의정원은 비상국민회의로 전환되어 헌법기초안 및 정부조직법안등을 발의하였습니다.\n\n이후, 공식적으로 대한민국 헌법이 공포됨에 따라, 비상국민회의가 폐회되고 기존의 민주계 인사들을 주축으로 한 400명의 국회 의원들이 초대 국회의원 선거를 통해 당선되었습니다.\n\n--------------------------------------------------------------------------------------------§!\n\n역대 국회별 주요 법안 상정 기록 및 현 국회의 정당별 의석수와 법안 심사 지지율, 교섭 현황 등은 정치탭(q)의 '국회' ui를 참고해 주세요.\n\n결정을 통해, 법안 상정, 상정된 법안의 투표 시작, 위원회 및 정당 교섭 등을 진행할 수 있습니다.\n\n현재 상정 중인 법안은 '[KOR_legco_current_ordinance_title_decision]'입니다.\n또한, 지지 의석수는 '[Legco_Current_Ordinance_Support]'입니다." #현직 의원들은 3대 국회의원 선거를 통해 직무수행을 진행중입니다.
 
 KOR_legco_ord_0_title_decision:0 "§L법안 상정 대기중§!"
+
+KOR_compulsory_introduction_resolution:0 "결의안 강행 상정 예고"
+Kyoto_Resolution_Passed:0 "§3교토 회담 개최 지지를 위한 결의안§!이 통과됐습니다."
+Kyoto_Resolution_Passed_Failed:0 "민주정의당 소속의 강경 의원들에 의해 §3교토 회담 개최 지지를 위한 결의안§!이 §Y강행 상정§!될 것입니다."
 KOR_temp_legco_id_1_vote:0 "법안 투표 시작"
 
 DEA_KOR_Military_factional_decisions:0 "군부 내의 파벌 경쟁"
@@ -368,3 +372,295 @@ KOR_show_metro_decisions:0 "서울 지하철 GUI 보이기"
 KOR_hide_metro_decisions:0 "서울 지하철 GUI 숨기기"
 KOR_seoul_metro_decisions_desc:0 "\n\n\n\n\n£seoul_metro\n\n\n\n\n\n\n\n§L이스탄불 지하철에 이은 아시아 두 번째 지하철이자, 동양 최초의 지하철로 계획되고 있는 서울 지하철은 본래 대전쟁 이전부터 서류상으로나마 그 계획이 존재하던 유서 깊은 교통 체계입니다. 그 시초를 따지고 보자면 1910년 초로 거슬러 올라가는데, 20년도 초 착공을 목표로 대한경춘철도주식회사가 성동-서울역 구간을 추진한 것이 그것입니다.\n\n그러나 대전쟁 패배 이후 시작된 만성적인 자원 부족과 경제 침체로 인해 회사는 기존의 계획을 폐기하고 노선의 구간을 대폭 축소하기에 이릅니다. 결국 1930년대 현재까지 서울 지하철은 여전히 계획 상태이며, 성동-동대문 구간만을 먼저 건설하는 것을 목표로 40년대가 지나기 전에 완공될 예정입니다. \n\n씁쓸한 패배와 물자의 부족함을 떨쳐 내고 이제는 공구를 들고 나설 시간입니다. 철커덩거리는 정겨운 전차 소리가 벌써부터 들려오는 것 같지 않습니까?"
 KOR_seoul_metro_line_1_text_desc:0 "1호선 : §L성동역 - 동대문§! §g- 종로 - 서울시청 - 서울역\n2호선 :§!"
+
+
+DEA_KOR_Manchurian_Incident_decisions_category:0 "만주 사변"
+KOR_GUI_Manchurian_Incident_Local_status_Text:0 "[KOR_GUI_Manchurian_Incident_Local_status_Text]"
+Local_status_Text_KOR:0 "§L'[Manchurian_Incident_State_Name]' 주는 현재 한국의 영향력 하에 있습니다.§!"
+Local_status_Text_CHI:0 "§L'[Manchurian_Incident_State_Name]' 주는 현재 중국의 영향력 하에 있습니다.§!"
+Local_status_Text_HALF:0 "§L'[Manchurian_Incident_State_Name]' 주는 현재 [?Local_status] : [?inversely_Local_status] 의 비율로 한중 양국의 영향을 받고 있습니다.§!"
+KOR_GUI_Local_status_intro_Text:0 "§L현재 주 상태 :§!"
+
+KOR_show_Harbin_State_Name:0 "하얼빈"
+KOR_show_Andong_State_Name:0 "안둥"
+KOR_show_Fengtian_State_Name:0 "펑톈"
+KOR_show_Gilljiang_State_Name:0 "길장"
+KOR_show_Dalian_State_Name:0 "다롄"
+KOR_show_Songjiang_State_Name:0 "쑹장"
+KOR_show_Heejang_State_Name:0 "허장"
+KOR_show_Jinzhou_State_Name:0 "진저우"
+KOR_show_Xuilan_State_Name:0 "쑤이란"
+KOR_show_Liaobei_State_Name:0 "랴오베이"
+KOR_show_Longjiang_State_Name:0 "룽장"
+KOR_show_Xingan_State_Name:0 "싱안"
+KOR_show_Hehe_State_Name:0 "헤이허"
+KOR_show_Haiman_State_Name:0 "하이만"
+KOR_show_Ruhr_State_Name:0 "러허"
+KOR_show_NorthRuhr_State_Name:0 "북러허"
+
+DEA_KOR_Manchurian_Incident_decisions_category_desc:0 "§L\n£GFX_decision_cat_Manchurian_Incident\n\n\n\n'만주'는 한민족의 명백한 고토입니다. 고조선의 단군대 이후로 민족의 고토가 아니었던 적이 없었습니다.\n\n그러나 지난 대전쟁에서의 패전 이후, 서양은 제멋대로 우리의 고유 강역을 찢어놓았고 이는 우리의 사지를 찢어놓은 것이나 다름없었습니다.\n\n하지만, 고토를 회복할 기회는 찾아왔습니다. 이범석 총통께서 집권하신 이래로 구미와 일본은 우리의 결연한 의지에 기함을 토하며 개입하기를 거부하고 있습니다.\n\n이번 기회를 잘 이용하여 민족의 정기가 서려 있는 영토만 되찾는다면, 대한제국의 앞날과 모든 땅에 밝은 빛이 내릴 것입니다 !§!\n\n"
+
+KOR_GUI_Manchurian_Incident_Desc_Text:0 "§L'만주'는 한민족의 명백한 고토입니다. 고조선의 단군대 이후로 민족의 고토가 아니었던 적이 없었습니다.\n\n그러나 지난 대전쟁에서의 패전 이후, 서양은 제멋대로 우리의 고유 강역을 찢어놓았고 이는 우리의 사지를 찢어놓은 것이나 다름없었습니다.\n\n하지만, 고토를 회복할 기회는 찾아왔습니다. 이범석 총통께서 집권하신 이래로 구미와 일본은 우리의 결연한 의지에 기함을 토하며 개입하기를 거부하고 있습니다.\n\n이번 기회를 잘 이용하여 민족의 정기가 서려 있는 영토만 되찾는다면, 대한제국의 앞날과 모든 땅에 밝은 빛이 내릴 것입니다 !§!"
+
+DEA_KOR_factional_rivalry_decisions_category:0 "분열하는 민주공화국"
+DEA_KOR_factional_rivalry_decisions_category_desc:0 "\n\n\n£decision_cat_factional_rivalry\n\n\n\n\n\n\n§L3.1 민주 혁명으로 민주공화국이 수립된 지도 어느덧 17년이 넘어가고 있습니다. 그러나, 서재필 대통령의 3선 도전 이후 민주공화국은 점차 분열해 가고 있습니다.\n\n서재필 대통령의 3선 도전은 결과적으로 개헌을 통해 이루어졌기 때문에 절차적인 하자는 없었으나, 그가 부산 임시정부 시기부터 천명해 온 국민들과의 약속을 저버린 것으로, 도덕적 하자가 분명했습니다.\n\n이러한 국민들의 분노는 바로 다음 총선서 정부와 민주국민당에게 치명적인 결과로 작용했습니다. 그는 스스로 정계와의 단절을 선언하고 내치에만 집중하기로 하였으나, 이는 결국 민주공화국의 분열을 외면하겠다고 선언한 것이나 마찬가지입니다.§!"
+
+	## 이념적 갈등 ##
+		KOR_ideological_conflict:0 "이념적 갈등"
+		KOR_ideological_conflict_desc:0 "광복 이후 한국의 정치 세력은 또 다시 분열과 대립을 반복하고 있습니다. 이 이념적 갈등이 극단적이고 비참한 결과를 초래하지 않도록 정부의 직접적인 개입이 필요할 것입니다."
+
+		efc_icon:0 "£prod_eff_cap"
+		con_icon:0 "£construction_speed_texticon"
+		fao_icon:0 "£factory_output_texticon"
+
+		pol_icon:0 "£pol_power"
+		cos_icon:0 "£consumer_goods_texticon"
+		poa_icon:0 "£political_advisor_cost_texticon"
+
+		sta_icon:0 "£stability_icon"
+		res_icon:0 "£research_icon"
+		man_icon:0 "£manpower_icon"
+
+		att_icon:0 "£command_power"
+		fam_icon:0 "£war_support_icon"
+		wrs_icon:0 "£mil_factory"
+
+
+		ATTITUDE_TOOLTIP:0 "§Y태도§!는 우리 정부에 대한 각 정당의 태도를 나타냅니다.\n태도가 §G우호적이거나 충성스러운§! 정당은 정치력, 안정도와 인력 보너스를 얻게 될 것입니다.\n태도가 §R좋지 않거나 적대적§!인 정당은 안정도가 감소할 것입니다.\n태도가 §g평범하거나 하찮은§! 정당은 아무런 보너스나 불이익을 주지 않을 것입니다."
+
+		communists_text:0 "사회-노동계 - §L[?com_party_pop|%1]§!"
+		# socialists_text:0 "사회주의 - §L[?party_popularity@n_socialism|%1]§!"
+		democrats_text:0 "범 민주계 - §L[?dem_party_pop|%1]§!"
+		neutrality_text:0 "범 여권계 - §L[?run_party_pop|%1]§!"
+		fascists_text:0 "군정계 - §L[?fas_party_pop|%1]§!"
+
+		# 대한공산당 #
+			# KOR_COM_faction_wpk:0 "조선노동당 (주류파)"
+			KOR_COM_name:0 "§c[ROOT.GetComFaction]§!"
+			KOR_COM_name_text:0 "§gㄴ§! $KOR_COM_name$"
+			KOR_COM_ati_text:0 "[ROOT.GetComAti]"
+			KOR_COM_pol_text:0 "[ROOT.GetComPol]"
+			KOR_COM_sta_text:0 "[ROOT.GetComSta]"
+			KOR_COM_man_text:0 "[ROOT.GetComMan]"
+			KOR_COM_TOOLTIP:0 "§c[ROOT.GetComFaction]§!\n지도자: 박헌영\n이념: §R극좌§!, §R공산주의§!\n태도: [ROOT.GetComAti]"
+			KOR_COM_TOOLTIP_D:0 ""
+			KOR_idea_faction_com_name:0 "$KOR_COM_name$의 태도 - [ROOT.GetComAti]"
+		#
+
+		# 신민당-공화당 연합 #
+			KOR_authoritarian_socialism_party_uni:0 "§A신민당-공화당 연합§!"
+			# KOR_AUTSOC_name_long:0 "조선민족혁명당 - 좌파"
+      KOR_AUTSOC_name:0 "§c[ROOT.GetAutSocFaction]§!"
+			KOR_AUTSOC_name_text:0 "§gㄴ§! $KOR_AUTSOC_name$"
+			KOR_AUTSOC_ati_text:0 "[ROOT.GetAutSocAti]"
+			KOR_AUTSOC_pol_text:0 "[ROOT.GetAutSocPol]"
+			KOR_AUTSOC_sta_text:0 "[ROOT.GetAutSocSta]"
+			KOR_AUTSOC_man_text:0 "[ROOT.GetAutSocMan]"
+			KOR_AUTSOC_TOOLTIP:0 "§A조선민족혁명당 - 좌파§!\n지도자: §Y김두봉§!\n이념: 좌파, §A권위적 사회주의§!\n태도: [ROOT.GetAutSocAti]"
+			KOR_AUTSOC_TOOLTIP_D:0 ""
+			KOR_idea_faction_autsoc_name:0 "$KOR_AUTSOC_name$의 태도 - [ROOT.GetAutSocAti]"
+		#
+
+		# 사회노동당 #
+			# KOR_SOCDEM_faction_wpk:0 "조선노동당 (중도파)"
+			KOR_SOCDEM_name:0 "§r[ROOT.GetSocDemFaction]§!"
+			KOR_SOCDEM_name_text:0 "§gㄴ§! $KOR_SOCDEM_name$"
+			KOR_SOCDEM_ati_text:0 "[ROOT.GetSocDemAti]"
+			KOR_SOCDEM_pol_text:0 "[ROOT.GetSocDemPol]"
+			KOR_SOCDEM_sta_text:0 "[ROOT.GetSocDemSta]"
+			KOR_SOCDEM_man_text:0 "[ROOT.GetSocDemMan]"
+			KOR_SOCDEM_TOOLTIP:0 "§r[ROOT.GetSocDemFaction]§!\n지도자: 여운형\n이념: §P중도좌파§!, §P사회민주주의§!\n태도: [ROOT.GetSocDemAti]"
+			KOR_SOCDEM_TOOLTIP_D:0 ""
+			KOR_idea_faction_socdem_name:0 "$KOR_SOCDEM_name$의 태도 - [ROOT.GetSocDemAti]"
+		#
+
+		# 민주당 #
+			# KOR_SOCLIB_faction_np:0 "국민당"
+			# KOR_SOCLIB_faction_kip:0 "한국독립당 (혁신파)"
+			KOR_SOCLIB_name:0 "§y[ROOT.GetSocLibFaction]§!"
+			KOR_SOCLIB_name_text:0 "§gㄴ§! $KOR_SOCLIB_name$"
+			KOR_SOCLIB_ati_text:0 "[ROOT.GetSocLibAti]"
+			KOR_SOCLIB_pol_text:0 "[ROOT.GetSocLibPol]"
+			KOR_SOCLIB_sta_text:0 "[ROOT.GetSocLibSta]"
+			KOR_SOCLIB_man_text:0 "[ROOT.GetSocLibMan]"
+			KOR_SOCLIB_TOOLTIP:0 "§y[ROOT.GetSocLibFaction]§!\n지도자: 안재홍\n이념: §C중도우파§!, §Y자유주의§!\n태도: [ROOT.GetSocLibAti]"
+			KOR_SOCLIB_TOOLTIP_D:0 ""
+			KOR_idea_faction_soclib_name:0 "$KOR_SOCLIB_name$의 태도 - [ROOT.GetSocLibAti]"
+		#
+
+		# 대한국민당 #
+			# KOR_NATLIB_faction_kdp:0 "조선민주당"
+			KOR_NATLIB_name:0 "§l[ROOT.GetNatLibFaction]§!"
+			KOR_NATLIB_name_text:0 "§gㄴ§! $KOR_NATLIB_name$"
+			KOR_NATLIB_ati_text:0 "[ROOT.GetNatLibAti]"
+			KOR_NATLIB_pol_text:0 "[ROOT.GetNatLibPol]"
+			KOR_NATLIB_sta_text:0 "[ROOT.GetNatLibSta]"
+			KOR_NATLIB_man_text:0 "[ROOT.GetNatLibMan]"
+			KOR_NATLIB_TOOLTIP:0 "§l[ROOT.GetNatLibFaction]§!\n지도자: 조만식\n이념: §C중도우파§!, §L민족주의§!\n태도: [ROOT.GetNatLibAti]"
+			KOR_NATLIB_TOOLTIP_D:0 ""
+			KOR_idea_faction_natlib_name:0 "$KOR_NATLIB_name$의 태도 - [ROOT.GetNatLibAti]"
+		#
+
+		# 대한촉성회 #
+			KOR_LIBCON_faction_short:0 "대촉회-한민당 연합"
+			KOR_LIBCON_name:0 "§S[ROOT.GetLibConFaction]§!"
+			KOR_LIBCON_name_text:0 "§gㄴ§! $KOR_LIBCON_name$"
+			KOR_LIBCON_ati_text:0 "[ROOT.GetLibConAti]"
+			KOR_LIBCON_pol_text:0 "[ROOT.GetLibConPol]"
+			KOR_LIBCON_sta_text:0 "[ROOT.GetLibConSta]"
+			KOR_LIBCON_man_text:0 "[ROOT.GetLibConMan]"
+			KOR_LIBCON_TOOLTIP:0 "§S[ROOT.GetLibConFaction]§!\n지도자: 송진우\n이념: §s우파§!\n태도: [ROOT.GetLibConAti]"
+			KOR_LIBCON_TOOLTIP_D:0 ""
+			KOR_idea_faction_libcon_name:0 "$KOR_LIBCON_name$의 태도 - [ROOT.GetLibConAti]"
+		#
+
+		# 민주국민당 #
+			# KOR_democratic_party_gov:0 "민주국민당-범 정권"
+			KOR_SOCCON_name:0 "§q[ROOT.GetSocConFaction]§!"
+			KOR_SOCCON_name_text:0 "§gㄴ§! $KOR_SOCCON_name$"
+			KOR_SOCCON_ati_text:0 "[ROOT.GetSocConAti]"
+			KOR_SOCCON_pol_text:0 "[ROOT.GetSocConPol]"
+			KOR_SOCCON_sta_text:0 "[ROOT.GetSocConSta]"
+			KOR_SOCCON_man_text:0 "[ROOT.GetSocConMan]"
+			KOR_SOCCON_TOOLTIP:0 "§q[ROOT.GetSocConFaction]§!\n지도자: 이승만\n이념: §s우파§!, §s보수주의§!\n태도: [ROOT.GetSocConAti]"
+			KOR_SOCCON_TOOLTIP_D:0 ""
+			KOR_idea_faction_soccon_name:0 "$KOR_SOCCON_name$의 태도 - [ROOT.GetSocConAti]"
+		#
+
+		# 대한민국 국군 #
+			# KOR_RADSOC_faction_knrp:0 "조선민족혁명당"
+			# KOR_RADSOC_faction_wpk:0 "조선노동당 (약산파)"
+			KOR_RADSOC_name:0 "§D[ROOT.GetRadSocFaction]§!"
+			KOR_RADSOC_name_text:0 "§gㄴ§! $KOR_RADSOC_name$"
+			KOR_RADSOC_ati_text:0 "[ROOT.GetRadSocAti]"
+			KOR_RADSOC_pol_text:0 "[ROOT.GetRadSocPol]"
+			KOR_RADSOC_sta_text:0 "[ROOT.GetRadSocSta]"
+			KOR_RADSOC_man_text:0 "[ROOT.GetRadSocMan]"
+			KOR_RADSOC_TOOLTIP:0 "§M[ROOT.GetRadSocFaction]§!\n지도자: 김원봉\n이념: §P좌파§!, §P민주사회주의§!\n태도: [ROOT.GetRadSocAti]"
+			KOR_RADSOC_TOOLTIP_D:0 ""
+			KOR_idea_faction_radsoc_name:0 "$KOR_RADSOC_name$의 태도 - [ROOT.GetRadSocAti]"
+		#
+
+		# KOR_SOCCON_faction_gen:0 "친이승만 계열"
+		# KOR_mor_name_text:0 "§M[ROOT.GetMorFaction]§!"
+		# KOR_mor_faciton_gen:0 "군주주의자"
+
+		# 한국국민당 #
+			# KOR_NATCON_faction_kip_n:0 "한국독립당 (국민파)"
+			KOR_NATCON_name:0 "§n[ROOT.GetNatConFaction]§!"
+			KOR_NATCON_name_text:0 "§gㄴ§! $KOR_NATCON_name$"
+			KOR_NATCON_ati_text:0 "[ROOT.GetNatConAti]"
+			KOR_NATCON_pol_text:0 "[ROOT.GetNatConPol]"
+			KOR_NATCON_sta_text:0 "[ROOT.GetNatConSta]"
+			KOR_NATCON_man_text:0 "[ROOT.GetNatConMan]"
+			KOR_NATCON_TOOLTIP:0 "§n[ROOT.GetNatConFaction]§!\n지도자 : 김구\n이념 : §s우파§!, §L민족주의§!\n태도 : [ROOT.GetNatConAti]"
+			KOR_NATCON_TOOLTIP_D:0 ""
+			KOR_idea_faction_natcon_name:0 "$KOR_NATCON_name$의 태도 - [ROOT.GetNatConAti]"
+		#
+
+		# 전제주의 #
+			KOR_DES_name:0 "§M[ROOT.GetDesFaction]§!"
+			KOR_DES_name_text:0 "§gㄴ§! $KOR_DES_name$"
+			KOR_DES_ati_text:0 "[ROOT.GetDesAti]"
+			KOR_DES_pol_text:0 "[ROOT.GetDesPol]"
+			KOR_DES_sta_text:0 "[ROOT.GetDesSta]"
+			KOR_DES_man_text:0 "[ROOT.GetDesMan]"
+			KOR_DES_TOOLTIP:0 "§n[ROOT.GetDesFaction]§!\n지도자 : 김구\n이념 : §s우파§!, §D빅텐트§!\n태도 : [ROOT.GetDesAti]"
+			KOR_DES_TOOLTIP_D:0 ""
+			KOR_idea_faction_des_name:0 "$KOR_DES_name$의 태도 - [ROOT.GetDesAti]"
+		#
+
+		# 파시스트 #
+			KOR_fascism_party_uni:0 ""
+			KOR_FAS_name:0 "§f[ROOT.GetFascistFaction]§!"
+			KOR_FAS_name_text:0 "§gㄴ§! $KOR_FAS_name$"
+			KOR_FAS_ati_text:0 "[ROOT.GetFasAti]"
+			KOR_FAS_pol_text:0 "[ROOT.GetFasPol]"
+			KOR_FAS_sta_text:0 "[ROOT.GetFasSta]"
+			KOR_FAS_man_text:0 "[ROOT.GetFasMan]"
+			KOR_FAS_TOOLTIP:0 "§n[ROOT.GetFasFaction]§!\n지도자 : 김구\n이념 : §s우파§!, §D빅텐트§!\n태도 : [ROOT.GetFasAti]"
+			KOR_FAS_TOOLTIP_D:0 ""
+			KOR_idea_faction_fas_name:0 "$KOR_FAS_name$의 태도 - [ROOT.GetFasAti]"
+		#
+
+		r_royal:0 "§G협조적§!"
+		r_friendly:0 "§G긍정적§!"
+		r_normal:0 "§g평범함§!"
+		r_petty:0 "§g하찮음§!" #미사용? or 해체시?
+		r_notgood:0 "§c좋지 않음§!"
+		r_hostile:0 "§c적대적§!"
+
+		no_bonus:0 "§g0%§!"
+		bonus_n2_5:0 "§c-2.5%§!"
+		bonus_n5:0 "§c-5%§!"
+		bonus_n10:0 "§c-10%§!"
+		bonus_2_5:0 "§G+2.5%§!"
+		bonus_5:0 "§G+5%§!"
+		bonus_10:0 "§G+10%§!"
+		bonus_15:0 "§G+15%§!"
+
+		bonus_25:0 "§G+25§!"
+		bonus_n25:0 "§c-25§!"
+		bonus_10_only:0 "§G+10§!"
+		bonus_n10_only:0 "§c-10§!"
+
+		FAC_set_com_royal_tt:0 "$KOR_COM_name$의 태도가 $r_royal$으로 변할 것입니다."
+		FAC_set_autsoc_royal_tt:0 "$KOR_AUTSOC_name$의 태도가 $r_royal$으로 변할 것입니다."
+		FAC_set_radsoc_royal_tt:0 "$KOR_RADSOC_name$의 태도가 $r_royal$으로 변할 것입니다."
+		FAC_set_socdem_royal_tt:0 "$KOR_SOCDEM_name$의 태도가 $r_royal$으로 변할 것입니다."
+		FAC_set_soclib_royal_tt:0 "$KOR_SOCLIB_name$의 태도가 $r_royal$으로 변할 것입니다."
+		FAC_set_natlib_royal_tt:0 "$KOR_NATLIB_name$의 태도가 $r_royal$으로 변할 것입니다."
+		FAC_set_libcon_royal_tt:0 "$KOR_LIBCON_name$의 태도가 $r_royal$으로 변할 것입니다."
+		FAC_set_soccon_royal_tt:0 "$KOR_SOCCON_name$의 태도가 $r_royal$으로 변할 것입니다."
+		FAC_set_natcon_royal_tt:0 "$KOR_NATCON_name$의 태도가 $r_royal$으로 변할 것입니다."
+		FAC_set_des_royal_tt:0 "$KOR_DES_name$의 태도가 $r_royal$으로 변할 것입니다."
+		FAC_set_fas_royal_tt:0 "$KOR_FAS_name$의 태도가 $r_royal$으로 변할 것입니다."
+
+		FAC_set_com_friendly_tt:0 "$KOR_COM_name$의 태도가 $r_friendly$으로 변할 것입니다."
+		FAC_set_autsoc_friendly_tt:0 "$KOR_AUTSOC_name$의 태도가 $r_friendly$으로 변할 것입니다."
+		FAC_set_radsoc_friendly_tt:0 "$KOR_RADSOC_name$의 태도가 $r_friendly$으로 변할 것입니다."
+		FAC_set_socdem_friendly_tt:0 "$KOR_SOCDEM_name$의 태도가 $r_friendly$으로 변할 것입니다."
+		FAC_set_soclib_friendly_tt:0 "$KOR_SOCLIB_name$의 태도가 $r_friendly$으로 변할 것입니다."
+		FAC_set_natlib_friendly_tt:0 "$KOR_NATLIB_name$의 태도가 $r_friendly$으로 변할 것입니다."
+		FAC_set_libcon_friendly_tt:0 "$KOR_LIBCON_name$의 태도가 $r_friendly$으로 변할 것입니다."
+		FAC_set_soccon_friendly_tt:0 "$KOR_SOCCON_name$의 태도가 $r_friendly$으로 변할 것입니다."
+		FAC_set_natcon_friendly_tt:0 "$KOR_NATCON_name$의 태도가 $r_friendly$으로 변할 것입니다."
+		FAC_set_des_friendly_tt:0 "$KOR_DES_name$의 태도가 $r_friendly$으로 변할 것입니다."
+		FAC_set_fas_friendly_tt:0 "$KOR_FAS_name$의 태도가 $r_friendly$으로 변할 것입니다."
+
+		FAC_set_com_normal_tt:0 "$KOR_COM_name$의 태도가 $r_normal$으로 변할 것입니다."
+		FAC_set_autsoc_normal_tt:0 "$KOR_AUTSOC_name$의 태도가 $r_normal$으로 변할 것입니다."
+		FAC_set_radsoc_normal_tt:0 "$KOR_RADSOC_name$의 태도가 $r_normal$으로 변할 것입니다."
+		FAC_set_socdem_normal_tt:0 "$KOR_SOCDEM_name$의 태도가 $r_normal$으로 변할 것입니다."
+		FAC_set_soclib_normal_tt:0 "$KOR_SOCLIB_name$의 태도가 $r_normal$으로 변할 것입니다."
+		FAC_set_natlib_normal_tt:0 "$KOR_NATLIB_name$의 태도가 $r_normal$으로 변할 것입니다."
+		FAC_set_libcon_normal_tt:0 "$KOR_LIBCON_name$의 태도가 $r_normal$으로 변할 것입니다."
+		FAC_set_soccon_normal_tt:0 "$KOR_SOCCON_name$의 태도가 $r_normal$으로 변할 것입니다."
+		FAC_set_natcon_normal_tt:0 "$KOR_NATCON_name$의 태도가 $r_normal$으로 변할 것입니다."
+		FAC_set_des_normal_tt:0 "$KOR_DES_name$의 태도가 $r_normal$으로 변할 것입니다."
+		FAC_set_fas_normal_tt:0 "$KOR_FAS_name$의 태도가 $r_normal$으로 변할 것입니다."
+
+		FAC_set_com_notgood_tt:0 "$KOR_COM_name$의 태도가 $r_notgood$으로 변할 것입니다."
+		FAC_set_autsoc_notgood_tt:0 "$KOR_AUTSOC_name$의 태도가 $r_notgood$으로 변할 것입니다."
+		FAC_set_radsoc_notgood_tt:0 "$KOR_RADSOC_name$의 태도가 $r_notgood$으로 변할 것입니다."
+		FAC_set_socdem_notgood_tt:0 "$KOR_SOCDEM_name$의 태도가 $r_notgood$으로 변할 것입니다."
+		FAC_set_soclib_notgood_tt:0 "$KOR_SOCLIB_name$의 태도가 $r_notgood$으로 변할 것입니다."
+		FAC_set_natlib_notgood_tt:0 "$KOR_NATLIB_name$의 태도가 $r_notgood$으로 변할 것입니다."
+		FAC_set_libcon_notgood_tt:0 "$KOR_LIBCON_name$의 태도가 $r_notgood$으로 변할 것입니다."
+		FAC_set_soccon_notgood_tt:0 "$KOR_SOCCON_name$의 태도가 $r_notgood$으로 변할 것입니다."
+		FAC_set_natcon_notgood_tt:0 "$KOR_NATCON_name$의 태도가 $r_notgood$으로 변할 것입니다."
+		FAC_set_des_notgood_tt:0 "$KOR_DES_name$의 태도가 $r_notgood$으로 변할 것입니다."
+		FAC_set_fas_notgood_tt:0 "$KOR_FAS_name$의 태도가 $r_notgood$으로 변할 것입니다."
+
+		FAC_set_com_hostile_tt:0 "$KOR_COM_name$의 태도가 $r_hostile$으로 변할 것입니다."
+		FAC_set_autsoc_hostile_tt:0 "$KOR_AUTSOC_name$의 태도가 $r_hostile$으로 변할 것입니다."
+		FAC_set_radsoc_hostile_tt:0 "$KOR_RADSOC_name$의 태도가 $r_hostile$으로 변할 것입니다."
+		FAC_set_socdem_hostile_tt:0 "$KOR_SOCDEM_name$의 태도가 $r_hostile$으로 변할 것입니다."
+		FAC_set_soclib_hostile_tt:0 "$KOR_SOCLIB_name$의 태도가 $r_hostile$으로 변할 것입니다."
+		FAC_set_natlib_hostile_tt:0 "$KOR_NATLIB_name$의 태도가 $r_hostile$으로 변할 것입니다."
+		FAC_set_libcon_hostile_tt:0 "$KOR_LIBCON_name$의 태도가 $r_hostile$으로 변할 것입니다."
+		FAC_set_soccon_hostile_tt:0 "$KOR_SOCCON_name$의 태도가 $r_hostile$으로 변할 것입니다."
+		FAC_set_natcon_hostile_tt:0 "$KOR_NATCON_name$의 태도가 $r_hostile$으로 변할 것입니다."
+		FAC_set_des_hostile_tt:0 "$KOR_DES_name$의 태도가 $r_hostile$으로 변할 것입니다."
+		FAC_set_fas_hostile_tt:0 "$KOR_FAS_name$의 태도가 $r_hostile$으로 변할 것입니다."
+	#

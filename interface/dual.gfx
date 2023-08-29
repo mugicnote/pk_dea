@@ -18,6 +18,53 @@ spriteTypes = {
 	}
 
 	#대한민국
+	###서재필 정부 - 시작 시###
+	spriteType = {
+		name = "GFX_Portrait_Kim_Kyusik"
+		texturefile = "gfx/leaders/KOR/Portrait_Kim_Kyusik.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Kim_Seongsoo"
+		texturefile = "gfx/leaders/KOR/Portrait_Kim_Seongsoo.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Ham_TaeYoung"
+		texturefile = "gfx/leaders/KOR/Portrait_Ham_TaeYoung.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Kim_Hyun_cheol"
+		texturefile = "gfx/leaders/KOR/Portrait_Kim_Hyun_cheol.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Ho_Jong"
+		texturefile = "gfx/leaders/KOR/Portrait_Ho_Jong.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Lee_Beomseung"
+		texturefile = "gfx/leaders/KOR/Portrait_Lee_Beomseung.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Shin_Sung_mo"
+		texturefile = "gfx/leaders/KOR/Portrait_Shin_Sung_mo.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Jang_TaekSang"
+		texturefile = "gfx/leaders/KOR/Portrait_Jang_TaekSang.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_jo_man_sik"
+		texturefile = "gfx/leaders/KOR/Portrait_Jo_Mansik.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Chough_Pyung_ok"
+		texturefile = "gfx/leaders/KOR/Portrait_Chough_Pyung_ok.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_He_Hun"
+		texturefile = "gfx/leaders/KOR/Portrait_He_Hun.dds"
+	}
+
+
 	spriteType = {
 		name = "GFX_Portrait_Syngman_Rhee"
 		texturefile = "gfx/interface/Portrait_Syngman_Rhee.dds"
@@ -37,14 +84,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_Portrait_Kang_In_taek"
 		texturefile = "gfx/leaders/KOR/Portrait_Kang_In_taek.dds"
-	}
-	spriteType = {
-		name = "GFX_Portrait_Kim_Kyusik"
-		texturefile = "gfx/interface/Portrait_Kim_Kyusik.dds"
-	}
-	spriteType = {
-		name = "GFX_Portrait_Chough_Pyung_ok"
-		texturefile = "gfx/interface/Portrait_Chough_Pyung_ok.dds"
 	}
 	spriteType = {
 		name = "GFX_Portrait_Ahn_Chang_Ho"

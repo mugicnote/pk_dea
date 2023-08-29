@@ -258,8 +258,8 @@ USA = {
 }
 MON = {
 	#color = HSV { 0.1 0.15 0.4 }
-	color = rgb { 108 140 42 }
-	color_ui = rgb { 209 247 133 }
+	color = rgb { 167 74 28 }
+	color_ui = rgb { 167 74 28 }
 }
 MEN = {
 	color = rgb { 114 205 140 }
@@ -953,6 +953,11 @@ GIZ = {
 }
 
 KNM = {
-	color = rgb { 0  51  153 }
-	color_ui = rgb { 0  51  153 }	
+	color = rgb { 27 57 117 }
+	color_ui = rgb { 27 57 117 }	
+}
+
+TAI = {
+	color = rgb { 38 110 177 }
+	color_ui = rgb { 38 110 177 }	
 }

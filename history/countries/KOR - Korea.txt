@@ -120,12 +120,12 @@ set_convoys = 30
 
 #국민정신
 add_ideas = {
-KOR_economy_ruined
-#KOR_huge_amount_government_bonds # 설정 변경에 따른 반려
+KOR_the_dice_economy
 KOR_Collapsed_security
-KOR_incompetent_goverment
 KOR_Divided_military
-KOR_Chang_Taek_Sang
+KOR_economic_firstism
+KOR_neglected_navy
+KOR_neglected_army
 three_years_service
 
 idea_Lee_Soon_yong
@@ -148,17 +148,17 @@ set_politics = {
 #시작시_정당들의_인기도
 set_popularities = {
   communism = 10
-  authoritarian_socialism = 4
-  radical_socialism = 9
+  authoritarian_socialism = 2
+  radical_socialism = 3
   social_democracy = 12
   social_liberalism = 4
-  national_liberalism = 3
-  liberal_conservatism = 4
+  national_liberalism = 5
+  liberal_conservatism = 14
   democratic = 20
-  national_conservatism = 12
-  neutrality = 6
+  national_conservatism = 11
+  neutrality = 4
   auto_despotism = 5
-  fascism = 11
+  fascism = 10
 }
 
 #if = {
@@ -204,6 +204,12 @@ set_popularities = {
 
 COALITION_add_soccon = yes
 COALITION_add_neu = yes
+
+set_variable = { KOR_kip_strength = 35 }
+set_variable = { KOR_gmh_strength = 20 }
+set_variable = { KOR_ppk_strength = 25 }
+set_variable = { KOR_np_strength = 10 }
+set_variable = { KOR_kdp_strength = 5 }
 
 #common/characters 파일 참고
 recruit_character = KOR_Seo_jae_pil

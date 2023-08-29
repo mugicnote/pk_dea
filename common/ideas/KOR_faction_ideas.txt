@@ -1,0 +1,366 @@
+ideas = {
+	hidden_ideas = {
+		# 조선공산당 #
+			KOR_idea_faction_com_royal = {
+				name = KOR_idea_faction_com_name
+				allowed = { always = no }
+				removal_cost = -1
+				traits = { faction_com faction_com_r_royal }
+			}
+			KOR_idea_faction_com_friendly = {
+				name = KOR_idea_faction_com_name
+				allowed = { always = no }
+				removal_cost = -1
+				traits = { faction_com faction_com_r_friendly }
+			}
+			KOR_idea_faction_com_normal = {
+				name = KOR_idea_faction_com_name
+				allowed = { always = no }
+				removal_cost = -1
+				traits = { faction_com faction_com_r_normal }
+			}
+			KOR_idea_faction_com_notgood = {
+				name = KOR_idea_faction_com_name
+				allowed = { always = no }
+				removal_cost = -1
+				traits = { faction_com faction_com_r_notgood }
+			}
+			KOR_idea_faction_com_hostile = {
+				name = KOR_idea_faction_com_name
+				allowed = { always = no }
+				removal_cost = -1
+				traits = { faction_com faction_com_r_hostile }
+			}
+		#
+
+		# 조선민족혁명당 #
+			KOR_idea_faction_autsoc_royal = {
+				name = KOR_idea_faction_autsoc_name
+				allowed = { always = no }
+				removal_cost = -1
+				traits = { faction_autsoc faction_autsoc_r_royal }
+			}
+			KOR_idea_faction_autsoc_friendly = {
+				name = KOR_idea_faction_autsoc_name
+				allowed = { always = no }
+				removal_cost = -1
+				traits = { faction_autsoc faction_autsoc_r_friendly }
+			}
+			KOR_idea_faction_autsoc_normal = {
+				name = KOR_idea_faction_autsoc_name
+				allowed = { always = no }
+				removal_cost = -1
+				traits = { faction_autsoc faction_autsoc_r_normal }
+			}
+			KOR_idea_faction_autsoc_notgood = {
+				name = KOR_idea_faction_autsoc_name
+				allowed = { always = no }
+				removal_cost = -1
+				traits = { faction_autsoc faction_autsoc_r_notgood }
+			}
+			KOR_idea_faction_autsoc_hostile = {
+				name = KOR_idea_faction_autsoc_name
+				allowed = { always = no }
+				removal_cost = -1
+				traits = { faction_autsoc faction_autsoc_r_hostile }
+			}
+		#
+		
+		# 조선민족혁명당 #
+			KOR_idea_faction_radsoc_royal = {
+				name = KOR_idea_faction_radsoc_name
+				allowed = { always = no }
+				removal_cost = -1
+				traits = { faction_radsoc faction_radsoc_r_royal }
+			}
+			KOR_idea_faction_radsoc_friendly = {
+				name = KOR_idea_faction_radsoc_name
+				allowed = { always = no }
+				removal_cost = -1
+				traits = { faction_radsoc faction_radsoc_r_friendly }
+			}
+			KOR_idea_faction_radsoc_normal = {
+				name = KOR_idea_faction_radsoc_name
+				allowed = { always = no }
+				removal_cost = -1
+				traits = { faction_radsoc faction_radsoc_r_normal }
+			}
+			KOR_idea_faction_radsoc_notgood = {
+				name = KOR_idea_faction_radsoc_name
+				allowed = { always = no }
+				removal_cost = -1
+				traits = { faction_radsoc faction_radsoc_r_notgood }
+			}
+			KOR_idea_faction_radsoc_hostile = {
+				name = KOR_idea_faction_radsoc_name
+				allowed = { always = no }
+				removal_cost = -1
+				traits = { faction_radsoc faction_radsoc_r_hostile }
+			}
+		#
+
+		# 조선인민당 #
+			KOR_idea_faction_socdem_royal = {
+				name = KOR_idea_faction_socdem_name
+				allowed = { always = no }
+				removal_cost = -1
+				traits = { faction_socdem faction_socdem_r_royal }
+			}
+			KOR_idea_faction_socdem_friendly = {
+				name = KOR_idea_faction_socdem_name
+				allowed = { always = no }
+				removal_cost = -1
+				traits = { faction_socdem faction_socdem_r_friendly }
+			}
+			KOR_idea_faction_socdem_normal = {
+				name = KOR_idea_faction_socdem_name
+				allowed = { always = no }
+				removal_cost = -1
+				traits = { faction_socdem faction_socdem_r_normal }
+			}
+			KOR_idea_faction_socdem_notgood = {
+				name = KOR_idea_faction_socdem_name
+				allowed = { always = no }
+				removal_cost = -1
+				traits = { faction_socdem faction_socdem_r_notgood }
+			}
+			KOR_idea_faction_socdem_hostile = {
+				name = KOR_idea_faction_socdem_name
+				allowed = { always = no }
+				removal_cost = -1
+				traits = { faction_socdem faction_socdem_r_hostile }
+			}
+		#
+
+		# 국민당 #
+			KOR_idea_faction_soclib_royal = {
+				name = KOR_idea_faction_soclib_name
+				allowed = { always = no }
+				removal_cost = -1
+				traits = { faction_soclib faction_soclib_r_royal }
+			}
+			KOR_idea_faction_soclib_friendly = {
+				name = KOR_idea_faction_soclib_name
+				allowed = { always = no }
+				removal_cost = -1
+				traits = { faction_soclib faction_soclib_r_friendly }
+			}
+			KOR_idea_faction_soclib_normal = {
+				name = KOR_idea_faction_soclib_name
+				allowed = { always = no }
+				removal_cost = -1
+				traits = { faction_soclib faction_soclib_r_normal }
+			}
+			KOR_idea_faction_soclib_notgood = {
+				name = KOR_idea_faction_soclib_name
+				allowed = { always = no }
+				removal_cost = -1
+				traits = { faction_soclib faction_soclib_r_notgood }
+			}
+			KOR_idea_faction_soclib_hostile = {
+				name = KOR_idea_faction_soclib_name
+				allowed = { always = no }
+				removal_cost = -1
+				traits = { faction_soclib faction_soclib_r_hostile }
+			}
+		#
+
+		# 조선민주당 #
+			KOR_idea_faction_natlib_royal = {
+				name = KOR_idea_faction_natlib_name
+				allowed = { always = no }
+				removal_cost = -1
+				traits = { faction_natlib faction_natlib_r_royal }
+			}
+			KOR_idea_faction_natlib_friendly = {
+				name = KOR_idea_faction_natlib_name
+				allowed = { always = no }
+				removal_cost = -1
+				traits = { faction_natlib faction_natlib_r_friendly }
+			}
+			KOR_idea_faction_natlib_normal = {
+				name = KOR_idea_faction_natlib_name
+				allowed = { always = no }
+				removal_cost = -1
+				traits = { faction_natlib faction_natlib_r_normal }
+			}
+			KOR_idea_faction_natlib_notgood = {
+				name = KOR_idea_faction_natlib_name
+				allowed = { always = no }
+				removal_cost = -1
+				traits = { faction_natlib faction_natlib_r_notgood }
+			}
+			KOR_idea_faction_natlib_hostile = {
+				name = KOR_idea_faction_natlib_name
+				allowed = { always = no }
+				removal_cost = -1
+				traits = { faction_natlib faction_natlib_r_hostile }
+			}
+		#
+
+		# 한국민주당 #
+			KOR_idea_faction_libcon_royal = {
+				name = KOR_idea_faction_libcon_name
+				allowed = { always = no }
+				removal_cost = -1
+				traits = { faction_libcon faction_libcon_r_royal }
+			}
+			KOR_idea_faction_libcon_friendly = {
+				name = KOR_idea_faction_libcon_name
+				allowed = { always = no }
+				removal_cost = -1
+				traits = { faction_libcon faction_libcon_r_friendly }
+			}
+			KOR_idea_faction_libcon_normal = {
+				name = KOR_idea_faction_libcon_name
+				allowed = { always = no }
+				removal_cost = -1
+				traits = { faction_libcon faction_libcon_r_normal }
+			}
+			KOR_idea_faction_libcon_notgood = {
+				name = KOR_idea_faction_libcon_name
+				allowed = { always = no }
+				removal_cost = -1
+				traits = { faction_libcon faction_libcon_r_notgood }
+			}
+			KOR_idea_faction_libcon_hostile = {
+				name = KOR_idea_faction_libcon_name
+				allowed = { always = no }
+				removal_cost = -1
+				traits = { faction_libcon faction_libcon_r_hostile }
+			}
+		#
+
+		# 공화민정회 #
+			KOR_idea_faction_soccon_royal = {
+				name = KOR_idea_faction_soccon_name
+				allowed = { always = no }
+				removal_cost = -1
+				traits = { faction_soccon faction_soccon_r_royal }
+			}
+			KOR_idea_faction_soccon_friendly = {
+				name = KOR_idea_faction_soccon_name
+				allowed = { always = no }
+				removal_cost = -1
+				traits = { faction_soccon faction_soccon_r_friendly }
+			}
+			KOR_idea_faction_soccon_normal = {
+				name = KOR_idea_faction_soccon_name
+				allowed = { always = no }
+				removal_cost = -1
+				traits = { faction_soccon faction_soccon_r_normal }
+			}
+			KOR_idea_faction_soccon_notgood = {
+				name = KOR_idea_faction_soccon_name
+				allowed = { always = no }
+				removal_cost = -1
+				traits = { faction_soccon faction_soccon_r_notgood }
+			}
+			KOR_idea_faction_soccon_hostile = {
+				name = KOR_idea_faction_soccon_name
+				allowed = { always = no }
+				removal_cost = -1
+				traits = { faction_soccon faction_soccon_r_hostile }
+			}
+		#
+
+		# 한국독립당 #
+			KOR_idea_faction_natcon_royal = {
+				name = KOR_idea_faction_natcon_name
+				allowed = { always = no }
+				removal_cost = -1
+				traits = { faction_natcon faction_natcon_r_royal }
+			}
+			KOR_idea_faction_natcon_friendly = {
+				name = KOR_idea_faction_natcon_name
+				allowed = { always = no }
+				removal_cost = -1
+				traits = { faction_natcon faction_natcon_r_friendly }
+			}
+			KOR_idea_faction_natcon_normal = {
+				name = KOR_idea_faction_natcon_name
+				allowed = { always = no }
+				removal_cost = -1
+				traits = { faction_natcon faction_natcon_r_normal }
+			}
+			KOR_idea_faction_natcon_notgood = {
+				name = KOR_idea_faction_natcon_name
+				allowed = { always = no }
+				removal_cost = -1
+				traits = { faction_natcon faction_natcon_r_notgood }
+			}
+			KOR_idea_faction_natcon_hostile = {
+				name = KOR_idea_faction_natcon_name
+				allowed = { always = no }
+				removal_cost = -1
+				traits = { faction_natcon faction_natcon_r_hostile }
+			}
+		#
+
+		# 파시스트 #
+			KOR_idea_faction_des_royal = {
+				name = KOR_idea_faction_des_name
+				allowed = { always = no }
+				removal_cost = -1
+				traits = { faction_des faction_des_r_royal }
+			}
+			KOR_idea_faction_des_friendly = {
+				name = KOR_idea_faction_des_name
+				allowed = { always = no }
+				removal_cost = -1
+				traits = { faction_des faction_des_r_friendly }
+			}
+			KOR_idea_faction_des_normal = {
+				name = KOR_idea_faction_des_name
+				allowed = { always = no }
+				removal_cost = -1
+				traits = { faction_des faction_des_r_normal }
+			}
+			KOR_idea_faction_des_notgood = {
+				name = KOR_idea_faction_des_name
+				allowed = { always = no }
+				removal_cost = -1
+				traits = { faction_des faction_des_r_notgood }
+			}
+			KOR_idea_faction_des_hostile = {
+				name = KOR_idea_faction_des_name
+				allowed = { always = no }
+				removal_cost = -1
+				traits = { faction_des faction_des_r_hostile }
+			}
+		#
+
+		# 파시스트 #
+			KOR_idea_faction_fas_royal = {
+				name = KOR_idea_faction_fas_name
+				allowed = { always = no }
+				removal_cost = -1
+				traits = { faction_fas faction_fas_r_royal }
+			}
+			KOR_idea_faction_fas_friendly = {
+				name = KOR_idea_faction_fas_name
+				allowed = { always = no }
+				removal_cost = -1
+				traits = { faction_fas faction_fas_r_friendly }
+			}
+			KOR_idea_faction_fas_normal = {
+				name = KOR_idea_faction_fas_name
+				allowed = { always = no }
+				removal_cost = -1
+				traits = { faction_fas faction_fas_r_normal }
+			}
+			KOR_idea_faction_fas_notgood = {
+				name = KOR_idea_faction_fas_name
+				allowed = { always = no }
+				removal_cost = -1
+				traits = { faction_fas faction_fas_r_notgood }
+			}
+			KOR_idea_faction_fas_hostile = {
+				name = KOR_idea_faction_fas_name
+				allowed = { always = no }
+				removal_cost = -1
+				traits = { faction_fas faction_fas_r_hostile }
+			}
+		#
+	}
+}

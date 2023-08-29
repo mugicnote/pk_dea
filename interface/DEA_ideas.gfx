@@ -1,6 +1,35 @@
 spriteTypes = {	
 
 	spriteType = {
+		name = "GFX_idea_KOR_the_dice_economy"
+		texturefile = "gfx/interface/ideas/KOR/idea/KOR_the_dice_economy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_Collapsed_security"
+		texturefile = "gfx/interface/ideas/KOR/idea/KOR_Collapsed_security.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_Divided_military"
+		texturefile = "gfx/interface/ideas/KOR/idea/KOR_Divided_military.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_economic_firstism"
+		texturefile = "gfx/interface/ideas/KOR/idea/KOR_economic_firstism.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_neglected_navy"
+		texturefile = "gfx/interface/ideas/KOR/idea/KOR_neglected_navy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_neglected_army"
+		texturefile = "gfx/interface/ideas/KOR/idea/KOR_neglected_army.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_incompetent_goverment"
+		texturefile = "gfx/interface/ideas/KOR/idea/KOR_incompetent_goverment.dds"
+	}
+
+	spriteType = {
 		name = "GFX_idea_Kim_Il_Sung"
 		texturefile = "gfx/interface/ideas/advisor_kim_ilsung.dds"
 	}
@@ -223,30 +252,7 @@ spriteTypes = {
 	}
 
 	#한국
-	spriteType = {
-		name = "GFX_idea_KOR_incompetent_goverment"
-		texturefile = "gfx/interface/ideas/KOR_incompetent_goverment.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_KOR_too_many_cashes"
-		texturefile = "gfx/interface/ideas/KOR_too_many_cashes.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_KOR_great_depression_new"
-		texturefile = "gfx/interface/ideas/KOR_great_depression_new.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_KOR_extreme_inflation"
-		texturefile = "gfx/interface/ideas/KOR_extreme_inflation.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_KOR_broken_security"
-		texturefile = "gfx/interface/ideas/KOR_broken_security.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_KOR_divided_military"
-		texturefile = "gfx/interface/ideas/KOR_divided_military.dds"
-	}
+
 	#한국 쿠데타
 	spriteType = {
 		name = "GFX_idea_KOR_Way_of_Military_Revolution"

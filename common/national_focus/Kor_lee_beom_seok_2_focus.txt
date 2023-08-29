@@ -491,7 +491,7 @@ focus_tree = {
 
 	}
 
-	#내치 (내부의 정치)
+	#경제 기획 재시작
 	focus = {
 		id = KOR_internal_politics
 		icon = GFX_focus_kor_internal_politics
@@ -505,7 +505,7 @@ focus_tree = {
 		completion_reward = {
 			
 		}
-		x = -7
+		x = -14
 		y = 1
 
 	}
@@ -548,25 +548,6 @@ focus_tree = {
 
 	}
 
-	#민정체제 보수
-	focus = {
-		id = KOR_maintenance_of_the_civil_service_system
-		icon = GFX_focus_kor_maintenance_of_the_civil_service_system
-		relative_position_id = KOR_internal_politics
-		cost = 3.00
-
-		prerequisite = {
-			focus = KOR_internal_politics
-		}
-
-		completion_reward = {
-			
-		}
-		x = 0
-		y = 1
-
-	}
-
 	#재벌 중심주의 처리
 	focus = {
 		id = KOR_treatment_of_conglomerate_centeredness
@@ -581,7 +562,7 @@ focus_tree = {
 		completion_reward = {
 			
 		}
-		x = 2
+		x = 9
 		y = 1
 
 	}
@@ -625,7 +606,7 @@ focus_tree = {
 		completion_reward = {
 			
 		}
-		x = 1
+		x = 2
 		y = 1
 
 	}
@@ -644,7 +625,7 @@ focus_tree = {
 		completion_reward = {
 			
 		}
-		x = -3
+		x = -2
 		y = 1
 
 	}
@@ -663,45 +644,7 @@ focus_tree = {
 		completion_reward = {
 			
 		}
-		x = 0
-		y = 1
-
-	}
-
-	#중앙정보부장 임명
-	focus = {
-		id = KOR_separation_of_power_from_KCIA
-		icon = GFX_focus_
-		relative_position_id = KOR_maintenance_of_the_civil_service_system
-		cost = 3.00
-
-		prerequisite = {
-			focus = KOR_maintenance_of_the_civil_service_system
-		}
-
-		completion_reward = {
-			
-		}
-		x = -2
-		y = 1
-
-	}
-
-	#국회조직법 개정
-	focus = {
-		id = KOR_establishment_of_a_parliamentary_law
-		icon = GFX_focus_
-		relative_position_id = KOR_maintenance_of_the_civil_service_system
-		cost = 3.00
-
-		prerequisite = {
-			focus = KOR_maintenance_of_the_civil_service_system
-		}
-
-		completion_reward = {
-			
-		}
-		x = 0
+		x = 1
 		y = 1
 
 	}
@@ -743,12 +686,13 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = KOR_Recall_of_the_Central_Committee
+			focus = KOR_Conservative_check
 		}
 
 		completion_reward = {
 			
 		}
-		x = 2
+		x = 5
 		y = 1
 
 	}
@@ -768,7 +712,7 @@ focus_tree = {
 		completion_reward = {
 			
 		}
-		x = 2
+		x = 4
 		y = 1
 
 	}
@@ -858,44 +802,6 @@ focus_tree = {
 
 	}
 
-	#정치범 전격 사면 조치
-	focus = {
-		id = KOR_surprise_amnesty_for_political_prisoners
-		icon = GFX_focus_
-		relative_position_id = KOR_separation_of_power_from_KCIA
-		cost = 3.00
-
-		prerequisite = {
-			focus = KOR_separation_of_power_from_KCIA
-		}
-
-		completion_reward = {
-			
-		}
-		x = 0
-		y = 1
-
-	}
-
-	#국민헌법 개정
-	focus = {
-		id = KOR_revision_of_the_National_Constitution
-		icon = GFX_focus_
-		relative_position_id = KOR_establishment_of_a_parliamentary_law
-		cost = 3.00
-
-		prerequisite = {
-			focus = KOR_establishment_of_a_parliamentary_law
-		}
-
-		completion_reward = {
-			
-		}
-		x = 0
-		y = 1
-
-	}
-
 	#사회기업 창출
 	focus = {
 		id = KOR_Creating_social_enterprises
@@ -949,7 +855,7 @@ focus_tree = {
 		completion_reward = {
 			
 		}
-		x = 0
+		x = -1
 		y = 1
 
 	}
@@ -1022,31 +928,6 @@ focus_tree = {
 
 		prerequisite = {
 			focus = KOR_Establishing_Asian_Influence_Zone
-		}
-
-		completion_reward = {
-			
-		}
-		x = 0
-		y = 1
-
-	}
-
-	#혁명정부비상조치법 폐지
-	focus = {
-		id = KOR_Revolutionary_Government_Abolition_of_Emergency_Measures_Act
-		icon = GFX_focus_
-		relative_position_id = KOR_revision_of_the_National_Constitution
-		cost = 3.00
-
-		prerequisite = {
-			focus = KOR_surprise_amnesty_for_political_prisoners
-		}
-		prerequisite = {
-			focus = KOR_revision_of_the_National_Constitution
-		}
-		prerequisite = {
-			focus = KOR_Creating_social_enterprises
 		}
 
 		completion_reward = {
@@ -2310,7 +2191,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			set_country_flag = Military_Revolution_Governments_China_War_Starts
 		}
 		x = 0
 		y = 1
@@ -2993,24 +2874,49 @@ focus_tree = {
 
 	}
 
-	#상해 대도정부 수립
+	#중국과의 전쟁
 	focus = {
-		id = KOR_Establishment_of_Greater_Shanghai_Government
+		id = KOR_War_with_China
 		icon = GFX_focus_kor_
 		relative_position_id = KOR_Chinese_military_pressure_on_the_sea
 		cost = 3.00
 
 		prerequisite = {
+			focus = KOR_Second_Shanghai_Incident
+		}
+		prerequisite = {
 			focus = KOR_Chinese_military_pressure_on_the_sea
 		}
 		prerequisite = {
-			focus = KOR_Second_Shanghai_Incident
+			focus = KOR_gidong_incident
+		}
+		prerequisite = {
+			focus = KOR_Beijing_pressure
 		}
 
 		completion_reward = {
 			
 		}
-		x = 1
+		x = 2
+		y = 1
+
+	}
+
+	#상해 대도정부 수립
+	focus = {
+		id = KOR_Establishment_of_Greater_Shanghai_Government
+		icon = GFX_focus_kor_
+		relative_position_id = KOR_War_with_China
+		cost = 3.00
+
+		prerequisite = {
+			focus = KOR_War_with_China
+		}
+
+		completion_reward = {
+			
+		}
+		x = -3
 		y = 1
 
 	}
@@ -3019,17 +2925,17 @@ focus_tree = {
 	focus = {
 		id = KOR_Establishment_of_Jidong_Self_Government
 		icon = GFX_focus_kor_
-		relative_position_id = KOR_gidong_incident
+		relative_position_id = KOR_War_with_China
 		cost = 3.00
 
 		prerequisite = {
-			focus = KOR_gidong_incident
+			focus = KOR_War_with_China
 		}
 
 		completion_reward = {
 			
 		}
-		x = -2
+		x = 1
 		y = 1
 
 	}
@@ -3067,38 +2973,13 @@ focus_tree = {
 			focus = KOR_Second_Shanghai_Incident
 		}
 		prerequisite = {
-			focus = KOR_Establishment_of_Greater_Shanghai_Government
+			focus = KOR_Chinese_military_pressure_on_the_sea
 		}
 
 		completion_reward = {
 			
 		}
 		x = 1
-		y = 2
-
-	}
-
-	#중국과의 전쟁
-	focus = {
-		id = KOR_War_with_China
-		icon = GFX_focus_kor_
-		relative_position_id = KOR_Establishment_of_Greater_Shanghai_Government
-		cost = 3.00
-
-		prerequisite = {
-			focus = KOR_Establishment_of_Greater_Shanghai_Government
-		}
-		prerequisite = {
-			focus = KOR_Establishment_of_Jidong_Self_Government
-		}
-		prerequisite = {
-			focus = KOR_Execution_of_negotiation_Shanxi
-		}
-
-		completion_reward = {
-			
-		}
-		x = 2
 		y = 1
 
 	}

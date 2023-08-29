@@ -1,0 +1,162 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "KOR_GUI_Manchurian_Incident_Decision_GUI"
+		size = { width = 525 height = 550 }
+		position = { x = 0 y = 0 }
+		
+		buttonType = {
+			name = "ENG_GUI_NorthRuhr_map"
+			spriteType = "GFX_NorthRuhr_map"
+			position = { x = 33 y = 263 }
+		}
+		buttonType = {
+			name = "ENG_GUI_Ruhr_map"
+			spriteType = "GFX_Ruhr_map"
+			position = { x = 8 y = 328 }
+		}
+		buttonType = {
+			name = "ENG_GUI_Haiman_map"
+			spriteType = "GFX_Haiman_map"
+			position = { x = 3 y = -2 }
+		}
+		buttonType = {
+			name = "ENG_GUI_Hehe_map"
+			spriteType = "GFX_Hehe_map"
+			position = { x = 152 y = -10 }
+		}
+		buttonType = {
+			name = "ENG_GUI_Liaobei_map"
+			spriteType = "GFX_Liaobei_map"
+			position = { x = 104 y = 204 }
+		}
+		buttonType = {
+			name = "ENG_GUI_Xuilan_map"
+			spriteType = "GFX_Xuilan_map"
+			position = { x = 260 y = 123 }
+		}
+		buttonType = {
+			name = "ENG_GUI_Harbin_map"
+			spriteType = "GFX_Harbin_map"
+			position = { x = 235 y = 241 }
+		}
+		buttonType = {
+			name = "ENG_GUI_Heejang_map"
+			spriteType = "GFX_Heejang_map"
+			position = { x = 330 y = 166 }
+		}
+		buttonType = {
+			name = "ENG_GUI_Songjiang_map"
+			spriteType = "GFX_Songjiang_map"
+			position = { x = 310 y = 253 }
+		}
+		buttonType = {
+			name = "ENG_GUI_Jinzhou_map"
+			spriteType = "GFX_Jinzhou_map"
+			position = { x = 107 y = 341 }
+		}
+		buttonType = {
+			name = "ENG_GUI_Fengtian_map"
+			spriteType = "GFX_Fengtian_map"
+			position = { x = 147 y = 288 }
+		}
+		buttonType = {
+			name = "ENG_GUI_Gilljiang_map"
+			spriteType = "GFX_Gilljiang_map"
+			position = { x = 202 y = 268 }
+		}
+		buttonType = {
+			name = "ENG_GUI_Andong_map"
+			spriteType = "GFX_Andong_map"
+			position = { x = 204 y = 333 }
+		}
+		buttonType = {
+			name = "ENG_GUI_Dalian_map"
+			spriteType = "GFX_Dalian_map"
+			position = { x = 142 y = 431 }
+		}
+		buttonType = {
+			name = "ENG_GUI_Longjiang_map"
+			spriteType = "GFX_Longjiang_map"
+			position = { x = 133 y = 70 }
+		}
+		buttonType = {
+			name = "ENG_GUI_Xingan_map"
+			spriteType = "GFX_Xingan_map"
+			position = { x = 137 y = 54 }
+		}
+	
+
+		instantTextboxType = {
+			name = "KOR_GUI_Local_status_intro_Text"
+			position = { x = 115 y = 420 }
+			font = "hoi_18"
+			text = "[KOR_GUI_Local_status_intro_Text]"
+			maxWidth = 450
+			format = center
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KOR_GUI_Manchurian_Incident_Local_status"
+			position = { x = 390 y = 380 }
+		}
+
+		instantTextboxType = {
+			name = "KOR_GUI_Manchurian_Incident_Local_status_Text"
+			position = { x = 21 y = 495 }
+			font = "hoi_20b"
+			text = "[KOR_GUI_Manchurian_Incident_Local_status_Text]"
+			maxWidth = 450
+			format = center
+			alwaystransparent = yes
+		}
+		
+		# iconType = {
+		# 	name = "ENG_GUI_Maggie_Decision_GUI_Portrait_2"
+		# 	spriteType = "GFX_ENG_Portrait_Old_Guard_Decision"
+		# 	position = { x = 273 y = 25 }
+		# }
+		
+		# iconType = {
+		# 	name = "ENG_GUI_Maggie_Decision_GUI_ProgressBar"
+		# 	spriteType = "GFX_ENG_GUI_Maggie_Decision_GUI_Bar"
+		# 	position = { x = 27 y = 266 }
+		# }
+		
+		# iconType = {
+		# 	name = "ENG_GUI_Maggie_Decision_GUI_ProgressBar_Frame"
+		# 	spriteType = "GFX_ENG_GUI_Macmillan_Decision_GUI_Bar_Frame"
+		# 	position = { x = 25 y = 265 }
+		# }
+		
+		# instantTextboxType = {
+		# 	name = "ENG_GUI_Maggie_Decision_GUI_Maggie_Text"
+		# 	position = { x = 24 y = 245 }
+		# 	font = "aldrich_16_outline"
+		# 	text = "군부의 지청천 지지도 및 쿠데타 반대 비율"
+		# 	maxWidth = 300
+		# 	format = left
+		# 	alwaystransparent = yes
+		# }
+		
+		# instantTextboxType = {
+		# 	name = "ENG_GUI_Maggie_Decision_GUI_OG_Text"
+		# 	position = { x = 257 y = 245 }
+		# 	font = "aldrich_16_outline"
+		# 	text = "군부의 이범석 지지도 및 쿠데타 찬성 비율"
+		# 	maxWidth = 300
+		# 	format = left
+		# 	alwaystransparent = yes
+		# }
+		# instantTextboxType = {
+		# 	name = "ENG_GUI_Maggie_Influence_Change"
+		# 	position = { x = 8 y = 310 }
+		# 	font = "aldrich_16_outline"
+		# 	text = "ENG_THATCH_INFLUENCE"
+		# 	maxWidth = 490
+		# 	maxHeight = 125
+		# 	format = center
+		# }
+	}
+}

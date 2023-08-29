@@ -1,0 +1,65 @@
+scripted_gui = {
+
+	#정치 탭 - 집권당
+	current_ruling_party = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "current_ruling_party_ui"
+		
+		ai_check = { always = yes }
+		visible = { always = yes }
+	}
+
+	#정당 목록 버튼
+	party_list_button = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "party_list_button_ui"
+		
+		ai_check = { always = yes }
+		visible = { always = yes }
+
+		effects = {
+			party_list_button_click = {
+				if = {
+					limit = { NOT = { has_country_flag = show_party_list } }
+					set_country_flag = show_party_list
+				}
+				else = { clr_country_flag = show_party_list }
+			}
+		}
+	}
+
+	#정당 목록 배경
+	party_list_bg = {
+		context_type = player_context
+		parent_window_token = party_list_button_ui
+		window_name = "party_list_bg_ui"
+		
+		visible = {
+			# always = yes
+			has_country_flag = show_party_list
+		}
+		
+		effects = { close_click = { clr_country_flag = show_party_list } }
+
+		properties = {
+			bg_com = { image = "[This.bg_com]" }
+			bg_autsoc = { image = "[This.bg_autsoc]" }
+			bg_radsoc = { image = "[This.bg_radsoc]" }
+			bg_socdem = { image = "[This.bg_socdem]" }
+			bg_soclib = { image = "[This.bg_soclib]" }
+			bg_natlib = { image = "[This.bg_natlib]" }
+			bg_libcon = { image = "[This.bg_libcon]" }
+			bg_soccon = { image = "[This.bg_soccon]" }
+			bg_natcon = { image = "[This.bg_natcon]" }
+			bg_autdem = { image = "[This.bg_autdem]" }
+			bg_autdes = { image = "[This.bg_autdes]" }
+			bg_fas = { image = "[This.bg_fas]" }
+			# Leader1 = { image = "GFX_Portrait_Ji_Cheongcheon_Army" }
+			# Leader2 = { image = "GFX_Portrait_Hong_Saik" }
+			# CSC = { image = "GFX_Portrait_Kim_Kyeongcheon" }
+			# HRA_CDR = { image = "GFX_Portrait_Lee_Beomseok" }
+		}
+	}
+}

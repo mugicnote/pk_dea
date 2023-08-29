@@ -154,6 +154,14 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/Nagoya_terrorist_occurred_picture.dds"
 	}
 	###서재필 사망 까지의 이벤트
+	spriteType = {
+		name = "GFX_Chang_Taek_sang_event_picture"
+		texturefile = "gfx/event_pictures/KOR/Chang_Taek_sang_event_picture.dds"
+	}
+	spriteType = {
+		name = "GFX_Kim_Kyu_sik_event_picture"
+		texturefile = "gfx/event_pictures/KOR/Kim_Kyu_sik_event_picture.dds"
+	}
 	## 뉴스 이벤트
 	spriteType = {
 		name = "GFX_Water_torture_incident_picture"
@@ -167,6 +175,7 @@ spriteTypes = {
 		name = "GFX_March_Democratic_Uprising"
 		texturefile = "gfx/event_pictures/KOR/news/March_Democratic_Uprising.dds"
 	}
+
 	###서재필 사망 이후
 	spriteType = {
 		name = "GFX_Cho_Byung_ok_public_statement"
