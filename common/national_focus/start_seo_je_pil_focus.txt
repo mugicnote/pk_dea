@@ -36,6 +36,10 @@ focus_tree = {
 		}
 		relative_position_id = Seo_Jae_pil_administration
 
+		bypass = {
+			has_idea = KOR_Demonstration_university_district
+		}
+
 		completion_reward = {
 			add_timed_idea = {
 				idea = KOR_idea_policy_encouraging_universities

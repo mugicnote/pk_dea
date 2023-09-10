@@ -168,6 +168,82 @@ spriteTypes = {
 	}
 	#최후제국 - 1페이즈
 	SpriteType = {
+		name = "GFX_focus_kor_economic_planning"
+		texturefile = "gfx/interface/goals/KOR/lee_2/focus_kor_economic_planning.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_kor_confirmation_of_chaebol_loyalty"
+		texturefile = "gfx/interface/goals/KOR/lee_2/focus_kor_confirmation_of_chaebol_loyalty.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_kor_Commencement_Corruption_Task_Force"
+		texturefile = "gfx/interface/goals/KOR/lee_2/focus_kor_Commencement_Corruption_Task_Force.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_kor_normalization_of_the_Cabinet"
+		texturefile = "gfx/interface/goals/KOR/lee_2/focus_kor_normalization_of_the_Cabinet.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_kor_legislative_control"
+		texturefile = "gfx/interface/goals/KOR/lee_2/focus_kor_legislative_control.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_kor_enactment_Revolutionary_Government_Organization_Act"
+		texturefile = "gfx/interface/goals/KOR/lee_2/focus_kor_enactment_Revolutionary_Government_Organization_Act.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_kor_extension_emergency_martial_law"
+		texturefile = "gfx/interface/goals/KOR/lee_2/focus_kor_extension_emergency_martial_law.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_kor_Act_Temporary_Measures_Local_Autonomy"
+		texturefile = "gfx/interface/goals/KOR/lee_2/focus_kor_Act_Temporary_Measures_Local_Autonomy.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_kor_Strengthening_Central_Committee"
+		texturefile = "gfx/interface/goals/KOR/lee_2/focus_kor_Strengthening_Central_Committee.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_kor_exclusion_extremist_factions"
+		texturefile = "gfx/interface/goals/KOR/lee_2/focus_kor_exclusion_extremist_factions.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_kor_true_integration"
+		texturefile = "gfx/interface/goals/KOR/lee_2/focus_kor_true_integration.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_kor_conservative_check"
+		texturefile = "gfx/interface/goals/KOR/lee_2/focus_kor_conservative_check.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_kor_Support_private_organizations"
+		texturefile = "gfx/interface/goals/KOR/lee_2/focus_kor_Support_private_organizations.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_kor_ousting_conservatives"
+		texturefile = "gfx/interface/goals/KOR/lee_2/focus_kor_ousting_conservatives.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_kor_Constitutional_promulgation_Korean_Empire"
+		texturefile = "gfx/interface/goals/KOR/lee_2/focus_kor_Constitutional_promulgation_Korean_Empire.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_kor_control_Foreign_Office"
+		texturefile = "gfx/interface/goals/KOR/lee_2/focus_kor_control_Foreign_Office.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_kor_unification_national_diplomatic_routes"
+		texturefile = "gfx/interface/goals/KOR/lee_2/focus_kor_unification_national_diplomatic_routes.dds"
+	}
+
+
+
+	SpriteType = {
 		name = "GFX_focus_kor_internal_politics"
 		texturefile = "gfx/interface/goals/KOR/lee_2/focus_kor_internal_politics.dds"
 	}

@@ -97,6 +97,7 @@ country_event = {
 				days = 3
 			}
 		}
+		soccon_up_variable = yes
 	}
 	option = { #
 		name = KOR.57.b
@@ -108,6 +109,10 @@ country_event = {
 				days = 3
 			}
 		}
+		socdem_up_variable = yes
+		soclib_up_variable = yes
+		natlib_up_variable = yes
+		soccon_down_variable = yes
 	}
 	option = { #
 		name = KOR.57.c
@@ -129,7 +134,7 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.61"}
 	title = KOR.61.t
 	desc = KOR.61.desc
-	picture = GFX_Seo_Jae_pils_frustration
+	picture = GFX_intramural_demonstration_event_picture
 	
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -143,6 +148,14 @@ country_event = {
 				days = 5
 			}
 		}
+		if = {
+			limit = { has_idea = KOR_idea_policy_encouraging_universities }
+			remove_ideas = KOR_idea_policy_encouraging_universities
+		}
+		swap_ideas = {
+			remove_idea = KOR_incompetent_goverment
+    		add_idea = KOR_Demonstration_university_district
+		}
 	}
 }
 
@@ -151,6 +164,7 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.62"}
 	title = KOR.62.t
 	desc = KOR.62.desc
+	picture = GFX_Seo_Jae_pils_speech_1_event_picture
 	
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -158,16 +172,32 @@ country_event = {
 	option = { #
 		name = KOR.62.a
 		ai_chance = { factor = 1 }
-		hidden_effect = {
-			country_event = {
-				id = KOR.64
-				days = 5
-			}
+		country_event = {
+			id = KOR.63
+			days = 0
 		}
-		swap_ideas = {
-			remove_idea = KOR_incompetent_goverment
-    		add_idea = KOR_incompetent_goverment2
+
+	}
+}
+
+country_event = {  
+	id = KOR.63
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.63"}
+	title = KOR.63.t
+	desc = KOR.63.desc
+	picture = GFX_Seo_Jae_pils_speech_1_event_picture
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = KOR.63.a
+		ai_chance = { factor = 1 }
+		country_event = {
+			id = KOR.64
+			days = 0
 		}
+
 	}
 }
 
@@ -176,7 +206,7 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.64"}
 	title = KOR.64.t
 	desc = KOR.64.desc
-	picture = GFX_Choi_Hwans_Suspicion
+	picture = GFX_Seo_Jae_pils_speech_2_event_picture
 	
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -184,16 +214,9 @@ country_event = {
 	option = { #
 		name = KOR.64.a
 		ai_chance = { factor = 1 }
-		custom_effect_tooltip = KOR.64_tt
-		hidden_effect = {
-			swap_ideas = {
-				remove_idea = idea_Kim_Beop_rin
-				add_idea = idea_Kim_Beop_rin2
-			}
-			country_event = {
-				id = KOR.65
-				days = 5
-			}
+		country_event = {
+			id = KOR.65
+			days = 0
 		}
 	}
 }
@@ -203,7 +226,7 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.65"}
 	title = KOR.65.t
 	desc = KOR.65.desc
-	picture = GFX_prove_incentive_Article
+	picture = GFX_Seo_Jae_pils_speech_2_event_picture
 	
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -211,16 +234,12 @@ country_event = {
 	option = { #
 		name = KOR.65.a
 		ai_chance = { factor = 1 }
-		add_political_power = -25
-		hidden_effect = {
-			country_event = {
-				id = KOR.54
-				days = 5
-			}
-
-			set_country_flag = water_torture_news
-			set_country_flag = Dea_News_event_show
+		country_event = {
+			id = KOR.54
+			days = 0
 		}
+			# set_country_flag = water_torture_news
+			# set_country_flag = Dea_News_event_show
 	}
 }
 
@@ -229,7 +248,7 @@ country_event = {
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.54"}
 	title = KOR.54.t
 	desc = KOR.54.desc
-	picture = GFX_report_event_kor_lee
+	picture = GFX_Seo_Jae_pils_speech_3_event_picture
 	
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -243,7 +262,10 @@ country_event = {
 				days = 5
 			}
 		}
-		add_political_power = -25
+		swap_ideas = {
+			remove_idea = KOR_Demonstration_university_district
+    		add_idea = KOR_uncontrollable_school_demonstration
+		}
 	}
 
 }
@@ -274,27 +296,27 @@ country_event = {
 	}
 }
 
-country_event = {  
-	id = KOR.63
-	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.63"}
-	title = KOR.63.t
-	desc = KOR.63.desc
+# country_event = {  
+# 	id = KOR.63
+# 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.63"}
+# 	title = KOR.63.t
+# 	desc = KOR.63.desc
 	
-	is_triggered_only = yes
-	fire_only_once = yes
+# 	is_triggered_only = yes
+# 	fire_only_once = yes
 	
-	option = { #
-		name = KOR.63.a
-		ai_chance = { factor = 1 }
-		add_ideas = KOR_Demonstration_university_district
-		hidden_effect = {
-			country_event = {
-				id = KOR.64
-				days = 5
-			}
-		}
-	}
-}
+# 	option = { #
+# 		name = KOR.63.a
+# 		ai_chance = { factor = 1 }
+# 		add_ideas = KOR_Demonstration_university_district
+# 		hidden_effect = {
+# 			country_event = {
+# 				id = KOR.64
+# 				days = 5
+# 			}
+# 		}
+# 	}
+# }
 
 country_event = {  
 	id = KOR.66

@@ -296,7 +296,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_seoul_metro"
 		texturefile = "gfx/texticons/decision_seoul_metro.dds"
-
+	}
 	spriteType = {
 		name = "GFX_construction_speed_texticon"
 		texturefile = "gfx/texticons/mini_icon/construction_speed_texticon.dds"

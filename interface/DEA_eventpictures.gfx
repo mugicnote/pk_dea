@@ -162,6 +162,22 @@ spriteTypes = {
 		name = "GFX_Kim_Kyu_sik_event_picture"
 		texturefile = "gfx/event_pictures/KOR/Kim_Kyu_sik_event_picture.dds"
 	}
+	spriteType = {
+		name = "GFX_intramural_demonstration_event_picture"
+		texturefile = "gfx/event_pictures/KOR/intramural_demonstration_event_picture.dds"
+	}
+	spriteType = {
+		name = "GFX_Seo_Jae_pils_speech_1_event_picture"
+		texturefile = "gfx/event_pictures/KOR/Seo_Jae_pils_speech_1_event_picture.dds"
+	}
+	spriteType = {
+		name = "GFX_Seo_Jae_pils_speech_2_event_picture"
+		texturefile = "gfx/event_pictures/KOR/Seo_Jae_pils_speech_2_event_picture.dds"
+	}
+	spriteType = {
+		name = "GFX_Seo_Jae_pils_speech_3_event_picture"
+		texturefile = "gfx/event_pictures/KOR/Seo_Jae_pils_speech_3_event_picture.dds"
+	}
 	## 뉴스 이벤트
 	spriteType = {
 		name = "GFX_Water_torture_incident_picture"
