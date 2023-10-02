@@ -1,7 +1,7 @@
 #reload countrycolors
 
 GER = {
-	color = HSV { 0.1 0.15 0.4 }
+	color = rgb { 93 93 61 }
 	color_ui = rgb { 138 155 116 }
 }
 ENG = {
@@ -13,12 +13,12 @@ SOV = {
 	color_ui = rgb { 163 17 31 }
 }
 SWE = {
-	color = rgb { 36 132 247 }
-	color_ui = rgb { 47 172 255 }
+	color = rgb { 0 106 167 }
+	color_ui = rgb { 0 106 167 }
 }
 FRA = {
-	color = rgb { 57 113 228 }
-	color_ui = rgb { 74 147 255 }
+	color = rgb { 30 84 183 }
+	color_ui = rgb { 35 101 222 }
 }
 LUX = {
 	color = rgb { 65 175 179 }
@@ -33,28 +33,28 @@ HOL = {
 	color_ui = rgb { 255 179 96 }
 }
 CZE = {	
-	color = rgb { 54 167 156 }
-	color_ui = rgb { 70 217 203 }
+	color = rgb { 43 89 202 }
+	color_ui = rgb { 43 89 202 }
 }
 POL = {
-	color = rgb { 197 92 106 }
+	color = rgb { 206 97 123 }
 	color_ui = rgb { 255 120 138 }
 }
 AUS = {
-	color = rgb { 194 198 215 }
-	color_ui = rgb { 255 255 255 }
+	color = rgb { 220 220 220 }
+	color_ui = rgb { 220 220 220 }
 }
 LIT = {
-	color = rgb { 219 219 119 }
-	color_ui = rgb { 255 255 155 }
+	color = rgb { 250 185 0 }
+	color_ui = rgb { 250 185 0 }
 }
 EST = {
-	color = rgb { 50 135 175 }
-	color_ui = rgb { 99 204 254 }
+	color = rgb { 0 125 195 }
+	color_ui = rgb { 0 125 195 }
 }
 LAT = {
-	color = rgb { 75 77 186 }
-	color_ui = rgb { 124 125 184 }
+	color = rgb { 157 34 53 }
+	color_ui = rgb { 157 34 53 }
 }
 SPR = {
 	color = rgb { 242 205 94 }
@@ -77,8 +77,8 @@ SWI = {
 	color_ui = rgb { 193 81 81 }
 }
 TUR = {
-	color = rgb { 171 190 152 }
-	color_ui = rgb { 222 247 198 }
+	color = rgb { 169 17 1  }
+	color_ui = rgb { 169 17 1  }
 }
 GRE = {
 	color = rgb { 93 181 227 }
@@ -89,8 +89,8 @@ ALB = {
 	color_ui = rgb { 194 59 133 }
 }
 NOR = {
-	color = rgb { 111 71 71 }
-	color_ui = rgb { 144 92 92 }
+	color = rgb { 186 12 47 }
+	color_ui = rgb { 186 12 47 }
 }
 DEN = {
 	color = rgb { 153 116 93 }
@@ -113,8 +113,8 @@ IRE = {
 	color_ui = rgb { 104 207 117 }
 }
 HUN = {
-	color = rgb { 249 126 98 }
-	color_ui = rgb { 255 164 127 }
+	color = rgb { 163 121 102 }
+	color_ui = rgb { 163 121 102 }
 }
 AFG = {
 	color = rgb { 64 160 167 }
@@ -181,8 +181,8 @@ HON = {
 	color_ui = rgb { 128 145 65 }
 }
 IRQ = {
-	color = rgb { 178 114 99 }
-	color_ui = rgb { 231 148 129 }
+	color = rgb { 137 119 142 }
+	color_ui = rgb { 137 119 142 }
 }
 JAP = {
 	color = hsv { 0.05 0.3 1 }
@@ -286,12 +286,12 @@ HAI = {
 	color_ui = rgb { 174 113 113 }
 }
 YEM = {
-	color = rgb { 155 101 107 }
-	color_ui = rgb { 202 131 139 }
+	color = rgb { 185 68 68 }
+	color_ui = rgb { 185 68 68 }
 }
 OMA = {
-	color = rgb { 155 101 107 }
-	color_ui = rgb { 202 131 139 }
+	color = rgb { 118 136 133 }
+	color_ui = rgb { 118 136 133 }
 }
 SLO = {
 	color = rgb { 158  161  188 }
@@ -953,8 +953,8 @@ GIZ = {
 }
 
 KNM = {
-	color = rgb { 27 57 117 }
-	color_ui = rgb { 27 57 117 }	
+	color = rgb { 145 130 105 }
+	color_ui = rgb { 145 130 105 }	
 }
 
 TAI = {

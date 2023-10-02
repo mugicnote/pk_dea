@@ -20,6 +20,7 @@ state={
 			10627 3
 		}
 		add_core_of = MON
+		set_demilitarized_zone = yes
 	}
 
 	provinces={

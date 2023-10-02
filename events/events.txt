@@ -289,34 +289,32 @@ country_event = {
 				days = 5
 			}
 		}
-		swap_ideas = {
-			remove_idea = KOR_incompetent_goverment2
-    		add_idea = KOR_incompetent_goverment3
-		}
+		add_manpower = -1
 	}
 }
 
-# country_event = {  
-# 	id = KOR.63
-# 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.63"}
-# 	title = KOR.63.t
-# 	desc = KOR.63.desc
+country_event = {  
+	id = KOR.43
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.43"}
+	title = KOR.43.t
+	desc = KOR.43.desc
+	picture = GFX_report_event_kor_lee
 	
-# 	is_triggered_only = yes
-# 	fire_only_once = yes
+	is_triggered_only = yes
+	fire_only_once = yes
 	
-# 	option = { #
-# 		name = KOR.63.a
-# 		ai_chance = { factor = 1 }
-# 		add_ideas = KOR_Demonstration_university_district
-# 		hidden_effect = {
-# 			country_event = {
-# 				id = KOR.64
-# 				days = 5
-# 			}
-# 		}
-# 	}
-# }
+	option = { #
+		name = KOR.43.a
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			country_event = {
+				id = KOR.63
+				days = 5
+			}
+		}
+		add_manpower = -1
+	}
+}
 
 country_event = {  
 	id = KOR.66
@@ -2101,19 +2099,20 @@ country_event = { #
 	}
 }
 
-country_event = { #범죄와의 전쟁 선포
+country_event = { #
 	id = KOR.31
-	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.31"}
 	title = KOR.31.t
 	desc = KOR.31.desc
-	picture = GFX_war1
-	
+	picture = GFX_
+
 	is_triggered_only = yes
 	fire_only_once = yes
-	
-	option = { #ok
+
+	# 
+	option = {
 		name = KOR.31.a
 		ai_chance = { factor = 1 }
+		
 	}
 }
 
@@ -2168,21 +2167,6 @@ country_event = { #
 	}
 }
 
-country_event = { #시작5
-	id = KOR.43
-	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.43"}
-	title = KOR.43.t
-	desc = KOR.43.desc
-	picture = GFX_NAREISION
-	
-	is_triggered_only = yes
-	
-	option = { #
-		name = KOR.43.a
-		ai_chance = { factor = 1 }
-		country_event = { id = KOR.14 }
-	}
-}
 country_event = { #시작6
 	id = KOR.44
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.44"}

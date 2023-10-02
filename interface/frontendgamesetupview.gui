@@ -24,7 +24,7 @@ guiTypes = {
 		iconType = {
 			name = "icon"
 			spriteType = "GFX_select_date_1936"
-			position = { x = -180 y = 0 }
+			position = { x = -158 y = -3 }
 			allwaystransparent = yes
 		}
 

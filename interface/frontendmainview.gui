@@ -24,19 +24,18 @@ guiTypes = {
 
 	### MAIN MENU PANEL (upperleft)
 	containerWindowType = {
-		name  ="mainmenu_panel_upperleft"
-		position = { x=0 y =-250 }
-		show_position = { x=0 y =-0 }
+		name = "mainmenu_panel_upperleft"
+		position = { x=0 y =-400 }
+		show_position = { x = 0 y = -1 }
 		animation_type = decelerated
-		animation_time = 900
+		animation_time = 1000
 		size = { width = 256 height = 768}
-		
+
 		iconType = {
 			name ="frontend_game_logo"
 			spriteType = "GFX_frontend_game_logo"
-			position = { x = -25 y = 100 }
+			position = { x = 000 y = 20 }
 		}
-		
 	}
 
 	#containerWindowType = {
@@ -55,13 +54,14 @@ guiTypes = {
 
 	### MAIN MENU PANEL (upperright)
 	containerWindowType = {
-		name ="mainmenu_panel_upperright"
-		position = { x=0 y =-1 }
-		show_position = { x=-256 y =-1 }
+		name = "mainmenu_panel_upperright"
+		position = { x = 0 y = -400 }
+		show_position = { x = 0 y = -1 }
 		animation_type = decelerated
-		animation_time = 1000					
+		animation_time = 1000
 		size = { width = 256 height = 768}
-		Orientation = upper_right
+		orientation = upper_right
+		origo = upper_right
 
 		ButtonType = {
 			name = "achievements_button"
@@ -231,7 +231,7 @@ guiTypes = {
 			borderSize = {x = 0 y = 0}
 			text = "V1.0.3"
 			format = right
-			maxWidth = 350
+			maxWidth = 400
 			maxHeight = 20
 		}
 
@@ -241,9 +241,9 @@ guiTypes = {
 			textureFile = ""
 			font = "aldrich_24_outline"
 			borderSize = {x = 0 y = 0}
-			text = PROJECT_KOREA_DEA
+			text = tno_current_version
 			format = left
-			maxWidth = 300
+			maxWidth = 600
 			maxHeight = 20
 			pdx_tooltip = tno_current_version_date
 		}

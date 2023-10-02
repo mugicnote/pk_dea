@@ -70,11 +70,12 @@ add_ideas = {
 }
 
 #common/characters 파일 참고
+recruit_character = KNM_Bumyoon_Lee
 recruit_character = KNM_Kim_Hong_Il
 
 #시작_정당
 set_politics = {
-    ruling_party = fascism
+    ruling_party = neutrality
     last_election = "1936.1.1"
     election_frequency = 48
     elections_allowed = no
@@ -90,7 +91,7 @@ set_popularities = {
   liberal_conservatism = 0
   democratic = 0
   national_conservatism = 5
-  neutrality = 15
-  auto_despotism = 20
-  fascism = 60
+  neutrality = 65
+  auto_despotism = 10
+  fascism = 20
 }

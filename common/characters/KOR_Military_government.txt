@@ -1,4 +1,22 @@
 characters={
+	KNM_Bumyoon_Lee={
+		name=KNM_Bumyoon_Lee
+		portraits={
+			civilian={
+				large="gfx/leaders/KOR/Portrait_Lee_Bum_yoon.dds"
+			}
+		}
+
+		country_leader={
+			ideology=authoritarian
+			traits={
+
+			}
+			expire="2000.1.1.1"
+			id=-1
+		}
+	}
+
 	KNM_Kim_Hong_Il={
 		name=KNM_Kim_Hong_Il
 		portraits={

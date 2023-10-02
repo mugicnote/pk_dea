@@ -1,0 +1,29 @@
+characters={
+	CHI_Chiang_Kai_Shek={
+		name=CHI_Chiang_Kai_Shek
+		portraits={
+			civilian={
+				large="gfx/leaders/CHI/Portrait_CHI_Chiang_Kai_Shek.dds"
+			}
+		}
+		country_leader={
+			ideology=nat_conservatism
+			traits={
+			}
+			expire="1975.4.5.1"
+			id=-1
+		}
+
+		field_marshal={
+			traits={
+				
+			}
+			skill=5
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+}
