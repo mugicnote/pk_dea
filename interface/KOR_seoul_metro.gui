@@ -20,18 +20,21 @@ guiTypes = {
 				quadTextureSprite = "GFX_KOR_seoul_metro_station"
 				position = { x = 325 y = 113 }
 				scale = 0.7
+				pdx_tooltip  = KOR_seoul_metro_station_3_tt
 			}
 			buttonType = {
-				name = "KOR_seoul_metro_station" # 신설동역
+				name = "KOR_seoul_metro_station" # 숭신역 (신설동역)
 				quadTextureSprite = "GFX_KOR_seoul_metro_station"
 				position = { x = 370 y = 93 }
 				scale = 0.7
+				pdx_tooltip  = KOR_seoul_metro_station_tt
 			}
 			buttonType = {
-				name = "KOR_seoul_metro_station_2" # 제기동역
+				name = "KOR_seoul_metro_station_2" # 성동역 (제기동역)
 				quadTextureSprite = "GFX_KOR_seoul_metro_station"
 				position = { x = 420 y = 73 }
 				scale = 0.7
+				pdx_tooltip  = KOR_seoul_metro_station_2_tt
 			}
 			instantTextboxType = {
 				name = "KOR_seoul_metro_line_1_text"
