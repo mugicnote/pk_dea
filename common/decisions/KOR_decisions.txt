@@ -1986,50 +1986,6 @@ RUS_Zemstvo_Funding_decisions = {
 		}
 	}
 }
-KOR_seoul_metro_decisions = {
-	KOR_seoul_metro_sungdong_station = {
-		allowed = {
-			original_tag = KOR
-		}
-		icon = GFX_
-		cost = 100
-        days_remove = 180      
-		visible = {
-			always = yes
-		}
-		complete_effect = {
-			set_country_flag = KOR_seoul_metro_sungdong
-		}
-	}
-	KOR_seoul_metro_sinsuldong_station = {
-		allowed = {
-			original_tag = KOR
-		}
-		icon = GFX_
-		cost = 110
-        days_remove = 150      
-		visible = {
-			always = yes
-		}
-		complete_effect = {
-			set_country_flag = KOR_seoul_metro_sinsuldong
-		}
-	}
-	KOR_seoul_metro_dongdaemun_station = {
-		allowed = {
-			original_tag = KOR
-		}
-		icon = GFX_
-		cost = 115
-        days_remove = 150      
-		visible = {
-			always = yes
-		}
-		complete_effect = {
-			set_country_flag = KOR_seoul_metro_dongdaemun
-		}
-	}
-}
 KOR_seoul_metro_show_hide = {
 	KOR_show_metro_decisions = {
 		allowed = {
@@ -2051,10 +2007,54 @@ KOR_seoul_metro_show_hide = {
 		}
 		icon = GFX_
 		visible = {
-				has_country_flag = KOR_seoul_metro_visible
+			has_country_flag = KOR_seoul_metro_visible
 		}
 		complete_effect = {
 			clr_country_flag = KOR_seoul_metro_visible
+		}
+	}
+}
+KOR_seoul_metro_decisions = {
+	KOR_seoul_metro_sungdong_station = {
+		allowed = {
+			original_tag = KOR
+		}
+		icon = GFX_
+		cost = 100
+        days_remove = 180      
+		visible = {
+			original_tag = KOR
+		}
+		complete_effect = {
+			set_country_flag = KOR_seoul_metro_sungdong
+		}
+	}
+	KOR_seoul_metro_sinsuldong_station = {
+		allowed = {
+			original_tag = KOR
+		}
+		icon = GFX_
+		cost = 110
+        days_remove = 150      
+		visible = {
+			original_tag = KOR
+		}
+		complete_effect = {
+			set_country_flag = KOR_seoul_metro_sinsuldong
+		}
+	}
+	KOR_seoul_metro_dongdaemun_station = {
+		allowed = {
+			original_tag = KOR
+		}
+		icon = GFX_
+		cost = 115
+        days_remove = 150      
+		visible = {
+			original_tag = KOR
+		}
+		complete_effect = {
+			set_country_flag = KOR_seoul_metro_dongdaemun
 		}
 	}
 }

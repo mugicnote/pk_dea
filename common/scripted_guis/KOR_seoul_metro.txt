@@ -8,5 +8,8 @@ scripted_gui = {
 		}
 		effects = {
 		}
+		properties = {
+
+		}
 	}
 }

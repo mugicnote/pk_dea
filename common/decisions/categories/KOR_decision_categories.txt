@@ -395,15 +395,13 @@ KOR_seoul_metro_show_hide = {
 	allowed = {
 		original_tag = KOR
 	}
-	visible_when_empty = yes
 }
 KOR_seoul_metro_decisions = {
 	icon = GFX_
 	priority = 1500
-	allowed = {
-		original_tag = KOR
+	visible = {
 		has_country_flag = KOR_seoul_metro_visible
 	}
-	scripted_gui = KOR_seoul_metro_gui
 	visible_when_empty = yes
+	scripted_gui = KOR_seoul_metro_gui
 }
