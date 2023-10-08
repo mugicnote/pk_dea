@@ -2021,11 +2021,15 @@ KOR_seoul_metro_decisions = {
 		}
 		icon = GFX_
 		cost = 100
+		modifier = {
+			civilian_factory_use = 2
+		}
         days_remove = 180      
 		visible = {
 			original_tag = KOR
 		}
 		complete_effect = {
+			country_event = KOR_METRO.1
 			set_country_flag = KOR_seoul_metro_sungdong
 		}
 	}
@@ -2038,6 +2042,9 @@ KOR_seoul_metro_decisions = {
         days_remove = 150      
 		visible = {
 			original_tag = KOR
+		}
+		modifier = {
+			civilian_factory_use = 2
 		}
 		complete_effect = {
 			set_country_flag = KOR_seoul_metro_sinsuldong
@@ -2052,6 +2059,9 @@ KOR_seoul_metro_decisions = {
         days_remove = 150      
 		visible = {
 			original_tag = KOR
+		}
+		modifier = {
+			civilian_factory_use = 2
 		}
 		complete_effect = {
 			set_country_flag = KOR_seoul_metro_dongdaemun

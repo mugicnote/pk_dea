@@ -1,5 +1,6 @@
 add_namespace = KOR
 add_namespace = KOR_parliament
+add_namespace = KOR_METRO
 
 country_event = { #LegCo Helper Event
 	id = KOR_parliament.1
@@ -5110,5 +5111,23 @@ country_event = { #
 				neutrality = 100
 			}
 		}
+	}
+}
+country_event = { # 성동역 건설 재개
+	id = KOR_METRO.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event KOR_METRO.1" }
+	title = KOR_METRO.1.t
+	desc = KOR_METRO.1.desc
+	picture = GFX
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	immediate = {
+	}
+	option = { #...
+		name = KOR_METRO.1.a
+		ai_chance = { factor = 1 }
+
 	}
 }
