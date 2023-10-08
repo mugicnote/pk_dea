@@ -239,6 +239,10 @@ spriteTypes = {
 	}
 	###이범석
 	spriteType = {
+		name = "GFX_Republic_of_Zusion_event_picture"
+		texturefile = "gfx/event_pictures/KOR/Republic_of_Zusion_event_picture.dds"
+	}
+	spriteType = {
 		name = "GFX_Min_Chanho_temporary_presidential_appointment"
 		texturefile = "gfx/event_pictures/KOR/Min_Chanho_temporary_presidential_appointment.dds"
 	}

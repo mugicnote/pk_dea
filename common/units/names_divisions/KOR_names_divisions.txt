@@ -64,24 +64,24 @@ KOR_NOM_3 = {
 	}
 }
 
-KOR_Mnt_1 = {
-	name = "청년단 산악병"
-	for_countries = { KOR }
-	can_use = { always = yes }
-	division_types = { "mountaineers" }
-	fallback_name = "제%d 청년단 산악병"
-	ordered = {
+# KOR_Mnt_1 = {
+# 	name = "청년단 산악병"
+# 	for_countries = { KOR }
+# 	can_use = { always = yes }
+# 	division_types = { "mountaineers" }
+# 	fallback_name = "제%d 청년단 산악병"
+# 	ordered = {
 
-	}
-}
+# 	}
+# }
 
-KOR_NOM_4 = {
-	name = "청년단 기계화 보병"
-	for_countries = { KOR }
-	can_use = { always = yes }
-	division_types = { "motorized" }
-	fallback_name = "제%d 청년단 기계화 보병"
-	ordered = {
+# KOR_NOM_4 = {
+# 	name = "청년단 기계화 보병"
+# 	for_countries = { KOR }
+# 	can_use = { always = yes }
+# 	division_types = { "motorized" }
+# 	fallback_name = "제%d 청년단 기계화 보병"
+# 	ordered = {
 
-	}
-}
+# 	}
+# }

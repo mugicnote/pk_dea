@@ -18,6 +18,9 @@ KOR_incompetent_goverment:0 "분열된 내각"
 KOR_Demonstration_university_district:0 "교내 시위 확산"
 KOR_uncontrollable_school_demonstration:0 "걷잡을 수 없는 교내 시위"
 
+KOR_surrender_limit_max:0 "최후의 최후까지"
+KOR_ready_to_attack:0 "준비된 급습"
+
 
 # KOR_economy_ruined:0 "망가진 경제"
 # KOR_economy_ruined_desc:0 "대전쟁 이후의 전간기를 덮친 미국발 경제 공황과 패전 배상금의 상환을 위해 과도하게 발행한 통화가 불러일으킨 극심한 인플레이션은 정부의 예산과 행정을 붕괴시켰습니다. 괴멸적인 피해를 본 우리 경제를 이전과 같은 수준까지 수복하려면 노력뿐만이 아닌 시간이 필요할 것입니다."
@@ -58,9 +61,26 @@ KOR_idea_Military_Revolutionary_Government:0 "군사혁명정부"
 ###쿠데타 이후###
 KOR_idea_lost_way_democracy_2:0 "반혁명"
 KOR_idea_Military_Revolutionary_Government_2:0 "중앙위원회의 수읽기"
+KOR_idea_Military_Revolutionary_Government_2_v1:0 "중앙위원회의 수읽기"
+KOR_idea_Military_Revolutionary_Government_3_v1:0 "안정화된 중앙위원회"
+KOR_idea_Military_Revolutionary_Government_4_v1:0 "통합된 위원회"
+
+KOR_idea_Military_Revolutionary_Government_2_v2:0 "중앙위원회의 수읽기"
+KOR_idea_Military_Revolutionary_Government_3_v2:0 "압박받는 보수파"
+KOR_idea_Military_Revolutionary_Government_4_v2:0 "통합된 정권"
+
 KOR_idea_Armed_Forces_Restoration_Society_problem:0 "국군유신회 문제"
 KOR_idea_lost_way_democracy_3:0 "혁명의 반동성"
+KOR_idea_lost_way_democracy_4:0 "혁명의 반동성"
+KOR_idea_lost_way_democracy_5:0 "혁명의 반동성"
 KOR_Collapsed_security_2:0 "제국의 불안"
+KOR_Collapsed_security_3:0 "제국의 불안"
+KOR_Collapsed_security_4:0 "제국의 안정"
+KOR_Collapsed_security_5:0 "대한국 국제"
+
+#정치고문
+Min_Chanho_idea:0 "민찬호"
+Lee_Junsik_idea:0 "이준식"
 
 #이새끼들 하나도 안씀 ~~
 ###이승만###

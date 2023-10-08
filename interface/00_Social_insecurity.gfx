@@ -1,0 +1,6 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_Social_insecurity_icon"
+		texturefile = "gfx/interface/Social_insecurity/Social_insecurity_icon.dds"
+	}
+}

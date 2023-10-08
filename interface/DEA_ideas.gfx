@@ -29,6 +29,54 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/KOR/idea/KOR_incompetent_goverment.dds"
 	}
 
+	#한국 내각
+	spriteType = {
+		name = "GFX_idea_advisor_Lee_Soon_yong"
+		texturefile = "gfx/interface/ideas/advisor_Lee_Soon_yong.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_advisor_Ho_Jong"
+		texturefile = "gfx/interface/ideas/advisor_Ho_Jong.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_advisor_Shin_Sung_mo"
+		texturefile = "gfx/interface/ideas/advisor_Shin_Sung_mo.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_advisor_Jo_Man_sik"
+		texturefile = "gfx/interface/ideas/advisor_Jo_Man_sik.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_advisor_Lee_In"
+		texturefile = "gfx/interface/ideas/advisor_Lee_In.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_advisor_Kim_Beop_rin"
+		texturefile = "gfx/interface/ideas/advisor_Kim_Beop_rin.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_advisor_Yoon_Bo_Sun"
+		texturefile = "gfx/interface/ideas/advisor_Yoon_Bo_Sun.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_advisor_Kang_In_taek"
+		texturefile = "gfx/interface/ideas/advisor_Kang_In_taek.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_advisor_Chang_Taek_Sang"
+		texturefile = "gfx/interface/ideas/advisor_Chang_Taek_Sang.dds"
+	}
+	#정치고문
+	spriteType = {
+		name = "GFX_idea_advisor_Min_Chanho"
+		texturefile = "gfx/interface/ideas/KOR/advisor/advisor_Min_Chanho.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_advisor_Lee_Junsik"
+		texturefile = "gfx/interface/ideas/KOR/advisor/advisor_Lee_Junsik.dds"
+	}
+
+	#미사용
 	spriteType = {
 		name = "GFX_idea_Kim_Il_Sung"
 		texturefile = "gfx/interface/ideas/advisor_kim_ilsung.dds"
@@ -154,44 +202,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_advisor_KOR_HC_Kim_Wonbong"
 		texturefile = "gfx/interface/ideas/advisor_KOR_HC_Kim_Wonbong.dds"
-	}
-
-	#한국 내각
-	spriteType = {
-		name = "GFX_idea_advisor_Lee_Soon_yong"
-		texturefile = "gfx/interface/ideas/advisor_Lee_Soon_yong.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_advisor_Ho_Jong"
-		texturefile = "gfx/interface/ideas/advisor_Ho_Jong.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_advisor_Shin_Sung_mo"
-		texturefile = "gfx/interface/ideas/advisor_Shin_Sung_mo.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_advisor_Jo_Man_sik"
-		texturefile = "gfx/interface/ideas/advisor_Jo_Man_sik.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_advisor_Lee_In"
-		texturefile = "gfx/interface/ideas/advisor_Lee_In.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_advisor_Kim_Beop_rin"
-		texturefile = "gfx/interface/ideas/advisor_Kim_Beop_rin.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_advisor_Yoon_Bo_Sun"
-		texturefile = "gfx/interface/ideas/advisor_Yoon_Bo_Sun.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_advisor_Kang_In_taek"
-		texturefile = "gfx/interface/ideas/advisor_Kang_In_taek.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_advisor_Chang_Taek_Sang"
-		texturefile = "gfx/interface/ideas/advisor_Chang_Taek_Sang.dds"
 	}
 
 

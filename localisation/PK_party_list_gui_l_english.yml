@@ -25,7 +25,7 @@
  natcon_desc:0 "§n국민보수주의§!\n[This.GetNatconIcon] [ROOT.GetNatconParty] ([?party_popularity@national_conservatism|%2])"
  autdem_desc:0 "§D권위민주주의§!\n[This.GetAutdemIcon] [ROOT.GetNeutralParty] ([?party_popularity@neutrality|%2])"
  autdes_desc:0 "§M전제주의§!\n[This.GetAutdesIcon] [ROOT.GetAutdesParty] ([?party_popularity@auto_despotism|%2])"
- fas_desc:0 "§f파시즘§!\n[ROOT.GetFastismIcon] [ROOT.GetFascistParty] ([?party_popularity@fascism|%2])"
+ fas_desc:0 "§f파시즘§!\n[This.GetFastismIcon] [ROOT.GetFascistParty] ([?party_popularity@fascism|%2])"
 
  framecom_tooltip:0 "[ROOT.GetComCoal]"
  frameautsoc_tooltip:0 "[ROOT.GetAutsocCoal]"

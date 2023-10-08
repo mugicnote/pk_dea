@@ -96,13 +96,13 @@ set_popularities = {
   communism = 14
   authoritarian_socialism = 4
   radical_socialism = 6
-  social_democracy = 40
-  social_liberalism = 4
+  social_democracy = 43
+  social_liberalism = 0
   national_liberalism = 3
   liberal_conservatism = 4
   democratic = 13
   national_conservatism = 10
-  neutrality = 2
+  neutrality = 3
   auto_despotism = 0
   fascism = 0
 
@@ -134,6 +134,7 @@ recruit_character = YKR_Lyuh_Woon_hyung
 # recruit_character = KOR_Chang_Myon
 recruit_character = YKR_Ahn_Jae_hong
 recruit_character = YKR_Song_Jin_woo
+recruit_character = YKR_Syngman_Rhee
 recruit_character = YKR_Kim_Koo
 recruit_character = YKR_ji_chong_chen
 

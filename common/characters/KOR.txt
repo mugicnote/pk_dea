@@ -931,4 +931,62 @@ characters={
 		}
 	}
 
+
+	KOR_Min_Chanho ={
+		name=KOR_Min_Chanho
+		portraits={
+			civilian={
+				large="gfx/leaders/KOR/Portrait_Min_Chanho.dds"
+			}
+			army={
+				small="GFX_idea_advisor_Min_Chanho"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = Min_Chanho_idea
+			allowed = {
+				original_tag = KOR
+				OR = {
+					has_government = auto_despotism
+					has_government = fascism
+				}
+			}
+			available = {
+				has_completed_focus = KOR_presidents_plan
+			}
+			traits = {
+				President_of_military_regime
+			}
+		}
+	}
+
+	KOR_Lee_Junsik ={
+		name=KOR_Lee_Junsik
+		portraits={
+			civilian={
+				large="gfx/leaders/KOR/Portrait_Lee_Junsik.dds"
+			}
+			army={
+				small="GFX_idea_advisor_Lee_Junsik"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = Lee_Junsik_idea
+			allowed = {
+				original_tag = KOR
+				OR = {
+					has_government = auto_despotism
+					has_government = fascism
+				}
+			}
+			available = {
+				has_completed_focus = KOR_vice_presidents_plan
+			}
+			traits = {
+				KOR_Vice_Fuhrer
+			}
+		}
+	}
 }

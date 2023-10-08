@@ -1088,13 +1088,34 @@ DEA_KOR_scenario_debug_decisions_category = {
 			}
 			# retire_character = KOR_pak_hon_yong
 			# retire_character = KOR_Kim_Tu_bong
-			# retire_character = KOR_Kim_Won_bong
+			retire_character = KOR_Kim_Won_bong
+			create_country_leader = {
+				name = "인민공화당 위원회"
+				desc = ""
+				picture = "krGov.dds"
+				expire = "1999.1.1"
+				ideology = rad_socialism
+				traits = {
+					
+				}
+			}
+
 			# retire_character = KOR_Lyuh_Woon_hyung
 			# retire_character = KOR_Chang_Myon
 			# retire_character = KOR_Ahn_Jae_hong
 			# retire_character = KOR_Song_Jin_woo
 			# retire_character = KOR_Kim_Koo
-			# retire_character = KOR_ji_chong_chen
+			retire_character = KOR_ji_chong_chen
+			create_country_leader = {
+				name = "대한민국 국군 사령부"
+				desc = ""
+				picture = "krGov.dds"
+				expire = "1999.1.1"
+				ideology = military_dic
+				traits = {
+					
+				}
+			}
 
 			# retire_character = KOR_an_jung_geun
 
@@ -1175,6 +1196,24 @@ DEA_KOR_scenario_debug_decisions_category = {
 			}
 			915 = {
 				set_demilitarized_zone = no
+			}
+		}
+	}
+	KOR_unit_unlock = {
+		icon = GFX_decision_infiltrate_state
+
+		visible = {
+			original_tag = KOR
+		}
+
+		available = {
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			KOR = {
+				country_lock_all_division_template = no
 			}
 		}
 	}

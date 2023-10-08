@@ -5,10 +5,28 @@
 			trigger = { tag = JAP } 
 			localization_key = JAP_authoritarian_socialism_party
 		}
+
 		text = {
-			trigger = { tag = KOR } 
+			trigger = {
+				tag = KOR
+				NOT = {
+					has_country_flag = KOR_protection_rule_law
+				}
+			} 
 			localization_key = KOR_authoritarian_socialism_party
 		}
+		text = {
+			trigger = { 
+				tag = KOR
+				has_country_flag = KOR_protection_rule_law
+			} 
+			localization_key = KOR_authoritarian_socialism_bloc_long_party
+		}
+		text = {
+			trigger = { tag = YKR } 
+			localization_key = YKR_authoritarian_socialism_party
+		}
+
 		text = {
 			trigger = { tag = GGK } 
 			localization_key = GGK_authoritarian_socialism_party
@@ -1009,9 +1027,26 @@ defined_text = {
 			localization_key = JAP_radical_socialism_party
 		}
 		text = {
-			trigger = { tag = KOR } 
+			trigger = {
+				tag = KOR
+				NOT = {
+					has_country_flag = KOR_protection_rule_law
+				}
+			} 
 			localization_key = KOR_radical_socialism_party
 		}
+		text = {
+			trigger = { 
+				tag = KOR
+				has_country_flag = KOR_protection_rule_law
+			} 
+			localization_key = KOR_radical_socialism_bloc_long_party
+		}
+		text = {
+			trigger = { tag = YKR } 
+			localization_key = YKR_radical_socialism_party
+		}
+
 		text = {
 			trigger = { tag = GGK } 
 			localization_key = GGK_radical_socialism_party
@@ -2012,9 +2047,26 @@ defined_text = {
 			localization_key = JAP_social_democracy_party
 		}
 		text = {
-			trigger = { tag = KOR } 
+			trigger = {
+				tag = KOR
+				NOT = {
+					has_country_flag = KOR_protection_rule_law
+				}
+			} 
 			localization_key = KOR_social_democracy_party
 		}
+		text = {
+			trigger = { 
+				tag = KOR
+				has_country_flag = KOR_protection_rule_law
+			} 
+			localization_key = KOR_social_democracy_bloc_long_party
+		}
+		text = {
+			trigger = { tag = YKR } 
+			localization_key = YKR_social_democracy_party
+		}
+
 		text = {
 			trigger = { tag = GGK } 
 			localization_key = GGK_social_democracy_party
@@ -3015,9 +3067,26 @@ defined_text = {
 			localization_key = JAP_social_liberalism_party
 		}
 		text = {
-			trigger = { tag = KOR } 
+			trigger = {
+				tag = KOR
+				NOT = {
+					has_country_flag = KOR_protection_rule_law
+				}
+			} 
 			localization_key = KOR_social_liberalism_party
 		}
+		text = {
+			trigger = { 
+				tag = KOR
+				has_country_flag = KOR_protection_rule_law
+			} 
+			localization_key = KOR_social_liberalism_bloc_long_party
+		}
+		text = {
+			trigger = { tag = YKR } 
+			localization_key = YKR_social_liberalism_party
+		}
+
 		text = {
 			trigger = { tag = GGK } 
 			localization_key = GGK_social_liberalism_party
@@ -4018,8 +4087,24 @@ defined_text = {
 			localization_key = JAP_national_liberalism_party
 		}
 		text = {
-			trigger = { tag = KOR } 
+			trigger = {
+				tag = KOR
+				NOT = {
+					has_country_flag = KOR_protection_rule_law
+				}
+			} 
 			localization_key = KOR_national_liberalism_party
+		}
+		text = {
+			trigger = { 
+				tag = KOR
+				has_country_flag = KOR_protection_rule_law
+			} 
+			localization_key = KOR_national_liberalism_bloc_long_party
+		}
+		text = {
+			trigger = { tag = YKR } 
+			localization_key = YKR_national_liberalism_party
 		}
 		text = {
 			trigger = { tag = GGK } 
@@ -5021,8 +5106,24 @@ defined_text = {
 			localization_key = JAP_liberal_conservatism_party
 		}
 		text = {
-			trigger = { tag = KOR } 
+			trigger = {
+				tag = KOR
+				NOT = {
+					has_country_flag = KOR_protection_rule_law
+				}
+			} 
 			localization_key = KOR_liberal_conservatism_party
+		}
+		text = {
+			trigger = { 
+				tag = KOR
+				has_country_flag = KOR_protection_rule_law
+			} 
+			localization_key = KOR_liberal_conservatism_bloc_long_party
+		}
+		text = {
+			trigger = { tag = YKR } 
+			localization_key = YKR_liberal_conservatism_party
 		}
 		text = {
 			trigger = { tag = GGK } 
@@ -6024,8 +6125,24 @@ defined_text = {
 			localization_key = JAP_national_conservatism_party
 		}
 		text = {
-			trigger = { tag = KOR } 
+			trigger = {
+				tag = KOR
+				NOT = {
+					has_country_flag = KOR_protection_rule_law
+				}
+			} 
 			localization_key = KOR_national_conservatism_party
+		}
+		text = {
+			trigger = { 
+				tag = KOR
+				has_country_flag = KOR_protection_rule_law
+			} 
+			localization_key = KOR_national_conservatism_bloc_long_party
+		}
+		text = {
+			trigger = { tag = YKR } 
+			localization_key = YKR_national_conservatism_party
 		}
 		text = {
 			trigger = { tag = GGK } 
@@ -7027,8 +7144,24 @@ defined_text = {
 			localization_key = JAP_neutrality_party
 		}
 		text = {
-			trigger = { tag = KOR } 
+			trigger = {
+				tag = KOR
+				NOT = {
+					has_country_flag = KOR_back_to_back_dictatorship_flag
+				}
+			} 
 			localization_key = KOR_neutrality_party
+		}
+		text = {
+			trigger = { 
+				tag = KOR
+				has_country_flag = KOR_back_to_back_dictatorship_flag
+			} 
+			localization_key = KOR_neutrality_revolution_long_party
+		}
+		text = {
+			trigger = { tag = YKR } 
+			localization_key = YKR_neutrality_party
 		}
 		text = {
 			trigger = { tag = GGK } 
@@ -8030,8 +8163,24 @@ defined_text = {
 			localization_key = JAP_auto_despotism_party
 		}
 		text = {
-			trigger = { tag = KOR } 
+			trigger = {
+				tag = KOR
+				NOT = {
+					has_country_flag = KOR_back_to_back_dictatorship_flag
+				}
+			} 
 			localization_key = KOR_auto_despotism_party
+		}
+		text = {
+			trigger = { 
+				tag = KOR
+				has_country_flag = KOR_back_to_back_dictatorship_flag
+			} 
+			localization_key = KOR_dictatorship_long_party
+		}
+		text = {
+			trigger = { tag = YKR } 
+			localization_key = YKR_auto_despotism_party
 		}
 		text = {
 			trigger = { tag = GGK } 

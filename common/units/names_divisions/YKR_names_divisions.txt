@@ -1,0 +1,10 @@
+﻿YKR_NOM_1 = {
+	name = "영남정부 시민군"
+	for_countries = { YKR }
+	can_use = { always = yes }
+	division_types = { "infantry" }
+	fallback_name = "제%d 영남정부 시민군"
+	ordered = {
+
+	}
+}

@@ -264,6 +264,9 @@ recruit_character = KOR_Nam_Il
 
 recruit_character = KOR_Son_Won_il
 
+recruit_character = KOR_Min_Chanho
+recruit_character = KOR_Lee_Junsik
+
 ###맨더건###
 # if = {
 # 	limit = { has_dlc = "Man the Guns"}

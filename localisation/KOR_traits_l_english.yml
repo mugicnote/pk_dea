@@ -47,7 +47,7 @@
  ###서재필 사망###
  Seo_Jae_pil_over:0 "국가 위기"
 
- Traditional_Crown_Prince:0 "황제가 된 황태자"
+ Traditional_Crown_Prince:0 "황제가 된 황태자" #?
 
  ###서재필 내각 장관###
  traits_interior_minister:0 "내무부장관"
@@ -78,3 +78,7 @@
  traits_Kim_Beop_rin:0 "신뢰받는 어학계 전문가"
  traits_Yoon_Bo_Sun:0 "영국 신사"
  traits_Kang_In_taek:0 "언론운동계 인사"
+
+ #정치고문
+ President_of_military_regime:0 "대통령"
+ KOR_Vice_Fuhrer:0 "부총통"

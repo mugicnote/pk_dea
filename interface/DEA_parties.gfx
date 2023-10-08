@@ -87,7 +87,7 @@ spriteTypes = {
 
 	#전제독재주의
 	spriteType = {
-		name = "GFX_ideology_neutrality_group"
-		texturefile = "gfx/interface/ideologies/despotism.dds"
+		name = "GFX_ideology_auto_despotism_group"
+		texturefile = "gfx/interface/ideologies/aut_despotism.dds"
 	}
 }

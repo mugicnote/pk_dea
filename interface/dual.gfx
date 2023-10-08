@@ -17,6 +17,34 @@ spriteTypes = {
 		texturefile = "gfx/flags/KOR_democratic.tga"
 	}
 
+	#없는 경우
+	spriteType = {
+		name = "GFX_Portrait_leader_unknown"
+		texturefile = "gfx/leaders/KOR/Portrait_leader_unknown.dds"
+	}
+
+	#만주 괴뢰국
+	spriteType = {
+		name = "GFX_Portrait_an_junggeun"
+		texturefile = "gfx/leaders/KOR/Portrait_an_junggeun.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Kim_Chwa_chin"
+		texturefile = "gfx/leaders/KOR/Portrait_Kim_Chwa-chin.dds"
+	}
+	#영남정부
+	spriteType = {
+		name = "GFX_Portrait_Pak_Honyong"
+		texturefile = "gfx/leaders/KOR/Portrait_Pak_Honyong.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Syngman_Rhee"
+		texturefile = "gfx/leaders/KOR/Portrait_Syngman_Rhee.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Kim_Wonbong"
+		texturefile = "gfx/leaders/KOR/Portrait_Kim_Wonbong.dds"
+	}
 	#대한민국
 	###서재필 정부 - 시작 시###
 	spriteType = {
@@ -64,11 +92,6 @@ spriteTypes = {
 		texturefile = "gfx/leaders/KOR/Portrait_He_Hun.dds"
 	}
 
-
-	spriteType = {
-		name = "GFX_Portrait_Syngman_Rhee"
-		texturefile = "gfx/interface/Portrait_Syngman_Rhee.dds"
-	}
 	spriteType = {
 		name = "GFX_Portrait_Kim_Koo"
 		texturefile = "gfx/interface/Portrait_Kim_Koo.dds"
@@ -118,10 +141,6 @@ spriteTypes = {
 		texturefile = "gfx/leaders/KOR/jomansik_portrait.dds"
 	}
 	spriteType = {
-		name = "GFX_Portrait_Pak_Honyong"
-		texturefile = "gfx/leaders/KOR/Portrait_Pak_Honyong.dds"
-	}
-	spriteType = {
 		name = "GFX_Portrait_Ahn_Jaehong"
 		texturefile = "gfx/leaders/KOR/Portrait_Ahn_Jaehong.dds"
 	}
@@ -160,10 +179,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_Portrait_Choi_Yong_duk"
 		texturefile = "gfx/leaders/KOR/Portrait_Choi_Yong_duk.dds"
-	}
-	spriteType = {
-		name = "GFX_Portrait_Kim_Chwa_chin"
-		texturefile = "gfx/leaders/KOR/Portrait_Kim_Chwa-chin.dds"
 	}
 	spriteType = {
 		name = "GFX_Portrait_Hong_Sa-ik"

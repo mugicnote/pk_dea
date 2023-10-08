@@ -130,9 +130,37 @@ defined_text = {
 	text = {
 		trigger = {
 			tag = KNM
+			has_government = neutrality
+		}
+		localization_key = KNM_FIRST_TITLE_neu
+	}
+	text = {
+		trigger = {
+			tag = KNM
 			has_government = fascism
 		}
 		localization_key = KNM_FIRST_TITLE
+	}
+	text = {
+		trigger = {
+			tag = YKR
+			has_government = social_democracy
+		}
+		localization_key = YKR_FIRST_TITLE
+	}
+	text = {
+		trigger = {
+			tag = YKR
+			has_government = national_conservatism
+		}
+		localization_key = YKR_FIRST_TITLE_nat
+	}
+	text = {
+		trigger = {
+			tag = CKR
+			has_government = communism
+		}
+		localization_key = CKR_FIRST_TITLE
 	}
 }
 
@@ -259,9 +287,37 @@ defined_text = {
 	text = {
 		trigger = {
 			tag = KNM
+			has_government = neutrality
+		}
+		localization_key = KNM_SECOND_TITLE_neu
+	}
+	text = {
+		trigger = {
+			tag = KNM
 			has_government = fascism
 		}
 		localization_key = KNM_SECOND_TITLE
+	}
+	text = {
+		trigger = {
+			tag = YKR
+			has_government = social_democracy
+		}
+		localization_key = YKR_SECOND_TITLE
+	}
+	text = {
+		trigger = {
+			tag = YKR
+			has_government = national_conservatism
+		}
+		localization_key = YKR_SECOND_TITLE_nat
+	}
+	text = {
+		trigger = {
+			tag = CKR
+			has_government = communism
+		}
+		localization_key = CKR_SECOND_TITLE
 	}
 }
 
@@ -409,9 +465,37 @@ defined_text = {
 	text = {
 		trigger = {
 			tag = KNM
+			has_government = neutrality
+		}
+		localization_key = KNM_DUAL_NAME_neu
+	}
+	text = {
+		trigger = {
+			tag = KNM
 			has_government = fascism
 		}
 		localization_key = KNM_DUAL_NAME
+	}
+	text = {
+		trigger = {
+			tag = YKR
+			has_government = social_democracy
+		}
+		localization_key = YKR_DUAL_NAME
+	}
+	text = {
+		trigger = {
+			tag = YKR
+			has_government = national_conservatism
+		}
+		localization_key = YKR_DUAL_NAME_nat
+	}
+	text = {
+		trigger = {
+			tag = CKR
+			has_government = communism
+		}
+		localization_key = CKR_DUAL_NAME
 	}
 }
 
@@ -559,9 +643,41 @@ defined_text = {
 	text = {
 		trigger = {
 			tag = KNM
+			has_government = neutrality
+		}
+		localization_key = GFX_Portrait_an_junggeun
+	}
+	text = {
+		trigger = {
+			tag = KNM
 			has_government = fascism
 		}
 		localization_key = GFX_Portrait_Kim_Chwa_chin
+	}
+	text = {
+		trigger = {
+			tag = YKR
+			has_government = social_democracy
+		}
+		localization_key = GFX_Portrait_Pak_Honyong
+	}
+	text = {
+		trigger = {
+			tag = YKR
+			has_government = national_conservatism
+		}
+		localization_key = GFX_Portrait_Syngman_Rhee
+	}
+	text = {
+		trigger = {
+			tag = CKR
+			has_government = communism
+		}
+		localization_key = GFX_Portrait_Kim_Wonbong
+	}
+
+	text = {
+		localization_key = GFX_Portrait_leader_unknown
 	}
 }
 
@@ -640,6 +756,27 @@ defined_text = {
 			NOT = { has_cosmetic_tag = KOR_One_Fuhrer }
 		}
 		localization_key = KOREA_DUAL_NAME_reinstatement
+	}
+	text = {
+		trigger = {
+			tag = YKR
+			has_government = social_democracy
+		}
+		localization_key = YKR_DUAL_NAME
+	}
+	text = {
+		trigger = {
+			tag = YKR
+			has_government = national_conservatism
+		}
+		localization_key = YKR_DUAL_NAME_nat
+	}
+	text = {
+		trigger = {
+			tag = CKR
+			has_government = communism
+		}
+		localization_key = CKR_DUAL_NAME
 	}
 }
 

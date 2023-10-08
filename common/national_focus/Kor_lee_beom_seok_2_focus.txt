@@ -121,12 +121,122 @@ focus_tree = {
 			}
 			hidden_effect = {
 				retire_character = KOR_pak_hon_yong
+				create_country_leader = {
+					name = "대한공산당 위원회"
+					desc = ""
+					picture = "krGov.dds"
+					expire = "1999.1.1"
+					ideology = marxism
+					traits = {
+						
+					}
+				}
 				retire_character = KOR_Lyuh_Woon_hyung
+				create_country_leader = {
+					name = "사회노동당 위원회"
+					desc = ""
+					picture = "krGov.dds"
+					expire = "1999.1.1"
+					ideology = socialism
+					traits = {
+						
+					}
+				}
 				YKR = {
-					transfer_state = 916
-					transfer_state = 917
 					add_state_core = 916
 					add_state_core = 917
+					transfer_state = 916
+					transfer_state = 917
+
+					set_politics = {
+						ruling_party = social_democracy
+						last_election = "1936.1.1"
+						election_frequency = 48
+						elections_allowed = no
+					}
+		
+					set_popularities = {
+						communism = 14
+						authoritarian_socialism = 4
+						radical_socialism = 6
+						social_democracy = 43
+						social_liberalism = 0
+						national_liberalism = 3
+						liberal_conservatism = 4
+						democratic = 13
+						national_conservatism = 10
+						neutrality = 3
+						auto_despotism = 0
+						fascism = 0
+					}
+
+					create_country_leader = {
+						name = "여운형"
+						desc = ""
+						picture = "Portrait_Lyuh_Woonhyung.dds"
+						expire = "2000.1.1"
+						ideology = socialism
+						traits = {
+							
+						}
+					}
+
+					COALITION_add_com = yes
+					COALITION_add_autsoc = yes
+					COALITION_add_radsoc = yes
+
+					COALITION_add_natlib = yes
+					COALITION_add_libcon = yes
+
+					delete_unit_template_and_units = {
+						division_template = "대한민국 보병"
+						disband = yes #will refund equipment and manpower
+					}
+					delete_unit_template_and_units = {
+						division_template = "대한민국 향토방위사단"
+						disband = yes #will refund equipment and manpower
+					}
+					delete_unit_template_and_units = {
+						division_template = "기계화 보병사단"
+						disband = yes #will refund equipment and manpower
+					}
+					delete_unit_template_and_units = {
+						division_template = "대한민국 해병대"
+						disband = yes #will refund equipment and manpower
+					}
+
+					division_template = {
+						name = "영남정부 시민군"
+						division_names_group = YKR_NOM_1
+					
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 1 y = 0 }
+							infantry = { x = 1 y = 1 }
+						}
+						
+						support = {
+							
+						}
+					}
+
+					916 = {
+						create_unit = {
+							division = "division_template = \"영남정부 시민군\" start_experience_factor = 0.2 start_equipment_factor = 1 start_manpower_factor = 1" 
+							owner = YKR
+							allow_spawning_on_enemy_provs = no
+							count = 5
+						}
+					}
+					917 = {
+						create_unit = {
+							division = "division_template = \"영남정부 시민군\" start_experience_factor = 0.2 start_equipment_factor = 1 start_manpower_factor = 1" 
+							owner = YKR
+							allow_spawning_on_enemy_provs = no
+							count = 5
+						}
+					}
 				}
 				916 = {
 					set_demilitarized_zone = no
@@ -295,7 +405,9 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			set_country_flag = KOR_protection_rule_law
 			COALITION_add_com = yse
+			retire_ideology_leader = communism
 			set_party_name = { ideology = communism long_name = KOR_communism_bloc_long_party name = KOR_communism_bloc_party }
 			create_country_leader = {
 				name = "민족사회당 지도부"
@@ -325,7 +437,7 @@ focus_tree = {
 			custom_effect_tooltip = KOR_protection_rule_law_1_tt
 
 			COALITION_add_radsoc = yse
-			retire_character = KOR_Kim_Won_bong
+			retire_ideology_leader = radical_socialism
 			set_party_name = { ideology = radical_socialism long_name = KOR_radical_socialism_bloc_long_party name = KOR_radical_socialism_bloc_party }
 			create_country_leader = {
 				name = "대한노동조합총연합회 지도부"
@@ -560,7 +672,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			add_political_power = 100
+			add_stability = 0.1
 		}
 		x = 0
 		y = 1
@@ -579,7 +692,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = KOR_idea_lost_way_democracy_3
+				add_idea = KOR_idea_lost_way_democracy_4
+			}
 		}
 		x = 0
 		y = 1
@@ -598,7 +714,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = KOR_idea_lost_way_democracy_4
+				add_idea = KOR_idea_lost_way_democracy_5
+			}
 		}
 		x = -2
 		y = 1
@@ -617,7 +736,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = KOR_Collapsed_security_2
+				add_idea = KOR_Collapsed_security_3
+			}
 		}
 		x = 2
 		y = 1
@@ -639,7 +761,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = KOR_Collapsed_security_3
+				add_idea = KOR_Collapsed_security_4
+			}
 		}
 		x = 2
 		y = 1
@@ -661,7 +786,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = KOR_idea_Military_Revolutionary_Government_2
+				add_idea = KOR_idea_Military_Revolutionary_Government_2_v1
+			}
 		}
 		x = -1
 		y = 1
@@ -680,7 +808,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = KOR_idea_Military_Revolutionary_Government_2_v1
+				add_idea = KOR_idea_Military_Revolutionary_Government_3_v1
+			}
 		}
 		x = 0
 		y = 1
@@ -699,7 +830,11 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = KOR_idea_Military_Revolutionary_Government_3_v1
+				add_idea = KOR_idea_Military_Revolutionary_Government_4_v1
+			}
+			remove_ideas = KOR_idea_lost_way_democracy_5
 		}
 		x = 0
 		y = 1
@@ -721,7 +856,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = KOR_idea_Military_Revolutionary_Government_2
+				add_idea = KOR_idea_Military_Revolutionary_Government_2_v2
+			}
 		}
 		x = 1
 		y = 1
@@ -740,7 +878,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = KOR_idea_Military_Revolutionary_Government_2_v2
+				add_idea = KOR_idea_Military_Revolutionary_Government_3_v2
+			}
 		}
 		x = 0
 		y = 1
@@ -759,7 +900,11 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = KOR_idea_Military_Revolutionary_Government_3_v2
+				add_idea = KOR_idea_Military_Revolutionary_Government_4_v2
+			}
+			remove_ideas = KOR_idea_lost_way_democracy_5
 		}
 		x = 0
 		y = 1
@@ -779,7 +924,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = KOR_Collapsed_security_4
+				add_idea = KOR_Collapsed_security_5
+			}
 		}
 		x = 1
 		y = 1
@@ -957,7 +1105,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = Min_Chanho_idea
 		}
 		x = -7
 		y = 1
@@ -976,7 +1125,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			annex_country = {
+				target = GKR
+				transfer_troops = no
+			}
 		}
 		x = -1
 		y = 1
@@ -995,7 +1147,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			annex_country = {
+				target = HKR
+				transfer_troops = no
+			}
 		}
 		x = 1
 		y = 1
@@ -1050,9 +1205,6 @@ focus_tree = {
 		relative_position_id = KOR_Japans_arbitration
 		cost = 3.00
 
-		mutually_exclusive = {
-			focus = KOR_split_public_opinion_South_Gyeongsang_Province
-		}
 		prerequisite = {
 			focus = KOR_Japans_arbitration
 		}
@@ -1072,9 +1224,6 @@ focus_tree = {
 		relative_position_id = KOR_Japans_arbitration
 		cost = 3.00
 
-		mutually_exclusive = {
-			focus = KOR_Securing_National_Support
-		}
 		prerequisite = {
 			focus = KOR_Japans_arbitration
 		}
@@ -1118,7 +1267,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			country_event = {
+				id = KOR.32
+				days = 0
+			}
 		}
 		x = 0
 		y = 1
@@ -1132,6 +1284,9 @@ focus_tree = {
 		relative_position_id = KOR_beginning_of_a_meeting
 		cost = 3.00
 
+		mutually_exclusive = {
+			focus = KOR_humanitarian_asylum_agreement
+		}
 		prerequisite = {
 			focus = KOR_beginning_of_a_meeting
 		}
@@ -1151,6 +1306,9 @@ focus_tree = {
 		relative_position_id = KOR_beginning_of_a_meeting
 		cost = 3.00
 
+		mutually_exclusive = {
+			focus = KOR_Security_Consultations_for_Resistance_Forces
+		}
 		prerequisite = {
 			focus = KOR_beginning_of_a_meeting
 		}
@@ -1170,15 +1328,23 @@ focus_tree = {
 		relative_position_id = KOR_Security_Consultations_for_Resistance_Forces
 		cost = 3.00
 
+		available = {
+			has_completed_focus = KOR_crushing_of_conservative_camp
+		}
+
 		prerequisite = {
 			focus = KOR_Security_Consultations_for_Resistance_Forces
-		}
-		prerequisite = {
 			focus = KOR_humanitarian_asylum_agreement
 		}
 
 		completion_reward = {
-			
+			create_faction = "호국민주동맹"
+			KOR = { add_to_faction = YKR }
+			add_to_war = {
+				targeted_alliance = YKR
+				enemy = CKR
+				hostility_reason = asked_to_join
+			}
 		}
 		x = 1
 		y = 1
@@ -1197,7 +1363,18 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			CKR = {
+				add_ideas = KOR_surrender_limit_max
+				add_ideas = KOR_ready_to_attack
+				declare_war_on = {
+					target = YKR
+					type = annex_everything
+				}
+			}
+			YKR = {
+				add_ideas = KOR_surrender_limit_max
+				add_civil_war_target = YKR
+			}
 		}
 		x = 0
 		y = 2
@@ -1211,13 +1388,24 @@ focus_tree = {
 		relative_position_id = KOR_Disintegration_of_Civil_Army_begins
 		cost = 3.00
 
+		available = {
+			CKR = {
+				exists = no
+			}
+		}
+
 		prerequisite = {
 			focus = KOR_Disintegration_of_Civil_Army_begins
+		}
+		prerequisite = {
 			focus = KOR_crushing_of_conservative_camp
 		}
 
 		completion_reward = {
-			
+			annex_country = {
+				target = YKR
+				transfer_troops = no
+			}
 		}
 		x = 1
 		y = 1
@@ -1278,7 +1466,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = Lee_Junsik_idea
 		}
 		x = 7
 		y = 1

@@ -470,6 +470,10 @@ YKR = { #영남정부
 	color = rgb { 193  66  99 }
 	color_ui = rgb { 193  66  99 }	
 }
+CKR = { #공산정부
+	color = rgb { 130 35 45 }
+	color_ui = rgb { 130 35 45 }
+}
 HKR = { #호남계엄사령부
 	color = rgb { 104  114  127 }
 	color_ui = rgb { 104  114  127 }	

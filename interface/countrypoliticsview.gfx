@@ -417,6 +417,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/idea_entry_bg_2.dds"
 		noOfFrames = 2
 	}
+	spriteType = {
+		name = "GFX_idea_entry_bg_2_lar"
+		texturefile = "gfx/interface/idea_entry_bg_2_lar.dds"
+		noOfFrames = 2
+	}
 
 	spriteType = {
 		name = "GFX_idea_entry_bg_3"

@@ -1816,15 +1816,82 @@ country_event = {
 		}
 
 		HKR = {
-			transfer_state = 918
-			transfer_state = 919
 			add_state_core = 918
 			add_state_core = 919
+
+			transfer_state = 918
+			transfer_state = 919
+
+			set_politics = {
+				ruling_party = neutrality
+				last_election = "1936.1.1"
+				election_frequency = 48
+				elections_allowed = no
+			}
+
+			set_popularities = {
+			communism = 0
+			authoritarian_socialism = 0
+			radical_socialism = 0
+			social_democracy = 0
+			social_liberalism = 0
+			national_liberalism = 0
+			liberal_conservatism = 0
+			democratic = 0
+			national_conservatism = 0
+			neutrality = 100
+			auto_despotism = 0
+			fascism = 0
+			}
+
+			create_country_leader = {
+				name = "호남 계엄사령부"
+				desc = ""
+				picture = "Portrait_rafs.dds"
+				expire = "2000.1.1"
+				ideology = military_dic
+				traits = {
+					
+				}
+			}
 		}
 
 		GKR = {
-			transfer_state = 527
 			add_state_core = 527
+			transfer_state = 527
+
+			set_politics = {
+				ruling_party = neutrality
+				last_election = "1936.1.1"
+				election_frequency = 48
+				elections_allowed = no
+			}
+
+			set_popularities = {
+			communism = 0
+			authoritarian_socialism = 0
+			radical_socialism = 0
+			social_democracy = 0
+			social_liberalism = 0
+			national_liberalism = 0
+			liberal_conservatism = 0
+			democratic = 0
+			national_conservatism = 0
+			neutrality = 100
+			auto_despotism = 0
+			fascism = 0
+			}
+
+			create_country_leader = {
+				name = "관동 계엄사령부"
+				desc = ""
+				picture = "Portrait_rafs.dds"
+				expire = "2000.1.1"
+				ideology = military_dic
+				traits = {
+					
+				}
+			}
 		}
 	}
 }
@@ -2103,7 +2170,7 @@ country_event = { #
 	id = KOR.31
 	title = KOR.31.t
 	desc = KOR.31.desc
-	picture = GFX_
+	picture = GFX_Republic_of_Zusion_event_picture
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -2112,40 +2179,344 @@ country_event = { #
 	option = {
 		name = KOR.31.a
 		ai_chance = { factor = 1 }
-		
+		hidden_effect = {
+			KNM = {
+				add_state_core = 328
+				add_state_core = 714
+				add_state_core = 715
+				add_state_core = 716
+				add_state_core = 717
+				add_state_core = 745
+				add_state_core = 761
+				add_state_core = 958
+				add_state_core = 959
+				add_state_core = 968
+				add_state_core = 969
+				add_state_core = 971
+				add_state_core = 972
+				add_state_core = 973
+
+				transfer_state = 328
+				transfer_state = 714
+				transfer_state = 715
+				transfer_state = 716
+				transfer_state = 717
+				transfer_state = 745
+				transfer_state = 761
+				transfer_state = 958
+				transfer_state = 959
+				transfer_state = 968
+				transfer_state = 969
+				transfer_state = 971
+				transfer_state = 972
+				transfer_state = 973
+
+				set_politics = {
+					ruling_party = neutrality
+					last_election = "1936.1.1"
+					election_frequency = 48
+					elections_allowed = no
+				}
+
+				set_popularities = {
+				communism = 0
+				authoritarian_socialism = 0
+				radical_socialism = 0
+				social_democracy = 0
+				social_liberalism = 0
+				national_liberalism = 0
+				liberal_conservatism = 0
+				democratic = 0
+				national_conservatism = 5
+				neutrality = 65
+				auto_despotism = 10
+				fascism = 20
+				}
+
+				create_country_leader = {
+					name = "이범윤"
+					desc = ""
+					picture = "Portrait_Lee_Bum_yoon.dds"
+					expire = "1999.1.1"
+					ideology = authoritarian
+					traits = {
+					}
+				}
+				recruit_character = KNM_Bumyoon_Lee
+				recruit_character = KNM_Kim_Hong_Il
+			}
+
+			328 = {
+				set_demilitarized_zone = no
+			}
+			714 = {
+				set_demilitarized_zone = no
+			}
+			715 = {
+				set_demilitarized_zone = no
+			}
+			716 = {
+				set_demilitarized_zone = no
+			}
+			717 = {
+				set_demilitarized_zone = no
+			}
+			745 = {
+				set_demilitarized_zone = no
+			}
+			761 = {
+				set_demilitarized_zone = no
+			}
+			958 = {
+				set_demilitarized_zone = no
+			}
+			959 = {
+				set_demilitarized_zone = no
+			}
+			968 = {
+				set_demilitarized_zone = no
+			}
+			969 = {
+				set_demilitarized_zone = no
+			}
+			971 = {
+				set_demilitarized_zone = no
+			}
+			972 = {
+				set_demilitarized_zone = no
+			}
+			973 = {
+				set_demilitarized_zone = no
+			}
+
+			970 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 10429
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 12478
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 4514
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 9927
+					instant_build = yes
+				}
+			}
+
+			610 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 3828
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 11855
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 6898
+					instant_build = yes
+				}
+			}
+		}
+		custom_effect_tooltip = KOR.31_1_tt
+		custom_effect_tooltip = KOR.31_2_tt
+		custom_effect_tooltip = KOR.31_3_tt
 	}
 }
 
-country_event = { #야간 통행 금지
+country_event = {
 	id = KOR.32
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.32"}
 	title = KOR.32.t
 	desc = KOR.32.desc
-	picture = GFX_dont_go_night
+	picture = GFX
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
-	option = { #ok
+	option = {
 		name = KOR.32.a
 		ai_chance = { factor = 1 }
+		YKR = {
+			COALITION_clr_com = yes
+			COALITION_clr_autsoc = yes
+			COALITION_clr_radsoc = yes
+			COALITION_clr_socdem = yes
+			COALITION_clr_natlib = yes
+			COALITION_clr_libcon = yes
+
+			COALITION_add_soccon = yes
+			COALITION_add_natcon = yes
+			COALITION_add_neu = yes
+					
+			retire_character = YKR_pak_hon_yong
+			retire_character = YKR_Kim_Tu_bong
+			retire_character = YKR_Kim_Won_bong
+			set_politics = {
+				ruling_party = national_conservatism
+				last_election = "1936.1.1"
+				election_frequency = 48
+				elections_allowed = no
+			}
+
+			set_popularities = {
+				communism = 0
+				authoritarian_socialism = 0
+				radical_socialism = 0
+				social_democracy = 14
+				social_liberalism = 0
+				national_liberalism = 3
+				liberal_conservatism = 7
+				democratic = 27
+				national_conservatism = 43
+				neutrality = 6
+				auto_despotism = 0
+				fascism = 0
+			}
+
+			set_cosmetic_tag = YKR_Second_Republic_of_Korea
+		}
+		CKR = {
+			add_state_core = 916
+			transfer_state = 916
+
+			set_politics = {
+				ruling_party = communism
+				last_election = "1936.1.1"
+				election_frequency = 48
+				elections_allowed = no
+			}
+
+			set_popularities = {
+				communism = 75
+				authoritarian_socialism = 10
+				radical_socialism = 15
+				social_democracy = 0
+				social_liberalism = 0
+				national_liberalism = 0
+				liberal_conservatism = 0
+				democratic = 0
+				national_conservatism = 0
+				neutrality = 0
+				auto_despotism = 0
+				fascism = 0
+			}
+
+			create_country_leader = {
+				name = "박헌영"
+				desc = ""
+				picture = "Portrait_Lyuh_Woonhyung.dds"
+				expire = "2000.1.1"
+				ideology = socialism
+				traits = {
+					
+				}
+			}
+
+			delete_unit_template_and_units = {
+				division_template = "대한민국 보병"
+				disband = yes #will refund equipment and manpower
+			}
+			delete_unit_template_and_units = {
+				division_template = "대한민국 향토방위사단"
+				disband = yes #will refund equipment and manpower
+			}
+			delete_unit_template_and_units = {
+				division_template = "기계화 보병사단"
+				disband = yes #will refund equipment and manpower
+			}
+			delete_unit_template_and_units = {
+				division_template = "대한민국 해병대"
+				disband = yes #will refund equipment and manpower
+			}
+			delete_unit_template_and_units = {
+				division_template = "영남정부 시민군"
+				disband = yes #will refund equipment and manpower
+			}
+
+			division_template = {
+				name = "인민유격대"
+				division_names_group = CKR_NOM_1
+			
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+				}
+				
+				support = {
+					
+				}
+			}
+
+			division_template = {
+				name = "후방공작대"
+				division_names_group = CKR_NOM_2
+			
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+				}
+				
+				support = {
+					
+				}
+			}
+
+			916 = {
+				create_unit = {
+					division = "division_template = \"인민유격대\" start_experience_factor = 0.2 start_equipment_factor = 1 start_manpower_factor = 1" 
+					owner = CKR
+					allow_spawning_on_enemy_provs = no
+					count = 14
+				}
+			}
+		}
+
+
 	}
 }
 
-country_event = { #대한적십자사 조직
+country_event = {
 	id = KOR.33
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.33"}
 	title = KOR.33.t
 	desc = KOR.33.desc
-	picture = GFX_Korean_Red_Cross
+	picture = GFX_
 	
 	is_triggered_only = yes
-	fire_only_once = yes
 	
 	option = { #ok
 		name = KOR.33.a
 		ai_chance = { factor = 1 }
-
+		916 = {
+			create_unit = {
+				division = "division_template = \"후방공작대\" start_experience_factor = 0.2 start_equipment_factor = 1 start_manpower_factor = 1" 
+				owner = CKR
+				allow_spawning_on_enemy_provs = no
+				count = 3
+			}
+		}
 	}
 }
 

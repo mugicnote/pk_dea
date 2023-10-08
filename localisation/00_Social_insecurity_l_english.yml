@@ -1,0 +1,2 @@
+﻿l_english:
+ Social_insecurity_tooltip:0 "§Y사회불안도\n현재 영향§!\n[This.Coal_GetRulingParty]\n\n[This.is_coalition_loc]\n\n§Y현재의 인기도가 미치는 영향:§!\n일일 정치력 획득: [This.GetPopLoc]."

@@ -49,5 +49,26 @@
 
  KOR_Son_Won_il:0 "손원일"
 
+ #정치고문등의 케릭터
+ KOR_Min_Chanho:0 "민찬호"
+ KOR_Lee_Junsik:0 "이준식"
+
  ###괴뢰국###
  KNM_Kim_Hong_Il:0 "김홍일"
+
+ KNM_Bumyoon_Lee:0 "이범윤"
+
+ #영남정부
+ CKR_pak_hon_yong:0 "박헌영"
+ CKR_Kim_Tu_bong:0 "김두봉"
+ CKR_Kim_Won_bong:0 "김원봉"
+
+ YKR_pak_hon_yong:0 "박헌영"
+ YKR_Kim_Tu_bong:0 "김두봉"
+ YKR_Kim_Won_bong:0 "김원봉"
+ YKR_Lyuh_Woon_hyung:0 "여운형"
+ YKR_Ahn_Jae_hong:0 "안재홍"
+ YKR_Song_Jin_woo:0 "송진우"
+ YKR_Syngman_Rhee:0 "이승만"
+ YKR_Kim_Koo:0 "김구"
+ YKR_ji_chong_chen:0 "지청천"

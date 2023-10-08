@@ -333,13 +333,13 @@ guiTypes = {
 					iconType = {
 						name = "progress"
 						spriteType = "GFX_activegoal_progress"
-						position = { x=129 y = 57 }	
+						position = { x= 169 y = 60 }	
 						alwaystransparent = yes				
 					}
 					
 					iconType = {
 						name = "progress_frame"
-						position = { x = 127 y = 57 }
+						position = { x = 169 y = 60 }
 						spriteType = "GFX_pol_goal_progress_frame"
 						alwaystransparent = yes
 					}			

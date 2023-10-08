@@ -79,54 +79,54 @@ division_template = {
 	priority = 2
 }
 
-division_template = {
-	name = "청년단 산악병"
-	division_names_group = KOR_Mnt_1
+# division_template = {
+# 	name = "청년단 산악병"
+# 	division_names_group = KOR_Mnt_1
 
-	regiments = {
-		mountaineers = { x = 0 y = 0 }
-	    mountaineers = { x = 0 y = 1 }
-		mountaineers = { x = 0 y = 2 }
-		mountaineers = { x = 0 y = 3 }
-		mountaineers = { x = 1 y = 0 }
-		mountaineers = { x = 1 y = 1 }
-		mountaineers = { x = 1 y = 2 }
-		mountaineers = { x = 1 y = 3 }
-		mountaineers = { x = 2 y = 0 }
-	}
+# 	regiments = {
+# 		mountaineers = { x = 0 y = 0 }
+# 	    mountaineers = { x = 0 y = 1 }
+# 		mountaineers = { x = 0 y = 2 }
+# 		mountaineers = { x = 0 y = 3 }
+# 		mountaineers = { x = 1 y = 0 }
+# 		mountaineers = { x = 1 y = 1 }
+# 		mountaineers = { x = 1 y = 2 }
+# 		mountaineers = { x = 1 y = 3 }
+# 		mountaineers = { x = 2 y = 0 }
+# 	}
 	
-	support = {
-        recon = { x = 0 y = 0 }
-        artillery = { x = 0 y = 1 }
-	}
-}
+# 	support = {
+#         recon = { x = 0 y = 0 }
+#         artillery = { x = 0 y = 1 }
+# 	}
+# }
 
-division_template = {
-	name = "청년단 기계화 보병"
-	division_names_group = KOR_NOM_4
+# division_template = {
+# 	name = "청년단 기계화 보병"
+# 	division_names_group = KOR_NOM_4
 	
-	regiments = {
-		motorized = { x = 0 y = 0 }
-		motorized = { x = 0 y = 1 }
-		motorized = { x = 0 y = 2 }
-		motorized = { x = 1 y = 0 }
-		motorized = { x = 1 y = 1 }
-		motorized = { x = 1 y = 2 }
-		motorized = { x = 2 y = 0 }
-		motorized = { x = 2 y = 1 }
-		motorized = { x = 2 y = 2 }
-		motorized = { x = 3 y = 0 }
-		motorized = { x = 3 y = 1 }
-		motorized = { x = 3 y = 2 }
-		motorized = { x = 0 y = 3 }
-		motorized = { x = 1 y = 3 }
-		motorized = { x = 2 y = 3 }
-	}
-	support = {
-		recon = { x = 0 y = 0 }
-        artillery = { x = 0 y = 1 }
-	}
-}
+# 	regiments = {
+# 		motorized = { x = 0 y = 0 }
+# 		motorized = { x = 0 y = 1 }
+# 		motorized = { x = 0 y = 2 }
+# 		motorized = { x = 1 y = 0 }
+# 		motorized = { x = 1 y = 1 }
+# 		motorized = { x = 1 y = 2 }
+# 		motorized = { x = 2 y = 0 }
+# 		motorized = { x = 2 y = 1 }
+# 		motorized = { x = 2 y = 2 }
+# 		motorized = { x = 3 y = 0 }
+# 		motorized = { x = 3 y = 1 }
+# 		motorized = { x = 3 y = 2 }
+# 		motorized = { x = 0 y = 3 }
+# 		motorized = { x = 1 y = 3 }
+# 		motorized = { x = 2 y = 3 }
+# 	}
+# 	support = {
+# 		recon = { x = 0 y = 0 }
+#         artillery = { x = 0 y = 1 }
+# 	}
+# }
 
 ##### OOB #####
 units = {

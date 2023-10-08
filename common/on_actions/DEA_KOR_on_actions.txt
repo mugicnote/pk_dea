@@ -228,6 +228,306 @@ on_actions = {
 			}
 		}
 	}
+
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					tag = CKR
+				
+					FROM = { original_tag = KOR }
+					FROM = { has_war_with = ROOT }
+					FROM.FROM = { state = 914 }
+				}
+				CKR = {
+					country_event = {
+						id = KOR.33
+						days = 0
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = CKR
+				
+					FROM = { original_tag = KOR }
+					FROM = { has_war_with = ROOT }
+					FROM.FROM = { state = 915 }
+				}
+				CKR = {
+					country_event = {
+						id = KOR.33
+						days = 0
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = CKR
+				
+					FROM = { original_tag = KOR }
+					FROM = { has_war_with = ROOT }
+					FROM.FROM = { state = 918 }
+				}
+				CKR = {
+					country_event = {
+						id = KOR.33
+						days = 0
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = CKR
+				
+					FROM = { original_tag = KOR }
+					FROM = { has_war_with = ROOT }
+					FROM.FROM = { state = 919 }
+				}
+				CKR = {
+					country_event = {
+						id = KOR.33
+						days = 0
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = CKR
+				
+					FROM = { original_tag = KOR }
+					FROM = { has_war_with = ROOT }
+					FROM.FROM = { state = 527 }
+				}
+				CKR = {
+					country_event = {
+						id = KOR.33
+						days = 0
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = CKR
+				
+					FROM = { original_tag = KOR }
+					FROM = { has_war_with = ROOT }
+					FROM.FROM = { state = 525 }
+				}
+				CKR = {
+					country_event = {
+						id = KOR.33
+						days = 0
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = CKR
+				
+					FROM = { original_tag = KOR }
+					FROM = { has_war_with = ROOT }
+					FROM.FROM = { state = 911 }
+				}
+				CKR = {
+					country_event = {
+						id = KOR.33
+						days = 0
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = CKR
+				
+					FROM = { original_tag = KOR }
+					FROM = { has_war_with = ROOT }
+					FROM.FROM = { state = 912 }
+				}
+				CKR = {
+					country_event = {
+						id = KOR.33
+						days = 0
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = CKR
+				
+					FROM = { original_tag = KOR }
+					FROM = { has_war_with = ROOT }
+					FROM.FROM = { state = 913 }
+				}
+				CKR = {
+					country_event = {
+						id = KOR.33
+						days = 0
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = CKR
+				
+					FROM = { original_tag = KOR }
+					FROM = { has_war_with = ROOT }
+					FROM.FROM = { state = 919 }
+				}
+				CKR = {
+					country_event = {
+						id = KOR.33
+						days = 0
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = CKR
+				
+					FROM = { original_tag = KOR }
+					FROM = { has_war_with = ROOT }
+					FROM.FROM = { state = 910 }
+				}
+				CKR = {
+					country_event = {
+						id = KOR.33
+						days = 0
+					}
+				}
+			}
+			if = {
+				limit = {
+					tag = CKR
+				
+					FROM = { original_tag = YKR }
+					FROM = { has_war_with = ROOT }
+					FROM.FROM = { state = 917 }
+				}
+				CKR = {
+					country_event = {
+						id = KOR.33
+						days = 0
+					}
+				}
+			}
+		}
+	}
+
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					tag = KOR
+					has_war_with = CKR
+				}
+
+				CKR = {
+					annex_country = {
+						target = KOR
+						transfer_troops = no
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					tag = YKR
+					has_war_with = CKR
+				}
+
+				CKR = {
+					annex_country = {
+						target = YKR
+						transfer_troops = no
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					tag = CKR
+					OR = {
+						has_war_with = YKR
+						has_war_with = KOR
+					}
+				}
+
+				if = {
+					limit = {
+						KOR = {
+							exists = yes
+						}
+						YKR = {
+							exists = no
+						}
+					}
+					every_country = {
+						limit = {
+							has_war_with = KOR 
+						}
+						white_peace = KOR
+					}
+					KOR = {
+						annex_country = {
+							target = CKR
+							transfer_troops = no
+						}
+					}
+				}
+
+				if = {
+					limit = {
+						KOR = {
+							exists = no
+						}
+						YKR = {
+							exists = yes
+						}
+					}
+					every_country = {
+						limit = {
+							has_war_with = YKR 
+						}
+						white_peace = YKR
+					}
+					YKR = {
+						annex_country = {
+							target = CKR
+							transfer_troops = no
+						}
+					}
+				}
+
+				if = {
+					limit = {
+						KOR = {
+							exists = yes
+						}
+						YKR = {
+							exists = yes
+						}
+					}
+					every_country = {
+						limit = {
+							has_war_with = KOR 
+						}
+						white_peace = KOR
+						limit = {
+							has_war_with = YKR 
+						}
+						white_peace = YKR
+					}
+					KOR = {
+						annex_country = {
+							target = CKR
+							transfer_troops = no
+						}
+					}
+				}
+			}
+		}
+	}
 	#on_state_control_changed = {
 		#effect = {
 			#if = {

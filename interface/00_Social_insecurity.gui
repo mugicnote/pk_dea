@@ -1,0 +1,35 @@
+guiTypes = {
+    containerWindowType = {
+        name = "Social_insecurity_Topbar"
+        position = { x = 245 y = 0 }
+        # s_team's popularity gui
+		iconType ={
+			name ="Social_insecurity_value_bg"
+			spriteType = "GFX_generic_box_smallest"
+			position = { x = 0 y = 5 }
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name ="Social_insecurity"
+			position = { x = -6 y = 9 }
+			font = "pk_18"
+			text = "[Social_insecurity_pop_loc]"
+			format = right
+			maxWidth = 57
+			maxHeight = 24
+			fixedsize = yes
+			Orientation = "LOWER_LEFT"
+			pdx_tooltip = "Social_insecurity_tooltip"
+			pdx_tooltip_delayed = "Social_insecurity_tooltip_delayed"
+		}
+
+		iconType ={
+			name ="Social_insecurity_icon"
+			spriteType = "GFX_Social_insecurity_icon"
+			position = { x = 0 y = 6 }
+			Orientation = "UPPER_LEFT"
+			pdx_tooltip = "Social_insecurity_tooltip"
+			pdx_tooltip_delayed = "Social_insecurity_tooltip_delayed"
+		}
+	}
+}

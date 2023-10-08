@@ -763,7 +763,7 @@ guiTypes = {
 		background = {
 			name = "idea_entry_bg"
 			position = { x = 3 y = 0 }
-			spriteType = "GFX_idea_entry_bg_2"
+			spriteType = "GFX_idea_entry_bg_2_lar"
 		}
 			
 		iconType = {
@@ -816,7 +816,7 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "cost"
-			position = { x = -80 y = 115 }
+			position = { x = 80 y = 115 }
 			font = "hoi_16mbs"
 			text = ""
 			maxWidth = 142

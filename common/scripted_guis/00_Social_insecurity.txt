@@ -1,0 +1,10 @@
+scripted_gui = {
+	Social_insecurity_gui = {
+		window_name = "Social_insecurity_Topbar"
+		context_type = player_context
+		parent_window_token = top_bar
+		visible = {
+			always = yes
+		}
+	}
+}
