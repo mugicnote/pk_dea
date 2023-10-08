@@ -294,7 +294,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
-		name = "GFX_seoul_metro_texticon"
+		name = "GFX_decision_seoul_metro_texticon"
 		texturefile = "gfx/texticons/decision_seoul_metro.dds"
 	}
 	spriteType = {
