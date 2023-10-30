@@ -1,0 +1,18 @@
+
+state={
+	id=995
+	name="STATE_969"
+
+	history={
+		owner = MAN
+		add_core_of = MAN
+
+	}
+
+	provinces={
+		934 3934 6837 6852 6951 9788 9835 11815 11886 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

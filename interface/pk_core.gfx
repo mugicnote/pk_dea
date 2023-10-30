@@ -12,6 +12,7 @@ bitmapfonts = {
 		b = { 0 0 0 }       # Black
 		g = { 176 176 176 } # Grey
 		Y = { 255 189 0 }   # Yellow
+		w = { 173 173 67 }  #dark yellow
 		H = { 255 189 0 }   # Header
 		T = { 255 255 255 } # Title
 		O = { 255 112 25 }  # Orange

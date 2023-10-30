@@ -1,7 +1,223 @@
 ideas = {
 
+    hidden_ideas = {
+        Social_insecurity_idea_1 = {
+			
+            picture = KOR_the_dice_economy
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+                stability_factor = 0.15
+                production_speed_buildings_factor = 0.2
+                conscription_factor = 0.25
+		    }
+        }
+        Social_insecurity_idea_2 = {
+			
+            picture = KOR_the_dice_economy
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+                stability_factor = 0.1
+                production_speed_buildings_factor = 0.15
+                conscription_factor = 0.2
+		    }
+        }
+        Social_insecurity_idea_3 = {
+			
+            picture = KOR_the_dice_economy
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+                stability_factor = 0.05
+                production_speed_buildings_factor = 0.1
+                conscription_factor = 0.15
+		    }
+        }
+        Social_insecurity_idea_4 = {
+			
+            picture = KOR_the_dice_economy
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+                stability_factor = 0.03
+                production_speed_buildings_factor = 0.08
+                conscription_factor = 0.08
+		    }
+        }
+        Social_insecurity_idea_5 = {
+			
+            picture = KOR_the_dice_economy
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+                production_speed_buildings_factor = 0.03
+                conscription_factor = 0.03
+		    }
+        }
+        Social_insecurity_idea_6 = {
+			
+            picture = KOR_the_dice_economy
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+                stability_factor = -0.03
+                production_speed_buildings_factor = -0.05
+                conscription_factor = -0.05
+		    }
+        }
+        Social_insecurity_idea_7 = {
+			
+            picture = KOR_the_dice_economy
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+                stability_factor = -0.1
+                war_support_factor = -0.1
+                production_speed_buildings_factor = -0.1
+                conscription_factor = -0.1
+                industrial_capacity_dockyard = -0.1
+                production_speed_dockyard_factor = -0.1
+		    }
+        }
+        Social_insecurity_idea_8 = {
+			
+            picture = KOR_the_dice_economy
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+                stability_factor = -0.2
+                war_support_factor = -0.3
+                production_speed_buildings_factor = -0.3
+                conscription_factor = -0.25
+                industrial_capacity_factory = -0.2
+                industrial_capacity_dockyard = -0.2
+                production_factory_efficiency_gain_factor = -0.1
+		    }
+        }
+        Social_insecurity_idea_9 = {
+			
+            picture = KOR_the_dice_economy
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+                stability_factor = -0.3
+                war_support_factor = -0.5
+                production_speed_buildings_factor = -0.4
+                conscription_factor = -0.4
+                industrial_capacity_factory = -0.3
+                industrial_capacity_dockyard = -0.3
+                production_factory_efficiency_gain_factor = -0.2
+		    }
+        }
+        Social_insecurity_idea_10 = {
+			
+            picture = KOR_the_dice_economy
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+                stability_factor = -0.4
+                war_support_factor = -0.8
+                production_speed_buildings_factor = -0.5
+                conscription_factor = -0.6
+                industrial_capacity_factory = -0.4
+                industrial_capacity_dockyard = -0.4
+                production_factory_efficiency_gain_factor = -0.3
+		    }
+        }
+    }
+
     country = {
-        
         ###시작 국민정신###
 
         #주사위 경제

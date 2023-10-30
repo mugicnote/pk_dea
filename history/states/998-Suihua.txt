@@ -1,0 +1,17 @@
+state={
+	id=998
+	name="STATE_972"
+	
+	history={
+		owner = MAN
+		add_core_of = MAN
+
+	}
+
+	provinces={
+		1545 4592 4649 7526 7613 7767 7897 10379 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

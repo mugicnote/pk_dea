@@ -1,2 +1,25 @@
 ﻿l_english:
- Social_insecurity_tooltip:0 "§Y사회불안도\n현재 영향§!\n[This.Coal_GetRulingParty]\n\n[This.is_coalition_loc]\n\n§Y현재의 인기도가 미치는 영향:§!\n일일 정치력 획득: [This.GetPopLoc]."
+ Social_insecurity_tooltip:0 "§Y사회불안도\n현재 영향:§!\n\n현재 사회불안도는 [Social_insecurity_pop_loc]이며, 이는 [Social_insecurity_condition_loc]수준입니다.\n\n§Y현재의 사회불안도가 미치는 영향:§!\n[Social_insecurity_effect_loc]"
+ 
+ Social_insecurity_pop_loc_1:0 "§G1§!"
+ Social_insecurity_pop_loc_2:0 "§G2§!"
+ Social_insecurity_pop_loc_3:0 "§G3§!"
+ Social_insecurity_pop_loc_4:0 "§O4§!"
+ Social_insecurity_pop_loc_5:0 "§O5§!"
+ Social_insecurity_pop_loc_6:0 "§O6§!"
+ Social_insecurity_pop_loc_7:0 "§R7§!"
+ Social_insecurity_pop_loc_8:0 "§R8§!"
+ Social_insecurity_pop_loc_9:0 "§R9§!"
+ Social_insecurity_pop_loc_10:0 "§R10§!"
+ Social_insecurity_pop_loc_zero:0 "-"
+
+ Social_insecurity_condition_loc_1:0 "'§G좋음§!' "
+ Social_insecurity_condition_loc_2:0 "'§O보통§!' "
+ Social_insecurity_condition_loc_3:0 "'§R심각§!' "
+ Social_insecurity_condition_loc_zero:0 "영향이 없는 "
+
+ Social_insecurity_Relationship_loc_1:0 "§c민주당을 지지함§!"
+ Social_insecurity_Relationship_loc_2:0 "§A부정적§!"
+ Social_insecurity_Relationship_loc_3:0 "§g중립적§!"
+ Social_insecurity_Relationship_loc_4:0 "§7긍정적§!"
+ Social_insecurity_Relationship_loc_5:0 "§G우리 정부를 지지함§!"

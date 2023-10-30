@@ -10,6 +10,18 @@ DEA_KOR_scenario_debug_decisions_category = {
 	}
 	visible_when_empty = yes #for debug
 }
+DEA_KOR_national_normalization_decisions_category = {
+	icon = generic_propaganda
+	
+	priority = 10003
+	allowed = {
+		tag = KOR
+	}
+	visible = {
+		is_debug = yes
+	}
+	visible_when_empty = yes #for debug
+}
 DEA_KOR_Manchurian_Incident_decisions_category = {
 	icon = jap_intervene_in_china
 	

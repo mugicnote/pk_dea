@@ -7,6 +7,16 @@ on_actions = {
 				set_variable = { Country_explanation_Button_y = 41 }
 			}
 			KOR = {
+				set_variable = { Social_insecurity_pop = 3 }
+				set_variable = { USA_Relationship_pop = 2 }
+				set_variable = { CHI_Relationship_pop = 3 }
+				set_variable = { JAP_Relationship_pop = 4 }
+				set_variable = { YKR_Relationship_pop = 1 }
+
+
+				Social_insecurity_idea_clr = yes
+				Social_insecurity_idea_set = yes
+
 				FAC_set_com_notgood = yes
 				FAC_set_autsoc_hostile = yes
 				FAC_set_socdem_normal = yes

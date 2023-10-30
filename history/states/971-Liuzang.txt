@@ -1,0 +1,21 @@
+
+state={
+	id=971
+	name="STATE_945"
+
+	history={
+		owner = GXC
+		add_core_of = GXC
+		buildings = {
+
+		}
+
+	}
+
+	provinces={
+		1023 4134 7095 7650 10039 10404 10431 12407 12436 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

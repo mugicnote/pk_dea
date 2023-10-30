@@ -1,0 +1,18 @@
+
+state={
+	id=973
+	name="STATE_947"
+
+	history={
+		owner = GIZ
+		add_core_of = GIZ
+
+	}
+
+	provinces={
+		1010 1474 4325 7577 8095 9939 10763 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

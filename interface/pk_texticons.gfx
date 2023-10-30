@@ -277,6 +277,11 @@ spriteTypes = {
 		texturefile = "gfx/texticons/decision_cat_factional_rivalry.dds"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_decision_cat_national_normalization"
+		texturefile = "gfx/texticons/decision_cat_national_normalization.dds"
+		legacy_lazy_load = no
+	}
 
 	spriteType = {
 		name = "GFX_kor_start_view"

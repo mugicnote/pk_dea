@@ -1,0 +1,24 @@
+
+state={
+	id=972
+	name="STATE_946"
+
+	history={
+		owner = SZC
+		add_core_of = SZC
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 2
+
+		}
+
+	}
+
+	provinces={
+		2067 7294 10726 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

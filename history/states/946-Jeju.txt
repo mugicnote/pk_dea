@@ -1,0 +1,30 @@
+state = {
+	id = 946
+	name = "STATE_920" #제주도
+	manpower = 100000
+
+	state_category = rural
+	
+	history = {
+		owner = KOR
+		add_core_of = KOR
+		
+		buildings = {
+			infrastructure = 4
+			1177 = {
+				naval_base = 2
+			}
+		}
+		victory_points = {
+			1177 10 #제주
+		}
+	}
+
+	resources = {
+		
+	}
+
+	provinces = {
+		1177 
+	}
+}
