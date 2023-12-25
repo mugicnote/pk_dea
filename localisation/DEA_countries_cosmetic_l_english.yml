@@ -9,6 +9,9 @@
   KOR_THIRD_democratic:0 "대한민국 제3공화국"
   KOR_THIRD_democratic_DEF:0 "대한민국 제3공화국"
 
+  KNM_Manchuria:0 "주션 공화국"
+  KNM_Manchuria_neutrality:0 "주션 공화국"
+  KNM_Manchuria_neutrality_DEF:0 "주션 공화국"
   KNM_KOR_auto_despotism_autonomy_puppet:0 "대한제국령 북만주"
   KNM_KOR_fascism_autonomy_puppet_DEF:0 "대한제국령 북만주"
   KNM_KOR_auto_despotism_autonomy_puppet:0 "대한제국령 북만주"

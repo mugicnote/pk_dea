@@ -1,6 +1,6 @@
 state = {
 	id = 938
-	name = "STATE_912" #평안남도
+	name = "STATE_South_Pyongan" #평안남도
 	manpower = 2870000
 
 	state_category = large_town

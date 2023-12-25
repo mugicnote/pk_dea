@@ -1,6 +1,6 @@
 state={
 	id=959
-	name="STATE_933"
+	name="STATE_Sunyang"
 
 	history={
 		owner = NAC
@@ -16,6 +16,6 @@ state={
 	provinces={
 		1628 7653 10114 10501 11988 12495 
 	}
-	manpower=0
+	manpower=3707000
 	buildings_max_level_factor=1.000
 }

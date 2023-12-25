@@ -1,6 +1,6 @@
 state={
 	id=950
-	name="STATE_924"
+	name="STATE_Linyi"
 
 	history={
 		owner = MAN
@@ -17,7 +17,7 @@ state={
 	provinces={
 		1124 1154 4157 4181 7055 9971 12015 
 	}
-	manpower = 11869376
+	manpower = 15320000
 	buildings_max_level_factor=1.000
 	state_category=town
 }

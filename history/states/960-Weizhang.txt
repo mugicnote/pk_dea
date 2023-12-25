@@ -1,7 +1,7 @@
 
 state={
 	id=960
-	name="STATE_934"
+	name="STATE_Weizhang"
 
 	history={
 		owner = NAC
@@ -20,7 +20,7 @@ state={
 	provinces={
 		1066 1153 3992 4038 4083 4185 7007 7054 9984 10044 11961 13141 
 	}
-	manpower=0
+	manpower=7956000
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

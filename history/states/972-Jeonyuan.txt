@@ -1,7 +1,7 @@
 
 state={
 	id=972
-	name="STATE_946"
+	name="STATE_Jeonyuan"
 
 	history={
 		owner = SZC
@@ -18,7 +18,7 @@ state={
 	provinces={
 		2067 7294 10726 
 	}
-	manpower=0
+	manpower=373200
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

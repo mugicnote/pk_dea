@@ -1,6 +1,6 @@
 state={
 	id=953
-	name="STATE_927"
+	name="STATE_Chentang"
 
 	history={
 		owner = MAN
@@ -24,7 +24,7 @@ state={
 	provinces={
 		4042 7191 10014 10101 11991 
 	}
-	manpower=0
+	manpower=7984000
 	buildings_max_level_factor=1.000
 	state_category=town
 }

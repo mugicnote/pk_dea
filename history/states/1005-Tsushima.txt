@@ -1,6 +1,6 @@
 state={
 	id=1005
-	name="STATE_979"
+	name="STATE_Tsushima"
 
 	history={
 		owner = JAP

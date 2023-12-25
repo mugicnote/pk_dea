@@ -26,7 +26,6 @@ scripted_gui = {
 
 	parliament_gui = {
 		context_type = player_context
-		context_type = politics_tab
 		window_name = "parliament_gui_container"
 		
 		ai_check = {
@@ -88,31 +87,23 @@ scripted_gui = {
 		}
 
 		dynamic_lists = {
-			parliament_semicircle_main_grid = {
-				array = parliament_main_array
-				index = parliament_main_index
+			#의석 도트 위치
+			parliament_diagram = {
+				array = KOR_legco_x
 				change_scope = no
-				entry_container = parliament_semicircle_main_entry
-			}
-			parliament_member_grid = {
-				array = parliament_member_array
-				index = parliament_member_index
-				change_scope = no
-				entry_container = parliament_member_entry
+				entry_container = KOR_legco_seat
+				index = seat_idx
 			}
 		}
 
-		properties = {
-			parliament_main_icon = {
-				frame = v
-			}
-			parliament_semicircle_main_icon = {
-				frame = v
-				x = parliament_x_array^parliament_main_index
-				y = parliament_y_array^parliament_main_index
-			}
-			parliament_member_icon = {
-				frame = v
+		dynamic_lists = {
+			#정당명, 의석, 아이콘
+			parliament_member_grid = {
+				array = KOR_legco_factions
+				change_scope = no
+				index = KOR_legco_faction_idx
+				value = KOR_legco_faction
+				entry_container = KOR_legco_group
 			}
 		}
 
@@ -122,6 +113,19 @@ scripted_gui = {
 				index = KOR_legco_history_i
 				entry_container = KOR_legco_ord
 				value = KOR_legco_current_ordinance_id
+			}
+		}
+
+		properties = {
+			# 의석 도트 gfx
+			parliament_dot_icon = {
+				x = KOR_legco_x^seat_idx
+				y = KOR_legco_y^seat_idx
+				frame = KOR_legco_faction^seat_idx #O
+			}
+			#리스트 아이콘
+			parliament_member_icon = {
+				frame = KOR_legco_faction
 			}
 		}
 	}

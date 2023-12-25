@@ -47,6 +47,7 @@ DEA_KOR_introduction_bill_National_Assembly_decisions = {
 			KOR_legco_introduce_ordinance_ready = yes
 			KOR = { exists = yes }
 			KOR = { is_subject = no }
+			NOT = { has_country_flag = kor_conciliation_is_Already_in_Progress }
 		}
 
 		fire_only_once = yes
@@ -58,6 +59,1121 @@ DEA_KOR_introduction_bill_National_Assembly_decisions = {
 					has_country_flag = this_is_resolution
 				}
 				custom_effect_tooltip = KOR_legco_resolution_1_days
+			}
+		}
+	}
+
+	#민주국민당
+	KOR_conciliation_first_seats_decision = {
+	
+		icon = generic_agreement
+
+		visible = {
+			original_tag = KOR
+		}
+		
+		available = {
+			KOR_legco_introduce_ordinance_ready = yes
+			KOR = { exists = yes }
+			KOR = { is_subject = no }
+			NOT = { has_country_flag = kor_conciliation_is_Already_in_Progress }
+			custom_trigger_tooltip = {
+				tooltip = KOR_conciliation_decision_max
+				NOT = {
+					check_variable = {
+						KOR_legco_first_temp_support = 1
+					}
+				}
+			}
+		}
+		
+		fire_only_once = no
+
+		days_remove = 15
+
+		cost = 0
+
+		# ai_will_do = {
+		# 	factor = 5
+		# 	modifier = {
+		# 		is_historical_focus_on = yes
+		# 		factor = 0
+		# 	}
+		# }
+
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = kor_conciliation_is_Already_in_Progress
+			}
+		}
+
+		remove_effect = {
+			if = {
+				limit = {
+					OR = {
+						check_variable = {
+							KOR_legco_first_seats_Decision_var > 10
+						}
+						check_variable = {
+							KOR_legco_first_seats_Decision_var = 10
+						}
+					}
+				}
+				add_to_variable = {
+					var = KOR_first_support
+					value = 10
+				}
+				set_variable = {
+					var = KOR_first_support_decision
+					value = KOR_first_support
+				}
+				divide_variable = {
+					var = KOR_first_support_decision
+					   value = KOR_legco_first_seats
+				}
+				set_variable = {
+					var = KOR_legco_first_temp_support
+					value = KOR_first_support_decision
+				}
+				set_temp_variable = { KOR_legco_faction = 1 }
+				set_temp_variable = { KOR_temp_votes = 10 }
+				KOR_legco_change_votes = yes
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						OR = {
+							check_variable = {
+								KOR_legco_first_seats_Decision_var > 10
+							}
+							check_variable = {
+								KOR_legco_first_seats_Decision_var = 10
+							}
+						}
+					}
+				}
+				set_variable = { KOR_first_support = KOR_legco_first_seats }
+				set_variable = {
+					var = KOR_legco_first_temp_support
+					value = 1 #100%
+				}
+				set_temp_variable = { KOR_legco_faction = 1 }
+				set_temp_variable = { KOR_temp_votes = KOR_legco_first_seats }
+				KOR_legco_change_votes = yes
+			}
+			custom_effect_tooltip = KOR_conciliation_first_seats_decision_tooltip
+			hidden_effect = {
+				clr_country_flag = kor_conciliation_is_Already_in_Progress
+			}
+			National_Assembly_Decisions_reload_effects = yes
+			National_Assembly_Decisions_reload_effects = yes
+		}
+	}
+
+	#대한촉성회
+	KOR_conciliation_second_seats_decision = {
+	
+		icon = generic_agreement
+
+		visible = {
+			original_tag = KOR
+		}
+		
+		available = {
+			KOR_legco_introduce_ordinance_ready = yes
+			KOR = { exists = yes }
+			KOR = { is_subject = no }
+			NOT = { has_country_flag = kor_conciliation_is_Already_in_Progress }
+			custom_trigger_tooltip = {
+				tooltip = KOR_conciliation_decision_max
+				NOT = {
+					check_variable = {
+						KOR_legco_second_temp_support = 1
+					}
+				}
+			}
+		}
+		
+		fire_only_once = no
+
+		days_remove = 15
+
+		cost = 0
+
+		# ai_will_do = {
+		# 	factor = 5
+		# 	modifier = {
+		# 		is_historical_focus_on = yes
+		# 		factor = 0
+		# 	}
+		# }
+
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = kor_conciliation_is_Already_in_Progress
+			}
+		}
+
+		remove_effect = {
+			if = {
+				limit = {
+					OR = {
+						check_variable = {
+							KOR_legco_second_seats_Decision_var > 10
+						}
+						check_variable = {
+							KOR_legco_second_seats_Decision_var = 10
+						}
+					}
+				}
+				add_to_variable = {
+					var = KOR_second_support
+					value = 10
+				}
+				set_variable = {
+					var = KOR_second_support_decision
+					value = KOR_second_support
+				}
+				divide_variable = {
+					var = KOR_second_support_decision
+					   value = KOR_legco_second_seats
+				}
+				set_variable = {
+					var = KOR_legco_second_temp_support
+					value = KOR_second_support_decision
+				}
+				set_temp_variable = { KOR_legco_faction = 2 }
+				set_temp_variable = { KOR_temp_votes = 10 }
+				KOR_legco_change_votes = yes
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						OR = {
+							check_variable = {
+								KOR_legco_second_seats_Decision_var > 10
+							}
+							check_variable = {
+								KOR_legco_second_seats_Decision_var = 10
+							}
+						}
+					}
+				}
+				set_variable = { KOR_second_support = KOR_legco_second_seats }
+				set_variable = {
+					var = KOR_legco_second_temp_support
+					value = 1 #100%
+				}
+				set_temp_variable = { KOR_legco_faction = 2 }
+				set_temp_variable = { KOR_temp_votes = KOR_legco_second_seats }
+				KOR_legco_change_votes = yes
+			}
+			custom_effect_tooltip = KOR_conciliation_second_seats_decision_tooltip
+			hidden_effect = {
+				clr_country_flag = kor_conciliation_is_Already_in_Progress
+			}
+			National_Assembly_Decisions_reload_effects = yes
+			National_Assembly_Decisions_reload_effects = yes
+		}
+	}
+
+	#사회노동당
+	KOR_conciliation_third_seats_decision = {
+	
+		icon = generic_agreement
+
+		visible = {
+			original_tag = KOR
+		}
+		
+		available = {
+			KOR_legco_introduce_ordinance_ready = yes
+			KOR = { exists = yes }
+			KOR = { is_subject = no }
+			NOT = { has_country_flag = kor_conciliation_is_Already_in_Progress }
+			custom_trigger_tooltip = {
+				tooltip = KOR_conciliation_decision_max
+				NOT = {
+					check_variable = {
+						KOR_legco_third_temp_support = 1
+					}
+				}
+			}
+		}
+		
+		fire_only_once = no
+
+		days_remove = 15
+
+		cost = 0
+
+		# ai_will_do = {
+		# 	factor = 5
+		# 	modifier = {
+		# 		is_historical_focus_on = yes
+		# 		factor = 0
+		# 	}
+		# }
+
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = kor_conciliation_is_Already_in_Progress
+			}
+		}
+
+		remove_effect = {
+			if = {
+				limit = {
+					OR = {
+						check_variable = {
+							KOR_legco_third_seats_Decision_var > 10
+						}
+						check_variable = {
+							KOR_legco_third_seats_Decision_var = 10
+						}
+					}
+				}
+				add_to_variable = {
+					var = KOR_third_support
+					value = 10
+				}
+				set_variable = {
+					var = KOR_third_support_decision
+					value = KOR_third_support
+				}
+				divide_variable = {
+					var = KOR_third_support_decision
+					   value = KOR_legco_third_seats
+				}
+				set_variable = {
+					var = KOR_legco_third_temp_support
+					value = KOR_third_support_decision
+				}
+				set_temp_variable = { KOR_legco_faction = 3 }
+				set_temp_variable = { KOR_temp_votes = 10 }
+				KOR_legco_change_votes = yes
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						OR = {
+							check_variable = {
+								KOR_legco_third_seats_Decision_var > 10
+							}
+							check_variable = {
+								KOR_legco_third_seats_Decision_var = 10
+							}
+						}
+					}
+				}
+				set_variable = { KOR_third_support = KOR_legco_third_seats }
+				set_variable = {
+					var = KOR_legco_third_temp_support
+					value = 1 #100%
+				}
+				set_temp_variable = { KOR_legco_faction = 3 }
+				set_temp_variable = { KOR_temp_votes = KOR_legco_third_seats }
+				KOR_legco_change_votes = yes
+			}
+			custom_effect_tooltip = KOR_conciliation_third_seats_decision_tooltip
+			hidden_effect = {
+				clr_country_flag = kor_conciliation_is_Already_in_Progress
+			}
+			National_Assembly_Decisions_reload_effects = yes
+			National_Assembly_Decisions_reload_effects = yes
+		}
+	}
+
+	#한국국민당
+	KOR_conciliation_forth_seats_decision = {
+	
+		icon = generic_agreement
+
+		visible = {
+			original_tag = KOR
+		}
+		
+		available = {
+			KOR_legco_introduce_ordinance_ready = yes
+			KOR = { exists = yes }
+			KOR = { is_subject = no }
+			NOT = { has_country_flag = kor_conciliation_is_Already_in_Progress }
+			custom_trigger_tooltip = {
+				tooltip = KOR_conciliation_decision_max
+				NOT = {
+					check_variable = {
+						KOR_legco_forth_temp_support = 1
+					}
+				}
+			}
+		}
+		
+		fire_only_once = no
+
+		days_remove = 15
+
+		cost = 0
+
+		# ai_will_do = {
+		# 	factor = 5
+		# 	modifier = {
+		# 		is_historical_focus_on = yes
+		# 		factor = 0
+		# 	}
+		# }
+
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = kor_conciliation_is_Already_in_Progress
+			}
+		}
+
+		remove_effect = {
+			if = {
+				limit = {
+					OR = {
+						check_variable = {
+							KOR_legco_forth_seats_Decision_var > 10
+						}
+						check_variable = {
+							KOR_legco_forth_seats_Decision_var = 10
+						}
+					}
+				}
+				add_to_variable = {
+					var = KOR_forth_support
+					value = 10
+				}
+				set_variable = {
+					var = KOR_forth_support_decision
+					value = KOR_forth_support
+				}
+				divide_variable = {
+					var = KOR_forth_support_decision
+					   value = KOR_legco_forth_seats
+				}
+				set_variable = {
+					var = KOR_legco_forth_temp_support
+					value = KOR_forth_support_decision
+				}
+				set_temp_variable = { KOR_legco_faction = 4 }
+				set_temp_variable = { KOR_temp_votes = 10 }
+				KOR_legco_change_votes = yes
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						OR = {
+							check_variable = {
+								KOR_legco_forth_seats_Decision_var > 10
+							}
+							check_variable = {
+								KOR_legco_forth_seats_Decision_var = 10
+							}
+						}
+					}
+				}
+				set_variable = { KOR_forth_support = KOR_legco_forth_seats }
+				set_variable = {
+					var = KOR_legco_forth_temp_support
+					value = 1 #100%
+				}
+				set_temp_variable = { KOR_legco_faction = 4 }
+				set_temp_variable = { KOR_temp_votes = KOR_legco_forth_seats }
+				KOR_legco_change_votes = yes
+			}
+			custom_effect_tooltip = KOR_conciliation_forth_seats_decision_tooltip
+			hidden_effect = {
+				clr_country_flag = kor_conciliation_is_Already_in_Progress
+			}
+			National_Assembly_Decisions_reload_effects = yes
+		}
+	}
+
+	#대한공산당
+	KOR_conciliation_fifth_seats_decision = {
+	
+		icon = generic_agreement
+
+		visible = {
+			original_tag = KOR
+		}
+		
+		available = {
+			KOR_legco_introduce_ordinance_ready = yes
+			KOR = { exists = yes }
+			KOR = { is_subject = no }
+			NOT = { has_country_flag = kor_conciliation_is_Already_in_Progress }
+			custom_trigger_tooltip = {
+				tooltip = KOR_conciliation_decision_max
+				NOT = {
+					check_variable = {
+						KOR_legco_fifth_temp_support = 1
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = KOR_conciliation_decision_cannot_available
+					NOT = {
+						AND = {
+							check_variable = {
+								KOR_legco_current_ordinance_id = 1
+							}
+							#etc...
+						}
+					}
+			}
+		}
+		
+		fire_only_once = no
+
+		days_remove = 15
+
+		cost = 0
+
+		# ai_will_do = {
+		# 	factor = 5
+		# 	modifier = {
+		# 		is_historical_focus_on = yes
+		# 		factor = 0
+		# 	}
+		# }
+
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = kor_conciliation_is_Already_in_Progress
+			}
+		}
+
+		remove_effect = {
+			if = {
+				limit = {
+					OR = {
+						check_variable = {
+							KOR_legco_fifth_seats_Decision_var > 10
+						}
+						check_variable = {
+							KOR_legco_fifth_seats_Decision_var = 10
+						}
+					}
+				}
+				add_to_variable = {
+					var = KOR_fifth_support
+					value = 10
+				}
+				set_variable = {
+					var = KOR_fifth_support_decision
+					value = KOR_fifth_support
+				}
+				divide_variable = {
+					var = KOR_fifth_support_decision
+					   value = KOR_legco_fifth_seats
+				}
+				set_variable = {
+					var = KOR_legco_fifth_temp_support
+					value = KOR_fifth_support_decision
+				}
+				set_temp_variable = { KOR_legco_faction = 5 }
+				set_temp_variable = { KOR_temp_votes = 10 }
+				KOR_legco_change_votes = yes
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						OR = {
+							check_variable = {
+								KOR_legco_fifth_seats_Decision_var > 10
+							}
+							check_variable = {
+								KOR_legco_fifth_seats_Decision_var = 10
+							}
+						}
+					}
+				}
+				set_variable = { KOR_fifth_support = KOR_legco_fifth_seats }
+				set_variable = {
+					var = KOR_legco_fifth_temp_support
+					value = 1 #100%
+				}
+				set_temp_variable = { KOR_legco_faction = 5 }
+				set_temp_variable = { KOR_temp_votes = KOR_legco_fifth_seats }
+				KOR_legco_change_votes = yes
+			}
+			custom_effect_tooltip = KOR_conciliation_fifth_seats_decision_tooltip
+			hidden_effect = {
+				clr_country_flag = kor_conciliation_is_Already_in_Progress
+			}
+			National_Assembly_Decisions_reload_effects = yes
+		}
+	}
+
+	#한국민주당
+	KOR_conciliation_sixth_seats_decision = {
+	
+		icon = generic_agreement
+
+		visible = {
+			original_tag = KOR
+		}
+		
+		available = {
+			KOR_legco_introduce_ordinance_ready = yes
+			KOR = { exists = yes }
+			KOR = { is_subject = no }
+			NOT = { has_country_flag = kor_conciliation_is_Already_in_Progress }
+			custom_trigger_tooltip = {
+				tooltip = KOR_conciliation_decision_max
+				NOT = {
+					check_variable = {
+						KOR_legco_sixth_temp_support = 1
+					}
+				}
+			}
+		}
+		
+		fire_only_once = no
+
+		days_remove = 15
+
+		cost = 0
+
+		# ai_will_do = {
+		# 	factor = 5
+		# 	modifier = {
+		# 		is_historical_focus_on = yes
+		# 		factor = 0
+		# 	}
+		# }
+
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = kor_conciliation_is_Already_in_Progress
+			}
+		}
+
+		remove_effect = {
+			if = {
+				limit = {
+					OR = {
+						check_variable = {
+							KOR_legco_sixth_seats_Decision_var > 10
+						}
+						check_variable = {
+							KOR_legco_sixth_seats_Decision_var = 10
+						}
+					}
+				}
+				add_to_variable = {
+					var = KOR_sixth_support
+					value = 10
+				}
+				set_variable = {
+					var = KOR_sixth_support_decision
+					value = KOR_sixth_support
+				}
+				divide_variable = {
+					var = KOR_sixth_support_decision
+					   value = KOR_legco_sixth_seats
+				}
+				set_variable = {
+					var = KOR_legco_sixth_temp_support
+					value = KOR_sixth_support_decision
+				}
+				set_temp_variable = { KOR_legco_faction = 6 }
+				set_temp_variable = { KOR_temp_votes = 10 }
+				KOR_legco_change_votes = yes
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						OR = {
+							check_variable = {
+								KOR_legco_sixth_seats_Decision_var > 10
+							}
+							check_variable = {
+								KOR_legco_sixth_seats_Decision_var = 10
+							}
+						}
+					}
+				}
+				set_variable = { KOR_sixth_support = KOR_legco_sixth_seats }
+				set_variable = {
+					var = KOR_legco_sixth_temp_support
+					value = 1 #100%
+				}
+				set_temp_variable = { KOR_legco_faction = 6 }
+				set_temp_variable = { KOR_temp_votes = KOR_legco_sixth_seats }
+				KOR_legco_change_votes = yes
+			}
+			custom_effect_tooltip = KOR_conciliation_sixth_seats_decision_tooltip
+			hidden_effect = {
+				clr_country_flag = kor_conciliation_is_Already_in_Progress
+			}
+			National_Assembly_Decisions_reload_effects = yes
+		}
+	}
+
+	#대한국민당
+	KOR_conciliation_seventh_seats_decision = {
+	
+		icon = generic_agreement
+
+		visible = {
+			original_tag = KOR
+		}
+		
+		available = {
+			KOR_legco_introduce_ordinance_ready = yes
+			KOR = { exists = yes }
+			KOR = { is_subject = no }
+			NOT = { has_country_flag = kor_conciliation_is_Already_in_Progress }
+			custom_trigger_tooltip = {
+				tooltip = KOR_conciliation_decision_max
+				NOT = {
+					check_variable = {
+						KOR_legco_seventh_temp_support = 1
+					}
+				}
+			}
+		}
+		
+		fire_only_once = no
+
+		days_remove = 15
+
+		cost = 0
+
+		# ai_will_do = {
+		# 	factor = 5
+		# 	modifier = {
+		# 		is_historical_focus_on = yes
+		# 		factor = 0
+		# 	}
+		# }
+
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = kor_conciliation_is_Already_in_Progress
+			}
+		}
+
+		remove_effect = {
+			if = {
+				limit = {
+					OR = {
+						check_variable = {
+							KOR_legco_seventh_seats_Decision_var > 10
+						}
+						check_variable = {
+							KOR_legco_seventh_seats_Decision_var = 10
+						}
+					}
+				}
+				add_to_variable = {
+					var = KOR_seventh_support
+					value = 10
+				}
+				set_variable = {
+					var = KOR_seventh_support_decision
+					value = KOR_seventh_support
+				}
+				divide_variable = {
+					var = KOR_seventh_support_decision
+					   value = KOR_legco_seventh_seats
+				}
+				set_variable = {
+					var = KOR_legco_seventh_temp_support
+					value = KOR_seventh_support_decision
+				}
+				set_temp_variable = { KOR_legco_faction = 7 }
+				set_temp_variable = { KOR_temp_votes = 10 }
+				KOR_legco_change_votes = yes
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						OR = {
+							check_variable = {
+								KOR_legco_seventh_seats_Decision_var > 10
+							}
+							check_variable = {
+								KOR_legco_seventh_seats_Decision_var = 10
+							}
+						}
+					}
+				}
+				set_variable = { KOR_seventh_support = KOR_legco_seventh_seats }
+				set_variable = {
+					var = KOR_legco_seventh_temp_support
+					value = 1 #100%
+				}
+				set_temp_variable = { KOR_legco_faction = 7 }
+				set_temp_variable = { KOR_temp_votes = KOR_legco_seventh_seats }
+				KOR_legco_change_votes = yes
+			}
+			custom_effect_tooltip = KOR_conciliation_seventh_seats_decision_tooltip
+			hidden_effect = {
+				clr_country_flag = kor_conciliation_is_Already_in_Progress
+			}
+			National_Assembly_Decisions_reload_effects = yes
+		}
+	}
+
+	#민주당
+	KOR_conciliation_eighth_seats_decision = {
+	
+		icon = generic_agreement
+
+		visible = {
+			original_tag = KOR
+		}
+		
+		available = {
+			KOR_legco_introduce_ordinance_ready = yes
+			KOR = { exists = yes }
+			KOR = { is_subject = no }
+			NOT = { has_country_flag = kor_conciliation_is_Already_in_Progress }
+			custom_trigger_tooltip = {
+				tooltip = KOR_conciliation_decision_max
+				NOT = {
+					check_variable = {
+						KOR_legco_eighth_temp_support = 1
+					}
+				}
+			}
+		}
+		
+		fire_only_once = no
+
+		days_remove = 15
+
+		cost = 0
+
+		# ai_will_do = {
+		# 	factor = 5
+		# 	modifier = {
+		# 		is_historical_focus_on = yes
+		# 		factor = 0
+		# 	}
+		# }
+
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = kor_conciliation_is_Already_in_Progress
+			}
+		}
+
+		remove_effect = {
+			if = {
+				limit = {
+					OR = {
+						check_variable = {
+							KOR_legco_eighth_seats_Decision_var > 10
+						}
+						check_variable = {
+							KOR_legco_nineth_seats_Decision_var = 10
+						}
+					}
+				}
+				add_to_variable = {
+					var = KOR_eighth_support
+					value = 10
+				}
+				set_variable = {
+					var = KOR_eighth_support_decision
+					value = KOR_eighth_support
+				}
+				divide_variable = {
+					var = KOR_eighth_support_decision
+					   value = KOR_legco_eighth_seats
+				}
+				set_variable = {
+					var = KOR_legco_eighth_temp_support
+					value = KOR_eighth_support_decision
+				}
+				set_temp_variable = { KOR_legco_faction = 8 }
+				set_temp_variable = { KOR_temp_votes = 10 }
+				KOR_legco_change_votes = yes
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						OR = {
+							check_variable = {
+								KOR_legco_eighth_seats_Decision_var > 10
+							}
+							check_variable = {
+								KOR_legco_eighth_seats_Decision_var = 10
+							}
+						}
+					}
+				}
+				set_variable = { KOR_eighth_support = KOR_legco_eighth_seats }
+				set_variable = {
+					var = KOR_legco_eighth_temp_support
+					value = 1 #100%
+				}
+				set_temp_variable = { KOR_legco_faction = 8 }
+				set_temp_variable = { KOR_temp_votes = KOR_legco_eighth_seats }
+				KOR_legco_change_votes = yes
+			}
+			custom_effect_tooltip = KOR_conciliation_eighth_seats_decision_tooltip
+			hidden_effect = {
+				clr_country_flag = kor_conciliation_is_Already_in_Progress
+			}
+			National_Assembly_Decisions_reload_effects = yes
+		}
+	}
+
+	#인민공화당
+	KOR_conciliation_nineth_seats_decision = {
+	
+		icon = generic_agreement
+
+		visible = {
+			original_tag = KOR
+		}
+		
+		available = {
+			KOR_legco_introduce_ordinance_ready = yes
+			KOR = { exists = yes }
+			KOR = { is_subject = no }
+			NOT = { has_country_flag = kor_conciliation_is_Already_in_Progress }
+			custom_trigger_tooltip = {
+				tooltip = KOR_conciliation_decision_max
+				NOT = {
+					check_variable = {
+						KOR_legco_nineth_temp_support = 1
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = KOR_conciliation_decision_cannot_available
+					NOT = {
+						AND = {
+							check_variable = {
+								KOR_legco_current_ordinance_id = 1
+							}
+							#etc...
+						}
+					}
+			}
+		}
+		
+		fire_only_once = no
+
+		days_remove = 15
+
+		cost = 0
+
+		# ai_will_do = {
+		# 	factor = 5
+		# 	modifier = {
+		# 		is_historical_focus_on = yes
+		# 		factor = 0
+		# 	}
+		# }
+
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = kor_conciliation_is_Already_in_Progress
+			}
+		}
+
+		remove_effect = {
+			if = {
+				limit = {
+					OR = {
+						check_variable = {
+							KOR_legco_nineth_seats_Decision_var > 10
+						}
+						check_variable = {
+							KOR_legco_nineth_seats_Decision_var = 10
+						}
+					}
+				}
+				add_to_variable = {
+					var = KOR_nineth_support
+					value = 10
+				}
+				set_variable = {
+					var = KOR_nineth_support_decision
+					value = KOR_nineth_support
+				}
+				divide_variable = {
+					var = KOR_nineth_support_decision
+					   value = KOR_legco_nineth_seats
+				}
+				set_variable = {
+					var = KOR_legco_nineth_temp_support
+					value = KOR_nineth_support_decision
+				}
+				set_temp_variable = { KOR_legco_faction = 9 }
+				set_temp_variable = { KOR_temp_votes = 10 }
+				KOR_legco_change_votes = yes
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						OR = {
+							check_variable = {
+								KOR_legco_nineth_seats_Decision_var > 10
+							}
+							check_variable = {
+								KOR_legco_nineth_seats_Decision_var = 10
+							}
+						}
+					}
+				}
+				set_variable = { KOR_nineth_support = KOR_legco_nineth_seats }
+				set_variable = {
+					var = KOR_legco_nineth_temp_support
+					value = 1 #100%
+				}
+				set_temp_variable = { KOR_legco_faction = 9 }
+				set_temp_variable = { KOR_temp_votes = KOR_legco_nineth_seats }
+				KOR_legco_change_votes = yes
+			}
+			custom_effect_tooltip = KOR_conciliation_nineth_seats_decision_tooltip
+			hidden_effect = {
+				clr_country_flag = kor_conciliation_is_Already_in_Progress
+			}
+			National_Assembly_Decisions_reload_effects = yes
+		}
+	}
+
+	#대한신민당
+	KOR_conciliation_tenth_seats_decision = {
+	
+		icon = generic_agreement
+
+		visible = {
+			original_tag = KOR
+		}
+		
+		available = {
+			KOR_legco_introduce_ordinance_ready = yes
+			KOR = { exists = yes }
+			KOR = { is_subject = no }
+			NOT = { has_country_flag = kor_conciliation_is_Already_in_Progress }
+			custom_trigger_tooltip = {
+				tooltip = KOR_conciliation_decision_max
+				NOT = {
+					check_variable = {
+						KOR_legco_tenth_temp_support = 1
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = KOR_conciliation_decision_cannot_available
+					NOT = {
+						AND = {
+							check_variable = {
+								KOR_legco_current_ordinance_id = 1
+							}
+							#etc...
+						}
+					}
+			}
+		}
+		
+		fire_only_once = no
+
+		days_remove = 15
+
+		cost = 0
+
+		# ai_will_do = {
+		# 	factor = 5
+		# 	modifier = {
+		# 		is_historical_focus_on = yes
+		# 		factor = 0
+		# 	}
+		# }
+
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = kor_conciliation_is_Already_in_Progress
+			}
+		}
+
+		remove_effect = {
+			if = {
+				limit = {
+					OR = {
+						check_variable = {
+							KOR_legco_tenth_seats_Decision_var > 10
+						}
+						check_variable = {
+							KOR_legco_tenth_seats_Decision_var = 10
+						}
+					}
+				}
+				add_to_variable = {
+					var = KOR_tenth_support
+					value = 10
+				}
+				set_variable = {
+					var = KOR_tenth_support_decision
+					value = KOR_tenth_support
+				}
+				divide_variable = {
+					var = KOR_tenth_support_decision
+					   value = KOR_legco_tenth_seats
+				}
+				set_variable = {
+					var = KOR_legco_tenth_temp_support
+					value = KOR_tenth_support_decision
+				}
+				set_temp_variable = { KOR_legco_faction = 10 }
+				set_temp_variable = { KOR_temp_votes = 10 }
+				KOR_legco_change_votes = yes
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						OR = {
+							check_variable = {
+								KOR_legco_tenth_seats_Decision_var > 10
+							}
+							check_variable = {
+								KOR_legco_tenth_seats_Decision_var = 10
+							}
+						}
+					}
+				}
+				set_variable = { KOR_tenth_support = KOR_legco_tenth_seats }
+				set_variable = {
+					var = KOR_legco_tenth_temp_support
+					value = 1 #100%
+				}
+				set_temp_variable = { KOR_legco_faction = 10 }
+				set_temp_variable = { KOR_temp_votes = KOR_legco_tenth_seats }
+				KOR_legco_change_votes = yes
+			}
+			custom_effect_tooltip = KOR_conciliation_tenth_seats_decision_tooltip
+			hidden_effect = {
+				clr_country_flag = kor_conciliation_is_Already_in_Progress
+			}
+			National_Assembly_Decisions_reload_effects = yes
+		}
+	}
+
+	KOR_par_debug = {
+		icon = GFX_decision_infiltrate_state
+
+		visible = {
+			original_tag = KOR
+		}
+
+		available = {
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			KOR = {
+				KOR_coup_seats_Additional = yes
 			}
 		}
 	}

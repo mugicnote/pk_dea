@@ -1,17 +1,18 @@
 state={
 	id=997
-	name="STATE_971"
+	name="STATE_Heihe"
 	
 	history={
 		owner = MAN
 		add_core_of = MAN
-
+		
+		set_demilitarized_zone = yes
 	}
 
 	provinces={
 		1693 1732 3913 7848 10368 10675 10698 12548 
 	}
-	manpower=0
+	manpower=1711500
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

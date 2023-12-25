@@ -1,6 +1,6 @@
 state = {
 	id = 946
-	name = "STATE_920" #제주도
+	name = "STATE_Jeju" #제주도
 	manpower = 100000
 
 	state_category = rural

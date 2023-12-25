@@ -1,7 +1,7 @@
 
 state={
 	id=980
-	name="STATE_954"
+	name="STATE_Taiyuan"
 
 	history={
 		owner = SHX
@@ -12,7 +12,7 @@ state={
 	provinces={
 		7158 10480 12432 
 	}
-	manpower=0
+	manpower=1289000
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

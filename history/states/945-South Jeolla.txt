@@ -1,6 +1,6 @@
 state = {
 	id = 945
-	name = "STATE_919" #전라남도
+	name = "STATE_South_Jeolla" #전라남도
 	manpower = 4834000
 
 	state_category = large_town	

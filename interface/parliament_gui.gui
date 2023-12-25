@@ -59,7 +59,7 @@ guiTypes = {
 	containerWindowType = {
         name = "parliament_gui_container"
         position = { x = 590 y = 325 }
-		size = { width = 1398 height = 725 }
+		size = { width = 1030 height = 715 }
 		fade_time = 300
 		fade_type = linear
 		moveable = yes
@@ -73,27 +73,10 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "parliament_semicircle_main_container"
-			position = { x = 312 y = 15 }
+			position = { x = 282 y = 15 }
 			size = { width = 770 height = 625 }
 
-			buttonType = {
-				name = "close"
-				spriteType = "GFX_closebutton"
-				position = { x = 690 y = 10 }
-				clicksound = click_close
-				pdx_tooltip = "닫기"
-				shortcut = "ESCAPE"
-			}
-
-			gridboxtype = {
-				name = "parliament_semicircle_main_grid"
-				position = { x = 35 y = 25 }
-				size = { width = 100%% height = 100%% }
-				slotsize = { width = 100%% height = 0 }
-				max_slots_horizontal = 1
-				add_horizontal = no
-			}
-
+			#제목
 			instantTextboxType = {
 				name = "parliament_member_text"
 				position = { x = 295 y = 25 }
@@ -104,7 +87,7 @@ guiTypes = {
 				format = center
 				vertical_alignment = center
 			}
-
+			#부제목
 			instantTextboxType = {
 				name = "parliament_member_text2"
 				position = { x = 100 y = 55 }
@@ -114,6 +97,30 @@ guiTypes = {
 				maxHeight = 16
 				format = center
 				vertical_alignment = center
+			}
+			#닫기
+			buttonType = {
+				name = "close"
+				spriteType = "GFX_closebutton"
+				position = { x = 690 y = 10 }
+				clicksound = click_close
+				pdx_tooltip = "닫기"
+				shortcut = "ESCAPE"
+			}
+			
+			# LEAVE THESE COMMENTS IN SO YOU CAN REGENERATE THIS DIAGRAM
+			# IF THE SCRIPT IS IMPROVED DOWN THE LINE
+			# YOU HAVE BEEN WARNED
+			# Spread: 7.11
+			# First Row Radius: 7.04
+			# Total Delegates: 100
+			gridboxtype = {
+				name = "parliament_diagram"
+				position = { x = 35 y = 75 }
+				size = { width = 100%% height = 100%% }
+				slotsize = { width = 100%% height = 0 }
+				max_slots_horizontal = 1
+				add_horizontal = no
 			}
 
 			iconType = {
@@ -197,16 +204,16 @@ guiTypes = {
 				vertical_alignment = center
 			}
 
-			instantTextboxType = {
-				name = "parliament_member_text9"
-				position = { x = 730 y = 35 }
-				font = "aldrich_36_outline"
-				text = "위원회 및 정당 교섭"
-				maxWidth = 300
-				maxHeight = 16
-				format = center
-				vertical_alignment = center
-			}
+			# instantTextboxType = {
+			# 	name = "parliament_member_text9"
+			# 	position = { x = 730 y = 35 }
+			# 	font = "aldrich_36_outline"
+			# 	text = "위원회 및 정당 교섭"
+			# 	maxWidth = 300
+			# 	maxHeight = 16
+			# 	format = center
+			# 	vertical_alignment = center
+			# }
 
 			# instantTextboxType = {
 			# 	name = "parliament_member_text10"
@@ -317,82 +324,82 @@ guiTypes = {
 				}
 			}
 
-			instantTextboxType = {
-				name = "current_negotiation_support"
-				position = { x = 752 y = 378 }
-				font = "aldrich_22_outline"
-				text = KOR_legco_current_negotiation_support
-				maxWidth = 263
-				format = center
-				alwaystransparent = yes
-				pdx_tooltip = KOR_current_negotiation_support_tt
-			}
+			# instantTextboxType = {
+			# 	name = "current_negotiation_support"
+			# 	position = { x = 752 y = 378 }
+			# 	font = "aldrich_22_outline"
+			# 	text = KOR_legco_current_negotiation_support
+			# 	maxWidth = 263
+			# 	format = center
+			# 	alwaystransparent = yes
+			# 	pdx_tooltip = KOR_current_negotiation_support_tt
+			# }
 
-			containerWindowType = {
-				name = "negotiation"
-				position = { x = 755 y = 90 }
+			# containerWindowType = {
+			# 	name = "negotiation"
+			# 	position = { x = 755 y = 90 }
 
-				instantTextboxType = {
-					name = "current_negotiation_name"
-					position = { x = -64 y = 10 }
-					font = "aldrich_24_outline"
-					text = "KOR_legco_current_negotiation_title"
-					maxWidth = 390
-					format = center
-					alwaystransparent = yes
-				}
+			# 	instantTextboxType = {
+			# 		name = "current_negotiation_name"
+			# 		position = { x = -64 y = 10 }
+			# 		font = "aldrich_24_outline"
+			# 		text = "KOR_legco_current_negotiation_title"
+			# 		maxWidth = 390
+			# 		format = center
+			# 		alwaystransparent = yes
+			# 	}
 
-				instantTextboxType = {
-					name = "negotiation_title"
-					position = { x = -15 y = 62 }
-					font = "aldrich_18_outline"
-					text = "KOR_legco_negotiation_title"
-					maxWidth = 186
-					format = left
-					alwaystransparent = yes
-				}
+			# 	instantTextboxType = {
+			# 		name = "negotiation_title"
+			# 		position = { x = -15 y = 62 }
+			# 		font = "aldrich_18_outline"
+			# 		text = "KOR_legco_negotiation_title"
+			# 		maxWidth = 186
+			# 		format = left
+			# 		alwaystransparent = yes
+			# 	}
 
-				instantTextboxType = {
-					name = "negotiation_info"
-					position = { x = -16 y = 85 }
-					font = "aldrich_16_outline"
-					text = "KOR_legco_negotiation_text"
-					maxWidth = 290
-					format = left
-					alwaystransparent = yes
-				}
+			# 	instantTextboxType = {
+			# 		name = "negotiation_info"
+			# 		position = { x = -16 y = 85 }
+			# 		font = "aldrich_16_outline"
+			# 		text = "KOR_legco_negotiation_text"
+			# 		maxWidth = 290
+			# 		format = left
+			# 		alwaystransparent = yes
+			# 	}
 
-				instantTextboxType = {
-					name = "negotiation_effects_title"
-					position = { x = -15 y = 180 }
-					font = "aldrich_18_outline"
-					text = "KOR_legco_negotiation_effects_title"
-					maxWidth = 186
-					format = left
-					alwaystransparent = yes
-				}
+			# 	instantTextboxType = {
+			# 		name = "negotiation_effects_title"
+			# 		position = { x = -15 y = 180 }
+			# 		font = "aldrich_18_outline"
+			# 		text = "KOR_legco_negotiation_effects_title"
+			# 		maxWidth = 186
+			# 		format = left
+			# 		alwaystransparent = yes
+			# 	}
 
-				instantTextboxType = {
-					name = "negotiation_effects_info"
-					position = { x = -16 y = 205 }
-					font = "aldrich_16_outline"
-					text = "KOR_legco_negotiation_effects_text"
-					maxWidth = 290
-					format = left
-					alwaystransparent = yes
-				}
-			}
+			# 	instantTextboxType = {
+			# 		name = "negotiation_effects_info"
+			# 		position = { x = -16 y = 205 }
+			# 		font = "aldrich_16_outline"
+			# 		text = "KOR_legco_negotiation_effects_text"
+			# 		maxWidth = 290
+			# 		format = left
+			# 		alwaystransparent = yes
+			# 	}
+			# }
 			
-			instantTextboxType = {
-				name = "parliament_Recruiting_National_Assembly_member_desc"
-				position = { x = 732 y = 440 }
-				font = "aldrich_18_outline"
-				text = "parliament_Recruiting_National_Assembly_member_desc_explanation"
-				maxWidth = 283
-				maxHeight = 138
-				format = left
-				scrollbarType = standardtext_slider
-			}
+			# instantTextboxType = {
+			# 	name = "parliament_Recruiting_National_Assembly_member_desc"
+			# 	position = { x = 732 y = 440 }
+			# 	font = "aldrich_18_outline"
+			# 	text = "parliament_Recruiting_National_Assembly_member_desc_explanation"
+			# 	maxWidth = 283
+			# 	maxHeight = 138
+			# 	format = left
+			# 	scrollbarType = standardtext_slider
+			# }
 
 			# buttonType = {
 			# 	name = "Recruiting_National_Assembly_member_button"
@@ -404,7 +411,7 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "past_ordinance_header"
-			position = { x = 76 y = 462 }
+			position = { x = 46 y = 462 }
 			font = "aldrich_24_outline"
 			text = KOR_legco_past_ordinance
 			maxWidth = 263
@@ -417,7 +424,7 @@ guiTypes = {
 			size = { width = 310 height = 200 }
 
 			verticalScrollbar = "right_vertical_slider"
-			position = { x = 53 y = 490 }
+			position = { x = 23 y = 490 }
 
 			background = {
 				name = "Background"
@@ -434,19 +441,19 @@ guiTypes = {
 			}
 		}
 
-		instantTextboxType = {
-			name = "past_negotiation_header"
-			position = { x = 1066 y = 462 }
-			font = "aldrich_24_outline"
-			text = KOR_legco_past_negotiation
-			maxWidth = 263
-			format = center
-			alwaystransparent = yes
-		}
+		# instantTextboxType = {
+		# 	name = "past_negotiation_header"
+		# 	position = { x = 1066 y = 462 }
+		# 	font = "aldrich_24_outline"
+		# 	text = KOR_legco_past_negotiation
+		# 	maxWidth = 263
+		# 	format = center
+		# 	alwaystransparent = yes
+		# }
 		
 		containerWindowType = {
 			name = "parliament_semicircle_main_container2"
-			position = { x = 360 y = 485 }
+			position = { x = 330 y = 485 }
 			size = { width = 200 height = 205 }
 			verticalScrollbar = "right_vertical_slider"
 			margin = { top = 14 bottom = 0}
@@ -461,7 +468,7 @@ guiTypes = {
 				position = { x = 310 y = 30 }
 				size = { width = 100%% height = 100%% }
 				slotsize = { width = 200 height = 18 }
-				max_slots_vertical = 10
+				max_slots_vertical = 12
 				add_horizontal = no
 			}
 		}
@@ -499,76 +506,21 @@ guiTypes = {
 		# 		position = { x = 2 y = 125 }
 		# 	}
 		# }
-
-		containerWindowType = {
-			name = "parliament_Recruiting_National_Assembly_member_container"
-			position = { x = 1039 y = 95 }
-			size = { width = 310 height = 353 }
-			verticalScrollbar = "right_vertical_slider"
-			margin = { top = 3 bottom = 0}
-	
-			background = {
-				name = "Background"
-				quadTextureSprite = "GFX_tiled_focus_bg"
-			}
-	
-			# buttonType = {
-			# 	name = "Report_corruption_opposition_party"
-			# 	spriteType = "GFX_Report_corruption_opposition_party"
-			# 	position = { x = 2 y = -10 }
-			# }
-			# buttonType = {
-			# 	name = "Investigation_corruption_opposition_party"
-			# 	spriteType = "GFX_Investigation_corruption_opposition_party"
-			# 	position = { x = 2 y = 35 }
-			# }
-			# buttonType = {
-			# 	name = "Recruitment_personnel_political_party_close"
-			# 	spriteType = "GFX_Recruitment_personnel_political_party_close"
-			# 	position = { x = 2 y = 80 }
-			# }
-			# buttonType = {
-			# 	name = "Recruitment_personnel_Korea_Promotion_Association"
-			# 	spriteType = "GFX_Recruitment_personnel_Korea_Promotion_Association"
-			# 	position = { x = 2 y = 125 }
-			# }
-			# buttonType = {
-			# 	name = "Recruitment_personnel_Korea_National_Party"
-			# 	spriteType = "GFX_Recruitment_personnel_Korea_National_Party"
-			# 	position = { x = 2 y = 170 }
-			# }
-			# buttonType = {
-			# 	name = "Recruitment_personnel_Democratic_Party"
-			# 	spriteType = "GFX_Recruitment_personnel_Democratic_Party"
-			# 	position = { x = 2 y = 215 }
-			# }
-			# buttonType = {
-			# 	name = "Firming_core_region_close"
-			# 	spriteType = "GFX_Firming_core_region_close"
-			# 	position = { x = 2 y = 260 }
-			# }
-			# buttonType = {
-			# 	name = "Strengthen_region_Gyeonggi"
-			# 	spriteType = "GFX_Strengthen_region_Gyeonggi"
-			# 	position = { x = 2 y = 305 }
-			# }
-		}
     }
 
 	containerWindowType = {
-        name = "parliament_semicircle_main_entry"
-        position = { x = 0 y = 50 }
+        name = "KOR_legco_seat"
+        position = { x = 0 y = 0 }
 
 		iconType = {
-			name = "parliament_semicircle_main_icon"
-			spriteType = "GFX_parliament_party_icon"
-			position = { x = 0 y = 0 }
+			name = "parliament_dot_icon"
+			quadTextureSprite = "GFX_parliament_party_icon"
 			pdx_tooltip = "parliament_main_icon_tt"
 		}
     }
 
 	containerWindowType = {
-        name = "parliament_member_entry"
+        name = "KOR_legco_group"
         position = { x = -130 y = -30 }
 		size = { width = 200 height = 18 }
 

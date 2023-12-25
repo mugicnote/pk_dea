@@ -1,6 +1,6 @@
 state={
 	id=954
-	name="STATE_928"
+	name="STATE_Ningbo"
 
 	history={
 		owner = MAN
@@ -24,7 +24,7 @@ state={
 	provinces={
 		9974 
 	}
-	manpower=0
+	manpower=1730510
 	buildings_max_level_factor=1.000
 	state_category=town
 }

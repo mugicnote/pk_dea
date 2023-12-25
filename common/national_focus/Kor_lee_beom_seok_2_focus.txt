@@ -15,12 +15,12 @@ focus_tree = {
 	}
 	default = no
 
-	continuous_focus_position = { x = 2720 y = 350 }
+	continuous_focus_position = { x = 2720 y = 3050 }
 
 	#혁명 완수
 	focus = {
 		id = KOR_Revolution_accomplished
-		icon = GFX_focus_Lee_Bum_seok
+		icon = GFX_focus_cle
 		cost = 1.00
 
 		available = {
@@ -46,6 +46,324 @@ focus_tree = {
 
 	}
 
+	#교토회담 의결 재확인
+	focus = {
+		id = KOR_Reaffirmation_of_the_Kyoto_Conference_Resolution
+		icon = GFX_focus_an_anti_state_trial
+		cost = 1.00
+
+		available = {
+			has_civil_war = no
+			has_completed_focus = KOR_Revolution_accomplished
+		}
+
+		completion_reward = {
+
+		}
+		x = 10
+		y = 0
+
+	}
+
+	#대미전권대사 파견
+	focus = {
+		id = KOR_Dispatch_of_Ambassador_to_the_US
+		icon = GFX_focus_hol_the_foundations_of_defense
+		cost = 1.00
+
+		available = {
+			has_civil_war = no
+			has_completed_focus = KOR_Revolution_accomplished
+		}
+
+		completion_reward = {
+
+		}
+		x = 14
+		y = 0
+
+	}
+
+	#한일약식회담 진행
+	focus = {
+		id = KOR_Korea_Japan_Pharmacy_Talks_Go_Ahead
+		icon = GFX_focus_secret_agreement_with_Japan
+		cost = 1.00
+
+		available = {
+			has_civil_war = no
+			has_completed_focus = KOR_Revolution_accomplished
+		}
+
+		completion_reward = {
+
+		}
+		x = 16
+		y = 0
+
+	}
+
+	#민정복귀 성명 약속
+	focus = {
+		id = KOR_Promise_to_Return_to_Civil_Service
+		icon = GFX_focus_generic_league_of_nations
+		relative_position_id = KOR_Dispatch_of_Ambassador_to_the_US
+		cost = 5.00
+
+		prerequisite = {
+			focus = KOR_Dispatch_of_Ambassador_to_the_US
+		}
+
+		completion_reward = {
+
+		}
+		x = -1
+		y = 1
+
+	}
+
+	#대일 경제 교류 증대
+	focus = {
+		id = KOR_increase_in_economic_exchanges_with_Japan
+		icon = GFX_focus_generic_refit_civilian_ships
+		relative_position_id = KOR_Reaffirmation_of_the_Kyoto_Conference_Resolution
+		cost = 5.00
+
+		prerequisite = {
+			focus = KOR_Reaffirmation_of_the_Kyoto_Conference_Resolution
+			focus = KOR_Promise_to_Return_to_Civil_Service
+		}
+
+		completion_reward = {
+
+		}
+		x = 0
+		y = 2
+
+	}
+
+	#대미 원조지원 지속 협의
+	focus = {
+		id = KOR_Continued_consultation_on_aid_to_the_US
+		icon = GFX_focus_a_little_capital
+		relative_position_id = KOR_Promise_to_Return_to_Civil_Service
+		cost = 5.00
+
+		prerequisite = {
+			focus = KOR_Promise_to_Return_to_Civil_Service
+		}
+
+		completion_reward = {
+
+		}
+		x = -1
+		y = 1
+
+	}
+
+	#외교 노선 재수립
+	focus = {
+		id = KOR_Reestablish_diplomatic_routes
+		icon = GFX_goal_generic_position_armies
+		relative_position_id = KOR_Dispatch_of_Ambassador_to_the_US
+		cost = 5.00
+
+		prerequisite = {
+			focus = KOR_Dispatch_of_Ambassador_to_the_US
+			focus = KOR_Korea_Japan_Pharmacy_Talks_Go_Ahead
+		}
+
+		completion_reward = {
+
+		}
+		x = 1
+		y = 2
+
+	}
+
+	#반공주의 헌장
+	focus = {
+		id = KOR_Anti_Communist_Charter
+		icon = GFX_focus_kor_the_torch_of_red_hunt
+		relative_position_id = KOR_Reestablish_diplomatic_routes
+		cost = 5.00
+
+		prerequisite = {
+			focus = KOR_Reestablish_diplomatic_routes
+		}
+
+		completion_reward = {
+
+		}
+		x = -3
+		y = 1
+
+	}
+
+	#유럽 전선 개입
+	focus = {
+		id = KOR_European_Front_Intervention
+		icon = GFX_focus_usa_focus_on_europe
+		relative_position_id = KOR_Reestablish_diplomatic_routes
+		cost = 5.00
+
+		prerequisite = {
+			focus = KOR_Reestablish_diplomatic_routes
+		}
+		mutually_exclusive = {
+			focus = KOR_Spains_Civil_War_Commitment_to_Neutrality
+		}
+
+		completion_reward = {
+
+		}
+		x = -1
+		y = 1
+
+	}
+
+	#스페인 내전 중립 약속
+	focus = {
+		id = KOR_Spains_Civil_War_Commitment_to_Neutrality
+		icon = GFX_focus_SWE_refuge_from_war
+		relative_position_id = KOR_Reestablish_diplomatic_routes
+		cost = 5.00
+
+		prerequisite = {
+			focus = KOR_Reestablish_diplomatic_routes
+		}
+		mutually_exclusive = {
+			focus = KOR_European_Front_Intervention
+		}
+
+		completion_reward = {
+
+		}
+		x = 1
+		y = 1
+
+	}
+
+	#만주계획 발효
+	focus = {
+		id = KOR_The_Manchurian_Plan_comes_into_force
+		icon = GFX_focus_constitutional_amendment
+		relative_position_id = KOR_Reestablish_diplomatic_routes
+		cost = 5.00
+
+		prerequisite = {
+			focus = KOR_Reestablish_diplomatic_routes
+		}
+
+		completion_reward = {
+
+		}
+		x = 5
+		y = 1
+
+	}
+
+	#방공협정 조인
+	focus = {
+		id = KOR_signing_an_anti_communist_agreement
+		icon = GFX_focus_spr_crush_the_revolution
+		relative_position_id = KOR_Anti_Communist_Charter
+		cost = 5.00
+
+		prerequisite = {
+			focus = KOR_Anti_Communist_Charter
+		}
+
+		completion_reward = {
+
+		}
+		x = 1
+		y = 1
+
+	}
+
+	#군사고문단 파견
+	focus = {
+		id = KOR_dispatch_military_advisory_group
+		icon = GFX_focus_hra
+		relative_position_id = KOR_The_Manchurian_Plan_comes_into_force
+		cost = 5.00
+
+		prerequisite = {
+			focus = KOR_The_Manchurian_Plan_comes_into_force
+		}
+
+		completion_reward = {
+
+		}
+		x = -4
+		y = 1
+
+	}
+
+	#북방 도시 요새화
+	focus = {
+		id = KOR_northern_city_fortification
+		icon = GFX_goal_generic_fortify_city
+		relative_position_id = KOR_The_Manchurian_Plan_comes_into_force
+		cost = 5.00
+
+		prerequisite = {
+			focus = KOR_The_Manchurian_Plan_comes_into_force
+		}
+		mutually_exclusive = {
+			focus = KOR_northern_base_development
+		}
+
+		completion_reward = {
+
+		}
+		x = -1
+		y = 1
+
+	}
+
+	#북부 거점 개발
+	focus = {
+		id = KOR_northern_base_development
+		icon = GFX_focus_hokusen_industry
+		relative_position_id = KOR_The_Manchurian_Plan_comes_into_force
+		cost = 5.00
+
+		prerequisite = {
+			focus = KOR_The_Manchurian_Plan_comes_into_force
+		}
+		mutually_exclusive = {
+			focus = KOR_northern_city_fortification
+		}
+
+		completion_reward = {
+
+		}
+		x = 1
+		y = 1
+
+	}
+
+	#주션 공화국 승인
+	focus = {
+		id = KOR_Authorized_by_the_Republic_of_Jushion
+		icon = GFX_focus_generic_parliament
+		relative_position_id = KOR_The_Manchurian_Plan_comes_into_force
+		cost = 5.00
+
+		prerequisite = {
+			focus = KOR_The_Manchurian_Plan_comes_into_force
+		}
+
+		completion_reward = {
+
+		}
+		x = 4
+		y = 1
+
+	}
+
 	#중앙위원회의 입법부 장악
 	focus = {
 		id = KOR_Central_Committee_control_legislature
@@ -66,7 +384,7 @@ focus_tree = {
 			add_political_power = 50
 			custom_effect_tooltip = KOR_Central_Committee_control_legislature_tt
 		}
-		x = 0
+		x = 1
 		y = 1
 
 	}
@@ -98,181 +416,181 @@ focus_tree = {
 			COALITION_add_neu = yes
 			custom_effect_tooltip = KOR_Rebellion_Remaining_Processed_tt
 		}
-		x = -2
+		x = -1
 		y = 1
 
 	}
 
 	#시민군 문제 논의 시작
-	focus = {
-		id = KOR_Start_discussing_civil_army_issues
-		icon = GFX_focus_national_assembly_dominated
-		relative_position_id = KOR_Revolution_accomplished
-		cost = 4.00
+	# focus = {
+	# 	id = KOR_Start_discussing_civil_army_issues
+	# 	icon = GFX_focus_national_assembly_dominated
+	# 	relative_position_id = KOR_Revolution_accomplished
+	# 	cost = 4.00
 
-		prerequisite = {
-			focus = KOR_Revolution_accomplished
-		}
+	# 	prerequisite = {
+	# 		focus = KOR_Revolution_accomplished
+	# 	}
 
-		completion_reward = {
-			add_popularity = {
-				ideology = social_democracy
-				popularity = -0.05
-			}
-			hidden_effect = {
-				retire_character = KOR_pak_hon_yong
-				create_country_leader = {
-					name = "대한공산당 위원회"
-					desc = ""
-					picture = "krGov.dds"
-					expire = "1999.1.1"
-					ideology = marxism
-					traits = {
+	# 	completion_reward = {
+	# 		add_popularity = {
+	# 			ideology = social_democracy
+	# 			popularity = -0.05
+	# 		}
+	# 		hidden_effect = {
+	# 			retire_character = KOR_pak_hon_yong
+	# 			create_country_leader = {
+	# 				name = "대한공산당 위원회"
+	# 				desc = ""
+	# 				picture = "krGov.dds"
+	# 				expire = "1999.1.1"
+	# 				ideology = marxism
+	# 				traits = {
 						
-					}
-				}
-				retire_character = KOR_Lyuh_Woon_hyung
-				create_country_leader = {
-					name = "사회노동당 위원회"
-					desc = ""
-					picture = "krGov.dds"
-					expire = "1999.1.1"
-					ideology = socialism
-					traits = {
+	# 				}
+	# 			}
+	# 			retire_character = KOR_Lyuh_Woon_hyung
+	# 			create_country_leader = {
+	# 				name = "사회노동당 위원회"
+	# 				desc = ""
+	# 				picture = "krGov.dds"
+	# 				expire = "1999.1.1"
+	# 				ideology = socialism
+	# 				traits = {
 						
-					}
-				}
-				YKR = {
-					add_state_core = 916
-					add_state_core = 917
-					transfer_state = 916
-					transfer_state = 917
+	# 				}
+	# 			}
+	# 			YKR = {
+	# 				add_state_core = 916
+	# 				add_state_core = 917
+	# 				transfer_state = 916
+	# 				transfer_state = 917
 
-					set_politics = {
-						ruling_party = social_democracy
-						last_election = "1936.1.1"
-						election_frequency = 48
-						elections_allowed = no
-					}
+	# 				set_politics = {
+	# 					ruling_party = social_democracy
+	# 					last_election = "1936.1.1"
+	# 					election_frequency = 48
+	# 					elections_allowed = no
+	# 				}
 		
-					set_popularities = {
-						communism = 14
-						authoritarian_socialism = 4
-						radical_socialism = 6
-						social_democracy = 43
-						social_liberalism = 0
-						national_liberalism = 3
-						liberal_conservatism = 4
-						democratic = 13
-						national_conservatism = 10
-						neutrality = 3
-						auto_despotism = 0
-						fascism = 0
-					}
+	# 				set_popularities = {
+	# 					communism = 14
+	# 					authoritarian_socialism = 4
+	# 					radical_socialism = 6
+	# 					social_democracy = 43
+	# 					social_liberalism = 0
+	# 					national_liberalism = 3
+	# 					liberal_conservatism = 4
+	# 					democratic = 13
+	# 					national_conservatism = 10
+	# 					neutrality = 3
+	# 					auto_despotism = 0
+	# 					fascism = 0
+	# 				}
 
-					create_country_leader = {
-						name = "여운형"
-						desc = ""
-						picture = "Portrait_Lyuh_Woonhyung.dds"
-						expire = "2000.1.1"
-						ideology = socialism
-						traits = {
+	# 				create_country_leader = {
+	# 					name = "여운형"
+	# 					desc = ""
+	# 					picture = "Portrait_Lyuh_Woonhyung.dds"
+	# 					expire = "2000.1.1"
+	# 					ideology = socialism
+	# 					traits = {
 							
-						}
-					}
+	# 					}
+	# 				}
 
-					COALITION_add_com = yes
-					COALITION_add_autsoc = yes
-					COALITION_add_radsoc = yes
+	# 				COALITION_add_com = yes
+	# 				COALITION_add_autsoc = yes
+	# 				COALITION_add_radsoc = yes
 
-					COALITION_add_natlib = yes
-					COALITION_add_libcon = yes
+	# 				COALITION_add_natlib = yes
+	# 				COALITION_add_libcon = yes
 
-					delete_unit_template_and_units = {
-						division_template = "대한민국 보병"
-						disband = yes #will refund equipment and manpower
-					}
-					delete_unit_template_and_units = {
-						division_template = "대한민국 향토방위사단"
-						disband = yes #will refund equipment and manpower
-					}
-					delete_unit_template_and_units = {
-						division_template = "기계화 보병사단"
-						disband = yes #will refund equipment and manpower
-					}
-					delete_unit_template_and_units = {
-						division_template = "대한민국 해병대"
-						disband = yes #will refund equipment and manpower
-					}
+	# 				delete_unit_template_and_units = {
+	# 					division_template = "대한민국 보병"
+	# 					disband = yes #will refund equipment and manpower
+	# 				}
+	# 				delete_unit_template_and_units = {
+	# 					division_template = "대한민국 향토방위사단"
+	# 					disband = yes #will refund equipment and manpower
+	# 				}
+	# 				delete_unit_template_and_units = {
+	# 					division_template = "기계화 보병사단"
+	# 					disband = yes #will refund equipment and manpower
+	# 				}
+	# 				delete_unit_template_and_units = {
+	# 					division_template = "대한민국 해병대"
+	# 					disband = yes #will refund equipment and manpower
+	# 				}
 
-					division_template = {
-						name = "영남정부 시민군"
-						division_names_group = YKR_NOM_1
+	# 				division_template = {
+	# 					name = "영남정부 시민군"
+	# 					division_names_group = YKR_NOM_1
 					
-						regiments = {
-							infantry = { x = 0 y = 0 }
-							infantry = { x = 0 y = 1 }
-							infantry = { x = 1 y = 0 }
-							infantry = { x = 1 y = 1 }
-						}
+	# 					regiments = {
+	# 						infantry = { x = 0 y = 0 }
+	# 						infantry = { x = 0 y = 1 }
+	# 						infantry = { x = 1 y = 0 }
+	# 						infantry = { x = 1 y = 1 }
+	# 					}
 						
-						support = {
+	# 					support = {
 							
-						}
-					}
+	# 					}
+	# 				}
 
-					916 = {
-						create_unit = {
-							division = "division_template = \"영남정부 시민군\" start_experience_factor = 0.2 start_equipment_factor = 1 start_manpower_factor = 1" 
-							owner = YKR
-							allow_spawning_on_enemy_provs = no
-							count = 5
-						}
-					}
-					917 = {
-						create_unit = {
-							division = "division_template = \"영남정부 시민군\" start_experience_factor = 0.2 start_equipment_factor = 1 start_manpower_factor = 1" 
-							owner = YKR
-							allow_spawning_on_enemy_provs = no
-							count = 5
-						}
-					}
-				}
-				916 = {
-					set_demilitarized_zone = no
-				}
-				917 = {
-					set_demilitarized_zone = no
-				}
-			}
-			custom_effect_tooltip = KOR_Start_discussing_civil_army_issues_1_tt
-			country_event = {
-				id = KOR.86
-				days = 0
-			}
-			country_event = {
-				id = KOR.93
-				days = 5
-			}
-			YKR = {
-				country_event = {
-					id = KOR.94
-					days = 6
-				}
-				country_event = {
-					id = KOR.95
-					days = 8
-				}
-				country_event = {
-					id = KOR.96
-					days = 11
-				}
-			}
-		}
-		x = 2
-		y = 1
+	# 				916 = {
+	# 					create_unit = {
+	# 						division = "division_template = \"영남정부 시민군\" start_experience_factor = 0.2 start_equipment_factor = 1 start_manpower_factor = 1" 
+	# 						owner = YKR
+	# 						allow_spawning_on_enemy_provs = no
+	# 						count = 5
+	# 					}
+	# 				}
+	# 				917 = {
+	# 					create_unit = {
+	# 						division = "division_template = \"영남정부 시민군\" start_experience_factor = 0.2 start_equipment_factor = 1 start_manpower_factor = 1" 
+	# 						owner = YKR
+	# 						allow_spawning_on_enemy_provs = no
+	# 						count = 5
+	# 					}
+	# 				}
+	# 			}
+	# 			916 = {
+	# 				set_demilitarized_zone = no
+	# 			}
+	# 			917 = {
+	# 				set_demilitarized_zone = no
+	# 			}
+	# 		}
+	# 		custom_effect_tooltip = KOR_Start_discussing_civil_army_issues_1_tt
+	# 		country_event = {
+	# 			id = KOR.86
+	# 			days = 0
+	# 		}
+	# 		country_event = {
+	# 			id = KOR.93
+	# 			days = 5
+	# 		}
+	# 		YKR = {
+	# 			country_event = {
+	# 				id = KOR.94
+	# 				days = 6
+	# 			}
+	# 			country_event = {
+	# 				id = KOR.95
+	# 				days = 8
+	# 			}
+	# 			country_event = {
+	# 				id = KOR.96
+	# 				days = 11
+	# 			}
+	# 		}
+	# 	}
+	# 	x = 2
+	# 	y = 1
 
-	}
+	# }
 
 	#국군유신회 문제 해결
 	focus = {
@@ -296,64 +614,64 @@ focus_tree = {
 			remove_ideas = KOR_idea_Armed_Forces_Restoration_Society_problem
 			custom_effect_tooltip = Resolving_issue_Armed_Forces_Restoration_Society_tt_2
 		}
-		x = 0
+		x = -1
 		y = 1
 
 	}
 
-	#옛것은 태우고 새것을 바람에 새겨라
-	focus = {
-		id = KOR_back_to_back_dictatorship
-		icon = GFX_focus_cle
-		relative_position_id = KOR_Resolving_issue_Armed_Forces_Restoration_Society
-		cost = 3.00
+	# #옛것은 태우고 새것을 바람에 새겨라
+	# focus = {
+	# 	id = KOR_back_to_back_dictatorship
+	# 	icon = GFX_focus_cle
+	# 	relative_position_id = KOR_Resolving_issue_Armed_Forces_Restoration_Society
+	# 	cost = 3.00
 
-		prerequisite = {
-			focus = KOR_Resolving_issue_Armed_Forces_Restoration_Society
-		}
-		available = {
-			custom_trigger_tooltip = {
-				tooltip = KOR_back_to_back_dictatorship_trigger_tt
-				has_country_flag = agreement_rafs
-			}
-		}
+	# 	prerequisite = {
+	# 		focus = KOR_Resolving_issue_Armed_Forces_Restoration_Society
+	# 	}
+	# 	available = {
+	# 		custom_trigger_tooltip = {
+	# 			tooltip = KOR_back_to_back_dictatorship_trigger_tt
+	# 			has_country_flag = agreement_rafs
+	# 		}
+	# 	}
 
-		completion_reward = {
-			custom_effect_tooltip = historical_choice_tt
-			set_country_flag = KOR_back_to_back_dictatorship_flag
-			set_country_flag = KOR_Min_Chanho_Temporary_pre
-			set_cosmetic_tag = KOR_btbd
-			set_politics = {
-				ruling_party = auto_despotism
-				elections_allowed = no
-			}
-			add_popularity = {
-				ideology = auto_despotism
-				popularity = 0.2
-			}
-			country_event = {
-				id = KOR.97
-				days = 0
-			}
-			set_party_name = { ideology = neutrality long_name = KOR_neutrality_revolution_long_party name = KOR_neutrality_revolution_party }
-			set_party_name = { ideology = auto_despotism long_name = KOR_dictatorship_long_party name = KOR_dictatorship_party }
-			set_party_name = { ideology = fascism long_name = KOR_dictatorship_long_party name = KOR_dictatorship_party }
-			custom_effect_tooltip = KOR_back_to_back_dictatorship_tt
-		}
-		x = 0
-		y = 2
+	# 	completion_reward = {
+	# 		custom_effect_tooltip = historical_choice_tt
+	# 		set_country_flag = KOR_back_to_back_dictatorship_flag
+	# 		set_country_flag = KOR_Min_Chanho_Temporary_pre
+	# 		set_cosmetic_tag = KOR_btbd
+	# 		set_politics = {
+	# 			ruling_party = auto_despotism
+	# 			elections_allowed = no
+	# 		}
+	# 		add_popularity = {
+	# 			ideology = auto_despotism
+	# 			popularity = 0.2
+	# 		}
+	# 		country_event = {
+	# 			id = KOR.97
+	# 			days = 0
+	# 		}
+	# 		set_party_name = { ideology = neutrality long_name = KOR_neutrality_revolution_long_party name = KOR_neutrality_revolution_party }
+	# 		set_party_name = { ideology = auto_despotism long_name = KOR_dictatorship_long_party name = KOR_dictatorship_party }
+	# 		set_party_name = { ideology = fascism long_name = KOR_dictatorship_long_party name = KOR_dictatorship_party }
+	# 		custom_effect_tooltip = KOR_back_to_back_dictatorship_tt
+	# 	}
+	# 	x = 0
+	# 	y = 2
 
-	}
+	# }
 
 	#다 탄 재에 불을 붙이다
 	focus = {
 		id = KOR_catch_fire_again
 		icon = GFX_focus_kor_catch_fire_again
-		relative_position_id = KOR_back_to_back_dictatorship
+		relative_position_id = KOR_Resolving_issue_Armed_Forces_Restoration_Society
 		cost = 3.00
 
 		prerequisite = {
-			focus = KOR_back_to_back_dictatorship
+			focus = KOR_Resolving_issue_Armed_Forces_Restoration_Society
 		}
 
 		completion_reward = {
@@ -366,7 +684,25 @@ focus_tree = {
 			set_province_name = { id = 848 name = "덕원" }
 			set_province_name = { id = 10110 name = "무안" }
 		}
-		x = 0
+		x = -3
+		y = 1
+
+	}
+
+	#주션 공화국 인사 파견
+	focus = {
+		id = KOR_Republic_of_Juxion_Personnel_Dispatch
+		icon = GFX_focus_generic_self_management
+		relative_position_id = KOR_catch_fire_again
+		cost = 3.00
+
+		prerequisite = {
+			focus = KOR_catch_fire_again
+		}
+
+		completion_reward = {
+		}
+		x = -2
 		y = 1
 
 	}
@@ -393,15 +729,141 @@ focus_tree = {
 
 	}
 
-	#법치주의 수호
+	#복권
 	focus = {
-		id = KOR_protection_rule_law
-		icon = GFX_focus_kor_protection_rule_law
+		id = KOR_reinstatement
+		icon = GFX_focus_kor_reinstatement
+		relative_position_id = KOR_Republic_of_Juxion_Personnel_Dispatch
+		cost = 3.00
+
+		prerequisite = {
+			focus = KOR_Republic_of_Juxion_Personnel_Dispatch
+		}
+		prerequisite = {
+			focus = KOR_securing_political_security
+		}
+
+		completion_reward = {
+			clr_country_flag = KOR_Acting_President_Lee_Junsik
+			set_country_flag = KOR_reinstatement
+			custom_effect_tooltip = KOR_reinstatement_tt_effect
+			custom_effect_tooltip = KOR_reinstatement_tt
+		}
+		x = 1
+		y = 1
+
+	}
+
+	#계엄 하향안 공포
+	focus = {
+		id = KOR_Announcing_martial_law_downgrade
+		icon = GFX_focus_generic_concessions
+		relative_position_id = KOR_Resolving_issue_Armed_Forces_Restoration_Society
+		cost = 3.00
+
+		prerequisite = {
+			focus = KOR_Resolving_issue_Armed_Forces_Restoration_Society
+		}
+
+		completion_reward = {
+		}
+		x = 2
+		y = 1
+
+	}
+
+	#언론기관 정비 사업
+	focus = {
+		id = KOR_Media_organization_maintenance_business
+		icon = GFX_focus_generic_energy
+		relative_position_id = KOR_Announcing_martial_law_downgrade
+		cost = 3.00
+
+		prerequisite = {
+			focus = KOR_Announcing_martial_law_downgrade
+		}
+
+		completion_reward = {
+		}
+		x = -2
+		y = 1
+
+	}
+
+	#혁명내각 조직
+	focus = {
+		id = KOR_Revolutionary_Cabinet_Organization
+		icon = GFX_focus_generic_court
+		relative_position_id = KOR_Announcing_martial_law_downgrade
+		cost = 3.00
+
+		prerequisite = {
+			focus = KOR_Announcing_martial_law_downgrade
+		}
+
+		completion_reward = {
+		}
+		x = 0
+		y = 1
+
+	}
+
+	#계륵은 버려라
+	focus = {
+		id = KOR_Throw_away_eggs
+		icon = GFX_focus_kor_sa_so_chwi_de
+		relative_position_id = KOR_Announcing_martial_law_downgrade
+		cost = 3.00
+
+		prerequisite = {
+			focus = KOR_Announcing_martial_law_downgrade
+		}
+
+		completion_reward = {
+			country_event = {
+				id = KOR.98
+				days = 0
+			}
+		}
+		x = 2
+		y = 1
+
+	}
+
+	#한성국제방송국 개국
+	focus = {
+		id = KOR_opening_of_Hanseong_International_Broadcasting_Station
+		icon = GFX_focus_SWE_radiotjanst
 		relative_position_id = KOR_securing_political_security
 		cost = 3.00
 
 		prerequisite = {
 			focus = KOR_securing_political_security
+			focus = KOR_Media_organization_maintenance_business
+		}
+
+		completion_reward = {
+		}
+		x = 2
+		y = 1
+
+	}
+
+	#법치주의 수호
+	focus = {
+		id = KOR_protection_rule_law
+		icon = GFX_focus_kor_protection_rule_law
+		relative_position_id = KOR_Revolutionary_Cabinet_Organization
+		cost = 3.00
+
+		prerequisite = {
+			focus = KOR_Media_organization_maintenance_business
+		}
+		prerequisite = {
+			focus = KOR_Revolutionary_Cabinet_Organization
+		}
+		prerequisite = {
+			focus = KOR_Throw_away_eggs
 		}
 
 		completion_reward = {
@@ -528,55 +990,268 @@ focus_tree = {
 			}
 			custom_effect_tooltip = KOR_protection_rule_law_1_tt
 		}
-		x = -1
+		x = 0
 		y = 1
 
 	}
 
-	#계륵은 버려라
+	#반공청년단체 지원
 	focus = {
-		id = KOR_Throw_away_eggs
-		icon = GFX_focus_kor_sa_so_chwi_de
-		relative_position_id = KOR_securing_political_security
-		cost = 3.00
+		id = KOR_Supporting_anti_communist_youth_organizations
+		icon = GFX_focus_generic_fascist_troops
+		relative_position_id = KOR_Throw_away_eggs
+		cost = 5.00
 
-		prerequisite = {
-			focus = KOR_securing_political_security
-		}
-
-		completion_reward = {
-			country_event = {
-				id = KOR.98
-				days = 0
-			}
-		}
-		x = 1
-		y = 1
-
-	}
-
-	#복권
-	focus = {
-		id = KOR_reinstatement
-		icon = GFX_focus_kor_reinstatement
-		relative_position_id = KOR_protection_rule_law
-		cost = 3.00
-
-		prerequisite = {
-			focus = KOR_protection_rule_law
-		}
 		prerequisite = {
 			focus = KOR_Throw_away_eggs
 		}
+		prerequisite = {
+			focus = KOR_Anti_Communist_Charter
+		}
 
 		completion_reward = {
-			clr_country_flag = KOR_Acting_President_Lee_Junsik
-			set_country_flag = KOR_reinstatement
-			custom_effect_tooltip = KOR_reinstatement_tt_effect
-			custom_effect_tooltip = KOR_reinstatement_tt
+
 		}
 		x = 1
 		y = 1
+
+	}
+
+	#치안 유지 지원
+	focus = {
+		id = KOR_support_for_policing
+		icon = GFX_focus_secret_rearmament
+		relative_position_id = KOR_signing_an_anti_communist_agreement
+		cost = 5.00
+
+		prerequisite = {
+			focus = KOR_signing_an_anti_communist_agreement
+			focus = KOR_dispatch_military_advisory_group
+		}
+
+		completion_reward = {
+
+		}
+		x = 1
+		y = 1
+
+	}
+
+	#구식화기 공여
+	focus = {
+		id = KOR_old_fashioned_weapon_offering
+		icon = GFX_focus_guns
+		relative_position_id = KOR_dispatch_military_advisory_group
+		cost = 5.00
+
+		prerequisite = {
+			focus = KOR_dispatch_military_advisory_group
+		}
+
+		completion_reward = {
+
+		}
+		x = 0
+		y = 1
+
+	}
+
+	#연변 조병창 설립
+	focus = {
+		id = KOR_Establishment_of_Yanbian_Cho_Byung_chang
+		icon = GFX_goal_generic_small_arms
+		relative_position_id = KOR_dispatch_military_advisory_group
+		cost = 5.00
+
+		prerequisite = {
+			focus = KOR_dispatch_military_advisory_group
+			focus = KOR_Authorized_by_the_Republic_of_Jushion
+		}
+
+		completion_reward = {
+
+		}
+		x = 2
+		y = 1
+
+	}
+
+	#'농업' 공장 설립 지원
+	focus = {
+		id = KOR_Supporting_the_establishment_of_agricultural_factories
+		icon = GFX_focus_generic_reorient_production
+		relative_position_id = KOR_dispatch_military_advisory_group
+		cost = 5.00
+
+		prerequisite = {
+			focus = KOR_dispatch_military_advisory_group
+			focus = KOR_Authorized_by_the_Republic_of_Jushion
+		}
+
+		completion_reward = {
+
+		}
+		x = 4
+		y = 1
+
+	}
+
+	#철도 재연결
+	focus = {
+		id = KOR_Rail_reconnection_to_Jushion
+		icon = GFX_focus_kankyosen
+		relative_position_id = KOR_Authorized_by_the_Republic_of_Jushion
+		cost = 5.00
+
+		prerequisite = {
+			focus = KOR_Authorized_by_the_Republic_of_Jushion
+		}
+
+		completion_reward = {
+
+		}
+		x = -2
+		y = 1
+
+	}
+
+	#국채 매입책 검토
+	focus = {
+		id = KOR_Consideration_of_Government_Bond_Purchase_Measures
+		icon = GFX_focus_draft
+		relative_position_id = KOR_Authorized_by_the_Republic_of_Jushion
+		cost = 5.00
+
+		prerequisite = {
+			focus = KOR_Authorized_by_the_Republic_of_Jushion
+		}
+
+		completion_reward = {
+
+		}
+		x = 2
+		y = 1
+
+	}
+
+	#혁명정부조직법 제정
+	focus = {
+		id = KOR_Recall_of_the_Central_Committee
+		icon = GFX_focus_kor_enactment_Revolutionary_Government_Organization_Act
+		relative_position_id = KOR_reinstatement
+		cost = 3.00
+
+		prerequisite = {
+			focus = KOR_reinstatement
+		}
+		prerequisite = {
+			focus = KOR_protection_rule_law
+		}
+
+		completion_reward = {
+			# swap_ideas = {
+			# 	remove_idea = KOR_idea_lost_way_democracy_4
+			# 	add_idea = KOR_idea_lost_way_democracy_5
+			# }
+		}
+		x = 4
+		y = 1
+
+	}
+
+	#중화포 수출
+	focus = {
+		id = KOR_medium_sized_artillery_exports
+		icon = GFX_focus_military_equipment
+		relative_position_id = KOR_old_fashioned_weapon_offering
+		cost = 5.00
+
+		prerequisite = {
+			focus = KOR_old_fashioned_weapon_offering
+		}
+
+		completion_reward = {
+
+		}
+		x = -2
+		y = 1
+
+	}
+
+	#중화학 기술 수출
+	focus = {
+		id = KOR_export_of_heavy_and_chemical_technology
+		icon = GFX_goal_generic_scientific_exchange
+		relative_position_id = KOR_old_fashioned_weapon_offering
+		cost = 5.00
+
+		prerequisite = {
+			focus = KOR_old_fashioned_weapon_offering
+		}
+
+		completion_reward = {
+
+		}
+		x = 0
+		y = 1
+
+	}
+
+	#곡물세 인하 협상
+	focus = {
+		id = KOR_negotiations_for_reduction_in_the_grain_tax
+		icon = GFX_focus_agrarian_reform
+		relative_position_id = KOR_Establishment_of_Yanbian_Cho_Byung_chang
+		cost = 5.00
+
+		prerequisite = {
+			focus = KOR_Establishment_of_Yanbian_Cho_Byung_chang
+			focus = KOR_Supporting_the_establishment_of_agricultural_factories
+		}
+
+		completion_reward = {
+
+		}
+		x = 1
+		y = 1
+
+	}
+
+	#연청선 부설
+	focus = {
+		id = KOR_Yeoncheong_Line_construction
+		icon = GFX_focus_railroad
+		relative_position_id = KOR_Rail_reconnection_to_Jushion
+		cost = 5.00
+
+		prerequisite = {
+			focus = KOR_Rail_reconnection_to_Jushion
+		}
+
+		completion_reward = {
+
+		}
+		x = 0
+		y = 1
+
+	}
+
+	#헌법 제정 지원
+	focus = {
+		id = KOR_constitutional_support
+		icon = GFX_focus_generic_treaty
+		relative_position_id = KOR_Authorized_by_the_Republic_of_Jushion
+		cost = 5.00
+
+		prerequisite = {
+			focus = KOR_Authorized_by_the_Republic_of_Jushion
+		}
+
+		completion_reward = {
+
+		}
+		x = 0
+		y = 2
 
 	}
 
@@ -584,12 +1259,8 @@ focus_tree = {
 	focus = {
 		id = KOR_return_of_empire
 		icon = GFX_focus_kor_return_of_empire_2
-		relative_position_id = KOR_reinstatement
 		cost = 3.00
 
-		prerequisite = {
-			focus = KOR_reinstatement
-		}
 
 		completion_reward = {
 			swap_ideas = {
@@ -599,7 +1270,7 @@ focus_tree = {
 			custom_effect_tooltip = KOR_return_of_empire_tt
 		}
 		x = 0
-		y = 1
+		y = 20
 
 	}
 
@@ -702,28 +1373,6 @@ focus_tree = {
 
 	}
 
-	#혁명정부조직법 제정
-	focus = {
-		id = KOR_Recall_of_the_Central_Committee
-		icon = GFX_focus_kor_enactment_Revolutionary_Government_Organization_Act
-		relative_position_id = KOR_legislative_control
-		cost = 3.00
-
-		prerequisite = {
-			focus = KOR_legislative_control
-		}
-
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = KOR_idea_lost_way_democracy_4
-				add_idea = KOR_idea_lost_way_democracy_5
-			}
-		}
-		x = -2
-		y = 1
-
-	}
-
 	#비상계엄 연장
 	focus = {
 		id = KOR_Conservative_check
@@ -750,12 +1399,9 @@ focus_tree = {
 	focus = {
 		id = KOR_anti_communist_charter
 		icon = GFX_focus_kor_Act_Temporary_Measures_Local_Autonomy
-		relative_position_id = KOR_Recall_of_the_Central_Committee
+		relative_position_id = KOR_Conservative_check
 		cost = 3.00
-
-		prerequisite = {
-			focus = KOR_Recall_of_the_Central_Committee
-		}
+		
 		prerequisite = {
 			focus = KOR_Conservative_check
 		}
@@ -2164,7 +2810,7 @@ focus_tree = {
 	#새벽의 여명
 	focus = {
 		id = KOR_dawn_of_early_light
-		icon = GFX_focus_kor_
+		icon = GFX_focus_kor_dawn_of_early_light
 		relative_position_id = KOR_Gwangmyeong_the_visit
 		cost = 3.00
 

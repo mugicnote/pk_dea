@@ -154,18 +154,22 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/Nagoya_terrorist_occurred_picture.dds"
 	}
 	###서재필 사망 까지의 이벤트
+	#신년과 혹한, 신념의 경계선상
 	spriteType = {
 		name = "GFX_Chang_Taek_sang_event_picture"
 		texturefile = "gfx/event_pictures/KOR/Chang_Taek_sang_event_picture.dds"
 	}
+	#회의
 	spriteType = {
 		name = "GFX_Kim_Kyu_sik_event_picture"
 		texturefile = "gfx/event_pictures/KOR/Kim_Kyu_sik_event_picture.dds"
 	}
+	#목메이도록, 뜨거운 조국과 너의 최초의 악수.
 	spriteType = {
 		name = "GFX_intramural_demonstration_event_picture"
 		texturefile = "gfx/event_pictures/KOR/intramural_demonstration_event_picture.dds"
 	}
+	#서재필 대통령 담화문 발표
 	spriteType = {
 		name = "GFX_Seo_Jae_pils_speech_1_event_picture"
 		texturefile = "gfx/event_pictures/KOR/Seo_Jae_pils_speech_1_event_picture.dds"
@@ -177,6 +181,21 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_Seo_Jae_pils_speech_3_event_picture"
 		texturefile = "gfx/event_pictures/KOR/Seo_Jae_pils_speech_3_event_picture.dds"
+	}
+	#수화기 너머는 아무것도 들을 수 없는, 저 너머의 세계.
+	spriteType = {
+		name = "GFX_Baek_In_jae_event_picture"
+		texturefile = "gfx/event_pictures/KOR/Baek_In_jae_event_picture.dds"
+	}
+	#햇볕을 가리우는 구름의 의미를 알아가는 것.
+	spriteType = {
+		name = "GFX_news_paper_1_event_picture"
+		texturefile = "gfx/event_pictures/KOR/news_paper_1_event_picture.dds"
+	}
+	#빛과 어둠, 공명과 흑백.
+	spriteType = {
+		name = "GFX_Kim_Ik_jin_event_picture"
+		texturefile = "gfx/event_pictures/KOR/Kim_Ik_jin_event_picture.dds"
 	}
 	## 뉴스 이벤트
 	spriteType = {

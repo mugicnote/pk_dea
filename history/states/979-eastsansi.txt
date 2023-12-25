@@ -1,7 +1,7 @@
 
 state={
 	id=979
-	name="STATE_953"
+	name="STATE_eastsansi"
 	resources={
 		steel=6.000
 	}
@@ -19,7 +19,7 @@ state={
 	provinces={
 		1027 1203 1438 1519 4174 4469 4538 12078 12344 
 	}
-	manpower=5480000
+	manpower=3867000
 	buildings_max_level_factor=1.000
 	state_category=rural
 	local_supplies=0.000

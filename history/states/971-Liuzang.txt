@@ -1,7 +1,7 @@
 
 state={
 	id=971
-	name="STATE_945"
+	name="STATE_Liuzang"
 
 	history={
 		owner = GXC
@@ -13,9 +13,9 @@ state={
 	}
 
 	provinces={
-		1023 4134 7095 7650 10039 10404 10431 12407 12436 
+		1023 4152 7128 7168 7210 10404 12407 
 	}
-	manpower=0
+	manpower=5166900
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

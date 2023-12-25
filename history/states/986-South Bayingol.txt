@@ -1,7 +1,7 @@
 
 state={
 	id=986
-	name="STATE_960"
+	name="STATE_South_Bayingol"
 
 	history={
 		owner = XSM
@@ -12,7 +12,7 @@ state={
 	provinces={
 		1882 10817 12815 
 	}
-	manpower=0
+	manpower=255851
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

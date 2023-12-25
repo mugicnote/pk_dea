@@ -1,7 +1,7 @@
 
 state={
 	id=987
-	name="STATE_961"
+	name="STATE_Khotan"
 
 	history={
 		owner = NXM
@@ -12,7 +12,7 @@ state={
 	provinces={
 		556 3742 6638 
 	}
-	manpower=0
+	manpower=684857
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

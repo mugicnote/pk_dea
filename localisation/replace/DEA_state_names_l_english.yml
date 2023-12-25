@@ -1,139 +1,211 @@
 ﻿l_english:
  STATE_525:0 "경기도"
  STATE_527:0 "강원도"
- STATE_835:0 "함경북도"
- STATE_836:0 "함경남도"
- STATE_837:0 "평안북도"
- STATE_838:0 "평안남도"
- STATE_839:0 "황해도"
- STATE_840:0 "충청북도"
- STATE_841:0 "충청남도"
- STATE_842:0 "경상북도"
- STATE_843:0 "경상남도"
- STATE_844:0 "전라북도"
- STATE_845:0 "전라남도"
- STATE_846:0 "제주도"
- STATE_847:0 "울릉도"
+ STATE_North_Hamgyong:0 "함경북도"
+ STATE_South_Hamgyong:0 "함경남도"
+ STATE_North_Pyongan:0 "평안북도"
+ STATE_South_Pyongan:0 "평안남도"
+ STATE_Hwanghae:0 "황해도"
+ STATE_North_Chungcheong:0 "충청북도"
+ STATE_South_Chungcheong:0 "충청남도"
+ STATE_North_Gyeongsang:0 "경상북도"
+ STATE_South_Gyeongsang:0 "경상남도"
+ STATE_Notrh_Jeolla:0 "전라북도"
+ STATE_South_Jeolla:0 "전라남도"
+ STATE_Jeju:0 "제주도"
+ STATE_Ulleungdo:0 "울릉도"
 
-STATE_287:0 "하미"
-STATE_613:0 "난징"
-STATE_848:0 "상하이"
-STATE_849:0 "지난"
-STATE_850:0 "린이"
+
+#남경-상해 부근
+STATE_North_Nanjing:0 "북 난징"
+STATE_South_Nanjing:0 "남 난징"
+STATE_613:0 "진링"
+STATE_Shanghai:0 "상하이"
+
+#산둥성
+STATE_Jinan:0 "지난"
+STATE_Linyi:0 "린이"
 STATE_597:0 "자오둥"
-STATE_823:0 "수하이"
+STATE_743:0 "칭다오"
+STATE_Weihai:0 "웨이하이"
+
+#장쑤성
+STATE_Suhai:0 "쉬하이"
 STATE_598:0 "화이양"
-STATE_852:0 "화이시"
+
+#안후이성
+STATE_Huaixi:0 "화이쓰"
 STATE_606:0 "안칭"
 STATE_749:0 "우후"
-STATE_853:0 "첸탕"
-STATE_854:0 "닝보"
-STATE_855:0 "콰이지"
-STATE_856:0 "진화"
-STATE_857:0 "원저우"
+
+#저장성
+STATE_Chentang:0 "첸탕"
+STATE_Ningbo:0 "닝보"
+STATE_Kwaizi:0 "콰이지"
+STATE_Jinhua:0 "진화"
+STATE_wonzhou:0 "원저우"
 STATE_596:0 "리수이"
-STATE_858:0 "우한"
-STATE_859:0 "순양"
-STATE_860:0 "위장"
-STATE_861:0 "푸저우"
-STATE_862:0 "민허우"
-STATE_863:0 "젠안"
-STATE_864:0 "샤먼"
-STATE_595:0 "차오쉰"
 
-STATE_865:0 "쓰시마 섬(대마도)"
-STATE_866:0 "가고시마"
-STATE_867:0 "나가사키"
-STATE_868:0 "도쿄"
-STATE_869:0 "요코하마"
+#푸젠성
+STATE_Fuzhou:0 "푸저우"
+STATE_Minheu:0 "민허우"
+STATE_Jianan:0 "젠안"
+STATE_Xiamen:0 "샤먼"
+STATE_595:0 "팅장"
 
-STATE_870:0 "산터우"
-STATE_871:0 "차오쉰"
-STATE_872:0 "사오관"
-STATE_873:0 "친롄"
-STATE_874:0 "전난"
-STATE_593:0 "웨하이"
-STATE_591:0 "충야"
+#장시성
+STATE_Sunyang:0 "쉰양"
+STATE_Weizhang:0 "위장"
 STATE_600:0 "간난"
-STATE_602:0 "샹장"
-STATE_750:0 "첸유안"
+
+#광동성
+STATE_Shantou:0 "산터우"
+STATE_ChaoXun:0 "차오쉰"
+STATE_Shaoguan:0 "사오관"
+STATE_593:0 "웨하이"
+STATE_591:0 "하이난"
+STATE_592:0 "광저우"
+
+#광시성
+STATE_JeonNan:0 "전난"
 STATE_599:0 "톈난"
-STATE_875:0 "구이린"
-STATE_876:0 "류장"
-STATE_877:0 "전위안"
-STATE_878:0 "동박"
-STATE_879:0 "옌바이"
-STATE_880:0 "첸중"
-STATE_881:0 "구이시"
-STATE_603:0 "쿤밍"
-STATE_325:0 "징흥"
-STATE_748:0 "충칭"
-STATE_605:0 "다셴"
-STATE_753:0 "아바"
-STATE_751:0 "청두"
-STATE_752:0 "시캉"
-STATE_744:0 "관중"
+STATE_Liuzang:0 "구이린"
+STATE_594:0 "난닝"
+STATE_Liujiang:0 "류장"
+
+#후난성
+STATE_750:0 "천위안"
+STATE_ChinLian:0 "샹장"
+
+#후베이성
+STATE_Wuhan:0 "우한"
 STATE_620:0 "샹양"
-STATE_882:0 "스허"
+
+#귀주성
+STATE_602:0 "전위안"
+STATE_Guishi:0 "구이시"
+STATE_ChenZhong:0 "첸중"
+
+#운남성
+STATE_603:0 "쿤밍"
+STATE_325:0 "원산시"
+STATE_747:0 "다리"
+
+#사천성
+STATE_748:0 "충칭"
+STATE_605:0 "청두"
+STATE_751:0 "야안"
+STATE_Jeonyuan:0 "량산"
+
+#시캉성
+STATE_752:0 "시캉"
+STATE_753:0 "간쯔"
+
+#산시성 (좌)
+STATE_744:0 "관중"
+STATE_622:0 "시안"
+STATE_Ili:0 "위린"
+STATE_Altay:0 "칭양"
+
+#허난성
+STATE_Luyang:0 "루양"
+STATE_Heoluo:0 "허뤄"
 STATE_607:0 "카이펑"
-STATE_883:0 "루양"
-STATE_884:0 "허뤄"
-STATE_885:0 "허베이"
-STATE_601:0 "참도"
-STATE_757:0 "티베트"
-STATE_758:0 "창탕"
-STATE_322:0 "보메"
-STATE_604:0 "위수"
-STATE_755:0 "칭하이"
-STATE_754:0 "시닝"
-STATE_283:0 "란저우"
-STATE_756:0 "하서주랑"
-STATE_616:0 "닝샤"
-STATE_622:0 "위린"
-STATE_621:0 "우란차부"
-STATE_615:0 "서부산시"
-STATE_886:0 "동부산시"
-STATE_887:0 "타이위안"
-STATE_888:0 "다밍"
-STATE_889:0 "캉저우"
-STATE_890:0 "톈진"
+STATE_Hebei:0 "허비"
+
+#산시성 (우)
+STATE_Changchi:0 "원청"
+STATE_615:0 "뤼량"
+STATE_eastsansi:0 "타이위안"
+STATE_Taiyuan:0 "다퉁"
+
+#직례성
+STATE_Daming:0 "다밍"
 STATE_614:0 "바오딩"
+STATE_Kangzhou:0 "창저우"
+STATE_608:0 "징자오"
+STATE_Tianjin:0 "톈진"
+STATE_609:0 "탕산"
+
+#차하르성
 STATE_611:0 "남차하르"
 STATE_612:0 "서차하르"
-STATE_608:0 "징자오"
-STATE_893:0 "바인궈렁"
-STATE_894:0 "허톈"
-STATE_895:0 "타클라마칸"
-STATE_896:0 "아러타이"
+STATE_East_chahar:0 "동차하르"
+
+#쑤이위안성
+STATE_621:0 "쑤이위안"
+STATE_746:0 "오르도스"
+
+#시캉성 티베트 지역
+STATE_601:0 "참도"
+STATE_322:0 "보메"
+
+#티베트
+STATE_757:0 "티베트"
+STATE_758:0 "창탕"
+
+#칭하이성
+STATE_755:0 "칭하이"
+STATE_604:0 "위수"
+STATE_South_Bayingol:0 "스취"
+STATE_Tihwa:0 "거얼무"
+STATE_754:0 "시닝"
+
+#간쑤성
+STATE_283:0 "란저우"
+STATE_756:0 "하서주랑"
+STATE_287:0 "하미"
+
+#닝샤성
+STATE_616:0 "닝샤"
+STATE_Khotan:0 "구위안"
+STATE_Guilin:0 "핑량"
+
+#신강성
+STATE_Taklamakan:0 "호탄"
+STATE_759:0 "쿤룬산" #정보 부족
+STATE_619:0 "카슈가르" #악사이친 분리 할 것 (카라 참고)
 STATE_897:0 "우루무치"
-STATE_898:0 "이리"
-STATE_899:0 "창치"
-STATE_900:0 "동차하르"
+STATE_760:0 "쿠물"
+STATE_618:0 "중가리아"
+#STATE_895:0 "타클라마칸" 호탄과 분리 할 것 (카라 참고)
 
-STATE_901:0 "치앙 라이"
-STATE_902:0 "까오방"
-STATE_903:0 "껌파"
-STATE_904:0 "통킹"
+# STATE_896:0 "아러타이"
+# STATE_898:0 "이리"
+# STATE_899:0 "창치"
 
-STATE_671:0 "베트남 중부"
+# STATE_901:0 "치앙 라이"
+# STATE_902:0 "까오방"
+# STATE_903:0 "껌파"
+# STATE_904:0 "통킹"
+
+# STATE_671:0 "베트남 중부"
 
 #만주 - 수정 완
 STATE_328:0 "하얼빈"
-STATE_609:0 "탕산"
+STATE_Chifeng:0 "북러허"
 STATE_610:0 "러허"
 STATE_714:0 "룽장"
 STATE_715:0 "랴오베이"
 STATE_716:0 "펑톈"
 STATE_717:0 "허장"
 STATE_761:0 "하이만"
-STATE_958:0 "안둥"
-STATE_959:0 "쑹장"
-STATE_968:0 "길장"
-STATE_969:0 "진저우"
-STATE_970:0 "북러허"
-STATE_971:0 "헤이허"
-STATE_972:0 "쑤이란"
-STATE_973:0 "싱안"
+STATE_Andong:0 "안둥"
+STATE_baekdu:0 "쑹장"
+STATE_South_Zilin:0 "길장"
+STATE_South_Liaodong:0 "진저우"
+STATE_Heihe:0 "헤이허"
+STATE_Suihua:0 "쑤이란"
+STATE_Qiqihar:0 "싱안"
+STATE_Kando:0 "간도"
 
 #블라디 - 수정 완
-STATE_980:0 "블라디보스토크"
+STATE_Freecity_Vladivostok:0 "블라디보스토크"
+
+STATE_Tsushima:0 "쓰시마 섬(대마도)"
+
+#나중에 다시 나눠라
+# STATE_866:0 "가고시마"
+# STATE_867:0 "나가사키"
+# STATE_868:0 "도쿄"
+# STATE_869:0 "요코하마"

@@ -1,7 +1,7 @@
 
 state={
 	id=989
-	name="STATE_963"
+	name="STATE_Altay"
 
 	history={
 		owner = SHX
@@ -12,7 +12,7 @@ state={
 	provinces={
 		517 1647 4939 10880 
 	}
-	manpower=0
+	manpower=1236600
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

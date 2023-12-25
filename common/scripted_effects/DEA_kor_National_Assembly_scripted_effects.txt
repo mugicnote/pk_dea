@@ -1,0 +1,1906 @@
+#시스템
+KOR_show_effects_for_ordinance = {
+	set_temp_variable = { KOR_legco_holding_value = KOR_legco_current_ordinance_id}
+	set_temp_variable = { KOR_temp_legco_id = KOR_legco_holding_value }
+	custom_effect_tooltip = KOR_show_effects_for_ordinance_tt
+	effect_tooltip = {
+		KOR_ordinances_effects = yes
+	}
+}
+
+#입법
+legco_introduce_ordinance = {
+	set_variable = { KOR_legco_current_ordinance_id = KOR_temp_legco_id }
+	log = "Guangdong ID [?GNG_temp_legco_id] Bill Initialize"
+	custom_effect_tooltip = KOR_legco_bill_introduce_tooltip
+	KOR_legco_votes_initialize = yes
+	set_country_flag = legco_introduce_ordinance_ready
+	National_Assembly_Decisions_reload_effects = yes
+}
+
+National_Assembly_Decisions_reload_effects = {
+	set_variable = {
+		KOR_legco_first_seats_Decision_var = KOR_legco_first_seats
+	}
+	subtract_from_variable = {
+		var = KOR_legco_first_seats_Decision_var
+		value = KOR_first_support
+	}
+
+	set_variable = {
+		KOR_legco_second_seats_Decision_var = KOR_legco_second_seats
+	}
+	subtract_from_variable = {
+		var = KOR_legco_second_seats_Decision_var
+		value = KOR_second_support
+	}
+
+	set_variable = {
+		KOR_legco_third_seats_Decision_var = KOR_legco_third_seats
+	}
+	subtract_from_variable = {
+		var = KOR_legco_third_seats_Decision_var
+		value = KOR_third_support
+	}
+
+	set_variable = {
+		KOR_legco_forth_seats_Decision_var = KOR_legco_forth_seats
+	}
+	subtract_from_variable = {
+		var = KOR_legco_forth_seats_Decision_var
+		value = KOR_forth_support
+	}
+
+	set_variable = {
+		KOR_legco_fifth_seats_Decision_var = KOR_legco_fifth_seats
+	}
+	subtract_from_variable = {
+		var = KOR_legco_fifth_seats_Decision_var
+		value = KOR_fifth_support
+	}
+
+	set_variable = {
+		KOR_legco_sixth_seats_Decision_var = KOR_legco_sixth_seats
+	}
+	subtract_from_variable = {
+		var = KOR_legco_sixth_seats_Decision_var
+		value = KOR_sixth_support
+	}
+
+	set_variable = {
+		KOR_legco_seventh_seats_Decision_var = KOR_legco_seventh_seats
+	}
+	subtract_from_variable = {
+		var = KOR_legco_seventh_seats_Decision_var
+		value = KOR_seventh_support
+	}
+
+	set_variable = {
+		KOR_legco_eighth_seats_Decision_var = KOR_legco_eighth_seats
+	}
+	subtract_from_variable = {
+		var = KOR_legco_eighth_seats_Decision_var
+		value = KOR_eighth_support
+	}
+
+	set_variable = {
+		KOR_legco_nineth_seats_Decision_var = KOR_legco_nineth_seats
+	}
+	subtract_from_variable = {
+		var = KOR_legco_nineth_seats_Decision_var
+		value = KOR_nineth_support
+	}
+
+	set_variable = {
+		KOR_legco_tenth_seats_Decision_var = KOR_legco_tenth_seats
+	}
+	subtract_from_variable = {
+		var = KOR_legco_tenth_seats_Decision_var
+		value = KOR_tenth_support
+	}
+
+
+	set_variable = {
+		KOR_legco_eleventh_seats_Decision_var = KOR_legco_eleventh_seats
+	}
+	subtract_from_variable = {
+		var = KOR_legco_eleventh_seats_Decision_var
+		value = KOR_eleventh_support
+	}
+}
+
+KOR_legco_votes_initialize = {
+	clamp_temp_variable = { #민주국민당
+		var = KOR_legco_first_temp_support
+		min = 0
+		max = 1
+	}
+	clamp_temp_variable = { #대한촉성회
+		var = KOR_legco_second_temp_support
+		min = 0
+		max = 1
+	}
+	clamp_temp_variable = { #사회노동당
+		var = KOR_legco_third_temp_support
+		min = 0
+		max = 1
+	}
+	clamp_temp_variable = { #한국국민당
+		var = KOR_legco_forth_temp_support
+		min = 0
+		max = 1
+	}
+	clamp_temp_variable = { #대한공산당
+		var = KOR_legco_fifth_temp_support
+		min = 0
+		max = 1
+	}
+	clamp_temp_variable = { #한국민주당
+		var = KOR_legco_sixth_temp_support
+		min = 0
+		max = 1
+	}
+	clamp_temp_variable = { #대한국민당
+		var = KOR_legco_seventh_temp_support
+		min = 0
+		max = 1
+	}
+	clamp_temp_variable = { #민주당
+		var = KOR_legco_eighth_temp_support
+		min = 0
+		max = 1
+	}
+	clamp_temp_variable = { #인민공화당
+		var = KOR_legco_nineth_temp_support
+		min = 0
+		max = 1
+	}
+	clamp_temp_variable = { #대한신민당
+		var = KOR_legco_tenth_temp_support
+		min = 0
+		max = 1
+	}
+
+	clamp_temp_variable = {
+		var = KOR_legco_eleventh_temp_support
+		min = 0
+		max = 1
+	}
+	
+	
+	clamp_variable = { #민주국민당
+		var = KOR_legco_first_temp_support
+		min = 0
+		max = 1
+	}
+	clamp_variable = { #대한촉성회
+		var = KOR_legco_second_temp_support
+		min = 0
+		max = 1
+	}
+	clamp_variable = { #사회노동당
+		var = KOR_legco_third_temp_support
+		min = 0
+		max = 1
+	}
+	clamp_variable = { #한국국민당
+		var = KOR_legco_forth_temp_support
+		min = 0
+		max = 1
+	}
+	clamp_variable = { #대한공산당
+		var = KOR_legco_fifth_temp_support
+		min = 0
+		max = 1
+	}
+	clamp_variable = { #한국민주당
+		var = KOR_legco_sixth_temp_support
+		min = 0
+		max = 1
+	}
+	clamp_variable = { #대한국민당
+		var = KOR_legco_seventh_temp_support
+		min = 0
+		max = 1
+	}
+	clamp_variable = { #민주당
+		var = KOR_legco_eighth_temp_support
+		min = 0
+		max = 1
+	}
+	clamp_variable = { #인민공화당
+		var = KOR_legco_nineth_temp_support
+		min = 0
+		max = 1
+	}
+	clamp_variable = { #대한신민당
+		var = KOR_legco_tenth_temp_support
+		min = 0
+		max = 1
+	}
+
+	clamp_variable = {
+		var = KOR_legco_eleventh_temp_support
+		min = 0
+		max = 1
+	}
+
+
+	set_temp_variable = { KOR_first_support = KOR_legco_first_seats }
+	multiply_temp_variable = { KOR_first_support = KOR_legco_first_temp_support }
+	set_variable = { KOR_first_support = KOR_legco_first_seats }
+	multiply_variable = { KOR_first_support = KOR_legco_first_temp_support }
+
+	set_temp_variable = { KOR_second_support = KOR_legco_second_seats }
+	multiply_temp_variable = { KOR_second_support = KOR_legco_second_temp_support }
+	set_variable = { KOR_second_support = KOR_legco_second_seats }
+	multiply_variable = { KOR_second_support = KOR_legco_second_temp_support }
+
+	set_temp_variable = { KOR_third_support = KOR_legco_third_seats }
+	multiply_temp_variable = { KOR_third_support = KOR_legco_third_temp_support }
+	set_variable = { KOR_third_support = KOR_legco_third_seats }
+	multiply_variable = { KOR_third_support = KOR_legco_third_temp_support }
+
+	set_temp_variable = { KOR_forth_support = KOR_legco_forth_seats }
+	multiply_temp_variable = { KOR_forth_support = KOR_legco_forth_temp_support }
+	set_variable = { KOR_forth_support = KOR_legco_forth_seats }
+	multiply_variable = { KOR_forth_support = KOR_legco_forth_temp_support }
+
+	set_temp_variable = { KOR_fifth_support = KOR_legco_fifth_seats }
+	multiply_temp_variable = { KOR_fifth_support = KOR_legco_fifth_temp_support }
+	set_variable = { KOR_fifth_support = KOR_legco_fifth_seats }
+	multiply_variable = { KOR_fifth_support = KOR_legco_fifth_temp_support }
+
+	set_temp_variable = { KOR_sixth_support = KOR_legco_sixth_seats }
+	multiply_temp_variable = { KOR_sixth_support = KOR_legco_sixth_temp_support }
+	set_variable = { KOR_sixth_support = KOR_legco_sixth_seats }
+	multiply_variable = { KOR_sixth_support = KOR_legco_sixth_temp_support }
+
+	set_temp_variable = { KOR_seventh_support = KOR_legco_seventh_seats }
+	multiply_temp_variable = { KOR_seventh_support = KOR_legco_seventh_temp_support }
+	set_variable = { KOR_seventh_support = KOR_legco_seventh_seats }
+	multiply_variable = { KOR_seventh_support = KOR_legco_seventh_temp_support }
+
+	set_temp_variable = { KOR_eighth_support = KOR_legco_eighth_seats }
+	multiply_temp_variable = { KOR_eighth_support = KOR_legco_eighth_temp_support }
+	set_variable = { KOR_eighth_support = KOR_legco_eighth_seats }
+	multiply_variable = { KOR_eighth_support = KOR_legco_eighth_temp_support }
+
+	set_temp_variable = { KOR_nineth_support = KOR_legco_nineth_seats }
+	multiply_temp_variable = { KOR_nineth_support = KOR_legco_nineth_temp_support }
+	set_variable = { KOR_nineth_support = KOR_legco_nineth_seats }
+	multiply_variable = { KOR_nineth_support = KOR_legco_nineth_temp_support }
+
+	set_temp_variable = { KOR_tenth_support = KOR_legco_tenth_seats }
+	multiply_temp_variable = { KOR_tenth_support = KOR_legco_tenth_temp_support }
+	set_variable = { KOR_tenth_support = KOR_legco_tenth_seats }
+	multiply_variable = { KOR_tenth_support = KOR_legco_tenth_temp_support }
+
+
+	set_temp_variable = { KOR_eleventh_support = KOR_legco_eleventh_seats }
+	multiply_temp_variable = { KOR_eleventh_support = KOR_legco_eleventh_temp_support }
+	set_variable = { KOR_eleventh_support = KOR_legco_eleventh_seats }
+	multiply_variable = { KOR_eleventh_support = KOR_legco_eleventh_temp_support }
+
+
+	round_temp_variable = KOR_first_support
+	round_temp_variable = KOR_second_support
+	round_temp_variable = KOR_third_support
+	round_temp_variable = KOR_forth_support
+	round_temp_variable = KOR_fifth_support
+	round_temp_variable = KOR_sixth_support
+	round_temp_variable = KOR_seventh_support
+	round_temp_variable = KOR_eighth_support
+	round_temp_variable = KOR_nineth_support
+	round_temp_variable = KOR_tenth_support
+
+	round_temp_variable = KOR_eleventh_support
+
+
+	round_variable = KOR_first_support
+	round_variable = KOR_second_support
+	round_variable = KOR_third_support
+	round_variable = KOR_forth_support
+	round_variable = KOR_fifth_support
+	round_variable = KOR_sixth_support
+	round_variable = KOR_seventh_support
+	round_variable = KOR_eighth_support
+	round_variable = KOR_nineth_support
+	round_variable = KOR_tenth_support
+
+	round_variable = KOR_eleventh_support
+
+
+	set_temp_variable = { KOR_Current_Ordinance_Votes_temp = KOR_first_support }
+	add_to_temp_variable = { KOR_Current_Ordinance_Votes_temp = KOR_second_support }
+	add_to_temp_variable = { KOR_Current_Ordinance_Votes_temp = KOR_third_support }
+	add_to_temp_variable = { KOR_Current_Ordinance_Votes_temp = KOR_forth_support }
+	add_to_temp_variable = { KOR_Current_Ordinance_Votes_temp = KOR_fifth_support }
+	add_to_temp_variable = { KOR_Current_Ordinance_Votes_temp = KOR_sixth_support }
+	add_to_temp_variable = { KOR_Current_Ordinance_Votes_temp = KOR_seventh_support }
+	add_to_temp_variable = { KOR_Current_Ordinance_Votes_temp = KOR_eighth_support }
+	add_to_temp_variable = { KOR_Current_Ordinance_Votes_temp = KOR_nineth_support }
+	add_to_temp_variable = { KOR_Current_Ordinance_Votes_temp = KOR_tenth_support }
+
+	add_to_temp_variable = { KOR_Current_Ordinance_Votes_temp = KOR_eleventh_support }
+
+
+	set_variable = { KOR_legco_faction_support^1 = KOR_first_support }
+	set_variable = { KOR_legco_faction_support^2 = KOR_second_support }
+	set_variable = { KOR_legco_faction_support^3 = KOR_third_support }
+	set_variable = { KOR_legco_faction_support^4 = KOR_forth_support }
+	set_variable = { KOR_legco_faction_support^5 = KOR_fifth_support }
+	set_variable = { KOR_legco_faction_support^6 = KOR_sixth_support }
+	set_variable = { KOR_legco_faction_support^7 = KOR_seventh_support }
+	set_variable = { KOR_legco_faction_support^8 = KOR_eighth_support }
+	set_variable = { KOR_legco_faction_support^9 = KOR_nineth_support }
+	set_variable = { KOR_legco_faction_support^10 = KOR_tenth_support }
+
+	set_variable = { KOR_legco_faction_support^11 = KOR_eleventh_support }
+
+
+	if = {
+		limit = {
+			NOT = { has_country_flag = GNG_hide_votes_ordinance }
+		}
+		custom_effect_tooltip = KOR_votes_initialize_percentages_tt
+	}
+	else = {
+		clr_country_flag = GNG_hide_votes_ordinance
+	}
+	KOR_check_votes_legco = yes
+}
+
+KOR_check_votes_legco = {
+	clamp_variable = {
+		var = KOR_legco_faction_support^1
+		min = 0
+		max = KOR_legco_first_seats
+	}
+	clamp_variable = {
+		var = KOR_legco_faction_support^2
+		min = 0
+		max = KOR_legco_second_seats
+	}
+	clamp_variable = {
+		var = KOR_legco_faction_support^3
+		min = 0
+		max = KOR_legco_third_seats
+	}
+	clamp_variable = {
+		var = KOR_legco_faction_support^4
+		min = 0
+		max = KOR_legco_forth_seats
+	}
+	clamp_variable = {
+		var = KOR_legco_faction_support^5
+		min = 0
+		max = KOR_legco_fifth_seats
+	}
+	clamp_variable = {
+		var = KOR_legco_faction_support^6
+		min = 0
+		max = KOR_legco_sixth_seats
+	}
+	clamp_variable = {
+		var = KOR_legco_faction_support^7
+		min = 0
+		max = KOR_legco_seventh_seats
+	}
+	clamp_variable = {
+		var = KOR_legco_faction_support^8
+		min = 0
+		max = KOR_legco_eighth_seats
+	}
+	clamp_variable = {
+		var = KOR_legco_faction_support^9
+		min = 0
+		max = KOR_legco_nineth_seats
+	}
+	clamp_variable = {
+		var = KOR_legco_faction_support^10
+		min = 0
+		max = KOR_legco_tenth_seats
+	}
+
+	clamp_variable = {
+		var = KOR_legco_faction_support^11
+		min = 0
+		max = KOR_legco_eleventh_seats
+	}
+
+	for_each_loop = {
+		array = KOR_legco_faction_support
+		index = i
+		value = val
+
+		if = {
+			limit = { check_variable = { i < 12 } } #정당 수 + 1
+			round_variable = KOR_legco_faction_support^i
+		}
+	}
+	set_temp_variable = { KOR_Current_Ordinance_Votes_temp = 0 }
+	for_each_loop = {
+		array = KOR_legco_faction_support
+		add_to_temp_variable = { KOR_Current_Ordinance_Votes_temp = KOR_legco_faction_support^i }
+	}
+	set_variable = { KOR_Current_Ordinance_Votes = KOR_Current_Ordinance_Votes_temp }
+}
+
+#지지 의석 변화
+
+KOR_legco_change_votes = {
+	add_to_variable = {
+		var = KOR_legco_faction_support^KOR_legco_faction
+		value = KOR_temp_votes
+	}
+	set_temp_variable = { KOR_temp_votes_color = KOR_temp_votes }
+	if = {
+		limit = {
+			check_variable = { KOR_temp_votes < 0 }
+		}
+		multiply_temp_variable = { KOR_temp_votes = -1 }
+		#custom_effect_tooltip = KOR_legco_remove_votes_tt
+	}
+	else = {
+		#custom_effect_tooltip = KOR_legco_add_votes_tt
+	}
+	KOR_check_votes_legco = yes
+}
+
+#정당 추가
+#11번째 정당
+KOR_eleventh_seats_Additional = {
+	add_to_array = { parliament_seat_array = KOR_legco_eleventh_seats }
+	add_to_array = { parliament_member_array = 11 }
+}
+
+KOR_coup_seats_Additional = {
+	add_to_array = { parliament_seat_array = KOR_legco_eleventh_seats }
+	add_to_array = { parliament_member_array = 11 }
+
+	set_country_flag = KOR_coup_seats_Additional_flag
+
+	set_temp_variable = { KOR_legco_seat_temp = KOR_legco_first_seats }
+	multiply_temp_variable = { KOR_legco_seat_temp = -1 }
+	set_temp_variable = { KOR_legco_faction_temp = 1 }
+	KOR_change_legco_seats = yes
+	
+	set_temp_variable = { KOR_legco_seat_temp = KOR_legco_second_seats }
+	multiply_temp_variable = { KOR_legco_seat_temp = -1 }
+	set_temp_variable = { KOR_legco_faction_temp = 2 }
+	KOR_change_legco_seats = yes
+
+	set_temp_variable = { KOR_legco_seat_temp = KOR_legco_third_seats }
+	multiply_temp_variable = { KOR_legco_seat_temp = -1 }
+	set_temp_variable = { KOR_legco_faction_temp = 3 }
+	KOR_change_legco_seats = yes
+
+	set_temp_variable = { KOR_legco_seat_temp = KOR_legco_forth_seats }
+	multiply_temp_variable = { KOR_legco_seat_temp = -1 }
+	set_temp_variable = { KOR_legco_faction_temp = 4 }
+	KOR_change_legco_seats = yes
+
+	set_temp_variable = { KOR_legco_seat_temp = KOR_legco_fifth_seats }
+	multiply_temp_variable = { KOR_legco_seat_temp = -1 }
+	set_temp_variable = { KOR_legco_faction_temp = 5 }
+	KOR_change_legco_seats = yes
+
+	set_temp_variable = { KOR_legco_seat_temp = KOR_legco_sixth_seats }
+	multiply_temp_variable = { KOR_legco_seat_temp = -1 }
+	set_temp_variable = { KOR_legco_faction_temp = 6 }
+	KOR_change_legco_seats = yes
+
+	set_temp_variable = { KOR_legco_seat_temp = KOR_legco_seventh_seats }
+	multiply_temp_variable = { KOR_legco_seat_temp = -1 }
+	set_temp_variable = { KOR_legco_faction_temp = 7 }
+	KOR_change_legco_seats = yes
+
+	set_temp_variable = { KOR_legco_seat_temp = KOR_legco_eighth_seats }
+	multiply_temp_variable = { KOR_legco_seat_temp = -1 }
+	set_temp_variable = { KOR_legco_faction_temp = 8 }
+	KOR_change_legco_seats = yes
+
+	set_temp_variable = { KOR_legco_seat_temp = KOR_legco_nineth_seats }
+	multiply_temp_variable = { KOR_legco_seat_temp = -1 }
+	set_temp_variable = { KOR_legco_faction_temp = 9 }
+	KOR_change_legco_seats = yes
+
+	set_temp_variable = { KOR_legco_seat_temp = KOR_legco_tenth_seats }
+	multiply_temp_variable = { KOR_legco_seat_temp = -1 }
+	set_temp_variable = { KOR_legco_faction_temp = 10 }
+	KOR_change_legco_seats = yes
+
+	set_temp_variable = { KOR_legco_seat_temp = 400 }
+	set_temp_variable = { KOR_legco_faction_temp = 11 }
+	KOR_change_legco_seats = yes
+}
+
+KOR_change_legco_seats = {
+	set_temp_variable = { amount = KOR_legco_seat_temp }
+	set_temp_variable = { KOR_legco_faction = KOR_legco_faction_temp }
+	if = {
+		limit = {
+			check_variable = { KOR_legco_seat_temp < 0 }
+		}
+		multiply_temp_variable = {
+			var = KOR_legco_seat_temp
+			value = -1
+		}
+		#custom_effect_tooltip = GNG_legco_seat_temp_decrease_tt
+	}
+	else = {
+		#custom_effect_tooltip = GNG_legco_seat_temp_increase_tt
+	}
+	KOR = { KOR_modify_legco_seats = yes }
+}
+
+KOR_add_slight_probs = {
+	add_to_temp_variable = { first_prob = 0.1 }
+	add_to_temp_variable = { second_prob = 0.1 }
+	add_to_temp_variable = { third_prob = 0.1 }
+	add_to_temp_variable = { forth_prob = 0.1 }
+	add_to_temp_variable = { fifth_prob = 0.1 }
+	add_to_temp_variable = { sixth_prob = 0.1 }
+	add_to_temp_variable = { seventh_prob = 0.1 }
+	add_to_temp_variable = { eighth_prob = 0.1 }
+	add_to_temp_variable = { nineth_prob = 0.1 }
+	add_to_temp_variable = { tenth_prob = 0.1 }
+	add_to_temp_variable = { eleventh_prob = 0.1 }
+}
+
+#의석 변화시 계산
+KOR_modify_legco_seats = {
+	set_temp_variable = { unit = 1 }
+	if = {
+		limit = { check_variable = { amount < 0 } }
+		multiply_temp_variable = { amount = -1 }
+
+		multiply_temp_variable = { unit = -1 }
+	}
+
+	for_loop_effect = {
+		start = 0
+		end = amount
+		value = i
+
+		set_temp_variable = { first_prob = KOR_legco_first_seats }
+		set_temp_variable = { second_prob = KOR_legco_second_seats }
+		set_temp_variable = { third_prob = KOR_legco_third_seats }
+		set_temp_variable = { forth_prob = KOR_legco_forth_seats }
+		set_temp_variable = { fifth_prob = KOR_legco_fifth_seats }
+		set_temp_variable = { sixth_prob = KOR_legco_sixth_seats }
+		set_temp_variable = { seventh_prob = KOR_legco_seventh_seats }
+		set_temp_variable = { eighth_prob = KOR_legco_eighth_seats }
+		set_temp_variable = { nineth_prob = KOR_legco_nineth_seats }
+		set_temp_variable = { tenth_prob = KOR_legco_tenth_seats }
+
+		set_temp_variable = { eleventh_prob = KOR_legco_eleventh_seats }
+
+		if = {
+			limit = { check_variable = { unit < 0 } }
+		}
+
+
+		# Determine if we can actually add or remove a seat from the specified faction
+		set_temp_variable = { ok = 1 }
+		if = {
+			limit = {
+				check_variable = { KOR_legco_faction = 1 }
+				#NOT = { has_country_flag = GNG_legco_stage_2 }
+				OR = { check_variable = { KOR_legco_first_seats < 400 } check_variable = { unit < 0 } }
+				OR = { check_variable = { KOR_legco_first_seats > 0 } check_variable = { unit > 0 } }
+			}
+			if = {
+				limit = {
+					check_variable = { KOR_legco_first_seats = 400 }
+					check_variable = { unit < 0 }
+				}
+				KOR_add_slight_probs = yes
+			}
+			add_to_variable = { KOR_legco_first_seats = unit }
+			set_temp_variable = { first_prob = 0 }
+		}
+
+		else_if = {
+			limit = {
+				check_variable = { KOR_legco_faction = 2 }
+				#NOT = { has_country_flag = GNG_legco_stage_2 }
+				OR = { check_variable = { KOR_legco_second_seats < 400 } check_variable = { unit < 0 } }
+				OR = { check_variable = { KOR_legco_second_seats > 0 } check_variable = { unit > 0 } }
+			}
+			if = {
+				limit = {
+					check_variable = { KOR_legco_second_seats = 400 }
+					check_variable = { unit < 0 }
+				}
+				KOR_add_slight_probs = yes
+			}
+			add_to_variable = { KOR_legco_second_seats = unit }
+			set_temp_variable = { second_prob = 0 }
+		}
+
+		else_if = {
+			limit = {
+				check_variable = { KOR_legco_faction = 3 }
+				OR = { check_variable = { KOR_legco_third_seats < 400 } check_variable = { unit < 0 } }
+				OR = { check_variable = { KOR_legco_third_seats > 0 } check_variable = { unit > 0 } }
+			}
+			if = {
+				limit = {
+					check_variable = { KOR_legco_third_seats = 400 }
+					check_variable = { unit < 0 }
+				}
+				KOR_add_slight_probs = yes
+			}
+			add_to_variable = { KOR_legco_third_seats = unit }
+			set_temp_variable = { third_prob = 0 }
+		}
+
+		else_if = {
+			limit = {
+				check_variable = { KOR_legco_faction = 4 }
+				OR = { check_variable = { KOR_legco_forth_seats < 400 } check_variable = { unit < 0 } }
+				OR = { check_variable = { KOR_legco_forth_seats > 0 } check_variable = { unit > 0 } }
+			}
+			if = {
+				limit = {
+					check_variable = { KOR_legco_forth_seats = 400 }
+					check_variable = { unit < 0 }
+				}
+				KOR_add_slight_probs = yes
+			}
+			add_to_variable = { KOR_legco_forth_seats = unit }
+			set_temp_variable = { forth_prob = 0 }
+		}
+
+		else_if = {
+			limit = {
+				check_variable = { KOR_legco_faction = 5 }
+				OR = { check_variable = { KOR_legco_fifth_seats < 400 } check_variable = { unit < 0 } }
+				OR = { check_variable = { KOR_legco_fifth_seats > 0 } check_variable = { unit > 0 } }
+			}
+			if = {
+				limit = {
+					check_variable = { KOR_legco_fifth_seats = 400 }
+					check_variable = { unit < 0 }
+				}
+				KOR_add_slight_probs = yes
+			}
+			add_to_variable = { KOR_legco_fifth_seats = unit }
+			set_temp_variable = { fifth_prob = 0 }
+		}
+
+		else_if = {
+			limit = {
+				check_variable = { KOR_legco_faction = 6 }
+				OR = { check_variable = { KOR_legco_sixth_seats < 400 } check_variable = { unit < 0 } }
+				OR = { check_variable = { KOR_legco_sixth_seats > 0 } check_variable = { unit > 0 } }
+			}
+			if = {
+				limit = {
+					check_variable = { KOR_legco_sixth_seats = 400 }
+					check_variable = { unit < 0 }
+				}
+				KOR_add_slight_probs = yes
+			}
+			add_to_variable = { KOR_legco_sixth_seats = unit }
+			set_temp_variable = { sixth_prob = 0 }
+		}
+
+		else_if = {
+			limit = {
+				check_variable = { KOR_legco_faction = 7 }
+				OR = { check_variable = { KOR_legco_seventh_seats < 400 } check_variable = { unit < 0 } }
+				OR = { check_variable = { KOR_legco_seventh_seats > 0 } check_variable = { unit > 0 } }
+			}
+			if = {
+				limit = {
+					check_variable = { KOR_legco_seventh_seats = 400 }
+					check_variable = { unit < 0 }
+				}
+				KOR_add_slight_probs = yes
+			}
+			add_to_variable = { KOR_legco_seventh_seats = unit }
+			set_temp_variable = { seventh_prob = 0 }
+		}
+
+		else_if = {
+			limit = {
+				check_variable = { KOR_legco_faction = 8 }
+				OR = { check_variable = { KOR_legco_eighth_seats < 400 } check_variable = { unit < 0 } }
+				OR = { check_variable = { KOR_legco_eighth_seats > 0 } check_variable = { unit > 0 } }
+			}
+			if = {
+				limit = {
+					check_variable = { KOR_legco_eighth_seats = 400 }
+					check_variable = { unit < 0 }
+				}
+				KOR_add_slight_probs = yes
+			}
+			add_to_variable = { KOR_legco_eighth_seats = unit }
+			set_temp_variable = { eighth_prob = 0 }
+		}
+
+		else_if = {
+			limit = {
+				check_variable = { KOR_legco_faction = 9 }
+				OR = { check_variable = { KOR_legco_nineth_seats < 400 } check_variable = { unit < 0 } }
+				OR = { check_variable = { KOR_legco_nineth_seats > 0 } check_variable = { unit > 0 } }
+			}
+			if = {
+				limit = {
+					check_variable = { KOR_legco_nineth_seats = 400 }
+					check_variable = { unit < 0 }
+				}
+				KOR_add_slight_probs = yes
+			}
+			add_to_variable = { KOR_legco_nineth_seats = unit }
+			set_temp_variable = { nineth_prob = 0 }
+		}
+
+		else_if = {
+			limit = {
+				check_variable = { KOR_legco_faction = 10 }
+				OR = { check_variable = { KOR_legco_tenth_seats < 400 } check_variable = { unit < 0 } }
+				OR = { check_variable = { KOR_legco_tenth_seats > 0 } check_variable = { unit > 0 } }
+			}
+			if = {
+				limit = {
+					check_variable = { KOR_legco_tenth_seats = 400 }
+					check_variable = { unit < 0 }
+				}
+				KOR_add_slight_probs = yes
+			}
+			add_to_variable = { KOR_legco_tenth_seats = unit }
+			set_temp_variable = { tenth_prob = 0 }
+		}
+
+		else_if = {
+			limit = {
+				check_variable = { KOR_legco_faction = 11 }
+				OR = { check_variable = { KOR_legco_eleventh_seats < 400 } check_variable = { unit < 0 } }
+				OR = { check_variable = { KOR_legco_eleventh_seats > 0 } check_variable = { unit > 0 } }
+			}
+			if = {
+				limit = {
+					check_variable = { KOR_legco_eleventh_seats = 400 }
+					check_variable = { unit < 0 }
+				}
+				KOR_add_slight_probs = yes
+			}
+			add_to_variable = { KOR_legco_eleventh_seats = unit }
+			set_temp_variable = { eleventh_prob = 0 }
+		}
+
+		else = {
+			set_temp_variable = { ok = 0 }
+		}
+	}
+	KOR_check_votes_legco = yes
+	KOR_rerender_legco = yes
+}
+
+KOR_rerender_legco = {
+	clear_array = KOR_legco_factions
+
+	add_to_array = { KOR_legco_factions = 1 }
+	add_to_array = { KOR_legco_factions = 2 }
+	add_to_array = { KOR_legco_factions = 3 }
+	add_to_array = { KOR_legco_factions = 4 }
+	add_to_array = { KOR_legco_factions = 5 }
+	add_to_array = { KOR_legco_factions = 6 }
+	add_to_array = { KOR_legco_factions = 7 }
+	add_to_array = { KOR_legco_factions = 8 }
+	add_to_array = { KOR_legco_factions = 9 }
+	add_to_array = { KOR_legco_factions = 10 }
+
+	if = {
+		limit = { has_country_flag = KOR_coup_seats_Additional_flag }
+		add_to_array = { KOR_legco_factions = 11 }
+	}
+
+	set_variable = { KOR_legco_first_seats_rerender_v = KOR_legco_first_seats }
+
+	set_variable = { KOR_legco_second_seats_rerender_v = KOR_legco_second_seats }
+	add_to_variable = {
+		var = KOR_legco_second_seats_rerender_v
+		value = KOR_legco_first_seats
+	}
+	set_variable = { KOR_legco_third_seats_rerender_v = KOR_legco_second_seats_rerender_v }
+	add_to_variable = {
+		var = KOR_legco_third_seats_rerender_v
+		value = KOR_legco_third_seats
+	}
+	set_variable = { KOR_legco_forth_seats_rerender_v = KOR_legco_third_seats_rerender_v }
+	add_to_variable = {
+		var = KOR_legco_forth_seats_rerender_v
+		value = KOR_legco_forth_seats
+	}
+	set_variable = { KOR_legco_fifth_seats_rerender_v = KOR_legco_forth_seats_rerender_v }
+	add_to_variable = {
+		var = KOR_legco_fifth_seats_rerender_v
+		value = KOR_legco_fifth_seats
+	}
+	set_variable = { KOR_legco_sixth_seats_rerender_v = KOR_legco_fifth_seats_rerender_v }
+	add_to_variable = {
+		var = KOR_legco_sixth_seats_rerender_v
+		value = KOR_legco_sixth_seats
+	}
+	set_variable = { KOR_legco_seventh_seats_rerender_v = KOR_legco_sixth_seats_rerender_v }
+	add_to_variable = {
+		var = KOR_legco_seventh_seats_rerender_v
+		value = KOR_legco_seventh_seats
+	}
+	set_variable = { KOR_legco_eighth_seats_rerender_v = KOR_legco_seventh_seats_rerender_v }
+	add_to_variable = {
+		var = KOR_legco_eighth_seats_rerender_v
+		value = KOR_legco_eighth_seats
+	}
+	set_variable = { KOR_legco_nineth_seats_rerender_v = KOR_legco_eighth_seats_rerender_v }
+	add_to_variable = {
+		var = KOR_legco_nineth_seats_rerender_v
+		value = KOR_legco_nineth_seats
+	}
+	set_variable = { KOR_legco_tenth_seats_rerender_v = KOR_legco_nineth_seats_rerender_v }
+	add_to_variable = {
+		var = KOR_legco_tenth_seats_rerender_v
+		value = KOR_legco_tenth_seats
+	}
+	set_variable = { KOR_legco_eleventh_seats_rerender_v = KOR_legco_tenth_seats_rerender_v }
+	add_to_variable = {
+		var = KOR_legco_eleventh_seats_rerender_v
+		value = KOR_legco_eleventh_seats
+	}
+
+	clear_array = KOR_legco_faction
+	resize_array = {
+		array = KOR_legco_faction
+		value = 1
+		size = KOR_legco_first_seats_rerender_v
+	}
+	resize_array = {
+		array = KOR_legco_faction
+		value = 2
+		size = KOR_legco_second_seats_rerender_v
+	}
+	resize_array = {
+		array = KOR_legco_faction
+		value = 3
+		size = KOR_legco_third_seats_rerender_v
+	}
+	resize_array = {
+		array = KOR_legco_faction
+		value = 4
+		size = KOR_legco_forth_seats_rerender_v
+	}
+	resize_array = {
+		array = KOR_legco_faction
+		value = 5
+		size = KOR_legco_fifth_seats_rerender_v
+	}
+	resize_array = {
+		array = KOR_legco_faction
+		value = 6
+		size = KOR_legco_sixth_seats_rerender_v
+	}
+	resize_array = {
+		array = KOR_legco_faction
+		value = 7
+		size = KOR_legco_seventh_seats_rerender_v
+	}
+	resize_array = {
+		array = KOR_legco_faction
+		value = 8
+		size = KOR_legco_eighth_seats_rerender_v
+	}
+	resize_array = {
+		array = KOR_legco_faction
+		value = 9
+		size = KOR_legco_nineth_seats_rerender_v
+	}
+	resize_array = {
+		array = KOR_legco_faction
+		value = 10
+		size = KOR_legco_tenth_seats_rerender_v #400
+	}
+	if = {
+		limit = { has_country_flag = KOR_coup_seats_Additional_flag }
+		resize_array = {
+			array = KOR_legco_faction
+			value = 11
+			size = KOR_legco_eleventh_seats_rerender_v
+		}
+	}
+}
+
+# The following scripted effect sets-up the parliament at game start.
+parliament_gui_initial = {
+	# Put simply an array stores a list of things, used here to store the list of parties and list of seats.
+
+	# parliament_seat_array stores the list of seat numbers for each party
+	# add_to_array = { parliament_seat_array = KOR_legco_first_seats } # Party A
+	# add_to_array = { parliament_seat_array = KOR_legco_second_seats } # Party B
+	# add_to_array = { parliament_seat_array = KOR_legco_third_seats } # Party C
+	# add_to_array = { parliament_seat_array = KOR_legco_forth_seats } # Party D
+	# add_to_array = { parliament_seat_array = KOR_legco_fifth_seats }
+	# add_to_array = { parliament_seat_array = KOR_legco_sixth_seats }
+	# add_to_array = { parliament_seat_array = KOR_legco_seventh_seats }
+	# add_to_array = { parliament_seat_array = KOR_legco_eighth_seats }
+	# add_to_array = { parliament_seat_array = KOR_legco_nineth_seats }
+	# add_to_array = { parliament_seat_array = KOR_legco_tenth_seats }
+
+	# parliament_member_array stores the list of parties
+	# This basically assigns an id for each party, so Party A = 1, Party B = 2, etc. (must start from 1 and is in order)
+	
+	#KOR_rerender_legco로 이전함.
+	# add_to_array = { KOR_legco_factions = 1 } # Party A
+	# add_to_array = { KOR_legco_factions = 2 } # Party B
+	# add_to_array = { KOR_legco_factions = 3 } # Party C
+	# add_to_array = { KOR_legco_factions = 4 } # Party D
+	# add_to_array = { KOR_legco_factions = 5 }
+	# add_to_array = { KOR_legco_factions = 6 }
+	# add_to_array = { KOR_legco_factions = 7 }
+	# add_to_array = { KOR_legco_factions = 8 }
+	# add_to_array = { KOR_legco_factions = 9 }
+	# add_to_array = { KOR_legco_factions = 10 }
+
+	# Set up the positions of the dots for the semicircle parliament
+	set_variable = { KOR_legco_first_seats = 105 }
+	set_variable = { KOR_legco_second_seats = 80 }
+	set_variable = { KOR_legco_third_seats = 69 }
+	set_variable = { KOR_legco_forth_seats = 57 }
+	set_variable = { KOR_legco_fifth_seats = 47 }
+	set_variable = { KOR_legco_sixth_seats = 13 }
+	set_variable = { KOR_legco_seventh_seats = 11 }
+	set_variable = { KOR_legco_eighth_seats = 9 }
+	set_variable = { KOR_legco_nineth_seats = 7 }
+	set_variable = { KOR_legco_tenth_seats = 2 }
+
+	clear_array = KOR_legco_faction_support
+	resize_array = {
+		array = KOR_legco_faction_support
+		size = 11
+	}
+
+	# Modify what shows up in the gui
+	KOR_rerender_legco = yes
+
+	clear_array = KOR_legco_x
+	clear_array = KOR_legco_y
+
+	add_to_array = { KOR_legco_x = 0 }
+	add_to_array = { KOR_legco_y = 335 }
+	add_to_array = { KOR_legco_x = 22 }
+	add_to_array = { KOR_legco_y = 335 }
+	add_to_array = { KOR_legco_x = 45 }
+	add_to_array = { KOR_legco_y = 335 }
+	add_to_array = { KOR_legco_x = 67 }
+	add_to_array = { KOR_legco_y = 335 }
+	add_to_array = { KOR_legco_x = 89 }
+	add_to_array = { KOR_legco_y = 335 }
+	add_to_array = { KOR_legco_x = 111 }
+	add_to_array = { KOR_legco_y = 335 }
+	add_to_array = { KOR_legco_x = 134 }
+	add_to_array = { KOR_legco_y = 335 }
+	add_to_array = { KOR_legco_x = 156 }
+	add_to_array = { KOR_legco_y = 335 }
+	add_to_array = { KOR_legco_x = 178 }
+	add_to_array = { KOR_legco_y = 335 }
+	add_to_array = { KOR_legco_x = 200 }
+	add_to_array = { KOR_legco_y = 335 }
+	add_to_array = { KOR_legco_x = 1 }
+	add_to_array = { KOR_legco_y = 315 }
+	add_to_array = { KOR_legco_x = 223 }
+	add_to_array = { KOR_legco_y = 335 }
+	add_to_array = { KOR_legco_x = 24 }
+	add_to_array = { KOR_legco_y = 315 }
+	add_to_array = { KOR_legco_x = 46 }
+	add_to_array = { KOR_legco_y = 315 }
+	add_to_array = { KOR_legco_x = 68 }
+	add_to_array = { KOR_legco_y = 316 }
+	add_to_array = { KOR_legco_x = 91 }
+	add_to_array = { KOR_legco_y = 316 }
+	add_to_array = { KOR_legco_x = 113 }
+	add_to_array = { KOR_legco_y = 316 }
+	add_to_array = { KOR_legco_x = 135 }
+	add_to_array = { KOR_legco_y = 317 }
+	add_to_array = { KOR_legco_x = 4 }
+	add_to_array = { KOR_legco_y = 294 }
+	add_to_array = { KOR_legco_x = 158 }
+	add_to_array = { KOR_legco_y = 318 }
+	add_to_array = { KOR_legco_x = 26 }
+	add_to_array = { KOR_legco_y = 295 }
+	add_to_array = { KOR_legco_x = 49 }
+	add_to_array = { KOR_legco_y = 295 }
+	add_to_array = { KOR_legco_x = 180 }
+	add_to_array = { KOR_legco_y = 319 }
+	add_to_array = { KOR_legco_x = 71 }
+	add_to_array = { KOR_legco_y = 297 }
+	add_to_array = { KOR_legco_x = 203 }
+	add_to_array = { KOR_legco_y = 320 }
+	add_to_array = { KOR_legco_x = 94 }
+	add_to_array = { KOR_legco_y = 297 }
+	add_to_array = { KOR_legco_x = 8 }
+	add_to_array = { KOR_legco_y = 274 }
+	add_to_array = { KOR_legco_x = 116 }
+	add_to_array = { KOR_legco_y = 298 }
+	add_to_array = { KOR_legco_x = 225 }
+	add_to_array = { KOR_legco_y = 321 }
+	add_to_array = { KOR_legco_x = 30 }
+	add_to_array = { KOR_legco_y = 275 }
+	add_to_array = { KOR_legco_x = 139 }
+	add_to_array = { KOR_legco_y = 300 }
+	add_to_array = { KOR_legco_x = 53 }
+	add_to_array = { KOR_legco_y = 275 }
+	add_to_array = { KOR_legco_x = 161 }
+	add_to_array = { KOR_legco_y = 301 }
+	add_to_array = { KOR_legco_x = 76 }
+	add_to_array = { KOR_legco_y = 278 }
+	add_to_array = { KOR_legco_x = 13 }
+	add_to_array = { KOR_legco_y = 254 }
+	add_to_array = { KOR_legco_x = 98 }
+	add_to_array = { KOR_legco_y = 279 }
+	add_to_array = { KOR_legco_x = 184 }
+	add_to_array = { KOR_legco_y = 303 }
+	add_to_array = { KOR_legco_x = 36 }
+	add_to_array = { KOR_legco_y = 255 }
+	add_to_array = { KOR_legco_x = 121 }
+	add_to_array = { KOR_legco_y = 280 }
+	add_to_array = { KOR_legco_x = 206 }
+	add_to_array = { KOR_legco_y = 306 }
+	add_to_array = { KOR_legco_x = 59 }
+	add_to_array = { KOR_legco_y = 256 }
+	add_to_array = { KOR_legco_x = 144 }
+	add_to_array = { KOR_legco_y = 283 }
+	add_to_array = { KOR_legco_x = 81 }
+	add_to_array = { KOR_legco_y = 259 }
+	add_to_array = { KOR_legco_x = 19 }
+	add_to_array = { KOR_legco_y = 235 }
+	add_to_array = { KOR_legco_x = 167 }
+	add_to_array = { KOR_legco_y = 285 }
+	add_to_array = { KOR_legco_x = 229 }
+	add_to_array = { KOR_legco_y = 308 }
+	add_to_array = { KOR_legco_x = 104 }
+	add_to_array = { KOR_legco_y = 260 }
+	add_to_array = { KOR_legco_x = 42 }
+	add_to_array = { KOR_legco_y = 236 }
+	add_to_array = { KOR_legco_x = 66 }
+	add_to_array = { KOR_legco_y = 237 }
+	add_to_array = { KOR_legco_x = 128 }
+	add_to_array = { KOR_legco_y = 262 }
+	add_to_array = { KOR_legco_x = 190 }
+	add_to_array = { KOR_legco_y = 287 }
+	add_to_array = { KOR_legco_x = 27 }
+	add_to_array = { KOR_legco_y = 215 }
+	add_to_array = { KOR_legco_x = 88 }
+	add_to_array = { KOR_legco_y = 241 }
+	add_to_array = { KOR_legco_x = 150 }
+	add_to_array = { KOR_legco_y = 266 }
+	add_to_array = { KOR_legco_x = 50 }
+	add_to_array = { KOR_legco_y = 217 }
+	add_to_array = { KOR_legco_x = 212 }
+	add_to_array = { KOR_legco_y = 291 }
+	add_to_array = { KOR_legco_x = 112 }
+	add_to_array = { KOR_legco_y = 243 }
+	add_to_array = { KOR_legco_x = 174 }
+	add_to_array = { KOR_legco_y = 269 }
+	add_to_array = { KOR_legco_x = 74 }
+	add_to_array = { KOR_legco_y = 219 }
+	add_to_array = { KOR_legco_x = 35 }
+	add_to_array = { KOR_legco_y = 197 }
+	add_to_array = { KOR_legco_x = 136 }
+	add_to_array = { KOR_legco_y = 245 }
+	add_to_array = { KOR_legco_x = 97 }
+	add_to_array = { KOR_legco_y = 223 }
+	add_to_array = { KOR_legco_x = 235 }
+	add_to_array = { KOR_legco_y = 295 }
+	add_to_array = { KOR_legco_x = 60 }
+	add_to_array = { KOR_legco_y = 199 }
+	add_to_array = { KOR_legco_x = 158 }
+	add_to_array = { KOR_legco_y = 250 }
+	add_to_array = { KOR_legco_x = 197 }
+	add_to_array = { KOR_legco_y = 272 }
+	add_to_array = { KOR_legco_x = 121 }
+	add_to_array = { KOR_legco_y = 226 }
+	add_to_array = { KOR_legco_x = 45 }
+	add_to_array = { KOR_legco_y = 179 }
+	add_to_array = { KOR_legco_x = 84 }
+	add_to_array = { KOR_legco_y = 201 }
+	add_to_array = { KOR_legco_x = 219 }
+	add_to_array = { KOR_legco_y = 278 }
+	add_to_array = { KOR_legco_x = 107 }
+	add_to_array = { KOR_legco_y = 206 }
+	add_to_array = { KOR_legco_x = 182 }
+	add_to_array = { KOR_legco_y = 254 }
+	add_to_array = { KOR_legco_x = 70 }
+	add_to_array = { KOR_legco_y = 181 }
+	add_to_array = { KOR_legco_x = 145 }
+	add_to_array = { KOR_legco_y = 229 }
+	add_to_array = { KOR_legco_x = 56 }
+	add_to_array = { KOR_legco_y = 161 }
+	add_to_array = { KOR_legco_x = 168 }
+	add_to_array = { KOR_legco_y = 235 }
+	add_to_array = { KOR_legco_x = 131 }
+	add_to_array = { KOR_legco_y = 210 }
+	add_to_array = { KOR_legco_x = 95 }
+	add_to_array = { KOR_legco_y = 184 }
+	add_to_array = { KOR_legco_x = 206 }
+	add_to_array = { KOR_legco_y = 258 }
+	add_to_array = { KOR_legco_x = 243 }
+	add_to_array = { KOR_legco_y = 283 }
+	add_to_array = { KOR_legco_x = 81 }
+	add_to_array = { KOR_legco_y = 164 }
+	add_to_array = { KOR_legco_x = 118 }
+	add_to_array = { KOR_legco_y = 190 }
+	add_to_array = { KOR_legco_x = 156 }
+	add_to_array = { KOR_legco_y = 213 }
+	add_to_array = { KOR_legco_x = 68 }
+	add_to_array = { KOR_legco_y = 145 }
+	add_to_array = { KOR_legco_x = 192 }
+	add_to_array = { KOR_legco_y = 240 }
+	add_to_array = { KOR_legco_x = 228 }
+	add_to_array = { KOR_legco_y = 266 }
+	add_to_array = { KOR_legco_x = 107 }
+	add_to_array = { KOR_legco_y = 168 }
+	add_to_array = { KOR_legco_x = 143 }
+	add_to_array = { KOR_legco_y = 194 }
+	add_to_array = { KOR_legco_x = 178 }
+	add_to_array = { KOR_legco_y = 221 }
+	add_to_array = { KOR_legco_x = 94 }
+	add_to_array = { KOR_legco_y = 148 }
+	add_to_array = { KOR_legco_x = 130 }
+	add_to_array = { KOR_legco_y = 175 }
+	add_to_array = { KOR_legco_x = 82 }
+	add_to_array = { KOR_legco_y = 129 }
+	add_to_array = { KOR_legco_x = 216 }
+	add_to_array = { KOR_legco_y = 245 }
+	add_to_array = { KOR_legco_x = 168 }
+	add_to_array = { KOR_legco_y = 199 }
+	add_to_array = { KOR_legco_x = 120 }
+	add_to_array = { KOR_legco_y = 153 }
+	add_to_array = { KOR_legco_x = 203 }
+	add_to_array = { KOR_legco_y = 226 }
+	add_to_array = { KOR_legco_x = 252 }
+	add_to_array = { KOR_legco_y = 273 }
+	add_to_array = { KOR_legco_x = 155 }
+	add_to_array = { KOR_legco_y = 180 }
+	add_to_array = { KOR_legco_x = 108 }
+	add_to_array = { KOR_legco_y = 133 }
+	add_to_array = { KOR_legco_x = 96 }
+	add_to_array = { KOR_legco_y = 114 }
+	add_to_array = { KOR_legco_x = 143 }
+	add_to_array = { KOR_legco_y = 161 }
+	add_to_array = { KOR_legco_x = 190 }
+	add_to_array = { KOR_legco_y = 208 }
+	add_to_array = { KOR_legco_x = 238 }
+	add_to_array = { KOR_legco_y = 254 }
+	add_to_array = { KOR_legco_x = 134 }
+	add_to_array = { KOR_legco_y = 138 }
+	add_to_array = { KOR_legco_x = 181 }
+	add_to_array = { KOR_legco_y = 186 }
+	add_to_array = { KOR_legco_x = 122 }
+	add_to_array = { KOR_legco_y = 119 }
+	add_to_array = { KOR_legco_x = 169 }
+	add_to_array = { KOR_legco_y = 167 }
+	add_to_array = { KOR_legco_x = 228 }
+	add_to_array = { KOR_legco_y = 233 }
+	add_to_array = { KOR_legco_x = 111 }
+	add_to_array = { KOR_legco_y = 100 }
+	add_to_array = { KOR_legco_x = 157 }
+	add_to_array = { KOR_legco_y = 148 }
+	add_to_array = { KOR_legco_x = 216 }
+	add_to_array = { KOR_legco_y = 215 }
+	add_to_array = { KOR_legco_x = 204 }
+	add_to_array = { KOR_legco_y = 196 }
+	add_to_array = { KOR_legco_x = 150 }
+	add_to_array = { KOR_legco_y = 125 }
+	add_to_array = { KOR_legco_x = 262 }
+	add_to_array = { KOR_legco_y = 263 }
+	add_to_array = { KOR_legco_x = 138 }
+	add_to_array = { KOR_legco_y = 106 }
+	add_to_array = { KOR_legco_x = 126 }
+	add_to_array = { KOR_legco_y = 87 }
+	add_to_array = { KOR_legco_x = 250 }
+	add_to_array = { KOR_legco_y = 245 }
+	add_to_array = { KOR_legco_x = 196 }
+	add_to_array = { KOR_legco_y = 174 }
+	add_to_array = { KOR_legco_x = 184 }
+	add_to_array = { KOR_legco_y = 155 }
+	add_to_array = { KOR_legco_x = 173 }
+	add_to_array = { KOR_legco_y = 135 }
+	add_to_array = { KOR_legco_x = 241 }
+	add_to_array = { KOR_legco_y = 223 }
+	add_to_array = { KOR_legco_x = 166 }
+	add_to_array = { KOR_legco_y = 113 }
+	add_to_array = { KOR_legco_x = 230 }
+	add_to_array = { KOR_legco_y = 204 }
+	add_to_array = { KOR_legco_x = 154 }
+	add_to_array = { KOR_legco_y = 94 }
+	add_to_array = { KOR_legco_x = 218 }
+	add_to_array = { KOR_legco_y = 185 }
+	add_to_array = { KOR_legco_x = 143 }
+	add_to_array = { KOR_legco_y = 75 }
+	add_to_array = { KOR_legco_x = 211 }
+	add_to_array = { KOR_legco_y = 163 }
+	add_to_array = { KOR_legco_x = 200 }
+	add_to_array = { KOR_legco_y = 144 }
+	add_to_array = { KOR_legco_x = 189 }
+	add_to_array = { KOR_legco_y = 125 }
+	add_to_array = { KOR_legco_x = 262 }
+	add_to_array = { KOR_legco_y = 236 }
+	add_to_array = { KOR_legco_x = 274 }
+	add_to_array = { KOR_legco_y = 255 }
+	add_to_array = { KOR_legco_x = 183 }
+	add_to_array = { KOR_legco_y = 102 }
+	add_to_array = { KOR_legco_x = 172 }
+	add_to_array = { KOR_legco_y = 83 }
+	add_to_array = { KOR_legco_x = 160 }
+	add_to_array = { KOR_legco_y = 63 }
+	add_to_array = { KOR_legco_x = 233 }
+	add_to_array = { KOR_legco_y = 176 }
+	add_to_array = { KOR_legco_x = 244 }
+	add_to_array = { KOR_legco_y = 195 }
+	add_to_array = { KOR_legco_x = 255 }
+	add_to_array = { KOR_legco_y = 214 }
+	add_to_array = { KOR_legco_x = 205 }
+	add_to_array = { KOR_legco_y = 115 }
+	add_to_array = { KOR_legco_x = 217 }
+	add_to_array = { KOR_legco_y = 134 }
+	add_to_array = { KOR_legco_x = 228 }
+	add_to_array = { KOR_legco_y = 153 }
+	add_to_array = { KOR_legco_x = 178 }
+	add_to_array = { KOR_legco_y = 54 }
+	add_to_array = { KOR_legco_x = 190 }
+	add_to_array = { KOR_legco_y = 73 }
+	add_to_array = { KOR_legco_x = 201 }
+	add_to_array = { KOR_legco_y = 92 }
+	add_to_array = { KOR_legco_x = 276 }
+	add_to_array = { KOR_legco_y = 229 }
+	add_to_array = { KOR_legco_x = 249 }
+	add_to_array = { KOR_legco_y = 168 }
+	add_to_array = { KOR_legco_x = 223 }
+	add_to_array = { KOR_legco_y = 106 }
+	add_to_array = { KOR_legco_x = 197 }
+	add_to_array = { KOR_legco_y = 45 }
+	add_to_array = { KOR_legco_x = 260 }
+	add_to_array = { KOR_legco_y = 187 }
+	add_to_array = { KOR_legco_x = 286 }
+	add_to_array = { KOR_legco_y = 249 }
+	add_to_array = { KOR_legco_x = 234 }
+	add_to_array = { KOR_legco_y = 126 }
+	add_to_array = { KOR_legco_x = 208 }
+	add_to_array = { KOR_legco_y = 64 }
+	add_to_array = { KOR_legco_x = 219 }
+	add_to_array = { KOR_legco_y = 84 }
+	add_to_array = { KOR_legco_x = 245 }
+	add_to_array = { KOR_legco_y = 146 }
+	add_to_array = { KOR_legco_x = 270 }
+	add_to_array = { KOR_legco_y = 207 }
+	add_to_array = { KOR_legco_x = 216 }
+	add_to_array = { KOR_legco_y = 37 }
+	add_to_array = { KOR_legco_x = 241 }
+	add_to_array = { KOR_legco_y = 99 }
+	add_to_array = { KOR_legco_x = 227 }
+	add_to_array = { KOR_legco_y = 57 }
+	add_to_array = { KOR_legco_x = 266 }
+	add_to_array = { KOR_legco_y = 161 }
+	add_to_array = { KOR_legco_x = 252 }
+	add_to_array = { KOR_legco_y = 119 }
+	add_to_array = { KOR_legco_x = 238 }
+	add_to_array = { KOR_legco_y = 77 }
+	add_to_array = { KOR_legco_x = 262 }
+	add_to_array = { KOR_legco_y = 139 }
+	add_to_array = { KOR_legco_x = 276 }
+	add_to_array = { KOR_legco_y = 181 }
+	add_to_array = { KOR_legco_x = 290 }
+	add_to_array = { KOR_legco_y = 224 }
+	add_to_array = { KOR_legco_x = 236 }
+	add_to_array = { KOR_legco_y = 31 }
+	add_to_array = { KOR_legco_x = 286 }
+	add_to_array = { KOR_legco_y = 202 }
+	add_to_array = { KOR_legco_x = 299 }
+	add_to_array = { KOR_legco_y = 244 }
+	add_to_array = { KOR_legco_x = 247 }
+	add_to_array = { KOR_legco_y = 51 }
+	add_to_array = { KOR_legco_x = 260 }
+	add_to_array = { KOR_legco_y = 93 }
+	add_to_array = { KOR_legco_x = 257 }
+	add_to_array = { KOR_legco_y = 71 }
+	add_to_array = { KOR_legco_x = 270 }
+	add_to_array = { KOR_legco_y = 114 }
+	add_to_array = { KOR_legco_x = 283 }
+	add_to_array = { KOR_legco_y = 156 }
+	add_to_array = { KOR_legco_x = 256 }
+	add_to_array = { KOR_legco_y = 26 }
+	add_to_array = { KOR_legco_x = 280 }
+	add_to_array = { KOR_legco_y = 134 }
+	add_to_array = { KOR_legco_x = 293 }
+	add_to_array = { KOR_legco_y = 177 }
+	add_to_array = { KOR_legco_x = 266 }
+	add_to_array = { KOR_legco_y = 46 }
+	add_to_array = { KOR_legco_x = 279 }
+	add_to_array = { KOR_legco_y = 89 }
+	add_to_array = { KOR_legco_x = 305 }
+	add_to_array = { KOR_legco_y = 220 }
+	add_to_array = { KOR_legco_x = 277 }
+	add_to_array = { KOR_legco_y = 67 }
+	add_to_array = { KOR_legco_x = 302 }
+	add_to_array = { KOR_legco_y = 198 }
+	add_to_array = { KOR_legco_x = 289 }
+	add_to_array = { KOR_legco_y = 110 }
+	add_to_array = { KOR_legco_x = 276 }
+	add_to_array = { KOR_legco_y = 22 }
+	add_to_array = { KOR_legco_x = 300 }
+	add_to_array = { KOR_legco_y = 153 }
+	add_to_array = { KOR_legco_x = 313 }
+	add_to_array = { KOR_legco_y = 241 }
+	add_to_array = { KOR_legco_x = 286 }
+	add_to_array = { KOR_legco_y = 43 }
+	add_to_array = { KOR_legco_x = 299 }
+	add_to_array = { KOR_legco_y = 131 }
+	add_to_array = { KOR_legco_x = 298 }
+	add_to_array = { KOR_legco_y = 86 }
+	add_to_array = { KOR_legco_x = 297 }
+	add_to_array = { KOR_legco_y = 64 }
+	add_to_array = { KOR_legco_x = 310 }
+	add_to_array = { KOR_legco_y = 174 }
+	add_to_array = { KOR_legco_x = 296 }
+	add_to_array = { KOR_legco_y = 19 }
+	add_to_array = { KOR_legco_x = 308 }
+	add_to_array = { KOR_legco_y = 108 }
+	add_to_array = { KOR_legco_x = 307 }
+	add_to_array = { KOR_legco_y = 41 }
+	add_to_array = { KOR_legco_x = 320 }
+	add_to_array = { KOR_legco_y = 218 }
+	add_to_array = { KOR_legco_x = 319 }
+	add_to_array = { KOR_legco_y = 196 }
+	add_to_array = { KOR_legco_x = 318 }
+	add_to_array = { KOR_legco_y = 152 }
+	add_to_array = { KOR_legco_x = 318 }
+	add_to_array = { KOR_legco_y = 129 }
+	add_to_array = { KOR_legco_x = 317 }
+	add_to_array = { KOR_legco_y = 85 }
+	add_to_array = { KOR_legco_x = 317 }
+	add_to_array = { KOR_legco_y = 63 }
+	add_to_array = { KOR_legco_x = 317 }
+	add_to_array = { KOR_legco_y = 18 }
+	add_to_array = { KOR_legco_x = 327 }
+	add_to_array = { KOR_legco_y = 240 }
+	add_to_array = { KOR_legco_x = 327 }
+	add_to_array = { KOR_legco_y = 174 }
+	add_to_array = { KOR_legco_x = 327 }
+	add_to_array = { KOR_legco_y = 107 }
+	add_to_array = { KOR_legco_x = 327 }
+	add_to_array = { KOR_legco_y = 40 }
+	add_to_array = { KOR_legco_x = 337 }
+	add_to_array = { KOR_legco_y = 18 }
+	add_to_array = { KOR_legco_x = 337 }
+	add_to_array = { KOR_legco_y = 63 }
+	add_to_array = { KOR_legco_x = 337 }
+	add_to_array = { KOR_legco_y = 85 }
+	add_to_array = { KOR_legco_x = 337 }
+	add_to_array = { KOR_legco_y = 129 }
+	add_to_array = { KOR_legco_x = 336 }
+	add_to_array = { KOR_legco_y = 152 }
+	add_to_array = { KOR_legco_x = 335 }
+	add_to_array = { KOR_legco_y = 196 }
+	add_to_array = { KOR_legco_x = 335 }
+	add_to_array = { KOR_legco_y = 218 }
+	add_to_array = { KOR_legco_x = 348 }
+	add_to_array = { KOR_legco_y = 41 }
+	add_to_array = { KOR_legco_x = 346 }
+	add_to_array = { KOR_legco_y = 108 }
+	add_to_array = { KOR_legco_x = 358 }
+	add_to_array = { KOR_legco_y = 19 }
+	add_to_array = { KOR_legco_x = 344 }
+	add_to_array = { KOR_legco_y = 174 }
+	add_to_array = { KOR_legco_x = 357 }
+	add_to_array = { KOR_legco_y = 64 }
+	add_to_array = { KOR_legco_x = 356 }
+	add_to_array = { KOR_legco_y = 86 }
+	add_to_array = { KOR_legco_x = 355 }
+	add_to_array = { KOR_legco_y = 131 }
+	add_to_array = { KOR_legco_x = 368 }
+	add_to_array = { KOR_legco_y = 43 }
+	add_to_array = { KOR_legco_x = 341 }
+	add_to_array = { KOR_legco_y = 241 }
+	add_to_array = { KOR_legco_x = 354 }
+	add_to_array = { KOR_legco_y = 153 }
+	add_to_array = { KOR_legco_x = 378 }
+	add_to_array = { KOR_legco_y = 22 }
+	add_to_array = { KOR_legco_x = 365 }
+	add_to_array = { KOR_legco_y = 110 }
+	add_to_array = { KOR_legco_x = 352 }
+	add_to_array = { KOR_legco_y = 198 }
+	add_to_array = { KOR_legco_x = 377 }
+	add_to_array = { KOR_legco_y = 67 }
+	add_to_array = { KOR_legco_x = 350 }
+	add_to_array = { KOR_legco_y = 220 }
+	add_to_array = { KOR_legco_x = 376 }
+	add_to_array = { KOR_legco_y = 89 }
+	add_to_array = { KOR_legco_x = 388 }
+	add_to_array = { KOR_legco_y = 46 }
+	add_to_array = { KOR_legco_x = 362 }
+	add_to_array = { KOR_legco_y = 177 }
+	add_to_array = { KOR_legco_x = 374 }
+	add_to_array = { KOR_legco_y = 134 }
+	add_to_array = { KOR_legco_x = 399 }
+	add_to_array = { KOR_legco_y = 26 }
+	add_to_array = { KOR_legco_x = 371 }
+	add_to_array = { KOR_legco_y = 156 }
+	add_to_array = { KOR_legco_x = 384 }
+	add_to_array = { KOR_legco_y = 114 }
+	add_to_array = { KOR_legco_x = 397 }
+	add_to_array = { KOR_legco_y = 71 }
+	add_to_array = { KOR_legco_x = 395 }
+	add_to_array = { KOR_legco_y = 93 }
+	add_to_array = { KOR_legco_x = 408 }
+	add_to_array = { KOR_legco_y = 51 }
+	add_to_array = { KOR_legco_x = 355 }
+	add_to_array = { KOR_legco_y = 244 }
+	add_to_array = { KOR_legco_x = 368 }
+	add_to_array = { KOR_legco_y = 202 }
+	add_to_array = { KOR_legco_x = 419 }
+	add_to_array = { KOR_legco_y = 31 }
+	add_to_array = { KOR_legco_x = 365 }
+	add_to_array = { KOR_legco_y = 224 }
+	add_to_array = { KOR_legco_x = 378 }
+	add_to_array = { KOR_legco_y = 181 }
+	add_to_array = { KOR_legco_x = 392 }
+	add_to_array = { KOR_legco_y = 139 }
+	add_to_array = { KOR_legco_x = 416 }
+	add_to_array = { KOR_legco_y = 77 }
+	add_to_array = { KOR_legco_x = 403 }
+	add_to_array = { KOR_legco_y = 119 }
+	add_to_array = { KOR_legco_x = 389 }
+	add_to_array = { KOR_legco_y = 161 }
+	add_to_array = { KOR_legco_x = 427 }
+	add_to_array = { KOR_legco_y = 57 }
+	add_to_array = { KOR_legco_x = 413 }
+	add_to_array = { KOR_legco_y = 99 }
+	add_to_array = { KOR_legco_x = 438 }
+	add_to_array = { KOR_legco_y = 37 }
+	add_to_array = { KOR_legco_x = 384 }
+	add_to_array = { KOR_legco_y = 207 }
+	add_to_array = { KOR_legco_x = 410 }
+	add_to_array = { KOR_legco_y = 146 }
+	add_to_array = { KOR_legco_x = 435 }
+	add_to_array = { KOR_legco_y = 84 }
+	add_to_array = { KOR_legco_x = 446 }
+	add_to_array = { KOR_legco_y = 64 }
+	add_to_array = { KOR_legco_x = 420 }
+	add_to_array = { KOR_legco_y = 126 }
+	add_to_array = { KOR_legco_x = 368 }
+	add_to_array = { KOR_legco_y = 249 }
+	add_to_array = { KOR_legco_x = 394 }
+	add_to_array = { KOR_legco_y = 187 }
+	add_to_array = { KOR_legco_x = 457 }
+	add_to_array = { KOR_legco_y = 45 }
+	add_to_array = { KOR_legco_x = 431 }
+	add_to_array = { KOR_legco_y = 106 }
+	add_to_array = { KOR_legco_x = 405 }
+	add_to_array = { KOR_legco_y = 168 }
+	add_to_array = { KOR_legco_x = 379 }
+	add_to_array = { KOR_legco_y = 229 }
+	add_to_array = { KOR_legco_x = 454 }
+	add_to_array = { KOR_legco_y = 92 }
+	add_to_array = { KOR_legco_x = 465 }
+	add_to_array = { KOR_legco_y = 73 }
+	add_to_array = { KOR_legco_x = 476 }
+	add_to_array = { KOR_legco_y = 54 }
+	add_to_array = { KOR_legco_x = 427 }
+	add_to_array = { KOR_legco_y = 153 }
+	add_to_array = { KOR_legco_x = 438 }
+	add_to_array = { KOR_legco_y = 134 }
+	add_to_array = { KOR_legco_x = 449 }
+	add_to_array = { KOR_legco_y = 115 }
+	add_to_array = { KOR_legco_x = 399 }
+	add_to_array = { KOR_legco_y = 214 }
+	add_to_array = { KOR_legco_x = 410 }
+	add_to_array = { KOR_legco_y = 195 }
+	add_to_array = { KOR_legco_x = 421 }
+	add_to_array = { KOR_legco_y = 176 }
+	add_to_array = { KOR_legco_x = 494 }
+	add_to_array = { KOR_legco_y = 63 }
+	add_to_array = { KOR_legco_x = 483 }
+	add_to_array = { KOR_legco_y = 83 }
+	add_to_array = { KOR_legco_x = 472 }
+	add_to_array = { KOR_legco_y = 102 }
+	add_to_array = { KOR_legco_x = 381 }
+	add_to_array = { KOR_legco_y = 255 }
+	add_to_array = { KOR_legco_x = 392 }
+	add_to_array = { KOR_legco_y = 236 }
+	add_to_array = { KOR_legco_x = 466 }
+	add_to_array = { KOR_legco_y = 125 }
+	add_to_array = { KOR_legco_x = 454 }
+	add_to_array = { KOR_legco_y = 144 }
+	add_to_array = { KOR_legco_x = 443 }
+	add_to_array = { KOR_legco_y = 163 }
+	add_to_array = { KOR_legco_x = 511 }
+	add_to_array = { KOR_legco_y = 75 }
+	add_to_array = { KOR_legco_x = 436 }
+	add_to_array = { KOR_legco_y = 185 }
+	add_to_array = { KOR_legco_x = 500 }
+	add_to_array = { KOR_legco_y = 94 }
+	add_to_array = { KOR_legco_x = 425 }
+	add_to_array = { KOR_legco_y = 204 }
+	add_to_array = { KOR_legco_x = 488 }
+	add_to_array = { KOR_legco_y = 113 }
+	add_to_array = { KOR_legco_x = 413 }
+	add_to_array = { KOR_legco_y = 223 }
+	add_to_array = { KOR_legco_x = 482 }
+	add_to_array = { KOR_legco_y = 135 }
+	add_to_array = { KOR_legco_x = 470 }
+	add_to_array = { KOR_legco_y = 155 }
+	add_to_array = { KOR_legco_x = 458 }
+	add_to_array = { KOR_legco_y = 174 }
+	add_to_array = { KOR_legco_x = 405 }
+	add_to_array = { KOR_legco_y = 245 }
+	add_to_array = { KOR_legco_x = 528 }
+	add_to_array = { KOR_legco_y = 87 }
+	add_to_array = { KOR_legco_x = 516 }
+	add_to_array = { KOR_legco_y = 106 }
+	add_to_array = { KOR_legco_x = 392 }
+	add_to_array = { KOR_legco_y = 263 }
+	add_to_array = { KOR_legco_x = 505 }
+	add_to_array = { KOR_legco_y = 125 }
+	add_to_array = { KOR_legco_x = 451 }
+	add_to_array = { KOR_legco_y = 196 }
+	add_to_array = { KOR_legco_x = 438 }
+	add_to_array = { KOR_legco_y = 215 }
+	add_to_array = { KOR_legco_x = 497 }
+	add_to_array = { KOR_legco_y = 148 }
+	add_to_array = { KOR_legco_x = 544 }
+	add_to_array = { KOR_legco_y = 100 }
+	add_to_array = { KOR_legco_x = 426 }
+	add_to_array = { KOR_legco_y = 233 }
+	add_to_array = { KOR_legco_x = 485 }
+	add_to_array = { KOR_legco_y = 167 }
+	add_to_array = { KOR_legco_x = 532 }
+	add_to_array = { KOR_legco_y = 119 }
+	add_to_array = { KOR_legco_x = 473 }
+	add_to_array = { KOR_legco_y = 186 }
+	add_to_array = { KOR_legco_x = 520 }
+	add_to_array = { KOR_legco_y = 138 }
+	add_to_array = { KOR_legco_x = 416 }
+	add_to_array = { KOR_legco_y = 254 }
+	add_to_array = { KOR_legco_x = 464 }
+	add_to_array = { KOR_legco_y = 208 }
+	add_to_array = { KOR_legco_x = 511 }
+	add_to_array = { KOR_legco_y = 161 }
+	add_to_array = { KOR_legco_x = 559 }
+	add_to_array = { KOR_legco_y = 114 }
+	add_to_array = { KOR_legco_x = 547 }
+	add_to_array = { KOR_legco_y = 133 }
+	add_to_array = { KOR_legco_x = 499 }
+	add_to_array = { KOR_legco_y = 180 }
+	add_to_array = { KOR_legco_x = 403 }
+	add_to_array = { KOR_legco_y = 273 }
+	add_to_array = { KOR_legco_x = 451 }
+	add_to_array = { KOR_legco_y = 226 }
+	add_to_array = { KOR_legco_x = 534 }
+	add_to_array = { KOR_legco_y = 153 }
+	add_to_array = { KOR_legco_x = 486 }
+	add_to_array = { KOR_legco_y = 199 }
+	add_to_array = { KOR_legco_x = 438 }
+	add_to_array = { KOR_legco_y = 245 }
+	add_to_array = { KOR_legco_x = 573 }
+	add_to_array = { KOR_legco_y = 129 }
+	add_to_array = { KOR_legco_x = 525 }
+	add_to_array = { KOR_legco_y = 175 }
+	add_to_array = { KOR_legco_x = 560 }
+	add_to_array = { KOR_legco_y = 148 }
+	add_to_array = { KOR_legco_x = 476 }
+	add_to_array = { KOR_legco_y = 221 }
+	add_to_array = { KOR_legco_x = 512 }
+	add_to_array = { KOR_legco_y = 194 }
+	add_to_array = { KOR_legco_x = 547 }
+	add_to_array = { KOR_legco_y = 168 }
+	add_to_array = { KOR_legco_x = 426 }
+	add_to_array = { KOR_legco_y = 266 }
+	add_to_array = { KOR_legco_x = 462 }
+	add_to_array = { KOR_legco_y = 240 }
+	add_to_array = { KOR_legco_x = 586 }
+	add_to_array = { KOR_legco_y = 145 }
+	add_to_array = { KOR_legco_x = 498 }
+	add_to_array = { KOR_legco_y = 213 }
+	add_to_array = { KOR_legco_x = 537 }
+	add_to_array = { KOR_legco_y = 190 }
+	add_to_array = { KOR_legco_x = 573 }
+	add_to_array = { KOR_legco_y = 164 }
+	add_to_array = { KOR_legco_x = 412 }
+	add_to_array = { KOR_legco_y = 283 }
+	add_to_array = { KOR_legco_x = 448 }
+	add_to_array = { KOR_legco_y = 258 }
+	add_to_array = { KOR_legco_x = 560 }
+	add_to_array = { KOR_legco_y = 184 }
+	add_to_array = { KOR_legco_x = 523 }
+	add_to_array = { KOR_legco_y = 210 }
+	add_to_array = { KOR_legco_x = 487 }
+	add_to_array = { KOR_legco_y = 235 }
+	add_to_array = { KOR_legco_x = 598 }
+	add_to_array = { KOR_legco_y = 161 }
+	add_to_array = { KOR_legco_x = 509 }
+	add_to_array = { KOR_legco_y = 229 }
+	add_to_array = { KOR_legco_x = 584 }
+	add_to_array = { KOR_legco_y = 181 }
+	add_to_array = { KOR_legco_x = 472 }
+	add_to_array = { KOR_legco_y = 254 }
+	add_to_array = { KOR_legco_x = 548 }
+	add_to_array = { KOR_legco_y = 206 }
+	add_to_array = { KOR_legco_x = 435 }
+	add_to_array = { KOR_legco_y = 278 }
+	add_to_array = { KOR_legco_x = 570 }
+	add_to_array = { KOR_legco_y = 201 }
+	add_to_array = { KOR_legco_x = 609 }
+	add_to_array = { KOR_legco_y = 179 }
+	add_to_array = { KOR_legco_x = 533 }
+	add_to_array = { KOR_legco_y = 226 }
+	add_to_array = { KOR_legco_x = 457 }
+	add_to_array = { KOR_legco_y = 272 }
+	add_to_array = { KOR_legco_x = 496 }
+	add_to_array = { KOR_legco_y = 250 }
+	add_to_array = { KOR_legco_x = 595 }
+	add_to_array = { KOR_legco_y = 199 }
+	add_to_array = { KOR_legco_x = 419 }
+	add_to_array = { KOR_legco_y = 295 }
+	add_to_array = { KOR_legco_x = 557 }
+	add_to_array = { KOR_legco_y = 223 }
+	add_to_array = { KOR_legco_x = 519 }
+	add_to_array = { KOR_legco_y = 245 }
+	add_to_array = { KOR_legco_x = 619 }
+	add_to_array = { KOR_legco_y = 197 }
+	add_to_array = { KOR_legco_x = 580 }
+	add_to_array = { KOR_legco_y = 219 }
+	add_to_array = { KOR_legco_x = 481 }
+	add_to_array = { KOR_legco_y = 269 }
+	add_to_array = { KOR_legco_x = 542 }
+	add_to_array = { KOR_legco_y = 243 }
+	add_to_array = { KOR_legco_x = 442 }
+	add_to_array = { KOR_legco_y = 291 }
+	add_to_array = { KOR_legco_x = 604 }
+	add_to_array = { KOR_legco_y = 217 }
+	add_to_array = { KOR_legco_x = 504 }
+	add_to_array = { KOR_legco_y = 266 }
+	add_to_array = { KOR_legco_x = 566 }
+	add_to_array = { KOR_legco_y = 241 }
+	add_to_array = { KOR_legco_x = 628 }
+	add_to_array = { KOR_legco_y = 215 }
+	add_to_array = { KOR_legco_x = 465 }
+	add_to_array = { KOR_legco_y = 287 }
+	add_to_array = { KOR_legco_x = 527 }
+	add_to_array = { KOR_legco_y = 262 }
+	add_to_array = { KOR_legco_x = 588 }
+	add_to_array = { KOR_legco_y = 237 }
+	add_to_array = { KOR_legco_x = 612 }
+	add_to_array = { KOR_legco_y = 236 }
+	add_to_array = { KOR_legco_x = 550 }
+	add_to_array = { KOR_legco_y = 260 }
+	add_to_array = { KOR_legco_x = 425 }
+	add_to_array = { KOR_legco_y = 308 }
+	add_to_array = { KOR_legco_x = 488 }
+	add_to_array = { KOR_legco_y = 285 }
+	add_to_array = { KOR_legco_x = 635 }
+	add_to_array = { KOR_legco_y = 235 }
+	add_to_array = { KOR_legco_x = 573 }
+	add_to_array = { KOR_legco_y = 259 }
+	add_to_array = { KOR_legco_x = 511 }
+	add_to_array = { KOR_legco_y = 283 }
+	add_to_array = { KOR_legco_x = 596 }
+	add_to_array = { KOR_legco_y = 256 }
+	add_to_array = { KOR_legco_x = 448 }
+	add_to_array = { KOR_legco_y = 306 }
+	add_to_array = { KOR_legco_x = 533 }
+	add_to_array = { KOR_legco_y = 280 }
+	add_to_array = { KOR_legco_x = 619 }
+	add_to_array = { KOR_legco_y = 255 }
+	add_to_array = { KOR_legco_x = 470 }
+	add_to_array = { KOR_legco_y = 303 }
+	add_to_array = { KOR_legco_x = 556 }
+	add_to_array = { KOR_legco_y = 279 }
+	add_to_array = { KOR_legco_x = 642 }
+	add_to_array = { KOR_legco_y = 254 }
+	add_to_array = { KOR_legco_x = 579 }
+	add_to_array = { KOR_legco_y = 278 }
+	add_to_array = { KOR_legco_x = 493 }
+	add_to_array = { KOR_legco_y = 301 }
+	add_to_array = { KOR_legco_x = 601 }
+	add_to_array = { KOR_legco_y = 275 }
+	add_to_array = { KOR_legco_x = 516 }
+	add_to_array = { KOR_legco_y = 300 }
+	add_to_array = { KOR_legco_x = 624 }
+	add_to_array = { KOR_legco_y = 275 }
+	add_to_array = { KOR_legco_x = 429 }
+	add_to_array = { KOR_legco_y = 321 }
+	add_to_array = { KOR_legco_x = 538 }
+	add_to_array = { KOR_legco_y = 298 }
+	add_to_array = { KOR_legco_x = 647 }
+	add_to_array = { KOR_legco_y = 274 }
+	add_to_array = { KOR_legco_x = 561 }
+	add_to_array = { KOR_legco_y = 297 }
+	add_to_array = { KOR_legco_x = 452 }
+	add_to_array = { KOR_legco_y = 320 }
+	add_to_array = { KOR_legco_x = 583 }
+	add_to_array = { KOR_legco_y = 297 }
+	add_to_array = { KOR_legco_x = 474 }
+	add_to_array = { KOR_legco_y = 319 }
+	add_to_array = { KOR_legco_x = 605 }
+	add_to_array = { KOR_legco_y = 295 }
+	add_to_array = { KOR_legco_x = 628 }
+	add_to_array = { KOR_legco_y = 295 }
+	add_to_array = { KOR_legco_x = 497 }
+	add_to_array = { KOR_legco_y = 318 }
+	add_to_array = { KOR_legco_x = 650 }
+	add_to_array = { KOR_legco_y = 294 }
+	add_to_array = { KOR_legco_x = 519 }
+	add_to_array = { KOR_legco_y = 317 }
+	add_to_array = { KOR_legco_x = 541 }
+	add_to_array = { KOR_legco_y = 316 }
+	add_to_array = { KOR_legco_x = 564 }
+	add_to_array = { KOR_legco_y = 316 }
+	add_to_array = { KOR_legco_x = 586 }
+	add_to_array = { KOR_legco_y = 316 }
+	add_to_array = { KOR_legco_x = 608 }
+	add_to_array = { KOR_legco_y = 315 }
+	add_to_array = { KOR_legco_x = 631 }
+	add_to_array = { KOR_legco_y = 315 }
+	add_to_array = { KOR_legco_x = 431 }
+	add_to_array = { KOR_legco_y = 335 }
+	add_to_array = { KOR_legco_x = 653 }
+	add_to_array = { KOR_legco_y = 315 }
+	add_to_array = { KOR_legco_x = 454 }
+	add_to_array = { KOR_legco_y = 335 }
+	add_to_array = { KOR_legco_x = 476 }
+	add_to_array = { KOR_legco_y = 335 }
+	add_to_array = { KOR_legco_x = 498 }
+	add_to_array = { KOR_legco_y = 335 }
+	add_to_array = { KOR_legco_x = 521 }
+	add_to_array = { KOR_legco_y = 335 }
+	add_to_array = { KOR_legco_x = 543 }
+	add_to_array = { KOR_legco_y = 335 }
+	add_to_array = { KOR_legco_x = 565 }
+	add_to_array = { KOR_legco_y = 335 }
+	add_to_array = { KOR_legco_x = 588 }
+	add_to_array = { KOR_legco_y = 335 }
+	add_to_array = { KOR_legco_x = 610 }
+	add_to_array = { KOR_legco_y = 335 }
+	add_to_array = { KOR_legco_x = 632 }
+	add_to_array = { KOR_legco_y = 335 }
+	add_to_array = { KOR_legco_x = 654 }
+	add_to_array = { KOR_legco_y = 335 }
+}
+
+#개표
+legco_ordinance_vote_start = {
+	clr_country_flag = legco_introduce_ordinance_ready
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = this_is_resolution
+			}
+		}
+		set_variable = { KOR_legco_vote_days = 7 }
+	}
+	if = {
+		limit = {
+			has_country_flag = this_is_resolution
+		}
+		set_variable = { KOR_legco_vote_days = 1 }
+	}
+	clr_country_flag = this_is_resolution
+	hidden_effect = {
+		country_event = {
+			id = KOR_parliament.1
+			days = 1
+		}
+		# set_temp_variable = { alert_id = token:Alert_GNG_LegCo_Bill }
+		# add_TNO_alert_unless_exists = yes
+	}
+	custom_effect_tooltip = KOR_legco_bill_voting_tooltip
+	# log = "Guangdong ID [?GNG_temp_legco_id] Bill Vote Start"
+}
+
+legco_bill_conclude = {
+	clr_country_flag = KOR_show_effects_for_ordinance
+	# set_temp_variable = { alert_id = token:Alert_GNG_LegCo_Bill }
+	# remove_TNO_alert = yes
+	# if = {
+	# 	limit = {
+	# 		has_country_flag = GNG_riots_negotiations_stall
+	# 	}
+	# 	clr_country_flag = GNG_riots_negotiations_stall
+	# 	country_event = { id = guangdong_RiotsNegotiations.9 days = 3 }
+	# }
+	if = {
+		limit = {
+			KOR = {
+				is_ai = no
+			}
+		}
+		if = {
+			limit = {
+				check_variable = { KOR_Current_Ordinance_Votes > 199 }
+			}
+			#log = "Guangdong ID [?GNG_legco_current_ordinance_id] Bill Passed"
+			KOR_pass_ordinance = yes
+		}
+		else_if = {
+			limit = {
+				check_variable = { KOR_Current_Ordinance_Votes < 200 }
+			}
+			#log = "Guangdong ID [?GNG_legco_current_ordinance_id] Bill Fails"
+			KOR_fail_ordinance = yes
+		}
+	}
+	# else = {
+	# 	if = {
+	# 		limit = {
+	# 			has_country_flag = GNG_AI_Guarantee_Pass
+	# 		}
+	# 		clr_country_flag = GNG_AI_Guarantee_Pass
+	# 		GNG_pass_ordinance = yes
+	# 	}
+	# 	else_if = {
+	# 		limit = {
+	# 			has_country_flag = GNG_AI_Guarantee_Fail
+	# 		}
+	# 		clr_country_flag = GNG_AI_Guarantee_Fail
+	# 		GNG_fail_ordinance = yes
+	# 	}
+	# 	else = {
+	# 		random_list = {
+	# 			75 = {
+	# 				GNG_pass_ordinance = yes
+	# 			}
+	# 			25 = {
+	# 				modifier = {
+	# 					factor = 0
+	# 					has_game_rule = {
+	# 						rule = GNG_AI_ORDINANCES
+	# 						option = GNG_AI_ORDINANCES_YES
+	# 					}
+	# 				}
+	# 				GNG_fail_ordinance = yes
+	# 			}
+	# 		}
+	# 	}
+	# }
+}
+
+KOR_pass_ordinance = {
+	if = {
+		limit = { check_variable = { KOR_legco_current_ordinance_id > 0 } }
+		add_to_array = { array = KOR_legco_history value = KOR_legco_current_ordinance_id index = 0 }
+		add_to_array = { array = KOR_legco_passage value = 1 index = 0 }
+		set_variable = { KOR_legco_amendments_1^KOR_legco_ordinance_id = KOR_legco_amendments_1^KOR_legco_current_ordinance_id }
+		set_variable = { KOR_legco_amendments_2^KOR_legco_ordinance_id = KOR_legco_amendments_2^KOR_legco_current_ordinance_id }
+		set_variable = { KOR_legco_amendments_3^KOR_legco_ordinance_id = KOR_legco_amendments_3^KOR_legco_current_ordinance_id }
+		set_variable = { KOR_legco_amendments_4^KOR_legco_ordinance_id = KOR_legco_amendments_4^KOR_legco_current_ordinance_id }
+		set_variable = { KOR_legco_amendments_5^KOR_legco_ordinance_id = KOR_legco_amendments_5^KOR_legco_current_ordinance_id }
+		set_variable = { KOR_legco_amendments_6^KOR_legco_ordinance_id = KOR_legco_amendments_6^KOR_legco_current_ordinance_id }
+		set_variable = { KOR_legco_amendments_7^KOR_legco_ordinance_id = KOR_legco_amendments_7^KOR_legco_current_ordinance_id }
+		set_variable = { KOR_legco_amendments_8^KOR_legco_ordinance_id = KOR_legco_amendments_8^KOR_legco_current_ordinance_id }
+		set_variable = { KOR_legco_amendments_9^KOR_legco_ordinance_id = KOR_legco_amendments_9^KOR_legco_current_ordinance_id }
+		set_variable = { KOR_legco_amendments_10^KOR_legco_ordinance_id = KOR_legco_amendments_10^KOR_legco_current_ordinance_id }
+
+		set_variable = { KOR_legco_amendments_11^KOR_legco_ordinance_id = KOR_legco_amendments_11^KOR_legco_current_ordinance_id }
+
+
+		set_variable = { KOR_legco_holding_value = KOR_legco_current_ordinance_id }
+		KOR_pass_ordinance_event_effect = yes
+		set_variable = { KOR_legco_current_ordinance_id = 0 }
+		set_variable = { KOR_legco_current_voting = 0 }
+	}
+}
+
+KOR_pass_ordinance_event_effect = {
+	if = {
+		limit = {
+			check_variable = { KOR_legco_current_ordinance_id = 1 }
+		}
+		country_event = {
+			id = KOR_parliament.2
+		}
+	}
+}

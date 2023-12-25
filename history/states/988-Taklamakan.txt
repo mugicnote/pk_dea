@@ -1,7 +1,7 @@
 
 state={
 	id=988
-	name="STATE_962"
+	name="STATE_Taklamakan"
 
 	history={
 		owner = SIK

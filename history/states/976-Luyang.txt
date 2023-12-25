@@ -1,6 +1,6 @@
 state={
 	id=976
-	name="STATE_950"
+	name="STATE_Luyang"
 
 	history={
 		owner = MAN
@@ -11,6 +11,6 @@ state={
 	provinces={
 		4158 4519 4547 7459 7568 10434 10446 12426 
 	}
-	manpower=0
+	manpower=7520500
 	buildings_max_level_factor=1.000
 }

@@ -809,6 +809,11 @@ KOR_btbd = {
 	color = rgb { 35 57 102 }
 	color_ui = rgb { 35 57 102 }
 }
+
+KNM_Manchuria = {
+	color = rgb { 145 130 105 }
+	color_ui = rgb { 145 130 105 }	
+}
 KNM_KOR = {
 	color = rgb { 40 57 102 }
 	color_ui = rgb { 40 57 102 }

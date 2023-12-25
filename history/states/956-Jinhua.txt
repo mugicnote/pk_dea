@@ -1,6 +1,6 @@
 state={
 	id=956
-	name="STATE_930"
+	name="STATE_Jinhua"
 
 	history={
 		owner = MAN
@@ -18,7 +18,7 @@ state={
 	provinces={
 		1195 7146 7174 9944 10086 11920 12059 
 	}
-	manpower=0
+	manpower=3412000
 	buildings_max_level_factor=1.000
 	state_category=town
 }

@@ -1,7 +1,7 @@
 
 state={
 	id=958
-	name="STATE_932"
+	name="STATE_Wuhan"
 
 	history={
 		owner = MAN
@@ -26,7 +26,7 @@ state={
 	provinces={
 		1036 4009 4619 4631 7167 7580 7625 7637 9934 9959 10462 12467 
 	}
-	manpower=0
+	manpower=13949100
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=0.000

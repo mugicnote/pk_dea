@@ -958,12 +958,10 @@ GIZ = {
 	color = rgb { 29 84 136 }
 	color_ui = rgb { 29 84 136 }
 }
-
 KNM = {
-	color = rgb { 145 130 105 }
-	color_ui = rgb { 145 130 105 }	
+	color = rgb { 189 113 33 }
+	color_ui = rgb { 189 113 33 }
 }
-
 TAI = {
 	color = rgb { 38 110 177 }
 	color_ui = rgb { 38 110 177 }	
@@ -974,5 +972,5 @@ PGC = { color = rgb { 50 67 102 } color_ui = rgb { 50 67 102 } } #Provisional Go
 RGC = { color = rgb { 83 115 181 } color_ui = rgb { 83 115 181 } } #Reformed Government of the Republic of China
 GSC = { color = rgb { 71 104 173 } color_ui = rgb { 71 104 173 } } #Great Way Municipal Government of Shanghai
 NCN = { color = rgb { 59 80 125 } color_ui = rgb { 59 80 125 } } #NanjingGrad Government China
-XPM = { color = rgb { 110 138 150 } color_ui = rgb { 110 138 150 } } #Xikang Province
-FPG = { color = rgb { 156 78 85 } color_ui = rgb { 156 78 85 } } #Fupeong Joa or Fujian Province
+XPM = { color = rgb { 125 140 150 } color_ui = rgb { 125 140 150 } } #Xikang Province
+FPG = { color = rgb { 125 75 80 } color_ui = rgb { 125 75 80 } } #Fupeong Joa or Fujian Province

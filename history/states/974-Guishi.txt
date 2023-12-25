@@ -1,7 +1,7 @@
 
 state={
 	id=974
-	name="STATE_948"
+	name="STATE_Guishi"
 
 	history={
 		owner = GIZ
@@ -10,9 +10,9 @@ state={
 	}
 
 	provinces={
-		1884 4192 4504 4532 7521 7549 10616 
+		1884 4192 4504 
 	}
-	manpower=0
+	manpower=3429000
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

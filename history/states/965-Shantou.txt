@@ -1,6 +1,6 @@
 state={
 	id=965
-	name="STATE_939"
+	name="STATE_Shantou"
 	manpower=196000
 	state_category = large_town
 

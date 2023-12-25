@@ -1,17 +1,18 @@
 state={
 	id=999
-	name="STATE_973"
+	name="STATE_Qiqihar"
 	
 	history={
 		owner = MAN
 		add_core_of = MAN
 
+		set_demilitarized_zone = yes
 	}
 
 	provinces={
 		1847 4809 4876 7873 7894 10567 
 	}
-	manpower=0
+	manpower=328000
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

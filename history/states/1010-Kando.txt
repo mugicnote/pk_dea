@@ -1,0 +1,21 @@
+
+state={
+	id=1010
+	name="STATE_Kando"
+
+	history={
+		owner = KNM
+		add_core_of = KNM
+		buildings = {
+
+		}
+
+	}
+
+	provinces={
+		800 861 927 3929 9841 11823 
+	}
+	manpower=1196800
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

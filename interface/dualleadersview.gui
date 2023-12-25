@@ -74,7 +74,7 @@ guiTypes = {
 		
 		iconType = {
 			name = "secondary_leader_portrait"
-			position = { x = 143 y = 1 }
+			position = { x = 143 y = 3 }
 			spriteType = "GFX_leader_unknown"
 			scale = 0.73
 			pdx_tooltip = "DUAL_LEADER_NAME2"

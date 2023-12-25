@@ -1,7 +1,7 @@
 
 state={
 	id=984
-	name="STATE_958"
+	name="STATE_Andong"
 
 	history={
 		owner = MAN
@@ -13,9 +13,9 @@ state={
 	}
 
 	provinces={
-		800 861 927 945 3929 3949 3970 6860 6905 6910 6981 9759 9781 9803 9841 9848 11823 
+		945 3949 3970 6860 6905 6910 6981 9759 9781 9803 9848 
 	}
-	manpower=0
+	manpower=1795200
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

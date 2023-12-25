@@ -3,76 +3,168 @@ defined_text = {
 	name = GetParliamentPartyName
 	text = {
 		trigger = {
-			check_variable = { v = 1 }
+			check_variable = { KOR_legco_faction = 1 }
+			NOT = { has_country_flag = KOR_coup_seats_Additional_flag }
 		}
 		localization_key = party_1_text
 	}
 	text = {
 		trigger = {
-			check_variable = { v = 2 }
+			check_variable = { KOR_legco_faction = 2 }
+			NOT = { has_country_flag = KOR_coup_seats_Additional_flag }
 		}
 		localization_key = party_2_text
 	}
 	text = {
 		trigger = {
-			check_variable = { v = 3 }
+			check_variable = { KOR_legco_faction = 3 }
+			NOT = { has_country_flag = KOR_coup_seats_Additional_flag }
 		}
 		localization_key = party_3_text
 	}
 	text = {
 		trigger = {
-			check_variable = { v = 4 }
+			check_variable = { KOR_legco_faction = 4 }
+			NOT = { has_country_flag = KOR_coup_seats_Additional_flag }
 		}
 		localization_key = party_4_text
 	}
 	text = {
 		trigger = {
-			check_variable = { v = 5 }
+			check_variable = { KOR_legco_faction = 5 }
+			NOT = { has_country_flag = KOR_coup_seats_Additional_flag }
 		}
 		localization_key = party_5_text
 	}
 	text = {
 		trigger = {
-			check_variable = { v = 6 }
+			check_variable = { KOR_legco_faction = 6 }
+			NOT = { has_country_flag = KOR_coup_seats_Additional_flag }
 		}
 		localization_key = party_6_text
 	}
 	text = {
 		trigger = {
-			check_variable = { v = 7 }
+			check_variable = { KOR_legco_faction = 7 }
+			NOT = { has_country_flag = KOR_coup_seats_Additional_flag }
 		}
 		localization_key = party_7_text
 	}
 	text = {
 		trigger = {
-			check_variable = { v = 8 }
+			check_variable = { KOR_legco_faction = 8 }
+			NOT = { has_country_flag = KOR_coup_seats_Additional_flag }
 		}
 		localization_key = party_8_text
 	}
 	text = {
 		trigger = {
-			check_variable = { v = 9 }
+			check_variable = { KOR_legco_faction = 9 }
+			NOT = { has_country_flag = KOR_coup_seats_Additional_flag }
 		}
 		localization_key = party_9_text
 	}
 	text = {
 		trigger = {
-			check_variable = { v = 10 }
+			check_variable = { KOR_legco_faction = 10 }
+			NOT = { has_country_flag = KOR_coup_seats_Additional_flag }
 		}
 		localization_key = party_10_text
 	}
 	text = {
-		localization_key = "Error"
+		trigger = {
+			check_variable = { KOR_legco_faction = 11 }
+			has_country_flag = KOR_coup_seats_Additional_flag
+		}
+		localization_key = party_11_text
 	}
 }
 
+defined_text = {
+	name = KOR_legco_seat_faction
+	text = {
+		trigger = {
+			set_temp_variable = { KOR_legco_faction = KOR_legco_faction^seat_idx }
+		}
+		localization_key = "[GetParliamentPartyName]"
+	}
+}
 
+defined_text = {
+	name = KOR_legco_current_faction_seats_dynamic
+	text = {
+		trigger = {
+			check_variable = { KOR_legco_faction = 1 }
+		}
+		localization_key = KOR_legco_first_seats
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_legco_faction = 2 }
+		}
+		localization_key = KOR_legco_second_seats
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_legco_faction = 3 }
+		}
+		localization_key = KOR_legco_third_seats
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_legco_faction = 4 }
+		}
+		localization_key = KOR_legco_forth_seats
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_legco_faction = 5 }
+		}
+		localization_key = KOR_legco_fifth_seats
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_legco_faction = 6 }
+		}
+		localization_key = KOR_legco_sixth_seats
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_legco_faction = 7 }
+		}
+		localization_key = KOR_legco_seventh_seats
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_legco_faction = 8 }
+		}
+		localization_key = KOR_legco_eighth_seats
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_legco_faction = 9 }
+		}
+		localization_key = KOR_legco_nineth_seats
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_legco_faction = 10 }
+		}
+		localization_key = KOR_legco_tenth_seats
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_legco_faction = 11 }
+		}
+		localization_key = KOR_legco_eleventh_seats
+	}
+}
 # Since index starts as 0, i can get the current seat number by jut adding it by one and then displaying it.
 defined_text = {
 	name = GetParliamentSeatName
 	text = {
 		trigger = {
-			set_temp_variable = { temp_seat = parliament_main_index }
+			set_temp_variable = { temp_seat = seat_idx }
 			add_to_temp_variable = { temp_seat = 1 }
 			check_variable = { temp_seat > 0 }
 		}
@@ -100,6 +192,41 @@ defined_text = {
 			check_variable = { KOR_Current_Ordinance_Votes > 199 }
 		}
 		localization_key = KOR_ordinance_over_200_votes
+	}
+}
+
+defined_text = {
+	name = Legco_Pass_Check_2
+	text = {
+		trigger = {
+			check_variable = { KOR_legco_current_ordinance_id = 0 }
+		}
+		localization_key = KOR_no_ordinance_votes
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_Current_Ordinance_Votes < 200 }
+		}
+		localization_key = KOR_ordinance_under_200_votes
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_Current_Ordinance_Votes > 199 }
+		}
+		localization_key = KOR_ordinance_over_200_votes
+	}
+}
+
+defined_text = {
+	name = KOR_check_legco_stage_for_votes_initialize_2
+	# text = {
+	# 	trigger = {
+	# 		has_country_flag = GNG_legco_stage_2
+	# 	}
+	# 	localization_key = GNG_votes_initialize_percentages_stage_2
+	# }
+	text = {
+		localization_key = KOR_votes_initialize_percentages_stage_2
 	}
 }
 
@@ -136,7 +263,7 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			check_variable = { KOR_Current_Ordinance_Votes > 200 }
+			check_variable = { KOR_Current_Ordinance_Votes > 199 }
 		}
 		localization_key = KOR_ordinance_enough_to_pass
 	}

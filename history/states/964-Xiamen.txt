@@ -1,7 +1,7 @@
 
 state={
 	id=964
-	name="STATE_938"
+	name="STATE_Xiamen"
 
 	history={
 		owner = NAC
@@ -15,9 +15,9 @@ state={
 	}
 
 	provinces={
-		7027 7071 7131 11986 
+		7071
 	}
-	manpower=0
+	manpower=177000
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

@@ -1,6 +1,6 @@
 state={
 	id=981
-	name="STATE_955"
+	name="STATE_Daming"
 	manpower = 5964950
 	state_category = town
 	history = {

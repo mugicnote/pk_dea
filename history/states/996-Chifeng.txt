@@ -1,6 +1,6 @@
 state={
 	id=996
-	name="STATE_970"
+	name="STATE_Chifeng"
 
 	history={
 		owner = MAN
@@ -11,7 +11,7 @@ state={
 	provinces={
 		1508 3978 4514 6988 7575 9927 10429 10499 12478 
 	}
-	manpower=0
+	manpower=3296500
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

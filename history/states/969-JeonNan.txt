@@ -1,7 +1,7 @@
 
 state={
 	id=969
-	name="STATE_943"
+	name="STATE_JeonNan"
 
 	history={
 		owner = GXC
@@ -13,9 +13,9 @@ state={
 	}
 
 	provinces={
-		4121 4177 7137 
+		1469 4121 4656 
 	}
-	manpower=0
+	manpower=493000
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

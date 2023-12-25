@@ -6,6 +6,36 @@ on_actions = {
 				set_variable = { TNO_Opening_Screen = 1 }
 				set_variable = { Country_explanation_Button_y = 41 }
 			}
+			MAN = {
+				set_autonomy = {
+					target = KNM
+					autonomous_state = autonomy_dominion
+					freedom_level = 0.4
+				}
+			}
+			KNM = {
+				set_politics = {
+					ruling_party = neutrality
+					last_election = "1936.1.1"
+					election_frequency = 48
+					elections_allowed = yes
+				}
+				#시작시_정당들의_인기도
+				set_popularities = {
+				  communism = 0
+				  authoritarian_socialism = 0
+				  radical_socialism = 0
+				  social_democracy = 0
+				  social_liberalism = 0
+				  national_liberalism = 0
+				  liberal_conservatism = 0
+				  democratic = 0
+				  national_conservatism = 5
+				  neutrality = 65
+				  auto_despotism = 10
+				  fascism = 20
+				}
+			}
 			KOR = {
 				set_variable = { Social_insecurity_pop = 3 }
 				set_variable = { USA_Relationship_pop = 2 }
@@ -28,24 +58,10 @@ on_actions = {
 				FAC_set_radsoc_friendly = yes
 				FAC_set_des_notgood = yes
 				FAC_set_fas_notgood = yes
-				set_variable = { KOR_legco_first_seats = 105 }
-				set_variable = { KOR_legco_second_seats = 80 }
-				set_variable = { KOR_legco_third_seats = 69 }
-				set_variable = { KOR_legco_forth_seats = 57 }
-				set_variable = { KOR_legco_fifth_seats = 47 }
-				set_variable = { KOR_legco_sixth_seats = 13 }
-				set_variable = { KOR_legco_seventh_seats = 11 }
-				set_variable = { KOR_legco_eighth_seats = 9 }
-				set_variable = { KOR_legco_nineth_seats = 7 }
-				set_variable = { KOR_legco_tenth_seats = 2 }
 
-				clear_array = KOR_legco_faction_support
-				resize_array = {
-					array = KOR_legco_faction_support
-					size = 11
-				}
-				parliament_gui_initial = yes
 				
+				parliament_gui_initial = yes
+				KOR_check_votes_legco = yes
 
 				set_variable = { KOR_legco_current_ordinance_id = 0 }
 				set_variable = { KOR_legco_current_negotiation_id = 0 }

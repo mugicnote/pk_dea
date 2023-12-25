@@ -1,6 +1,6 @@
 state={
 	id=955
-	name="STATE_929"
+	name="STATE_Kwaizi"
 
 	history={
 		owner = MAN
@@ -16,7 +16,7 @@ state={
 	provinces={
 		1096 1168 7058 10058 
 	}
-	manpower=0
+	manpower=4617000
 	buildings_max_level_factor=1.000
 	state_category=town
 }

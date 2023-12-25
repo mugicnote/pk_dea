@@ -1,6 +1,6 @@
 state = {
 	id = 936
-	name = "STATE_910" #함경북도
+	name = "STATE_North_Hamgyong" #함경북도
 	manpower = 1628000
 
 	state_category = large_town

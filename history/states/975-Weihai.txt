@@ -1,7 +1,7 @@
 
 state={
 	id=975
-	name="STATE_949"
+	name="STATE_Weihai"
 
 	history={
 		owner = MAN
@@ -12,7 +12,7 @@ state={
 	provinces={
 		4205 
 	}
-	manpower=0
+	manpower=234100
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

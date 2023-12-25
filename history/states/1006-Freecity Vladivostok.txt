@@ -1,6 +1,6 @@
 state={
 	id=1006
-	name="STATE_980"
+	name="STATE_Freecity_Vladivostok"
 
 	history={
 		owner = SOV

@@ -7,8 +7,8 @@ state={
 	}
 
 	history={
-		owner = HNC
-		add_core_of = HNC
+		owner = GIZ
+		add_core_of = GIZ
 		buildings = {
 			infrastructure = 5
 			industrial_complex = 2
@@ -32,9 +32,9 @@ state={
 	}
 
 	provinces={
-		4480 7665 10006 10335 12017 12053 12310 
+		1474 7521 7549 7577 
 	}
-	manpower=20293700
+	manpower=3010200
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000

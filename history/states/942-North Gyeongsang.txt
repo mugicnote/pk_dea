@@ -1,6 +1,6 @@
 state = {
 	id = 942
-	name = "STATE_916" #경상북도
+	name = "STATE_North_Gyeongsang" #경상북도
 	manpower = 4910000
 
 	state_category = city

@@ -1,6 +1,6 @@
 state={
 	id=952
-	name="STATE_926"
+	name="STATE_Huaixi"
 
 	history={
 		owner = MAN
@@ -15,7 +15,7 @@ state={
 	provinces={
 		1001 1121 1161 4079 4148 7094 9937 10008 10040 10064 10079 11916 11973 12036 
 	}
-	manpower=0
+	manpower=8000000
 	buildings_max_level_factor=1.000
 	state_category=town
 }

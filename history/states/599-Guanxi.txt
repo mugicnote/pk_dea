@@ -25,9 +25,9 @@ state={
 	}
 
 	provinces={
-		1469 1625 4077 4085 4628 4656 10459 
+		1625 4077 4085 4628 10459 
 	}
-	manpower=8685200
+	manpower=960000
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000

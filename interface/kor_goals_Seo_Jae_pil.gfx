@@ -1,0 +1,56 @@
+spriteTypes = {
+
+	#서재필 행정부
+	SpriteType = {
+		name = "GFX_Seo_Jae_pil_administration"
+		texturefile = "gfx/interface/goals/Seo_Jae_pil_administration.tga"
+	}
+	SpriteType = {
+		name = "GFX_KOR_fund_from_usa_3"
+		texturefile = "gfx/interface/goals/KOR_fund_from_usa_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_univercity_support"
+		texturefile = "gfx/interface/goals/KOR_univercity_support.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_improve_trade"
+		texturefile = "gfx/interface/goals/KOR_improve_trade.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_our_big_problem"
+		texturefile = "gfx/interface/goals/KOR_our_big_problem.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_new_deal"
+		texturefile = "gfx/interface/goals/KOR_new_deal.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_triple_meeting_1"
+		texturefile = "gfx/interface/goals/KOR_triple_meeting_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_keep_tenssion_4"
+		texturefile = "gfx/interface/goals/KOR_keep_tenssion_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_defence_republic"
+		texturefile = "gfx/interface/goals/KOR_defence_republic.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_push_people"
+		texturefile = "gfx/interface/goals/KOR_push_people.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_our_future"
+		texturefile = "gfx/interface/goals/KOR_our_future.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_keep_stat"
+		texturefile = "gfx/interface/goals/KOR_keep_stat.dds"
+	}
+	SpriteType = {
+		name = "GFX_KOR_great_police_power_1"
+		texturefile = "gfx/interface/goals/KOR_great_police_power_1.dds"
+	}
+}
