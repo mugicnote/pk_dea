@@ -1,0 +1,10 @@
+RUS_disjointed_white_society = {
+	enable = { always = yes }
+	
+	icon = prc_low_popular_support3
+	
+	political_power_cost = RUS_dws_1 # -0.20
+	stability_factor = RUS_dws_2 # -0.15
+	war_support_factor = RUS_dws_3 #-0.15
+	
+}
