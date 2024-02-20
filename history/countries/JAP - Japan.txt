@@ -8,11 +8,71 @@ set_war_support = 0.8
 set_research_slots = 4
 set_fuel_ratio = 1.0
 
+#빈번한 폭동
+set_variable = {
+	JAP_po_donggu_war_support_factor = -0.40
+}
+set_variable = {
+	JAP_po_donggu_stability_factor = -0.25
+}
+set_variable = {
+	JAP_po_donggu_consumer_goods_factor = 0.15
+}
+
+#정부 주도 경제
+set_variable = {
+	JAP_government_led_economy_political_power_factor = -0.15
+}
+set_variable = {
+	JAP_government_led_economy_production_speed_buildings_factor = -0.30
+}
+set_variable = {
+	JAP_government_led_economy_consumer_goods_factor = 0.30
+}
+
+#표면적인 약속
+set_variable = {
+	JAP_temp_yakusoku_war_support_factor = -0.15
+}
+set_variable = {
+	JAP_temp_yakusoku_stability_factor = -0.40
+}
+
+set_variable = {
+	JAP_temp_yakusoku_mobilization_laws_cost_factor = -0.20
+}
+set_variable = {
+	JAP_temp_yakusoku_trade_laws_cost_factor = -0.20
+}
+set_variable = {
+	JAP_temp_yakusoku_economy_cost_factor = -0.20
+}
+
+#급조된 지휘부
+set_variable = {
+	JAP_improvised_command_political_power_gain = 0.20
+}
+set_variable = {
+	JAP_improvised_command_stability_factor = 0.10
+}
+set_variable = {
+	JAP_improvised_command_land_doctrine_cost_factor = 3.00
+}
+set_variable = {
+	JAP_improvised_command_naval_doctrine_cost_factor = 3.00
+}
+set_variable = {
+	JAP_improvised_command_air_doctrine_cost_factor = 3.00
+}
+
 add_ideas = {
     JAP_shoku_gun
     JAP_dai_gokou
     JAP_non_yasoku
-    JAP_po_donggu
+}
+
+add_dynamic_modifier = {
+	modifier = JAP_po_donggu
 }
 
 #시작시_연구된_장비

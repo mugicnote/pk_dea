@@ -1,252 +1,60 @@
-add_namespace = JAP
+add_namespace = JAP_event
 
-country_event = { #일본국의 미래
-	id = JAP.1
-	desc = JAP.1.d
-	immediate = {log = "[GetDateText]: [Root.GetName]: event JAP.1"}
-	picture = GFX_jap_future_event_picture
+country_event = { #회담 시작
+	id = JAP_event.1
+	title = JAP_event.1.t
+	desc = JAP_event.1.d
+	picture = GFX_news_event_hindenburg_intact
 	
-	is_triggered_only = yes
+	is_triggered_only = yes	
+	fire_only_once = yes
+	
+	option = {
+		name = JAP_event.1.a
+	}	
+}
+country_event = { #계엄령 문제
+	id = JAP_event.2
+	title = JAP_event.2.t
+	desc = JAP_event.2.d
+	picture = GFX_news_event_hindenburg_intact
+	
+	is_triggered_only = yes	
+	fire_only_once = yes
+	
+	option = {
+		name = JAP_event.2.a
 
-	title = {
-		text = JAP.1.t
-		}
-		option = { #확인
-			name = JAP.1.a
-			ai_chance = { factor = 100 }
-			add_political_power = 30
+	}	
+	option = {
+		name = JAP_event.2.b
+
+	}	
+}
+country_event = { #총선 결과
+	id = JAP_event.3
+	title = JAP_event.3.t
+	desc = JAP_event.3.d
+	picture = GFX_news_event_hindenburg_intact
+	
+	is_triggered_only = yes	
+	fire_only_once = yes
+	
+	option = {
+		name = JAP_event.3.a
+
 	}
 }
-country_event = { #새로운 예산
-	id = JAP.2
-	desc = JAP.2.d
-	immediate = {log = "[GetDateText]: [Root.GetName]: event JAP.2"}
-	picture = GFX_New_Fund_event_picture
+country_event = { #긴급구제 표결
+	id = JAP_event.4
+	title = JAP_event.4.t
+	desc = JAP_event.4.d
+	picture = GFX_news_event_hindenburg_intact
 	
-	is_triggered_only = yes
-
-	title = {
-		text = JAP.2.t
-		}
-		option = { #확인
-			name = JAP.2.a
-			ai_chance = { factor = 100 }
-	}
-}
-country_event = { #새로운 전략
-	id = JAP.3
-	desc = JAP.3.d
-	immediate = {log = "[GetDateText]: [Root.GetName]: event JAP.3"}
-	picture = GFX_JAP_new_politics_event_picture
+	is_triggered_only = yes	
+	fire_only_once = yes
 	
-	is_triggered_only = yes
-
-	title = {
-		text = JAP.3.t
-		}
-		option = { #확인
-			name = JAP.3.a
-			ai_chance = { factor = 100 }
-	}
-}
-
-country_event = { #경제 방향
-	id = JAP.4
-	desc = JAP.4.d
-	immediate = {log = "[GetDateText]: [Root.GetName]: event JAP.4"}
-	picture = GFX_JAP_US_stock_market_event_picture
-	
-	is_triggered_only = yes
-
-	title = {
-		text = JAP.4.t
-		}
-	option = { #확인
-		name = JAP.4.a
-		ai_chance = { factor = 50 }
-		complete_national_focus = JAP_economic_plan_first
-		add_ideas = { JAP_money_in_safe }
-	}
-	option = { #확인
-		name = JAP.4.b
-		ai_chance = { factor = 50 }
-		complete_national_focus = JAP_economic_plan_second
-		add_ideas = { JAP_zero_money }
-        hidden_effect = {
-			random_list = {
- 	    	    99.99 = {
-	    			add_political_power = 1
- 		        }
- 	    	    00.01 = {
-  		          	country_event = {
-			    		id = JAP.1972
-			    		days = 365
-			    		random = 1
-				    	random_days = 1
-					    }
-  					}
-				}
-		}
-	}
-}
-country_event = { #허드슨강
-	id = JAP.1972
-	desc = JAP.1972.d
-	immediate = {log = "[GetDateText]: [Root.GetName]: event JAP.1972"}
-	picture = GFX_JAP_A_tough_journey_event_picture
-
-	is_triggered_only = yes
-
-	title = {
-		text = JAP.1972.t
-		}
-	option = { #확인
-		name = JAP.1972.a
-		ai_chance = { factor = 50 }
-		hidden_effect = {
-  				random_list = {
- 	    	    99.99 = {
-	    			add_political_power = 1
- 		        }
- 	    	    00.01 = {
-  		          	country_event = {
-			    		id = JAP.1121
-			    		days = 4
-			    		random = 1
-				    	random_days = 1
-					    }
-  					}
-				}
-  		}
-	}
-}
-country_event = { #허드슨
-	id = JAP.1121
-	desc = JAP.1121.d
-	immediate = {log = "[GetDateText]: [Root.GetName]: event JAP.1121"}
-	picture = GFX_JAP_thasnks_dad_event_picture
-
-	is_triggered_only = yes
-	
-	title = {
-		text = JAP.1121.t
-		}
-	option = { #확인
-		name = JAP.1121.a
-		country_event = {
-			id = JAP.1974
-			days = 1
-			random = 1
-			random_days = 1
-	    }
-  	}
-}
-
-country_event = { #허드슨
-	id = JAP.1974
-	desc = JAP.1974.d
-	immediate = {log = "[GetDateText]: [Root.GetName]: event JAP.1974"}
-	picture = GFX_JAP_Suicide_rope_event_picture_picture
-
-	is_triggered_only = yes
-	
-	title = {
-		text = JAP.1974.t
-		}
-	option = { #확인
-		name = JAP.1974.a
-	    add_ideas = { JAP_Increased_suicide_rate }
-  	}
-}
-country_event = { #규슈 조선소
-	id = JAP.5
-	desc = JAP.5.d
-	immediate = {log = "[GetDateText]: [Root.GetName]: event JAP.5"}
-	picture = GFX_JAP_shipyard_in_1939_event_picture
-	
-	is_triggered_only = yes
-
-	title = {
-		text = JAP.5.t
-		}
-	option = { #확인
-		name = JAP.5.a
-		add_ideas = { JAP_kushu_shipard }
-	}
-}
-country_event = { #간토 산업지대
-	id = JAP.6
-	desc = JAP.6.d
-	immediate = {log = "[GetDateText]: [Root.GetName]: event JAP.6"}
-	picture = GFX_JAP_factory_in_1939_event_picture
-	
-	is_triggered_only = yes
-
-	title = {
-		text = JAP.6.t
-		}
-	option = { #확인
-		name = JAP.6.a
-		add_ideas = { JAP_ganto_factory }
-	}
-}
-country_event = { #노동자 봉기문제 이벤트
-	id = JAP.7
-	desc = JAP.7.d
-	immediate = {log = "[GetDateText]: [Root.GetName]: event JAP.7"}
-	picture = GFX_JAP_strike_in_tokyo_event_picture
-	
-	is_triggered_only = yes
-
-	title = {
-		text = JAP.7.t
-		}
-	option = { #확인
-		name = JAP.7.a
-		country_event = {
-			id = JAP.8
-			days = 1
-			random = 1
-			random_days = 1
-		}
-		add_ideas = { JAP_stricke_to_eat }
-	}
-}
-country_event = { #노동자 파업 대책
-	id = JAP.8
-	desc = JAP.8.d
-	immediate = {log = "[GetDateText]: [Root.GetName]: event JAP.7"}
-	picture = GFX_JAP_strike_in_tokyo_event_picture
-	
-	is_triggered_only = yes
-
-	title = {
-		text = JAP.8.t
-		}
-	option = { #확인
-		name = JAP.8.a
-		set_country_flag = JAP_not_allow_united_flag
-		add_popularity = {
-            ideology = communism
-            popularity = -0.1
-        }
-        add_stability = 0.05
-        swap_ideas = {
-			remove_idea = JAP_stricke_to_eat
-			add_idea = JAP_stricke_to_eat_up_1level
-		}
-	}
-	option = { #확인
-		name = JAP.8.b
-		set_country_flag = JAP_allow_united_flag
-			add_popularity = {
-            ideology = communism
-            popularity = 0.1
-        }
-		add_stability = -0.1
-        swap_ideas = {
-			remove_idea = JAP_stricke_to_eat
-			add_idea = JAP_stricke_to_eat_up_1down
-		}
+	option = {
+		name = JAP_event.4.a
 	}
 }

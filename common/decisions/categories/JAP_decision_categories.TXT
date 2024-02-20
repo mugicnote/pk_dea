@@ -8,7 +8,7 @@ JAP_Com_strike_category = {
     }
     visible = {
     }
-    visible_when_empty = yes
+    visible_when_empty = no
 
     priority = 100
 }

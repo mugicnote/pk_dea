@@ -12,213 +12,725 @@ focus_tree = {
 
 	continuous_focus_position = { x = 20 y = 1600 }
 
-	#신년 회의 소집
-	focus = {
-		id = JAP_call_of_New_Years_meeting
+	#시작 중점
+	focus = { #신년사 발표
+		id = JAP_new_years_greeting
 		icon = GFX_focus_first_congress
-		cost = 10.00
-
-		completion_reward = {
-
-		}
-		x = 7
-		y = 0
-
-	}
-
-	#발자취를 따라가다
-	focus = {
-		id = JAP_follow_ones_footsteps
-		icon = GFX_focus_follow_by_footstep_1
-		relative_position_id = JAP_call_of_New_Years_meeting
-		cost = 10.00
-
-		prerequisite = {
-			focus = JAP_call_of_New_Years_meeting
-		}
-
-		completion_reward = {
-
-		}
-		x = -2
-		y = 1
-
-	}
-
-	#미국의 감독 지원
-	focus = {
-		id = JAP_US_supervision_support
-		icon = GFX_focus_usa_watching_jap
-		relative_position_id = JAP_call_of_New_Years_meeting
-		cost = 10.00
-
-		prerequisite = {
-			focus = JAP_call_of_New_Years_meeting
-		}
-
-		completion_reward = {
-
-		}
-		x = 0
-		y = 1
-
-	}
-
-	#사소한 개혁안들
-	focus = {
-		id = JAP_minor_reform_proposals
-		icon = GFX_focus_something_tiny_progress
-		relative_position_id = JAP_call_of_New_Years_meeting
-		cost = 10.00
-
-		prerequisite = {
-			focus = JAP_call_of_New_Years_meeting
-		}
-
-		completion_reward = {
-
-		}
-		x = 2
-		y = 1
-
-	}
-
-	#충성파 지원 유지
-	focus = {
-		id = JAP_Maintaining_Loyalist_Support
-		icon = GFX_focus_stop_fighting_navarm
-		relative_position_id = JAP_follow_ones_footsteps
-		cost = 10.00
-
-		prerequisite = {
-			focus = JAP_follow_ones_footsteps
-		}
-
-		completion_reward = {
-
-		}
-		x = 0
-		y = 1
-
-	}
-
-	#갈등 진정시키기
-	focus = {
-		id = JAP_calming_the_conflict
-		icon = GFX_focus_anit_usa_cut
-		relative_position_id = JAP_US_supervision_support
-		cost = 10.00
-
-		prerequisite = {
-			focus = JAP_US_supervision_support
-			focus = JAP_minor_reform_proposals
-		}
-
-		completion_reward = {
-
-		}
+		cost = 1
 		x = 1
-		y = 1
-
-	}
-
-	#회담의 새 열차
-	focus = {
-		id = JAP_new_train_of_talks
-		icon = GFX_focus_triple_talks_train_re
-		relative_position_id = JAP_Maintaining_Loyalist_Support
-		cost = 10.00
-
-		prerequisite = {
-			focus = JAP_Maintaining_Loyalist_Support
-			focus = JAP_calming_the_conflict
-		}
-
+		y = 0
 		completion_reward = {
-
+			#뉴스 발생 (쇼와 11년 신년사)
+			add_political_power = 100
 		}
-		x = 2
-		y = 1
-
 	}
-
-	#강경 시위 진정
-	focus = {
-		id = JAP_Calm_down_the_hardline_protests
+	focus = { #내부의 불안
+		id = JAP_internal_anxiety
 		icon = GFX_focus_pls_stop_it
-		relative_position_id = JAP_new_train_of_talks
-		cost = 10.00
-
 		prerequisite = {
-			focus = JAP_new_train_of_talks
+			focus = JAP_new_years_greeting
 		}
-
-		completion_reward = {
-
-		}
+		cost = 1
 		x = -1
 		y = 1
-
-	}
-
-	#금일봉 문제 해결
-	focus = {
-		id = JAP_Solving_todays_salary_problem
-		icon = GFX_focus_police_subjugation_bonus
-		relative_position_id = JAP_new_train_of_talks
-		cost = 10.00
-
-		prerequisite = {
-			focus = JAP_new_train_of_talks
-		}
-
+		relative_position_id = JAP_new_years_greeting
 		completion_reward = {
-
+			#이벤트 발생 (불만 잠재우기)
+			add_stability = -0.10
 		}
+	}
+	focus = { #회담 준비
+		id = JAP_ready_for_meeting
+		icon = GFX_focus_triple_talks_train_re
+		prerequisite = {
+			focus = JAP_new_years_greeting
+		}
+		cost = 1
 		x = 1
 		y = 1
-
-	}
-
-	#회담의 시작
-	focus = {
-		id = JAP_beginning_of_a_meeting
-		icon = GFX_focus_come_up_with_them_firming
-		relative_position_id = JAP_Calm_down_the_hardline_protests
-		cost = 10.00
-
-		prerequisite = {
-			focus = JAP_Calm_down_the_hardline_protests
-		}
-		prerequisite = {
-			focus = JAP_Solving_todays_salary_problem
-		}
-
+		relative_position_id = JAP_new_years_greeting
 		completion_reward = {
-
+			#이벤트 발생 (내부적 차질)
+			add_political_power = -50
 		}
+	}
+	focus = { #시위 진압 강화
+		id = JAP_quell_dissatisfaction
+		icon = GFX_focus_anit_usa_cut
+		prerequisite = {
+			focus = JAP_internal_anxiety
+		}
+		prerequisite = {
+			focus = JAP_ready_for_meeting
+		}
+		cost = 1
 		x = 1
 		y = 1
-
+		relative_position_id = JAP_internal_anxiety
+		select_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+			}
+		}
+		completion_reward = { 
+			add_stability = 0.05
+		}
 	}
-
-	#비상시국 수습
-	focus = {
-		id = JAP_handling_emergency_situations
-		icon = GFX_focus_
-		relative_position_id = JAP_beginning_of_a_meeting
-		cost = 10.00
-
+	focus = { #최종 점검
+		id = JAP_final_inspection
+		icon = GFX_focus_follow_by_footstep_1
 		prerequisite = {
-			focus = JAP_beginning_of_a_meeting
+			focus = JAP_quell_dissatisfaction
 		}
-
-		completion_reward = {
-
-		}
+		cost = 1
 		x = 0
-		y = 2
-
+		y = 1
+		relative_position_id = JAP_quell_dissatisfaction
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+	focus = { #회담 개최
+		id = JAP_hold_the_meeting
+		icon = GFX_focus_come_up_with_them_firming
+		prerequisite = {
+			focus = JAP_final_inspection
+		}
+		cost = 1
+		x = 0
+		y = 1
+		relative_position_id = JAP_final_inspection
+		completion_reward = {
+			country_event = JAP_event.1
+		}
 	}
 
+	#교토 테러 사건
+	focus = { #비상 사태
+		id = JAP_state_of_emergency
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 7
+		y = 0
+		available = {
+			has_country_flag = JAP_kyoto_terrorist_attack_flag
+		}
+		completion_reward = { 
+			country_event = JAP_event.2
+		}
+	}
+
+	focus = { #개혁 실시
+		id = JAP_carry_out_reform
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = JAP_state_of_emergency
+		}
+		cost = 10
+		x = 2
+		y = 1
+		relative_position_id = JAP_state_of_emergency
+		completion_reward = { 
+			add_political_power = -100
+		}
+	}
+	focus = { #의회 재개
+		id = JAP_reinvigorate_parliament
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = JAP_carry_out_reform
+		}
+		cost = 2
+		x = -1
+		y = 1
+		relative_position_id = JAP_carry_out_reform
+		completion_reward = { 
+			add_stability = 0.10
+		}
+	}
+	focus = { #계엄령 해제
+		id = JAP_lifted_martial_law
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = JAP_carry_out_reform
+		}
+		cost = 3
+		x = 1
+		y = 1
+		relative_position_id = JAP_carry_out_reform
+		completion_reward = { 
+			if = {
+				limit = { 
+					has_dynamic_modifier = {
+						modifier = JAP_po_donggu
+					}
+				}
+				remove_dynamic_modifier = {
+					modifier = JAP_po_donggu
+				}
+				add_ideas = JAP_uncontrollable_demonstration
+			}
+		}
+	}
+	focus = { #개헌
+		id = JAP_amend_the_constitution
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = JAP_reinvigorate_parliament
+		}
+		prerequisite = {
+			focus = JAP_lifted_martial_law
+		}
+		cost = 10
+		x = 1
+		y = 1
+		relative_position_id = JAP_reinvigorate_parliament
+		completion_reward = { 
+			if = {
+				limit = { 
+					has_idea = JAP_non_yasoku
+				}
+				swap_ideas = {
+					remove_idea = JAP_non_yasoku
+					add_idea = JAP_keep_the_words
+				}
+			}
+		}
+	}
+	focus = { #1936년 총선
+		id = JAP_1936_general_election
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = JAP_amend_the_constitution
+		}
+		cost = 2
+		x = 0
+		y = 1
+		relative_position_id = JAP_amend_the_constitution
+		completion_reward = { 
+			country_event = JAP_event.3
+		}
+	}
+	focus = { #개혁파의 승리!
+		id = JAP_triumph_of_the_reformists
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = JAP_1936_general_election
+		}
+		cost = 1
+		x = 0
+		y = 1
+		relative_position_id = JAP_1936_general_election
+		completion_reward = { 
+			if = {
+				limit = { 
+					has_idea = JAP_uncontrollable_demonstration
+				}
+				swap_ideas = {
+					remove_idea = JAP_uncontrollable_demonstration
+					add_idea = JAP_revolutionary_era
+				}
+			}
+		}
+	}
+
+	focus = { #외회 정지
+		id = JAP_freeze_on_parliament
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = JAP_state_of_emergency
+		}
+		cost = 10
+		x = -2
+		y = 1
+		relative_position_id = JAP_state_of_emergency
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = { #정당 금지
+		id = JAP_ban_party
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = JAP_freeze_on_parliament
+		}
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = JAP_freeze_on_parliament
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+	focus = { #계엄령 연장
+		id = JAP_keep_on_martial_law
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = JAP_freeze_on_parliament
+		}
+		cost = 2
+		x = 1
+		y = 1
+		relative_position_id = JAP_freeze_on_parliament
+		completion_reward = { 
+			add_to_variable = {
+				JAP_po_donggu_stability_factor = 0.10
+			}
+			add_to_variable = {
+				JAP_po_donggu_consumer_goods_factor = 0.05
+			}
+			custom_effect_tooltip = JAP_po_donggu_tt
+			custom_effect_tooltip = JAP_keep_on_martial_law_tt
+		}
+	}
+	focus = { #당근과 채찍
+		id = JAP_carrot_and_stick
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = JAP_ban_party
+		}
+		prerequisite = {
+			focus = JAP_keep_on_martial_law
+		}
+		cost = 4
+		x = 1
+		y = 1
+		relative_position_id = JAP_ban_party
+		completion_reward = { 
+			if = {
+				limit = { 
+					has_idea = JAP_non_yasoku
+				}
+				remove_ideas = JAP_non_yasoku
+				add_dynamic_modifier = {
+					modifier = JAP_temp_yakusoku
+				}
+			}
+		}
+	}
+	
+	focus = { #군 내 충성파 모집
+		id = JAP_loyalists_in_military
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = JAP_carrot_and_stick
+		}
+		cost = 7
+		x = 1
+		y = 1
+		relative_position_id = JAP_carrot_and_stick
+		completion_reward = { 
+			if = {
+				limit = { 
+					has_idea = JAP_shoku_gun
+				}
+				remove_ideas = JAP_shoku_gun
+				add_dynamic_modifier = {
+					modifier = JAP_improvised_command
+				}
+			}
+			else = {
+				add_dynamic_modifier = {
+					modifier = JAP_improvised_command
+				}
+			}
+			#디시전 해금(군대 개혁)
+		}
+	}
+	focus = { #경찰 처우 개선
+		id = JAP_police_improvement
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = JAP_loyalists_in_military
+		}
+		cost = 4
+		x = 0
+		y = 1
+		relative_position_id = JAP_loyalists_in_military
+		completion_reward = {
+			add_to_variable = {
+				JAP_po_donggu_stability_factor = 0.05
+			}
+			custom_effect_tooltip = JAP_po_donggu_tt
+			custom_effect_tooltip = JAP_police_improvement_tt
+		}
+	}
+	focus = { #급할 수록 돌아가라
+		id = JAP_the_longest_way_round_is_the_shortest_way_home
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = JAP_police_improvement
+		}
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = JAP_police_improvement
+		available = {
+			has_country_flag = JAP_military_reformed_flag
+		}
+		completion_reward = {
+			add_to_variable = {
+				JAP_temp_yakusoku_mobilization_laws_cost_factor = 0.20
+			}
+			add_to_variable = {
+				JAP_temp_yakusoku_trade_laws_cost_factor = 0.20
+			}
+			add_to_variable = {
+				JAP_temp_yakusoku_economy_cost_factor = 0.20
+			}
+			custom_effect_tooltip = JAP_temp_yakusoku_tt
+			custom_effect_tooltip = JAP_the_longest_way_round_is_the_shortest_way_home_tt
+		}
+	}
+	focus = { #군 정상화
+		id = JAP_military_standardization
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = JAP_the_longest_way_round_is_the_shortest_way_home
+		}
+		cost = 4
+		x = 0
+		y = 1
+		relative_position_id = JAP_the_longest_way_round_is_the_shortest_way_home
+		available = {
+			#군대 개혁 디시전 완료
+		}
+		completion_reward = {
+			add_to_variable = {
+				JAP_improvised_command_land_doctrine_cost_factor = -2
+			}
+			add_to_variable = {
+				JAP_improvised_command_naval_doctrine_cost_factor = -2
+			}
+			add_to_variable = {
+				JAP_improvised_command_air_doctrine_cost_factor = -2
+			}
+			custom_effect_tooltip = JAP_temp_yakusoku_tt
+			custom_effect_tooltip = JAP_the_longest_way_round_is_the_shortest_way_home_tt
+		}
+	}
+	focus = { #빵과 서커스
+		id = JAP_bread_and_circus
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = JAP_military_standardization
+		}
+		cost = 4
+		x = 0
+		y = 1
+		relative_position_id = JAP_military_standardization
+		available = {
+			has_idea = JAP_increase_in_tariffs_idea
+		}
+		completion_reward = { 
+			if = {
+				limit = { 
+					has_dynamic_modifier = {
+						modifier = JAP_po_donggu
+					}
+				}
+				add_to_variable = {
+					JAP_po_donggu_war_support_factor = 0.10
+				}
+				add_to_variable = {
+					JAP_po_donggu_stability_factor = 0.20
+				}
+				add_to_variable = {
+					JAP_po_donggu_consumer_goods_factor = 0.15
+				}
+				custom_effect_tooltip = JAP_po_donggu_tt
+				custom_effect_tooltip = JAP_bread_and_circus_tt
+				hidden_effect = {
+					remove_dynamic_modifier = {
+						modifier = JAP_po_donggu
+					}
+					add_dynamic_modifier = {
+						modifier = JAP_stabilization_idea
+					}
+				}
+			}
+		}
+	}
+
+	focus = { #긴급 예산 편성
+		id = JAP_emergency_budgeting
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = JAP_carrot_and_stick
+		}
+		cost = 5
+		x = -2
+		y = 1
+		relative_position_id = JAP_carrot_and_stick
+		completion_reward = { 
+			add_timed_idea = {
+				idea = JAP_emergency_budgeting_idea
+				days = 365
+			}
+			if = {
+				limit = { 
+					has_idea = JAP_dai_gokou
+				}
+				remove_ideas = JAP_dai_gokou
+				add_dynamic_modifier = {
+					modifier = JAP_government_led_economy
+				}
+			}
+		}
+	}
+	focus = { #법인세 감면
+		id = JAP_reduce_corporate_taxes
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = JAP_emergency_budgeting
+		}
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = JAP_emergency_budgeting
+		available = {
+			has_political_power > 200
+		}
+		select_effect = {
+			add_political_power = -200
+		}
+		completion_reward = { 
+			add_to_variable = {
+				JAP_government_led_economy_production_speed_buildings_factor = 0.10
+			}
+			custom_effect_tooltip = JAP_government_led_economy_tt
+			custom_effect_tooltip = JAP_reduce_corporate_taxes_tt
+		}
+	}
+	focus = { #미국인 투자자 초청
+		id = JAP_help_me_america
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = JAP_reduce_corporate_taxes
+		}
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = JAP_reduce_corporate_taxes
+		completion_reward = { 
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 3 
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = { #내무성 내부부국 정리
+		id = JAP_internal_inspection
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = JAP_help_me_america
+		}
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = JAP_help_me_america
+		completion_reward = { 
+			add_to_variable = {
+				JAP_government_led_economy_consumer_goods_factor = -0.05
+			}
+			custom_effect_tooltip = JAP_government_led_economy_tt
+			custom_effect_tooltip = JAP_internal_inspection_tt
+		}
+	}
+	focus = { #행정부처 개혁
+		id = JAP_administrative_reform
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = JAP_internal_inspection
+		}
+		cost = 7
+		x = 0
+		y = 1
+		relative_position_id = JAP_internal_inspection
+		completion_reward = {
+			add_timed_idea = {
+				idea = JAP_administrative_reform_idea
+				days = 180
+			}
+			custom_effect_tooltip = on_JAP_administrative_reform_idea_removed_tt
+			add_to_variable = {
+				JAP_government_led_economy_consumer_goods_factor = -0.03
+			}
+			add_to_variable = {
+				JAP_government_led_economy_political_power_factor = 0.25
+			}
+			custom_effect_tooltip = JAP_government_led_economy_tt
+			custom_effect_tooltip = JAP_administrative_reform_tt
+			hidden_effect = {
+				if = {
+					limit = { 
+						has_completed_focus = JAP_increase_in_tariffs
+					}
+					#이벤트 발생(경제 불황의 악화)[random_days = 180]
+				}
+			}
+		}
+	}
+	focus = { #외자유치
+		id = JAP_attract_foreign_capital
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = JAP_help_me_america
+		}
+		cost = 4
+		x = 1
+		y = 1
+		relative_position_id = JAP_help_me_america
+		completion_reward = { 
+			#디시전 해금(외국 투자자와 협상)
+		}
+	}
+	focus = { #관세 인상
+		id = JAP_increase_in_tariffs
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = JAP_attract_foreign_capital
+		}
+		cost = 5	
+		x = 0
+		y = 1
+		relative_position_id = JAP_attract_foreign_capital
+		completion_reward = { 
+			add_ideas = JAP_increase_in_tariffs_idea
+		}
+	}
+	focus = { #금 수입
+		id = JAP_import_gold
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = JAP_administrative_reform
+		}
+		prerequisite = {
+			focus = JAP_increase_in_tariffs
+		}
+		cost = 8
+		x = 1
+		y = 1
+		relative_position_id = JAP_administrative_reform
+		available = {
+			NOT = { has_idea = JAP_administrative_reform_idea }
+		}
+		completion_reward = { 
+			#디시전 해금(금 수입)
+			hidden_effect = {
+				if = {
+					limit = { 
+						has_completed_focus = JAP_administrative_reform
+					}
+					#이벤트 발생(경제 불황의 악화)[random_days = 180]
+				}
+			}
+		}
+	}
+
+	#민주로 가는 길
+	focus = { #연정
+		id = JAP_coalition_government
+		icon = GFX_goal_unknown
+		cost = 2
+		x = 5
+		y = 0
+		relative_position_id = JAP_state_of_emergency
+		available = {
+			has_completed_focus = JAP_triumph_of_the_reformists
+		}
+		completion_reward = { 
+			add_ideas = JAP_coalition_government_idea
+		}
+	}
+	focus = { #긴급구제
+		id = JAP_emergency_relief
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = JAP_coalition_government
+		}
+		cost = 1
+		x = 0
+		y = 1
+		relative_position_id = JAP_coalition_government
+		completion_reward = { 
+			country_event = JAP_event.4
+		}
+	}
+	focus = { #통과
+		id = JAP_bypass
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = JAP_emergency_relief
+		}
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = JAP_emergency_relief
+		completion_reward = { 
+			if = {
+				limit = { 
+					has_idea = JAP_dai_gokou
+				}
+				swap_ideas = {
+					remove_idea = JAP_dai_gokou
+					add_idea = JAP_emergency_relief
+				}
+			}
+		}
+	}
+	focus = { #군부 달래기
+		id = JAP_care_for_the_military
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = JAP_bypass
+		}
+		cost = 4
+		x = 0
+		y = 1
+		relative_position_id = JAP_bypass
+		completion_reward = { 
+			if = {
+				limit = { 
+					has_idea = JAP_shoku_gun
+				}
+				swap_ideas = {
+					remove_idea = JAP_shoku_gun
+					add_idea = JAP_money_receiving_army
+				}
+			}
+		}
+	}
+	focus = { #문민통제 확립
+		id = JAP_establishment_of_civilian_control
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = JAP_care_for_the_military
+		}
+		cost = 4
+		x = 0
+		y = 1
+		relative_position_id = JAP_care_for_the_military
+		completion_reward = { 
+			if = {
+				limit = { 
+					has_idea = JAP_money_receiving_army
+				}
+				swap_ideas = {
+					remove_idea = JAP_money_receiving_army
+					add_idea = JAP_democratic_army
+				}
+			}
+		}
+	}
 }
