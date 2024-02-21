@@ -1,8 +1,6 @@
 ideas = {
 #모든 GFX는 임시로 맞춘 것이므로 추후 수정 바람.
 
-
-############################## 사할린 정부 ###########################################
 	#미약한 산업(산업 문제 5)
 	RUS_Industry_problem_5 = {
 	
@@ -140,8 +138,8 @@ ideas = {
 		modifier = {
 			radical_socialism_drift = 0.05
 			fascism_drift = 0.05
-			auto_despotism_drift = 0.01
-			neutrality_drift + 0.01
+			despotism_drift = 0.01
+			eutrality_drift = 0.01
 		}
 	}
 	

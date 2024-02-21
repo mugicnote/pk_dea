@@ -9,6 +9,24 @@ characters={
 		country_leader={
 			ideology=military_dic
 			traits={
+				RUS_lost_intellect
+			}
+			expire="2000.1.1.1"
+			id=-1
+		}
+	}
+	
+	RUS_Pyotr_Wrangel={
+		name=RUS_Pyotr_Wrangel
+		portraits={
+			civilian={
+				large="gfx_leaders/RUS/portrait_Pyotr_Wrangel.dds"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={
+				RUS_pragmatical_aristocrat
 			}
 			expire="2000.1.1.1"
 			id=-1
