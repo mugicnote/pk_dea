@@ -1,6 +1,8 @@
 ideas = {
 #모든 GFX는 임시로 맞춘 것이므로 추후 수정 바람.
 
+country = {
+
 	#미약한 산업(산업 문제 5)
 	RUS_Industry_problem_5 = {
 	
@@ -121,7 +123,7 @@ ideas = {
 			war_support_factor = -0.15
 			land_doctrine_cost_factor = 1.00
 			naval_doctrine_cost_factor = 1.00
-			experience_gain_army = =0.15
+			experience_gain_army = 0.15
 			experience_gain_navy = -0.15
 		}
 	}
@@ -156,4 +158,6 @@ ideas = {
 			conscription_factor = -0.95
 		}
 	}
+}
+
 }
