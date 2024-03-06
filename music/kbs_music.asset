@@ -2,7 +2,7 @@
 # MAIN THEME
 music = {
 	name = "maintheme"
-	file = "kbs/Gwanghwamun_love_song.ogg"
+	file = "kbs/about_the_loneliness_of_love.ogg"
 	volume = 0.8
 }
 

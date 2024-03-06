@@ -1,6 +1,15 @@
 music_station = "Lee_Moon_Sae1"
 
 music = {
+	song = "Gwanghwamun_love_song"
+	chance = {
+		modifier = {
+			factor = 0.5
+		}
+	}
+}
+
+music = {
 	song = "I_couldnt_say_anything"
 	chance = {
 		modifier = {

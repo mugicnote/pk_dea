@@ -7,6 +7,12 @@ music = {
 }
 
 music = {
+	name = "Gwanghwamun_love_song"
+	file = "Lee_Moon_Sae1/Gwanghwamun_love_song.ogg"
+	volume = 0.8
+}
+
+music = {
 	name = "I_couldnt_say_anything"
 	file = "Lee_Moon_Sae1/I_couldnt_say_anything.ogg"
 	volume = 0.8
