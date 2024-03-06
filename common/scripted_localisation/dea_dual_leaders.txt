@@ -645,7 +645,7 @@ defined_text = {
 			tag = KNM
 			has_government = neutrality
 		}
-		localization_key = GFX_Portrait_an_junggeun
+		localization_key = GFX_Portrait_KNM_Cai_Yun_sheng
 	}
 	text = {
 		trigger = {

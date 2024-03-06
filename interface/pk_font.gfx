@@ -51,42 +51,87 @@ bitmapfonts = {
 			name = "hoi_16mbs"
 			fontfiles = { "gfx/fonts/pk_18" }
 			color = 0xffffffff
+			 
+		}
+		bitmapfont = {
+			name = "hoi_16mbs_2"
+			fontfiles = {
+				"gfx/fonts/hoi_16mbs"
+				"gfx/fonts/hoi_16mbs_cryllic"
+			}
+			color = 0xffffffff
+			 
 		}
 
 		bitmapfont = {
 			name = "hoi_18"
 			fontfiles = { "gfx/fonts/pk_18" }
 			color = 0xffffffff
+			 
 		}
 		bitmapfont = {
 			name = "hoi_18b"
 			fontfiles = { "gfx/fonts/pk_18" }
 			color = 0xffffffff
+			 
 		}
 		bitmapfont = {
 			name = "hoi_18mbs"
 			fontfiles = { "gfx/fonts/pk_18" }
 			color = 0xffffffff
+			 
+		}
+		bitmapfont = {
+			name = "hoi_18mbs_2"
+			fontfiles = { "gfx/fonts/hoi_18mbs" }
+			color = 0xffffffff
+			 
 		}
 		bitmapfont = {
 			name = "hoi_20b"
 			fontfiles = { "gfx/fonts/pk_20" }
 			color = 0xffffffff
+			 
 		}
 		bitmapfont = {
 			name = "hoi_20bs"
 			path = "gfx/fonts/hoi_20bs1"
 			color = 0xffffffff
+			 
 		}
 		bitmapfont = {
 			name = "hoi_24header"
 			path = "gfx/fonts/aldrich_24_outline"
 			color = 0xffffffff
+			 
 		}
 		bitmapfont = {
 			name = "hoi_36header"
 			path = "gfx/fonts/aldrich_36_outline"
 			color = 0xffffffff
+			textcolors = {
+				P = { 169 27 79 } #pink
+				# M = { 35 206 255 }
+				# O = { 234 161 14 } #orange, for npp
+				# P = { 169 27 79 } #pink, for c-npp
+				# r = { 132 50 0 } #brown, for yockeys
+				# w = { 211 201 0 } #yellow, for republicans (different from other yellow)
+				# e = { 146 0 0 } #red, for l-npp (different from other red)
+				# p = { 204 0 204 }
+				# j = { 153 102 51 } #Brown-ish
+				# S = { 255 128 114 } #Salmon
+				# x = { 255 0 0 } #uber-red
+				# y = { 0 255 0} #uber-green
+				# z = { 0 0 255 } #uber-blu
+				# l = { 147 112 219 } #Lavender, per Pacifica request
+				# n = { 60 180 60 } #Dark Green
+				# q = { 65 65 65 } #Dark Grey
+				# k = { 210 180 140 } #Light Brown
+				# D = { 89 199 194 } #Default CRT blue color
+				# Q = { 0 84 142 } #Prussian blue, for speer econ GUI
+				# I = { 116 71 209 } #Burgundian purple
+				# F = { 178 201 194 } #New default
+			}
 		}
 	#
 
@@ -186,41 +231,13 @@ bitmapfonts = {
 		fontfiles = { 
 			"gfx/fonts/cg_16b"		
 			"gfx/fonts/cg_16b_kor"
-			"gfx/fonts/hoi_16tooltip3"		
+			"gfx/fonts/hoi_16tooltip3"
+			"gfx/fonts/chinese/cg_16b_1of4"		
+			"gfx/fonts/chinese/cg_16b_2of4"	
+			"gfx/fonts/chinese/cg_16b_3of4"	
+			"gfx/fonts/chinese/cg_16b_4of4"	
+			"gfx/fonts/hanzi/typewriter16"
 		}
 		color = 0xffffffff
-		textcolors = {
-			a = { 225 20 20 } #빨강 - 눈이 아프지 않은 색 용도
-
-
-			# M = { 35 206 255 } #하늘색
-			# a = { 195 176 145 } #살색? 원 코드:l
-			# b = { 255 255 255 } #하얀색 원 코드: W
-			# A = { 47 138 135 } #청록색 B
-			# c = { 133 234 142 } #연초록 G
-			# d = { 224 130 130 } #연빨강 - 분홍 R
-			# m = { 0 0 0 } #검정(잘 안보임 주의) b
-			# o = { 176 176 176 } #회색(베이직 색 느낌) g
-			# s = { 220 218 80 } #노랑 Y
-			# h = { 220 218 80 } #둘 다 노랑 인데?? H
-			# t = { 47 138 135 } #이놈도 청록인데?? T
-			# f = { 234 161 14 } #오랜지 O
-			# u = { 169 27 79 } #연한 빨강 P
-			# r = { 132 50 0 } #진한 빨강보다 덜 빨강
-			# w = { 211 201 0 } #조금 진한 노랑
-			# e = { 146 0 0 } #어두운 빨강(눈 안아프고 좋음)
-			# p = { 194 30 86 } #완전 핫핑크
-			# j = { 153 102 51 } #갈색(똥색)
-			# S = { 255 128 114 } #연빨강 - 분홍22
-			# x = { 255 0 0 } #빨강
-			# y = { 0 255 0} #눈 아픈 초록
-			# z = { 0 0 255 } #uber-blu
-			# l = { 147 112 219 } #Lavender, per Pacifica request
-			# n = { 60 180 60 } #Dark Green
-			# q = { 65 65 65 } #검정과 회색 사이
-			# k = { 210 180 140 } #베이지색
-			# D = { 101 235 246 } #Default color I think
-			# Q = { 0 84 142 } #Prussian blue, for speer econ GUI
-		}
 	}
 }

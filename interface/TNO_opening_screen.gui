@@ -399,7 +399,7 @@ guiTypes = {
 			quadTextureSprite = "GFX_button_221x34"
 			buttonFont = "Bomb_16"
 			buttonText = "이전으로"
-			position = { x = 318 y = 830 }
+			position = { x = 338 y = 830 }
 		}
 		
 		instantTextBoxType = {

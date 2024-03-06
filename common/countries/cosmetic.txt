@@ -802,8 +802,8 @@ SOV_ROME = {
 }
 
 KOR_brd = {
-	color = rgb { 75 75 75 }
-	color_ui = rgb { 75 75 75 }
+	color = rgb { 67 67 92 }
+	color_ui = rgb { 67 67 92 }
 }
 KOR_btbd = {
 	color = rgb { 35 57 102 }

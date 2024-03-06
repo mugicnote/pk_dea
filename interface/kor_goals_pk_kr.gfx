@@ -1,0 +1,321 @@
+spriteTypes = {
+
+	#pk
+	SpriteType = {
+		name = "GFX_focus_draft"
+		texturefile = "gfx/interface/goals/KOR/pk/focus_draft.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_kankyosen"
+		texturefile = "gfx/interface/goals/KOR/pk/focus_kankyosen.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_hokusen_industry"
+		texturefile = "gfx/interface/goals/KOR/pk/focus_hokusen_industry.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_paper_sign"
+		texturefile = "gfx/interface/goals/KOR/pk/focus_paper_sign.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_kia"
+		texturefile = "gfx/interface/goals/KOR/pk/focus_kia.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_nationalism"
+		texturefile = "gfx/interface/goals/KOR/pk/focus_nationalism.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_ncr"
+		texturefile = "gfx/interface/goals/KOR/pk/focus_ncr.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_volunteers"
+		texturefile = "gfx/interface/goals/KOR/pk/focus_volunteers.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_victory_in_woi"
+		texturefile = "gfx/interface/goals/KOR/pk/focus_victory_in_woi.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_korean_woi"
+		texturefile = "gfx/interface/goals/KOR/pk/focus_korean_woi.dds"
+	}
+
+	#kr
+	SpriteType = {
+		name = "GFX_generic_support_equipment"
+		texturefile = "gfx/interface/goals/KOR/Kaiserreich/generic_support_equipment.png"
+	}
+	SpriteType = {
+		name = "GFX_generic_design_equipment_standards"
+		texturefile = "gfx/interface/goals/KOR/Kaiserreich/generic_design_equipment_standards.png"
+	}
+	SpriteType = {
+		name = "GFX_GER_Zuse_Computer"
+		texturefile = "gfx/interface/goals/KOR/Kaiserreich/GER_Zuse_Computer.png"
+	}
+	SpriteType = {
+		name = "GFX_mass_concentration_of_army"
+		texturefile = "gfx/interface/goals/KOR/Kaiserreich/mass_concentration_of_army.png"
+	}
+	SpriteType = {
+		name = "GFX_OTT_Land_Reform"
+		texturefile = "gfx/interface/goals/KOR/Kaiserreich/OTT_Land_Reform.png"
+	}
+	SpriteType = {
+		name = "GFX_HOL_ban_paramilitary"
+		texturefile = "gfx/interface/goals/KOR/Kaiserreich/HOL_ban_paramilitary.png"
+	}
+	SpriteType = {
+		name = "GFX_generic_army_mobile_warfare"
+		texturefile = "gfx/interface/goals/KOR/Kaiserreich/generic_army_mobile_warfare.png"
+	}
+	SpriteType = {
+		name = "GFX_generic_army_superior_firepower"
+		texturefile = "gfx/interface/goals/KOR/Kaiserreich/generic_army_superior_firepower.png"
+	}
+	SpriteType = {
+		name = "GFX_generic_army_grand_battleplan"
+		texturefile = "gfx/interface/goals/KOR/Kaiserreich/generic_army_grand_battleplan.png"
+	}
+	SpriteType = {
+		name = "GFX_GEO_Artillery_Tactics"
+		texturefile = "gfx/interface/goals/KOR/Kaiserreich/GEO_Artillery_Tactics.png"
+	}
+	SpriteType = {
+		name = "GFX_generic_cold_training"
+		texturefile = "gfx/interface/goals/KOR/Kaiserreich/generic_cold_training.png"
+	}
+	SpriteType = {
+		name = "GFX_generic_armored_cars"
+		texturefile = "gfx/interface/goals/KOR/Kaiserreich/generic_armored_cars.png"
+	}
+	SpriteType = {
+		name = "GFX_radio"
+		texturefile = "gfx/interface/goals/KOR/Kaiserreich/radio.png"
+	}
+	SpriteType = {
+		name = "GFX_generic_army_cooperation"
+		texturefile = "gfx/interface/goals/KOR/Kaiserreich/generic_army_cooperation.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_anti_air"
+		texturefile = "gfx/interface/goals/KOR/Kaiserreich/anti_air.png"
+	}
+	SpriteType = {
+		name = "GFX_anti_air_towed"
+		texturefile = "gfx/interface/goals/KOR/Kaiserreich/anti_air_towed.png"
+	}
+	SpriteType = {
+		name = "GFX_nested_fortifications"
+		texturefile = "gfx/interface/goals/KOR/Kaiserreich/nested_fortifications.png"
+	}
+	SpriteType = {
+		name = "GFX_generic_propaganda_film"
+		texturefile = "gfx/interface/goals/KOR/Kaiserreich/generic_propaganda_film.png"
+	}
+	SpriteType = {
+		name = "GFX_agricultural_policies"
+		texturefile = "gfx/interface/goals/KOR/Kaiserreich/agricultural_policies.png"
+	}
+	SpriteType = {
+		name = "GFX_generic_coal_mining"
+		texturefile = "gfx/interface/goals/KOR/Kaiserreich/generic_coal_mining.png"
+	}
+	SpriteType = {
+		name = "GFX_state_economy"
+		texturefile = "gfx/interface/goals/KOR/Kaiserreich/state_economy.png"
+	}
+	SpriteType = {
+		name = "GFX_GER_Winterhilfe"
+		texturefile = "gfx/interface/goals/KOR/Kaiserreich/GER_Winterhilfe.png"
+	}
+	SpriteType = {
+		name = "GFX_generic_railway_construction"
+		texturefile = "gfx/interface/goals/KOR/Kaiserreich/generic_railway_construction.png"
+	}
+	SpriteType = {
+		name = "GFX_agrarian_reform"
+		texturefile = "gfx/interface/goals/KOR/Kaiserreich/agrarian_reform.png"
+	}
+	SpriteType = {
+		name = "GFX_generic_military_equipment"
+		texturefile = "gfx/interface/goals/KOR/Kaiserreich/generic_military_equipment.png"
+	}
+	SpriteType = {
+		name = "GFX_generic_parliament2"
+		texturefile = "gfx/interface/goals/KOR/Kaiserreich/generic_parliament2.png"
+	}
+	SpriteType = {
+		name = "GFX_generic_railroad"
+		texturefile = "gfx/interface/goals/KOR/Kaiserreich/generic_railroad.png"
+	}
+	SpriteType = {
+		name = "GFX_generic_parliament"
+		texturefile = "gfx/interface/goals/KOR/Kaiserreich/generic_parliament.png"
+	}
+	SpriteType = {
+		name = "GFX_generic_banking_legislation"
+		texturefile = "gfx/interface/goals/KOR/Kaiserreich/generic_banking_legislation.png"
+	}
+	SpriteType = {
+		name = "GFX_generic_shipyard"
+		texturefile = "gfx/interface/goals/KOR/Kaiserreich/generic_shipyard.png"
+	}
+	SpriteType = {
+		name = "GFX_develop_provinces"
+		texturefile = "gfx/interface/goals/KOR/Kaiserreich/develop_provinces.png"
+	}
+	SpriteType = {
+		name = "GFX_generic_debt_negotiations"
+		texturefile = "gfx/interface/goals/KOR/Kaiserreich/generic_debt_negotiations.png"
+	}
+	SpriteType = {
+		name = "GFX_generic_espionage"
+		texturefile = "gfx/interface/goals/KOR/Kaiserreich/generic_espionage.png"
+	}
+	SpriteType = {
+		name = "GFX_CHI_soul_of_whampoa"
+		texturefile = "gfx/interface/goals/KOR/Kaiserreich/CHI_soul_of_whampoa.png"
+	}
+	SpriteType = {
+		name = "GFX_generic_bridge"
+		texturefile = "gfx/interface/goals/KOR/Kaiserreich/generic_bridge.png"
+	}
+	SpriteType = {
+		name = "GFX_GER_Operation_Scharnhorst"
+		texturefile = "gfx/interface/goals/KOR/Kaiserreich/GER_Operation_Scharnhorst.png"
+	}
+	SpriteType = {
+		name = "GFX_generic_cash_stimulus_plan"
+		texturefile = "gfx/interface/goals/KOR/Kaiserreich/generic_cash_stimulus_plan.png"
+	}
+	SpriteType = {
+		name = "GFX_munitions_factories"
+		texturefile = "gfx/interface/goals/KOR/Kaiserreich/munitions_factories.png"
+	}
+	SpriteType = {
+		name = "GFX_treaty_fails"
+		texturefile = "gfx/interface/goals/KOR/Kaiserreich/treaty_fails.png"
+	}
+	SpriteType = {
+		name = "GFX_beiyang_flags"
+		texturefile = "gfx/interface/goals/KOR/Kaiserreich/beiyang_flags.png"
+	}
+	SpriteType = {
+		name = "GFX_generic_road_construction"
+		texturefile = "gfx/interface/goals/KOR/Kaiserreich/generic_road_construction.png"
+	}
+	SpriteType = {
+		name = "GFX_workers_for_business"
+		texturefile = "gfx/interface/goals/KOR/Kaiserreich/workers_for_business.png"
+	}
+	SpriteType = {
+		name = "GFX_FNG_fengtian_army"
+		texturefile = "gfx/interface/goals/KOR/Kaiserreich/FNG_fengtian_army.png"
+	}
+	SpriteType = {
+		name = "GFX_generic_police_state"
+		texturefile = "gfx/interface/goals/KOR/Kaiserreich/generic_police_state.png"
+	}
+	SpriteType = {
+		name = "GFX_generic_council"
+		texturefile = "gfx/interface/goals/KOR/Kaiserreich/generic_council.png"
+	}
+	SpriteType = {
+		name = "GFX_generic_destruction_civil_war"
+		texturefile = "gfx/interface/goals/KOR/Kaiserreich/generic_destruction_civil_war.png"
+	}
+	SpriteType = {
+		name = "GFX_secret_agents"
+		texturefile = "gfx/interface/goals/KOR/Kaiserreich/secret_agents.png"
+	}
+
+
+	#r56
+	SpriteType = {
+		name = "GFX_r56_goal_generic_modernizing_the_cavalry"
+		texturefile = "gfx/interface/goals/KOR/r56/r56_goal_generic_modernizing_the_cavalry.dds"
+	}
+	SpriteType = {
+		name = "GFX_r56_goal_generic_ammunitions"
+		texturefile = "gfx/interface/goals/KOR/r56/r56_goal_generic_ammunitions.dds"
+	}
+	SpriteType = {
+		name = "GFX_r56_goal_generic_barrack_industry"
+		texturefile = "gfx/interface/goals/KOR/r56/r56_goal_generic_barrack_industry.dds"
+	}
+	SpriteType = {
+		name = "GFX_r56_goal_BEL_Steel"
+		texturefile = "gfx/interface/goals/KOR/r56/r56_goal_BEL_Steel.dds"
+	}
+	SpriteType = {
+		name = "GFX_r56_goal_generic_cruiser"
+		texturefile = "gfx/interface/goals/KOR/r56/r56_goal_generic_cruiser.dds"
+	}
+	SpriteType = {
+		name = "GFX_r56_goal_generic_large_fleet"
+		texturefile = "gfx/interface/goals/KOR/r56/r56_goal_generic_large_fleet.dds"
+	}
+	SpriteType = {
+		name = "GFX_r56_goal_generic_anti_communism"
+		texturefile = "gfx/interface/goals/KOR/r56/r56_goal_generic_anti_communism.dds"
+	}
+
+	#World_Ablaze
+	SpriteType = {
+		name = "GFX_goal_CHI_the_daba_line"
+		texturefile = "gfx/interface/goals/KOR/World_Ablaze/goal_CHI_the_daba_line.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_CAN_fortiy_the_western_coast"
+		texturefile = "gfx/interface/goals/KOR/World_Ablaze/goal_CAN_fortiy_the_western_coast.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_CHI_the_wufu_line"
+		texturefile = "gfx/interface/goals/KOR/World_Ablaze/goal_CHI_the_wufu_line.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_generic_research_artillery"
+		texturefile = "gfx/interface/goals/KOR/World_Ablaze/goal_generic_research_artillery.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_CHI_the_great_retreat"
+		texturefile = "gfx/interface/goals/KOR/World_Ablaze/goal_CHI_the_great_retreat.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_JAP_ign_fix"
+		texturefile = "gfx/interface/goals/KOR/World_Ablaze/goal_JAP_ign_fix.png"
+	}
+	SpriteType = {
+		name = "GFX_goal_generic_loans"
+		texturefile = "gfx/interface/goals/KOR/World_Ablaze/goal_generic_loans.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_CHI_invite_foreign_investors"
+		texturefile = "gfx/interface/goals/KOR/World_Ablaze/goal_CHI_invite_foreign_investors.dds"
+	}
+
+	#Eight_Years
+	SpriteType = {
+		name = "GFX_focus_national_political_council"
+		texturefile = "gfx/interface/goals/KOR/Eight_Years/focus_national_political_council.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_institutional_reform"
+		texturefile = "gfx/interface/goals/KOR/Eight_Years/focus_institutional_reform.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_purge_social_fascist"
+		texturefile = "gfx/interface/goals/KOR/Eight_Years/focus_purge_social_fascist.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_puppet_jnc"
+		texturefile = "gfx/interface/goals/KOR/Eight_Years/goal_puppet_jnc.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_feed_the_peasants"
+		texturefile = "gfx/interface/goals/KOR/Eight_Years/focus_feed_the_peasants.dds"
+	}
+}

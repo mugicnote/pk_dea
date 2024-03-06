@@ -185,14 +185,6 @@ defined_text = {
 		trigger = { check_variable = { COUNTRY_HISTORY_INFO_PAGE = 0 } }
 		localization_key = COUNTRY_HISTORY_INFO_1_KOR
 	}
-	text = {
-		trigger = { check_variable = { COUNTRY_HISTORY_INFO_PAGE = 1 } }
-		localization_key = COUNTRY_HISTORY_INFO_2_KOR
-	}
-	text = {
-		trigger = { check_variable = { COUNTRY_HISTORY_INFO_PAGE = 2 } }
-		localization_key = COUNTRY_HISTORY_INFO_3_KOR
-	}
 }
 
 defined_text = {

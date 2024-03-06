@@ -1,5 +1,5 @@
 ﻿KOR_NOM_1 = {
-	name = "대한민국 보병"
+	name = "보병 사단"
 	for_countries = { KOR }
 	can_use = { always = yes }
 	division_types = { "infantry" }
@@ -21,49 +21,69 @@
 		25 = { "제25 보병 사단 '상승비룡'" }
 		27 = { "제27 보병 사단 '이기자'" }
 		28 = { "제28 보병 사단 '무적태풍'" }
-		29 = { "제29 보병 사단 '익크'" }
-		33 = { "제33 보병 사단 '번개'" }
-		38 = { "제38 보병 사단 '치악산'" }
-		52 = { "제52 보병 사단 '화살'" }
-		57 = { "제57 보병 사단 '용마'" }
-	}
-}
-KOR_NOM_4 = {
-	name = "대한민국 향토방위사단"
-	for_countries = { KOR }
-	can_use = { always = yes }
-	division_types = { "infantry" }
-	fallback_name = "제%d 향토방위사단"
-	ordered = {
-		31 = { "제31 향토방위사단 '충장'" }
-	}
-}
-KOR_NOM_2 = {
-	name = "기계화 보병사단"
-	for_countries = { KOR }
-	can_use = { always = yes }
-	division_types = { "motorized" }
-	fallback_name = "제%d 기계화 보병사단"
-	ordered = {
-		4 = { "수도 기계화 보병 사단 '맹호'부대" }
-		8 = { "제8 기계화 보병 사단 '오뚜기'부대" }
-		11 = { "제11 기계화 보병 사단 '화랑'부대" }
-		20 = { "제20 기계화 보병 사단 '결전'부대" }
-		26 = { "제26 기계화 보병 사단 '불무리'부대" }
-		30 = { "제30 기계화 보병 사단 '필승'부대" }
-	}
-}
-KOR_NOM_3 = {
-	name = "대한민국 해병대"
-	for_countries = { KOR }
-	can_use = { always = yes }
-	division_types = { "marine" }
-	fallback_name = "제%d 대한민국 해병대"
-	ordered = {
-		20 = { "대한민국 해병대" }
+		29 = { "제29 보병 사단 '태권'" }
 	}
 }
 
+KOR_NOM_2 = {
+	name = "향토방위 사단"
+	for_countries = { KOR }
+	can_use = { always = yes }
+	division_types = { "infantry" }
+	fallback_name = "제%d 향토방위 사단"
+	ordered = {
+		31 = { "제31 향토방위 사단 '충장'" }
+		32 = { "제32 향토방위 사단 '백룡'" }
+		33 = { "제33 향토방위 사단 '번개'" }
+		35 = { "제35 향토방위 사단 '충경'" }
+		36 = { "제36 향토방위 사단 '백호'" }
+		37 = { "제37 향토방위 사단 '충용'" }
+		38 = { "제38 향토방위 사단 '치악산'" }
+		39 = { "제39 향토방위 사단 '충무'" }
+		50 = { "제50 향토방위 사단 '강철'" }
+		51 = { "제51 향토방위 사단 '전승'" }
+		52 = { "제52 향토방위 사단 '화살'" }
+		53 = { "제53 향토방위 사단 '충렬'" }
+		55 = { "제55 향토방위 사단 '봉화'" }
+		56 = { "제56 향토방위 사단 '북한산'" }
+		57 = { "제57 향토방위 사단 '용마'" }
+	}
+}
+
+KOR_NOM_3 = {
+	name = "기병 사단"
+	for_countries = { KOR }
+	can_use = { always = yes }
+	division_types = { "cavalry" }
+	fallback_name = "제%d 기병 사단"
+	ordered = {
+		
+	}
+}
+
+KOR_NOM_4 = {
+	name = "해병대"
+	for_countries = { KOR }
+	can_use = { always = yes }
+	division_types = { "marine" }
+	fallback_name = "해병대 제%d사단"
+	ordered = {
+		1 = { "해병대 제1사단 '해룡'" }
+		2 = { "해병대 제2사단 '청룡'" }
+	}
+}
+
+KOR_NOM_5 = {
+	name = "경전차 사단"
+	for_countries = { KOR }
+	can_use = { always = yes }
+	division_types = { "light_armor" }
+	fallback_name = "제%d 기동사단"
+	ordered = {
+		8 = { "제8 기동 사단 '오뚜기'" }
+		11 = { "제8 기동 사단 '화랑'" }
+	}
+}
 # KOR_Mnt_1 = {
 # 	name = "청년단 산악병"
 # 	for_countries = { KOR }

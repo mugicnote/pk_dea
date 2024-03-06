@@ -6,9 +6,7 @@ state={
 	history={
 		owner = SHX
 		add_core_of = SHX
-		victory_points = {
-			1519 3 
-		}
+
 		buildings = {
 			infrastructure = 3
 			arms_factory = 2
@@ -21,7 +19,7 @@ state={
 	provinces={
 		1034 1531 4074 10367 10507 12300 
 	}
-	manpower=2578000
+	manpower=1381650
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000

@@ -2,17 +2,30 @@
 state={
 	id=994
 	name="STATE_South_Zilin"
+	manpower=6465000
+
+	state_category = city
 
 	history={
-		owner = KNM
-		add_core_of = KNM
+		owner = MAN
+		add_core_of = MAN
 
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
+
+		}
+
+		victory_points = {
+			4572 15 #장춘
+		}
+		victory_points = {
+			7663 10 #지린
+		}
 	}
 
 	provinces={
-		946 1567 3932 4503 4572 6947 7663 9883 9913 11781 11850 11862 11864 
+		946 1567 3932 3947 4503 4572 6947 7663 9883 9913 9928 11781 11850 11862 11864 
 	}
-	manpower=3296500
-	buildings_max_level_factor=1.000
-	local_supplies=0.000
 }

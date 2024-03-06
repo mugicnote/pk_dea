@@ -81,7 +81,6 @@ characters={
 			defense_skill=4
 			planning_skill=3
 			logistics_skill=3
-			legacy_id=0
 		}
 	}
 
@@ -201,7 +200,6 @@ characters={
 			defense_skill=4
 			planning_skill=4
 			logistics_skill=3
-			legacy_id=0
 		}
 	}
 
@@ -253,56 +251,303 @@ characters={
 			defense_skill=3
 			planning_skill=3
 			logistics_skill=4
-			legacy_id=3005
 		}
 	}
 
+	#장군진 시작
+	#6렙
+	KOR_Kang_Woo_gyu={
+		name=KOR_Kang_Woo_gyu
+		portraits={
+			army={
+				large="gfx/leaders/KOR/army/Portrait_Kang_Woo_gyu.png"
+			}
+		}
+
+		field_marshal={
+			traits={
+				media_personality
+				war_hero
+				aggressive_assaulter
+				offensive_doctrine
+			}
+			skill=6
+			attack_skill=6
+			defense_skill=5
+			planning_skill=4
+			logistics_skill=4
+			desc="KOR_Kang_Woo_gyu_desc"
+		}
+	}
+	KOR_Lee_Kyu_wan={
+		name=KOR_Lee_Kyu_wan
+		portraits={
+			army={
+				large="gfx/leaders/KOR/army/Portrait_Lee_Kyu_wan.png"
+			}
+		}
+
+		field_marshal={
+			traits={
+				old_guard
+				politically_connected
+				infantry_leader
+			}
+			skill=6
+			attack_skill=4
+			defense_skill=5
+			planning_skill=6
+			logistics_skill=4
+			desc="KOR_Lee_Kyu_wan_desc"
+		}
+	}
+	KOR_Min_Young_huan={
+		name=KOR_Min_Young_huan
+		portraits={
+			army={
+				large="gfx/leaders/KOR/army/Portrait_Min_Young_huan.png"
+			}
+		}
+
+		field_marshal={
+			traits={
+				old_guard
+				defensive_doctrine
+				skilled_staffer
+			}
+			skill=6
+			attack_skill=4
+			defense_skill=6
+			planning_skill=5
+			logistics_skill=4
+			desc="KOR_Min_Young_huan_desc"
+		}
+	}
+	#5렙
 	KOR_Hong_Bum_do={
 		name=KOR_Hong_Bum_do
 		portraits={
 			army={
-				large="gfx/leaders/KOR/Portrait_Hong_Bum_do.dds"
+				large="gfx/leaders/KOR/army/Portrait_Hong_Bum_do.png"
 			}
 		}
 
 		field_marshal={
 			traits={
-				war_hero
-				old_guard
-				commando
-				trait_mountaineer
+				brilliant_strategist
+				aggressive_assaulter
 				inspirational_leader
+				trait_mountaineer
 			}
 			skill=5
 			attack_skill=5
 			defense_skill=3
-			planning_skill=3
+			planning_skill=4
 			logistics_skill=4
-			legacy_id=0
+			desc="KOR_Hong_Bum_do_desc"
 		}
 	}
 
-	KOR_an_jung_geun={
-		name=KOR_an_jung_geun
+	KOR_No_Baek_Lin={
+		name=KOR_No_Baek_Lin
 		portraits={
 			army={
-				large="gfx/leaders/KOR/Portrait_an_junggeun.dds"
+				large="gfx/leaders/KOR/army/Portrait_No_Baek_Lin.png"
+			}
+		}
+
+		field_marshal={
+			traits={
+				airforce_connected
+				infantry_leader
+				infantry_expert
+			}
+			skill=5
+			attack_skill=4
+			defense_skill=5
+			planning_skill=4
+			logistics_skill=3
+			desc="KOR_No_Baek_Lin_desc"
+		}
+	}
+
+	KOR_Moon_Chang_beom={
+		name=KOR_Moon_Chang_beom
+		portraits={
+			army={
+				large="gfx/leaders/KOR/army/Portrait_Moon_Chang_beom.png"
+			}
+		}
+
+		field_marshal={
+			traits={
+				commando
+				hill_fighter
+				urban_assault_specialist
+			}
+			skill=5
+			attack_skill=4
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=5
+			desc="KOR_Moon_Chang_beom_desc"
+		}
+	}
+	#4렙
+	KOR_Min_Gyeong_ho={
+		name=KOR_Min_Gyeong_ho
+		portraits={
+			army={
+				large="gfx/leaders/KOR/army/Portrait_Min_Gyeong_ho.png"
 			}
 		}
 
 		field_marshal={
 			traits={
 				war_hero
+				infantry_leader
+				organizer
+				thorough_planner
+			}
+			skill=4
+			attack_skill=3
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=4
+		}
+	}
+
+	KOR_An_Jung_Geun={
+		name=KOR_An_Jung_Geun
+		portraits={
+			army={
+				large="gfx/leaders/KOR/army/Portrait_An_Jung_Geun.png"
+			}
+		}
+
+		field_marshal={
+			traits={
 				inflexible_strategist
-				unyielding_defender
-				inspirational_leader
+				defensive_doctrine
+				organisational_leader
+			}
+			skill=4
+			attack_skill=4
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=3
+			desc="KOR_An_Jung_Geun_desc"
+		}
+	}
+
+	KOR_Yi_Dong_hwi={
+		name=KOR_Yi_Dong_hwi
+		portraits={
+			army={
+				large="gfx/leaders/KOR/army/Portrait_Yi_Dong_hwi.png"
+			}
+		}
+
+		field_marshal={
+			traits={
+				politically_connected
+				trickster
+				winter_expert
 			}
 			skill=4
 			attack_skill=3
 			defense_skill=3
 			planning_skill=4
+			logistics_skill=4
+			desc="KOR_Yi_Dong_hwi_desc"
+		}
+	}
+
+	KOR_Cho_Sung_hwan={
+		name=KOR_Cho_Sung_hwan
+		portraits={
+			army={
+				large="gfx/leaders/KOR/army/Portrait_Cho_Sung_hwan.png"
+			}
+		}
+
+		field_marshal={
+			traits={
+				trickster
+				skilled_staffer
+			}
+			skill=4
+			attack_skill=3
+			defense_skill=4
+			planning_skill=5
 			logistics_skill=3
-			legacy_id=0
+			desc="KOR_Cho_Sung_hwan_desc"
+		}
+	}
+	#3렙
+	KOR_Park_Seung_Hwan={
+		name=KOR_Park_Seung_Hwan
+		portraits={
+			army={
+				large="gfx/leaders/KOR/army/Portrait_Park_Seung_Hwan.png"
+			}
+		}
+
+		field_marshal={
+			traits={
+				career_officer
+				infantry_leader
+			}
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			desc="KOR_Park_Seung_Hwan_desc"
+		}
+	}
+
+	KOR_Lee_In_Young={
+		name=KOR_Lee_In_Young
+		portraits={
+			army={
+				large="gfx/leaders/KOR/army/Portrait_Lee_In_Young.png"
+			}
+		}
+
+		field_marshal={
+			traits={
+				hill_fighter
+				fast_planner
+			}
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=3
+			desc="KOR_Lee_In_Young_desc"
+		}
+	}
+
+	KOR_Lee_Se_young={
+		name=KOR_Lee_Se_young
+		portraits={
+			army={
+				large="gfx/leaders/KOR/army/Portrait_Lee_Se_young.png"
+			}
+		}
+
+		field_marshal={
+			traits={
+				trait_cautious
+				organizer
+			}
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=2
+			desc="KOR_Lee_Se_young_desc"
 		}
 	}
 

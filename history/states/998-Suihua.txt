@@ -1,18 +1,27 @@
 state={
 	id=998
 	name="STATE_Suihua"
-	
+	manpower=2319000
+
+	state_category = town
+
 	history={
 		owner = MAN
 		add_core_of = MAN
 
 		set_demilitarized_zone = yes
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+
+		victory_points = {
+			4592 15 #쑤이화
+		}
 	}
 
 	provinces={
 		1545 4592 4649 7526 7613 7767 7897 10379 
 	}
-	manpower=1711500
-	buildings_max_level_factor=1.000
-	local_supplies=0.000
 }

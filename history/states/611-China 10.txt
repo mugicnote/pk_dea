@@ -1,27 +1,25 @@
-
 state={
 	id=611
 	name="STATE_611"
+	manpower=1200000
+
+	state_category=large_town
 
 	history={
 		owner = MAN
 		add_core_of = MAN
+
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 1
-
+			industrial_complex = 2
 		}
+
 		victory_points = {
-			11752 3 
+			10397 15 #장자커우
 		}
-
 	}
 
 	provinces={
 		828 1137 1489 1590 6904 10397 
 	}
-	manpower=665600
-	buildings_max_level_factor=1.000
-	state_category=pastoral
-	local_supplies=0.000
 }

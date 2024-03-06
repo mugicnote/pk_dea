@@ -22,16 +22,34 @@
  traits_Kim_Il2_desc:0 "이 사람은 신체적으로도 빠른 편이지만, 정치적, 사회적으로 상황 물색 및 판단 능력이 뛰어난 사람입니다."
  traits_Kim_Il3:0 "사회주의의 뱀"
  traits_Kim_Il3_desc:0 "'사회주의의 뱀'이라는 말은 김일성의 별명이기도 합니다. 그가 정치적으로 강성노선을 타면서도, 뛰어난 정치적 능력을 통해 사람들을 구워삶고 생존해왔다는 뜻이기도 하며, 스스로 너무나도 무능한 군사적 능력에도 몇 날 며칠을 철야하며 공부에 투자하여 장군의 자리까지 올랐다는 뜻이기도 합니다."
+ #어떤 씹새끼가 북괴 찬양글 써놨냐 또 백두임?
 
  #장군 트레잇
- trait_KOR_young_general:0 "어린 장군"
- trait_KOR_young_general_desc:0 "이 사람은 매우 어립니다. 대체 이 나이에 어떻게 장군이 된 걸까요? 그만큼 우리가 위기에 처했다는 뜻일수도 있습니다."
- caring_leader:0 "덕장"
- caring_leader_desc:0 "이 사람은 진정으로 사병의 건강과 편의를 생각합니다. 그의 부하들은 빠르게 전선에 복귀할 수 있지만, 이 "호사"에는 대가가 따릅니다. 뭐, 그렇게 큰 대가는 아니지만요."
- bad_staffer:0 "무능한 참모"
- bad_staffer_desc:0 "이 사람은 장교를 잘 못 뽑거나, 조언을 해줄 유능한 장교가 없거나, 둘 다에 해당됩니다. 어느 경우든지 간에 이는 그의 여러 부대를 지휘할 수 있는 능력을 제한할 것입니다. 이 경우에 뭐라고 하던가요? ...아! 그래. 그렇지. 이 사람은 무능합니다."
+ artillery_officer:0 "포병 장교"
+ artillery_officer_desc:0 "§L포병 장교로 훈련되었습니다.§!"
+ artillery_specialist:0 "포병 지휘관"
+ artillery_specialist_desc:0 "§L전투에서 포병을 지휘하는 데 능숙합니다.§!"
+ artillery_expert:0 "포병 전문가"
+ artillery_expert_desc:0 "§L포병 지휘의 진정한 전문가입니다.§!"
+ artillery_ratio_over_40:0 "포병 비율 > §H40%§!"
 
- airforce_background:0 "공군과의 연줄"
+ airforce_connected:0 "공군과의 연줄"
+ airforce_connected_desc:0 "§L이 지휘관은 공군과의 연줄을 가지고 있으며 지상전투에서 더 많은 공군지원을 받을 줄 압니다.§!"
+ airforce_background:0 "공군 배경"
+ airforce_background_desc:0 "§L이 장군은 공군 출신이며 공군이 필요로 하는 상황을 조성하는 데 능숙합니다.§!"
+ airland_battle_expert:0 "공지전투 전문가"
+ airland_battle_expert_desc:0 "§L이 장군은 지상부대와 함께하는 조직화된 출격의 필요성과 어려움을 이해하고 있습니다.§!"
+
+ motorized_officer:0 "차량화 장교"
+ motorized_officer_desc:0 "§L차량화 장교로 훈련되었습니다.§!"
+ motorized_leader:0 "차량화 지휘관"
+ motorized_leader_desc:0 "§L차량화, 기계화, 장갑차를 운용하여 전투에 임하는 데 특화되었습니다.§!"
+ motorized_ratio_over_40:1 "차량화, 기계화 비율 > §H35%§!"
+
+ reformed_commander:0 "변화한 지휘관"
+ reformed_commander_desc:0 "§L보수적인 지휘관도 충분히 오랫동안 싸우면 더 나아질 수 있습니다.§!"
+ experienced_commander:0 "노련한 지휘관"
+ experienced_commander_desc:0 "§L엄청난 경험을 쌓아 부대를 더욱 뛰어나게 조직할수 있는 지휘관입니다.§!"
 
 
  kor_dictator2:0 "내부 불화"

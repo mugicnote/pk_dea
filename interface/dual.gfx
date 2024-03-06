@@ -25,6 +25,10 @@ spriteTypes = {
 
 	#만주 괴뢰국
 	spriteType = {
+		name = "GFX_Portrait_KNM_Cai_Yun_sheng"
+		texturefile = "gfx/leaders/KNM/Portrait_KNM_Cai_Yun_sheng.png"
+	}
+	spriteType = {
 		name = "GFX_Portrait_an_junggeun"
 		texturefile = "gfx/leaders/KOR/Portrait_an_junggeun.dds"
 	}

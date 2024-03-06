@@ -1,32 +1,26 @@
-
 state={
 	id=610
 	name="STATE_610"
+	manpower=4800000
+
+	state_category = large_town
 
 	history={
 		owner = MAN
 		add_core_of = MAN
-		buildings = {
-			infrastructure = 4
 
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
 		}
+
 		victory_points = {
-			934 3 
-		}
-		victory_points = {
-			11886 3 
-		}
-		victory_points = {
-			9873 3 
+			814 15
 		}
 
 	}
 
 	provinces={
-		814 881 952 972 3814 3828 3881 3955 6898 6937 6969 7633 9768 9776 9873 9905 10331 10426 11801 11855 
+		814 881 952 972 3814 3828 3881 3955 6898 6937 7633 9768 9776 9873 9905 10331 10426 11801 11855 
 	}
-	manpower=3296500
-	buildings_max_level_factor=1.000
-	state_category=pastoral
-	local_supplies=0.000
 }

@@ -3,8 +3,8 @@ capital = 525
 oob = KOR
 
 #국회 의석 설정
-set_variable = { var = house_support value = 90 }
-set_variable = { var = house_total value = 435 }
+# set_variable = { var = house_support value = 90 }
+# set_variable = { var = house_total value = 435 }
 
 #시작시_연구가능_칸
 set_research_slots = 4
@@ -226,43 +226,60 @@ recruit_character = KOR_ji_chong_chen
 recruit_character = KOR_rafs
 recruit_character = KOR_Lee_Beom_seok
 
+###장군진
+#6렙
+recruit_character = KOR_Kang_Woo_gyu
+recruit_character = KOR_Lee_Kyu_wan
+recruit_character = KOR_Min_Young_huan
+
 recruit_character = KOR_Hong_Bum_do
-recruit_character = KOR_an_jung_geun
-recruit_character = KOR_Kim_Chwa_chin
-recruit_character = KOR_Shin_Sung_mo
+recruit_character = KOR_No_Baek_Lin
+recruit_character = KOR_Moon_Chang_beom
 
-recruit_character = KOR_Kim_Hong_Il
-recruit_character = KOR_Kim_Kyung_cheon
-recruit_character = KOR_Ryu_Dong_yeol
-recruit_character = KOR_Hong_Sa_ik
-recruit_character = KOR_Hwang_Hak_Su
-recruit_character = KOR_Kim_Hak_kyu
-recruit_character = KOR_Kim_Suk_Won
-recruit_character = KOR_Yoo_jin_dong
-recruit_character = KOR_song_ho_seong
-recruit_character = KOR_park_keong_chor
-recruit_character = KOR_Han_Hun
+recruit_character = KOR_Min_Gyeong_ho
+recruit_character = KOR_An_Jung_Geun
+recruit_character = KOR_Yi_Dong_hwi
+recruit_character = KOR_Cho_Sung_hwan
 
-recruit_character = KOR_Choi_Yong_duk
-recruit_character = KOR_Jang_Duk_chang
+recruit_character = KOR_Park_Seung_Hwan
+recruit_character = KOR_Lee_In_Young
+recruit_character = KOR_Lee_Se_young
 
-recruit_character = KOR_Kim_Won_bong
-recruit_character = KOR_Ryu_ja_myeong
-recruit_character = KOR_Kwon_Jun
-recruit_character = KOR_Kim_Sang_ok
-recruit_character = KOR_Kim_Ji_Sub
-recruit_character = KOR_Kim_Ik_Sang
-recruit_character = KOR_Yun_Se_ju
-recruit_character = KOR_Kim_Si_Hyeon
+# recruit_character = KOR_Kim_Chwa_chin
+# recruit_character = KOR_Shin_Sung_mo
 
-recruit_character = KOR_Kim_chek
-recruit_character = KOR_Park_Il_wu
-recruit_character = KOR_Kim_Mu_geong
-recruit_character = KOR_Choi_Yong_Gun
-recruit_character = KOR_Lee_Gwan_Sool
-recruit_character = KOR_Nam_Il
+# recruit_character = KOR_Kim_Hong_Il
+# recruit_character = KOR_Kim_Kyung_cheon
+# recruit_character = KOR_Ryu_Dong_yeol
+# recruit_character = KOR_Hong_Sa_ik
+# recruit_character = KOR_Hwang_Hak_Su
+# recruit_character = KOR_Kim_Hak_kyu
+# recruit_character = KOR_Kim_Suk_Won
+# recruit_character = KOR_Yoo_jin_dong
+# recruit_character = KOR_song_ho_seong
+# recruit_character = KOR_park_keong_chor
+# recruit_character = KOR_Han_Hun
 
-recruit_character = KOR_Son_Won_il
+# recruit_character = KOR_Choi_Yong_duk
+# recruit_character = KOR_Jang_Duk_chang
+
+# recruit_character = KOR_Kim_Won_bong
+# recruit_character = KOR_Ryu_ja_myeong
+# recruit_character = KOR_Kwon_Jun
+# recruit_character = KOR_Kim_Sang_ok
+# recruit_character = KOR_Kim_Ji_Sub
+# recruit_character = KOR_Kim_Ik_Sang
+# recruit_character = KOR_Yun_Se_ju
+# recruit_character = KOR_Kim_Si_Hyeon
+
+# recruit_character = KOR_Kim_chek
+# recruit_character = KOR_Park_Il_wu
+# recruit_character = KOR_Kim_Mu_geong
+# recruit_character = KOR_Choi_Yong_Gun
+# recruit_character = KOR_Lee_Gwan_Sool
+# recruit_character = KOR_Nam_Il
+
+# recruit_character = KOR_Son_Won_il
 
 recruit_character = KOR_Min_Chanho
 recruit_character = KOR_Lee_Junsik

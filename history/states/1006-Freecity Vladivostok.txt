@@ -1,3 +1,4 @@
+
 state={
 	id=1006
 	name="STATE_Freecity_Vladivostok"
@@ -16,8 +17,9 @@ state={
 	}
 
 	provinces={
-		957 3977 6838 6961 6989 11879 
+		810 957 3843 5427 6838 6961 6989 
 	}
 	manpower=0
 	buildings_max_level_factor=1.000
+	local_supplies=0.000
 }

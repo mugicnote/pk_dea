@@ -790,7 +790,14 @@ bitmapfonts = {
 
 	bitmapfont = {
 		name = "aldrich_22_outline_b"
-		path = "gfx/fonts/aldrich_22_outline"
+		fontfiles = {
+			"gfx/fonts/aldrich_22_outline"
+			"gfx/fonts/chinese/hoi_22typewriter_1of4"
+			"gfx/fonts/chinese/hoi_22typewriter_2of4"
+			"gfx/fonts/chinese/hoi_22typewriter_3of4"
+			"gfx/fonts/chinese/hoi_22typewriter_4of4"
+			"gfx/fonts/chinese/hoi_22typewriter_inverted"
+		}	
 		color = 0xff000000
 	}
 
@@ -802,7 +809,14 @@ bitmapfonts = {
 
 	bitmapfont = {
 		name = "aldrich_18_outline_b"
-		path = "gfx/fonts/aldrich_18_outline"
+		fontfiles = {
+			"gfx/fonts/aldrich_18_outline"
+			"gfx/fonts/chinese/hoi_16typewriter_inverted_1of4"
+			"gfx/fonts/chinese/hoi_16typewriter_inverted_2of4"
+			"gfx/fonts/chinese/hoi_16typewriter_inverted_3of4"
+			"gfx/fonts/chinese/hoi_16typewriter_inverted_4of4"
+			"gfx/fonts/hanzi/typewriter16"
+		}
 		color = 0xff000000
 	}
 

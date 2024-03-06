@@ -1,29 +1,17 @@
 characters={
-	CHI_Chiang_Kai_Shek={
-		name=CHI_Chiang_Kai_Shek
+	KNM_Fang_Zhen_wu={
+		name=KNM_Fang_Zhen_wu
 		portraits={
 			civilian={
-				large="gfx/leaders/CHI/Portrait_CHI_Chiang_Kai_Shek.dds"
+				large="gfx/leaders/KNM/Portrait_KNM_Fang_Zhen_wu.png"
 			}
 		}
 		country_leader={
-			ideology=nat_conservatism
+			ideology=authoritarian
 			traits={
 			}
-			expire="1975.4.5.1"
+			expire="1941.12.31.1"
 			id=-1
-		}
-
-		field_marshal={
-			traits={
-				
-			}
-			skill=5
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=0
 		}
 	}
 }

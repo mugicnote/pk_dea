@@ -105,9 +105,9 @@
  ICU_ADJ:0 "인도차이나 연방"
 
  #북만주 괴뢰국
- KNM:0 "간도 자치주"
- KNM_neutrality:0 "간도 자치주"
- KNM_neutrality_DEF:0 "간도 자치주"
+ KNM:0 "간도성"
+ KNM_neutrality:0 "간도성"
+ KNM_neutrality_DEF:0 "간도성"
 
  #독일
  GER_fascism:0 "독일국"

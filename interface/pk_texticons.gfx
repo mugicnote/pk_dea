@@ -337,4 +337,11 @@ spriteTypes = {
 		texturefile = "gfx/texticons/mini_icon/attack_texticon.dds"
 		legacy_lazy_load = no
 	}
+
+	#portrait
+	spriteType = {
+		name = "GFX_KOR_Hong_Bum_do"
+		texturefile = "gfx/texticons/portrait/Portrait_Hong_Bum_do.png"
+		legacy_lazy_load = no
+	}
 }

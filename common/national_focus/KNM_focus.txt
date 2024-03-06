@@ -1,0 +1,775 @@
+﻿focus_tree = {
+	id = KNM_focus
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 20
+			tag = KNM
+		}
+	}
+	default = no
+
+	continuous_focus_position = { x = 2320 y = 30 }
+
+	#한성에서의 쿠데타
+	focus = {
+		id = KNM_The_Coup_at_Hanseong
+		icon = GFX_focus_pay_attention_to_the_press
+		cost = 10.00
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = KNM_The_Coup_at_Hanseong_tt
+				KOR ={
+					has_completed_focus = KOR_Revolution_accomplished
+				}
+			}
+		}
+
+		completion_reward = {
+
+		}
+
+		x = 11
+		y = 0
+
+	}
+
+	#간도 특별조례 폐지
+	focus = {
+		id = KNM_Repeal_of_the_Gando_Special_Ordinance
+		icon = GFX_treaty_fails
+		relative_position_id = KNM_The_Coup_at_Hanseong
+		cost = 10.00
+
+		prerequisite = {
+			focus = KNM_The_Coup_at_Hanseong
+		}
+
+		completion_reward = {
+
+		}
+
+		x = 0
+		y = 2
+
+	}
+
+	#긴급 구휼책 모색
+	focus = {
+		id = KNM_Stabilizing_the_food_situation
+		icon = GFX_focus_feed_the_peasants
+		relative_position_id = KNM_Repeal_of_the_Gando_Special_Ordinance
+		cost = 10.00
+
+		prerequisite = {
+			focus = KNM_Repeal_of_the_Gando_Special_Ordinance
+		}
+
+		completion_reward = {
+
+		}
+
+		x = -3
+		y = 1
+
+	}
+
+	#새로운 방향으로의 접근
+	focus = {
+		id = KNM_A_new_direction
+		icon = GFX_generic_road_construction
+		relative_position_id = KNM_Repeal_of_the_Gando_Special_Ordinance
+		cost = 10.00
+
+		prerequisite = {
+			focus = KNM_Repeal_of_the_Gando_Special_Ordinance
+		}
+		mutually_exclusive = {
+			focus = KNM_Reconvene_the_Gando_Executive
+		}
+
+		completion_reward = {
+
+		}
+
+		x = 1
+		y = 1
+
+	}
+
+	#간도성 행정부 재소집
+	focus = {
+		id = KNM_Reconvene_the_Gando_Executive
+		icon = GFX_generic_parliament2
+		relative_position_id = KNM_Repeal_of_the_Gando_Special_Ordinance
+		cost = 10.00
+
+		prerequisite = {
+			focus = KNM_Repeal_of_the_Gando_Special_Ordinance
+		}
+		mutually_exclusive = {
+			focus = KNM_A_new_direction
+		}
+
+		completion_reward = {
+
+		}
+
+		x = 3
+		y = 1
+
+	}
+
+	#가격 통제 시행
+	focus = {
+		id = KNM_Enforcing_price_controls
+		icon = GFX_GER_Winterhilfe
+		relative_position_id = KNM_Stabilizing_the_food_situation
+		cost = 10.00
+
+		prerequisite = {
+			focus = KNM_Stabilizing_the_food_situation
+		}
+
+		completion_reward = {
+
+		}
+
+		x = -3
+		y = 1
+
+	}
+
+	#한성으로
+	focus = {
+		id = KNM_to_Seoul
+		icon = GFX_focus_KOR_finally_get_to_the_top
+		relative_position_id = KNM_Stabilizing_the_food_situation
+		cost = 10.00
+
+		prerequisite = {
+			focus = KNM_Stabilizing_the_food_situation
+		}
+
+		completion_reward = {
+
+		}
+
+		x = -1
+		y = 1
+
+	}
+
+	#북경으로
+	focus = {
+		id = KNM_to_Beijing
+		icon = GFX_beiyang_flags
+		relative_position_id = KNM_Stabilizing_the_food_situation
+		cost = 10.00
+
+		prerequisite = {
+			focus = KNM_Stabilizing_the_food_situation
+		}
+
+		completion_reward = {
+
+		}
+
+		x = 1
+		y = 1
+
+	}
+
+	#차이윈성에게 권력을
+	focus = {
+		id = KNM_Power_to_Cai_Yunsheng
+		icon = GFX_focus_nationalism
+		relative_position_id = KNM_A_new_direction
+		cost = 10.00
+
+		prerequisite = {
+			focus = KNM_A_new_direction
+		}
+
+		completion_reward = {
+
+		}
+
+		x = -1
+		y = 1
+
+	}
+
+	#사포대 유지
+	focus = {
+		id = KNM_Maintaining_a_Privateer_Cannon_Corps
+		icon = GFX_generic_army_cooperation
+		relative_position_id = KNM_A_new_direction
+		cost = 10.00
+
+		prerequisite = {
+			focus = KNM_A_new_direction
+		}
+
+		completion_reward = {
+
+		}
+
+		x = 1
+		y = 1
+
+	}
+
+	#차이윈성 해임
+	focus = {
+		id = KNM_Dismissal_of_Cai_Yunsheng
+		icon = GFX_focus_purge_social_fascist
+		relative_position_id = KNM_Reconvene_the_Gando_Executive
+		cost = 10.00
+
+		prerequisite = {
+			focus = KNM_Reconvene_the_Gando_Executive
+		}
+
+		completion_reward = {
+
+		}
+
+		x = 1
+		y = 1
+
+	}
+
+	#사포대 무장해제 요구
+	focus = {
+		id = KNM_Demanding_the_demilitarization_of_private_artillery_units
+		icon = GFX_generic_military_equipment
+		relative_position_id = KNM_Reconvene_the_Gando_Executive
+		cost = 10.00
+
+		prerequisite = {
+			focus = KNM_Reconvene_the_Gando_Executive
+		}
+
+		completion_reward = {
+
+		}
+
+		x = 3
+		y = 1
+
+	}
+
+	#곡물법 개정
+	focus = {
+		id = KNM_Amending_the_Grain_Act
+		icon = GFX_generic_banking_legislation
+		relative_position_id = KNM_Enforcing_price_controls
+		cost = 10.00
+
+		prerequisite = {
+			focus = KNM_Enforcing_price_controls
+		}
+
+		completion_reward = {
+
+		}
+
+		x = 0
+		y = 1
+
+	}
+
+	#곳간을 풀어라
+	focus = {
+		id = KNM_Release_food
+		icon = GFX_agricultural_policies
+		relative_position_id = KNM_to_Seoul
+		cost = 10.00
+
+		prerequisite = {
+			focus = KNM_to_Seoul
+		}
+		prerequisite = {
+			focus = KNM_to_Beijing
+		}
+
+		completion_reward = {
+
+		}
+
+		x = 1
+		y = 1
+
+	}
+
+	#한국과의 협력 강화
+	focus = {
+		id = KNM_Strengthening_cooperation_with_Korea
+		icon = GFX_focus_ncr
+		relative_position_id = KNM_Power_to_Cai_Yunsheng
+		cost = 10.00
+
+		prerequisite = {
+			focus = KNM_Power_to_Cai_Yunsheng
+		}
+
+		completion_reward = {
+
+		}
+
+		x = -1
+		y = 1
+
+	}
+
+	#치안 유지 강화
+	focus = {
+		id = KNM_Enhanced_policing
+		icon = GFX_workers_for_business
+		relative_position_id = KNM_Power_to_Cai_Yunsheng
+		cost = 10.00
+
+		prerequisite = {
+			focus = KNM_Power_to_Cai_Yunsheng
+		}
+		prerequisite = {
+			focus = KNM_Maintaining_a_Privateer_Cannon_Corps
+		}
+
+		completion_reward = {
+
+		}
+
+		x = 1
+		y = 1
+
+	}
+
+	#남부 국경 요새화
+	focus = {
+		id = KNM_Southern_Border_Fortifications
+		icon = GFX_goal_generic_fortify_city
+		relative_position_id = KNM_Reconvene_the_Gando_Executive
+		cost = 10.00
+
+		prerequisite = {
+			focus = KNM_Reconvene_the_Gando_Executive
+		}
+
+		completion_reward = {
+
+		}
+
+		x = 0
+		y = 2
+
+	}
+
+	#북경정부와의 타협
+	focus = {
+		id = KNM_Compromise_with_the_Beijing_government
+		icon = GFX_goal_puppet_jnc
+		relative_position_id = KNM_Dismissal_of_Cai_Yunsheng
+		cost = 10.00
+
+		prerequisite = {
+			focus = KNM_Dismissal_of_Cai_Yunsheng
+		}
+		prerequisite = {
+			focus = KNM_Demanding_the_demilitarization_of_private_artillery_units
+		}
+
+		completion_reward = {
+
+		}
+
+		x = 1
+		y = 1
+
+	}
+
+	#독자 치안부대 운용
+	focus = {
+		id = KNM_Run_own_police_force
+		icon = GFX_FNG_fengtian_army
+		relative_position_id = KNM_Demanding_the_demilitarization_of_private_artillery_units
+		cost = 10.00
+
+		prerequisite = {
+			focus = KNM_Demanding_the_demilitarization_of_private_artillery_units
+		}
+
+		completion_reward = {
+
+		}
+
+		x = 1
+		y = 1
+
+	}
+
+	#요동 대기근 해결
+	focus = {
+		id = KNM_Solving_the_Manchurian_Famine
+		icon = GFX_agrarian_reform
+		relative_position_id = KNM_Amending_the_Grain_Act
+		cost = 10.00
+
+		prerequisite = {
+			focus = KNM_Amending_the_Grain_Act
+		}
+		prerequisite = {
+			focus = KNM_Release_food
+		}
+
+		completion_reward = {
+
+		}
+
+		x = 1
+		y = 1
+
+	}
+
+	#간도 특별조례 부활
+	focus = {
+		id = KNM_Reviving_the_Gando_Special_Ordinance
+		icon = GFX_focus_institutional_reform
+		relative_position_id = KNM_Power_to_Cai_Yunsheng
+		cost = 10.00
+
+		prerequisite = {
+			focus = KNM_Power_to_Cai_Yunsheng
+		}
+		prerequisite = {
+			focus = KNM_Strengthening_cooperation_with_Korea
+		}
+		prerequisite = {
+			focus = KNM_Enhanced_policing
+		}
+
+		completion_reward = {
+
+		}
+
+		x = 0
+		y = 2
+
+	}
+
+	#관외의 최전방
+	focus = {
+		id = KNM_Manchurian_Frontier
+		icon = GFX_focus_KOR_manchu_plan
+		relative_position_id = KNM_Southern_Border_Fortifications
+		cost = 10.00
+
+		prerequisite = {
+			focus = KNM_Southern_Border_Fortifications
+		}
+		prerequisite = {
+			focus = KNM_Compromise_with_the_Beijing_government
+		}
+		prerequisite = {
+			focus = KNM_Run_own_police_force
+		}
+
+		completion_reward = {
+
+		}
+
+		x = 2
+		y = 1
+
+	}
+
+	#새로운 해법을 고민
+	focus = {
+		id = KNM_Consider_new_solutions
+		icon = GFX_focus_paper_sign
+		relative_position_id = KNM_Solving_the_Manchurian_Famine
+		cost = 10.00
+
+		available = {
+			OR = {
+				has_completed_focus = KNM_Reviving_the_Gando_Special_Ordinance
+				has_completed_focus = KNM_Manchurian_Frontier
+			}
+		}
+		prerequisite = {
+			focus = KNM_Solving_the_Manchurian_Famine
+			focus = KNM_Reviving_the_Gando_Special_Ordinance
+			focus = KNM_Manchurian_Frontier
+		}
+
+		completion_reward = {
+
+		}
+
+		x = 5
+		y = 1
+
+	}
+
+	#성장을 향한 테러
+	focus = {
+		id = KNM_A_terrorist_attack_occurs
+		icon = GFX_generic_police_state
+		relative_position_id = KNM_Consider_new_solutions
+		cost = 10.00
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = KNM_A_terrorist_attack_occurs_tt
+				has_country_flag = KNM_A_terrorist_attack_occurs
+			}
+		}
+
+		prerequisite = {
+			focus = KNM_Consider_new_solutions
+		}
+
+		completion_reward = {
+
+		}
+
+		x = 0
+		y = 2
+
+	}
+
+	#임시성장 표결
+	focus = {
+		id = KNM_Vote_for_an_interim_leader
+		icon = GFX_focus_constitution
+		relative_position_id = KNM_A_terrorist_attack_occurs
+		cost = 10.00
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = KNM_Vote_for_an_interim_leader_tt
+				has_country_flag = KNM_Resignation_of_a_deputy_leader
+			}
+		}
+
+		prerequisite = {
+			focus = KNM_A_terrorist_attack_occurs
+		}
+
+		completion_reward = {
+
+		}
+
+		x = 0
+		y = 1
+
+	}
+
+	#민병대 소집
+	focus = {
+		id = KNM_Muster_the_militia
+		icon = GFX_focus_volunteers
+		relative_position_id = KNM_Vote_for_an_interim_leader
+		cost = 10.00
+
+		prerequisite = {
+			focus = KNM_Vote_for_an_interim_leader
+		}
+
+		completion_reward = {
+
+		}
+
+		x = -6
+		y = 1
+
+	}
+
+	#당위성 확보
+	focus = {
+		id = KNM_Get_justification
+		icon = GFX_OTT_Land_Reform
+		relative_position_id = KNM_Vote_for_an_interim_leader
+		cost = 10.00
+
+		prerequisite = {
+			focus = KNM_Vote_for_an_interim_leader
+		}
+
+		completion_reward = {
+
+		}
+
+		x = -3
+		y = 1
+
+	}
+
+	#간도 자치령 선언
+	focus = {
+		id = KNM_Declare_Gando_Autonomous
+		icon = GFX_focus_victory_in_woi
+		relative_position_id = KNM_Vote_for_an_interim_leader
+		cost = 10.00
+
+		prerequisite = {
+			focus = KNM_Vote_for_an_interim_leader
+		}
+
+		completion_reward = {
+
+		}
+
+		x = -1
+		y = 1
+
+	}
+
+	#간도광복군 사령부 설치
+	focus = {
+		id = KNM_Set_up_the_Gando_Liberation_Army_Command
+		icon = GFX_generic_council
+		relative_position_id = KNM_Vote_for_an_interim_leader
+		cost = 10.00
+
+		prerequisite = {
+			focus = KNM_Vote_for_an_interim_leader
+		}
+
+		completion_reward = {
+
+		}
+
+		x = 1
+		y = 1
+
+	}
+
+	#한국과의 산업 협력
+	focus = {
+		id = KNM_Industrial_cooperation_with_Korea
+		icon = GFX_generic_destruction_civil_war
+		relative_position_id = KNM_Vote_for_an_interim_leader
+		cost = 10.00
+
+		prerequisite = {
+			focus = KNM_Vote_for_an_interim_leader
+		}
+
+		completion_reward = {
+
+		}
+
+		x = 3
+		y = 1
+
+	}
+	#간도 조병창 설립
+	focus = {
+		id = KNM_Founded_Gando_Cho_Byung_chang
+		icon = GFX_generic_design_equipment_standards
+		relative_position_id = KNM_Vote_for_an_interim_leader
+		cost = 10.00
+
+		prerequisite = {
+			focus = KNM_Vote_for_an_interim_leader
+		}
+
+		completion_reward = {
+
+		}
+
+		x = 6
+		y = 1
+
+	}
+
+	#간도 독립군 편성
+	focus = {
+		id = KNM_Organize_a_Gando_Rebel_Force
+		icon = GFX_focus_kia
+		relative_position_id = KNM_Muster_the_militia
+		cost = 10.00
+
+		prerequisite = {
+			focus = KNM_Muster_the_militia
+		}
+
+		completion_reward = {
+
+		}
+
+		x = -1
+		y = 1
+
+	}
+
+	#한인의용대 창설
+	focus = {
+		id = KNM_Establishment_of_Korean_Militia
+		icon = GFX_secret_agents
+		relative_position_id = KNM_Muster_the_militia
+		cost = 10.00
+
+		prerequisite = {
+			focus = KNM_Muster_the_militia
+		}
+
+		completion_reward = {
+
+		}
+
+		x = 1
+		y = 1
+
+	}
+
+	#발해 부흥론 주장
+	focus = {
+		id = KNM_Claim_a_thriving_country
+		icon = GFX_generic_army_grand_battleplan
+		relative_position_id = KNM_Get_justification
+		cost = 10.00
+
+		prerequisite = {
+			focus = KNM_Get_justification
+		}
+
+		completion_reward = {
+			add_state_core = 985
+			add_state_core = 717
+			add_state_core = 1012
+			add_state_core = 994
+		}
+
+		x = 0
+		y = 1
+
+	}
+
+	#영토 수복 시작
+	focus = {
+		id = KNM_Establishment_of_Korean_Militia
+		icon = GFX_focus_korean_woi
+		relative_position_id = KNM_Declare_Gando_Autonomous
+		cost = 10.00
+
+		prerequisite = {
+			focus = KNM_Declare_Gando_Autonomous
+		}
+		prerequisite = {
+			focus = KNM_Set_up_the_Gando_Liberation_Army_Command
+		}
+
+		completion_reward = {
+
+		}
+
+		x = 1
+		y = 1
+
+	}
+}

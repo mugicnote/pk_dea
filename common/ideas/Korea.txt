@@ -327,6 +327,7 @@ ideas = {
                 planning_speed = -0.15
                 army_attack_factor = -0.15
 				army_defence_factor = -0.1
+                custom_modifier_tooltip = SPR_military_disloyalty_tt
             }
         }
 

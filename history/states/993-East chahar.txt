@@ -1,14 +1,25 @@
 state={
 	id=993
 	name="STATE_East_chahar"
-	provinces={
-		1811 1871 4495 4555 7578 7648 7674 10363 12348 12554 
-	}
+	manpower=172000
+
+	state_category = rural
+
 	history={
 		owner = MAN
 		add_core_of = MAN
 
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+
+		victory_points = {
+			4495 10 #둬룬
+		}
 	}
-	manpower=665600
-	buildings_max_level_factor=1.000
+
+	provinces={
+		1811 1871 4495 4555 7578 7648 7674 10363 12348 12554 
+	}
 }

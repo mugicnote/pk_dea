@@ -1,0 +1,33 @@
+﻿KNM_NOM_1 = {
+	name = "간도 진위대"
+	for_countries = { KNM }
+	can_use = { always = yes }
+	division_types = { "infantry" }
+	fallback_name = "간도 진위대 제%d 연대"
+	ordered = {
+		1 = { "간도 진위대 제1 연대 '친위'" }
+		2= { "간도 진위대 제2 연대 '시위'" }
+	}
+}
+
+KNM_NOM_2 = {
+	name = "간도성 치안부대"
+	for_countries = { KNM }
+	can_use = { always = yes }
+	division_types = { "infantry" }
+	fallback_name = "제%d 간도성 치안부대 사단"
+	ordered = {
+		
+	}
+}
+
+KNM_NOM_3 = {
+	name = "중광단"
+	for_countries = { KNM }
+	can_use = { always = yes }
+	division_types = { "militia" }
+	fallback_name = "중광단 제%d 연대"
+	ordered = {
+		
+	}
+}

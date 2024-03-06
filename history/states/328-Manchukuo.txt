@@ -1,23 +1,21 @@
-
 state={
 	id=328
 	name="STATE_328"
-	resources={
-		aluminium=7.000
-	}
+	manpower=3760000
+
+	state_category = large_city
 
 	history={
-		owner = KNM
-		add_core_of = KNM
+		owner = MAN
+		add_core_of = MAN
+		
 		buildings = {
 			infrastructure = 4
-
+			industrial_complex = 3
+			arms_factory = 2
 		}
 		victory_points = {
-			10433 15 
-		}
-		victory_points = {
-			4572 3 
+			10433 30 #하얼빈 
 		}
 
 	}
@@ -25,8 +23,4 @@ state={
 	provinces={
 		7523 7591 7652 9782 10433 11744 12412 
 	}
-	manpower=3760000
-	buildings_max_level_factor=1.000
-	state_category=large_town
-	local_supplies=0.000
 }

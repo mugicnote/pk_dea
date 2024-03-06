@@ -1,27 +1,31 @@
-
 state={
 	id=714
 	name="STATE_714"
+	manpower=3633000
+
+	state_category = city
 
 	history={
 		owner = MAN
 		add_core_of = MAN
-		buildings = {
-			infrastructure = 4
-
-		}
-		victory_points = {
-			1588 3 
-		}
 
 		set_demilitarized_zone = yes
+
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
+		}
+
+		victory_points = {
+			1645 3 #다칭
+		}
+		victory_points = {
+			1588 15 #치치하얼
+		}
 	}
 
 	provinces={
 		1502 1588 1645 4506 7582 7832 12485 12618 
 	}
-	manpower=3333000
-	buildings_max_level_factor=1.000
-	state_category=town
-	local_supplies=0.000
 }

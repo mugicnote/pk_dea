@@ -1,7 +1,9 @@
-
 state={
 	id=612
 	name="STATE_612"
+	manpower=553640
+
+	state_category = pastoral
 
 	history={
 		owner = MAN
@@ -11,12 +13,12 @@ state={
 
 		}
 
+		victory_points = {
+			11752 3 #장베이
+		}
 	}
 
 	provinces={
 		1551 1608 1796 4222 4612 7545 10372 11752 12448 
 	}
-	manpower=665600
-	buildings_max_level_factor=1.000
-	state_category=rural
 }

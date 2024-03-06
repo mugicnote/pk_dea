@@ -1,18 +1,25 @@
-
 state={
 	id=980
 	name="STATE_Taiyuan"
+	manpower=2280000
+
+	state_category = town
 
 	history={
 		owner = SHX
 		add_core_of = SHX
 
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+
+		victory_points = {
+			7158 5 #다퉁
+		}
 	}
 
 	provinces={
 		7158 10480 12432 
 	}
-	manpower=1289000
-	buildings_max_level_factor=1.000
-	local_supplies=0.000
 }

@@ -11,7 +11,7 @@ state = {
 
 		buildings = {
 			industrial_complex = 1
-			infrastructure = 6
+			infrastructure = 2
 		}
 		victory_points = {
 			898 10 #청진(세이신)

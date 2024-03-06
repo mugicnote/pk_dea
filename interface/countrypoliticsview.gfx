@@ -430,6 +430,12 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_idea_entry_bg_3_lar"
+		texturefile = "gfx/interface/idea_entry_bg_3_lar.png"
+		noOfFrames = 2
+	}
+
+	spriteType = {
 		name = "GFX_pol_factions_strip"
 		texturefile = "gfx\\interface\\pol_factions_strip.tga"
 		noOfFrames = 4

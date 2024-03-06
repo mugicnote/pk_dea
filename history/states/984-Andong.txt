@@ -1,21 +1,29 @@
-
 state={
-	id=984
-	name="STATE_Andong"
+	id = 984
+	name = "STATE_Andong"
+	manpower = 2992000
+
+	state_category = large_town
 
 	history={
 		owner = MAN
 		add_core_of = MAN
+		
 		buildings = {
-
+			infrastructure = 3
+			arms_factory = 2
+			industrial_complex = 1
 		}
 
+		victory_points = {
+			6981 15 #안둥
+		}
+		victory_points = {
+			9759 10 #퉁화
+		}
 	}
 
 	provinces={
-		945 3949 3970 6860 6905 6910 6981 9759 9781 9803 9848 
+		945 3949 3970 6860 6910 6981 9759 9781 9848 
 	}
-	manpower=1795200
-	buildings_max_level_factor=1.000
-	local_supplies=0.000
 }
