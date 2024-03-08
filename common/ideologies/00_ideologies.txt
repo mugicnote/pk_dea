@@ -56,6 +56,11 @@ ideologies = {
 	
 		types = {
 			auth_socialism = {} #권위사회주의
+			
+			#러시아 전용
+			narodnikist_syndicalism = { #인민주의적 생디칼리슴
+				can_be_randomly_selected = no
+			}
 		}
 		
 		dynamic_faction_names = {
@@ -106,6 +111,14 @@ ideologies = {
 				can_be_randomly_selected = no
 			}
 			anarchist_communism = {} #아나코-생디칼리즘
+			
+			#러시아 전용
+			reformist_narodnikism = { #개혁적 인민주의
+				can_be_randomly_selected = no
+			}
+			democratic_labourism = { #민주적 노동자주의
+				can_be_randomly_selected = no
+			}
 		}
 		
 		dynamic_faction_names = {
@@ -150,6 +163,14 @@ ideologies = {
 	
 		types = {
 			socialism = {} #사회민주주의
+			
+			#러시아 전용
+			democratic_socialism = { #민주사회주의
+				can_be_randomly_selected = no
+			}
+			liberal_socialism = { #자유사회주의
+				can_be_randomly_selected = no
+			}
 		}
 		
 		dynamic_faction_names = {
@@ -575,6 +596,20 @@ ideologies = {
 			}
 			gen_nazism = {}
 			lee_fascism = {} #이범석
+			
+			#러시아 전용
+			monarchy_fascism =  { #군주제 파시즘
+				can_be_randomly_selected = no
+			}
+			clerical_fascism = { #교권 파시즘
+				can_be_randomly_selected = no
+			}
+			revolutionary_fascism = { #혁명적 파시즘
+				can_be_randomly_selected = no
+			}
+			technocratic_cooperativism = { #기술적 협동조합주의
+				can_be_randomly_selected = no
+			}
 		}
 		
 		dynamic_faction_names = {
