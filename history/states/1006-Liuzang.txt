@@ -1,0 +1,21 @@
+
+state={
+	id=1006
+	name="STATE_Liuzang"
+
+	history={
+		owner = GXC
+		add_core_of = GXC
+		buildings = {
+
+		}
+
+	}
+
+	provinces={
+		1023 4152 7128 7168 7210 10404 12407 
+	}
+	manpower=5166900
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

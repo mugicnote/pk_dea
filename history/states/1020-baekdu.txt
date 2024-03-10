@@ -1,0 +1,27 @@
+state={
+	id=1020
+	name="STATE_baekdu" #백ㅋㅋㅋㅋㅋ둨ㅋㅋㅋㅋㅋㅋㅋㅋ
+	manpower=689113
+
+	state_category = city
+
+	history={
+		owner = MAN
+		add_core_of = MAN
+
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
+		}
+
+		victory_points = {
+			3791 10 #무단장
+		}
+
+	}
+
+	provinces={
+		783 973 3791 6811 9766 10376 10503 11893 11906 12482 
+	}
+}

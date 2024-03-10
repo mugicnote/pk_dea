@@ -1,0 +1,18 @@
+
+state={
+	id=1026
+	name="STATE_Ili"
+
+	history={
+		owner = SHX
+		add_core_of = SHX
+
+	}
+
+	provinces={
+		1458 7314 7659 
+	}
+	manpower=433010
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

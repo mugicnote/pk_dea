@@ -1,0 +1,18 @@
+
+state={
+	id=1008
+	name="STATE_ChenZhong"
+
+	history={
+		owner = GIZ
+		add_core_of = GIZ
+
+	}
+
+	provinces={
+		1010 4325 4532 8095 9939 10616 10763 
+	}
+	manpower=3479800
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

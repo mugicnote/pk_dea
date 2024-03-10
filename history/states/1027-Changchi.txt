@@ -1,0 +1,18 @@
+
+state={
+	id=1027
+	name="STATE_Changchi"
+
+	history={
+		owner = SHX
+		add_core_of = SHX
+
+	}
+
+	provinces={
+		1180 1575 4634 7571 10421 
+	}
+	manpower=3430000
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

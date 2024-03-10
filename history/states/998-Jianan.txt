@@ -1,0 +1,23 @@
+
+state={
+	id=998
+	name="STATE_Jianan"
+
+	history={
+		owner = NAC
+		add_core_of = NAC
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+
+		}
+
+	}
+
+	provinces={
+		1138 1193 4070 4113 10012 10042 10084 12057
+	}
+	manpower=4454240
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

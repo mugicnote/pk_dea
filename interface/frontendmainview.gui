@@ -38,19 +38,20 @@ guiTypes = {
 		}
 	}
 
-	#containerWindowType = {
-	#	name  ="frontend_alpha_stamp"
-	#	position = { x=100 y =-100  }
-	#	size = { width = 131 height = 132}
-	#	orientation = lower_left
-	#	origo = lower_left
-	#
-	#	iconType = {
-	#		name ="frontend_alpha_stamp"
-	#		spriteType = "GFX_alpha_stamp"
-	#		position = { x= 0 y = 20 }
-	#	}
-	#}
+	containerWindowType = {
+		name = "frontend_alpha_stamp"
+		position = { x=100 y =-100  }
+		size = { width = 131 height = 132}
+		orientation = lower_left
+		origo = lower_left
+	
+		iconType = {
+			name ="frontend_alpha_stamp"
+			spriteType = "GFX_alpha_stamp"
+			#position = { x = 0 y = 20 }
+			position = { x = -10000 y = 20 }
+		}
+	}
 
 	### MAIN MENU PANEL (upperright)
 	containerWindowType = {
@@ -199,7 +200,7 @@ guiTypes = {
 			position = { x = 16 y = 98 }
 			quadTextureSprite ="GFX_main_lobby_button"
 			buttonText = "OPTIONS"
-			buttonFont = "hoi_24header"
+			buttonFont = "aldrich_24_outline"
 			clicksound = click_default
 			oversound = ui_menu_over
 		}
@@ -263,15 +264,6 @@ guiTypes = {
 		}
 
 		######################################### Buttons at the bottom
-		positionType = {
-			name = "subscription_size"
-			position = { x = 320 y = 563 }
-		}
-
-		positionType = {
-			name = "version_label_subscription_position"
-			position = { x = 35 y = 524 }
-		}
 		
 		ButtonType = {
 			name = "single_player_button"

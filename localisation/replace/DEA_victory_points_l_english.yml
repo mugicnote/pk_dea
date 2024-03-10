@@ -6,7 +6,7 @@
  VICTORY_POINTS_12040:0 "개성"  #개성
 
  #강원도
- VICTORY_POINTS_13282:0 "춘천"  #춘천
+ VICTORY_POINTS_13372:0 "춘천"  #춘천
  VICTORY_POINTS_9936:0 "원주"   #원주
  VICTORY_POINTS_7021:0 "강릉"   #강릉
 
@@ -23,25 +23,25 @@
  VICTORY_POINTS_11835:0 "의주"  #의주
 
  #평안남도
- VICTORY_POINTS_13278:0 "평양"  #평양
+ VICTORY_POINTS_13368:0 "평양"  #평양
  VICTORY_POINTS_4052:0 "삼화"   #남포
 
  #황해도
  VICTORY_POINTS_1003:0 "해주" #해주
 
  #충청북도
- VICTORY_POINTS_13283:0 "청주" #청주
+ VICTORY_POINTS_13373:0 "청주" #청주
 
  #충청남도
- VICTORY_POINTS_13286:0 "대전" #대전
+ VICTORY_POINTS_13376:0 "대전" #대전
 
  #경상북도
  VICTORY_POINTS_4086:0 "대구" #대구
- VICTORY_POINTS_13287:0 "포항" #포항
+ VICTORY_POINTS_13377:0 "포항" #포항
 
  #경상남도
  VICTORY_POINTS_4056:0 "부산"    #부산
- VICTORY_POINTS_13288:0 "마산"    #마산
+ VICTORY_POINTS_13378:0 "마산"    #마산
 
  #전라북도
  VICTORY_POINTS_7175:0 "군산"    #군산
@@ -55,7 +55,7 @@
  VICTORY_POINTS_1177:0 "제주" #제주
 
  #울릉도
- VICTORY_POINTS_13290:0 "울릉" #울릉
+ VICTORY_POINTS_13380:0 "울릉" #울릉
 
  #옌타이
  VICTORY_POINTS_1104:0 "옌타이"

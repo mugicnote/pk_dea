@@ -1,0 +1,22 @@
+state={
+	id=999
+	name="STATE_Xiamen"
+	manpower=177000
+
+	state_category = town
+
+	history={
+		owner = NAC
+		add_core_of = NAC
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+
+		}
+
+	}
+
+	provinces={
+		7071
+	}
+}

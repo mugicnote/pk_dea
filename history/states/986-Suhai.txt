@@ -1,0 +1,21 @@
+state={
+	id=986
+	name="STATE_Suhai"
+
+	history={
+		owner = MAN
+		add_core_of = MAN
+		buildings = {
+			infrastructure = 3
+
+		}
+
+	}
+
+	provinces={
+		1029 1076 4031 4082 7025 7200 9956 12055 
+	}
+	manpower = 4389300
+	buildings_max_level_factor=1.000
+	state_category=town
+}

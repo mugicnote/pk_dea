@@ -1,0 +1,31 @@
+
+state={
+	id=1002
+	name="STATE_Shaoguan"
+	resources={
+		tungsten=10.000
+		steel=3.000
+	}
+
+	history={
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = GDC
+		buildings = {
+			infrastructure = 3
+
+		}
+		victory_points = {
+			1120 5 
+		}
+
+	}
+
+	provinces={
+		1120 9970 9997 10080 10121 12014 
+	}
+	manpower=4490000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

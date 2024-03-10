@@ -1,0 +1,23 @@
+state={
+	id=1047
+	name="STATE_Qiqihar"
+	manpower=500654
+
+	state_category = rural
+
+	history={
+		owner = MAN
+		add_core_of = MAN
+
+		set_demilitarized_zone = yes
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+	}
+
+	provinces={
+		1847 4809 4876 7873 7894 10567 
+	}
+}

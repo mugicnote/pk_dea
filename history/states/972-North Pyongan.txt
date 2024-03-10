@@ -1,0 +1,30 @@
+state = {
+	id = 972
+	name = "STATE_North_Pyongan" #평안북도
+	manpower = 3242000
+
+	state_category = large_town
+	
+	history = {
+		owner = KOR
+		add_core_of = KOR
+		
+		buildings = {
+			industrial_complex = 2
+			arms_factory = 1
+			infrastructure = 3
+			air_base = 2
+		}
+		victory_points = {
+			11835 10 #신의주(신기슈)
+		}
+	}
+
+	resources = {
+		
+	}
+
+	provinces = {
+		906 912 6963 9795 9918 11775 11828 11835 11896 13367
+	}	
+}

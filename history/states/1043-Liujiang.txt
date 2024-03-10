@@ -1,0 +1,17 @@
+state={
+	id=1043
+	name="STATE_Liujiang"
+
+	history={
+		owner = GXC
+		add_core_of = GXC
+
+	}
+
+	provinces={
+		1597 4134 7095 10039 10431 12436 
+	}
+	manpower=1951700
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

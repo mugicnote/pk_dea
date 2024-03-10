@@ -1,0 +1,30 @@
+state={
+	id=988
+	name="STATE_Chentang"
+
+	history={
+		owner = MAN
+		add_core_of = MAN
+		victory_points = {
+			7191 20 
+		}
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 2
+			7191 = {
+				naval_base = 4
+				coastal_bunker = 2
+				bunker = 2
+
+			}
+		}
+
+	}
+
+	provinces={
+		4042 7191 10014 10101 11991 
+	}
+	manpower=7984000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

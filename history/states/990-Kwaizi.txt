@@ -1,0 +1,22 @@
+state={
+	id=990
+	name="STATE_Kwaizi"
+
+	history={
+		owner = MAN
+		add_core_of = MAN
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 2
+
+		}
+
+	}
+
+	provinces={
+		1096 1168 7058 10058 
+	}
+	manpower=4617000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

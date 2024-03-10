@@ -1,0 +1,24 @@
+
+state={
+	id=1005
+	name="STATE_Guilin"
+
+	history={
+		owner = NXM
+		add_core_of = NXM
+		buildings = {
+
+		}
+		victory_points = {
+			10404 5 
+		}
+
+	}
+
+	provinces={
+		1985 3745 5025 8081 
+	}
+	manpower=187020
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

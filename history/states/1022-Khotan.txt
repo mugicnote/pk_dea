@@ -1,0 +1,18 @@
+
+state={
+	id=1022
+	name="STATE_Khotan"
+
+	history={
+		owner = NXM
+		add_core_of = NXM
+
+	}
+
+	provinces={
+		556 3742 6638 
+	}
+	manpower=280530
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}
