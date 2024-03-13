@@ -65,7 +65,7 @@ JAP_triumph_of_the_reformists_desc: "서민원의 500석 중 379석이 국민동
 
 
 #툴팁&플래그
-JAP_kyoto_terrorist_attack_flag: "교토 테러 사건이 발생함"
+JAP_kyoto_terrorist_attack_flag: "§R교토 테러 사건§!이 발생함"
 JAP_military_reformed_flag: "군대 개혁이 완료됨"
 JAP_reformists_elected_flag: "개혁파가 선거에서 승리함"
 on_JAP_administrative_reform_idea_removed_tt: "§Y$JAP_administrative_reform_idea$§! 제거시:"
@@ -80,4 +80,5 @@ JAP_administrative_reform_tt: "\n소비재: §Y-3%§!\n일일 정치력 획득: 
 JAP_temp_yakusoku_tt: "§Y$JAP_temp_yakusoku$§! 변동치:"
 JAP_the_longest_way_round_is_the_shortest_way_home_tt: "\n모든 법 비용: §G+20%§!"
 JAP_improvised_command_tt: "§Y$JAP_improvised_command$§! 변동치:"
+
 

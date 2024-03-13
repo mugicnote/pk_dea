@@ -24,11 +24,19 @@ country_event = { #계엄령 문제
 	
 	option = {
 		name = JAP_event.2.a
-
+		complete_national_focus = JAP_state_of_emergency
+		#set_country_flag = JAP_despotism_confirmed
 	}	
 	option = {
 		name = JAP_event.2.b
-
+		random_list = {
+			9 = {
+				#set_country_flag = JAP_fascism_confirmed
+			}
+			1 = {
+				#set_country_flag = JAP_democracy_confirmed
+			}
+		}
 	}	
 }
 country_event = { #총선 결과
@@ -56,5 +64,23 @@ country_event = { #긴급구제 표결
 	
 	option = {
 		name = JAP_event.4.a
+	}
+}
+country_event = { #교토 테러사건
+	id = JAP_event.5
+	title = JAP_event.5.t
+	desc = JAP_event.5.d
+	picture = GFX_news_event_hindenburg_intact
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		set_country_flag = JAP_kyoto_terrorist_attack_flag
+		country_event = { id = JAP_event.2 days = 14 }
+	}
+
+	option = {
+		name = JAP_event.5.a
 	}
 }
