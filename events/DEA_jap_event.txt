@@ -25,18 +25,10 @@ country_event = { #계엄령 문제
 	option = {
 		name = JAP_event.2.a
 		complete_national_focus = JAP_state_of_emergency
-		#set_country_flag = JAP_despotism_confirmed
-	}	
+	}
 	option = {
 		name = JAP_event.2.b
-		random_list = {
-			9 = {
-				#set_country_flag = JAP_fascism_confirmed
-			}
-			1 = {
-				#set_country_flag = JAP_democracy_confirmed
-			}
-		}
+
 	}	
 }
 country_event = { #총선 결과
