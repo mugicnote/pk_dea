@@ -231,6 +231,7 @@ ideas = {
         }
 
         JAP_coalition_government_idea = { #연정
+            name = JAP_coalition_government
             picture = jap_militarism_showa
             removal_cost = -1
             modifier = {
@@ -281,6 +282,24 @@ ideas = {
                 experience_gain_army_factor = -0.10
                 experience_gain_navy_factor = -0.10
                 experience_gain_air_factor = -0.10
+            }
+        }
+
+        JAP_confused_military_idea = { #혼란스러운 군부
+            picture = jap_militarism_showa
+            removal_cost = -1
+            modifier = {
+                air_doctrine_cost_factor = 1000
+                land_doctrine_cost_factor = 1000
+                naval_doctrine_cost_factor = 1000
+            }
+        }
+
+        JAP_expand_land_army_idea = { #육군 확장
+            picture = jap_militarism_showa
+            removal_cost = -1
+            modifier = {
+                experience_gain_army_factor = 0.05
             }
         }
     }

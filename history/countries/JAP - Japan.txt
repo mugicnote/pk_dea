@@ -2,8 +2,8 @@ capital = 975
 
 oob = "JAP"
 
-set_stability = 0.4
-set_war_support = 0.8
+set_stability = 0.20
+set_war_support = 0.10
 
 set_research_slots = 4
 set_fuel_ratio = 1.0
@@ -63,6 +63,14 @@ set_variable = {
 }
 set_variable = {
 	JAP_improvised_command_air_doctrine_cost_factor = 3.00
+}
+
+#군부 개혁
+set_variable = {
+	JAP_army_reform_command_power_gain = 0
+}
+set_variable = {
+	JAP_army_reform_max_command_power = 0
 }
 
 add_ideas = {

@@ -113,6 +113,9 @@ focus_tree = {
 		cost = 10
 		x = 7
 		y = 0
+		allow_branch = {
+			has_country_flag = JAP_kyoto_terrorist_attack_flag
+		}
 		available = {
 			has_country_flag = JAP_kyoto_terrorist_attack_flag
 		}
@@ -128,9 +131,12 @@ focus_tree = {
 			focus = JAP_state_of_emergency
 		}
 		cost = 10
-		x = 2
+		x = 0 
 		y = 1
 		relative_position_id = JAP_state_of_emergency
+		allow_branch = {
+			has_country_flag = JAP_martial_law_lifted
+		}
 		completion_reward = { 
 			add_political_power = -100
 		}
@@ -242,9 +248,12 @@ focus_tree = {
 			focus = JAP_state_of_emergency
 		}
 		cost = 10
-		x = -2
+		x = 0
 		y = 1
 		relative_position_id = JAP_state_of_emergency
+		allow_branch = {
+			has_country_flag = JAP_parliament_broken
+		}
 		completion_reward = {
 			add_political_power = 50
 		}
@@ -637,18 +646,16 @@ focus_tree = {
 			}
 		}
 	}
-
-	#민주로 가는 길
 	focus = { #연정
 		id = JAP_coalition_government
 		icon = GFX_goal_unknown
-		cost = 2
-		x = 5
-		y = 0
-		relative_position_id = JAP_state_of_emergency
-		available = {
-			has_completed_focus = JAP_triumph_of_the_reformists
+		prerequisite = {
+			focus = JAP_triumph_of_the_reformists
 		}
+		cost = 2
+		x = 0
+		y = 1
+		relative_position_id = JAP_triumph_of_the_reformists
 		completion_reward = { 
 			add_ideas = JAP_coalition_government_idea
 		}
@@ -668,13 +675,13 @@ focus_tree = {
 		}
 	}
 	focus = { #통과
-		id = JAP_bypass
+		id = JAP_pass_the_bill
 		icon = GFX_goal_unknown
 		prerequisite = {
 			focus = JAP_emergency_relief
 		}
 		cost = 10
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = JAP_emergency_relief
 		completion_reward = { 
@@ -693,12 +700,12 @@ focus_tree = {
 		id = JAP_care_for_the_military
 		icon = GFX_goal_unknown
 		prerequisite = {
-			focus = JAP_bypass
+			focus = JAP_pass_the_bill
 		}
 		cost = 4
 		x = 0
 		y = 1
-		relative_position_id = JAP_bypass
+		relative_position_id = JAP_pass_the_bill
 		completion_reward = { 
 			if = {
 				limit = { 
@@ -730,6 +737,191 @@ focus_tree = {
 					remove_idea = JAP_money_receiving_army
 					add_idea = JAP_democratic_army
 				}
+			}
+		}
+	}
+
+	#파시즘으로 가는 길
+	focus = { #실패
+		id = JAP_democracy_failed
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = JAP_emergency_relief
+		}
+		cost = 10
+		x = 1
+		y = 1
+		relative_position_id = JAP_emergency_relief
+		completion_reward = { 
+
+		}
+	}
+	focus = { #민주주의의 위기
+		id = JAP_democracy_crisis
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = JAP_democracy_failed
+		}
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = JAP_democracy_failed
+		completion_reward = { 
+			#파시 루트 불러오기
+		}
+	}
+
+	#군대 중점
+	focus = { #군대 상황 점검
+		id = JAP_check_the_army
+		icon = GFX_goal_unknown
+		cost = 4
+		x = 6
+		y = 0
+		relative_position_id = JAP_state_of_emergency
+		available = {
+			NOT = {
+				has_dynamic_modifier = {
+					modifier = JAP_po_donggu
+				}
+			}
+		}
+		completion_reward = { 
+			army_experience = 10
+			air_experience = 10
+			navy_experience = 10
+			add_command_power = 20
+		}
+	}
+	focus = { #육,해군성 재편
+		id = JAP_reorganize_the_army
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = JAP_check_the_army
+		}
+		cost = 7
+		x = 0
+		y = 1
+		relative_position_id = JAP_check_the_army
+		completion_reward = {
+			add_dynamic_modifier = {
+				modifier = JAP_military_reform_dynamic_modifier
+			}
+			add_to_variable = {
+				JAP_army_reform_command_power_gain = 0.05
+			}
+			add_to_variable = {
+				JAP_army_reform_max_command_power = 20
+			}
+			custom_effect_tooltip = JAP_military_reform_tt
+			custom_effect_tooltip = JAP_reorganize_the_army_tt
+			add_timed_idea = {
+				idea = JAP_confused_military_idea
+				days = 180
+			}
+		}
+	}
+	focus = { #사관학교 개혁
+		id = JAP_reform_the_military_academy
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = JAP_reorganize_the_army
+		}
+		available = {
+			NOT = {
+				has_idea = JAP_shoku_gun
+			}
+		}
+		cost = 10
+		x = 0
+		y = 1
+		relative_position_id = JAP_reorganize_the_army
+		completion_reward = { 
+			add_research_slot = 1
+		}
+	}
+	focus = { #조병창 확장
+		id = JAP_expand_army_factory
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = JAP_reform_the_military_academy
+		}
+		cost = 7
+		x = -1 
+		y = 1
+		relative_position_id = JAP_reform_the_military_academy
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
+			add_ideas = JAP_expand_land_army_idea
+		}
+	}
+	focus = { #모의전 재개
+		id = JAP_resume_the_wargame
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = JAP_expand_army_factory
+		}
+		cost = 4
+		x = 0
+		y = 1
+		relative_position_id = JAP_expand_army_factory
+		completion_reward = { 
+			add_to_variable = {
+				JAP_army_reform_command_power_gain = 0.05
+			}
+			custom_effect_tooltip = JAP_military_reform_tt
+			custom_effect_tooltip = JAP_resume_the_wargame_tt
+			add_doctrine_cost_reduction = {
+				name = JAP_resume_the_wargame
+				cost_reduction = 0.30
+				category = land_doctrine
+				uses = 1
+			}
+		}
+	}
+	focus = { #무기 개발
+		id = JAP_weapon_dev
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = JAP_resume_the_wargame
+		}
+		cost = 7
+		x = 0
+		y = 1
+		relative_position_id = JAP_resume_the_wargame
+		completion_reward = { 
+			add_tech_bonus = {
+				name = JAP_weapon_dev
+				bonus = 1
+				category = infantry_weapons
+				category = artillery
+				uses = 2
+			}
+		}
+	}
+	focus = { #화력 중시
+		id = JAP_firepower_focus
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = JAP_weapon_dev
+		}
+		cost = 3
+		x = -1
+		y = 1
+		relative_position_id = JAP_weapon_dev
+		completion_reward = { 
+			add_tech_bonus = {
+				name = JAP_weapon_dev
+				bonus = 1
+				category = infantry_weapons
+				category = artillery
+				uses = 2
 			}
 		}
 	}

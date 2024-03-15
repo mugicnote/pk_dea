@@ -13,7 +13,7 @@ JAP_final_inspection_desc: "당장 눈앞에 있는 문제들은 해결했습니
 JAP_hold_the_meeting: "회담 개최"
 JAP_hold_the_meeting_desc: "이제 회담을 열기 위한 모든 준비를 마쳤습니다. 미국과 한국에 좋은 인상을 주어 그들의 투자를 받고 서로 협력하며 우리는 다시 한 번 되살아날 것입니다."
 
-#교토 테러
+#전제주의 중점
 JAP_state_of_emergency: "비상사태 선언"
 JAP_state_of_emergency_desc: "교토에서 일어난 테러는 국가를 위험으로 빠트렸습니다. 우리는 조치를 취해야만 합니다."
 JAP_freeze_on_parliament: "외회 정지"
@@ -50,6 +50,8 @@ JAP_military_standardization: "군 정상화"
 JAP_military_standardization_desc: "아직 많이 부족할지 모르겠지만 군대의 질은 숙군 전으로 천천히 돌아가고 있습니다. 완전한 정상화까지는 아직도 시간이 더욱 필요하겠으나 일단은 안심할 수 있습니다."
 JAP_bread_and_circus: "빵과 서커스"
 JAP_bread_and_circus_desc: "경제가 어느정도 정상궤도로 돌아왔으니 우리는 신민들이 다시는 불만을 느끼지 못 할 복지들을 쥐어주며 달래야합니다. 고대 로마의 빵과 서커스처럼 말입니다."
+
+#민주주의 중점
 JAP_carry_out_reform: "개혁 실시"
 JAP_carry_out_reform_desc: "제 아무리 군이 통제하고 있다고 해도 각국의 눈이 제국으로 쏠린 이상 우리는 과도한 강경책을 쓸 수는 없습니다. 터지기 직전의 냄비는 어느정도 구멍을 뚫어주면 가라앉기 마련입니다."
 JAP_reinvigorate_parliament: "의회 재개"
@@ -62,7 +64,30 @@ JAP_1936_general_election: "1936년 총선거"
 JAP_1936_general_election_desc: "개헌안이 통과되었고 개헌된 헌법의 부칙 효력에 의해 서민원 의원들은 전부 당적을 상실했습니다. 조만간 총선이 실시될 것이며 이 선거가 앞으로 대일본제국의 미래를 정할 것입니다."
 JAP_triumph_of_the_reformists: "개혁파의 승리"
 JAP_triumph_of_the_reformists_desc: "서민원의 500석 중 379석이 국민동맹, 애국당, 비록 제국당에 적을 두고 있지만 개혁을 꾀하는 자들에게 넘어갔습니다. 신민들은 선거 결과에 환호하고 있으며 총리의 제국당은 더이상 서민원에서 힘을 쓰기는 어려울 듯 싶습니다."
+JAP_coalition_government: "연정"
+JAP_coalition_government_desc: "어느 정당이 확실한 주도권을 잡지 못했다는 것이 확실해지면서 서민원은 바빠지기 시작했습니다. 개혁을 지지하는 자들은 서로 손을 잡아 제국을 더욱 현대적으로 만들 것입니다."
+JAP_emergency_relief: "긴급구제"
+JAP_emergency_relief_desc: "미국발 공황과 연초의 테러, 정세 혼란으로 국내 경기는 바닥을 치고 있습니다. 비록 논란의 여지는 있겠지만 정부가 시장에 개입을 해야합니다."
+JAP_pass_the_bill: "통과"
+JAP_pass_the_bill_desc: "의회 내부에서 많은 논란이 있었지만 긴급구제에 대한 법안이 통과되었습니다. 우리는 당장  기금을 편성해 기업들과 시민들을 도울 것입니다."
+JAP_care_for_the_military: "군부 달래기"
+JAP_care_for_the_military_desc: "아직도 반기를 드는 세력이 있다고는 하지만 여전히 경찰은 총리대신의 직속 사병과도 같습니다. 비록 군대가 쿠데타를 일으켰던 전적이 있을지라도 지금은 수족이 전부 절단된 상황이기 때문에 쉽게 포섭하여 우리 편으로 만들 수 있습니다."
+JAP_establishment_of_civilian_control: "문민통제 확립"
+JAP_establishment_of_civilian_control_desc: "1933년의 쿠데타는 총리대신에게 불만을 품었던 군의 극단분자들이 일으킨 것으로 문민통제가 약했던 탓입니다. 육해군대신은 반드시 전역한지 몇 달이 된 자가 역임하여야 하며 일반인이라도 앉을 수 있게 해야합니다."
 
+#군대 중점
+JAP_check_the_army: "군대 상황 점검"
+JAP_check_the_army_desc: "1933년의 쿠데타 이후로 군대는 사실상 방치되었습니다. 그러나 국내외를 가리지 않고 정세가 불안정해지기 시작했으니 이제 군에 다시 힘을 쥐어주어야 합니다."
+JAP_reorganize_the_army: "육,해군성 재편"
+JAP_reorganize_the_army_desc: "육군성과 해군성은 그동안 너무 방만하게 운영되었습니다. 정부가 다시 국방에 힘을 쏟고 있는 현 상황에서는 이들 모두가 개혁의 대상입니다. 우리는 하나부터 열까지 천천히 뜯어고칠 것입니다."
+JAP_reform_the_military_academy: "사관학교 개혁"
+JAP_reform_the_military_academy_desc: "군대를 등한시하며 마구잡이로 숙군 작업을 벌였던 탓에 군의 기강은 물론 전 계급에서 미숙함으로 벌어지는 사건이 너무 많이 발생하고 있습니다. 사관학교를 새단장하고 억울하게 추방된 장교들을 다시 불러들여 초급장교부터 재교육을 시켜야합니다."
+JAP_expand_army_factory: "조병창 확장"
+JAP_expand_army_factory_desc: "경제 공황으로 조병창의 움직임이 멈췄습니다. 병사가 있어도 무기가 없으면 아무것도 할 수 없습니다. 우리는 한시라도 빨리 군수공장을 다시 가동해야 합니다."
+JAP_resume_the_wargame: "모의전 재개"
+JAP_resume_the_wargame_desc: "군의 규모가 축소됨에 따라 모의전 역시 제대로 행해진 적이 손에 꼽을 정도입니다. 때문에 초급간부는 물론 좌관급 장교조차 제대로 된 전략을 이해하지 못 하고 있습니다. 이는 심각한 문제며 다시 한 번 과거의 영광을 되새겨야 합니다."
+JAP_weapon_dev: "무기 개발"
+JAP_weapon_dev_desc: "우리가 현재 운용하고 있는 무기가 결코 나쁜 것은 아니지만 시대에 뒤쳐졌다는 것 역시 사실이기에, 신무기 개발 혹은 무기 개량은 필수입니다."
 
 #툴팁&플래그
 JAP_kyoto_terrorist_attack_flag: "§R교토 테러 사건§!이 발생함"
@@ -80,5 +105,7 @@ JAP_administrative_reform_tt: "\n소비재: §Y-3%§!\n일일 정치력 획득: 
 JAP_temp_yakusoku_tt: "§Y$JAP_temp_yakusoku$§! 변동치:"
 JAP_the_longest_way_round_is_the_shortest_way_home_tt: "\n모든 법 비용: §G+20%§!"
 JAP_improvised_command_tt: "§Y$JAP_improvised_command$§! 변동치:"
-
+JAP_military_reform_tt: "§Y$JAP_military_reform_dynamic_modifier$§! 변동치:"
+JAP_reorganize_the_army_tt: "\n일일 지휘력: §G+0.05§!\n최대 지휘력: §G+20§!"
+JAP_resume_the_wargame_tt: "\n일일 지휘력: §G+0.05§!"
 

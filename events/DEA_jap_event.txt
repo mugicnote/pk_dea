@@ -21,14 +21,23 @@ country_event = { #계엄령 문제
 	
 	is_triggered_only = yes	
 	fire_only_once = yes
+
+	immediate = {
+		mark_focus_tree_layout_dirty = yes
+		complete_national_focus = JAP_state_of_emergency
+	}
 	
 	option = {
 		name = JAP_event.2.a
-		complete_national_focus = JAP_state_of_emergency
+		set_country_flag = JAP_parliament_broken
+		mark_focus_tree_layout_dirty = yes
+		complete_national_focus = JAP_freeze_on_parliament
 	}
 	option = {
 		name = JAP_event.2.b
-
+		set_country_flag = JAP_martial_law_lifted
+		mark_focus_tree_layout_dirty = yes
+		complete_national_focus = JAP_carry_out_reform
 	}	
 }
 country_event = { #총선 결과

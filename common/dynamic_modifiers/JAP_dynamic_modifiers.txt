@@ -39,3 +39,9 @@ JAP_stabilization_idea = { #상황 안정화
 	stability_factor = JAP_po_donggu_stability_factor # 0.20
 	consumer_goods_factor = JAP_po_donggu_consumer_goods_factor # 0.15
 }
+JAP_military_reform_dynamic_modifier = { #군부 개혁
+	icon = GFX_idea_jap_militarism_showa
+	command_power_gain = JAP_army_reform_command_power_gain
+	max_command_power = JAP_army_reform_max_command_power
+
+}
