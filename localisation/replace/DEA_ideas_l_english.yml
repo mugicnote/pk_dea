@@ -218,6 +218,7 @@ JAP_democratic_army: "민주적인 군대"
 JAP_military_reform_dynamic_modifier: "군부 개혁"
 JAP_confused_military_idea: "혼란스러운 군부"
 JAP_expand_land_army_idea: "육군 확장"
+JAP_expand_the_police_dynamic_modifier: "경찰력 확충"
 
 ###중국###
 CHI_crowded_right_wing:0 "혼잡한 우파"

@@ -10,10 +10,10 @@ set_fuel_ratio = 1.0
 
 #빈번한 폭동
 set_variable = {
-	JAP_po_donggu_war_support_factor = -0.40
+	JAP_po_donggu_stability_factor = -0.25
 }
 set_variable = {
-	JAP_po_donggu_stability_factor = -0.25
+	JAP_po_donggu_war_support_factor = -0.40
 }
 set_variable = {
 	JAP_po_donggu_consumer_goods_factor = 0.15

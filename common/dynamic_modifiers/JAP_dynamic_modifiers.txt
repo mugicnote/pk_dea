@@ -2,8 +2,8 @@ JAP_po_donggu = { #빈번한 폭동
 
 	icon = GFX_idea_JAP_po_donggu
 	
-	war_support_factor = JAP_po_donggu_war_support_factor # -0.40
 	stability_factor = JAP_po_donggu_stability_factor # -0.25
+	war_support_factor = JAP_po_donggu_war_support_factor # -0.40
 	consumer_goods_factor = JAP_po_donggu_consumer_goods_factor # 0.15
 }
 JAP_government_led_economy = { #정부 주도 경제
@@ -43,5 +43,10 @@ JAP_military_reform_dynamic_modifier = { #군부 개혁
 	icon = GFX_idea_jap_militarism_showa
 	command_power_gain = JAP_army_reform_command_power_gain
 	max_command_power = JAP_army_reform_max_command_power
-
+}
+JAP_expand_the_police_dynamic_modifier = { #경찰력 확충
+	icon = GFX_idea_jap_militarism_showa
+	stability_factor = JAP_po_donggu_stability_factor # -0.25
+	war_support_factor = JAP_po_donggu_war_support_factor # -0.40
+	consumer_goods_factor = JAP_po_donggu_consumer_goods_factor # 0.15
 }

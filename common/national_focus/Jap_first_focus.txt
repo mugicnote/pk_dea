@@ -358,11 +358,26 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_loyalists_in_military
 		completion_reward = {
-			add_to_variable = {
-				JAP_po_donggu_stability_factor = 0.05
+			if = {
+				limit = { 
+					has_dynamic_modifier = {
+						modifier = JAP_po_donggu
+					}
+				}
+				add_to_variable = {
+					JAP_po_donggu_stability_factor = 0.05
+				}
+				custom_effect_tooltip = JAP_po_donggu_tt
+				custom_effect_tooltip = JAP_police_improvement_tt
+				hidden_effect = {
+					remove_dynamic_modifier = {
+						modifier = JAP_po_donggu
+					}
+					add_dynamic_modifier = {
+						modifier = JAP_expand_the_police_dynamic_modifier
+					}
+				}
 			}
-			custom_effect_tooltip = JAP_po_donggu_tt
-			custom_effect_tooltip = JAP_police_improvement_tt
 		}
 	}
 	focus = { #급할 수록 돌아가라
@@ -436,7 +451,7 @@ focus_tree = {
 			if = {
 				limit = { 
 					has_dynamic_modifier = {
-						modifier = JAP_po_donggu
+						modifier = JAP_expand_the_police_dynamic_modifier
 					}
 				}
 				add_to_variable = {
@@ -448,11 +463,11 @@ focus_tree = {
 				add_to_variable = {
 					JAP_po_donggu_consumer_goods_factor = 0.15
 				}
-				custom_effect_tooltip = JAP_po_donggu_tt
+				custom_effect_tooltip = JAP_expand_the_police_dynamic_modifier_tt
 				custom_effect_tooltip = JAP_bread_and_circus_tt
 				hidden_effect = {
 					remove_dynamic_modifier = {
-						modifier = JAP_po_donggu
+						modifier = JAP_expand_the_police_dynamic_modifier
 					}
 					add_dynamic_modifier = {
 						modifier = JAP_stabilization_idea
