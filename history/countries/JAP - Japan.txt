@@ -72,6 +72,18 @@ set_variable = {
 set_variable = {
 	JAP_army_reform_max_command_power = 0
 }
+set_variable = {
+	JAP_strategy_focus_max_planning_factor = 0
+}
+set_variable = {
+	JAP_strategy_focus_planning_speed = 0
+}
+set_variable = {
+	JAP_blitzkrieg_army_armor_speed_factor = 0
+}
+
+#해군 개혁
+
 
 add_ideas = {
     JAP_shoku_gun

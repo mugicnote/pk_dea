@@ -107,8 +107,9 @@ JAP_improvised_command_tt: "§Y$JAP_improvised_command$§! 변동치:"
 JAP_military_reform_tt: "§Y$JAP_military_reform_dynamic_modifier$§! 변동치:"
 JAP_reorganize_the_army_tt: "\n일일 지휘력: §G+0.05§!\n최대 지휘력: §G+20§!"
 JAP_resume_the_wargame_tt: "\n일일 지휘력: §G+0.05§!"
+JAP_strategy_focus_tt: "\n최대 계획: §G+20%§!"
+JAP_strategy_first_tt: "\n계획 수립 속도: §G+5%§!"
+JAP_new_battle_field_tt: "\n모든 기갑 속도: §G+3%§!"
 JAP_expand_the_police_dynamic_modifier_tt: "§Y$JAP_expand_the_police_dynamic_modifier$§! 변동치:"
 JAP_bread_and_circus_tt: "\n안정도: §G+10%§!\n전쟁 지지도: §G+20%§!\n소비재: §Y+15%§!"
-
-
 

@@ -302,5 +302,48 @@ ideas = {
                 experience_gain_army_factor = 0.05
             }
         }
+
+        JAP_firepower_1 = { #화력 중시
+            name = JAP_firepower_focus
+            picture = jap_militarism_showa
+            removal_cost = -1
+            equipment_bonus = {
+				artillery_equipment = {
+					build_cost_ic = -0.10
+					instant = yes
+				}
+			}
+        }
+        
+        JAP_firepower_2 = { #화력 극대화
+            name = JAP_firepower_first
+            picture = jap_militarism_showa
+            removal_cost = -1
+            equipment_bonus = {
+				artillery_equipment = {
+					build_cost_ic = -0.10
+                    soft_attack = 0.10
+					instant = yes
+				}
+			}
+        }
+
+        JAP_armor_dev_idea = { #전차 개발
+            name = JAP_armor_dev
+            picture = jap_militarism_showa
+            removal_cost = -1
+            research_bonus = {
+                armor = 0.05
+            }
+        }
+
+        JAP_navy_reform_idea = { #조선소 재개장
+            name = JAP_dock_renewal
+            picture = jap_militarism_showa
+            removal_cost = -1
+            research_bonus = {
+                naval_equipment = 0.05
+            }
+        }
     }
 }

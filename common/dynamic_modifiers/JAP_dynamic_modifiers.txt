@@ -50,3 +50,25 @@ JAP_expand_the_police_dynamic_modifier = { #경찰력 확충
 	war_support_factor = JAP_po_donggu_war_support_factor # -0.40
 	consumer_goods_factor = JAP_po_donggu_consumer_goods_factor # 0.15
 }
+JAP_firepower_focus_dynamic_modifier = { #화력전
+	icon = GFX_idea_jap_militarism_showa
+	command_power_gain = JAP_army_reform_command_power_gain
+	max_command_power = JAP_army_reform_max_command_power
+}
+JAP_strategy_focus_dynamic_modifier = { #전략전
+	icon = GFX_idea_jap_militarism_showa
+	command_power_gain = JAP_army_reform_command_power_gain
+	max_command_power = JAP_army_reform_max_command_power
+	max_planning_factor	= JAP_strategy_focus_max_planning_factor
+	planning_speed = JAP_strategy_focus_planning_speed
+}
+JAP_blitzkrieg_dynamic_modifier = { #기동전
+	icon = GFX_idea_jap_militarism_showa
+	command_power_gain = JAP_army_reform_command_power_gain
+	max_command_power = JAP_army_reform_max_command_power
+	army_armor_speed_factor = JAP_blitzkrieg_army_armor_speed_factor
+}
+JAP_navy_reform_dynamic_modifier = { #해군 개혁
+	icon = GFX_idea_jap_militarism_showa
+	
+}

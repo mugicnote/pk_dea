@@ -855,6 +855,30 @@ focus_tree = {
 			add_research_slot = 1
 		}
 	}
+	focus = { #조선소 재개장
+		id = JAP_dock_renewal
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = JAP_reform_the_military_academy
+		}
+		cost = 7
+		x = 3
+		y = 1
+		relative_position_id = JAP_reform_the_military_academy
+		completion_reward = { 
+			random_owned_controlled_state = {
+				limit = {
+					is_coastal = yes
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+				}
+			}
+			add_ideas = JAP_navy_reform_idea
+		}
+	}
 	focus = { #조병창 확장
 		id = JAP_expand_army_factory
 		icon = GFX_goal_unknown
@@ -862,7 +886,7 @@ focus_tree = {
 			focus = JAP_reform_the_military_academy
 		}
 		cost = 7
-		x = -1 
+		x = -3
 		y = 1
 		relative_position_id = JAP_reform_the_military_academy
 		completion_reward = {
@@ -927,16 +951,197 @@ focus_tree = {
 			focus = JAP_weapon_dev
 		}
 		cost = 3
-		x = -1
+		x = -2
 		y = 1
 		relative_position_id = JAP_weapon_dev
 		completion_reward = { 
-			add_tech_bonus = {
-				name = JAP_weapon_dev
-				bonus = 1
-				category = infantry_weapons
-				category = artillery
-				uses = 2
+			if = {
+				limit = { 
+					has_dynamic_modifier = {
+						modifier = JAP_military_reform_dynamic_modifier
+					}
+				}
+				add_ideas = JAP_firepower_1
+				hidden_effect = {
+					remove_dynamic_modifier = {
+						modifier = JAP_military_reform_dynamic_modifier
+					}
+					add_dynamic_modifier = {
+						modifier = JAP_firepower_focus_dynamic_modifier
+					}
+				}
+			}
+		}
+	}
+	focus = { #화력 극대화
+		id = JAP_firepower_first
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = JAP_firepower_focus
+		}
+		cost = 7
+		x = 0
+		y = 2
+		relative_position_id = JAP_firepower_focus
+		completion_reward = { 
+			if = {
+				limit = { 
+					has_idea = JAP_firepower_1
+				}
+				swap_ideas = {
+					remove_idea = JAP_firepower_1
+					add_idea = JAP_firepower_2
+				}
+			}
+		}
+	}
+	focus = { #전략 중시
+		id = JAP_strategy_focus
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = JAP_weapon_dev
+		}
+		cost = 3
+		x = 0
+		y = 1
+		relative_position_id = JAP_weapon_dev
+		completion_reward = { 
+			if = {
+				limit = { 
+					has_dynamic_modifier = {
+						modifier = JAP_military_reform_dynamic_modifier
+					}
+				}
+				add_to_variable = {
+					JAP_strategy_focus_max_planning_factor = 0.20
+				}
+				custom_effect_tooltip = JAP_military_reform_tt
+				custom_effect_tooltip = JAP_strategy_focus_tt
+				hidden_effect = {
+					remove_dynamic_modifier = {
+						modifier = JAP_military_reform_dynamic_modifier
+					}
+					add_dynamic_modifier = {
+						modifier = JAP_strategy_focus_dynamic_modifier
+					}
+				}
+			}
+		}
+	}
+	focus = { #전략 중시
+		id = JAP_strategy_first
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = JAP_strategy_focus
+		}
+		cost = 7
+		x = 0
+		y = 2
+		relative_position_id = JAP_strategy_focus
+		completion_reward = { 
+			if = {
+				limit = { 
+					has_dynamic_modifier = {
+						modifier = JAP_military_reform_dynamic_modifier
+					}
+				}
+				add_to_variable = {
+					JAP_strategy_focus_planning_speed = 0.05
+				}
+				custom_effect_tooltip = JAP_military_reform_tt
+				custom_effect_tooltip = JAP_strategy_first_tt
+			}
+		}
+	}
+	focus = { #교리 재검토
+		id = JAP_reconsider_doctrine
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = JAP_firepower_focus focus = JAP_strategy_focus
+		}
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = JAP_firepower_focus
+		completion_reward = { 
+			add_doctrine_cost_reduction = {
+				name = JAP_reconsider_doctrine
+				cost_reduction = 0.25
+				category = land_doctrine
+				uses = 1
+			}
+		}
+	}
+	focus = { #전차 개발
+		id = JAP_armor_dev
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = JAP_weapon_dev
+		}
+		cost = 3
+		x = 2
+		y = 1
+		relative_position_id = JAP_weapon_dev
+		completion_reward = { 
+			if = {
+				limit = { 
+					has_dynamic_modifier = {
+						modifier = JAP_military_reform_dynamic_modifier
+					}
+				}
+				add_ideas = JAP_armor_dev_idea
+				hidden_effect = {
+					remove_dynamic_modifier = {
+						modifier = JAP_military_reform_dynamic_modifier
+					}
+					add_dynamic_modifier = {
+						modifier = JAP_blitzkrieg_dynamic_modifier
+					}
+				}
+			}
+		}
+	}
+	focus = { #교재 뒤엎기
+		id = JAP_textbook_flip
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = JAP_armor_dev
+		}
+		cost = 7
+		x = 0
+		y = 1
+		relative_position_id = JAP_armor_dev
+		completion_reward = { 
+			add_doctrine_cost_reduction = {
+				name = JAP_textbook_flip
+				cost_reduction = 0.50
+				category = cat_mobile_warfare
+				uses = 1
+			}
+		}
+	}
+	focus = { #새로운 전장 익히기
+		id = JAP_new_battle_field
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = JAP_textbook_flip
+		}
+		cost = 8
+		x = 0
+		y = 1
+		relative_position_id = JAP_textbook_flip
+		completion_reward = {
+			if = {
+				limit = { 
+					has_dynamic_modifier = {
+						modifier = JAP_blitzkrieg_dynamic_modifier
+					}
+				}
+				add_to_variable = {
+					JAP_blitzkrieg_army_armor_speed_factor = 0.03
+				}
+				custom_effect_tooltip = JAP_military_reform_tt
+				custom_effect_tooltip = JAP_new_battle_field_tt
 			}
 		}
 	}
