@@ -103,6 +103,9 @@ focus_tree = {
 		relative_position_id = JAP_final_inspection
 		completion_reward = {
 			country_event = JAP_event.1
+			hidden_effect = {
+				country_event = { id = JAP_event.5 days = 3 random_days = 4 }
+			}
 		}
 	}
 
