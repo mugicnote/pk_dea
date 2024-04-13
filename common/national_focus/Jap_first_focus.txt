@@ -127,8 +127,8 @@ focus_tree = {
 		available = {
 			has_country_flag = JAP_kyoto_terrorist_attack_flag
 		}
-		completion_reward = { 
-			mark_focus_tree_layout_dirty = yes
+		completion_reward = {
+
 		}
 	}
 
@@ -817,7 +817,6 @@ focus_tree = {
 			air_experience = 10
 			navy_experience = 10
 			add_command_power = 20
-			mark_focus_tree_layout_dirty = yes
 		}
 	}
 	focus = { #육,해군성 재편
