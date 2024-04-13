@@ -19,6 +19,11 @@ focus_tree = {
 		cost = 1
 		x = 1
 		y = 0
+		allow_branch = {
+			NOT = {
+				has_country_flag = JAP_kyoto_terrorist_attack_flag
+			}
+		}
 		completion_reward = {
 			#뉴스 발생 (쇼와 11년 신년사)
 			add_political_power = 100
@@ -123,7 +128,7 @@ focus_tree = {
 			has_country_flag = JAP_kyoto_terrorist_attack_flag
 		}
 		completion_reward = { 
-			
+			mark_focus_tree_layout_dirty = yes
 		}
 	}
 
@@ -797,6 +802,9 @@ focus_tree = {
 		x = 8
 		y = 0
 		relative_position_id = JAP_state_of_emergency
+		allow_branch = {
+			has_country_flag = JAP_kyoto_terrorist_attack_flag
+		}
 		available = {
 			NOT = {
 				has_dynamic_modifier = {
@@ -809,6 +817,7 @@ focus_tree = {
 			air_experience = 10
 			navy_experience = 10
 			add_command_power = 20
+			mark_focus_tree_layout_dirty = yes
 		}
 	}
 	focus = { #육,해군성 재편
