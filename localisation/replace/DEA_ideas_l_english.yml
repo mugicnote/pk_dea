@@ -14,6 +14,13 @@ KOR_neglected_navy_desc:0 "대한민국의 해군 참모부는 완전히 분열�
 KOR_neglected_army:0 "방임당한 육군"
 KOR_neglected_army_desc:0 "대한민국의 군축은 경제제일주의를 천명했던 서재필 정부에게 당연한 수순이었습니다. 제국주의적 확장 정책을 고수했던 대한제국의 군 규모는 신생 민주공화국인 대한민국에게 무리할 정도로 큰 지출을 요구했기 때문에, 정부는 대대적인 군축을 감행했습니다.\n\n그러나, 대공황을 성공적으로 회피하면서 서재필 정부는 군의 존재 자체를 부정적으로 여길 정도의 수준에 이르렀습니다. 내부 폭동에 시달리는 일본도, 통일이 되지 못한 중국도, 그 어느 나라도 대한민국을 침공할 만한 여건이 되지 못했기 때문에 정부는 더욱이 극심한 군축을 고심하기 시작한 것입니다.\n\n그 과정에서, 육·공군은 철저히 방임 당했습니다. 서재필 정부는 차기 국방부장관 자리에 신성모 제독을 임명하면서 육군 전력에 대해 철저한 외면을 선사했고, 이는 아직까지 대한민국의 군사 교리가 대전쟁 수준을 벗어나지 못하는 이유가 되었습니다."
 
+###정치고문###
+
+Min_Chanho_idea_Dem:0 "민찬호"
+Min_Chanho_idea:0 "민찬호"
+Lee_Junsik_idea:0 "이준식"
+
+###게임 시작 후###
 KOR_incompetent_goverment:0 "분열된 내각"
 KOR_Demonstration_university_district:0 "교내 시위 확산"
 KOR_uncontrollable_school_demonstration:0 "걷잡을 수 없는 교내 시위"
@@ -103,10 +110,6 @@ KOR_Collapsed_security_2:0 "제국의 불안"
 KOR_Collapsed_security_3:0 "제국의 불안"
 KOR_Collapsed_security_4:0 "제국의 안정"
 KOR_Collapsed_security_5:0 "대한국 국제"
-
-#정치고문
-Min_Chanho_idea:0 "민찬호"
-Lee_Junsik_idea:0 "이준식"
 
 #이새끼들 하나도 안씀 ~~
 ###이승만###
@@ -275,3 +278,7 @@ service_by_requirement_tt:0 "징병 가능 인구: §Y5.00%§!\n매일 정치력
 all_adults_serve_tt:0 "징병 가능 인구: §Y10.00%§!\n매일 정치력 획득: §R-1.00§!\n안정도: §R-25.00%§!\n전쟁 지지도: §R-25.00%§!\n연구 속도: §R-7.50%§!\n사단 조직력: §R-25.0%§!\n사단 회복력: §R-25.0%§!\n건설 속도: §R-45.00%§!\n공장 생산량: §R-45.00%§!\n조선소 생산량: §R-45.00%§!\n훈련 속도: §R+30.00%§!"
 
 scraping_the_barrel_tt:0 "징병 가능 인구: §Y20.00%§!\n매일 정치력 획득: §R-1.50§!\n안정도: §R-30.00%§!\n전쟁 지지도: §R-30.00%§!\n연구 속도: §R-10.00%§!\n사단 조직력: §R-40.0%§!\n사단 회복력: §R-40.0%§!\n건설 속도: §R-60.00%§!\n공장 생산량: §R-60.00%§!\n조선소 생산량: §R-60.00%§!\n훈련 속도: §R+40.00%§!"
+
+cannot_call_allies_or_join_wars: "동맹국에 참전하거나 호출할 수 없음"
+cannot_call_allies_or_join_wars_warning: "§Y[ROOT.GetNameWithFlag]§! §R은 동맹국에 참전하거나 호출할 수 없습니다.§!"
+cannot_call_allies_or_join_wars_warning_FROM: "§Y[FROM.GetNameWithFlag]§! §R은 동맹국에 참전하거나 호출할 수 없습니다.§!"

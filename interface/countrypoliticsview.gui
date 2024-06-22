@@ -744,14 +744,14 @@ guiTypes = {
 			clicksound = click_default
 		}
 		
-		iconType = {
-			name = "idea_traits"
-			position = { x = 43 y = 46 }
-			spriteType = "GFX_idea_traits_strip"
-			centerposition = yes
-			alwaystransparent = yes
-			frame = 1
-		}
+		# iconType = {
+		# 	name = "idea_traits"
+		# 	position = { x = 43 y = 46 }
+		# 	spriteType = "GFX_idea_traits_strip"
+		# 	centerposition = yes
+		# 	alwaystransparent = yes
+		# 	frame = 1
+		# }
 		
 	}
 
@@ -788,14 +788,14 @@ guiTypes = {
 			alwaystransparent = yes
 		}
 
-		iconType = {
-			name = "idea_traits"
-			position = { x = 53 y = 51 }
-			spriteType = "GFX_idea_traits_strip"
-			centerposition = yes
-			alwaystransparent = yes
-			frame = 1
-		}
+		# iconType = {
+		# 	name = "idea_traits"
+		# 	position = { x = 53 y = 51 }
+		# 	spriteType = "GFX_idea_traits_strip"
+		# 	centerposition = yes
+		# 	alwaystransparent = yes
+		# 	frame = 1
+		# }
 		
 		containerWindowType = {
 		    name = "traits_container"
@@ -865,20 +865,20 @@ guiTypes = {
 			
 		iconType = {
 			name = "icon"
-			position = { x = 42 y = 50 }
+			position = { x = 42 y = 40 }
 			spriteType = "GFX_placeholder_bordered"
 			centerposition = yes
 			alwaystransparent = yes
 		}
 
-		iconType = {
-			name = "idea_traits"
-			position = { x = 53 y = 51 }
-			spriteType = "GFX_idea_traits_strip"
-			centerposition = yes
-			alwaystransparent = yes
-			frame = 1
-		}
+		# iconType = {
+		# 	name = "idea_traits"
+		# 	position = { x = 53 y = 51 }
+		# 	spriteType = "GFX_idea_traits_strip"
+		# 	centerposition = yes
+		# 	alwaystransparent = yes
+		# 	frame = 1
+		# }
 		
 		containerWindowType = {
 		    name = "traits_container"
@@ -888,7 +888,7 @@ guiTypes = {
 			
 			instantTextboxType = {
 				name = "name"
-				position = { x = 0 y = -13 }
+				position = { x = 0 y = -25 }
 				font = "hoi_18mbs"
 				fixedsize = yes			
 				text = ""
@@ -914,7 +914,7 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "cost"
-			position = { x = 84 y = 48 }
+			position = { x = 84 y = 40 }
 			font = "hoi_16mbs"
 			text = ""
 			maxWidth = 142
@@ -925,7 +925,7 @@ guiTypes = {
 
 		instantTextboxType = {
 			name = "stats"
-			position = { x = 220 y = 40 }
+			position = { x = 210 y = 38 }
 			font = "hoi_16mbs"
 			text = ""
 			maxWidth = 142
@@ -1698,14 +1698,14 @@ guiTypes = {
 			alwaystransparent = yes
 		}
 
-		iconType = {
-			name = "idea_traits"
-			position = { x = 53 y = 51 }
-			spriteType = "GFX_idea_traits_strip"
-			centerposition = yes
-			alwaystransparent = yes
-			frame = 1
-		}
+		# iconType = {
+		# 	name = "idea_traits"
+		# 	position = { x = 53 y = 51 }
+		# 	spriteType = "GFX_idea_traits_strip"
+		# 	centerposition = yes
+		# 	alwaystransparent = yes
+		# 	frame = 1
+		# }
 		
 		containerWindowType = {
 		    name = "traits_container"
@@ -1775,20 +1775,20 @@ guiTypes = {
 			
 		iconType = {
 			name = "icon"
-			position = { x = 42 y = 50 }
+			position = { x = 42 y = 40 }
 			spriteType = "GFX_placeholder_bordered"
 			centerposition = yes
 			alwaystransparent = yes
 		}
 
-		iconType = {
-			name = "idea_traits"
-			position = { x = 53 y = 51 }
-			spriteType = "GFX_idea_traits_strip"
-			centerposition = yes
-			alwaystransparent = yes
-			frame = 1
-		}
+		# iconType = {
+		# 	name = "idea_traits"
+		# 	position = { x = 53 y = 51 }
+		# 	spriteType = "GFX_idea_traits_strip"
+		# 	centerposition = yes
+		# 	alwaystransparent = yes
+		# 	frame = 1
+		# }
 		
 		containerWindowType = {
 		    name = "traits_container"

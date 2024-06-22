@@ -251,14 +251,14 @@ guiTypes = {
 			spriteType = "GFX_empty_paper"
 			alwaystransparent = yes
 		}
-		iconType = {
-			name = "advisor_role_traits_icon"
-			position = { x = 28 y = 70 }
-			spriteType = "GFX_idea_traits_strip"
-			centerposition = yes
-			alwaystransparent = yes
-			frame = 1
-		}
+		# iconType = {
+		# 	name = "advisor_role_traits_icon"
+		# 	position = { x = 28 y = 70 }
+		# 	spriteType = "GFX_idea_traits_strip"
+		# 	centerposition = yes
+		# 	alwaystransparent = yes
+		# 	frame = 1
+		# }
 		buttonType = {
 			name = "promote_btn"
 			position = {x=414 y=56}	
@@ -701,14 +701,14 @@ guiTypes = {
 			spriteType = "GFX_empty_paper"
 			alwaystransparent = yes
 		}
-		iconType = {
-			name = "advisor_role_traits_icon"
-			position = { x = 28 y = 70 }
-			spriteType = "GFX_idea_traits_strip"
-			centerposition = yes
-			alwaystransparent = yes
-			frame = 1
-		}
+		# iconType = {
+		# 	name = "advisor_role_traits_icon"
+		# 	position = { x = 28 y = 70 }
+		# 	spriteType = "GFX_idea_traits_strip"
+		# 	centerposition = yes
+		# 	alwaystransparent = yes
+		# 	frame = 1
+		# }
 		iconType = {
 			name = "leader_stat_attack_bg"
 			spriteType = "GFX_trait_attack"

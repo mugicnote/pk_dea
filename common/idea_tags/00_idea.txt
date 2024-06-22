@@ -39,14 +39,12 @@ idea_categories = {
 	}
 
 	cabinet = {
+		slot = prime_minister_cab #국무총리
 		slot = interior_minister #내무부장관
 		slot = foreign_minister #외무부장관
 		slot = national_defense_minister #국방부장관
 		slot = finance_minister #재무부장관
 		slot = justice_minister #법무부장관
-		slot = education_minister #문교부장관
-		slot = industry_commerce_minister #상공부장관
-		slot = information_communication_minister #체신부장관
 
 		cost = 150
 		removal_cost = -1

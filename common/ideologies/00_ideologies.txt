@@ -490,10 +490,12 @@ ideologies = {
 		rules = {
 			can_force_government = no
 			can_send_volunteers = yes
-			can_puppet = no
-			can_join_factions = no
+			can_puppet = yes
+			can_join_factions = yes
 		}
 		
+		can_host_government_in_exile = yes
+
 		modifiers = {
 			generate_wargoal_tension = 0.25
 			civilian_intel_to_others = 15.0

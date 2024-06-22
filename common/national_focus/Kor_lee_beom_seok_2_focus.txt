@@ -2603,6 +2603,32 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = Min_Chanho_idea
+			hidden_effect = {
+				remove_advisor_role = {
+					character = "KOR_Min_Chanho"
+					slot = political_advisor
+				}
+				add_advisor_role = {
+					character = KOR_Min_Chanho
+					advisor = {
+						slot = political_advisor
+						idea_token = Min_Chanho_idea
+						allowed = {
+							original_tag = KOR
+							OR = {
+								has_government = auto_despotism
+								has_government = fascism
+							}
+						}
+						available = {
+							has_completed_focus = KOR_presidents_plan
+						}
+						traits = {
+							President_of_military_regime
+						}
+					}
+				}
+			}
 		}
 		x = -4
 		y = 1
@@ -2918,7 +2944,7 @@ focus_tree = {
 	}
 
 	#붉은 장미 장전
-	focus = {
+	focus = { #회담의 시작과 상호베타
 		id = KOR_preparations_for_operations_red_rose
 		icon = GFX_focus_preparations_for_operations_red_rose
 		relative_position_id = KOR_declaration_of_emergency_martial_law

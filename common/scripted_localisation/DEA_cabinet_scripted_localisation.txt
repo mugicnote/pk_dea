@@ -151,64 +151,6 @@ defined_text = {
 		localization_key = Hu_Hanmin_desc
 	}
 }
-
-############################################
-# 문교부장관
-############################################
-defined_text = {
-	name = FdS_rank2
-
-	
-	text = {
-		trigger = {
-			tag = KOR
-		}
-		localization_key = POSITION_main_opposition_party_leader2
-	}
-}
-
-defined_text = {
-	name = HoG_rank2
-	
-	text = {
-		trigger = {
-			tag = KOR
-		}
-		localization_key = POSITION_main_opposition_party_leader2
-	}
-}
-
-defined_text = {
-	name = FdS2_name
-	
-	text = {
-		trigger = {
-			has_country_flag = Kim_Seongsoo
-		}
-		localization_key = Kim_Seongsoo
-	}
-}
-defined_text = {
-	name = leader_two_portrait2
-	
-	text = {
-		trigger = {
-			has_country_flag = Kim_Seongsoo
-		}
-		localization_key = GFX_Portrait_Kim_Seongsoo
-	}
-}
-defined_text = {
-	name = HoG2_desc
-
-	text = {
-		trigger = { 
-			has_country_flag = Kim_Seongsoo
-		}
-		localization_key = Kim_Seongsoo_desc
-	}
-}
-
 ############################################
 # 내무부장관
 ############################################
@@ -294,88 +236,6 @@ defined_text = {
 		localization_key = Li_Zongren_desc
 	}
 }
-
-############################################
-# 상공부장관
-############################################
-defined_text = {
-	name = FdS_rank4
-
-	
-	text = {
-		trigger = {
-			tag = KOR
-		}
-		localization_key = POSITION_main_opposition_party_leader4
-	}
-	text = {
-		trigger = {
-			tag = JAP
-		}
-		localization_key = POSITION_main_opposition_MOE_JAP
-	}
-}
-
-defined_text = {
-	name = HoG_rank4
-	
-	text = {
-		trigger = {
-			tag = KOR
-		}
-		localization_key = POSITION_main_opposition_party_leader4
-	}
-	text = {
-		trigger = {
-			tag = JAP
-		}
-		localization_key = POSITION_main_opposition_MOE_JAP
-	}
-}
-
-defined_text = {
-	name = FdS4_name
-	
-	text = {
-		trigger = {
-			has_country_flag = Kim_Hyun_cheol
-		}
-		localization_key = Kim_Hyun_cheol
-	}
-	text = {
-		trigger = {
-			has_country_flag = Takahashi_Seiichi
-		}
-		localization_key = Takahashi_Seiichi
-	}
-}
-defined_text = {
-	name = leader_two_portrait4
-	
-	text = {
-		trigger = {
-			has_country_flag = Kim_Hyun_cheol
-		}
-		localization_key = GFX_Portrait_Kim_Hyun_cheol
-	}
-	text = {
-		trigger = {
-			has_country_flag = Takahashi_Seiichi
-		}
-		localization_key = GFX_Portrait_Takahashi_Seiichi
-	}
-}
-defined_text = {
-	name = HoG4_desc
-
-	text = {
-		trigger = { 
-			has_country_flag = Kim_Hyun_cheol
-		}
-		localization_key = Kim_Hyun_cheol_desc
-	}
-}
-
 ############################################
 # 외무부장관
 ############################################
@@ -938,9 +798,9 @@ defined_text = {
 	
 	text = {
 		trigger = {
-			has_country_flag = He_Hun
+			has_country_flag = Lee_In
 		}
-		localization_key = He_Hun
+		localization_key = Lee_In
 	}
 
 }
@@ -949,9 +809,9 @@ defined_text = {
 	
 	text = {
 		trigger = {
-			has_country_flag = He_Hun
+			has_country_flag = Lee_In
 		}
-		localization_key = GFX_Portrait_He_Hun
+		localization_key = GFX_Portrait_Lee_In
 	}
 
 }
@@ -960,9 +820,9 @@ defined_text = {
 
 	text = {
 		trigger = { 
-			has_country_flag = He_Hun
+			has_country_flag = Lee_In
 		}
-		localization_key = He_Hun_desc
+		localization_key = Lee_In_desc
 	}
 }
 

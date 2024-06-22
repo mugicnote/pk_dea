@@ -3,6 +3,15 @@ ideas = {
 
 country = {
 
+	RUS_idea_government_in_exile_1 = { #망명정부
+		name = RUS_idea_government_in_exile
+		picture = generic_volunteer_expedition_bonus
+		removal_cost = -1
+		modifier = {
+			cannot_call_allies_or_join_wars = 1
+		}
+	}
+
 	#미약한 산업(산업 문제 5)
 	RUS_Industry_problem_5 = {
 	

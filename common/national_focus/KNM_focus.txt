@@ -91,7 +91,7 @@
 		}
 
 		completion_reward = {
-
+			custom_effect_tooltip = historical_choice_tt
 		}
 
 		x = 1
@@ -514,7 +514,7 @@
 
 	}
 
-	#성장을 향한 테러
+	#팡전우 성장 저격 사건
 	focus = {
 		id = KNM_A_terrorist_attack_occurs
 		icon = GFX_generic_police_state
@@ -752,7 +752,7 @@
 
 	#영토 수복 시작
 	focus = {
-		id = KNM_Establishment_of_Korean_Militia
+		id = KNM_Start_repairing_a_province
 		icon = GFX_focus_korean_woi
 		relative_position_id = KNM_Declare_Gando_Autonomous
 		cost = 10.00
@@ -762,6 +762,66 @@
 		}
 		prerequisite = {
 			focus = KNM_Set_up_the_Gando_Liberation_Army_Command
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = KNM_Start_repairing_a_province_tt
+		}
+
+		x = 1
+		y = 1
+
+	}
+
+	#간도척식회사 설립
+	focus = {
+		id = KNM_Establishing_a_Kando_development_company
+		icon = GFX_focus_DEN_limited_regulations
+		relative_position_id = KNM_Industrial_cooperation_with_Korea
+		cost = 10.00
+
+		prerequisite = {
+			focus = KNM_Industrial_cooperation_with_Korea
+		}
+
+		completion_reward = {
+
+		}
+
+		x = 0
+		y = 1
+
+	}
+
+	#총포법 개정
+	focus = {
+		id = KNM_Gun_laws_amendments
+		icon = GFX_focus_guns
+		relative_position_id = KNM_Founded_Gando_Cho_Byung_chang
+		cost = 10.00
+
+		prerequisite = {
+			focus = KNM_Founded_Gando_Cho_Byung_chang
+		}
+
+		completion_reward = {
+
+		}
+
+		x = -1
+		y = 1
+
+	}
+
+	#나진으로 가는 길
+	focus = {
+		id = KNM_Road_to_Najin
+		icon = GFX_generic_railway_construction
+		relative_position_id = KNM_Founded_Gando_Cho_Byung_chang
+		cost = 10.00
+
+		prerequisite = {
+			focus = KNM_Founded_Gando_Cho_Byung_chang
 		}
 
 		completion_reward = {

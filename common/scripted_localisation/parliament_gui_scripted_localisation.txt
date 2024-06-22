@@ -78,6 +78,20 @@ defined_text = {
 		}
 		localization_key = party_11_text
 	}
+	text = {
+		trigger = {
+			check_variable = { KOR_legco_faction = 12 }
+			has_country_flag = twelveth_seasts_is_ok
+		}
+		localization_key = party_12_text
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_legco_faction = 13 }
+			has_country_flag = parliament_gui_man_add_flag
+		}
+		localization_key = party_13_text
+	}
 }
 
 defined_text = {
@@ -158,6 +172,18 @@ defined_text = {
 		}
 		localization_key = KOR_legco_eleventh_seats
 	}
+	text = {
+		trigger = {
+			check_variable = { KOR_legco_faction = 12 }
+		}
+		localization_key = KOR_legco_twelveth_seats
+	}
+	text = {
+		trigger = {
+			check_variable = { KOR_legco_faction = 13 }
+		}
+		localization_key = KOR_legco_thirteenth_seats
+	}
 }
 # Since index starts as 0, i can get the current seat number by jut adding it by one and then displaying it.
 defined_text = {
@@ -183,13 +209,13 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			check_variable = { KOR_Current_Ordinance_Votes < 200 }
+			check_variable = { KOR_Current_Ordinance_Votes < Legco_Current_Ordinance_Support_1 }
 		}
 		localization_key = KOR_ordinance_under_200_votes
 	}
 	text = {
 		trigger = {
-			check_variable = { KOR_Current_Ordinance_Votes > 199 }
+			check_variable = { KOR_Current_Ordinance_Votes > Legco_Current_Ordinance_Support_2 }
 		}
 		localization_key = KOR_ordinance_over_200_votes
 	}
@@ -205,13 +231,13 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			check_variable = { KOR_Current_Ordinance_Votes < 200 }
+			check_variable = { KOR_Current_Ordinance_Votes < Legco_Current_Ordinance_Support_1 }
 		}
 		localization_key = KOR_ordinance_under_200_votes
 	}
 	text = {
 		trigger = {
-			check_variable = { KOR_Current_Ordinance_Votes > 199 }
+			check_variable = { KOR_Current_Ordinance_Votes > Legco_Current_Ordinance_Support_2 }
 		}
 		localization_key = KOR_ordinance_over_200_votes
 	}
@@ -241,13 +267,13 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			check_variable = { KOR_Current_Ordinance_Votes < 200 }
+			check_variable = { KOR_Current_Ordinance_Votes < Legco_Current_Ordinance_Support_1 }
 		}
 		localization_key = KOR_ordinance_under_200_votes_decision
 	}
 	text = {
 		trigger = {
-			check_variable = { KOR_Current_Ordinance_Votes > 199 }
+			check_variable = { KOR_Current_Ordinance_Votes > Legco_Current_Ordinance_Support_2 }
 		}
 		localization_key = KOR_ordinance_over_200_votes_decision
 	}
@@ -257,13 +283,13 @@ defined_text = {
 	name = Legco_Pass_Check
 	text = {
 		trigger = {
-			check_variable = { KOR_Current_Ordinance_Votes < 200 }
+			check_variable = { KOR_Current_Ordinance_Votes < Legco_Current_Ordinance_Support_1 }
 		}
 		localization_key = KOR_ordinance_not_enough_to_pass
 	}
 	text = {
 		trigger = {
-			check_variable = { KOR_Current_Ordinance_Votes > 199 }
+			check_variable = { KOR_Current_Ordinance_Votes > Legco_Current_Ordinance_Support_2 }
 		}
 		localization_key = KOR_ordinance_enough_to_pass
 	}
@@ -296,6 +322,188 @@ defined_text = {
 }
 
 defined_text = {
+	name = KOR_legco_first_seats_percentages_loc
+
+	text = {
+		trigger = {
+			check_variable = { KOR_legco_first_seats > 0 }
+		}
+		localization_key = KOR_legco_first_seats_percentages_loc_1
+	}
+	text = {
+		localization_key = ""
+	}
+}
+
+defined_text = {
+	name = KOR_legco_second_seats_percentages_loc
+
+	text = {
+		trigger = {
+			check_variable = { KOR_legco_second_seats > 0 }
+		}
+		localization_key = KOR_legco_second_seats_percentages_loc_1
+	}
+	text = {
+		localization_key = ""
+	}
+}
+
+defined_text = {
+	name = KOR_legco_third_seats_percentages_loc
+
+	text = {
+		trigger = {
+			check_variable = { KOR_legco_third_seats > 0 }
+		}
+		localization_key = KOR_legco_third_seats_percentages_loc_1
+	}
+	text = {
+		localization_key = ""
+	}
+}
+
+defined_text = {
+	name = KOR_legco_forth_seats_percentages_loc
+
+	text = {
+		trigger = {
+			check_variable = { KOR_legco_forth_seats > 0 }
+		}
+		localization_key = KOR_legco_forth_seats_percentages_loc_1
+	}
+	text = {
+		localization_key = ""
+	}
+}
+
+defined_text = {
+	name = KOR_legco_fifth_seats_percentages_loc
+
+	text = {
+		trigger = {
+			check_variable = { KOR_legco_fifth_seats > 0 }
+		}
+		localization_key = KOR_legco_fifth_seats_percentages_loc_1
+	}
+	text = {
+		localization_key = ""
+	}
+}
+
+defined_text = {
+	name = KOR_legco_sixth_seats_percentages_loc
+
+	text = {
+		trigger = {
+			check_variable = { KOR_legco_sixth_seats > 0 }
+		}
+		localization_key = KOR_legco_sixth_seats_percentages_loc_1
+	}
+	text = {
+		localization_key = ""
+	}
+}
+
+defined_text = {
+	name = KOR_legco_seventh_seats_percentages_loc
+
+	text = {
+		trigger = {
+			check_variable = { KOR_legco_seventh_seats > 0 }
+		}
+		localization_key = KOR_legco_seventh_seats_percentages_loc_1
+	}
+	text = {
+		localization_key = ""
+	}
+}
+
+defined_text = {
+	name = KOR_legco_eighth_seats_percentages_loc
+
+	text = {
+		trigger = {
+			check_variable = { KOR_legco_eighth_seats > 0 }
+		}
+		localization_key = KOR_legco_eighth_seats_percentages_loc_1
+	}
+	text = {
+		localization_key = ""
+	}
+}
+
+defined_text = {
+	name = KOR_legco_nineth_seats_percentages_loc
+
+	text = {
+		trigger = {
+			check_variable = { KOR_legco_nineth_seats > 0 }
+		}
+		localization_key = KOR_legco_nineth_seats_percentages_loc_1
+	}
+	text = {
+		localization_key = ""
+	}
+}
+
+defined_text = {
+	name = KOR_legco_tenth_seats_percentages_loc
+
+	text = {
+		trigger = {
+			check_variable = { KOR_legco_tenth_seats > 0 }
+		}
+		localization_key = KOR_legco_tenth_seats_percentages_loc_1
+	}
+	text = {
+		localization_key = ""
+	}
+}
+
+defined_text = {
+	name = KOR_legco_eleventh_seats_percentages_loc
+
+	text = {
+		trigger = {
+			check_variable = { KOR_legco_eleventh_seats > 0 }
+		}
+		localization_key = KOR_legco_eleventh_seats_percentages_loc_1
+	}
+	text = {
+		localization_key = ""
+	}
+}
+
+defined_text = {
+	name = KOR_legco_twelveth_seats_percentages_loc
+
+	text = {
+		trigger = {
+			check_variable = { KOR_legco_twelveth_seats > 0 }
+		}
+		localization_key = KOR_legco_twelveth_seats_percentages_loc_1
+	}
+	text = {
+		localization_key = ""
+	}
+}
+
+defined_text = {
+	name = KOR_legco_thirteenth_seats_percentages_loc
+
+	text = {
+		trigger = {
+			check_variable = { KOR_legco_thirteenth_seats > 0 }
+		}
+		localization_key = KOR_legco_thirteenth_seats_percentages_loc_1
+	}
+	text = {
+		localization_key = ""
+	}
+}
+
+defined_text = {
 	name = Legco_Votes_Current_Parties
 	# text = {
 	# 	trigger = {
@@ -313,7 +521,7 @@ defined_text = {
 	name = KOR_get_dynamic_color_temp_support
 	text = {
 		trigger = {
-			check_variable = { KOR_Current_Ordinance_Votes_temp < 200 }
+			check_variable = { KOR_Current_Ordinance_Votes_temp < Legco_Current_Ordinance_Support_1 }
 		}
 		localization_key = KOR_temp_votes_red
 	}
@@ -576,4 +784,22 @@ defined_text = {
 	# 	}
 	# 	localization_key = KOR_ordinance_over_200_votes
 	# }
+}
+
+defined_text = {
+	name = parliament_member_text6
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = parliament_gui_man_add_flag
+			}
+		}
+		localization_key = parliament_member_text6_1
+	}
+	text = {
+		trigger = {
+			has_country_flag = parliament_gui_man_add_flag
+		}
+		localization_key = parliament_member_text6_2
+	}
 }

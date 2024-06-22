@@ -3716,14 +3716,14 @@ guiTypes = {
 			spriteType = "GFX_idea_unknown"
 			position = { x = 9 y = 9 }
 		}
-		iconType = {
-			name = "trait"
-			position = { x = 52 y = 55 }
-			spriteType = "GFX_idea_traits_strip"
-			centerposition = yes
-			alwaystransparent = yes
-			frame = 1
-		}
+		# iconType = {
+		# 	name = "trait"
+		# 	position = { x = 52 y = 55 }
+		# 	spriteType = "GFX_idea_traits_strip"
+		# 	centerposition = yes
+		# 	alwaystransparent = yes
+		# 	frame = 1
+		# }
 	}
 	
 	containerWindowType = {

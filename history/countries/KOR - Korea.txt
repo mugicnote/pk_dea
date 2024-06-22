@@ -226,8 +226,7 @@ recruit_character = KOR_ji_chong_chen
 recruit_character = KOR_rafs
 recruit_character = KOR_Lee_Beom_seok
 
-###장군진
-#6렙
+###원수진
 recruit_character = KOR_Kang_Woo_gyu
 recruit_character = KOR_Lee_Kyu_wan
 recruit_character = KOR_Min_Young_huan
@@ -244,6 +243,20 @@ recruit_character = KOR_Cho_Sung_hwan
 recruit_character = KOR_Park_Seung_Hwan
 recruit_character = KOR_Lee_In_Young
 recruit_character = KOR_Lee_Se_young
+
+###장군진
+recruit_character = KOR_Kim_Chwa_chin
+recruit_character = KOR_Oh_Gwang_sun
+recruit_character = KOR_Kim_Hong_il
+recruit_character = KOR_Kim_Chul
+recruit_character = KOR_Seo_Wal_bo
+recruit_character = KOR_An_Chang_nam
+
+recruit_character = KOR_Shin_Soon_Sung
+recruit_character = KOR_Lee_Kyu_gap
+recruit_character = KOR_Yu_Hang_Ryeol
+recruit_character = KOR_Park_Ok_Gyu
+recruit_character = KOR_Son_Won_il
 
 # recruit_character = KOR_Kim_Chwa_chin
 # recruit_character = KOR_Shin_Sung_mo
@@ -283,6 +296,37 @@ recruit_character = KOR_Lee_Se_young
 
 recruit_character = KOR_Min_Chanho
 recruit_character = KOR_Lee_Junsik
+
+recruit_character = KOR_Lee_Beomseung
+recruit_character = KOR_Yun_Po_sun
+recruit_character = KOR_Yi_Dong_nyeong
+recruit_character = KOR_Jang_Deok_su
+recruit_character = KOR_Park_Sang_jun
+recruit_character = KOR_Lee_Hoe_yeong
+recruit_character = KOR_Jo_So_ang
+recruit_character = KOR_Park_Yeong_hyo
+recruit_character = KOR_Ahn_Chang_ho
+recruit_character = KOR_Hong_Jin
+recruit_character = KOR_Yi_Si_yeong
+recruit_character = KOR_Lee_Hoon_woo
+recruit_character = KOR_Cho_Wan_gu
+recruit_character = KOR_Kim_Hyun_chul
+recruit_character = KOR_Kim_Tae_sun
+recruit_character = KOR_Song_Byeong_jo
+recruit_character = KOR_Park_Che_soon
+recruit_character = KOR_Woo_Jang_choon
+recruit_character = KOR_Cho_Man_sik
+recruit_character = KOR_Yun_Ho_pyong
+recruit_character = KOR_Yoon_Sung_soon
+recruit_character = KOR_Oh_Young_Sun
+recruit_character = KOR_Kim_Do_Yeon
+recruit_character = KOR_Park_Gil_ryong
+recruit_character = KOR_Ham_Duk_yong
+recruit_character = KOR_Lee_Whal
+recruit_character = KOR_Chough_Pyung_ok
+recruit_character = KOR_Lee_Kyo_seon
+recruit_character = KOR_Choi_Sun_ju
+
 
 ###맨더건###
 # if = {

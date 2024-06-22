@@ -1,4 +1,4 @@
-﻿capital = 409
+﻿capital = 1040
 
 # oob = "RUS"
 # if = {
@@ -78,6 +78,7 @@ set_popularities = {
 }
 
 add_ideas = {
+	RUS_idea_government_in_exile_1
 	RUS_disjointed_white_society
 	RUS_Industry_problem_5
 	RUS_Uncoordianted_channel_of_command

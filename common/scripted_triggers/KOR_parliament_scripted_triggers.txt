@@ -13,3 +13,7 @@ KOR_legco_introduce_ordinance_ready = {
 		tooltip = KOR_legco_introduce_ordinance_ready_tt
 	}
 }
+
+cannot_call_allies_or_join_wars = {
+	check_variable = { modifier@cannot_call_allies_or_join_wars > 0 }
+}

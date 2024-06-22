@@ -44,7 +44,7 @@ country_event = { #
 	option = { #
 		name = KOR_parliament.2.a
 		ai_chance = { factor = 1 }
-		GNG_ordinances_effects = yes
+		#KOR_ordinances_effects = yes
 		set_country_flag = Kyoto_Resolution_Passed
 
 		com_down_variable = yes
@@ -55,7 +55,29 @@ country_event = { #
 
 #스토리 - 서재필 사망 이벤트 체인
 
-country_event = {  
+country_event = {	#서재필 대통령 신년사 - 민주주의와 자유
+	id = KOR.53
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.53"}
+	title = KOR.53.t
+	desc = KOR.53.desc
+	picture = GFX_Seo_Jae_pils_speech_0_event_picture
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = KOR.53.a
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			country_event = {
+				id = KOR.56
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = {	#신년과 혹한, 신념의 경계선상
 	id = KOR.56
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.56"}
 	title = KOR.56.t
@@ -71,14 +93,84 @@ country_event = {
 		add_ideas = { KOR_Chang_Taek_Sang }
 		hidden_effect = {
 			country_event = {
-				id = KOR.57
-				days = 5
+				id = KOR.39
+				days = 1
 			}
 		}
 	}
 }
 
-country_event = {  
+country_event = {	#이범승 코드 작동 이벤트
+	id = KOR.39
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event KOR.39"
+	}
+	title = KOR.39.t
+	desc = KOR.39.desc
+	picture = GFX_Seo_Jae_pils_speech_0_event_picture
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	hidden = yes
+
+	option = { #
+		name = KOR.39.a
+		KOR_Lee_Beomseung = {
+			add_temp_unit_leader_role = yes
+			unit_leader_event = { id = KOR.40 days = 0 }
+		}
+	}
+}
+
+unit_leader_event = {	#이범승 서울시장 '과거 일본 망명 시도' 논란에 사임
+	id = KOR.40
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.40"}
+	title = KOR.40.t
+	desc = KOR.40.desc
+	picture = GFX_Chang_Taek_sang_event_picture
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = KOR.40.a
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			remove_temp_unit_leader_role = yes
+		}
+		set_country_flag = KOR_Lee_Beomseung_event
+		set_country_flag = twelveth_seasts_is_ok
+		KOR_twelveth_seats_Additional = yes
+		hidden_effect = {
+			if = {
+				has_idea = KOR_Lee_Beomseung_idea
+				limit = {
+					add_political_power = 187
+				}
+			}
+		}
+		custom_effect_tooltip = KOR.40.3_tt
+		set_temp_variable = { KOR_legco_seat_temp = 5 }
+		multiply_temp_variable = { KOR_legco_seat_temp = -1 }
+		set_temp_variable = { KOR_legco_faction_temp = 1 }
+		custom_effect_tooltip = KOR.40_tt
+		KOR_change_legco_seats = yes
+
+		set_temp_variable = { KOR_legco_seat_temp = 5 }
+		set_temp_variable = { KOR_legco_faction_temp = 12 }
+		custom_effect_tooltip = KOR.40.2_tt
+		KOR_change_legco_seats = yes
+
+		hidden_effect = {
+			country_event = {
+				id = KOR.57
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = {	#회의
 	id = KOR.57
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.57"}
 	title = KOR.57.t
@@ -131,6 +223,28 @@ country_event = {
 }
 
 country_event = {  
+	id = KOR.12
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.12"}
+	title = KOR.12.t
+	desc = KOR.12.desc
+	picture = GFX_intramural_demonstration_event_picture
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = KOR.12.a
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			country_event = {
+				id = KOR.61
+				days = 2
+			}
+		}
+	}
+}
+
+country_event = {  
 	id = KOR.61
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.61"}
 	title = KOR.61.t
@@ -160,6 +274,7 @@ country_event = {
 	}
 }
 
+#담화문
 country_event = {  
 	id = KOR.62
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.62"}
@@ -178,6 +293,21 @@ country_event = {
 			days = 0
 		}
 
+	}
+
+	option = { #스킵
+		name = KOR.62.b
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			country_event = {
+				id = KOR.55
+				days = 5
+			}
+		}
+		swap_ideas = {
+			remove_idea = KOR_Demonstration_university_district
+    		add_idea = KOR_uncontrollable_school_demonstration
+		}
 	}
 }
 
@@ -200,6 +330,21 @@ country_event = {
 		}
 
 	}
+
+	option = { #스킵
+		name = KOR.63.b
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			country_event = {
+				id = KOR.55
+				days = 5
+			}
+		}
+		swap_ideas = {
+			remove_idea = KOR_Demonstration_university_district
+    		add_idea = KOR_uncontrollable_school_demonstration
+		}
+	}
 }
 
 country_event = {
@@ -220,6 +365,21 @@ country_event = {
 			days = 0
 		}
 	}
+
+	option = { #스킵
+		name = KOR.64.b
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			country_event = {
+				id = KOR.55
+				days = 5
+			}
+		}
+		swap_ideas = {
+			remove_idea = KOR_Demonstration_university_district
+    		add_idea = KOR_uncontrollable_school_demonstration
+		}
+	}
 }
 
 country_event = {  
@@ -236,11 +396,211 @@ country_event = {
 		name = KOR.65.a
 		ai_chance = { factor = 1 }
 		country_event = {
+			id = KOR.100
+			days = 0
+		}
+			# set_country_flag = water_torture_news
+			# set_country_flag = Dea_News_event_show
+	}
+
+	option = { #스킵
+		name = KOR.65.b
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			country_event = {
+				id = KOR.55
+				days = 5
+			}
+		}
+		swap_ideas = {
+			remove_idea = KOR_Demonstration_university_district
+    		add_idea = KOR_uncontrollable_school_demonstration
+		}
+	}
+}
+
+country_event = {  
+	id = KOR.100
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.100"}
+	title = KOR.100.t
+	desc = KOR.100.desc
+	picture = GFX_Seo_Jae_pils_speech_2_event_picture
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = KOR.100.a
+		ai_chance = { factor = 1 }
+		country_event = {
+			id = KOR.101
+			days = 0
+		}
+			# set_country_flag = water_torture_news
+			# set_country_flag = Dea_News_event_show
+	}
+
+	option = { #스킵
+		name = KOR.100.b
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			country_event = {
+				id = KOR.55
+				days = 5
+			}
+		}
+		swap_ideas = {
+			remove_idea = KOR_Demonstration_university_district
+    		add_idea = KOR_uncontrollable_school_demonstration
+		}
+	}
+}
+
+country_event = {  
+	id = KOR.101
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.101"}
+	title = KOR.101.t
+	desc = KOR.101.desc
+	picture = GFX_Seo_Jae_pils_speech_2_event_picture
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = KOR.101.a
+		ai_chance = { factor = 1 }
+		country_event = {
+			id = KOR.102
+			days = 0
+		}
+			# set_country_flag = water_torture_news
+			# set_country_flag = Dea_News_event_show
+	}
+
+	option = { #스킵
+		name = KOR.101.b
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			country_event = {
+				id = KOR.55
+				days = 5
+			}
+		}
+		swap_ideas = {
+			remove_idea = KOR_Demonstration_university_district
+    		add_idea = KOR_uncontrollable_school_demonstration
+		}
+	}
+}
+
+country_event = {  
+	id = KOR.102
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.102"}
+	title = KOR.102.t
+	desc = KOR.102.desc
+	picture = GFX_Seo_Jae_pils_speech_2_event_picture
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = KOR.102.a
+		ai_chance = { factor = 1 }
+		country_event = {
+			id = KOR.103
+			days = 0
+		}
+			# set_country_flag = water_torture_news
+			# set_country_flag = Dea_News_event_show
+	}
+
+	option = { #스킵
+		name = KOR.102.b
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			country_event = {
+				id = KOR.55
+				days = 5
+			}
+		}
+		swap_ideas = {
+			remove_idea = KOR_Demonstration_university_district
+    		add_idea = KOR_uncontrollable_school_demonstration
+		}
+	}
+}
+
+country_event = {  
+	id = KOR.103
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.103"}
+	title = KOR.103.t
+	desc = KOR.103.desc
+	picture = GFX_Seo_Jae_pils_speech_2_event_picture
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = KOR.103.a
+		ai_chance = { factor = 1 }
+		country_event = {
+			id = KOR.104
+			days = 0
+		}
+			# set_country_flag = water_torture_news
+			# set_country_flag = Dea_News_event_show
+	}
+
+	option = { #스킵
+		name = KOR.103.b
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			country_event = {
+				id = KOR.55
+				days = 5
+			}
+		}
+		swap_ideas = {
+			remove_idea = KOR_Demonstration_university_district
+    		add_idea = KOR_uncontrollable_school_demonstration
+		}
+	}
+}
+
+country_event = {  
+	id = KOR.104
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.104"}
+	title = KOR.104.t
+	desc = KOR.104.desc
+	picture = GFX_Seo_Jae_pils_speech_2_event_picture
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = KOR.104.a
+		ai_chance = { factor = 1 }
+		country_event = {
 			id = KOR.54
 			days = 0
 		}
 			# set_country_flag = water_torture_news
 			# set_country_flag = Dea_News_event_show
+	}
+
+	option = { #스킵
+		name = KOR.104.b
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			country_event = {
+				id = KOR.55
+				days = 5
+			}
+		}
+		swap_ideas = {
+			remove_idea = KOR_Demonstration_university_district
+    		add_idea = KOR_uncontrollable_school_demonstration
+		}
 	}
 }
 
@@ -286,7 +646,7 @@ country_event = {
 		ai_chance = { factor = 1 }
 		hidden_effect = {
 			country_event = {
-				id = KOR.63
+				id = KOR.43
 				days = 5
 			}
 		}
@@ -309,11 +669,10 @@ country_event = {
 		ai_chance = { factor = 1 }
 		hidden_effect = {
 			country_event = {
-				id = KOR.64
+				id = KOR.44
 				days = 5
 			}
 		}
-		add_manpower = -1
 	}
 }
 
@@ -331,7 +690,7 @@ country_event = { #시작6
 		ai_chance = { factor = 1 }
 		hidden_effect = {
 			country_event = {
-				id = KOR.64
+				id = KOR.66
 				days = 5
 			}
 		}
@@ -2105,28 +2464,6 @@ country_event = { #반란
 }
 
 country_event = { #
-	id = KOR.12
-	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.12"}
-	title = KOR.12.t
-	desc = KOR.12.desc
-	picture = GFX_
-	
-	is_triggered_only = yes
-	fire_only_once = yes
-	
-	option = { #
-		name = KOR.12.a
-		ai_chance = { factor = 1 }
-		814 = {
-			set_demilitarized_zone = yes
-		}
-		815 = {
-			set_demilitarized_zone = yes
-		}
-	}
-}
-
-country_event = { #
 	id = KOR.16
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.16"}
 	title = KOR.16.t
@@ -2543,1496 +2880,157 @@ country_event = {
 	}
 }
 
-country_event = { #
-	id = KOR.40
-	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.40"}
-	title = KOR.40.t
-	desc = KOR.40.desc
-	picture = GFX_overthrow_of_government
+# country_event = { #시작7
+# 	id = KOR.45
+# 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.45"}
+# 	title = KOR.45.t
+# 	desc = KOR.45.desc
+# 	picture = GFX_jung_kka_chi
 	
-	is_triggered_only = yes
-	fire_only_once = yes
+# 	is_triggered_only = yes
 	
-	option = { #조노연
-		name = KOR.40.a
-		ai_chance = { factor = 1 }
-		complete_national_focus = victory_Korean_Confederation_Trade_Unions
-		set_country_flag = Trade_Unions_is_victory
-	}
-}
+# 	option = { #
+# 		name = KOR.45.a
+# 		ai_chance = { factor = 1 }
+# 		country_event = { id = KOR.46 }
+# 	}
+# 	option = { #
+# 		name = KOR.45.b
+# 		ai_chance = { factor = 1 }
+# 		country_event = { id = KOR.14 }
+# 	}
+# }
 
-country_event = { #시작7
-	id = KOR.45
-	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.45"}
-	title = KOR.45.t
-	desc = KOR.45.desc
-	picture = GFX_jung_kka_chi
+# country_event = { #시작8
+# 	id = KOR.46
+# 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.46"}
+# 	title = KOR.46.t
+# 	desc = KOR.46.desc
+# 	picture = GFX_jung_kka_chi
 	
-	is_triggered_only = yes
+# 	is_triggered_only = yes
 	
-	option = { #
-		name = KOR.45.a
-		ai_chance = { factor = 1 }
-		country_event = { id = KOR.46 }
-	}
-	option = { #
-		name = KOR.45.b
-		ai_chance = { factor = 1 }
-		country_event = { id = KOR.14 }
-	}
-}
+# 	option = { #
+# 		name = KOR.46.a
+# 		ai_chance = { factor = 1 }
+# 		country_event = { id = KOR.14 }
+# 	}
+# }
 
-country_event = { #시작8
-	id = KOR.46
-	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.46"}
-	title = KOR.46.t
-	desc = KOR.46.desc
-	picture = GFX_jung_kka_chi
+# country_event = { #시작9
+# 	id = KOR.47
+# 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.46"}
+# 	title = KOR.47.t
+# 	desc = KOR.47.desc
+# 	picture = GFX_NAREISION
 	
-	is_triggered_only = yes
+# 	is_triggered_only = yes
 	
-	option = { #
-		name = KOR.46.a
-		ai_chance = { factor = 1 }
-		country_event = { id = KOR.14 }
-	}
-}
+# 	option = { #
+# 		name = KOR.47.a
+# 		ai_chance = { factor = 1 }
+# 		country_event = { id = KOR.44 }
+# 	}
+# 	option = { #
+# 		name = KOR.47.b
+# 		ai_chance = { factor = 1 }
+# 		country_event = { id = KOR.48 }
+# 	}
+# 	option = { #
+# 		name = KOR.47.c
+# 		ai_chance = { factor = 1 }
+# 		country_event = { id = KOR.14 }
+# 	}
+# }
 
-country_event = { #시작9
-	id = KOR.47
-	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.46"}
-	title = KOR.47.t
-	desc = KOR.47.desc
-	picture = GFX_NAREISION
+# country_event = { #시작9
+# 	id = KOR.48
+# 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.48"}
+# 	title = KOR.48.t
+# 	desc = KOR.48.desc
+# 	picture = GFX_NAREISION
 	
-	is_triggered_only = yes
+# 	is_triggered_only = yes
 	
-	option = { #
-		name = KOR.47.a
-		ai_chance = { factor = 1 }
-		country_event = { id = KOR.44 }
-	}
-	option = { #
-		name = KOR.47.b
-		ai_chance = { factor = 1 }
-		country_event = { id = KOR.48 }
-	}
-	option = { #
-		name = KOR.47.c
-		ai_chance = { factor = 1 }
-		country_event = { id = KOR.14 }
-	}
-}
+# 	option = { #
+# 		name = KOR.48.a
+# 		ai_chance = { factor = 1 }
+# 		country_event = { id = KOR.49 }
+# 	}
+# 	option = { #
+# 		name = KOR.48.b
+# 		ai_chance = { factor = 1 }
+# 		country_event = { id = KOR.51 }
+# 	}
+# 	option = { #
+# 		name = KOR.48.c
+# 		ai_chance = { factor = 1 }
+# 		country_event = { id = KOR.14 }
+# 	}
+# }
 
-country_event = { #시작9
-	id = KOR.48
-	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.48"}
-	title = KOR.48.t
-	desc = KOR.48.desc
-	picture = GFX_NAREISION
+# country_event = { #시작6
+# 	id = KOR.49
+# 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.49"}
+# 	title = KOR.49.t
+# 	desc = KOR.44.desc
+# 	picture = GFX_Mapo_galmegi
 	
-	is_triggered_only = yes
+# 	is_triggered_only = yes
 	
-	option = { #
-		name = KOR.48.a
-		ai_chance = { factor = 1 }
-		country_event = { id = KOR.49 }
-	}
-	option = { #
-		name = KOR.48.b
-		ai_chance = { factor = 1 }
-		country_event = { id = KOR.51 }
-	}
-	option = { #
-		name = KOR.48.c
-		ai_chance = { factor = 1 }
-		country_event = { id = KOR.14 }
-	}
-}
+# 	option = { #
+# 		name = KOR.49.a
+# 		ai_chance = { factor = 1 }
+# 		country_event = { id = KOR.50 }
+# 	}
+# 	option = { #
+# 		name = KOR.49.b
+# 		ai_chance = { factor = 1 }
+# 		country_event = { id = KOR.14 }
+# 	}
+# }
 
-country_event = { #시작6
-	id = KOR.49
-	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.49"}
-	title = KOR.49.t
-	desc = KOR.44.desc
-	picture = GFX_Mapo_galmegi
+# country_event = { #시작6
+# 	id = KOR.50
+# 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.50"}
+# 	title = KOR.50.t
+# 	desc = KOR.50.desc
+# 	picture = GFX_Mapo_galmegi
 	
-	is_triggered_only = yes
+# 	is_triggered_only = yes
 	
-	option = { #
-		name = KOR.49.a
-		ai_chance = { factor = 1 }
-		country_event = { id = KOR.50 }
-	}
-	option = { #
-		name = KOR.49.b
-		ai_chance = { factor = 1 }
-		country_event = { id = KOR.14 }
-	}
-}
+# 	option = { #
+# 		name = KOR.50.a
+# 		ai_chance = { factor = 1 }
+# 		country_event = { id = KOR.14 }
+# 	}
+# }
 
-country_event = { #시작6
-	id = KOR.50
-	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.50"}
-	title = KOR.50.t
-	desc = KOR.50.desc
-	picture = GFX_Mapo_galmegi
+# country_event = { #시작9
+# 	id = KOR.51
+# 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.51"}
+# 	title = KOR.51.t
+# 	desc = KOR.51.desc
+# 	picture = GFX_NAREISION
 	
-	is_triggered_only = yes
+# 	is_triggered_only = yes
 	
-	option = { #
-		name = KOR.50.a
-		ai_chance = { factor = 1 }
-		country_event = { id = KOR.14 }
-	}
-}
-
-country_event = { #시작9
-	id = KOR.51
-	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.51"}
-	title = KOR.51.t
-	desc = KOR.51.desc
-	picture = GFX_NAREISION
-	
-	is_triggered_only = yes
-	
-	option = { #
-		name = KOR.51.a
-		ai_chance = { factor = 1 }
-		country_event = { id = KOR.55 }
-	}
-	option = { #
-		name = KOR.51.b
-		ai_chance = { factor = 1 }
-		country_event = { id = KOR. }
-	}
-	option = { #
-		name = KOR.51.c
-		ai_chance = { factor = 1 }
-		country_event = { id = KOR.14 }
-	}
-}
-
-# Spanish Civil War - La Resistance Edition
-country_event = {
-	id = KOR.53
-	title = KOR.53.t
-	desc = KOR.53.desc
-	picture = GFX_report_event_spain_civil_war_soldiers
-	
-	is_triggered_only = yes
-
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event KOR.53"
-		hidden_effect = {
-			every_owned_state = {
-				limit = {
-					is_core_of = ROOT
-				}
-				set_state_flag = KOR_core_of_spain_flag
-			}
-			set_global_flag = { flag = KOR_civil_war_startup value = 1 days = 3 } # Make AI avoid attacking for a few days
-		}
-		if = {
-			limit = {
-				has_completed_focus = Yeo_Un_hyung_Elected
-			}
-			hidden_effect = {
-				FKR = { # Switch the tag alias for SPA - it now becomes SPD - the republicans
-					drop_cosmetic_tag = yes
-					set_politics = {
-						ruling_party = fascism
-					}
-					create_country_leader = {
-  						name = "이범석"
-  						desc = "POLITICS_LEE_BEOM_DESC"
-  						picture = "Portrait_Lee_Beomseok.dds"
-  						expire = "1947.7.19"
-  						ideology = lee_fascism
-  						traits = {
-    						#
-  						}
-					}
-					set_popularities = {
-						fascism = 100
-					}
-					retire_ideology_leader = democratic
-					retire_ideology_leader = neutrality
-					retire_ideology_leader = communism
-				}
-				# Switch the tag alias for the player's country - the player goes from SPR to SPA
-				set_politics = {
-					ruling_party = social_democracy
-				}
-				add_popularity = {
-				    ideology = fascism
-				    popularity = -0.25
-				}
-				# Add Nationalist and Republican Garrison division templates
-
-				# Give SPD Madrid if the Nationalists don't have complete garrison control over it - becomes capital
-				if = {
-					limit = {
-						525 = {
-							check_variable = { var = KOR_garrison_control value = 1 compare = equals }
-						}
-					}
-					FKR = {
-						transfer_state = 525
-					}
-					525 = {
-						set_state_flag = KOR_sided_with_republicans_flag
-						create_unit = {
-							division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.1" 
-							owner = FKR
-							allow_spawning_on_enemy_provs = yes
-							count = 3
-						}
-					}
-				}
-				else_if = {
-					limit = {
-						525 = {
-							check_variable = { var = KOR_garrison_control value = 2 compare = equals }
-						}
-					}
-					FKR = {
-						transfer_state = 525
-					}
-					525 = {
-						set_state_flag = KOR_sided_with_republicans_flag
-						create_unit = {
-							division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.1" 
-							owner = FKR
-							allow_spawning_on_enemy_provs = yes
-							count = 2
-						}
-						create_unit = {
-							division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.1" 
-							owner = KOR
-							allow_spawning_on_enemy_provs = yes
-							count = 1
-						}
-					}
-				}
-				else_if = {
-					limit = {
-						525 = {
-							check_variable = { var = KOR_garrison_control value = 3 compare = equals }
-						}
-					}
-					FKR = {
-						transfer_state = 525
-					}
-					525 = {
-						set_state_flag = KOR_sided_with_republicans_flag
-						create_unit = {
-							division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.1" 
-							owner = FKR
-							allow_spawning_on_enemy_provs = yes
-							count = 1
-						}
-						create_unit = {
-							division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.1" 
-							owner = KOR
-							allow_spawning_on_enemy_provs = yes
-							count = 2
-						}
-					}
-				}
-				# If Madrid is controlled by Nationalists, but a random state exists that has total Republican garrison control, give that as capital first
-				if = {
-					limit = {
-						525 = {
-							check_variable = { var = KOR_garrison_control value = 4 compare = equals }
-						}
-						any_owned_state = {
-							check_variable = { var = KOR_garrison_control value = 1 compare = equals }
-						}
-					}
-					random_owned_state = {
-						limit = {
-							check_variable = { var = KOR_garrison_control value = 1 compare = equals }
-						}
-						FKR = {
-							transfer_state = PREV
-						}
-						set_state_flag = KOR_sided_with_republicans_flag
-						create_unit = {
-							division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.1" 
-							owner = FKR
-							allow_spawning_on_enemy_provs = yes
-							count = 3
-						}
-					}
-				}
-				# Give a state that does not have total Nationalist garrison control to the Republicans as their capital - in decreasing order of Republican control
-				else_if = {
-					limit = {
-						525 = {
-							check_variable = { var = KOR_garrison_control value = 4 compare = equals }
-						}
-						any_owned_state = {
-							check_variable = { var = KOR_garrison_control value = 2 compare = equals }
-						}
-					}
-					random_owned_state = {
-						limit = {
-							check_variable = { var = KOR_garrison_control value = 2 compare = equals }
-						}
-						FKR = {
-							transfer_state = PREV
-						}
-						set_state_flag = KOR_sided_with_republicans_flag
-						create_unit = {
-							division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.1" 
-							owner = FKR
-							allow_spawning_on_enemy_provs = yes
-							count = 2
-						}
-						create_unit = {
-							division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.1" 
-							owner = KOR
-							allow_spawning_on_enemy_provs = yes
-							count = 1
-						}
-					}
-				}
-				else_if = {
-					limit = {
-						525 = {
-							check_variable = { var = KOR_garrison_control value = 4 compare = equals }
-						}
-						any_owned_state = {
-							check_variable = { var = KOR_garrison_control value = 3 compare = equals }
-						}
-					}
-					random_owned_state = {
-						limit = {
-							check_variable = { var = KOR_garrison_control value = 3 compare = equals }
-						}
-						FKR = {
-							transfer_state = PREV
-						}
-						set_state_flag = KOR_sided_with_republicans_flag
-						create_unit = {
-							division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.1" 
-							owner = FKR
-							allow_spawning_on_enemy_provs = yes
-							count = 1
-						}
-						create_unit = {
-							division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.1" 
-							owner = KOR
-							allow_spawning_on_enemy_provs = yes
-							count = 2
-						}
-					}
-				}
-				# Split equipment and army/navy depending on which focuses the Republicans have finished
-				if = {
-					limit = {
-						NOT = { has_country_flag = KOR_enlarge_the_weapon_caches_flag }
-					}
-					transfer_units_fraction = {
-						target = FKR
-						size = 0.5 # Fallback in case one of the ratios below are not stipulated
-						stockpile_ratio = 0.5
-						army_ratio = 0.5
-						navy_ratio = 0.5
-						air_ratio = 0.5
-						keep_unit_leaders = {
-						    
-						}
-                        #keep_unit_leaders_trigger = {
-						#	has_trait = trait_KOR_communism
-						#}
-					}
-				}
-				if = {
-					limit = {
-						has_country_flag = KOR_enlarge_the_weapon_caches_flag
-						NOT = { has_country_flag = KOR_disband_the_army_flag }
-					}
-					transfer_units_fraction = {
-						target = FKR
-						size = 0.5
-						stockpile_ratio = 0.8
-						army_ratio = 0.5
-						navy_ratio = 0.5
-						air_ratio = 0.5
-						keep_unit_leaders = {
-						    
-						}
-                        #keep_unit_leaders_trigger = {
-						#	has_trait = trait_KOR_communism
-						#}
-					}
-				}
-				if = {
-					limit = {
-						has_country_flag = KOR_disband_the_army_flag
-					}
-					transfer_units_fraction = {
-						target = FKR
-						size = 0.5
-						stockpile_ratio = 0.8
-						army_ratio = 0.8
-						navy_ratio = 0.5
-						air_ratio = 0.5
-						keep_unit_leaders = {
-						    
-						}
-                        #keep_unit_leaders_trigger = {
-						#	has_trait = trait_KOR_communism
-						#}
-					}
-				}
-				# If player has completed this focus, give North Africa and spawn units there (this effect is run first so the tag has any territory whatsoever - it's assumed all players take this focus)
-				if = {
-					limit = {
-						has_completed_focus = threat_of_communism
-					}
-					798 = {
-						create_unit = {
-							division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.3" 
-							owner = KOR
-						}
-						create_unit = {
-							division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.3" 
-							owner = KOR
-						}
-						create_unit = {
-							division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.3" 
-							owner = KOR
-						}
-						if = {
-							limit = {
-								ROOT = { NOT = { has_country_flag = KOR_disband_the_army_flag } }
-							}
-							create_unit = {
-								division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.3" 
-								owner = KOR
-							}
-							create_unit = {
-								division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.3" 
-								owner = KOR
-							}
-						}
-					}
-				}
-				# Republicans remove their army
-
-				# Switch leaders who do not have nationalist sympathies to the Republicans
-				#every_unit_leader = {
-				#	limit = {
-				#		NOT = { has_trait = trait_KOR_communism }
-				#	}
-				#	set_nationality = KOR
-				#}
-				# Remove unnecessary traits from Nationalist commanders (no longer relevant to see for the player, as the SCW has started)
-				#every_unit_leader = {
-				#	limit = {
-				#		has_trait = trait_KOR_communism
-				#	}
-				#	remove_unit_leader_trait = trait_KOR_communism
-				#}
-				# Add various loyalist traits that now become relevant - indicating loyalties to the different subfactions
-
-				# Add 3 Republican garrisons to every state where the Nationalists have NONE control
-					every_owned_state = {
-					limit = {
-						check_variable = { var = KOR_garrison_control value = 1 compare = equals }
-					}
-					# Transfer states and set flag to prepare for post-Civil War de-coring
-					FKR = {
-						transfer_state = PREV
-					}
-					set_state_flag = KOR_sided_with_republicans_flag
-					create_unit = {
-						division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.1" 
-						owner = FKR
-						allow_spawning_on_enemy_provs = yes
-						count = 3
-					}
-				}
-				802 = { # Extra 6 divisions to make Madrid harder to capture (as historically)
-					create_unit = {
-						division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.1" 
-						owner = FKR
-						allow_spawning_on_enemy_provs = yes
-						count = 6
-					}
-				}
-				# Add 3 Nationalist garrisons to every state where the Nationalists have TOTAL control
-				every_owned_state = {
-					limit = {
-						check_variable = { var = KOR_garrison_control value = 4 compare = equals }
-					}
-					create_unit = {
-						division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.1" 
-						owner = KOR
-						allow_spawning_on_enemy_provs = yes
-						count = 3
-					}
-				}
-				# Trigger war between the sides - necessary because the next effects spawn units on contested provinces and this requires both sides to be at war
-				FKR = {
-					declare_war_on = {
-					    target = KOR
-					    type = civil_war
-					}
-					add_civil_war_target = KOR
-				}
-				# 2 Republican and 1 Nationalist garrisons spawned on all states with WEAK Nationalist control (except for Northern Garrison states)
-				every_owned_state = {
-					limit = {
-						check_variable = { var = KOR_garrison_control value = 2 compare = equals }
-						NOT = { has_state_flag = KOR_northern_garrisons_state_flag }
-					}
-					# Transfer states and set flag to prepare for post-Civil War de-coring
-					FKR = {
-						transfer_state = PREV
-					}
-					set_state_flag = KOR_sided_with_republicans_flag
-					create_unit = {
-						division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.1" 
-						owner = FKR
-						allow_spawning_on_enemy_provs = yes
-						count = 2
-					}
-					create_unit = {
-						division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.1" 
-						owner = KOR
-						allow_spawning_on_enemy_provs = yes
-						count = 1
-					}
-				}
-				# 2 Nationalist and 1 Republican garrisons spawned on all states with STRONG Nationalist control
-				every_owned_state = {
-					limit = {
-						check_variable = { var = KOR_garrison_control value = 3 compare = equals }
-						NOT = { has_state_flag = KOR_northern_garrisons_state_flag }
-					}
-					# Transfer states and set flag to prepare for post-Civil War de-coring
-					FKR = {
-						transfer_state = PREV
-					}
-					set_state_flag = KOR_sided_with_republicans_flag
-					create_unit = {
-						division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.1" 
-						owner = FKR
-						allow_spawning_on_enemy_provs = yes
-						count = 1
-					}
-					create_unit = {
-						division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.1" 
-						owner = KOR
-						allow_spawning_on_enemy_provs = yes
-						count = 2
-					}
-				}
-				# If Negotiate Carlist Support has been taken, add Nationalist units in Navarra
-				if = {
-					limit = {
-						has_country_flag = KOR_negotiate_carlist_support_flag
-					}
-					797 = {
-						create_unit = {
-							division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.3" 
-							owner = KOR
-							allow_spawning_on_enemy_provs = yes
-							count = 5
-						}
-					}
-				}
-				# If Republicans secured the Guardia Civil, add Civil divisions to random states for the Republicans, and Asalto divisions to random states for the Nationalists
-				if = {
-					limit = {
-						has_country_flag = KOR_secure_the_guardia_civil_flag
-					}
-					random_state = {
-						limit = {
-							check_variable = { var = KOR_garrison_control value = 3 compare = greater_than_or_equals }
-						}
-						create_unit = {
-							division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.3" 
-							owner = KOR
-							allow_spawning_on_enemy_provs = yes
-						}
-					}
-					random_state = {
-						limit = {
-							check_variable = { var = KOR_garrison_control value = 3 compare = greater_than_or_equals }
-						}
-						create_unit = {
-							division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.3" 
-							owner = KOR
-							allow_spawning_on_enemy_provs = yes
-						}
-					}
-					random_state = {
-						limit = {
-							check_variable = { var = KOR_garrison_control value = 3 compare = greater_than_or_equals }
-						}
-						create_unit = {
-							division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.3" 
-							owner = KOR
-							allow_spawning_on_enemy_provs = yes
-						}
-					}
-					if = {
-						limit = {
-							difficulty > 1
-							ROOT = {
-								is_ai = no
-							}
-						}
-						random_state = {
-							limit = {
-								check_variable = { var = KOR_garrison_control value = 3 compare = greater_than_or_equals }
-							}
-							create_unit = {
-								division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.3" 
-								owner = KOR
-								allow_spawning_on_enemy_provs = yes
-							}
-						}
-						random_state = {
-							limit = {
-								check_variable = { var = KOR_garrison_control value = 3 compare = greater_than_or_equals }
-							}
-							create_unit = {
-								division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.3" 
-								owner = KOR
-								allow_spawning_on_enemy_provs = yes
-							}
-						}
-					}
-					random_state = {
-						limit = {
-							check_variable = { var = KOR_garrison_control value = 2 compare = less_than_or_equals }
-						}
-						create_unit = {
-							division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.1" 
-							owner = FKR
-							allow_spawning_on_enemy_provs = yes
-							count = 1
-						}
-					}
-					random_state = {
-						limit = {
-							check_variable = { var = KOR_garrison_control value = 2 compare = less_than_or_equals }
-						}
-						create_unit = {
-							division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.1" 
-							owner = FKR
-							allow_spawning_on_enemy_provs = yes
-							count = 1
-						}
-					}
-					random_state = {
-						limit = {
-							check_variable = { var = KOR_garrison_control value = 2 compare = less_than_or_equals }
-						}
-						create_unit = {
-							division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.1" 
-							owner = FKR
-							allow_spawning_on_enemy_provs = yes
-							count = 1
-						}
-					}
-					random_state = {
-						limit = {
-							check_variable = { var = KOR_garrison_control value = 2 compare = less_than_or_equals }
-						}
-						create_unit = {
-							division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.1" 
-							owner = FKR
-							allow_spawning_on_enemy_provs = yes
-							count = 1
-						}
-					}
-					random_state = {
-						limit = {
-							check_variable = { var = KOR_garrison_control value = 2 compare = less_than_or_equals }
-						}
-						create_unit = {
-							division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.1" 
-							owner = FKR
-							allow_spawning_on_enemy_provs = yes
-							count = 1
-						}
-					}
-					random_state = {
-						limit = {
-							check_variable = { var = KOR_garrison_control value = 2 compare = less_than_or_equals }
-						}
-						create_unit = {
-							division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.1" 
-							owner = FKR
-							allow_spawning_on_enemy_provs = yes
-							count = 1
-						}
-					}
-					if = {
-						limit = {
-							difficulty > 1
-							ROOT = {
-								is_ai = no
-							}
-						}
-						random_state = {
-							limit = {
-								check_variable = { var = KOR_garrison_control value = 2 compare = less_than_or_equals }
-							}
-							create_unit = {
-								division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.1" 
-								owner = FKR
-								allow_spawning_on_enemy_provs = yes
-								count = 1
-							}
-						}
-						random_state = {
-							limit = {
-								check_variable = { var = KOR_garrison_control value = 2 compare = less_than_or_equals }
-							}
-							create_unit = {
-								division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.1" 
-								owner = FKR
-								allow_spawning_on_enemy_provs = yes
-								count = 1
-							}
-						}
-						random_state = {
-							limit = {
-								check_variable = { var = KOR_garrison_control value = 2 compare = less_than_or_equals }
-							}
-							create_unit = {
-								division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.1" 
-								owner = FKR
-								allow_spawning_on_enemy_provs = yes
-								count = 1
-							}
-						}
-						random_state = {
-							limit = {
-								check_variable = { var = KOR_garrison_control value = 2 compare = less_than_or_equals }
-							}
-							create_unit = {
-								division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.1" 
-								owner = FKR
-								allow_spawning_on_enemy_provs = yes
-								count = 1
-							}
-						}
-					}
-				}
-				# If Republicans secured the Guardia de Asalto, do the opposite distribution
-				else_if = {
-					limit = {
-						has_country_flag = KOR_secure_the_guardia_de_asalto_flag
-					}
-					random_state = {
-						limit = {
-							check_variable = { var = KOR_garrison_control value = 3 compare = greater_than_or_equals }
-						}
-						create_unit = {
-							division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.1" 
-							owner = KOR
-							allow_spawning_on_enemy_provs = yes
-							count = 1
-						}
-					}
-					random_state = {
-						limit = {
-							check_variable = { var = KOR_garrison_control value = 3 compare = greater_than_or_equals }
-						}
-						create_unit = {
-							division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.1" 
-							owner = KOR
-							allow_spawning_on_enemy_provs = yes
-							count = 1
-						}
-					}
-					random_state = {
-						limit = {
-							check_variable = { var = KOR_garrison_control value = 3 compare = greater_than_or_equals }
-						}
-						create_unit = {
-							division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.1" 
-							owner = KOR
-							allow_spawning_on_enemy_provs = yes
-							count = 1
-						}
-					}
-					random_state = {
-						limit = {
-							check_variable = { var = KOR_garrison_control value = 3 compare = greater_than_or_equals }
-						}
-						create_unit = {
-							division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.1" 
-							owner = KOR
-							allow_spawning_on_enemy_provs = yes
-							count = 1
-						}
-					}
-					random_state = {
-						limit = {
-							check_variable = { var = KOR_garrison_control value = 3 compare = greater_than_or_equals }
-						}
-						create_unit = {
-							division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.1" 
-							owner = KOR
-							allow_spawning_on_enemy_provs = yes
-							count = 1
-						}
-					}
-					random_state = {
-						limit = {
-							check_variable = { var = KOR_garrison_control value = 3 compare = greater_than_or_equals }
-						}
-						create_unit = {
-							division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.1" 
-							owner = KOR
-							allow_spawning_on_enemy_provs = yes
-							count = 1
-						}
-					}
-					if = {
-						limit = {
-							difficulty > 1
-							ROOT = {
-								is_ai = no
-							}
-						}
-						random_state = {
-							limit = {
-								check_variable = { var = KOR_garrison_control value = 3 compare = greater_than_or_equals }
-							}
-							create_unit = {
-								division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.1" 
-								owner = KOR
-								allow_spawning_on_enemy_provs = yes
-								count = 1
-							}
-						}
-						random_state = {
-							limit = {
-								check_variable = { var = KOR_garrison_control value = 3 compare = greater_than_or_equals }
-							}
-							create_unit = {
-								division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.1" 
-								owner = KOR
-								allow_spawning_on_enemy_provs = yes
-								count = 1
-							}
-						}
-						random_state = {
-							limit = {
-								check_variable = { var = KOR_garrison_control value = 3 compare = greater_than_or_equals }
-							}
-							create_unit = {
-								division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.1" 
-								owner = KOR
-								allow_spawning_on_enemy_provs = yes
-								count = 1
-							}
-						}
-						random_state = {
-							limit = {
-								check_variable = { var = KOR_garrison_control value = 3 compare = greater_than_or_equals }
-							}
-							create_unit = {
-								division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.1" 
-								owner = KOR
-								allow_spawning_on_enemy_provs = yes
-								count = 1
-							}
-						}
-					}
-					random_state = {
-						limit = {
-							check_variable = { var = KOR_garrison_control value = 2 compare = less_than_or_equals }
-							check_variable = { var = KOR_garrison_control value = 1 compare = greater_than_or_equals }
-						}
-						create_unit = {
-							division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.3" 
-							owner = FKR
-							allow_spawning_on_enemy_provs = yes
-						}
-					}
-					random_state = {
-						limit = {
-							check_variable = { var = KOR_garrison_control value = 2 compare = less_than_or_equals }
-							check_variable = { var = KOR_garrison_control value = 1 compare = greater_than_or_equals }
-						}
-						create_unit = {
-							division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.3" 
-							owner = FKR
-							allow_spawning_on_enemy_provs = yes
-						}
-					}
-					random_state = {
-						limit = {
-							check_variable = { var = KOR_garrison_control value = 2 compare = less_than_or_equals }
-							check_variable = { var = KOR_garrison_control value = 1 compare = greater_than_or_equals }
-						}
-						create_unit = {
-							division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.3" 
-							owner = FKR
-							allow_spawning_on_enemy_provs = yes
-						}
-					}
-					if = {
-						limit = {
-							difficulty > 1
-							ROOT = {
-								is_ai = no
-							}
-						}
-						random_state = {
-						limit = {
-							check_variable = { var = KOR_garrison_control value = 2 compare = less_than_or_equals }
-							check_variable = { var = KOR_garrison_control value = 1 compare = greater_than_or_equals }
-						}
-						create_unit = {
-							division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.3" 
-							owner = FKR
-							allow_spawning_on_enemy_provs = yes
-						}
-					}
-						random_state = {
-						limit = {
-							check_variable = { var = KOR_garrison_control value = 2 compare = less_than_or_equals }
-							check_variable = { var = KOR_garrison_control value = 1 compare = greater_than_or_equals }
-						}
-						create_unit = {
-							division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.3" 
-							owner = FKR
-							allow_spawning_on_enemy_provs = yes
-						}
-					}
-					}
-				}
-				else = { #Extra backup in case player never took any focuses - SPA gets BOTH types! Suck on it, Reds!
-
-	
-					#Guardia de Asalto
-					random_state = {
-						limit = {
-							check_variable = { var = KOR_garrison_control value = 3 compare = greater_than_or_equals }
-						}
-						create_unit = {
-							division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.3" 
-							owner = KOR
-							allow_spawning_on_enemy_provs = yes
-						}
-					}
-					random_state = {
-						limit = {
-							check_variable = { var = KOR_garrison_control value = 3 compare = greater_than_or_equals }
-						}
-						create_unit = {
-							division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.3" 
-							owner = KOR
-							allow_spawning_on_enemy_provs = yes
-						}
-					}
-					random_state = {
-						limit = {
-							check_variable = { var = KOR_garrison_control value = 3 compare = greater_than_or_equals }
-						}
-						create_unit = {
-							division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.3" 
-							owner = KOR
-							allow_spawning_on_enemy_provs = yes
-						}
-					}
-					if = {
-						limit = {
-							difficulty > 1
-							ROOT = {
-								is_ai = no
-							}
-						}
-						random_state = {
-							limit = {
-								check_variable = { var = KOR_garrison_control value = 3 compare = greater_than_or_equals }
-							}
-							create_unit = {
-								division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.3" 
-								owner = KOR
-								allow_spawning_on_enemy_provs = yes
-							}
-						}
-						random_state = {
-							limit = {
-								check_variable = { var = KOR_garrison_control value = 3 compare = greater_than_or_equals }
-							}
-							create_unit = {
-								division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.3" 
-								owner = KOR
-								allow_spawning_on_enemy_provs = yes
-							}
-						}
-					}
-	
-					# Guardia Civil
-					random_state = {
-						limit = {
-							check_variable = { var = KOR_garrison_control value = 3 compare = greater_than_or_equals }
-						}
-						create_unit = {
-							division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.1" 
-							owner = KOR
-							allow_spawning_on_enemy_provs = yes
-							count = 1
-						}
-					}
-					random_state = {
-						limit = {
-							check_variable = { var = KOR_garrison_control value = 3 compare = greater_than_or_equals }
-						}
-						create_unit = {
-							division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.1" 
-							owner = KOR
-							allow_spawning_on_enemy_provs = yes
-							count = 1
-						}
-					}
-					random_state = {
-						limit = {
-							check_variable = { var = KOR_garrison_control value = 3 compare = greater_than_or_equals }
-						}
-						create_unit = {
-							division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.1" 
-							owner = KOR
-							allow_spawning_on_enemy_provs = yes
-							count = 1
-						}
-					}
-					random_state = {
-						limit = {
-							check_variable = { var = KOR_garrison_control value = 3 compare = greater_than_or_equals }
-						}
-						create_unit = {
-							division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.1" 
-							owner = KOR
-							allow_spawning_on_enemy_provs = yes
-							count = 1
-						}
-					}
-					random_state = {
-						limit = {
-							check_variable = { var = KOR_garrison_control value = 3 compare = greater_than_or_equals }
-						}
-						create_unit = {
-							division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.1" 
-							owner = KOR
-							allow_spawning_on_enemy_provs = yes
-							count = 1
-						}
-					}
-					random_state = {
-						limit = {
-							check_variable = { var = KOR_garrison_control value = 3 compare = greater_than_or_equals }
-						}
-						create_unit = {
-							division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.1" 
-							owner = KOR
-							allow_spawning_on_enemy_provs = yes
-							count = 1
-						}
-					}
-					if = {
-						limit = {
-							difficulty > 1
-							ROOT = {
-								is_ai = no
-							}
-						}
-						random_state = {
-						limit = {
-							check_variable = { var = KOR_garrison_control value = 3 compare = greater_than_or_equals }
-						}
-						create_unit = {
-							division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.1" 
-							owner = KOR
-							allow_spawning_on_enemy_provs = yes
-							count = 1
-						}
-					}
-						random_state = {
-						limit = {
-							check_variable = { var = KOR_garrison_control value = 3 compare = greater_than_or_equals }
-						}
-						create_unit = {
-							division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.1" 
-							owner = KOR
-							allow_spawning_on_enemy_provs = yes
-							count = 1
-						}
-					}
-						random_state = {
-						limit = {
-							check_variable = { var = KOR_garrison_control value = 3 compare = greater_than_or_equals }
-						}
-						create_unit = {
-							division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.1" 
-							owner = KOR
-							allow_spawning_on_enemy_provs = yes
-							count = 1
-						}
-					}
-						random_state = {
-						limit = {
-							check_variable = { var = KOR_garrison_control value = 3 compare = greater_than_or_equals }
-						}
-						create_unit = {
-							division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.1" 
-							owner = KOR
-							allow_spawning_on_enemy_provs = yes
-							count = 1
-						}
-					}
-					}
-				}
-				# If Republicans had time to Train the Union Youth, add these divisions to random states that have at MOST WEAK Nationalist control
-				if = {
-					limit = {
-						has_country_flag = KOR_train_the_union_youth_flag
-					}
-					random_state = {
-						limit = {
-							check_variable = { var = KOR_garrison_control value = 2 compare = less_than_or_equals }
-							check_variable = { var = KOR_garrison_control value = 1 compare = greater_than_or_equals }
-						}
-						create_unit = {
-							division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.2" 
-							owner = FKR
-							allow_spawning_on_enemy_provs = yes
-							count = 1
-						}
-						if = {
-							limit = {
-								difficulty > 1
-								ROOT = {
-									is_ai = no
-								}
-							}
-							create_unit = {
-								division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.2" 
-								owner = FKR
-								allow_spawning_on_enemy_provs = yes
-								count = 1
-							}
-						}
-					}
-					random_state = {
-						limit = {
-							check_variable = { var = KOR_garrison_control value = 2 compare = less_than_or_equals }
-							check_variable = { var = KOR_garrison_control value = 1 compare = greater_than_or_equals }
-						}
-						create_unit = {
-							division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.2" 
-							owner = FKR
-							allow_spawning_on_enemy_provs = yes
-							count = 1
-						}
-						if = {
-							limit = {
-								difficulty > 1
-								ROOT = {
-									is_ai = no
-								}
-							}
-							create_unit = {
-								division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.2" 
-								owner = FKR
-								allow_spawning_on_enemy_provs = yes
-								count = 1
-							}
-						}
-					}
-					random_state = {
-						limit = {
-							check_variable = { var = KOR_garrison_control value = 2 compare = less_than_or_equals }
-							check_variable = { var = KOR_garrison_control value = 1 compare = greater_than_or_equals }
-						}
-						create_unit = {
-							division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.2" 
-							owner = FKR
-							allow_spawning_on_enemy_provs = yes
-							count = 1
-						}
-						if = {
-							limit = {
-								difficulty > 1
-								ROOT = {
-									is_ai = no
-								}
-							}
-							create_unit = {
-								division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.2" 
-								owner = FKR
-								allow_spawning_on_enemy_provs = yes
-								count = 1
-							}
-						}
-					}
-					random_state = {
-						limit = {
-							check_variable = { var = KOR_garrison_control value = 2 compare = less_than_or_equals }
-							check_variable = { var = KOR_garrison_control value = 1 compare = greater_than_or_equals }
-						}
-						create_unit = {
-							division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.2" 
-							owner = FKR
-							allow_spawning_on_enemy_provs = yes
-							count = 1
-						}
-						if = {
-							limit = {
-								difficulty > 1
-								ROOT = {
-									is_ai = no
-								}
-							}
-							create_unit = {
-								division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.2" 
-								owner = FKR
-								allow_spawning_on_enemy_provs = yes
-								count = 1
-							}
-						}
-					}
-					random_state = {
-						limit = {
-							check_variable = { var = KOR_garrison_control value = 2 compare = less_than_or_equals }
-							check_variable = { var = KOR_garrison_control value = 1 compare = greater_than_or_equals }
-						}
-						create_unit = {
-							division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.2" 
-							owner = FKR
-							allow_spawning_on_enemy_provs = yes
-							count = 1
-						}
-						if = {
-							limit = {
-								difficulty > 1
-								ROOT = {
-									is_ai = no
-								}
-							}
-							create_unit = {
-								division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0.2" 
-								owner = FKR
-								allow_spawning_on_enemy_provs = yes
-								count = 1
-							}
-						}
-					}
-				}
-				# If Republicans had time to Distribute Arms to the People, add these divisions to random states that have at MOST WEAK Nationalist control
-				if = {
-					limit = {
-						has_country_flag = KOR_distribute_arms_to_the_people_flag
-					}
-					random_state = {
-						limit = {
-							check_variable = { var = KOR_garrison_control value = 2 compare = less_than_or_equals }
-							check_variable = { var = KOR_garrison_control value = 1 compare = greater_than_or_equals }
-						}
-						create_unit = {
-							division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0" 
-							owner = FKR
-							allow_spawning_on_enemy_provs = yes
-							count = 2
-						}
-					}
-					random_state = {
-						limit = {
-							check_variable = { var = KOR_garrison_control value = 2 compare = less_than_or_equals }
-							check_variable = { var = KOR_garrison_control value = 1 compare = greater_than_or_equals }
-						}
-						create_unit = {
-							division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0" 
-							owner = FKR
-							allow_spawning_on_enemy_provs = yes
-							count = 2
-						}
-					}
-					random_state = {
-						limit = {
-							check_variable = { var = KOR_garrison_control value = 2 compare = less_than_or_equals }
-							check_variable = { var = KOR_garrison_control value = 1 compare = greater_than_or_equals }
-						}
-						create_unit = {
-							division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0" 
-							owner = FKR
-							allow_spawning_on_enemy_provs = yes
-							count = 2
-						}
-					}
-					random_state = {
-						limit = {
-							check_variable = { var = KOR_garrison_control value = 2 compare = less_than_or_equals }
-							check_variable = { var = KOR_garrison_control value = 1 compare = greater_than_or_equals }
-						}
-						create_unit = {
-							division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0" 
-							owner = FKR
-							allow_spawning_on_enemy_provs = yes
-							count = 2
-						}
-					}
-					random_state = {
-						limit = {
-							check_variable = { var = KOR_garrison_control value = 2 compare = less_than_or_equals }
-							check_variable = { var = KOR_garrison_control value = 1 compare = greater_than_or_equals }
-						}
-						create_unit = {
-							division = "division_template = \"대한민국 향토사단\" start_experience_factor = 0" 
-							owner = FKR
-							allow_spawning_on_enemy_provs = yes
-							count = 2
-						}
-					}
-				}
-				# Load Spanish FT for Republicans, unlock relevant focuses
-				#SPD = {
-				#	load_focus_tree = {
-				#		tree = spanish_focus
-				#		keep_completed = no
-				#	}
-				#	unlock_national_focus = SPR_the_popular_front
-				#}
-				# Randomize which one they get, unless they had time to pick one
-				#random_list = {
-				#	10 = {
-				#		modifier = {
-				#			factor = 0
-				#			has_country_flag = KOR_secure_the_guardia_de_asalto_flag
-				#		}
-				#		SPD = { unlock_national_focus = SPR_secure_the_guardia_de_asalto }
-				#	}
-				#	10 = {
-				#		modifier = {
-				#			factor = 0
-				#			has_country_flag = KOR_secure_the_guardia_civil_flag
-				#		}
-				#		SPD = { unlock_national_focus = SPR_secure_the_guardia_civil }
-				#	}
-				#}
-				#SPD = {
-				#	unlock_national_focus = SPR_train_the_union_youth
-				#	unlock_national_focus = SPR_enlarge_the_weapon_caches
-				#	unlock_national_focus = SPR_distribute_arms_to_the_people
-				#	unlock_national_focus = SPR_disband_the_army
-				#	random_list = {
-				#		10 = {
-				#			modifier = {
-				#				factor = 0
-				#				is_historical_focus_on = yes
-				#			}
-				#			complete_national_focus = SPR_regional_defense_council_of_aragon
-				#		}
-				#		10 = {
-				#			complete_national_focus = SPR_maintain_the_second_republic
-				#		}
-				#		10 = {
-				#			modifier = {
-				#				factor = 0
-				#				is_historical_focus_on = yes
-				#			}
-				#			complete_national_focus = SPR_the_anti_fascist_workers_revolution
-				#		}
-				#	}
-				#}
-				# Unlock division templates for Nationalists
-				every_owned_state = {
-					set_state_flag = KOR_sided_with_nationalists_flag
-				}
-				if = {
-					limit = {
-						525 = { is_owned_by = ROOT }
-					}
-					set_capital = 525
-				}
-				else_if = {
-					limit = {
-						798 = { is_owned_by = ROOT }
-					}
-					set_capital = 798
-				}
-				else = {
-					random_owned_state = {
-						ROOT = { set_capital = PREV }
-					}
-				}
-				# Unlock division templates for Republicans
-				FKR = {
-					every_state = {
-						limit = {
-							has_state_flag = KOR_core_of_spain_flag
-						}
-						add_core_of = FKR
-					}
-					inherit_technology = KOR
-				}
-				if = {
-					limit = {
-						525 = { is_owned_by = FKR }
-					}
-					FKR = { set_capital = 525 }
-				}
-				else_if = {
-					limit = {
-						802 = { is_owned_by = FKR }
-					}
-					FKR = { set_capital = 802 }
-				}
-				else = {
-					random_owned_state = {
-						FKR = { set_capital = PREV }
-					}
-				}
-				FKR = {
-					add_timed_idea = { idea = FKR_death_before_surrender days = 900 }
-					set_party_name = { ideology = fascism long_name = FKR_neutrality_anarchism_party_long name = FKR_neutrality_anarchism_party }
-				}
-				set_party_name = { ideology = fascism long_name = FKR_neutrality_military_junta_party_long name = FKR_neutrality_military_junta_party }
-				#every_unit_leader = {
-				#	limit = {
-				#		has_unit_leader_flag = SPR_reassigned_flag
-				#	}
-				#	ROOT = { remove_unit_leader = PREV }
-				#}
-				add_timed_idea = { idea = KOR_death_before_surrender days = 900 }
-				set_global_flag = KOR_civil_war # Start civil war - used in many triggers
-			}
-		}
-		hidden_effect = {
-			# Marks gui as "dirty" so the code updates the layout to properly hide the unused branches
-			mark_focus_tree_layout_dirty = yes
-		}
-	}
-	
-	option = { # Option for Nationalists - 국민전선 통일 - 여운형 당선
-		name = kor.53.a
-		trigger = { has_completed_focus = Yeo_Un_hyung_Elected }
-		ai_chance = { factor = 1 }
-
-		# Remove Spirits that will no longer be relevant
-		custom_effect_tooltip = Yeo_Un_hyung_chosen
-		effect_tooltip = {
-			add_timed_idea = { idea = KOR_death_before_surrender days = 500 }
-			FKR = { add_timed_idea = { idea = FKR_death_before_surrender days = 500 } }
-		}
-		#complete_national_focus = 내전 중점
-	}
-}
+# 	option = { #
+# 		name = KOR.51.a
+# 		ai_chance = { factor = 1 }
+# 		country_event = { id = KOR.55 }
+# 	}
+# 	option = { #
+# 		name = KOR.51.b
+# 		ai_chance = { factor = 1 }
+# 		country_event = { id = KOR. }
+# 	}
+# 	option = { #
+# 		name = KOR.51.c
+# 		ai_chance = { factor = 1 }
+# 		country_event = { id = KOR.14 }
+# 	}
+# }
 
 country_event = { #Size of funds discussion
 	id = KOR.58

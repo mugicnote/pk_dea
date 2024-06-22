@@ -92,8 +92,8 @@ spriteTypes = {
 		texturefile = "gfx/leaders/KOR/Portrait_Chough_Pyung_ok.dds"
 	}
 	spriteType = {
-		name = "GFX_Portrait_He_Hun"
-		texturefile = "gfx/leaders/KOR/Portrait_He_Hun.dds"
+		name = "GFX_Portrait_Lee_In"
+		texturefile = "gfx/leaders/KOR/Portrait_Lee_In.dds"
 	}
 
 	spriteType = {

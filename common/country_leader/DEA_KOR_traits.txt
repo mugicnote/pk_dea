@@ -356,4 +356,402 @@ leader_traits = {
 		stability_factor = 0.05
 		war_support_factor = 0.05
 	}
+	Mayor_of_Seoul = {
+		random = no
+	}
+	personal_egoist = {
+		random = no
+		production_speed_industrial_complex_factor = 0.05
+		production_speed_infrastructure_factor = 0.05
+		political_power_factor = 0.05
+		stability_factor = -0.1
+	}
+	three_equal_attention = {
+		random = no
+		research_speed_factor = 0.025
+		political_advisor_cost_factor = -0.15
+
+		ai_will_do = { factor = 1 }
+	}
+	dosan_trait_1 = {
+		random = no
+		consumer_goods_factor = -0.05
+		drift_defence_factor = 0.25
+		research_speed_factor = 0.025
+
+		ai_will_do = { factor = 2 }
+	}
+	#카라
+	#정치
+	KR_backroom_backstabber = {
+		random = no
+		political_power_factor = 0.05
+		war_stability_factor = 0.1
+
+		ai_will_do = { factor = 2 }
+	}
+	KR_compassionate_gentleman = {
+		random = no
+		compliance_gain = 0.01
+		political_power_factor = 0.05
+
+		ai_will_do = { factor = 2 }
+	}
+	KR_flamboyant_brute = {
+		random = no
+		war_support_factor = 0.15
+		stability_factor = 0.05
+
+		ai_will_do = { factor = 1 }
+	}
+	KR_great_compromiser = {
+		random = no
+		political_power_factor = 0.05
+		political_advisor_cost_factor = -0.33
+
+		ai_will_do = { factor = 1 }
+	}
+	KR_opportunistic_journalist = { #카라서 영감 받음
+		random = no
+		stability_factor = -0.1
+		political_power_factor = 0.15
+
+		ai_will_do = { factor = 1 }
+	}
+	KR_happy_amateur = {
+		random = no
+		sprite = 13
+		production_speed_buildings_factor = -0.05
+		political_power_gain = 0.05
+		global_building_slots_factor = 0.2
+	}
+	KR_iron_fisted_brute = {
+		random = no
+		resistance_target = -0.05
+		war_support_factor = 0.1
+		army_attack_factor = 0.05
+
+		ai_will_do = { factor = 1 }
+	}
+	KR_man_of_the_people = {
+		random = no
+		stability_factor = 0.10
+		conscription_factor = 0.10
+
+		ai_will_do = { factor = 1 }
+	}
+	KR_naive_optimist = {
+		random = no
+		stability_factor = 0.1
+		production_speed_industrial_complex_factor = 0.05
+
+		ai_will_do = { factor = 1 }
+	}
+	KR_plodding_bureaucrat = { #Assign cheap cost to offset negative PP gain (50-75)
+		random = no
+		political_power_gain = -0.1
+		supply_consumption_factor = -0.05
+	}
+	KR_political_protege = {
+		random = no
+		political_power_gain = 0.03
+		stability_factor = 0.05
+
+		ai_will_do = { factor = 2 }
+	}
+	KR_political_specialist = {
+		random = no
+		mobilization_laws_cost_factor = -0.33
+		trade_laws_cost_factor = -0.33
+		economy_cost_factor = -0.33
+		political_advisor_cost_factor = -0.33
+
+		ai_will_do = { factor = 1 }
+	}
+	KR_popular_figurehead = {
+		random = no
+		stability_factor = 0.15
+
+		ai_will_do = { factor = 1 }
+	}
+	KR_quartermaster_general = {
+		random = no
+		production_speed_air_base_factor = 0.15
+		production_speed_naval_base_factor = 0.15
+		production_speed_rocket_site_factor = 0.15
+		production_speed_radar_station_factor = 0.15
+		production_speed_nuclear_reactor_factor = 0.15
+		supply_node_range = 0.1
+
+		ai_will_do = { factor = 0.2 }
+	}
+	KR_ideological_crusader = {
+		random = no
+		send_volunteer_size = 1
+		party_popularity_stability_factor = 0.25
+		justify_war_goal_time = -0.25
+
+		ai_will_do = { factor = 0.2 }
+	}
+	KR_pragmatic_statesman = {
+		random = no
+		political_power_factor = 0.05
+		stability_factor = 0.05
+		min_export = -0.1
+
+		ai_will_do = { factor = 2 }
+	}
+	KR_prince_of_terror = {
+		resistance_damage_to_garrison = -0.25
+		foreign_subversive_activites = -0.25
+		non_core_manpower = 0.025
+
+		ai_will_do = { factor = 1 }
+	}
+	KR_silent_workhorse = {
+		random = no
+		political_power_factor = 0.15
+
+		ai_will_do = { factor = 3 }
+	}
+	KR_ultranationalist_agitator = {
+		random = no
+		justify_war_goal_time = -0.1
+		conscription_factor = 0.2
+
+		ai_will_do = { factor = 1 }
+	}
+	#경제
+	KR_agricultural_economist = {
+		random = no
+		global_building_slots_factor = 0.2
+		conscription_factor = 0.05
+		monthly_population = 0.2
+
+		ai_will_do = { factor = 1 }
+	}
+	KR_austere_finance_advocate = {
+		random = no
+		consumer_goods_factor = -0.15
+
+		ai_will_do = { factor = 1 }
+	}
+	KR_bank_president = {
+		random = no
+		political_power_factor = 0.05
+		consumer_goods_factor = -0.05
+
+		ai_will_do = { factor = 2 }
+	}
+	KR_collectivisation_specialist = {
+		random = no
+		global_building_slots_factor = 0.20
+		production_speed_buildings_factor = 0.05
+		local_resources_factor = 0.05 #DEA서 추가한 효과
+
+		ai_will_do = { factor = 1 }
+	}
+	KR_council_communist = {
+		random = no
+		political_power_factor = -0.1
+		industrial_capacity_factory = 0.1
+		industrial_capacity_dockyard = 0.1
+
+		ai_will_do = { factor = 1 }
+	}
+	KR_economic_reformer = {
+		random = no
+		economy_cost_factor = -0.2
+		production_speed_buildings_factor = 0.05
+		line_change_production_efficiency_factor = 0.1
+
+		ai_will_do = { factor = 1 }
+	}
+	KR_industrialiser = {
+		random = no
+		production_speed_buildings_factor = 0.1
+
+		ai_will_do = { factor = 1 }
+	}
+	KR_inflation_finance_advocate = {
+		random = no
+		consumer_goods_factor = -0.15
+		production_speed_buildings_factor = -0.1
+
+		ai_will_do = { factor = 1 }
+	}
+	KR_interventionist_economist = {     # Formerly Keynesian Economist
+		random = no
+		consumer_goods_factor = -0.1
+		stability_factor = 0.05
+
+		ai_will_do = { factor = 1 }
+	}
+	KR_laissez_faire_capitalist = {
+		random = no
+		political_power_factor = 0.05
+		production_speed_buildings_factor = 0.05
+		local_resources_factor = 0.05
+
+		ai_will_do = { factor = 2 }
+	}
+	KR_mixed_economy_proponent = {
+		random = no
+		production_factory_max_efficiency_factor = 0.05
+		industrial_capacity_factory = 0.05
+		industrial_capacity_dockyard = 0.05
+
+		ai_will_do = { factor = 1 }
+	}
+	KR_traditionalist_economist = {
+		random = no
+		stability_factor = 0.05
+		production_speed_buildings_factor = 0.05
+		production_factory_max_efficiency_factor = 0.025
+
+		ai_will_do = { factor = 1 }
+	}
+	
+	### Military ###
+
+	KR_adventurous_daredevil = {
+		random = no
+		war_support_factor = 0.05
+		army_morale_factor = 0.05
+		experience_gain_army_factor = 0.05
+
+		ai_will_do = { factor = 1 }
+	}
+	KR_air_superiority_proponent = {
+		random = no
+		experience_gain_air = 0.03
+		equipment_bonus = {
+			small_plane_airframe = {
+				build_cost_ic = -0.10
+				instant = yes
+			}
+			medium_plane_fighter_airframe = {
+				build_cost_ic = -0.10
+				instant = yes
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+	KR_armaments_organiser = {
+		random = no
+		production_speed_arms_factory_factor = 0.1
+		conversion_cost_civ_to_mil_factor = -0.2
+
+		ai_will_do = { factor = 1 }
+	}
+	KR_battlefield_support_proponent = {
+		random = no
+		experience_gain_air = 0.03
+		equipment_bonus = {
+			small_plane_cas_airframe = {
+				build_cost_ic = -0.10
+				instant = yes
+			}
+			medium_plane_airframe = {
+				build_cost_ic = -0.10
+				instant = yes
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+	KR_battlefleet_proponent = {
+		random = no
+		experience_gain_navy = 0.06
+		navy_max_range_factor = 0.15
+		equipment_bonus = {
+			screen_ship = {
+				build_cost_ic = -0.075
+				instant = yes
+			}
+			capital_ship = {
+				build_cost_ic = -0.075
+				instant = yes
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+	KR_carrier_proponent = {
+		random = no
+		experience_gain_navy = 0.06
+		navy_max_range_factor = 0.15
+		equipment_bonus = {
+			ship_hull_carrier = {
+				build_cost_ic = -0.1
+				instant = yes
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+	KR_general_staffer = {
+		random = no
+		high_command_cost_factor = -0.2
+		max_command_power = 20
+		command_abilities_cost_factor = -0.3
+
+		ai_will_do = { factor = 1 }
+	}
+	KR_infantry_proponent = {
+		random = no
+		command_abilities_cost_factor = -0.1
+		equipment_bonus = {
+			support_equipment = {
+				build_cost_ic = -0.1
+				instant = yes
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+	KR_naval_aviation_proponent = {
+		random = no
+		experience_gain_air = 0.03
+		equipment_bonus = {
+			cv_small_plane_airframe = {
+				build_cost_ic = -0.1
+				instant = yes
+			}
+			cv_small_plane_cas_airframe = {
+				build_cost_ic = -0.1
+				instant = yes
+			}
+			cv_small_plane_naval_bomber_airframe = {
+				build_cost_ic = -0.1
+				instant = yes
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+	KR_old_admiral = {
+		random = no
+		production_speed_naval_base_factor = 0.1
+		production_speed_dockyard_factor = 0.1
+		experience_gain_navy_factor = 0.05
+
+		ai_will_do = { factor = 1 }
+	}
+	KR_old_air_marshal = {
+		random = no
+		air_chief_cost_factor = -0.2
+		production_speed_air_base_factor = 0.10
+		experience_gain_air_factor = 0.05
+
+		ai_will_do = { factor = 1 }
+	}
+
+	
+	KR_submarine_proponent = {
+		random = no
+		experience_gain_navy = 0.03
+		equipment_bonus = {
+			ship_hull_submarine = {
+				build_cost_ic = -0.10
+				instant = yes
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
 }

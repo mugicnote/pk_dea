@@ -174,7 +174,7 @@ guiTypes = {
 				name = "parliament_member_text6"
 				position = { x = 240 y = 383 }
 				font = "aldrich_48_outline"
-				text = "400"
+				text = "[parliament_member_text6]"
 				maxWidth = 300
 				maxHeight = 16
 				format = center
@@ -412,7 +412,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "past_ordinance_header"
 			position = { x = 46 y = 462 }
-			font = "aldrich_24_outline"
+			font = "hoi_16mbs"
 			text = KOR_legco_past_ordinance
 			maxWidth = 263
 			format = center

@@ -13,7 +13,7 @@
 	}
 }
 division_template = {
-	name = "간도성 치안부대"
+	name = "간도 치안대"
 	division_names_group = KNM_NOM_2
 
 	regiments = {
@@ -72,7 +72,7 @@ units = {
 			name_order = 1
 		}
 		location = 6806
-		division_template = "간도성 치안부대"
+		division_template = "간도 치안대"
 		start_experience_factor = 0.3
 	}
 	division = {
@@ -81,7 +81,7 @@ units = {
 			name_order = 1
 		}
 		location = 3944
-		division_template = "간도성 치안부대"
+		division_template = "간도 치안대"
 		start_experience_factor = 0.3
 	}
 

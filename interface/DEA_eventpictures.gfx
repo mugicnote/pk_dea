@@ -154,6 +154,11 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/Nagoya_terrorist_occurred_picture.dds"
 	}
 	###서재필 사망 까지의 이벤트
+	#서재필 대통령 신년사 - 민주주의와 자유
+	spriteType = {
+		name = "GFX_Seo_Jae_pils_speech_0_event_picture"
+		texturefile = "gfx/event_pictures/KOR/Seo_Jae_pils_speech_0_event_picture.png"
+	}
 	#신년과 혹한, 신념의 경계선상
 	spriteType = {
 		name = "GFX_Chang_Taek_sang_event_picture"

@@ -35,7 +35,7 @@ leader_traits = {
 		trait_type = personality_trait
 		
 		modifier = {
-			air_air_superiority_attack_factor = 0.025
+			air_cas_present_factor = 0.025
 		}
 		new_commander_weight = {
 			factor = 1
@@ -55,7 +55,7 @@ leader_traits = {
 		trait_type = personality_trait
 		
 		modifier = {
-			air_air_superiority_attack_factor = 0.05
+			air_cas_present_factor = 0.05
 		}
 		new_commander_weight = {
 			factor = 1
@@ -202,7 +202,7 @@ leader_traits = {
         cost = 1000
 
 		modifier = {
-			air_air_superiority_attack_factor = 0.05
+			air_cas_present_factor = 0.05
 		}
 		
 		new_commander_weight = {
@@ -243,5 +243,15 @@ leader_traits = {
 		}
 		
 		gui_row = 2
+	}
+
+	just_visiting = {
+		type = corps_commander
+		trait_type = personality_trait
+
+		modifier = {
+			promote_cost_factor = 100
+		}
+		new_commander_weight = { base = 0 }
 	}
 }

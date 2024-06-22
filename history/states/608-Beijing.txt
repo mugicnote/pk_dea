@@ -17,6 +17,9 @@ state={
 		victory_points = {
 			9843 50 #베이징
 		}
+		victory_points = {
+			12026 15 #바오딩
+		}
 	}
 
 	provinces={

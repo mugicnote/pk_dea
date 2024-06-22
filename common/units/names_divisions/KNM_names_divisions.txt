@@ -6,18 +6,19 @@
 	fallback_name = "간도 진위대 제%d 연대"
 	ordered = {
 		1 = { "간도 진위대 제1 연대 '친위'" }
-		2= { "간도 진위대 제2 연대 '시위'" }
+		2 = { "간도 진위대 제2 연대 '시위'" }
 	}
 }
 
 KNM_NOM_2 = {
-	name = "간도성 치안부대"
+	name = "간도 치안대"
 	for_countries = { KNM }
 	can_use = { always = yes }
 	division_types = { "infantry" }
-	fallback_name = "제%d 간도성 치안부대 사단"
+	fallback_name = "간도 치안대 제%d 여단"
 	ordered = {
-		
+		1 = { "간도 치안대 제1 여단 '장백'" }
+		2 = { "간도 치안대 제2 여단 '토문'" }
 	}
 }
 

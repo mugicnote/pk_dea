@@ -24,7 +24,7 @@
   KNM_Manchurian_Frontier:0 "관외의 최전방에서"
 
   KNM_Consider_new_solutions:0 "새로운 해법을 고민"
-  KNM_A_terrorist_attack_occurs:0 "§c성장을 향한 테러§!"
+  KNM_A_terrorist_attack_occurs:0 "§c팡전우 성장 저격 사건§!"
   KNM_A_terrorist_attack_occurs_tt:0 "§Y팡전우 성장을 대상으로 한 테러가 발생함.§!"
   KNM_Vote_for_an_interim_leader:0 "임시성장 표결"
   KNM_Vote_for_an_interim_leader_tt:0 "§Y차이윈성 부성장이 신변 위협을 이유로 사임함.§!"
@@ -39,3 +39,8 @@
   KNM_Organize_a_Gando_Rebel_Force:0 "간도 독립군 편성"
   KNM_Establishment_of_Korean_Militia:0 "한인의용대 창설"
   KNM_Claim_a_thriving_country:0 "발해 부흥론 주장"
+  KNM_Start_repairing_a_province:0 "영토 수복 시작"
+  KNM_Start_repairing_a_province_tt:0 "§L우리 국민은 다시 이민족의 노예가 아니요 또한 다시 부패한 전제정부의 노예도 아니요 독립한 간도의 자유민이라.§!"
+  KNM_Establishing_a_Kando_development_company:0 "간도척식회사 설립"
+  KNM_Gun_laws_amendments:0 "총포법 개정"
+  KNM_Road_to_Najin:0 "나진으로 가는 길"

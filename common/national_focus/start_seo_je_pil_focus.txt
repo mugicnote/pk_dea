@@ -136,6 +136,8 @@ focus_tree = {
 
 			set_temp_variable = { KOR_legco_eleventh_temp_support = 0.00 }
 
+			set_temp_variable = { KOR_legco_twelveth_temp_support = 0.50 }
+
 
 			set_variable = { KOR_legco_first_temp_support = 0.91 }
 			set_variable = { KOR_legco_second_temp_support = 0.55 }
@@ -149,6 +151,8 @@ focus_tree = {
 			set_variable = { KOR_legco_tenth_temp_support = 0.00 }
 
 			set_variable = { KOR_legco_eleventh_temp_support = 0.00 }
+
+			set_variable = { KOR_legco_twelveth_temp_support = 0.50 }
 
 
 			legco_introduce_ordinance = yes

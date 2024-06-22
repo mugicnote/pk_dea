@@ -155,6 +155,30 @@ bitmapfonts = {
 
 	# 나눔명조 #
 		bitmapfont = {
+			name = "mb19"
+			fontfiles = {
+				"gfx/fonts/mb19"
+				"gfx/fonts/nt_serif_tc_19_1"
+				"gfx/fonts/nt_serif_tc_19_2"
+				"gfx/fonts/nt_serif_tc_19_3"
+				"gfx/fonts/nt_serif_tc_19_4"
+			}
+			color = 0xff000000
+		}
+		bitmapfont = {
+			name = "mb21"
+			path = "gfx/fonts/mb21"
+			color = 0xff000000
+		}
+		bitmapfont = {
+			name = "mb25"
+			path = "gfx/fonts/mb25"
+			color = 0xff000000
+		}
+	#
+	
+	# 나눔명조 #
+		bitmapfont = {
 			name = "nnmj_16"
 			path = "gfx/fonts/nnmj_16"
 			color = 0xff000000

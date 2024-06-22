@@ -1,410 +1,413 @@
 guiTypes = {
 
-##   ##  #  # #  # ### ###  #   #     ### #   # ### #  # ###  ## 
-#  # #  # #  # ## #  #  #  #  # #      #   #   # #   ## #  #  #   
-#    #  # #  # # ##  #  ###    #       ##   # #  ##  # ##  #   #  
-#  # #  # #  # #  #  #  #  #   #       #    # #  #   #  #  #    # 
-##   ##   ##  #  #  #  #  #   #       ###   #   ### #  #  #  ##  
-
-   containerWindowType = {
-	   name = "EventWindow"
-	   position = { x=-282 y=-310 }	
-	   size = { width = 581 height = 577 }
-	   moveable = yes
-	   Orientation = CENTER		
-	   
-	   show_sound = event_popup
-	   hide_sound = menu_close_window
-	   
-	   background = {
-		   name = "Background"	
-		   spriteType ="GFX_tiled_window_transparent"
-	   }
-
+	##   ##  #  # #  # ### ###  #   #     ### #   # ### #  # ###  ## 
+   #  # #  # #  # ## #  #  #  #  # #      #   #   # #   ## #  #  #   
+   #    #  # #  # # ##  #  ###    #       ##   # #  ##  # ##  #   #  
+   #  # #  # #  # #  #  #  #  #   #       #    # #  #   #  #  #    # 
+	##   ##   ##  #  #  #  #  #   #       ###   #   ### #  #  #  ##  
+   
 	   containerWindowType = {
-		   name = "top_Window"
-		   position = { x=0 y=0 }	
-		   size = { width = 581 height = 211 }
-		   clipping = no
+		   name = "EventWindow"
+		   position = { x=-282 y=-310 }	
+		   size = { width = 581 height = 577 }
 		   moveable = yes
-		   Orientation = UPPER_LEFT
-
+		   Orientation = CENTER		
+		   
+		   show_sound = event_popup
+		   hide_sound = menu_close_window
+		   
 		   background = {
 			   name = "Background"	
-			   spriteType ="GFX_event_report_top_win"
+			   spriteType ="GFX_tiled_window_transparent"
 		   }
-
-		   instantTextBoxType = {
-			   name = "Title"
-			   position = { x = 40 y = 95 }
-			   font = "aldrich_24_outline_b"
-			   text = "Title text here!"	
-			   maxWidth = 500
-			   maxHeight = 32
-			   format = centre
-		   }
-
-		   buttonType = {
-			   name = "btn_minimize"
-			   position = {x=55 y=15}
-			   spriteType = "GFX_event_button_minimize"
-			   clicksound = click_default
-		   }
-		   
-	   }
-
-	   containerWindowType = {
-		   name = "midsection"
-		   position = { x=-2 y=211 }	
-		   size = { width = 581 height = 100 }
-		   moveable = yes
-		   clipping = no
-		   Orientation = UPPER_LEFT
-
-		   background = {
-			   name = "Background"	
-			   quadTextureSprite ="GFX_event_report_tileable_midsection"
-		   }
-	   
-		   instantTextBoxType = {
-			   name = "Description"
-			   position = { x = 52 y = -60 }
-			   font = "aldrich_18_outline_b"
-			   borderSize = {x = 0 y = 0}
-			   text = "Long text here!"	
-			   maxWidth = 480
-			   maxHeight = 230
-			   format = left
-		   }
-		   
-	   }			
-
-	   containerWindowType = {
-		   name = "bottom_Window"
-		   position = { x=0 y=221 }	
-		   size = { width = 581 height = 266 }
-		   moveable = yes
-		   clipping = no
-		   Orientation = UPPER_LEFT
-
-		   #background = {
-		   #	name = "Background"
-		   #	spriteType ="GFX_event_report_tileable_bottom_section"
-		   #}
-
-		   background = {
-			   name = "Background"
-			   spriteType ="GFX_event_report_bottom_win"
-		   }
-		   
-			   
-		   iconType = {
-			   name ="event_text_line"
-			   spriteType = "GFX_event_text_line"
-			   position = { x = 22 y = -50 }
-			   Orientation = "UPPER_LEFT"
-		   }	
-		   iconType = {
-			   name ="event_picture"
-			   spriteType = "GFX_report_event_001"
-			   position = { x = 20 y = -50 }
-			   Orientation = "UPPER_LEFT"
-			   allwaystransparent = yes				
-		   }
-
-		   iconType = {
-			   name ="event_pic_clip"
-			   spriteType = "GFX_event_pic_clip"
-			   position = { x = 37 y = -67 }
-			   Orientation = "UPPER_LEFT"
-		   }
-		   
-
-		   gridBoxType = {
-			   name = "options_grid"
-			   position = { x = 223 y = -57 }
-			   size = { width = 300 height = 30 }
-			   slotsize = { width = 300 height = 51 }
-			   max_slots_horizontal = 1
-			   Orientation = "UPPER_LEFT"
-			   #format = "UPPER_LEFT"
-		   }
-	   }
-	   
-#		containerWindowType = {
-#			name = "bottom_window_end"
-#			position = { x=0 y=-100 }
-#			size = { width = 581 height = 59 }
-#			moveable = yes
-#			Orientation = UPPER_LEFT
-#			
-#			background = {
-#				name = "Background"	
-#				spriteType ="GFX_event_report_bottom_win_end"
-#			}
-#		}
-   }
-  
-
-#   ###  ##  ###  ### ###      ### #   # ### #  # ###  ## 
-#   #   #  # #  # #   #  #     #   #   # #   ## #  #  #   
-#   ##  #### #  # ##  ###      ##   # #  ##  # ##  #   #  
-#   #   #  # #  # #   #  #     #    # #  #   #  #  #    # 
-### ### #  # ###  ### #  #     ###   #   ### #  #  #  ##  
-
-
-   containerWindowType = {
-	   name = "EventWindow_leader"
-	   position = { x=-282 y=-310 }	
-	   size = { width = 581 height =0 }
-	   moveable = yes
-	   Orientation = CENTER		
-	   
-	   show_sound = event_popup
-	   hide_sound = menu_close_window
-	   
-	   background = {
-		   name = "Background"	
-		   spriteType ="GFX_tiled_window_transparent"
-	   }
-
-	   containerWindowType = {
-		   name = "top_Window"
-		   position = { x=0 y=0 }	
-		   size = { width = 581 height =191 }
-		   moveable = yes
-		   Orientation = UPPER_LEFT
-
-		   background = {
-			   name = "Background"	
-			   spriteType ="GFX_event_report_top_win"
-		   }			
-	   
-		   instantTextBoxType = {
-			   name = "Title"
-			   position = { x = 14 y = 120 }
-			   font = "Zai_17"
-			   text = "Title text here!"	
-			   maxWidth = 551
-			   maxHeight = 52
-			   format = centre
-		   }
-
-		   buttonType = {
-			   name = "btn_minimize"
-			   position = {x=10 y=45}
-			   spriteType = "GFX_event_button_minimize"
-			   clicksound = click_default
-		   }
-	   }
-
-	   containerWindowType = {
-		   name = "midsection"
-		   position = { x=0 y=200}	
-		   size = { width = 581 height = 235 }
-		   moveable = yes
-		   clipping = no
-		   Orientation = UPPER_LEFT	
-
-		   background = {
-			   name = "Background"	
-			   spriteType ="GFX_event_report_tileable_midsection"
-		   }
-
+   
 		   containerWindowType = {
-			   name = "leader_picture_container"
-			   position = { x=20 y=0 }
-			   size = { width = 100% height = 100% }
+			   name = "top_Window"
+			   position = { x=0 y=0 }
+			   size = { width = 581 height = 211 }
+			   clipping = no
+			   moveable = yes
+			   Orientation = UPPER_LEFT
+   
+			   background = {
+				   name = "Background"	
+				   spriteType ="GFX_event_report_top_win"
+			   }
+   
+			   instantTextBoxType = {
+				   name = "Title"
+				   position = { x = 40 y = 95 }
+				   font = "mb25"
+				   text = "Title text here!"	
+				   maxWidth = 500
+				   maxHeight = 32
+				   format = centre
+			   }
+   
+			   buttonType = {
+				   name = "btn_minimize"
+				   position = {x=55 y=15}
+				   spriteType = "GFX_event_button_minimize"
+				   clicksound = click_default
+			   }
+			   
+		   }
+   
+		   containerWindowType = {
+			   name = "midsection"
+			   position = { x=0 y=211 }	
+			   size = { width = 581 height = 100 }
+			   moveable = yes
+			   clipping = no
+			   Orientation = UPPER_LEFT
+   
+			   background = {
+				   name = "Background"	
+				   quadTextureSprite ="GFX_event_report_tileable_midsection"
+			   }
+		   
+			   instantTextBoxType = {
+				   name = "Description"
+				   position = { x = 52 y = -60 }
+				   font = "mb19"
+				   borderSize = {x = 0 y = 0}
+				   text = "Long text here!"	
+				   maxWidth = 480
+				   maxHeight = 230
+				   format = left
+			   }
+			   
+		   }			
+   
+		   containerWindowType = {
+			   name = "bottom_Window"
+			   position = { x=0 y=221 }	
+			   size = { width = 581 height = 266 }
+			   moveable = yes
+			   clipping = no
+			   Orientation = UPPER_LEFT
+   
+			   #background = {
+			   #	name = "Background"
+			   #	spriteType ="GFX_event_report_tileable_bottom_section"
+			   #}
+   
+			   background = {
+				   name = "Background"
+				   spriteType ="GFX_event_report_bottom_win"
+			   }
+			   
+				   
+			   iconType = {
+				   name ="event_text_line"
+				   spriteType = "GFX_event_text_line"
+				   position = { x = 22 y = -50 }
+				   Orientation = "UPPER_LEFT"
+			   }	
+			   iconType = {
+				   name ="event_picture"
+				   spriteType = "GFX_report_event_001"
+				   position = { x = 20 y = -50 }
+				   Orientation = "UPPER_LEFT"
+				   allwaystransparent = yes				
+			   }
+   
+			   iconType = {
+				   name ="event_pic_clip"
+				   spriteType = "GFX_event_pic_clip"
+				   position = { x = 37 y = -67 }
+				   Orientation = "UPPER_LEFT"
+			   }
+			   
+   
+			   gridBoxType = {
+				   name = "options_grid"
+				   position = { x = 223 y = -57 }
+				   size = { width = 300 height = 30 }
+				   slotsize = { width = 300 height = 51 }
+				   max_slots_horizontal = 1
+				   Orientation = "UPPER_LEFT"
+				   #format = "UPPER_LEFT"
+			   }
+		   }
+		   
+   #		containerWindowType = {
+   #			name = "bottom_window_end"
+   #			position = { x=0 y=-100 }
+   #			size = { width = 581 height = 59 }
+   #			moveable = yes
+   #			Orientation = UPPER_LEFT
+   #			
+   #			background = {
+   #				name = "Background"	
+   #				spriteType ="GFX_event_report_bottom_win_end"
+   #			}
+   #		}
+	   }
+	  
+   
+   #   ###  ##  ###  ### ###      ### #   # ### #  # ###  ## 
+   #   #   #  # #  # #   #  #     #   #   # #   ## #  #  #   
+   #   ##  #### #  # ##  ###      ##   # #  ##  # ##  #   #  
+   #   #   #  # #  # #   #  #     #    # #  #   #  #  #    # 
+   ### ### #  # ###  ### #  #     ###   #   ### #  #  #  ##  
+   
+   
+	   	containerWindowType = {
+		   name = "EventWindow_leader"
+		   position = { x=-282 y=-310 }	
+		   size = { width = 581 height = 577 }
+		   moveable = yes
+		   Orientation = CENTER		
+		   
+		   show_sound = event_popup
+		   hide_sound = menu_close_window
+		   
+			background = {
+				name = "Background"	
+				spriteType ="GFX_tiled_window_transparent"
+			}
+   
+		   	containerWindowType = {
+			   	name = "top_Window"
+				position = { x = 0 y = 60 }	
+				size = { width = 581 height = 211 }
+				clipping = no
+				moveable = yes
+				Orientation = UPPER_LEFT
+	
+				background = {
+					name = "Background"
+					spriteType ="GFX_event_report_top_win"
+				}
+
+				instantTextBoxType = {
+					name = "Title"
+					position = { x = 14 y = 100 }
+					font = "hoi4_typewriter22"
+					borderSize = {x = 0 y = 0}
+					text = "Title text here!"
+					maxWidth = 551
+					maxHeight = 32
+					format = centre
+				}
+
+				buttonType = {
+					name = "btn_minimize"
+					position = {x=40 y=55}
+					spriteType = "GFX_event_button_minimize"
+					clicksound = click_default
+				}
+			}
+   
+		   	containerWindowType = {
+				name = "midsection"
+				position = { x = 0 y = 211}	
+				size = { width = 581 height = 230 }
+				moveable = yes
+				clipping = no
+				Orientation = UPPER_LEFT	
+	
+				background = {
+					name = "Background"	
+					spriteType ="GFX_event_report_tileable_midsection"
+				}
+   
+				containerWindowType = {
+					name = "leader_picture_container"
+					position = { x=13 y=30 }
+					size = { width = 100% height = 100% }
+
+				buttonType = {
+					name = "leader"
+					position = { x = 31 y = 4 }
+					spriteType = "GFX_leader_unknown"
+					scale = 0.85
+				}
+
+				iconType = {
+					name = "leader_frame"
+					spriteType = "GFX_event_leader_frame"
+					position = { x = 25 y = -5 }
+					alwaystransparent = yes
+					scale = 0.85
+				}
+			}
+		   
+			   instantTextBoxType = {
+				   name = "Description"
+				   position = { x = 195 y = 5 }
+				   font = "mb19"
+				   borderSize = {x = 0 y = 0}
+				   text = "Long text here!"	
+				   maxWidth = 345
+				   maxHeight = 350
+				   format = left
+			   }	
+		   }			
+   
+		   containerWindowType = {
+			   name = "bottom_Window"
+			   position = { x=0 y=-131 }
+			   size = { width = 581 height = 0 }
+			   moveable = yes
+			   clipping = no
+			   Orientation = UPPER_LEFT
+   
+			   background = {
+				   name = "Background"	
+				   spriteType ="GFX_event_report_tileable_bottom_section"
+			   }
+   
+			   	gridBoxType = {
+					name = "options_grid"
+					position = { x = 50 y = 20 }
+					size = { width = 300 height = 0 }
+					slotsize = { width = 300 height = 47 }
+					max_slots_horizontal = 1
+					Orientation = UPPER_LEFT
+				}
+		   	}
+   
+		   containerWindowType = {
+			   name = "bottom_window_end"
+			   position = { x=0 y=-150 }
+			   size = { width = 581 height = 99 }
+			   moveable = yes
+			   Orientation = UPPER_LEFT
+   
+			   background = {
+				   name = "Background"	
+				   spriteType ="GFX_event_report_bottom_win_end"
+			   }
+		   }
+	   }
+   
+   
+   
+   
+   #  # ### #   #  ##     ### #   # ### #  # ###  ## 
+   ## # #   #   # #       #   #   # #   ## #  #  #   
+   # ## ##  # # #  #      ##   # #  ##  # ##  #   #  
+   #  # #   # # #   #     #    # #  #   #  #  #    # 
+   #  # ###  # #  ##      ###   #   ### #  #  #  ##  
+   
+	   containerWindowType = {
+		   name = "EventWindow_News"
+		   position = { x=-282 y=-310 }	
+		   size = { width = 620 height = 675 }
+		   moveable = yes
+		   Orientation = CENTER
+		   show_sound = world_news_effect
+		   hide_sound = menu_close_window
+		   
+		   background = {
+			   name = "Background"	
+			   spriteType ="GFX_event_news_bg"
+		   }
+		   containerWindowType = {
+			   name = "top_Window"
+			   position = { x=0 y=0 }	
+			   size = { width = 581 height =121 }
+			   Orientation = UPPER_LEFT
+   
+			   iconType = {
+				   name ="event_picture"
+				   spriteType = "GFX_news_event_001"
+				   position = { x = 46 y = 172 }#x = 90 y = 90
+				   Orientation = "UPPER_LEFT"
+				   allwaystransparent = yes
+			   }
+			   
+			   iconType = {
+				   name ="event_picture_overlay"
+				   spriteType = "GFX_event_news_pic_overlay"
+				   position = { x = 46 y = 172 }
+				   Orientation = "UPPER_LEFT"
+				   allwaystransparent = yes
+			   }			
+			   
+			   instantTextBoxType = {
+				   name = "Title"
+				   position = { x = -257 y = 60 }
+				   #font = "hoi4_typewriter22"
+				   #font = "franklin_gothic_34"
+				   font = "mb25"
+				   borderSize = {x = 0 y = 0}
+				   text = "Title text here!"	
+				   maxWidth = 420
+				   maxHeight = 120
+				   format = centre
+				   Orientation = CENTER
+			   }
 			   
 			   buttonType = {
-				   name = "leader"
-				   position = { x = 36	 y = 38 }
-				   spriteType = "GFX_leader_unknown"
+				   name = "btn_minimize"
+				   position = {x=10 y=10}
 				   scale = 0.75
-			   }
-
-			   iconType = {
-				   name = "leader_frame"
-				   spriteType = "GFX_event_leader_frame"
-				   position = { x = 27 y = 15 }		
-				   allwaystransparent = yes
-				   scale = 0.75
+				   spriteType = "GFX_event_button_minimize"
+				   clicksound = click_default
 			   }
 		   }
-	   
-		   instantTextBoxType = {
-			   name = "Description"
-			   position = { x = 198 y = 0 }
-			   font = "Zai_17"
-			   borderSize = {x = 0 y = 0}
-			   text = "Long text here!"	
-			   maxWidth = 350
-			   maxHeight = 350
-			   format = left
-		   }	
-	   }			
-
-	   containerWindowType = {
-		   name = "bottom_Window"
-		   position = { x=0 y=-121 }
-		   size = { width = 581 height = 0 }
-		   moveable = yes
-		   clipping = no
-		   Orientation = UPPER_LEFT
-
-		   background = {
-			   name = "Background"	
-			   spriteType ="GFX_event_report_tileable_bottom_section"
-		   }
-
-		   gridBoxType = {
-			   name = "options_grid"
-			   position = { x = 195 y = -70 }
-			   size = { width = 300 height = 0 }
-			   slotsize = { width = 300 height = 47 }
-			   max_slots_horizontal = 1
-			   Orientation = UPPER_LEFT
-		   }
-	   }
-
-	   containerWindowType = {
-		   name = "bottom_window_end"
-		   position = { x=0 y=-100 }
-		   size = { width = 581 height = 259 }
-		   moveable = yes
-		   Orientation = UPPER_LEFT
-
-		   background = {
-			   name = "Background"	
-			   spriteType ="GFX_event_report_bottom_win_end"
-		   }
-	   }
-   }
-
-
-
-
-#  # ### #   #  ##     ### #   # ### #  # ###  ## 
-## # #   #   # #       #   #   # #   ## #  #  #   
-# ## ##  # # #  #      ##   # #  ##  # ##  #   #  
-#  # #   # # #   #     #    # #  #   #  #  #    # 
-#  # ###  # #  ##      ###   #   ### #  #  #  ##  
-
-   containerWindowType = {
-	   name = "EventWindow_News"
-	   position = { x=-282 y=-310 }	
-	   size = { width = 720 height = 875 }
-	   moveable = yes
-	   Orientation = CENTER
-	   show_sound = world_news_effect
-	   hide_sound = menu_close_window
-	   
-	   background = {
-		   name = "Background"	
-		   spriteType ="GFX_event_news_bg"
-	   }
-	   containerWindowType = {
-		   name = "top_Window"
-		   position = { x=0 y=0 }	
-		   size = { width = 581 height =121 }
-		   Orientation = UPPER_LEFT
-
-		   iconType = {
-			   name ="event_picture"
-			   spriteType = "GFX_news_event_001"
-			   position = { x = 149 y = 50 }#x = 90 y = 90
-			   Orientation = "UPPER_LEFT"
-			   allwaystransparent = yes
-		   }
-		   
-		   iconType = {
-			   name ="event_picture_overlay"
-			   spriteType = "GFX_event_news_pic_overlay"
-			   position = { x = 149 y = 50 }
-			   Orientation = "UPPER_LEFT"
-			   allwaystransparent = yes
-		   }			
-		   
-		   instantTextBoxType = {
-			   name = "Title"
-			   position = { x = 13 y = 245 }
-			   #font = "hoi4_typewriter22"
-			   #font = "franklin_gothic_34"
-			   font = "aldrich_24_outline_b"
-			   borderSize = {x = 0 y = 0}
-			   text = "Title text here!"	
-			   maxWidth = 581
-			   maxHeight = 120
-			   format = left
-			   Orientation = "UPPER_LEFT"
-		   }
-		   
-		   buttonType = {
-			   name = "btn_minimize"
-			   position = {x=10 y=10}
-			   scale = 0.75
-			   spriteType = "GFX_event_button_minimize"
-			   clicksound = click_default
-		   }
-	   }
-
-	   containerWindowType = {
-		   name = "midsection"
-		   position = { x=0 y=106 }	
-		   size = { width = 601 height = 390 }
-		   Orientation = UPPER_LEFT
-	   
-		   instantTextBoxType = {
-			   name = "Description"
-			   position = { x = 13 y = 169	 }
-			   font = "hoi4_typewriter16"
-			   borderSize = {x = 0 y = 0}
-			   text = "Long text here!"	
-			   maxWidth = 645
-			   maxHeight = 304
-			   format = left
-			   
-		   }
-	   }
-
-	   containerWindowType = {
-		   name = "bottom_Window"
-		   position = { x=0 y=221 }	
-		   size = { width = 581 height = 405 }
-		   Orientation = UPPER_LEFT
-
-		   gridBoxType = {
-			   name = "options_grid"
-			   position = { x = 45 y = -215 }
-			   size = { width = 350 height = 30 }
-			   slotsize = { width = 350 height = 47 }
-			   max_slots_horizontal = 1
-			   Orientation = "LOWER_LEFT"
-			   format = "LOWER_LEFT"
-		   }
-	   }
-   }
    
-   containerWindowType = {
-	   name = "event_option_entry"
-	   size = { width = 300 height = 47 }
-	   clipping = no
-	   
-	   background = {
-		   name = "event_option_background"	
-		   spriteType ="GFX_event_option_entry"
+		   containerWindowType = {
+			   name = "midsection"
+			   position = { x=0 y=106 }	
+			   size = { width = 581 height = 390 }
+			   Orientation = UPPER_LEFT
+		   
+			   instantTextBoxType = {
+				   name = "Description"
+				   position = { x = 42 y = 54 }
+				   font = "mb19"
+				   borderSize = {x = 0 y = 0}
+				   text = "Long text here!"	
+				   maxWidth = 530
+				   maxHeight = 304
+				   format = left
+				   
+			   }
+		   }
+   
+		   containerWindowType = {
+			   name = "bottom_Window"
+			   position = { x=0 y=221 }	
+			   size = { width = 581 height = 405 }
+			   Orientation = UPPER_LEFT
+   
+			   gridBoxType = {
+				   name = "options_grid"
+				   position = { x = 75 y = -355 }
+				   size = { width = 350 height = 30 }
+				   slotsize = { width = 350 height = 47 }
+				   max_slots_horizontal = 1
+				   Orientation = "LOWER_LEFT"
+				   format = "LOWER_LEFT"
+			   }
+		   }
 	   }
 	   
-	   instantTextBoxType = {
-		   name = "Name"
-		   position = { x = 24 y = -42 }
-		   font = "aldrich_22_outline_b"
-		   maxWidth = 280
-		   maxHeight = 20
-		   format = left
-		   Orientation = "LOWER_LEFT"
-			   #format = "UPPER_LEFT"
-		   alwaystransparent = yes
+	   containerWindowType = {
+		   name = "event_option_entry"
+		   size = { width = 300 height = 46 }
+		   clipping = no
+		   
+		   background = {
+			   name = "event_option_background"	
+			   spriteType ="GFX_event_option_entry"
+			   position = { x = 0 y = 0 }
+		   }
+		   
+		   instantTextBoxType = {
+			   name = "Name"
+			   position = { x = 22 y = -42 }
+			   font = "mb21"
+			   maxWidth = 350
+			   maxHeight = 20
+			   format = left
+			   Orientation = "LOWER_LEFT"
+				   #format = "UPPER_LEFT"
+			   alwaystransparent = yes
+		   }
 	   }
    }
-}
