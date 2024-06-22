@@ -84,9 +84,6 @@ set_variable = {
 
 #해군 개혁
 
-create_faction = JAP_EXILED_RUS
-add_to_faction = RUS
-
 add_ideas = {
     JAP_shoku_gun
     JAP_dai_gokou

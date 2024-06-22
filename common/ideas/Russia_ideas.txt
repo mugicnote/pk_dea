@@ -3,7 +3,7 @@ ideas = {
 
 country = {
 
-	RUS_idea_government_in_exile_1 = { #망명정부
+	RUS_idea_government_in_exile_1 = { #러시아 내전
 		name = RUS_idea_government_in_exile
 		picture = generic_volunteer_expedition_bonus
 		removal_cost = -1

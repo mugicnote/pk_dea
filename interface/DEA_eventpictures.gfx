@@ -169,6 +169,11 @@ spriteTypes = {
 		name = "GFX_Kim_Kyu_sik_event_picture"
 		texturefile = "gfx/event_pictures/KOR/Kim_Kyu_sik_event_picture.dds"
 	}
+	#교토서 날아온 전보
+	spriteType = {
+		name = "GFX_Huh_Chung_event_picture"
+		texturefile = "gfx/event_pictures/KOR/Huh_Chung_event_picture.png"
+	}
 	#목메이도록, 뜨거운 조국과 너의 최초의 악수.
 	spriteType = {
 		name = "GFX_intramural_demonstration_event_picture"

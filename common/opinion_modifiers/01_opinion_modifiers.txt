@@ -10,19 +10,6 @@
 
 opinion_modifiers = {
 
-	opnion_democratic_influence = { value = 30 }
+	opnion_JAP_KOR_Huh_Chung_event = { value = 20 }
 
-	opnion_ilminism = { value = -20 }
-
-	JAP_opnion_USA = { value = 100 }
-
-	USA_opnion_JAP = { value = 100 }
-
-	JAP_opnion_pro_americans = { value = 25 }
-
-	Kor_Harbin_Talks_fail = { value = -40 }
-
-	SND_wuhan_visit_modifiers = { value = 25 }
-	
-	SND_nanjing_visit_modifiers = { value = 25 }
 }

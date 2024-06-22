@@ -9,9 +9,11 @@ on_actions = {
 			RUS = {
 				transfer_state = 1040
 			}
-			declare_war_on = {
-				target = RUS
-				type = annex_everything
+			SOV = {
+				declare_war_on = {
+					target = RUS
+					type = annex_everything
+				}
 			}
 			SOV = {
 				set_state_controller = 1040
@@ -22,8 +24,10 @@ on_actions = {
 				set_resistance = 5
 				set_garrison_strength = 1.0
 			}
-			RUS = { become_exiled_in = { target = JAP legitimacy = 30 } }
-
+			JAP = {
+				create_faction = JAP_EXILED_RUS
+				add_to_faction = RUS
+			}
 
 			MAN = {
 				set_autonomy = {
@@ -41,18 +45,18 @@ on_actions = {
 				}
 				#시작시_정당들의_인기도
 				set_popularities = {
-				  communism = 0
-				  authoritarian_socialism = 0
-				  radical_socialism = 0
-				  social_democracy = 0
-				  social_liberalism = 0
-				  national_liberalism = 0
-				  liberal_conservatism = 0
-				  democratic = 0
-				  national_conservatism = 5
-				  neutrality = 65
-				  auto_despotism = 10
-				  fascism = 20
+				  	communism = 0
+				 	authoritarian_socialism = 0
+					radical_socialism = 0
+					social_democracy = 0
+					social_liberalism = 0
+					national_liberalism = 0
+					liberal_conservatism = 0
+					democratic = 0
+					national_conservatism = 5
+					neutrality = 65
+					auto_despotism = 10
+					fascism = 20
 				}
 			}
 			KOR = {
