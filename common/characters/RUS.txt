@@ -32,5 +32,39 @@ characters={
 			id=-1
 		}
 	}
+	
+	RUS_Anton_Denikin={
+		name=RUS_Anton_Denikin
+		portraits={
+			civilian={
+				large="gfx_leaders/RUS/.png
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={
+				RUS_father_of_south_russian_army
+			}
+			expire="2000.1.1.1"
+			id=-1
+		}
+	}
+	
+	RUS_Maria_Spiridonova={
+		name=RUS_Maria_Spiridonova
+		portraits={
+			civilian={
+				large="gfx_leaders/RUS/.png
+			}
+		}
+		country_leader={
+			ideology=narodnikist_syndicalism
+			traits={
+				RUS_lioness_of_revolution
+			}
+			expire="2000.1.1.1"
+			id=-1
+		}
+	}
 
 }
