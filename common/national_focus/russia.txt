@@ -16,7 +16,7 @@ focus_tree = {
 	focus = {
 		id = RUS_diktat_of_Doyohara
 		icon = GFX_goal_generic_forceful_treaty
-		x = 3
+		x = 2
 		y = 0
 		cost = 1
 		
@@ -263,7 +263,7 @@ focus_tree = {
 			factor = 1
 		}
 		
-		x = 15
+		x = 10
 		y = 0
 		cost = 5
 		
@@ -284,10 +284,10 @@ focus_tree = {
 			factor = 1
 		}
 		
-		x = 15
+		x = 0
 		y = 1
 		cost = 5
-		relative_position_id = RUS_organize_the_committe_in_exile
+		relative_position_id = RUS_restore_influence_of_white_army
 		
 		completion_reward = {
 			
@@ -316,4 +316,184 @@ focus_tree = {
 		}
 	}
 	
+	focus = {
+		id = RUS_negotiate_with_Spiridonova
+		icon = GFX_focus_generic_soviet_politics
+		
+		prerequisite = {
+			focus = RUS_organize_the_committe_in_exile
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = -2
+		y = 1
+		cost = 3
+		relative_position_id = RUS_organize_the_committe_in_exile
+		
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_negotiate_with_Semyonov
+		icon = GFX_focus_SOV_approach_semyonov
+		
+		prerequisite = {
+			focus = RUS_organize_the_committe_in_exile
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = 2
+		y = 1
+		cost = 3
+		relative_position_id = RUS_organize_the_committe_in_exile
+		
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_reconversion_of_SR
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		
+		prerequisite = {
+			focus = RUS_negotiate_with_Spiridonova
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = -1
+		y = 1
+		cost = 3
+		relative_position_id = RUS_negotiate_with_Spiridonova
+		
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	focus = {
+		id = RUS_reunite_to_influence_of_white_armies
+		icon = GFX_focus_SOV_panslavic_nationalism
+		
+		prerequisite = {
+			focus = RUS_negotiate_with_Rodzaevsky
+			focus = RUS_negotiate_with_Semyonov
+			focus = RUS_negotiate_with_Spiridonova
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = RUS_negotiate_with_Rodzaevsky
+		
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_repair_the_influence_of_fascists
+		icon = GFX_focus_generic_fascist_troops
+		
+		prerequisite = {
+			focus = RUS_negotiate_with_Semyonov
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = 1
+		y = 1
+		cost = 3
+		relative_position_id = RUS_negotiate_with_Semyonov
+		
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_recognize_old_regime
+		icon = GFX_focus_ETH_re-convene_the_parliament
+		
+		prerequisite = {
+			focus = RUS_reunite_to_influence_of_white_armies
+		}
+		
+		mutually_exclusive = {
+			focus = RUS_claim_the_new_regime
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = -2
+		y = 1
+		cost = 6
+		relative_position_id = RUS_reunite_to_influence_of_white_armies
+	
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	focus = {
+		id = RUS_claim_the_new_regime
+		icon = GFX_focus_LAT_suspend_constitution_of_latvia
+		
+		prerequisite = {
+			focus = RUS_reunite_to_influence_of_white_armies
+		}
+		
+		mutually_exclusive = {
+			focus = RUS_recognize_old_regime
+		}
+		
+		x = 2
+		y = 1
+		cost = 6
+		relative_position_id = RUS_reunite_to_influence_of_white_armies
+		
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_repair_the_ROVS
+		icon = GFX_focus_NORDIC_mon_selector_army
+		
+		prerequisite = {
+			focus = RUS_claim_the_new_regime
+			focus = RUS_recognize_old_regime
+		}
+		
+		x = -2
+		y = 1
+		cost = 6
+		relative_position_id = RUS_claim_the_new_regime
+		
+		completion_reward = {
+			
+		}
+	}
 }
