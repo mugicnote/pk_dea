@@ -12,11 +12,13 @@ focus_tree = {
 	
 	default = no
 	
+	continuous_focus_position = { x = 1 y = 2500 }
 	
 	focus = {
 		id = RUS_diktat_of_Doyohara
 		icon = GFX_goal_generic_forceful_treaty
-		x = 2
+		
+		x = 1
 		y = 0
 		cost = 1
 		
@@ -263,7 +265,7 @@ focus_tree = {
 			factor = 1
 		}
 		
-		x = 10
+		x = 15
 		y = 0
 		cost = 5
 		
@@ -468,6 +470,10 @@ focus_tree = {
 			focus = RUS_recognize_old_regime
 		}
 		
+		ai_will_do = {
+			factor = 1
+		}
+		
 		x = 2
 		y = 1
 		cost = 6
@@ -480,11 +486,15 @@ focus_tree = {
 	
 	focus = {
 		id = RUS_repair_the_ROVS
-		icon = GFX_focus_NORDIC_mon_selector_army
+		icon = GFX_goal_demand_sudetenland
 		
 		prerequisite = {
 			focus = RUS_claim_the_new_regime
 			focus = RUS_recognize_old_regime
+		}
+		
+		ai_will_do = {
+			factor = 1
 		}
 		
 		x = -2
@@ -496,4 +506,624 @@ focus_tree = {
 			
 		}
 	}
+	
+	focus = {
+		id = RUS_restart_the_emergency_measure_committee
+		icon = GFX_focus_generic_industrialists
+		
+		prerequisite = {
+			focus = RUS_repair_the_ROVS
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = 0
+		y = 1
+		cost = 6
+		relative_position_id = RUS_repair_the_ROVS
+		
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	focus = {
+		id = RUS_propose_the_national_cabinet
+		icon = GFX_focus_ARG_strengthening_the_concordancia
+		
+		prerequisite = {
+			focus = RUS_restart_the_emergency_measure_committee
+		}
+		
+		mutually_exclusive = {
+			focus = RUS_seize_emergency_measure_committee
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = -10
+		y = 1
+		cost = 5
+		relative_position_id = RUS_restart_the_emergency_measure_committee
+		
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	focus = {
+		id = RUS_seize_emergency_measure_committee
+		icon = GFX_focus_SWE_organize_a_putsch
+		
+		prerequisite = {
+			focus = RUS_restart_the_emergency_measure_committee
+		}
+		
+		mutually_exclusive = {
+			focus = RUS_propose_the_national_cabinet
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = 10
+		y = 1
+		cost = 5
+		relative_position_id = RUS_restart_the_emergency_measure_committee
+		
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	focus = {
+		id = RUS_handle_to_confusing_cabinet
+		icon = GFX_focus_NOR_the_stumbling_storting
+		
+		prerequisite = {
+			focus = RUS_propose_the_national_cabinet
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = -7
+		y = 1
+		cost = 6
+		relative_position_id = RUS_propose_the_national_cabinet
+		
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_organize_Popular_Front
+		icon = GFX_focus_PAR_align_with_the_guion_rojo
+		
+		prerequisite = {
+			focus = RUS_handle_to_confusing_cabinet
+		}
+		
+		mutually_exclusive = {
+			focus = RUS_coup_of_the_rightist
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = -7
+		y = 1
+		cost = 5
+		relative_position_id = RUS_handle_to_confusing_cabinet
+		
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_reform_the_revoultionism
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		
+		prerequisite = {
+			focus = RUS_organize_Popular_Front
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = RUS_organize_Popular_Front
+		
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	focus = {
+		id = RUS_true_Popular_Front
+		icon = GFX_focus_BRA_socialist_theologians
+		
+		prerequisite = {
+			focus = RUS_reform_the_revoultionism
+		}
+		
+		mutually_exclusive = {
+			focus = RUS_advance_of_left_SRs
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = RUS_restore_the_International
+		
+		completion_reward = {
+			
+		}
+	
+	}
+	
+	focus = {
+		id = RUS_restore_the_International
+		icon = GFX_focus_ETH_callout_to_the_world
+		
+		prerequisite = {
+			focus = RUS_reform_the_revoultionism
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = -2
+		y = 1
+		cost = 5
+		relative_position_id = RUS_reform_the_revoultionism
+		
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	focus = {
+		id = RUS_deal_with_radical
+		icon = GFX_focus_NOR_a_new_norway_Trotsky_communism
+		
+		prerequisite = {
+			focus = RUS_restore_the_International
+			focus = RUS_rebuild_of_Revolutionary_Front
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = RUS_reform_the_revoultionism
+		
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	focus = {
+		id = RUS_advance_of_left_SRs
+		icon = GFX_focus_ARG_women_in_industry
+		
+		prerequisite = {
+			focus = RUS_rebuild_of_Revolutionary_Front
+		}
+		
+		mutually_exclusive = {
+			focus = RUS_true_Popular_Front
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = RUS_rebuild_of_Revolutionary_Front
+		
+		completion_reward = {
+			
+		}
+	
+	}
+	
+	focus = {
+		id = RUS_rebuild_of_Revolutionary_Front
+		icon = GFX_focus_SWE_refuge_for_revolutionaries
+		
+		prerequisite = {
+			focus = RUS_reform_the_revoultionism
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = 2
+		y = 1
+		cost = 5
+		relative_position_id = RUS_reform_the_revoultionism
+		
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_the_left_cabinet
+		icon = GFX_focus_ITA_il_sol_dell_avvenire
+		
+		prerequisite = {
+			focus = RUS_true_Popular_Front
+			focus = RUS_advance_of_left_SRs
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = -2
+		y = 1
+		cost = 5
+		relative_position_id = RUS_advance_of_left_SRs
+		
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	focus = {
+		id = RUS_coup_of_the_rightist
+		icon = GFX_focus_generic_conspiracy
+		
+		prerequisite = {
+			focus = RUS_handle_to_confusing_cabinet
+		}
+		
+		mutually_exclusive = {
+			focus = RUS_organize_Popular_Front
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = 4
+		y = 1
+		cost = 5
+		relative_position_id = RUS_handle_to_confusing_cabinet
+		
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	focus = {
+		id = RUS_cooperate_with_ROVS
+		icon = GFX_focus_generic_military_dictatorship
+		
+		prerequisite = {
+			focus = RUS_coup_of_the_rightist
+		}
+		
+		mutually_exclusive = {
+			focus = RUS_support_for_fascist
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = -4
+		y = 1
+		cost = 5
+		relative_position_id = RUS_coup_of_the_rightist
+		
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	focus = {
+		id = RUS_legacy_of_Kolchak
+		icon = GFX_focus_generic_naval_discipline
+		
+		prerequisite = {
+			focus = RUS_cooperate_with_ROVS
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = RUS_cooperate_with_ROVS
+		
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	focus = {
+		id = RUS_collaborate_with_centre_left
+		icon = GFX_focus_por_workers_of_iberia
+		
+		prerequisite = {
+			focus = RUS_legacy_of_Kolchak
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = -2
+		y = 1
+		cost = 5
+		relative_position_id = RUS_legacy_of_Kolchak
+		
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = RUS_support_to_centre_right
+		icon = GFX_focus_por_concordat
+		
+		prerequisite = {
+			focus = RUS_legacy_of_Kolchak
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = 2
+		y = 1
+		cost = 3
+		relative_position_id = RUS_legacy_of_Kolchak
+		
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	focus = {
+		id = RUS_rule_with_an_iron_fist
+		icon = GFX_focus_generic_monarchy_1
+		
+		prerequisite = {
+			focus = RUS_legacy_of_Kolchak
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = RUS_legacy_of_Kolchak
+		
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	focus = {
+		id = RUS_sustain_the_national_cabinet
+		icon = GFX_focus_SWI_dissolve_the_federal_council
+		
+		prerequisite = {
+			focus = RUS_collaborate_with_centre_left
+		}
+		
+		prerequisite = {
+			focus = RUS_support_to_centre_right
+		}
+		
+		prerequisite = {
+			focus = RUS_rule_with_an_iron_fist
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = RUS_rule_with_an_iron_fist
+		
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	
+	focus = {
+		id = RUS_support_for_fascist
+		icon = GFX_focus_SWE_revoke_militia_law
+		
+		prerequisite = {
+			focus = RUS_coup_of_the_rightist
+		}
+		
+		mutually_exclusive = {
+			focus = RUS_cooperate_with_ROVS
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = 4
+		y = 1
+		cost = 5
+		relative_position_id = RUS_coup_of_the_rightist
+		
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	focus = {
+		id = RUS_recruit_women_milita
+		icon = GFX_focus_SOV_womens_fascist_movement
+		
+		prerequisite = {
+			focus = RUS_support_for_fascist
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = 1
+		y = 1
+		cost = 5
+		relative_position_id = RUS_support_for_fascist
+		
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	focus = {
+		id = RUS_reunite_to_monarchist
+		icon = GFX_focus_SWE_counter_revolution
+		
+		prerequisite = {
+			focus = RUS_recruit_women_milita
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = RUS_recruit_women_milita
+		
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	focus = {
+		id = RUS_reform_the_nationalism
+		icon = GFX_focus_generic_annex_country_2
+		
+		prerequisite = {
+			focus = RUS_support_for_fascist
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = -1
+		y = 1
+		cost = 3
+		relative_position_id = RUS_support_for_fascist
+		
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	focus = {
+		id = RUS_conciliate_to_extreme_rightists
+		icon = GFX_focus_NOR_approach_kretsen
+		
+		prerequisite = {
+			focus = RUS_reform_the_nationalism
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = RUS_reform_the_nationalism
+		
+		completion_reward = {
+			
+		}
+	
+	}
+	
+	focus = {
+		id = RUS_the_right_cabinet
+		icon = GFX_focus_SWI_embrace_panoramaheim
+
+		prerequisite = {
+			focus = RUS_reunite_to_monarchist
+		}
+		
+		prerequisite = {
+			focus = RUS_conciliate_to_extreme_rightists
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = -1
+		y = 1
+		cost = 5
+		relative_position_id = RUS_reunite_to_monarchist
+		
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	
 }
