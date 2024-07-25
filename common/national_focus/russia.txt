@@ -460,7 +460,7 @@ focus_tree = {
 	
 	focus = {
 		id = RUS_claim_the_new_regime
-		icon = GFX_focus_LAT_suspend_constitution_of_latvia
+		icon = GFX_focus_SOV_mobilization_plan
 		
 		prerequisite = {
 			focus = RUS_reunite_to_influence_of_white_armies
@@ -596,7 +596,7 @@ focus_tree = {
 			factor = 1
 		}
 		
-		x = -7
+		x = -8
 		y = 1
 		cost = 6
 		relative_position_id = RUS_propose_the_national_cabinet
@@ -660,7 +660,11 @@ focus_tree = {
 		icon = GFX_focus_BRA_socialist_theologians
 		
 		prerequisite = {
-			focus = RUS_reform_the_revoultionism
+			focus = RUS_restore_the_International
+		}
+		
+		prerequisite = {
+			focus = RUS_deal_with_radical
 		}
 		
 		mutually_exclusive = {
@@ -710,8 +714,7 @@ focus_tree = {
 		icon = GFX_focus_NOR_a_new_norway_Trotsky_communism
 		
 		prerequisite = {
-			focus = RUS_restore_the_International
-			focus = RUS_rebuild_of_Revolutionary_Front
+			focus = RUS_reform_the_revoultionism
 		}
 		
 		ai_will_do = {
@@ -735,6 +738,10 @@ focus_tree = {
 		
 		prerequisite = {
 			focus = RUS_rebuild_of_Revolutionary_Front
+		}
+		
+		prerequisite = {
+			focus = RUS_deal_with_radical
 		}
 		
 		mutually_exclusive = {
@@ -804,7 +811,7 @@ focus_tree = {
 	
 	focus = {
 		id = RUS_coup_of_the_rightist
-		icon = GFX_focus_generic_conspiracy
+		icon = GFX_focus_POL_riot_of_37
 		
 		prerequisite = {
 			focus = RUS_handle_to_confusing_cabinet
@@ -818,7 +825,7 @@ focus_tree = {
 			factor = 1
 		}
 		
-		x = 4
+		x = 7
 		y = 1
 		cost = 5
 		relative_position_id = RUS_handle_to_confusing_cabinet
@@ -1125,5 +1132,554 @@ focus_tree = {
 		
 	}
 	
+	focus = {
+		id = RUS_inner_military_problem
+		icon = GFX_goal_generic_attack_allies
+		
+		prerequisite = {
+			focus = RUS_propose_the_national_cabinet
+			focus = RUS_seize_emergency_measure_committee
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = 0
+		y = 2
+		cost = 5
+		relative_position_id = RUS_restart_the_emergency_measure_committee
+		
+		completion_reward = {
+			
+		}
+		
+	}
 	
+	focus = {
+		id = RUS_support_for_junior_officer
+		icon = GFX_focus_generic_infiltration
+		
+		prerequisite = {
+			focus = RUS_inner_military_problem
+		}
+		
+		mutually_exclusive = {
+			focus = RUS_found_the_NSA
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = -2
+		y = 1
+		cost = 5
+		relative_position_id = RUS_inner_military_problem
+		
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	focus = {
+		id = RUS_estabilish_National_Officer_Academy
+		icon = GFX_focus_generic_military_academy
+		
+		prerequisite = {
+			focus = RUS_invite_international_military_advisory_group
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = RUS_invite_international_military_advisory_group
+		
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	focus = {
+		id = RUS_invite_international_military_advisory_group
+		icon = GFX_focus_generic_little_entente
+		
+		prerequisite = {
+			focus = RUS_support_for_junior_officer
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = RUS_support_for_junior_officer
+		
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	focus = {
+		id = RUS_found_the_NSA
+		icon = GFX_focus_ARG_march_to_la_casa_rosada
+		
+		prerequisite = {
+			focus = RUS_inner_military_problem 
+		}
+		
+		mutually_exclusive = {
+			focus = RUS_support_for_junior_officer
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = 2
+		y = 1
+		cost = 5
+		relative_position_id = RUS_inner_military_problem
+		
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	focus = {
+		id = RUS_research_to_traditional_military_theory
+		icon = GFX_goal_generic_military_sphere
+		
+		prerequisite = {
+			focus = RUS_found_the_NSA
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = RUS_found_the_NSA
+		
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	focus = {
+		id = RUS_lesson_of_the_great_war
+		icon = GFX_focus_generic_strike_at_democracy1
+		
+		prerequisite = {
+			focus = RUS_research_to_traditional_military_theory
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = RUS_research_to_traditional_military_theory
+		
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	focus = {
+		id = RUS_expand_preferential_treatment_in_military
+		icon = GFX_focus_SWE_privately_managed_vacation
+		
+		prerequisite = {
+			focus = RUS_estabilish_National_Officer_Academy
+			focus = RUS_lesson_of_the_great_war
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = 2
+		y = 1
+		cost = 5
+		relative_position_id = RUS_estabilish_National_Officer_Academy
+		
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	focus = {
+		id = RUS_never_repeat_again
+		icon = GFX_focus_eng_move_to_secure_the_dominions
+		
+		prerequisite = {
+			focus = RUS_expand_preferential_treatment_in_military
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = RUS_expand_preferential_treatment_in_military
+		
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	focus = {
+		id = RUS_newest_military_training
+		icon = GFX_goal_rhineland
+		
+		prerequisite = {
+			focus = RUS_estabilish_National_Officer_Academy
+		}
+		
+		x = -1
+		y = 1
+		cost = 5
+		relative_position_id = RUS_estabilish_National_Officer_Academy
+		
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	focus = {
+		id = RUS_ready_to_reserve_forces
+		icon = GFX_focus_secret_rearmament
+		
+		prerequisite = {
+			focus = RUS_lesson_of_the_great_war
+		}
+		
+		x = 1
+		y = 1
+		cost = 5
+		relative_position_id = RUS_lesson_of_the_great_war
+		
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	focus = {
+		id = RUS_military_coup
+		icon = GFX_focus_generic_total_war
+		
+		prerequisite = {
+			focus = RUS_seize_emergency_measure_committee
+		}
+		
+		x = 3
+		y = 1
+		cost = 5
+		relative_position_id = RUS_seize_emergency_measure_committee
+		
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	focus = {
+		id = RUS_seize_personnel_order_of_government
+		icon = GFX_focus_SWI_embrace_rote_drei
+		
+		prerequisite = {
+			focus = RUS_military_coup
+		}
+		
+		mutually_exclusive = {
+			focus = RUS_prioritize_to_integral_unity
+		}
+		
+		x = -2
+		y = 1
+		cost = 5
+		relative_position_id = RUS_military_coup
+		
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	focus = {
+		id = RUS_prioritize_to_integral_unity
+		icon = GFX_goal_anschluss
+		
+		prerequisite = {
+			focus = RUS_military_coup
+		}
+		
+		mutually_exclusive = {
+			focus = RUS_seize_personnel_order_of_government
+		}
+		
+		x = 2
+		y = 1
+		cost = 5
+		relative_position_id = RUS_military_coup
+		
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	focus = {
+		id = RUS_the_decisive_purge
+		icon = GFX_focus_generic_conspiracy
+		
+		prerequisite = {
+			focus = RUS_seize_personnel_order_of_government
+			focus = RUS_prioritize_to_integral_unity
+		}
+		
+		x = 2
+		y = 1
+		cost = 5
+		relative_position_id = RUS_seize_personnel_order_of_government
+		
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	focus = {
+		id = RUS_united_new_military
+		icon = GFX_focus_ETH_freedom_at_gunpoint
+		
+		prerequisite = {
+			focus = RUS_the_decisive_purge
+		}
+		
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = RUS_the_decisive_purge
+		
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	focus = {
+		id = RUS_winding_up_to_duma
+		icon = GFX_focus_LAT_suspend_constitution_of_latvia
+		
+		prerequisite = {
+			focus = RUS_military_coup
+		}
+		
+		x = -5
+		y = 1
+		cost = 5
+		relative_position_id = RUS_military_coup
+		
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	focus = {
+		id = RUS_install_provisional_legislation_committee
+		icon = GFX_focus_POL_complete_april_constitution
+		
+		prerequisite = {
+			focus = RUS_winding_up_to_duma
+		}
+		
+		mutually_exclusive = {
+			focus = RUS_dessolution_of_the_duma
+		}
+		
+		x = -2
+		y = 1
+		cost = 5
+		relative_position_id = RUS_winding_up_to_duma
+		
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	focus = {
+		id = RUS_dessolution_of_the_duma
+		icon = GFX_focus_BRA_utilize_security_law
+		
+		prerequisite = {
+			focus = RUS_winding_up_to_duma
+		}
+		
+		mutually_exclusive = {
+			focus = RUS_install_provisional_legislation_committee
+		}
+		
+		x = 2
+		y = 1
+		cost = 5
+		relative_position_id = RUS_winding_up_to_duma
+		
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	focus = {
+		id = RUS_new_constitutional_agreement
+		icon = GFX_focus_generic_court
+		
+		prerequisite = {
+			focus = RUS_install_provisional_legislation_committee
+			focus = RUS_dessolution_of_the_duma
+		}
+		
+		x = 2
+		y = 1
+		cost = 5
+		relative_position_id = RUS_install_provisional_legislation_committee
+		
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	focus = {
+		id = RUS_spreading_meatballism
+		icon = GFX_focus_generic_national_security
+		
+		prerequisite = {
+			focus = RUS_military_coup
+		}
+		
+		x = 5
+		y = 1
+		cost = 5
+		relative_position_id = RUS_military_coup
+		
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	focus = {
+		id = RUS_suppress_to_intellectual
+		icon = GFX_focus_rom_parties_end
+		
+		prerequisite = {
+			focus = RUS_spreading_meatballism
+		}
+		
+		x = 1
+		y = 1
+		cost = 5
+		relative_position_id = RUS_spreading_meatballism
+		
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	focus = {
+		id = RUS_conclude_death_sentence_on_revolution
+		icon = GFX_focus_spr_crush_the_revolution
+		
+		prerequisite = {
+			focus = RUS_spreading_meatballism
+		}
+		
+		x = -1
+		y = 1
+		cost = 5
+		relative_position_id = RUS_spreading_meatballism
+		
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	focus = {
+		id = RUS_the_nation_for_soliders
+		icon = GFX_focus_ITA_banda_carita
+		
+		prerequisite = {
+			focus = RUS_suppress_to_intellectual
+		}
+		
+		prerequisite = {
+			focus = RUS_conclude_death_sentence_on_revolution
+		}
+		
+		x = 1
+		y = 1
+		cost = 5
+		relative_position_id = RUS_conclude_death_sentence_on_revolution
+		
+		completion_reward = {
+			
+		}
+		
+	}
+	
+	focus = {
+		id = RUS_russian_military_junta
+		icon = GFX_focus_RAJ_lions_of_the_great_war
+		
+		prerequisite = {
+			focus = RUS_new_constitutional_agreement
+		}
+		
+		prerequisite = {
+			focus = RUS_united_new_military
+		}
+		
+		prerequisite = {
+			focus = RUS_the_nation_for_soliders
+		}
+		
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = RUS_united_new_military
+		
+		completion_reward = {
+			
+		}
+		
+	}
 }
