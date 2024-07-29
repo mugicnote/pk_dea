@@ -11,123 +11,14 @@ country = {
 			cannot_call_allies_or_join_wars = 1
 		}
 	}
-
-	#미약한 산업(산업 문제 5)
-	RUS_Industry_problem_5 = {
-	
-		picture = chi_hyper_inflation5
-		
-		allowed = {
-			original_tag = RUS
-		}
-		
-		modifier = {
-			production_speed_industrial_complex_factor = -0.20
-			production_speed_arms_factory_factor = -0.20
-			production_speed_dockyard_factor = -0.20
-			production_speed_infrastructure_factor = -0.20
-			
-			production_cost_industrial_complex_factor = 1.00
-			production_cost_arms_factory_factor = 1.00
-			production_cost_dockyard_factor = 1.00
-			production_cost_infrastructure_factor = 1.00
-		}
-	}
-	
-	#낙후된 산업(산업 문제 4)
-	RUS_Industry_problem_4 = {
-	
-		picture = chi_hyper_inflation4
-		
-		allowed = {
-			original_tag = RUS
-		}
-		
-		modifier = {
-			production_speed_industrial_complex_factor = -0.15
-			production_speed_arms_factory_factor = -0.15
-			production_speed_dockyard_factor = -0.15
-			production_speed_infrastructure_factor = -0.15
-			
-			production_cost_industrial_complex_factor = 0.50
-			production_cost_arms_factory_factor = 0.50
-			production_cost_dockyard_factor = 0.50
-			production_cost_infrastructure_factor = 0.50
-		}
-	}
-	
-	#부족한 산업(산업 문제 3)
-	RUS_Industry_problem_3 = {
-	
-		picture = chi_hyper_inflation3
-		
-		allowed = {
-			original_tag = RUS
-		}
-		
-		modifier = {
-			production_speed_industrial_complex_factor = -0.10
-			production_speed_arms_factory_factor = -0.10
-			production_speed_dockyard_factor = -0.10
-			production_speed_infrastructure_factor = -0.10
-			
-			production_cost_industrial_complex_factor = 0.25
-			production_cost_arms_factory_factor = 0.25
-			production_cost_dockyard_factor = 0.25
-			production_cost_infrastructure_factor = 0.25
-		}
-	}
-	
-	#조금 개선된 산업(산업 문제 2)
-	RUS_Industry_problem_2 = {
-	
-		picture = chi_hyper_inflation2
-		
-		allowed = {
-			original_tag = RUS
-		}
-		
-		modifier = {
-			production_speed_industrial_complex_factor = -0.05
-			production_speed_arms_factory_factor = -0.05
-			production_speed_dockyard_factor = -0.05
-			production_speed_infrastructure_factor = -0.05
-			
-			production_cost_industrial_complex_factor = 0.10
-			production_cost_arms_factory_factor = 0.10
-			production_cost_dockyard_factor = 0.10
-			production_cost_infrastructure_factor = 0.10
-		}
-	}
-	
-	#사할린 산업단지(산업 문제 1)
-	RUS_Industry_problem_1 = {
-	
-		picture = chi_hyper_inflation1
-		
-		allowed = {
-			original_tag = RUS
-		}
-		
-		modifier = {
-			consumer_goods_factor = -0.05
-			production_speed_industrial_complex_factor = 0.10
-			production_speed_arms_factory_factor = 0.10
-			production_speed_dockyard_factor = 0.10
-			production_speed_infrastructure_factor = 0.10
-		}
-	}
-	
 	
 	#통합되지 않은 지휘체계
 	RUS_Uncoordinated_channel_of_command = {
-	
+		name = RUS_Uncoordinated_channel_of_command_ideas
 		picture = tfx_can_conscription_crisis
-		
 		allowed = {
 			original_tag = RUS
 		}
-		
 		modifier = {
 			war_support_factor = -0.15
 			land_doctrine_cost_factor = 1.00
@@ -139,32 +30,108 @@ country = {
 	
 	#반공 정서
 	RUS_Anti_communist_sentiment = {
-	
+		name = RUS_Anti_communist_sentiment_ideas
 		picture = anti_soviet_pact
-		
 		allowed = {
 			original_tag = RUS
 		}
-		
 		modifier = {
-			radical_socialism_drift = 0.05
+			radical_socialism_drift = -0.05
+			neutrality_drift = 0.05
+			auto_despotism_drift = 0.05
 			fascism_drift = 0.05
-			despotism_drift = 0.01
-			eutrality_drift = 0.01
 		}
 	}
 	
 	#농업사회(러시아)
 	RUS_Agrarian_society = {
-	
+		name = RUS_Agrarian_society_ideas
 		picture = generic_agrarian_society
-		
 		allowed = {
 			original_tag = RUS
 		}
-		
 		modifier = {
 			conscription_factor = -0.95
+		}
+	}
+	
+	
+	#내부 분열 가속화
+	RUS_fall_by_inside = {
+		name = RUS_fall_by_inside_ideas
+		picture = generic_disjointed_gov
+		allowed = {
+			original_tag = RUS
+		}
+		modifier = {
+			war_support_factor = -0.25
+			political_advisor_cost_factor = 0.25
+			trade_laws_cost_factor = 0.25
+			mobilization_laws_factor = 0.25
+			economy_cost_factor = 0.25
+		}
+	}
+	
+	#자금 고갈
+	RUS_lost_funds = {
+		name = RUS_lost_funds_ideas
+		picture = great_depression
+		allowed = {
+			original_tag = RUS
+		}
+		modifier = {
+			political_power_gain = 0.15
+			stability_factor = -0.25
+		}
+	}
+	
+	#국채 발행
+	RUS_national_bonds = {
+		name = RUS_national_bonds_ideas
+		picture = generic_foreign_capital
+		allowed = {
+			original_tag = RUS
+		}
+		modifier = {
+			consumer_goods_factor = 0.10
+			political_power_gain = 0.1
+			stability_factor = -0.1
+		}
+	}
+	
+	#미봉책
+	RUS_half_measure = {
+		name = RUS_half_measure_ideas
+		picture = generic_deal_with_the_devil
+		allowed = {
+			original_tag = RUS
+		}
+		modifier = {
+			war_support_factor = -0.15
+			ar_support_factor = -0.15
+			political_advisor_cost_factor = 0.15
+			trade_laws_cost_factor = 0.15
+			mobilization_laws_factor = 0.15
+			economy_cost_factor = 0.15
+		}
+	}
+	
+	#지난 시대의 마지막 의지
+	RUS_our_last_will = {
+		name = RUS_our_last_will_ideas
+		picture = SPR_crush_the_revolution
+		allowed = {
+			original_tag = RUS
+		}
+		modifier = {
+			army_core_attack_factor = 0.05
+			army_core_defence_factor = 0.05
+		
+		}
+		targeted_modifier = {
+			tag = SOV
+			attack_bonus_against = 0.50
+			defense_bonus_against = 0.50
 		}
 	}
 }

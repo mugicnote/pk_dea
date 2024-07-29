@@ -27,6 +27,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			country_event = { id = RUS_event.1 }
 		}
 	}
 	
@@ -49,7 +50,9 @@ focus_tree = {
 		
 
 		completion_reward = {
-			
+			country_event = { id = RUS_event.2 }
+			add_stability = -0.1
+			add_war_support = -0.1
 		}
 	}
 	
@@ -71,7 +74,7 @@ focus_tree = {
 		relative_position_id = RUS_flee_to_Tokyo
 		
 		completion_reward = {
-			
+			add_ideas = RUS_fall_by_inside
 		}
 	}
 	
@@ -93,7 +96,7 @@ focus_tree = {
 		relative_position_id = RUS_flee_to_Tokyo
 		
 		completion_reward = {
-			
+			add_ideas = RUS_lost_funds
 		}
 	}
 	
@@ -119,7 +122,8 @@ focus_tree = {
 		relative_position_id = RUS_flee_to_Tokyo
 		
 		completion_reward = {
-			
+			country_event = { id = RUS_event.3 }
+			add_stability = 0.05
 		}
 	}
 	
@@ -141,7 +145,8 @@ focus_tree = {
 		relative_position_id = RUS_flee_to_Tokyo
 		
 		completion_reward = {
-			
+			country_event = { id = RUS_event.4 }
+			add_stability = 0.05
 		}
 	}
 	
@@ -163,7 +168,10 @@ focus_tree = {
 		relative_position_id = RUS_negotiate_with_Korean_Government
 		
 		completion_reward = {
-			
+			swap_ideas = {
+				remove_idea = RUS_lost_funds
+				add_idea = RUS_national_bonds
+			}
 		}
 	}
 	
@@ -185,7 +193,9 @@ focus_tree = {
 		relative_position_id = RUS_negotiate_with_Korean_Government
 		
 		completion_reward = {
-			
+			add_political_power = 100
+			add_stability = 0.1
+			add_war_support = 0.1
 		}
 	}
 	
@@ -208,7 +218,20 @@ focus_tree = {
 		relative_position_id = RUS_flee_to_Tokyo
 		
 		completion_reward = {
+			country_event = { id = RUS_event.5 }
+			add_stability = 0.10
 			
+			set_party_name = {
+				ideology = neutrality
+				long_name = RUS_gen_neutrality_party_long
+				name = RUS_gen_neutrality_party
+			}
+			
+			set_party_name = {
+				ideology = auto_despotism
+				long_name = RUS_gen_auto_despotism_party_long
+				name = RUS_gen_auto_despotism_party
+			}
 		}
 	}
 	
@@ -230,7 +253,12 @@ focus_tree = {
 		relative_position_id = RUS_promise_the_support
 		
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = RUS_fall_by_inside
+				add_idea = RUS_half_measure
+			}
 			
+			add_political_power = 100
 		}
 	}
 	
@@ -252,7 +280,8 @@ focus_tree = {
 		relative_position_id = RUS_reunite_exile_personnel
 		
 		completion_reward = {
-			
+			country_event = { id = RUS_event.6 }
+			add_ideas = RUS_our_last_will
 		}
 	}
 
