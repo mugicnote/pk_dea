@@ -1,0 +1,22 @@
+﻿l_english:
+    #시작 국민정신
+    RUS_idea_government_in_exile:0 "끝나지 않은 내전"
+    RUS_idea_government_in_exile_desc:0 ""
+    RUS_Uncoordinated_channel_of_commmand_ideas:0 "통합되지 않은 지휘체계"
+    RUS_Uncoordinated_channel_of_commmand_ideas_desc:0 ""
+    RUS_Anti_communist_sentiment_ideas:0 "반공 정서"
+    RUS_Anti_communist_sentiment_ideas_desc:0 ""
+    RUS_Agrarian_society_ideas:0 "농업 사회"
+    RUS_Agrarian_society_ideas_desc:0 ""
+    
+    #초기 중점
+    RUS_fall_by_inside_ideas:0 "내부 분열 가속화"
+    RUS_fall_by_inside_ideas_desc:0 ""
+    RUS_lost_funds_ideas:0 "자금 고갈"
+    RUS_lost_funds_ideas_desc:0 ""
+    RUS_national_bonds_ideas:0 "국채 발행"
+    RUS_national_bonds_ideas_desc:0 ""
+    RUS_half_measure_ideas:0 "미봉책"
+    RUS_half_measure_ideas_desc:0 ""
+    RUS_our_last_will_ideas:0 "지난 시대의 마지막 의지"
+    RUS_our_last_will_ideas_desc:0 ""
