@@ -12,22 +12,6 @@ country = {
 		}
 	}
 	
-	#통합되지 않은 지휘체계
-	RUS_Uncoordinated_channel_of_command = {
-		name = RUS_Uncoordinated_channel_of_command_ideas
-		picture = tfx_can_conscription_crisis
-		allowed = {
-			original_tag = RUS
-		}
-		modifier = {
-			war_support_factor = -0.15
-			land_doctrine_cost_factor = 1.00
-			naval_doctrine_cost_factor = 1.00
-			experience_gain_army = 0.15
-			experience_gain_navy = -0.15
-		}
-	}
-	
 	#반공 정서
 	RUS_Anti_communist_sentiment = {
 		name = RUS_Anti_communist_sentiment_ideas

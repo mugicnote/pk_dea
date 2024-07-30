@@ -60,10 +60,6 @@ if = {
 
 set_convoys = 50
 
-set_variable = { RUS_dws_1 = -0.20 }
-set_variable = { RUS_dws_2 = -0.15 }
-set_variable = { RUS_dws_3 = -0.15 }
-
 recruit_character = RUS_Aleksandr_Kolchak
 recruit_character = RUS_Pyotr_Wrangel
 
@@ -79,7 +75,6 @@ set_popularities = {
 
 add_ideas = {
 	RUS_idea_government_in_exile_1
-	RUS_Uncoordianted_channel_of_command
 	RUS_Anti_communist_sentiment
 	RUS_Agrarian_society
 }

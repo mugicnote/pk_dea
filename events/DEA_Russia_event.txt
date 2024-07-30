@@ -4,10 +4,9 @@ country_event = { #도요하라 강권
 	id = RUS_event.1
 	title = RUS_event.1.t
 	desc = RUS_event.1.d
-	picture = 
+	picture = GFX_news_event_generic_read_write
 	
 	is_triggered_only = yes
-	fire_only_once = yes
 	
 	option = {
 		name = RUS_event.1.a
@@ -18,10 +17,9 @@ country_event = { #이별
 	id = RUS_event.2
 	title = RUS_event.2.t
 	desc = RUS_event.2.d
-	picture =
+	picture = GFX_news_event_generic_read_write
 	
 	is_triggered_only = yes
-	fire_only_once = yes
 	
 	option = {
 		name = RUS_event.2.a
@@ -32,10 +30,9 @@ country_event = { #결단
 	id = RUS_event.3
 	title = RUS_event.3.t
 	desc = RUS_event.3.d
-	picture =
+	picture = GFX_news_event_generic_read_write
 	
 	is_triggered_only = yes
-	fire_only_once = yes
 	
 	option = {
 		name = RUS_event.3.a
@@ -46,10 +43,9 @@ country_event = { #육참골단
 	id = RUS_event.4
 	title = RUS_event.4.t
 	desc = RUS_event.4.d
-	picture =
+	picture = GFX_news_event_generic_read_write
 	
 	is_triggered_only = yes
-	fire_only_once = yes
 	
 	option = {
 		name = RUS_event.4.a
@@ -60,10 +56,9 @@ country_event = { #새출발
 	id = RUS_event.5
 	title = RUS_event.5.t
 	desc = RUS_event.5.d
-	picture =
+	picture = GFX_news_event_generic_read_write
 	
 	is_triggered_only = yes
-	fire_only_once = yes
 	
 	option = {
 		name = RUS_event.5.a
@@ -74,10 +69,9 @@ country_event = { #바래진 희망
 	id = RUS_event.6
 	title = RUS_event.6.t
 	desc = RUS_event.6.d
-	picture =
+	picture = GFX_news_event_generic_read_write
 	
 	is_triggered_only = yes
-	fire_only_once = yes
 	
 	option = {
 		name = RUS_event.6.a
