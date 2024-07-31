@@ -42,7 +42,7 @@ JAP_nego_with_major_dec_cat = {
 
 		fire_only_once = yes
 
-		days_remove = 3
+		days_remove = 90
 		
 		modifier = {
 			consumer_goods_factor = 0.20
