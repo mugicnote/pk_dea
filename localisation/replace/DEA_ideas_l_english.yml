@@ -225,6 +225,8 @@ JAP_expand_the_police_dynamic_modifier: "경찰력 확충"
 JAP_firepower_focus_dynamic_modifier: "화력전"
 JAP_strategy_focus_dynamic_modifier: "전략전"
 JAP_blitzkrieg_dynamic_modifier: "기동전"
+JAP_navy_reform_dynamic_modifier: "해군 개혁"
+JAP_supremacy_of_carrier_idea: "항공주병론"
 
 ###중국###
 CHI_crowded_right_wing:0 "혼잡한 우파"

@@ -345,5 +345,30 @@ ideas = {
                 naval_equipment = 0.05
             }
         }
+
+        JAP_supremacy_of_carrier_idea = { #항공주병론
+            name = JAP_supremacy_of_carrier_idea
+            picture = jap_militarism_showa
+            removal_cost = -1
+            equipment_bonus = {
+                cv_small_plane_airframe = {
+                    build_cost_ic = 0.10
+                }
+            }
+            modifier = {
+                sortie_efficiency = 0.05
+            }
+        }
+
+        JAP_submarine_focus_idea = { #함대결전
+            name = fleet_in_being
+            picture = jap_militarism_showa
+            removal_cost = -1
+            equipment_bonus = {
+                submarine = {
+                    build_cost_ic = -0.05
+                }
+            }
+        }
     }
 }

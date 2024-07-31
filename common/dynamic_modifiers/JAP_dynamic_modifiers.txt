@@ -70,5 +70,5 @@ JAP_blitzkrieg_dynamic_modifier = { #기동전
 }
 JAP_navy_reform_dynamic_modifier = { #해군 개혁
 	icon = GFX_idea_jap_militarism_showa
-	
+	refit_speed = JAP_navy_reform_refit_speed
 }

@@ -25,7 +25,6 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			#뉴스 발생 (쇼와 11년 신년사)
 			add_political_power = 100
 		}
 	}
@@ -40,7 +39,6 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_new_years_greeting
 		completion_reward = {
-			#이벤트 발생 (불만 잠재우기)
 			add_stability = -0.10
 		}
 	}
@@ -55,7 +53,6 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_new_years_greeting
 		completion_reward = {
-			#이벤트 발생 (내부적 차질)
 			add_political_power = -50
 		}
 	}
@@ -79,6 +76,12 @@ focus_tree = {
 			}
 		}
 		completion_reward = { 
+			effect_tooltip = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = -1000
+				}
+			}
 			add_stability = 0.05
 		}
 	}
@@ -398,9 +401,9 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = JAP_police_improvement
-		available = {
-			has_country_flag = JAP_military_reformed_flag
-		}
+		#available = {
+		#	has_country_flag = JAP_military_reformed_flag
+		#}
 		completion_reward = {
 			add_to_variable = {
 				JAP_temp_yakusoku_mobilization_laws_cost_factor = 0.20
@@ -521,6 +524,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = JAP_emergency_budgeting
+		cancel_if_invalid = no
 		available = {
 			has_political_power > 200
 		}
@@ -528,6 +532,9 @@ focus_tree = {
 			add_political_power = -200
 		}
 		completion_reward = { 
+			effect_tooltip = {
+				add_political_power = -200
+			}
 			add_to_variable = {
 				JAP_government_led_economy_production_speed_buildings_factor = 0.10
 			}
@@ -624,7 +631,13 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_help_me_america
 		completion_reward = { 
-			#디시전 해금(외국 투자자와 협상)
+			unlock_decision_category_tooltip = JAP_nego_with_major_dec_cat
+			set_variable = {
+				JAP_nego_in_progress_var = 0
+			}
+			set_variable = {
+				JAP_nego_with_major_var = 0
+			}
 		}
 	}
 	focus = { #관세 인상
@@ -873,7 +886,7 @@ focus_tree = {
 			focus = JAP_reform_the_military_academy
 		}
 		cost = 7
-		x = 3
+		x = 2
 		y = 1
 		relative_position_id = JAP_reform_the_military_academy
 		completion_reward = { 
@@ -888,6 +901,215 @@ focus_tree = {
 				}
 			}
 			add_ideas = JAP_navy_reform_idea
+		}
+	}
+	focus = { #설계국 확장
+		id = JAP_expand_mio
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = JAP_dock_renewal
+		}
+		cost = 7
+		x = 0
+		y = 2
+		relative_position_id = JAP_dock_renewal
+		completion_reward = { 
+			add_dynamic_modifier = {
+				modifier = JAP_navy_reform_dynamic_modifier
+			}
+			add_to_variable = {
+				JAP_navy_reform_refit_speed = -0.10
+			}
+			custom_effect_tooltip = JAP_navy_reform_dynamic_modifier_tt
+			custom_effect_tooltip = JAP_expand_mio_tt
+		}
+	}
+	focus = { #함대결전 교리
+		id = JAP_the_battleship_doctrine
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = JAP_expand_mio
+		}
+		mutually_exclusive = {
+			focus = JAP_supremacy_of_carrier
+		}
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = JAP_expand_mio
+		completion_reward = { 
+			add_doctrine_cost_reduction = {
+				name = JAP_the_battleship_doctrine
+				cost_reduction = 0.50
+				uses = 1
+				category = fleet_in_being_tree
+			}
+		}
+	}
+	focus = { #전함 장갑 보강
+		id = JAP_reinforce_ship_armor
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = JAP_the_battleship_doctrine
+		}
+		cost = 4
+		x = 0
+		y = 1
+		relative_position_id = JAP_the_battleship_doctrine
+		completion_reward = { 
+			add_tech_bonus = {
+				name = JAP_reinforce_ship_armor
+				uses = 2
+				bonus = 0.50
+				category = bb_tech
+			}
+		}
+	}
+	focus = { #점감요격작전 재검토
+		id = JAP_submarine_focus
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = JAP_reinforce_ship_armor
+		}
+		cost = 7
+		x = 0
+		y = 1
+		relative_position_id = JAP_reinforce_ship_armor
+		completion_reward = { 
+			add_ideas = JAP_submarine_focus_idea
+		}
+	}
+	focus = { #항공주병론 채택
+		id = JAP_supremacy_of_carrier
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = JAP_expand_mio
+		}
+		mutually_exclusive = {
+			focus = JAP_the_battleship_doctrine
+		}
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = JAP_expand_mio
+		completion_reward = { 
+			add_doctrine_cost_reduction = {
+				name = JAP_supremacy_of_carrier
+				cost_reduction = 0.50
+				uses = 1
+				category = base_strike_main
+			}
+		}
+	}
+	focus = { #항공모함 선체 개량
+		id = JAP_refit_carrier
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = JAP_supremacy_of_carrier
+		}
+		cost = 5
+		x = 0		
+		y = 1
+		relative_position_id = JAP_supremacy_of_carrier
+		completion_reward = { 
+			add_tech_bonus = {
+				name = JAP_refit_carrier
+				ahead_reduction = 2
+				uses = 1
+				category = cv_tech
+			}
+			#if = {
+			#	limit = { 
+			#		has_dlc = "Man the Guns"
+			#	}
+			#	create_equipment_variant = {
+			#		name = "Soryu Class"
+			#		type = ship_hull_carrier_1
+			#		name_group = JAP_CV_HISTORICAL
+			#		parent_version = 0
+			#		modules = {
+			#			fixed_ship_deck_slot_1 = ship_deck_space
+			#			fixed_ship_deck_slot_2 = ship_deck_space
+			#			fixed_ship_anti_air_slot = ship_anti_air_1
+			#			fixed_ship_radar_slot = empty
+			#			fixed_ship_engine_slot = carrier_ship_engine_2
+			#			fixed_ship_secondaries_slot = dp_ship_secondaries_1
+			#			front_1_custom_slot = ship_deck_space
+			#		}
+			#	}
+			#	create_equipment_variant = {
+			#		name = "Yubari Class"
+			#		type = ship_hull_cruiser_2
+			#		name_group = JAP_CL_HISTORICAL
+			#		parent_version = 0
+			#		modules = {
+			#			fixed_ship_battery_slot = ship_light_medium_battery_1
+			#			fixed_ship_anti_air_slot = empty
+			#			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			#			fixed_ship_radar_slot = empty
+			#			fixed_ship_engine_slot = cruiser_ship_engine_2
+			#			fixed_ship_armor_slot = ship_armor_cruiser_1
+			#			mid_1_custom_slot = ship_torpedo_1
+			#			mid_2_custom_slot = empty
+			#			rear_1_custom_slot = ship_mine_layer_1
+			#		}
+			#		obsolete = yes
+			#	}
+			#	create_equipment_variant = {
+			#		name = "Sendai Class"
+			#		type = ship_hull_cruiser_2
+			#		name_group = JAP_CL_HISTORICAL
+			#		parent_version = 0
+			#		modules = {
+			#			fixed_ship_battery_slot = ship_light_medium_battery_1
+			#			fixed_ship_anti_air_slot = ship_anti_air_1
+			#			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			#			fixed_ship_radar_slot = empty
+			#			fixed_ship_engine_slot = cruiser_ship_engine_2
+			#			fixed_ship_armor_slot = ship_armor_cruiser_1
+			#			mid_1_custom_slot = ship_torpedo_1
+			#			mid_2_custom_slot = ship_airplane_launcher_1
+			#			rear_1_custom_slot = ship_mine_layer_1
+			#		}
+			#		obsolete = yes
+			#	}
+			#}
+			#add_equipment_production = {				
+			#	equipment = {
+			#		type = ship_hull_cruiser_2
+			#		creator = "JAP"
+			#		version_name = "Yubari Class"
+			#	}
+			#	requested_factories = 1
+			#	progress = 0.5
+			#	amount = 1
+			#	industrial_manufacturer = mio:JAP_sasebo_naval_arsenal_organization
+			#}
+			#add_equipment_production = {				
+			#	equipment = {
+			#		type = ship_hull_cruiser_2
+			#		creator = "JAP"
+			#		version_name = "Sendai Class"
+			#	}
+			#	requested_factories = 1
+			#	progress = 0.5
+			#	amount = 1
+			#	industrial_manufacturer = mio:JAP_sasebo_naval_arsenal_organization
+			#}
+		}
+	}
+	focus = { #항공기 연구 협력
+		id = JAP_plane_tech_share
+		icon = GFX_goal_unknown
+		prerequisite = {
+			focus = JAP_refit_carrier
+		}
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = JAP_refit_carrier
+		completion_reward = { 
+			add_ideas = JAP_supremacy_of_carrier_idea
 		}
 	}
 	focus = { #조병창 확장
@@ -958,6 +1180,9 @@ focus_tree = {
 	focus = { #화력 중시
 		id = JAP_firepower_focus
 		icon = GFX_goal_unknown
+		mutually_exclusive = {
+			focus = JAP_strategy_focus focus = JAP_armor_dev
+		}
 		prerequisite = {
 			focus = JAP_weapon_dev
 		}
@@ -1009,6 +1234,9 @@ focus_tree = {
 	focus = { #전략 중시
 		id = JAP_strategy_focus
 		icon = GFX_goal_unknown
+		mutually_exclusive = {
+			focus = JAP_firepower_focus focus = JAP_armor_dev
+		}
 		prerequisite = {
 			focus = JAP_weapon_dev
 		}
@@ -1053,13 +1281,13 @@ focus_tree = {
 			if = {
 				limit = { 
 					has_dynamic_modifier = {
-						modifier = JAP_military_reform_dynamic_modifier
+						modifier = JAP_strategy_focus_dynamic_modifier
 					}
 				}
 				add_to_variable = {
 					JAP_strategy_focus_planning_speed = 0.05
 				}
-				custom_effect_tooltip = JAP_military_reform_tt
+				custom_effect_tooltip = JAP_strategy_focus_dynamic_modifier_tt
 				custom_effect_tooltip = JAP_strategy_first_tt
 			}
 		}
@@ -1086,6 +1314,9 @@ focus_tree = {
 	focus = { #전차 개발
 		id = JAP_armor_dev
 		icon = GFX_goal_unknown
+		mutually_exclusive = {
+			focus = JAP_strategy_focus focus = JAP_strategy_focus
+		}
 		prerequisite = {
 			focus = JAP_weapon_dev
 		}

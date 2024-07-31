@@ -1,0 +1,8 @@
+﻿l_english:
+
+#의견
+JAP_invested_us: "우리에게 투자함"
+
+#툴팁
+JAP_nego_with_major_dec_tt: "현재 [?JAP_nego_with_major_var|Y0]§Y/5§!번의 협상을 시도함"
+JAP_nego_in_progress_var_tt: "§G현재 진행중인 협상이 존재하지 않음§!"
