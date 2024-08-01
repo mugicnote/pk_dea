@@ -223,14 +223,14 @@ focus_tree = {
 			
 			set_party_name = {
 				ideology = neutrality
-				long_name = RUS_gen_neutrality_party_long
-				name = RUS_gen_neutrality_party
+				long_name = RUS_neutrality_party_long
+				name = RUS_neutrality_party
 			}
 			
 			set_party_name = {
 				ideology = auto_despotism
-				long_name = RUS_gen_auto_despotism_party_long
-				name = RUS_gen_auto_despotism_party
+				long_name = RUS_auto_despotism_party_long
+				name = RUS_auto_despotism_party
 			}
 		}
 	}
