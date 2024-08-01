@@ -11,5 +11,6 @@
 opinion_modifiers = {
 
 	opnion_JAP_KOR_Huh_Chung_event = { value = 20 }
+	JAP_invested_us = { value = 20 }
 
 }

@@ -1,0 +1,103 @@
+JAP_nego_with_major_dec_cat = {
+	JAP_nego_with_major_dec = {
+		priority = 10
+		icon = ger_mefo_bills
+
+		allowed = {
+			original_tag = JAP
+		}
+
+		target_trigger = {
+			FROM = {
+				OR = {
+					tag = USA
+					tag = GER
+					tag = ENG
+					tag = ITA
+					tag = FRA
+					tag = CAN
+					tag = SOV
+				}
+			}
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = JAP_nego_with_major_dec_tt
+				check_variable = {
+					JAP_nego_with_major_var < 5
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = JAP_nego_in_progress_var_tt
+				check_variable = {
+					JAP_nego_in_progress_var = 0
+				}
+			}
+		}
+
+		visible = {
+			NOT = { is_exiled_in = FROM }
+		}
+
+		fire_only_once = yes
+
+		days_remove = 90
+		
+		modifier = {
+			consumer_goods_factor = 0.20
+		}
+
+		complete_effect = {
+			set_variable = {
+				JAP_nego_in_progress_var = 1
+			}
+		}
+
+		remove_effect = {
+			if = {
+				limit = { 
+					has_opinion = {
+						target = FROM
+						value > 60
+					}
+				}
+				add_offsite_building = {
+					type = industrial_complex
+					level = 1
+				}
+				add_opinion_modifier = {
+					target = FROM
+					modifier = JAP_invested_us
+				}
+			}
+			else = {
+				random_list = {
+					50 = {
+						add_offsite_building = {
+							type = industrial_complex
+							level = 1
+						}
+						add_opinion_modifier = {
+							target = FROM
+							modifier = JAP_invested_us
+						}
+					}
+					50 = {
+						
+					}
+				}
+			}
+			set_variable = {
+				JAP_nego_in_progress_var = 0
+			}
+			add_to_variable = {
+				JAP_nego_with_major_var = 1
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

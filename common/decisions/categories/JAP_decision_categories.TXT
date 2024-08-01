@@ -4,11 +4,34 @@ JAP_Com_strike_category = {
     picture = GFX_VTY_political_fighting
 
     allowed = {
-          original_tag = jap
+        original_tag = jap
     }
     visible = {
     }
     visible_when_empty = no
 
     priority = 100
+}
+JAP_nego_with_major_dec_cat = {
+    icon = GFX_decision_category_generic_political_actions
+
+    picture = GFX_VTY_political_fighting
+
+    allowed = {
+        original_tag = jap
+    }
+    visible = {
+        OR = {
+            is_debug = yes
+            AND = {
+                has_completed_focus = JAP_attract_foreign_capital
+                check_variable = {
+                    JAP_nego_with_major_var < 5
+                }
+            }
+        }
+    }
+    visible_when_empty = no
+
+    priority = 50
 }

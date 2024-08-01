@@ -83,6 +83,9 @@ set_variable = {
 }
 
 #해군 개혁
+set_variable = {
+	JAP_navy_reform_refit_speed = 0
+}
 
 add_ideas = {
     JAP_shoku_gun
