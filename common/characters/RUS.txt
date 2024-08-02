@@ -13,6 +13,7 @@ characters={
 			}
 			expire="2000.1.1.1"
 			id=-1
+			desc="POLITICS_ALEKSANDR_KOLCHAK_DESC"
 		}
 	}
 	
@@ -47,6 +48,7 @@ characters={
 			}
 			expire="2000.1.1.1"
 			id=-1
+			
 		}
 	}
 	

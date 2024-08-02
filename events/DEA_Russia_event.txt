@@ -10,7 +10,6 @@ country_event = { #도요하라 강권
 	
 	option = {
 		name = RUS_event.1.a
-		
 		add_named_threat = {
 			threat = -1
 			name = RUS_event.1.t
@@ -28,6 +27,9 @@ country_event = { #이별
 	
 	option = {
 		name = RUS_event.2.a
+		JAP = {
+			remove_from_faction = RUS
+		}
 	}
 }
 
@@ -41,12 +43,8 @@ country_event = { #결단
 	
 	option = {
 		name = RUS_event.3.a
-		
-		JAP = {
-			remove_from_faction = RUS
-		}
-		
 		KOR = {
+			create_faction = "Republic of Korea"
 			add_to_faction = RUS
 		}
 	}
@@ -88,7 +86,6 @@ country_event = { #바래진 희망
 	
 	option = {
 		name = RUS_event.6.a
-		
 		country_event = { id = RUS_event.7 days = 0 }
 	}
 }
@@ -103,18 +100,17 @@ country_event = { #마지막 숨
 	
 	option = {
 		name = RUS_event.7.a
-		
-		retire_ideology_leader = neutrality
-		
+		retire_ideology_leader = neutraliy
 		create_country_leader = {
-			name = "Pyotr Brangel"
-			desc = "POLITICS_PYOTR_BRANGEL_DESC"
-			picture = GFX_portrait_Pyotr_Brangel
-			expire = "1965.1.1"
-			ideology = despotism
+			name = "Pyotr Wrangel"
+			desc = "POLITICS_PYOTR_WRANGEL_DESC"
+			picture = "Potrait_Pyotre_Brangel.dds"
+			expire = "2000.1.1.1"
+			ideology = military_dic
 			traits = {
 				RUS_pragmatical_aristocrat
 			}
 		}
+		
 	}
 }

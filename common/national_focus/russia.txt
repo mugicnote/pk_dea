@@ -20,7 +20,7 @@ focus_tree = {
 		
 		x = 1
 		y = 0
-		cost = 1
+		cost = 0
 		
 		ai_will_do = {
 			factor = 1
@@ -45,7 +45,7 @@ focus_tree = {
 		
 		x = 0
 		y = 1
-		cost = 2
+		cost = 1
 		relative_position_id = RUS_diktat_of_Doyohara
 		
 
@@ -70,7 +70,7 @@ focus_tree = {
 		
 		x = -1
 		y = 1
-		cost = 3
+		cost = 1
 		relative_position_id = RUS_flee_to_Tokyo
 		
 		completion_reward = {
@@ -92,7 +92,7 @@ focus_tree = {
 		
 		x = 1
 		y = 1
-		cost = 3
+		cost = 1
 		relative_position_id = RUS_flee_to_Tokyo
 		
 		completion_reward = {
@@ -118,7 +118,7 @@ focus_tree = {
 		
 		x = 0
 		y = 2
-		cost = 4
+		cost = 2
 		relative_position_id = RUS_flee_to_Tokyo
 		
 		completion_reward = {
@@ -141,7 +141,7 @@ focus_tree = {
 		
 		x = 0
 		y = 3
-		cost = 4
+		cost = 2
 		relative_position_id = RUS_flee_to_Tokyo
 		
 		completion_reward = {
@@ -164,7 +164,7 @@ focus_tree = {
 		
 		x = -1
 		y = 1
-		cost = 4
+		cost = 2
 		relative_position_id = RUS_negotiate_with_Korean_Government
 		
 		completion_reward = {
@@ -189,7 +189,7 @@ focus_tree = {
 		
 		x = 1
 		y = 1
-		cost = 4
+		cost = 2
 		relative_position_id = RUS_negotiate_with_Korean_Government
 		
 		completion_reward = {
@@ -214,7 +214,7 @@ focus_tree = {
 		
 		x = 0
 		y = 5
-		cost = 5
+		cost = 3
 		relative_position_id = RUS_flee_to_Tokyo
 		
 		completion_reward = {
@@ -249,7 +249,7 @@ focus_tree = {
 		
 		x = -1
 		y = 1
-		cost = 4
+		cost = 3
 		relative_position_id = RUS_promise_the_support
 		
 		completion_reward = {
@@ -276,7 +276,7 @@ focus_tree = {
 		
 		x = 1
 		y = 1
-		cost = 4
+		cost = 3
 		relative_position_id = RUS_reunite_exile_personnel
 		
 		completion_reward = {
