@@ -4,12 +4,17 @@ country_event = { #도요하라 강권
 	id = RUS_event.1
 	title = RUS_event.1.t
 	desc = RUS_event.1.d
-	picture = GFX_news_event_generic_read_write
+	picture = GFX_report_event_japanese_soldiers_03
 	
 	is_triggered_only = yes
 	
 	option = {
 		name = RUS_event.1.a
+		
+		add_named_threat = {
+			threat = -1
+			name = RUS_event.1.t
+		}
 	}
 }
 
@@ -17,7 +22,7 @@ country_event = { #이별
 	id = RUS_event.2
 	title = RUS_event.2.t
 	desc = RUS_event.2.d
-	picture = GFX_news_event_generic_read_write
+	picture = GFX_report_event_destroyers
 	
 	is_triggered_only = yes
 	
@@ -30,12 +35,18 @@ country_event = { #결단
 	id = RUS_event.3
 	title = RUS_event.3.t
 	desc = RUS_event.3.d
-	picture = GFX_news_event_generic_read_write
+	picture = GFX_report_event_destroyers
 	
 	is_triggered_only = yes
 	
 	option = {
 		name = RUS_event.3.a
+		
+		remove_from_faction = RUS
+		
+		KOR = {
+			add_to_faction = RUS
+		}
 	}
 }
 
@@ -43,7 +54,7 @@ country_event = { #육참골단
 	id = RUS_event.4
 	title = RUS_event.4.t
 	desc = RUS_event.4.d
-	picture = GFX_news_event_generic_read_write
+	picture = GFX_report_event_generic_handshake
 	
 	is_triggered_only = yes
 	
@@ -56,7 +67,7 @@ country_event = { #새출발
 	id = RUS_event.5
 	title = RUS_event.5.t
 	desc = RUS_event.5.d
-	picture = GFX_news_event_generic_read_write
+	picture = GFX_report_event_NOR_nygaardsvold_cabinet
 	
 	is_triggered_only = yes
 	
@@ -69,11 +80,39 @@ country_event = { #바래진 희망
 	id = RUS_event.6
 	title = RUS_event.6.t
 	desc = RUS_event.6.d
-	picture = GFX_news_event_generic_read_write
+	picture = GFX_report_event_desertion_poster
 	
 	is_triggered_only = yes
 	
 	option = {
 		name = RUS_event.6.a
+		
+		country_event = { id = RUS_event.7 days = 0 }
+	}
+}
+
+country_event = { #마지막 숨
+	id = RUS_event.7
+	title = RUS_event.7.t
+	desc = RUS_event.7.d
+	picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = RUS_event.7.a
+		
+		retire_ideology_leader = yes
+		
+		create_country_leader = {
+			name = "Pyotr Brangel"
+			desc = "POLITICS_PYOTR_BRANGEL_DESC"
+			picture = GFX_portrait_Pyotr_Brangel
+			expire = "1965.1.1"
+			ideology = neutrality
+			traits = {
+				RUS_pragmatical_aristocrat
+			}
+		}
 	}
 }
