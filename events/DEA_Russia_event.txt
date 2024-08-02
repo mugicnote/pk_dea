@@ -42,7 +42,9 @@ country_event = { #결단
 	option = {
 		name = RUS_event.3.a
 		
-		remove_from_faction = RUS
+		JAP = {
+			remove_from_faction = RUS
+		}
 		
 		KOR = {
 			add_to_faction = RUS
@@ -102,14 +104,14 @@ country_event = { #마지막 숨
 	option = {
 		name = RUS_event.7.a
 		
-		retire_ideology_leader = yes
+		retire_ideology_leader = neutrality
 		
 		create_country_leader = {
 			name = "Pyotr Brangel"
 			desc = "POLITICS_PYOTR_BRANGEL_DESC"
 			picture = GFX_portrait_Pyotr_Brangel
 			expire = "1965.1.1"
-			ideology = neutrality
+			ideology = despotism
 			traits = {
 				RUS_pragmatical_aristocrat
 			}
