@@ -537,7 +537,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = RUS_restart_the_emergency_measure_committee
+		id = RUS_the_emergency_measure_committee
 		icon = GFX_focus_generic_industrialists
 		
 		prerequisite = {
@@ -564,7 +564,7 @@ focus_tree = {
 		icon = GFX_focus_ARG_strengthening_the_concordancia
 		
 		prerequisite = {
-			focus = RUS_restart_the_emergency_measure_committee
+			focus = RUS_the_emergency_measure_committee
 		}
 		
 		mutually_exclusive = {
@@ -578,7 +578,7 @@ focus_tree = {
 		x = -10
 		y = 1
 		cost = 5
-		relative_position_id = RUS_restart_the_emergency_measure_committee
+		relative_position_id = RUS_the_emergency_measure_committee
 		
 		completion_reward = {
 			
@@ -591,7 +591,7 @@ focus_tree = {
 		icon = GFX_focus_SWE_organize_a_putsch
 		
 		prerequisite = {
-			focus = RUS_restart_the_emergency_measure_committee
+			focus = RUS_the_emergency_measure_committee
 		}
 		
 		mutually_exclusive = {
@@ -605,7 +605,7 @@ focus_tree = {
 		x = 10
 		y = 1
 		cost = 5
-		relative_position_id = RUS_restart_the_emergency_measure_committee
+		relative_position_id = RUS_the_emergency_measure_committee
 		
 		completion_reward = {
 			
@@ -662,7 +662,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = RUS_reform_the_revoultionism
+		id = RUS_reform_the_old_revoultionism
 		icon = GFX_focus_eng_concessions_to_the_trade_unions
 		
 		prerequisite = {
@@ -720,7 +720,7 @@ focus_tree = {
 		icon = GFX_focus_ETH_callout_to_the_world
 		
 		prerequisite = {
-			focus = RUS_reform_the_revoultionism
+			focus = RUS_reform_the_old_revoultionism
 		}
 		
 		ai_will_do = {
@@ -730,7 +730,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		cost = 5
-		relative_position_id = RUS_reform_the_revoultionism
+		relative_position_id = RUS_reform_the_old_revoultionism
 		
 		completion_reward = {
 			
@@ -743,7 +743,7 @@ focus_tree = {
 		icon = GFX_focus_NOR_a_new_norway_Trotsky_communism
 		
 		prerequisite = {
-			focus = RUS_reform_the_revoultionism
+			focus = RUS_reform_the_old_revoultionism
 		}
 		
 		ai_will_do = {
@@ -753,7 +753,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 5
-		relative_position_id = RUS_reform_the_revoultionism
+		relative_position_id = RUS_reform_the_old_revoultionism
 		
 		completion_reward = {
 			
@@ -797,7 +797,7 @@ focus_tree = {
 		icon = GFX_focus_SWE_refuge_for_revolutionaries
 		
 		prerequisite = {
-			focus = RUS_reform_the_revoultionism
+			focus = RUS_reform_the_old_revoultionism
 		}
 		
 		ai_will_do = {
@@ -807,7 +807,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		cost = 5
-		relative_position_id = RUS_reform_the_revoultionism
+		relative_position_id = RUS_reform_the_old_revoultionism
 		
 		completion_reward = {
 			
@@ -1177,7 +1177,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		cost = 5
-		relative_position_id = RUS_restart_the_emergency_measure_committee
+		relative_position_id = RUS_the_emergency_measure_committee
 		
 		completion_reward = {
 			
@@ -1563,7 +1563,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = RUS_dessolution_of_the_duma
+		id = RUS_abolish_the_duma
 		icon = GFX_focus_BRA_utilize_security_law
 		
 		prerequisite = {
@@ -1591,7 +1591,7 @@ focus_tree = {
 		
 		prerequisite = {
 			focus = RUS_install_provisional_legislation_committee
-			focus = RUS_dessolution_of_the_duma
+			focus = RUS_abolish_the_duma
 		}
 		
 		x = 2
@@ -1663,7 +1663,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = RUS_the_nation_for_soliders
+		id = RUS_the_nation_for_soldiers
 		icon = GFX_focus_ITA_banda_carita
 		
 		prerequisite = {
@@ -1698,7 +1698,7 @@ focus_tree = {
 		}
 		
 		prerequisite = {
-			focus = RUS_the_nation_for_soliders
+			focus = RUS_the_nation_for_soldiers
 		}
 		
 		x = 0

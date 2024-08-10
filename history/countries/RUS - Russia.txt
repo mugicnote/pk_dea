@@ -61,7 +61,7 @@ if = {
 set_convoys = 50
 
 recruit_character = RUS_Aleksandr_Kolchak
-recruit_character = RUS_Pyotr_Wrangel
+recruit_character = RUS_Pyotre_Brangel
 
 set_politics = {
 	ruling_party = neutrality
