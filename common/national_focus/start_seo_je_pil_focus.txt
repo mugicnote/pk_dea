@@ -11,7 +11,413 @@ focus_tree = {
 	default = no
 
 	continuous_focus_position = { x = 20 y = 1600 }
-	shared_focus = KOR_Treasury_Report_36
+	#shared_focus = KOR_Treasury_Report_36
+
+	focus = {
+		id = KOR_Democratic_Regime_Resolution
+		icon = GFX_focus_Democratic_Regime_Resolution
+		cost = 1.00
+
+		completion_reward = {
+			custom_effect_tooltip = KOR_Democratic_Regime_Resolution_tt
+		}
+		x = 12
+		y = 0
+
+	}
+
+	focus = {
+		id = KOR_three_one_Democratic_Revolution
+		icon = GFX_focus_three_one_Democratic_Revolution
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_Democratic_Regime_Resolution
+		}
+		relative_position_id = KOR_Democratic_Regime_Resolution
+
+		completion_reward = {
+			custom_effect_tooltip = KOR_three_one_Democratic_Revolution_tt
+		}
+		x = 0
+		y = 1
+
+	}
+
+	focus = {
+		id = KOR_opening_temporary_assembly
+		icon = GFX_focus_opening_temporary_assembly
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_three_one_Democratic_Revolution
+		}
+		relative_position_id = KOR_three_one_Democratic_Revolution
+
+		completion_reward = {
+		}
+		x = -3
+		y = 1
+
+	}
+
+	focus = {
+		id = KOR_Rally_the_Northern_Army
+		icon = GFX_focus_Rally_the_Northern_Army
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_three_one_Democratic_Revolution
+		}
+		relative_position_id = KOR_three_one_Democratic_Revolution
+
+		completion_reward = {
+		}
+		x = 3
+		y = 1
+
+	}
+
+	focus = {
+		id = KOR_Conversion_of_the_Emergency_National_Conference
+		icon = GFX_focus_Conversion_of_the_Emergency_National_Conference
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_opening_temporary_assembly
+		}
+		relative_position_id = KOR_opening_temporary_assembly
+
+		completion_reward = {
+		}
+		x = -1
+		y = 1
+
+	}
+
+	focus = {
+		id = KOR_instructions_for_capital_protection
+		icon = GFX_focus_instructions_for_capital_protection
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_opening_temporary_assembly
+		}
+		relative_position_id = KOR_opening_temporary_assembly
+
+		completion_reward = {
+		}
+		x = 2
+		y = 1
+
+	}
+
+	focus = {
+		id = KOR_Winning_at_the_Chungsanli
+		icon = GFX_focus_Winning_at_the_Chungsanli
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_Rally_the_Northern_Army
+		}
+		relative_position_id = KOR_Rally_the_Northern_Army
+
+		completion_reward = {
+		}
+		x = -1
+		y = 1
+
+	}
+
+	focus = {
+		id = KOR_secret_pact_with_Japan
+		icon = GFX_focus_secret_pact_with_Japan
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_Rally_the_Northern_Army
+		}
+		relative_position_id = KOR_Rally_the_Northern_Army
+
+		completion_reward = {
+		}
+		x = 1
+		y = 1
+
+	}
+
+	focus = {
+		id = KOR_Promulgation_of_the_First_Constitution
+		icon = GFX_focus_Promulgation_of_the_First_Constitution
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_Conversion_of_the_Emergency_National_Conference
+		}
+		relative_position_id = KOR_Conversion_of_the_Emergency_National_Conference
+
+		completion_reward = {
+		}
+		x = -4
+		y = 1
+
+	}
+
+	focus = {
+		id = KOR_Kando_Committee_Absorption
+		icon = GFX_focus_Kando_Committee_Absorption
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_Conversion_of_the_Emergency_National_Conference
+		}
+		relative_position_id = KOR_Conversion_of_the_Emergency_National_Conference
+
+		completion_reward = {
+		}
+		x = -1
+		y = 1
+
+	}
+
+	focus = {
+		id = KOR_Return_from_Liaodong
+		icon = GFX_focus_Return_from_Liaodong
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_instructions_for_capital_protection
+		}
+		prerequisite = {
+			focus = KOR_Conversion_of_the_Emergency_National_Conference
+		}
+		relative_position_id = KOR_instructions_for_capital_protection
+
+		completion_reward = {
+		}
+		x = -1
+		y = 1
+
+	}
+
+	focus = {
+		id = KOR_signing_of_the_Treaty_of_Qure
+		icon = GFX_focus_signing_of_the_Treaty_of_Qure
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_instructions_for_capital_protection
+		}
+		prerequisite = {
+			focus = KOR_Winning_at_the_Chungsanli
+		}
+		prerequisite = {
+			focus = KOR_secret_pact_with_Japan
+		}
+		relative_position_id = KOR_instructions_for_capital_protection
+
+		completion_reward = {
+		}
+		x = 1
+		y = 1
+
+	}
+
+	focus = {
+		id = KOR_avoidance_of_military_cuts
+		icon = GFX_focus_avoidance_of_military_cuts
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_secret_pact_with_Japan
+		}
+		mutually_exclusive = {
+			focus = KOR_reduction_in_military_size
+		}
+		relative_position_id = KOR_secret_pact_with_Japan
+
+		completion_reward = {
+		}
+		x = -1
+		y = 1
+
+	}
+
+	focus = {
+		id = KOR_reduction_in_military_size
+		icon = GFX_focus_reduction_in_military_size
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_secret_pact_with_Japan
+		}
+		mutually_exclusive = {
+			focus = KOR_avoidance_of_military_cuts
+		}
+		relative_position_id = KOR_secret_pact_with_Japan
+
+		completion_reward = {
+		}
+		x = 1
+		y = 1
+
+	}
+
+	focus = {
+		id = KOR_Change_diplomatic_routes
+		icon = GFX_focus_Change_diplomatic_routes
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_secret_pact_with_Japan
+		}
+		relative_position_id = KOR_secret_pact_with_Japan
+
+		completion_reward = {
+		}
+		x = 4
+		y = 1
+
+	}
+
+	focus = {
+		id = KOR_Breaking_old_habits
+		icon = GFX_focus_Breaking_old_habits
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_Promulgation_of_the_First_Constitution
+		}
+		relative_position_id = KOR_Promulgation_of_the_First_Constitution
+
+		completion_reward = {
+		}
+		x = -1
+		y = 1
+
+	}
+
+	focus = {
+		id = KOR_Founding_of_the_Democratic_National_Party
+		icon = GFX_focus_Founding_of_the_Democratic_National_Party
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_Promulgation_of_the_First_Constitution
+		}
+		prerequisite = {
+			focus = KOR_Kando_Committee_Absorption
+		}
+		relative_position_id = KOR_Promulgation_of_the_First_Constitution
+
+		completion_reward = {
+		}
+		x = 2
+		y = 1
+
+	}
+
+	focus = {
+		id = KOR_Tolerate_socialist_organizations
+		icon = GFX_focus_Tolerate_socialist_organizations
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_Kando_Committee_Absorption
+		}
+		relative_position_id = KOR_Kando_Committee_Absorption
+
+		completion_reward = {
+		}
+		x = 1
+		y = 1
+
+	}
+
+	focus = {
+		id = KOR_Sponsor_a_Kando_Special_Ordinance
+		icon = GFX_focus_Sponsor_a_Kando_Special_Ordinance
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_Kando_Committee_Absorption
+			focus = KOR_Return_from_Liaodong
+		}
+		relative_position_id = KOR_Kando_Committee_Absorption
+
+		completion_reward = {
+		}
+		x = 3
+		y = 1
+
+	}
+
+	focus = {
+		id = KOR_Reforming_the_leadership_team
+		icon = GFX_focus_Reforming_the_leadership_team
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_avoidance_of_military_cuts
+		}
+		relative_position_id = KOR_avoidance_of_military_cuts
+
+		completion_reward = {
+		}
+		x = -1
+		y = 1
+
+	}
+
+	focus = {
+		id = KOR_first_Presidential_Election
+		icon = GFX_focus_first_Presidential_Election
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_signing_of_the_Treaty_of_Qure
+		}
+		relative_position_id = KOR_signing_of_the_Treaty_of_Qure
+
+		completion_reward = {
+		}
+		x = 0
+		y = 1
+
+	}
+
+	focus = {
+		id = KOR_Ensuring_veterans_benefits
+		icon = GFX_focus_Ensuring_veterans_benefits
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_avoidance_of_military_cuts
+			focus = KOR_reduction_in_military_size
+		}
+		relative_position_id = KOR_avoidance_of_military_cuts
+
+		completion_reward = {
+		}
+		x = 1
+		y = 1
+
+	}
+
+	focus = {
+		id = KOR_Join_the_League_of_Nations
+		icon = GFX_focus_Join_the_League_of_Nations
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_avoidance_of_military_cuts
+			focus = KOR_reduction_in_military_size
+		}
+		prerequisite = {
+			focus = KOR_Change_diplomatic_routes
+		}
+		relative_position_id = KOR_reduction_in_military_size
+
+		completion_reward = {
+		}
+		x = 1
+		y = 1
+
+	}
+
+	focus = {
+		id = KOR_Believe_in_America
+		icon = GFX_focus_Believe_in_America
+		cost = 1.00
+		prerequisite = {
+			focus = KOR_Change_diplomatic_routes
+		}
+		relative_position_id = KOR_Change_diplomatic_routes
+
+		completion_reward = {
+		}
+		x = 1
+		y = 1
+
+	}
 
 	focus = {
 		id = Seo_Jae_pil_administration
@@ -22,8 +428,8 @@ focus_tree = {
 			add_political_power = 100
 			add_stability = 0.05
 		}
-		x = 7
-		y = 0
+		x = 12
+		y = 12
 
 	}
 

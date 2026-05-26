@@ -765,7 +765,7 @@ focus_tree = {
 	#군사혁명위원회 설립
 	focus = {
 		id = KOR_Revolution_accomplished
-		icon = GFX_focus_cle
+		icon = GFX_focus_Revolution_accomplished
 		cost = 1.00
 
 		available = {

@@ -1,11 +1,9 @@
-
-state={
+state = {
 	id=622
 	name="STATE_622"
-	resources={
-		steel=3.000
-		tungsten=3.000
-	}
+
+	manpower=1734240
+	state_category=city
 
 	history={
 		owner = SHX
@@ -16,37 +14,19 @@ state={
 		victory_points = {
 			12156 5 
 		}
-		set_province_name = {
-			id = 12156
-			name = 시안
-
-		}
 		buildings = {
 			infrastructure = 2
 			arms_factory = 3
 			industrial_complex = 3
-			10733 = {
-				bunker = 2
-
-			}
-			12156 = {
-				bunker = 2
-
-			}
-			5007 = {
-				bunker = 2
-
-			}
-
 		}
 
 	}
 
-	provinces={
-		5007 7208 8049 12156 12356 
+	resources = {
+		steel=3.000
+		tungsten=3.000
 	}
-	manpower=1734240
-	buildings_max_level_factor=1.000
-	state_category=city
-	local_supplies=0.000
+	provinces = {
+		5007 7208 8049 12156 12356
+	}
 }

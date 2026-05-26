@@ -6,7 +6,7 @@ guiTypes = {
 		origo = UPPER_RIGHT
 		buttonType = {
 			name = "topbar_opening_button"
-			position = { x = -20 y = -80 }
+			position = { x = -40 y = -200 }
 			quadTextureSprite = "GFX_ledger_open_button"
 		}
 	}

@@ -327,44 +327,13 @@ guiTypes = {
 			maxHeight = 24
 #			fixedsize = yes
 		}
-		
+
 		iconType = {
 			name ="convoys_ratio_bar"
 			spriteType = "GFX_topbar_fuel_bar"
 			position = { x= 805 y = 20 }
 			frame = 50
 			alwaystransparent = yes
-		}
-
-		containerWindowType = {
-			name = "cp"
-			position = { x= 877 y = 4 }
-			clipping = no
-			size = { width=62 height=30 }
-			Orientation = UPPER_LEFT
-
-			background = {
-				name = "cp_bg"
-				quadTextureSprite ="GFX_mini_tooltip"
-			}
-		
-			iconType = {
-				name ="command_power_icon"
-				spriteType = "GFX_command_power"
-				position = { x= 5 y = 3 }
-				Orientation = "UPPER_LEFT"
-			}		
-		
-			instantTextBoxType = {
-				name ="command_power_value"
-				position = { x= 30 y = 6 }
-				font = "hoi_18mbs"
-				text = "999"
-				format = left
-				maxWidth = 30
-				maxHeight = 24
-				fixedsize = yes
-			}
 		}
 		
 		containerWindowType = {
@@ -384,6 +353,7 @@ guiTypes = {
 				spriteType = "GFX_army_experience"
 				position = { x= 5 y = 7 }
 				Orientation = "UPPER_LEFT"
+				alwaystransparent = yes
 			}
 			
 			instantTextBoxType = {
@@ -395,43 +365,13 @@ guiTypes = {
 				maxWidth = 30
 				maxHeight = 24
 				fixedsize = yes
+				alwaystransparent = yes
 			}
 		}
 
 		containerWindowType = {
-			name = "air"
-			position = { x= 1001 y = 4 }
-			clipping = no
-			size = { width=56 height=30 }
-			Orientation = UPPER_LEFT
-			
-			background = {
-				name = "air_xp_bg"
-				quadTextureSprite ="GFX_mini_tooltip"
-			}
-
-			iconType = {
-				name ="air_experience_icon"
-				spriteType = "GFX_air_experience"
-				position = { x= 5 y = 7 }
-				Orientation = "UPPER_LEFT"
-			}		
-			
-			instantTextBoxType = {
-				name ="air_experience_value"
-				position = { x= 23 y = 6 }
-				font = "hoi_18mbs"
-				text = "999"
-				format = left
-				maxWidth = 30
-				maxHeight = 24
-				fixedsize = yes
-			}
-		}	
-		
-		containerWindowType = {
 			name = "navy"
-			position = { x= 1061 y = 4 }
+			position = { x= 1001 y = 4 }
 			clipping = no
 			size = { width=56 height=30 }
 			Orientation = UPPER_LEFT
@@ -446,6 +386,7 @@ guiTypes = {
 				spriteType = "GFX_navy_experience"
 				position = { x= 5 y = 7 }
 				Orientation = "UPPER_LEFT"
+				alwaystransparent = yes
 			}		
 			
 			instantTextBoxType = {
@@ -457,33 +398,108 @@ guiTypes = {
 				maxWidth = 30
 				maxHeight = 24
 				fixedsize = yes
+				alwaystransparent = yes
 			}
 		}
 
-		iconType ={
-			name ="nuke_text_bg"
-			spriteType = "GFX_generic_box_smallest"
-			position = { x=1141 y=5 }
-			Orientation = "UPPER_LEFT"
-		}
-		
-		iconType ={
-			name ="nuke_icon"
-			spriteType = "GFX_topbar_nuke"
-			position = { x=1142 y=8 }
-			Orientation = "UPPER_LEFT"
-			scale = 0.8
-		}
-		
-		instantTextBoxType = {
-			name ="nuke_count"
-			position = { x=1164 y=9 }
-			font = "hoi_18mbs"
-			format = center
-			maxWidth = 44
-			maxHeight = 24
-			fixedsize = yes
+		containerWindowType = {
+			name = "air"
+			position = { x= 1061 y = 4 }
+			clipping = no
+			size = { width=56 height=30 }
+			Orientation = UPPER_LEFT
+			
+			background = {
+				name = "air_xp_bg"
+				quadTextureSprite ="GFX_mini_tooltip"
+			}
+
+			iconType = {
+				name ="air_experience_icon"
+				spriteType = "GFX_air_experience"
+				position = { x= 5 y = 7 }
+				Orientation = "UPPER_LEFT"
+				alwaystransparent = yes
+			}		
+			
+			instantTextBoxType = {
+				name ="air_experience_value"
+				position = { x= 23 y = 6 }
+				font = "hoi_18mbs"
+				text = "999"
+				format = left
+				maxWidth = 30
+				maxHeight = 24
+				fixedsize = yes
+				alwaystransparent = yes
+			}
 		}	
+
+		containerWindowType = {
+			name = "nukes"
+			position = { x= 1141 y = 5}
+			clipping = no
+			size = { width=56 height=30 }
+			Orientation = UPPER_LEFT
+
+			background = {
+				name = "nukes_bg"
+				quadTextureSprite ="GFX_mini_tooltip"
+			}
+
+			iconType = {
+				name = "nuke_icon"
+				spriteType = "GFX_topbar_nuke"
+				position = { x= 7 y = 8 }
+				scale = 0.55
+				Orientation = "UPPER_LEFT"
+				alwaystransparent = yes
+			}
+
+			instantTextBoxType = {
+				name = "nukes_value"
+				position = { x= 26 y = 5 }
+				font = "hoi_18mbs"
+				format = left
+				maxWidth = 26
+				maxHeight = 24
+				fixedsize = yes
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "cp"
+			position = { x= 877 y = 4 }
+			clipping = no
+			size = { width=62 height=30 }
+			Orientation = UPPER_LEFT
+
+			background = {
+				name = "cp_bg"
+				quadTextureSprite ="GFX_mini_tooltip"
+			}
+		
+			iconType = {
+				name ="command_power_icon"
+				spriteType = "GFX_command_power"
+				position = { x= 5 y = 3 }
+				Orientation = "UPPER_LEFT"
+				alwaystransparent = yes
+			}		
+		
+			instantTextBoxType = {
+				name ="command_power_value"
+				position = { x= 30 y = 6 }
+				font = "hoi_18mbs"
+				text = "999"
+				format = left
+				maxWidth = 30
+				maxHeight = 24
+				fixedsize = yes
+				alwaystransparent = yes
+			}
+		}
 		
 		##
 		buttonType ={

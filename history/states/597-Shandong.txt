@@ -21,12 +21,6 @@ state={
 		victory_points = {
 			4205 10 
 		}
-		set_province_name = {
-			id = 4205
-			name = 웨이하이
-
-		}
-
 	}
 
 	provinces={

@@ -211,6 +211,8 @@ set_variable = { KOR_ppk_strength = 25 }
 set_variable = { KOR_np_strength = 10 }
 set_variable = { KOR_kdp_strength = 5 }
 
+complete_national_focus = KOR_Democratic_Regime_Resolution
+
 #common/characters 파일 참고
 recruit_character = KOR_Seo_jae_pil
 recruit_character = KOR_pak_hon_yong

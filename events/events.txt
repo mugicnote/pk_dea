@@ -186,7 +186,7 @@ country_event = {	#회의
 		add_ideas = { KOR_incompetent_goverment }
 		hidden_effect = {
 			country_event = {
-				id = KOR.61
+				id = KOR.12
 				days = 3
 			}
 		}
@@ -198,7 +198,7 @@ country_event = {	#회의
 		add_ideas = { KOR_incompetent_goverment }
 		hidden_effect = {
 			country_event = {
-				id = KOR.61
+				id = KOR.12
 				days = 3
 			}
 		}
@@ -213,7 +213,7 @@ country_event = {	#회의
 		add_ideas = { KOR_incompetent_goverment }
 		hidden_effect = {
 			country_event = {
-				id = KOR.61
+				id = KOR.12
 				days = 3
 			}
 		}
@@ -222,7 +222,7 @@ country_event = {	#회의
 	}
 }
 
-country_event = {  
+country_event = {	#교토서 날아온 전보
 	id = KOR.12
 	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.12"}
 	title = KOR.12.t
@@ -237,7 +237,7 @@ country_event = {
 		ai_chance = { factor = 1 }
 		hidden_effect = {
 			country_event = {
-				id = KOR.61
+				id = KOR.46
 				days = 2
 			}
 		}
@@ -252,6 +252,29 @@ country_event = {
 				modifier = opnion_JAP_KOR_Huh_Chung_event
 			}
 		}
+	}
+}
+
+country_event = {	#대한공산당 '1월 테제' 채택
+	id = KOR.46
+	immediate = {log = "[GetDateText]: [Root.GetName]: event KOR.46"}
+	title = KOR.46.t
+	desc = KOR.46.desc
+	picture = GFX_Huh_Chung_event_picture
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = KOR.46.a
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			country_event = {
+				id = KOR.61
+				days = 2
+			}
+		}
+
 	}
 }
 

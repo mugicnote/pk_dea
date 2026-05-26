@@ -9,10 +9,12 @@ on_actions = {
 			RUS = {
 				transfer_state = 1040
 			}
-			SOV = {
-				declare_war_on = {
-					target = RUS
-					type = annex_everything
+			hidden_effect = {
+				SOV = {
+					declare_war_on = {
+						target = RUS
+						type = annex_everything
+					}
 				}
 			}
 			SOV = {

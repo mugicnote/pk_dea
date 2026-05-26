@@ -173,6 +173,26 @@ spriteTypes = {
 		name = "GFX_autonomy_personal_union_icon"
 		textureFile = "gfx/interface/autonomy/autonomy_personal_union_puppet.dds"
 	}
+
+	spriteType = {
+		name = "GFX_autonomy_aat_defense_council_member_icon"
+		textureFile = "gfx/interface/autonomy/autonomy_colony_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_autonomy_austro_hungarian_subject_icon"
+		textureFile = "gfx/interface/autonomy/autonomy_austro_hungarian_vassal_icon.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_autonomy_volkskommissariat_icon"
+		textureFile = "gfx/interface/autonomy/autonomy_volkskommissariat_icon.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_autonomy_eu_member_icon"
+		textureFile = "gfx/interface/autonomy/autonomy_eu_member_icon.dds"
+	}
 	
 	#-------------
 
@@ -417,11 +437,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/idea_entry_bg_2.dds"
 		noOfFrames = 2
 	}
-	spriteType = {
-		name = "GFX_idea_entry_bg_2_lar"
-		texturefile = "gfx/interface/idea_entry_bg_2_lar.dds"
-		noOfFrames = 2
-	}
 
 	spriteType = {
 		name = "GFX_idea_entry_bg_3"
@@ -430,9 +445,8 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_idea_entry_bg_3_lar"
-		texturefile = "gfx/interface/idea_entry_bg_3_lar.png"
-		noOfFrames = 2
+		name = "GFX_idea_entry_bg_4"
+		texturefile = "gfx/interface/idea_entry_bg_4.dds"
 	}
 
 	spriteType = {
@@ -463,6 +477,26 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_icon_occupied_territories"
 		texturefile = "gfx/interface/icon_occupied_territories.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_neutrality_group"
+		texturefile = "gfx/interface/ideologies/neutrality_group.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_ideology_communism_group"
+		texturefile = "gfx/interface/ideologies/communism_group.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_fascism_group"
+		texturefile = "gfx/interface/ideologies/fascism_group.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_democratic_group"
+		texturefile = "gfx/interface/ideologies/democratic_group.dds"
 	}
 
 	spriteType = {
@@ -507,12 +541,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_pol_piechart_overlay_63x63"
 		textureFile = "gfx//interface//pol_piechart_overlay_63x63.dds"
-		alwaystransparent = yes			
-	}
-
-	spriteType = {
-		name = "GFX_pol_piechart_overlay_new"
-		textureFile = "gfx//interface//pol_piechart_overlay_new.dds"
 		alwaystransparent = yes			
 	}
 	
@@ -625,22 +653,6 @@ spriteTypes = {
 		effectFile = "gfx/FX/progress_startend.lua"
 		horizontal = yes
 	}
-
-	progressbartype = {
-		name = "GFX_activegoal_diplo_view_progress"
-		color = { 0.0 0.5 0.0 }
-		colortwo = { 1.0 0.0 0.0 }
-		textureFile1 = "gfx//interface//pol_goal_progress.dds"
-		textureFile2 = "gfx//interface//pol_goal_progress_bg.dds"
-		size = { x = 152 y = 6 }
-		effectFile = "gfx/FX/progress_startend.lua"
-		horizontal = yes
-	}
-
-	spriteType = {
-		name = "GFX_diplo_view_goal_progress_frame"
-		textureFile = "gfx//interface//diplo_view_goal_progress_frame.dds"
-	}
 	
 	spriteType = {
 		name = "GFX_occupied_territory"
@@ -665,12 +677,6 @@ spriteTypes = {
 		textureFile = "gfx//interface//occupation_policy_button_selected.dds"
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
 	}	
-
-	spriteType = {
-		name = "GFX_occupation_policy_icon_strip"
-		textureFile = "gfx/interface/occupation_policy_icon_strip.dds"
-		noOfFrames = 4
-	}
 	
 	frameAnimatedSpriteType = {
 		name = "GFX_tutorial_politics_icon_glow"
@@ -682,11 +688,6 @@ spriteTypes = {
 		pause_on_loop = 0.0
 		alwaystransparent = yes
 		effectFile = "gfx/FX/buttonstate_blendframes.lua"
-	}
-
-	textSpriteType = {
-		name = "GFX_government_circle_button"
-		texturefile = "gfx/interface/governement_circle_button.dds"
 	}
 	
 }

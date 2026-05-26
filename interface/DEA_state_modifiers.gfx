@@ -1,0 +1,9 @@
+spriteTypes = {
+
+	###DEA modifiers
+	spriteType = {
+		name = "GFX_modifiers_kor_insurgent_resistance"
+		textureFile = "gfx/interface/state_modifiers/modifiers_kor_insurgent_resistance.dds"
+	}
+
+}

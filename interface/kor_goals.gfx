@@ -1,5 +1,103 @@
 spriteTypes = {
 
+	###서재필 정부
+	SpriteType = {
+		name = "GFX_focus_Democratic_Regime_Resolution"
+		texturefile = "gfx/interface/goals/KOR/Seo/focus_Democratic_Regime_Resolution.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_three_one_Democratic_Revolution"
+		texturefile = "gfx/interface/goals/KOR/Seo/focus_three_one_Democratic_Revolution.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_opening_temporary_assembly"
+		texturefile = "gfx/interface/goals/KOR/Seo/focus_opening_temporary_assembly.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_Rally_the_Northern_Army"
+		texturefile = "gfx/interface/goals/KOR/Seo/focus_Rally_the_Northern_Army.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_Conversion_of_the_Emergency_National_Conference"
+		texturefile = "gfx/interface/goals/KOR/Seo/focus_Conversion_of_the_Emergency_National_Conference.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_instructions_for_capital_protection"
+		texturefile = "gfx/interface/goals/KOR/Seo/focus_instructions_for_capital_protection.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_Winning_at_the_Chungsanli"
+		texturefile = "gfx/interface/goals/KOR/Seo/focus_Winning_at_the_Chungsanli.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_secret_pact_with_Japan"
+		texturefile = "gfx/interface/goals/KOR/Seo/focus_secret_pact_with_Japan.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_Promulgation_of_the_First_Constitution"
+		texturefile = "gfx/interface/goals/KOR/Seo/focus_Promulgation_of_the_First_Constitution.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_Kando_Committee_Absorption"
+		texturefile = "gfx/interface/goals/KOR/Seo/focus_Kando_Committee_Absorption.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_Return_from_Liaodong"
+		texturefile = "gfx/interface/goals/KOR/Seo/focus_Return_from_Liaodong.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_signing_of_the_Treaty_of_Qure"
+		texturefile = "gfx/interface/goals/KOR/Seo/focus_signing_of_the_Treaty_of_Qure.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_avoidance_of_military_cuts"
+		texturefile = "gfx/interface/goals/KOR/Seo/focus_avoidance_of_military_cuts.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_reduction_in_military_size"
+		texturefile = "gfx/interface/goals/KOR/Seo/focus_reduction_in_military_size.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_Change_diplomatic_routes"
+		texturefile = "gfx/interface/goals/KOR/Seo/focus_Change_diplomatic_routes.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_Breaking_old_habits"
+		texturefile = "gfx/interface/goals/KOR/Seo/focus_Breaking_old_habits.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_Founding_of_the_Democratic_National_Party"
+		texturefile = "gfx/interface/goals/KOR/Seo/focus_Founding_of_the_Democratic_National_Party.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_Tolerate_socialist_organizations"
+		texturefile = "gfx/interface/goals/KOR/Seo/focus_Tolerate_socialist_organizations.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_Sponsor_a_Kando_Special_Ordinance"
+		texturefile = "gfx/interface/goals/KOR/Seo/focus_Sponsor_a_Kando_Special_Ordinance.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_first_Presidential_Election"
+		texturefile = "gfx/interface/goals/KOR/Seo/focus_first_Presidential_Election.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_Reforming_the_leadership_team"
+		texturefile = "gfx/interface/goals/KOR/Seo/focus_Reforming_the_leadership_team.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_Ensuring_veterans_benefits"
+		texturefile = "gfx/interface/goals/KOR/Seo/focus_Ensuring_veterans_benefits.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_Join_the_League_of_Nations"
+		texturefile = "gfx/interface/goals/KOR/Seo/focus_Join_the_League_of_Nations.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_Believe_in_America"
+		texturefile = "gfx/interface/goals/KOR/Seo/focus_Believe_in_America.png"
+	}
+	
 	###여운형 당선
 	SpriteType = {
 		name = "GFX_focus_lyuh_woon_hyung_elected"
@@ -25,6 +123,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/KOR/lee_army/focus_kor_Right_wing_militia_united.png"
 	}
 	#정치 중점
+	SpriteType = {
+		name = "GFX_focus_Revolution_accomplished"
+		texturefile = "gfx/interface/goals/KOR/lee_pol/focus_Revolution_accomplished.png"
+	}
 	SpriteType = {
 		name = "GFX_focus_cle"
 		texturefile = "gfx/interface/goals/KOR/lee_pol/focus_cle.dds"

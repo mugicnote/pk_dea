@@ -1,4 +1,4 @@
-﻿l_english:
+﻿l_korean:
  #정치가 트레잇
  traits_kim_ku:0 "현명한 애국자"
  traits_lee_syng:0 "민주주의 신봉자"
@@ -101,7 +101,7 @@
  President_of_military_regime:0 "대통령"
  KOR_Vice_Fuhrer:0 "부총통"
  Mayor_of_Seoul:0 "서울시장"
- personal_egoist:0 "보신주의자"
+ personal_egoist:0 "보신주의"
  three_equal_attention:0 "삼균주의 이론가"
  dosan_trait_1:0 "도산 선생"
  #카라
@@ -146,7 +146,9 @@
  KR_infantry_proponent:0 "보병 지지자"
  KR_naval_aviation_proponent:0 "해군항공대 지지자"
  KR_old_admiral:0 "해군 보수파"
- KR_old_air_marshal:0 "공군참모총장"
-
-
+ KR_old_air_marshal:0 "공군참모총장" #최용덕
+ KR_old_general:0 "육군 보수파" #송호성
+ KR_reformist_soldier:0 "육군 " 
+ KR_respected_war_hero:0 "존경받는 전쟁영웅"
+ KR_strategic_destruction_proponent:0 "전략파괴 지지자"
  KR_submarine_proponent:0 "해군 이성론자"

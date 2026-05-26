@@ -1,0 +1,41 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_idea_entry_bg_2_lar"
+		texturefile = "gfx/interface/idea_entry_bg_2_lar.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_idea_entry_bg_3_lar"
+		texturefile = "gfx/interface/idea_entry_bg_3_lar.png"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_pol_piechart_overlay_new"
+		textureFile = "gfx//interface//pol_piechart_overlay_new.dds"
+		alwaystransparent = yes			
+	}
+
+	progressbartype = {
+		name = "GFX_activegoal_diplo_view_progress"
+		color = { 0.0 0.5 0.0 }
+		colortwo = { 1.0 0.0 0.0 }
+		textureFile1 = "gfx//interface//pol_goal_progress.dds"
+		textureFile2 = "gfx//interface//pol_goal_progress_bg.dds"
+		size = { x = 152 y = 6 }
+		effectFile = "gfx/FX/progress_startend.lua"
+		horizontal = yes
+	}
+
+	spriteType = {
+		name = "GFX_diplo_view_goal_progress_frame"
+		textureFile = "gfx//interface//diplo_view_goal_progress_frame.dds"
+	}
+
+	textSpriteType = {
+		name = "GFX_government_circle_button"
+		texturefile = "gfx/interface/governement_circle_button.dds"
+	}
+}

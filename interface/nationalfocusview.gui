@@ -861,13 +861,13 @@ guiTypes = {
 
 		instantTextboxType = {
 			name = "desc"
-			position = { x = 37 y = 230 }
+			position = { x = 37 y = 240 }
 			textureFile = ""
-			font = "aldrich_22_outline"
+			font = "hoi_16mbs"
 			borderSize = {x = 0 y = 0}
 			text = "Description"
 			maxWidth = 476
-			maxHeight = 425
+			maxHeight = 420
 			format = center
 			scrollbarType = standardtext_slider_focus_desc
 		}
