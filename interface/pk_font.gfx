@@ -328,9 +328,9 @@ bitmapfonts = {
 		path = "gfx/fonts/cg_16b"
 		path = "gfx/fonts/korean/cg_16b"
 		fontfiles = { 
-			"gfx/fonts/cg_16b"		
+			"gfx/fonts/cg_16b"
 			"gfx/fonts/cg_16b_kor"
-			"gfx/fonts/hoi_16tooltip3"
+			"gfx/fonts/korean/hoi_16tooltip3"
 			"gfx/fonts/chinese/cg_16b_1of4"		
 			"gfx/fonts/chinese/cg_16b_2of4"	
 			"gfx/fonts/chinese/cg_16b_3of4"	

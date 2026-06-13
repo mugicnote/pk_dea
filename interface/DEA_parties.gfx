@@ -3,7 +3,7 @@ spriteTypes = {
 	### KOR ###
 	spriteType = {
 		name = "GFX_ideology_Seo_Jae_Pil_conservatism"
-		textureFile = "gfx/interface/ideologies/Seo_Jae_Pil_conservatism.dds"
+		textureFile = "gfx/interface/ideologies/Seo_Jae_Pil_conservatism.png"
 	}
 	spriteType = {
 		name = "GFX_ideology_lee_fascism"

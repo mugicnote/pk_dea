@@ -509,7 +509,7 @@ defined_text = {
 			NOT = { has_country_flag = korea_kim_kyu_sik_president_lee_beom_seok }
 			NOT = { has_country_flag = korea_rhee_syng_man_president }
 		}
-		localization_key = GFX_Portrait_Kim_Kyusik
+		localization_key = GFX_Portrait_Seo_jae_pil
 	}
 	text = {
 		trigger = {

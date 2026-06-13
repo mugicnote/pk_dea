@@ -54,14 +54,14 @@ guiTypes = {
 		
 		buttonType = {
 			name = "cabinet_button"
-			position = { x = 130 y = 10 }
+			position = { x = 140 y = 20 }
 			spriteType = "GFX_button_right"
 			pdx_tooltip = "cabinet_button_tt"
 		}
 		
 		instantTextboxType = { #직책명
 			name = "cabinet_button_text"
-			position = { x = -41 y = 12 }
+			position = { x = -46 y = 20 }
 			font = "hoi_16mbs"
 			text = "국무위원 개요"
 			maxWidth = 155

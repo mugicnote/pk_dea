@@ -1,0 +1,137 @@
+defined_text = {
+	name = GetPartyLoc
+	text = {
+		localization_key = [From.GetRulingParty]
+	}
+}
+defined_text = {
+	name = GetelectionsLoc
+	text = {
+		localization_key = electionsLoc
+	}
+}
+defined_text = {
+	name = GetIdeologyLoc
+	text = {
+		trigger = { 
+			has_government = democratic 
+			NOT = {
+				tag = KOR
+			}
+		}
+		localization_key = democratic_real
+	}
+	text = {
+		trigger = { 
+			has_government = democratic 
+			tag = KOR
+			NOT = {
+				has_country_flag = TLE_STATE_OF_KOREA
+				has_country_flag = KOR_ahn_constitutional_amendment_flag
+			}
+		}
+		localization_key = democratic_korea
+	}
+	text = {
+		trigger = { 
+			has_government = democratic 
+			tag = KOR
+			OR = {
+				has_country_flag = TLE_STATE_OF_KOREA
+				has_country_flag = KOR_ahn_constitutional_amendment_flag
+			}
+		}
+		localization_key = democratic_real
+	}
+	text = {
+		trigger = { has_government = communism }
+		localization_key = communism
+	}
+	text = {
+		trigger = { has_government = fascism }
+		localization_key = fascism
+	}
+	text = {
+		trigger = { has_government = neutrality }
+		localization_key = neutrality
+	}
+}
+
+defined_text = {
+	name = GetDemocraticIdeologyNameLoc
+	text = {
+		trigger = { 
+			NOT = {
+				tag = KOR
+			}
+		}
+		localization_key = democratic_real
+	}
+	text = {
+		trigger = { 
+			tag = KOR
+			NOT = {
+				has_country_flag = TLE_STATE_OF_KOREA
+				has_country_flag = KOR_ahn_constitutional_amendment_flag
+			}
+		}
+		localization_key = democratic_korea
+	}
+	text = {
+		localization_key = democratic_real
+	}
+}
+defined_text = {
+	name = GetSubIdeologyLoc
+	text = {
+		trigger = { has_government = democratic }
+		localization_key = "[GetSubIdeologyDemocratic]"
+	}
+	text = {
+		trigger = { has_government = communism }
+		localization_key = "[GetSubIdeologyLocCommunism]"
+	}
+	text = {
+		trigger = { has_government = fascism }
+		localization_key = "[GetSubIdeologyLocFascism]"
+	}
+	text = {
+		trigger = { has_government = neutrality }
+		localization_key = "[GetSubIdeologyLocNeutrality]"
+	}
+}
+
+defined_text = {
+	name = GetSubIdeologyDemocratic
+	text = {
+		trigger = {
+			has_country_leader_ideology = Seo_Jae_Pil_conservatism
+		}
+		localization_key = Seo_Jae_Pil_conservatism
+	}
+	text = {
+		localization_key = democratic
+	}
+}
+
+defined_text = {
+	name = GetSubIdeologyLocCommunism
+	text = {
+		localization_key = communism
+	}
+}
+
+defined_text = {
+	name = GetSubIdeologyLocFascism
+	text = {
+		localization_key = fascism_ideology
+	}
+}
+
+defined_text = {
+	name = GetSubIdeologyLocNeutrality
+
+	text = {
+		localization_key = neutrality
+	}
+}

@@ -1,20 +1,20 @@
 guiTypes = {
 	containerWindowType = {
 		name = "parliament_button_ui"
-		position = { x = 365 y = 240 }
+		position = { x = 365 y = 235 }
 		
 		buttonType = {
 			name = "parliament_button"
-			position = { x = 130 y = 100 }
+			position = { x = 140 y = 100 }
 			spriteType = "GFX_button_right"
 			pdx_tooltip = "cabinet_button_tt"
 		}
 		
 		instantTextboxType = { #직책명
 			name = "parliament_button_text"
-			position = { x = -39 y = 100 }
+			position = { x = -46 y = 100 }
 			font = "hoi_16mbs"
-			text = "국회 현황 개요"
+			text = "국회현황 개요"
 			maxWidth = 155
 			maxHeight = 20
 			format = center

@@ -5,14 +5,14 @@ guiTypes = {
 		
 		buttonType = {
 			name = "double_open"
-			position = { x = 130 y = 40 }
+			position = { x = 140 y = 45 }
 			spriteType = "GFX_button_right"
 			pdx_tooltip = "cabinet_button_tt"
 		}
 		
 		instantTextboxType = { #직책명
 			name = "cabinet_button_text"
-			position = { x = -41 y = 40 }
+			position = { x = -46 y = 45 }
 			font = "hoi_16mbs"
 			text = "국가요인 개요"
 			maxWidth = 155
@@ -42,10 +42,10 @@ guiTypes = {
 			position = { x = -40 y = 0 }
 			
 			instantTextboxType = { #개요
-				name = "FdS2_general_outline"
+				name = "FdS4_general_outline"
 				position = { x = 45 y = 40 }
 				font = "aldrich_36_outline"
-				text = "[This.FdS2_front_name]"
+				text = "[This.FdS4_front_name]"
 				maxWidth = 600
 				maxHeight = 20
 				format = center

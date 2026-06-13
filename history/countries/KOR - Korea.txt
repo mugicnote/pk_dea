@@ -143,22 +143,14 @@ set_politics = {
     ruling_party = democratic
     last_election = "1936.1.1"
     election_frequency = 48
-    elections_allowed = yes
+    elections_allowed = no
 }
 #시작시_정당들의_인기도
 set_popularities = {
-  communism = 10
-  authoritarian_socialism = 2
-  radical_socialism = 3
-  social_democracy = 12
-  social_liberalism = 4
-  national_liberalism = 5
-  liberal_conservatism = 14
-  democratic = 20
-  national_conservatism = 11
-  neutrality = 4
-  auto_despotism = 5
-  fascism = 10
+  communism = 15
+  democratic = 65
+  neutrality = 5
+  fascism = 15
 }
 
 #if = {
@@ -202,8 +194,8 @@ set_popularities = {
 #	}
 #}
 
-COALITION_add_soccon = yes
-COALITION_add_neu = yes
+# COALITION_add_soccon = yes
+# COALITION_add_neu = yes
 
 set_variable = { KOR_kip_strength = 35 }
 set_variable = { KOR_gmh_strength = 20 }
@@ -214,18 +206,19 @@ set_variable = { KOR_kdp_strength = 5 }
 complete_national_focus = KOR_Democratic_Regime_Resolution
 
 #common/characters 파일 참고
-recruit_character = KOR_Seo_jae_pil
+recruit_character = KOR_Yun_chi_ho
+#recruit_character = KOR_Seo_jae_pil
 recruit_character = KOR_pak_hon_yong
-recruit_character = KOR_pak_hon_yong
-recruit_character = KOR_Kim_Tu_bong
-recruit_character = KOR_Kim_Won_bong
-recruit_character = KOR_Lyuh_Woon_hyung
-recruit_character = KOR_Chang_Myon
-recruit_character = KOR_Ahn_Jae_hong
-recruit_character = KOR_Song_Jin_woo
-recruit_character = KOR_Kim_Koo
+# recruit_character = KOR_pak_hon_yong
+# recruit_character = KOR_Kim_Tu_bong
+# recruit_character = KOR_Kim_Won_bong
+# recruit_character = KOR_Lyuh_Woon_hyung
+# recruit_character = KOR_Chang_Myon
+# recruit_character = KOR_Ahn_Jae_hong
+# recruit_character = KOR_Song_Jin_woo
+# recruit_character = KOR_Kim_Koo
 recruit_character = KOR_ji_chong_chen
-recruit_character = KOR_rafs
+# recruit_character = KOR_rafs
 recruit_character = KOR_Lee_Beom_seok
 
 ###원수진

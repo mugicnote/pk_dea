@@ -4,13 +4,27 @@ ideologies = {
 	communism = {
 		
 		types = {
-			marxism = {} #마르크스주의
-			leninism = {} #레닌주의
-			stalinism = {} #스탈린주의
+			marxism = {
+			}
+
+			leninism = {
+				can_be_randomly_selected = no
+			}
+
+			stalinism = {
+				can_be_randomly_selected = no
+			}
+
+			anti_revisionism = {
+				can_be_randomly_selected = no
+			}
+
+			anarchist_communism = {
+				can_be_randomly_selected = no
+			}
 			maoism = { #마오주의
 				can_be_randomly_selected = no
 			}
-			anti_revisionism = {} #반수정주의
 		}
 		
 		dynamic_faction_names = {
@@ -21,7 +35,7 @@ ideologies = {
 			"FACTION_NAME_COMMUNIST_5"
 		}
 		
-		color = { 80 5 15 }
+		color = { 127 0 0 }
 
 		war_impact_on_world_tension = 0.75		#Commie less threatening
 		faction_impact_on_world_tension = 0.5
@@ -51,325 +65,339 @@ ideologies = {
 		can_collaborate = yes
 	}
 
-	#권위사회주의
-	authoritarian_socialism = {
+	# #권위사회주의
+	# authoritarian_socialism = {
 	
-		types = {
-			auth_socialism = {} #권위사회주의
+	# 	types = {
+	# 		auth_socialism = {} #권위사회주의
 			
-			#러시아 전용
-			narodnikist_syndicalism = { #인민주의적 생디칼리슴
-				can_be_randomly_selected = no
-			}
-		}
+	# 		#러시아 전용
+	# 		narodnikist_syndicalism = { #인민주의적 생디칼리슴
+	# 			can_be_randomly_selected = no
+	# 		}
+	# 	}
 		
-		dynamic_faction_names = {
-			"FACTION_NAME_COMMUNIST_1"
-			"FACTION_NAME_COMMUNIST_2"
-			"FACTION_NAME_COMMUNIST_3"
-			"FACTION_NAME_COMMUNIST_4"
-			"FACTION_NAME_COMMUNIST_5"
-		}
+	# 	dynamic_faction_names = {
+	# 		"FACTION_NAME_COMMUNIST_1"
+	# 		"FACTION_NAME_COMMUNIST_2"
+	# 		"FACTION_NAME_COMMUNIST_3"
+	# 		"FACTION_NAME_COMMUNIST_4"
+	# 		"FACTION_NAME_COMMUNIST_5"
+	# 	}
 		
-		color = { 110 30 10 }
+	# 	color = { 110 30 10 }
 
-		war_impact_on_world_tension = 0.7	#Commie less threatening
-		faction_impact_on_world_tension = 0.45
+	# 	war_impact_on_world_tension = 0.7	#Commie less threatening
+	# 	faction_impact_on_world_tension = 0.45
 		
-		rules = {
-			can_force_government = no
-			can_send_volunteers = yes
-			can_puppet = no
-			can_join_factions = no
-		}
+	# 	rules = {
+	# 		can_force_government = no
+	# 		can_send_volunteers = yes
+	# 		can_puppet = no
+	# 		can_join_factions = no
+	# 	}
 
-		modifiers = {
-			generate_wargoal_tension = 0.5
-			civilian_intel_to_others = 10.0
-			army_intel_to_others = 7.5
-			navy_intel_to_others = 12.5
-			airforce_intel_to_others = 7.5
-		}
+	# 	modifiers = {
+	# 		generate_wargoal_tension = 0.5
+	# 		civilian_intel_to_others = 10.0
+	# 		army_intel_to_others = 7.5
+	# 		navy_intel_to_others = 12.5
+	# 		airforce_intel_to_others = 7.5
+	# 	}
 		
-		faction_modifiers = {
-			faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
-		}
-		ai_communist = yes
-		can_host_government_in_exile = yes
-		can_be_boosted = no
-		can_collaborate = yes
-	}
+	# 	faction_modifiers = {
+	# 		faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
+	# 	}
+	# 	ai_communist = yes
+	# 	can_host_government_in_exile = yes
+	# 	can_be_boosted = no
+	# 	can_collaborate = yes
+	# }
 
-	#급진사회주의
-	radical_socialism = {
+	# #급진사회주의
+	# radical_socialism = {
 	
-		types = {
-			rad_socialism = {} #급진사회주의
-			social_nationalism = {} #좌익국민주의
-			agrarian_socialism = {} #농업사회주의
-			syndicalism = { #생디칼리슴
-				can_be_randomly_selected = no
-			}
-			anarchist_communism = {} #아나코-생디칼리즘
+	# 	types = {
+	# 		rad_socialism = {} #급진사회주의
+	# 		social_nationalism = {} #좌익국민주의
+	# 		agrarian_socialism = {} #농업사회주의
+	# 		syndicalism = { #생디칼리슴
+	# 			can_be_randomly_selected = no
+	# 		}
+	# 		anarchist_communism = {} #아나코-생디칼리즘
 			
-			#러시아 전용
-			reformist_narodnikism = { #개혁적 인민주의
-				can_be_randomly_selected = no
-			}
-			democratic_labourism = { #민주적 노동자주의
-				can_be_randomly_selected = no
-			}
-		}
+	# 		#러시아 전용
+	# 		reformist_narodnikism = { #개혁적 인민주의
+	# 			can_be_randomly_selected = no
+	# 		}
+	# 		democratic_labourism = { #민주적 노동자주의
+	# 			can_be_randomly_selected = no
+	# 		}
+	# 	}
 		
-		dynamic_faction_names = {
-			"FACTION_NAME_COMMUNIST_1"
-			"FACTION_NAME_COMMUNIST_2"
-			"FACTION_NAME_COMMUNIST_3"
-			"FACTION_NAME_COMMUNIST_4"
-			"FACTION_NAME_COMMUNIST_5"
-		}
+	# 	dynamic_faction_names = {
+	# 		"FACTION_NAME_COMMUNIST_1"
+	# 		"FACTION_NAME_COMMUNIST_2"
+	# 		"FACTION_NAME_COMMUNIST_3"
+	# 		"FACTION_NAME_COMMUNIST_4"
+	# 		"FACTION_NAME_COMMUNIST_5"
+	# 	}
 		
-		color = { 200 0 0 }
+	# 	color = { 200 0 0 }
 
-		war_impact_on_world_tension = 0.7	#Commie less threatening
-		faction_impact_on_world_tension = 0.45
+	# 	war_impact_on_world_tension = 0.7	#Commie less threatening
+	# 	faction_impact_on_world_tension = 0.45
 		
-		rules = {
-			can_force_government = no
-			can_send_volunteers = yes
-			can_puppet = no
-			can_join_factions = no
-		}
+	# 	rules = {
+	# 		can_force_government = no
+	# 		can_send_volunteers = yes
+	# 		can_puppet = no
+	# 		can_join_factions = no
+	# 	}
 
-		modifiers = {
-			generate_wargoal_tension = 0.5
-			civilian_intel_to_others = 10.0
-			army_intel_to_others = 7.5
-			navy_intel_to_others = 12.5
-			airforce_intel_to_others = 7.5
-		}
+	# 	modifiers = {
+	# 		generate_wargoal_tension = 0.5
+	# 		civilian_intel_to_others = 10.0
+	# 		army_intel_to_others = 7.5
+	# 		navy_intel_to_others = 12.5
+	# 		airforce_intel_to_others = 7.5
+	# 	}
 		
-		faction_modifiers = {
-			faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
-		}
-		ai_communist = yes
-		can_host_government_in_exile = yes
-		can_be_boosted = no
-		can_collaborate = yes
-	}
+	# 	faction_modifiers = {
+	# 		faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
+	# 	}
+	# 	ai_communist = yes
+	# 	can_host_government_in_exile = yes
+	# 	can_be_boosted = no
+	# 	can_collaborate = yes
+	# }
 	
-	#사회민주주의
-	social_democracy = {
+	# #사회민주주의
+	# social_democracy = {
 	
-		types = {
-			socialism = {} #사회민주주의
+	# 	types = {
+	# 		socialism = {} #사회민주주의
 			
-			#러시아 전용
-			democratic_socialism = { #민주사회주의
-				can_be_randomly_selected = no
-			}
-			liberal_socialism = { #자유사회주의
-				can_be_randomly_selected = no
-			}
-		}
+	# 		#러시아 전용
+	# 		democratic_socialism = { #민주사회주의
+	# 			can_be_randomly_selected = no
+	# 		}
+	# 		liberal_socialism = { #자유사회주의
+	# 			can_be_randomly_selected = no
+	# 		}
+	# 	}
 		
-		dynamic_faction_names = {
-			"FACTION_NAME_COMMUNIST_1"
-			"FACTION_NAME_COMMUNIST_2"
-			"FACTION_NAME_COMMUNIST_3"
-			"FACTION_NAME_COMMUNIST_4"
-			"FACTION_NAME_COMMUNIST_5"
-		}
+	# 	dynamic_faction_names = {
+	# 		"FACTION_NAME_COMMUNIST_1"
+	# 		"FACTION_NAME_COMMUNIST_2"
+	# 		"FACTION_NAME_COMMUNIST_3"
+	# 		"FACTION_NAME_COMMUNIST_4"
+	# 		"FACTION_NAME_COMMUNIST_5"
+	# 	}
 		
-		color = { 200 20 85 }
+	# 	color = { 200 20 85 }
 
-		war_impact_on_world_tension = 0.75		#Commie less threatening
-		faction_impact_on_world_tension = 0.5
+	# 	war_impact_on_world_tension = 0.75		#Commie less threatening
+	# 	faction_impact_on_world_tension = 0.5
 		
-		rules = {
-			can_force_government = no
-			can_send_volunteers = yes
-			can_puppet = no
-			can_join_factions = no
-		}
+	# 	rules = {
+	# 		can_force_government = no
+	# 		can_send_volunteers = yes
+	# 		can_puppet = no
+	# 		can_join_factions = no
+	# 	}
 
-		modifiers = {
-			generate_wargoal_tension = 0.8
-			civilian_intel_to_others = 20.0
-			army_intel_to_others = 5.0
-			navy_intel_to_others = 20.0
-			airforce_intel_to_others = 5
-			lend_lease_tension = 0.50
-			send_volunteers_tension = 0.50
-			guarantee_tension = 0.25
-		}
+	# 	modifiers = {
+	# 		generate_wargoal_tension = 0.8
+	# 		civilian_intel_to_others = 20.0
+	# 		army_intel_to_others = 5.0
+	# 		navy_intel_to_others = 20.0
+	# 		airforce_intel_to_others = 5
+	# 		lend_lease_tension = 0.50
+	# 		send_volunteers_tension = 0.50
+	# 		guarantee_tension = 0.25
+	# 	}
 		
-		faction_modifiers = {
-		}
-		ai_communist = yes
-		can_host_government_in_exile = yes
-		can_be_boosted = no
-		can_collaborate = yes
-	}
+	# 	faction_modifiers = {
+	# 	}
+	# 	ai_communist = yes
+	# 	can_host_government_in_exile = yes
+	# 	can_be_boosted = no
+	# 	can_collaborate = yes
+	# }
 
-	#사회자유주의
-	social_liberalism = {
+	# #사회자유주의
+	# social_liberalism = {
 	
-		types = {
-			liberalism = {} #사회자유주의
-			American_Soclib = {} #미국
-		}
+	# 	types = {
+	# 		liberalism = {} #사회자유주의
+	# 		American_Soclib = {} #미국
+	# 	}
 		
-		dynamic_faction_names = {
-			"FACTION_NAME_DEMOCRATIC_1"
-			"FACTION_NAME_DEMOCRATIC_2"
-			"FACTION_NAME_DEMOCRATIC_3"
-			"FACTION_NAME_DEMOCRATIC_4"
-			"FACTION_NAME_DEMOCRATIC_5"
-			"FACTION_NAME_DEMOCRATIC_6"
-		}
+	# 	dynamic_faction_names = {
+	# 		"FACTION_NAME_DEMOCRATIC_1"
+	# 		"FACTION_NAME_DEMOCRATIC_2"
+	# 		"FACTION_NAME_DEMOCRATIC_3"
+	# 		"FACTION_NAME_DEMOCRATIC_4"
+	# 		"FACTION_NAME_DEMOCRATIC_5"
+	# 		"FACTION_NAME_DEMOCRATIC_6"
+	# 	}
 		
-		color = { 255 130 35 }
+	# 	color = { 255 130 35 }
 
-		war_impact_on_world_tension = 0.25		# no major danger, remember this this the 40s!
-		faction_impact_on_world_tension = 0.1
+	# 	war_impact_on_world_tension = 0.25		# no major danger, remember this this the 40s!
+	# 	faction_impact_on_world_tension = 0.1
 		
-		rules = {
-			can_force_government = no
-			can_send_volunteers = yes
-			can_puppet = no
-			can_join_factions = no
-		}
+	# 	rules = {
+	# 		can_force_government = no
+	# 		can_send_volunteers = yes
+	# 		can_puppet = no
+	# 		can_join_factions = no
+	# 	}
 
 		
-		modifiers = {
-			generate_wargoal_tension = 0.8
-			civilian_intel_to_others = 20.0
-			army_intel_to_others = 5.0
-			navy_intel_to_others = 20.0
-			airforce_intel_to_others = 5
-			lend_lease_tension = 0.50
-			send_volunteers_tension = 0.50
-			guarantee_tension = 0.25
-		}
+	# 	modifiers = {
+	# 		generate_wargoal_tension = 0.8
+	# 		civilian_intel_to_others = 20.0
+	# 		army_intel_to_others = 5.0
+	# 		navy_intel_to_others = 20.0
+	# 		airforce_intel_to_others = 5
+	# 		lend_lease_tension = 0.50
+	# 		send_volunteers_tension = 0.50
+	# 		guarantee_tension = 0.25
+	# 	}
 		
-		faction_modifiers = {
-		}
-		ai_democratic = yes
-		can_host_government_in_exile = yes
-		can_be_boosted = no
-		can_collaborate = yes
-	}
+	# 	faction_modifiers = {
+	# 	}
+	# 	ai_democratic = yes
+	# 	can_host_government_in_exile = yes
+	# 	can_be_boosted = no
+	# 	can_collaborate = yes
+	# }
 
-	#국민자유주의
-	national_liberalism = {
+	# #국민자유주의
+	# national_liberalism = {
 	
-		types = {
-			nat_liberal = {} #국민자유주의
-			market_liberal = {} #시장자유주의
-		}
+	# 	types = {
+	# 		nat_liberal = {} #국민자유주의
+	# 		market_liberal = {} #시장자유주의
+	# 	}
 		
-		dynamic_faction_names = {
-			"FACTION_NAME_DEMOCRATIC_1"
-			"FACTION_NAME_DEMOCRATIC_2"
-			"FACTION_NAME_DEMOCRATIC_3"
-			"FACTION_NAME_DEMOCRATIC_4"
-			"FACTION_NAME_DEMOCRATIC_5"
-			"FACTION_NAME_DEMOCRATIC_6"
-		}
+	# 	dynamic_faction_names = {
+	# 		"FACTION_NAME_DEMOCRATIC_1"
+	# 		"FACTION_NAME_DEMOCRATIC_2"
+	# 		"FACTION_NAME_DEMOCRATIC_3"
+	# 		"FACTION_NAME_DEMOCRATIC_4"
+	# 		"FACTION_NAME_DEMOCRATIC_5"
+	# 		"FACTION_NAME_DEMOCRATIC_6"
+	# 	}
 		
-		color = { 255 225 36 }
+	# 	color = { 255 225 36 }
 
-		war_impact_on_world_tension = 0.25		# no major danger, remember this this the 40s!
-		faction_impact_on_world_tension = 0.1
+	# 	war_impact_on_world_tension = 0.25		# no major danger, remember this this the 40s!
+	# 	faction_impact_on_world_tension = 0.1
 		
-		rules = {
-			can_force_government = no
-			can_send_volunteers = yes
-			can_puppet = no
-			can_join_factions = no
-		}
+	# 	rules = {
+	# 		can_force_government = no
+	# 		can_send_volunteers = yes
+	# 		can_puppet = no
+	# 		can_join_factions = no
+	# 	}
 		
-		modifiers = {
-			generate_wargoal_tension = 0.8
-			civilian_intel_to_others = 20.0
-			army_intel_to_others = 5.0
-			navy_intel_to_others = 20.0
-			airforce_intel_to_others = 5
-			lend_lease_tension = 0.50
-			send_volunteers_tension = 0.50
-			guarantee_tension = 0.25
-		}
+	# 	modifiers = {
+	# 		generate_wargoal_tension = 0.8
+	# 		civilian_intel_to_others = 20.0
+	# 		army_intel_to_others = 5.0
+	# 		navy_intel_to_others = 20.0
+	# 		airforce_intel_to_others = 5
+	# 		lend_lease_tension = 0.50
+	# 		send_volunteers_tension = 0.50
+	# 		guarantee_tension = 0.25
+	# 	}
 		
-		faction_modifiers = {
-		}
-		ai_democratic = yes
-		can_host_government_in_exile = yes
-		can_be_boosted = no
-		can_collaborate = yes
-	}
+	# 	faction_modifiers = {
+	# 	}
+	# 	ai_democratic = yes
+	# 	can_host_government_in_exile = yes
+	# 	can_be_boosted = no
+	# 	can_collaborate = yes
+	# }
 	
-	#자유보수주의
-	liberal_conservatism = {
+	# #자유보수주의
+	# liberal_conservatism = {
 
-		types = {
-			lib_conservatism = {} #자유보수주의
-			centrism = { #중도주의
-				can_be_randomly_selected = no
-			}
-			christian_democracy = { #기독교 민주주의
-				can_be_randomly_selected = no
-			}
-		}
-		dynamic_faction_names = {
-			"FACTION_NAME_DEMOCRATIC_1"
-			"FACTION_NAME_DEMOCRATIC_2"
-			"FACTION_NAME_DEMOCRATIC_3"
-			"FACTION_NAME_DEMOCRATIC_4"
-			"FACTION_NAME_DEMOCRATIC_5"
-			"FACTION_NAME_DEMOCRATIC_6"
-		}
-		color = { 50 140 255 }
+	# 	types = {
+	# 		lib_conservatism = {} #자유보수주의
+	# 		centrism = { #중도주의
+	# 			can_be_randomly_selected = no
+	# 		}
+	# 		christian_democracy = { #기독교 민주주의
+	# 			can_be_randomly_selected = no
+	# 		}
+	# 	}
+	# 	dynamic_faction_names = {
+	# 		"FACTION_NAME_DEMOCRATIC_1"
+	# 		"FACTION_NAME_DEMOCRATIC_2"
+	# 		"FACTION_NAME_DEMOCRATIC_3"
+	# 		"FACTION_NAME_DEMOCRATIC_4"
+	# 		"FACTION_NAME_DEMOCRATIC_5"
+	# 		"FACTION_NAME_DEMOCRATIC_6"
+	# 	}
+	# 	color = { 50 140 255 }
 
-		war_impact_on_world_tension = 0.25		# no major danger, remember this this the 40s!
-		faction_impact_on_world_tension = 0.1
+	# 	war_impact_on_world_tension = 0.25		# no major danger, remember this this the 40s!
+	# 	faction_impact_on_world_tension = 0.1
 
-		rules = {
-			can_force_government = no
-			can_send_volunteers = yes
-			can_puppet = no
-			can_join_factions = no
-		}
-		modifiers = {
-			generate_wargoal_tension = 0.7
-			civilian_intel_to_others = 20.0
-			army_intel_to_others = 5.0
-			navy_intel_to_others = 20.0
-			airforce_intel_to_others = 5
-			lend_lease_tension = 0.50
-			send_volunteers_tension = 0.50
-			guarantee_tension = 0.25
-		}
-		faction_modifiers = {
-		}
-		ai_democratic = yes # uses the democratic AI behaviour
-		can_host_government_in_exile = yes
-		can_be_boosted = no
-		can_collaborate = yes
-	}
+	# 	rules = {
+	# 		can_force_government = no
+	# 		can_send_volunteers = yes
+	# 		can_puppet = no
+	# 		can_join_factions = no
+	# 	}
+	# 	modifiers = {
+	# 		generate_wargoal_tension = 0.7
+	# 		civilian_intel_to_others = 20.0
+	# 		army_intel_to_others = 5.0
+	# 		navy_intel_to_others = 20.0
+	# 		airforce_intel_to_others = 5
+	# 		lend_lease_tension = 0.50
+	# 		send_volunteers_tension = 0.50
+	# 		guarantee_tension = 0.25
+	# 	}
+	# 	faction_modifiers = {
+	# 	}
+	# 	ai_democratic = yes # uses the democratic AI behaviour
+	# 	can_host_government_in_exile = yes
+	# 	can_be_boosted = no
+	# 	can_collaborate = yes
+	# }
 
 	#사회보수주의
 	democratic = {
 
 		types = {
-			conservatism = {} #Going to be the same as social_conservatism, redone
+			conservatism = {
+				color = { 62 66 220 }
+			}
+
+			liberalism = {
+				color = { 246 139 60 }
+			}
+
+			socialism = {
+				color = { 194 30 86 }
+			}
+
 			ilminism = { #일민주의
 				can_be_randomly_selected = no
 			}
 			christian_democracy_soccon = { #기독교 민주주의
 				can_be_randomly_selected = no
 			}
-			Seo_Jae_Pil_conservatism = {}
+			Seo_Jae_Pil_conservatism = {
+				can_be_randomly_selected = no
+				color = { 62 66 106 }
+			}
 		}
 		dynamic_faction_names = {
 			"FACTION_NAME_DEMOCRATIC_1"
@@ -409,58 +437,67 @@ ideologies = {
 	}
 
 	#국민보수주의
-	national_conservatism = {
+	# national_conservatism = {
 		
-		types = {
-			nat_conservatism = {} #국민보수주의
-			samgyun = { #삼균주의
-				can_be_randomly_selected = no
-			}
-			korean_nationalism = { #한국 민족주의
-				can_be_randomly_selected = no
-			}
-		}
-		dynamic_faction_names = {
-			"FACTION_NAME_DEMOCRATIC_1"
-			"FACTION_NAME_DEMOCRATIC_2"
-			"FACTION_NAME_DEMOCRATIC_3"
-			"FACTION_NAME_DEMOCRATIC_4"
-			"FACTION_NAME_DEMOCRATIC_5"
-			"FACTION_NAME_DEMOCRATIC_6"
-		}
-		color = { 10 60 100 }
+	# 	types = {
+	# 		nat_conservatism = {} #국민보수주의
+	# 		samgyun = { #삼균주의
+	# 			can_be_randomly_selected = no
+	# 		}
+	# 		korean_nationalism = { #한국 민족주의
+	# 			can_be_randomly_selected = no
+	# 		}
+	# 	}
+	# 	dynamic_faction_names = {
+	# 		"FACTION_NAME_DEMOCRATIC_1"
+	# 		"FACTION_NAME_DEMOCRATIC_2"
+	# 		"FACTION_NAME_DEMOCRATIC_3"
+	# 		"FACTION_NAME_DEMOCRATIC_4"
+	# 		"FACTION_NAME_DEMOCRATIC_5"
+	# 		"FACTION_NAME_DEMOCRATIC_6"
+	# 	}
+	# 	color = { 10 60 100 }
 
-		war_impact_on_world_tension = 0.25		#no major danger
-		faction_impact_on_world_tension = 0.1
+	# 	war_impact_on_world_tension = 0.25		#no major danger
+	# 	faction_impact_on_world_tension = 0.1
 
-		rules = {
-			can_force_government = no
-			can_send_volunteers = yes
-			can_puppet = no
-			can_join_factions = no
-		}
-		modifiers = {
-			generate_wargoal_tension = 0.7
-			civilian_intel_to_others = 20.0
-			army_intel_to_others = 5.0
-			navy_intel_to_others = 20.0
-			airforce_intel_to_others = 5
-			lend_lease_tension = 0.50
-			send_volunteers_tension = 0.50
-			guarantee_tension = 0.25
-		}
-		faction_modifiers = {
-		}
-		ai_neutral = yes
-		can_host_government_in_exile = yes
-		can_be_boosted = no
-		can_collaborate = yes
-	}
+	# 	rules = {
+	# 		can_force_government = no
+	# 		can_send_volunteers = yes
+	# 		can_puppet = no
+	# 		can_join_factions = no
+	# 	}
+	# 	modifiers = {
+	# 		generate_wargoal_tension = 0.7
+	# 		civilian_intel_to_others = 20.0
+	# 		army_intel_to_others = 5.0
+	# 		navy_intel_to_others = 20.0
+	# 		airforce_intel_to_others = 5
+	# 		lend_lease_tension = 0.50
+	# 		send_volunteers_tension = 0.50
+	# 		guarantee_tension = 0.25
+	# 	}
+	# 	faction_modifiers = {
+	# 	}
+	# 	ai_neutral = yes
+	# 	can_host_government_in_exile = yes
+	# 	can_be_boosted = no
+	# 	can_collaborate = yes
+	# }
 
 	#권위주의
 	neutrality = {
 	
 		types = {
+
+			despotism  = {
+				color = { 110 110 110 }
+			}
+			monarchism = {
+			}
+			centrism = {
+			}
+
 			authoritarian = {} #권위주의
 			military_dic = {} #군정
 			oligarchism = {} #과두제
@@ -514,68 +551,68 @@ ideologies = {
 		ai_neutral = yes
 	}
 
-	#전제주의
-	auto_despotism = {
+	# #전제주의
+	# auto_despotism = {
 	
-		types = {
-			despotism = {} #전제주의
-			statism = {} #국가주의
-			semi_constitutional = { #외견적 입헌군주제
-				can_be_randomly_selected = no 
-			}
-			dang_guo = { #삼민주의
-				can_be_randomly_selected = no
-			}
-			warlordism = { #군벌
-				can_be_randomly_selected = no
-			}
-			yokusan = { #익찬 체제
-				can_be_randomly_selected = no
-			}
-			ilminism_auto = { #일민주의
-				can_be_randomly_selected = no
-			}	
-		}
+	# 	types = {
+	# 		despotism = {} #전제주의
+	# 		statism = {} #국가주의
+	# 		semi_constitutional = { #외견적 입헌군주제
+	# 			can_be_randomly_selected = no 
+	# 		}
+	# 		dang_guo = { #삼민주의
+	# 			can_be_randomly_selected = no
+	# 		}
+	# 		warlordism = { #군벌
+	# 			can_be_randomly_selected = no
+	# 		}
+	# 		yokusan = { #익찬 체제
+	# 			can_be_randomly_selected = no
+	# 		}
+	# 		ilminism_auto = { #일민주의
+	# 			can_be_randomly_selected = no
+	# 		}	
+	# 	}
 		
-		dynamic_faction_names = {
-			"FACTION_NAME_DEMOCRATIC_1"
-			"FACTION_NAME_DEMOCRATIC_2"
-			"FACTION_NAME_DEMOCRATIC_3"
-			"FACTION_NAME_DEMOCRATIC_4"
-			"FACTION_NAME_DEMOCRATIC_5"
-			"FACTION_NAME_DEMOCRATIC_6"
-		}
+	# 	dynamic_faction_names = {
+	# 		"FACTION_NAME_DEMOCRATIC_1"
+	# 		"FACTION_NAME_DEMOCRATIC_2"
+	# 		"FACTION_NAME_DEMOCRATIC_3"
+	# 		"FACTION_NAME_DEMOCRATIC_4"
+	# 		"FACTION_NAME_DEMOCRATIC_5"
+	# 		"FACTION_NAME_DEMOCRATIC_6"
+	# 	}
 		
-		color = { 60 30 130 }
+	# 	color = { 60 30 130 }
 
-		war_impact_on_world_tension = 0.6	#no major danger
-		faction_impact_on_world_tension = 0.1
+	# 	war_impact_on_world_tension = 0.6	#no major danger
+	# 	faction_impact_on_world_tension = 0.1
 		
-		rules = {
-			can_force_government = no
-			can_send_volunteers = yes
-			can_puppet = no
-			can_join_factions = no
-		}
+	# 	rules = {
+	# 		can_force_government = no
+	# 		can_send_volunteers = yes
+	# 		can_puppet = no
+	# 		can_join_factions = no
+	# 	}
 		
-		modifiers = {
-			generate_wargoal_tension = 0.5
-			civilian_intel_to_others = 15.0
-			army_intel_to_others = 6.0
-			navy_intel_to_others = 15.0
-			airforce_intel_to_others = 6.0
-			lend_lease_tension = 0.4
-			send_volunteers_tension = 0.4
-			guarantee_tension = 0.4
-		}
+	# 	modifiers = {
+	# 		generate_wargoal_tension = 0.5
+	# 		civilian_intel_to_others = 15.0
+	# 		army_intel_to_others = 6.0
+	# 		navy_intel_to_others = 15.0
+	# 		airforce_intel_to_others = 6.0
+	# 		lend_lease_tension = 0.4
+	# 		send_volunteers_tension = 0.4
+	# 		guarantee_tension = 0.4
+	# 	}
 		
-		faction_modifiers = {
-		}
-		can_be_boosted = no
-		can_host_government_in_exile = yes
-		can_collaborate = yes
-		ai_neutral = yes
-	}
+	# 	faction_modifiers = {
+	# 	}
+	# 	can_be_boosted = no
+	# 	can_host_government_in_exile = yes
+	# 	can_collaborate = yes
+	# 	ai_neutral = yes
+	# }
 	
 	#파시즘
 	fascism = {
@@ -595,7 +632,10 @@ ideologies = {
 				can_be_randomly_selected = no
 			}
 			gen_nazism = {}
-			lee_fascism = {} #이범석
+			lee_fascism = {
+				can_be_randomly_selected = no
+				color = { 40 40 40 }
+			} #이범석
 			
 			#러시아 전용
 			monarchy_fascism =  { #군주제 파시즘

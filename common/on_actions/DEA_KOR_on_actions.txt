@@ -7,7 +7,7 @@ on_actions = {
 				set_variable = { Country_explanation_Button_y = 41 }
 			}
 			RUS = {
-				transfer_state = 1040
+				transfer_state = 1100
 			}
 			hidden_effect = {
 				SOV = {
@@ -18,9 +18,9 @@ on_actions = {
 				}
 			}
 			SOV = {
-				set_state_controller = 1040
+				set_state_controller = 1100
 			}
-			1040 = {
+			1100 = {
 				start_resistance = yes
 				set_compliance = 5
 				set_resistance = 5
@@ -48,21 +48,13 @@ on_actions = {
 				#시작시_정당들의_인기도
 				set_popularities = {
 				  	communism = 0
-				 	authoritarian_socialism = 0
-					radical_socialism = 0
-					social_democracy = 0
-					social_liberalism = 0
-					national_liberalism = 0
-					liberal_conservatism = 0
-					democratic = 0
-					national_conservatism = 5
-					neutrality = 65
-					auto_despotism = 10
-					fascism = 20
+					democratic = 5
+					neutrality = 70
+					fascism = 25
 				}
 			}
 			KOR = {
-				set_variable = { Social_insecurity_pop = 3 }
+				# set_variable = { Social_insecurity_pop = 3 }
 				set_variable = { USA_Relationship_pop = 2 }
 				set_variable = { CHI_Relationship_pop = 3 }
 				set_variable = { JAP_Relationship_pop = 4 }

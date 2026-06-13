@@ -43,4 +43,5 @@
  auto_despotism_drift:0 "일일 전제주의 지지"
  fascism_drift:0 "일일 파시즘 지지"
 
- COUNTRY_SELECTION_CHARACTER_DESC: "$NAME|Y$\n$TRAITS_DESC|$"
+ COUNTRY_SELECTION_CHARACTER_DESC:0 "$NAME|Y$\n$TRAITS_DESC|$"
+ electionsLoc: "선거는 사건을 통해 진행됨"

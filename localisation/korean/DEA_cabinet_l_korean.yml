@@ -7,7 +7,6 @@
   cabinet:0 "내각"
   cabinet2:0 "내각"
 
-  #gui 소개 직책명
   POSITION_main_opposition_party_leader1:0 "국무총리"
   POSITION_main_opposition_party_leader3:0 "내무부장관"
   POSITION_main_opposition_party_leader5:0 "외무부장관"
@@ -26,7 +25,6 @@
   POSITION_main_opposition_party_leader16:0 "해군참모총장"
   POSITION_main_opposition_party_leader17:0 "공군참모총장"
 
-  #gui 소개 인물명
   Kim_Kyusik:0 "김규식"
   Ham_TaeYoung:0 "함태영"
   Ho_Jong:0 "허정"
@@ -37,7 +35,7 @@
   Chough_Pyung_ok:0 "조병옥"
   Lee_In:0 "이인"
 
-  prime_minister_cab:0 "국무총리"
+  prime_minister_cab:0 "부통령"
   interior_minister:0 "내무부장관"
   foreign_minister:0 "외무부장관"
   national_defense_minister:0 "국방부장관"
@@ -62,7 +60,7 @@
  
 
  hog:0 "대통령"
- secmin:0 "국무총리"
+ secmin:0 "부통령"
  ecomin:0 "대법원장"
  frnmin:0 "국회의장"
  milmin:0 "대공처/행안부장관"
@@ -154,6 +152,8 @@ jae_pil_front:0 "대한민국 제1공화국 국무위원 개요"
 KOR_FdS2_front_name:0 "요주 인사 명단"
 KOR_FdS3_semi_front_name:0 "국무위원직은 수행 중이 아니나, 직책이 중요하거나 앞으로 중요해질 인물들이 보여집니다."
 
+KOR_FdS4_front_name:0 "대한민국 국가요인 개요"
+
 KOR_FdS_front_mini_name:0 "입법"
 KOR_FdS_front_mini_name2:0 "행정"
 KOR_FdS_front_mini_name3:0 "사법"
@@ -235,8 +235,8 @@ G_Macarthur:0 "더글러스 맥아더"
 
 ###듀얼 지도자###
 KOR_FIRST_TITLE:0 "대통령"
-KOR_SECOND_TITLE:0 "국무총리"
-KOR_DUAL_NAME:0 "김규식"
+KOR_SECOND_TITLE:0 "부통령"
+KOR_DUAL_NAME:0 "서재필"
 
 KOR_FIRST_TITLE_has_no_president:0 "행정부"
 KOR_FIRST_TITLE_kim_kyu_sik_acting_president:0 "대통령 권한대행"

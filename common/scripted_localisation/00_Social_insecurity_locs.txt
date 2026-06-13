@@ -1,307 +1,307 @@
-defined_text = {
-	name = Social_insecurity_pop_loc
-	text = {
-		trigger = {
-			check_variable = { Social_insecurity_pop = 1 }
-		}
-		localization_key = Social_insecurity_pop_loc_1
-	}
-	text = {
-		trigger = {
-			check_variable = { Social_insecurity_pop = 2 }
-		}
-		localization_key = Social_insecurity_pop_loc_2
-	}
-	text = {
-		trigger = {
-			check_variable = { Social_insecurity_pop = 3 }
-		}
-		localization_key = Social_insecurity_pop_loc_3
-	}
-	text = {
-		trigger = {
-			check_variable = { Social_insecurity_pop = 4 }
-		}
-		localization_key = Social_insecurity_pop_loc_4
-	}
-	text = {
-		trigger = {
-			check_variable = { Social_insecurity_pop = 5 }
-		}
-		localization_key = Social_insecurity_pop_loc_5
-	}
-	text = {
-		trigger = {
-			check_variable = { Social_insecurity_pop = 6 }
-		}
-		localization_key = Social_insecurity_pop_loc_6
-	}
-	text = {
-		trigger = {
-			check_variable = { Social_insecurity_pop = 7 }
-		}
-		localization_key = Social_insecurity_pop_loc_7
-	}
-	text = {
-		trigger = {
-			check_variable = { Social_insecurity_pop = 8 }
-		}
-		localization_key = Social_insecurity_pop_loc_8
-	}
-	text = {
-		trigger = {
-			check_variable = { Social_insecurity_pop = 9 }
-		}
-		localization_key = Social_insecurity_pop_loc_9
-	}
-	text = {
-		trigger = {
-			check_variable = { Social_insecurity_pop = 10 }
-		}
-		localization_key = Social_insecurity_pop_loc_10
-	}
-	text = {
-		localization_key = Social_insecurity_pop_loc_zero
-	}
-}
+# defined_text = {
+# 	name = Social_insecurity_pop_loc
+# 	text = {
+# 		trigger = {
+# 			check_variable = { Social_insecurity_pop = 1 }
+# 		}
+# 		localization_key = Social_insecurity_pop_loc_1
+# 	}
+# 	text = {
+# 		trigger = {
+# 			check_variable = { Social_insecurity_pop = 2 }
+# 		}
+# 		localization_key = Social_insecurity_pop_loc_2
+# 	}
+# 	text = {
+# 		trigger = {
+# 			check_variable = { Social_insecurity_pop = 3 }
+# 		}
+# 		localization_key = Social_insecurity_pop_loc_3
+# 	}
+# 	text = {
+# 		trigger = {
+# 			check_variable = { Social_insecurity_pop = 4 }
+# 		}
+# 		localization_key = Social_insecurity_pop_loc_4
+# 	}
+# 	text = {
+# 		trigger = {
+# 			check_variable = { Social_insecurity_pop = 5 }
+# 		}
+# 		localization_key = Social_insecurity_pop_loc_5
+# 	}
+# 	text = {
+# 		trigger = {
+# 			check_variable = { Social_insecurity_pop = 6 }
+# 		}
+# 		localization_key = Social_insecurity_pop_loc_6
+# 	}
+# 	text = {
+# 		trigger = {
+# 			check_variable = { Social_insecurity_pop = 7 }
+# 		}
+# 		localization_key = Social_insecurity_pop_loc_7
+# 	}
+# 	text = {
+# 		trigger = {
+# 			check_variable = { Social_insecurity_pop = 8 }
+# 		}
+# 		localization_key = Social_insecurity_pop_loc_8
+# 	}
+# 	text = {
+# 		trigger = {
+# 			check_variable = { Social_insecurity_pop = 9 }
+# 		}
+# 		localization_key = Social_insecurity_pop_loc_9
+# 	}
+# 	text = {
+# 		trigger = {
+# 			check_variable = { Social_insecurity_pop = 10 }
+# 		}
+# 		localization_key = Social_insecurity_pop_loc_10
+# 	}
+# 	text = {
+# 		localization_key = Social_insecurity_pop_loc_zero
+# 	}
+# }
 
-defined_text = {
-	name = Social_insecurity_condition_loc
-	text = {
-		trigger = {
-			OR = {
-				check_variable = { Social_insecurity_pop = 1 }
-				check_variable = { Social_insecurity_pop = 2 }
-				check_variable = { Social_insecurity_pop = 3 }
-			}
-		}
-		localization_key = Social_insecurity_condition_loc_1
-	}
-	text = {
-		trigger = {
-			OR = {
-				check_variable = { Social_insecurity_pop = 4 }
-				check_variable = { Social_insecurity_pop = 5 }
-				check_variable = { Social_insecurity_pop = 6 }
-			}
-		}
-		localization_key = Social_insecurity_condition_loc_2
-	}
-	text = {
-		trigger = {
-			OR = {
-				check_variable = { Social_insecurity_pop = 7 }
-				check_variable = { Social_insecurity_pop = 8 }
-				check_variable = { Social_insecurity_pop = 9 }
-				check_variable = { Social_insecurity_pop = 10 }
-			}
-		}
-		localization_key = Social_insecurity_condition_loc_3
-	}
-	text = {
-		localization_key = Social_insecurity_condition_loc_zero
-	}
-}
+# defined_text = {
+# 	name = Social_insecurity_condition_loc
+# 	text = {
+# 		trigger = {
+# 			OR = {
+# 				check_variable = { Social_insecurity_pop = 1 }
+# 				check_variable = { Social_insecurity_pop = 2 }
+# 				check_variable = { Social_insecurity_pop = 3 }
+# 			}
+# 		}
+# 		localization_key = Social_insecurity_condition_loc_1
+# 	}
+# 	text = {
+# 		trigger = {
+# 			OR = {
+# 				check_variable = { Social_insecurity_pop = 4 }
+# 				check_variable = { Social_insecurity_pop = 5 }
+# 				check_variable = { Social_insecurity_pop = 6 }
+# 			}
+# 		}
+# 		localization_key = Social_insecurity_condition_loc_2
+# 	}
+# 	text = {
+# 		trigger = {
+# 			OR = {
+# 				check_variable = { Social_insecurity_pop = 7 }
+# 				check_variable = { Social_insecurity_pop = 8 }
+# 				check_variable = { Social_insecurity_pop = 9 }
+# 				check_variable = { Social_insecurity_pop = 10 }
+# 			}
+# 		}
+# 		localization_key = Social_insecurity_condition_loc_3
+# 	}
+# 	text = {
+# 		localization_key = Social_insecurity_condition_loc_zero
+# 	}
+# }
 
-defined_text = {
-	name = Social_insecurity_effect_loc
-	text = {
-		trigger = {
-			check_variable = { Social_insecurity_pop = 1 }
-		}
-		localization_key = Social_insecurity_idea_1_loc
-	}
-	text = {
-		trigger = {
-			check_variable = { Social_insecurity_pop = 2 }
-		}
-		localization_key = Social_insecurity_idea_2_loc
-	}
-	text = {
-		trigger = {
-			check_variable = { Social_insecurity_pop = 3 }
-		}
-		localization_key = Social_insecurity_idea_3_loc
-	}
-	text = {
-		trigger = {
-			check_variable = { Social_insecurity_pop = 4 }
-		}
-		localization_key = Social_insecurity_idea_4_loc
-	}
-	text = {
-		trigger = {
-			check_variable = { Social_insecurity_pop = 5 }
-		}
-		localization_key = Social_insecurity_idea_5_loc
-	}
-	text = {
-		trigger = {
-			check_variable = { Social_insecurity_pop = 6 }
-		}
-		localization_key = Social_insecurity_idea_6_loc
-	}
-	text = {
-		trigger = {
-			check_variable = { Social_insecurity_pop = 7 }
-		}
-		localization_key = Social_insecurity_idea_7_loc
-	}
-	text = {
-		trigger = {
-			check_variable = { Social_insecurity_pop = 8 }
-		}
-		localization_key = Social_insecurity_idea_8_loc
-	}
-	text = {
-		trigger = {
-			check_variable = { Social_insecurity_pop = 9 }
-		}
-		localization_key = Social_insecurity_idea_9_loc
-	}
-	text = {
-		trigger = {
-			check_variable = { Social_insecurity_pop = 10 }
-		}
-		localization_key = Social_insecurity_idea_10_loc
-	}
-	text = {
-		localization_key = Social_insecurity_idea_zero_loc
-	}
-}
+# defined_text = {
+# 	name = Social_insecurity_effect_loc
+# 	text = {
+# 		trigger = {
+# 			check_variable = { Social_insecurity_pop = 1 }
+# 		}
+# 		localization_key = Social_insecurity_idea_1_loc
+# 	}
+# 	text = {
+# 		trigger = {
+# 			check_variable = { Social_insecurity_pop = 2 }
+# 		}
+# 		localization_key = Social_insecurity_idea_2_loc
+# 	}
+# 	text = {
+# 		trigger = {
+# 			check_variable = { Social_insecurity_pop = 3 }
+# 		}
+# 		localization_key = Social_insecurity_idea_3_loc
+# 	}
+# 	text = {
+# 		trigger = {
+# 			check_variable = { Social_insecurity_pop = 4 }
+# 		}
+# 		localization_key = Social_insecurity_idea_4_loc
+# 	}
+# 	text = {
+# 		trigger = {
+# 			check_variable = { Social_insecurity_pop = 5 }
+# 		}
+# 		localization_key = Social_insecurity_idea_5_loc
+# 	}
+# 	text = {
+# 		trigger = {
+# 			check_variable = { Social_insecurity_pop = 6 }
+# 		}
+# 		localization_key = Social_insecurity_idea_6_loc
+# 	}
+# 	text = {
+# 		trigger = {
+# 			check_variable = { Social_insecurity_pop = 7 }
+# 		}
+# 		localization_key = Social_insecurity_idea_7_loc
+# 	}
+# 	text = {
+# 		trigger = {
+# 			check_variable = { Social_insecurity_pop = 8 }
+# 		}
+# 		localization_key = Social_insecurity_idea_8_loc
+# 	}
+# 	text = {
+# 		trigger = {
+# 			check_variable = { Social_insecurity_pop = 9 }
+# 		}
+# 		localization_key = Social_insecurity_idea_9_loc
+# 	}
+# 	text = {
+# 		trigger = {
+# 			check_variable = { Social_insecurity_pop = 10 }
+# 		}
+# 		localization_key = Social_insecurity_idea_10_loc
+# 	}
+# 	text = {
+# 		localization_key = Social_insecurity_idea_zero_loc
+# 	}
+# }
 
-defined_text = {
-	name = USA_Relationship_pop_loc
-	text = {
-		trigger = {
-			check_variable = { USA_Relationship_pop = 1 }
-		}
-		localization_key = Social_insecurity_Relationship_loc_1
-	}
-	text = {
-		trigger = {
-			check_variable = { USA_Relationship_pop = 2 }
-		}
-		localization_key = Social_insecurity_Relationship_loc_2
-	}
-	text = {
-		trigger = {
-			check_variable = { USA_Relationship_pop = 3 }
-		}
-		localization_key = Social_insecurity_Relationship_loc_3
-	}
-	text = {
-		trigger = {
-			check_variable = { USA_Relationship_pop = 4 }
-		}
-		localization_key = Social_insecurity_Relationship_loc_4
-	}
-	text = {
-		trigger = {
-			check_variable = { USA_Relationship_pop = 5 }
-		}
-		localization_key = Social_insecurity_Relationship_loc_5
-	}
-}
+# defined_text = {
+# 	name = USA_Relationship_pop_loc
+# 	text = {
+# 		trigger = {
+# 			check_variable = { USA_Relationship_pop = 1 }
+# 		}
+# 		localization_key = Social_insecurity_Relationship_loc_1
+# 	}
+# 	text = {
+# 		trigger = {
+# 			check_variable = { USA_Relationship_pop = 2 }
+# 		}
+# 		localization_key = Social_insecurity_Relationship_loc_2
+# 	}
+# 	text = {
+# 		trigger = {
+# 			check_variable = { USA_Relationship_pop = 3 }
+# 		}
+# 		localization_key = Social_insecurity_Relationship_loc_3
+# 	}
+# 	text = {
+# 		trigger = {
+# 			check_variable = { USA_Relationship_pop = 4 }
+# 		}
+# 		localization_key = Social_insecurity_Relationship_loc_4
+# 	}
+# 	text = {
+# 		trigger = {
+# 			check_variable = { USA_Relationship_pop = 5 }
+# 		}
+# 		localization_key = Social_insecurity_Relationship_loc_5
+# 	}
+# }
 
-defined_text = {
-	name = CHI_Relationship_pop_loc
-	text = {
-		trigger = {
-			check_variable = { CHI_Relationship_pop = 1 }
-		}
-		localization_key = Social_insecurity_Relationship_loc_1
-	}
-	text = {
-		trigger = {
-			check_variable = { CHI_Relationship_pop = 2 }
-		}
-		localization_key = Social_insecurity_Relationship_loc_2
-	}
-	text = {
-		trigger = {
-			check_variable = { CHI_Relationship_pop = 3 }
-		}
-		localization_key = Social_insecurity_Relationship_loc_3
-	}
-	text = {
-		trigger = {
-			check_variable = { CHI_Relationship_pop = 4 }
-		}
-		localization_key = Social_insecurity_Relationship_loc_4
-	}
-	text = {
-		trigger = {
-			check_variable = { CHI_Relationship_pop = 5 }
-		}
-		localization_key = Social_insecurity_Relationship_loc_5
-	}
-}
+# defined_text = {
+# 	name = CHI_Relationship_pop_loc
+# 	text = {
+# 		trigger = {
+# 			check_variable = { CHI_Relationship_pop = 1 }
+# 		}
+# 		localization_key = Social_insecurity_Relationship_loc_1
+# 	}
+# 	text = {
+# 		trigger = {
+# 			check_variable = { CHI_Relationship_pop = 2 }
+# 		}
+# 		localization_key = Social_insecurity_Relationship_loc_2
+# 	}
+# 	text = {
+# 		trigger = {
+# 			check_variable = { CHI_Relationship_pop = 3 }
+# 		}
+# 		localization_key = Social_insecurity_Relationship_loc_3
+# 	}
+# 	text = {
+# 		trigger = {
+# 			check_variable = { CHI_Relationship_pop = 4 }
+# 		}
+# 		localization_key = Social_insecurity_Relationship_loc_4
+# 	}
+# 	text = {
+# 		trigger = {
+# 			check_variable = { CHI_Relationship_pop = 5 }
+# 		}
+# 		localization_key = Social_insecurity_Relationship_loc_5
+# 	}
+# }
 
-defined_text = {
-	name = JAP_Relationship_pop_loc
-	text = {
-		trigger = {
-			check_variable = { JAP_Relationship_pop = 1 }
-		}
-		localization_key = Social_insecurity_Relationship_loc_1
-	}
-	text = {
-		trigger = {
-			check_variable = { JAP_Relationship_pop = 2 }
-		}
-		localization_key = Social_insecurity_Relationship_loc_2
-	}
-	text = {
-		trigger = {
-			check_variable = { JAP_Relationship_pop = 3 }
-		}
-		localization_key = Social_insecurity_Relationship_loc_3
-	}
-	text = {
-		trigger = {
-			check_variable = { JAP_Relationship_pop = 4 }
-		}
-		localization_key = Social_insecurity_Relationship_loc_4
-	}
-	text = {
-		trigger = {
-			check_variable = { JAP_Relationship_pop = 5 }
-		}
-		localization_key = Social_insecurity_Relationship_loc_5
-	}
-}
+# defined_text = {
+# 	name = JAP_Relationship_pop_loc
+# 	text = {
+# 		trigger = {
+# 			check_variable = { JAP_Relationship_pop = 1 }
+# 		}
+# 		localization_key = Social_insecurity_Relationship_loc_1
+# 	}
+# 	text = {
+# 		trigger = {
+# 			check_variable = { JAP_Relationship_pop = 2 }
+# 		}
+# 		localization_key = Social_insecurity_Relationship_loc_2
+# 	}
+# 	text = {
+# 		trigger = {
+# 			check_variable = { JAP_Relationship_pop = 3 }
+# 		}
+# 		localization_key = Social_insecurity_Relationship_loc_3
+# 	}
+# 	text = {
+# 		trigger = {
+# 			check_variable = { JAP_Relationship_pop = 4 }
+# 		}
+# 		localization_key = Social_insecurity_Relationship_loc_4
+# 	}
+# 	text = {
+# 		trigger = {
+# 			check_variable = { JAP_Relationship_pop = 5 }
+# 		}
+# 		localization_key = Social_insecurity_Relationship_loc_5
+# 	}
+# }
 
-defined_text = {
-	name = YKR_Relationship_pop_loc
-	text = {
-		trigger = {
-			check_variable = { YKR_Relationship_pop = 1 }
-		}
-		localization_key = Social_insecurity_Relationship_loc_1
-	}
-	text = {
-		trigger = {
-			check_variable = { YKR_Relationship_pop = 2 }
-		}
-		localization_key = Social_insecurity_Relationship_loc_2
-	}
-	text = {
-		trigger = {
-			check_variable = { YKR_Relationship_pop = 3 }
-		}
-		localization_key = Social_insecurity_Relationship_loc_3
-	}
-	text = {
-		trigger = {
-			check_variable = { YKR_Relationship_pop = 4 }
-		}
-		localization_key = Social_insecurity_Relationship_loc_4
-	}
-	text = {
-		trigger = {
-			check_variable = { YKR_Relationship_pop = 5 }
-		}
-		localization_key = Social_insecurity_Relationship_loc_5
-	}
-}
+# defined_text = {
+# 	name = YKR_Relationship_pop_loc
+# 	text = {
+# 		trigger = {
+# 			check_variable = { YKR_Relationship_pop = 1 }
+# 		}
+# 		localization_key = Social_insecurity_Relationship_loc_1
+# 	}
+# 	text = {
+# 		trigger = {
+# 			check_variable = { YKR_Relationship_pop = 2 }
+# 		}
+# 		localization_key = Social_insecurity_Relationship_loc_2
+# 	}
+# 	text = {
+# 		trigger = {
+# 			check_variable = { YKR_Relationship_pop = 3 }
+# 		}
+# 		localization_key = Social_insecurity_Relationship_loc_3
+# 	}
+# 	text = {
+# 		trigger = {
+# 			check_variable = { YKR_Relationship_pop = 4 }
+# 		}
+# 		localization_key = Social_insecurity_Relationship_loc_4
+# 	}
+# 	text = {
+# 		trigger = {
+# 			check_variable = { YKR_Relationship_pop = 5 }
+# 		}
+# 		localization_key = Social_insecurity_Relationship_loc_5
+# 	}
+# }

@@ -586,8 +586,8 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_pol_view_bg"
-		textureFile = "gfx//interface//pol_view_bg.dds"
+		name = "GFX_pol_view_bg_a"
+		textureFile = "gfx/interface/pol_view_bg_a.png"
 	}
 
 	spriteType = {
@@ -621,7 +621,7 @@ spriteTypes = {
 	
 	pieChartType = {
 		name = "GFX_political_chart"
-		size = 32
+		size = 27
 	}
 	
 	pieChartType = {

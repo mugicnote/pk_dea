@@ -226,7 +226,7 @@ guiTypes = {
 				instantTextBoxType = {
 					name = "AUTSOC_name_text"
 					position = { x = @FACTION_NAMES_X y = @AUTSOC_Y }
-					font = "hoi_18mbs"
+					font = "pk_18"
 					text = "KOR_AUTSOC_name_text"
 					format = left
 					maxwidth = 120
@@ -304,7 +304,7 @@ guiTypes = {
 				instantTextBoxType = {
 					name = "SOCDEM_name_text"
 					position = { x = @FACTION_NAMES_X y = @SOCDEM_Y }
-					font = "hoi_18mbs"
+					font = "pk_18"
 					text = "KOR_SOCDEM_name_text"
 					format = left
 					maxwidth = 120
@@ -349,7 +349,7 @@ guiTypes = {
 				instantTextBoxType = {
 					name = "SOCLIB_name_text"
 					position = { x = @FACTION_NAMES_X y = @SOCLIB_Y }
-					font = "hoi_18mbs"
+					font = "pk_18"
 					text = "KOR_SOCLIB_name_text"
 					format = left
 					maxwidth = 120
@@ -394,7 +394,7 @@ guiTypes = {
 				instantTextBoxType = {
 					name = "NATLIB_name_text"
 					position = { x = @FACTION_NAMES_X y = @NATLIB_Y }
-					font = "hoi_18mbs"
+					font = "pk_18"
 					text = "KOR_NATLIB_name_text"
 					format = left
 					maxwidth = 120
@@ -439,7 +439,7 @@ guiTypes = {
 				instantTextBoxType = {
 					name = "LIBCON_name_text"
 					position = { x = @FACTION_NAMES_X y = @LIBCON_Y }
-					font = "hoi_18mbs"
+					font = "pk_18"
 					text = "KOR_LIBCON_name_text"
 					format = left
 					maxwidth = 120
@@ -484,7 +484,7 @@ guiTypes = {
 				instantTextBoxType = {
 					name = "NATCON_name_text"
 					position = { x = @FACTION_NAMES_X y = @NATCON_Y }
-					font = "hoi_18mbs"
+					font = "pk_18"
 					text = "KOR_NATCON_name_text"
 					format = left
 					maxwidth = 120
@@ -548,7 +548,7 @@ guiTypes = {
 			instantTextBoxType = {
 				name = "SOCCON_name_text"
 				position = { x = @FACTION_NAMES_X y = @SOCCON_Y }
-				font = "hoi_18mbs"
+				font = "pk_18"
 				text = "KOR_SOCCON_name_text"
 				format = left
 				maxwidth = 120
@@ -593,7 +593,7 @@ guiTypes = {
 			instantTextBoxType = {
 				name = "RADSOC_name_text"
 				position = { x = @FACTION_NAMES_X y = @RADSOC_Y }
-				font = "hoi_18mbs"
+				font = "pk_18"
 				text = "KOR_RADSOC_name_text"
 				format = left
 				maxwidth = 120
@@ -653,7 +653,7 @@ guiTypes = {
 				instantTextBoxType = {
 					name = "DES_name_text"
 					position = { x = @FACTION_NAMES_X y = @DES_Y }
-					font = "hoi_18mbs"
+					font = "pk_18"
 					text = "KOR_DES_name_text"
 					format = left
 					maxwidth = 120
@@ -698,7 +698,7 @@ guiTypes = {
 				instantTextBoxType = {
 					name = "FAS_name_text"
 					position = { x = @FACTION_NAMES_X y = @FAS_Y }
-					font = "hoi_18mbs"
+					font = "pk_18"
 					text = "KOR_FAS_name_text"
 					format = left
 					maxwidth = 120

@@ -65,7 +65,6 @@ set_convoys = 30
 
 #국민정신
 add_ideas = {
-three_years_service
 # KOR_economy_ruined
 # KOR_huge_amount_government_bonds
 # KOR_Collapsed_security
@@ -94,16 +93,8 @@ set_politics = {
 #시작시_정당들의_인기도
 set_popularities = {
   communism = 0
-  authoritarian_socialism = 0
-  radical_socialism = 0
-  social_democracy = 0
-  social_liberalism = 0
-  national_liberalism = 0
-  liberal_conservatism = 0
   democratic = 0
-  national_conservatism = 0
   neutrality = 100
-  auto_despotism = 0
   fascism = 0
 
 #   communism = 10

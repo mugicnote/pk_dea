@@ -296,13 +296,4 @@ bitmapfonts = {
 	languages = { "l_korean" } 
 	}
 	
-	bitmapfont_override = {
-		name = "cg_16b"
-		fontfiles = { 
-			"gfx/fonts/TLEKorean/cg_16b"
-			"gfx/fonts/TLEKorean/hoi_16tooltip3"
-		}
-        color = 0xffffffff
-		languages = { "l_korean" } 
-	}
 }

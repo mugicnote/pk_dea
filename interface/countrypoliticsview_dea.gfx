@@ -12,11 +12,11 @@ spriteTypes = {
 		noOfFrames = 2
 	}
 
-	spriteType = {
-		name = "GFX_pol_piechart_overlay_new"
-		textureFile = "gfx//interface//pol_piechart_overlay_new.dds"
-		alwaystransparent = yes			
-	}
+	# spriteType = {
+	# 	name = "GFX_pol_piechart_overlay_new"
+	# 	textureFile = "gfx//interface//pol_piechart_overlay_new.dds"
+	# 	alwaystransparent = yes			
+	# }
 
 	progressbartype = {
 		name = "GFX_activegoal_diplo_view_progress"

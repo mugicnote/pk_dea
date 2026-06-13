@@ -65,7 +65,6 @@ set_convoys = 30
 
 #국민정신
 add_ideas = {
-three_years_service
 # KOR_economy_ruined
 # KOR_huge_amount_government_bonds
 # KOR_Collapsed_security
@@ -93,17 +92,9 @@ set_politics = {
 }
 #시작시_정당들의_인기도
 set_popularities = {
-  communism = 85
-  authoritarian_socialism = 3
-  radical_socialism = 7
-  social_democracy = 5
-  social_liberalism = 0
-  national_liberalism = 0
-  liberal_conservatism = 0
-  democratic = 0
-  national_conservatism = 0
+  communism = 95
+  democratic = 5
   neutrality = 0
-  auto_despotism = 0
   fascism = 0
 
 #   communism = 10
@@ -126,8 +117,8 @@ COALITION_add_radsoc = yes
 
 #common/characters 파일 참고
 recruit_character = CKR_pak_hon_yong
-recruit_character = CKR_Kim_Tu_bong
-recruit_character = CKR_Kim_Won_bong
+# recruit_character = CKR_Kim_Tu_bong
+# recruit_character = CKR_Kim_Won_bong
 
 # recruit_character = KOR_an_jung_geun
 

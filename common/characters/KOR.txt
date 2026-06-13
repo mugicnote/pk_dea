@@ -1,4 +1,23 @@
 characters={
+
+	KOR_Yun_chi_ho={
+		name=KOR_Yun_chi_ho
+		portraits={
+			civilian={
+				large="gfx/leaders/KOR/pol/Portrait_Yun_chi_ho.png"
+			}
+		}
+		country_leader={
+			ideology=Seo_Jae_Pil_conservatism
+			traits={
+				President
+			}
+			expire="1951.1.5.1"
+			id=-1
+			desc="KOR_Yun_chi_ho_desc"
+		}
+	}
+
 	KOR_Seo_jae_pil={
 		name=KOR_Seo_jae_pil
 		portraits={
@@ -37,137 +56,137 @@ characters={
 		}
 	}
 
-	KOR_Kim_Tu_bong={
-		name=KOR_Kim_Tu_bong
-		portraits={
-			civilian={
-				large="gfx/leaders/KOR/Portrait_Kim_Tu_bong.dds"
-			}
-		}
-		country_leader={
-			ideology=auth_socialism
-			traits={
+	# KOR_Kim_Tu_bong={
+	# 	name=KOR_Kim_Tu_bong
+	# 	portraits={
+	# 		civilian={
+	# 			large="gfx/leaders/KOR/Portrait_Kim_Tu_bong.dds"
+	# 		}
+	# 	}
+	# 	country_leader={
+	# 		ideology=auth_socialism
+	# 		traits={
 				
-			}
-			expire="2000.1.1.1"
-			id=-1
-		}
-	}
+	# 		}
+	# 		expire="2000.1.1.1"
+	# 		id=-1
+	# 	}
+	# }
 
-	KOR_Kim_Won_bong={
-		name=KOR_Kim_Won_bong
-		portraits={
-			civilian={
-				large="gfx/leaders/KOR/Portrait_Kim_Wonbong.dds"
-			}
-		}
-		country_leader={
-			ideology=rad_socialism
-			traits={
+	# KOR_Kim_Won_bong={
+	# 	name=KOR_Kim_Won_bong
+	# 	portraits={
+	# 		civilian={
+	# 			large="gfx/leaders/KOR/Portrait_Kim_Wonbong.dds"
+	# 		}
+	# 	}
+	# 	country_leader={
+	# 		ideology=rad_socialism
+	# 		traits={
 				
-			}
-			expire="2000.1.1.1"
-			id=-1
-		}
+	# 		}
+	# 		expire="2000.1.1.1"
+	# 		id=-1
+	# 	}
 
-		corps_commander={
-			traits={
-				commando
-				trickster
-				ranger
-			}
-			skill=4
-			attack_skill=5
-			defense_skill=4
-			planning_skill=3
-			logistics_skill=3
-		}
-	}
+	# 	corps_commander={
+	# 		traits={
+	# 			commando
+	# 			trickster
+	# 			ranger
+	# 		}
+	# 		skill=4
+	# 		attack_skill=5
+	# 		defense_skill=4
+	# 		planning_skill=3
+	# 		logistics_skill=3
+	# 	}
+	# }
 
-	KOR_Lyuh_Woon_hyung={
-		name=KOR_Lyuh_Woon_hyung
-		portraits={
-			civilian={
-				large="gfx/leaders/KOR/Portrait_Lyuh_Woonhyung.dds"
-			}
-		}
-		country_leader={
-			ideology=socialism
-			traits={
-				#traits_Yeo_Un2
-			}
-			expire="2000.1.1.1"
-			id=-1
-		}
-	}
+	# KOR_Lyuh_Woon_hyung={
+	# 	name=KOR_Lyuh_Woon_hyung
+	# 	portraits={
+	# 		civilian={
+	# 			large="gfx/leaders/KOR/Portrait_Lyuh_Woonhyung.dds"
+	# 		}
+	# 	}
+	# 	country_leader={
+	# 		ideology=socialism
+	# 		traits={
+	# 			#traits_Yeo_Un2
+	# 		}
+	# 		expire="2000.1.1.1"
+	# 		id=-1
+	# 	}
+	# }
 
-	KOR_Chang_Myon={
-		name=KOR_Chang_Myon
-		portraits={
-			civilian={
-				large="gfx/leaders/KOR/Portrait_Chang_Myon.dds"
-			}
-		}
-		country_leader={
-			ideology=liberalism
-			traits={
+	# KOR_Chang_Myon={
+	# 	name=KOR_Chang_Myon
+	# 	portraits={
+	# 		civilian={
+	# 			large="gfx/leaders/KOR/Portrait_Chang_Myon.dds"
+	# 		}
+	# 	}
+	# 	country_leader={
+	# 		ideology=liberalism
+	# 		traits={
 				
-			}
-			expire="2000.1.1.1"
-			id=-1
-		}
-	}
+	# 		}
+	# 		expire="2000.1.1.1"
+	# 		id=-1
+	# 	}
+	# }
 
-	KOR_Ahn_Jae_hong={
-		name=KOR_Ahn_Jae_hong
-		portraits={
-			civilian={
-				large="gfx/leaders/KOR/Portrait_Ahn_Jaehong.dds"
-			}
-		}
-		country_leader={
-			ideology=nat_liberal
-			traits={
+	# KOR_Ahn_Jae_hong={
+	# 	name=KOR_Ahn_Jae_hong
+	# 	portraits={
+	# 		civilian={
+	# 			large="gfx/leaders/KOR/Portrait_Ahn_Jaehong.dds"
+	# 		}
+	# 	}
+	# 	country_leader={
+	# 		ideology=nat_liberal
+	# 		traits={
 				
-			}
-			expire="2000.1.1.1"
-			id=-1
-		}
-	}
+	# 		}
+	# 		expire="2000.1.1.1"
+	# 		id=-1
+	# 	}
+	# }
 
-	KOR_Song_Jin_woo={
-		name=KOR_Song_Jin_woo
-		portraits={
-			civilian={
-				large="gfx/leaders/KOR/Portrait_Song_Jin_woo.dds"
-			}
-		}
-		country_leader={
-			ideology=lib_conservatism
-			traits={
+	# KOR_Song_Jin_woo={
+	# 	name=KOR_Song_Jin_woo
+	# 	portraits={
+	# 		civilian={
+	# 			large="gfx/leaders/KOR/Portrait_Song_Jin_woo.dds"
+	# 		}
+	# 	}
+	# 	country_leader={
+	# 		ideology=lib_conservatism
+	# 		traits={
 				
-			}
-			expire="2000.1.1.1"
-			id=-1
-		}
-	}
+	# 		}
+	# 		expire="2000.1.1.1"
+	# 		id=-1
+	# 	}
+	# }
 
-	KOR_Kim_Koo={
-		name=KOR_Kim_Koo
-		portraits={
-			civilian={
-				large="gfx/leaders/KOR/Portrait_Kim_Koo.dds"
-			}
-		}
-		country_leader={
-			ideology=korean_nationalism
-			traits={
-				#traits_kim_ku
-			}
-			expire="2000.1.1.1"
-			id=-1
-		}
-	}
+	# KOR_Kim_Koo={
+	# 	name=KOR_Kim_Koo
+	# 	portraits={
+	# 		civilian={
+	# 			large="gfx/leaders/KOR/Portrait_Kim_Koo.dds"
+	# 		}
+	# 	}
+	# 	country_leader={
+	# 		ideology=korean_nationalism
+	# 		traits={
+	# 			#traits_kim_ku
+	# 		}
+	# 		expire="2000.1.1.1"
+	# 		id=-1
+	# 	}
+	# }
 
 	KOR_ji_chong_chen={
 		name=KOR_ji_chong_chen
@@ -203,22 +222,22 @@ characters={
 		}
 	}
 
-	KOR_rafs={
-		name=KOR_rafs
-		portraits={
-			civilian={
-				large="gfx/leaders/KOR/Portrait_rafs.dds"
-			}
-		}
-		country_leader={
-			ideology=despotism
-			traits={
+	# KOR_rafs={
+	# 	name=KOR_rafs
+	# 	portraits={
+	# 		civilian={
+	# 			large="gfx/leaders/KOR/Portrait_rafs.dds"
+	# 		}
+	# 	}
+	# 	country_leader={
+	# 		ideology=despotism
+	# 		traits={
 				
-			}
-			expire="2000.1.1.1"
-			id=-1
-		}
-	}
+	# 		}
+	# 		expire="2000.1.1.1"
+	# 		id=-1
+	# 	}
+	# }
 
 	KOR_Lee_Beom_seok={
 		name=KOR_Lee_Beom_seok

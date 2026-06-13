@@ -845,6 +845,18 @@ defined_text = {
 }
 
 defined_text = {
+	name = FdS4_front_name
+
+	text = {
+		trigger = {
+			tag = KOR
+		}
+		localization_key = KOR_FdS4_front_name
+	}
+
+}
+
+defined_text = {
 	name = FdS3_semi_front_name
 
 	text = {
